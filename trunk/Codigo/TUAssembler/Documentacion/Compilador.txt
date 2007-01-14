@@ -1,0 +1,27 @@
+Compilador free de cs, para .obj ( muy bueno )
+http://www.southern-storm.com.au/docs/pnettools_2.html#SEC2
+
+Compilador de asm en ASPNEt ( medio trucho )
+http://www.viksoe.dk/code/asmil.htm
+
+Compilador de .Net con fuentes, semi sencillo ( bueno )
+http://www.codeproject.com/csharp/cscompiler.asp
+
+
+Compilar .asm desde .Net con C++
+http://www.codeproject.com/dotnet/VCNetAssemberCode.asp
+
+Compilar asm para c# utilizando ATL-C++..puede adar
+http://www.codeproject.com/csharp/inline_asm_for_c_.asp
+
+
+Llamar a una dll hecha en c++ con asm....no sirve!!
+http://www.codeproject.com/csharp/unmanage.asp
+
+
+Compilar codigo desde c#
+http://www.codeproject.com/csharp/runtimecompiling.asp
+
+
+http://www.codeproject.com/csharp/ASM64.asp
+Editor de assembler escrito en c# ( codigo fuente )
