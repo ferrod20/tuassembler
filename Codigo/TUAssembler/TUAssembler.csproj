@@ -36,6 +36,17 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Documentacion\c-asm.pdf" />
+    <None Include="Documentacion\clase2imp.pdf" />
+    <None Include="Documentacion\Detalles del TP final.doc" />
+    <None Include="Documentacion\Detalles sobre el TP Final 2.doc" />
+    <None Include="Documentacion\howtoComp.pdf" />
+    <None Include="Documentacion\iso-8859-1QTrabajo_practico_final_de_OrganizaciF3n_del_Computador_IIiso-8859-1Q_2004-0001.doc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Documentacion\Compilador.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
