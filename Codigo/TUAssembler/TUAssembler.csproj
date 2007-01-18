@@ -36,6 +36,7 @@
     <Compile Include="Compilador.cs" />
     <Compile Include="CompiladorAsm.cs" />
     <Compile Include="CompiladorC.cs" />
+    <Compile Include="Ejecutor.cs" />
     <Compile Include="Enlazador.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
