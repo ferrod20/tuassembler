@@ -2,7 +2,7 @@ using System;
 using System.CodeDom.Compiler;
 using System.IO;
 
-namespace TUAssembler
+namespace TUAssembler.Compilacion
 {
     public class Compilador
     {
@@ -57,6 +57,15 @@ namespace TUAssembler
         #endregion
 
         #region Métodos
+        public void Enlazar(string ejecutable, params string[] archivosObjeto)
+        {
+            string comando;
+            comando = "-o " + ejecutable;
+            foreach (string archivo in archivosObjeto)
+                comando += " " + archivo;
+
+            Compilar(comando);
+        }
         public void Compilar( string comando )
         {
             string rutaCompleta;
