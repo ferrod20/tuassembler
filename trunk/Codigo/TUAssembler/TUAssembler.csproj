@@ -33,14 +33,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Compilador.cs" />
-    <Compile Include="CompiladorAsm.cs" />
-    <Compile Include="CompiladorC.cs" />
-    <Compile Include="DefinicionFuncion\DefinicionFuncion.cs" />
-    <Compile Include="DefinicionFuncion\Parametro.cs" />
-    <Compile Include="Ejecutor.cs" />
-    <Compile Include="Enlazador.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="Compilacion\Compilador.cs" />
+    <Compile Include="Compilacion\CompiladorAsm.cs" />
+    <Compile Include="Compilacion\CompiladorC.cs" />
+    <Compile Include="Definicion\DefinicionFuncion.cs" />
+    <Compile Include="Definicion\Parametro.cs" />
+    <Compile Include="Compilacion\Ejecutor.cs" />
+    <Compile Include="Generacion\Generador.cs" />
+    <Compile Include="JuegoDePrueba\Elem.cs" />
+    <Compile Include="JuegoDePrueba\Entrada.cs" />
+    <Compile Include="JuegoDePrueba\Matriz.cs" />
+    <Compile Include="JuegoDePrueba\Parametro.cs" />
+    <Compile Include="JuegoDePrueba\Prueba.cs" />
+    <Compile Include="JuegoDePrueba\Salida.cs" />
+    <Compile Include="JuegoDePrueba\Vector.cs" />
+    <Compile Include="MA.cs" />
+    <Compile Include="Mensajes.cs" />
+    <Compile Include="Programa.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

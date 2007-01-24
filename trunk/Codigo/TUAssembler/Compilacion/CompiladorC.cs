@@ -1,4 +1,4 @@
-namespace TUAssembler
+namespace TUAssembler.Compilacion
 {
     public class CompiladorC: Compilador
     {
