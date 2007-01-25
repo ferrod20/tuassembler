@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DefinicionFuncion xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Nombre="funcion1">
+  <ParametroSalida TipoDeAcceso="V" Tipo="UInt16" EsVector="false" EsMatriz="false" />
+  <ParametrosEntrada>
+    <Parametro TipoDeAcceso="V" Tipo="UInt8" EsVector="false" EsMatriz="false" />    
+  </ParametrosEntrada>
+</DefinicionFuncion>  
