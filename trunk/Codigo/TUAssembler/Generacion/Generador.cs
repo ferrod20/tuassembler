@@ -100,10 +100,31 @@ namespace TUAssembler.Generacion
         }
         private void LeerSalida(StreamReader lector )
         {
-            string primerLinea;
-            primerLinea = lector.ReadLine();
-                        
-            Prueba.Salida = ObtenerParametro( primerLinea, Definicion.ParametroSalida );
+            Parametro[] defParametros, defParametrosEntrada;
+            string linea;
+            int i, cuantos;            
+        
+            //-----------------------Obtengo parametros de salida y los de ES o S
+            cuantos = Definicion.CuantosParametrosESoS();
+            defParametros = new Parametro[cuantos + 1];
+            defParametros[0] = Definicion.ParametroSalida;
+            defParametrosEntrada = Definicion.ObtenerParametrosESoS();
+            
+            for (i = 1; i < cuantos + 1; i++ )            
+                defParametros[i] = defParametrosEntrada[i];
+            //-----------------------Obtengo parametros de salida y los de ES o S
+
+            
+            Prueba.Salida = new JuegoDePrueba.Parametro[defParametros.Length];
+            
+            foreach (Parametro defParametro in defParametros)
+            {
+                linea = lector.ReadLine();
+                if (linea == string.Empty)
+                    throw new Exception(Mensajes.CantidadParametrosEntradaNoCoincideConDefinicion);
+                Prueba.Salida[i] = ObtenerParametro(linea, defParametro);
+                i++;
+            }             
         }
         private JuegoDePrueba.Parametro ObtenerParametro( string linea, Parametro defParam )
         {
