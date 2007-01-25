@@ -7,7 +7,7 @@ namespace TUAssembler.JuegoDePrueba
     {
         #region Variables miembro
         private Parametro[] entrada;
-        private Parametro salida;
+        private Parametro[] salida;
         #endregion
 
         #region Propiedades
@@ -23,7 +23,7 @@ namespace TUAssembler.JuegoDePrueba
             }
         }
 
-        public Parametro Salida
+        public Parametro[] Salida
         {
             get
             {

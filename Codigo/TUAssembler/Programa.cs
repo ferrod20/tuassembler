@@ -4,7 +4,6 @@ using System.Xml.Serialization;
 using TUAssembler.Definicion;
 using TUAssembler.Compilacion;
 using TUAssembler.Generacion;
-using TUAssembler.JuegoDePrueba;
 
 namespace TUAssembler
 {
@@ -12,7 +11,16 @@ namespace TUAssembler
     {
         private static void Main( string[] args )
         {
-           Generador generador = new Generador( );
+            try
+            {
+                Generador generador = new Generador("archDef.xml", "archPrueba.jdp");
+                generador.LeerDefinicion();
+                generador.LeerPrueba();
+            }
+            catch( Exception e)
+            {
+                Console.Write(e.Message);    
+            }            
         }
 
         private static void EscribirPruebaXml()
