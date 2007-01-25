@@ -4,16 +4,16 @@ using TUAssembler.Definicion;
 namespace TUAssembler.JuegoDePrueba
 {
     [Serializable()]
-    public class Matriz: Parametro
+    public class ParamMatriz: Parametro
     {
         #region Variables miembro
         private int cantFilas;
         private int cantColumnas;
-        private Vector[] filas;//Cada fila es un vector
+        private ParamVector[] filas;//Cada fila es un vector
         #endregion
 
         #region Propiedades
-        public Vector[] Filas
+        public ParamVector[] Filas
         {
             get
             {
@@ -27,14 +27,14 @@ namespace TUAssembler.JuegoDePrueba
         #endregion        
         
         #region Constructores
-        public Matriz( int cantFilas, int cantColumnas)
+        public ParamMatriz( int cantFilas, int cantColumnas)
         {
             this.cantFilas = cantFilas;
             this.cantColumnas = cantColumnas;
             
-            Filas = new Vector[cantFilas];
+            Filas = new ParamVector[cantFilas];
             for (int i = 0; i < Filas.Length; i++)            
-                Filas[i] = new Vector(cantColumnas);
+                Filas[i] = new ParamVector(cantColumnas);
             
         }
         #endregion

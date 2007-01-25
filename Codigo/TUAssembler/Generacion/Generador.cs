@@ -1,14 +1,12 @@
 using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Text;
 using TUAssembler.Definicion;
 using TUAssembler.JuegoDePrueba;
-using Parametro=TUAssembler.Definicion.Parametro;
 
 namespace TUAssembler.Generacion
 {
-    class Generador
+    internal class Generador
     {
         #region Variables miembro
         private string archivoDefinicion;
@@ -58,8 +56,8 @@ namespace TUAssembler.Generacion
         {
             get
             {
-                if (prueba == null)
-                    prueba = new Prueba();                
+                if( prueba==null )
+                    prueba = new Prueba();
                 return prueba;
             }
             set
@@ -78,78 +76,143 @@ namespace TUAssembler.Generacion
         {
             StreamReader lector = new StreamReader( archivoPrueba );
             LeerSalida( lector );
-            LeerEntrada(lector );            
+            LeerEntrada( lector );
+        }
+        public string GenerarPrueba()
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine( "extern " + Definicion.GenerarPrototipo() + ";" );
+            sb.AppendLine();
+            ArmarFuncionPrueba( ref sb );
+            return sb.ToString();
+        }
+        private void ArmarFuncionPrueba( ref StringBuilder sb )
+        {
+            sb.AppendLine( " void main()" );
+            sb.AppendLine( "{" );
+            sb.AppendLine();
+            sb.AppendLine("//------------Parametros------------");
+            sb.AppendLine();
+            DeclararParametros( ref sb );
+            sb.AppendLine();
+            sb.AppendLine("//------------Instanciación------------");
+            sb.AppendLine();
+            InstanciarParametros( ref sb );
+            sb.AppendLine();
+            sb.AppendLine("//------------LlamadaFuncion------------");
+            sb.AppendLine();
+            LlamarFuncionAProbar( ref sb );
+            sb.AppendLine();
+            sb.AppendLine("//------------Comparacion de valores------------");
+            sb.AppendLine();
+            CompararValoresDevueltos( ref sb );
+            sb.AppendLine();
+            sb.AppendLine( "}" );
+        }
+        private void CompararValoresDevueltos( ref StringBuilder sb )
+        {
+            
+        }
+        private void InstanciarParametros( ref StringBuilder sb )
+        {
+            string instanciacion;
+            int cuantosParam = Definicion.DefParametrosEntrada.Length;
+            
+            instanciacion = Definicion.DefParametroSalida.Instanciar(Prueba.Salida);
+            
+            for(int i=0; i<cuantosParam; i++ )
+            {
+                instanciacion = Definicion.DefParametrosEntrada[i].Instanciar(Prueba.Entrada[i]);
+                sb.AppendLine(instanciacion);
+            }            
+        }
+        private void LlamarFuncionAProbar( ref StringBuilder sb )
+        {
+            
+        }
+        
+        private void DeclararParametros( ref StringBuilder sb )
+        {            
+            string declaracion;
+            
+            declaracion = Definicion.DefParametroSalida.Declarar();
+            sb.AppendLine(declaracion);                
+            
+            foreach( DefParametro defParam in Definicion.DefParametrosEntrada )
+            {
+                declaracion = defParam.Declarar();                
+                sb.AppendLine( declaracion );                
+            }                        
         }
         private void LeerEntrada( StreamReader lector )
         {
-            Parametro[] defParametros;
+            DefParametro[] defDefParametros;
             string linea;
             int i = 0;
-            
-            defParametros = Definicion.ParametrosEntrada;
-            Prueba.Entrada = new JuegoDePrueba.Parametro[defParametros.Length];
-            
-            foreach (Parametro defParametro in defParametros)
+
+            defDefParametros = Definicion.DefParametrosEntrada;
+            Prueba.Entrada = new Parametro[defDefParametros.Length];
+
+            foreach( DefParametro defParametro in defDefParametros )
             {
                 linea = lector.ReadLine();
-                if (linea == string.Empty)
+                if( linea==string.Empty )
                     throw new Exception( Mensajes.CantidadParametrosEntradaNoCoincideConDefinicion );
-                Prueba.Entrada[i] = ObtenerParametro(linea, defParametro );
-                    i++;
-            }            
+                Prueba.Entrada[i] = ObtenerParametro( linea, defParametro );
+                i++;
+            }
         }
-        private void LeerSalida(StreamReader lector )
+        private void LeerSalida( StreamReader lector )
         {
-            Parametro[] defParametros, defParametrosEntrada;
+            DefParametro[] defDefParametros, defDefParametrosEntrada;
             string linea;
-            int i, cuantos;            
-        
+            int i, cuantos;
+
             //-----------------------Obtengo parametros de salida y los de ES o S
             cuantos = Definicion.CuantosParametrosESoS();
-            defParametros = new Parametro[cuantos + 1];
-            defParametros[0] = Definicion.ParametroSalida;
-            defParametrosEntrada = Definicion.ObtenerParametrosESoS();
-            
-            for (i = 1; i < cuantos + 1; i++ )            
-                defParametros[i] = defParametrosEntrada[i];
+            defDefParametros = new DefParametro[cuantos + 1];
+            defDefParametros[0] = Definicion.DefParametroSalida;
+            defDefParametrosEntrada = Definicion.ObtenerParametrosESoS();
+
+            for( i = 1; i < cuantos + 1; i++ )
+                defDefParametros[i] = defDefParametrosEntrada[i];
             //-----------------------Obtengo parametros de salida y los de ES o S
 
-            
-            Prueba.Salida = new JuegoDePrueba.Parametro[defParametros.Length];
-            
-            foreach (Parametro defParametro in defParametros)
+            Prueba.Salida = new Parametro[defDefParametros.Length];
+
+            foreach( DefParametro defParametro in defDefParametros )
             {
                 linea = lector.ReadLine();
-                if (linea == string.Empty)
-                    throw new Exception(Mensajes.CantidadParametrosEntradaNoCoincideConDefinicion);
-                Prueba.Salida[i] = ObtenerParametro(linea, defParametro);
+                if( linea==string.Empty )
+                    throw new Exception( Mensajes.CantidadParametrosEntradaNoCoincideConDefinicion );
+                Prueba.Salida[i] = ObtenerParametro( linea, defParametro );
                 i++;
-            }             
+            }
         }
-        private JuegoDePrueba.Parametro ObtenerParametro( string linea, Parametro defParam )
+        private Parametro ObtenerParametro( string linea, DefParametro defParam )
         {
-            Matriz matriz;
-            Vector vector;
+            ParamMatriz paramMatriz;
+            ParamVector paramVector;
             string[] parametros;
-            JuegoDePrueba.Parametro salida = null;
-            if (defParam.EsMatriz)
+            Parametro salida = null;
+            if( defParam.EsMatriz )
             {
-                matriz = new Matriz(defParam.CantFilas, defParam.CantColumnas);
-                matriz.Leer(linea, defParam.Tipo);//Lee la salida y verifica que los parametros sean del tipo valido.
-                salida = matriz;
+                paramMatriz = new ParamMatriz( defParam.CantFilas, defParam.CantColumnas );
+                paramMatriz.Leer( linea, defParam.Tipo ); //Lee la salida y verifica que los parametros sean del tipo valido.
+                salida = paramMatriz;
             }
-            if (defParam.EsVector)
+            if( defParam.EsVector )
             {
-                vector = new Vector(defParam.Longitud);
-                vector.Leer(linea, defParam.Tipo);//Lee la salida y verifica que los parametros sean del tipo valido.
-                salida = vector;
+                paramVector = new ParamVector( defParam.Longitud );
+                paramVector.Leer( linea, defParam.Tipo ); //Lee la salida y verifica que los parametros sean del tipo valido.
+                salida = paramVector;
             }
-            if (defParam.EsElemento)
+            if( defParam.EsElemento )
             {
-                parametros = linea.Split(' ');
-                if (parametros.Length != 1)
-                    throw new Exception(Mensajes.CantidadDeParametrosNoCoincidenConDefinicion);
-                salida = new Elem(parametros[0]);
+                parametros = linea.Split( ' ' );
+                if( parametros.Length!=1 )
+                    throw new Exception( Mensajes.CantidadDeParametrosNoCoincidenConDefinicion );
+                salida = new Elem( parametros[0] );
             }
             return salida;
         }

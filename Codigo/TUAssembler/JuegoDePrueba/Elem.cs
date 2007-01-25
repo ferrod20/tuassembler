@@ -12,7 +12,7 @@ namespace TUAssembler.JuegoDePrueba
         #endregion
 
         #region Propiedades
-        public string Elemento
+        public string Valor
         {
             get
             {
@@ -66,6 +66,10 @@ namespace TUAssembler.JuegoDePrueba
                     break;
             }
             return salida;
+        }
+        public bool UltimoElementoUno()
+        {
+            return elem[ elem.Length - 1] =='1';
         }
     }
 }

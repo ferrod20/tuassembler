@@ -4,7 +4,7 @@ using TUAssembler.Definicion;
 namespace TUAssembler.JuegoDePrueba
 {
     [Serializable()]
-    public class Vector : Parametro
+    public class ParamVector : Parametro
     {
         #region Variables miembro
         private Elem[] elem;
@@ -38,7 +38,7 @@ namespace TUAssembler.JuegoDePrueba
         #endregion
 
         #region Constructores
-        public Vector( int longitud )
+        public ParamVector( int longitud )
         {            
             Elementos = new Elem[longitud];                        
         }
