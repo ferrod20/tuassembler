@@ -9,7 +9,7 @@ namespace TUAssembler.Compilacion
             TempFileCollection archivosTemporales = new TempFileCollection();
             string salida = "salida.txt";
             string error = "error.txt";
-            Executor.ExecWaitWithCapture( comando, archivosTemporales, ref salida, ref error );
+            Executor.ExecWaitWithCapture( comando, archivosTemporales, ref salida, ref error );            
         }
     }
 }

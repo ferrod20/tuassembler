@@ -104,7 +104,7 @@ namespace TUAssembler
                 archivos[0] = "funcionAsm.o";
                 compilador.Enlazar( "prueba.exe", archivos );
 
-                Ejecutor.Ejecutar("prueba.exe");
+                Ejecutor.Ejecutar("prueba.exe");                
             }
             catch( Exception e )
             {

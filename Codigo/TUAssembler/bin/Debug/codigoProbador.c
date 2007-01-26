@@ -1,4 +1,4 @@
-extern unsigned short funcion1( unsigned char );
+extern unsigned short funcion1( unsigned char,  );
 
  void main()
 {
