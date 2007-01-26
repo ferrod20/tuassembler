@@ -1,6 +1,5 @@
 using System;
 using System.IO;
-using System.Text;
 using TUAssembler.Definicion;
 using TUAssembler.JuegoDePrueba;
 
@@ -68,6 +67,94 @@ namespace TUAssembler.Generacion
         #endregion
 
         #region Métodos
+
+        #region Generacion de codigo para la prueba
+        public void GenerarPrueba( ref StreamWriter escritor )
+        {
+            EscribirReferenciaExternaDeLaFuncion( ref escritor );
+            escritor.WriteLine();
+            EscribirFuncionPrueba( ref escritor );
+        }
+        private void EscribirReferenciaExternaDeLaFuncion( ref StreamWriter escritor )
+        {
+            escritor.WriteLine( "extern " + Definicion.GenerarPrototipo() + ";" );
+        }
+        private void EscribirFuncionPrueba( ref StreamWriter escritor )
+        {
+            escritor.WriteLine( " void main()" );
+            escritor.WriteLine( "{" );
+            escritor.WriteLine();
+            escritor.WriteLine( "/*------------Parametros-------------------------*/" );
+            escritor.WriteLine();
+            DeclararParametros( ref escritor );
+            escritor.WriteLine();
+            escritor.WriteLine( "/*------------Instanciacion----------------------*/" );
+            escritor.WriteLine();
+            InstanciarParametros( ref escritor );
+            escritor.WriteLine();
+            escritor.WriteLine( "/*------------LlamadaFuncion---------------------*/" );
+            escritor.WriteLine();
+            LlamarFuncionAProbar( ref escritor );
+            escritor.WriteLine();
+            escritor.WriteLine( "/*------------Comparacion de valores-------------*/" );
+            escritor.WriteLine();
+            CompararValoresDevueltos( ref escritor );
+            escritor.WriteLine();
+            escritor.WriteLine( "}" );
+        }
+        private void CompararValoresDevueltos( ref StreamWriter escritor )
+        {           
+            //Comparo los valores de los parametros de salida y los de ES
+            foreach( Parametro param in Prueba.ParametrosSalida  )
+                if( param.EsDeSalidaOEntradaSalida )    
+                    param.CompararValor( ref escritor );                                                
+        }
+        private void InstanciarParametros( ref StreamWriter escritor )
+        {
+            string instanciacion;
+
+            //Instancio el valor que debe devolver la funcion para compararlo despues
+            instanciacion = Prueba.ParametrosSalida[0].Instanciar();
+            escritor.WriteLine( instanciacion );
+
+            //Instancio el valor de cada uno de los parametros de ParametrosEntrada que son de salida para pasarselo a la funcion.
+            foreach( Parametro param in Prueba.ParametrosEntrada )
+                if( param.Definicion.EntradaSalida!=EntradaSalida.S )
+                {
+                    instanciacion = param.Instanciar();
+                    escritor.WriteLine( instanciacion );
+                }
+        }
+        private void LlamarFuncionAProbar( ref StreamWriter escritor )
+        {
+            string llamada;
+
+            llamada = Definicion.DefParametroSalida.Nombre + " = " +
+                Definicion.Nombre + "( ";
+            foreach( Parametro param in Prueba.ParametrosEntrada )
+                llamada += param.Definicion.Nombre + ", ";
+
+            llamada = llamada.Remove( llamada.Length - 2, 2 ); //Elimino la última coma.)
+
+            llamada += " );";
+            escritor.WriteLine( llamada );
+        }
+        private void DeclararParametros( ref StreamWriter escritor )
+        {
+            string declaracion;
+
+            declaracion = Prueba.ParametrosSalida[0].Declarar();
+            escritor.WriteLine( declaracion );
+
+            foreach( Parametro param in Prueba.ParametrosEntrada )
+            {
+                declaracion = param.Declarar();
+                escritor.WriteLine( declaracion );
+            }
+        }
+        #endregion
+
+        #region Lectura de parámetros y funcion
         public void LeerDefinicion()
         {
             Definicion = DefinicionFuncion.Leer( archivoDefinicion );
@@ -75,117 +162,58 @@ namespace TUAssembler.Generacion
         public void LeerPrueba()
         {
             StreamReader lector = new StreamReader( archivoPrueba );
-            LeerSalida( lector );
-            LeerEntrada( lector );
+            LeerParametrosSalida( lector );
+            LeerParametrosEntrada( lector );
         }
-        public string GenerarPrueba()
+        private void LeerParametrosEntrada( StreamReader lector )
         {
-            StringBuilder sb = new StringBuilder();
-            sb.AppendLine( "extern " + Definicion.GenerarPrototipo() + ";" );
-            sb.AppendLine();
-            ArmarFuncionPrueba( ref sb );
-            return sb.ToString();
-        }
-        private void ArmarFuncionPrueba( ref StringBuilder sb )
-        {
-            sb.AppendLine( " void main()" );
-            sb.AppendLine( "{" );
-            sb.AppendLine();
-            sb.AppendLine("//------------Parametros------------");
-            sb.AppendLine();
-            DeclararParametros( ref sb );
-            sb.AppendLine();
-            sb.AppendLine("//------------Instanciación------------");
-            sb.AppendLine();
-            InstanciarParametros( ref sb );
-            sb.AppendLine();
-            sb.AppendLine("//------------LlamadaFuncion------------");
-            sb.AppendLine();
-            LlamarFuncionAProbar( ref sb );
-            sb.AppendLine();
-            sb.AppendLine("//------------Comparacion de valores------------");
-            sb.AppendLine();
-            CompararValoresDevueltos( ref sb );
-            sb.AppendLine();
-            sb.AppendLine( "}" );
-        }
-        private void CompararValoresDevueltos( ref StringBuilder sb )
-        {
-            
-        }
-        private void InstanciarParametros( ref StringBuilder sb )
-        {
-            string instanciacion;
-            int cuantosParam = Definicion.DefParametrosEntrada.Length;
-            
-            instanciacion = Definicion.DefParametroSalida.Instanciar(Prueba.Salida);
-            
-            for(int i=0; i<cuantosParam; i++ )
-            {
-                instanciacion = Definicion.DefParametrosEntrada[i].Instanciar(Prueba.Entrada[i]);
-                sb.AppendLine(instanciacion);
-            }            
-        }
-        private void LlamarFuncionAProbar( ref StringBuilder sb )
-        {
-            
-        }
-        
-        private void DeclararParametros( ref StringBuilder sb )
-        {            
-            string declaracion;
-            
-            declaracion = Definicion.DefParametroSalida.Declarar();
-            sb.AppendLine(declaracion);                
-            
-            foreach( DefParametro defParam in Definicion.DefParametrosEntrada )
-            {
-                declaracion = defParam.Declarar();                
-                sb.AppendLine( declaracion );                
-            }                        
-        }
-        private void LeerEntrada( StreamReader lector )
-        {
-            DefParametro[] defDefParametros;
+            DefParametro[] defParametros;
             string linea;
             int i = 0;
 
-            defDefParametros = Definicion.DefParametrosEntrada;
-            Prueba.Entrada = new Parametro[defDefParametros.Length];
+            defParametros = Definicion.DefParametrosEntrada;
+            Prueba.ParametrosEntrada = new Parametro[defParametros.Length];
 
-            foreach( DefParametro defParametro in defDefParametros )
+            foreach( DefParametro defParametro in defParametros )
             {
                 linea = lector.ReadLine();
                 if( linea==string.Empty )
                     throw new Exception( Mensajes.CantidadParametrosEntradaNoCoincideConDefinicion );
-                Prueba.Entrada[i] = ObtenerParametro( linea, defParametro );
+
+                Prueba.ParametrosEntrada[i] = ObtenerParametro( linea, defParametro );
                 i++;
             }
         }
-        private void LeerSalida( StreamReader lector )
+        private void LeerParametrosSalida( StreamReader lector )
         {
-            DefParametro[] defDefParametros, defDefParametrosEntrada;
+            DefParametro[] defParametros, defParametrosSoES;
             string linea;
             int i, cuantos;
 
-            //-----------------------Obtengo parametros de salida y los de ES o S
+            //Obtengo la definicion de los parametros de salida y los de ES o S
+            //defParametrosSoES queda como defParametrosSoES[0] la definicion del parametro que devuelve la funcion
+            //defParametrosSoES queda como defParametrosSoES[i] i>0, la definicion del i-esimo parametro de Salida o ES que toma la funcion.
             cuantos = Definicion.CuantosParametrosESoS();
-            defDefParametros = new DefParametro[cuantos + 1];
-            defDefParametros[0] = Definicion.DefParametroSalida;
-            defDefParametrosEntrada = Definicion.ObtenerParametrosESoS();
+            defParametros = new DefParametro[cuantos + 1];
+            defParametros[0] = Definicion.DefParametroSalida;
+            defParametrosSoES = Definicion.ObtenerDefParametrosESoS();
 
             for( i = 1; i < cuantos + 1; i++ )
-                defDefParametros[i] = defDefParametrosEntrada[i];
-            //-----------------------Obtengo parametros de salida y los de ES o S
+                defParametros[i] = defParametrosSoES[i - 1];
 
-            Prueba.Salida = new Parametro[defDefParametros.Length];
+            //Obtengo los parametros de salida y los de ES o S
+            //Prueba.ParametrosSalida queda como Prueba.ParametrosSalida[0] el parametro que tiene que devolver la funcion
+            //Prueba.ParametrosSalida queda como Prueba.ParametrosSalida[i] i>0, el parametro i-esimo de Salida o ES que toma la funcion.
+            Prueba.ParametrosSalida = new Parametro[defParametros.Length];
 
-            foreach( DefParametro defParametro in defDefParametros )
+            i = 0;
+            foreach( DefParametro defParametro in defParametros )
             {
                 linea = lector.ReadLine();
                 if( linea==string.Empty )
                     throw new Exception( Mensajes.CantidadParametrosEntradaNoCoincideConDefinicion );
-                Prueba.Salida[i] = ObtenerParametro( linea, defParametro );
+
+                Prueba.ParametrosSalida[i] = ObtenerParametro( linea, defParametro );
                 i++;
             }
         }
@@ -198,13 +226,15 @@ namespace TUAssembler.Generacion
             if( defParam.EsMatriz )
             {
                 paramMatriz = new ParamMatriz( defParam.CantFilas, defParam.CantColumnas );
-                paramMatriz.Leer( linea, defParam.Tipo ); //Lee la salida y verifica que los parametros sean del tipo valido.
+                paramMatriz.Leer( linea, defParam.Tipo );
+                //Lee la salida y verifica que los parametros sean del tipo valido.
                 salida = paramMatriz;
             }
             if( defParam.EsVector )
             {
                 paramVector = new ParamVector( defParam.Longitud );
-                paramVector.Leer( linea, defParam.Tipo ); //Lee la salida y verifica que los parametros sean del tipo valido.
+                paramVector.Leer( linea, defParam.Tipo );
+                //Lee la salida y verifica que los parametros sean del tipo valido.
                 salida = paramVector;
             }
             if( defParam.EsElemento )
@@ -214,8 +244,11 @@ namespace TUAssembler.Generacion
                     throw new Exception( Mensajes.CantidadDeParametrosNoCoincidenConDefinicion );
                 salida = new Elem( parametros[0] );
             }
+            salida.Definicion = defParam;
             return salida;
         }
+        #endregion
+
         #endregion
 
         #region Constructor

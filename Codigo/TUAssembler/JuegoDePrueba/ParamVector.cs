@@ -4,7 +4,7 @@ using TUAssembler.Definicion;
 namespace TUAssembler.JuegoDePrueba
 {
     [Serializable()]
-    public class ParamVector : Parametro
+    public class ParamVector: Parametro
     {
         #region Variables miembro
         private Elem[] elem;
@@ -22,14 +22,13 @@ namespace TUAssembler.JuegoDePrueba
                 elem = value;
             }
         }
-        
-        public Elem this[int indice]
+
+        public Elem this[ int indice ]
         {
             get
-        
-    {
-        return Elementos[indice];
-    }
+            {
+                return Elementos[indice];
+            }
             set
             {
                 Elementos[indice] = value;
@@ -39,8 +38,8 @@ namespace TUAssembler.JuegoDePrueba
 
         #region Constructores
         public ParamVector( int longitud )
-        {            
-            Elementos = new Elem[longitud];                        
+        {
+            Elementos = new Elem[longitud];
         }
         #endregion
 
@@ -48,19 +47,19 @@ namespace TUAssembler.JuegoDePrueba
         {
             int longitud;
             string[] parametros;
-            
+
             longitud = Elementos.Length;
             parametros = linea.Split( ' ' );
-            if (parametros.Length != longitud )
-                throw new Exception(Mensajes.CantidadDeParametrosNoCoincidenConDefinicion);
-            
-            for (int i = 0; i < longitud; i++)
-            {                    
-                Elem elem = new Elem(parametros[i]);
-                if (!elem.TipoCorrecto(tipo))
-                    throw new Exception(Mensajes.TipoIncorrectoVector(i));
+            if( parametros.Length!=longitud )
+                throw new Exception( Mensajes.CantidadDeParametrosNoCoincidenConDefinicion );
+
+            for( int i = 0; i < longitud; i++ )
+            {
+                Elem elem = new Elem( parametros[i] );
+                if( !elem.TipoCorrecto( tipo ) )
+                    throw new Exception( Mensajes.TipoIncorrectoVector( i ) );
                 Elementos[i] = elem;
-            }                    
+            }
         }
     }
 }

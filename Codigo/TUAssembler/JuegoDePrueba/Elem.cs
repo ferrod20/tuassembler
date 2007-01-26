@@ -1,6 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Text;
 using TUAssembler.Definicion;
 
 namespace TUAssembler.JuegoDePrueba
@@ -34,33 +31,33 @@ namespace TUAssembler.JuegoDePrueba
             bool salida = false;
             switch( tipo )
             {
-                case Tipo.UInt8:                    
-                case Tipo.UInt16:                    
-                case Tipo.UInt32:                    
+                case Tipo.UInt8:
+                case Tipo.UInt16:
+                case Tipo.UInt32:
                 case Tipo.UInt64:
                     salida = MA.SoloEnteros( elem );
                     break;
-                    
-                case Tipo.Int8:                    
-                case Tipo.Int16:                    
-                case Tipo.Int32:                    
+
+                case Tipo.Int8:
+                case Tipo.Int16:
+                case Tipo.Int32:
                 case Tipo.Int64:
-                    salida = MA.SoloEnterosConSigno(elem);
+                    salida = MA.SoloEnterosConSigno( elem );
                     break;
-                    
-                case Tipo.Float32:                    
+
+                case Tipo.Float32:
                 case Tipo.Float64:
-                    salida = MA.EsPtoFlotante(elem);
+                    salida = MA.EsPtoFlotante( elem );
                     break;
-                    
+
                 case Tipo.Booleano:
-                    salida = MA.EsBool(elem);
+                    salida = MA.EsBool( elem );
                     break;
-                    
+
                 case Tipo.Char:
                     salida = elem.Length==1;
                     break;
-                    
+
                 case Tipo.CadenaC:
                     salida = MA.EntreComillas( elem );
                     break;
@@ -69,7 +66,7 @@ namespace TUAssembler.JuegoDePrueba
         }
         public bool UltimoElementoUno()
         {
-            return elem[ elem.Length - 1] =='1';
+            return elem[elem.Length - 1]=='1';
         }
     }
 }

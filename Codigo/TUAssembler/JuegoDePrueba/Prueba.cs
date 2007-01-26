@@ -1,4 +1,5 @@
 using System;
+using TUAssembler.Definicion;
 
 namespace TUAssembler.JuegoDePrueba
 {
@@ -6,37 +7,64 @@ namespace TUAssembler.JuegoDePrueba
     public class Prueba
     {
         #region Variables miembro
-        private Parametro[] entrada;
-        private Parametro[] salida;
+        private Parametro[] parametrosEntrada;
+        private Parametro[] parametrosSalida;
         #endregion
 
         #region Propiedades
-        public Parametro[] Entrada
+        public Parametro[] ParametrosEntrada
         {
             get
             {
-                return entrada;
+                return parametrosEntrada;
             }
             set
             {
-                entrada = value;
+                parametrosEntrada = value;
             }
         }
 
-        public Parametro[] Salida
+        public Parametro[] ParametrosSalida
         {
             get
             {
-                return salida;
+                return parametrosSalida;
             }
             set
             {
-                salida = value;
+                parametrosSalida = value;
             }
         }
         #endregion
 
         #region Métodos
         #endregion
+
+        public int CuantosParametrosSonDeESoS()
+        {
+            int cuantos = 0;
+            foreach( Parametro parametro in ParametrosEntrada )
+                if( parametro.Definicion.EntradaSalida==EntradaSalida.S ||
+                    parametro.Definicion.EntradaSalida==EntradaSalida.ES )
+                    cuantos++;
+            return cuantos;
+        }
+        public Parametro[] ObtenerParametrosESoS()
+        {
+            Parametro[] salida;
+            Parametro param;
+            int cuantos = CuantosParametrosSonDeESoS();
+            salida = new Parametro[cuantos];
+
+            for( int i = 0; i < ParametrosEntrada.Length; i++ )
+            {
+                param = ParametrosEntrada[i];
+                if( param.Definicion.EntradaSalida==EntradaSalida.S || param.Definicion.EntradaSalida==EntradaSalida.ES
+                    )
+                    salida[i] = param;
+            }
+
+            return salida;
+        }
     }
 }
