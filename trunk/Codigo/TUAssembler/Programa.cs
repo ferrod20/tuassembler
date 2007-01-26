@@ -1,8 +1,8 @@
 using System;
 using System.IO;
 using System.Xml.Serialization;
-using TUAssembler.Definicion;
 using TUAssembler.Compilacion;
+using TUAssembler.Definicion;
 using TUAssembler.Generacion;
 
 namespace TUAssembler
@@ -13,16 +13,19 @@ namespace TUAssembler
         {
             try
             {
-                Generador generador = new Generador("archDef.xml", "archPrueba.jdp");
+                StreamWriter escritor = new StreamWriter( "codigoProbador.c" );
+                Generador generador = new Generador( "archDef.xml", "archPrueba.jdp" );
                 generador.LeerDefinicion();
                 generador.LeerPrueba();
+                generador.GenerarPrueba( ref escritor );
+                escritor.Close();
+                CompilarYEjecutar();                
             }
-            catch( Exception e)
+            catch( Exception e )
             {
-                Console.Write(e.Message);    
-            }            
+                Console.Write( e.Message );
+            }
         }
-
         private static void EscribirPruebaXml()
         {
             /*
@@ -48,7 +51,7 @@ namespace TUAssembler
         private static string ExcepcionCompleta( Exception e )
         {
             string salida = string.Empty;
-            while (e != null)
+            while( e!=null )
             {
                 salida += e.Message;
                 e = e.InnerException;
@@ -74,7 +77,7 @@ namespace TUAssembler
                 archivo = e.Message;
             }
         }
-        public static void Compilar()
+        public static void CompilarYEjecutar()
         {
             string salida;
             CompiladorAsm compiladorAsm;
@@ -85,23 +88,23 @@ namespace TUAssembler
             {
                 //Genera el .o del assembler
                 //nasm -f elf -o tpbmp.o tpbmp.asm -Dsistema=$(miSistema)                                
-                compiladorAsm = new CompiladorAsm( "C:\\F2\\Orga2", "nasm.exe" );
-                compiladorAsm.Compilar( "-fcoff", "C:\\F2\\Orga2\\funcionAsm.asm" );
+                compiladorAsm = new CompiladorAsm( "", "nasm.exe" );
+                compiladorAsm.Compilar( "-fcoff", "funcionAsm.asm" );
 
                 //Genera el .o del C
                 compiladorC = new CompiladorC( "", "gcc.exe" );
-                compiladorC.Compilar( "-c -o C:\\F2\\Orga2\\funcionC.o", "C:\\F2\\Orga2\\funcionC.c" );
+                compiladorC.Compilar("-c -o codigoProbador.o", "codigoProbador.c");
 
                 //gcc C:/F2/Orga2/main.o C:/F2/Orga2/tpbmp.o -o C:/F2/Orga2/bmpmnsj
                 //Genera un .exe resultado de enlazar los 2 anteriores.
                 compilador = new Compilador( "", "gcc.exe", "salida.txt", "error.txt" );
-                
-                string[] archivos = new string[2];
-                archivos[1] = "C:\\F2\\Orga2\\funcionC.o";
-                archivos[0] = "C:\\F2\\Orga2\\funcionAsm.o";
-                compilador.Enlazar( "C:\\F2\\Orga2\\e.exe", archivos );
 
-                Ejecutor.Ejecutar( "C:\\F2\\Orga2\\e.exe" );
+                string[] archivos = new string[2];
+                archivos[1] = "codigoProbador.o";
+                archivos[0] = "funcionAsm.o";
+                compilador.Enlazar( "prueba.exe", archivos );
+
+                Ejecutor.Ejecutar("prueba.exe");
             }
             catch( Exception e )
             {

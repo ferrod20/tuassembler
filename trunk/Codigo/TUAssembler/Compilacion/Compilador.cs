@@ -57,14 +57,14 @@ namespace TUAssembler.Compilacion
         #endregion
 
         #region Métodos
-        public void Enlazar(string ejecutable, params string[] archivosObjeto)
+        public void Enlazar( string ejecutable, params string[] archivosObjeto )
         {
             string comando;
             comando = "-o " + ejecutable;
-            foreach (string archivo in archivosObjeto)
+            foreach( string archivo in archivosObjeto )
                 comando += " " + archivo;
 
-            Compilar(comando);
+            Compilar( comando );
         }
         public void Compilar( string comando )
         {

@@ -39,6 +39,7 @@
     <Compile Include="Definicion\DefinicionFuncion.cs" />
     <Compile Include="Definicion\DefParametro.cs" />
     <Compile Include="Compilacion\Ejecutor.cs" />
+    <Compile Include="Enums.cs" />
     <Compile Include="Generacion\Generador.cs" />
     <Compile Include="JuegoDePrueba\Elem.cs" />
     <Compile Include="JuegoDePrueba\ParamMatriz.cs" />
