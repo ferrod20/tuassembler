@@ -1,6 +1,4 @@
-
 using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Xml.Serialization;
 using TUAssembler.Definicion;
@@ -20,22 +18,39 @@ namespace TUAssembler
         [XmlAttribute()]
         public string Nombre
         {
-            get { return nombre; }
-            set { nombre = value; }
+            get
+            {
+                return nombre;
+            }
+            set
+            {
+                nombre = value;
+            }
         }
 
         public DefParametro DefParametroSalida
         {
-            get { return parametroSalida; }
-            set { parametroSalida = value; }
+            get
+            {
+                return parametroSalida;
+            }
+            set
+            {
+                parametroSalida = value;
+            }
         }
 
         public DefParametro[] DefParametrosEntrada
         {
-            get { return parametrosEntrada; }
-            set { parametrosEntrada = value; }
+            get
+            {
+                return parametrosEntrada;
+            }
+            set
+            {
+                parametrosEntrada = value;
+            }
         }
-
         #endregion
 
         public string GenerarPrototipo()
@@ -43,36 +58,34 @@ namespace TUAssembler
             string prototipo;
             prototipo = parametroSalida.ToString();
             prototipo += " " + nombre + "( ";
-            foreach ( DefParametro paramEntrada in parametrosEntrada)            
+            foreach( DefParametro paramEntrada in parametrosEntrada )
                 prototipo += paramEntrada + ", ";
 
-            prototipo.Remove(prototipo.Length - 2, 2);//Elimino la última coma.
+            prototipo = prototipo.Remove( prototipo.Length - 2, 2 );
             prototipo += " )";
 
             return prototipo;
         }
-
-        public static DefinicionFuncion Leer(string archivo)
+        public static DefinicionFuncion Leer( string archivo )
         {
             XmlSerializer xml;
-            DefinicionFuncion defFuncion = null;            
+            DefinicionFuncion defFuncion = null;
             FileStream fs;
             try
             {
-                fs = new FileStream(archivo, FileMode.Open);
-                xml = new XmlSerializer(typeof(DefinicionFuncion));
-                defFuncion = (DefinicionFuncion)xml.Deserialize(fs);
+                fs = new FileStream( archivo, FileMode.Open );
+                xml = new XmlSerializer( typeof( DefinicionFuncion ) );
+                defFuncion = (DefinicionFuncion) xml.Deserialize( fs );
             }
-            catch (Exception e)
+            catch( Exception e )
             {
-                archivo = e.Message;
+                throw new Exception( Mensajes.ErrorLecturaDefinicion( archivo, e ) );
             }
             return defFuncion;
         }
-
         public void CrearInstanciaDePrueba()
         {
-            nombre = "funcion1";
+            //            nombre = "funcion1";
             parametroSalida = new DefParametro();
             parametroSalida.TipoDeAcceso = ValorOReferencia.R;
             DefParametroSalida.EntradaSalida = EntradaSalida.ES;
@@ -81,13 +94,13 @@ namespace TUAssembler
             DefParametro parametroEntrada1 = new DefParametro();
             parametroEntrada1.TipoDeAcceso = ValorOReferencia.V;
             parametrosEntrada = new DefParametro[1];
-            parametrosEntrada[0] = parametroEntrada1;                        
+            parametrosEntrada[0] = parametroEntrada1;
         }
         public int CuantosParametrosESoS()
         {
             int cuantos = 0;
-            foreach (DefParametro defParam in DefParametrosEntrada)
-                if (defParam.EntradaSalida == EntradaSalida.ES || defParam.EntradaSalida == EntradaSalida.S)
+            foreach( DefParametro defParam in DefParametrosEntrada )
+                if( defParam.EntradaSalida==EntradaSalida.ES || defParam.EntradaSalida==EntradaSalida.S )
                     cuantos++;
             return cuantos;
         }
@@ -95,8 +108,8 @@ namespace TUAssembler
         {
             DefParametro[] defParametros = new DefParametro[CuantosParametrosESoS()];
             int i = 0;
-            foreach (DefParametro defParam in DefParametrosEntrada)
-                if (defParam.EntradaSalida == EntradaSalida.ES || defParam.EntradaSalida == EntradaSalida.S)
+            foreach( DefParametro defParam in DefParametrosEntrada )
+                if( defParam.EntradaSalida==EntradaSalida.ES || defParam.EntradaSalida==EntradaSalida.S )
                 {
                     defParametros[i] = defParam;
                     i++;

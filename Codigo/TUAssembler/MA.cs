@@ -1,3 +1,5 @@
+using System;
+
 namespace TUAssembler
 {
     /// <summary>
@@ -65,6 +67,16 @@ namespace TUAssembler
         public static bool EntreComillas( string cadena )
         {
             return cadena[0]=='"' && cadena[cadena.Length - 1]=='"';
+        }
+        public static string ExcepcionCompleta( Exception e )
+        {
+            string salida = string.Empty;
+            while( e!=null )
+            {
+                salida += e.Message;
+                e = e.InnerException;
+            }
+            return salida;
         }
     }
 }

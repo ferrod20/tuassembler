@@ -37,27 +37,22 @@ namespace TUAssembler.JuegoDePrueba
                 case Tipo.UInt64:
                     salida = MA.SoloEnteros( elem );
                     break;
-
                 case Tipo.Int8:
                 case Tipo.Int16:
                 case Tipo.Int32:
                 case Tipo.Int64:
                     salida = MA.SoloEnterosConSigno( elem );
                     break;
-
                 case Tipo.Float32:
                 case Tipo.Float64:
                     salida = MA.EsPtoFlotante( elem );
                     break;
-
                 case Tipo.Booleano:
                     salida = MA.EsBool( elem );
                     break;
-
                 case Tipo.Char:
                     salida = elem.Length==1;
                     break;
-
                 case Tipo.CadenaC:
                     salida = MA.EntreComillas( elem );
                     break;

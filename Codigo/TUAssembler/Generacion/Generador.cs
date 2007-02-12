@@ -71,17 +71,92 @@ namespace TUAssembler.Generacion
         #region Generacion de codigo para la prueba
         public void GenerarPrueba( ref StreamWriter escritor )
         {
+            escritor.WriteLine( "#include <stdio.h>" );
+            escritor.WriteLine( "#define bool int" );
+            escritor.WriteLine( "#define true 1" );
+            escritor.WriteLine( "#define false 0" );
             EscribirReferenciaExternaDeLaFuncion( ref escritor );
-            escritor.WriteLine();
+            EscribirMallocFreeFunctions( ref escritor );
             EscribirFuncionPrueba( ref escritor );
         }
         private void EscribirReferenciaExternaDeLaFuncion( ref StreamWriter escritor )
         {
             escritor.WriteLine( "extern " + Definicion.GenerarPrototipo() + ";" );
         }
+        private void EscribirMallocFreeFunctions( ref StreamWriter escritor )
+        {
+            //El uso es el siguiente:
+            // - La funcion a probar debe llamar a malloc2 con la cantidad de bytes que se quieren pedir.
+            // - Cuando ya no necesite la memoria llamara a free2 pasandole de parametro el puntero devuelto por malloc2.
+            // - Desde fuera de la funcion se liberara realmente toda la memoria pedida llamando a free2all.
+            // Ej:
+            // void prueba(){
+            //    char* c = malloc2(10);
+            //    printf("Hola!");
+            //    free2(c);
+            // }
+            //
+            // int main(){
+            //    prueba();
+            //    free2all();
+            //    return 0;
+            // }
+            escritor.WriteLine();
+            escritor.WriteLine( "int cantPedidosMemoria = 0;" );
+            escritor.WriteLine( "char* pedidos[sizeof(int)*10000];" );
+            escritor.WriteLine( "int tamanioPedidos[sizeof(int)*10000];" );
+            escritor.WriteLine( "bool fueLiberado[sizeof(bool)*10000];" );
+            escritor.WriteLine();
+            escritor.WriteLine( "char* malloc2(int cantBytes){" );
+            escritor.WriteLine( "   int i;" );
+            escritor.WriteLine( "   char* ret_value;" );
+            escritor.WriteLine(
+                "   ret_value = malloc(cantBytes + 8 + 8);	//8 bytes antes y 8 bytes despues para controlar que no se pase de la longitud del buffer" );
+            escritor.WriteLine( "   pedidos[cantPedidosMemoria] = ret_value;" );
+            escritor.WriteLine( "   tamanioPedidos[cantPedidosMemoria] = cantBytes;" );
+            escritor.WriteLine( "   fueLiberado[cantPedidosMemoria] = false;" );
+            escritor.WriteLine( "   for(i=0; i<8; i++){" );
+            escritor.WriteLine( "       ((char*)ret_value)[i] = 'A';" );
+            escritor.WriteLine( "       ((char*)ret_value)[cantBytes + 8 + i] = 'A';" );
+            escritor.WriteLine( "   }" );
+            escritor.WriteLine( "   cantPedidosMemoria++;" );
+            escritor.WriteLine( "   return ret_value + 8;" );
+            escritor.WriteLine( "}" );
+            escritor.WriteLine();
+            escritor.WriteLine( "void free2(char* punteroABloque)" );
+            escritor.WriteLine( "{" );
+            escritor.WriteLine( "   int pos, i;" );
+            escritor.WriteLine( "   for(pos=0; pos<cantPedidosMemoria && pedidos[pos]!=punteroABloque-8; pos++);" );
+            escritor.WriteLine( "       if(pedidos[pos] !=punteroABloque-8)" );
+            escritor.WriteLine( "           printf(\"Se intento liberar una posicion de memoria no valida\");" );
+            escritor.WriteLine( "       else{" );
+            escritor.WriteLine( "           fueLiberado[pos] = true;" );
+            escritor.WriteLine( "           for (i = 0; i < 8; i++)" );
+            escritor.WriteLine(
+                "               if(((char*)punteroABloque-8)[i] != 'A'|| ((char*)punteroABloque)[tamanioPedidos[pos] + i] != 'A'){" );
+            escritor.WriteLine( "                   printf(\"Se ha escrito fuera del buffer\");" );
+            escritor.WriteLine( "                   break;" );
+            escritor.WriteLine( "               }" );
+            escritor.WriteLine( "       }" );
+            escritor.WriteLine( "}" );
+            escritor.WriteLine();
+            escritor.WriteLine( "void free2all(){" );
+            escritor.WriteLine( "   int i;" );
+            escritor.WriteLine( "   int bytesNoLiberados = 0;" );
+            escritor.WriteLine( "   for(i=0; i<cantPedidosMemoria; i++){" );
+            escritor.WriteLine( "       free(pedidos[i]);" );
+            escritor.WriteLine( "       if(fueLiberado[i]== false)" );
+            escritor.WriteLine( "           bytesNoLiberados = bytesNoLiberados + tamanioPedidos[i];" );
+            escritor.WriteLine( "   }" );
+            escritor.WriteLine( "   if(bytesNoLiberados >0)" );
+            escritor.WriteLine( "       printf(\"No se han liberado %d bytes de memoria\", bytesNoLiberados);" );
+            escritor.WriteLine( "}" );
+            escritor.WriteLine();
+        }
         private void EscribirFuncionPrueba( ref StreamWriter escritor )
         {
-            escritor.WriteLine( " void main()" );
+            escritor.WriteLine();
+            escritor.WriteLine( "int main()" );
             escritor.WriteLine( "{" );
             escritor.WriteLine();
             escritor.WriteLine( "/*------------Parametros-------------------------*/" );
@@ -100,22 +175,25 @@ namespace TUAssembler.Generacion
             escritor.WriteLine();
             CompararValoresDevueltos( ref escritor );
             escritor.WriteLine();
+            escritor.WriteLine( "return 0;" );
+            escritor.WriteLine();
             escritor.WriteLine( "}" );
         }
         private void CompararValoresDevueltos( ref StreamWriter escritor )
-        {           
+        {
             //Comparo los valores de los parametros de salida y los de ES
-            foreach( Parametro param in Prueba.ParametrosSalida  )
-                if( param.EsDeSalidaOEntradaSalida )    
-                    param.CompararValor( ref escritor );                                                
+            foreach( Parametro param in Prueba.ParametrosSalida )
+                //                if( param.EsDeSalidaOEntradaSalida )
+                param.CompararValor( ref escritor );
+            //                else
         }
         private void InstanciarParametros( ref StreamWriter escritor )
         {
             string instanciacion;
 
             //Instancio el valor que debe devolver la funcion para compararlo despues
-            instanciacion = Prueba.ParametrosSalida[0].Instanciar();
-            escritor.WriteLine( instanciacion );
+            //instanciacion = Prueba.ParametrosSalida[0].Instanciar();
+            //escritor.WriteLine( instanciacion );
 
             //Instancio el valor de cada uno de los parametros de ParametrosEntrada que son de salida para pasarselo a la funcion.
             foreach( Parametro param in Prueba.ParametrosEntrada )
@@ -127,25 +205,20 @@ namespace TUAssembler.Generacion
         }
         private void LlamarFuncionAProbar( ref StreamWriter escritor )
         {
-            string llamada;
-
-            llamada = Definicion.DefParametroSalida.Nombre + " = " +
-                Definicion.Nombre + "( ";
+            string llamada = "";
+            if( Definicion.DefParametroSalida!=null )
+                llamada = Definicion.DefParametroSalida.Nombre + " = ";
+            llamada += Definicion.Nombre + "( ";
             foreach( Parametro param in Prueba.ParametrosEntrada )
                 llamada += param.Definicion.Nombre + ", ";
-
-            llamada = llamada.Remove( llamada.Length - 2, 2 ); //Elimino la última coma.)
-
-            llamada += " );";
+            llamada = llamada.Remove( llamada.Length - 2, 2 ) + " );"; //Elimino la última coma.)
             escritor.WriteLine( llamada );
         }
         private void DeclararParametros( ref StreamWriter escritor )
         {
             string declaracion;
-
             declaracion = Prueba.ParametrosSalida[0].Declarar();
             escritor.WriteLine( declaracion );
-
             foreach( Parametro param in Prueba.ParametrosEntrada )
             {
                 declaracion = param.Declarar();
@@ -162,26 +235,34 @@ namespace TUAssembler.Generacion
         public void LeerPrueba()
         {
             StreamReader lector = new StreamReader( archivoPrueba );
-            LeerParametrosSalida( lector );
-            LeerParametrosEntrada( lector );
+            try
+            {
+                LeerParametrosSalida( lector );
+            }
+            catch( Exception e )
+            {
+                throw new Exception( Mensajes.ErrorAlLeerParametroDeSalida( e ) );
+            }
+            try
+            {
+                LeerParametrosEntrada( lector );
+            }
+            catch( Exception e )
+            {
+                throw new Exception( Mensajes.ErrorAlLeerParametroDeEntrada( e ) );
+            }
         }
         private void LeerParametrosEntrada( StreamReader lector )
         {
-            DefParametro[] defParametros;
-            string linea;
-            int i = 0;
-
-            defParametros = Definicion.DefParametrosEntrada;
+            DefParametro[] defParametros = Definicion.DefParametrosEntrada;
             Prueba.ParametrosEntrada = new Parametro[defParametros.Length];
 
-            foreach( DefParametro defParametro in defParametros )
+            for( int i = 0; i < Prueba.ParametrosEntrada.Length; i++ )
             {
-                linea = lector.ReadLine();
+                string linea = lector.ReadLine();
                 if( linea==string.Empty )
                     throw new Exception( Mensajes.CantidadParametrosEntradaNoCoincideConDefinicion );
-
-                Prueba.ParametrosEntrada[i] = ObtenerParametro( linea, defParametro );
-                i++;
+                Prueba.ParametrosEntrada[i] = ObtenerParametro( linea, defParametros[i] );
             }
         }
         private void LeerParametrosSalida( StreamReader lector )
@@ -212,7 +293,6 @@ namespace TUAssembler.Generacion
                 linea = lector.ReadLine();
                 if( linea==string.Empty )
                     throw new Exception( Mensajes.CantidadParametrosEntradaNoCoincideConDefinicion );
-
                 Prueba.ParametrosSalida[i] = ObtenerParametro( linea, defParametro );
                 i++;
             }
