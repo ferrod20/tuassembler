@@ -58,25 +58,25 @@ int main()
 
 /*------------Parametros-------------------------*/
 
-char* CadenaC53740117;
-char* CadenaC16020047;
+char* CadenaC65337010;
+char* CadenaC61571734;
 
 /*------------Instanciacion----------------------*/
 
-CadenaC16020047 = "3456";
+CadenaC61571734 = "3456";
 
 /*------------LlamadaFuncion---------------------*/
 
-CadenaC53740117 = funcion1( CadenaC16020047 );
+CadenaC65337010 = funcion1( CadenaC61571734 );
 
 /*------------Comparacion de valores-------------*/
 
 
-char* AUXCadenaC53740117 = "100";
-int ITCadenaC53740117;
-for(ITCadenaC53740117=0;AUXCadenaC53740117[ITCadenaC53740117]!=0 && CadenaC53740117[ITCadenaC53740117]!=0 ;ITCadenaC53740117++)
-if ( CadenaC53740117[ITCadenaC53740117] != AUXCadenaC53740117[ITCadenaC53740117] )
-    printf( "El valor de la cadena CadenaC53740117: de la posicion %n es distinto al valor esperado: %c ",ITCadenaC53740117, AUXCadenaC53740117[ITCadenaC53740117]);
+char* AUXCadenaC65337010 = "100";
+int ITCadenaC65337010;
+for(ITCadenaC65337010=0;AUXCadenaC65337010[ITCadenaC65337010]!=0 && CadenaC65337010[ITCadenaC65337010]!=0 ;ITCadenaC65337010++)
+if ( CadenaC65337010[ITCadenaC65337010] != AUXCadenaC65337010[ITCadenaC65337010] )
+    printf( "El valor de la cadena CadenaC65337010: de la posicion %n es distinto al valor esperado: %c ",ITCadenaC65337010, AUXCadenaC65337010[ITCadenaC65337010]);
 
 
 return 0;

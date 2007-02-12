@@ -1,5 +1,6 @@
 using System;
 using System.CodeDom.Compiler;
+using System.IO;
 
 namespace TUAssembler.Compilacion
 {
@@ -14,6 +15,8 @@ namespace TUAssembler.Compilacion
 
             try
             {
+                File.Delete( salida );
+                File.Delete(error);
                 Executor.ExecWaitWithCapture( comando, archivosTemporales, ref salida, ref error );
             }
             catch( Exception e )
