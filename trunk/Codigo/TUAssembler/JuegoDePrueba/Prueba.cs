@@ -38,8 +38,6 @@ namespace TUAssembler.JuegoDePrueba
         #endregion
 
         #region Métodos
-        #endregion
-
         public int CuantosParametrosSonDeESoS()
         {
             int cuantos = 0;
@@ -51,10 +49,8 @@ namespace TUAssembler.JuegoDePrueba
         }
         public Parametro[] ObtenerParametrosESoS()
         {
-            Parametro[] salida;
             Parametro param;
-            int cuantos = CuantosParametrosSonDeESoS();
-            salida = new Parametro[cuantos];
+            Parametro[] salida = new Parametro[CuantosParametrosSonDeESoS()];
 
             for( int i = 0; i < ParametrosEntrada.Length; i++ )
             {
@@ -63,8 +59,8 @@ namespace TUAssembler.JuegoDePrueba
                     )
                     salida[i] = param;
             }
-
             return salida;
         }
+        #endregion
     }
 }

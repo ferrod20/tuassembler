@@ -1,3 +1,4 @@
+using System;
 using System.CodeDom.Compiler;
 
 namespace TUAssembler.Compilacion
@@ -6,10 +7,19 @@ namespace TUAssembler.Compilacion
     {
         public static void Ejecutar( string comando )
         {
+            string salida = "salidaEjecucion.txt";
+            string error = "errorEjecucion.txt";
+
             TempFileCollection archivosTemporales = new TempFileCollection();
-            string salida = "salida.txt";
-            string error = "error.txt";
-            Executor.ExecWaitWithCapture( comando, archivosTemporales, ref salida, ref error );            
+
+            try
+            {
+                Executor.ExecWaitWithCapture( comando, archivosTemporales, ref salida, ref error );
+            }
+            catch( Exception e )
+            {
+                throw new Exception( Mensajes.ErrorAlEjecutar( e ) );
+            }
         }
     }
 }

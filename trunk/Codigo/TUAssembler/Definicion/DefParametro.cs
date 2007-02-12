@@ -6,9 +6,6 @@ namespace TUAssembler.Definicion
     [Serializable()]
     public class DefParametro
     {
-        private static char Identificador = 'a';
-                            //Se usa para poner atras de la variable, para que no se repitan ( soporta hasta 27 variables distintas; las 27 letras comenzando por 'a' )
-
         #region Variables miembro
         private string nombre;
         private ValorOReferencia tipoDeAcceso;
@@ -110,6 +107,7 @@ namespace TUAssembler.Definicion
             set
             {
                 tipo = value;
+                CrearNombre();
             }
         }
 
@@ -123,6 +121,7 @@ namespace TUAssembler.Definicion
             set
             {
                 esVector = value;
+                CrearNombre();
             }
         }
 
@@ -136,6 +135,7 @@ namespace TUAssembler.Definicion
             set
             {
                 esMatriz = value;
+                CrearNombre();
             }
         }
 
@@ -148,7 +148,22 @@ namespace TUAssembler.Definicion
         }
         #endregion
 
+        #region Constructores
+        public DefParametro()
+        {
+        }
+        #endregion
+
         #region Métodos
+        private void CrearNombre()
+        {
+            Nombre = "";
+            if( EsMatriz )
+                Nombre = "matriz";
+            if( EsVector )
+                Nombre = "vector";
+            Nombre += Tipo.ToString() + GetHashCode().ToString();
+        }
         public override string ToString()
         {
             string salida = string.Empty;
@@ -205,18 +220,6 @@ namespace TUAssembler.Definicion
             return salida;
         }
         #endregion
-
-        #region Constructor
-        public DefParametro()
-        {
-            if( EsMatriz )
-                Nombre = "matriz";
-            if( EsVector )
-                Nombre = "vector";
-            Nombre += Tipo.ToString() + Identificador;
-            Identificador++;
-        }
-        #endregion
     }
 
     [Serializable()]
@@ -235,6 +238,7 @@ namespace TUAssembler.Definicion
         Booleano,
         Char,
         CadenaC,
+        CadenaPascal
     }
 
     [Serializable()]

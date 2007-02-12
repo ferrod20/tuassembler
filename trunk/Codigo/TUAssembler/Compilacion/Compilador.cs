@@ -11,15 +11,37 @@ namespace TUAssembler.Compilacion
         private string nombre;
         private string archivoSalida;
         private string archivoError;
+        private string error;
+        private string salida;
         private TempFileCollection archivosTemporales;
         #endregion
 
         #region Propiedades
+        public string Salida
+        {
+            get
+            {
+                if( salida==null )
+                    ObtenerSalida();
+                return error;
+            }
+        }
+
+        public string Error
+        {
+            get
+            {
+                if( error==null )
+                    ObtenerError();
+                return error;
+            }
+        }
+
         public bool HuboError
         {
             get
             {
-                return ObtenerError().Length > 0;
+                return Error.Length > 0;
             }
         }
 
@@ -69,35 +91,38 @@ namespace TUAssembler.Compilacion
         public void Compilar( string comando )
         {
             string rutaCompleta;
-            string cmd;
+            string cmd = string.Empty;
             int salida = 0;
-
-            rutaCompleta = Path.Combine( directorio, nombre );
-            cmd = "\"" + rutaCompleta + "\" " + comando;
-            File.Delete( archivoSalida );
-            File.Delete( archivoError );
 
             try
             {
+                rutaCompleta = Path.Combine( directorio, nombre );
+                // cmd = "\"" + rutaCompleta + "\" " + comando;
+                cmd = rutaCompleta + " " + comando;
+                BorrarArchivosSalidaYError();
                 salida = Executor.ExecWaitWithCapture( cmd, archivosTemporales, ref archivoSalida, ref archivoError );
             }
             catch( Exception e )
             {
-                archivoSalida = e.Message;
+                throw new Exception( Mensajes.ErrorAlCompilar( this, cmd, e ) );
             }
-
             if( salida!=0 )
-                throw new Exception( ObtenerError() );
+                throw new Exception( Mensajes.ErrorAlCompilar( this, cmd, Error ) );
         }
-        public string ObtenerError()
+        private void ObtenerError()
         {
             StreamReader sr = new StreamReader( archivoError );
-            return sr.ReadToEnd();
+            error = sr.ReadToEnd();
         }
-        public string ObtenerSalida()
+        private void ObtenerSalida()
         {
             StreamReader sr = new StreamReader( archivoSalida );
-            return sr.ReadToEnd();
+            salida = sr.ReadToEnd();
+        }
+        private void BorrarArchivosSalidaYError()
+        {
+            File.Delete( archivoSalida );
+            File.Delete( archivoError );
         }
         #endregion
 

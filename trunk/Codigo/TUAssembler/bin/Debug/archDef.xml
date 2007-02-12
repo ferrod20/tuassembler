@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <DefinicionFuncion Nombre="funcion1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" >
-  <DefParametroSalida TipoDeAcceso="V" Tipo="UInt16" EsVector="false" EsMatriz="false" />
+  <DefParametroSalida TipoDeAcceso="V" Tipo="CadenaC" EsVector="false" EsMatriz="false" />
   <DefParametrosEntrada>
-    <DefParametro TipoDeAcceso="V" Tipo="UInt8" EntradaSalida="ES" EsVector="false" EsMatriz="false" />    
+    <DefParametro TipoDeAcceso="V" Tipo="CadenaC" EntradaSalida="E" EsVector="false" EsMatriz="false" />
   </DefParametrosEntrada>
-</DefinicionFuncion>  
+</DefinicionFuncion>
