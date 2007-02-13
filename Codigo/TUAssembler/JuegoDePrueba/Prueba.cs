@@ -1,4 +1,5 @@
 using System;
+using System.Xml.Serialization;
 using TUAssembler.Definicion;
 
 namespace TUAssembler.JuegoDePrueba
@@ -9,9 +10,23 @@ namespace TUAssembler.JuegoDePrueba
         #region Variables miembro
         private Parametro[] parametrosEntrada;
         private Parametro[] parametrosSalida;
+        private string nombre;
         #endregion
 
         #region Propiedades
+        [XmlAttribute()]
+        public string Nombre
+        {
+            get
+            {
+                return nombre;
+            }
+            set
+            {
+                nombre = value;
+            }
+        }
+
         public Parametro[] ParametrosEntrada
         {
             get

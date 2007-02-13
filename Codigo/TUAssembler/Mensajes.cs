@@ -15,14 +15,14 @@ namespace TUAssembler
         {
             string mensaje = string.Empty;
             mensaje = "Se produjo un error al leer los parámetros de entrada de la función:\n";
-            mensaje += "Descripción: " + MA.ExcepcionCompleta( e ) + "\n\n";
+            mensaje += "Descripción: \n" + MA.ExcepcionCompleta(e) + "\n\n";
             return mensaje;
         }
         public static string ErrorAlLeerParametroDeSalida( Exception e )
         {
             string mensaje = string.Empty;
             mensaje = "Se produjo un error al leer los parámetros de salida de la función:\n";
-            mensaje += "Descripción: " + MA.ExcepcionCompleta( e ) + "\n\n";
+            mensaje += "Descripción: \n" + MA.ExcepcionCompleta( e ) + "\n\n";            
             return mensaje;
         }
         public static string ErrorLecturaDefinicion( string archivo, Exception e )
@@ -30,7 +30,7 @@ namespace TUAssembler
             string mensaje = string.Empty;
             mensaje = "Se produjo un error en la lectura de la definición de la función:\n";
             mensaje += "Archivo: " + archivo + "\n";
-            mensaje += "Descripción: " + MA.ExcepcionCompleta( e ) + "\n\n";
+            mensaje += "Descripción: \n" + MA.ExcepcionCompleta(e) + "\n\n";
             return mensaje;
         }
         public static string ErrorAlEjecutar( Exception e )
@@ -39,7 +39,7 @@ namespace TUAssembler
         }
         public static string ErrorAlEjecutar( string descripcion )
         {
-            return "Error al ejecutar el código probador: " + descripcion;
+            return "Error al ejecutar el código probador: \n" + descripcion;
         }
         public static string ErrorAlCompilar( Compilador compilador, string comando, Exception excepcion )
         {
@@ -56,7 +56,7 @@ namespace TUAssembler
             if( mensaje==string.Empty )
                 mensaje = "Error en enlace: ";
             mensaje += "\nComando: " + comando;
-            mensaje += "\nDescripción: " + descripcion + "\n\n";
+            mensaje += "\nDescripción: \n" + descripcion + "\n\n";
 
             return mensaje;
         }
@@ -70,21 +70,23 @@ namespace TUAssembler
         }
         public static string PrintfValorDistinto( string variable, string valorEsperado )
         {
-            return
-                "printf( \"El valor del parametro " + variable + ":  es distinto al valor esperado: " + valorEsperado +
-                    "\" );";
+            //%10.2f Para los float 10 digitos, 2 de precision
+            string salida = 
+                "printf( \"El valor del parametro " + variable + ":%d es distinto al valor esperado: " + valorEsperado +
+                    "\", "+ variable + ");";
+            salida += "\nprintf( \"\\nDiferencia: %d \", " + variable + "-" + valorEsperado + " );";
+            return salida;
         }
-        /*      public static string PrintfValorDistinto(string variable, string valorEsperado)
-        {
-            return "printf( \"El valor del parametro " + variable + ": %i es distinto al valor esperado: " + valorEsperado + "\", " + valorEsperado + " );";
-        }
-
-*/
+        
         public static string PrintfValorDistintoCadena( string variable, string valorEsperado, int i )
         {
             return
                 "printf( \"El valor de la cadena " + variable + ": de la posicion " + i +
                     " %i es distinto al valor esperado: " + valorEsperado + "\", " + valorEsperado + " );";
         }
+        public static string PrintfPruebaConcluida()
+        {
+            return "printf( \"\\nLa prueba ha concluido con %d errores\", cantErrores ); ";
+        } 
     }
 }

@@ -2,7 +2,7 @@
 #define bool int
 #define true 1
 #define false 0
-extern char* funcion1( char* );
+extern unsigned long int funcion1(  );
 
 int cantPedidosMemoria = 0;
 char* pedidos[sizeof(int)*10000];
@@ -58,26 +58,28 @@ int main()
 
 /*------------Parametros-------------------------*/
 
-char* CadenaC65337010;
-char* CadenaC61571734;
+unsigned long salida;
+int cantErrores = 0;
 
 /*------------Instanciacion----------------------*/
 
-CadenaC61571734 = "3456";
 
 /*------------LlamadaFuncion---------------------*/
 
-CadenaC65337010 = funcion1( CadenaC61571734 );
+salida = funcion1(  );
 
 /*------------Comparacion de valores-------------*/
 
 
-char* AUXCadenaC65337010 = "100";
-int ITCadenaC65337010;
-for(ITCadenaC65337010=0;AUXCadenaC65337010[ITCadenaC65337010]!=0 && CadenaC65337010[ITCadenaC65337010]!=0 ;ITCadenaC65337010++)
-if ( CadenaC65337010[ITCadenaC65337010] != AUXCadenaC65337010[ITCadenaC65337010] )
-    printf( "El valor de la cadena CadenaC65337010: de la posicion %n es distinto al valor esperado: %c ",ITCadenaC65337010, AUXCadenaC65337010[ITCadenaC65337010]);
+if ( salida != 101 )
+{
+    printf( "El valor del parametro salida:%d es distinto al valor esperado: 101", salida);
+printf( "\nDiferencia: %d ", salida-101 );
+cantErrores++;
+}
 
+
+printf( "\nLa prueba ha concluido con %d errores", cantErrores ); 
 
 return 0;
 

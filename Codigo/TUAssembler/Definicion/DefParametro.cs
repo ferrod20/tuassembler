@@ -16,10 +16,11 @@ namespace TUAssembler.Definicion
         private int cantColumnas;
         private bool esVector;
         private bool esMatriz;
+        private bool esElemento;
         #endregion
 
         #region Propiedades
-        [XmlIgnore]
+        [XmlAttribute()]
         public string Nombre
         {
             get
@@ -107,7 +108,7 @@ namespace TUAssembler.Definicion
             set
             {
                 tipo = value;
-                CrearNombre();
+                //CrearNombre();
             }
         }
 
@@ -121,7 +122,7 @@ namespace TUAssembler.Definicion
             set
             {
                 esVector = value;
-                CrearNombre();
+                //CrearNombre();
             }
         }
 
@@ -135,15 +136,21 @@ namespace TUAssembler.Definicion
             set
             {
                 esMatriz = value;
-                CrearNombre();
+                //CrearNombre();
             }
         }
 
+        [XmlAttribute()]
         public bool EsElemento
         {
             get
             {
-                return !EsMatriz && !EsVector;
+                return esElemento;
+            }
+            set
+            {
+                esElemento = value;
+                //CrearNombre();
             }
         }
         #endregion
@@ -155,7 +162,7 @@ namespace TUAssembler.Definicion
         #endregion
 
         #region Métodos
-        private void CrearNombre()
+        /*private void CrearNombre()
         {
             Nombre = "";
             if( EsMatriz )
@@ -164,6 +171,7 @@ namespace TUAssembler.Definicion
                 Nombre = "vector";
             Nombre += Tipo.ToString() + GetHashCode().ToString();
         }
+         * */
         public override string ToString()
         {
             string salida = string.Empty;
