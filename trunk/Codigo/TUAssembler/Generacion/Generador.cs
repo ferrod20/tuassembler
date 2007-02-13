@@ -162,6 +162,7 @@ namespace TUAssembler.Generacion
             escritor.WriteLine( "/*------------Parametros-------------------------*/" );
             escritor.WriteLine();
             DeclararParametros( ref escritor );
+            escritor.WriteLine( "int cantErrores = 0;");
             escritor.WriteLine();
             escritor.WriteLine( "/*------------Instanciacion----------------------*/" );
             escritor.WriteLine();
@@ -175,6 +176,8 @@ namespace TUAssembler.Generacion
             escritor.WriteLine();
             CompararValoresDevueltos( ref escritor );
             escritor.WriteLine();
+            escritor.WriteLine(Mensajes.PrintfPruebaConcluida() );
+            escritor.WriteLine();
             escritor.WriteLine( "return 0;" );
             escritor.WriteLine();
             escritor.WriteLine( "}" );
@@ -183,7 +186,7 @@ namespace TUAssembler.Generacion
         {
             //Comparo los valores de los parametros de salida y los de ES
             foreach( Parametro param in Prueba.ParametrosSalida )
-                //                if( param.EsDeSalidaOEntradaSalida )
+                //if( param.EsDeSalidaOEntradaSalida )
                 param.CompararValor( ref escritor );
             //                else
         }
@@ -211,7 +214,9 @@ namespace TUAssembler.Generacion
             llamada += Definicion.Nombre + "( ";
             foreach( Parametro param in Prueba.ParametrosEntrada )
                 llamada += param.Definicion.Nombre + ", ";
-            llamada = llamada.Remove( llamada.Length - 2, 2 ) + " );"; //Elimino la última coma.)
+            if( Prueba.ParametrosEntrada.Length > 0 ) //Si hay parametros de entrada
+                llamada = llamada.Remove( llamada.Length - 2, 2 ); //Elimino la última coma.)
+            llamada += " );";
             escritor.WriteLine( llamada );
         }
         private void DeclararParametros( ref StreamWriter escritor )

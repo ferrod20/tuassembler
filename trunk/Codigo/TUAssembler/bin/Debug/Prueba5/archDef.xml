@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DefinicionFuncion Nombre="funcion1" >
+  <DefParametroSalida TipoDeAcceso="V" Tipo="UInt64" EsElemento="true" Nombre="salida" />
+  <DefParametrosEntrada>   
+  	<DefParametro TipoDeAcceso="V" Tipo="UInt8" EntradaSalida="E" EsElemento="true" />
+  	<DefParametro TipoDeAcceso="R" Tipo="UInt32" EntradaSalida="ES" EsElemento="true" />
+  	<DefParametro TipoDeAcceso="R" Tipo="UInt64" EntradaSalida="S" EsElemento="true" />
+  </DefParametrosEntrada>
+</DefinicionFuncion>
+

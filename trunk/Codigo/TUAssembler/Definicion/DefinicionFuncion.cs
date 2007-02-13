@@ -61,7 +61,8 @@ namespace TUAssembler
             foreach( DefParametro paramEntrada in parametrosEntrada )
                 prototipo += paramEntrada + ", ";
 
-            prototipo = prototipo.Remove( prototipo.Length - 2, 2 );
+            if( parametrosEntrada.Length > 0 ) //Si la funcion tiene parametros de entrada.
+                prototipo = prototipo.Remove( prototipo.Length - 2, 2 );
             prototipo += " )";
 
             return prototipo;

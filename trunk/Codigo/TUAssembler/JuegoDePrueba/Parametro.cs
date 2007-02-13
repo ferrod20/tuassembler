@@ -152,7 +152,7 @@ namespace TUAssembler.JuegoDePrueba
         public void CompararValor( ref StreamWriter escritor )
         {
             string precision = "0";
-                //Este parametro,usado por Float y Double,deberia leerse desde el archivo, pero por ahora lo hace desde aqui
+            //Este parametro,usado por Float y Double,deberia leerse desde el archivo, pero por ahora lo hace desde aqui
 
             Elem elemento;
             ParamVector vector;
@@ -179,7 +179,10 @@ namespace TUAssembler.JuegoDePrueba
                     case Tipo.Int64:
                     case Tipo.Char:
                         escritor.WriteLine( "if ( " + Definicion.Nombre + " != " + elemento.Valor + " )" );
+                        escritor.WriteLine("{" );
                         escritor.WriteLine( "    " + Mensajes.PrintfValorDistinto( Definicion.Nombre, elemento.Valor ) );
+                        escritor.WriteLine("cantErrores++;");
+                        escritor.WriteLine("}");
                         break;
                         /*   case Tipo.Booleano:
                         escritor.WriteLine("if ( (" + Definicion.Nombre + " == "  + "0 && " + elemento.Valor +"!=0)||(" + Definicion.Nombre + " != " + "0 && " + elemento.Valor + "==0)" + " )");
@@ -192,14 +195,20 @@ namespace TUAssembler.JuegoDePrueba
                         escritor.WriteLine( aux + " = (" + aux + " >= 0) ? " + aux + " : -" + aux + ";" );
                         escritor.WriteLine( "float " + auxPrecision + " = pow((float)10, " + precision + ");" );
                         escritor.WriteLine( "if (" + aux + " < " + auxPrecision + ")" );
+                        escritor.WriteLine("{");
                         escritor.WriteLine( "    " + Mensajes.PrintfValorDistinto( Definicion.Nombre, elemento.Valor ) );
+                        escritor.WriteLine("cantErrores++;");
+                        escritor.WriteLine("}");
                         break;
                     case Tipo.Float64:
                         escritor.WriteLine( "double " + aux + " = " + Definicion.Nombre + " - " + elemento.Valor + ";" );
                         escritor.WriteLine( aux + " = (" + aux + " >= 0) ? " + aux + " : -" + aux + ";" );
                         escritor.WriteLine( "double " + auxPrecision + " = pow((double)10, " + precision + ");" );
                         escritor.WriteLine( "if (" + aux + " < " + auxPrecision + ")" );
+                        escritor.WriteLine("{");
                         escritor.WriteLine( "    " + Mensajes.PrintfValorDistinto( Definicion.Nombre, elemento.Valor ) );
+                        escritor.WriteLine("cantErrores++;");
+                        escritor.WriteLine("}");
                         break;
                     case Tipo.CadenaC:
                         escritor.WriteLine( "char* " + aux + " = \"" + elemento.Valor + "\";" );
@@ -208,9 +217,12 @@ namespace TUAssembler.JuegoDePrueba
                             Definicion.Nombre + "[" + iterador + "]!=0 ;" + iterador + "++)" );
                         escritor.WriteLine( "if ( " + Definicion.Nombre + "[" + iterador + "] != " + aux + "[" +
                             iterador + "]" + " )" );
+                        escritor.WriteLine("{");
                         escritor.WriteLine( "    printf( \"El valor de la cadena " + Definicion.Nombre +
                             ": de la posicion %n es distinto al valor esperado: %c \"," + iterador + ", " + aux + "[" +
                                 iterador + "]);" );
+                        escritor.WriteLine("cantErrores++;");
+                        escritor.WriteLine("}");
                         /*  for(int i = 0; i < elemento.Valor[i]; i++){
                             escritor.WriteLine("if ( " + Definicion.Nombre + "[" + i + "] != '" + elemento.Valor[i] + "' )");
                             escritor.WriteLine(Mensajes.PrintfValorDistintoCadena(Definicion.Nombre, elemento.Valor, i));
