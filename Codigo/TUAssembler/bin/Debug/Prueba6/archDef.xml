@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DefinicionFuncion Nombre="funcion1" >
+  <DefParametroSalida Nombre="salida" TipoDeAcceso="V" Tipo="UInt64" EsElemento="true"  />
+  <DefParametrosEntrada>   
+  	<DefParametro Nombre="p1UI8" TipoDeAcceso="V" Tipo="UInt8" EntradaSalida="E" EsElemento="true" />
+  	<DefParametro Nombre="p2UI16" TipoDeAcceso="R" Tipo="UInt64" EntradaSalida="ES" EsElemento="true" />
+  	<DefParametro Nombre="p3Char" TipoDeAcceso="R" Tipo="Char" EntradaSalida="ES" EsElemento="true" />
+    <DefParametro Nombre="p4Bool" TipoDeAcceso="R" Tipo="Booleano" EntradaSalida="ES" EsElemento="true" />
+    <DefParametro Nombre="p5Float32" TipoDeAcceso="R" Tipo="Float32" EntradaSalida="ES" EsElemento="true" />
+    <DefParametro Nombre="p6Float64" TipoDeAcceso="R" Tipo="Float64" EntradaSalida="ES" EsElemento="true" />
+  </DefParametrosEntrada>
+</DefinicionFuncion>
+

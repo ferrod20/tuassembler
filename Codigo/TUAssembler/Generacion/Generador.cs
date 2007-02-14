@@ -1,5 +1,6 @@
 using System;
 using System.IO;
+using TUAssembler.Auxiliares;
 using TUAssembler.Definicion;
 using TUAssembler.JuegoDePrueba;
 
@@ -69,7 +70,7 @@ namespace TUAssembler.Generacion
         #region Métodos
 
         #region Generacion de codigo para la prueba
-        public void GenerarPrueba( ref StreamWriter escritor )
+        public void GenerarPrueba( ref EscritorC escritor )
         {
             escritor.WriteLine( "#include <stdio.h>" );
             escritor.WriteLine( "#define bool int" );
@@ -79,11 +80,11 @@ namespace TUAssembler.Generacion
             EscribirMallocFreeFunctions( ref escritor );
             EscribirFuncionPrueba( ref escritor );
         }
-        private void EscribirReferenciaExternaDeLaFuncion( ref StreamWriter escritor )
+        private void EscribirReferenciaExternaDeLaFuncion( ref EscritorC escritor )
         {
             escritor.WriteLine( "extern " + Definicion.GenerarPrototipo() + ";" );
         }
-        private void EscribirMallocFreeFunctions( ref StreamWriter escritor )
+        private void EscribirMallocFreeFunctions( ref EscritorC escritor )
         {
             //El uso es el siguiente:
             // - La funcion a probar debe llamar a malloc2 con la cantidad de bytes que se quieren pedir.
@@ -101,6 +102,7 @@ namespace TUAssembler.Generacion
             //    free2all();
             //    return 0;
             // }
+            escritor.IdentacionActiva = false;
             escritor.WriteLine();
             escritor.WriteLine( "int cantPedidosMemoria = 0;" );
             escritor.WriteLine( "char* pedidos[sizeof(int)*10000];" );
@@ -152,45 +154,33 @@ namespace TUAssembler.Generacion
             escritor.WriteLine( "       printf(\"No se han liberado %d bytes de memoria\", bytesNoLiberados);" );
             escritor.WriteLine( "}" );
             escritor.WriteLine();
+            escritor.IdentacionActiva = true;
         }
-        private void EscribirFuncionPrueba( ref StreamWriter escritor )
-        {
-            escritor.WriteLine();
+        private void EscribirFuncionPrueba( ref EscritorC escritor )
+        {            
             escritor.WriteLine( "int main()" );
-            escritor.WriteLine( "{" );
-            escritor.WriteLine();
-            escritor.WriteLine( "/*------------Parametros-------------------------*/" );
-            escritor.WriteLine();
+            escritor.AbrirCorchetes();         
+            escritor.WriteLine( "/*------------Parametros-------------------------*/" );            
             DeclararParametros( ref escritor );
-            escritor.WriteLine( "int cantErrores = 0;");
-            escritor.WriteLine();
-            escritor.WriteLine( "/*------------Instanciacion----------------------*/" );
-            escritor.WriteLine();
-            InstanciarParametros( ref escritor );
-            escritor.WriteLine();
-            escritor.WriteLine( "/*------------LlamadaFuncion---------------------*/" );
-            escritor.WriteLine();
-            LlamarFuncionAProbar( ref escritor );
-            escritor.WriteLine();
-            escritor.WriteLine( "/*------------Comparacion de valores-------------*/" );
-            escritor.WriteLine();
+            escritor.WriteLine( "int cantErrores = 0;");            
+            escritor.WriteLine( "/*------------Instanciacion----------------------*/" );            
+            InstanciarParametros( ref escritor );            
+            escritor.WriteLine( "/*------------LlamadaFuncion---------------------*/" );            
+            LlamarFuncionAProbar( ref escritor );            
+            escritor.WriteLine( "/*------------Comparacion de valores-------------*/" );            
             CompararValoresDevueltos( ref escritor );
             escritor.WriteLine();
-            escritor.WriteLine(Mensajes.PrintfPruebaConcluida() );
-            escritor.WriteLine();
-            escritor.WriteLine( "return 0;" );
-            escritor.WriteLine();
-            escritor.WriteLine( "}" );
+            escritor.WriteLine(Mensajes.PrintfPruebaConcluida() );            
+            escritor.WriteLine( "return 0;" );            
+            escritor.CerrarCorchetes();
         }
-        private void CompararValoresDevueltos( ref StreamWriter escritor )
+        private void CompararValoresDevueltos( ref EscritorC escritor )
         {
             //Comparo los valores de los parametros de salida y los de ES
-            foreach( Parametro param in Prueba.ParametrosSalida )
-                //if( param.EsDeSalidaOEntradaSalida )
-                param.CompararValor( ref escritor );
-            //                else
+            foreach( Parametro param in Prueba.ParametrosSalida )                
+                param.CompararValor( ref escritor );            
         }
-        private void InstanciarParametros( ref StreamWriter escritor )
+        private void InstanciarParametros( ref EscritorC escritor )
         {
             string instanciacion;
 
@@ -206,7 +196,7 @@ namespace TUAssembler.Generacion
                     escritor.WriteLine( instanciacion );
                 }
         }
-        private void LlamarFuncionAProbar( ref StreamWriter escritor )
+        private void LlamarFuncionAProbar( ref EscritorC escritor )
         {
             string llamada = "";
             if( Definicion.DefParametroSalida!=null )
@@ -219,7 +209,7 @@ namespace TUAssembler.Generacion
             llamada += " );";
             escritor.WriteLine( llamada );
         }
-        private void DeclararParametros( ref StreamWriter escritor )
+        private void DeclararParametros( ref EscritorC escritor )
         {
             string declaracion;
             declaracion = Prueba.ParametrosSalida[0].Declarar();
@@ -265,7 +255,7 @@ namespace TUAssembler.Generacion
             for( int i = 0; i < Prueba.ParametrosEntrada.Length; i++ )
             {
                 string linea = lector.ReadLine();
-                if( linea==string.Empty )
+                if( linea==null || linea==string.Empty )
                     throw new Exception( Mensajes.CantidadParametrosEntradaNoCoincideConDefinicion );
                 Prueba.ParametrosEntrada[i] = ObtenerParametro( linea, defParametros[i] );
             }

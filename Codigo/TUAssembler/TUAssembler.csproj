@@ -33,6 +33,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Auxiliares\EscritorC.cs" />
     <Compile Include="Compilacion\Compilador.cs" />
     <Compile Include="Compilacion\CompiladorAsm.cs" />
     <Compile Include="Compilacion\CompiladorC.cs" />
