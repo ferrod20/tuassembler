@@ -2,7 +2,7 @@
 #define bool int
 #define true 1
 #define false 0
-extern unsigned long int funcion1(  );
+extern unsigned long int funcion1( unsigned char, unsigned long int*, char*, bool*, float*, double* );
 
 int cantPedidosMemoria = 0;
 char* pedidos[sizeof(int)*10000];
@@ -52,35 +52,72 @@ void free2all(){
        printf("No se han liberado %d bytes de memoria", bytesNoLiberados);
 }
 
-
 int main()
 {
+	/*------------Parametros-------------------------*/
+	unsigned long salida;
+	unsigned char p1UI8;
+	unsigned long *p2UI16;
+	char *p3Char;
+	bool *p4Bool;
+	float *p5Float32;
+	double *p6Float64;
+	int cantErrores = 0;
+	/*------------Instanciacion----------------------*/
+	p1UI8 = 7;
+	p2UI16 = 8;
+	p3Char = '9';
+	p4Bool = false;
+	p5Float32 = 11.2;
+	p6Float64 = 12.3;
+	/*------------LlamadaFuncion---------------------*/
+	salida = funcion1( p1UI8, p2UI16, p3Char, p4Bool, p5Float32, p6Float64 );
+	/*------------Comparacion de valores-------------*/
+	//salida
+	if( salida != 1 )
+	{
+		printf( "El valor del parametro salida:%d es distinto al valor esperado: 1" ,salida);
+		cantErrores++;
+	}
+	//p2UI16
+	if( p2UI16 != 2 )
+	{
+		printf( "El valor del parametro p2UI16:%d es distinto al valor esperado: 2" ,p2UI16);
+		cantErrores++;
+	}
+	//p3Char
+	if( p3Char != 3 )
+	{
+		printf( "El valor del parametro p3Char:%d es distinto al valor esperado: 3" ,p3Char);
+		cantErrores++;
+	}
+	//p4Bool
+	if( (p4Bool == 0 && 0!=0)||(p4Bool != 0 && 0==0) )
+	{
+		printf( "El valor del parametro p4Bool:%d es distinto al valor esperado: 0" ,p4Bool);
+		cantErrores++;
+	}
+	//p5Float32
+	float AUXp5Float32 = p5Float32 - 5.0;
+	AUXp5Float32 = (AUXp5Float32 >= 0) ? AUXp5Float32 : -AUXp5Float32;
+	float PRp5Float32 = pow((float)10, 0);
+	if( AUXp5Float32 < PRp5Float32 )
+	{
+		printf( "El valor del parametro p5Float32:%d es distinto al valor esperado: 5.0" ,p5Float32);
+		printf( "\nDiferencia: %d" ,AUXp5Float32);
+		cantErrores++;
+	}
+	//p6Float64
+	double AUXp6Float64 = p6Float64 - 6.0;
+	AUXp6Float64 = (AUXp6Float64 >= 0) ? AUXp6Float64 : -AUXp6Float64;
+	double PRp6Float64 = pow((double)10, 0);
+	if( AUXp6Float64 < PRp6Float64 )
+	{
+		printf( "El valor del parametro p6Float64:%d es distinto al valor esperado: 6.0" ,p6Float64);
+		printf( "\nDiferencia: %d" ,AUXp6Float64);
+		cantErrores++;
+	}
 
-/*------------Parametros-------------------------*/
-
-unsigned long salida;
-int cantErrores = 0;
-
-/*------------Instanciacion----------------------*/
-
-
-/*------------LlamadaFuncion---------------------*/
-
-salida = funcion1(  );
-
-/*------------Comparacion de valores-------------*/
-
-
-if ( salida != 101 )
-{
-    printf( "El valor del parametro salida:%d es distinto al valor esperado: 101", salida);
-printf( "\nDiferencia: %d ", salida-101 );
-cantErrores++;
-}
-
-
-printf( "\nLa prueba ha concluido con %d errores", cantErrores ); 
-
-return 0;
-
+	printf( "\nLa prueba ha concluido con %d errores", cantErrores ); 
+	return 0;
 }
