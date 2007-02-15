@@ -89,11 +89,12 @@ namespace TUAssembler.JuegoDePrueba
                 declaracion += "*";
             if( Definicion.EsElemento )
                 declaracion += Definicion.Nombre + ";";
-            if( Definicion.EsVector )
+            /*if( Definicion.EsVector )
                 declaracion += Definicion.Nombre + "[" + Definicion.Longitud + "];";
-            if( Definicion.EsMatriz )
+             * */
+           /* if( Definicion.EsMatriz )
                 declaracion += Definicion.Nombre + "[" + Definicion.CantFilas + "][" + Definicion.CantColumnas + "];";
-
+            */
             return declaracion;
         }
         public string Instanciar()
@@ -117,17 +118,23 @@ namespace TUAssembler.JuegoDePrueba
                     case Tipo.Int64:
                     case Tipo.Float32:
                     case Tipo.Float64:
-                        instanciacion = Definicion.Nombre + " = " + elem.Valor + ";";
+                        if (Definicion.TipoDeAcceso == ValorOReferencia.R)
+                            instanciacion = "*";
+                        instanciacion += Definicion.Nombre + " = " + elem.Valor + ";";
                         break;
                     case Tipo.CadenaPascal:
                     case Tipo.CadenaC:
                         instanciacion = Definicion.Nombre + " = \"" + elem.Valor + "\";";
                         break;
                     case Tipo.Booleano:
-                        instanciacion = Definicion.Nombre + " = " + ( elem.UltimoElementoUno()? "true;" : "false;" );
+                        if (Definicion.TipoDeAcceso == ValorOReferencia.R)
+                            instanciacion = "*";                        
+                        instanciacion += Definicion.Nombre + " = " + ( elem.UltimoElementoUno()? "true;" : "false;" );
                         break;
                     case Tipo.Char:
-                        instanciacion = Definicion.Nombre + " = '" + elem.Valor + "';";
+                        if (Definicion.TipoDeAcceso == ValorOReferencia.R)
+                            instanciacion = "*";                        
+                        instanciacion += Definicion.Nombre + " = '" + elem.Valor + "';";
                         break;
                 }
             }
@@ -159,7 +166,8 @@ namespace TUAssembler.JuegoDePrueba
             ParamVector vector;
             ParamMatriz matriz;
             //(!this.EsDeSalidaOEntradaSalida);
-
+            string variable = string.Empty;
+            string condicion = string.Empty;
             string diferencia = "AUX" + Definicion.Nombre;
             string varPrecision = "PR" + Definicion.Nombre;
             string iterador = "IT" + Definicion.Nombre;
@@ -178,41 +186,55 @@ namespace TUAssembler.JuegoDePrueba
                     case Tipo.Int16:
                     case Tipo.Int32:
                     case Tipo.Int64:
-                       /* escritor.If(Definicion.Nombre + " != " + elemento.Valor);
-                        escritor.PrintfValorDistintoConDiferencia( Definicion.Nombre, elemento.Valor );
+                        if (Definicion.TipoDeAcceso == ValorOReferencia.R)
+                            variable = "*";
+                        variable += Definicion.Nombre;
+                        escritor.If(variable + " != " + elemento.Valor);
+                        escritor.PrintfValorDistintoConDiferencia(variable, elemento.Valor);
                         escritor.WriteLine("cantErrores++;");
                         escritor.FinIf();
-                        break;
-                        * */
-                    case Tipo.Char:                                                                        
-                        escritor.If( Definicion.Nombre + " != " + elemento.Valor );
-                        escritor.PrintfValorDistinto(Definicion.Nombre, elemento.Valor);
+                        break;                       
+                    case Tipo.Char:
+                        if (Definicion.TipoDeAcceso == ValorOReferencia.R)
+                            variable = "*";
+                        variable += Definicion.Nombre;
+                        escritor.If(variable + " != " + elemento.Valor);
+                        escritor.PrintfValorDistinto(variable, elemento.Valor);
                         escritor.WriteLine( "cantErrores++;" );
                         escritor.FinIf();
                         break;
-                    case Tipo.Booleano:                                                                        
-                        escritor.If("(" + Definicion.Nombre + " == "  + "0 && " + elemento.Valor +"!=0)||(" + Definicion.Nombre + " != " + "0 && " + elemento.Valor + "==0)");
-                        escritor.PrintfValorDistinto(Definicion.Nombre, elemento.Valor);
+                    case Tipo.Booleano:
+                        if (Definicion.TipoDeAcceso == ValorOReferencia.R)
+                            variable = "*";
+                        variable += Definicion.Nombre;
+                        escritor.If("(" + variable + " == " + "0 && " + elemento.Valor + "!=0)||(" + variable + " != " + "0 && " + elemento.Valor + "==0)");
+                        escritor.PrintfValorDistinto(variable, elemento.Valor);
                         escritor.WriteLine(  "cantErrores++;" );
                         escritor.FinIf();
                         break;
                     case Tipo.Float32:
                         // Realiza la resta entre ambos operandos y si la misma dio un resultado menor que
                         // 10^precision entonces los considera iguales
-                        escritor.WriteLine( "float " + diferencia + " = " + Definicion.Nombre + " - " + elemento.Valor + ";" );
+                        if (Definicion.TipoDeAcceso == ValorOReferencia.R)
+                            variable = "*";
+                        variable += Definicion.Nombre;
+                        escritor.WriteLine( "float " + diferencia + " = " + variable + " - " + elemento.Valor + ";" );
                         escritor.WriteLine( diferencia + " = (" + diferencia + " >= 0) ? " + diferencia + " : -" + diferencia + ";" );
                         escritor.WriteLine( "float " + varPrecision + " = pow((float)10, " + precision + ");" );                        
                         escritor.If( diferencia + " < " + varPrecision );
-                        escritor.PrintfValorDistintoConDiferencia(Definicion.Nombre, elemento.Valor, diferencia );
+                        escritor.PrintfValorDistintoConDiferencia(variable, elemento.Valor, diferencia);
                         escritor.WriteLine( "cantErrores++;" );
                         escritor.FinIf();                        
                         break;
                     case Tipo.Float64:
-                        escritor.WriteLine( "double " + diferencia + " = " + Definicion.Nombre + " - " + elemento.Valor + ";" );
+                        if (Definicion.TipoDeAcceso == ValorOReferencia.R)
+                            variable = "*";
+                        variable += Definicion.Nombre;                        
+                        escritor.WriteLine( "double " + diferencia + " = " + variable + " - " + elemento.Valor + ";" );
                         escritor.WriteLine( diferencia + " = (" + diferencia + " >= 0) ? " + diferencia + " : -" + diferencia + ";" );
                         escritor.WriteLine( "double " + varPrecision + " = pow((double)10, " + precision + ");" );
                         escritor.If( diferencia + " < " + varPrecision );
-                        escritor.PrintfValorDistintoConDiferencia(Definicion.Nombre, elemento.Valor, diferencia);
+                        escritor.PrintfValorDistintoConDiferencia(variable, elemento.Valor, diferencia);
                         escritor.WriteLine( "cantErrores++;" );                        
                         escritor.FinIf();
                         break;

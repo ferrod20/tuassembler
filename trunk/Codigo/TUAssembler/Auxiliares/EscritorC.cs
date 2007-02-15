@@ -116,5 +116,11 @@ namespace TUAssembler.Auxiliares
             PrintfValorDistinto( variable, valorEsperado );
             Printf("\\nDiferencia: %d", varDiferencia );
         }
+
+        public void PrintfValorDistintoConDiferencia(string variable, string valorEsperado )
+        {
+            PrintfValorDistinto(variable, valorEsperado);
+            Printf("\\nDiferencia: %d", variable +" - "+ valorEsperado );
+        }
     }
 }

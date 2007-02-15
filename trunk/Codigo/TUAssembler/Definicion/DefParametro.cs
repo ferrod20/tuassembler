@@ -11,9 +11,6 @@ namespace TUAssembler.Definicion
         private ValorOReferencia tipoDeAcceso;
         private EntradaSalida entradaSalida;
         private Tipo tipo;
-        private int longitud;
-        private int cantFilas;
-        private int cantColumnas;
         private bool esVector;
         private bool esMatriz;
         private bool esElemento;
@@ -33,45 +30,7 @@ namespace TUAssembler.Definicion
             }
         }
 
-        [XmlAttribute()]
-        public int Longitud
-        {
-            get
-            {
-                return longitud;
-            }
-            set
-            {
-                longitud = value;
-            }
-        }
-
-        [XmlAttribute()]
-        public int CantFilas
-        {
-            get
-            {
-                return cantFilas;
-            }
-            set
-            {
-                cantFilas = value;
-            }
-        }
-
-        [XmlAttribute()]
-        public int CantColumnas
-        {
-            get
-            {
-                return cantColumnas;
-            }
-            set
-            {
-                cantColumnas = value;
-            }
-        }
-
+        
         [XmlAttribute()]
         public ValorOReferencia TipoDeAcceso
         {
@@ -107,8 +66,7 @@ namespace TUAssembler.Definicion
             }
             set
             {
-                tipo = value;
-                //CrearNombre();
+                tipo = value;                
             }
         }
 
