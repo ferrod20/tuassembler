@@ -300,17 +300,20 @@ namespace TUAssembler.Generacion
             Parametro salida = null;
             if( defParam.EsMatriz )
             {
+                /*
                 paramMatriz = new ParamMatriz( defParam.CantFilas, defParam.CantColumnas );
                 paramMatriz.Leer( linea, defParam.Tipo );
                 //Lee la salida y verifica que los parametros sean del tipo valido.
                 salida = paramMatriz;
+                 * */
             }
             if( defParam.EsVector )
             {
-                paramVector = new ParamVector( defParam.Longitud );
+              /*  paramVector = new ParamVector( defParam.Longitud );
                 paramVector.Leer( linea, defParam.Tipo );
                 //Lee la salida y verifica que los parametros sean del tipo valido.
                 salida = paramVector;
+               * */
             }
             if( defParam.EsElemento )
             {

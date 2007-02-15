@@ -65,11 +65,11 @@ int main()
 	int cantErrores = 0;
 	/*------------Instanciacion----------------------*/
 	p1UI8 = 7;
-	p2UI16 = 8;
-	p3Char = '9';
-	p4Bool = false;
-	p5Float32 = 11.2;
-	p6Float64 = 12.3;
+	*p2UI16 = 8;
+	*p3Char = '9';
+	*p4Bool = false;
+	*p5Float32 = 11.2;
+	*p6Float64 = 12.3;
 	/*------------LlamadaFuncion---------------------*/
 	salida = funcion1( p1UI8, p2UI16, p3Char, p4Bool, p5Float32, p6Float64 );
 	/*------------Comparacion de valores-------------*/
@@ -77,43 +77,45 @@ int main()
 	if( salida != 1 )
 	{
 		printf( "El valor del parametro salida:%d es distinto al valor esperado: 1" ,salida);
+		printf( "\nDiferencia: %d" ,salida - 1);
 		cantErrores++;
 	}
 	//p2UI16
-	if( p2UI16 != 2 )
+	if( *p2UI16 != 2 )
 	{
-		printf( "El valor del parametro p2UI16:%d es distinto al valor esperado: 2" ,p2UI16);
+		printf( "El valor del parametro *p2UI16:%d es distinto al valor esperado: 2" ,*p2UI16);
+		printf( "\nDiferencia: %d" ,*p2UI16 - 2);
 		cantErrores++;
 	}
 	//p3Char
-	if( p3Char != 3 )
+	if( *p3Char != 3 )
 	{
-		printf( "El valor del parametro p3Char:%d es distinto al valor esperado: 3" ,p3Char);
+		printf( "El valor del parametro *p3Char:%d es distinto al valor esperado: 3" ,*p3Char);
 		cantErrores++;
 	}
 	//p4Bool
-	if( (p4Bool == 0 && 0!=0)||(p4Bool != 0 && 0==0) )
+	if( (*p4Bool == 0 && 0!=0)||(*p4Bool != 0 && 0==0) )
 	{
-		printf( "El valor del parametro p4Bool:%d es distinto al valor esperado: 0" ,p4Bool);
+		printf( "El valor del parametro *p4Bool:%d es distinto al valor esperado: 0" ,*p4Bool);
 		cantErrores++;
 	}
 	//p5Float32
-	float AUXp5Float32 = p5Float32 - 5.0;
+	float AUXp5Float32 = *p5Float32 - 5.0;
 	AUXp5Float32 = (AUXp5Float32 >= 0) ? AUXp5Float32 : -AUXp5Float32;
 	float PRp5Float32 = pow((float)10, 0);
 	if( AUXp5Float32 < PRp5Float32 )
 	{
-		printf( "El valor del parametro p5Float32:%d es distinto al valor esperado: 5.0" ,p5Float32);
+		printf( "El valor del parametro *p5Float32:%d es distinto al valor esperado: 5.0" ,*p5Float32);
 		printf( "\nDiferencia: %d" ,AUXp5Float32);
 		cantErrores++;
 	}
 	//p6Float64
-	double AUXp6Float64 = p6Float64 - 6.0;
+	double AUXp6Float64 = *p6Float64 - 6.0;
 	AUXp6Float64 = (AUXp6Float64 >= 0) ? AUXp6Float64 : -AUXp6Float64;
 	double PRp6Float64 = pow((double)10, 0);
 	if( AUXp6Float64 < PRp6Float64 )
 	{
-		printf( "El valor del parametro p6Float64:%d es distinto al valor esperado: 6.0" ,p6Float64);
+		printf( "El valor del parametro *p6Float64:%d es distinto al valor esperado: 6.0" ,*p6Float64);
 		printf( "\nDiferencia: %d" ,AUXp6Float64);
 		cantErrores++;
 	}
