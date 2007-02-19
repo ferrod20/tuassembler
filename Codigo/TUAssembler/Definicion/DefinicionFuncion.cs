@@ -53,6 +53,7 @@ namespace TUAssembler
         }
         #endregion
 
+        #region Métodos
         public string GenerarPrototipo()
         {
             string prototipo;
@@ -117,5 +118,6 @@ namespace TUAssembler
                 }
             return defParametros;
         }
+        #endregion
     }
 }

@@ -29,9 +29,10 @@ namespace TUAssembler
                 // Toma las definiciones de la funcion y los resultados esperados
                 generador.LeerDefinicion();
                 generador.LeerPrueba();
-                generador.GenerarPrueba( ref escritor );
+                generador.GenerarPrueba( escritor );
                 escritor.Close();
                 CompilarYEjecutar( funcionAsm );
+                Console.Write("El programa funciono bien");
             }
             catch( Exception e )
             {

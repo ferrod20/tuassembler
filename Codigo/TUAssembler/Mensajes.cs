@@ -22,6 +22,10 @@ namespace TUAssembler
         #endregion
 
         #region Métodos
+        public static string ErrorAlLeerParametro(string nombre, Exception e)
+        {
+            return "Se ha producido un error al leer el parámetro " + nombre + "\n" + e.Message;
+        }
         public static string ErrorAlLeerParametroDeEntrada( Exception e )
         {
             string mensaje;
@@ -106,11 +110,6 @@ namespace TUAssembler
         {
             return "printf( \"\\nLa prueba " + NombreDePrueba + " ha concluido con %d errores\", cantErrores ); ";
         }
-        #endregion
-
-        public static string ErrorAlLeerParametro( string nombre, Exception e )
-        {
-            return "Se ha producido un error al leer el parámetro " + nombre + "\n" + e.Message;
-        }
+        #endregion        
     }
 }

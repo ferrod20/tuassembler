@@ -1,3 +1,4 @@
+/*
 namespace TUAssembler
 {
     public enum FormaInstanciacion
@@ -5,4 +6,4 @@ namespace TUAssembler
         ParaComparar,
         ParaPasarComoParametro
     }
-}
+}*/

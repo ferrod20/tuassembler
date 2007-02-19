@@ -1,4 +1,6 @@
 using System;
+using System.IO;
+using TUAssembler.Auxiliares;
 
 namespace TUAssembler.JuegoDePrueba
 {
@@ -49,6 +51,16 @@ namespace TUAssembler.JuegoDePrueba
         }
         #endregion
 
+        #region Métodos
+        public override void Instanciar(StreamWriter escritor)
+        {
+            string instanciacion;
+            instanciacion = Definicion.Nombre + " = { ";
+            foreach (Elem elemento in Elementos)
+                instanciacion += elemento.Valor + ", ";
+            instanciacion += " }";
+            escritor.WriteLine( instanciacion );
+        }
         public void EstablecerValor( string fila )
         {
             string[] elementos;
@@ -66,5 +78,17 @@ namespace TUAssembler.JuegoDePrueba
                 i++;
             }
         }
+        public override void CompararValor( EscritorC escritor )
+        {
+            if (Definicion.EsVector)
+            {
+                for (int i = 0; i < Elementos.Length; i++)
+                {
+                    escritor.WriteLine("if ( " + Definicion.Nombre + "[" + i + "] != " + this[i].Valor + " )");
+                    escritor.WriteLine(Mensajes.PrintfValorDistintoCadena(Definicion.Nombre, this[i].Valor, i));
+                }
+            }
+        }
+        #endregion
     }
 }
