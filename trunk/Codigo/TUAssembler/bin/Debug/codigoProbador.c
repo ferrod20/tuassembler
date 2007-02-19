@@ -52,7 +52,7 @@ void free2all(){
        printf("No se han liberado %d bytes de memoria", bytesNoLiberados);
 }
 
-int main()
+int PruebaUno()
 {
 	/*------------Parametros-------------------------*/
 	unsigned long salida;
@@ -120,6 +120,16 @@ int main()
 		cantErrores++;
 	}
 
-	printf( "\nLa prueba ha concluido con %d errores", cantErrores ); 
-	return 0;
+	printf( "\nLa prueba PruebaUno ha concluido con %d errores", cantErrores ); 
+	return cantErrores;
+}
+int main()
+{
+	/*------------Parametros-------------------------*/
+	int cantErrores = 0;
+	/*------------Llamada a pruebas------------------*/
+	if( cantErrores == 0 )
+	{
+		cantErrores = PruebaUno();
+	}
 }

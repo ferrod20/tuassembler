@@ -1,3 +1,5 @@
+using System;
+using System.IO;
 using TUAssembler.Definicion;
 
 namespace TUAssembler.JuegoDePrueba
@@ -22,7 +24,14 @@ namespace TUAssembler.JuegoDePrueba
         }
         #endregion
 
+        public Elem()
+        {
+        }
         public Elem( string elem )
+        {
+            this.elem = elem;
+        }
+        public void EstablecerValor( string elem )
         {
             this.elem = elem;
         }
@@ -62,6 +71,21 @@ namespace TUAssembler.JuegoDePrueba
         public bool UltimoElementoUno()
         {
             return elem[elem.Length - 1]=='1';
+        }
+        public override void Leer( StreamReader lector )
+        {
+            string[] parametros;
+            try
+            {
+                parametros = MA.Leer( lector );
+            }
+            catch( Exception e )
+            {
+                throw new Exception( Mensajes.ErrorAlLeerParametro( Definicion.Nombre, e ) );
+            }
+            if( parametros.Length!=1 )
+                throw new Exception( Mensajes.CantidadDeParametrosNoCoincidenConDefinicion );
+            EstablecerValor( parametros[0] );
         }
     }
 }

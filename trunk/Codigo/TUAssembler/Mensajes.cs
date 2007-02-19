@@ -3,34 +3,48 @@ using TUAssembler.Compilacion;
 
 namespace TUAssembler
 {
-    internal class Mensajes
+    public class Mensajes
     {
-        public const string CantidadParametrosEntradaNoCoincideConDefinicion =
-            "La cantidad de parametros de entrada no coincide con la definición de la función";
+        public static string NombreDePrueba;
 
-        public const string CantidadDeParametrosNoCoincidenConDefinicion =
-            "La cantidad de parametros no coincide con la definición de la función";
+        #region Constantes
+        public static string CantidadParametrosEntradaNoCoincideConDefinicion =
+            "La cantidad de parametros de entrada de la prueba " + NombreDePrueba +
+                " no coincide con la definición de la función";
 
+        public static string CantidadDeParametrosNoCoincidenConDefinicion =
+            "La cantidad de parametros de la prueba " + NombreDePrueba + " no coincide con la definición de la función";
+
+        public static string NombrePruebaNoPermitido =
+            "El nombre que intenta poner a la prueba no esta permitido. Debe ser un nombre con las mismas caracteristicas que tiene el nombre de una función de C.";
+
+        public static string FaltaPuntoYComa = "Debe haberse olvidado de poner un ';' en algún lado.";
+        #endregion
+
+        #region Métodos
         public static string ErrorAlLeerParametroDeEntrada( Exception e )
         {
-            string mensaje = string.Empty;
-            mensaje = "Se produjo un error al leer los parámetros de entrada de la función:\n";
-            mensaje += "Descripción: \n" + MA.ExcepcionCompleta(e) + "\n\n";
+            string mensaje;
+            mensaje = "Se produjo un error al leer los parámetros de entrada de la función en la prueba:" +
+                NombreDePrueba + "\n";
+            ;
+            mensaje += "Descripción: \n" + MA.ExcepcionCompleta( e ) + "\n\n";
             return mensaje;
         }
         public static string ErrorAlLeerParametroDeSalida( Exception e )
         {
-            string mensaje = string.Empty;
-            mensaje = "Se produjo un error al leer los parámetros de salida de la función:\n";
-            mensaje += "Descripción: \n" + MA.ExcepcionCompleta( e ) + "\n\n";            
+            string mensaje;
+            mensaje = "Se produjo un error al leer los parámetros de salida de la función en la prueba: " +
+                NombreDePrueba + "\n";
+            mensaje += "Descripción: \n" + MA.ExcepcionCompleta( e ) + "\n\n";
             return mensaje;
         }
         public static string ErrorLecturaDefinicion( string archivo, Exception e )
         {
             string mensaje = string.Empty;
-            mensaje = "Se produjo un error en la lectura de la definición de la función:\n";
+            mensaje = "Se produjo un error en la lectura de la definición de la función.\n";
             mensaje += "Archivo: " + archivo + "\n";
-            mensaje += "Descripción: \n" + MA.ExcepcionCompleta(e) + "\n\n";
+            mensaje += "Descripción: \n" + MA.ExcepcionCompleta( e ) + "\n\n";
             return mensaje;
         }
         public static string ErrorAlEjecutar( Exception e )
@@ -62,31 +76,41 @@ namespace TUAssembler
         }
         public static string TipoIncorrectoMatriz( int f, int c )
         {
-            return "El tipo del elemento de la matriz, en la posición " + f + "," + c + " es incorrecto.";
+            return
+                "Prueba " + NombreDePrueba + ": El tipo del elemento de la matriz, en la posición " + f + "," + c +
+                    " de la prueba " + NombreDePrueba + " es incorrecto.";
         }
         public static string TipoIncorrectoVector( int i )
         {
-            return "El tipo del elemento del vector, en la posición " + i + " es incorrecto.";
+            return
+                "Prueba " + NombreDePrueba + ": El tipo del elemento del vector, en la posición " + i + " de la prueba " +
+                    NombreDePrueba + " es incorrecto.";
         }
         public static string PrintfValorDistinto( string variable, string valorEsperado )
         {
             //%10.2f Para los float 10 digitos, 2 de precision
-            string salida = 
-                "printf( \"El valor del parametro " + variable + ":%d es distinto al valor esperado: " + valorEsperado +
-                    "\", "+ variable + ");";
+            string salida =
+                "printf( \"Prueba " + NombreDePrueba + ": El valor del parametro " + variable +
+                    ":%d es distinto al valor esperado: " + valorEsperado +
+                        "\", " + variable + ");";
             salida += "\nprintf( \"\\nDiferencia: %d \", " + variable + "-" + valorEsperado + " );";
             return salida;
         }
-        
         public static string PrintfValorDistintoCadena( string variable, string valorEsperado, int i )
         {
             return
-                "printf( \"El valor de la cadena " + variable + ": de la posicion " + i +
+                "printf( \"Prueba " + NombreDePrueba + ": El valor de la cadena " + variable + ": de la posicion " + i +
                     " %i es distinto al valor esperado: " + valorEsperado + "\", " + valorEsperado + " );";
         }
         public static string PrintfPruebaConcluida()
         {
-            return "printf( \"\\nLa prueba ha concluido con %d errores\", cantErrores ); ";
-        } 
+            return "printf( \"\\nLa prueba " + NombreDePrueba + " ha concluido con %d errores\", cantErrores ); ";
+        }
+        #endregion
+
+        public static string ErrorAlLeerParametro( string nombre, Exception e )
+        {
+            return "Se ha producido un error al leer el parámetro " + nombre + "\n" + e.Message;
+        }
     }
 }

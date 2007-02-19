@@ -15,10 +15,11 @@ namespace TUAssembler
             //Iniciar("Prueba3/archDef.xml", "Prueba3/archPrueba.jdp", "Prueba3/funcionAsm.asm"); //Prueba la devolucion de un UInt32
             //Iniciar("Prueba4/archDef.xml", "Prueba4/archPrueba.jdp", "Prueba4/funcionAsm.asm"); //Prueba la devolucion de un UInt64
             //Iniciar("Prueba5/archDef.xml", "Prueba5/archPrueba.jdp", "Prueba5/funcionAsm.asm"); //Prueba la funcion  UInt64 funcion1( UInt8 E, UInt16 ES, UInt32 S );
-            Iniciar("Prueba6/archDef.xml", "Prueba6/archPrueba.jdp", "Prueba6/funcionAsm.asm"); //Prueba la funcion  UInt64 funcion1( UInt8 E, UInt16 ES, UInt32 S );
+            Iniciar( "Prueba6/archDef.xml", "Prueba6/archPrueba.jdp", "Prueba6/funcionAsm.asm" );
+                //Prueba la funcion  UInt64 funcion1( UInt8 E, UInt16 ES, UInt32 S );
             //Iniciar("archDef.xml", "archPrueba.jdp", "funcionAsm.asm");
         }
-        public static void Iniciar(string archDef, string archPrueba, string funcionAsm)
+        public static void Iniciar( string archDef, string archPrueba, string funcionAsm )
         {
             try
             {
@@ -56,7 +57,7 @@ namespace TUAssembler
 
             string[] archivos = new string[2];
             archivos[1] = "codigoProbador.o";
-            archivos[0] = Path.Combine(  Path.GetDirectoryName( funcionAsm),  "funcionAsm.o" );
+            archivos[0] = Path.Combine( Path.GetDirectoryName( funcionAsm ), "funcionAsm.o" );
             compilador.Enlazar( "prueba.exe", archivos );
 
             Ejecutor.Ejecutar( "prueba.exe" );
