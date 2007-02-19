@@ -1,5 +1,4 @@
 using System;
-using TUAssembler.Definicion;
 
 namespace TUAssembler.JuegoDePrueba
 {
@@ -37,28 +36,34 @@ namespace TUAssembler.JuegoDePrueba
         #endregion
 
         #region Constructores
+        public ParamVector()
+        {
+        }
         public ParamVector( int longitud )
+        {
+            Elementos = new Elem[longitud];
+        }
+        public void EstablecerLongitud( int longitud )
         {
             Elementos = new Elem[longitud];
         }
         #endregion
 
-        public void Leer( string linea, Tipo tipo )
+        public void EstablecerValor( string fila )
         {
-            int longitud;
-            string[] parametros;
+            string[] elementos;
+            elementos = MA.ObtenerElementosDeLaFila( fila );
+            EstablecerLongitud( elementos.Length );
+            int i = 0;
 
-            longitud = Elementos.Length;
-            parametros = linea.Split( ' ' );
-            if( parametros.Length!=longitud )
-                throw new Exception( Mensajes.CantidadDeParametrosNoCoincidenConDefinicion );
-
-            for( int i = 0; i < longitud; i++ )
+            foreach( string elemento in elementos )
             {
-                Elem elem = new Elem( parametros[i] );
-                if( !elem.TipoCorrecto( tipo ) )
-                    throw new Exception( Mensajes.TipoIncorrectoVector( i ) );
+                Elem elem = new Elem( elemento );
+                /*if (!elem.TipoCorrecto(Definicion.Tipo))
+                        throw new Exception(Mensajes.TipoIncorrecto );
+                     * */
                 Elementos[i] = elem;
+                i++;
             }
         }
     }

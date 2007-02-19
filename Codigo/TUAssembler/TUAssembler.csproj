@@ -47,7 +47,7 @@
     <Compile Include="JuegoDePrueba\Parametro.cs" />
     <Compile Include="JuegoDePrueba\Prueba.cs" />
     <Compile Include="JuegoDePrueba\ParamVector.cs" />
-    <Compile Include="MA.cs" />
+    <Compile Include="Auxiliares\MA.cs" />
     <Compile Include="Mensajes.cs" />
     <Compile Include="Programa.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
