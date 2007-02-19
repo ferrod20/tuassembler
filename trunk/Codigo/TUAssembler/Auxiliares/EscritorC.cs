@@ -9,11 +9,11 @@ namespace TUAssembler.Auxiliares
         private bool identacionActiva;
         #endregion
 
+        #region Métodos
         public EscritorC( string path ): base( path )
         {
             identacion = 0;
         }
-
         public bool IdentacionActiva
         {
             get
@@ -25,7 +25,6 @@ namespace TUAssembler.Auxiliares
                 identacionActiva = value;
             }
         }
-
         public void EntreCorchetes( string valor )
         {
             WriteLine( "{" );
@@ -115,5 +114,6 @@ namespace TUAssembler.Auxiliares
             PrintfValorDistinto( variable, valorEsperado );
             Printf( "\\nDiferencia: %d", variable + " - " + valorEsperado );
         }
+        #endregion
     }
 }

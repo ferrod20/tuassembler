@@ -1,5 +1,7 @@
 using System;
 using System.IO;
+using TUAssembler.Auxiliares;
+using TUAssembler.Definicion;
 
 namespace TUAssembler.JuegoDePrueba
 {
@@ -58,6 +60,21 @@ namespace TUAssembler.JuegoDePrueba
                 Filas[f] = vector;
                 f++;
             }
+        }
+        public override void Instanciar(StreamWriter escritor)
+        {
+            string instanciacion = string.Empty;
+            instanciacion = Definicion.Nombre + " = { ";
+            foreach( ParamVector fila in Filas )
+                foreach( Elem elemento in fila.Elementos )
+                    instanciacion = elemento.Valor + ", ";
+            instanciacion += " }";
+            
+            escritor.WriteLine( instanciacion );            
+        }
+        public override void CompararValor( EscritorC escritor )
+        {
+            
         }
         #endregion
     }

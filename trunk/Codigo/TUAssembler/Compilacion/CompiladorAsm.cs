@@ -2,11 +2,14 @@ namespace TUAssembler.Compilacion
 {
     public class CompiladorAsm: Compilador
     {
+        #region Constructores
         public CompiladorAsm( string directorioDelCompilador, string nombreDelCompilador )
             : base( directorioDelCompilador, nombreDelCompilador, "SalidaAsm.txt", "ErrorAsm.txt" )
         {
         }
-        //[-@ response file] [-o outfile] [-f format] [-l listfile] [options...] [--] filename
+        #endregion
+        #region Métodos
+        //[-@ response file] [-o outfile] [-f format] [-l listfile] [options...] [--] filename        
         public void Compilar( string archivoRespuesta, string archivoSalida, string formato, string listaArchivos,
                               string opciones, string nombreArchivoACompilar )
         {
@@ -30,5 +33,6 @@ namespace TUAssembler.Compilacion
         {
             Compilar( "", "", "", "", opciones, nombreArchivoACompilar );
         }
+        #endregion
     }
 }

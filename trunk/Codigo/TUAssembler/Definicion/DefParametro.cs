@@ -175,23 +175,22 @@ namespace TUAssembler.Definicion
                 salida += "*";
             return salida;
         }
-        #endregion
-
         //Genera un parametro segun el tipo que sea.
         public Parametro GenerarParametro()
         {
             Parametro salida = null;
 
-            if( EsMatriz )
+            if (EsMatriz)
                 salida = new ParamMatriz();
-            if( EsVector )
+            if (EsVector)
                 salida = new ParamVector();
-            if( EsElemento )
+            if (EsElemento)
                 salida = new Elem();
 
             salida.Definicion = this;
             return salida;
         }
+        #endregion  
     }
 
     [Serializable()]

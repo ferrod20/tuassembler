@@ -98,23 +98,23 @@ namespace TUAssembler.Generacion
 
         #region Métodos
 
-        #region Generacion de codigo para la prueba
-        public void GenerarPrueba( ref EscritorC escritor )
+        #region Generación de código para la prueba
+        public void GenerarPrueba( EscritorC escritor )
         {
             escritor.WriteLine( "#include <stdio.h>" );
             escritor.WriteLine( "#define bool int" );
             escritor.WriteLine( "#define true 1" );
             escritor.WriteLine( "#define false 0" );
-            EscribirReferenciaExternaDeLaFuncion( ref escritor );
-            EscribirMallocFreeFunctions( ref escritor );
-            EscribirFuncionesDePrueba( ref escritor );
-            EscribirMain( ref escritor );
+            EscribirReferenciaExternaDeLaFuncion( escritor );
+            EscribirMallocFreeFunctions( escritor );
+            EscribirFuncionesDePrueba( escritor );
+            EscribirMain( escritor );
         }
-        private void EscribirReferenciaExternaDeLaFuncion( ref EscritorC escritor )
+        private void EscribirReferenciaExternaDeLaFuncion( EscritorC escritor )
         {
             escritor.WriteLine( "extern " + Definicion.GenerarPrototipo() + ";" );
         }
-        private void EscribirMallocFreeFunctions( ref EscritorC escritor )
+        private void EscribirMallocFreeFunctions( EscritorC escritor )
         {
             //El uso es el siguiente:
             // - La funcion a probar debe llamar a malloc2 con la cantidad de bytes que se quieren pedir.
@@ -186,16 +186,16 @@ namespace TUAssembler.Generacion
             escritor.WriteLine();
             escritor.IdentacionActiva = true;
         }
-        private void EscribirFuncionesDePrueba( ref EscritorC escritor )
+        private void EscribirFuncionesDePrueba( EscritorC escritor )
         {
             foreach( Prueba prueba in Pruebas )
             {
                 Mensajes.NombreDePrueba = prueba.Nombre;
-                EscribirFuncionPrueba( ref escritor );
+                EscribirFuncionPrueba( escritor );
                 pruebaActual++;
             }
         }
-        private void EscribirMain( ref EscritorC escritor )
+        private void EscribirMain( EscritorC escritor )
         {
             escritor.WriteLine( "int main()" );
             escritor.AbrirCorchetes();
@@ -210,48 +210,25 @@ namespace TUAssembler.Generacion
             }
             escritor.CerrarCorchetes();
         }
-        private void EscribirFuncionPrueba( ref EscritorC escritor )
+        private void EscribirFuncionPrueba( EscritorC escritor )
         {
             escritor.WriteLine( PruebaActual.Prototipo );
             escritor.AbrirCorchetes();
             escritor.WriteLine( "/*------------Parametros-------------------------*/" );
-            DeclararParametros( ref escritor );
+            PruebaActual.DeclararParametros( escritor);            
             escritor.WriteLine( "int cantErrores = 0;" );
             escritor.WriteLine( "/*------------Instanciacion----------------------*/" );
-            InstanciarParametros( ref escritor );
+            PruebaActual.InstanciarParametros( escritor);
             escritor.WriteLine( "/*------------LlamadaFuncion---------------------*/" );
-            LlamarFuncionAProbar( ref escritor );
+            LlamarFuncionAProbar( escritor);
             escritor.WriteLine( "/*------------Comparacion de valores-------------*/" );
-            CompararValoresDevueltos( ref escritor );
+            PruebaActual.CompararValoresDevueltos(  escritor );
             escritor.WriteLine();
             escritor.WriteLine( Mensajes.PrintfPruebaConcluida() );
             escritor.WriteLine( "return cantErrores;" );
             escritor.CerrarCorchetes();
         }
-        private void CompararValoresDevueltos( ref EscritorC escritor )
-        {
-            //Comparo los valores de los parametros de salida y los de ES
-
-            foreach( Parametro param in PruebaActual.ParametrosSalida )
-                param.CompararValor( ref escritor );
-        }
-        private void InstanciarParametros( ref EscritorC escritor )
-        {
-            string instanciacion;
-
-            //Instancio el valor que debe devolver la funcion para compararlo despues
-            //instanciacion = Prueba.ParametrosSalida[0].Instanciar();
-            //escritor.WriteLine( instanciacion );
-
-            //Instancio el valor de cada uno de los parametros de ParametrosEntrada que son de salida para pasarselo a la funcion.
-            foreach( Parametro param in PruebaActual.ParametrosEntrada )
-                if( param.Definicion.EntradaSalida!=EntradaSalida.S )
-                {
-                    instanciacion = param.Instanciar();
-                    escritor.WriteLine( instanciacion );
-                }
-        }
-        private void LlamarFuncionAProbar( ref EscritorC escritor )
+        private void LlamarFuncionAProbar(  EscritorC escritor )
         {
             string llamada = "";
             if( Definicion.DefParametroSalida!=null )
@@ -264,20 +241,9 @@ namespace TUAssembler.Generacion
             llamada += " );";
             escritor.WriteLine( llamada );
         }
-        private void DeclararParametros( ref EscritorC escritor )
-        {
-            string declaracion;
-            declaracion = PruebaActual.ParametrosSalida[0].Declarar();
-            escritor.WriteLine( declaracion );
-            foreach( Parametro param in PruebaActual.ParametrosEntrada )
-            {
-                declaracion = param.Declarar();
-                escritor.WriteLine( declaracion );
-            }
-        }
         #endregion
 
-        #region Lectura de parámetros y funcion
+        #region Lectura de parámetros y función
         public void LeerDefinicion()
         {
             Definicion = DefinicionFuncion.Leer( archivoDefinicion );
