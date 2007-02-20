@@ -1,3 +1,4 @@
+using System;
 using System.IO;
 
 namespace TUAssembler.Auxiliares
@@ -9,11 +10,15 @@ namespace TUAssembler.Auxiliares
         private bool identacionActiva;
         #endregion
 
-        #region Métodos
-        public EscritorC( string path ): base( path )
+        #region Constructores
+        public EscritorC( string path )
+            : base( path )
         {
             identacion = 0;
         }
+        #endregion
+
+        #region Métodos
         public bool IdentacionActiva
         {
             get
@@ -25,6 +30,22 @@ namespace TUAssembler.Auxiliares
                 identacionActiva = value;
             }
         }
+
+        private string Espacios()
+        {
+            int i = 0;
+            string espacios = string.Empty;
+            if( IdentacionActiva )
+                while( identacion > i )
+                {
+                    espacios += "\t";
+                    i++;
+                }
+
+            return espacios;
+        }
+
+        #region Escritura general
         public void EntreCorchetes( string valor )
         {
             WriteLine( "{" );
@@ -42,39 +63,14 @@ namespace TUAssembler.Auxiliares
             identacion--;
             WriteLine( "}" );
         }
-        public void If( string condicion )
-        {
-            WriteLine( "if( " + condicion + " )" );
-            AbrirCorchetes();
-        }
-        public void Printf( string texto, params string[] variables )
-        {
-            Write( Espacios() );
-            Write( "printf( \"" + texto + "\"" );
-            foreach( string variable in variables )
-                Write( " ," + variable );
-            Write( ");" );
-            WriteLine();
-        }
         public override void WriteLine( string valor )
         {
             valor = Espacios() + valor;
             base.WriteLine( valor );
         }
-        private string Espacios()
-        {
-            int i = 0;
-            string espacios = string.Empty;
-            if( IdentacionActiva )
-                while( identacion > i )
-                {
-                    espacios += "\t";
-                    //espacios += "    ";
-                    i++;
-                }
+        #endregion
 
-            return espacios;
-        }
+        #region Instrucciones
         public void AbrirCorchetes()
         {
             WriteLine( "{" );
@@ -84,6 +80,11 @@ namespace TUAssembler.Auxiliares
         {
             identacion--;
             WriteLine( "}" );
+        }
+        public void If( string condicion )
+        {
+            WriteLine( "if( " + condicion + " )" );
+            AbrirCorchetes();
         }
         public void FinIf()
         {
@@ -98,6 +99,25 @@ namespace TUAssembler.Auxiliares
         {
             CerrarCorchetes();
         }
+        #endregion
+
+        #region PrintF
+        public void PrintfPruebaConcluida()
+        {
+            Printf("La prueba " + Mensajes.NombreDePrueba + " ha concluido con %d errores", "cantErrores");
+        }
+
+        public void PrintfValorDistintoVector(string nombreVector, string valorEsperado, int posicion)
+        {
+            string texto = "Prueba " + Mensajes.NombreDePrueba + ": El valor del vector " + nombreVector +
+                " en la posicion " +
+                    posicion +
+                        ": %i es distinto al valor esperado: " + valorEsperado;
+            string variable = nombreVector + "[" + posicion +
+                "]";
+            Printf(texto, variable);
+        }
+
         public void PrintfValorDistinto( string variable, string valorEsperado )
         {
             //%10.2f Para los float 10 digitos, 2 de precision
@@ -114,6 +134,19 @@ namespace TUAssembler.Auxiliares
             PrintfValorDistinto( variable, valorEsperado );
             Printf( "\\nDiferencia: %d", variable + " - " + valorEsperado );
         }
+        public void Printf( string texto, params string[] variables )
+        {
+            Write( Espacios() );
+            Write( "printf( \"" + texto + "\"" );
+            foreach( string variable in variables )
+                Write( " ," + variable );
+            Write( ");" );
+            WriteLine();
+        }
         #endregion
+
+        #endregion
+
+        
     }
 }

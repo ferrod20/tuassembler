@@ -167,11 +167,10 @@ namespace TUAssembler.Definicion
             }
 
             if( esVector )
-                salida += "* , int "; //longitud
-
+                salida += "* "; //longitud
             if( esMatriz )
-                salida += "**  , int , int "; //cantFilas, cantColumnas
-            if( TipoDeAcceso==ValorOReferencia.R )
+                salida += "** "; //cantFilas, cantColumnas
+            if( !esVector && !esMatriz && TipoDeAcceso==ValorOReferencia.R )
                 salida += "*";
             return salida;
         }
@@ -180,17 +179,17 @@ namespace TUAssembler.Definicion
         {
             Parametro salida = null;
 
-            if (EsMatriz)
+            if( EsMatriz )
                 salida = new ParamMatriz();
-            if (EsVector)
+            if( EsVector )
                 salida = new ParamVector();
-            if (EsElemento)
+            if( EsElemento )
                 salida = new Elem();
 
             salida.Definicion = this;
             return salida;
         }
-        #endregion  
+        #endregion
     }
 
     [Serializable()]

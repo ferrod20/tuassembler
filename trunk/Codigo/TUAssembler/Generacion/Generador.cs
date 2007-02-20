@@ -1,6 +1,5 @@
 using System.IO;
 using TUAssembler.Auxiliares;
-using TUAssembler.Definicion;
 using TUAssembler.JuegoDePrueba;
 
 namespace TUAssembler.Generacion
@@ -215,20 +214,22 @@ namespace TUAssembler.Generacion
             escritor.WriteLine( PruebaActual.Prototipo );
             escritor.AbrirCorchetes();
             escritor.WriteLine( "/*------------Parametros-------------------------*/" );
-            PruebaActual.DeclararParametros( escritor);            
+            PruebaActual.DeclararParametros( escritor );
             escritor.WriteLine( "int cantErrores = 0;" );
+            escritor.WriteLine( "/*------------Pedir memoria----------------------*/" );
+            PruebaActual.PedirMemoria( escritor );
             escritor.WriteLine( "/*------------Instanciacion----------------------*/" );
-            PruebaActual.InstanciarParametros( escritor);
+            PruebaActual.InstanciarParametros( escritor );
             escritor.WriteLine( "/*------------LlamadaFuncion---------------------*/" );
-            LlamarFuncionAProbar( escritor);
+            LlamarFuncionAProbar( escritor );
             escritor.WriteLine( "/*------------Comparacion de valores-------------*/" );
-            PruebaActual.CompararValoresDevueltos(  escritor );
-            escritor.WriteLine();
-            escritor.WriteLine( Mensajes.PrintfPruebaConcluida() );
+            PruebaActual.CompararValoresDevueltos( escritor );
+            escritor.WriteLine();            
+            escritor.PrintfPruebaConcluida();
             escritor.WriteLine( "return cantErrores;" );
             escritor.CerrarCorchetes();
         }
-        private void LlamarFuncionAProbar(  EscritorC escritor )
+        private void LlamarFuncionAProbar( EscritorC escritor )
         {
             string llamada = "";
             if( Definicion.DefParametroSalida!=null )
@@ -253,7 +254,7 @@ namespace TUAssembler.Generacion
             StreamReader lector = new StreamReader( archivoPrueba );
             PruebaActual.LeerNombre( lector );
             PruebaActual.GenerarParametros( Definicion );
-                //Hace un new de cada parametro( Matriz, Vector o Elem ) segun lo que indica Definicion.
+            //Hace un new de cada parametro( Matriz, Vector o Elem ) segun lo que indica Definicion.
             PruebaActual.LeerParametros( lector );
         }
         #endregion

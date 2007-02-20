@@ -2,7 +2,7 @@
 #define bool int
 #define true 1
 #define false 0
-extern unsigned long int funcion1( unsigned char, unsigned long int*, char*, bool*, float*, double* );
+extern unsigned long int funcion1( unsigned char*  );
 
 int cantPedidosMemoria = 0;
 char* pedidos[sizeof(int)*10000];
@@ -52,75 +52,47 @@ void free2all(){
        printf("No se han liberado %d bytes de memoria", bytesNoLiberados);
 }
 
-int PruebaUno()
+int pruebaVector()
 {
 	/*------------Parametros-------------------------*/
 	unsigned long salida;
-	unsigned char p1UI8;
-	unsigned long *p2UI16;
-	char *p3Char;
-	bool *p4Bool;
-	float *p5Float32;
-	double *p6Float64;
+	unsigned char *vector;
 	int cantErrores = 0;
+	/*------------Pedir memoria----------------------*/
+	vector = malloc2( 3 );
 	/*------------Instanciacion----------------------*/
-	p1UI8 = 7;
-	*p2UI16 = 8;
-	*p3Char = '9';
-	*p4Bool = false;
-	*p5Float32 = 11.2;
-	*p6Float64 = 12.3;
+	vector[0] = 5;
+	vector[1] = 7;
+	vector[2] = 9;
 	/*------------LlamadaFuncion---------------------*/
-	salida = funcion1( p1UI8, p2UI16, p3Char, p4Bool, p5Float32, p6Float64 );
+	salida = funcion1( vector );
 	/*------------Comparacion de valores-------------*/
 	//salida
-	if( salida != 1 )
+	if( salida != 8 )
 	{
-		printf( "El valor del parametro salida:%d es distinto al valor esperado: 1" ,salida);
-		printf( "\nDiferencia: %d" ,salida - 1);
+		printf( "El valor del parametro salida:%d es distinto al valor esperado: 8" ,salida);
+		printf( "\nDiferencia: %d" ,salida - 8);
 		cantErrores++;
 	}
-	//p2UI16
-	if( *p2UI16 != 2 )
+	//vector
+	if( vector[0] != 1 )
 	{
-		printf( "El valor del parametro *p2UI16:%d es distinto al valor esperado: 2" ,*p2UI16);
-		printf( "\nDiferencia: %d" ,*p2UI16 - 2);
+		printf( "Prueba pruebaVector: El valor del vector vector en la posicion 0: %i es distinto al valor esperado: 1" ,vector[0]);
 		cantErrores++;
 	}
-	//p3Char
-	if( *p3Char != 3 )
+	if( vector[1] != 2 )
 	{
-		printf( "El valor del parametro *p3Char:%d es distinto al valor esperado: 3" ,*p3Char);
+		printf( "Prueba pruebaVector: El valor del vector vector en la posicion 1: %i es distinto al valor esperado: 2" ,vector[1]);
 		cantErrores++;
 	}
-	//p4Bool
-	if( (*p4Bool == 0 && 0!=0)||(*p4Bool != 0 && 0==0) )
+	if( vector[2] != 3 )
 	{
-		printf( "El valor del parametro *p4Bool:%d es distinto al valor esperado: 0" ,*p4Bool);
-		cantErrores++;
-	}
-	//p5Float32
-	float AUXp5Float32 = *p5Float32 - 5.0;
-	AUXp5Float32 = (AUXp5Float32 >= 0) ? AUXp5Float32 : -AUXp5Float32;
-	float PRp5Float32 = pow((float)10, 0);
-	if( AUXp5Float32 < PRp5Float32 )
-	{
-		printf( "El valor del parametro *p5Float32:%d es distinto al valor esperado: 5.0" ,*p5Float32);
-		printf( "\nDiferencia: %d" ,AUXp5Float32);
-		cantErrores++;
-	}
-	//p6Float64
-	double AUXp6Float64 = *p6Float64 - 6.0;
-	AUXp6Float64 = (AUXp6Float64 >= 0) ? AUXp6Float64 : -AUXp6Float64;
-	double PRp6Float64 = pow((double)10, 0);
-	if( AUXp6Float64 < PRp6Float64 )
-	{
-		printf( "El valor del parametro *p6Float64:%d es distinto al valor esperado: 6.0" ,*p6Float64);
-		printf( "\nDiferencia: %d" ,AUXp6Float64);
+		printf( "Prueba pruebaVector: El valor del vector vector en la posicion 2: %i es distinto al valor esperado: 3" ,vector[2]);
 		cantErrores++;
 	}
 
-	printf( "\nLa prueba PruebaUno ha concluido con %d errores", cantErrores ); 
+
+	printf( "La prueba pruebaVector ha concluido con %d errores" ,cantErrores);
 	return cantErrores;
 }
 int main()
@@ -130,6 +102,6 @@ int main()
 	/*------------Llamada a pruebas------------------*/
 	if( cantErrores == 0 )
 	{
-		cantErrores = PruebaUno();
+		cantErrores = pruebaVector();
 	}
 }

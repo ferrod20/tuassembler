@@ -84,29 +84,30 @@ namespace TUAssembler.JuegoDePrueba
             return salida;
         }
         //Lee el nombre de la prueba
-        public void LeerNombre(StreamReader lector)
+        public void LeerNombre( StreamReader lector )
         {
-            string[] nombrePrueba = MA.Leer(lector);
-            if (nombrePrueba.Length > 1)
-                throw new Exception(Mensajes.NombrePruebaNoPermitido);
+            string[] nombrePrueba = MA.Leer( lector );
+            if( nombrePrueba.Length > 1 )
+                throw new Exception( Mensajes.NombrePruebaNoPermitido );
             Nombre = nombrePrueba[0];
         }
+
         #region Generacion de parametros
         //En base a la definicion crea los parametro correspondientes; hace un new de Matriz, Vector o Elem para luego poder ser leidos.
-        public void GenerarParametros(DefinicionFuncion definicion)
+        public void GenerarParametros( DefinicionFuncion definicion )
         {
-            GenerarParametrosDeSalida(definicion);
-            GenerarParametrosDeEntrada(definicion);
+            GenerarParametrosDeSalida( definicion );
+            GenerarParametrosDeEntrada( definicion );
         }
-        private void GenerarParametrosDeEntrada(DefinicionFuncion definicion)
+        private void GenerarParametrosDeEntrada( DefinicionFuncion definicion )
         {
             DefParametro[] defParametros = definicion.DefParametrosEntrada;
             ParametrosEntrada = new Parametro[defParametros.Length];
 
-            for (int i = 0; i < ParametrosEntrada.Length; i++)
+            for( int i = 0; i < ParametrosEntrada.Length; i++ )
                 ParametrosEntrada[i] = defParametros[i].GenerarParametro();
         }
-        private void GenerarParametrosDeSalida(DefinicionFuncion definicion)
+        private void GenerarParametrosDeSalida( DefinicionFuncion definicion )
         {
             DefParametro[] defParametrosSoES;
             int cuantos;
@@ -116,75 +117,73 @@ namespace TUAssembler.JuegoDePrueba
             ParametrosSalida[0] = definicion.DefParametroSalida.GenerarParametro();
             defParametrosSoES = definicion.ObtenerDefParametrosESoS();
 
-            for (int i = 1; i < cuantos + 1; i++)
+            for( int i = 1; i < cuantos + 1; i++ )
                 ParametrosSalida[i] = defParametrosSoES[i - 1].GenerarParametro();
         }
         #endregion
 
         #region Lectura de parametros
-        public void LeerParametros(StreamReader lector)
+        public void LeerParametros( StreamReader lector )
         {
             try
             {
-                LeerParametrosSalida(lector);
+                LeerParametrosSalida( lector );
             }
-            catch (Exception e)
+            catch( Exception e )
             {
-                throw new Exception(Mensajes.ErrorAlLeerParametroDeSalida(e));
+                throw new Exception( Mensajes.ErrorAlLeerParametroDeSalida( e ) );
             }
             try
             {
-                LeerParametrosEntrada(lector);
+                LeerParametrosEntrada( lector );
             }
-            catch (Exception e)
+            catch( Exception e )
             {
-                throw new Exception(Mensajes.ErrorAlLeerParametroDeEntrada(e));
+                throw new Exception( Mensajes.ErrorAlLeerParametroDeEntrada( e ) );
             }
         }
-        private void LeerParametrosSalida(StreamReader lector)
+        private void LeerParametrosSalida( StreamReader lector )
         {
-            foreach (Parametro parametro in ParametrosSalida)
-                parametro.Leer(lector);
+            foreach( Parametro parametro in ParametrosSalida )
+                parametro.Leer( lector );
         }
-        private void LeerParametrosEntrada(StreamReader lector)
+        private void LeerParametrosEntrada( StreamReader lector )
         {
-            foreach (Parametro parametro in ParametrosEntrada)
-                parametro.Leer(lector);
+            foreach( Parametro parametro in ParametrosEntrada )
+                parametro.Leer( lector );
         }
         #endregion
-        
+
         #region Escritura de código C
-        public void DeclararParametros( EscritorC escritor)
+        public void DeclararParametros( EscritorC escritor )
         {
-            string declaracion;
-            declaracion = ParametrosSalida[0].Declarar();
-            escritor.WriteLine(declaracion);
-            foreach (Parametro param in ParametrosEntrada)
-            {
-                declaracion = param.Declarar();
-                escritor.WriteLine(declaracion);
-            }
+            ParametrosSalida[0].Declarar( escritor );
+            foreach( Parametro param in ParametrosEntrada )
+                param.Declarar( escritor );
         }
-        public void InstanciarParametros( EscritorC escritor)
-        {            
-            //Instancio el valor que debe devolver la funcion para compararlo despues
-            //instanciacion = Prueba.ParametrosSalida[0].Instanciar();
-            //escritor.WriteLine( instanciacion );
-
-            //Instancio el valor de cada uno de los parametros de ParametrosEntrada que son de salida para pasarselo a la funcion.
-            foreach (Parametro param in ParametrosEntrada)
-                if (param.Definicion.EntradaSalida != EntradaSalida.S)
-                    param.Instanciar( escritor );                
-        }
-        public void CompararValoresDevueltos( EscritorC escritor)
+        public void InstanciarParametros( EscritorC escritor )
         {
-            //Comparo los valores de los parametros de salida y los de ES
-
-            foreach (Parametro param in ParametrosSalida)
-                param.CompararValor( escritor);
-
+            //Instancio el valor de cada uno de los parametros de entrada que no son de salida para pasarselo a la función.
+            foreach( Parametro param in ParametrosEntrada )
+                if( param.Definicion.EntradaSalida!=EntradaSalida.S )
+                    param.Instanciar( escritor );
+        }
+        public void CompararValoresDevueltos( EscritorC escritor )
+        {
+            //Comparo los valores de los parametros de salida y ES
+            foreach( Parametro param in ParametrosSalida )
+                param.CompararValor( escritor );
         }
         #endregion
-        #endregion        
+
+        #endregion
+
+        public void PedirMemoria( EscritorC escritor )
+        {
+            //Instancio el valor de cada uno de los parametros de entrada que no son de salida para pasarselo a la función.
+            foreach( Parametro param in ParametrosEntrada )
+                if( param.Definicion.EntradaSalida!=EntradaSalida.S && param.Definicion.TipoDeAcceso==ValorOReferencia.R )
+                    param.PedirMemoria( escritor );
+        }
     }
 }

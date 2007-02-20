@@ -1,6 +1,7 @@
 using System;
 using System.IO;
 using TUAssembler.Auxiliares;
+using TUAssembler.Definicion;
 
 namespace TUAssembler.JuegoDePrueba
 {
@@ -35,6 +36,14 @@ namespace TUAssembler.JuegoDePrueba
                 Elementos[indice] = value;
             }
         }
+
+        public int Longitud
+        {
+            get
+            {
+                return Elementos.Length;
+            }
+        }
         #endregion
 
         #region Constructores
@@ -52,23 +61,12 @@ namespace TUAssembler.JuegoDePrueba
         #endregion
 
         #region Métodos
-        public override void Instanciar(StreamWriter escritor)
+        public void EstablecerValor( string[] fila )
         {
-            string instanciacion;
-            instanciacion = Definicion.Nombre + " = { ";
-            foreach (Elem elemento in Elementos)
-                instanciacion += elemento.Valor + ", ";
-            instanciacion += " }";
-            escritor.WriteLine( instanciacion );
-        }
-        public void EstablecerValor( string fila )
-        {
-            string[] elementos;
-            elementos = MA.ObtenerElementosDeLaFila( fila );
-            EstablecerLongitud( elementos.Length );
+            EstablecerLongitud( fila.Length );
             int i = 0;
 
-            foreach( string elemento in elementos )
+            foreach( string elemento in fila )
             {
                 Elem elem = new Elem( elemento );
                 /*if (!elem.TipoCorrecto(Definicion.Tipo))
@@ -78,17 +76,107 @@ namespace TUAssembler.JuegoDePrueba
                 i++;
             }
         }
-        public override void CompararValor( EscritorC escritor )
+        public override void Leer( StreamReader lector )
         {
-            if (Definicion.EsVector)
+            string[] parametros;
+            try
             {
-                for (int i = 0; i < Elementos.Length; i++)
-                {
-                    escritor.WriteLine("if ( " + Definicion.Nombre + "[" + i + "] != " + this[i].Valor + " )");
-                    escritor.WriteLine(Mensajes.PrintfValorDistintoCadena(Definicion.Nombre, this[i].Valor, i));
-                }
+                parametros = MA.Leer( lector );
+            }
+            catch( Exception e )
+            {
+                throw new Exception( Mensajes.ErrorAlLeerParametro( Definicion.Nombre, e ) );
+            }
+
+            EstablecerValor( parametros );
+        }
+
+        #region Métodos de código C
+        public override void Declarar( EscritorC escritor )
+        {
+            string declaracion = string.Empty;
+            switch( Definicion.Tipo )
+            {
+                case Tipo.UInt8:
+                    declaracion = "unsigned char ";
+                    break;
+                case Tipo.UInt16:
+                    declaracion = "unsigned short ";
+                    break;
+                case Tipo.UInt32:
+                    declaracion = "unsigned int ";
+                    break;
+                case Tipo.UInt64:
+                    declaracion = "unsigned long ";
+                    break;
+                case Tipo.Int8:
+                    declaracion = "char ";
+                    break;
+                case Tipo.Int16:
+                    declaracion = "short ";
+                    break;
+                case Tipo.Int32:
+                    declaracion = "int ";
+                    break;
+                case Tipo.Int64:
+                    declaracion = "long long int ";
+                    // el tipo "long long int" define(al menos en GCC) el entero de 64 bits
+                    break;
+                case Tipo.Float32:
+                    declaracion = "float ";
+                    break;
+                case Tipo.Float64:
+                    declaracion = "double ";
+                    break;
+                case Tipo.Booleano:
+                    declaracion = "bool ";
+                    break;
+                case Tipo.Char:
+                    declaracion = "char ";
+                    break;
+                case Tipo.CadenaC:
+                    declaracion = "char ";
+                    break;
+                case Tipo.CadenaPascal:
+                    declaracion = "char ";
+                    break;
+            }
+            declaracion += "*" + Definicion.Nombre + ";";
+            escritor.WriteLine( declaracion );
+        }
+        public override void PedirMemoria( EscritorC escritor )
+        {
+            string pedido;
+            int cantMemoria;
+            cantMemoria = Longitud*MA.CuantosBytes( Definicion.Tipo );
+            pedido = Definicion.Nombre + " = " + "malloc2( " + cantMemoria + " );";
+            escritor.WriteLine( pedido );
+        }
+        public override void Instanciar( EscritorC escritor )
+        {
+            string instanciacion;
+            int i = 0;
+
+            foreach( Elem elemento in Elementos )
+            {
+                instanciacion = Definicion.Nombre + "[" + i + "] = " + elemento.Valor + ";";
+                escritor.WriteLine( instanciacion );
+                i++;
             }
         }
+        public override void CompararValor( EscritorC escritor )
+        {
+            escritor.WriteLine( "//" + Definicion.Nombre );
+            for( int i = 0; i < Elementos.Length; i++ )
+            {
+                escritor.If( Definicion.Nombre + "[" + i + "] != " + this[i].Valor );
+                escritor.PrintfValorDistintoVector( Definicion.Nombre, this[i].Valor, i );
+                escritor.WriteLine( "cantErrores++;" );
+                escritor.FinIf();
+            }
+        }
+        #endregion
+
         #endregion
     }
 }

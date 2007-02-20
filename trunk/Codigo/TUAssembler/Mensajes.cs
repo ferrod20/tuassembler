@@ -19,10 +19,11 @@ namespace TUAssembler
             "El nombre que intenta poner a la prueba no esta permitido. Debe ser un nombre con las mismas caracteristicas que tiene el nombre de una función de C.";
 
         public static string FaltaPuntoYComa = "Debe haberse olvidado de poner un ';' en algún lado.";
+        public static string CadenaNoSoportadaParaEstaOpcion = "Esta opción no soporta cadenas como tipo básico.";
         #endregion
 
         #region Métodos
-        public static string ErrorAlLeerParametro(string nombre, Exception e)
+        public static string ErrorAlLeerParametro( string nombre, Exception e )
         {
             return "Se ha producido un error al leer el parámetro " + nombre + "\n" + e.Message;
         }
@@ -90,6 +91,7 @@ namespace TUAssembler
                 "Prueba " + NombreDePrueba + ": El tipo del elemento del vector, en la posición " + i + " de la prueba " +
                     NombreDePrueba + " es incorrecto.";
         }
+        /*
         public static string PrintfValorDistinto( string variable, string valorEsperado )
         {
             //%10.2f Para los float 10 digitos, 2 de precision
@@ -106,10 +108,8 @@ namespace TUAssembler
                 "printf( \"Prueba " + NombreDePrueba + ": El valor de la cadena " + variable + ": de la posicion " + i +
                     " %i es distinto al valor esperado: " + valorEsperado + "\", " + valorEsperado + " );";
         }
-        public static string PrintfPruebaConcluida()
-        {
-            return "printf( \"\\nLa prueba " + NombreDePrueba + " ha concluido con %d errores\", cantErrores ); ";
-        }
-        #endregion        
+         * */
+        #endregion
+        
     }
 }

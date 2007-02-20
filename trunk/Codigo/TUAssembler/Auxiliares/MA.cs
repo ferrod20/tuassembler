@@ -1,5 +1,6 @@
 using System;
 using System.IO;
+using TUAssembler.Definicion;
 
 namespace TUAssembler
 {
@@ -164,6 +165,38 @@ namespace TUAssembler
                     r++;
                 }
             return parametrosReal;
+        }
+        public static int CuantosBytes( Tipo tipo )
+        {
+            int cantBytes = 0;
+            switch( tipo )
+            {
+                case Tipo.UInt8:
+                case Tipo.Int8:
+                case Tipo.Booleano:
+                case Tipo.Char:
+                    cantBytes = 1;
+                    break;
+                case Tipo.Int16:
+                case Tipo.UInt16:
+                    cantBytes = 2;
+                    break;
+                case Tipo.Float32:
+                case Tipo.Int32:
+                case Tipo.UInt32:
+                    cantBytes = 4;
+                    break;
+                case Tipo.Int64:
+                case Tipo.UInt64:
+                case Tipo.Float64:
+                    cantBytes = 8;
+                    break;
+                case Tipo.CadenaC:
+                case Tipo.CadenaPascal:
+                    throw new Exception( Mensajes.CadenaNoSoportadaParaEstaOpcion );
+                    break;
+            }
+            return cantBytes;
         }
     }
 }
