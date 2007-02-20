@@ -8,6 +8,7 @@ namespace TUAssembler.Compilacion
         {
         }
         #endregion
+
         #region Métodos
         public void Compilar( string opciones, string nombreArchivoACompilar )
         {
