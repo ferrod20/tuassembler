@@ -15,9 +15,10 @@ namespace TUAssembler
             //Iniciar("Prueba3/archDef.xml", "Prueba3/archPrueba.jdp", "Prueba3/funcionAsm.asm"); //Prueba la devolucion de un UInt32
             //Iniciar("Prueba4/archDef.xml", "Prueba4/archPrueba.jdp", "Prueba4/funcionAsm.asm"); //Prueba la devolucion de un UInt64
             //Iniciar("Prueba5/archDef.xml", "Prueba5/archPrueba.jdp", "Prueba5/funcionAsm.asm"); //Prueba la funcion  UInt64 funcion1( UInt8 E, UInt16 ES, UInt32 S );
-            //Iniciar( "Prueba6/archDef.xml", "Prueba6/archPrueba.jdp", "Prueba6/funcionAsm.asm" );//Prueba la funcion  UInt64 funcion1( UInt8 E, UInt16 ES, UInt32 S );
-            Iniciar( "Prueba7/archDef.xml", "Prueba7/archPrueba.jdp", "Prueba7/funcionAsm.asm" );
-                //Prueba pasarle una matriz a una funcion.                         
+            Iniciar( "Prueba6/archDef.xml", "Prueba6/archPrueba.jdp", "Prueba6/funcionAsm.asm" );
+                //Prueba la funcion  UInt64 funcion1( Vector ES );
+            //Iniciar( "Prueba7/archDef.xml", "Prueba7/archPrueba.jdp", "Prueba7/funcionAsm.asm" );
+            //Prueba pasarle una matriz a una funcion.                         
         }
         public static void Iniciar( string archDef, string archPrueba, string funcionAsm )
         {

@@ -69,9 +69,8 @@ namespace TUAssembler.JuegoDePrueba
             foreach( string elemento in fila )
             {
                 Elem elem = new Elem( elemento );
-                /*if (!elem.TipoCorrecto(Definicion.Tipo))
-                        throw new Exception(Mensajes.TipoIncorrecto );
-                     * */
+                if( !elem.TipoCorrecto( Definicion.Tipo ) )
+                    throw new Exception( Mensajes.ElementoDeTipoIncorrectoEnElVector( Definicion.Nombre, i ) );
                 Elementos[i] = elem;
                 i++;
             }
@@ -168,12 +167,19 @@ namespace TUAssembler.JuegoDePrueba
         {
             escritor.WriteLine( "//" + Definicion.Nombre );
             for( int i = 0; i < Elementos.Length; i++ )
-            {
-                escritor.If( Definicion.Nombre + "[" + i + "] != " + this[i].Valor );
-                escritor.PrintfValorDistintoVector( Definicion.Nombre, this[i].Valor, i );
-                escritor.WriteLine( "cantErrores++;" );
-                escritor.FinIf();
-            }
+                Elementos[i].CompararValor( escritor, Definicion.Nombre + "[" + i + "]" );
+        }
+        public override void LiberarMemoria( EscritorC escritor )
+        {
+            escritor.WriteLine( "salidaFree2 = free2( " + Definicion.Nombre + " );" );
+            escritor.If( "salidaFree2 == escrituraFueraDelBuffer" );
+            escritor.PrintfEscrituraFueraDelBuffer( Definicion.Nombre );
+            escritor.WriteLine( "cantErrores++;" );
+            escritor.FinIf();
+            escritor.If( "salidaFree2 == liberarPosMemNoValida" );
+            escritor.CambioDeDireccionDelPuntero( Definicion.Nombre );
+            escritor.WriteLine( "cantErrores++;" );
+            escritor.FinIf();
         }
         #endregion
 

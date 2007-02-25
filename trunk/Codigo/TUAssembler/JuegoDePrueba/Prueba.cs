@@ -174,16 +174,24 @@ namespace TUAssembler.JuegoDePrueba
             foreach( Parametro param in ParametrosSalida )
                 param.CompararValor( escritor );
         }
-        #endregion
-
-        #endregion
-
-        public void PedirMemoria( EscritorC escritor )
+        public void PedirMemoria(EscritorC escritor)
         {
-            //Instancio el valor de cada uno de los parametros de entrada que no son de salida para pasarselo a la función.
-            foreach( Parametro param in ParametrosEntrada )
-                if( param.Definicion.EntradaSalida!=EntradaSalida.S && param.Definicion.TipoDeAcceso==ValorOReferencia.R )
-                    param.PedirMemoria( escritor );
+            //Pido memoria para todos los parametros de referencia.
+            foreach (Parametro param in ParametrosEntrada)
+                if (param.Definicion.EntradaSalida != EntradaSalida.S && param.Definicion.TipoDeAcceso == ValorOReferencia.R)
+                    param.PedirMemoria(escritor);
         }
+        public void LiberarMemoria(EscritorC escritor)
+        {
+            //Libero la memoria para todos los parametros en los que se pidió memoria anteriormente.
+            foreach (Parametro param in ParametrosEntrada)
+                if (param.Definicion.EntradaSalida != EntradaSalida.S && param.Definicion.TipoDeAcceso == ValorOReferencia.R)
+                    param.LiberarMemoria(escritor);
+        }
+
+        #endregion
+
+        #endregion
+
     }
 }

@@ -133,6 +133,10 @@ namespace TUAssembler.Generacion
             // }
             escritor.IdentacionActiva = false;
             escritor.WriteLine();
+            escritor.WriteLine( "#define todoBien 0" );
+            escritor.WriteLine( "#define liberarPosMemNoValida 1" );
+            escritor.WriteLine( "#define escrituraFueraDelBuffer 2" );
+            escritor.WriteLine();
             escritor.WriteLine( "int cantPedidosMemoria = 0;" );
             escritor.WriteLine( "char* pedidos[sizeof(int)*10000];" );
             escritor.WriteLine( "int tamanioPedidos[sizeof(int)*10000];" );
@@ -154,21 +158,25 @@ namespace TUAssembler.Generacion
             escritor.WriteLine( "   return ret_value + 8;" );
             escritor.WriteLine( "}" );
             escritor.WriteLine();
-            escritor.WriteLine( "void free2(char* punteroABloque)" );
+            escritor.WriteLine( "int free2(char* punteroABloque)" );
             escritor.WriteLine( "{" );
             escritor.WriteLine( "   int pos, i;" );
+            escritor.WriteLine( "   int salida = todoBien;" );
             escritor.WriteLine( "   for(pos=0; pos<cantPedidosMemoria && pedidos[pos]!=punteroABloque-8; pos++);" );
             escritor.WriteLine( "       if(pedidos[pos] !=punteroABloque-8)" );
-            escritor.WriteLine( "           printf(\"Se intento liberar una posicion de memoria no valida\");" );
+            escritor.WriteLine(
+                "           salida = liberarPosMemNoValida;//printf(\"Se intento liberar una posicion de memoria no valida\");" );
             escritor.WriteLine( "       else{" );
             escritor.WriteLine( "           fueLiberado[pos] = true;" );
             escritor.WriteLine( "           for (i = 0; i < 8; i++)" );
             escritor.WriteLine(
                 "               if(((char*)punteroABloque-8)[i] != 'A'|| ((char*)punteroABloque)[tamanioPedidos[pos] + i] != 'A'){" );
-            escritor.WriteLine( "                   printf(\"Se ha escrito fuera del buffer\");" );
+            escritor.WriteLine(
+                "                   salida = escrituraFueraDelBuffer;//printf(\"Se ha escrito fuera del buffer\");" );
             escritor.WriteLine( "                   break;" );
             escritor.WriteLine( "               }" );
             escritor.WriteLine( "       }" );
+            escritor.WriteLine( "       return salida;" );
             escritor.WriteLine( "}" );
             escritor.WriteLine();
             escritor.WriteLine( "void free2all(){" );
@@ -194,25 +202,12 @@ namespace TUAssembler.Generacion
                 pruebaActual++;
             }
         }
-        private void EscribirMain( EscritorC escritor )
-        {
-            escritor.WriteLine( "int main()" );
-            escritor.AbrirCorchetes();
-            escritor.WriteLine( "/*------------Parametros-------------------------*/" );
-            escritor.WriteLine( "int cantErrores = 0;" );
-            escritor.WriteLine( "/*------------Llamada a pruebas------------------*/" );
-            foreach( Prueba prueba in Pruebas )
-            {
-                escritor.If( "cantErrores == 0" );
-                escritor.WriteLine( "cantErrores = " + prueba.Nombre + "();" );
-                escritor.FinIf();
-            }
-            escritor.CerrarCorchetes();
-        }
         private void EscribirFuncionPrueba( EscritorC escritor )
         {
             escritor.WriteLine( PruebaActual.Prototipo );
             escritor.AbrirCorchetes();
+            escritor.WriteLine( "/*------------Variables comunes------------------*/" );
+            escritor.WriteLine( "int salidaFree2;" );
             escritor.WriteLine( "/*------------Parametros-------------------------*/" );
             PruebaActual.DeclararParametros( escritor );
             escritor.WriteLine( "int cantErrores = 0;" );
@@ -224,7 +219,10 @@ namespace TUAssembler.Generacion
             LlamarFuncionAProbar( escritor );
             escritor.WriteLine( "/*------------Comparacion de valores-------------*/" );
             PruebaActual.CompararValoresDevueltos( escritor );
-            escritor.WriteLine();            
+            escritor.WriteLine( "/*------------Liberar memoria--------------------*/" );
+            PruebaActual.LiberarMemoria( escritor );
+                //Libera la memoria que pidió y verifica que no se haya escrito fuera del buffer.
+            escritor.WriteLine( "/*------------Informar cant. de errores----------*/" );
             escritor.PrintfPruebaConcluida();
             escritor.WriteLine( "return cantErrores;" );
             escritor.CerrarCorchetes();
@@ -241,6 +239,21 @@ namespace TUAssembler.Generacion
                 llamada = llamada.Remove( llamada.Length - 2, 2 ); //Elimino la última coma.)
             llamada += " );";
             escritor.WriteLine( llamada );
+        }
+        private void EscribirMain( EscritorC escritor )
+        {
+            escritor.WriteLine( "int main()" );
+            escritor.AbrirCorchetes();
+            escritor.WriteLine( "/*------------Parametros-------------------------*/" );
+            escritor.WriteLine( "int cantErrores = 0;" );
+            escritor.WriteLine( "/*------------Llamada a pruebas------------------*/" );
+            foreach( Prueba prueba in Pruebas )
+            {
+                escritor.If( "cantErrores == 0" );
+                escritor.WriteLine( "cantErrores = " + prueba.Nombre + "();" );
+                escritor.FinIf();
+            }
+            escritor.CerrarCorchetes();
         }
         #endregion
 

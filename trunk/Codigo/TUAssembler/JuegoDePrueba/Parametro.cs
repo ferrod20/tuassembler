@@ -50,6 +50,9 @@ namespace TUAssembler.JuegoDePrueba
         public virtual void PedirMemoria( EscritorC escritor )
         {
         }
+        public virtual void LiberarMemoria( EscritorC escritor )
+        {
+        }
         #endregion
 
         //No borrar, sirve para definir el metodo en las clases hijas( ParamVector, ParamMatriz y Elem )

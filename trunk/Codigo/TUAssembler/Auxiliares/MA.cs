@@ -41,6 +41,39 @@ namespace TUAssembler
                 }
             return parametrosReal;
         }
+        //Devuelve todas las filas, separadas por ":"
+        public static string[] LeerMatriz(StreamReader lector)
+        {
+            string[] parametros, parametrosReal;
+            int r = 0;
+            char letraActual;
+            string salida = string.Empty;
+            char[] deCorte = { ':' };
+
+            letraActual = (char)lector.Read();
+            while (letraActual != ';')
+            {
+                if (lector.EndOfStream)
+                    throw new Exception(Mensajes.FaltaPuntoYComa);
+                salida += letraActual;
+                letraActual = (char)lector.Read();
+            }
+
+            parametros = salida.Split(deCorte);
+            int longReal = parametros.Length;
+            foreach (string s in parametros)
+                if (s == string.Empty)
+                    longReal--;
+
+            parametrosReal = new string[longReal];
+            for (int i = 0; i < parametros.Length; i++)
+                if (parametros[i] != string.Empty)
+                {
+                    parametrosReal[r] = parametros[i];
+                    r++;
+                }
+            return parametrosReal;
+        }
         public static bool SoloEnteros( string cadena )
         {
             bool salida = true;
@@ -133,39 +166,7 @@ namespace TUAssembler
                 }
             return parametrosReal;
         }
-        //Devuelve todas las filas, separadas por ":"
-        public static string[] LeerMatriz( StreamReader lector )
-        {
-            string[] parametros, parametrosReal;
-            int r = 0;
-            char letraActual;
-            string salida = string.Empty;
-            char[] deCorte = {':'};
-
-            letraActual = (char) lector.Read();
-            while( letraActual!=';' )
-            {
-                if( lector.EndOfStream )
-                    throw new Exception( Mensajes.FaltaPuntoYComa );
-                salida += letraActual;
-                letraActual = (char) lector.Read();
-            }
-
-            parametros = salida.Split( deCorte );
-            int longReal = parametros.Length;
-            foreach( string s in parametros )
-                if( s==string.Empty )
-                    longReal--;
-
-            parametrosReal = new string[longReal];
-            for( int i = 0; i < parametros.Length; i++ )
-                if( parametros[i]!=string.Empty )
-                {
-                    parametrosReal[r] = parametros[i];
-                    r++;
-                }
-            return parametrosReal;
-        }
+        
         public static int CuantosBytes( Tipo tipo )
         {
             int cantBytes = 0;
