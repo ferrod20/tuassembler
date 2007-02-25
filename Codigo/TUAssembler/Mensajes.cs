@@ -110,6 +110,20 @@ namespace TUAssembler
         }
          * */
         #endregion
-        
+
+        public static string ElementoDeTipoIncorrectoEnElVector( string nombreVector, int posicion )
+        {
+            return
+                "El elemento del vector " + nombreVector + ", en la posición " + posicion + " no es del tipo correcto.";
+        }
+        public static string MatrizTieneFilaEnDeDistintaLongitud( string nombreMatriz, int fila )
+        {
+            return
+                "La fila " + fila + " de la matriz " + nombreMatriz + " tiene longitud diferente a las demás.";
+        }
+        public static string ElementoDeTipoIncorrectoEnLaMatriz( string nombreMatriz, int fila, int col )
+        {
+            return "El elemento de la matriz " + nombreMatriz + ", en la posición " + fila + " " + col +  " no es del tipo correcto.";           
+        }
     }
 }

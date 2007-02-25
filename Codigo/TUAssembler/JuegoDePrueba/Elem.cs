@@ -36,6 +36,62 @@ namespace TUAssembler.JuegoDePrueba
         #endregion
 
         #region Métodos
+        public void EstablecerValor( string elem )
+        {
+            this.elem = elem;
+        }
+        public bool TipoCorrecto( Tipo tipo )
+        {
+            bool salida = false;
+            switch( tipo )
+            {
+                case Tipo.UInt8:
+                case Tipo.UInt16:
+                case Tipo.UInt32:
+                case Tipo.UInt64:
+                    salida = MA.SoloEnteros( elem );
+                    break;
+                case Tipo.Int8:
+                case Tipo.Int16:
+                case Tipo.Int32:
+                case Tipo.Int64:
+                    salida = MA.SoloEnterosConSigno( elem );
+                    break;
+                case Tipo.Float32:
+                case Tipo.Float64:
+                    salida = MA.EsPtoFlotante( elem );
+                    break;
+                case Tipo.Booleano:
+                    salida = MA.EsBool( elem );
+                    break;
+                case Tipo.Char:
+                    salida = elem.Length==1;
+                    break;
+                case Tipo.CadenaC:
+                    salida = MA.EntreComillas( elem );
+                    break;
+            }
+            return salida;
+        }
+        public bool UltimoElementoUno()
+        {
+            return elem[elem.Length - 1]=='1';
+        }
+        public override void Leer( StreamReader lector )
+        {
+            string[] parametros;
+            try
+            {
+                parametros = MA.Leer( lector );
+            }
+            catch( Exception e )
+            {
+                throw new Exception( Mensajes.ErrorAlLeerParametro( Definicion.Nombre, e ) );
+            }
+            if( parametros.Length!=1 )
+                throw new Exception( Mensajes.CantidadDeParametrosNoCoincidenConDefinicion );
+            EstablecerValor( parametros[0] );
+        }
 
         #region Escritura código C
         public override void Declarar( EscritorC escritor )
@@ -130,14 +186,7 @@ namespace TUAssembler.JuegoDePrueba
         }
         public override void CompararValor( EscritorC escritor )
         {
-            string precision = "0";
-            //Este parametro,usado por Float y Double,deberia leerse desde el archivo, pero por ahora lo hace desde aqui
-
-            //(!this.EsDeSalidaOEntradaSalida);
             string variable = string.Empty;
-            string diferencia = "AUX" + Definicion.Nombre;
-            string varPrecision = "PR" + Definicion.Nombre;
-            string iterador = "IT" + Definicion.Nombre;
 
             escritor.WriteLine( "//" + Definicion.Nombre );
             switch( Definicion.Tipo )
@@ -150,27 +199,53 @@ namespace TUAssembler.JuegoDePrueba
                 case Tipo.Int16:
                 case Tipo.Int32:
                 case Tipo.Int64:
+                case Tipo.Char:
+                case Tipo.Booleano:
+                case Tipo.Float32:
+                case Tipo.Float64:
                     if( Definicion.TipoDeAcceso==ValorOReferencia.R )
                         variable = "*";
-                    variable += Definicion.Nombre;
+                    break;
+                case Tipo.CadenaC:
+                case Tipo.CadenaPascal:
+                    break;
+            }
+            variable += Definicion.Nombre;
+
+            CompararValor( escritor, variable );
+        }
+        public void CompararValor( EscritorC escritor, string variable )
+        {
+            string precision = "0";
+            //Este parametro,usado por Float y Double,deberia leerse desde el archivo, pero por ahora lo hace desde aqui
+
+            //(!this.EsDeSalidaOEntradaSalida);
+            string diferencia = "AUX" + variable;
+            string varPrecision = "PR" + variable;
+            string iterador = "IT" + variable;
+
+            switch( Definicion.Tipo )
+            {
+                case Tipo.UInt8:
+                case Tipo.UInt16:
+                case Tipo.UInt32:
+                case Tipo.UInt64:
+                case Tipo.Int8:
+                case Tipo.Int16:
+                case Tipo.Int32:
+                case Tipo.Int64:
                     escritor.If( variable + " != " + Valor );
                     escritor.PrintfValorDistintoConDiferencia( variable, Valor );
                     escritor.WriteLine( "cantErrores++;" );
                     escritor.FinIf();
                     break;
                 case Tipo.Char:
-                    if( Definicion.TipoDeAcceso==ValorOReferencia.R )
-                        variable = "*";
-                    variable += Definicion.Nombre;
                     escritor.If( variable + " != " + Valor );
                     escritor.PrintfValorDistinto( variable, Valor );
                     escritor.WriteLine( "cantErrores++;" );
                     escritor.FinIf();
                     break;
                 case Tipo.Booleano:
-                    if( Definicion.TipoDeAcceso==ValorOReferencia.R )
-                        variable = "*";
-                    variable += Definicion.Nombre;
                     escritor.If( "(" + variable + " == " + "0 && " + Valor + "!=0)||(" + variable + " != " +
                         "0 && " + Valor + "==0)" );
                     escritor.PrintfValorDistinto( variable, Valor );
@@ -180,9 +255,6 @@ namespace TUAssembler.JuegoDePrueba
                 case Tipo.Float32:
                     // Realiza la resta entre ambos operandos y si la misma dio un resultado menor que
                     // 10^precision entonces los considera iguales
-                    if( Definicion.TipoDeAcceso==ValorOReferencia.R )
-                        variable = "*";
-                    variable += Definicion.Nombre;
                     escritor.WriteLine( "float " + diferencia + " = " + variable + " - " + Valor + ";" );
                     escritor.WriteLine( diferencia + " = (" + diferencia + " >= 0) ? " + diferencia + " : -" +
                         diferencia + ";" );
@@ -193,9 +265,6 @@ namespace TUAssembler.JuegoDePrueba
                     escritor.FinIf();
                     break;
                 case Tipo.Float64:
-                    if( Definicion.TipoDeAcceso==ValorOReferencia.R )
-                        variable = "*";
-                    variable += Definicion.Nombre;
                     escritor.WriteLine( "double " + diferencia + " = " + variable + " - " + Valor + ";" );
                     escritor.WriteLine( diferencia + " = (" + diferencia + " >= 0) ? " + diferencia + " : -" +
                         diferencia + ";" );
@@ -209,10 +278,10 @@ namespace TUAssembler.JuegoDePrueba
                     escritor.WriteLine( "char* " + diferencia + " = \"" + Valor + "\";" );
                     escritor.WriteLine( "int " + iterador + ";" );
                     escritor.For( iterador + "=0", diferencia + "[" + iterador + "]!=0 && " +
-                        Definicion.Nombre + "[" + iterador + "]!=0", iterador + "++" );
-                    escritor.If( Definicion.Nombre + "[" + iterador + "] != " + diferencia + "[" +
+                        variable + "[" + iterador + "]!=0", iterador + "++" );
+                    escritor.If( variable + "[" + iterador + "] != " + diferencia + "[" +
                         iterador + "]" );
-                    escritor.WriteLine( "printf( \"El valor de la cadena " + Definicion.Nombre +
+                    escritor.WriteLine( "printf( \"El valor de la cadena " + variable +
                         ": de la posicion %n es distinto al valor esperado: %c \"," + iterador + ", " + diferencia +
                             "[" +
                                 iterador + "]);" );
@@ -226,62 +295,6 @@ namespace TUAssembler.JuegoDePrueba
         }
         #endregion
 
-        public void EstablecerValor( string elem )
-        {
-            this.elem = elem;
-        }
-        public bool TipoCorrecto( Tipo tipo )
-        {
-            bool salida = false;
-            switch( tipo )
-            {
-                case Tipo.UInt8:
-                case Tipo.UInt16:
-                case Tipo.UInt32:
-                case Tipo.UInt64:
-                    salida = MA.SoloEnteros( elem );
-                    break;
-                case Tipo.Int8:
-                case Tipo.Int16:
-                case Tipo.Int32:
-                case Tipo.Int64:
-                    salida = MA.SoloEnterosConSigno( elem );
-                    break;
-                case Tipo.Float32:
-                case Tipo.Float64:
-                    salida = MA.EsPtoFlotante( elem );
-                    break;
-                case Tipo.Booleano:
-                    salida = MA.EsBool( elem );
-                    break;
-                case Tipo.Char:
-                    salida = elem.Length==1;
-                    break;
-                case Tipo.CadenaC:
-                    salida = MA.EntreComillas( elem );
-                    break;
-            }
-            return salida;
-        }
-        public bool UltimoElementoUno()
-        {
-            return elem[elem.Length - 1]=='1';
-        }
-        public override void Leer( StreamReader lector )
-        {
-            string[] parametros;
-            try
-            {
-                parametros = MA.Leer( lector );
-            }
-            catch( Exception e )
-            {
-                throw new Exception( Mensajes.ErrorAlLeerParametro( Definicion.Nombre, e ) );
-            }
-            if( parametros.Length!=1 )
-                throw new Exception( Mensajes.CantidadDeParametrosNoCoincidenConDefinicion );
-            EstablecerValor( parametros[0] );
-        }
         #endregion
     }
 }

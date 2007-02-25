@@ -1,4 +1,3 @@
-using System;
 using System.IO;
 
 namespace TUAssembler.Auxiliares
@@ -104,10 +103,9 @@ namespace TUAssembler.Auxiliares
         #region PrintF
         public void PrintfPruebaConcluida()
         {
-            Printf("La prueba " + Mensajes.NombreDePrueba + " ha concluido con %d errores", "cantErrores");
+            Printf( "La prueba " + Mensajes.NombreDePrueba + " ha concluido con %d errores", "cantErrores" );
         }
-
-        public void PrintfValorDistintoVector(string nombreVector, string valorEsperado, int posicion)
+        /*        public void PrintfValorDistintoVector(string nombreVector, string valorEsperado, int posicion)
         {
             string texto = "Prueba " + Mensajes.NombreDePrueba + ": El valor del vector " + nombreVector +
                 " en la posicion " +
@@ -117,12 +115,13 @@ namespace TUAssembler.Auxiliares
                 "]";
             Printf(texto, variable);
         }
-
+ * */
         public void PrintfValorDistinto( string variable, string valorEsperado )
         {
             //%10.2f Para los float 10 digitos, 2 de precision
             Printf(
-                "El valor del parametro " + variable + ":%d es distinto al valor esperado: " + valorEsperado, variable );
+                "Prueba " + Mensajes.NombreDePrueba + ": El valor del parametro/elemento " + variable +
+                    ":%d es distinto al valor esperado: " + valorEsperado, variable );
         }
         public void PrintfValorDistintoConDiferencia( string variable, string valorEsperado, string varDiferencia )
         {
@@ -134,19 +133,31 @@ namespace TUAssembler.Auxiliares
             PrintfValorDistinto( variable, valorEsperado );
             Printf( "\\nDiferencia: %d", variable + " - " + valorEsperado );
         }
+        public void PrintfEscrituraFueraDelBuffer( string nombreVariable )
+        {
+            string texto = "Prueba " + Mensajes.NombreDePrueba + ": Se ha escrito fuera del buffer en el parámetro " +
+                nombreVariable;
+
+            Printf( texto );
+        }
+        public void CambioDeDireccionDelPuntero( string nombreVariable )
+        {
+            string texto = "Prueba " + Mensajes.NombreDePrueba + ": Se ha cambiado la dirección del parámetro " +
+                nombreVariable + " por una dirección inválida.";
+
+            Printf( texto );
+        }
         public void Printf( string texto, params string[] variables )
         {
             Write( Espacios() );
             Write( "printf( \"" + texto + "\"" );
             foreach( string variable in variables )
                 Write( " ," + variable );
-            Write( ");" );
+            Write( " );" );
             WriteLine();
         }
         #endregion
 
         #endregion
-
-        
     }
 }
