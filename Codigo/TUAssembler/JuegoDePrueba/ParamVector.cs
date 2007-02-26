@@ -131,7 +131,7 @@ namespace TUAssembler.JuegoDePrueba
             escritor.WriteLine( "cantErrores++;" );
             escritor.FinIf();
             escritor.If( "salidaFree2 == liberarPosMemNoValida" );
-            escritor.CambioDeDireccionDelPuntero( Definicion.Nombre );
+            escritor.PrintfCambioDeDireccionDelPuntero(Definicion.Nombre);
             escritor.WriteLine( "cantErrores++;" );
             escritor.FinIf();
         }
