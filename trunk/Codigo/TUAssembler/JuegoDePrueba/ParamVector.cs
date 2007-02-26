@@ -93,53 +93,7 @@ namespace TUAssembler.JuegoDePrueba
         #region Métodos de código C
         public override void Declarar( EscritorC escritor )
         {
-            string declaracion = string.Empty;
-            switch( Definicion.Tipo )
-            {
-                case Tipo.UInt8:
-                    declaracion = "unsigned char ";
-                    break;
-                case Tipo.UInt16:
-                    declaracion = "unsigned short ";
-                    break;
-                case Tipo.UInt32:
-                    declaracion = "unsigned int ";
-                    break;
-                case Tipo.UInt64:
-                    declaracion = "unsigned long ";
-                    break;
-                case Tipo.Int8:
-                    declaracion = "char ";
-                    break;
-                case Tipo.Int16:
-                    declaracion = "short ";
-                    break;
-                case Tipo.Int32:
-                    declaracion = "int ";
-                    break;
-                case Tipo.Int64:
-                    declaracion = "long long int ";
-                    // el tipo "long long int" define(al menos en GCC) el entero de 64 bits
-                    break;
-                case Tipo.Float32:
-                    declaracion = "float ";
-                    break;
-                case Tipo.Float64:
-                    declaracion = "double ";
-                    break;
-                case Tipo.Booleano:
-                    declaracion = "bool ";
-                    break;
-                case Tipo.Char:
-                    declaracion = "char ";
-                    break;
-                case Tipo.CadenaC:
-                    declaracion = "char ";
-                    break;
-                case Tipo.CadenaPascal:
-                    declaracion = "char ";
-                    break;
-            }
+            string declaracion = Definicion.ObtenerNombreDelTipoParaC() + " ";
             declaracion += "*" + Definicion.Nombre + ";";
             escritor.WriteLine( declaracion );
         }

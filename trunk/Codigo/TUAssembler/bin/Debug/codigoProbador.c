@@ -2,7 +2,7 @@
 #define bool int
 #define true 1
 #define false 0
-extern unsigned long int funcion1( unsigned char*  );
+extern unsigned long int funcion1( unsigned char**  );
 
 #define todoBien 0
 #define liberarPosMemNoValida 1
@@ -64,16 +64,27 @@ int pruebaVector()
 	int salidaFree2;
 	/*------------Parametros-------------------------*/
 	unsigned long salida;
-	unsigned char *vector;
+	unsigned char **matriz;
 	int cantErrores = 0;
 	/*------------Pedir memoria----------------------*/
-	vector = malloc2( 3 );
+	matriz = malloc2( sizeof(unsigned char*)*3 );
+	int matrizFila;
+	for( matrizFila = 0; matrizFila < 3; matrizFila++ )
+	{
+		matriz[matrizFila] = malloc2( sizeof(unsigned char)*3);
+	}
 	/*------------Instanciacion----------------------*/
-	vector[0] = 5;
-	vector[1] = 7;
-	vector[2] = 9;
+	matriz[0][0] = 1;
+	matriz[0][1] = 2;
+	matriz[0][2] = 3;
+	matriz[1][0] = 4;
+	matriz[1][1] = 5;
+	matriz[1][2] = 6;
+	matriz[2][0] = 7;
+	matriz[2][1] = 8;
+	matriz[2][2] = 9;
 	/*------------LlamadaFuncion---------------------*/
-	salida = funcion1( vector );
+	salida = funcion1( matriz );
 	/*------------Comparacion de valores-------------*/
 	//salida
 	if( salida != 8 )
@@ -82,38 +93,73 @@ int pruebaVector()
 		printf( "\nDiferencia: %d" ,salida - 8 );
 		cantErrores++;
 	}
-	//vector
-	if( vector[0] != 1 )
+	if( matriz[0][0] != 1 )
 	{
-		printf( "Prueba pruebaVector: El valor del parametro/elemento vector[0]:%d es distinto al valor esperado: 1" ,vector[0] );
-		printf( "\nDiferencia: %d" ,vector[0] - 1 );
+		printf( "Prueba pruebaVector: El valor del parametro/elemento matriz[0][0]:%d es distinto al valor esperado: 1" ,matriz[0][0] );
+		printf( "\nDiferencia: %d" ,matriz[0][0] - 1 );
 		cantErrores++;
 	}
-	if( vector[1] != 2 )
+	if( matriz[0][1] != 2 )
 	{
-		printf( "Prueba pruebaVector: El valor del parametro/elemento vector[1]:%d es distinto al valor esperado: 2" ,vector[1] );
-		printf( "\nDiferencia: %d" ,vector[1] - 2 );
+		printf( "Prueba pruebaVector: El valor del parametro/elemento matriz[0][1]:%d es distinto al valor esperado: 2" ,matriz[0][1] );
+		printf( "\nDiferencia: %d" ,matriz[0][1] - 2 );
 		cantErrores++;
 	}
-	if( vector[2] != 3 )
+	if( matriz[0][2] != 3 )
 	{
-		printf( "Prueba pruebaVector: El valor del parametro/elemento vector[2]:%d es distinto al valor esperado: 3" ,vector[2] );
-		printf( "\nDiferencia: %d" ,vector[2] - 3 );
+		printf( "Prueba pruebaVector: El valor del parametro/elemento matriz[0][2]:%d es distinto al valor esperado: 3" ,matriz[0][2] );
+		printf( "\nDiferencia: %d" ,matriz[0][2] - 3 );
 		cantErrores++;
 	}
-	/*------------Comparacion de valores-------------*/
-	salidaFree2 = free2( vector );
+	if( matriz[1][0] != 5 )
+	{
+		printf( "Prueba pruebaVector: El valor del parametro/elemento matriz[1][0]:%d es distinto al valor esperado: 5" ,matriz[1][0] );
+		printf( "\nDiferencia: %d" ,matriz[1][0] - 5 );
+		cantErrores++;
+	}
+	if( matriz[1][1] != 7 )
+	{
+		printf( "Prueba pruebaVector: El valor del parametro/elemento matriz[1][1]:%d es distinto al valor esperado: 7" ,matriz[1][1] );
+		printf( "\nDiferencia: %d" ,matriz[1][1] - 7 );
+		cantErrores++;
+	}
+	if( matriz[1][2] != 9 )
+	{
+		printf( "Prueba pruebaVector: El valor del parametro/elemento matriz[1][2]:%d es distinto al valor esperado: 9" ,matriz[1][2] );
+		printf( "\nDiferencia: %d" ,matriz[1][2] - 9 );
+		cantErrores++;
+	}
+	if( matriz[2][0] != 2 )
+	{
+		printf( "Prueba pruebaVector: El valor del parametro/elemento matriz[2][0]:%d es distinto al valor esperado: 2" ,matriz[2][0] );
+		printf( "\nDiferencia: %d" ,matriz[2][0] - 2 );
+		cantErrores++;
+	}
+	if( matriz[2][1] != 6 )
+	{
+		printf( "Prueba pruebaVector: El valor del parametro/elemento matriz[2][1]:%d es distinto al valor esperado: 6" ,matriz[2][1] );
+		printf( "\nDiferencia: %d" ,matriz[2][1] - 6 );
+		cantErrores++;
+	}
+	if( matriz[2][2] != 8 )
+	{
+		printf( "Prueba pruebaVector: El valor del parametro/elemento matriz[2][2]:%d es distinto al valor esperado: 8" ,matriz[2][2] );
+		printf( "\nDiferencia: %d" ,matriz[2][2] - 8 );
+		cantErrores++;
+	}
+	/*------------Liberar memoria--------------------*/
+	salidaFree2 = free2( matriz );
 	if( salidaFree2 == escrituraFueraDelBuffer )
 	{
-		printf( "Prueba pruebaVector: Se ha escrito fuera del buffer en el parámetro vector" );
+		printf( "Prueba pruebaVector: Se ha escrito fuera del buffer en el parámetro matriz" );
 		cantErrores++;
 	}
 	if( salidaFree2 == liberarPosMemNoValida )
 	{
-		printf( "Prueba pruebaVector: Se ha cambiado la dirección del parámetro vector por una dirección inválida." );
+		printf( "Prueba pruebaVector: Se ha cambiado la dirección del parámetro matriz por una dirección inválida." );
 		cantErrores++;
 	}
-
+	/*------------Informar cant. de errores----------*/
 	printf( "La prueba pruebaVector ha concluido con %d errores" ,cantErrores );
 	return cantErrores;
 }
