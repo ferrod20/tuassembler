@@ -190,6 +190,58 @@ namespace TUAssembler.Definicion
             return salida;
         }
         #endregion
+
+        public string ObtenerNombreDelTipoParaC()
+        {
+            string nombre = string.Empty;
+            switch (Tipo)
+            {
+                case Tipo.UInt8:
+                    nombre = "unsigned char";
+                    break;
+                case Tipo.UInt16:
+                    nombre = "unsigned short";
+                    break;
+                case Tipo.UInt32:
+                    nombre = "unsigned int";
+                    break;
+                case Tipo.UInt64:
+                    nombre = "unsigned long";
+                    break;
+                case Tipo.Int8:
+                    nombre = "char";
+                    break;
+                case Tipo.Int16:
+                    nombre = "short";
+                    break;
+                case Tipo.Int32:
+                    nombre = "int";
+                    break;
+                case Tipo.Int64:
+                    nombre = "long long int";
+                    // el tipo "long long int" define(al menos en GCC) el entero de 64 bits
+                    break;
+                case Tipo.Float32:
+                    nombre = "float";
+                    break;
+                case Tipo.Float64:
+                    nombre = "double";
+                    break;
+                case Tipo.Booleano:
+                    nombre = "bool";
+                    break;
+                case Tipo.Char:
+                    nombre = "char";
+                    break;
+                case Tipo.CadenaC:
+                    nombre = "char";
+                    break;
+                case Tipo.CadenaPascal:
+                    nombre = "char";
+                    break;
+            }
+            return nombre;
+        }
     }
 
     [Serializable()]

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DefinicionFuncion Nombre="funcion1" >
+  <DefParametroSalida Nombre="salida" TipoDeAcceso="V" Tipo="UInt64" EsElemento="true"  />
+  <DefParametrosEntrada>   
+  	<DefParametro Nombre="matriz" TipoDeAcceso="R" Tipo="UInt8" EntradaSalida="ES" EsMatriz="true" />
+  </DefParametrosEntrada>
+</DefinicionFuncion>
+
