@@ -34,7 +34,7 @@ namespace TUAssembler.JuegoDePrueba
         }
         #endregion
 
-        #region Métodos        
+        #region Métodos
         public override void Leer( StreamReader lector )
         {
             string[] filas;
@@ -84,12 +84,12 @@ namespace TUAssembler.JuegoDePrueba
         {
             string pedido;
             string varFila = Definicion.Nombre + "Fila";
-            pedido = Definicion.Nombre + " = " + "malloc2( sizeof(" + Definicion.ObtenerNombreDelTipoParaC() + "*)*" + cantFilas + " );";
+            pedido = Definicion.Nombre + " = " + "malloc2( sizeof(" + Definicion.ObtenerNombreDelTipoParaC() + "*)*" + cantFilas + " );";            
             escritor.WriteLine(pedido);
             escritor.WriteLine( "int " + varFila + ";");
             escritor.For( varFila + " = 0", varFila + " < " + cantFilas,varFila + "++");
             escritor.WriteLine(Definicion.Nombre + "[" + varFila + "] = malloc2( sizeof(" + Definicion.ObtenerNombreDelTipoParaC() + ")*" + cantColumnas + ");");
-            escritor.FinFor();
+            escritor.FinFor();          
         }
         public override void Instanciar( EscritorC escritor )
         {
@@ -121,15 +121,31 @@ namespace TUAssembler.JuegoDePrueba
         }
         public override void LiberarMemoria( EscritorC escritor )
         {
-            escritor.WriteLine("salidaFree2 = free2( " + Definicion.Nombre + " );");
+            string pedido;
+            string varFila = Definicion.Nombre + "Fila";
+            //Libera cada una de las filas
+            escritor.For(varFila + " = 0", varFila + " < " + cantFilas, varFila + "++");
+            escritor.WriteLine( "salidaFree2 = free2( " + Definicion.Nombre + "[" + varFila + "] );" );
             escritor.If("salidaFree2 == escrituraFueraDelBuffer");
-            escritor.PrintfEscrituraFueraDelBuffer(Definicion.Nombre);
+            escritor.PrintfEscrituraFueraDelBufferEnFilaDeMatriz( Definicion.Nombre, varFila );
             escritor.WriteLine("cantErrores++;");
             escritor.FinIf();
             escritor.If("salidaFree2 == liberarPosMemNoValida");
-            escritor.CambioDeDireccionDelPuntero(Definicion.Nombre);
+            escritor.PrintfCambioDeDireccionDelPunteroEnFilaDeMatriz(Definicion.Nombre, varFila);
             escritor.WriteLine("cantErrores++;");
             escritor.FinIf();
+            escritor.FinFor();
+
+            //Libera el arreglo de punteros
+            escritor.WriteLine("salidaFree2 = free2( " + Definicion.Nombre + " );");
+            escritor.If("salidaFree2 == escrituraFueraDelBuffer");
+            escritor.PrintfEscrituraFueraDelBuffer(Definicion.Nombre );
+            escritor.WriteLine("cantErrores++;");
+            escritor.FinIf();
+            escritor.If("salidaFree2 == liberarPosMemNoValida");
+            escritor.PrintfCambioDeDireccionDelPuntero(Definicion.Nombre);
+            escritor.WriteLine("cantErrores++;");
+            escritor.FinIf();                                    
         }
         #endregion
         #endregion

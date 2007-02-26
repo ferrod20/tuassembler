@@ -1,3 +1,4 @@
+using System;
 using System.IO;
 
 namespace TUAssembler.Auxiliares
@@ -104,18 +105,7 @@ namespace TUAssembler.Auxiliares
         public void PrintfPruebaConcluida()
         {
             Printf( "La prueba " + Mensajes.NombreDePrueba + " ha concluido con %d errores", "cantErrores" );
-        }
-        /*        public void PrintfValorDistintoVector(string nombreVector, string valorEsperado, int posicion)
-        {
-            string texto = "Prueba " + Mensajes.NombreDePrueba + ": El valor del vector " + nombreVector +
-                " en la posicion " +
-                    posicion +
-                        ": %i es distinto al valor esperado: " + valorEsperado;
-            string variable = nombreVector + "[" + posicion +
-                "]";
-            Printf(texto, variable);
-        }
- * */
+        }        
         public void PrintfValorDistinto( string variable, string valorEsperado )
         {
             //%10.2f Para los float 10 digitos, 2 de precision
@@ -126,12 +116,12 @@ namespace TUAssembler.Auxiliares
         public void PrintfValorDistintoConDiferencia( string variable, string valorEsperado, string varDiferencia )
         {
             PrintfValorDistinto( variable, valorEsperado );
-            Printf( "\\nDiferencia: %d", varDiferencia );
+            Printf("\\nDiferencia: %d\\n", varDiferencia);
         }
         public void PrintfValorDistintoConDiferencia( string variable, string valorEsperado )
         {
             PrintfValorDistinto( variable, valorEsperado );
-            Printf( "\\nDiferencia: %d", variable + " - " + valorEsperado );
+            Printf("\\nDiferencia: %d\\n", variable + " - " + valorEsperado);
         }
         public void PrintfEscrituraFueraDelBuffer( string nombreVariable )
         {
@@ -140,12 +130,26 @@ namespace TUAssembler.Auxiliares
 
             Printf( texto );
         }
-        public void CambioDeDireccionDelPuntero( string nombreVariable )
+        public void PrintfCambioDeDireccionDelPuntero( string nombreVariable )
         {
             string texto = "Prueba " + Mensajes.NombreDePrueba + ": Se ha cambiado la dirección del parámetro " +
                 nombreVariable + " por una dirección inválida.";
 
             Printf( texto );
+        }
+        public void PrintfEscrituraFueraDelBufferEnFilaDeMatriz(string nombreMatriz, string varFila)
+        {
+            string texto = "Prueba " + Mensajes.NombreDePrueba + ": Se ha escrito fuera del buffer en el parámetro " +
+                nombreMatriz + " en la fila %d";
+
+            Printf(texto, varFila);
+        }
+        public void PrintfCambioDeDireccionDelPunteroEnFilaDeMatriz(string nombreMatriz, string varFila)
+        {
+            string texto = "Prueba " + Mensajes.NombreDePrueba + ": Se ha cambiado la dirección del parámetro " +
+                nombreMatriz + " por una dirección inválida, en la fila: %d";
+
+            Printf(texto, varFila);
         }
         public void Printf( string texto, params string[] variables )
         {
@@ -159,5 +163,7 @@ namespace TUAssembler.Auxiliares
         #endregion
 
         #endregion
+
+ 
     }
 }
