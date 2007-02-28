@@ -43,6 +43,7 @@
     <Compile Include="Enums.cs" />
     <Compile Include="Generacion\Generador.cs" />
     <Compile Include="JuegoDePrueba\Elem.cs" />
+    <Compile Include="JuegoDePrueba\ParamLista.cs" />
     <Compile Include="JuegoDePrueba\ParamMatriz.cs" />
     <Compile Include="JuegoDePrueba\Parametro.cs" />
     <Compile Include="JuegoDePrueba\Prueba.cs" />

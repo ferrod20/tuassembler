@@ -1,7 +1,6 @@
 using System;
 using System.IO;
 using TUAssembler.Auxiliares;
-using TUAssembler.Definicion;
 
 namespace TUAssembler.JuegoDePrueba
 {
@@ -86,7 +85,6 @@ namespace TUAssembler.JuegoDePrueba
             {
                 throw new Exception( Mensajes.ErrorAlLeerParametro( Definicion.Nombre, e ) );
             }
-
             EstablecerValor( parametros );
         }
 
@@ -131,7 +129,7 @@ namespace TUAssembler.JuegoDePrueba
             escritor.WriteLine( "cantErrores++;" );
             escritor.FinIf();
             escritor.If( "salidaFree2 == liberarPosMemNoValida" );
-            escritor.PrintfCambioDeDireccionDelPuntero(Definicion.Nombre);
+            escritor.PrintfCambioDeDireccionDelPuntero( Definicion.Nombre );
             escritor.WriteLine( "cantErrores++;" );
             escritor.FinIf();
         }
