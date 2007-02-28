@@ -98,7 +98,7 @@ namespace TUAssembler.JuegoDePrueba
         {
             string declaracion = string.Empty;
             declaracion = Definicion.ObtenerNombreDelTipoParaC() + " ";
-            
+
             if( Definicion.TipoDeAcceso==ValorOReferencia.R )
                 declaracion += "*";
             declaracion += Definicion.Nombre + ";";

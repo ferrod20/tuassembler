@@ -123,7 +123,9 @@ namespace TUAssembler
         }
         public static string ElementoDeTipoIncorrectoEnLaMatriz( string nombreMatriz, int fila, int col )
         {
-            return "El elemento de la matriz " + nombreMatriz + ", en la posición " + fila + " " + col +  " no es del tipo correcto.";           
+            return
+                "El elemento de la matriz " + nombreMatriz + ", en la posición " + fila + " " + col +
+                    " no es del tipo correcto.";
         }
     }
 }

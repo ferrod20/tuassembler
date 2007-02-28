@@ -1,4 +1,3 @@
-using System;
 using System.IO;
 
 namespace TUAssembler.Auxiliares
@@ -86,6 +85,12 @@ namespace TUAssembler.Auxiliares
             WriteLine( "if( " + condicion + " )" );
             AbrirCorchetes();
         }
+        public void ElseIf()
+        {
+            CerrarCorchetes();
+            WriteLine( "else" );
+            AbrirCorchetes();
+        }
         public void FinIf()
         {
             CerrarCorchetes();
@@ -105,7 +110,7 @@ namespace TUAssembler.Auxiliares
         public void PrintfPruebaConcluida()
         {
             Printf( "La prueba " + Mensajes.NombreDePrueba + " ha concluido con %d errores", "cantErrores" );
-        }        
+        }
         public void PrintfValorDistinto( string variable, string valorEsperado )
         {
             //%10.2f Para los float 10 digitos, 2 de precision
@@ -116,12 +121,12 @@ namespace TUAssembler.Auxiliares
         public void PrintfValorDistintoConDiferencia( string variable, string valorEsperado, string varDiferencia )
         {
             PrintfValorDistinto( variable, valorEsperado );
-            Printf("\\nDiferencia: %d\\n", varDiferencia);
+            Printf( "\\nDiferencia: %d\\n", varDiferencia );
         }
         public void PrintfValorDistintoConDiferencia( string variable, string valorEsperado )
         {
             PrintfValorDistinto( variable, valorEsperado );
-            Printf("\\nDiferencia: %d\\n", variable + " - " + valorEsperado);
+            Printf( "\\nDiferencia: %d\\n", variable + " - " + valorEsperado );
         }
         public void PrintfEscrituraFueraDelBuffer( string nombreVariable )
         {
@@ -137,19 +142,23 @@ namespace TUAssembler.Auxiliares
 
             Printf( texto );
         }
-        public void PrintfEscrituraFueraDelBufferEnFilaDeMatriz(string nombreMatriz, string varFila)
+        public void PrintfEscrituraFueraDelBufferEnFilaDeMatriz( string nombreMatriz, string varFila )
         {
             string texto = "Prueba " + Mensajes.NombreDePrueba + ": Se ha escrito fuera del buffer en el parámetro " +
                 nombreMatriz + " en la fila %d";
 
-            Printf(texto, varFila);
+            Printf( texto, varFila );
         }
-        public void PrintfCambioDeDireccionDelPunteroEnFilaDeMatriz(string nombreMatriz, string varFila)
+        public void PrintfCambioDeDireccionDelPunteroEnFilaDeMatriz( string nombreMatriz, string varFila )
         {
             string texto = "Prueba " + Mensajes.NombreDePrueba + ": Se ha cambiado la dirección del parámetro " +
                 nombreMatriz + " por una dirección inválida, en la fila: %d";
 
-            Printf(texto, varFila);
+            Printf( texto, varFila );
+        }
+        public void PrintListaCircular()
+        {
+            Printf( "La prueba " + Mensajes.NombreDePrueba + " es una Lista Circular" );
         }
         public void Printf( string texto, params string[] variables )
         {
@@ -163,7 +172,5 @@ namespace TUAssembler.Auxiliares
         #endregion
 
         #endregion
-
- 
     }
 }

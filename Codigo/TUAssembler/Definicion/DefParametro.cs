@@ -14,6 +14,7 @@ namespace TUAssembler.Definicion
         private Tipo tipo;
         private bool esVector;
         private bool esMatriz;
+        private bool esLista;
         private bool esElemento;
         #endregion
 
@@ -80,8 +81,7 @@ namespace TUAssembler.Definicion
             set
             {
                 esVector = value;
-                //CrearNombre();
-            }
+            } //CrearNombre();
         }
 
         [XmlAttribute()]
@@ -94,8 +94,20 @@ namespace TUAssembler.Definicion
             set
             {
                 esMatriz = value;
-                //CrearNombre();
+            } //CrearNombre();
+        }
+
+        [XmlAttribute()]
+        public bool EsLista
+        {
+            get
+            {
+                return esLista;
             }
+            set
+            {
+                esLista = value;
+            } //CrearNombre();
         }
 
         [XmlAttribute()]
@@ -108,8 +120,7 @@ namespace TUAssembler.Definicion
             set
             {
                 esElemento = value;
-                //CrearNombre();
-            }
+            } //CrearNombre();
         }
         #endregion
 
@@ -172,6 +183,27 @@ namespace TUAssembler.Definicion
                 salida += "** "; //cantFilas, cantColumnas
             if( !esVector && !esMatriz && TipoDeAcceso==ValorOReferencia.R )
                 salida += "*";
+            //Por ahora solo soporta INT, CHAR, FLOAT Y DOUBLE
+            if( EsLista )
+                switch( Tipo )
+                {
+                    case Tipo.UInt8:
+                    case Tipo.Int8:
+                        salida = "struct Listachar *";
+                        break;
+                    case Tipo.UInt32:
+                    case Tipo.Int32:
+                        salida = "struct Listaint *";
+                        break;
+                    case Tipo.Float32:
+                        salida = "struct Listafloat *";
+                        break;
+                    case Tipo.Float64:
+                        salida = "struct Listadouble *";
+                        break;
+                    default:
+                        throw new Exception( "Tipo de lista no valido" );
+                }
             return salida;
         }
         //Genera un parametro segun el tipo que sea.
@@ -183,9 +215,10 @@ namespace TUAssembler.Definicion
                 salida = new ParamMatriz();
             if( EsVector )
                 salida = new ParamVector();
+            if( EsLista )
+                salida = new ParamLista();
             if( EsElemento )
                 salida = new Elem();
-
             salida.Definicion = this;
             return salida;
         }
@@ -194,7 +227,7 @@ namespace TUAssembler.Definicion
         public string ObtenerNombreDelTipoParaC()
         {
             string nombre = string.Empty;
-            switch (Tipo)
+            switch( Tipo )
             {
                 case Tipo.UInt8:
                     nombre = "unsigned char";

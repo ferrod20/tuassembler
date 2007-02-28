@@ -1,8 +1,9 @@
 #include <stdio.h>
+#include "libreria.h"
 #define bool int
 #define true 1
 #define false 0
-extern unsigned long int funcion1( unsigned char**  );
+extern unsigned int funcion1( struct Listaint * );
 
 #define todoBien 0
 #define liberarPosMemNoValida 1
@@ -58,123 +59,53 @@ void free2all(){
        printf("No se han liberado %d bytes de memoria", bytesNoLiberados);
 }
 
-int pruebaMat()
+int pruebaVector()
 {
-	/*------------Variables comunes------------------*/
+	//------------Variables comunes------------------
 	int salidaFree2;
-	/*------------Parametros-------------------------*/
-	unsigned long salida;
-	unsigned char **matriz;
+	long long tiempoDeEjecucion=0;
+	//------------Parametros-------------------------
+	unsigned int salida;
+	struct Listaint  *lista = NULL;
 	int cantErrores = 0;
-	/*------------Pedir memoria----------------------*/
-	matriz = malloc2( sizeof(unsigned char*)*3 );
-	int matrizFila;
-	for( matrizFila = 0; matrizFila < 3; matrizFila++ )
-	{
-		matriz[matrizFila] = malloc2( sizeof(unsigned char)*3);
-	}
-	/*------------Instanciacion----------------------*/
-	matriz[0][0] = 10;
-	matriz[0][1] = 11;
-	matriz[0][2] = 12;
-	matriz[1][0] = 13;
-	matriz[1][1] = 14;
-	matriz[1][2] = 15;
-	matriz[2][0] = 16;
-	matriz[2][1] = 17;
-	matriz[2][2] = 18;
-	/*------------LlamadaFuncion---------------------*/
-	salida = funcion1( matriz );
-	/*------------Comparacion de valores-------------*/
+	//------------Pedir memoria----------------------
+	//------------Instanciacion----------------------
+	insertarint(&lista,5);
+	insertarint(&lista,7);
+	insertarint(&lista,9);
+	//------------LlamadaFuncion---------------------
+	tiempoDeEjecucion = timer();
+	salida = funcion1( &lista );
+	tiempoDeEjecucion = timer() - tiempoDeEjecucion;
+	printf("Tardo: %d ciclos \n ", tiempoDeEjecucion);
+	//------------Comparacion de valores-------------
 	//salida
 	if( salida != 8 )
 	{
-		printf( "Prueba pruebaMat: El valor del parametro/elemento salida:%d es distinto al valor esperado: 8" ,salida );
+		printf( "Prueba pruebaVector: El valor del parametro/elemento salida:%d es distinto al valor esperado: 8" ,salida );
 		printf( "\nDiferencia: %d\n" ,salida - 8 );
 		cantErrores++;
 	}
-	if( matriz[0][0] != 1 )
+	//lista
+	struct Listaint *listaaux;
+	crearint(&listaaux);
+	insertarint(&listaaux, 1);
+	insertarint(&listaaux, 2);
+	insertarint(&listaaux, 3);
+	if( ListaCircularint(lista) )
 	{
-		printf( "Prueba pruebaMat: El valor del parametro/elemento matriz[0][0]:%d es distinto al valor esperado: 1" ,matriz[0][0] );
-		printf( "\nDiferencia: %d\n" ,matriz[0][0] - 1 );
-		cantErrores++;
+		printf( "La prueba pruebaVector es una Lista Circular" );
+		return 1;
 	}
-	if( matriz[0][1] != 2 )
+	if( !igualdadint(lista, listaaux) )
 	{
-		printf( "Prueba pruebaMat: El valor del parametro/elemento matriz[0][1]:%d es distinto al valor esperado: 2" ,matriz[0][1] );
-		printf( "\nDiferencia: %d\n" ,matriz[0][1] - 2 );
-		cantErrores++;
+		    cantErrores++;
 	}
-	if( matriz[0][2] != 3 )
-	{
-		printf( "Prueba pruebaMat: El valor del parametro/elemento matriz[0][2]:%d es distinto al valor esperado: 3" ,matriz[0][2] );
-		printf( "\nDiferencia: %d\n" ,matriz[0][2] - 3 );
-		cantErrores++;
-	}
-	if( matriz[1][0] != 4 )
-	{
-		printf( "Prueba pruebaMat: El valor del parametro/elemento matriz[1][0]:%d es distinto al valor esperado: 4" ,matriz[1][0] );
-		printf( "\nDiferencia: %d\n" ,matriz[1][0] - 4 );
-		cantErrores++;
-	}
-	if( matriz[1][1] != 5 )
-	{
-		printf( "Prueba pruebaMat: El valor del parametro/elemento matriz[1][1]:%d es distinto al valor esperado: 5" ,matriz[1][1] );
-		printf( "\nDiferencia: %d\n" ,matriz[1][1] - 5 );
-		cantErrores++;
-	}
-	if( matriz[1][2] != 6 )
-	{
-		printf( "Prueba pruebaMat: El valor del parametro/elemento matriz[1][2]:%d es distinto al valor esperado: 6" ,matriz[1][2] );
-		printf( "\nDiferencia: %d\n" ,matriz[1][2] - 6 );
-		cantErrores++;
-	}
-	if( matriz[2][0] != 7 )
-	{
-		printf( "Prueba pruebaMat: El valor del parametro/elemento matriz[2][0]:%d es distinto al valor esperado: 7" ,matriz[2][0] );
-		printf( "\nDiferencia: %d\n" ,matriz[2][0] - 7 );
-		cantErrores++;
-	}
-	if( matriz[2][1] != 8 )
-	{
-		printf( "Prueba pruebaMat: El valor del parametro/elemento matriz[2][1]:%d es distinto al valor esperado: 8" ,matriz[2][1] );
-		printf( "\nDiferencia: %d\n" ,matriz[2][1] - 8 );
-		cantErrores++;
-	}
-	if( matriz[2][2] != 9 )
-	{
-		printf( "Prueba pruebaMat: El valor del parametro/elemento matriz[2][2]:%d es distinto al valor esperado: 9" ,matriz[2][2] );
-		printf( "\nDiferencia: %d\n" ,matriz[2][2] - 9 );
-		cantErrores++;
-	}
-	/*------------Liberar memoria--------------------*/
-	for( matrizFila = 0; matrizFila < 3; matrizFila++ )
-	{
-		salidaFree2 = free2( matriz[matrizFila] );
-		if( salidaFree2 == escrituraFueraDelBuffer )
-		{
-			printf( "Prueba pruebaMat: Se ha escrito fuera del buffer en el parámetro matriz en la fila %d" ,matrizFila );
-			cantErrores++;
-		}
-		if( salidaFree2 == liberarPosMemNoValida )
-		{
-			printf( "Prueba pruebaMat: Se ha cambiado la dirección del parámetro matriz por una dirección inválida, en la fila: %d" ,matrizFila );
-			cantErrores++;
-		}
-	}
-	salidaFree2 = free2( matriz );
-	if( salidaFree2 == escrituraFueraDelBuffer )
-	{
-		printf( "Prueba pruebaMat: Se ha escrito fuera del buffer en el parámetro matriz" );
-		cantErrores++;
-	}
-	if( salidaFree2 == liberarPosMemNoValida )
-	{
-		printf( "Prueba pruebaMat: Se ha cambiado la dirección del parámetro matriz por una dirección inválida." );
-		cantErrores++;
-	}
-	/*------------Informar cant. de errores----------*/
-	printf( "La prueba pruebaMat ha concluido con %d errores" ,cantErrores );
+	//------------Liberar memoria--------------------
+	liberarint(&listaaux);
+	liberarint(&lista);
+	//------------Informar cant. de errores----------
+	printf( "La prueba pruebaVector ha concluido con %d errores" ,cantErrores );
 	return cantErrores;
 }
 int main()
@@ -184,6 +115,7 @@ int main()
 	/*------------Llamada a pruebas------------------*/
 	if( cantErrores == 0 )
 	{
-		cantErrores = pruebaMat();
+		cantErrores = pruebaVector();
 	}
+	return 0;
 }

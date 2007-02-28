@@ -4,6 +4,12 @@ using TUAssembler.JuegoDePrueba;
 
 namespace TUAssembler.Generacion
 {
+    internal enum TipoSistema
+    {
+        DOS = 1,
+        LINUX = 2
+    }
+
     internal class Generador
     {
         #region Variables miembro
@@ -13,6 +19,7 @@ namespace TUAssembler.Generacion
         private Prueba[] pruebas;
         private int cantPruebas;
         private int pruebaActual;
+        private TipoSistema tipoSistema;
         #endregion
 
         #region Propiedades
@@ -93,6 +100,18 @@ namespace TUAssembler.Generacion
                 Pruebas[pruebaActual] = value;
             }
         }
+
+        public TipoSistema SistemaOperativo
+        {
+            get
+            {
+                return tipoSistema;
+            }
+            set
+            {
+                tipoSistema = value;
+            }
+        }
         #endregion
 
         #region Métodos
@@ -101,9 +120,11 @@ namespace TUAssembler.Generacion
         public void GenerarPrueba( EscritorC escritor )
         {
             escritor.WriteLine( "#include <stdio.h>" );
+            escritor.WriteLine( "#include \"libreria.h\"" );
             escritor.WriteLine( "#define bool int" );
             escritor.WriteLine( "#define true 1" );
             escritor.WriteLine( "#define false 0" );
+
             EscribirReferenciaExternaDeLaFuncion( escritor );
             EscribirMallocFreeFunctions( escritor );
             EscribirFuncionesDePrueba( escritor );
@@ -206,23 +227,27 @@ namespace TUAssembler.Generacion
         {
             escritor.WriteLine( PruebaActual.Prototipo );
             escritor.AbrirCorchetes();
-            escritor.WriteLine( "/*------------Variables comunes------------------*/" );
+            escritor.WriteLine( "//------------Variables comunes------------------" );
             escritor.WriteLine( "int salidaFree2;" );
-            escritor.WriteLine( "/*------------Parametros-------------------------*/" );
+            escritor.WriteLine( "long long tiempoDeEjecucion=0;" );
+            escritor.WriteLine( "//------------Parametros-------------------------" );
             PruebaActual.DeclararParametros( escritor );
             escritor.WriteLine( "int cantErrores = 0;" );
-            escritor.WriteLine( "/*------------Pedir memoria----------------------*/" );
+            escritor.WriteLine( "//------------Pedir memoria----------------------" );
             PruebaActual.PedirMemoria( escritor );
-            escritor.WriteLine( "/*------------Instanciacion----------------------*/" );
+            escritor.WriteLine( "//------------Instanciacion----------------------" );
             PruebaActual.InstanciarParametros( escritor );
-            escritor.WriteLine( "/*------------LlamadaFuncion---------------------*/" );
+            escritor.WriteLine( "//------------LlamadaFuncion---------------------" );
+            escritor.WriteLine( "tiempoDeEjecucion = timer();" );
             LlamarFuncionAProbar( escritor );
-            escritor.WriteLine( "/*------------Comparacion de valores-------------*/" );
+            escritor.WriteLine( "tiempoDeEjecucion = timer() - tiempoDeEjecucion;" );
+            escritor.WriteLine( "printf(\"Tardo: %d ciclos \\n \", tiempoDeEjecucion);" );
+            escritor.WriteLine( "//------------Comparacion de valores-------------" );
             PruebaActual.CompararValoresDevueltos( escritor );
-            escritor.WriteLine( "/*------------Liberar memoria--------------------*/" );
+            escritor.WriteLine( "//------------Liberar memoria--------------------" );
             PruebaActual.LiberarMemoria( escritor );
-                //Libera la memoria que pidió y verifica que no se haya escrito fuera del buffer.
-            escritor.WriteLine( "/*------------Informar cant. de errores----------*/" );
+            //Libera la memoria que pidió y verifica que no se haya escrito fuera del buffer.
+            escritor.WriteLine( "//------------Informar cant. de errores----------" );
             escritor.PrintfPruebaConcluida();
             escritor.WriteLine( "return cantErrores;" );
             escritor.CerrarCorchetes();
@@ -234,7 +259,10 @@ namespace TUAssembler.Generacion
                 llamada = Definicion.DefParametroSalida.Nombre + " = ";
             llamada += Definicion.Nombre + "( ";
             foreach( Parametro param in PruebaActual.ParametrosEntrada )
-                llamada += param.Definicion.Nombre + ", ";
+                if( param.Definicion.EsLista )
+                    llamada += "&" + param.Definicion.Nombre + ", "; //por referencia
+                else
+                    llamada += param.Definicion.Nombre + ", ";
             if( PruebaActual.ParametrosEntrada.Length > 0 ) //Si hay parametros de entrada
                 llamada = llamada.Remove( llamada.Length - 2, 2 ); //Elimino la última coma.)
             llamada += " );";
@@ -252,8 +280,43 @@ namespace TUAssembler.Generacion
                 escritor.If( "cantErrores == 0" );
                 escritor.WriteLine( "cantErrores = " + prueba.Nombre + "();" );
                 escritor.FinIf();
+                escritor.WriteLine( "return 0;" );
             }
             escritor.CerrarCorchetes();
+        }
+        public void GenerarTimer( string funcionAsm )
+        {
+            try
+            {
+                File.Delete( "timer.asm" );
+            }
+            catch
+            {
+                //                Console.WriteLine("Warning: El archivo timer.asm");
+            }
+            StreamWriter timer = new StreamWriter( "timer.asm" );
+            switch( SistemaOperativo )
+            {
+                case TipoSistema.DOS:
+                    timer.WriteLine( "global _timer" );
+                    break;
+                case TipoSistema.LINUX:
+                    timer.WriteLine( "global timer" );
+                    break;
+            }
+            timer.WriteLine( "%include \"" + funcionAsm + "\"" );
+            switch( SistemaOperativo )
+            {
+                case TipoSistema.DOS:
+                    timer.WriteLine( "_timer:" );
+                    break;
+                case TipoSistema.LINUX:
+                    timer.WriteLine( "timer:" );
+                    break;
+            }
+            timer.WriteLine( "rdtsc" );
+            timer.WriteLine( "ret" );
+            timer.Close();
         }
         #endregion
 
@@ -275,12 +338,21 @@ namespace TUAssembler.Generacion
         #endregion
 
         #region Constructor
-        public Generador( string archivoDefinicion, string archivoPrueba )
+        public Generador( string archivoDefinicion, string archivoPrueba, string sistema )
         {
             this.archivoDefinicion = archivoDefinicion;
             this.archivoPrueba = archivoPrueba;
             pruebaActual = 0;
             cantPruebas = 1;
+            switch( sistema.ToUpper().Trim() )
+            {
+                case "DOS":
+                    SistemaOperativo = TipoSistema.DOS;
+                    break;
+                case "LINUX":
+                    SistemaOperativo = TipoSistema.LINUX;
+                    break;
+            }
         }
         #endregion
     }
