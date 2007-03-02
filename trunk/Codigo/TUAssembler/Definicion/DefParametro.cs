@@ -16,9 +16,23 @@ namespace TUAssembler.Definicion
         private bool esMatriz;
         private bool esLista;
         private bool esElemento;
+        private int precision;
         #endregion
 
         #region Propiedades
+        [XmlAttribute()]
+        public int Precision
+        {
+            get
+            {
+                return precision;
+            }
+            set
+            {
+                precision = value;
+            }
+        }
+
         [XmlAttribute()]
         public string Nombre
         {

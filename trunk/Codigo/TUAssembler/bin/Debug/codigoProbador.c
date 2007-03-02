@@ -59,7 +59,7 @@ void free2all(){
        printf("No se han liberado %d bytes de memoria", bytesNoLiberados);
 }
 
-int pruebaVector()
+int pruebaVector15()
 {
 	//------------Variables comunes------------------
 	int salidaFree2;
@@ -82,7 +82,7 @@ int pruebaVector()
 	//salida
 	if( salida != 8 )
 	{
-		printf( "Prueba pruebaVector: El valor del parametro/elemento salida:%d es distinto al valor esperado: 8" ,salida );
+		printf( "Prueba pruebaVector15: El valor del parametro/elemento salida:%d es distinto al valor esperado: 8" ,salida );
 		printf( "\nDiferencia: %d\n" ,salida - 8 );
 		cantErrores++;
 	}
@@ -94,7 +94,7 @@ int pruebaVector()
 	insertarint(&listaaux, 3);
 	if( ListaCircularint(lista) )
 	{
-		printf( "La prueba pruebaVector es una Lista Circular" );
+		printf( "La prueba pruebaVector15 es una Lista Circular" );
 		return 1;
 	}
 	if( !igualdadint(lista, listaaux) )
@@ -105,7 +105,56 @@ int pruebaVector()
 	liberarint(&listaaux);
 	liberarint(&lista);
 	//------------Informar cant. de errores----------
-	printf( "La prueba pruebaVector ha concluido con %d errores" ,cantErrores );
+	printf( "La prueba pruebaVector15 ha concluido con %d errores" ,cantErrores );
+	return cantErrores;
+}
+int pruebaVector2()
+{
+	//------------Variables comunes------------------
+	int salidaFree2;
+	long long tiempoDeEjecucion=0;
+	//------------Parametros-------------------------
+	unsigned int salida;
+	struct Listaint  *lista = NULL;
+	int cantErrores = 0;
+	//------------Pedir memoria----------------------
+	//------------Instanciacion----------------------
+	insertarint(&lista,5);
+	insertarint(&lista,7);
+	insertarint(&lista,9);
+	//------------LlamadaFuncion---------------------
+	tiempoDeEjecucion = timer();
+	salida = funcion1( &lista );
+	tiempoDeEjecucion = timer() - tiempoDeEjecucion;
+	printf("Tardo: %d ciclos \n ", tiempoDeEjecucion);
+	//------------Comparacion de valores-------------
+	//salida
+	if( salida != 8 )
+	{
+		printf( "Prueba pruebaVector2: El valor del parametro/elemento salida:%d es distinto al valor esperado: 8" ,salida );
+		printf( "\nDiferencia: %d\n" ,salida - 8 );
+		cantErrores++;
+	}
+	//lista
+	struct Listaint *listaaux;
+	crearint(&listaaux);
+	insertarint(&listaaux, 1);
+	insertarint(&listaaux, 2);
+	insertarint(&listaaux, 3);
+	if( ListaCircularint(lista) )
+	{
+		printf( "La prueba pruebaVector2 es una Lista Circular" );
+		return 1;
+	}
+	if( !igualdadint(lista, listaaux) )
+	{
+		    cantErrores++;
+	}
+	//------------Liberar memoria--------------------
+	liberarint(&listaaux);
+	liberarint(&lista);
+	//------------Informar cant. de errores----------
+	printf( "La prueba pruebaVector2 ha concluido con %d errores" ,cantErrores );
 	return cantErrores;
 }
 int main()
@@ -115,7 +164,11 @@ int main()
 	/*------------Llamada a pruebas------------------*/
 	if( cantErrores == 0 )
 	{
-		cantErrores = pruebaVector();
+		cantErrores = pruebaVector15();
+	}
+	if( cantErrores == 0 )
+	{
+		cantErrores = pruebaVector2();
 	}
 	return 0;
 }

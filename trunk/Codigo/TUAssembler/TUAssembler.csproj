@@ -55,6 +55,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="ArchivosParaPruebas\c.bat" />
+    <None Include="Definicion\EsquemaDeDefinicion.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Definicion\EsquemaDeDefinicion.xsx">
+      <DependentUpon>EsquemaDeDefinicion.xsd</DependentUpon>
+    </None>
     <None Include="Documentacion\c-asm.pdf" />
     <None Include="Documentacion\clase2imp.pdf" />
     <None Include="Documentacion\Detalles del TP final.doc">

@@ -7,8 +7,11 @@ namespace TUAssembler
 {
     internal class Programa
     {
+        
+
         private static void Main( string[] args )
         {
+         
             //Iniciar( "Prueba1/archDef.xml", "Prueba1/archPrueba.jdp", "Prueba1/funcionAsm.asm" ); //Prueba la devolucion de un UInt8
             //Iniciar("Prueba2/archDef.xml", "Prueba1/archPrueba.jdp", "Prueba2/funcionAsm.asm"); //Prueba la devolucion de un UInt16
             //Iniciar("Prueba3/archDef.xml", "Prueba3/archPrueba.jdp", "Prueba3/funcionAsm.asm"); //Prueba la devolucion de un UInt32
@@ -22,25 +25,24 @@ namespace TUAssembler
         public static void Iniciar( string archDef, string archPrueba, string funcionAsm, string sistema )
         {
             try
-            {
-                EscritorC escritor = new EscritorC( "codigoProbador.c" );
+            {                
                 //Archivo que se generara para probar la funcion
                 Generador generador = new Generador( archDef, archPrueba, sistema );
                 // Toma las definiciones de la funcion y los resultados esperados
                 generador.LeerDefinicion();
-                generador.LeerPrueba();
-                generador.GenerarPrueba( escritor );
+//                generador.VerificarDefinicion();
+                generador.LeerPruebas();
+                generador.GenerarPruebas();
                 generador.GenerarTimer( funcionAsm );
-                escritor.Close();
-                CompilarYEjecutar( funcionAsm );
-                Console.Write( "El programa funciono bien" );
+                
+                CompilarYEjecutar();                                
             }
             catch( Exception e )
             {
                 Console.Write( e.Message );
             }
         }
-        public static void CompilarYEjecutar( string funcionAsm )
+        public static void CompilarYEjecutar()
         {
             CompiladorAsm compiladorAsm;
             CompiladorC compiladorC;
@@ -58,13 +60,15 @@ namespace TUAssembler
             compilador = new Compilador( "", "gcc.exe", "salida.txt", "error.txt" );
 
             string[] archivos = new string[2];
-            archivos[1] = "codigoProbador.o";
-            //            archivos[0] = Path.Combine( Path.GetDirectoryName( funcionAsm ), "funcionAsm.o" );
+            archivos[1] = "codigoProbador.o";            
             archivos[0] = "timer.o";
 
             compilador.Enlazar( "prueba.exe", archivos );
 
-            Ejecutor.Ejecutar( "prueba.exe" );
+            Ejecutor.ArchivoSalida = "salidaEjecucion.txt";
+            Ejecutor.ArchivoError = "errorEjecucion.txt";
+            Ejecutor.Ejecutar("prueba.exe");
+            Console.Write( Ejecutor.ObtenerSalida() );
         }
         /*   private static void EscribirPruebaXml()
         {

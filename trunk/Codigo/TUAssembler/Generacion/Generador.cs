@@ -1,3 +1,4 @@
+using System;
 using System.IO;
 using TUAssembler.Auxiliares;
 using TUAssembler.JuegoDePrueba;
@@ -117,8 +118,10 @@ namespace TUAssembler.Generacion
         #region Métodos
 
         #region Generación de código para la prueba
-        public void GenerarPrueba( EscritorC escritor )
+        public void GenerarPruebas()
         {
+            EscritorC escritor = new EscritorC("codigoProbador.c");
+                
             escritor.WriteLine( "#include <stdio.h>" );
             escritor.WriteLine( "#include \"libreria.h\"" );
             escritor.WriteLine( "#define bool int" );
@@ -129,6 +132,8 @@ namespace TUAssembler.Generacion
             EscribirMallocFreeFunctions( escritor );
             EscribirFuncionesDePrueba( escritor );
             EscribirMain( escritor );
+
+            escritor.Close();
         }
         private void EscribirReferenciaExternaDeLaFuncion( EscritorC escritor )
         {
@@ -216,12 +221,13 @@ namespace TUAssembler.Generacion
         }
         private void EscribirFuncionesDePrueba( EscritorC escritor )
         {
+            pruebaActual = 0;
             foreach( Prueba prueba in Pruebas )
             {
                 Mensajes.NombreDePrueba = prueba.Nombre;
                 EscribirFuncionPrueba( escritor );
                 pruebaActual++;
-            }
+            }         
         }
         private void EscribirFuncionPrueba( EscritorC escritor )
         {
@@ -279,9 +285,9 @@ namespace TUAssembler.Generacion
             {
                 escritor.If( "cantErrores == 0" );
                 escritor.WriteLine( "cantErrores = " + prueba.Nombre + "();" );
-                escritor.FinIf();
-                escritor.WriteLine( "return 0;" );
+                escritor.FinIf();                
             }
+            escritor.WriteLine("return 0;");
             escritor.CerrarCorchetes();
         }
         public void GenerarTimer( string funcionAsm )
@@ -325,13 +331,38 @@ namespace TUAssembler.Generacion
         {
             Definicion = DefinicionFuncion.Leer( archivoDefinicion );
         }
-        public void LeerPrueba()
-        {
-            StreamReader lector = new StreamReader( archivoPrueba );
+        public void LeerPrueba(StreamReader lector)
+        {            
             PruebaActual.LeerNombre( lector );
-            PruebaActual.GenerarParametros( Definicion );
-            //Hace un new de cada parametro( Matriz, Vector o Elem ) segun lo que indica Definicion.
+            PruebaActual.GenerarParametros( Definicion );//Hace un new de cada parametro( Matriz, Vector o Elem ) segun lo que indica Definicion.
             PruebaActual.LeerParametros( lector );
+            PruebaActual.LeerFinDePrueba( lector );
+        }
+        public void LeerPruebas()
+        {
+            StreamReader lector = new StreamReader(archivoPrueba);
+            LeerCantidadDePruebas( lector );
+            pruebaActual = 0;
+            while ( pruebaActual < CantPruebas )
+            {
+                LeerPrueba( lector );                
+                pruebaActual++;
+            }
+            lector.Close();
+        }
+        private void LeerCantidadDePruebas( StreamReader lector )
+        {
+            string[] cantPruebas = MA.Leer(lector);
+            if (cantPruebas.Length != 1)
+                throw new Exception(Mensajes.ParametroCantidadDePruebasIncorrecto );
+            try
+            {
+                CantPruebas = int.Parse( cantPruebas[0] );
+            }
+            catch( Exception )
+            {
+                throw new Exception(Mensajes.ParametroCantidadDePruebasIncorrecto );
+            }
         }
         #endregion
 
@@ -342,8 +373,7 @@ namespace TUAssembler.Generacion
         {
             this.archivoDefinicion = archivoDefinicion;
             this.archivoPrueba = archivoPrueba;
-            pruebaActual = 0;
-            cantPruebas = 1;
+            pruebaActual = 0;            
             switch( sistema.ToUpper().Trim() )
             {
                 case "DOS":

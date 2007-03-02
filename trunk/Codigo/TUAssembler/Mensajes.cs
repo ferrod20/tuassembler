@@ -20,6 +20,11 @@ namespace TUAssembler
 
         public static string FaltaPuntoYComa = "Debe haberse olvidado de poner un ';' en algún lado.";
         public static string CadenaNoSoportadaParaEstaOpcion = "Esta opción no soporta cadenas como tipo básico.";
+
+        public static string ParametroCantidadDePruebasIncorrecto =
+            "El primer parametro debe ser un numerico serguido de ; que indica la cantidad de pruebas.";
+        public static string FinDePruebaIncorrecto = "Al finalizar la prueba debe escribir 'FinDePrueba'";
+        
         #endregion
 
         #region Métodos
