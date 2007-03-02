@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="DefinicionFuncion">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="ParametroSalida"/>
+        <xs:element ref="ParametrosEntrada"/>
+      </xs:sequence>
+      <xs:attribute name="Nombre" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ParametroSalida">
+    <xs:complexType>
+      <xs:attribute name="EsMatriz" use="required" type="xs:boolean"/>
+      <xs:attribute name="EsVector" use="required" type="xs:boolean"/>
+      <xs:attribute name="Tipo" use="required" type="xs:NCName"/>
+      <xs:attribute name="TipoDeAcceso" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ParametrosEntrada">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="Parametro"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Parametro">
+    <xs:complexType>
+      <xs:attribute name="CantColumnas" type="xs:integer"/>
+      <xs:attribute name="CantFilas" type="xs:integer"/>
+      <xs:attribute name="EntradaSalida" type="xs:NCName"/>
+      <xs:attribute name="EsMatriz" use="required" type="xs:boolean"/>
+      <xs:attribute name="EsVector" use="required" type="xs:boolean"/>
+      <xs:attribute name="Longitud" type="xs:integer"/>
+      <xs:attribute name="Tipo" use="required" type="xs:NCName"/>
+      <xs:attribute name="TipoDeAcceso" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

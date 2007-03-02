@@ -87,7 +87,7 @@ namespace TUAssembler.JuegoDePrueba
         public void LeerNombre( StreamReader lector )
         {
             string[] nombrePrueba = MA.Leer( lector );
-            if( nombrePrueba.Length > 1 )
+            if( nombrePrueba.Length != 1 )
                 throw new Exception( Mensajes.NombrePruebaNoPermitido );
             Nombre = nombrePrueba[0];
         }
@@ -191,5 +191,15 @@ namespace TUAssembler.JuegoDePrueba
         #endregion
 
         #endregion
+
+        public void LeerFinDePrueba( StreamReader lector )
+        {
+            string[] finPrueba;
+            finPrueba = MA.Leer(lector);
+            if (finPrueba.Length != 1)
+                throw new Exception( Mensajes.FinDePruebaIncorrecto );
+            if( finPrueba[0]!="FinDePrueba")
+                throw new Exception(Mensajes.FinDePruebaIncorrecto);
+        }
     }
 }

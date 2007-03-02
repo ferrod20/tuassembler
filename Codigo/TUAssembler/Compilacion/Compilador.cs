@@ -113,11 +113,13 @@ namespace TUAssembler.Compilacion
         {
             StreamReader sr = new StreamReader( archivoError );
             error = sr.ReadToEnd();
+            sr.Close();
         }
         private void ObtenerSalida()
         {
             StreamReader sr = new StreamReader( archivoSalida );
             salida = sr.ReadToEnd();
+            sr.Close();
         }
         private void BorrarArchivosSalidaYError()
         {
