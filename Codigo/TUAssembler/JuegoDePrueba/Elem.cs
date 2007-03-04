@@ -171,7 +171,7 @@ namespace TUAssembler.JuegoDePrueba
             CompararValor( escritor, variable );
         }
         public void CompararValor( EscritorC escritor, string variable )
-        {            
+        {
             //(!this.EsDeSalidaOEntradaSalida);
             string diferencia = "AUX" + variable;
             string varPrecision = "PR" + variable;
@@ -211,7 +211,7 @@ namespace TUAssembler.JuegoDePrueba
                     escritor.WriteLine( "float " + diferencia + " = " + variable + " - " + Valor + ";" );
                     escritor.WriteLine( diferencia + " = (" + diferencia + " >= 0) ? " + diferencia + " : -" +
                         diferencia + ";" );
-                    escritor.WriteLine( "float " + varPrecision + " = pow((float)10, " + Definicion.Precision+ ");" );
+                    escritor.WriteLine( "float " + varPrecision + " = pow((float)10, " + Definicion.Precision + ");" );
                     escritor.If( diferencia + " < " + varPrecision );
                     escritor.PrintfValorDistintoConDiferencia( variable, Valor, diferencia );
                     escritor.WriteLine( "cantErrores++;" );
@@ -221,7 +221,7 @@ namespace TUAssembler.JuegoDePrueba
                     escritor.WriteLine( "double " + diferencia + " = " + variable + " - " + Valor + ";" );
                     escritor.WriteLine( diferencia + " = (" + diferencia + " >= 0) ? " + diferencia + " : -" +
                         diferencia + ";" );
-                    escritor.WriteLine("double " + varPrecision + " = pow((double)10, " + Definicion.Precision + ");");
+                    escritor.WriteLine( "double " + varPrecision + " = pow((double)10, " + Definicion.Precision + ");" );
                     escritor.If( diferencia + " < " + varPrecision );
                     escritor.PrintfValorDistintoConDiferencia( variable, Valor, diferencia );
                     escritor.WriteLine( "cantErrores++;" );

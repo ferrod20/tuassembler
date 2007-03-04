@@ -10,14 +10,14 @@ namespace TUAssembler.Compilacion
         public static string ArchivoSalida;
         public static string ArchivoError;
         #endregion
-        
-        public static void Ejecutar(string comando )
-        {            
+
+        public static void Ejecutar( string comando )
+        {
             TempFileCollection archivosTemporales = new TempFileCollection();
             try
             {
                 File.Delete( ArchivoSalida );
-                File.Delete(ArchivoError);
+                File.Delete( ArchivoError );
                 Executor.ExecWaitWithCapture( comando, archivosTemporales, ref ArchivoSalida, ref ArchivoError );
             }
             catch( Exception e )
@@ -28,7 +28,7 @@ namespace TUAssembler.Compilacion
         public static string ObtenerSalida()
         {
             string salida;
-            StreamReader sr = new StreamReader( ArchivoSalida);
+            StreamReader sr = new StreamReader( ArchivoSalida );
             //Tiro las 2 primeras lineas q son basura!
             sr.ReadLine();
             sr.ReadLine();

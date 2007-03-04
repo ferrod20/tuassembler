@@ -8,6 +8,8 @@ namespace TUAssembler
         public static string NombreDePrueba;
 
         #region Constantes
+        public static string ErrorVerificacionDeDefinicion = "La definición de la función no es válida.";
+
         public static string CantidadParametrosEntradaNoCoincideConDefinicion =
             "La cantidad de parametros de entrada de la prueba " + NombreDePrueba +
                 " no coincide con la definición de la función";
@@ -23,8 +25,8 @@ namespace TUAssembler
 
         public static string ParametroCantidadDePruebasIncorrecto =
             "El primer parametro debe ser un numerico serguido de ; que indica la cantidad de pruebas.";
+
         public static string FinDePruebaIncorrecto = "Al finalizar la prueba debe escribir 'FinDePrueba'";
-        
         #endregion
 
         #region Métodos
@@ -131,6 +133,14 @@ namespace TUAssembler
             return
                 "El elemento de la matriz " + nombreMatriz + ", en la posición " + fila + " " + col +
                     " no es del tipo correcto.";
+        }
+        public static string ErrorVerificacionDefinicion( string archivo, Exception e )
+        {
+            string mensaje = string.Empty;
+            mensaje = ErrorVerificacionDeDefinicion + "\n";
+            mensaje += "Archivo: " + archivo + "\n";
+            mensaje += "Descripción: \n" + MA.ExcepcionCompleta( e ) + "\n\n";
+            return mensaje;
         }
     }
 }
