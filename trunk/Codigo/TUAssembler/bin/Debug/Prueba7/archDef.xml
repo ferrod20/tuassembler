@@ -1,14 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <DefinicionFuncion Nombre="funcion1" >
-  <DefParametroSalida Nombre="salida" TipoDeAcceso="V" Tipo="UInt32" EntradaSalida="S" EsElemento="true" />
+  <DefParametroSalida Nombre="lista2" TipoDeAcceso="V" Tipo="UInt32" EsElemento="true" />  
   <DefParametrosEntrada>   
   	<DefParametro Nombre="lista" TipoDeAcceso="R" Tipo="UInt32" EntradaSalida="ES" EsLista="true"/>
   </DefParametrosEntrada>
 
-<!--  <DefParametroSalida Nombre="salida" TipoDeAcceso="V" Tipo="UInt64" EsElemento="true"  />
-  <DefParametrosEntrada>   
-  	<DefParametro Nombre="lista" TipoDeAcceso="R" Tipo="UInt32" EntradaSalida="ES" EsLista="true"/>
-  </DefParametrosEntrada>
-  -->
 </DefinicionFuncion>
 

@@ -65,7 +65,7 @@ int pruebaVector15()
 	int salidaFree2;
 	long long tiempoDeEjecucion=0;
 	//------------Parametros-------------------------
-	unsigned int salida;
+	unsigned int lista2;
 	struct Listaint  *lista = NULL;
 	int cantErrores = 0;
 	//------------Pedir memoria----------------------
@@ -75,15 +75,15 @@ int pruebaVector15()
 	insertarint(&lista,9);
 	//------------LlamadaFuncion---------------------
 	tiempoDeEjecucion = timer();
-	salida = funcion1( &lista );
+	lista2 = funcion1( &lista );
 	tiempoDeEjecucion = timer() - tiempoDeEjecucion;
 	printf("Tardo: %d ciclos \n ", tiempoDeEjecucion);
 	//------------Comparacion de valores-------------
-	//salida
-	if( salida != 8 )
+	//lista2
+	if( lista2 != 8 )
 	{
-		printf( "Prueba pruebaVector15: El valor del parametro/elemento salida:%d es distinto al valor esperado: 8" ,salida );
-		printf( "\nDiferencia: %d\n" ,salida - 8 );
+		printf( "Prueba pruebaVector15: El valor del parametro/elemento lista2:%d es distinto al valor esperado: 8" ,lista2 );
+		printf( "\nDiferencia: %d\n" ,lista2 - 8 );
 		cantErrores++;
 	}
 	//lista
@@ -114,7 +114,7 @@ int pruebaVector2()
 	int salidaFree2;
 	long long tiempoDeEjecucion=0;
 	//------------Parametros-------------------------
-	unsigned int salida;
+	unsigned int lista2;
 	struct Listaint  *lista = NULL;
 	int cantErrores = 0;
 	//------------Pedir memoria----------------------
@@ -124,15 +124,15 @@ int pruebaVector2()
 	insertarint(&lista,9);
 	//------------LlamadaFuncion---------------------
 	tiempoDeEjecucion = timer();
-	salida = funcion1( &lista );
+	lista2 = funcion1( &lista );
 	tiempoDeEjecucion = timer() - tiempoDeEjecucion;
 	printf("Tardo: %d ciclos \n ", tiempoDeEjecucion);
 	//------------Comparacion de valores-------------
-	//salida
-	if( salida != 8 )
+	//lista2
+	if( lista2 != 8 )
 	{
-		printf( "Prueba pruebaVector2: El valor del parametro/elemento salida:%d es distinto al valor esperado: 8" ,salida );
-		printf( "\nDiferencia: %d\n" ,salida - 8 );
+		printf( "Prueba pruebaVector2: El valor del parametro/elemento lista2:%d es distinto al valor esperado: 8" ,lista2 );
+		printf( "\nDiferencia: %d\n" ,lista2 - 8 );
 		cantErrores++;
 	}
 	//lista

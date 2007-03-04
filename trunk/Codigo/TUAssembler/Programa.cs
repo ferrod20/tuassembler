@@ -1,5 +1,4 @@
 using System;
-using TUAssembler.Auxiliares;
 using TUAssembler.Compilacion;
 using TUAssembler.Generacion;
 
@@ -7,11 +6,8 @@ namespace TUAssembler
 {
     internal class Programa
     {
-        
-
         private static void Main( string[] args )
         {
-         
             //Iniciar( "Prueba1/archDef.xml", "Prueba1/archPrueba.jdp", "Prueba1/funcionAsm.asm" ); //Prueba la devolucion de un UInt8
             //Iniciar("Prueba2/archDef.xml", "Prueba1/archPrueba.jdp", "Prueba2/funcionAsm.asm"); //Prueba la devolucion de un UInt16
             //Iniciar("Prueba3/archDef.xml", "Prueba3/archPrueba.jdp", "Prueba3/funcionAsm.asm"); //Prueba la devolucion de un UInt32
@@ -19,23 +15,19 @@ namespace TUAssembler
             //Iniciar("Prueba5/archDef.xml", "Prueba5/archPrueba.jdp", "Prueba5/funcionAsm.asm"); //Prueba la funcion  UInt64 funcion1( UInt8 E, UInt16 ES, UInt32 S );
             //Iniciar( "Prueba6/archDef.xml", "Prueba6/archPrueba.jdp", "Prueba6/funcionAsm.asm", "DOS");
             Iniciar( "Prueba7/archDef.xml", "Prueba7/archPrueba.jdp", "Prueba7/funcionAsm.asm", "DOS" );
-                //Prueba la funcion  UInt64 funcion1( Vector ES );            
+            //Prueba la funcion  UInt64 funcion1( Vector ES );            
             //            Iniciar("Prueba8/archDef.xml", "Prueba8/archPrueba.jdp", "Prueba8/funcionAsm.asm");//Prueba pasarle una matriz a una funcion.                                   //Prueba pasarle una matriz a una funcion.
         }
         public static void Iniciar( string archDef, string archPrueba, string funcionAsm, string sistema )
         {
             try
-            {                
-                //Archivo que se generara para probar la funcion
+            {
                 Generador generador = new Generador( archDef, archPrueba, sistema );
-                // Toma las definiciones de la funcion y los resultados esperados
                 generador.LeerDefinicion();
-//                generador.VerificarDefinicion();
                 generador.LeerPruebas();
                 generador.GenerarPruebas();
                 generador.GenerarTimer( funcionAsm );
-                
-                CompilarYEjecutar();                                
+                CompilarYEjecutar();
             }
             catch( Exception e )
             {
@@ -60,14 +52,14 @@ namespace TUAssembler
             compilador = new Compilador( "", "gcc.exe", "salida.txt", "error.txt" );
 
             string[] archivos = new string[2];
-            archivos[1] = "codigoProbador.o";            
+            archivos[1] = "codigoProbador.o";
             archivos[0] = "timer.o";
 
             compilador.Enlazar( "prueba.exe", archivos );
 
             Ejecutor.ArchivoSalida = "salidaEjecucion.txt";
             Ejecutor.ArchivoError = "errorEjecucion.txt";
-            Ejecutor.Ejecutar("prueba.exe");
+            Ejecutor.Ejecutar( "prueba.exe" );
             Console.Write( Ejecutor.ObtenerSalida() );
         }
         /*   private static void EscribirPruebaXml()

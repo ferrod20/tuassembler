@@ -1,5 +1,6 @@
 using System;
 using System.IO;
+using System.Xml;
 using System.Xml.Schema;
 using System.Xml.Serialization;
 using TUAssembler.Definicion;
@@ -13,9 +14,23 @@ namespace TUAssembler
         private string nombre;
         private DefParametro parametroSalida;
         private DefParametro[] parametrosEntrada;
+        private static string erroresDeValidacion;
         #endregion
 
         #region Propiedades
+        [XmlIgnore()]
+        private static string ErroresDeValidacion
+        {
+            get
+            {
+                return erroresDeValidacion;
+            }
+            set
+            {
+                erroresDeValidacion = value;
+            }
+        }
+
         [XmlAttribute()]
         public string Nombre
         {
@@ -72,40 +87,27 @@ namespace TUAssembler
         public static DefinicionFuncion Leer( string archivo )
         {
             XmlSerializer xml;
-            DefinicionFuncion defFuncion = null;
-            FileStream fs;
+            DefinicionFuncion defFuncion;
+            XmlReader lectorDefinicionXml;
+            FileStream fs = new FileStream( archivo, FileMode.Open );
+            lectorDefinicionXml = XmlReader.Create( fs );
 
-            
-                
             try
             {
-                fs = new FileStream( archivo, FileMode.Open );
                 xml = new XmlSerializer( typeof( DefinicionFuncion ) );
-
-                XmlSchema esquema = XmlSchema.Read(fs, ValidacionXml);
-                //XmlSchemaValidator validador = new XmlSchemaValidator();
-                //validador.AddSchema(esquema);            
-
-                defFuncion = (DefinicionFuncion) xml.Deserialize( fs );
+                defFuncion = (DefinicionFuncion) xml.Deserialize( lectorDefinicionXml );
             }
             catch( Exception e )
             {
                 throw new Exception( Mensajes.ErrorLecturaDefinicion( archivo, e ) );
             }
+            finally
+            {
+                lectorDefinicionXml.Close();
+                fs.Close();
+            }
             return defFuncion;
         }
-
-        static void ValidacionXml(object sender, ValidationEventArgs args)
-        {
-        /*    if (args.Severity == XmlSeverityType.Warning)
-                Console.Write("WARNING: ");
-            else if (args.Severity == XmlSeverityType.Error)
-                Console.Write("ERROR: ");
-
-            Console.WriteLine(args.Message);
-         * */
-        }
-
         public void CrearInstanciaDePrueba()
         {
             //            nombre = "funcion1";
@@ -140,9 +142,45 @@ namespace TUAssembler
             return defParametros;
         }
         #endregion
-    }
 
-    internal class XmlTextReader
-    {
+        public static void VerificarDefinicion( string archivo )
+        {
+            XmlValidatingReader lectorEsquema;
+            XmlSchemaCollection esquemas = new XmlSchemaCollection();
+            XmlReader lectorDefinicionXml;
+            ErroresDeValidacion = string.Empty;
+            FileStream fs = new FileStream( archivo, FileMode.Open );
+            lectorDefinicionXml = XmlReader.Create( fs );
+            try
+            {
+                lectorEsquema = new XmlValidatingReader( lectorDefinicionXml );
+                esquemas.Add( null, "esquema.xsd" );
+
+                lectorEsquema.ValidationType = ValidationType.Schema;
+                lectorEsquema.Schemas.Add( esquemas );
+                lectorEsquema.ValidationEventHandler += ValidacionXml;
+
+                while( lectorEsquema.Read() )
+                {
+                }
+            }
+            catch( Exception e )
+            {
+                throw new Exception( Mensajes.ErrorVerificacionDefinicion( archivo, e ) );
+            }
+            finally
+            {
+                lectorDefinicionXml.Close();
+                fs.Close();
+            }
+
+            if( ErroresDeValidacion!=string.Empty )
+                throw new Exception( Mensajes.ErrorVerificacionDeDefinicion + "\n" + ErroresDeValidacion );
+        }
+        private static void ValidacionXml( object sender, ValidationEventArgs args )
+        {
+            if( args.Severity==XmlSeverityType.Error )
+                ErroresDeValidacion += ( "Error: " + args.Message + "\n" );
+        }
     }
 }

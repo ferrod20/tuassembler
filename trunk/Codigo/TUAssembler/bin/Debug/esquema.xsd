@@ -1,39 +1,87 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
-  <xs:element name="DefinicionFuncion">
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element ref="ParametroSalida"/>
-        <xs:element ref="ParametrosEntrada"/>
-      </xs:sequence>
-      <xs:attribute name="Nombre" use="required" type="xs:NCName"/>
-    </xs:complexType>
-  </xs:element>
-  <xs:element name="ParametroSalida">
-    <xs:complexType>
-      <xs:attribute name="EsMatriz" use="required" type="xs:boolean"/>
-      <xs:attribute name="EsVector" use="required" type="xs:boolean"/>
-      <xs:attribute name="Tipo" use="required" type="xs:NCName"/>
-      <xs:attribute name="TipoDeAcceso" use="required" type="xs:NCName"/>
-    </xs:complexType>
-  </xs:element>
-  <xs:element name="ParametrosEntrada">
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element maxOccurs="unbounded" ref="Parametro"/>
-      </xs:sequence>
-    </xs:complexType>
-  </xs:element>
-  <xs:element name="Parametro">
-    <xs:complexType>
-      <xs:attribute name="CantColumnas" type="xs:integer"/>
-      <xs:attribute name="CantFilas" type="xs:integer"/>
-      <xs:attribute name="EntradaSalida" type="xs:NCName"/>
-      <xs:attribute name="EsMatriz" use="required" type="xs:boolean"/>
-      <xs:attribute name="EsVector" use="required" type="xs:boolean"/>
-      <xs:attribute name="Longitud" type="xs:integer"/>
-      <xs:attribute name="Tipo" use="required" type="xs:NCName"/>
-      <xs:attribute name="TipoDeAcceso" type="xs:NCName"/>
-    </xs:complexType>
-  </xs:element>
-</xs:schema>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:simpleType name="NombreC">
+		<xsd:restriction base="xsd:ID">
+			<xsd:pattern value="([a-zA-Z])*([_])*([0-9])*([a-zA-Z])*([_])*([0-9])*"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="ValorOReferencia">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="V"/>
+			<xsd:enumeration value="R"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="EntradaSalida">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="E"/>
+			<xsd:enumeration value="ES"/>
+			<xsd:enumeration value="S"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="TipoDeDatos">
+		<xsd:restriction base="xsd:string">
+<xsd:enumeration value="UInt8"        />
+<xsd:enumeration value="UInt16"       />
+<xsd:enumeration value="UInt32"       />
+<xsd:enumeration value="UInt64"       />
+<xsd:enumeration value="Int8"         />
+<xsd:enumeration value="Int16"        />
+<xsd:enumeration value="Int32"        />
+<xsd:enumeration value="Int64"        />
+<xsd:enumeration value="Float32"      />
+<xsd:enumeration value="Float64"      />
+<xsd:enumeration value="Booleano"     />
+<xsd:enumeration value="Char"         />
+<xsd:enumeration value="CadenaC"      />
+<xsd:enumeration value="CadenaPascal" />
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:attributeGroup name="QTipoEs" >
+		<xsd:attribute name="EsVector" type="xsd:boolean" use="optional"/>
+		<xsd:attribute name="EsLista" type="xsd:boolean" use="optional"/>
+		<xsd:attribute name="EsMatriz" type="xsd:boolean" use="optional"/>
+		<xsd:attribute name="EsElemento" type="xsd:boolean" use="optional"/>		
+	</xsd:attributeGroup>
+
+	<xsd:element name="DefParametroSalida">
+		<xsd:complexType>
+			<xsd:attribute name="Nombre" type="NombreC" use="required"/>
+			<xsd:attribute name="EntradaSalida" use="prohibited"/>
+			<xsd:attribute name="TipoDeAcceso" use="required" type="ValorOReferencia"/>
+			<xsd:attribute name="Tipo" type="TipoDeDatos" use="required"/>
+			<xsd:attributeGroup ref="QTipoEs"/>
+			<xsd:attribute name="Precision" type="xsd:unsignedInt" use="optional"/>
+		</xsd:complexType>
+	</xsd:element>
+
+	<xsd:element name="DefParametro">
+		<xsd:complexType>
+			<xsd:attribute name="Nombre" use="required" type="NombreC"/>
+			<xsd:attribute name="EntradaSalida" use="required" type="EntradaSalida"/>
+			<xsd:attribute name="TipoDeAcceso" use="required" type="ValorOReferencia"/>
+			<xsd:attribute name="Tipo" use="required" type="TipoDeDatos"/>
+			<xsd:attribute name="EsVector" type="xsd:boolean" use="optional"/>
+			<xsd:attribute name="EsLista" type="xsd:boolean" use="optional"/>
+			<xsd:attribute name="EsMatriz" type="xsd:boolean" use="optional"/>
+			<xsd:attribute name="EsElemento" type="xsd:boolean" use="optional"/>
+			<xsd:attribute name="Precision" type="xsd:unsignedInt" use="optional"/>
+		</xsd:complexType>
+	</xsd:element>
+
+	<xsd:element name="DefParametrosEntrada">
+		<xsd:complexType>
+			<xsd:sequence maxOccurs="unbounded" minOccurs="1">
+				<xsd:element ref="DefParametro"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+
+	<xsd:element name="DefinicionFuncion">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="DefParametroSalida" minOccurs="0" maxOccurs="1"/>
+				<xsd:element ref="DefParametrosEntrada" minOccurs="0" maxOccurs="1"/>
+			</xsd:sequence>
+			<xsd:attribute name="Nombre" type="NombreC" use="required"/>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>
