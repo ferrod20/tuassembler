@@ -33,7 +33,11 @@ namespace TUAssembler.JuegoDePrueba
         }
         #endregion
 
-        #region Métodos        
+        #region Métodos
+        public override void TamanioOValorParaMedicion( EscritorC escritor )
+        {
+            escritor.Write(cantColumnas*cantFilas * MA.CuantosBytes(Definicion.Tipo));
+        }
         public override void Leer( StreamReader lector )
         {
             string[] filas;

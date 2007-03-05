@@ -289,6 +289,21 @@ namespace TUAssembler.Definicion
             }
             return nombre;
         }
+        public void VerificarUnSoloTipo()
+        {
+            int cuantosTipos = 0;
+            if( EsElemento )
+                cuantosTipos++;
+            if( EsMatriz )
+                cuantosTipos++;
+            if( EsLista )
+                cuantosTipos++;
+            if( EsVector )
+                cuantosTipos++;
+
+            if( cuantosTipos!=1 )
+                throw new Exception( Mensajes.ParametroDeUnSoloTipo( Nombre ) );
+        }
     }
 
     [Serializable()]

@@ -94,6 +94,10 @@ namespace TUAssembler.JuegoDePrueba
         }
 
         #region Escritura código C
+        public override void TamanioOValorParaMedicion( EscritorC escritor )
+        {
+            escritor.Write( Valor );
+        }
         public override void Declarar( EscritorC escritor )
         {
             string declaracion = string.Empty;

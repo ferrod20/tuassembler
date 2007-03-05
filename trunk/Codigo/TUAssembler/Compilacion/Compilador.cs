@@ -121,7 +121,7 @@ namespace TUAssembler.Compilacion
             salida = sr.ReadToEnd();
             sr.Close();
         }
-        private void BorrarArchivosSalidaYError()
+        public void BorrarArchivosSalidaYError()
         {
             File.Delete( archivoSalida );
             File.Delete( archivoError );
