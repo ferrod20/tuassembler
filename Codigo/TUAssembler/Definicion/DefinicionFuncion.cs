@@ -141,8 +141,6 @@ namespace TUAssembler
                 }
             return defParametros;
         }
-        #endregion
-
         public static void VerificarDefinicion( string archivo )
         {
             XmlValidatingReader lectorEsquema;
@@ -182,5 +180,12 @@ namespace TUAssembler
             if( args.Severity==XmlSeverityType.Error )
                 ErroresDeValidacion += ( "Error: " + args.Message + "\n" );
         }
+        public void VerificarUnSoloTipo()
+        {
+            foreach( DefParametro parametro in DefParametrosEntrada )
+                parametro.VerificarUnSoloTipo();
+            DefParametroSalida.VerificarUnSoloTipo();
+        }
+        #endregion
     }
 }

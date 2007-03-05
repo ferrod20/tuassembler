@@ -35,5 +35,11 @@ namespace TUAssembler.Compilacion
             salida = sr.ReadToEnd();
             return salida;
         }
+        public static void BorrarArchivosTemporales( bool borrarSalida )
+        {
+            if( borrarSalida )
+                File.Delete( ArchivoSalida );
+            File.Delete( ArchivoError );
+        }
     }
 }

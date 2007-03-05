@@ -27,6 +27,11 @@ namespace TUAssembler
             "El primer parametro debe ser un numerico serguido de ; que indica la cantidad de pruebas.";
 
         public static string FinDePruebaIncorrecto = "Al finalizar la prueba debe escribir 'FinDePrueba'";
+
+        public static string CantidadDeParametrosIncorrectos =
+            "La cantidad de parametros con que se llamo a TuAssembler es incorrecta.\n Debe ser: archDef archJdp -asm|-o funcion -fpe -as archivo -cci archivo.";
+
+        public static string TipoIncorrectoListas = "Tipo de lista no valido";
         #endregion
 
         #region Métodos
@@ -141,6 +146,16 @@ namespace TUAssembler
             mensaje += "Archivo: " + archivo + "\n";
             mensaje += "Descripción: \n" + MA.ExcepcionCompleta( e ) + "\n\n";
             return mensaje;
+        }
+        public static string ParametroDeUnSoloTipo( string nombre )
+        {
+            return
+                "El parametro " + nombre + " debe tener un solo tipo en true( EsMatriz|EsVector|EsElemento|EsLista ).";
+        }
+        public static string OpcionIncorrecta( string opcion )
+        {
+            return
+            "La opción "+ opcion+" no está entre alguna de las posibles.\n Debe ser: archDef archJdp -asm|-o funcion -fpe -as archivo -cci archivo.";
         }
     }
 }

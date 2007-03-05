@@ -15,15 +15,31 @@ namespace TUAssembler.Generacion
     {
         #region Variables miembro
         private string archivoDefinicion;
-        private string archivoPrueba;
+        private string archivoPrueba;                
         private DefinicionFuncion definicion;
         private Prueba[] pruebas;
         private int cantPruebas;
         private int pruebaActual;
         private TipoSistema tipoSistema;
+
+        private bool contarCantInstrucciones;
+        private bool frenarEnElPrimerError;
+        private string archivoCuentaInstrucciones;
         #endregion
 
         #region Propiedades
+        public bool ContarCantInstrucciones
+        {
+            get
+            {
+                return contarCantInstrucciones;
+            }
+            set
+            {
+                contarCantInstrucciones = value;
+            }
+        }
+
         public int CantPruebas
         {
             get
@@ -111,6 +127,30 @@ namespace TUAssembler.Generacion
             set
             {
                 tipoSistema = value;
+            }
+        }
+
+        public bool FrenarEnElPrimerError
+        {
+            get
+            {
+                return frenarEnElPrimerError;
+            }
+            set
+            {
+                frenarEnElPrimerError = value;
+            }
+        }
+
+        public string ArchivoCuentaInstrucciones
+        {
+            get
+            {
+                return archivoCuentaInstrucciones;
+            }
+            set
+            {
+                archivoCuentaInstrucciones = value;
             }
         }
         #endregion
@@ -247,7 +287,38 @@ namespace TUAssembler.Generacion
             escritor.WriteLine( "tiempoDeEjecucion = timer();" );
             LlamarFuncionAProbar( escritor );
             escritor.WriteLine( "tiempoDeEjecucion = timer() - tiempoDeEjecucion;" );
-            escritor.WriteLine( "printf(\"Tardo: %d ciclos \\n \", tiempoDeEjecucion);" );
+            /*
+             * long long tiempo = 0;
+             * long long tiempoDeEjecucion = 0;
+             * int cantCorridas = 100;
+             * while( tiempoDeEjecucion < 10000000 )
+             * {
+                    tiempoDeEjecucion = 0;
+                    for( int i =0; i<cantCorridas; i++ )
+             *      {
+             *          //Pido memoria, instancio
+             *          tiempo = timer();
+             *          LlamadaFuncion; 
+             *          tiempoDeEjecucion += timer() - tiempo;                          
+             *          //Libero memoria
+             *      }             
+             *      cantCorridas *=10;
+             * }
+             * *    tiempoDeEjecucion = tiempoDeEjecucion / hasta;
+             *      archivoSalida. cout>> tiempoDeEjecucion, //
+             * 
+             *      
+             */
+            //foreach (Parametro param in PruebaActual.ParametrosEntrada)
+            //{
+            //    param.TamanioOValorParaMedicion( escritor );
+            //    escritor.Write( "\t" );
+            //}
+            //*fs;
+            //fs = fopen("nombreArch", "wb");
+            //fwrite("buffer", 1, bytesLeidos, fs);
+            //fclose(fs);
+
             escritor.WriteLine( "//------------Comparacion de valores-------------" );
             PruebaActual.CompararValoresDevueltos( escritor );
             escritor.WriteLine( "//------------Liberar memoria--------------------" );
@@ -274,20 +345,22 @@ namespace TUAssembler.Generacion
             llamada += " );";
             escritor.WriteLine( llamada );
         }
-        private void EscribirMain( EscritorC escritor )
+        private void EscribirMain(EscritorC escritor)
         {
-            escritor.WriteLine( "int main()" );
+            escritor.WriteLine("int main()");
             escritor.AbrirCorchetes();
-            escritor.WriteLine( "/*------------Parametros-------------------------*/" );
-            escritor.WriteLine( "int cantErrores = 0;" );
-            escritor.WriteLine( "/*------------Llamada a pruebas------------------*/" );
-            foreach( Prueba prueba in Pruebas )
+            escritor.WriteLine("/*------------Parametros-------------------------*/");
+            escritor.WriteLine("int cantErrores = 0;");
+            escritor.WriteLine("/*------------Llamada a pruebas------------------*/");
+            foreach (Prueba prueba in Pruebas)
             {
-                escritor.If( "cantErrores == 0" );
-                escritor.WriteLine( "cantErrores = " + prueba.Nombre + "();" );
-                escritor.FinIf();
+                if (FrenarEnElPrimerError)
+                    escritor.If("cantErrores == 0");
+                escritor.WriteLine("cantErrores = " + prueba.Nombre + "();");
+                if (FrenarEnElPrimerError)
+                    escritor.FinIf();
             }
-            escritor.WriteLine( "return 0;" );
+            escritor.WriteLine("return 0;");
             escritor.CerrarCorchetes();
         }
         public void GenerarTimer( string funcionAsm )
@@ -331,12 +404,13 @@ namespace TUAssembler.Generacion
         {
             DefinicionFuncion.VerificarDefinicion( archivoDefinicion );
             Definicion = DefinicionFuncion.Leer( archivoDefinicion );
+            Definicion.VerificarUnSoloTipo();
         }
         public void LeerPrueba( StreamReader lector )
         {
             PruebaActual.LeerNombre( lector );
             PruebaActual.GenerarParametros( Definicion );
-                //Hace un new de cada parametro( Matriz, Vector o Elem ) segun lo que indica Definicion.
+            //Hace un new de cada parametro( Matriz, Vector o Elem ) segun lo que indica Definicion.
             PruebaActual.LeerParametros( lector );
             PruebaActual.LeerFinDePrueba( lector );
         }

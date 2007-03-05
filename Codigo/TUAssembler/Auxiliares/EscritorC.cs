@@ -109,7 +109,8 @@ namespace TUAssembler.Auxiliares
         #region PrintF
         public void PrintfPruebaConcluida()
         {
-            Printf( "La prueba " + Mensajes.NombreDePrueba + " ha concluido con %d errores", "cantErrores" );
+            Printf( "La prueba " + Mensajes.NombreDePrueba + " ha concluido con %d errores\\n", "cantErrores" );
+            Printf( "Tardo: %d ciclos \\n ", "tiempoDeEjecucion" );
         }
         public void PrintfValorDistinto( string variable, string valorEsperado )
         {

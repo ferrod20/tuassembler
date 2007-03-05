@@ -1,3 +1,4 @@
+using System;
 using System.IO;
 using TUAssembler.Auxiliares;
 using TUAssembler.Definicion;
@@ -53,6 +54,9 @@ namespace TUAssembler.JuegoDePrueba
         public virtual void LiberarMemoria( EscritorC escritor )
         {
         }
+        public virtual void TamanioOValorParaMedicion(EscritorC escritor)
+        {
+        }
         #endregion
 
         //No borrar, sirve para definir el metodo en las clases hijas( ParamVector, ParamMatriz y Elem )
@@ -60,5 +64,7 @@ namespace TUAssembler.JuegoDePrueba
         {
         }
         #endregion
+
+        
     }
 }

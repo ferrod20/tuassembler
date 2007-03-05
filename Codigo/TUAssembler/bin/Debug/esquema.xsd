@@ -49,7 +49,7 @@
 			<xsd:attribute name="TipoDeAcceso" use="required" type="ValorOReferencia"/>
 			<xsd:attribute name="Tipo" type="TipoDeDatos" use="required"/>
 			<xsd:attributeGroup ref="QTipoEs"/>
-			<xsd:attribute name="Precision" type="xsd:unsignedInt" use="optional"/>
+			<xsd:attribute name="Precision" type="xsd:unsignedInt" use="optional" default="0"/>
 		</xsd:complexType>
 	</xsd:element>
 
@@ -59,11 +59,8 @@
 			<xsd:attribute name="EntradaSalida" use="required" type="EntradaSalida"/>
 			<xsd:attribute name="TipoDeAcceso" use="required" type="ValorOReferencia"/>
 			<xsd:attribute name="Tipo" use="required" type="TipoDeDatos"/>
-			<xsd:attribute name="EsVector" type="xsd:boolean" use="optional"/>
-			<xsd:attribute name="EsLista" type="xsd:boolean" use="optional"/>
-			<xsd:attribute name="EsMatriz" type="xsd:boolean" use="optional"/>
-			<xsd:attribute name="EsElemento" type="xsd:boolean" use="optional"/>
-			<xsd:attribute name="Precision" type="xsd:unsignedInt" use="optional"/>
+			<xsd:attributeGroup ref="QTipoEs"/>
+			<xsd:attribute name="Precision" type="xsd:unsignedInt" use="optional" default="0"/>
 		</xsd:complexType>
 	</xsd:element>
 

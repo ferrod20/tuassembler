@@ -61,6 +61,10 @@ namespace TUAssembler.JuegoDePrueba
         #endregion
 
         #region Métodos
+        public override void TamanioOValorParaMedicion( EscritorC escritor )
+        {
+            escritor.Write(Longitud * MA.CuantosBytes(Definicion.Tipo));
+        }
         public void EstablecerValor( string[] fila )
         {
             EstablecerLongitud( fila.Length );
@@ -111,7 +115,7 @@ namespace TUAssembler.JuegoDePrueba
                     declaracion = "double ";
                     break;
                 default:
-                    throw new Exception( "Tipo de lista no valido" );
+                    throw new Exception( Mensajes.TipoIncorrectoListas );
             }
             declaracion = "struct Lista" + declaracion + " *" + Definicion.Nombre + " = NULL;";
             escritor.WriteLine( declaracion );
@@ -121,7 +125,7 @@ namespace TUAssembler.JuegoDePrueba
         }
         public override void Instanciar( EscritorC escritor )
         {
-            string instanciacion = null;
+            string instanciacion = string.Empty;
             foreach( Elem elemento in Elementos )
             {
                 switch( Definicion.Tipo )
@@ -142,7 +146,7 @@ namespace TUAssembler.JuegoDePrueba
                         instanciacion = "insertardouble(&" + Definicion.Nombre + "," + elemento.Valor + ");";
                         break;
                     default:
-                        throw new Exception( "Tipo no valido para listas" );
+                        throw new Exception( Mensajes.TipoIncorrectoListas );
                 }
                 escritor.WriteLine( instanciacion );
             }
@@ -208,7 +212,7 @@ namespace TUAssembler.JuegoDePrueba
                     escritor.FinIf();
                     break;
                 default:
-                    throw new Exception( "Tipo no valido para listas" );
+                    throw new Exception( Mensajes.TipoIncorrectoListas );
             }
         }
         public override void LiberarMemoria( EscritorC escritor )
@@ -235,7 +239,7 @@ namespace TUAssembler.JuegoDePrueba
                     escritor.WriteLine( "liberardouble(&" + Definicion.Nombre + ");" );
                     break;
                 default:
-                    throw new Exception( "El tipo de lista no es valido" );
+                    throw new Exception( Mensajes.TipoIncorrectoListas );
             }
         }
         #endregion
