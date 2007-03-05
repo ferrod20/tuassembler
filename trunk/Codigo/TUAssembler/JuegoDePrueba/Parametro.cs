@@ -54,7 +54,7 @@ namespace TUAssembler.JuegoDePrueba
         public virtual void LiberarMemoria( EscritorC escritor )
         {
         }
-        public virtual void TamanioOValorParaMedicion(EscritorC escritor)
+        public virtual string TamanioOValorParaMedicion()
         {
         }
         #endregion

@@ -275,50 +275,28 @@ namespace TUAssembler.Generacion
             escritor.AbrirCorchetes();
             escritor.WriteLine( "//------------Variables comunes------------------" );
             escritor.WriteLine( "int salidaFree2;" );
+            escritor.WriteLine("long long tiempo = 0;");
+            escritor.WriteLine("int cantCorridas = 100;");
             escritor.WriteLine( "long long tiempoDeEjecucion=0;" );
+            escritor.WriteLine("int cantErrores = 0;");
             escritor.WriteLine( "//------------Parametros-------------------------" );
-            PruebaActual.DeclararParametros( escritor );
-            escritor.WriteLine( "int cantErrores = 0;" );
+            PruebaActual.DeclararParametros( escritor );            
             escritor.WriteLine( "//------------Pedir memoria----------------------" );
             PruebaActual.PedirMemoria( escritor );
-            escritor.WriteLine( "//------------Instanciacion----------------------" );
-            PruebaActual.InstanciarParametros( escritor );
-            escritor.WriteLine( "//------------LlamadaFuncion---------------------" );
-            escritor.WriteLine( "tiempoDeEjecucion = timer();" );
-            LlamarFuncionAProbar( escritor );
-            escritor.WriteLine( "tiempoDeEjecucion = timer() - tiempoDeEjecucion;" );
-            /*
-             * long long tiempo = 0;
-             * long long tiempoDeEjecucion = 0;
-             * int cantCorridas = 100;
-             * while( tiempoDeEjecucion < 10000000 )
-             * {
-                    tiempoDeEjecucion = 0;
-                    for( int i =0; i<cantCorridas; i++ )
-             *      {
-             *          //Pido memoria, instancio
-             *          tiempo = timer();
-             *          LlamadaFuncion; 
-             *          tiempoDeEjecucion += timer() - tiempo;                          
-             *          //Libero memoria
-             *      }             
-             *      cantCorridas *=10;
-             * }
-             * *    tiempoDeEjecucion = tiempoDeEjecucion / hasta;
-             *      archivoSalida. cout>> tiempoDeEjecucion, //
-             * 
-             *      
-             */
-            //foreach (Parametro param in PruebaActual.ParametrosEntrada)
-            //{
-            //    param.TamanioOValorParaMedicion( escritor );
-            //    escritor.Write( "\t" );
-            //}
-            //*fs;
-            //fs = fopen("nombreArch", "wb");
-            //fwrite("buffer", 1, bytesLeidos, fs);
-            //fclose(fs);
-
+            if (!ContarCantInstrucciones)
+            {
+                escritor.WriteLine( "//------------Instanciacion----------------------" );
+                PruebaActual.InstanciarParametros( escritor );
+            }
+            escritor.WriteLine( "//------------LlamadaFuncion---------------------" );            
+            if (!ContarCantInstrucciones)
+            {
+                escritor.WriteLine( "tiempoDeEjecucion = timer();" );
+                LlamarFuncionAProbar( escritor );
+                escritor.WriteLine( "tiempoDeEjecucion = timer() - tiempoDeEjecucion;" );
+            }
+            else
+                EscribirLlamadaQueCuentaInstrucciones(escritor);            
             escritor.WriteLine( "//------------Comparacion de valores-------------" );
             PruebaActual.CompararValoresDevueltos( escritor );
             escritor.WriteLine( "//------------Liberar memoria--------------------" );
@@ -328,6 +306,30 @@ namespace TUAssembler.Generacion
             escritor.PrintfPruebaConcluida();
             escritor.WriteLine( "return cantErrores;" );
             escritor.CerrarCorchetes();
+        }
+        private void EscribirLlamadaQueCuentaInstrucciones( EscritorC escritor )
+        {
+            string lineaDeEscritura;
+            escritor.While( "tiempoDeEjecucion < 10000000" );
+            escritor.WriteLine( "tiempoDeEjecucion = 0;" );
+            escritor.For("int i =0", "i<cantCorridas", "i++" );
+            escritor.WriteLine("//------------Instanciacion----------------------");
+            PruebaActual.InstanciarParametros(escritor);
+            escritor.WriteLine( "tiempo = timer();");
+            LlamarFuncionAProbar(escritor);
+            escritor.WriteLine( "tiempoDeEjecucion += timer() - tiempo;" );
+            //Aca va el freeall
+            escritor.FinFor();
+            escritor.WriteLine( "cantCorridas *= 10;" );            
+            escritor.FinWhile();
+            escritor.WriteLine( "tiempoDeEjecucion = tiempoDeEjecucion / hasta;" );
+            lineaDeEscritura = "%d\\t";
+            foreach (Parametro param in PruebaActual.ParametrosEntrada)
+                lineaDeEscritura += param.TamanioOValorParaMedicion() + "\\t";
+            escritor.WriteLine( "*fs;" );
+            escritor.WriteLine( "fs = fopen(\""+ ArchivoCuentaInstrucciones +"\", \"wb\");" );
+            escritor.WriteLine( "fwrite(\""+ lineaDeEscritura +"\", 1, "+ lineaDeEscritura.Length +", fs);" );
+            escritor.WriteLine( "fclose(fs);" );             
         }
         private void LlamarFuncionAProbar( EscritorC escritor )
         {
