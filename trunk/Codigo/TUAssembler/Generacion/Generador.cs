@@ -24,7 +24,7 @@ namespace TUAssembler.Generacion
 
         private bool contarCantInstrucciones;
         private bool frenarEnElPrimerError;
-        private string archivoCuentaInstrucciones;
+        private string archivoCuentaInstrucciones;        
         #endregion
 
         #region Propiedades
