@@ -103,6 +103,9 @@ namespace TUAssembler
 
             try
             {
+                Ejecutor.ArchivoSalida = salidaPorArchivo ? archSalida : "salida.txt";
+                Ejecutor.ArchivoError = "errorEjecucion.txt";
+
                 if (esAssembler)
                     compiladorAsm.Compilar("-fcoff", "timer.asm");
 
@@ -118,8 +121,6 @@ namespace TUAssembler
                 //Genera un .exe resultado de enlazar los 2 anteriores.                
                 compilador.Enlazar("prueba.exe", archivos);
 
-                Ejecutor.ArchivoSalida = salidaPorArchivo? archSalida : "salida.txt";
-                Ejecutor.ArchivoError = "errorEjecucion.txt";
                 Ejecutor.Ejecutar("prueba.exe");
                 Console.Write(Ejecutor.ObtenerSalida());
             }
