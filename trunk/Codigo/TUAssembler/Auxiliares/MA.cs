@@ -194,7 +194,6 @@ namespace TUAssembler
                 case Tipo.CadenaC:
                 case Tipo.CadenaPascal:
                     throw new Exception( Mensajes.CadenaNoSoportadaParaEstaOpcion );
-                    break;
             }
             return cantBytes;
         }

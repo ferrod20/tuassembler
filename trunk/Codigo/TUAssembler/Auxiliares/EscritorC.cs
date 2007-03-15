@@ -1,4 +1,3 @@
-using System;
 using System.IO;
 
 namespace TUAssembler.Auxiliares
@@ -81,16 +80,6 @@ namespace TUAssembler.Auxiliares
             identacion--;
             WriteLine( "}" );
         }
-        public void While(string condicion)
-        {
-            WriteLine("while( " + condicion + " )");
-            AbrirCorchetes();
-        }
-        public void FinWhile()
-        {
-            CerrarCorchetes();
-        }
-
         public void If( string condicion )
         {
             WriteLine( "if( " + condicion + " )" );
@@ -184,6 +173,5 @@ namespace TUAssembler.Auxiliares
         #endregion
 
         #endregion
-
     }
 }

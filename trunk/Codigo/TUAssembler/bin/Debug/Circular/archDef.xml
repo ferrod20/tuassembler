@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DefinicionFuncion Nombre="Circular" >
+  <DefParametroSalida Nombre="salida" TipoDeAcceso="V" Tipo="UInt32" EntradaSalida="S" EsElemento="true" />
+  <DefParametrosEntrada>   
+  	<DefParametro Nombre="lista" TipoDeAcceso="R" Tipo="UInt32" EntradaSalida="ES" EsLista="true"/>
+  </DefParametrosEntrada>
+</DefinicionFuncion>
