@@ -1,5 +1,5 @@
 global _timer
-%include "Prueba7/funcionAsm.asm"
+%include "Circular/funcionAsm.asm"
 _timer:
 rdtsc
 ret
