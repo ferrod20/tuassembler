@@ -33,6 +33,7 @@ namespace TUAssembler.Compilacion
             sr.ReadLine();
             sr.ReadLine();
             salida = sr.ReadToEnd();
+            sr.Close();
             return salida;
         }
         public static void BorrarArchivosTemporales( bool borrarSalida )
