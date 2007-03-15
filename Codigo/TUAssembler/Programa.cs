@@ -16,6 +16,7 @@ namespace TUAssembler
         private static bool salidaPorArchivo;
         private static string archSalida;
         private static bool contarCantInstrucciones;
+        private static bool EsModoLinux;
         private static string archCantInst;
         #endregion
 
@@ -30,13 +31,13 @@ namespace TUAssembler
             //Iniciar( "Prueba7/archDef.xml", "Prueba7/archPrueba.jdp", "Prueba7/funcionAsm.asm", "DOS" );
             //Prueba la funcion  UInt64 funcion1( Vector ES );            
             //            Iniciar("Prueba8/archDef.xml", "Prueba8/archPrueba.jdp", "Prueba8/funcionAsm.asm");//Prueba pasarle una matriz a una funcion.                                   //Prueba pasarle una matriz a una funcion.
-            try
-            {
-                LeerOpciones( args );
+            //Iniciar("Circular/archDef.xml", "Circular/archPrueba.jdp", "Circular/funcionAsm.asm", "DOS");
+            string[] argumentos = new string[] { "Circular/archDef.xml", "Circular/archPrueba.jdp", "-asm", "Circular/funcionAsm.asm", "-dos" };
+            try{
+                LeerOpciones(argumentos);
+                //LeerOpciones( args );
                 Iniciar();
-            }
-            catch( Exception e )
-            {
+            }catch( Exception e ){
                 Console.Write( e.Message );
             }
         }
@@ -50,7 +51,7 @@ namespace TUAssembler
             archFuncion = args[3];
 
             for( int i = 4; i < args.Length; i++ )
-                switch( args[i] )
+                switch( args[i].ToLower() )
                 {
                     case "-fpe":
                         frenarEnLaPrimerError = true;
@@ -65,13 +66,19 @@ namespace TUAssembler
                         i++;
                         archCantInst = args[i];
                         break;
+                    case "-linux":
+                        EsModoLinux = true;
+                        break;
+                    case "-dos":
+                        EsModoLinux = false;
+                        break;
                     default:
                         throw new Exception( Mensajes.OpcionIncorrecta( args[i] ) );
                 }
         }
         public static void Iniciar()
         {
-            Generador generador = new Generador( archDefinicion, archJuegoDePruebas, "DOS" );
+            Generador generador = new Generador( archDefinicion, archJuegoDePruebas, EsModoLinux);
             generador.FrenarEnElPrimerError = frenarEnLaPrimerError;
             generador.ContarCantInstrucciones = contarCantInstrucciones;
             generador.ArchivoCuentaInstrucciones = archCantInst;
@@ -80,7 +87,9 @@ namespace TUAssembler
             generador.GenerarPruebas();
             if( esAssembler )
                 generador.GenerarTimer( archFuncion );
-            CompilarYEjecutar();
+            if(!EsModoLinux )   //En caso de usarse bajo Linux, debe usarse el MakeFile destinado a tal efecto.
+                CompilarYEjecutar();
+
         }
         public static void CompilarYEjecutar()
         {
