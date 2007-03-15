@@ -97,36 +97,43 @@ namespace TUAssembler
             CompiladorC compiladorC;
             Compilador compilador;
 
-            compiladorAsm = new CompiladorAsm( "", "nasm.exe" );
-            if( esAssembler )
-                compiladorAsm.Compilar( "-fcoff", "timer.asm" );
+            compiladorAsm = new CompiladorAsm("", "nasm.exe");
+            compiladorC = new CompiladorC("", "gcc.exe");
+            compilador = new Compilador("", "gcc.exe", "salida.txt", "error.txt");
 
-            compiladorC = new CompiladorC( "", "gcc.exe" );
-            compiladorC.Compilar( "-c -o codigoProbador.o", "codigoProbador.c" );
+            try
+            {
+                if (esAssembler)
+                    compiladorAsm.Compilar("-fcoff", "timer.asm");
 
-            //Genera un .exe resultado de enlazar los 2 anteriores.
-            compilador = new Compilador( "", "gcc.exe", "salida.txt", "error.txt" );
+                compiladorC.Compilar("-c -o codigoProbador.o", "codigoProbador.c");
 
-            string[] archivos = new string[2];
-            archivos[1] = "codigoProbador.o";
-            if( esAssembler )
-                archivos[0] = "timer.o";
-            else
-                archivos[0] = archFuncion;
+                string[] archivos = new string[2];
+                archivos[1] = "codigoProbador.o";
+                if (esAssembler)
+                    archivos[0] = "timer.o";
+                else
+                    archivos[0] = archFuncion;
 
-            compilador.Enlazar( "prueba.exe", archivos );
+                //Genera un .exe resultado de enlazar los 2 anteriores.                
+                compilador.Enlazar("prueba.exe", archivos);
 
-            Ejecutor.ArchivoSalida = archSalida;
-            Ejecutor.ArchivoError = "errorEjecucion.txt";
-            Ejecutor.Ejecutar( "prueba.exe" );
-            Console.Write( Ejecutor.ObtenerSalida() );
-            if( esAssembler )
-                compiladorAsm.BorrarArchivosSalidaYError();
-            compiladorC.BorrarArchivosSalidaYError();
-            compilador.BorrarArchivosSalidaYError();
-            Ejecutor.BorrarArchivosTemporales( !salidaPorArchivo );
-            File.Delete( "codigoProbador.o" );
-            File.Delete( "timer.o" );
+                Ejecutor.ArchivoSalida = salidaPorArchivo? archSalida : "salida.txt";
+                Ejecutor.ArchivoError = "errorEjecucion.txt";
+                Ejecutor.Ejecutar("prueba.exe");
+                Console.Write(Ejecutor.ObtenerSalida());
+            }
+            finally
+            {
+                if (esAssembler)
+                    compiladorAsm.BorrarArchivosSalidaYError();
+                compiladorC.BorrarArchivosSalidaYError();
+                compilador.BorrarArchivosSalidaYError();
+                Ejecutor.BorrarArchivosTemporales(!salidaPorArchivo);
+                File.Delete("codigoProbador.o");
+                File.Delete("timer.o");
+            }
+
         }
     }
 }
