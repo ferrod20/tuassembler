@@ -1,6 +1,7 @@
 using System;
 using System.IO;
 using TUAssembler.Auxiliares;
+using TUAssembler.Definicion;
 
 namespace TUAssembler.JuegoDePrueba
 {
@@ -62,7 +63,7 @@ namespace TUAssembler.JuegoDePrueba
         #region Métodos
         public override void TamanioOValorParaMedicion( EscritorC escritor )
         {
-             escritor.Write( Longitud * MA.CuantosBytes( Definicion.Tipo ));
+            escritor.Write( Longitud*MA.CuantosBytes( Definicion.Tipo ) );
         }
         public void EstablecerValor( string[] fila )
         {
@@ -71,7 +72,8 @@ namespace TUAssembler.JuegoDePrueba
 
             foreach( string elemento in fila )
             {
-                Elem elem = new Elem( elemento );
+                Elem elem;
+                elem = new Elem(elemento);
                 if( !elem.TipoCorrecto( Definicion.Tipo ) )
                     throw new Exception( Mensajes.ElementoDeTipoIncorrectoEnElVector( Definicion.Nombre, i ) );
                 Elementos[i] = elem;
@@ -121,9 +123,19 @@ namespace TUAssembler.JuegoDePrueba
         }
         public override void CompararValor( EscritorC escritor )
         {
+            Elem elem = new Elem();
             escritor.WriteLine( "//" + Definicion.Nombre );
             for( int i = 0; i < Elementos.Length; i++ )
-                Elementos[i].CompararValor( escritor, Definicion.Nombre + "[" + i + "]" );
+            {
+                elem = Elementos[i];
+                elem.Definicion.Tipo = Definicion.Tipo;
+                elem.Definicion.TipoDeAcceso = ValorOReferencia.V;
+                if (Definicion.Tipo == Tipo.Char)
+                    elem.Valor = elem.Valor[1].ToString();
+                
+                elem.CompararValor(escritor, Definicion.Nombre + "[" + i + "]");
+            }
+                
         }
         public override void LiberarMemoria( EscritorC escritor )
         {
@@ -135,6 +147,10 @@ namespace TUAssembler.JuegoDePrueba
             escritor.If( "salidaFree2 == liberarPosMemNoValida" );
             escritor.PrintfCambioDeDireccionDelPuntero( Definicion.Nombre );
             escritor.WriteLine( "cantErrores++;" );
+            escritor.FinIf();
+            escritor.If("salidaFree2 == dosFreeDelMismoBuffer");            
+            escritor.PrintfDosFreeAlMismoParam(Definicion.Nombre);
+            escritor.WriteLine("cantErrores++;");
             escritor.FinIf();
         }
         #endregion

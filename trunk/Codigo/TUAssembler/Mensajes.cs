@@ -155,7 +155,18 @@ namespace TUAssembler
         public static string OpcionIncorrecta( string opcion )
         {
             return
-            "La opción "+ opcion+" no está entre alguna de las posibles.\n Debe ser: archDef archJdp -asm|-o funcion -fpe -as archivo -cci archivo.";
+                "La opción " + opcion +
+                    " no está entre alguna de las posibles.\n Debe ser: archDef archJdp -asm|-o funcion -fpe -as archivo -cci archivo.";
+        }
+        public static string PruebasIguales( string nombre )
+        {
+            return
+                "Hay pruebas con el mismo nombre: " + nombre;                    
+        }
+        public static string TipoIncorrectoElem( string nombreElem )
+        {
+            return
+                "El tipo de datos del parametro " + nombreElem + " no coincide con el de la definición.";                    
         }
     }
 }

@@ -1,4 +1,3 @@
-using System;
 using System.IO;
 using TUAssembler.Auxiliares;
 using TUAssembler.Definicion;
@@ -54,7 +53,7 @@ namespace TUAssembler.JuegoDePrueba
         public virtual void LiberarMemoria( EscritorC escritor )
         {
         }
-        public virtual void TamanioOValorParaMedicion(EscritorC escritor)
+        public virtual void TamanioOValorParaMedicion( EscritorC escritor )
         {
         }
         #endregion
@@ -64,7 +63,5 @@ namespace TUAssembler.JuegoDePrueba
         {
         }
         #endregion
-
-        
     }
 }

@@ -39,6 +39,15 @@ namespace TUAssembler.JuegoDePrueba
         public void EstablecerValor( string elem )
         {
             this.elem = elem;
+            if (!TipoCorrecto(Definicion.Tipo))                            
+                throw new Exception( Mensajes.TipoIncorrectoElem( Definicion.Nombre));
+            if (Definicion.Tipo == Tipo.Char)
+                this.elem = elem[1].ToString();
+            if (Definicion.Tipo == Tipo.CadenaC)
+            {
+                this.elem = this.elem.Remove(0, 1);
+                this.elem = this.elem.Remove( this.elem.Length-1, 1);
+            }
         }
         public bool TipoCorrecto( Tipo tipo )
         {
@@ -65,14 +74,14 @@ namespace TUAssembler.JuegoDePrueba
                     salida = MA.EsBool( elem );
                     break;
                 case Tipo.Char:
-                    salida = elem.Length==1;
+                    salida = MA.EntreComillasSimples(elem);
                     break;
                 case Tipo.CadenaC:
                     salida = MA.EntreComillas( elem );
                     break;
             }
             return salida;
-        }
+        }        
         public bool UltimoElementoUno()
         {
             return elem[elem.Length - 1]=='1';
@@ -92,7 +101,7 @@ namespace TUAssembler.JuegoDePrueba
                 throw new Exception( Mensajes.CantidadDeParametrosNoCoincidenConDefinicion );
             EstablecerValor( parametros[0] );
         }
-
+        
         #region Escritura código C
         public override void TamanioOValorParaMedicion( EscritorC escritor )
         {
@@ -102,11 +111,14 @@ namespace TUAssembler.JuegoDePrueba
         {
             string declaracion = string.Empty;
             declaracion = Definicion.ObtenerNombreDelTipoParaC() + " ";
-
-            if( Definicion.TipoDeAcceso==ValorOReferencia.R )
-                declaracion += "*";
-            declaracion += Definicion.Nombre + ";";
-            escritor.WriteLine( declaracion );
+            if (Definicion.Tipo != Tipo.CadenaC && Definicion.Tipo != Tipo.CadenaPascal)
+            {
+                if (Definicion.TipoDeAcceso == ValorOReferencia.R)
+                    declaracion += "*";
+                declaracion += Definicion.Nombre + ";";
+                escritor.WriteLine(declaracion);
+            }
+            
         }
         public override void Instanciar( EscritorC escritor )
         {
@@ -129,7 +141,7 @@ namespace TUAssembler.JuegoDePrueba
                     break;
                 case Tipo.CadenaPascal:
                 case Tipo.CadenaC:
-                    instanciacion = Definicion.Nombre + " = \"" + Valor + "\";";
+                    instanciacion = Definicion.ObtenerNombreDelTipoParaC() + " " +Definicion.Nombre + "[] = \"" + Valor + "\";";
                     break;
                 case Tipo.Booleano:
                     if( Definicion.TipoDeAcceso==ValorOReferencia.R )
@@ -174,12 +186,42 @@ namespace TUAssembler.JuegoDePrueba
 
             CompararValor( escritor, variable );
         }
+        public override void PedirMemoria( EscritorC escritor )
+        {
+            string pedido;
+            int cantMemoria;
+            if (Definicion.Tipo != Tipo.CadenaC && Definicion.Tipo != Tipo.CadenaPascal)
+            {
+                cantMemoria = MA.CuantosBytes( Definicion.Tipo );
+                pedido = Definicion.Nombre + " = " + "malloc2( " + cantMemoria + " );";
+                escritor.WriteLine( pedido );
+            }
+        }
+        public override void LiberarMemoria( EscritorC escritor )
+        {
+            if (Definicion.Tipo != Tipo.CadenaC && Definicion.Tipo != Tipo.CadenaPascal)
+            {
+                escritor.WriteLine( "salidaFree2 = free2( " + Definicion.Nombre + " );" );
+                escritor.If( "salidaFree2 == escrituraFueraDelBuffer" );
+                escritor.PrintfEscrituraFueraDelBuffer( Definicion.Nombre );
+                escritor.WriteLine( "cantErrores++;" );
+                escritor.FinIf();
+                escritor.If( "salidaFree2 == liberarPosMemNoValida" );
+                escritor.PrintfCambioDeDireccionDelPuntero( Definicion.Nombre );
+                escritor.WriteLine( "cantErrores++;" );
+                escritor.FinIf();
+                escritor.If( "salidaFree2 == dosFreeDelMismoBuffer" );
+                escritor.PrintfDosFreeAlMismoParam( Definicion.Nombre );
+                escritor.WriteLine( "cantErrores++;" );
+                escritor.FinIf();
+            }
+        }
         public void CompararValor( EscritorC escritor, string variable )
         {
             //(!this.EsDeSalidaOEntradaSalida);
             string diferencia = "AUX" + variable;
             string varPrecision = "PR" + variable;
-            string iterador = "IT" + variable;
+            string iterador = "IT" + variable;            
 
             switch( Definicion.Tipo )
             {
@@ -197,8 +239,8 @@ namespace TUAssembler.JuegoDePrueba
                     escritor.FinIf();
                     break;
                 case Tipo.Char:
-                    escritor.If( variable + " != " + Valor );
-                    escritor.PrintfValorDistinto( variable, Valor );
+                    escritor.If(variable + " != " + "'" + Valor + "'");
+                    escritor.PrintfValorDistintoChar( variable, Valor );
                     escritor.WriteLine( "cantErrores++;" );
                     escritor.FinIf();
                     break;
@@ -212,36 +254,43 @@ namespace TUAssembler.JuegoDePrueba
                 case Tipo.Float32:
                     // Realiza la resta entre ambos operandos y si la misma dio un resultado menor que
                     // 10^precision entonces los considera iguales
-                    escritor.WriteLine( "float " + diferencia + " = " + variable + " - " + Valor + ";" );
+                    MA.EliminarAsteriscos( ref diferencia );
+                    MA.EliminarCorchetes( ref diferencia);
+                    MA.EliminarAsteriscos(ref varPrecision);
+                    MA.EliminarCorchetes(ref varPrecision);
+                    
+                    escritor.WriteLine( "float " + diferencia + " = (" + variable + ") - (" + Valor + ");" );
                     escritor.WriteLine( diferencia + " = (" + diferencia + " >= 0) ? " + diferencia + " : -" +
                         diferencia + ";" );
                     escritor.WriteLine( "float " + varPrecision + " = pow((float)10, " + Definicion.Precision + ");" );
                     escritor.If( diferencia + " < " + varPrecision );
-                    escritor.PrintfValorDistintoConDiferencia( variable, Valor, diferencia );
+                    escritor.PrintfValorDistintoFloatConDiferencia( variable, Valor, diferencia );
                     escritor.WriteLine( "cantErrores++;" );
                     escritor.FinIf();
                     break;
                 case Tipo.Float64:
-                    escritor.WriteLine( "double " + diferencia + " = " + variable + " - " + Valor + ";" );
+                    MA.EliminarAsteriscos(ref diferencia);
+                    MA.EliminarCorchetes(ref diferencia);
+                    MA.EliminarAsteriscos(ref varPrecision);
+                    MA.EliminarCorchetes(ref varPrecision);
+
+                    escritor.WriteLine("float " + diferencia + " = (" + variable + ") - (" + Valor + ");");
                     escritor.WriteLine( diferencia + " = (" + diferencia + " >= 0) ? " + diferencia + " : -" +
                         diferencia + ";" );
                     escritor.WriteLine( "double " + varPrecision + " = pow((double)10, " + Definicion.Precision + ");" );
                     escritor.If( diferencia + " < " + varPrecision );
-                    escritor.PrintfValorDistintoConDiferencia( variable, Valor, diferencia );
+                    escritor.PrintfValorDistintoFloatConDiferencia( variable, Valor, diferencia );
                     escritor.WriteLine( "cantErrores++;" );
                     escritor.FinIf();
                     break;
                 case Tipo.CadenaC:
-                    escritor.WriteLine( "char* " + diferencia + " = \"" + Valor + "\";" );
+                    escritor.WriteLine( "char " + diferencia + "[] = \"" + Valor + "\";" );
                     escritor.WriteLine( "int " + iterador + ";" );
                     escritor.For( iterador + "=0", diferencia + "[" + iterador + "]!=0 && " +
                         variable + "[" + iterador + "]!=0", iterador + "++" );
                     escritor.If( variable + "[" + iterador + "] != " + diferencia + "[" +
                         iterador + "]" );
-                    escritor.WriteLine( "printf( \"El valor de la cadena " + variable +
-                        ": de la posicion %n es distinto al valor esperado: %c \"," + iterador + ", " + diferencia +
-                            "[" +
-                                iterador + "]);" );
+                    escritor.PrintfValorDeStringDistintos( variable, iterador, diferencia );                    
                     escritor.WriteLine( "cantErrores++;" );
                     escritor.FinIf();
                     escritor.FinFor();

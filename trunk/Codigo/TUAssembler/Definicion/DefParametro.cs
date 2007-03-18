@@ -304,6 +304,11 @@ namespace TUAssembler.Definicion
             if( cuantosTipos!=1 )
                 throw new Exception( Mensajes.ParametroDeUnSoloTipo( Nombre ) );
         }
+        public void VerificarValorOReferencia()
+        {
+            if (EsMatriz || EsLista || EsVector || EntradaSalida == Definicion.EntradaSalida.S || EntradaSalida == Definicion.EntradaSalida.ES)
+                TipoDeAcceso = ValorOReferencia.R;
+        }
     }
 
     [Serializable()]

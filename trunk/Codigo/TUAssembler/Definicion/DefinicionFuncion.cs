@@ -187,5 +187,12 @@ namespace TUAssembler
             DefParametroSalida.VerificarUnSoloTipo();
         }
         #endregion
+
+        public void VerificarValorOReferencia()
+        {
+            foreach (DefParametro parametro in DefParametrosEntrada)
+                parametro.VerificarValorOReferencia();
+            DefParametroSalida.VerificarValorOReferencia();
+        }
     }
 }
