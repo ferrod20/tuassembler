@@ -32,12 +32,30 @@ namespace TUAssembler
             //Prueba la funcion  UInt64 funcion1( Vector ES );            
             //            Iniciar("Prueba8/archDef.xml", "Prueba8/archPrueba.jdp", "Prueba8/funcionAsm.asm");//Prueba pasarle una matriz a una funcion.                                   //Prueba pasarle una matriz a una funcion.
             //Iniciar("Circular/archDef.xml", "Circular/archPrueba.jdp", "Circular/funcionAsm.asm", "DOS");
-            string[] argumentos = new string[] { "Circular/archDef.xml", "Circular/archPrueba.jdp", "-asm", "Circular/funcionAsm.asm", "-dos" };
-            try{
-                LeerOpciones(argumentos);
+            //string[] argumentos = new string[] { "Circular/archDef.xml", "Circular/archPrueba.jdp", "-asm", "Circular/funcionAsm.asm", "-dos" };
+            //Cuenta instrucciones
+            /*string[] argumentos =                
+                new string[]
+                    {
+                        "Prueba8/archDef.xml", "Prueba8/archPrueba.jdp", "-asm", "Prueba8/funcionAsm.asm", "-dos", "-as",
+                        "C:/Documents and Settings/Propietario/Escritorio/salida.txt", "-cci",
+                        "cantEjecuciones.txt"
+                    };
+             * */
+            string[] argumentos =                
+                new string[]
+                    {
+                        "Prueba9/archDef.xml", "Prueba9/archPrueba.jdp", "-asm", "Prueba9/funcionAsm.asm", "-dos", "-as",
+                        "C:/Documents and Settings/Propietario/Escritorio/salida.txt"
+                    };            
+            try
+            {
+                LeerOpciones( argumentos );
                 //LeerOpciones( args );
                 Iniciar();
-            }catch( Exception e ){
+            }
+            catch( Exception e )
+            {
                 Console.Write( e.Message );
             }
         }
@@ -78,7 +96,7 @@ namespace TUAssembler
         }
         public static void Iniciar()
         {
-            Generador generador = new Generador( archDefinicion, archJuegoDePruebas, EsModoLinux);
+            Generador generador = new Generador( archDefinicion, archJuegoDePruebas, EsModoLinux );
             generador.FrenarEnElPrimerError = frenarEnLaPrimerError;
             generador.ContarCantInstrucciones = contarCantInstrucciones;
             generador.ArchivoCuentaInstrucciones = archCantInst;
@@ -87,9 +105,8 @@ namespace TUAssembler
             generador.GenerarPruebas();
             if( esAssembler )
                 generador.GenerarTimer( archFuncion );
-            if(!EsModoLinux )   //En caso de usarse bajo Linux, debe usarse el MakeFile destinado a tal efecto.
+            if( !EsModoLinux ) //En caso de usarse bajo Linux, debe usarse el MakeFile destinado a tal efecto.
                 CompilarYEjecutar();
-
         }
         public static void CompilarYEjecutar()
         {
@@ -97,44 +114,43 @@ namespace TUAssembler
             CompiladorC compiladorC;
             Compilador compilador;
 
-            compiladorAsm = new CompiladorAsm("", "nasm.exe");
-            compiladorC = new CompiladorC("", "gcc.exe");
-            compilador = new Compilador("", "gcc.exe", "salida.txt", "error.txt");
+            compiladorAsm = new CompiladorAsm( "", "nasm.exe" );
+            compiladorC = new CompiladorC( "", "gcc.exe" );
+            compilador = new Compilador( "", "gcc.exe", "salida.txt", "error.txt" );
 
             try
             {
-                Ejecutor.ArchivoSalida = salidaPorArchivo ? archSalida : "salida.txt";
+                Ejecutor.ArchivoSalida = salidaPorArchivo? archSalida : "salida.txt";
                 Ejecutor.ArchivoError = "errorEjecucion.txt";
 
-                if (esAssembler)
-                    compiladorAsm.Compilar("-fcoff", "timer.asm");
+                if( esAssembler )
+                    compiladorAsm.Compilar( "-fcoff", "timer.asm" );
 
-                compiladorC.Compilar("-c -o codigoProbador.o", "codigoProbador.c");
+                compiladorC.Compilar( "-c -o codigoProbador.o", "codigoProbador.c" );
 
                 string[] archivos = new string[2];
                 archivos[1] = "codigoProbador.o";
-                if (esAssembler)
+                if( esAssembler )
                     archivos[0] = "timer.o";
                 else
                     archivos[0] = archFuncion;
 
                 //Genera un .exe resultado de enlazar los 2 anteriores.                
-                compilador.Enlazar("prueba.exe", archivos);
+                compilador.Enlazar( "prueba.exe", archivos );
 
-                Ejecutor.Ejecutar("prueba.exe");
-                Console.Write(Ejecutor.ObtenerSalida());
+                Ejecutor.Ejecutar( "prueba.exe" );
+                Console.Write( Ejecutor.ObtenerSalida() );
             }
             finally
             {
-                if (esAssembler)
+                if( esAssembler )
                     compiladorAsm.BorrarArchivosSalidaYError();
                 compiladorC.BorrarArchivosSalidaYError();
                 compilador.BorrarArchivosSalidaYError();
-                Ejecutor.BorrarArchivosTemporales(!salidaPorArchivo);
-                File.Delete("codigoProbador.o");
-                File.Delete("timer.o");
+                Ejecutor.BorrarArchivosTemporales( !salidaPorArchivo );
+                File.Delete( "codigoProbador.o" );
+                File.Delete( "timer.o" );
             }
-
         }
     }
 }

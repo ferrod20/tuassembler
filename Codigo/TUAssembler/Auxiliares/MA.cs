@@ -89,7 +89,7 @@ namespace TUAssembler
         /// <returns></returns>
         public static bool SoloEnterosConSigno( string cadena )
         {
-            bool salida = cadena[0]=='-' || cadena[0]=='+';
+            bool salida = cadena[0]=='-' || char.IsNumber( cadena[0] );
             salida &= SoloEnteros( cadena.Substring( 1 ) );
             return salida;
         }
@@ -100,20 +100,21 @@ namespace TUAssembler
         /// <returns></returns>
         public static bool EsPtoFlotante( string cadena )
         {
-            bool encontreComa = false;
-            bool salida = cadena[0]=='-' || cadena[0]=='+'; //Signo                    
+            bool encontreComa;
+            bool salida = cadena[0] == '-' || char.IsNumber(cadena[0]); //Signo                    
             cadena = cadena.Substring( 1 );
+            int cantComas = 0;
 
             foreach( char c in cadena )
             {
                 encontreComa = c==',';
 
-                if( !encontreComa )
-                    salida &= ( char.IsNumber( c ) || c==',' );
+                if (!encontreComa)
+                    salida &= char.IsNumber(c);
                 else
-                    salida &= char.IsNumber( c );
+                    cantComas++;
             }
-            return salida;
+            return salida && cantComas<2;
         }
         /// <summary>
         /// Todos ceros y al final un 1 o 0
@@ -134,6 +135,10 @@ namespace TUAssembler
         public static bool EntreComillas( string cadena )
         {
             return cadena[0]=='"' && cadena[cadena.Length - 1]=='"';
+        }
+        public static bool EntreComillasSimples(string cadena)
+        {
+            return cadena[0] == '\'' && cadena[cadena.Length - 1] == '\'';
         }
         public static string ExcepcionCompleta( Exception e )
         {
@@ -172,8 +177,7 @@ namespace TUAssembler
             switch( tipo )
             {
                 case Tipo.UInt8:
-                case Tipo.Int8:
-                case Tipo.Booleano:
+                case Tipo.Int8:                
                 case Tipo.Char:
                     cantBytes = 1;
                     break;
@@ -181,6 +185,7 @@ namespace TUAssembler
                 case Tipo.UInt16:
                     cantBytes = 2;
                     break;
+                case Tipo.Booleano:
                 case Tipo.Float32:
                 case Tipo.Int32:
                 case Tipo.UInt32:
@@ -196,6 +201,26 @@ namespace TUAssembler
                     throw new Exception( Mensajes.CadenaNoSoportadaParaEstaOpcion );
             }
             return cantBytes;
+        }
+        public static void EliminarAsteriscos(ref string cadena)
+        {
+            int desde;
+            desde = cadena.IndexOf('*');
+            if (desde >= 0)
+                cadena = cadena.Remove(desde, 1);
+        }
+        public static void EliminarCorchetes( ref string cadena )
+        {
+            int desde, hasta;                                        
+            desde = cadena.IndexOf('[');            
+            if (desde >= 0 )
+                cadena = cadena.Remove(desde, 1);
+            hasta = cadena.IndexOf(']');
+            if (hasta >= 0 )
+                cadena = cadena.Remove(hasta, 1);
+
+
+
         }
     }
 }

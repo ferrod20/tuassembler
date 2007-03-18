@@ -15,16 +15,15 @@ namespace TUAssembler.Generacion
     {
         #region Variables miembro
         private string archivoDefinicion;
-        private string archivoPrueba;                
+        private string archivoPrueba;
         private DefinicionFuncion definicion;
         private Prueba[] pruebas;
         private int cantPruebas;
         private int pruebaActual;
         private TipoSistema tipoSistema;
-
         private bool contarCantInstrucciones;
         private bool frenarEnElPrimerError;
-        private string archivoCuentaInstrucciones;        
+        private string archivoCuentaInstrucciones;
         #endregion
 
         #region Propiedades
@@ -167,6 +166,7 @@ namespace TUAssembler.Generacion
             escritor.WriteLine( "#define bool int" );
             escritor.WriteLine( "#define true 1" );
             escritor.WriteLine( "#define false 0" );
+            escritor.WriteLine("FILE *fs;");
 
             EscribirReferenciaExternaDeLaFuncion( escritor );
             EscribirMallocFreeFunctions( escritor );
@@ -202,6 +202,7 @@ namespace TUAssembler.Generacion
             escritor.WriteLine( "#define todoBien 0" );
             escritor.WriteLine( "#define liberarPosMemNoValida 1" );
             escritor.WriteLine( "#define escrituraFueraDelBuffer 2" );
+            escritor.WriteLine( "#define dosFreeDelMismoBuffer 3" );
             escritor.WriteLine();
             escritor.WriteLine( "int cantPedidosMemoria = 0;" );
             escritor.WriteLine( "char* pedidos[sizeof(int)*10000];" );
@@ -211,7 +212,8 @@ namespace TUAssembler.Generacion
             escritor.WriteLine( "char* malloc2(int cantBytes){" );
             escritor.WriteLine( "   int i;" );
             escritor.WriteLine( "   char* ret_value;" );
-            escritor.WriteLine( "   ret_value = malloc(cantBytes + 8 + 8);	//8 bytes antes y 8 bytes despues para controlar que no se pase de la longitud del buffer" );
+            escritor.WriteLine(
+                "   ret_value = malloc(cantBytes + 8 + 8);	//8 bytes antes y 8 bytes despues para controlar que no se pase de la longitud del buffer" );
             escritor.WriteLine( "   pedidos[cantPedidosMemoria] = ret_value;" );
             escritor.WriteLine( "   tamanioPedidos[cantPedidosMemoria] = cantBytes;" );
             escritor.WriteLine( "   fueLiberado[cantPedidosMemoria] = false;" );
@@ -225,32 +227,37 @@ namespace TUAssembler.Generacion
             escritor.WriteLine();
             escritor.WriteLine( "int free2(char* punteroABloque)" );
             escritor.WriteLine( "{" );
-            escritor.WriteLine( "   static int cantLlamadosCorrectos = 0;");
+            escritor.WriteLine( "   static int cantLlamadosCorrectos = 0;" );
             escritor.WriteLine( "   int pos, i;" );
             escritor.WriteLine( "   int salida = todoBien;" );
             escritor.WriteLine( "   for(pos=0; pos<cantPedidosMemoria && pedidos[pos]!=punteroABloque-8; pos++);" );
             escritor.WriteLine( "       if(pedidos[pos] !=punteroABloque-8){" );
-            escritor.WriteLine( "           printf(\"Se intento liberar una posicion de memoria no valida Anteriormente se llamo exitosamente a free %d veces \", cantLlamadosCorrectos);");
-            escritor.WriteLine( "           free2all();");
-            escritor.WriteLine( "           exit(0); ");
-            //escritor.WriteLine( "           salida = liberarPosMemNoValida;" );
+            escritor.WriteLine("           salida = liberarPosMemNoValida;");
+            //escritor.WriteLine(
+                //"           printf(\"Se intento liberar una posicion de memoria no valida Anteriormente se llamo exitosamente a free %d veces \", cantLlamadosCorrectos);" );
+            escritor.WriteLine( "           free2all();" );
+            //escritor.WriteLine( "           exit(0); " );            
             escritor.WriteLine( "       }else{" );
-            escritor.WriteLine( "           if (fueLiberado[pos]){  ");
-            escritor.WriteLine( "             printf(\"Se intentaron hacer 2 free del mismo buffer. Anteriormente se llamo exitosamente a free %d veces\\n\", cantLlamadosCorrectos);  ");
-            escritor.WriteLine( "             free2all();  ");
-            escritor.WriteLine( "             exit(0); ");
-            escritor.WriteLine( "           } ");
+            escritor.WriteLine( "           if (fueLiberado[pos]){  " );
+            escritor.WriteLine("           salida = dosFreeDelMismoBuffer;");
+            //escritor.WriteLine(
+              //  "             printf(\"Se intentaron hacer 2 free del mismo buffer. Anteriormente se llamo exitosamente a free %d veces\\n\", cantLlamadosCorrectos);  " );
+            escritor.WriteLine( "             free2all();  " );
+            //escritor.WriteLine( "             exit(0); " );
+            escritor.WriteLine( "           } " );
             escritor.WriteLine( "           fueLiberado[pos] = true;" );
             escritor.WriteLine( "           for (i = 0; i < 8; i++)" );
-            escritor.WriteLine( "               if(((char*)punteroABloque-8)[i] != 'A'|| ((char*)punteroABloque)[tamanioPedidos[pos] + i] != 'A'){" );
-            escritor.WriteLine( "                  printf(\"Se ha escrito fuera del buffer\");");
-            escritor.WriteLine( "                  exit(0);");
-            escritor.WriteLine( "                  free2all();  ");
-//            escritor.WriteLine( "                  salida = escrituraFueraDelBuffer;" );
-//            escritor.WriteLine( "                  break;");
+            escritor.WriteLine(
+                "               if(((char*)punteroABloque-8)[i] != 'A'|| ((char*)punteroABloque)[tamanioPedidos[pos] + i] != 'A'){" );
+            escritor.WriteLine("                  salida = escrituraFueraDelBuffer;");
+            //escritor.WriteLine( "                  printf(\"Se ha escrito fuera del buffer\");" );
+            //escritor.WriteLine( "                  exit(0);" );
+            escritor.WriteLine( "                  free2all();  " );
+            
+                        escritor.WriteLine( "                  break;");
             escritor.WriteLine( "               }" );
             escritor.WriteLine( "       }" );
-            escritor.WriteLine( "       cantLlamadosCorrectos++; ");
+            escritor.WriteLine( "       cantLlamadosCorrectos++; " );
             escritor.WriteLine( "       return salida;" );
             escritor.WriteLine( "}" );
             escritor.WriteLine();
@@ -262,11 +269,11 @@ namespace TUAssembler.Generacion
             escritor.WriteLine( "       if(fueLiberado[i]== false)" );
             escritor.WriteLine( "           bytesNoLiberados = bytesNoLiberados + tamanioPedidos[i];" );
             escritor.WriteLine( "   }" );
-            escritor.WriteLine( "   if(bytesNoLiberados >0){" );
+            escritor.WriteLine( "   if(bytesNoLiberados >0){" );            
             escritor.WriteLine( "       printf(\"No se han liberado %d bytes de memoria\", bytesNoLiberados);" );
-            escritor.WriteLine( "       exit(0);" );
-            escritor.WriteLine( "   }");
-            escritor.WriteLine( "}");
+            //escritor.WriteLine( "       exit(0);" );
+            escritor.WriteLine( "   }" );
+            escritor.WriteLine( "}" );
             escritor.WriteLine();
             escritor.IdentacionActiva = true;
         }
@@ -276,66 +283,70 @@ namespace TUAssembler.Generacion
             foreach( Prueba prueba in Pruebas )
             {
                 Mensajes.NombreDePrueba = prueba.Nombre;
-                EscribirFuncionPrueba( escritor );
+                EscribirFuncionDePrueba( escritor );
                 pruebaActual++;
             }
         }
-        private void EscribirFuncionPrueba( EscritorC escritor )
+        private void EscribirFuncionDePrueba( EscritorC escritor )
         {
             escritor.WriteLine( PruebaActual.Prototipo );
             escritor.AbrirCorchetes();
             escritor.WriteLine( "//------------Variables comunes------------------" );
             escritor.WriteLine( "int salidaFree2;" );
             escritor.WriteLine( "long long tiempoDeEjecucion=0;" );
+            escritor.WriteLine( "long long tiempo = 0;" );
+            escritor.WriteLine( "int cantCorridas = 100;" );
             escritor.WriteLine( "//------------Parametros-------------------------" );
             PruebaActual.DeclararParametros( escritor );
             escritor.WriteLine( "int cantErrores = 0;" );
-            escritor.WriteLine( "//------------Pedir memoria----------------------" );
-            PruebaActual.PedirMemoria( escritor );
-            escritor.WriteLine( "//------------Instanciacion----------------------" );
-            PruebaActual.InstanciarParametros( escritor );
-            escritor.WriteLine( "//------------LlamadaFuncion---------------------" );
-            escritor.WriteLine( "tiempoDeEjecucion = timer();" );
-            LlamarFuncionAProbar( escritor );
-            escritor.WriteLine( "tiempoDeEjecucion = timer() - tiempoDeEjecucion;" );
-            /*
-             * long long tiempo = 0;
-             * long long tiempoDeEjecucion = 0;
-             * int cantCorridas = 100;
-             * while( tiempoDeEjecucion < 10000000 )
-             * {
-                    tiempoDeEjecucion = 0;
-                    for( int i =0; i<cantCorridas; i++ )
-             *      {
-             *          //Pido memoria, instancio
-             *          tiempo = timer();
-             *          LlamadaFuncion; 
-             *          tiempoDeEjecucion += timer() - tiempo;                          
-             *          //Libero memoria
-             *      }             
-             *      cantCorridas *=10;
-             * }
-             * *    tiempoDeEjecucion = tiempoDeEjecucion / hasta;
-             *      archivoSalida. cout>> tiempoDeEjecucion, //
-             * 
-             *      
-             */
-            //foreach (Parametro param in PruebaActual.ParametrosEntrada)
-            //{
-            //    param.TamanioOValorParaMedicion( escritor );
-            //    escritor.Write( "\t" );
-            //}
-            //*fs;
-            //fs = fopen("nombreArch", "wb");
-            //fwrite("buffer", 1, bytesLeidos, fs);
-            //fclose(fs);
-
-            escritor.WriteLine( "//------------Comparacion de valores-------------" );
-            PruebaActual.CompararValoresDevueltos( escritor );
-            escritor.WriteLine( "//------------Liberar memoria--------------------" );
-            PruebaActual.LiberarMemoria( escritor );
-            //Libera la memoria que pidió y verifica que no se haya escrito fuera del buffer.
-            escritor.WriteLine( "//------------Informar cant. de errores----------" );
+            if( !ContarCantInstrucciones )
+            {
+                escritor.WriteLine("//------------Pedir memoria----------------------");
+                PruebaActual.PedirMemoria(escritor);
+                escritor.WriteLine("//------------Instanciacion----------------------");
+                PruebaActual.InstanciarParametros(escritor);
+                escritor.WriteLine("//------------LlamadaFuncion---------------------");
+                LlamarFuncionAProbar( escritor );
+                escritor.WriteLine( "//------------Comparacion de valores-------------" );
+                PruebaActual.CompararValoresDevueltos( escritor );
+                escritor.WriteLine( "//------------Liberar memoria--------------------" );
+                PruebaActual.LiberarMemoria( escritor );
+                //Libera la memoria que pidió y verifica que no se haya escrito fuera del buffer.
+                escritor.WriteLine( "//------------Informar cant. de errores----------" );
+            }
+            else
+            {
+                escritor.WriteLine("//------------Cuento instrucciones--------------------");
+                escritor.While( "tiempoDeEjecucion < 10000000" );
+                escritor.WriteLine( "tiempoDeEjecucion = 0;" );
+                escritor.WriteLine( "int i;");
+                escritor.For( "i =0", "i<cantCorridas", "i++" );
+                escritor.WriteLine( "//------------Pedir memoria----------------------" );
+                PruebaActual.PedirMemoria( escritor );
+                escritor.WriteLine( "//------------Instanciacion----------------------" );
+                PruebaActual.InstanciarParametros( escritor );
+                escritor.WriteLine( "tiempo = timer();" );
+                LlamarFuncionAProbar( escritor );
+                escritor.WriteLine( "tiempoDeEjecucion += timer() - tiempo;" );
+                escritor.WriteLine( "//------------Liberar memoria--------------------" );
+                PruebaActual.LiberarMemoria( escritor );
+                escritor.FinWhile();
+                escritor.WriteLine( "cantCorridas *=10;" );
+                escritor.FinFor();
+                escritor.WriteLine( "tiempoDeEjecucion = tiempoDeEjecucion / cantCorridas;" );
+                escritor.WriteLine();
+                escritor.WriteLine("//---Escribo en archivo la cant de inst.----------");
+                escritor.If("fs");
+                escritor.Write("fprintf( fs, \"");
+                foreach( Parametro param in PruebaActual.ParametrosEntrada )
+                {
+                    param.TamanioOValorParaMedicion( escritor );
+                    escritor.Write( "\\t" );
+                }
+                escritor.WriteLine("%d\\n\", tiempoDeEjecucion);");
+                escritor.FinIf();
+            }
+            
             escritor.PrintfPruebaConcluida();
             escritor.WriteLine( "return cantErrores;" );
             escritor.CerrarCorchetes();
@@ -356,22 +367,33 @@ namespace TUAssembler.Generacion
             llamada += " );";
             escritor.WriteLine( llamada );
         }
-        private void EscribirMain(EscritorC escritor)
+        private void EscribirMain( EscritorC escritor )
         {
-            escritor.WriteLine("int main()");
+            escritor.WriteLine( "int main()" );
             escritor.AbrirCorchetes();
-            escritor.WriteLine("/*------------Parametros-------------------------*/");
-            escritor.WriteLine("int cantErrores = 0;");
-            escritor.WriteLine("/*------------Llamada a pruebas------------------*/");
-            foreach (Prueba prueba in Pruebas)
+            if( ContarCantInstrucciones )
             {
-                if (FrenarEnElPrimerError)
-                    escritor.If("cantErrores == 0");
-                escritor.WriteLine("cantErrores = " + prueba.Nombre + "();");
-                if (FrenarEnElPrimerError)
+                escritor.WriteLine("/*-----Archivo para contar instrucciones-------*/");
+                escritor.WriteLine( "fs = fopen(\" " + ArchivoCuentaInstrucciones + "\", \"w\");" );
+                escritor.If( "!fs" );
+                escritor.PrintfNoSePudoAbrirElArchivo( ArchivoCuentaInstrucciones );
+                escritor.FinIf();
+            }                    
+            escritor.WriteLine( "/*------------Parametros-------------------------*/" );
+            escritor.WriteLine( "int cantErrores = 0;" );
+            escritor.WriteLine( "/*------------Llamada a pruebas------------------*/" );
+            foreach( Prueba prueba in Pruebas )
+            {
+                if( FrenarEnElPrimerError )
+                    escritor.If( "cantErrores == 0" );
+                escritor.WriteLine( "cantErrores = " + prueba.Nombre + "();" );
+                if( FrenarEnElPrimerError )
                     escritor.FinIf();
             }
-            escritor.WriteLine("return 0;");
+            if( ContarCantInstrucciones)
+                escritor.WriteLine("fclose(fs);");
+            escritor.PrintfPruebasConcluidas();
+            escritor.WriteLine( "return 0;" );
             escritor.CerrarCorchetes();
         }
         public void GenerarTimer( string funcionAsm )
@@ -416,6 +438,7 @@ namespace TUAssembler.Generacion
             DefinicionFuncion.VerificarDefinicion( archivoDefinicion );
             Definicion = DefinicionFuncion.Leer( archivoDefinicion );
             Definicion.VerificarUnSoloTipo();
+            Definicion.VerificarValorOReferencia();//Si es matriz, lista o vector, el tipoDeAcceso lo establece a "R"
         }
         public void LeerPrueba( StreamReader lector )
         {
@@ -423,7 +446,7 @@ namespace TUAssembler.Generacion
             PruebaActual.GenerarParametros( Definicion );
             //Hace un new de cada parametro( Matriz, Vector o Elem ) segun lo que indica Definicion.
             PruebaActual.LeerParametros( lector );
-            PruebaActual.LeerFinDePrueba( lector );
+            PruebaActual.LeerFinDePrueba( lector );            
         }
         public void LeerPruebas()
         {
@@ -436,8 +459,32 @@ namespace TUAssembler.Generacion
                 pruebaActual++;
             }
             lector.Close();
+            VerificarDistintosNombresDePruebas();
         }
-        private void LeerCantidadDePruebas( StreamReader lector )
+        private void VerificarDistintosNombresDePruebas()
+        {            
+            int i = 0;
+            int n = Pruebas.Length;
+            bool distintos = true;
+            string nombre = string.Empty;
+            string[] nombres = new string[n];
+
+            foreach( Prueba prueba in Pruebas )
+            {
+                 nombres[i] = prueba.Nombre;
+                i++;
+            }
+
+            for( i =0; i<n && distintos; i++)
+            {
+                nombre = nombres[i];
+                for (int j = i + 1; j < n && distintos; j++)                
+                    distintos &= nombre!=nombres[j];                
+            }
+            if( !distintos )
+                throw new Exception(Mensajes.PruebasIguales(nombre));
+        }
+        private void LeerCantidadDePruebas(StreamReader lector)
         {
             string[] cantPruebas = MA.Leer( lector );
             if( cantPruebas.Length!=1 )
@@ -461,7 +508,7 @@ namespace TUAssembler.Generacion
             this.archivoDefinicion = archivoDefinicion;
             this.archivoPrueba = archivoPrueba;
             pruebaActual = 0;
-            if(ModoLinux)
+            if( ModoLinux )
                 SistemaOperativo = TipoSistema.LINUX;
             else
                 SistemaOperativo = TipoSistema.DOS;

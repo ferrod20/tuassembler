@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DefinicionFuncion Nombre="funcion1" >
+  <DefParametroSalida Nombre="salida" TipoDeAcceso="V" Tipo="Int32" EsElemento="true" />
+  <DefParametrosEntrada>   
+<DefParametro Nombre="p9" TipoDeAcceso="R" Tipo="Float32" 		EntradaSalida="ES" EsElemento="true" Precision="5"/>   
+<DefParametro Nombre="p10" TipoDeAcceso="R" Tipo="Float64" 		EntradaSalida="ES" EsElemento="true" Precision="8"/>   
+    </DefParametrosEntrada>
+</DefinicionFuncion>
+

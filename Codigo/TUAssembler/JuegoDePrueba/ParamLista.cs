@@ -63,7 +63,7 @@ namespace TUAssembler.JuegoDePrueba
         #region Métodos
         public override void TamanioOValorParaMedicion( EscritorC escritor )
         {
-            escritor.Write(Longitud * MA.CuantosBytes(Definicion.Tipo));
+            escritor.Write( Longitud*MA.CuantosBytes( Definicion.Tipo ) );
         }
         public void EstablecerValor( string[] fila )
         {

@@ -36,7 +36,7 @@ namespace TUAssembler.JuegoDePrueba
         #region Métodos
         public override void TamanioOValorParaMedicion( EscritorC escritor )
         {
-            escritor.Write(cantColumnas*cantFilas * MA.CuantosBytes(Definicion.Tipo));
+            escritor.Write( cantColumnas*cantFilas*MA.CuantosBytes( Definicion.Tipo ) );
         }
         public override void Leer( StreamReader lector )
         {
@@ -51,7 +51,7 @@ namespace TUAssembler.JuegoDePrueba
             foreach( string fila in filas )
             {
                 ParamVector vector = new ParamVector();
-
+                vector.Definicion = Definicion;
                 elemsFila = MA.ObtenerElementosDeLaFila( fila );
                 if( cantColumnas==-1 )
                     cantColumnas = elemsFila.Length;
@@ -140,6 +140,11 @@ namespace TUAssembler.JuegoDePrueba
             escritor.PrintfCambioDeDireccionDelPunteroEnFilaDeMatriz( Definicion.Nombre, varFila );
             escritor.WriteLine( "cantErrores++;" );
             escritor.FinIf();
+            escritor.If("salidaFree2 == dosFreeDelMismoBuffer");
+            escritor.PrintfDosFreeAlMismoParamEnFilaDeMatriz(Definicion.Nombre, varFila);
+            escritor.WriteLine("cantErrores++;");
+            escritor.FinIf();
+
             escritor.FinFor();
 
             //Libera el arreglo de punteros
@@ -152,6 +157,11 @@ namespace TUAssembler.JuegoDePrueba
             escritor.PrintfCambioDeDireccionDelPuntero( Definicion.Nombre );
             escritor.WriteLine( "cantErrores++;" );
             escritor.FinIf();
+            escritor.If("salidaFree2 == dosFreeDelMismoBuffer");
+            escritor.PrintfDosFreeAlMismoParam(Definicion.Nombre);
+            escritor.WriteLine("cantErrores++;");
+            escritor.FinIf();
+
         }
         #endregion
 
