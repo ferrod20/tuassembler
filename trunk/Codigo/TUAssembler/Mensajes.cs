@@ -161,12 +161,12 @@ namespace TUAssembler
         public static string PruebasIguales( string nombre )
         {
             return
-                "Hay pruebas con el mismo nombre: " + nombre;                    
+                "Hay pruebas con el mismo nombre: " + nombre;
         }
         public static string TipoIncorrectoElem( string nombreElem )
         {
             return
-                "El tipo de datos del parametro " + nombreElem + " no coincide con el de la definición.";                    
+                "El tipo de datos del parametro " + nombreElem + " no coincide con el de la definición.";
         }
     }
 }

@@ -101,20 +101,20 @@ namespace TUAssembler
         public static bool EsPtoFlotante( string cadena )
         {
             bool encontreComa;
-            bool salida = cadena[0] == '-' || char.IsNumber(cadena[0]); //Signo                    
+            bool salida = cadena[0]=='-' || char.IsNumber( cadena[0] ); //Signo                    
             cadena = cadena.Substring( 1 );
             int cantComas = 0;
 
             foreach( char c in cadena )
             {
-                encontreComa = c==',';
+                encontreComa = c=='.';
 
-                if (!encontreComa)
-                    salida &= char.IsNumber(c);
+                if( !encontreComa )
+                    salida &= char.IsNumber( c );
                 else
                     cantComas++;
             }
-            return salida && cantComas<2;
+            return salida && cantComas < 2;
         }
         /// <summary>
         /// Todos ceros y al final un 1 o 0
@@ -136,9 +136,9 @@ namespace TUAssembler
         {
             return cadena[0]=='"' && cadena[cadena.Length - 1]=='"';
         }
-        public static bool EntreComillasSimples(string cadena)
+        public static bool EntreComillasSimples( string cadena )
         {
-            return cadena[0] == '\'' && cadena[cadena.Length - 1] == '\'';
+            return cadena[0]=='\'' && cadena[cadena.Length - 1]=='\'';
         }
         public static string ExcepcionCompleta( Exception e )
         {
@@ -177,7 +177,7 @@ namespace TUAssembler
             switch( tipo )
             {
                 case Tipo.UInt8:
-                case Tipo.Int8:                
+                case Tipo.Int8:
                 case Tipo.Char:
                     cantBytes = 1;
                     break;
@@ -202,25 +202,22 @@ namespace TUAssembler
             }
             return cantBytes;
         }
-        public static void EliminarAsteriscos(ref string cadena)
+        public static void EliminarAsteriscos( ref string cadena )
         {
             int desde;
-            desde = cadena.IndexOf('*');
-            if (desde >= 0)
-                cadena = cadena.Remove(desde, 1);
+            desde = cadena.IndexOf( '*' );
+            if( desde >= 0 )
+                cadena = cadena.Remove( desde, 1 );
         }
         public static void EliminarCorchetes( ref string cadena )
         {
-            int desde, hasta;                                        
-            desde = cadena.IndexOf('[');            
-            if (desde >= 0 )
-                cadena = cadena.Remove(desde, 1);
-            hasta = cadena.IndexOf(']');
-            if (hasta >= 0 )
-                cadena = cadena.Remove(hasta, 1);
-
-
-
+            int desde, hasta;
+            desde = cadena.IndexOf( '[' );
+            if( desde >= 0 )
+                cadena = cadena.Remove( desde, 1 );
+            hasta = cadena.IndexOf( ']' );
+            if( hasta >= 0 )
+                cadena = cadena.Remove( hasta, 1 );
         }
     }
 }

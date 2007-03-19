@@ -1,4 +1,3 @@
-using System;
 using System.IO;
 
 namespace TUAssembler.Auxiliares
@@ -117,31 +116,30 @@ namespace TUAssembler.Auxiliares
         #endregion
 
         #region PrintF
-        public void PrintfNoSePudoAbrirElArchivo(string archivo)
+        public void PrintfNoSePudoAbrirElArchivo( string archivo )
         {
-            Printf("No se pudo abrir el archivo " + archivo + ".\\n");
+            Printf( "No se pudo abrir el archivo " + archivo + ".\\n" );
         }
-
         public void PrintfPruebasConcluidas()
         {
-            Printf("Todas las pruebas han concluido.");
+            Printf( "Todas las pruebas han concluido." );
         }
-
         public void PrintfPruebaConcluida()
         {
             Printf( "La prueba " + Mensajes.NombreDePrueba + " ha concluido con %d errores.\\n", "cantErrores" );
         }
         public void PrintfValorDistintoChar( string variable, string valorEsperado )
-        {            
+        {
             PrintfError(
-                 "El valor de " + variable +
-                    ": %c(%d) es distinto al valor esperado: " + valorEsperado + "(%d)\\n", variable, variable, "'" + valorEsperado + "'");
+                "El valor de " + variable +
+                    ": %c(%d) es distinto al valor esperado: " + valorEsperado + "(%d)\\n", variable, variable,
+                "'" + valorEsperado + "'" );
         }
         public void PrintfValorDistinto( string variable, string valorEsperado )
         {
             PrintfError(
                 "El valor de " + variable +
-                    ": %d es distinto al valor esperado: " + valorEsperado + "\\n", variable);
+                    ": %d es distinto al valor esperado: " + valorEsperado + "\\n", variable );
         }
         public void PrintfValorDistintoConDiferencia( string variable, string valorEsperado, string varDiferencia )
         {
@@ -185,30 +183,30 @@ namespace TUAssembler.Auxiliares
         {
             PrintfError( "es una Lista Circular." );
         }
-        public void PrintfDosFreeAlMismoParam(string nombre)
+        public void PrintfDosFreeAlMismoParam( string nombre )
         {
-            PrintfError("Se hicieron 2 free al mismo parámetro: " + nombre + "\\n");
+            PrintfError( "Se hicieron 2 free al mismo parámetro: " + nombre + "\\n" );
         }
-        public void PrintfDosFreeAlMismoParamEnFilaDeMatriz(string nombreMatriz, string varFila)
+        public void PrintfDosFreeAlMismoParamEnFilaDeMatriz( string nombreMatriz, string varFila )
         {
             string texto = "Se han hecho dos free al mismo parámetro " +
                 nombreMatriz + " , en la fila: %d\\n";
 
-            PrintfError(texto, varFila);
+            PrintfError( texto, varFila );
         }
-        public void PrintfValorDeStringDistintos(string variable, string iterador, string diferencia)
+        public void PrintfValorDeStringDistintos( string variable, string iterador, string diferencia )
         {
             string cEsperado = diferencia +
                 "[" + iterador + "]";
             string cObtenido = variable +
                 "[" + iterador + "]";
-            PrintfError("El valor de la cadena " + variable +
-                        ": %c(%d) de la posicion %d es distinto al valor esperado: %c(%d) \\n", cObtenido, cObtenido, iterador, cEsperado, cEsperado);
+            PrintfError( "El valor de la cadena " + variable +
+                ": %c(%d) de la posicion %d es distinto al valor esperado: %c(%d) \\n", cObtenido, cObtenido, iterador,
+                         cEsperado, cEsperado );
         }
-
         private void PrintfError( string texto, params string[] variables )
         {
-            Printf("Error " + Mensajes.NombreDePrueba + ": " + texto, variables);
+            Printf( "Error " + Mensajes.NombreDePrueba + ": " + texto, variables );
         }
         public void Printf( string texto, params string[] variables )
         {
@@ -227,9 +225,9 @@ namespace TUAssembler.Auxiliares
         {
             //%10.2f Para los float 10 digitos, 2 de precision
             PrintfError(
-    "El valor de " + variable +
-        ": %10.8f es distinto al valor esperado: " + valorEsperado + "\\n", variable);            
-            Printf("Diferencia: %10.8f\\n", varDiferencia);           
+                "El valor de " + variable +
+                    ": %f es distinto al valor esperado: " + valorEsperado + "\\n", variable );
+            Printf( "Diferencia: %f\\n", varDiferencia );
         }
     }
 }

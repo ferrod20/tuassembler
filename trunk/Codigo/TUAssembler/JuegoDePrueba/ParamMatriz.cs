@@ -140,9 +140,9 @@ namespace TUAssembler.JuegoDePrueba
             escritor.PrintfCambioDeDireccionDelPunteroEnFilaDeMatriz( Definicion.Nombre, varFila );
             escritor.WriteLine( "cantErrores++;" );
             escritor.FinIf();
-            escritor.If("salidaFree2 == dosFreeDelMismoBuffer");
-            escritor.PrintfDosFreeAlMismoParamEnFilaDeMatriz(Definicion.Nombre, varFila);
-            escritor.WriteLine("cantErrores++;");
+            escritor.If( "salidaFree2 == dosFreeDelMismoBuffer" );
+            escritor.PrintfDosFreeAlMismoParamEnFilaDeMatriz( Definicion.Nombre, varFila );
+            escritor.WriteLine( "cantErrores++;" );
             escritor.FinIf();
 
             escritor.FinFor();
@@ -157,11 +157,10 @@ namespace TUAssembler.JuegoDePrueba
             escritor.PrintfCambioDeDireccionDelPuntero( Definicion.Nombre );
             escritor.WriteLine( "cantErrores++;" );
             escritor.FinIf();
-            escritor.If("salidaFree2 == dosFreeDelMismoBuffer");
-            escritor.PrintfDosFreeAlMismoParam(Definicion.Nombre);
-            escritor.WriteLine("cantErrores++;");
+            escritor.If( "salidaFree2 == dosFreeDelMismoBuffer" );
+            escritor.PrintfDosFreeAlMismoParam( Definicion.Nombre );
+            escritor.WriteLine( "cantErrores++;" );
             escritor.FinIf();
-
         }
         #endregion
 

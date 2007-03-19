@@ -1,0 +1,41 @@
+5;
+todosLosValoresIguales;
+100;
+11 12 13: 14 15 16:;          
+'s' 'u' 's': 'a' 'n' 'i':;        
+11 12 13: 14 15 16:;          
+'s' 'u' 's': 'a' 'n' 'i':;        
+
+FinDePrueba;
+
+todosDistintos2;
+100;
+11 12 13: 14 15 16: 14 15 16:;          
+'s' 'u' 's': 'a' 'n' 'i': 'a' 'n' 'i':;        
+11 12 13: 14 15 16: 14 15 16:;          
+'s' 'u' 's': 'a' 'n' 'i': 'a' 'n' 'i':;        
+FinDePrueba;
+
+todosDistintos3;
+100;
+11 12 13: 14 15 16: 14 15 16:;          
+'s' 'u' 's': 'a' 'n' 'i': 'a' 'n' 'i':;        
+11 12 13: 14 15 16: 14 15 16:;          
+'s' 'u' 's': 'a' 'n' 'i': 'a' 'n' 'i':;        
+FinDePrueba;
+
+todosDistintos4;
+100;
+11 12 13: 14 15 16: 14 15 16:;          
+'s' 'u' 's': 'a' 'n' 'i': 'a' 'n' 'i':;        
+11 12 13: 14 15 16: 14 15 16:;          
+'s' 'u' 's': 'a' 'n' 'i': 'a' 'n' 'i':;        
+FinDePrueba;
+
+todosDistintos5;
+100;
+11 12 13: 14 15 16: 14 15 16:;          
+'s' 'u' 's': 'a' 'n' 'i': 'a' 'n' 'i':;        
+11 12 13: 14 15 16: 14 15 16:;          
+'s' 'u' 's': 'a' 'n' 'i': 'a' 'n' 'i':;        
+FinDePrueba;
