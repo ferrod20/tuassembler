@@ -190,7 +190,7 @@ namespace TUAssembler
 
         public void VerificarValorOReferencia()
         {
-            foreach (DefParametro parametro in DefParametrosEntrada)
+            foreach( DefParametro parametro in DefParametrosEntrada )
                 parametro.VerificarValorOReferencia();
             DefParametroSalida.VerificarValorOReferencia();
         }

@@ -306,7 +306,7 @@ namespace TUAssembler.Definicion
         }
         public void VerificarValorOReferencia()
         {
-            if (EsMatriz || EsLista || EsVector || EntradaSalida == Definicion.EntradaSalida.S || EntradaSalida == Definicion.EntradaSalida.ES)
+            if( EsMatriz || EsLista || EsVector || EntradaSalida==EntradaSalida.S || EntradaSalida==EntradaSalida.ES )
                 TipoDeAcceso = ValorOReferencia.R;
         }
     }

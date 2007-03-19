@@ -188,8 +188,8 @@ namespace TUAssembler.JuegoDePrueba
                 if( param.Definicion.EntradaSalida!=EntradaSalida.S && param.Definicion.TipoDeAcceso==ValorOReferencia.R )
                     param.LiberarMemoria( escritor );
 
-            if( ParametrosSalida[0].Definicion.TipoDeAcceso == ValorOReferencia.R )
-                ParametrosSalida[0].LiberarMemoria(escritor);
+            if( ParametrosSalida[0].Definicion.TipoDeAcceso==ValorOReferencia.R )
+                ParametrosSalida[0].LiberarMemoria( escritor );
         }
         #endregion
 

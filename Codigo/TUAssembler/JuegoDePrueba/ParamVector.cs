@@ -73,7 +73,7 @@ namespace TUAssembler.JuegoDePrueba
             foreach( string elemento in fila )
             {
                 Elem elem;
-                elem = new Elem(elemento);
+                elem = new Elem( elemento );
                 if( !elem.TipoCorrecto( Definicion.Tipo ) )
                     throw new Exception( Mensajes.ElementoDeTipoIncorrectoEnElVector( Definicion.Nombre, i ) );
                 Elementos[i] = elem;
@@ -130,12 +130,11 @@ namespace TUAssembler.JuegoDePrueba
                 elem = Elementos[i];
                 elem.Definicion.Tipo = Definicion.Tipo;
                 elem.Definicion.TipoDeAcceso = ValorOReferencia.V;
-                if (Definicion.Tipo == Tipo.Char)
+                if( Definicion.Tipo==Tipo.Char )
                     elem.Valor = elem.Valor[1].ToString();
-                
-                elem.CompararValor(escritor, Definicion.Nombre + "[" + i + "]");
+
+                elem.CompararValor( escritor, Definicion.Nombre + "[" + i + "]" );
             }
-                
         }
         public override void LiberarMemoria( EscritorC escritor )
         {
@@ -148,9 +147,9 @@ namespace TUAssembler.JuegoDePrueba
             escritor.PrintfCambioDeDireccionDelPuntero( Definicion.Nombre );
             escritor.WriteLine( "cantErrores++;" );
             escritor.FinIf();
-            escritor.If("salidaFree2 == dosFreeDelMismoBuffer");            
-            escritor.PrintfDosFreeAlMismoParam(Definicion.Nombre);
-            escritor.WriteLine("cantErrores++;");
+            escritor.If( "salidaFree2 == dosFreeDelMismoBuffer" );
+            escritor.PrintfDosFreeAlMismoParam( Definicion.Nombre );
+            escritor.WriteLine( "cantErrores++;" );
             escritor.FinIf();
         }
         #endregion

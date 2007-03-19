@@ -42,12 +42,12 @@ namespace TUAssembler
                         "cantEjecuciones.txt"
                     };
              * */
-            string[] argumentos =                
+            string[] argumentos =
                 new string[]
                     {
-                        "Prueba9/archDef.xml", "Prueba9/archPrueba.jdp", "-asm", "Prueba9/funcionAsm.asm", "-dos", "-as",
-                        "C:/Documents and Settings/Propietario/Escritorio/salida.txt"
-                    };            
+                        "Prueba9/archDef.xml", "Prueba9/archPrueba.jdp", "-asm", "Prueba9/funcionAsm.asm", "-dos", "-as"
+                        , "C:/Documents and Settings/Propietario/Escritorio/salida.txt"
+                    };
             try
             {
                 LeerOpciones( argumentos );
