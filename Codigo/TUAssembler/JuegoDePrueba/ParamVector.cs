@@ -106,7 +106,7 @@ namespace TUAssembler.JuegoDePrueba
             string pedido;
             int cantMemoria;
             cantMemoria = Longitud*MA.CuantosBytes( Definicion.Tipo );
-            pedido = Definicion.Nombre + " = " + "malloc2( " + cantMemoria + " );";
+            pedido = Definicion.Nombre + " = " + "malloc2( " + cantMemoria + " ,true);";
             escritor.WriteLine( pedido );
         }
         public override void Instanciar( EscritorC escritor )

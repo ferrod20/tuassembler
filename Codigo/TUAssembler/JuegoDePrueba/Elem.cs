@@ -200,7 +200,7 @@ namespace TUAssembler.JuegoDePrueba
             if( Definicion.Tipo!=Tipo.CadenaC && Definicion.Tipo!=Tipo.CadenaPascal )
             {
                 cantMemoria = MA.CuantosBytes( Definicion.Tipo );
-                pedido = Definicion.Nombre + " = " + "malloc2( " + cantMemoria + " );";
+                pedido = Definicion.Nombre + " = " + "malloc2( " + cantMemoria + ",true );";
                 escritor.WriteLine( pedido );
             }
         }
