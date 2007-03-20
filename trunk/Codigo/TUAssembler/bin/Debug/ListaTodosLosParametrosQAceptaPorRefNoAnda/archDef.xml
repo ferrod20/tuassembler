@@ -2,22 +2,18 @@
 <DefinicionFuncion Nombre="funcion1" >
   <DefParametroSalida Nombre="salida" TipoDeAcceso="V" Tipo="Int32" EsElemento="true" />
   <DefParametrosEntrada>                                                        
-
-<DefParametro Nombre="p1"  TipoDeAcceso="R" Tipo="Int8" 				EntradaSalida="E"  EsLista="true"/>  	
-<DefParametro Nombre="p3"  TipoDeAcceso="R" Tipo="Int32" 			EntradaSalida="E" 	 EsLista="true"/>   
-<DefParametro Nombre="p5"  TipoDeAcceso="R" Tipo="UInt8" 			EntradaSalida="E"  	 EsLista="true"/>   
-<DefParametro Nombre="p7"  TipoDeAcceso="R" Tipo="UInt32" 			EntradaSalida="E"  EsLista="true"/>   
-<DefParametro Nombre="p9"  TipoDeAcceso="R" Tipo="Float32" 		EntradaSalida="E"    EsLista="true" />   
-<DefParametro Nombre="p10" TipoDeAcceso="R" Tipo="Float64" 		EntradaSalida="E"    EsLista="true" />   
-
-<!-- 
-<DefParametro Nombre="p2"  TipoDeAcceso="V" Tipo="Int16" 			EntradaSalida="E"  	 EsLista="true"/>   //No lo acepta....
-<DefParametro Nombre="p4"  TipoDeAcceso="V" Tipo="Int64" 			EntradaSalida="E"  	 EsLista="true"/>   //No lo acepta....
-<DefParametro Nombre="p6"  TipoDeAcceso="V" Tipo="UInt16" 			EntradaSalida="E"  EsLista="true"/>   //No lo acepta....
-<DefParametro Nombre="p8"  TipoDeAcceso="V" Tipo="UInt64" 			EntradaSalida="E"  EsLista="true" />   //No lo acepta....
-<DefParametro Nombre="p11" TipoDeAcceso="V" Tipo="Booleano" 	EntradaSalida="E"    EsLista="true"/>     	//No lo acepta....
-<DefParametro Nombre="p12" TipoDeAcceso="V" Tipo="Char" 			EntradaSalida="E"    EsLista="true"/>     	//No lo acepta....
--->
+<DefParametro Nombre="p1"  TipoDeAcceso="V" Tipo="Int8" 		EntradaSalida="ES"  EsLista="true"/>  	
+<DefParametro Nombre="p2"  TipoDeAcceso="V" Tipo="Int16" 		EntradaSalida="ES"  EsLista="true"/>   
+<DefParametro Nombre="p3"  TipoDeAcceso="V" Tipo="Int32" 		EntradaSalida="ES"  EsLista="true"/>   
+<DefParametro Nombre="p4"  TipoDeAcceso="V" Tipo="Int64" 		EntradaSalida="ES"  EsLista="true"/>   
+<DefParametro Nombre="p5"  TipoDeAcceso="V" Tipo="UInt8" 		EntradaSalida="ES"  EsLista="true"/>   
+<DefParametro Nombre="p6"  TipoDeAcceso="V" Tipo="UInt16" 		EntradaSalida="ES"  EsLista="true"/>   
+<DefParametro Nombre="p7"  TipoDeAcceso="V" Tipo="UInt32" 		EntradaSalida="ES"  EsLista="true"/>   
+<DefParametro Nombre="p8"  TipoDeAcceso="V" Tipo="UInt64" 		EntradaSalida="ES"  EsLista="true" />   
+<DefParametro Nombre="p9"  TipoDeAcceso="V" Tipo="Float32" 		EntradaSalida="ES"  EsLista="true" />   
+<DefParametro Nombre="p10" TipoDeAcceso="V" Tipo="Float64" 		EntradaSalida="ES"  EsLista="true" />   
+<DefParametro Nombre="p11" TipoDeAcceso="V" Tipo="Booleano" 	EntradaSalida="ES"  EsLista="true"/>     	
+<DefParametro Nombre="p12" TipoDeAcceso="V" Tipo="Char" 			EntradaSalida="ES"  EsLista="true"/>   
     </DefParametrosEntrada>
 </DefinicionFuncion>
 

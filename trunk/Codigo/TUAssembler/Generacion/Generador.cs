@@ -23,6 +23,7 @@ namespace TUAssembler.Generacion
         private TipoSistema tipoSistema;
         private bool contarCantInstrucciones;
         private bool frenarEnElPrimerError;
+        private bool esAsm;
         private string archivoCuentaInstrucciones;
         #endregion
 
@@ -162,14 +163,14 @@ namespace TUAssembler.Generacion
             EscritorC escritor = new EscritorC( "codigoProbador.c" );
 
             escritor.WriteLine( "#include <stdio.h>" );
-            escritor.WriteLine( "#include \"libreria.h\"" );
+            escritor.WriteLine("#include \"mallocfree.h\"");
+            escritor.WriteLine("#include \"listas.h\"");            
             escritor.WriteLine( "#define bool int" );
             escritor.WriteLine( "#define true 1" );
             escritor.WriteLine( "#define false 0" );
             escritor.WriteLine( "FILE *fs;" );
 
             EscribirReferenciaExternaDeLaFuncion( escritor );
-            EscribirMallocFreeFunctions( escritor );
             EscribirFuncionesDePrueba( escritor );
             EscribirMain( escritor );
 
@@ -178,104 +179,7 @@ namespace TUAssembler.Generacion
         private void EscribirReferenciaExternaDeLaFuncion( EscritorC escritor )
         {
             escritor.WriteLine( "extern " + Definicion.GenerarPrototipo() + ";" );
-        }
-        private void EscribirMallocFreeFunctions( EscritorC escritor )
-        {
-            //El uso es el siguiente:
-            // - La funcion a probar debe llamar a malloc2 con la cantidad de bytes que se quieren pedir.
-            // - Cuando ya no necesite la memoria llamara a free2 pasandole de parametro el puntero devuelto por malloc2.
-            // - Desde fuera de la funcion se liberara realmente toda la memoria pedida llamando a free2all.
-            // Ej:
-            // void prueba(){
-            //    char* c = malloc2(10);
-            //    printf("Hola!");
-            //    free2(c);
-            // }
-            //
-            // int main(){
-            //    prueba();
-            //    free2all();
-            //    return 0;
-            // }
-            escritor.IdentacionActiva = false;
-            escritor.WriteLine();
-            escritor.WriteLine( "#define todoBien 0" );
-            escritor.WriteLine( "#define liberarPosMemNoValida 1" );
-            escritor.WriteLine( "#define escrituraFueraDelBuffer 2" );
-            escritor.WriteLine( "#define dosFreeDelMismoBuffer 3" );
-            escritor.WriteLine();
-            escritor.WriteLine( "int cantPedidosMemoria = 0;" );
-            escritor.WriteLine( "char* pedidos[sizeof(int)*10000];" );
-            escritor.WriteLine( "int tamanioPedidos[sizeof(int)*10000];" );
-            escritor.WriteLine( "bool fueLiberado[sizeof(bool)*10000];" );
-            escritor.WriteLine();
-            escritor.WriteLine( "char* malloc2(int cantBytes){" );
-            escritor.WriteLine( "   int i;" );
-            escritor.WriteLine( "   char* ret_value;" );
-            escritor.WriteLine(
-                "   ret_value = malloc(cantBytes + 8 + 8);	//8 bytes antes y 8 bytes despues para controlar que no se pase de la longitud del buffer" );
-            escritor.WriteLine( "   pedidos[cantPedidosMemoria] = ret_value;" );
-            escritor.WriteLine( "   tamanioPedidos[cantPedidosMemoria] = cantBytes;" );
-            escritor.WriteLine( "   fueLiberado[cantPedidosMemoria] = false;" );
-            escritor.WriteLine( "   for(i=0; i<8; i++){" );
-            escritor.WriteLine( "       ((char*)ret_value)[i] = 'A';" );
-            escritor.WriteLine( "       ((char*)ret_value)[cantBytes + 8 + i] = 'A';" );
-            escritor.WriteLine( "   }" );
-            escritor.WriteLine( "   cantPedidosMemoria++;" );
-            escritor.WriteLine( "   return ret_value + 8;" );
-            escritor.WriteLine( "}" );
-            escritor.WriteLine();
-            escritor.WriteLine( "int free2(char* punteroABloque)" );
-            escritor.WriteLine( "{" );
-            escritor.WriteLine( "   static int cantLlamadosCorrectos = 0;" );
-            escritor.WriteLine( "   int pos, i;" );
-            escritor.WriteLine( "   int salida = todoBien;" );
-            escritor.WriteLine( "   for(pos=0; pos<cantPedidosMemoria && pedidos[pos]!=punteroABloque-8; pos++);" );
-            escritor.WriteLine( "       if(pedidos[pos] !=punteroABloque-8){" );
-            escritor.WriteLine( "           salida = liberarPosMemNoValida;" );
-            //escritor.WriteLine(
-            //"           printf(\"Se intento liberar una posicion de memoria no valida Anteriormente se llamo exitosamente a free %d veces \", cantLlamadosCorrectos);" );
-            escritor.WriteLine( "           free2all();" );
-            //escritor.WriteLine( "           exit(0); " );            
-            escritor.WriteLine( "       }else{" );
-            escritor.WriteLine( "           if (fueLiberado[pos]){  " );
-            escritor.WriteLine( "           salida = dosFreeDelMismoBuffer;" );
-            //escritor.WriteLine(
-            //  "             printf(\"Se intentaron hacer 2 free del mismo buffer. Anteriormente se llamo exitosamente a free %d veces\\n\", cantLlamadosCorrectos);  " );
-            escritor.WriteLine( "             free2all();  " );
-            //escritor.WriteLine( "             exit(0); " );
-            escritor.WriteLine( "           } " );
-            escritor.WriteLine( "           fueLiberado[pos] = true;" );
-            escritor.WriteLine( "           for (i = 0; i < 8; i++)" );
-            escritor.WriteLine(
-                "               if(((char*)punteroABloque-8)[i] != 'A'|| ((char*)punteroABloque)[tamanioPedidos[pos] + i] != 'A'){" );
-            escritor.WriteLine( "                  salida = escrituraFueraDelBuffer;" );
-            //escritor.WriteLine( "                  printf(\"Se ha escrito fuera del buffer\");" );
-            //escritor.WriteLine( "                  exit(0);" );
-            escritor.WriteLine( "                  free2all();  " );
-
-            escritor.WriteLine( "                  break;" );
-            escritor.WriteLine( "               }" );
-            escritor.WriteLine( "       }" );
-            escritor.WriteLine( "       cantLlamadosCorrectos++; " );
-            escritor.WriteLine( "       return salida;" );
-            escritor.WriteLine( "}" );
-            escritor.WriteLine();
-            escritor.WriteLine( "void free2all(){" );
-            escritor.WriteLine( "   int i;" );
-            escritor.WriteLine( "   int bytesNoLiberados = 0;" );
-            escritor.WriteLine( "   for(i=0; i<cantPedidosMemoria; i++){" );
-            escritor.WriteLine( "       free(pedidos[i]);" );
-            escritor.WriteLine( "       if(fueLiberado[i]== false)" );
-            escritor.WriteLine( "           bytesNoLiberados = bytesNoLiberados + tamanioPedidos[i];" );
-            escritor.WriteLine( "   }" );
-            escritor.WriteLine( "   if(bytesNoLiberados >0){" );
-            escritor.WriteLine( "       printf(\"No se han liberado %d bytes de memoria\", bytesNoLiberados);" );
-            //escritor.WriteLine( "       exit(0);" );
-            escritor.WriteLine( "   }" );
-            escritor.WriteLine( "}" );
-            escritor.WriteLine();
-            escritor.IdentacionActiva = true;
+            escritor.WriteLine("extern long long timer();");
         }
         private void EscribirFuncionesDePrueba( EscritorC escritor )
         {
@@ -416,7 +320,8 @@ namespace TUAssembler.Generacion
                     timer.WriteLine( "global timer" );
                     break;
             }
-            timer.WriteLine( "%include \"" + funcionAsm + "\"" );
+            if (this.esAsm)
+                timer.WriteLine( "%include \"" + funcionAsm + "\"" );
             switch( SistemaOperativo )
             {
                 case TipoSistema.DOS:
@@ -503,7 +408,7 @@ namespace TUAssembler.Generacion
         #endregion
 
         #region Constructor
-        public Generador( string archivoDefinicion, string archivoPrueba, bool ModoLinux )
+        public Generador(string archivoDefinicion, string archivoPrueba, bool ModoLinux, bool esAsm)
         {
             this.archivoDefinicion = archivoDefinicion;
             this.archivoPrueba = archivoPrueba;
@@ -512,6 +417,7 @@ namespace TUAssembler.Generacion
                 SistemaOperativo = TipoSistema.LINUX;
             else
                 SistemaOperativo = TipoSistema.DOS;
+            this.esAsm = esAsm;
         }
         #endregion
     }

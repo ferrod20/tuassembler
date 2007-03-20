@@ -126,7 +126,7 @@ namespace TUAssembler
         public static string ElementoDeTipoIncorrectoEnElVector( string nombreVector, int posicion )
         {
             return
-                "El elemento del vector " + nombreVector + ", en la posición " + posicion + " no es del tipo correcto.";
+                "El elemento del vector/lista " + nombreVector + ", en la posición " + posicion + " no es del tipo correcto.";
         }
         public static string MatrizTieneFilaEnDeDistintaLongitud( string nombreMatriz, int fila )
         {

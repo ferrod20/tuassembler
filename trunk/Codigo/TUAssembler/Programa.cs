@@ -31,23 +31,20 @@ namespace TUAssembler
             //Iniciar( "Prueba7/archDef.xml", "Prueba7/archPrueba.jdp", "Prueba7/funcionAsm.asm", "DOS" );
             //Prueba la funcion  UInt64 funcion1( Vector ES );            
             //            Iniciar("Prueba8/archDef.xml", "Prueba8/archPrueba.jdp", "Prueba8/funcionAsm.asm");//Prueba pasarle una matriz a una funcion.                                   //Prueba pasarle una matriz a una funcion.
-            //Iniciar("Circular/archDef.xml", "Circular/archPrueba.jdp", "Circular/funcionAsm.asm", "DOS");
-            //string[] argumentos = new string[] { "Circular/archDef.xml", "Circular/archPrueba.jdp", "-asm", "Circular/funcionAsm.asm", "-dos" };
             //Cuenta instrucciones
-            /*string[] argumentos =                
-                new string[]
-                    {
-                        "Prueba8/archDef.xml", "Prueba8/archPrueba.jdp", "-asm", "Prueba8/funcionAsm.asm", "-dos", "-as",
-                        "C:/Documents and Settings/Propietario/Escritorio/salida.txt", "-cci",
-                        "cantEjecuciones.txt"
-                    };
-             * */
-            string[] argumentos =
+            
+            //            string[] argumentos = new string[] { "Circular/archDef.xml", "Circular/archPrueba.jdp", "", "Circular/funcionAsm.asm", "-dos" };
+            //string[] argumentos = new string[] { "Circular/archDef.xml", "Circular/archPrueba.jdp", "", "circular.o", "-dos" };
+            string[] argumentos = new string[] { "Circular/archDef.xml", "Circular/archPrueba.jdp", "", "circular.o", "-dos" };
+
+/*            string[] argumentos =
                 new string[]
                     {
                         "Prueba9/archDef.xml", "Prueba9/archPrueba.jdp", "-asm", "Prueba9/funcionAsm.asm", "-dos", "-as"
-                        , "C:/Documents and Settings/Propietario/Escritorio/salida.txt"
+                        , "C:/Documents and Settings/Mama/Escritorio/salida.txt"
                     };
+*/
+//            string[] argumentos = new string[] { "Suma/archDef.xml", "Suma/archPrueba.jdp", "-asm", "Suma/funcionAsm.asm", "-dos" };
             try
             {
                 LeerOpciones( argumentos );
@@ -96,14 +93,14 @@ namespace TUAssembler
         }
         public static void Iniciar()
         {
-            Generador generador = new Generador( archDefinicion, archJuegoDePruebas, EsModoLinux );
+            Generador generador = new Generador(archDefinicion, archJuegoDePruebas, EsModoLinux, esAssembler);
             generador.FrenarEnElPrimerError = frenarEnLaPrimerError;
             generador.ContarCantInstrucciones = contarCantInstrucciones;
             generador.ArchivoCuentaInstrucciones = archCantInst;
             generador.LeerDefinicion(); //Lee y verifica que el archivo definicion sea valido.
             generador.LeerPruebas();
             generador.GenerarPruebas();
-            if( esAssembler )
+       //     if( esAssembler )
                 generador.GenerarTimer( archFuncion );
             if( !EsModoLinux ) //En caso de usarse bajo Linux, debe usarse el MakeFile destinado a tal efecto.
                 CompilarYEjecutar();
@@ -118,22 +115,37 @@ namespace TUAssembler
             compiladorC = new CompiladorC( "", "gcc.exe" );
             compilador = new Compilador( "", "gcc.exe", "salida.txt", "error.txt" );
 
-            try
-            {
+            try            {
                 Ejecutor.ArchivoSalida = salidaPorArchivo? archSalida : "salida.txt";
                 Ejecutor.ArchivoError = "errorEjecucion.txt";
 
-                if( esAssembler )
+               // if( esAssembler )
                     compiladorAsm.Compilar( "-fcoff", "timer.asm" );
 
                 compiladorC.Compilar( "-c -o codigoProbador.o", "codigoProbador.c" );
-
+/*
                 string[] archivos = new string[2];
                 archivos[1] = "codigoProbador.o";
                 if( esAssembler )
                     archivos[0] = "timer.o";
                 else
                     archivos[0] = archFuncion;
+ * */
+                string[] archivos;
+  
+                 if (esAssembler)
+                {
+                    archivos = new string[2];
+                    archivos[0] = "timer.o";
+                    archivos[1] = "codigoProbador.o";
+                }
+                else
+                {
+                    archivos = new string[3];
+                    archivos[0] = archFuncion;
+                    archivos[1] = "timer.o";
+                    archivos[2] = "codigoProbador.o";
+                }
 
                 //Genera un .exe resultado de enlazar los 2 anteriores.                
                 compilador.Enlazar( "prueba.exe", archivos );

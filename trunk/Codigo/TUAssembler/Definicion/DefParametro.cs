@@ -160,7 +160,7 @@ namespace TUAssembler.Definicion
                     salida = "unsigned int";
                     break;
                 case Tipo.UInt64:
-                    salida = "unsigned long int";
+                    salida = "unsigned long long int";
                     break;
                 case Tipo.Int8:
                     salida = "char";
@@ -172,7 +172,7 @@ namespace TUAssembler.Definicion
                     salida = "int";
                     break;
                 case Tipo.Int64:
-                    salida = "long int";
+                    salida = "long long int";
                     break;
                 case Tipo.Float32:
                     salida = "float";
@@ -203,20 +203,32 @@ namespace TUAssembler.Definicion
                 {
                     case Tipo.UInt8:
                     case Tipo.Int8:
-                        salida = "struct Listachar *";
+                    case Tipo.Char:
+                        salida = "struct Listachar **";
+                        break;
+                    case Tipo.Int16:
+                    case Tipo.UInt16:
+                        salida = "struct Listashort **";
                         break;
                     case Tipo.UInt32:
                     case Tipo.Int32:
-                        salida = "struct Listaint *";
+                        salida = "struct Listaint **";
+                        break;
+                    case Tipo.Booleano:
+                        salida = "struct Listabool **";
+                        break;
+                    case Tipo.Int64:
+                    case Tipo.UInt64:
+                        salida = "struct Listalonglong **";
                         break;
                     case Tipo.Float32:
-                        salida = "struct Listafloat *";
+                        salida = "struct Listafloat **";
                         break;
                     case Tipo.Float64:
-                        salida = "struct Listadouble *";
+                        salida = "struct Listadouble **";
                         break;
                     default:
-                        throw new Exception( "Tipo de lista no valido" );
+                        throw new Exception("Tipo de lista no valido");
                 }
             return salida;
         }
@@ -253,7 +265,7 @@ namespace TUAssembler.Definicion
                     nombre = "unsigned int";
                     break;
                 case Tipo.UInt64:
-                    nombre = "unsigned long";
+                    nombre = "unsigned long long int";
                     break;
                 case Tipo.Int8:
                     nombre = "char";

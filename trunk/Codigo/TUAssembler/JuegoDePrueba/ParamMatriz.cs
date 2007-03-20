@@ -89,12 +89,12 @@ namespace TUAssembler.JuegoDePrueba
             string pedido;
             string varFila = Definicion.Nombre + "Fila";
             pedido = Definicion.Nombre + " = " + "malloc2( sizeof(" + Definicion.ObtenerNombreDelTipoParaC() + "*)*" +
-                cantFilas + " );";
+                cantFilas + ", true );";
             escritor.WriteLine( pedido );
             escritor.WriteLine( "int " + varFila + ";" );
             escritor.For( varFila + " = 0", varFila + " < " + cantFilas, varFila + "++" );
             escritor.WriteLine( Definicion.Nombre + "[" + varFila + "] = malloc2( sizeof(" +
-                Definicion.ObtenerNombreDelTipoParaC() + ")*" + cantColumnas + ");" );
+                Definicion.ObtenerNombreDelTipoParaC() + ")*" + cantColumnas + ", true);" );
             escritor.FinFor();
         }
         public override void Instanciar( EscritorC escritor )

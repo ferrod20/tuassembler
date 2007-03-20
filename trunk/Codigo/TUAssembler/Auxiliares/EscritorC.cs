@@ -183,6 +183,10 @@ namespace TUAssembler.Auxiliares
         {
             PrintfError( "es una Lista Circular." );
         }
+        public void PrintPunterosInvalidos()
+        {
+            Printf("La prueba " + Mensajes.NombreDePrueba + " tiene punteros invalidos");
+        }
         public void PrintfDosFreeAlMismoParam( string nombre )
         {
             PrintfError( "Se hicieron 2 free al mismo parámetro: " + nombre + "\\n" );

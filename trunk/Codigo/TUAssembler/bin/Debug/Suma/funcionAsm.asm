@@ -14,8 +14,9 @@ section .text
 	push esi
 	push edi
 	push ebx
-			
-	mov eax, 100
+
+	mov eax, [ebp+8]
+	add eax, [ebp+12]
 	
 	pop ebx
 	pop edi
