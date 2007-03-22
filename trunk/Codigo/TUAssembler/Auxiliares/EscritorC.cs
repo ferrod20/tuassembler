@@ -14,6 +14,7 @@ namespace TUAssembler.Auxiliares
             : base( path )
         {
             identacion = 0;
+            IdentacionActiva = true;
         }
         #endregion
 

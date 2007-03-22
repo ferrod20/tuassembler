@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="TUAssembler.Compilacion.Compilador">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Compilacion\Compilador.cs</FileName>
+      <HashCode>BAAAAQBAEAAAAQCAAAEAgAQIAIAAAAAAAIEgAAQAIAE=</HashCode>
+    </TypeIdentifier>
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+  </Class>
+  <Class Name="TUAssembler.Compilacion.CompiladorAsm" Collapsed="true">
+    <Position X="2.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Compilacion\CompiladorAsm.cs</FileName>
+      <HashCode>AAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TUAssembler.Compilacion.CompiladorC" Collapsed="true">
+    <Position X="0.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Compilacion\CompiladorC.cs</FileName>
+      <HashCode>AAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TUAssembler.Compilacion.Ejecutor" Collapsed="true">
+    <Position X="3.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Compilacion\Ejecutor.cs</FileName>
+      <HashCode>BAAAAAAAAAAAAAAAAABAAAAAAAAACAAAAIAAAABAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TUAssembler.Auxiliares.EscritorC">
+    <Position X="5.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Auxiliares\EscritorC.cs</FileName>
+      <HashCode>BAAAIKEQEAAEBAoYJCEABAIQIBAAAAAAABgEQCwGAAA=</HashCode>
+    </TypeIdentifier>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+  </Class>
+</ClassDiagram>

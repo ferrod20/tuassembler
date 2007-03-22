@@ -205,19 +205,31 @@ namespace TUAssembler
         public static void EliminarAsteriscos( ref string cadena )
         {
             int desde;
-            desde = cadena.IndexOf( '*' );
-            if( desde >= 0 )
+
+            desde = cadena.IndexOf('*');
+            while (desde >= 0)
+            {
                 cadena = cadena.Remove( desde, 1 );
+                desde = cadena.IndexOf( '*' );
+            }
         }
         public static void EliminarCorchetes( ref string cadena )
         {
             int desde, hasta;
-            desde = cadena.IndexOf( '[' );
-            if( desde >= 0 )
+            
+            desde = cadena.IndexOf('[');
+            while (desde >= 0)
+            {
                 cadena = cadena.Remove( desde, 1 );
-            hasta = cadena.IndexOf( ']' );
-            if( hasta >= 0 )
+                desde = cadena.IndexOf( '[' );
+            }
+
+            hasta = cadena.IndexOf(']');
+            while (hasta >= 0)
+            {
                 cadena = cadena.Remove( hasta, 1 );
+                hasta = cadena.IndexOf(']');
+            }
         }
     }
 }

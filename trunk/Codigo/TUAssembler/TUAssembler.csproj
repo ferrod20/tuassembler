@@ -40,7 +40,6 @@
     <Compile Include="Definicion\DefinicionFuncion.cs" />
     <Compile Include="Definicion\DefParametro.cs" />
     <Compile Include="Compilacion\Ejecutor.cs" />
-    <Compile Include="Enums.cs" />
     <Compile Include="Generacion\Generador.cs" />
     <Compile Include="JuegoDePrueba\Elem.cs" />
     <Compile Include="JuegoDePrueba\ParamLista.cs" />
@@ -54,30 +53,16 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="ArchivosParaPruebas\c.bat" />
+    <None Include="CompilacionYEjecucion.cd" />
     <None Include="Definicion\EsquemaDeDefinicion.xsd">
       <SubType>Designer</SubType>
     </None>
     <None Include="Definicion\EsquemaDeDefinicion.xsx">
       <DependentUpon>EsquemaDeDefinicion.xsd</DependentUpon>
     </None>
-    <None Include="Documentacion\c-asm.pdf" />
-    <None Include="Documentacion\clase2imp.pdf" />
-    <None Include="Documentacion\Detalles del TP final.doc">
-      <SubType>Designer</SubType>
+    <None Include="..\..\..\Documents and Settings\Propietario\Escritorio\DiagramDeClases.cd">
+      <Link>DiagramDeClases.cd</Link>
     </None>
-    <None Include="Documentacion\Detalles sobre el TP Final 2.doc">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Documentacion\howtoComp.pdf" />
-    <None Include="Documentacion\iso-8859-1QTrabajo_practico_final_de_OrganizaciF3n_del_Computador_IIiso-8859-1Q_2004-0001.doc" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="ArchivosParaPruebas\archivitoPruebaDefinicion.xml" />
-    <Content Include="ArchivosParaPruebas\Test.c" />
-    <Content Include="ArchivosParaPruebas\TestTiposBasicos.asm" />
-    <Content Include="Documentacion\Compilador.txt" />
-    <Content Include="Documentacion\funcionAsm.asm" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

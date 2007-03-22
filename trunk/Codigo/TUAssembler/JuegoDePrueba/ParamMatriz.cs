@@ -1,6 +1,7 @@
 using System;
 using System.IO;
 using TUAssembler.Auxiliares;
+using TUAssembler.Definicion;
 
 namespace TUAssembler.JuegoDePrueba
 {
@@ -121,7 +122,11 @@ namespace TUAssembler.JuegoDePrueba
             for( int fila = 0; fila < cantFilas; fila++ )
                 for( int col = 0; col < cantColumnas; col++ )
                 {
-                    elem = Filas[fila].Elementos[col];
+                    elem = Filas[fila].Elementos[col];                    
+                    elem.Definicion.Tipo = Definicion.Tipo;
+                    elem.Definicion.TipoDeAcceso = ValorOReferencia.V;
+                    if (Definicion.Tipo == Tipo.Char)
+                        elem.Valor = elem.Valor[1].ToString();
                     elem.CompararValor( escritor, Definicion.Nombre + "[" + fila + "]" + "[" + col + "]" );
                 }
         }
