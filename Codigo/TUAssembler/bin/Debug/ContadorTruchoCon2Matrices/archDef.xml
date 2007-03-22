@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<DefinicionFuncion Nombre="funcion1" >
-  <DefParametroSalida Nombre="salida" TipoDeAcceso="V" Tipo="Int32" EsElemento="true" />
-  <DefParametrosEntrada>                                                        
-<DefParametro Nombre="p1"  TipoDeAcceso="R" Tipo="Int8" 				EntradaSalida="ES"  EsMatriz="true"/>  	
-<DefParametro Nombre="p12" TipoDeAcceso="R" Tipo="Char" 				EntradaSalida="ES" EsMatriz="true"/>   
-    </DefParametrosEntrada>
-</DefinicionFuncion>
-
