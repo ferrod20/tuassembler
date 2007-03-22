@@ -1,6 +1,7 @@
 using System;
 using System.IO;
 using TUAssembler.Auxiliares;
+using TUAssembler.Definicion;
 using TUAssembler.JuegoDePrueba;
 
 namespace TUAssembler.Generacion
@@ -221,7 +222,7 @@ namespace TUAssembler.Generacion
             else
             {
                 escritor.WriteLine( "//------------Cuento instrucciones--------------------" );
-                escritor.While( "tiempoDeEjecucion < 10000000" );
+                escritor.While( "tiempoDeEjecucion < 10000" );
                 escritor.WriteLine( "tiempoDeEjecucion = 0;" );
                 escritor.WriteLine( "int i;" );
                 escritor.For( "i =0", "i<cantCorridas", "i++" );
@@ -258,7 +259,7 @@ namespace TUAssembler.Generacion
         private void LlamarFuncionAProbar( EscritorC escritor )
         {
             string llamada = "";
-            if( Definicion.DefParametroSalida!=null )
+            if (Definicion.DefParametroSalida != null && Definicion.DefParametroSalida.Tipo != Tipo.Void)
                 llamada = Definicion.DefParametroSalida.Nombre + " = ";
             llamada += Definicion.Nombre + "( ";
             foreach( Parametro param in PruebaActual.ParametrosEntrada )

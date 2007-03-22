@@ -189,6 +189,10 @@ namespace TUAssembler.Definicion
                 case Tipo.CadenaC:
                     salida = "char*";
                     break;
+                case Tipo.Void:
+                    salida = "void";
+                    break;
+
             }
 
             if( esVector )
@@ -298,6 +302,10 @@ namespace TUAssembler.Definicion
                 case Tipo.CadenaPascal:
                     nombre = "char";
                     break;
+                case Tipo.Void:
+                    nombre = "void";
+                    break;
+
             }
             return nombre;
         }
@@ -339,7 +347,8 @@ namespace TUAssembler.Definicion
         Booleano,
         Char,
         CadenaC,
-        CadenaPascal
+        CadenaPascal,
+        Void
     }
 
     [Serializable()]

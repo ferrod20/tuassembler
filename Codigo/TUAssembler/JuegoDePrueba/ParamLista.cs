@@ -181,10 +181,10 @@ namespace TUAssembler.JuegoDePrueba
                 case Tipo.UInt8:
                 case Tipo.Int8:
                 case Tipo.Char:
-                    escritor.WriteLine("struct Listachar *listaaux;");
-                    escritor.WriteLine("crearchar(&listaaux);");
+                    escritor.WriteLine("struct Listachar *" + Definicion.Nombre + "listaaux;");
+                    escritor.WriteLine("crearchar(&" + Definicion.Nombre + "listaaux);");
                     foreach (Elem elemento in Elementos)
-                        escritor.WriteLine("insertarchar(&listaaux, " + elemento.Valor + ", false);");
+                        escritor.WriteLine("insertarchar(&" + Definicion.Nombre + "listaaux, " + elemento.Valor + ", false);");
                     /*escritor.If("TienePunterosInvalidoschar(" + Definicion.Nombre + ")");
                     escritor.PrintPunterosInvalidos();
                     escritor.WriteLine("return 1;");
@@ -203,24 +203,24 @@ namespace TUAssembler.JuegoDePrueba
                     escritor.WriteLine("return 1;");
                     escritor.WriteLine("}");
 
-                    escritor.If("!igualdadchar(" + Definicion.Nombre + ", listaaux)");
+                    escritor.If("!igualdadchar(" + Definicion.Nombre + ", " + Definicion.Nombre + "listaaux)");
                     escritor.WriteLine("   cantErrores++;");
                     escritor.FinIf();
                     break;
                 case Tipo.Int16:
                 case Tipo.UInt16:
-                    escritor.WriteLine("struct Listashort *listaaux;");
-                    escritor.WriteLine("crearshort(&listaaux);");
+                    escritor.WriteLine("struct Listashort *" + Definicion.Nombre + "listaaux;");
+                    escritor.WriteLine("crearshort(&" + Definicion.Nombre + "listaaux);");
                     foreach (Elem elemento in Elementos)
-                        escritor.WriteLine("insertarshort(&listaaux, " + elemento.Valor + ", false);");
-/*                    escritor.If("TienePunterosInvalidosshort(" + Definicion.Nombre + ")");
-                    escritor.PrintPunterosInvalidos();
-                    escritor.WriteLine("return 1;");
-                    escritor.FinIf();
-                    escritor.If("ListaCircularshort(" + Definicion.Nombre + ")");
-                    escritor.PrintListaCircular();
-                    escritor.WriteLine("return 1;");
-                    escritor.FinIf();*/
+                        escritor.WriteLine("insertarshort(&" + Definicion.Nombre + "listaaux, " + elemento.Valor + ", false);");
+                    /*                    escritor.If("TienePunterosInvalidosshort(" + Definicion.Nombre + ")");
+                                        escritor.PrintPunterosInvalidos();
+                                        escritor.WriteLine("return 1;");
+                                        escritor.FinIf();
+                                        escritor.If("ListaCircularshort(" + Definicion.Nombre + ")");
+                                        escritor.PrintListaCircular();
+                                        escritor.WriteLine("return 1;");
+                                        escritor.FinIf();*/
                     escritor.WriteLine("switch(PunteroInvalidoOListaCircularshort(" + Definicion.Nombre + ")){");
                     escritor.WriteLine("case listaCircular:");
                     escritor.PrintListaCircular();
@@ -229,16 +229,16 @@ namespace TUAssembler.JuegoDePrueba
                     escritor.PrintPunterosInvalidos();
                     escritor.WriteLine("return 1;");
                     escritor.WriteLine("}");
-                    escritor.If("!igualdadshort(" + Definicion.Nombre + ", listaaux)");
+                    escritor.If("!igualdadshort(" + Definicion.Nombre + ", " + Definicion.Nombre + "listaaux)");
                     escritor.WriteLine("    cantErrores++;");
                     escritor.FinIf();
                     break;
                 case Tipo.UInt32:
                 case Tipo.Int32:
-                    escritor.WriteLine("struct Listaint *listaaux;");
-                    escritor.WriteLine("crearint(&listaaux);");
+                    escritor.WriteLine("struct Listaint *" + Definicion.Nombre + "listaaux;");
+                    escritor.WriteLine("crearint(&" + Definicion.Nombre + "listaaux);");
                     foreach (Elem elemento in Elementos)
-                        escritor.WriteLine("insertarint(&listaaux, " + elemento.Valor + ", false);");
+                        escritor.WriteLine("insertarint(&" + Definicion.Nombre + "listaaux, " + elemento.Valor + ", false);");
                     /*escritor.If("TienePunterosInvalidosint(" + Definicion.Nombre + ")");
                     escritor.PrintPunterosInvalidos();
                     escritor.WriteLine("return 1;");
@@ -255,15 +255,15 @@ namespace TUAssembler.JuegoDePrueba
                     escritor.PrintPunterosInvalidos();
                     escritor.WriteLine("return 1;");
                     escritor.WriteLine("}");
-                    escritor.If("!igualdadint(" + Definicion.Nombre + ", listaaux)");
+                    escritor.If("!igualdadint(" + Definicion.Nombre + ", " + Definicion.Nombre + "listaaux)");
                     escritor.WriteLine("    cantErrores++;");
                     escritor.FinIf();
                     break;
                 case Tipo.Booleano:
-                    escritor.WriteLine("struct Listabool *listaaux;");
-                    escritor.WriteLine("crearbool(&listaaux);");
+                    escritor.WriteLine("struct Listabool *" + Definicion.Nombre + "listaaux;");
+                    escritor.WriteLine("crearbool(&" + Definicion.Nombre + "listaaux);");
                     foreach (Elem elemento in Elementos)
-                        escritor.WriteLine("insertarbool(&listaaux, " + elemento.Valor + ", false);");
+                        escritor.WriteLine("insertarbool(&" + Definicion.Nombre + "listaaux, " + elemento.Valor + ", false);");
                     /*escritor.If("TienePunterosInvalidosbool(" + Definicion.Nombre + ")");
                     escritor.PrintPunterosInvalidos();
                     escritor.WriteLine("return 1;");
@@ -280,16 +280,16 @@ namespace TUAssembler.JuegoDePrueba
                     escritor.PrintPunterosInvalidos();
                     escritor.WriteLine("return 1;");
                     escritor.WriteLine("}");
-                    escritor.If("!igualdadbool(" + Definicion.Nombre + ", listaaux)");
+                    escritor.If("!igualdadbool(" + Definicion.Nombre + ", " + Definicion.Nombre + "listaaux)");
                     escritor.WriteLine("    cantErrores++;");
                     escritor.FinIf();
                     break;
                 case Tipo.UInt64:
                 case Tipo.Int64:
-                    escritor.WriteLine("struct Listalonglong *listaaux;");
-                    escritor.WriteLine("crearlonglong(&listaaux);");
+                    escritor.WriteLine("struct Listalonglong *" + Definicion.Nombre + "listaaux;");
+                    escritor.WriteLine("crearlonglong(&" + Definicion.Nombre + "listaaux);");
                     foreach (Elem elemento in Elementos)
-                        escritor.WriteLine("insertarlonglong(&listaaux, " + elemento.Valor + ", false);");
+                        escritor.WriteLine("insertarlonglong(&" + Definicion.Nombre + "listaaux, " + elemento.Valor + ", false);");
                     escritor.WriteLine("switch(PunteroInvalidoOListaCircularlonglong(" + Definicion.Nombre + ")){");
                     escritor.WriteLine("case listaCircular:");
                     escritor.PrintListaCircular();
@@ -298,15 +298,15 @@ namespace TUAssembler.JuegoDePrueba
                     escritor.PrintPunterosInvalidos();
                     escritor.WriteLine("return 1;");
                     escritor.WriteLine("}");
-                    escritor.If("!igualdadlonglong(" + Definicion.Nombre + ", listaaux)");
+                    escritor.If("!igualdadlonglong(" + Definicion.Nombre + ", " + Definicion.Nombre + "listaaux)");
                     escritor.WriteLine("    cantErrores++;");
                     escritor.FinIf();
                     break;
                 case Tipo.Float32:
-                    escritor.WriteLine("struct Listafloat *listaaux;");
-                    escritor.WriteLine("crearfloat(&listaaux);");
+                    escritor.WriteLine("struct Listafloat *" + Definicion.Nombre + "listaaux;");
+                    escritor.WriteLine("crearfloat(&" + Definicion.Nombre + "listaaux);");
                     foreach (Elem elemento in Elementos)
-                        escritor.WriteLine("insertarfloat(&listaaux, " + elemento.Valor + ", false);");
+                        escritor.WriteLine("insertarfloat(&" + Definicion.Nombre + "listaaux, " + elemento.Valor + ", false);");
                     /*escritor.If("TienePunterosInvalidosfloat(" + Definicion.Nombre + ")");
                     escritor.PrintPunterosInvalidos();
                     escritor.WriteLine("return 1;");
@@ -323,15 +323,15 @@ namespace TUAssembler.JuegoDePrueba
                     escritor.PrintPunterosInvalidos();
                     escritor.WriteLine("return 1;");
                     escritor.WriteLine("}");
-                    escritor.If("!igualdadfloat(" + Definicion.Nombre + ", listaaux," + Definicion.Precision + ")");
+                    escritor.If("!igualdadfloat(" + Definicion.Nombre + ", " + Definicion.Nombre + "listaaux," + Definicion.Precision + ")");
                     escritor.WriteLine("    cantErrores++;");
                     escritor.FinIf();
                     break;
                 case Tipo.Float64:
-                    escritor.WriteLine("struct Listadouble *listaaux;");
-                    escritor.WriteLine("creardouble(&listaaux);");
+                    escritor.WriteLine("struct Listadouble *" + Definicion.Nombre + "listaaux;");
+                    escritor.WriteLine("creardouble(&" + Definicion.Nombre + "listaaux);");
                     foreach (Elem elemento in Elementos)
-                        escritor.WriteLine("insertardouble(&listaaux, " + elemento.Valor + ", false);");
+                        escritor.WriteLine("insertardouble(&" + Definicion.Nombre + "listaaux, " + elemento.Valor + ", false);");
                     /*escritor.If("TienePunterosInvalidosdouble(" + Definicion.Nombre + ")");
                     escritor.PrintPunterosInvalidos();
                     escritor.WriteLine("return 1;");
@@ -348,8 +348,7 @@ namespace TUAssembler.JuegoDePrueba
                     escritor.PrintPunterosInvalidos();
                     escritor.WriteLine("return 1;");
                     escritor.WriteLine("}");
-
-                    escritor.If("!igualdaddouble(" + Definicion.Nombre + ", listaaux, " + Definicion.Precision + ")");
+                    escritor.If("!igualdaddouble(" + Definicion.Nombre + ", " + Definicion.Nombre + "listaaux, " + Definicion.Precision + ")");
                     escritor.WriteLine("    cantErrores++;");
                     escritor.FinIf();
                     break;
@@ -364,41 +363,41 @@ namespace TUAssembler.JuegoDePrueba
                 case Tipo.UInt8:
                 case Tipo.Int8:
                 case Tipo.Char:
-                    if( this.Definicion.EntradaSalida != EntradaSalida.E )
-                        escritor.WriteLine("liberarchar(&listaaux);");
+                    if (this.Definicion.EntradaSalida != EntradaSalida.E)
+                        escritor.WriteLine("liberarchar(&" + Definicion.Nombre + "listaaux);");
                     escritor.WriteLine("liberarchar(&" + Definicion.Nombre + ");");
                     break;
                 case Tipo.UInt16:
                 case Tipo.Int16:
                     if (this.Definicion.EntradaSalida != EntradaSalida.E)
-                        escritor.WriteLine("liberarshort(&listaaux);");
+                        escritor.WriteLine("liberarshort(&" + Definicion.Nombre + "listaaux);");
                     escritor.WriteLine("liberarshort(&" + Definicion.Nombre + ");");
                     break;
                 case Tipo.UInt32:
                 case Tipo.Int32:
                     if (this.Definicion.EntradaSalida != EntradaSalida.E)
-                        escritor.WriteLine("liberarint(&listaaux);");
+                        escritor.WriteLine("liberarint(&" + Definicion.Nombre + "listaaux);");
                     escritor.WriteLine("liberarint(&" + Definicion.Nombre + ");");
                     break;
                 case Tipo.Booleano:
                     if (this.Definicion.EntradaSalida != EntradaSalida.E)
-                        escritor.WriteLine("liberarbool(&listaaux);");
+                        escritor.WriteLine("liberarbool(&" + Definicion.Nombre + "listaaux);");
                     escritor.WriteLine("liberarbool(&" + Definicion.Nombre + ");");
                     break;
                 case Tipo.UInt64:
                 case Tipo.Int64:
                     if (this.Definicion.EntradaSalida != EntradaSalida.E)
-                        escritor.WriteLine("liberarlonglong(&listaaux);");
+                        escritor.WriteLine("liberarlonglong(&" + Definicion.Nombre + "listaaux);");
                     escritor.WriteLine("liberarlonglong(&" + Definicion.Nombre + ");");
                     break;
                 case Tipo.Float32:
                     if (this.Definicion.EntradaSalida != EntradaSalida.E)
-                        escritor.WriteLine("liberarfloat(&listaaux);");
+                        escritor.WriteLine("liberarfloat(&" + Definicion.Nombre + "listaaux);");
                     escritor.WriteLine("liberarfloat(&" + Definicion.Nombre + ");");
                     break;
                 case Tipo.Float64:
                     if (this.Definicion.EntradaSalida != EntradaSalida.E)
-                        escritor.WriteLine("liberardouble(&listaaux);");
+                        escritor.WriteLine("liberardouble(&" + Definicion.Nombre + "listaaux);");
                     escritor.WriteLine("liberardouble(&" + Definicion.Nombre + ");");
                     break;
                 default:

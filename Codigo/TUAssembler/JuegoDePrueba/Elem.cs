@@ -79,6 +79,9 @@ namespace TUAssembler.JuegoDePrueba
                 case Tipo.CadenaC:
                     salida = MA.EntreComillas( elem );
                     break;
+                case Tipo.Void:
+                    salida = true;
+                    break;
             }
             return salida;
         }

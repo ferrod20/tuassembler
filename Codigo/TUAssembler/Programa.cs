@@ -35,20 +35,20 @@ namespace TUAssembler
             
             //            string[] argumentos = new string[] { "Circular/archDef.xml", "Circular/archPrueba.jdp", "", "Circular/funcionAsm.asm", "-dos" };
             //string[] argumentos = new string[] { "Circular/archDef.xml", "Circular/archPrueba.jdp", "", "circular.o", "-dos" };
-            string[] argumentos = new string[] { "Circular/archDef.xml", "Circular/archPrueba.jdp", "", "circular.o", "-dos" };
+            //string[] argumentos = new string[] { "Circular/archDef.xml", "Circular/archPrueba.jdp", "", "circular.o", "-dos" };
 
 /*            string[] argumentos =
                 new string[]
                     {
                         "Prueba9/archDef.xml", "Prueba9/archPrueba.jdp", "-asm", "Prueba9/funcionAsm.asm", "-dos", "-as"
-                        , "C:/Documents and Settings/Mama/Escritorio/salida.txt"
+                        , "C:/Documents and Settings/Propietario/Escritorio/salida.txt"
                     };
-*/
+            */
 //            string[] argumentos = new string[] { "Suma/archDef.xml", "Suma/archPrueba.jdp", "-asm", "Suma/funcionAsm.asm", "-dos" };
             try
             {
-                LeerOpciones( argumentos );
-                //LeerOpciones( args );
+                //LeerOpciones( argumentos );
+                LeerOpciones( args );
                 Iniciar();
             }
             catch( Exception e )

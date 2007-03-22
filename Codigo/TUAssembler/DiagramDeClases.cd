@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="TUAssembler.Mensajes" Collapsed="true">
+    <Position X="12.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Mensajes.cs</FileName>
+      <HashCode>ACAABMEgBASRAAAACADgABAAAAABDAmAEAAAgAAEACI=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TUAssembler.JuegoDePrueba.Elem" Collapsed="true">
+    <Position X="4.25" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>JuegoDePrueba\Elem.cs</FileName>
+      <HashCode>wAAgAAIAAAAAAAAAACAAEAAUAAAAAAAAIQEAAAAAIAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TUAssembler.JuegoDePrueba.Parametro">
+    <Position X="8.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>JuegoDePrueba\Parametro.cs</FileName>
+      <HashCode>gAAgAQIIAAEAAAAAACAAAAAAAAAAAAAAIAEAAAAAIAA=</HashCode>
+    </TypeIdentifier>
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+  </Class>
+  <Class Name="TUAssembler.JuegoDePrueba.ParamLista" Collapsed="true">
+    <Position X="11.5" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>JuegoDePrueba\ParamLista.cs</FileName>
+      <HashCode>wAAgAAIAAEAAAAAACCEAAAAAAAAAAAAAIQEAAAAAIAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TUAssembler.JuegoDePrueba.ParamMatriz" Collapsed="true">
+    <Position X="6.25" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>JuegoDePrueba\ParamMatriz.cs</FileName>
+      <HashCode>iIAgAAIAAAAAAABAACAAAAAAAAAAAAAAIAEIAAgAIAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TUAssembler.JuegoDePrueba.ParamVector" Collapsed="true">
+    <Position X="8.75" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>JuegoDePrueba\ParamVector.cs</FileName>
+      <HashCode>wAAgAAIAAEAAAAAACCEAAAAAAAAAAAAAIQEAAAAAIAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TUAssembler.JuegoDePrueba.Prueba">
+    <Position X="13.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>JuegoDePrueba\Prueba.cs</FileName>
+      <HashCode>gAAgBAAAAIAgAACgAKGAoAAAAAAAAAEQQAQGEAAAABA=</HashCode>
+    </TypeIdentifier>
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+  </Class>
+  <Class Name="TUAssembler.DefinicionFuncion">
+    <Position X="7.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Definicion\DefinicionFuncion.cs</FileName>
+      <HashCode>AIAAARAAAAACEAWAAAAQgAAAAQAAkAAIIAAAEAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+  </Class>
+  <Class Name="TUAssembler.Definicion.DefParametro">
+    <Position X="10.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Definicion\DefParametro.cs</FileName>
+      <HashCode>AECABQAABAABEACEAAAAgAEACAABAAgAAAAcgABAkIQ=</HashCode>
+    </TypeIdentifier>
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+  </Class>
+  <Enum Name="TUAssembler.Definicion.Tipo">
+    <Position X="4.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Definicion\DefParametro.cs</FileName>
+      <HashCode>QkAAAAAAIAAAAABBAAAAAAAAIAAAACCCEEAAAAAAAAg=</HashCode>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="TUAssembler.Definicion.EntradaSalida">
+    <Position X="5.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Definicion\DefParametro.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgDAAAA=</HashCode>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="TUAssembler.Definicion.ValorOReferencia">
+    <Position X="5.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Definicion\DefParametro.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAQA=</HashCode>
+    </TypeIdentifier>
+  </Enum>
+</ClassDiagram>

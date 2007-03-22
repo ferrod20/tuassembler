@@ -157,7 +157,8 @@ namespace TUAssembler.JuegoDePrueba
         #region Escritura de código C
         public void DeclararParametros( EscritorC escritor )
         {
-            ParametrosSalida[0].Declarar( escritor );
+            if( ParametrosSalida[0].Definicion.Tipo != Tipo.Void )
+                ParametrosSalida[0].Declarar( escritor );
             foreach( Parametro param in ParametrosEntrada )
                 param.Declarar( escritor );
         }
@@ -172,7 +173,13 @@ namespace TUAssembler.JuegoDePrueba
         {
             //Comparo los valores de los parametros de salida y ES
             foreach( Parametro param in ParametrosSalida )
-                param.CompararValor( escritor );
+                if( param.Definicion.Tipo != Tipo.Void)
+                    param.CompararValor( escritor );
+
+            //Comparo todos los valores de los parametros de entrada pasados por referencia, contra si mismos; o sea, que no se hayan modificado.
+            foreach (Parametro param in ParametrosEntrada )
+                if (param.Definicion.EntradaSalida == EntradaSalida.E && param.Definicion.TipoDeAcceso == ValorOReferencia.R)
+                    param.CompararValor(escritor);
         }
         public void PedirMemoria( EscritorC escritor )
         {
@@ -190,6 +197,7 @@ namespace TUAssembler.JuegoDePrueba
 
             if( ParametrosSalida[0].Definicion.TipoDeAcceso==ValorOReferencia.R )
                 ParametrosSalida[0].LiberarMemoria( escritor );
+            //escritor.WriteLine( "free2all();");
         }
         #endregion
 

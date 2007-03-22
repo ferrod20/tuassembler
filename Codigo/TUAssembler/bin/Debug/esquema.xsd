@@ -33,6 +33,7 @@
 <xsd:enumeration value="Char"         />
 <xsd:enumeration value="CadenaC"      />
 <xsd:enumeration value="CadenaPascal" />
+<xsd:enumeration value="Void" />
 		</xsd:restriction>
 	</xsd:simpleType>
 	<xsd:attributeGroup name="QTipoEs" >
