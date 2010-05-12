@@ -3,6 +3,10 @@ Microsoft Visual Studio Solution File, Format Version 10.00
 # Visual Studio 2008
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4dig", "4dig\4dig.csproj", "{096C97D9-EE93-4512-8F27-0B0325276668}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "b", "TestProject1\b.csproj", "{AA59E0A7-7118-4418-84ED-04B2DA9AA40A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApplication1", "WindowsFormsApplication1\WindowsFormsApplication1.csproj", "{B9DB6B99-7ADE-4660-AB68-DF89E45829B9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +17,14 @@ Global
 		{096C97D9-EE93-4512-8F27-0B0325276668}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{096C97D9-EE93-4512-8F27-0B0325276668}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{096C97D9-EE93-4512-8F27-0B0325276668}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA59E0A7-7118-4418-84ED-04B2DA9AA40A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA59E0A7-7118-4418-84ED-04B2DA9AA40A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA59E0A7-7118-4418-84ED-04B2DA9AA40A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA59E0A7-7118-4418-84ED-04B2DA9AA40A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9DB6B99-7ADE-4660-AB68-DF89E45829B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9DB6B99-7ADE-4660-AB68-DF89E45829B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9DB6B99-7ADE-4660-AB68-DF89E45829B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9DB6B99-7ADE-4660-AB68-DF89E45829B9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
