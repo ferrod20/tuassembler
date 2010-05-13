@@ -1,22 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace WindowsFormsApplication1
 
 {
-
 	public class Juego
 	{
-		List<Regla> reglas = new List<Regla>();
+		#region Variables de instancia
+		private List<Regla> reglas = new List<Regla>();
+		#endregion
 
-		public Regla AgregarRegla(int a, int b, int c, int d, int bien, int regular)
-		{
-			var regla = new Regla(a, b, c, d, bien, regular);
-			reglas.Add(regla);
-			return regla;
-		}
+		#region Métodos
 		public NumeroGenerado Adivinar()
 		{
 			NumeroGenerado n = null;
@@ -33,27 +28,37 @@ namespace WindowsFormsApplication1
 
 				if (nums.Count > 0)
 				{
+					foreach (var r in reglas)
+						if (nums.Contains(r.Numero))
+							nums.Remove(r.Numero);
 					n = nums.First();
-					n.Completar();
+					if (!n.Completar())
+						n = null;
 				}
-					
 			}
-				
+
 			return n;
+		}
+		public Regla AgregarRegla(int a, int b, int c, int d, int bien, int regular)
+		{
+			var regla = new Regla(a, b, c, d, bien, regular);
+			reglas.Add(regla);
+			return regla;
 		}
 		private List<NumeroGenerado> Unificar(List<NumeroGenerado> nums, List<NumeroGenerado> numeros)
 		{
-			List<NumeroGenerado> numsUnificados = new List<NumeroGenerado>();
+			var numsUnificados = new List<NumeroGenerado>();
 			foreach (var numeroGenerado in numeros)
-			{
 				foreach (var num in nums)
-				{
-					if( num.EsUnificableCon(numeroGenerado))
-						numsUnificados.Add(num.UnificarCon(numeroGenerado));
-				}
-			}
+					if (num.EsUnificableCon(numeroGenerado))
+					{
+						var numGenerado = num.UnificarCon(numeroGenerado);
+						if (!numsUnificados.Contains(numGenerado))
+							numsUnificados.Add(numGenerado);
+					}
 			return numsUnificados;
 		}
+		#endregion
 	}
 
 	public class Regla
@@ -64,6 +69,7 @@ namespace WindowsFormsApplication1
 		private int regular;
 		#endregion
 
+		#region Constructores
 		public Regla(int n0, int n1, int n2, int n3, int bien, int regular)
 		{
 			this.bien = bien;
@@ -73,6 +79,17 @@ namespace WindowsFormsApplication1
 			this.n3 = n3;
 			this.regular = regular;
 		}
+		#endregion
+
+		#region Propiedades
+		public NumeroGenerado Numero
+		{
+			get
+			{
+				return new NumeroGenerado(n0, n1, n2, n3);
+			}
+		}
+		#endregion
 
 		#region Métodos
 		public List<NumeroGenerado> Generar()
@@ -367,7 +384,7 @@ namespace WindowsFormsApplication1
 		}
 		public override string ToString()
 		{
-			return n0.ToString() + n1.ToString() + n2.ToString() + n3.ToString() + " " + bien + " BIEN " + regular + " REGULAR";
+			return n0 + n1.ToString() + n2 + n3 + " " + bien + " BIEN " + regular + " REGULAR";
 		}
 		#endregion
 	}
@@ -396,13 +413,13 @@ namespace WindowsFormsApplication1
 			num[2] = c;
 			num[3] = d;
 
-			if (a != null)
+			if (a != null && !DigitosExcluidos.Contains(a.Value))
 				DigitosExcluidos.Add(a.Value);
-			if (b != null)
+			if (b != null && !DigitosExcluidos.Contains(b.Value))
 				DigitosExcluidos.Add(b.Value);
-			if (c != null)
+			if (c != null && !DigitosExcluidos.Contains(c.Value))
 				DigitosExcluidos.Add(c.Value);
-			if (d != null)
+			if (d != null && !DigitosExcluidos.Contains(d.Value))
 				DigitosExcluidos.Add(d.Value);
 		}
 		#endregion
@@ -415,15 +432,75 @@ namespace WindowsFormsApplication1
 				return num[i];
 			}
 		}
+
+		protected int CuantosFaltanCompletar
+		{
+			get
+			{
+				var cuantos = 0;
+				for (var i = 0; i < 4; i++)
+					if (num[i] == null)
+						cuantos++;
+				return cuantos;
+			}
+		}
 		#endregion
 
 		#region Métodos
+		public bool Completar()
+		{
+			IList<int> digitos = new List<int> {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+			var posiblesValores = digitos.Except(DigitosExcluidos).ToList();
+
+			var todoBien = posiblesValores.Count >= CuantosFaltanCompletar;
+
+			if (todoBien)
+				for (var i = 0; i < 4; i++)
+					if (num[i] == null)
+					{
+						num[i] = posiblesValores.First();
+						posiblesValores.Remove(posiblesValores.First());
+					}
+			return todoBien;
+		}
+
+		public bool Equals(NumeroGenerado other)
+		{
+			if (ReferenceEquals(null, other))
+				return false;
+			if (ReferenceEquals(this, other))
+				return true;
+			return other.num[0] == num[0] && other.num[1] == num[1] && other.num[2] == num[2] && other.num[3] == num[3];
+		}
+		public override bool Equals(object obj)
+		{
+			if (ReferenceEquals(null, obj))
+				return false;
+			if (ReferenceEquals(this, obj))
+				return true;
+			if (obj.GetType() != typeof (NumeroGenerado))
+				return false;
+			return Equals((NumeroGenerado) obj);
+		}
 		public bool EsUnificableCon(NumeroGenerado numero)
 		{
 			var esUnificable = true;
 			for (var i = 0; i < 4; i++)
-				esUnificable &= ((numero.num[i] == null || num[i] == null) && !EstaElDigito(numero.num[i])) || (numero.num[i] != null && numero.num[i] == num[i]);
+			{
+				var n1 = numero.num[i];
+				var n2 = num[i];
+				var esUnif = true;
 
+				if (n1.HasValue)
+					if (n2.HasValue)
+						esUnif = n1.Value == n2.Value;
+					else
+						esUnif = !DigitosExcluidos.Contains(n1.Value) && !EstaElDigito(n1.Value);
+				else if (n2.HasValue)
+					esUnif = !numero.DigitosExcluidos.Contains(n2.Value) && !numero.EstaElDigito(n2.Value);
+
+				esUnificable &= esUnif;
+			}
 			return esUnificable;
 		}
 		private bool EstaElDigito(int? digito)
@@ -435,6 +512,33 @@ namespace WindowsFormsApplication1
 					esta = digito == num[i];
 
 			return esta;
+		}
+		public static NumeroGenerado GenerarPrimerNumero()
+		{
+			IList<int> digitos = new List<int> {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+			var r = new Random((int) DateTime.Now.Ticks);
+
+			var indice = r.Next(0, 9);
+			var a = digitos[indice];
+			digitos.Remove(a);
+
+			indice = r.Next(0, 8);
+			var b = digitos[indice];
+			digitos.Remove(b);
+
+			indice = r.Next(0, 7);
+			var c = digitos[indice];
+			digitos.Remove(c);
+
+			indice = r.Next(0, 6);
+			var d = digitos[indice];
+			digitos.Remove(d);
+
+			return new NumeroGenerado(a, b, c, d);
+		}
+		public override int GetHashCode()
+		{
+			return (num != null ? num.GetHashCode() : 0);
 		}
 		public override string ToString()
 		{
@@ -455,54 +559,25 @@ namespace WindowsFormsApplication1
 				else
 					numUnificado.num[i] = numero.num[i];
 
-			numUnificado.DigitosExcluidos.AddRange(numero.DigitosExcluidos.Union(DigitosExcluidos));			
+			numUnificado.DigitosExcluidos.AddRange(numero.DigitosExcluidos.Union(DigitosExcluidos));
 			return numUnificado;
-		}
-		public void Completar()
-		{
-			IList<int> digitos = new List<int> {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
-			var posiblesValores = digitos.Except(DigitosExcluidos).ToList();
-			
-			for(var i=0; i<4; i++)
-				if( num[i]==null)
-				{
-					num[i] = posiblesValores.First();
-					posiblesValores.Remove(posiblesValores.First());
-				}
-		}
-		public static NumeroGenerado GenerarPrimerNumero()
-		{
-			IList<int> digitos = new List<int> { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
-			var r = new Random((int) DateTime.Now.Ticks);
-
-			var indice = r.Next(0, 9);
-			var a = digitos[indice];
-			digitos.Remove(a);
-
-			indice = r.Next(0, 8);
-			var b = digitos[indice];
-			digitos.Remove(b);
-
-			indice = r.Next(0, 7);
-			var c = digitos[indice];
-			digitos.Remove(c);
-
-			indice = r.Next(0, 6);
-			var d = digitos[indice];
-			digitos.Remove(d);
-
-			return new NumeroGenerado(a, b, c, d);	
 		}
 		#endregion
 	}
 
 	public class Test
 	{
-		private static void Test2()
+		#region Métodos
+		public static void TestJuego3B_2B()
 		{
-			TestNumero();
+			var j = new Juego();
+			j.AgregarRegla(6, 1, 2, 3, 3, 0);
+			j.AgregarRegla(0, 1, 2, 3, 2, 0);
+			j.AgregarRegla(6, 1, 2, 4, 2, 0);
+			var n = j.Adivinar();
 		}
-		private static void TestNumero()
+
+		public static void TestNumero()
 		{
 			var n12_7 = new NumeroGenerado(1, 2, null, 7);
 			var n__8_ = new NumeroGenerado(null, null, 8, null);
@@ -518,8 +593,7 @@ namespace WindowsFormsApplication1
 			todoBien = n12_7.UnificarCon(n__8_).ToString() == "1287";
 			todoBien = n__8_.UnificarCon(n1__3).ToString() == "1_83";
 			todoBien = n1__3.UnificarCon(n__8_).ToString() == "1_83";
-		}	
+		}
+		#endregion
 	}
-	
-
 }
