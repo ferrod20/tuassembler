@@ -78,8 +78,8 @@ namespace ConsoleApplication1
 
 
 			        	Regex.Replace(parte, "", "");
-						parte.R
-						var partesDelEjemplo = parte.Replace().Split(' ');
+						///parte.R
+						var partesDelEjemplo = parte.Replace("","").Split(' ');
 			            foreach (var p in partesDelEjemplo)
 			            {
 			                salida += p;

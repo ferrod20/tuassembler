@@ -16,6 +16,7 @@ namespace WindowsFormsApplication1
 		public Form1()
 		{
 			InitializeComponent();
+			Test.TestJuego3B_2B();
 		}
 
 		private void btnAdivinar_Click(object sender, EventArgs e)
@@ -32,10 +33,16 @@ namespace WindowsFormsApplication1
 				var regular = txtRegular.Text == string.Empty ? 0 : int.Parse(txtRegular.Text);
 				var reglaAgregada = j.AgregarRegla(num[0].Value, num[1].Value, num[2].Value, num[3].Value,bien,regular);
 
-				txtMensajes.Text += reglaAgregada.ToString() + @"
-";
+				txtMensajes.Text += reglaAgregada + Environment.NewLine;
 				num = j.Adivinar();
-				lblNumero.Text = num.ToString();
+				if (num == null)
+				{
+					lblNumero.Text = "Ocurrio un problema con el programa o puso algo mal....";
+					j = null;
+					txtMensajes.Text = string.Empty;
+				}
+				else
+					lblNumero.Text = num.ToString();
 			}
 				
 		}
