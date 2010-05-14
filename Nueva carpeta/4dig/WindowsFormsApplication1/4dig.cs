@@ -101,8 +101,7 @@ namespace WindowsFormsApplication1
 					switch (regular)
 					{
 						case 0:
-							//Numero n2 = Numero.GenerarComplemento(n0, n1, n2, n3);                        
-							//lista.Add(new NumeroGenerado(n0, n1, n2, n3, new List<int>{n0,n1,n2,n3}));    
+					        lista = NumeroGenerado.GenerarComplementos(new List<int> {n0, n1, n2, n3});					        
 							break;
 						case 1:
 							lista.Add(new NumeroGenerado(null, n0, null, null, new List<int> {n0, n1, n2, n3}));
@@ -563,6 +562,14 @@ namespace WindowsFormsApplication1
 			return numUnificado;
 		}
 		#endregion
+
+	    public static List<NumeroGenerado> GenerarComplementos(List<int> excluidos)
+	    {
+            IList<int> digitos = new List<int> { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+	        var posibles = digitos.Except(excluidos);
+
+	        return new List<NumeroGenerado>();
+	    }
 	}
 
 	public class Test

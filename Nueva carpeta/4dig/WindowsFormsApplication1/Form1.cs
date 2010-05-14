@@ -31,18 +31,22 @@ namespace WindowsFormsApplication1
 			{
 				var bien =txtBien.Text == string.Empty?0: int.Parse(txtBien.Text);
 				var regular = txtRegular.Text == string.Empty ? 0 : int.Parse(txtRegular.Text);
-				var reglaAgregada = j.AgregarRegla(num[0].Value, num[1].Value, num[2].Value, num[3].Value,bien,regular);
+                if( bien != 4)
+                {
+                    var reglaAgregada = j.AgregarRegla(num[0].Value, num[1].Value, num[2].Value, num[3].Value, bien, regular);
 
-				txtMensajes.Text += reglaAgregada + Environment.NewLine;
-				num = j.Adivinar();
-				if (num == null)
-				{
-					lblNumero.Text = "Ocurrio un problema con el programa o puso algo mal....";
-					j = null;
-					txtMensajes.Text = string.Empty;
-				}
-				else
-					lblNumero.Text = num.ToString();
+                    txtMensajes.Text += reglaAgregada + Environment.NewLine;
+                    num = j.Adivinar();
+                    if (num == null)
+                    {
+                        lblNumero.Text = "Ocurrio un problema con el programa o puso algo mal....";
+                        j = null;
+                        txtMensajes.Text = string.Empty;
+                    }
+                    else
+                        lblNumero.Text = num.ToString();    
+                }
+				
 			}
 				
 		}
