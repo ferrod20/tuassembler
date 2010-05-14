@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using Facet.Combinatorics;
 
 namespace WindowsFormsApplication1
-
 {
 	public class Juego
 	{
@@ -16,7 +16,7 @@ namespace WindowsFormsApplication1
 		{
 			NumeroGenerado n = null;
 			if (reglas.Count == 0)
-				n = NumeroGenerado.GenerarPrimerNumero();
+				n = NumeroGenerado.GenerarNumeroAlAzar();
 			else
 			{
 				var nums = new List<NumeroGenerado>();
@@ -101,135 +101,135 @@ namespace WindowsFormsApplication1
 					switch (regular)
 					{
 						case 0:
-					        lista = NumeroGenerado.GenerarComplementos(new List<int> {n0, n1, n2, n3});					        
+							lista = NumeroGenerado.GenerarComplementos(new List<int> { n0, n1, n2, n3 });
 							break;
 						case 1:
-							lista.Add(new NumeroGenerado(null, n0, null, null, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(null, null, n0, null, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(null, null, null, n0, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n1, null, null, null, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(null, null, n1, null, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(null, null, null, n1, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n2, null, null, null, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(null, n2, null, null, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(null, null, null, n2, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n3, null, null, null, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(null, n3, null, null, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(null, null, n3, null, new List<int> {n0, n1, n2, n3}));
+							lista.Add(new NumeroGenerado(null, n0, null, null, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(null, null, n0, null, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(null, null, null, n0, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n1, null, null, null, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(null, null, n1, null, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(null, null, null, n1, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n2, null, null, null, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(null, n2, null, null, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(null, null, null, n2, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n3, null, null, null, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(null, n3, null, null, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(null, null, n3, null, new List<int> { n0, n1, n2, n3 }));
 							break;
 						case 2:
-							lista.Add(new NumeroGenerado(n1, n0, null, null, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(null, n0, n1, null, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(null, n0, null, n1, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n2, n0, null, null, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(null, n0, null, n2, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n3, n0, null, null, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(null, n0, n3, null, new List<int> {n0, n1, n2, n3}));
+							lista.Add(new NumeroGenerado(n1, n0, null, null, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(null, n0, n1, null, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(null, n0, null, n1, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n2, n0, null, null, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(null, n0, null, n2, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n3, n0, null, null, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(null, n0, n3, null, new List<int> { n0, n1, n2, n3 }));
 
-							lista.Add(new NumeroGenerado(n1, null, n0, null, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(null, null, n0, n1, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n2, null, n0, null, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(null, n2, n0, null, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(null, null, n0, n2, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n3, null, n0, null, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(null, n3, n0, null, new List<int> {n0, n1, n2, n3}));
+							lista.Add(new NumeroGenerado(n1, null, n0, null, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(null, null, n0, n1, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n2, null, n0, null, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(null, n2, n0, null, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(null, null, n0, n2, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n3, null, n0, null, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(null, n3, n0, null, new List<int> { n0, n1, n2, n3 }));
 
-							lista.Add(new NumeroGenerado(n1, null, null, n0, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(null, null, n1, n0, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n2, null, null, n0, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(null, n2, null, n0, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n3, null, null, n0, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(null, n3, null, n0, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(null, null, n3, n0, new List<int> {n0, n1, n2, n3}));
+							lista.Add(new NumeroGenerado(n1, null, null, n0, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(null, null, n1, n0, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n2, null, null, n0, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(null, n2, null, n0, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n3, null, null, n0, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(null, n3, null, n0, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(null, null, n3, n0, new List<int> { n0, n1, n2, n3 }));
 
-							lista.Add(new NumeroGenerado(n1, n2, null, null, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n1, null, null, n2, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n1, n3, null, null, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n1, null, n3, null, new List<int> {n0, n1, n2, n3}));
+							lista.Add(new NumeroGenerado(n1, n2, null, null, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n1, null, null, n2, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n1, n3, null, null, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n1, null, n3, null, new List<int> { n0, n1, n2, n3 }));
 
-							lista.Add(new NumeroGenerado(n2, null, n1, null, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(null, n2, n1, null, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(null, null, n1, n2, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(null, n3, n1, null, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n3, null, n1, null, new List<int> {n0, n1, n2, n3}));
+							lista.Add(new NumeroGenerado(n2, null, n1, null, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(null, n2, n1, null, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(null, null, n1, n2, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(null, n3, n1, null, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n3, null, n1, null, new List<int> { n0, n1, n2, n3 }));
 
-							lista.Add(new NumeroGenerado(n2, null, null, n1, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(null, n2, null, n1, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n3, null, null, n1, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(null, n3, null, n1, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(null, null, n3, n1, new List<int> {n0, n1, n2, n3}));
+							lista.Add(new NumeroGenerado(n2, null, null, n1, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(null, n2, null, n1, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n3, null, null, n1, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(null, n3, null, n1, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(null, null, n3, n1, new List<int> { n0, n1, n2, n3 }));
 
-							lista.Add(new NumeroGenerado(n2, n3, null, null, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n2, null, n3, null, new List<int> {n0, n1, n2, n3}));
+							lista.Add(new NumeroGenerado(n2, n3, null, null, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n2, null, n3, null, new List<int> { n0, n1, n2, n3 }));
 
-							lista.Add(new NumeroGenerado(n3, n2, null, null, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(null, n2, n3, null, new List<int> {n0, n1, n2, n3}));
+							lista.Add(new NumeroGenerado(n3, n2, null, null, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(null, n2, n3, null, new List<int> { n0, n1, n2, n3 }));
 
-							lista.Add(new NumeroGenerado(n3, null, null, n2, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(null, n3, null, n2, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(null, null, n3, n2, new List<int> {n0, n1, n2, n3}));
+							lista.Add(new NumeroGenerado(n3, null, null, n2, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(null, n3, null, n2, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(null, null, n3, n2, new List<int> { n0, n1, n2, n3 }));
 							break;
 						case 3:
 							///0 1 y 2                                                                      
-							lista.Add(new NumeroGenerado(null, n0, n1, n2, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n2, n0, n1, null, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n2, n0, null, n1, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n1, n0, null, n2, new List<int> {n0, n1, n2, n3}));
+							lista.Add(new NumeroGenerado(null, n0, n1, n2, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n2, n0, n1, null, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n2, n0, null, n1, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n1, n0, null, n2, new List<int> { n0, n1, n2, n3 }));
 
-							lista.Add(new NumeroGenerado(n1, n2, n0, null, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(null, n2, n0, n1, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n2, null, n0, n1, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n1, null, n0, n2, new List<int> {n0, n1, n2, n3}));
+							lista.Add(new NumeroGenerado(n1, n2, n0, null, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(null, n2, n0, n1, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n2, null, n0, n1, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n1, null, n0, n2, new List<int> { n0, n1, n2, n3 }));
 
-							lista.Add(new NumeroGenerado(null, n2, n1, n0, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n2, null, n1, n0, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n1, n2, null, n0, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n2, n1, null, n0, new List<int> {n0, n1, n2, n3}));
+							lista.Add(new NumeroGenerado(null, n2, n1, n0, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n2, null, n1, n0, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n1, n2, null, n0, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n2, n1, null, n0, new List<int> { n0, n1, n2, n3 }));
 
 							///0 2 y 3                                                                      
-							lista.Add(new NumeroGenerado(null, n0, n3, n2, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n2, n0, n3, null, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n3, n0, n2, null, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n3, n0, null, n2, new List<int> {n0, n1, n2, n3}));
+							lista.Add(new NumeroGenerado(null, n0, n3, n2, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n2, n0, n3, null, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n3, n0, n2, null, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n3, n0, null, n2, new List<int> { n0, n1, n2, n3 }));
 
-							lista.Add(new NumeroGenerado(n3, n2, n0, null, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n2, n3, n0, null, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(null, n3, n0, n2, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n3, null, n0, n2, new List<int> {n0, n1, n2, n3}));
+							lista.Add(new NumeroGenerado(n3, n2, n0, null, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n2, n3, n0, null, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(null, n3, n0, n2, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n3, null, n0, n2, new List<int> { n0, n1, n2, n3 }));
 
-							lista.Add(new NumeroGenerado(null, n2, n3, n0, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n2, null, n3, n0, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n2, n3, null, n0, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n3, n2, null, n0, new List<int> {n0, n1, n2, n3}));
+							lista.Add(new NumeroGenerado(null, n2, n3, n0, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n2, null, n3, n0, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n2, n3, null, n0, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n3, n2, null, n0, new List<int> { n0, n1, n2, n3 }));
 
 							///1 2 y 3                                                                      
-							lista.Add(new NumeroGenerado(n1, null, n3, n2, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n1, n2, n3, null, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n1, n3, n2, null, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n1, n3, null, n2, new List<int> {n0, n1, n2, n3}));
+							lista.Add(new NumeroGenerado(n1, null, n3, n2, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n1, n2, n3, null, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n1, n3, n2, null, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n1, n3, null, n2, new List<int> { n0, n1, n2, n3 }));
 
-							lista.Add(new NumeroGenerado(n3, n2, n1, null, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n2, n3, n1, null, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(null, n3, n1, n2, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n3, null, n1, n2, new List<int> {n0, n1, n2, n3}));
+							lista.Add(new NumeroGenerado(n3, n2, n1, null, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n2, n3, n1, null, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(null, n3, n1, n2, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n3, null, n1, n2, new List<int> { n0, n1, n2, n3 }));
 
-							lista.Add(new NumeroGenerado(null, n2, n3, n1, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n2, null, n3, n1, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n2, n3, null, n1, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n3, n2, null, n1, new List<int> {n0, n1, n2, n3}));
+							lista.Add(new NumeroGenerado(null, n2, n3, n1, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n2, null, n3, n1, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n2, n3, null, n1, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n3, n2, null, n1, new List<int> { n0, n1, n2, n3 }));
 							break;
 						case 4:
-							lista.Add(new NumeroGenerado(n1, n2, n3, n0, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n1, n0, n3, n2, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n1, n3, n0, n2, new List<int> {n0, n1, n2, n3}));
+							lista.Add(new NumeroGenerado(n1, n2, n3, n0, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n1, n0, n3, n2, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n1, n3, n0, n2, new List<int> { n0, n1, n2, n3 }));
 
-							lista.Add(new NumeroGenerado(n2, n3, n1, n0, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n3, n2, n1, n0, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n3, n0, n1, n2, new List<int> {n0, n1, n2, n3}));
+							lista.Add(new NumeroGenerado(n2, n3, n1, n0, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n3, n2, n1, n0, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n3, n0, n1, n2, new List<int> { n0, n1, n2, n3 }));
 
-							lista.Add(new NumeroGenerado(n2, n0, n3, n1, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n2, n3, n0, n1, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n3, n2, n0, n1, new List<int> {n0, n1, n2, n3}));
+							lista.Add(new NumeroGenerado(n2, n0, n3, n1, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n2, n3, n0, n1, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n3, n2, n0, n1, new List<int> { n0, n1, n2, n3 }));
 							break;
 					}
 					break;
@@ -237,91 +237,91 @@ namespace WindowsFormsApplication1
 					switch (regular)
 					{
 						case 0:
-							lista.Add(new NumeroGenerado(n0, null, null, null, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(null, n1, null, null, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(null, null, n2, null, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(null, null, null, n3, new List<int> {n0, n1, n2, n3}));
+							lista.Add(new NumeroGenerado(n0, null, null, null, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(null, n1, null, null, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(null, null, n2, null, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(null, null, null, n3, new List<int> { n0, n1, n2, n3 }));
 							break;
 						case 1:
-							lista.Add(new NumeroGenerado(n0, null, n1, null, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n0, null, null, n1, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n0, n2, null, null, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n0, null, null, n2, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n0, n3, null, null, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n0, null, n3, null, new List<int> {n0, n1, n2, n3}));
+							lista.Add(new NumeroGenerado(n0, null, n1, null, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n0, null, null, n1, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n0, n2, null, null, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n0, null, null, n2, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n0, n3, null, null, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n0, null, n3, null, new List<int> { n0, n1, n2, n3 }));
 
-							lista.Add(new NumeroGenerado(null, n1, n0, null, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(null, n1, null, n0, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n2, n1, null, null, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(null, n1, null, n2, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n3, n1, null, null, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(null, n1, n3, null, new List<int> {n0, n1, n2, n3}));
+							lista.Add(new NumeroGenerado(null, n1, n0, null, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(null, n1, null, n0, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n2, n1, null, null, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(null, n1, null, n2, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n3, n1, null, null, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(null, n1, n3, null, new List<int> { n0, n1, n2, n3 }));
 
-							lista.Add(new NumeroGenerado(null, n0, n2, null, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(null, null, n2, n0, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n1, null, n2, null, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(null, null, n2, n1, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n3, null, n2, null, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(null, n3, n2, null, new List<int> {n0, n1, n2, n3}));
+							lista.Add(new NumeroGenerado(null, n0, n2, null, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(null, null, n2, n0, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n1, null, n2, null, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(null, null, n2, n1, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n3, null, n2, null, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(null, n3, n2, null, new List<int> { n0, n1, n2, n3 }));
 
-							lista.Add(new NumeroGenerado(null, n0, null, n3, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(null, null, n0, n3, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n1, null, null, n3, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(null, null, n1, n3, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n2, null, null, n3, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(null, n2, null, n3, new List<int> {n0, n1, n2, n3}));
+							lista.Add(new NumeroGenerado(null, n0, null, n3, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(null, null, n0, n3, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n1, null, null, n3, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(null, null, n1, n3, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n2, null, null, n3, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(null, n2, null, n3, new List<int> { n0, n1, n2, n3 }));
 
 							break;
 						case 2:
-							lista.Add(new NumeroGenerado(n0, n2, n1, null, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n0, null, n1, n2, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n0, n2, null, n1, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n0, n3, n1, null, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n0, n3, null, n1, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n0, null, n3, n1, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n0, n2, n3, null, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n0, n3, null, n2, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n0, null, n3, n2, new List<int> {n0, n1, n2, n3}));
+							lista.Add(new NumeroGenerado(n0, n2, n1, null, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n0, null, n1, n2, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n0, n2, null, n1, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n0, n3, n1, null, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n0, n3, null, n1, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n0, null, n3, n1, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n0, n2, n3, null, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n0, n3, null, n2, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n0, null, n3, n2, new List<int> { n0, n1, n2, n3 }));
 
-							lista.Add(new NumeroGenerado(null, n1, n0, n2, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n2, n1, n0, null, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n2, n1, null, n0, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n3, n1, n0, null, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n3, n1, null, n0, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(null, n1, n3, n0, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(null, n1, n3, n2, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n3, n1, null, n2, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n2, n1, n3, null, new List<int> {n0, n1, n2, n3}));
+							lista.Add(new NumeroGenerado(null, n1, n0, n2, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n2, n1, n0, null, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n2, n1, null, n0, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n3, n1, n0, null, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n3, n1, null, n0, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(null, n1, n3, n0, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(null, n1, n3, n2, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n3, n1, null, n2, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n2, n1, n3, null, new List<int> { n0, n1, n2, n3 }));
 
-							lista.Add(new NumeroGenerado(n1, n0, n2, null, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(null, n0, n2, n1, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n1, null, n2, n0, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n3, n0, n2, null, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n3, null, n2, n0, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(null, n3, n2, n0, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n1, n3, n2, null, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n3, n1, n2, null, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n3, null, n2, n1, new List<int> {n0, n1, n2, n3}));
+							lista.Add(new NumeroGenerado(n1, n0, n2, null, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(null, n0, n2, n1, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n1, null, n2, n0, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n3, n0, n2, null, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n3, null, n2, n0, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(null, n3, n2, n0, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n1, n3, n2, null, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n3, n1, n2, null, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n3, null, n2, n1, new List<int> { n0, n1, n2, n3 }));
 
-							lista.Add(new NumeroGenerado(null, n0, n1, n3, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n1, n0, null, n3, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n1, null, n0, n3, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n2, n0, null, n3, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n2, null, n0, n3, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(null, n2, n0, n3, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n1, n2, null, n3, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n2, null, n1, n3, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(null, n2, n1, n3, new List<int> {n0, n1, n2, n3}));
+							lista.Add(new NumeroGenerado(null, n0, n1, n3, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n1, n0, null, n3, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n1, null, n0, n3, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n2, n0, null, n3, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n2, null, n0, n3, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(null, n2, n0, n3, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n1, n2, null, n3, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n2, null, n1, n3, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(null, n2, n1, n3, new List<int> { n0, n1, n2, n3 }));
 							break;
 						case 3:
-							lista.Add(new NumeroGenerado(n0, n2, n3, n1, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n0, n3, n1, n2, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n3, n1, n1, n2, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n2, n1, n3, n1, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n1, n3, n2, n0, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n3, n0, n2, n1, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n1, n2, n0, n3, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n2, n0, n1, n3, new List<int> {n0, n1, n2, n3}));
+							lista.Add(new NumeroGenerado(n0, n2, n3, n1, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n0, n3, n1, n2, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n3, n1, n1, n2, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n2, n1, n3, n1, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n1, n3, n2, n0, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n3, n0, n2, n1, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n1, n2, n0, n3, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n2, n0, n1, n3, new List<int> { n0, n1, n2, n3 }));
 							break;
 					}
 					break;
@@ -329,45 +329,45 @@ namespace WindowsFormsApplication1
 					switch (regular)
 					{
 						case 0:
-							lista.Add(new NumeroGenerado(n0, n1, null, null, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n0, null, n2, null, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n0, null, null, n3, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(null, n1, n2, null, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(null, n1, null, n3, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(null, null, n2, n3, new List<int> {n0, n1, n2, n3}));
+							lista.Add(new NumeroGenerado(n0, n1, null, null, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n0, null, n2, null, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n0, null, null, n3, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(null, n1, n2, null, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(null, n1, null, n3, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(null, null, n2, n3, new List<int> { n0, n1, n2, n3 }));
 							break;
 						case 1:
-							lista.Add(new NumeroGenerado(n0, n1, n3, null, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n0, n1, null, n2, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n0, n3, n2, null, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n0, null, n2, n1, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n0, n2, null, n3, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n0, null, n1, n3, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n3, n1, n2, null, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(null, n1, n2, n1, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(null, n1, n0, n3, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n2, n1, null, n3, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n1, null, n2, n3, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(null, n0, n2, n3, new List<int> {n0, n1, n2, n3}));
+							lista.Add(new NumeroGenerado(n0, n1, n3, null, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n0, n1, null, n2, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n0, n3, n2, null, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n0, null, n2, n1, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n0, n2, null, n3, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n0, null, n1, n3, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n3, n1, n2, null, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(null, n1, n2, n1, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(null, n1, n0, n3, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n2, n1, null, n3, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n1, null, n2, n3, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(null, n0, n2, n3, new List<int> { n0, n1, n2, n3 }));
 							break;
 						case 2:
-							lista.Add(new NumeroGenerado(n0, n1, n3, n2, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n0, n3, n2, n1, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n0, n2, n1, n3, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n3, n1, n2, n0, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n2, n1, n0, n3, new List<int> {n0, n1, n2, n3}));
-							lista.Add(new NumeroGenerado(n1, n0, n2, n3, new List<int> {n0, n1, n2, n3}));
+							lista.Add(new NumeroGenerado(n0, n1, n3, n2, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n0, n3, n2, n1, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n0, n2, n1, n3, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n3, n1, n2, n0, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n2, n1, n0, n3, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(n1, n0, n2, n3, new List<int> { n0, n1, n2, n3 }));
 							break;
 					}
 					break;
 				case 3:
-					lista.Add(new NumeroGenerado(null, n1, n2, n3, new List<int> {n0, n1, n2, n3}));
-					lista.Add(new NumeroGenerado(n0, null, n2, n3, new List<int> {n0, n1, n2, n3}));
-					lista.Add(new NumeroGenerado(n0, n1, null, n3, new List<int> {n0, n1, n2, n3}));
-					lista.Add(new NumeroGenerado(n0, n1, n2, null, new List<int> {n0, n1, n2, n3}));
+					lista.Add(new NumeroGenerado(null, n1, n2, n3, new List<int> { n0, n1, n2, n3 }));
+					lista.Add(new NumeroGenerado(n0, null, n2, n3, new List<int> { n0, n1, n2, n3 }));
+					lista.Add(new NumeroGenerado(n0, n1, null, n3, new List<int> { n0, n1, n2, n3 }));
+					lista.Add(new NumeroGenerado(n0, n1, n2, null, new List<int> { n0, n1, n2, n3 }));
 					break;
 				case 4:
-					lista.Add(new NumeroGenerado(n0, n1, n2, n3, new List<int> {n0, n1, n2, n3}));
+					lista.Add(new NumeroGenerado(n0, n1, n2, n3, new List<int> { n0, n1, n2, n3 }));
 					break;
 			}
 			return lista;
@@ -400,7 +400,8 @@ namespace WindowsFormsApplication1
 		public NumeroGenerado()
 		{
 		}
-		public NumeroGenerado(int? a, int? b, int? c, int? d, List<int> excluidos) : this(a, b, c, d)
+		public NumeroGenerado(int? a, int? b, int? c, int? d, List<int> excluidos)
+			: this(a, b, c, d)
 		{
 			if (excluidos != null)
 				DigitosExcluidos.AddRange(excluidos);
@@ -448,7 +449,7 @@ namespace WindowsFormsApplication1
 		#region Métodos
 		public bool Completar()
 		{
-			IList<int> digitos = new List<int> {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+			IList<int> digitos = new List<int> { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
 			var posiblesValores = digitos.Except(DigitosExcluidos).ToList();
 
 			var todoBien = posiblesValores.Count >= CuantosFaltanCompletar;
@@ -477,9 +478,9 @@ namespace WindowsFormsApplication1
 				return false;
 			if (ReferenceEquals(this, obj))
 				return true;
-			if (obj.GetType() != typeof (NumeroGenerado))
+			if (obj.GetType() != typeof(NumeroGenerado))
 				return false;
-			return Equals((NumeroGenerado) obj);
+			return Equals((NumeroGenerado)obj);
 		}
 		public bool EsUnificableCon(NumeroGenerado numero)
 		{
@@ -512,10 +513,10 @@ namespace WindowsFormsApplication1
 
 			return esta;
 		}
-		public static NumeroGenerado GenerarPrimerNumero()
+		public static NumeroGenerado GenerarNumeroAlAzar()
 		{
-			IList<int> digitos = new List<int> {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
-			var r = new Random((int) DateTime.Now.Ticks);
+			IList<int> digitos = new List<int> { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+			var r = new Random((int)DateTime.Now.Ticks);
 
 			var indice = r.Next(0, 9);
 			var a = digitos[indice];
@@ -563,13 +564,65 @@ namespace WindowsFormsApplication1
 		}
 		#endregion
 
-	    public static List<NumeroGenerado> GenerarComplementos(List<int> excluidos)
-	    {
-            IList<int> digitos = new List<int> { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
-	        var posibles = digitos.Except(excluidos);
+		public static List<NumeroGenerado> GenerarComplementos(List<int> excluidos)
+		{
+			IList<int> digitos = new List<int> { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+			var posibles = digitos.Except(excluidos);
 
-	        return new List<NumeroGenerado>();
-	    }
+			var variaciones = new Variations<int>(posibles, 4);
+			return variaciones.Select(variacion => new NumeroGenerado(variacion[0], variacion[1], variacion[2], variacion[3], excluidos.Union(variacion).ToList())).ToList();
+		}
+
+		public void Calificar(string numero, out int bien, out int regular)
+		{
+			bien =0;
+			regular = 0;
+			var n0 = int.Parse( numero[0].ToString() );
+			var n1 = int.Parse(numero[1].ToString());
+			var n2 = int.Parse(numero[2].ToString());
+			var n3 = int.Parse(numero[3].ToString());
+
+			if (n0 == num[0])
+				bien++;
+			else if (Contiene(n0))
+				regular++;
+
+			if (n1 == num[1])
+				bien++;
+			else if (Contiene(n1))
+				regular++;
+
+			if (n2 == num[2])
+				bien++;
+			else if (Contiene(n2))
+				regular++;
+
+			if (n3 == num[3])
+				bien++;
+			else if (Contiene(n3))
+				regular++;			
+		}
+		private bool Contiene(int digito)
+		{
+			return num.Any(n => n == digito);			
+		}
+		public static bool EsValido(string numero)
+		{
+			int num;
+			var esValido = !string.IsNullOrEmpty(numero) && numero.Length == 4 && int.TryParse(numero, out num) ;
+			if( esValido)
+			{
+				 var n0 = numero[0];
+				 var n1 = numero[1];
+				 var n2 = numero[2];
+				 var n3 = numero[3];
+
+				esValido &= n0 != n1 && n0 != n2 && n0 != n3 && n1 != n2 && n1 != n3 && n2 != n3;
+			}
+			
+
+			return esValido;
+		}
 	}
 
 	public class Test
