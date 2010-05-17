@@ -1,125 +1,126 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 
 namespace WindowsFormsApplication1
 {
-	public partial class Form1 : Form
-	{
-		private Juego j;
-		private NumeroGenerado num;
-		private NumeroGenerado numeroAAdivinar;
-		private bool ganoLaCompu;
-		public Form1()
-		{
-			InitializeComponent();
-		    Test.TestNumero2();
-		    Test.TestJuego3B_2B();
-		}
-		private void Empezar()
-		{
-			j = new Juego();
-			numeroAAdivinar = NumeroGenerado.GenerarNumeroAlAzar();
-			num = j.Adivinar();
-			label4.Text = num.ToString() + " --- " + j.CantidadDeOpciones;
+    public partial class Form1 : Form
+    {
+        #region Variables de instancia
+        private Juego j;
+        #endregion
 
-			ProximoTurno(true);
-			MA.LimpiarTextBoxs(txtHistoriaCompu,txtHistoriaJugador);			
-		}
+        #region Constructores
+        public Form1()
+        {
+            InitializeComponent();
+        }
+        #endregion
 
-		private void btnSeguir_Click(object sender, EventArgs e)
-		{
-			if (label4.Text == "Ocurrio un problema con el programa o pusiste algo mal....")
-				Empezar();
-			else
-			{
-				var mensajeDeError = string.Empty;
-				int bien = 0,regular =0;
-				if (txtBien.Text != string.Empty)
-					if (!int.TryParse(txtBien.Text, out bien))
-						mensajeDeError = "Escribir un numero en bien!";
+        #region Métodos
+        private void Empezar()
+        {
+            j = new Juego();
+            j.GenerarNumeroAAdivinar();
+            j.Adivinar();
+            label4.Text = j.NumeroAdivinadoPorLaCompu + " (" + j.CantidadDeOpciones + " opciones)";
 
-				if (txtRegular.Text != string.Empty)
-					if (!int.TryParse(txtRegular.Text, out regular))
-						mensajeDeError = "Escribir un numero en regular!";
-						
-				if( regular+bien > 4)
-					mensajeDeError = "Estas poniendo cualquier cosa putoo/aa!";
-				if( mensajeDeError == string.Empty)
-				{
-					var reglaAgregada = j.AgregarRegla(num[0].Value, num[1].Value, num[2].Value, num[3].Value, bien, regular);
-					txtHistoriaCompu.Text += reglaAgregada + Environment.NewLine;
+            ProximoTurno(true);
+            MA.LimpiarTextBoxs(txtHistoriaCompu, txtHistoriaJugador);
+        }
 
-					if (bien != 4)
-					{
-						
-						num = j.Adivinar();
-						if (num == null)
-							label4.Text = "Ocurrio un problema con el programa o pusiste algo mal....";
-						else
-							ProximoTurno(false);
-					}
-					else
-					{
-						ganoLaCompu = true;
-						ProximoTurno(false);
-					}						
-				}
-				else
-					MessageBox.Show(mensajeDeError);
-			}
-		}
+        private void PantallaGano(string mensaje)
+        {
+            MessageBox.Show(mensaje);
+            Empezar();
+        }
 
-		private void btnProbar_Click(object sender, EventArgs e)
-		{
-			int bien, regular;
-			if (NumeroGenerado.EsValido(txtNumero.Text))
-			{
-				numeroAAdivinar.Calificar(txtNumero.Text, out bien, out regular);
-				txtHistoriaJugador.Text += txtNumero.Text + " " + bien + "B " + regular + "R" + Environment.NewLine;
-				if (bien < 4)
-				{
-					if( ganoLaCompu )						
-						PantallaGano("Perdiste, el numero era: "+ numeroAAdivinar);
-					else
-					{
-						ProximoTurno(true);
-                        label4.Text = num.ToString() + " --- " + j.CantidadDeOpciones; 
-					}
-					
-				}
-				else
-					PantallaGano(ganoLaCompu ? "Empate" : "Ganaste!");
-					
-			}
-			else
-			{
-				MessageBox.Show("Debe ingresar un número de 4 cifras distintas.");
-				txtNumero.Text = string.Empty;
-				txtNumero.Focus();
-			}	
-		}
-		private void PantallaGano(string mensaje)
-		{
-			MessageBox.Show( mensaje );
-			Empezar();
-		}
-		
-		private void ProximoTurno(bool paraLaCompu)
-		{
-			MA.LimpiarTextBoxs(txtBien, txtRegular,txtNumero);
-			MA.MostrarControles(paraLaCompu, txtBien, txtRegular, btnSeguir, lblBien, lblRegular);
-			MA.MostrarControles(!paraLaCompu, label5, txtNumero, btnProbar, lblNUm);
-		}
+        private void ProximoTurno(bool paraLaCompu)
+        {
+            MA.LimpiarTextBoxs(txtBien, txtRegular, txtNumero);
+            MA.MostrarControles(paraLaCompu, txtBien, txtRegular, btnSeguir, lblBien, lblRegular, label4);
+            MA.MostrarControles(!paraLaCompu, txtNumero, btnProbar, lblNUm);
 
-		private void Form1_Load(object sender, EventArgs e)
-		{
-			Empezar();
-		}
-	}
+            AcceptButton = paraLaCompu? btnSeguir:btnProbar;
+            if (paraLaCompu)
+                txtBien.Focus();
+            else
+                txtNumero.Focus();
+            
+        }
+        #endregion
+
+        #region Manejadores de eventos
+        private void btnProbar_Click(object sender, EventArgs e)
+        {
+            int bien, regular;
+            if (NumeroGenerado.EsValido(txtNumero.Text))
+            {
+                j.Calificar(txtNumero.Text, out bien, out regular);
+                txtHistoriaJugador.Text += txtNumero.Text + " " + bien + "B " + regular + "R" + Environment.NewLine;
+                if (bien < 4)
+                    if (j.GanoLaCompu)
+                        PantallaGano("Perdiste, el numero era: " + j.NumeroAAdivinarPorElJugador);
+                    else
+                    {
+                        ProximoTurno(true);
+                        label4.Text = j.NumeroAdivinadoPorLaCompu + " (" + j.CantidadDeOpciones + " opciones)";
+                    }
+                else
+                    PantallaGano(j.GanoLaCompu ? "Empate" : "Ganaste!");
+            }
+            else
+            {
+                MessageBox.Show("Ingresá un número de 4 cifras distintas.");
+                txtNumero.Text = string.Empty;
+                txtNumero.Focus();
+            }
+        }
+        private void btnSeguir_Click(object sender, EventArgs e)
+        {
+            if (label4.Text == "Ocurrio un problema con el programa o pusiste algo mal....")
+                Empezar();
+            else
+            {
+                var mensajeDeError = string.Empty;
+                int bien = 0, regular = 0;
+                if (txtBien.Text != string.Empty)
+                    if (!int.TryParse(txtBien.Text, out bien))
+                        mensajeDeError = "Escribir un numero en bien!";
+
+                if (txtRegular.Text != string.Empty)
+                    if (!int.TryParse(txtRegular.Text, out regular))
+                        mensajeDeError = "Escribir un numero en regular!";
+
+                if (regular + bien > 4)
+                    mensajeDeError = "Estas poniendo cualquier cosa!!";
+                if (mensajeDeError == string.Empty)
+                {
+                    var reglaAgregada = j.AgregarReglaAlNumeroAdivinado(bien, regular);
+                    txtHistoriaCompu.Text += reglaAgregada + Environment.NewLine;
+
+                    if (bien != 4)
+                    {
+                        j.Adivinar();
+                        if (j.NumeroAdivinadoPorLaCompu == null)
+                            label4.Text = "Ocurrio un problema con el programa o pusiste algo mal....";
+                        else
+                            ProximoTurno(false);
+                    }
+                    else
+                    {
+                        j.GanoLaCompu = true;
+                        ProximoTurno(false);
+                    }
+                }
+                else
+                    MessageBox.Show(mensajeDeError);
+            }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            Empezar();
+        }
+        #endregion
+    }
 }
