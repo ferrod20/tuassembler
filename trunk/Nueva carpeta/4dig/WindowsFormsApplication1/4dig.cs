@@ -9,14 +9,19 @@ namespace WindowsFormsApplication1
 	{
 		#region Variables de instancia
 		private List<Regla> reglas = new List<Regla>();
-		#endregion
+	    public int CantidadDeOpciones;
+	    #endregion
 
 		#region Métodos
 		public NumeroGenerado Adivinar()
 		{
 			NumeroGenerado n = null;
 			if (reglas.Count == 0)
-				n = NumeroGenerado.GenerarNumeroAlAzar();
+			{
+                n = NumeroGenerado.GenerarNumeroAlAzar();
+			    CantidadDeOpciones = 120960; //10.9.8.7   4.3.2
+			}
+				
 			else
 			{
 				var nums = new List<NumeroGenerado>();
@@ -32,6 +37,8 @@ namespace WindowsFormsApplication1
 						if (nums.Contains(r.Numero))
 							nums.Remove(r.Numero);
 					n = nums.First();
+                    CantidadDeOpciones = CalcularOpciones( nums);
+
 					if (!n.Completar())
 						n = null;
 				}
@@ -39,7 +46,34 @@ namespace WindowsFormsApplication1
 
 			return n;
 		}
-		public Regla AgregarRegla(int a, int b, int c, int d, int bien, int regular)
+	    private int CalcularOpciones(List<NumeroGenerado> numerosGenerados)
+	    {
+            var cantDeOpciones= 0;
+            foreach(var num in numerosGenerados)
+            {
+                var posibles = 10 - num.DigitosExcluidos.Count;
+                switch (num.CantidadDeNulls)
+                {
+                    case 0:
+                        cantDeOpciones += 1;
+                        break;
+                    case 1:
+                        cantDeOpciones += posibles;
+                        break;
+                    case 2:
+                        cantDeOpciones += posibles * (posibles-1) *2;
+                        break;
+                    case 3:
+                        cantDeOpciones += posibles * (posibles - 1) * (posibles - 2) * 6;
+                        break;
+                    case 4:
+                        cantDeOpciones += posibles * (posibles - 1) * (posibles - 2) * (posibles - 3) * 48;
+                        break;
+                }
+            }
+	        return cantDeOpciones;
+	    }
+	    public Regla AgregarRegla(int a, int b, int c, int d, int bien, int regular)
 		{
 			var regla = new Regla(a, b, c, d, bien, regular);
 			reglas.Add(regla);
@@ -300,7 +334,7 @@ namespace WindowsFormsApplication1
 							lista.Add(new NumeroGenerado(n3, null, n2, n0, new List<int> { n0, n1, n2, n3 }));
 							lista.Add(new NumeroGenerado(null, n3, n2, n0, new List<int> { n0, n1, n2, n3 }));
 							lista.Add(new NumeroGenerado(n1, n3, n2, null, new List<int> { n0, n1, n2, n3 }));
-							lista.Add(new NumeroGenerado(n3, n1, n2, null, new List<int> { n0, n1, n2, n3 }));
+							lista.Add(new NumeroGenerado(null, n3, n2, n1, new List<int> { n0, n1, n2, n3 }));
 							lista.Add(new NumeroGenerado(n3, null, n2, n1, new List<int> { n0, n1, n2, n3 }));
 
 							lista.Add(new NumeroGenerado(null, n0, n1, n3, new List<int> { n0, n1, n2, n3 }));
@@ -383,7 +417,7 @@ namespace WindowsFormsApplication1
 		}
 		public override string ToString()
 		{
-			return n0 + n1.ToString() + n2 + n3 + " " + bien + " BIEN " + regular + " REGULAR";
+			return n0 + n1.ToString() + n2 + n3 + " " + bien + "B " + regular + "R";
 		}
 		#endregion
 	}
@@ -444,7 +478,15 @@ namespace WindowsFormsApplication1
 				return cuantos;
 			}
 		}
-		#endregion
+
+	    public int CantidadDeNulls
+	    {
+	        get
+	        {
+                return num.Count(n=>n==null);
+	        }	        
+	    }
+	    #endregion
 
 		#region Métodos
 		public bool Completar()
@@ -631,13 +673,26 @@ namespace WindowsFormsApplication1
 		public static void TestJuego3B_2B()
 		{
 			var j = new Juego();
-			j.AgregarRegla(6, 1, 2, 3, 3, 0);
-			j.AgregarRegla(0, 1, 2, 3, 2, 0);
-			j.AgregarRegla(6, 1, 2, 4, 2, 0);
+            j.AgregarRegla(5, 8, 1, 0, 0, 1);
+            j.AgregarRegla(2, 5, 3, 4, 0, 3);
+            j.AgregarRegla(6, 5, 2, 3, 1, 2);
+            j.AgregarRegla(6, 3, 5, 4, 1, 1);
+            j.AgregarRegla(7,2,5,3, 1, 3);
+
+  
+
 			var n = j.Adivinar();
 		}
 
-		public static void TestNumero()
+        public static void TestNumero2()
+        {
+            var a = new NumeroGenerado(null, 3, 2, 5);
+            var b = new NumeroGenerado(null, 3, 2, 5);
+
+            bool iguales = a.Equals(b);
+            bool unif = a.EsUnificableCon(b);
+        }
+	    public static void TestNumero()
 		{
 			var n12_7 = new NumeroGenerado(1, 2, null, 7);
 			var n__8_ = new NumeroGenerado(null, null, 8, null);
