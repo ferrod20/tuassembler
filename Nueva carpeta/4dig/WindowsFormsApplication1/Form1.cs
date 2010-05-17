@@ -18,14 +18,15 @@ namespace WindowsFormsApplication1
 		public Form1()
 		{
 			InitializeComponent();
-			
+		    Test.TestNumero2();
+		    Test.TestJuego3B_2B();
 		}
 		private void Empezar()
 		{
 			j = new Juego();
 			numeroAAdivinar = NumeroGenerado.GenerarNumeroAlAzar();
 			num = j.Adivinar();
-			label4.Text = num.ToString();
+			label4.Text = num.ToString() + " --- " + j.CantidadDeOpciones;
 
 			ProximoTurno(true);
 			MA.LimpiarTextBoxs(txtHistoriaCompu,txtHistoriaJugador);			
@@ -80,15 +81,15 @@ namespace WindowsFormsApplication1
 			if (NumeroGenerado.EsValido(txtNumero.Text))
 			{
 				numeroAAdivinar.Calificar(txtNumero.Text, out bien, out regular);
-				txtHistoriaJugador.Text += txtNumero.Text + " " + bien + " BIEN " + regular + " REGULAR" + Environment.NewLine;
+				txtHistoriaJugador.Text += txtNumero.Text + " " + bien + "B " + regular + "R" + Environment.NewLine;
 				if (bien < 4)
 				{
 					if( ganoLaCompu )						
-						PantallaGano("Perdiste puto/a!!!!");
+						PantallaGano("Perdiste, el numero era: "+ numeroAAdivinar);
 					else
 					{
 						ProximoTurno(true);
-						label4.Text = num.ToString();	
+                        label4.Text = num.ToString() + " --- " + j.CantidadDeOpciones; 
 					}
 					
 				}
