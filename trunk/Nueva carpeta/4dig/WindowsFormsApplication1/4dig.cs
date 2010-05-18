@@ -46,5 +46,30 @@ namespace WindowsFormsApplication1
             var unif = a.EsUnificableCon(b);
         }
         #endregion
+
+        public static void TestJuego4()
+        {
+            var j = new Juego();
+            j.AgregarRegla(1, 7, 5, 6, 0, 0);
+            j.AgregarRegla(0, 2, 3, 4, 0, 3);
+            j.AgregarRegla(8, 0, 2, 3, 2, 1);
+            j.AgregarRegla(8, 4, 0, 3, 1, 2);
+            j.AgregarRegla(4, 8, 2, 3, 0, 3);
+
+            j.Adivinar();
+            
+   
+        }
+        public static void TestJuego5()
+        {
+            var j = new Juego();
+            j.AgregarRegla(0, 8, 4, 5, 2, 1);
+            j.AgregarRegla(0, 8, 5, 1, 1, 1);
+            j.AgregarRegla(0, 2, 4, 8, 1, 2);
+          //  j.AgregarRegla(0, 4, 2, 5, 0, 2);            
+
+            j.Adivinar();
+            
+        }
     }
 }
