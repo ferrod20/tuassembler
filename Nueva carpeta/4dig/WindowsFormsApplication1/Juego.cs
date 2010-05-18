@@ -11,11 +11,14 @@ namespace WindowsFormsApplication1
         public NumeroGenerado NumeroAAdivinarPorElJugador;
         public NumeroGenerado NumeroAdivinadoPorLaCompu;
         private List<Regla> reglasDeLaCompu = new List<Regla>();
+        
         #endregion
 
         #region Métodos
         public void Adivinar()
         {
+            var n = new NumeroGenerado(8,0,4,2);
+            var n2 = new NumeroGenerado(null, 0, 4, 2);
             NumeroAdivinadoPorLaCompu = null;
             if (reglasDeLaCompu.Count == 0)
             {
@@ -29,7 +32,10 @@ namespace WindowsFormsApplication1
                 foreach (var regla in reglasDeLaCompu)
                 {
                     var numeros = regla.Generar();
+                    var f = numeros.Contains(n);
+                    f = numeros.Contains(n2);
                     nums = nums.Count == 0 ? new List<NumeroGenerado>(numeros) : Unificar(nums, numeros);
+                    f = nums.Contains(n);
                 }
 
                 if (nums.Count > 0)

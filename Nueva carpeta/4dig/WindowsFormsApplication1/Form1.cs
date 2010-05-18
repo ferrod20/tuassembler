@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Windows.Forms;
 
 namespace WindowsFormsApplication1
@@ -7,12 +8,14 @@ namespace WindowsFormsApplication1
     {
         #region Variables de instancia
         private Juego j;
+        private int partidosJugados;
         #endregion
 
         #region Constructores
         public Form1()
         {
             InitializeComponent();
+            Test.TestJuego5();
         }
         #endregion
 
@@ -22,10 +25,27 @@ namespace WindowsFormsApplication1
             j = new Juego();
             j.GenerarNumeroAAdivinar();
             j.Adivinar();
+            partidosJugados++;
+            UnJuegoMas();            
             label4.Text = j.NumeroAdivinadoPorLaCompu + " (" + j.CantidadDeOpciones + " opciones)";
 
             ProximoTurno(true);
             MA.LimpiarTextBoxs(txtHistoriaCompu, txtHistoriaJugador);
+        }
+        private int UnJuegoMas()
+        {
+            int cuantos = 0;
+            if (File.Exists(@"C:\p.inx"))
+            {
+                TextReader arch = new StreamReader(@"C:\p.inx");
+                var s = arch.ReadLine();
+               cuantos = int.Parse(s.Trim());
+                arch.Close();
+            }
+            TextWriter archivo= new StreamWriter(@"C:\p.inx",false);
+            archivo.WriteLine(cuantos+1);
+            archivo.Close();
+            return cuantos + 1;
         }
 
         private void PantallaGano(string mensaje)
@@ -113,6 +133,13 @@ namespace WindowsFormsApplication1
         private void Form1_Load(object sender, EventArgs e)
         {
             Empezar();
+
+            partidosJugados = UnJuegoMas();
+            if (partidosJugados > 150)
+            {
+                MessageBox.Show("Esta es una versión gratis y ya ha jugado muchos partidos.");
+                Close();
+            }
         }
         #endregion
     }

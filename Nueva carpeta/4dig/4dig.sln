@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 10.00
 # Visual Studio 2008
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApplication1", "WindowsFormsApplication1\WindowsFormsApplication1.csproj", "{B9DB6B99-7ADE-4660-AB68-DF89E45829B9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4Digitos", "WindowsFormsApplication1\4Digitos.csproj", "{B9DB6B99-7ADE-4660-AB68-DF89E45829B9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
