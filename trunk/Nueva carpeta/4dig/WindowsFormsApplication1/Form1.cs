@@ -83,14 +83,7 @@ namespace WindowsFormsApplication1
             {
                 var mensajeDeError = string.Empty;
                 int bien = 0, regular = 0;
-                if (txtBien.Text != string.Empty)
-                    if (!int.TryParse(txtBien.Text, out bien))
-                        mensajeDeError = "Escribir un numero en bien!";
-
-                if (txtRegular.Text != string.Empty)
-                    if (!int.TryParse(txtRegular.Text, out regular))
-                        mensajeDeError = "Escribir un numero en regular!";
-
+                
                 if (regular + bien > 4)
                     mensajeDeError = "Estas poniendo cualquier cosa!!";
                 if (mensajeDeError == string.Empty)
