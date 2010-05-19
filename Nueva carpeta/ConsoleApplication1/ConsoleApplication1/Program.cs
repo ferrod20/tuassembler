@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -12,136 +11,136 @@ namespace ConsoleApplication1
 		private static string comienzoDeBloque = "DICTIONARY_ENTRY";
 		private static string finDeBloque = "\nDI";
 		private static List<string> tipos = new List<string> {"phrasal verb", "adverb", "other", "phrase", "verb", "adjective", "noun"};
-		private static Dictionary<string, string>
-			tiposs = new Dictionary<string, string>
-			         	{
-			         		{"phrasal verb", ""},
-			         		{"adverb", "RB"},
-			         		{"other", ""},
-			         		{"phrase", ""},
-			         		{"verb", "VB"},
-			         		{"adjective", "JJ"},
-			         		{"noun", "NN"},
-			         		{"countable noun", "NN"},
-			         		{"uncountable noun", "NN"},
-			         		{"classifying adjective", "JJ"},
-			         		{"qualitative adjective", "JJ"},
-			         		{"verb + object", "VB"},
-			         		{"adverb with verb", "RB"},
-			         		{"noun singular", "NN"},
-			         		{"noun plural", "NNS"},
-			         		{"countable or uncountable noun", "NN"},
-			         		{"preposition", "IN"},
-			         		{"countable noun with supporter", "NN"},
-			         		{"uncountable or countable noun", "NN"},
-			         		{"convention", ""},
-			         		{"noun singular with determiner", "NN"},
-			         		{"verb or verb + object", "VB"},
-			         		{"ergative verb", "VB"},
-			         		{"verb + adjunct", "VB"},
-			         		{"verb + object + adjunct", "VB"},
-			         		{"adverb after verb", "RB"},
-			         		{"mass noun", "NN"},
-			         		{"sentence adverb", "RB"},
-			         		{"proper noun", "NNP"},
-			         		{"uncountable noun with supporter", "NN"},
-			         		{"partitive noun", "NN"},
-			         		{"adverb + adjective or adverb", "RB"},
-			         		{"combining form", ""},
-			         		{"modal", "MD"},
-			         		{"subordinating conjunction", "IN"},
-			         		{"exclamation", "UH"},
-			         		{"adjective colour", "JJ"},
-			         		{"noun singular with determiner with supporter", "NN"},
-			         		{"prefix", ""},
-			         		{"noun before noun", "NN"},
-			         		{"verb + object (noun group or reflexive)", "VB"},
-			         		{"verb + object or reporting clause", "VB"},
-			         		{"countable noun + ^i{of^i}", "NN"},
-			         		{"suffix", ""},
-			         		{"wh", ""},
-			         		{"verb + object (reflexive)", "VB"},
-			         		{"verb + adjunct (^i{to^i})", "VB"},
-			         		{"phrase + noun group", ""},
-			         		{"countable noun, or ^i{by^i} + noun", "NN"},
-			         		{"countable noun or partitive noun", "NN"},
-			         		{"pronoun", "PRP"},
-			         		{"verb + object, or phrasal verb", "VB"},
-			         		{"count or uncountable noun", "NN"},
-			         		{"ordinal", "JJ"},
-			         		{"countable noun or vocative", "NN"},
-			         		{"partitive noun + uncountable noun", "NN"},
-			         		{"noun singular with determiner + ^i{of^i}", "NN"},
-			         		{"verb + ^i{to^i}-infinitive", "VB"},
-			         		{"adverb + adjective", "RB"},
-			         		{"verb or verb + adjunct (^i{with)", "VB"},
-			         		{"noun in titles", "NN"},
-			         		{"coordinating conjunction", "CC"},
-			         		{"number", "CD"},
-			         		{"verb + object, verb + object + object, or verb + object + adjunct (^i{to^i})", "VB"},
-			         		{"ergative verb + adjunct", "VB"},
-			         		{"verb + object + adjunct (^i{to^i})", "VB"},
-			         		{"verb + object, or verb + adjunct", "VB"},
-			         		{"preposition, or adverb after verb", "IN"},
-			         		{"verb + object + adjunct (^i{with^i})", "VB"},
-			         		{"verb + adjunct (^i{with^i})", "VB"},
-			         		{"verb + complement", "VB"},
-			         		{"noun vocative", "NN"},
-			         		{"uncountable noun + ^i{of^i}", "NN"},
-			         		{"indefinite pronoun", "NN"},
-			         		{"determiner", "DT"},
-			         		{"uncountable noun, or noun singular", "NN"},
-			         		{"adjective after noun", "JJ"},
-			         		{"countable noun, or ^i{in^i} + noun", "NN"},
-			         		{"noun in names", "NN"},
-			         		{"noun plural with supporter", "NN"},
-			         		{"verb + object, or verb", "VB"},
-			         		{"partitive noun + noun in plural", "NN"},
-			         		{"preposition or adverb", "RB"},
-			         		{"verb + object + ^i{to^i}-infinitive", "VB"},
-			         		{"verb + reporting clause", "VB"},
-			         		{"exclam", "UH"},
-			         		{"proper noun or vocative", "NNP"},
-			         		{"phrase after noun", ""},
-			         		{"adverb after verb, or classifying adjective", "RB"},
-			         		{"determiner + countable noun in singular", "DT"},
-			         		{"preposition after noun", "IN"},
-			         		{"verb or ergative verb", "VB"},
-			         		{"countable or uncountable noun with supporter", "NN"},
-			         		{"phrase + reporting clause", ""},
-			         		{"adverb or sentence adverb", "RB"},
-			         		{"uncountable noun, or noun before noun", "NN"},
-			         		{"adverb with verb, or sentence adverb", "RB"},
-			         		{"verb + adjunct (^i{from^i})", "VB"},
-			         		{"uncountable or countable noun with supporter", "NN"},
-			         		{"verb + object, verb + object + object, or verb + object + adjunct (^i{for^i})", "VB"}
-			         	};
+
+		private static Dictionary<string, string> tiposs = new Dictionary<string, string>
+		                                                   	{
+		                                                   		{"phrasal verb", ""},
+		                                                   		{"adverb", "RB"},
+		                                                   		{"other", ""},
+		                                                   		{"phrase", ""},
+		                                                   		{"verb", "VB"},
+		                                                   		{"adjective", "JJ"},
+		                                                   		{"noun", "NN"},
+		                                                   		{"countable noun", "NN"},
+		                                                   		{"uncountable noun", "NN"},
+		                                                   		{"classifying adjective", "JJ"},
+		                                                   		{"qualitative adjective", "JJ"},
+		                                                   		{"verb + object", "VB"},
+		                                                   		{"adverb with verb", "RB"},
+		                                                   		{"noun singular", "NN"},
+		                                                   		{"noun plural", "NNS"},
+		                                                   		{"countable or uncountable noun", "NN"},
+		                                                   		{"preposition", "IN"},
+		                                                   		{"countable noun with supporter", "NN"},
+		                                                   		{"uncountable or countable noun", "NN"},
+		                                                   		{"convention", ""},
+		                                                   		{"noun singular with determiner", "NN"},
+		                                                   		{"verb or verb + object", "VB"},
+		                                                   		{"ergative verb", "VB"},
+		                                                   		{"verb + adjunct", "VB"},
+		                                                   		{"verb + object + adjunct", "VB"},
+		                                                   		{"adverb after verb", "RB"},
+		                                                   		{"mass noun", "NN"},
+		                                                   		{"sentence adverb", "RB"},
+		                                                   		{"proper noun", "NNP"},
+		                                                   		{"uncountable noun with supporter", "NN"},
+		                                                   		{"partitive noun", "NN"},
+		                                                   		{"adverb + adjective or adverb", "RB"},
+		                                                   		{"combining form", ""},
+		                                                   		{"modal", "MD"},
+		                                                   		{"subordinating conjunction", "IN"},
+		                                                   		{"exclamation", "UH"},
+		                                                   		{"adjective colour", "JJ"},
+		                                                   		{"noun singular with determiner with supporter", "NN"},
+		                                                   		{"prefix", ""},
+		                                                   		{"noun before noun", "NN"},
+		                                                   		{"verb + object (noun group or reflexive)", "VB"},
+		                                                   		{"verb + object or reporting clause", "VB"},
+		                                                   		{"countable noun + ^i{of^i}", "NN"},
+		                                                   		{"suffix", ""},
+		                                                   		{"wh", ""},
+		                                                   		{"verb + object (reflexive)", "VB"},
+		                                                   		{"verb + adjunct (^i{to^i})", "VB"},
+		                                                   		{"phrase + noun group", ""},
+		                                                   		{"countable noun, or ^i{by^i} + noun", "NN"},
+		                                                   		{"countable noun or partitive noun", "NN"},
+		                                                   		{"pronoun", "PRP"},
+		                                                   		{"verb + object, or phrasal verb", "VB"},
+		                                                   		{"count or uncountable noun", "NN"},
+		                                                   		{"ordinal", "JJ"},
+		                                                   		{"countable noun or vocative", "NN"},
+		                                                   		{"partitive noun + uncountable noun", "NN"},
+		                                                   		{"noun singular with determiner + ^i{of^i}", "NN"},
+		                                                   		{"verb + ^i{to^i}-infinitive", "VB"},
+		                                                   		{"adverb + adjective", "RB"},
+		                                                   		{"verb or verb + adjunct (^i{with)", "VB"},
+		                                                   		{"noun in titles", "NN"},
+		                                                   		{"coordinating conjunction", "CC"},
+		                                                   		{"number", "CD"},
+		                                                   		{"verb + object, verb + object + object, or verb + object + adjunct (^i{to^i})", "VB"},
+		                                                   		{"ergative verb + adjunct", "VB"},
+		                                                   		{"verb + object + adjunct (^i{to^i})", "VB"},
+		                                                   		{"verb + object, or verb + adjunct", "VB"},
+		                                                   		{"preposition, or adverb after verb", "IN"},
+		                                                   		{"verb + object + adjunct (^i{with^i})", "VB"},
+		                                                   		{"verb + adjunct (^i{with^i})", "VB"},
+		                                                   		{"verb + complement", "VB"},
+		                                                   		{"noun vocative", "NN"},
+		                                                   		{"uncountable noun + ^i{of^i}", "NN"},
+		                                                   		{"indefinite pronoun", "NN"},
+		                                                   		{"determiner", "DT"},
+		                                                   		{"uncountable noun, or noun singular", "NN"},
+		                                                   		{"adjective after noun", "JJ"},
+		                                                   		{"countable noun, or ^i{in^i} + noun", "NN"},
+		                                                   		{"noun in names", "NN"},
+		                                                   		{"noun plural with supporter", "NN"},
+		                                                   		{"verb + object, or verb", "VB"},
+		                                                   		{"partitive noun + noun in plural", "NN"},
+		                                                   		{"preposition or adverb", "RB"},
+		                                                   		{"verb + object + ^i{to^i}-infinitive", "VB"},
+		                                                   		{"verb + reporting clause", "VB"},
+		                                                   		{"exclam", "UH"},
+		                                                   		{"proper noun or vocative", "NNP"},
+		                                                   		{"phrase after noun", ""},
+		                                                   		{"adverb after verb, or classifying adjective", "RB"},
+		                                                   		{"determiner + countable noun in singular", "DT"},
+		                                                   		{"preposition after noun", "IN"},
+		                                                   		{"verb or ergative verb", "VB"},
+		                                                   		{"countable or uncountable noun with supporter", "NN"},
+		                                                   		{"phrase + reporting clause", ""},
+		                                                   		{"adverb or sentence adverb", "RB"},
+		                                                   		{"uncountable noun, or noun before noun", "NN"},
+		                                                   		{"adverb with verb, or sentence adverb", "RB"},
+		                                                   		{"verb + adjunct (^i{from^i})", "VB"},
+		                                                   		{"uncountable or countable noun with supporter", "NN"},
+		                                                   		{"verb + object, verb + object + object, or verb + object + adjunct (^i{for^i})", "VB"}
+		                                                   	};
 		#endregion
 
 		#region Métodos
-		private static bool EsEjemplo(string parte, string palabra)
-		{
-			var cantPalabras = parte.Split().Count();
-			return parte.Contains(palabra) && parte.Length > palabra.Length + 2 && cantPalabras > 4 && parte.Sum(letra => letra == ',' ? 1 : 0) <= 3 && cantPalabras > CantidadDeOcurrencias(parte, palabra);			
-		}
 		private static decimal CantidadDeOcurrencias(string parte, string palabra)
 		{
-			int cantOc = 0;
+			var cantOc = 0;
 			var ind = parte.IndexOf(palabra);
 
-			while(ind!=-1)
+			while (ind != -1)
 			{
 				cantOc++;
-				ind = parte.IndexOf(palabra,ind+1);
+				ind = parte.IndexOf(palabra, ind + 1);
 			}
 			return cantOc;
 		}
-		private static bool EsTipo(string tipo, out string tipoAsociado)
+		private static bool EsEjemplo(string parte, string palabra)
 		{
-			tipoAsociado = string.Empty;
-			var tipos2 = tiposs.Where(t => tipo.StartsWith(t.Key));
+			var cantPalabras = parte.Split().Count();
+			return parte.Contains(palabra) && parte.Length > palabra.Length + 2 && cantPalabras > 4 && parte.Sum(letra => letra == ',' ? 1 : 0) <= 3 && cantPalabras > CantidadDeOcurrencias(parte, palabra);
+		}
+		private static bool EsTipo(string tipo, out KeyValuePair<string, string> parDeTipos)
+		{
+			parDeTipos  = new KeyValuePair<string, string>("", "");
+			var tipos2 = tiposs.Where(t => t.Key.StartsWith( tipo.TrimEnd()) );
 			if (tipos2.Count() > 0)
-				tipoAsociado = tipos2.First().Value;
+				parDeTipos = tipos2.First();
 
 			return tipos.Any(tipo.StartsWith);
 		}
@@ -166,31 +165,34 @@ namespace ConsoleApplication1
 			var palabra = partes[1].TrimEnd();
 
 
-			var salida = palabra + "\n";
-			string tip;
-			for (var i = 2; i < partes.Length - 1; i++)
-			{
-				var parte = partes[i].TrimEnd();
+			//var salida = palabra ;
+			//string tip;
+			//for (var i = 2; i < partes.Length - 1; i++)
+			//{
+			//    var parte = partes[i].TrimEnd();
 
-				if (EsEjemplo(parte, palabra))
-					salida += parte + "\n";
-				else if (EsTipo(parte, out tip))
-					salida += parte + "\n";
-			}
+			//    if (EsEjemplo(parte, palabra))
+			//        salida += parte + "\n";
+			//    else if (EsTipo(parte, out tip))
+			//        salida += parte + "\n";
+			//}
 
 			partes = bloque.Split('\n');
-
-			salida = palabra + "\n";
-
+			var salida = palabra ;
+			bool escribirTipo = true;
+			string obtenido;
 			for (var i = 2; i < partes.Length - 1; i++)
 			{
 				var parte = partes[i].TrimEnd();
 
 				if (EsEjemplo(parte, palabra))
 				{
-					var tipo = ObtenerTipo(partes, i + 1);
-					if (tipo != string.Empty)
+					var tipo = ObtenerTipo(partes, i + 1, out obtenido);
+					if (tipo.Value != string.Empty)
 					{
+						if(escribirTipo )
+							salida += " | " + obtenido.TrimEnd() +"-->" + tipo + "\n";
+						escribirTipo = false;
 						if (palabra.Contains(' '))
 							parte = ReemplazarEspacio(ref palabra, parte);
 
@@ -207,7 +209,7 @@ namespace ConsoleApplication1
 								p2 = p2.Substring(3);
 								salida += "...\n";
 							}
-								
+
 							if (p2.EndsWith("..."))
 							{
 								ultimo = "...";
@@ -229,7 +231,7 @@ namespace ConsoleApplication1
 							salida += p3;
 
 							if (p3.ToLower() == palabra.ToLower())
-								salida += "\t" + tipo;
+								salida += "\t" + tipo.Value;
 
 							salida += "\n";
 
@@ -273,7 +275,7 @@ namespace ConsoleApplication1
 
 			var texto = archivo.ReadToEnd();
 			archivo.Close();
-			ExtraerDatos(texto, salida);			
+			ExtraerDatos(texto, salida);
 			salida.Close();
 		}
 
@@ -293,12 +295,18 @@ namespace ConsoleApplication1
 
 			return salida;
 		}
-		private static string ObtenerTipo(string[] partes, int i)
+		private static KeyValuePair<string, string> ObtenerTipo(string[] partes, int i, out string obtenido)
 		{
-			var tipo = string.Empty;
+			obtenido = string.Empty;
+			var tipo = new KeyValuePair<string, string>();
+
 			for (; i < partes.Length; i++)
-				if (EsTipo(partes[i], out tipo))
+			{
+				obtenido = partes[i];
+				if (EsTipo(obtenido, out tipo))
 					break;
+			}
+				
 			return tipo;
 		}
 		private static string QuitarMagia(string p)
