@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -120,7 +121,20 @@ namespace ConsoleApplication1
 		#region Métodos
 		private static bool EsEjemplo(string parte, string palabra)
 		{
-			return parte.Contains(palabra) && parte.Length > palabra.Length + 2 && parte.Split().Count() > 4 && parte.Sum(letra => letra == ',' ? 1 : 0) <= 3;
+			var cantPalabras = parte.Split().Count();
+			return parte.Contains(palabra) && parte.Length > palabra.Length + 2 && cantPalabras > 4 && parte.Sum(letra => letra == ',' ? 1 : 0) <= 3 && cantPalabras > CantidadDeOcurrencias(parte, palabra);			
+		}
+		private static decimal CantidadDeOcurrencias(string parte, string palabra)
+		{
+			int cantOc = 0;
+			var ind = parte.IndexOf(palabra);
+
+			while(ind!=-1)
+			{
+				cantOc++;
+				ind = parte.IndexOf(palabra,ind+1);
+			}
+			return cantOc;
 		}
 		private static bool EsTipo(string tipo, out string tipoAsociado)
 		{
@@ -188,7 +202,13 @@ namespace ConsoleApplication1
 							var p2 = QuitarMagia(p);
 							string p3;
 							var hayPuntuacion = false;
-							if (p.EndsWith("..."))
+							if (p2.StartsWith("..."))
+							{
+								p2 = p2.Substring(3);
+								salida += "...\n";
+							}
+								
+							if (p2.EndsWith("..."))
 							{
 								ultimo = "...";
 								p3 = p2.Substring(0, p2.Length - 3);
@@ -208,7 +228,7 @@ namespace ConsoleApplication1
 
 							salida += p3;
 
-							if (p.ToLower() == palabra.ToLower())
+							if (p3.ToLower() == palabra.ToLower())
 								salida += "\t" + tipo;
 
 							salida += "\n";
@@ -224,8 +244,31 @@ namespace ConsoleApplication1
 		}
 		private static void Main(string[] args)
 		{
+			//bool b;
+			//TextReader arch1 = new StreamReader(@"Datos\pruebacobuild.3.txt", Encoding.UTF7);
+			//b = arch1.ReadToEnd().Contains("don’t");
+			//arch1.Close();
+			//var arch2 = new StreamReader(@"Datos\pruebacobuild.3.txt", Encoding.UTF8);
+			//b = arch2.ReadToEnd().Contains("don’t");
+			//arch2.Close();
+			//var arch3 = new StreamReader(@"Datos\pruebacobuild.3.txt", Encoding.UTF32);
+			//b = arch3.ReadToEnd().Contains("don’t");
+			//arch3.Close();
+			//var arch4 = new StreamReader(@"Datos\pruebacobuild.3.txt", Encoding.Unicode);
+			//b = arch4.ReadToEnd().Contains("don’t");
+			//arch4.Close();
+			//var arch5 = new StreamReader(@"Datos\pruebacobuild.3.txt", Encoding.ASCII);
+			//b = arch5.ReadToEnd().Contains("don’t");
+			//arch5.Close();
+			//var arch6 = new StreamReader(@"Datos\pruebacobuild.3.txt", Encoding.BigEndianUnicode);
+			//b = arch6.ReadToEnd().Contains("don’t");
+			//arch6.Close();
+			//var arch7 = new StreamReader(@"Datos\pruebacobuild.3.txt", Encoding.Default);
+			//b = arch7.ReadToEnd().Contains("don’t");
+			//arch7.Close();
 
-			TextReader archivo = new StreamReader(@"Datos\pruebacobuild.3.txt", Encoding.UTF7);
+
+			TextReader archivo = new StreamReader(@"Datos\pruebacobuild.3.txt", Encoding.Default);
 			TextWriter salida = new StreamWriter(@"Datos\ExtraccionDeDatos.txt");
 
 			var texto = archivo.ReadToEnd();
