@@ -16,10 +16,25 @@ namespace WindowsFormsApplication1
         public NumeroGenerado()
         {
         }
-        public NumeroGenerado(int? a, int? b, int? c, int? d, List<int> excluidos) : this(a, b, c, d)
+		public void ExcluirDigitos( IEnumerable<int?>  digitos)
+		{
+			foreach (var digito in digitos)
+				ExcluirDigito(digito);	
+		}
+		public void ExcluirDigitos(IEnumerable<int> digitos)
+		{
+			foreach (var digito in digitos)
+				ExcluirDigito(digito);
+		}
+		public void ExcluirDigito(int? digito)
+		{
+			if (digito != null && !DigitosExcluidos.Contains(digito.Value))
+				DigitosExcluidos.Add(digito.Value);
+		}
+        public NumeroGenerado(int? a, int? b, int? c, int? d, IList<int> excluidos) : this(a, b, c, d)
         {
             if (excluidos != null)
-                DigitosExcluidos.AddRange(excluidos);
+				ExcluirDigitos(excluidos);                
         }
         public NumeroGenerado(int? a, int? b, int? c, int? d)
         {
@@ -28,14 +43,10 @@ namespace WindowsFormsApplication1
             num[2] = c;
             num[3] = d;
 
-            if (a != null && !DigitosExcluidos.Contains(a.Value))
-                DigitosExcluidos.Add(a.Value);
-            if (b != null && !DigitosExcluidos.Contains(b.Value))
-                DigitosExcluidos.Add(b.Value);
-            if (c != null && !DigitosExcluidos.Contains(c.Value))
-                DigitosExcluidos.Add(c.Value);
-            if (d != null && !DigitosExcluidos.Contains(d.Value))
-                DigitosExcluidos.Add(d.Value);
+			ExcluirDigito(a);
+			ExcluirDigito(b);
+			ExcluirDigito(c);
+			ExcluirDigito(d);            
         }
         #endregion
 
@@ -224,8 +235,11 @@ namespace WindowsFormsApplication1
         {
             var numero = string.Empty;
             numero += num[0] == null ? "_" : num[0].ToString();
+        	numero += " ";
             numero += num[1] == null ? "_" : num[1].ToString();
+			numero += " ";
             numero += num[2] == null ? "_" : num[2].ToString();
+			numero += " ";
             numero += num[3] == null ? "_" : num[3].ToString();
 
             return numero;
@@ -239,9 +253,14 @@ namespace WindowsFormsApplication1
                 else
                     numUnificado.num[i] = numero.num[i];
 
-            numUnificado.DigitosExcluidos.AddRange(numero.DigitosExcluidos.Union(DigitosExcluidos));
+            numUnificado.ExcluirDigitos(numero.DigitosExcluidos.Union(DigitosExcluidos) );
             return numUnificado;
         }
-        #endregion
+    	#endregion
+
+    	public string MostrarDigitosExcluidos()
+    	{
+    		return DigitosExcluidos.Aggregate(string.Empty, (s, dig) => s+ dig + ", ");
+    	}
     }
 }

@@ -15,6 +15,7 @@ namespace WindowsFormsApplication1
         public Form1()
         {
             InitializeComponent();
+        	Regla.GuardarTodasLasOpciones("opciones.txt");
             Test.TestJuego5();
         }
         #endregion
@@ -42,6 +43,7 @@ namespace WindowsFormsApplication1
                cuantos = int.Parse(s.Trim());
                 arch.Close();
             }
+
             TextWriter archivo= new StreamWriter(@"C:\p.inx",false);
             archivo.WriteLine(cuantos+1);
             archivo.Close();
@@ -101,32 +103,47 @@ namespace WindowsFormsApplication1
                 Empezar();
             else
             {
-                var mensajeDeError = string.Empty;
-                int bien = 0, regular = 0;
-                
-                if (regular + bien > 4)
-                    mensajeDeError = "Estas poniendo cualquier cosa!!";
-                if (mensajeDeError == string.Empty)
-                {
-                    var reglaAgregada = j.AgregarReglaAlNumeroAdivinado(bien, regular);
-                    txtHistoriaCompu.Text += reglaAgregada + Environment.NewLine;
+				if( !j.NumeroAAdivinarPorLaCompuIngresado)
+				{
+					if (!NumeroGenerado.EsValido(txtNumero.Text))
+					{
+						var n0 = int.Parse(txtNumero.Text[0].ToString());
+						var n1 = int.Parse(txtNumero.Text[1].ToString());
+						var n2 = int.Parse(txtNumero.Text[2].ToString());
+						var n3 = int.Parse(txtNumero.Text[3].ToString());
 
-                    if (bien != 4)
-                    {
-                        j.Adivinar();
-                        if (j.NumeroAdivinadoPorLaCompu == null)
-                            label4.Text = "Ocurrio un problema con el programa o pusiste algo mal....";
-                        else
-                            ProximoTurno(false);
-                    }
-                    else
-                    {
-                        j.GanoLaCompu = true;
-                        ProximoTurno(false);
-                    }
-                }
-                else
-                    MessageBox.Show(mensajeDeError);
+						j.NumeroAAdivinarPorLaCompu = new NumeroGenerado(n0, n1, n2, n3);
+					}
+					else                    
+					{
+						MessageBox.Show("Ingresá un número de 4 cifras distintas.");
+						txtNumero.Text = string.Empty;
+						txtNumero.Focus();
+					}
+				}
+				
+				
+					var reglaAgregada = j.AgregarReglaAlNumeroAdivinado(bien, regular);
+						txtHistoriaCompu.Text += reglaAgregada + Environment.NewLine;
+
+						if (bien != 4)
+						{
+							j.Adivinar();
+							if (j.NumeroAdivinadoPorLaCompu == null)
+								label4.Text = "Ocurrio un problema con el programa o pusiste algo mal....";
+							else
+								ProximoTurno(false);
+						}
+						else
+						{
+							j.GanoLaCompu = true;
+							ProximoTurno(false);
+						}					
+				}					
+				
+
+					
+                
             }
         }
 
