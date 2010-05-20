@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace WindowsFormsApplication1
@@ -11,8 +12,16 @@ namespace WindowsFormsApplication1
         public NumeroGenerado NumeroAAdivinarPorElJugador;
         public NumeroGenerado NumeroAdivinadoPorLaCompu;
         private List<Regla> reglasDeLaCompu = new List<Regla>();
-        
-        #endregion
+    	public NumeroGenerado NumeroAAdivinarPorLaCompu;
+
+    	public bool NumeroAAdivinarPorLaCompuIngresado
+    	{
+    		get
+    		{
+    			return NumeroAdivinadoPorLaCompu != null;
+    		}
+    	}
+    	#endregion
 
         #region Métodos
         public void Adivinar()
