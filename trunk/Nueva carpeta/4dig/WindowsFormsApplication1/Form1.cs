@@ -1,13 +1,15 @@
 ﻿using System;
 using System.IO;
+using System.Threading;
 using System.Windows.Forms;
+using System.Windows.Forms.VisualStyles;
 
 namespace WindowsFormsApplication1
 {
     public partial class Form1 : Form
     {
         #region Variables de instancia
-        private Juego j;
+        private Juego juego;
         private int partidosJugados;
         #endregion
 
@@ -15,80 +17,122 @@ namespace WindowsFormsApplication1
         public Form1()
         {
             InitializeComponent();
-        	Regla.GuardarTodasLasOpciones("opciones.txt");
-            Test.TestJuego5();
+            Regla.GuardarTodasLasOpciones("opciones.txt");
+            //Test.TestJuego5();
         }
         #endregion
 
         #region Métodos
         private void Empezar()
         {
-            j = new Juego();
-            j.GenerarNumeroAAdivinar();
-            j.Adivinar();
-            partidosJugados++;
-            UnJuegoMas();            
-            label4.Text = j.NumeroAdivinadoPorLaCompu + " (" + j.CantidadDeOpciones + " opciones)";
+            partidosJugados = UnJuegoMas();
+            juego = new Juego();
+            juego.GenerarNumeroAAdivinar();
+            var ing = new IngresarNumero();
+            //TODO!
+            ing.ShowDialog();
 
-            ProximoTurno(true);
+            juego.NumeroAAdivinarPorLaCompu = ing.NumeroIngresado;
             MA.LimpiarTextBoxs(txtHistoriaCompu, txtHistoriaJugador);
+            ProximoTurno();
+            lblNumeroAAdivinarXLaCompu.Text = juego.NumeroAAdivinarPorLaCompu.ToString();                
         }
-        private int UnJuegoMas()
+        private void JuegaElJugador()
         {
-            int cuantos = 0;
-            if (File.Exists(@"C:\p.inx"))
-            {
-                TextReader arch = new StreamReader(@"C:\p.inx");
-                var s = arch.ReadLine();
-               cuantos = int.Parse(s.Trim());
-                arch.Close();
-            }
+            int bien, regular;
+            var num = juego.JuegaElJugador(txtNumero.Text.Replace(" ", ""), out bien, out regular);
+            //var viejo = txtHistoriaJugador.Text;
+            //var nuevo = viejo + num + Environment.NewLine;
+            txtHistoriaJugador.Text += num + Environment.NewLine; ;
+            //var i = 3;
+            //while(i>0)
+            //{
+            //    txtHistoriaJugador.Text = viejo;
+            //    txtHistoriaJugador.Invalidate();
+            //    //Application.DoEvents();
+            //    //Thread.Sleep(200);
+            //    txtHistoriaJugador.Text = nuevo;
+            //    txtHistoriaJugador.Invalidate();
+            //    //Application.DoEvents();
+            //    i--;
+            //}                
 
-            TextWriter archivo= new StreamWriter(@"C:\p.inx",false);
-            archivo.WriteLine(cuantos+1);
-            archivo.Close();
-            return cuantos + 1;
+            VerificarSiAlguienGano();
+        }
+        private void VerificarSiAlguienGano()
+        {
+            switch (juego.Estado)
+            {
+                case EstadoDelJuego.GanoLaCompu:
+                    PantallaGano("Perdiste, el numero era: " + juego.NumeroAAdivinarPorElJugador);
+                    break;
+                case EstadoDelJuego.GanoElJugador:
+                    PantallaGano("Ganaste!");
+                    break;
+                case EstadoDelJuego.Empate:
+                    PantallaGano("Empate");
+                    break;
+                case EstadoDelJuego.Jugando:
+                    ProximoTurno();                   
+                    break;
+            }
+        }
+        private void JuegaLaCompu()
+        {
+            if (label4.Text == "Ocurrio un problema con el programa o pusiste algo mal....")
+                Empezar();
+            else
+            {
+                var reglaAgregada = juego.JuegaLaCompu();
+
+                txtHistoriaCompu.Text += reglaAgregada + Environment.NewLine;
+                if (juego.NumeroAdivinadoPorLaCompu == null)
+                    label4.Text = "Ocurrio un problema con el programa o pusiste algo mal....";
+                else
+                {
+                    label4.Text = juego.NumeroAdivinadoPorLaCompu + " (" + juego.CantidadDeOpciones + " opciones)";
+                    VerificarSiAlguienGano();                    
+                }
+            }
+            
         }
 
         private void PantallaGano(string mensaje)
         {
-            MessageBox.Show(mensaje);
+            MessageBox.Show(mensaje,"",MessageBoxButtons.OK);   
             Empezar();
         }
 
-        private void ProximoTurno(bool paraLaCompu)
+        private void ProximoTurno()
         {
-            MA.LimpiarTextBoxs(txtBien, txtRegular, txtNumero);
-            MA.MostrarControles(paraLaCompu, txtBien, txtRegular, btnSeguir, lblBien, lblRegular, label4);
-            MA.MostrarControles(!paraLaCompu, txtNumero, btnProbar, lblNUm);
+            MA.LimpiarTextBoxs(txtNumero);            
+            txtNumero.Focus();
+        }
+        private int UnJuegoMas()
+        {
+            var cuantos = 0;
+            if (File.Exists(@"C:\p.inx"))
+            {
+                TextReader arch = new StreamReader(@"C:\p.inx");
+                var s = arch.ReadLine();
+                cuantos = int.Parse(s.Trim());
+                arch.Close();
+            }
 
-            AcceptButton = paraLaCompu? btnSeguir:btnProbar;
-            if (paraLaCompu)
-                txtBien.Focus();
-            else
-                txtNumero.Focus();
-            
+            TextWriter archivo = new StreamWriter(@"C:\p.inx", false);
+            archivo.WriteLine(cuantos + 1);
+            archivo.Close();
+            return cuantos + 1;
         }
         #endregion
 
         #region Manejadores de eventos
         private void btnProbar_Click(object sender, EventArgs e)
         {
-            int bien, regular;
-            if (NumeroGenerado.EsValido(txtNumero.Text))
+            if (Numero.EsValido(txtNumero.Text.Replace(" ", "")))
             {
-                j.Calificar(txtNumero.Text, out bien, out regular);
-                txtHistoriaJugador.Text += txtNumero.Text + " " + bien + "B " + regular + "R" + Environment.NewLine;
-                if (bien < 4)
-                    if (j.GanoLaCompu)
-                        PantallaGano("Perdiste, el numero era: " + j.NumeroAAdivinarPorElJugador);
-                    else
-                    {
-                        ProximoTurno(true);
-                        label4.Text = j.NumeroAdivinadoPorLaCompu + " (" + j.CantidadDeOpciones + " opciones)";
-                    }
-                else
-                    PantallaGano(j.GanoLaCompu ? "Empate" : "Ganaste!");
+                JuegaElJugador();                
+                JuegaLaCompu();
             }
             else
             {
@@ -97,61 +141,10 @@ namespace WindowsFormsApplication1
                 txtNumero.Focus();
             }
         }
-        private void btnSeguir_Click(object sender, EventArgs e)
-        {
-            if (label4.Text == "Ocurrio un problema con el programa o pusiste algo mal....")
-                Empezar();
-            else
-            {
-				if( !j.NumeroAAdivinarPorLaCompuIngresado)
-				{
-					if (!NumeroGenerado.EsValido(txtNumero.Text))
-					{
-						var n0 = int.Parse(txtNumero.Text[0].ToString());
-						var n1 = int.Parse(txtNumero.Text[1].ToString());
-						var n2 = int.Parse(txtNumero.Text[2].ToString());
-						var n3 = int.Parse(txtNumero.Text[3].ToString());
-
-						j.NumeroAAdivinarPorLaCompu = new NumeroGenerado(n0, n1, n2, n3);
-					}
-					else                    
-					{
-						MessageBox.Show("Ingresá un número de 4 cifras distintas.");
-						txtNumero.Text = string.Empty;
-						txtNumero.Focus();
-					}
-				}
-				
-				
-					var reglaAgregada = j.AgregarReglaAlNumeroAdivinado(bien, regular);
-						txtHistoriaCompu.Text += reglaAgregada + Environment.NewLine;
-
-						if (bien != 4)
-						{
-							j.Adivinar();
-							if (j.NumeroAdivinadoPorLaCompu == null)
-								label4.Text = "Ocurrio un problema con el programa o pusiste algo mal....";
-							else
-								ProximoTurno(false);
-						}
-						else
-						{
-							j.GanoLaCompu = true;
-							ProximoTurno(false);
-						}					
-				}					
-				
-
-					
-                
-            }
-        }
 
         private void Form1_Load(object sender, EventArgs e)
         {
             Empezar();
-
-            partidosJugados = UnJuegoMas();
             if (partidosJugados > 150)
             {
                 MessageBox.Show("Esta es una versión gratis y ya ha jugado muchos partidos.");
@@ -159,5 +152,23 @@ namespace WindowsFormsApplication1
             }
         }
         #endregion
+
+        private void txtNumero_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            base.OnKeyPress(e);
+            if (!(char.IsDigit(e.KeyChar) || char.IsControl(e.KeyChar)))
+                e.Handled = true;
+        }
+
+        private void tecladoDeDigitos1_Oprimir(int nroOprimido)
+        {
+            if( nroOprimido == -1)
+            {
+                if (txtNumero.Text.Length > 0)
+                    txtNumero.Text = txtNumero.Text.Substring(0, txtNumero.Text.Length - 2);
+            }
+            else if( txtNumero.Text.Replace(" ", "").Length<4)
+                txtNumero.Text += nroOprimido.ToString() + " ";
+        }
     }
 }
