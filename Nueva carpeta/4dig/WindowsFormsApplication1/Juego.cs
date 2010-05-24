@@ -1,33 +1,53 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 
 namespace WindowsFormsApplication1
 {
+    public enum EstadoDelJuego
+    {
+        GanoLaCompu,
+        GanoElJugador,
+        Empate,
+        Jugando
+    }
+
     public class Juego
     {
         #region Variables de instancia
         public int CantidadDeOpciones;
-        public bool GanoLaCompu;
-        public NumeroGenerado NumeroAAdivinarPorElJugador;
-        public NumeroGenerado NumeroAdivinadoPorLaCompu;
+        public EstadoDelJuego Estado;
+        public Numero NumeroAAdivinarPorElJugador;
+        public Numero NumeroAAdivinarPorLaCompu;
+        public Numero NumeroAdivinadoPorLaCompu;
+        private int cantJugadasCompu;
+        private int cantJugadasJugador;
+        private List<NumeroAdivinado> jugadasDeLaCompu;
+        private List<NumeroAdivinado> jugadasDelJugador;
         private List<Regla> reglasDeLaCompu = new List<Regla>();
-    	public NumeroGenerado NumeroAAdivinarPorLaCompu;
+        #endregion
 
-    	public bool NumeroAAdivinarPorLaCompuIngresado
-    	{
-    		get
-    		{
-    			return NumeroAdivinadoPorLaCompu != null;
-    		}
-    	}
-    	#endregion
+        #region Constructores
+        public Juego()
+        {
+            Estado = EstadoDelJuego.Jugando;
+            jugadasDelJugador = new List<NumeroAdivinado>();
+            jugadasDeLaCompu = new List<NumeroAdivinado>();
+        }
+        #endregion
+
+        #region Propiedades
+        public bool NumeroAAdivinarPorLaCompuIngresado
+        {
+            get
+            {
+                return NumeroAdivinadoPorLaCompu != null;
+            }
+        }
+        #endregion
 
         #region Métodos
         public void Adivinar()
         {
-            var n = new NumeroGenerado(8,0,4,2);
-            var n2 = new NumeroGenerado(null, 0, 4, 2);
             NumeroAdivinadoPorLaCompu = null;
             if (reglasDeLaCompu.Count == 0)
             {
@@ -41,22 +61,22 @@ namespace WindowsFormsApplication1
                 foreach (var regla in reglasDeLaCompu)
                 {
                     var numeros = regla.Generar();
-                    var f = numeros.Contains(n);
-                    f = numeros.Contains(n2);
                     nums = nums.Count == 0 ? new List<NumeroGenerado>(numeros) : Unificar(nums, numeros);
-                    f = nums.Contains(n);
                 }
 
                 if (nums.Count > 0)
                 {
                     foreach (var r in reglasDeLaCompu)
-                        if (nums.Contains(r.Numero))
-                            nums.Remove(r.Numero);
-                    NumeroAdivinadoPorLaCompu = nums.First();
+                        if (nums.Contains(r.ConvertirEnNumeroGenerado))
+                            nums.Remove(r.ConvertirEnNumeroGenerado);
+                    var num = nums.First();
+
                     CantidadDeOpciones = CalcularOpciones(nums);
 
-                    if (!NumeroAdivinadoPorLaCompu.Completar())
+                    if (!num.Completar())
                         NumeroAdivinadoPorLaCompu = null;
+                    else
+                        NumeroAdivinadoPorLaCompu = new Numero(num);
                 }
             }
         }
@@ -66,9 +86,15 @@ namespace WindowsFormsApplication1
             reglasDeLaCompu.Add(regla);
             return regla;
         }
+        public Regla AgregarRegla(Numero n, int bien, int regular)
+        {
+            var regla = new Regla(n, bien, regular);
+            reglasDeLaCompu.Add(regla);
+            return regla;
+        }
         public Regla AgregarReglaAlNumeroAdivinado(int bien, int regular)
         {
-            return AgregarRegla(NumeroAdivinadoPorLaCompu[0].Value, NumeroAdivinadoPorLaCompu[1].Value, NumeroAdivinadoPorLaCompu[2].Value, NumeroAdivinadoPorLaCompu[3].Value, bien, regular);
+            return AgregarRegla(NumeroAdivinadoPorLaCompu, bien, regular);
         }
         private int CalcularOpciones(List<NumeroGenerado> numerosGenerados)
         {
@@ -97,13 +123,46 @@ namespace WindowsFormsApplication1
             }
             return cantDeOpciones;
         }
-        public void Calificar(string numero, out int bien, out int regular)
+        public void CalificarElNumeroDelJugador(string numero, out int bien, out int regular)
         {
             NumeroAAdivinarPorElJugador.Calificar(numero, out bien, out regular);
+        }
+        private void EstablecerEstadoDelJuego()
+        {
+            if(jugadasDelJugador.Count  > 0 && jugadasDelJugador.Count == jugadasDeLaCompu.Count )
+            {
+                var jugadorAdivinó = jugadasDelJugador.Last().Bien == 4;
+                var compuAdivinó = jugadasDeLaCompu.Last().Bien == 4;
+
+                if (jugadorAdivinó)
+                    Estado = compuAdivinó ? EstadoDelJuego.Empate : EstadoDelJuego.GanoElJugador;
+                else if (compuAdivinó)
+                    Estado = EstadoDelJuego.GanoLaCompu;
+            }
+                        
         }
         public void GenerarNumeroAAdivinar()
         {
             NumeroAAdivinarPorElJugador = NumeroGenerado.GenerarNumeroAlAzar();
+        }
+        public NumeroAdivinado JuegaElJugador(string numero, out int bien, out int regular)
+        {
+            CalificarElNumeroDelJugador(numero, out bien, out regular);
+            var n = new NumeroAdivinado(numero, bien, regular);
+            jugadasDelJugador.Add(n);
+            EstablecerEstadoDelJuego();
+            return n;
+
+        }
+        public Regla JuegaLaCompu()
+        {
+            int bien, regular;
+            Adivinar();
+            NumeroAAdivinarPorLaCompu.Calificar(NumeroAdivinadoPorLaCompu, out bien, out regular);
+            jugadasDeLaCompu.Add(new NumeroAdivinado(NumeroAdivinadoPorLaCompu, bien, regular));
+            EstablecerEstadoDelJuego();
+
+            return AgregarReglaAlNumeroAdivinado(bien, regular);
         }
         private List<NumeroGenerado> Unificar(List<NumeroGenerado> nums, List<NumeroGenerado> numeros)
         {
