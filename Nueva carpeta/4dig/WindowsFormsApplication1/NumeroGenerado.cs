@@ -207,28 +207,14 @@ namespace WindowsFormsApplication1
             {
                 return num.Count(n => n == null);
             }
-        }
-
-        protected int CuantosFaltanCompletar
-        {
-            get
-            {
-                var cuantos = 0;
-                for (var i = 0; i < 4; i++)
-                    if (num[i] == null)
-                        cuantos++;
-                return cuantos;
-            }
-        }
+        }        
         #endregion
 
         #region Métodos
         public bool Completar()
         {
-            IList<int> digitos = new List<int> {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
             var posiblesValores = digitos.Except(DigitosExcluidos).ToList();
-
-            var todoBien = posiblesValores.Count >= CuantosFaltanCompletar;
+            var todoBien = posiblesValores.Count >= CantidadDeNulls;
 
             if (todoBien)
                 for (var i = 0; i < 4; i++)
@@ -314,9 +300,9 @@ namespace WindowsFormsApplication1
             foreach (var digito in digitos)
                 ExcluirDigito(digito);
         }
+
         public static List<NumeroGenerado> GenerarComplementos(List<int> excluidos)
         {
-            IList<int> digitos = new List<int> {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
             var posibles = digitos.Except(excluidos);
 
             var variaciones = new Variations<int>(posibles, 4);
@@ -324,24 +310,24 @@ namespace WindowsFormsApplication1
         }
         public static Numero GenerarNumeroAlAzar()
         {
-            IList<int> digitos = new List<int> {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+            var digs = new List<int>(digitos);
             var r = new Random((int) DateTime.Now.Ticks);
 
             var indice = r.Next(0, 9);
-            var a = digitos[indice];
-            digitos.Remove(a);
+            var a = digs[indice];
+            digs.Remove(a);
 
             indice = r.Next(0, 8);
-            var b = digitos[indice];
-            digitos.Remove(b);
+            var b = digs[indice];
+            digs.Remove(b);
 
             indice = r.Next(0, 7);
-            var c = digitos[indice];
-            digitos.Remove(c);
+            var c = digs[indice];
+            digs.Remove(c);
 
             indice = r.Next(0, 6);
-            var d = digitos[indice];
-            digitos.Remove(d);
+            var d = digs[indice];
+            digs.Remove(d);
 
             return new Numero(a, b, c, d);
         }
@@ -380,5 +366,38 @@ namespace WindowsFormsApplication1
             return numUnificado;
         }
         #endregion
+
+        static IList<int> digitos = new List<int> { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+        public IList<NumeroGenerado> ObtenerPosibles(IEnumerable<NumeroGenerado> noPermitidos)
+        {                                                            
+            var posiblesValores = digitos.Except(DigitosExcluidos).ToList();
+            var todoBien = posiblesValores.Count >= CantidadDeNulls;
+            IList<NumeroGenerado> posibles = new List<NumeroGenerado>();
+            if( todoBien)
+            {
+                var variaciones = new Variations<int>(posiblesValores, CantidadDeNulls);
+                var todos = variaciones.Select(variacion => GenerarNumero ( variacion)).ToList();
+                posibles = todos.Except(noPermitidos).ToList();
+            }
+
+            return posibles;
+        }
+        private NumeroGenerado GenerarNumero(IList<int> variacion)
+        {
+            var j = 0;
+            var resultado = new NumeroGenerado();
+
+            for (var i = 0; i < 4;i++ )
+            {
+                if (num[i] == null)
+                {
+                    resultado.num[i] = variacion[j];
+                    j++;
+                }
+                else
+                    resultado.num[i] = num[i];                
+            }
+            return resultado;
+        }
     }
 }

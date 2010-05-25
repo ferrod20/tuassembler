@@ -66,17 +66,22 @@ namespace WindowsFormsApplication1
 
                 if (nums.Count > 0)
                 {
-                    foreach (var r in reglasDeLaCompu)
-                        if (nums.Contains(r.ConvertirEnNumeroGenerado))
-                            nums.Remove(r.ConvertirEnNumeroGenerado);
-                    var num = nums.First();
-
                     CantidadDeOpciones = CalcularOpciones(nums);
+                    var numerosNoPermitidos = reglasDeLaCompu.Select(r => r.ConvertirEnNumeroGenerado);                                        
+                    NumeroGenerado num = null;
 
-                    if (!num.Completar())
-                        NumeroAdivinadoPorLaCompu = null;
-                    else
-                        NumeroAdivinadoPorLaCompu = new Numero(num);
+                    foreach (var n in nums)
+                    {                                                
+                        var numerosPosibles = n.ObtenerPosibles(numerosNoPermitidos);
+                        if (numerosPosibles.Count > 0)
+                        {
+                            num = numerosPosibles.First();
+                            break;
+                        }
+                    }
+                    
+                    NumeroAdivinadoPorLaCompu = num==null ?null: new Numero(num);
+                    
                 }
             }
         }
