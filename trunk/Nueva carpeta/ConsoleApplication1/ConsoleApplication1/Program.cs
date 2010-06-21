@@ -1,12 +1,16 @@
-﻿using System.Collections.Generic;
+﻿#define HacerLegible
+using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 
 namespace ConsoleApplication1
 {
 	internal class Program
 	{
+
 		#region Variables de clase
 		private static string comienzoDeBloque = "DICTIONARY_ENTRY";
 		private static string finDeBloque = "\nDI";
@@ -154,28 +158,39 @@ namespace ConsoleApplication1
 				bloque = ObtenerBloque(texto, ref indice);
 				if (bloque != string.Empty)
 				{
-					datos = ExtraerDatosDelBloque(bloque);
+                    #if HacerLegible
+                    	datos = HacerLegiblElBloque(bloque);
+                    #else
+					    datos = ExtraerDatosDelBloque(bloque);
+                    #endif
 					salida.WriteLine(datos);
 				}
 			}
 		}
-		private static string ExtraerDatosDelBloque(string bloque)
+        private static string HacerLegiblElBloque(string bloque)
+        {
+            var partes = bloque.Split('\n');
+            var palabra = partes[1].TrimEnd();
+
+            var salida = palabra;
+            KeyValuePair<string, string> tip;
+            for (var i = 2; i < partes.Length - 1; i++)
+            {
+                var parte = partes[i].TrimEnd();
+
+                if (EsEjemplo(parte, palabra))
+                    salida += parte + "\n";
+                else if (EsTipo(parte, out tip))
+                    salida += parte + "\n";
+            }
+            return salida;
+        }
+	    private static string ExtraerDatosDelBloque(string bloque)
 		{
 			var partes = bloque.Split('\n');
 			var palabra = partes[1].TrimEnd();
 
 
-			//var salida = palabra ;
-			//string tip;
-			//for (var i = 2; i < partes.Length - 1; i++)
-			//{
-			//    var parte = partes[i].TrimEnd();
-
-			//    if (EsEjemplo(parte, palabra))
-			//        salida += parte + "\n";
-			//    else if (EsTipo(parte, out tip))
-			//        salida += parte + "\n";
-			//}
 
 			partes = bloque.Split('\n');
 			var salida = palabra ;
@@ -246,40 +261,64 @@ namespace ConsoleApplication1
 		}
 		private static void Main(string[] args)
 		{
-			//bool b;
-			//TextReader arch1 = new StreamReader(@"Datos\pruebacobuild.3.txt", Encoding.UTF7);
-			//b = arch1.ReadToEnd().Contains("don’t");
-			//arch1.Close();
-			//var arch2 = new StreamReader(@"Datos\pruebacobuild.3.txt", Encoding.UTF8);
-			//b = arch2.ReadToEnd().Contains("don’t");
-			//arch2.Close();
-			//var arch3 = new StreamReader(@"Datos\pruebacobuild.3.txt", Encoding.UTF32);
-			//b = arch3.ReadToEnd().Contains("don’t");
-			//arch3.Close();
-			//var arch4 = new StreamReader(@"Datos\pruebacobuild.3.txt", Encoding.Unicode);
-			//b = arch4.ReadToEnd().Contains("don’t");
-			//arch4.Close();
-			//var arch5 = new StreamReader(@"Datos\pruebacobuild.3.txt", Encoding.ASCII);
-			//b = arch5.ReadToEnd().Contains("don’t");
-			//arch5.Close();
-			//var arch6 = new StreamReader(@"Datos\pruebacobuild.3.txt", Encoding.BigEndianUnicode);
-			//b = arch6.ReadToEnd().Contains("don’t");
-			//arch6.Close();
-			//var arch7 = new StreamReader(@"Datos\pruebacobuild.3.txt", Encoding.Default);
-			//b = arch7.ReadToEnd().Contains("don’t");
-			//arch7.Close();
-
-
-			TextReader archivo = new StreamReader(@"Datos\pruebacobuild.3.txt", Encoding.Default);
-			TextWriter salida = new StreamWriter(@"Datos\ExtraccionDeDatos.txt");
-
-			var texto = archivo.ReadToEnd();
-			archivo.Close();
-			ExtraerDatos(texto, salida);
-			salida.Close();
+		    PonerSaltosDeLinea();
+          //  ExtraerDatos();
+			
 		}
+        private static string textoOriginal1 = @"Datos\COBUILD.DAt";
+	    private static string textoOriginal2 = @"Datos\cobuildSinSaltosDeLinea.txt";
+	    private static string textoOriginal3 = @"Datos\ExtraccionDeDatos.txt";
 
-		private static string ObtenerBloque(string texto, ref int indice)
+	    private static void PonerSaltosDeLinea()
+	    {
+
+            TextReader archivo = new StreamReader(textoOriginal1, Encoding.Default);
+            var texto = archivo.ReadToEnd();
+            archivo.Close();
+
+            TextWriter salida = new StreamWriter(@"Datos\cosa.txt", false, Encoding.Default);            
+            
+            PonerSaltosDeLinea(texto,salida);	                    
+            salida.Close();
+	    }
+	    private static void PonerSaltosDeLinea(string texto, TextWriter salida)
+	    {                                    	        
+            //var texto2 = texto.Replace("\0\0", Environment.NewLine).Replace("\0\0", Environment.NewLine);
+	        //var texto2 = texto.Replace("^b{", "").Replace("^b}", "").Replace("^i{", "").Replace("^i}", "");
+            var texto2 = ConvertirAAscii(texto);
+	        salida.Write(texto2);
+	    }
+	    private static string ConvertirAAscii(string texto)
+	    {
+            var sb = new StringBuilder();
+
+            foreach (var car in texto)
+                if (1 < car && car < 127)
+                    sb.Append(car);
+
+	        return sb.ToString();
+
+            //var unicode = Encoding.BigEndianUnicode;            
+            //var ascii = Encoding.ASCII;
+            //var bytes = unicode.GetBytes(texto3);
+            //var asciiBytes = Encoding.Convert(unicode, ascii, bytes);
+
+            //var asciiChars = new char[ascii.GetCharCount(asciiBytes, 0, asciiBytes.Length)];
+            //ascii.GetChars(asciiBytes, 0, asciiBytes.Length, asciiChars, 0);
+            //return new string(asciiChars);
+	    }
+	    private static void ExtraerDatos()
+	    {
+            TextReader archivo = new StreamReader(textoOriginal2, Encoding.Default);
+            TextWriter salida = new StreamWriter(textoOriginal3);
+
+            var texto = archivo.ReadToEnd();
+            archivo.Close();
+            ExtraerDatos(texto, salida);
+            salida.Close();
+	    }
+
+	    private static string ObtenerBloque(string texto, ref int indice)
 		{
 			var salida = string.Empty;
 			var inicio = texto.IndexOf(comienzoDeBloque, indice);
