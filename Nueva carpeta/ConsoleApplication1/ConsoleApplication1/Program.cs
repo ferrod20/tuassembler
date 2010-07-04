@@ -19,12 +19,12 @@ namespace ConsoleApplication1
 		private static Dictionary<string, string> tiposs = new Dictionary<string, string>
 		                                                   	{
 		                                                   		{"phrasal verb", ""},
-		                                                   		{"adverb", "RB"},
-		                                                   		{"other", ""},
-		                                                   		{"phrase", ""},
-		                                                   		{"verb", "VB"},
-		                                                   		{"adjective", "JJ"},
-		                                                   		{"noun", "NN"},
+		                                                   		{"adverb", "RB"}, //ok
+		                                                   		{"other", ""},//?
+		                                                   		{"phrase", ""},//?
+		                                                   		{"verb", "VB"},//ver q hacer!
+		                                                   		{"adjective", "JJ"},//ver q hacer!
+		                                                   		{"noun", "NN"},//ver q hacer con plurales....
 		                                                   		{"countable noun", "NN"},
 		                                                   		{"uncountable noun", "NN"},
 		                                                   		{"classifying adjective", "JJ"},
@@ -261,8 +261,8 @@ namespace ConsoleApplication1
 		}
 		private static void Main(string[] args)
 		{
-		    PonerSaltosDeLinea();
-          //  ExtraerDatos();
+		    //PonerSaltosDeLinea();
+            ExtraerDatos();
 			
 		}
         private static string textoOriginal1 = @"Datos\COBUILD.DAt";
