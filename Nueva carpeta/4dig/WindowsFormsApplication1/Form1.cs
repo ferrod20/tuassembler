@@ -17,7 +17,7 @@ namespace WindowsFormsApplication1
         public Form1()
         {
             InitializeComponent();
-            Regla.GuardarTodasLasOpciones("opciones.txt");
+            //Regla.GuardarTodasLasOpciones("opciones.txt");
             //Test.TestJuego5();
         }
         #endregion
@@ -111,17 +111,26 @@ namespace WindowsFormsApplication1
         private int UnJuegoMas()
         {
             var cuantos = 0;
-            if (File.Exists(@"C:\p.inx"))
+            try
             {
-                TextReader arch = new StreamReader(@"C:\p.inx");
-                var s = arch.ReadLine();
-                cuantos = int.Parse(s.Trim());
-                arch.Close();
-            }
+                if (File.Exists(@"C:\p.inx"))
+                {
+                    TextReader arch = new StreamReader(@"C:\p.inx");
+                    var s = arch.ReadLine();
+                    cuantos = int.Parse(s.Trim());
+                    arch.Close();
+                }
 
-            TextWriter archivo = new StreamWriter(@"C:\p.inx", false);
-            archivo.WriteLine(cuantos + 1);
-            archivo.Close();
+                TextWriter archivo = new StreamWriter(@"C:\p.inx", false);
+                archivo.WriteLine(cuantos + 1);
+                archivo.Close();
+            }
+            catch (Exception)
+            {
+                
+                
+            }
+            
             return cuantos + 1;
         }
         #endregion
