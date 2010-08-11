@@ -166,19 +166,14 @@ namespace ConsoleApplication1
             var sb = new StringBuilder();
 
             foreach (var car in texto)
+            {
                 if (0 < car && car < 255)
                     sb.Append(car);
+                if (0 == car )
+                    sb.Append(" ");
+            }                
 
-            return sb.ToString();
-
-            //var unicode = Encoding.BigEndianUnicode;            
-            //var ascii = Encoding.ASCII;
-            //var bytes = unicode.GetBytes(texto3);
-            //var asciiBytes = Encoding.Convert(unicode, ascii, bytes);
-
-            //var asciiChars = new char[ascii.GetCharCount(asciiBytes, 0, asciiBytes.Length)];
-            //ascii.GetChars(asciiBytes, 0, asciiBytes.Length, asciiChars, 0);
-            //return new string(asciiChars);
+            return sb.ToString();            
         }
 
         private static bool EsEjemplo(string parte, List<string> palabras)
@@ -240,13 +235,15 @@ namespace ConsoleApplication1
         {
             var partes = bloque.Split('\n');
             var palabra = partes[1].TrimEnd();
+            if (palabra.Contains(", "))
+                palabra = palabra.Substring(0, palabra.IndexOf(", "));
             var salida = "";
             if(partes.Length>2)
             {
-                var formasDeLaPalabra = partes[2].Split(',').Select(forma => forma.TrimEnd());
+                var formasDeLaPalabra = partes[2].Split(',').Select(forma => forma.TrimEnd().TrimStart());
                 var palabras = new List<string>(formasDeLaPalabra);
                 palabras.Add(palabra);
-            
+                var escribiLaPalabra = false;
                 string deDondeSeSacoElTipo;
 
                 for (var i = 2; i < partes.Length - 1; i++)
@@ -257,7 +254,12 @@ namespace ConsoleApplication1
                         var tipo = ObtenerTipo(partes, i + 1, out deDondeSeSacoElTipo).Value;
                         if (tipo != string.Empty)
                         {
-                            salida = palabra + " | " + deDondeSeSacoElTipo.TrimEnd() + "-->" + tipo + "\n";
+                            if( !escribiLaPalabra)
+                            {
+                                salida = palabra + " | " + deDondeSeSacoElTipo.TrimEnd() + "-->" + tipo + "\n";
+                                escribiLaPalabra = true;    
+                            }
+                            
                             Dictionary<string, string> palabrasConTipo = InferirTipoFormasDeLaPalabra(formasDeLaPalabra, palabra, tipo);
                             if (!palabrasConTipo.ContainsKey(palabra.ToLower()))
                                 palabrasConTipo.Add(palabra.ToLower(), tipo);
@@ -459,7 +461,7 @@ namespace ConsoleApplication1
 
         private static void Main(string[] args)
         {
-           // PonerSaltosDeLinea();
+            //PonerSaltosDeLinea();
             ExtraerDatos();
         }
 
@@ -497,10 +499,7 @@ namespace ConsoleApplication1
 
         private static void PonerSaltosDeLinea()
         {
-            //TextReader archivo = new StreamReader(textoOriginal1, Encoding.Default);
-            //var texto = archivo.ReadToEnd();
             var texto = File.ReadAllText(textoOriginal1);
-            //archivo.Close();
 
             TextWriter salida = new StreamWriter(textoOriginal2, false, Encoding.Default);
 
@@ -510,8 +509,7 @@ namespace ConsoleApplication1
 
         private static void PonerSaltosDeLinea(string texto, TextWriter salida)
         {
-            //var texto2 = texto.Replace("\0\0", Environment.NewLine).Replace("\0\0", Environment.NewLine);
-            //var texto2 = texto.Replace("^b{", "").Replace("^b}", "").Replace("^i{", "").Replace("^i}", "");
+            //An ostrich cannot fly...
             var texto2 = ConvertirAAscii(texto);
             salida.Write(texto2);
         }
