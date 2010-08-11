@@ -14,13 +14,11 @@ namespace ConsoleApplication1
 
         private static string finDeBloque = "\nDI";
 
-        private static string textoOriginal1 = @"Datos\COBUILD.DAt";
+        private static string textoOriginal1 = @"Datos\COBUILD1.txt";
 
-        private static string textoOriginal2 = @"Datos\PruebaCobuild.3.txt";
+        private static string textoOriginal2 = @"Datos\Cobuild2.txt";
 
         private static string textoOriginal3 = @"Datos\ExtraccionDeDatos.txt";
-
-        private static List<string> tipos = new List<string> {"phrasal verb", "adverb", "other", "phrase", "verb", "adjective", "noun"};
 
         private static Dictionary<string, string> tiposs = new Dictionary<string, string>
                                                                {
@@ -155,7 +153,10 @@ namespace ConsoleApplication1
             while (ind != -1)
             {
                 cantOc++;
-                ind = parte.IndexOf(palabra, ind + 1);
+                if (palabra.Length - 1 < ind + 1)
+                    ind = -1;
+                else
+                    ind = parte.IndexOf(palabra, ind + 1);
             }
             return cantOc;
         }
@@ -165,7 +166,7 @@ namespace ConsoleApplication1
             var sb = new StringBuilder();
 
             foreach (var car in texto)
-                if (1 < car && car < 127)
+                if (0 < car && car < 255)
                     sb.Append(car);
 
             return sb.ToString();
@@ -194,11 +195,16 @@ namespace ConsoleApplication1
         private static bool EsTipo(string tipo, out KeyValuePair<string, string> parDeTipos)
         {
             parDeTipos = new KeyValuePair<string, string>("", "");
-            var tipos2 = tiposs.Where(t => t.Key.StartsWith(tipo.TrimEnd()));
-            if (tipos2.Count() > 0)
+            tipo = tipo.TrimEnd();
+            var tipos2 = tiposs.Where(t => t.Key.StartsWith(tipo));
+            if(tiposs.ContainsKey(tipo ))
+                parDeTipos = new KeyValuePair<string, string>(tipo, tiposs[tipo]);
+            else if (tipos2.Count() > 0)
+            {
                 parDeTipos = tipos2.First();
-
-            return tipos.Any(tipo.StartsWith);
+            }
+                
+            return tipos2.Count() > 0;                
         }
 
         private static void ExtraerDatos(string texto, TextWriter salida)
@@ -222,12 +228,10 @@ namespace ConsoleApplication1
         }
 
         private static void ExtraerDatos()
-        {
-            TextReader archivo = new StreamReader(textoOriginal2, Encoding.Default);
+        {            
             TextWriter salida = new StreamWriter(textoOriginal3);
 
-            var texto = archivo.ReadToEnd();
-            archivo.Close();
+            var texto = File.ReadAllText(textoOriginal2);
             ExtraerDatos(texto, salida);
             salida.Close();
         }
@@ -235,30 +239,36 @@ namespace ConsoleApplication1
         private static string ExtraerDatosDelBloque(string bloque)
         {
             var partes = bloque.Split('\n');
-            var palabra = partes[1].TrimEnd();            
-            var formasDeLaPalabra = partes[2].Split(',').Select(forma=>forma.TrimEnd());
-            var palabras = new List<string>(formasDeLaPalabra);
-            palabras.Add(palabra);
+            var palabra = partes[1].TrimEnd();
             var salida = "";
-            string deDondeSeSacoElTipo;
-            
-            for (var i = 2; i < partes.Length - 1; i++)
+            if(partes.Length>2)
             {
-                var parte = partes[i].TrimEnd();
-                if (EsEjemplo(parte, palabras))
-                {
-                    var tipo = ObtenerTipo(partes, i + 1, out deDondeSeSacoElTipo).Value;                    
-                    if (tipo != string.Empty)
-                    {
-                        salida = palabra + " | " + deDondeSeSacoElTipo.TrimEnd() + "-->" + tipo + "\n";
-                        Dictionary<string, string> palabrasConTipo = InferirTipoFormasDeLaPalabra(formasDeLaPalabra,palabra, tipo);
-                        palabrasConTipo.Add(palabra, tipo);
-                        salida += GetSalida(parte, palabra, tipo);
-                    }                        
-                }
-            }
+                var formasDeLaPalabra = partes[2].Split(',').Select(forma => forma.TrimEnd());
+                var palabras = new List<string>(formasDeLaPalabra);
+                palabras.Add(palabra);
+            
+                string deDondeSeSacoElTipo;
 
-            return  salida + "------------------------";
+                for (var i = 2; i < partes.Length - 1; i++)
+                {
+                    var parte = partes[i].TrimEnd();
+                    if (EsEjemplo(parte, palabras))
+                    {
+                        var tipo = ObtenerTipo(partes, i + 1, out deDondeSeSacoElTipo).Value;
+                        if (tipo != string.Empty)
+                        {
+                            salida = palabra + " | " + deDondeSeSacoElTipo.TrimEnd() + "-->" + tipo + "\n";
+                            Dictionary<string, string> palabrasConTipo = InferirTipoFormasDeLaPalabra(formasDeLaPalabra, palabra, tipo);
+                            if (!palabrasConTipo.ContainsKey(palabra.ToLower()))
+                                palabrasConTipo.Add(palabra.ToLower(), tipo);
+                            salida += GetSalida(parte, palabrasConTipo);
+                        }
+                    }
+                }    
+                salida+= "------------------------";
+            }
+            
+            return  salida ;
         }
         private static Dictionary<string, string> InferirTipoFormasDeLaPalabra(IEnumerable<string> formasDeLaPalabra, string palabra, string tipo)
         {
@@ -280,7 +290,7 @@ namespace ConsoleApplication1
 
                 }
                 if (tipoDeLaForma != string.Empty)
-                    formasConTipos.Add(forma, tipoDeLaForma);
+                    formasConTipos.Add(forma.ToLower(), tipoDeLaForma);
             }                
             return formasConTipos;
         }
@@ -366,12 +376,19 @@ namespace ConsoleApplication1
         /// Obtiene una lista con cada palabra del ejemplo. En la palabra del ejemplo que es la entrada del diccionario, le pone el tipo.
         /// Tiene en cuenta signos de puntuacion al final y al principio.
         /// </summary>
-        private static string GetSalida(string ejemplo, string palabra, string tipo)
+        private static string GetSalida(string ejemplo, Dictionary<string, string> palabrasConTipo)
         {
             var salida = string.Empty;
-            
-            if (palabra.Contains(' '))
-                ejemplo = ReemplazarEspacioPorStringMagico(ref palabra, ejemplo);
+            //var palabrasConTipo2 = new Dictionary<string, string>();            
+
+            foreach(var palConTipo in palabrasConTipo)
+            {                
+                if(palConTipo.Key.Contains(' '))
+                {
+                    var pal2 = palConTipo.Key;
+                    ejemplo = ReemplazarEspacioPorStringMagico(ref pal2, ejemplo);
+                }
+            }            
 
             var palabrasDelEjemplo = ejemplo.Split(' ');
 
@@ -408,8 +425,10 @@ namespace ConsoleApplication1
 
                 salida += parteOriginalSinPuntuacion;
 
-                if (parteOriginalSinPuntuacion.ToLower() == palabra.ToLower())
-                    salida += "\t" + tipo;
+                var parteSinPunt = parteOriginalSinPuntuacion.ToLower();
+
+                if (palabrasConTipo.ContainsKey(parteSinPunt))
+                    salida += "\t" + palabrasConTipo[parteSinPunt];
 
                 salida += "\n";
 
@@ -440,7 +459,7 @@ namespace ConsoleApplication1
 
         private static void Main(string[] args)
         {
-            //PonerSaltosDeLinea();
+           // PonerSaltosDeLinea();
             ExtraerDatos();
         }
 
@@ -478,11 +497,12 @@ namespace ConsoleApplication1
 
         private static void PonerSaltosDeLinea()
         {
-            TextReader archivo = new StreamReader(textoOriginal1, Encoding.Default);
-            var texto = archivo.ReadToEnd();
-            archivo.Close();
+            //TextReader archivo = new StreamReader(textoOriginal1, Encoding.Default);
+            //var texto = archivo.ReadToEnd();
+            var texto = File.ReadAllText(textoOriginal1);
+            //archivo.Close();
 
-            TextWriter salida = new StreamWriter(@"Datos\cosa.txt", false, Encoding.Default);
+            TextWriter salida = new StreamWriter(textoOriginal2, false, Encoding.Default);
 
             PonerSaltosDeLinea(texto, salida);
             salida.Close();
