@@ -72,6 +72,10 @@ namespace ConsoleApplication1
     public static class InferirTipos
     {
         #region Metodos
+        public static bool EsNNS(this string palabra, string forma)
+        {
+            return palabra.Length < forma.Length && forma.ToLower().EndsWith("s");
+        }
         public static bool EsJJR(this string palabra, string forma)
         {
             return palabra.Length <= forma.Length && forma.ToLower().EndsWith("er") || forma.ToLower().StartsWith("more") || forma.ToLower().StartsWith("less");
@@ -180,6 +184,16 @@ namespace ConsoleApplication1
 
             return tipoDeLaForma;
         }
+        public static string InferirTipoNN(this string palabra, string forma)
+        {
+            var tipoDeLaForma = string.Empty;
+            if (palabra.EsNNS(forma))
+                tipoDeLaForma = "NNS";
+            else
+                tipoDeLaForma = "NN";
+            
+            return tipoDeLaForma;
+        }
         #endregion
     }
 
@@ -223,7 +237,7 @@ namespace ConsoleApplication1
             return sb.ToString();
         }
 
-        private static string Desambiguar(string tipo, string[] palabrasDelEjemplo, int i, string forma)
+        private static string Desambiguar(string forma, string[] palabrasDelEjemplo, int i, string tipo)
         {
             if (tipo.ContainsAny("VBD|VBN", "VB"))
             {
@@ -264,7 +278,7 @@ namespace ConsoleApplication1
             return tipos2.Count() > 0;
         }
 
-        private static string ExtraerDatos(string texto)
+        private static void ExtraerDatos(string texto, TextWriter tw)
         {
             var indice = 0;
             string bloque, datos = string.Empty;
@@ -277,16 +291,17 @@ namespace ConsoleApplication1
                     	datos = HacerLegiblElBloque(bloque);
 #else
                     datos = ExtraerDatosDelBloque(bloque);
+                    tw.WriteLine(datos);
 #endif
             }
-            return datos;
         }
 
         private static void ExtraerDatos()
         {
             var texto = File.ReadAllText(textoOriginal2);
-            var datos = ExtraerDatos(texto);
-            File.WriteAllText(textoOriginal3, datos);
+            TextWriter tw = new StreamWriter(textoOriginal3);
+            ExtraerDatos(texto, tw);
+            tw.Close();            
         }
 
         private static string ExtraerDatosDelBloque(string bloque)
@@ -318,10 +333,9 @@ namespace ConsoleApplication1
                                 escribiLaPalabra = true;
                             }
 
-                            var palabrasConTipo = InferirTipoFormasDeLaPalabra(formasDeLaPalabra, palabra, tipo);
-                            if (!palabrasConTipo.ContainsKey(palabra.ToLower()))
-                                palabrasConTipo.Add(palabra.ToLower(), tipo);
-                            salida += GetSalida(parte, palabrasConTipo, palabra);
+                            var palabrasConTipo = InferirTipoFormasDeLaPalabra(formasDeLaPalabra, palabra, tipo);                            
+                            palabrasConTipo.AddIfNoExists(palabra.ToLower(), tipo);
+                            salida += GetSalida(parte, palabrasConTipo);
                         }
                     }
                 }
@@ -335,7 +349,7 @@ namespace ConsoleApplication1
         ///   Obtiene una lista con cada palabra del ejemplo. En la palabra del ejemplo que es la entrada del diccionario, le pone el tipo.
         ///   Tiene en cuenta signos de puntuacion al final y al principio.
         /// </summary>
-        private static string GetSalida(string ejemplo, Dictionary<string, string> palabrasConTipo, string palabra)
+        private static string GetSalida(string ejemplo, Dictionary<string, string> palabrasConTipo)
         {
             var salida = string.Empty;
 
@@ -383,7 +397,7 @@ namespace ConsoleApplication1
                 var parteSinPunt = parteOriginalSinPuntuacion.ToLower();
 
                 if (palabrasConTipo.ContainsKey(parteSinPunt))
-                    salida += "\t" + Desambiguar(palabra, palabrasDelEjemplo, i, palabrasConTipo[parteSinPunt]);
+                    salida += "\t" + Desambiguar(parteSinPunt, palabrasDelEjemplo, i, palabrasConTipo[parteSinPunt]);
 
                 salida += "\n";
 
@@ -428,6 +442,9 @@ namespace ConsoleApplication1
                         break;
                     case "RB":
                         tipoDeLaForma = palabra.InferirTipoRB(forma);
+                        break;
+                    case "NN":
+                        tipoDeLaForma = palabra.InferirTipoNN(forma);
                         break;
                 }
                 if (tipoDeLaForma != string.Empty)
