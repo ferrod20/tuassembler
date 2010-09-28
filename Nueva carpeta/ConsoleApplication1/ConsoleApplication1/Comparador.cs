@@ -12,7 +12,7 @@ namespace ConsoleApplication1
         private static IDictionary<Tags, int> matrizDeConfusión;
         #endregion
 
-        //private static readonly TextWriter textW = new StreamWriter(@"D:\Fer\Facultad\PLN\Tp final\Freeling\bin\compa.txt");
+        private static readonly TextWriter comparacionW = new StreamWriter(@"D:\Fer\Facultad\PLN\Tesis\Nueva carpeta\ConsoleApplication1\ConsoleApplication1\bin\Debug\Datos\compa.txt");
 
         #region Metodos
         private static void BuscarProximaLinea(string[] uno, string[] otro, ref int i, ref int j)
@@ -21,7 +21,7 @@ namespace ConsoleApplication1
             var dist = 100;
             for (var ii = 0; ii < 5 && i + ii + 1 < uno.Length; ii++)
             {
-                var distancia = BuscarProximaLinea2(uno[i + ii].Split(' ')[0], uno[i + ii + 1].Split(' ')[0], otro, j);
+                var distancia = BuscarProximaLinea2(uno[i + ii].Split('\t')[0], uno[i + ii + 1].Split('\t')[0], otro, j);
 
                 if (distancia + ii < dist + iii)
                 {
@@ -36,7 +36,7 @@ namespace ConsoleApplication1
         private static int BuscarProximaLinea2(string palabra, string proxPalabra, string[] lineas, int lineaI)
         {
             var distancia = 0;
-            while (lineaI + 2 < lineas.Length && lineas[lineaI].Split(' ')[0] != palabra && lineas[lineaI + 1].Split(' ')[0] != proxPalabra && distancia < 16)
+            while (lineaI + 2 < lineas.Length && lineas[lineaI].Split('\t')[0] != palabra && lineas[lineaI + 1].Split('\t')[0] != proxPalabra && distancia < 16)
             {
                 lineaI++;
                 distancia++;
@@ -48,30 +48,34 @@ namespace ConsoleApplication1
         {
             var partesGoldStandard = lineaGoldStandard.Split();
             var partesLineaDePrueba = lineaPrueba.Split();
-            var tagDePrueba = partesLineaDePrueba.Length > 2 ? partesLineaDePrueba[2] : "";
-            tagDePrueba = tagDePrueba.Substring(0, Math.Min(2, tagDePrueba.Length)).ToUpper();
-            var tagGoldStandard = partesGoldStandard.Length > 1 ? partesGoldStandard[1] : "";
-            tagGoldStandard = tagGoldStandard.Substring(0, Math.Min(2, tagGoldStandard.Length)).ToUpper();
-            var acierto = tagDePrueba.StartsWith(tagGoldStandard);
+            var tagDePrueba =partesLineaDePrueba.Count() >1? partesLineaDePrueba.LastOrDefault():"";
 
-            if (!acierto)
+            if( !string.IsNullOrEmpty(tagDePrueba) )
             {
-                //textW.WriteLine(lineaGoldStandard);
-                //textW.WriteLine(lineaPrueba);
-                //textW.WriteLine();
-                var tags = new Tags(tagGoldStandard, tagDePrueba);
-                if (matrizDeConfusión.ContainsKey(tags))
-                    matrizDeConfusión[tags]++;
-                else
-                    matrizDeConfusión.Add(tags, 1);
+                var tagGoldStandard = partesGoldStandard.LastOrDefault()??"";
+                var acierto = tagDePrueba == tagGoldStandard;
+
+                if (!acierto)
+                {
+
+                    comparacionW.WriteLine(lineaGoldStandard);
+                    comparacionW.WriteLine(lineaPrueba);
+                    comparacionW.WriteLine();
+                    var tags = new Tags(tagGoldStandard, tagDePrueba);
+                    if (matrizDeConfusión.ContainsKey(tags))
+                        matrizDeConfusión[tags]++;
+                    else
+                        matrizDeConfusión.Add(tags, 1);
+                }    
             }
+            
         }
 
-        public static void Comparar(string arch1, string arch2, string salidaMatrizDeConf)
+        public static void Comparar(string archGoldStandard, string archParaComparar, string salidaMatrizDeConf)
         {
             matrizDeConfusión = new Dictionary<Tags, int>(EqualityComparer<Tags>.Default);
 
-            LeerArchivosParaComparar(arch1, arch2);
+            LeerArchivosParaComparar(archGoldStandard, archParaComparar);
             GrabarComparación(salidaMatrizDeConf);
         }
 
@@ -84,11 +88,15 @@ namespace ConsoleApplication1
             var porcentajeDeAciertos = (cantTags - cantidadDeErrores)/(double) cantTags*100;
             salida.WriteLine("Porcentaje de aciertos: " + porcentajeDeAciertos);
 
+            salida.WriteLine();
+            salida.WriteLine("Errores");
+            salida.WriteLine("TagTNT\tTagExtraido\tPorcentajeDeError");
+
             var matrizOrdenada = matrizDeConfusión.OrderByDescending(s => s.Value);
 
-            for (var i = 0; i < 5; i++)
+            for (var i = 0; i < matrizOrdenada.Count(); i++)
             {
-                var tags = matrizOrdenada.ElementAt(i);
+                var tags = matrizOrdenada.ElementAt(i);                
                 salida.WriteLine(tags.Key.TagGoldStandard + " " + tags.Key.TagDePrueba + " " + (tags.Value/(double) cantidadDeErrores)*100 + "%");
             }
 
@@ -98,22 +106,18 @@ namespace ConsoleApplication1
         /// <summary>
         ///   Lee los archivos y va generando la matriz de confusión.
         /// </summary>
-        private static void LeerArchivosParaComparar(string archivoGoldStandard, string archivoDePrueba)
+        private static void LeerArchivosParaComparar(string archivoGoldStandard, string archivoParaComparar)
         {
             int i = 0, j = 0;
             cantTags = 0;
-            TextReader goldStandard = new StreamReader(archivoGoldStandard);
-            TextReader prueba = new StreamReader(archivoDePrueba);
-
-            var aGoldStandard = goldStandard.ReadToEnd().Split('\n');
-            var aPrueba = prueba.ReadToEnd().Split('\n');
-            goldStandard.Close();
-            prueba.Close();
-
+            
+            var aGoldStandard = File.ReadAllText(archivoGoldStandard).Split('\n');
+            var aPrueba = File.ReadAllText(archivoParaComparar).Split('\n');
+            
             var w = 0;
             while (i < aGoldStandard.Length && j < aPrueba.Length)
             {
-                if (aGoldStandard[i].Split(' ')[0] == aPrueba[j].Split(' ')[0])
+                if (aGoldStandard[i].Split('\t')[0] == aPrueba[j].Split('\t')[0])
                 {
                     Comparar(aGoldStandard[i], aPrueba[j]);
                     cantTags++;
@@ -122,19 +126,12 @@ namespace ConsoleApplication1
 
                 i++;
                 j++;
-                if (i < aGoldStandard.Length && j < aPrueba.Length && aGoldStandard[i].Split(' ')[0] != aPrueba[j].Split(' ')[0])
-                    if (aGoldStandard[i].Split(' ')[0] == "del" && aPrueba[j].Split(' ')[0] == "de")
-                    {
-                        i++;
-                        j += 2;
-                    }
-                    else
+                if (i < aGoldStandard.Length && j < aPrueba.Length && aGoldStandard[i].Split('\t')[0] != aPrueba[j].Split('\t')[0])                    
                     {
                         var jj = j;
                         var ii = i;
                         var jjj = j;
                         var iii = i;
-
                         BuscarProximaLinea(aGoldStandard, aPrueba, ref ii, ref jj);
                         BuscarProximaLinea(aPrueba, aGoldStandard, ref jjj, ref iii);
 

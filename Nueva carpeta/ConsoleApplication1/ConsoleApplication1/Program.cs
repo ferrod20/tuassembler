@@ -249,8 +249,8 @@ namespace ConsoleApplication1
         private static void Main()
         {
             //PonerSaltosDeLinea();
-            Extractor.ExtraerDatos(archCobuild, archExtraccion);
-            //Comparador.Comparar(archExtraccion, archTaggeado, matrizDeConf);
+            //Extractor.ExtraerDatos(archCobuild, archExtraccion);
+            Comparador.Comparar(archTaggeado, archExtraccion, matrizDeConf);
         }
 
         private static void PonerSaltosDeLinea()
