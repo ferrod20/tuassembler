@@ -239,7 +239,6 @@ namespace ConsoleApplication1
 
             return salida;
         }
-
         private static KeyValuePair<string, string> ObtenerTipo(string[] partes, int i, out string obtenido)
         {
             obtenido = string.Empty;

@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace ConsoleApplication1
 {
@@ -7,14 +9,25 @@ namespace ConsoleApplication1
         #region Variables de instancia
         public string TagDePrueba;
         public string TagGoldStandard;
+        public Dictionary<string, int> Palabras;
         #endregion
 
         #region Constructores
-        public Tags(string tagGoldStandard, string tagDePrueba)
+        public Tags(string tagGoldStandard, string tagDePrueba, string palabra)
         {
             TagDePrueba = tagDePrueba;
             TagGoldStandard = tagGoldStandard;
+            Palabras = new Dictionary<string, int> {{palabra, 1}};
         }
+
+        public int TotalDePalabras
+        {
+            get
+            {
+                return Palabras.Sum(p => p.Value);
+            }
+        }
+
         #endregion
 
         #region Metodos
@@ -54,6 +67,15 @@ namespace ConsoleApplication1
         public int Compare(Tags x, Tags y)
         {
             return 1;
+        }
+
+        public void AgregarPalabra(string palabra)
+        {
+            if (!Palabras.ContainsKey(palabra))
+                Palabras.Add(palabra, 1);
+            else
+                Palabras[palabra]++;
+
         }
         #endregion
     }

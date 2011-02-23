@@ -1,4 +1,5 @@
 ﻿//#define HacerLegible
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -9,7 +10,7 @@ namespace ConsoleApplication1
     public static class Metodos
     {
         #region Metodos
-        public static void AddIfNoExists<A, B>(this Dictionary<A, B> dic, A key, B value)
+        public static void AddIfNoExists<A, B>(this IDictionary<A, B> dic, A key, B value)
         {
             if (!dic.ContainsKey(key))
                 dic.Add(key, value);
@@ -208,6 +209,7 @@ namespace ConsoleApplication1
         private static string archCobuild = @"Datos\Cobuild2.txt";
         private static string archExtraccion = @"Datos\ExtraccionDeDatos.txt";
         private static string archTaggeado = @"Datos\ArchTaggeado.txt";
+        private static string archUnion = @"Datos\ArchUnion.txt";
         private static string matrizDeConf = @"Datos\MatrizDeConf.txt";
         #endregion
 
@@ -249,8 +251,51 @@ namespace ConsoleApplication1
         private static void Main()
         {
             //PonerSaltosDeLinea();
-            //Extractor.ExtraerDatos(archCobuild, archExtraccion);
-            Comparador.Comparar(archTaggeado, archExtraccion, matrizDeConf);
+  //          Extractor.ExtraerDatos(archCobuild, archExtraccion);
+            
+//            Comparador.Comparar(archTaggeado, archExtraccion, matrizDeConf);
+
+            Comparador.Comparar(@"Datos\totwsjgold", @"Datos\totwsjgold.tagged", @"Datos\MatrizDeConfGold.txt");
+            Comparador.Comparar(@"Datos\totwsjgold", @"Datos\totwsjgoldMasTag.tagged", @"Datos\MatrizDeConfGoldMasTag.txt");
+            Comparador.Comparar(@"Datos\totwsjgold", @"Datos\totwsjgoldMitad.tagged", @"Datos\MatrizDeConfGoldMitad.txt");
+            Comparador.Comparar(@"Datos\totwsjgold", @"Datos\totwsjgoldMitadMasTag.tagged", @"Datos\MatrizDeConfGoldMitadMasTag.txt");
+
+            //UnirArchivoExtraidoConArchivoTaggeado();
+        }
+
+        private static void UnirArchivoExtraidoConArchivoTaggeado()
+        {
+            var textoExtraido = new StreamReader(archExtraccion);
+            var textoTaggeado = new StreamReader(archTaggeado);
+
+            TextWriter salida = new StreamWriter(archUnion, false, Encoding.Default);
+
+            var lineaExt = textoExtraido.ReadLine();
+            var lineaTaggeado = textoTaggeado.ReadLine();
+
+
+            while (lineaExt != null && lineaTaggeado != null)
+            {
+                if( lineaExt != string.Empty )
+                {
+                    var partesExt = lineaExt.Split();
+                    salida.Write(partesExt[0]);
+                    salida.Write("\t");
+                    if (partesExt.Count() > 1 && !string.IsNullOrEmpty(partesExt.Last()))
+                        salida.Write(partesExt.Last());
+                    else
+                        salida.Write(lineaTaggeado.Split().Last());
+
+                    salida.WriteLine();
+                }
+
+                lineaExt = textoExtraido.ReadLine();
+                lineaTaggeado = textoTaggeado.ReadLine();    
+            }
+
+            salida.Close();
+            textoExtraido.Close();
+            textoTaggeado.Close();
         }
 
         private static void PonerSaltosDeLinea()
