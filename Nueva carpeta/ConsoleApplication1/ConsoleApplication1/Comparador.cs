@@ -9,7 +9,7 @@ namespace ConsoleApplication1
     {
         #region Variables de clase
         private static int cantTags;
-        private static IDictionary<Tags, int> matrizDeConfusión;
+        private static List<Tags> matrizDeConfusión;
         #endregion
 
         private static readonly TextWriter comparacionW = new StreamWriter(@"D:\Fer\Facultad\PLN\Tesis\Nueva carpeta\ConsoleApplication1\ConsoleApplication1\bin\Debug\Datos\compa.txt");
@@ -32,7 +32,6 @@ namespace ConsoleApplication1
             i = i + iii;
             j = j + dist;
         }
-
         private static int BuscarProximaLinea2(string palabra, string proxPalabra, string[] lineas, int lineaI)
         {
             var distancia = 0;
@@ -49,7 +48,7 @@ namespace ConsoleApplication1
             var partesGoldStandard = lineaGoldStandard.Split();
             var partesLineaDePrueba = lineaPrueba.Split();
             var tagDePrueba =partesLineaDePrueba.Count() >1? partesLineaDePrueba.LastOrDefault():"";
-
+             
             if( !string.IsNullOrEmpty(tagDePrueba) )
             {
                 var tagGoldStandard = partesGoldStandard.LastOrDefault()??"";
@@ -61,11 +60,17 @@ namespace ConsoleApplication1
                     comparacionW.WriteLine(lineaGoldStandard);
                     comparacionW.WriteLine(lineaPrueba);
                     comparacionW.WriteLine();
-                    var tags = new Tags(tagGoldStandard, tagDePrueba);
-                    if (matrizDeConfusión.ContainsKey(tags))
-                        matrizDeConfusión[tags]++;
+                    var palabra = string.Empty;
+                    if( partesGoldStandard.Length > 0)
+                        palabra = partesGoldStandard[0];
+                    var tags = new Tags(tagGoldStandard, tagDePrueba, palabra);
+                    if (matrizDeConfusión.Contains(tags))
+                    {                        
+                        var i = matrizDeConfusión.IndexOf(tags);
+                        matrizDeConfusión[i].AgregarPalabra(palabra);
+                    }
                     else
-                        matrizDeConfusión.Add(tags, 1);
+                        matrizDeConfusión.Add(tags);
                 }    
             }
             
@@ -73,7 +78,8 @@ namespace ConsoleApplication1
 
         public static void Comparar(string archGoldStandard, string archParaComparar, string salidaMatrizDeConf)
         {
-            matrizDeConfusión = new Dictionary<Tags, int>(EqualityComparer<Tags>.Default);
+            //matrizDeConfusión = new Dictionary<Tags, int>(EqualityComparer<Tags>.Default);
+            matrizDeConfusión = new List<Tags>();
 
             LeerArchivosParaComparar(archGoldStandard, archParaComparar);
             GrabarComparación(salidaMatrizDeConf);
@@ -83,22 +89,23 @@ namespace ConsoleApplication1
         {
             TextWriter salida = new StreamWriter(archivoDeSalida);
 
-            var cantidadDeErrores = matrizDeConfusión.Sum(s => s.Value);
+            var cantidadDeErrores = matrizDeConfusión.Sum(s => s.TotalDePalabras);
 
             var porcentajeDeAciertos = (cantTags - cantidadDeErrores)/(double) cantTags*100;
             salida.WriteLine("Porcentaje de aciertos: " + porcentajeDeAciertos);
 
             salida.WriteLine();
             salida.WriteLine("Errores");
-            salida.WriteLine("TagTNT\tTagExtraido\tPorcentajeDeError");
+            salida.WriteLine("TagWSJ\tTagAsignado\tPorcentajeDeError");
 
-            var matrizOrdenada = matrizDeConfusión.OrderByDescending(s => s.Value);
+            var matrizOrdenada = matrizDeConfusión.OrderByDescending(s => s.TotalDePalabras);
 
-            for (var i = 0; i < matrizOrdenada.Count(); i++)
+            foreach (var tags in matrizOrdenada)
             {
-                var tags = matrizOrdenada.ElementAt(i);                
-                salida.WriteLine(tags.Key.TagGoldStandard + " " + tags.Key.TagDePrueba + " " + (tags.Value/(double) cantidadDeErrores)*100 + "%");
-            }
+                salida.WriteLine(tags.TagGoldStandard + " " + tags.TagDePrueba + " " + (tags.TotalDePalabras / (double)cantidadDeErrores) * 100 + "%");
+                foreach (var palabra in tags.Palabras.OrderByDescending(s=>s.Value).Take(40))
+                    salida.WriteLine("\t" + palabra.Key + " " + palabra.Value);
+            }            
 
             salida.Close();
         }
