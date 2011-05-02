@@ -71,9 +71,7 @@ namespace ConsoleApplication1
 
         public void AgregarPalabra(string palabra)
         {
-            if (!Palabras.ContainsKey(palabra))
-                Palabras.Add(palabra, 1);
-            else
+            if(!Palabras.AddIfNoExists(palabra, 1))
                 Palabras[palabra]++;
 
         }

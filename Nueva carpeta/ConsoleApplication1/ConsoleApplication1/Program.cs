@@ -10,13 +10,31 @@ namespace ConsoleApplication1
     public static class Metodos
     {
         #region Metodos
-        public static void AddIfNoExists<A, B>(this IDictionary<A, B> dic, A key, B value)
+        public static string SubstringBeetween(this string str, char a, char b)
         {
-            if (!dic.ContainsKey(key))
-                dic.Add(key, value);
+            var inicio = str.IndexOf(a);
+            var fin = str.IndexOf(b, inicio + 1);
+            var hasta = fin - (inicio + 1);
+            return str.Substring(inicio + 1, hasta);
         }
 
-        public static decimal CantidadDeOcurrencias(this string parte, string palabra)
+        public static string SubstringBeetween(this string str, string a, string b)
+        {
+            var inicio = str.IndexOf(a);
+            var fin = str.IndexOf(b, inicio + 1);
+            var hasta = fin - (inicio + a.Length);
+            return str.Substring(inicio + a.Length, hasta);
+        }
+        public static bool AddIfNoExists<A, B>(this IDictionary<A, B> dic, A key, B value)
+        {
+            var exists = dic.ContainsKey(key);
+            if (!exists)
+                dic.Add(key, value);
+
+            return exists;
+        }
+
+        public static decimal HowManyOcurrencies(this string parte, string palabra)
         {
             var cantOc = 0;
             var ind = parte.IndexOf(palabra);

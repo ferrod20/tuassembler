@@ -52,7 +52,7 @@ namespace ConsoleApplication1
         private static bool EsEjemplo(string parte, string palabra)
         {
             var cantPalabras = parte.Split().Count();
-            return parte.Contains(palabra) && parte.Length > palabra.Length + 2 && cantPalabras > 4 && parte.Sum(letra => letra == ',' ? 1 : 0) <= 3 && cantPalabras > parte.CantidadDeOcurrencias(palabra);
+            return parte.Contains(palabra) && parte.Length > palabra.Length + 2 && cantPalabras > 4 && parte.Sum(letra => letra == ',' ? 1 : 0) <= 3 && cantPalabras > parte.HowManyOcurrencies(palabra);
         }
 
         private static bool EsTipo(string tipo, out KeyValuePair<string, string> parDeTipos)
