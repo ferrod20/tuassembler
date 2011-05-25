@@ -50,7 +50,7 @@ namespace WindowsFormsApplication1
                     txtNumero.Text = txtNumero.Text.Substring(0, txtNumero.Text.Length - 2);
             }
             else if (txtNumero.Text.Replace(" ", "").Length < 4)
-                txtNumero.Text += nroOprimido.ToString() + " ";            
+                txtNumero.Text += nroOprimido.ToString() + " ";
         }
     }
 }

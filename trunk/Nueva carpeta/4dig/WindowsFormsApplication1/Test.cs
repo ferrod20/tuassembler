@@ -36,10 +36,10 @@
         }
         public static void TestNumero()
         {
-            var n12_7 = new NumeroGenerado(1, 2, null, 7);
-            var n__8_ = new NumeroGenerado(null, null, 8, null);
-            var n1__3 = new NumeroGenerado(1, null, null, 3);
-            var n8__1 = new NumeroGenerado(8, null, null, 1);
+            var n12_7 = new GeneradorDeNumero(1, 2, null, 7);
+            var n__8_ = new GeneradorDeNumero(null, null, 8, null);
+            var n1__3 = new GeneradorDeNumero(1, null, null, 3);
+            var n8__1 = new GeneradorDeNumero(8, null, null, 1);
 
             var todoBien = n12_7.EsUnificableCon(n__8_);
             todoBien = !n12_7.EsUnificableCon(n1__3);
@@ -53,8 +53,8 @@
         }
         public static void TestNumero2()
         {
-            var a = new NumeroGenerado(null, 3, 2, 5);
-            var b = new NumeroGenerado(null, 3, 2, 5);
+            var a = new GeneradorDeNumero(null, 3, 2, 5);
+            var b = new GeneradorDeNumero(null, 3, 2, 5);
 
             var iguales = a.Equals(b);
             var unif = a.EsUnificableCon(b);
