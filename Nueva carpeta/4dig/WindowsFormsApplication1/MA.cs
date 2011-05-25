@@ -25,6 +25,7 @@ namespace WindowsFormsApplication1
             foreach (var control in controles)
                 control.Text = string.Empty;
         }
+
         /// <summary>
         /// Establece la propiedad Visible de cada uno de los controles al valor de mostrar.
         /// </summary>

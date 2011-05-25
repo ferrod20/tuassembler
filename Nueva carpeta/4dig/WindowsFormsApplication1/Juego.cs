@@ -19,8 +19,6 @@ namespace WindowsFormsApplication1
         public Numero NumeroAAdivinarPorElJugador;
         public Numero NumeroAAdivinarPorLaCompu;
         public Numero NumeroAdivinadoPorLaCompu;
-        private int cantJugadasCompu;
-        private int cantJugadasJugador;
         private List<NumeroAdivinado> jugadasDeLaCompu;
         private List<NumeroAdivinado> jugadasDelJugador;
         private List<Regla> reglasDeLaCompu = new List<Regla>();
@@ -38,10 +36,7 @@ namespace WindowsFormsApplication1
         #region Propiedades
         public bool NumeroAAdivinarPorLaCompuIngresado
         {
-            get
-            {
-                return NumeroAdivinadoPorLaCompu != null;
-            }
+            get { return NumeroAdivinadoPorLaCompu != null; }
         }
         #endregion
 
@@ -51,27 +46,27 @@ namespace WindowsFormsApplication1
             NumeroAdivinadoPorLaCompu = null;
             if (reglasDeLaCompu.Count == 0)
             {
-                NumeroAdivinadoPorLaCompu = NumeroGenerado.GenerarNumeroAlAzar();
+                NumeroAdivinadoPorLaCompu = GeneradorDeNumero.GenerarNumeroAlAzar();
                 CantidadDeOpciones = 120960; //10.9.8.7   4.3.2
             }
 
             else
             {
-                var nums = new List<NumeroGenerado>();
+                var nums = new List<GeneradorDeNumero>();
                 foreach (var regla in reglasDeLaCompu)
                 {
                     var numeros = regla.Generar();
-                    nums = nums.Count == 0 ? new List<NumeroGenerado>(numeros) : Unificar(nums, numeros);
+                    nums = nums.Count == 0 ? new List<GeneradorDeNumero>(numeros) : Unificar(nums, numeros);
                 }
 
                 if (nums.Count > 0)
                 {
                     CantidadDeOpciones = CalcularOpciones(nums);
-                    var numerosNoPermitidos = reglasDeLaCompu.Select(r => r.ConvertirEnNumeroGenerado);                                        
-                    NumeroGenerado num = null;
+                    var numerosNoPermitidos = reglasDeLaCompu.Select(r => r.ConvertirEnGeneradorDeNumero);
+                    GeneradorDeNumero num = null;
 
                     foreach (var n in nums)
-                    {                                                
+                    {
                         var numerosPosibles = n.ObtenerPosibles(numerosNoPermitidos);
                         if (numerosPosibles.Count > 0)
                         {
@@ -79,29 +74,32 @@ namespace WindowsFormsApplication1
                             break;
                         }
                     }
-                    
-                    NumeroAdivinadoPorLaCompu = num==null ?null: new Numero(num);
-                    
+
+                    NumeroAdivinadoPorLaCompu = num == null ? null : new Numero(num);
                 }
             }
         }
+
         public Regla AgregarRegla(int a, int b, int c, int d, int bien, int regular)
         {
             var regla = new Regla(a, b, c, d, bien, regular);
             reglasDeLaCompu.Add(regla);
             return regla;
         }
+
         public Regla AgregarRegla(Numero n, int bien, int regular)
         {
             var regla = new Regla(n, bien, regular);
             reglasDeLaCompu.Add(regla);
             return regla;
         }
+
         public Regla AgregarReglaAlNumeroAdivinado(int bien, int regular)
         {
             return AgregarRegla(NumeroAdivinadoPorLaCompu, bien, regular);
         }
-        private int CalcularOpciones(List<NumeroGenerado> numerosGenerados)
+
+        private static int CalcularOpciones(IEnumerable<GeneradorDeNumero> numerosGenerados)
         {
             var cantDeOpciones = 0;
             foreach (var num in numerosGenerados)
@@ -128,13 +126,15 @@ namespace WindowsFormsApplication1
             }
             return cantDeOpciones;
         }
+
         public void CalificarElNumeroDelJugador(string numero, out int bien, out int regular)
         {
             NumeroAAdivinarPorElJugador.Calificar(numero, out bien, out regular);
         }
+
         private void EstablecerEstadoDelJuego()
         {
-            if(jugadasDelJugador.Count  > 0 && jugadasDelJugador.Count == jugadasDeLaCompu.Count )
+            if (jugadasDelJugador.Count > 0 && jugadasDelJugador.Count == jugadasDeLaCompu.Count)
             {
                 var jugadorAdivinó = jugadasDelJugador.Last().Bien == 4;
                 var compuAdivinó = jugadasDeLaCompu.Last().Bien == 4;
@@ -144,12 +144,13 @@ namespace WindowsFormsApplication1
                 else if (compuAdivinó)
                     Estado = EstadoDelJuego.GanoLaCompu;
             }
-                        
         }
+
         public void GenerarNumeroAAdivinar()
         {
-            NumeroAAdivinarPorElJugador = NumeroGenerado.GenerarNumeroAlAzar();
+            NumeroAAdivinarPorElJugador = GeneradorDeNumero.GenerarNumeroAlAzar();
         }
+
         public NumeroAdivinado JuegaElJugador(string numero, out int bien, out int regular)
         {
             CalificarElNumeroDelJugador(numero, out bien, out regular);
@@ -157,8 +158,8 @@ namespace WindowsFormsApplication1
             jugadasDelJugador.Add(n);
             EstablecerEstadoDelJuego();
             return n;
-
         }
+
         public Regla JuegaLaCompu()
         {
             int bien, regular;
@@ -169,9 +170,10 @@ namespace WindowsFormsApplication1
 
             return AgregarReglaAlNumeroAdivinado(bien, regular);
         }
-        private List<NumeroGenerado> Unificar(List<NumeroGenerado> nums, List<NumeroGenerado> numeros)
+
+        private static List<GeneradorDeNumero> Unificar(List<GeneradorDeNumero> nums, IEnumerable<GeneradorDeNumero> numeros)
         {
-            var numsUnificados = new List<NumeroGenerado>();
+            var numsUnificados = new List<GeneradorDeNumero>();
             foreach (var numeroGenerado in numeros)
                 foreach (var num in nums)
                     if (num.EsUnificableCon(numeroGenerado))

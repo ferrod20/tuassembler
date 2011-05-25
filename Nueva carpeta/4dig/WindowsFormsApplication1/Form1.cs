@@ -3,6 +3,7 @@ using System.IO;
 using System.Threading;
 using System.Windows.Forms;
 using System.Windows.Forms.VisualStyles;
+using GrabadorDeTests;
 
 namespace WindowsFormsApplication1
 {
@@ -153,6 +154,29 @@ namespace WindowsFormsApplication1
 
         private void Form1_Load(object sender, EventArgs e)
         {
+
+            var sumador = new TiposBásicos();
+            sumador.Boolean1 = true;
+            sumador.Byte1 = 2;
+            sumador.Char1 = 'f';
+            sumador.DayOfWeek1 = DayOfWeek.Thursday;
+            sumador.Decimal1 = 3;
+            sumador.Double1 = 4.56;
+            sumador.dt = new DateTime(1984, 5, 6);
+            sumador.Int1 = 5;
+            sumador.Int161 = 6;
+            sumador.Int321 = 7;
+            sumador.Int641 = 8;
+            sumador.Single1 = 9;
+            sumador.String1 = "100sdd";
+            sumador.UInt161 = 10;
+            sumador.UInt321 = 100;
+            sumador.UInt641 = 1000000;
+
+            sumador.tb = sumador;
+
+            sumador.Sumar(34, 111);
+
             Empezar();
             if (partidosJugados > 150)
             {
@@ -179,5 +203,63 @@ namespace WindowsFormsApplication1
             else if( txtNumero.Text.Replace(" ", "").Length<4)
                 txtNumero.Text += nroOprimido.ToString() + " ";
         }
+    }
+
+    public class TiposBásicos
+    {
+        #region Propiedades
+
+        public TiposBásicos tb { get; set; }
+
+        public DateTime dt { get; set; }
+
+        public float Single1 { get; set; }
+
+        public int Int1 { get; set; }
+
+        public byte Byte1 { get; set; }
+
+        public bool Boolean1 { get; set; }
+
+        public decimal Decimal1 { get; set; }
+
+        public double Double1 { get; set; }
+
+        public short Int161 { get; set; }
+
+        public int Int321 { get; set; }
+
+        public long Int641 { get; set; }
+
+        public ushort UInt161 { get; set; }
+
+        public uint UInt321 { get; set; }
+
+        public ulong UInt641 { get; set; }
+
+        public char Char1 { get; set; }
+
+        public DayOfWeek DayOfWeek1 { get; set; }
+
+        public string String1 { get; set; }
+
+        private uint A { get; set; }
+
+        #endregion
+
+        #region Métodos
+        [Grabar]
+        public int Sumar(int a, int b)
+        {
+            Char1 = 'r';
+            return a + b;
+        }
+
+        public override string ToString()
+        {
+            return string.Format("Char1: {0}", Char1);
+        }
+
+        #endregion
     }
 }
