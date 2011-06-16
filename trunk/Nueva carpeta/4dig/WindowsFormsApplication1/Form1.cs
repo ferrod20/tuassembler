@@ -3,7 +3,6 @@ using System.IO;
 using System.Threading;
 using System.Windows.Forms;
 using System.Windows.Forms.VisualStyles;
-using GrabadorDeTests;
 
 namespace WindowsFormsApplication1
 {
@@ -248,7 +247,6 @@ namespace WindowsFormsApplication1
         #endregion
 
         #region Métodos
-        [Grabar]
         public int Sumar(int a, int b)
         {
             Char1 = 'r';
