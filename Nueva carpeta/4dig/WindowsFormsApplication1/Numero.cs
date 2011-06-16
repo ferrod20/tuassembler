@@ -1,4 +1,3 @@
-using GrabadorDeTests;
 
 namespace WindowsFormsApplication1
 {
@@ -84,7 +83,6 @@ namespace WindowsFormsApplication1
             Calificar(n0, n1, n2, n3, out bien, out regular);
         }
 
-        [Grabar]
         public void Calificar(int n0, int n1, int n2, int n3, out int bien, out int regular)
         {
             bien = 0;
