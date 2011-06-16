@@ -220,15 +220,15 @@ namespace ConsoleApplication1
     internal class Program
     {
         #region Constantes
-        private const string textoOriginal1 = @"Datos\COBUILD1.txt";
+        private const string cobuildOriginal = @"Datos\Extraccion\Cobuild.original";
         #endregion
 
         #region Variables de clase
-        private static string archCobuild = @"Datos\Cobuild2.txt";
-        private static string archExtraccion = @"Datos\ExtraccionDeDatos.txt";
-        private static string archTaggeado = @"Datos\ArchTaggeado.txt";
-        private static string archUnion = @"Datos\ArchUnion.txt";
-        private static string matrizDeConf = @"Datos\MatrizDeConf.txt";
+        private static string cobuildOriginalLegible = @"Datos\Extraccion\Cobuild.original.legible";
+        private static string cobuildExtraido = @"Datos\Extraccion\Cobuild.extracted";
+        private static string cobuildTaggeado = @"Datos\Extraccion\Cobuild.tagged";
+        private static string cobuildFinal = @"Datos\Extraccion\Cobuild.final";
+        private static string matrizDeConfCobuild = @"Datos\Extraccion\Cobuild.mConf";
         #endregion
 
         #region Metodos
@@ -268,25 +268,23 @@ namespace ConsoleApplication1
 
         private static void Main()
         {
-            //PonerSaltosDeLinea();
-  //          Extractor.ExtraerDatos(archCobuild, archExtraccion);
-            
-//            Comparador.Comparar(archTaggeado, archExtraccion, matrizDeConf);
+            //HacerLegibleCobuild();
+            //Extractor.ExtraerDatos(cobuildOriginalLegible, cobuildExtraido);            
+            //Comparador.Comparar(cobuildTaggeado, cobuildExtraido, matrizDeConfCobuild);
+            //UnirCobuildExtraidoConCobuildTaggeado();
 
             Comparador.Comparar(@"Datos\totwsjgold", @"Datos\totwsjgold.tagged", @"Datos\MatrizDeConfGold.txt");
             Comparador.Comparar(@"Datos\totwsjgold", @"Datos\totwsjgoldMasTag.tagged", @"Datos\MatrizDeConfGoldMasTag.txt");
             Comparador.Comparar(@"Datos\totwsjgold", @"Datos\totwsjgoldMitad.tagged", @"Datos\MatrizDeConfGoldMitad.txt");
             Comparador.Comparar(@"Datos\totwsjgold", @"Datos\totwsjgoldMitadMasTag.tagged", @"Datos\MatrizDeConfGoldMitadMasTag.txt");
-
-            //UnirArchivoExtraidoConArchivoTaggeado();
         }
 
-        private static void UnirArchivoExtraidoConArchivoTaggeado()
+        private static void UnirCobuildExtraidoConCobuildTaggeado()
         {
-            var textoExtraido = new StreamReader(archExtraccion);
-            var textoTaggeado = new StreamReader(archTaggeado);
+            var textoExtraido = new StreamReader(cobuildExtraido);
+            var textoTaggeado = new StreamReader(cobuildTaggeado);
 
-            TextWriter salida = new StreamWriter(archUnion, false, Encoding.Default);
+            TextWriter salida = new StreamWriter(cobuildFinal, false, Encoding.Default);
 
             var lineaExt = textoExtraido.ReadLine();
             var lineaTaggeado = textoTaggeado.ReadLine();
@@ -316,11 +314,11 @@ namespace ConsoleApplication1
             textoTaggeado.Close();
         }
 
-        private static void PonerSaltosDeLinea()
+        private static void HacerLegibleCobuild()
         {
-            var texto = File.ReadAllText(textoOriginal1);
+            var texto = File.ReadAllText(cobuildOriginal);
 
-            TextWriter salida = new StreamWriter(archCobuild, false, Encoding.Default);
+            TextWriter salida = new StreamWriter(cobuildOriginalLegible, false, Encoding.Default);
 
             PonerSaltosDeLinea(texto, salida);
             salida.Close();
