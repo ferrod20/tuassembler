@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication1", "ConsoleApplication1\ConsoleApplication1.csproj", "{F8BBFE82-C41F-439F-A55D-753C3A6FF802}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tesis", "Tesis\Tesis.csproj", "{F8BBFE82-C41F-439F-A55D-753C3A6FF802}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
