@@ -1,0 +1,16 @@
+PATH=$PATH:$HOME/bin
+cd Taggeado
+tnt ../Entrenado/wsj ../WSJ/wsj.raw > wsj.tagged
+tnt ../Entrenado/wsjMasCobuild ../WSJ/wsj.raw > wsjMasCobuild.tagged
+tnt ../Entrenado/wsjC1 ../WSJ/wsjComplementoC1.gold > wsjComplementoC1.tagged
+tnt ../Entrenado/wsjC2 ../WSJ/wsjComplementoC2.gold > wsjComplementoC2.tagged
+tnt ../Entrenado/wsjC3 ../WSJ/wsjComplementoC3.gold > wsjComplementoC3.tagged
+tnt ../Entrenado/wsjC4 ../WSJ/wsjComplementoC4.gold > wsjComplementoC4.tagged
+tnt ../Entrenado/wsjM1 ../WSJ/wsjM2.gold > wsjM2.tagged
+tnt ../Entrenado/wsjM2 ../WSJ/wsjM1.gold > wsjM1.tagged
+tnt ../Entrenado/wsjC1MasCobuild ../WSJ/wsjComplementoC1.gold > wsjComplementoC1MasCobuild.tagged
+tnt ../Entrenado/wsjC2MasCobuild ../WSJ/wsjComplementoC2.gold > wsjComplementoC2MasCobuild.tagged
+tnt ../Entrenado/wsjC3MasCobuild ../WSJ/wsjComplementoC3.gold > wsjComplementoC3MasCobuild.tagged
+tnt ../Entrenado/wsjC4MasCobuild ../WSJ/wsjComplementoC4.gold > wsjComplementoC4MasCobuild.tagged
+tnt ../Entrenado/wsjM1MasCobuild ../WSJ/wsjM2.gold > wsjM2MasCobuild.tagged
+tnt ../Entrenado/wsjM2MasCobuild ../WSJ/wsjM1.gold > wsjM1MasCobuild.tagged
