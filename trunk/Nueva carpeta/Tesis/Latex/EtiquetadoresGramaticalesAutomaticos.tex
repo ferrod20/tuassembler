@@ -1,0 +1,84 @@
+\subsection{Etiquetadores gramaticales automáticos} 
+Como se mencionó anteriormente, el etiquetado gramatical es el proceso de asignar una etiqueta gramatical a cada palabra dentro de un texto. Generalmente las etiquetas gramaticales también son aplicadas a los signos de puntuación, por lo tanto el etiquetado requiere que los signos de puntuación sean separados de las palabras. Este proceso se realiza previamente o como parte del etiquetado y es conocido como tokenización; es el proceso encargado de separar puntos, comas, paréntesis y otros caracteres de las palabras así como también desambiguar el fin de oración (por ejemplo un punto o signo de pregunta) de un signo de puntuación (como en una abreviación por ejemplo \textsl{étc.})
+
+La entrada para un algoritmo de etiquetación automática es una cadena de palabras y un conjunto de etiquetas. La salida es la mejor etiqueta encontrada para cada palabra.
+Consideremos  las siguientes oraciones etiquetadas gramaticalmente:
+\\
+\\
+\textsl{Book/VB that/DT flight/NN ./.\\
+Does/VBZ that/DT flight/NN serve/VB dinner/NN ?/.}
+\\
+\\
+Asginar una etiqueta gramatical a una palabra no es una tarea trivial incluso en estos sencillos ejemplos. Por ejemplo, la palabra \textsl{book} es ambigua. Es decir que tiene más de un uso posible y por lo tanto más de una etiqueta gramatical posible. Puede ser un verbo (como en \textsl{book that flight} o \textsl{to book the suspect}) o un sustantivo (como en \textsl{hand me that book} o \textsl{a book of matches}). Análogamante \textsl{that} puede ser un determinante (como en \textsl{Does that flight serve dinner}) o un complementador (como en \textsl{I thought that your flight was earlier}). 
+
+El problema del etiquetado gramatical reside en resolver estas ambiguedades, eligiendo la etiqueta adecuada según el contexto. 
+¿Pero qué magnitud tiene el problema de la ambiguedad de las palabras? 
+
+Podemos apreciar que la mayoría de las palabras en Inglés no son ambiguas, o l o que es lo mismo, tienen una única etiqueta posible. Pero sin embargo muchas de las palabras más comunes del Inglés son ambiguas, es decir que las palabras más utilizadas, las que se emplean con mayor frecuencia, pueden tener más de una etiqueta. Por ejemplo \textsl{can} puede ser un auxiliar (puede), un sustantivo (lata o contenedor de metal) o un verbo (poner algo en la lata).
+
+Afortunadamente muchas de las palabras ambiguas son fácilmente desambiguables. Esto sucede porque las etiquetas asociados a una palabra no suelen ocurrir con la misma frecuencia. Por ejemplo \textsl{a} puede ser un determinante o la letra \textsl{a} (quizás como parte de un acrónimo o una inicial), pero es preciso notar que el sentido de \textsl{a} es mucho más frecuente como determinante que como letra.
+
+Existen distintos métodos computacionales para asignar una etiqueta gramatical a una palabra. La mayoría de los algoritmos de etiquetado automático pertenecen a una de dos clases: etiquetadores basados en reglas o etiquetadores estocásticos.
+
+Los etiquetadores basados en reglas generalmente incluyen una gran cantidad de reglas de desambiguación escritas a mano que especifican, por ejemplo, que una palabra ambigua es un sustantivo antes que un verbo si es seguida por un determinante.
+
+Los etiquetadores estocásticos generalmente resuelven la ambiguedad de etiquetas utilizando un corpus de entrenamiento para computar la probabilidad de que una palabra dada tenga cierta etiqueta en cierto contexto.
+
+Adicionalmente existe una tercera clase de etiquetadores que es una mezcla de estos dos: etiquetadores basados en la transformación. Como los etiquetadores basados en reglas, está basado en reglas que determinan cuando una palabra ambigua debe tener cierta etiqueta. Y como los etiquetadores estocásticos tiene un componente de aprendizaje automático: las reglas son inducidas automáticamente de un corpus de entrenamiento previamente etiquetado.
+\subsubsection{Etiquetadores gramaticales basados en reglas} 
+Los primeros algoritmos de asignación de etiquetas gramaticales estaban basados en un proceso de dos partes. En la primer etapa utilizaban un diccionario para asignar a cada palabra una lista de potenciales etiquetas gramaticales. En la segunda etapa utilizaban grandes listas de reglas de desambiguación escritas a mano para reducir la lista de etiquetas hasta llegar a una para cada palabra. De esta manera eliminaban las etiquetas inconsistentes con el contexto.
+
+Las aproximaciones modernas de etiquetado gramatical basado en reglas mantienen los principios originales teniendo en cuenta que los diccionarios y el conjunto de reglas han adquirido un tamaño considerablemente mayor.
+Los etiquetadores actuales manejan alrededor de 3800 reglas y un diccionario de etiquetas del órden de las 56.000 entradas para el idioma Inglés. 
+
+\subsubsection{Etiquetadores gramaticales estocásticos} 
+La inclusión de probabilidades en el proceso de etiquetación gramatical no es una idea nueva. Surge como una consecuencia natural a partir del hecho de que una palabra es empleada con un sentido gramatical mucho más frecuentemente que con otro. Como mencionamos anteriormente, \textsl{a} es mucho mas frecuentemente utilizada como determinante que como letra. Y también a partir de la construcción gramatical; cierta etiqueta es más frecuentemente precedida por ciertas otra/s.
+
+A continuación  vamos a presentar 2 tipos de etiquetadores gramaticales estocásticos: etiquetadores estocásticos basados en el modelo oculto de Markov o simplemente etiquetadores HMM \footnote{Por las siglas en inglés de Hiden Markov Model} y etiquetadores estocásticos basados en el modelo de máxima entropía.
+
+\subsubsection{Etiquetadores gramaticales basado en HMM}
+El uso del modelo oculto de Markov para realizar etiquetado gramatical es un caso especial de la inferencia bayesiana, un paradigma que fué conocido a partir del trabajo de Bayes (1763). La inferencia Bayesiana o clasificación Bayesiana fue aplicada exitosamente a problemas del lenguaje a partir de 1950.
+La clasificación bayesiana puede apreciarse como una tarea para la cual contamos con un conjunto de observaciones y el trabajo consiste en determinar a que conjunto de clases pertenece. En lo que respecta al etiquetado gramatical, se puede utilizar este mismo concepto para tratarlo como una tarea de clasificación de secuencia. En ese caso, la observación será una secuencia de palabras (digamos una oracion) para la cual el trabajo consiste en asignar una secuencia de etiquetas gramaticales. Como ejemplo tomemos la oración que aparece a continuación:
+\\
+ \\
+ \textsl{Secretariat is expected to race tomorrow}
+ \\
+ 
+ En este caso las observaciones son la secuencia de palabras (es decir la oración misma) y nuestro objetivo es asignarles las etiquetas correspondientes .
+¿Cuál es la mejor secuencia de etiquetas que corresponden a esta secuencia de palabras? 
+La interpretación bayesiana comienza considerando todas las posibles secuencias de clases --en nuestro caso, todas las posibles secuencias de etiquetas gramaticales. El objetivo aquí es elegir la secuencia de etiquetas que es más probable dada la secuencia de observaciones de n palabras wn1. En otras palabras, queremos obtener, de todas las secuencias de n etiquetas t1n la secuencia de etiquetas tal que P(tn1 wn1) sea mayor. Utilizaremos la notación n para decir nuestra estimación de la secuencia de etiquetas correcta.
+\begin{equation}\label{uno} \hat{t}_1^n = argmax P(t_1^n|w_1^n) \end{equation}
+ La ecuación anterior se lee así: de todas las secuencias de etiquetas de longitud n, queremos la secuencia particular \(t_1^n\) que maximiza el lado derecho.
+ Mientras que esta ecuación nos garantiza obtener la secuencia de etiquetas óptima, todavía no queda del todo claro como utilizarla. Es decir, para una secuencia de etiquetas dada \(t_1^n\) y una secuencia de palabras \(w_1^n\), no sabemos como computar directamente \(P(t_1^n|w_1^n)\).
+ Aquí entra en juego la clasificación Bayesiana, ofreciendo una forma de transformar la ecuación en un conjunto de otras probabilidades más sencillas de computar. Las reglas de Bayes reemplazan la probabilidad condicional \(P(x|y)\) por otras tres probabilidades:
+\begin{equation}\label{dos}P(x|y) \;=\;\frac{P(y|x)P(x)}{P(y)}\end{equation}
+ Podemos sustituir  \eqref{dos} en \eqref{uno} para obtener \eqref{tres}: 
+ \begin{equation}\label{tres} \hat{t}_1^n = argmax \frac{P(w_1^n|t_1^n)P(t_1^n)}{P(w_1^n)} \end{equation}
+ Convenientemente podemos simplificar (3) eliminando el denominador $P(w_1^n)$. Esto sucede ya que estamos eligiendo una de todas las secuencias de etiquetas, computando $\frac{P(w_1^n|t_1^n)P(t_1^n)}{P(w_1^n)|}$ en cada una de ellas. Pero $P(w_1^n)$ no cambia en ninguna secuencia de etiquetas, entonces estamos preguntando siempre por la misma observación $w_1^n$, que tiene la misma probabilidad $P(w_1^n)$. Por lo tanto podemos quitar el denominador con la garantía de que el máximo sea el mismo:
+ \begin{equation} \hat{t}_1^n = argmax P(w_1^n|t_1^n)P(t_1^n) \end{equation}
+  En resúmen, la secuencia de etiquetas más probable $\hat{t}_1^n$ dada alguna palabra $w_1^n$ puede ser computada tomando el producto de dos probabilidades para cada secuencia de etiquetas y eligiendo la secuencia que lo maximiza. 
+  Desafortunadamente todavía sigue siendo muy difícil computar esta ecuación directamente. Los etiquetadores gramaticales basados en HMM realizan dos suposiciones simplificadoras. La primera es que la probabilidad de aparición de una palabra depende solo de su etiqueta gramatical, es decir que es independiente de las palabras y etiquetas que tiene alrededor.
+ \begin{equation}\label{uno2} P(w_1^n|t_1^n)\approx\prod_{i=1}^nP(w_i|t_i) \end{equation}
+La segunda suposición es que la probabilidad de aparición de una etiqueta gramatical depende solo de la etiqueta previa (sin tener en cuenta las etiquetas anteriores a la etiquetea previa), esto es la suposición de BIGRAMA.
+\begin{equation}\label{dos2} P(t_1^n)\approx\prod_{i=1}^nP(t_i|t_{i-1}) \end{equation} Utilizando estas suposiciones obtenemos esta nueva ecuación, la cual es utilizada por los etiquetadores gramaticales basados en bigramas para estimar la secuencia de etiquetas gramaticales más probable.
+ \begin{equation} \hat{t}_1^n = argmax P(t_1^n|w_1^n)\approx argmax\prod_{i=1}^nP(w_i|t_i)P(t_i|t_{i-1}) \end{equation}
+ 
+ La ecuación anterior contiene dos clases de probabilidades, probabilidades de transición de etiquetas y probabilidades de palabras. Tomemos un momento para ver que es lo que representan estas probabilidades. 
+ 
+ Las probabilidades de transición de etiquetas, $P(t_i|t_{i-1})$, representan la probabilidad de que ocurra una etiqueta dada la etiqueta previa. Por ejemplo, es muy probable que un determinantes preceda a un adjetivos o a un sustantivo, como \textsl{thath/DD flight/NN y the/DT yellow/JJ hat/NN}. Por lo tanto esperamos que las probabilidades $P(NN|DT)$ y $P(JJ|DT)$ sean altas. 
+ 
+ Por otro lado, es infrecuente que los adjetivos precedan a los determinantes, entonces la probabilidad $P(DT|JJ)$ será pequeña.
+Podemos computar la máxima probabilidad estimada o MLE de una probabilidad de transición de etiquetas $P(NN|DT)$ tomando un corpus en el cual las etiquetas gramaticales estén etiquetadas y contadas. Esto es: de todas las veces que vemos DT, cuántas de esas veces vemos NN después de DT. Lo expresamos más formalmente como el siguiente cociente:
+ 
+ 
+ Elijamos un corpus específico para examinar, por ejemplo el corpus Brown. Éste es un corpus de 1 millón de palabras de Inglés Americano. El corpus Brown ha sido etiquetado dos veces, la primera en los años sesenta con el conjunto de etiquetas 87-tag y de vuelta en los años noventa con el conjunto de etiquetas Treebank.
+ En el corpus Brown etiquetado con el conjunto de etiquetas Treebank, la etiqueta DT ocurre 116.454 veces. De esas veces, DT es seguido por NN 56.509 veces. Por lo tanto el MLE de esta probabilidad de transición se calcula como sigue:
+ \begin{equation}P(t_i|t_{i-1})=\frac{C(t_{i-1},t_i)}{C(t_i)}\end{equation}
+ Claramente la probabilidad de obtener un sustantivo común después de un determinante es .49 y de hecho alta como sospechábamos.
+ 
+ Las probabilidades de la palabra, $P(w_i/t_i)$, representan la probabilidad de que dada una etiqueta esta esté asociada con cierta palabra. Por ejemplo si tenemos la etiqueta VBZ (verbo singular de tiempo presente en tercera persona) y quisiéramos adivinar el verbo asociado a esa etiqueta, probablemente elegiríamos el verbo \textsl{is}\footnote{\textsl{is} es el presente en tercera persona del verbo \textsl{to be}}, debido a que el verbo \textsl{to be} es muy común en Inglés.
+ Podemos computar $P(is|VBZ)$ de nuevo contando de cuántas veces que vemos VBZ en un corpus cuántas de esas veces VBZ está etiquetando la palabra \textsl{is}. Esto es computar el siguiente cociente:
+\begin{equation}P(w_i|t_i)=\frac{C(t_i,w_i)}{C(t_i)}\end{equation}
+ En el corpus Brown etiquetado con Treebank, la etiqueta VBZ ocurre 21.627 veces y VBZ es la etiquetra para \textsl{is} 10.073 veces. Entonces:
+\begin{equation}P(is|VBZ)=\frac{C(VBZ,is)}{C(VBZ)}=\frac{10.073}{21.627}=0	.47\end{equation}
+ Hemos definido etiquetado HMM como la tarea de elegir una secuencia de etiquetas con la máxima probabilidad, derivando las ecuaciones con las cuales vamos a computar esta probabilidad, y mostrando como computar las probabilidades que lo componen. De hecho hemos simplificado la presentación de las probabilidades de varias maneras.
