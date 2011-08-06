@@ -270,13 +270,27 @@ namespace ConsoleApplication1
         {
             //HacerLegibleCobuild();
             //Extractor.ExtraerDatos(cobuildOriginalLegible, cobuildExtraido);            
-            //Comparador.Comparar(cobuildTaggeado, cobuildExtraido, matrizDeConfCobuild);
+            Comparador.Comparar(cobuildTaggeado, cobuildExtraido, matrizDeConfCobuild);
             //UnirCobuildExtraidoConCobuildTaggeado();
 
-            Comparador.Comparar(@"Datos\totwsjgold", @"Datos\totwsjgold.tagged", @"Datos\MatrizDeConfGold.txt");
-            Comparador.Comparar(@"Datos\totwsjgold", @"Datos\totwsjgoldMasTag.tagged", @"Datos\MatrizDeConfGoldMasTag.txt");
-            Comparador.Comparar(@"Datos\totwsjgold", @"Datos\totwsjgoldMitad.tagged", @"Datos\MatrizDeConfGoldMitad.txt");
-            Comparador.Comparar(@"Datos\totwsjgold", @"Datos\totwsjgoldMitadMasTag.tagged", @"Datos\MatrizDeConfGoldMitadMasTag.txt");
+            //Comparador.Comparar(@"Datos\WSJ\wsj.gold", @"Datos\Taggeado\wsj.tagged", @"Datos\Mediciones\wsj.mConf");
+            //Comparador.Comparar(@"Datos\WSJ\wsj.gold", @"Datos\Taggeado\wsjMasCobuild.tagged", @"Datos\Mediciones\wsjMasCobuild.mConf");
+
+            //Comparador.Comparar(@"Datos\WSJ\wsjComplementoC1.gold", @"Datos\Taggeado\wsjComplementoC1.tagged", @"Datos\Mediciones\wsjComplementoC1.mConf");
+            //Comparador.Comparar(@"Datos\WSJ\wsjComplementoC2.gold", @"Datos\Taggeado\wsjComplementoC2.tagged", @"Datos\Mediciones\wsjComplementoC2.mConf");
+            //Comparador.Comparar(@"Datos\WSJ\wsjComplementoC3.gold", @"Datos\Taggeado\wsjComplementoC3.tagged", @"Datos\Mediciones\wsjComplementoC3.mConf");
+            //Comparador.Comparar(@"Datos\WSJ\wsjComplementoC4.gold", @"Datos\Taggeado\wsjComplementoC4.tagged", @"Datos\Mediciones\wsjComplementoC4.mConf");
+
+            //Comparador.Comparar(@"Datos\WSJ\wsjComplementoC1.gold", @"Datos\Taggeado\wsjComplementoC1MasCobuild.tagged", @"Datos\Mediciones\wsjComplementoC1MasCobuild.mConf");
+            //Comparador.Comparar(@"Datos\WSJ\wsjComplementoC2.gold", @"Datos\Taggeado\wsjComplementoC2MasCobuild.tagged", @"Datos\Mediciones\wsjComplementoC2MasCobuild.mConf");
+            //Comparador.Comparar(@"Datos\WSJ\wsjComplementoC3.gold", @"Datos\Taggeado\wsjComplementoC3MasCobuild.tagged", @"Datos\Mediciones\wsjComplementoC3MasCobuild.mConf");
+            //Comparador.Comparar(@"Datos\WSJ\wsjComplementoC4.gold", @"Datos\Taggeado\wsjComplementoC4MasCobuild.tagged", @"Datos\Mediciones\wsjComplementoC4MasCobuild.mConf");
+
+            //Comparador.Comparar(@"Datos\WSJ\wsjM1.gold", @"Datos\Taggeado\wsjM1.tagged", @"Datos\Mediciones\wsjM1.mConf");
+            //Comparador.Comparar(@"Datos\WSJ\wsjM2.gold", @"Datos\Taggeado\wsjM2.tagged", @"Datos\Mediciones\wsjM2.mConf");
+            //Comparador.Comparar(@"Datos\WSJ\wsjM1.gold", @"Datos\Taggeado\wsjM1MasCobuild.tagged", @"Datos\Mediciones\wsjM1MasCobuild.mConf");
+            //Comparador.Comparar(@"Datos\WSJ\wsjM2.gold", @"Datos\Taggeado\wsjM2MasCobuild.tagged", @"Datos\Mediciones\wsjM2MasCobuild.mConf");
+            
         }
 
         private static void UnirCobuildExtraidoConCobuildTaggeado()

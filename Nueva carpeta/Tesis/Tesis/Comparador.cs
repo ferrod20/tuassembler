@@ -12,7 +12,7 @@ namespace ConsoleApplication1
         private static List<Tags> matrizDeConfusión;
         #endregion
 
-        private static readonly TextWriter comparacionW = new StreamWriter(@"D:\Fer\Facultad\PLN\Tesis\Nueva carpeta\ConsoleApplication1\ConsoleApplication1\bin\Debug\Datos\compa.txt");
+       // private static readonly TextWriter comparacionW = new StreamWriter(@"D:\Fer\Facultad\PLN\Tesis\Nueva carpeta\ConsoleApplication1\ConsoleApplication1\bin\Debug\Datos\compa.txt");
 
         #region Metodos
         private static void BuscarProximaLinea(string[] uno, string[] otro, ref int i, ref int j)
@@ -51,15 +51,24 @@ namespace ConsoleApplication1
              
             if( !string.IsNullOrEmpty(tagDePrueba) )
             {
-                var tagGoldStandard = partesGoldStandard.LastOrDefault()??"";
+
+                var hasta = partesGoldStandard.Length;
+                var tagGoldStandard = "";
+                while (string.IsNullOrWhiteSpace(tagGoldStandard) && hasta > 1)
+                {
+                    tagGoldStandard = partesGoldStandard[hasta - 1];
+                    hasta--;
+                }
+                    
+                
                 var acierto = tagDePrueba == tagGoldStandard;
 
                 if (!acierto)
                 {
 
-                    comparacionW.WriteLine(lineaGoldStandard);
-                    comparacionW.WriteLine(lineaPrueba);
-                    comparacionW.WriteLine();
+                    //comparacionW.WriteLine(lineaGoldStandard);
+                    //comparacionW.WriteLine(lineaPrueba);
+                    //comparacionW.WriteLine();
                     var palabra = string.Empty;
                     if( partesGoldStandard.Length > 0)
                         palabra = partesGoldStandard[0];
@@ -78,11 +87,16 @@ namespace ConsoleApplication1
 
         public static void Comparar(string archGoldStandard, string archParaComparar, string salidaMatrizDeConf)
         {
+            Console.WriteLine("Comparando: " + Path.GetFileName(archGoldStandard) + " contra " + Path.GetFileName(archParaComparar) );
+            Console.WriteLine("Salida: " + Path.GetFileName(salidaMatrizDeConf) );
+            Console.WriteLine();
             //matrizDeConfusión = new Dictionary<Tags, int>(EqualityComparer<Tags>.Default);
             matrizDeConfusión = new List<Tags>();
 
             LeerArchivosParaComparar(archGoldStandard, archParaComparar);
             GrabarComparación(salidaMatrizDeConf);
+            Console.WriteLine();
+            Console.WriteLine();
         }
 
         private static void GrabarComparación(string archivoDeSalida)
@@ -122,7 +136,11 @@ namespace ConsoleApplication1
             var aPrueba = File.ReadAllText(archivoParaComparar).Split('\n');
             
             var w = 0;
-            while (i < aGoldStandard.Length && j < aPrueba.Length)
+            var punto = 1;
+            var tamGoldStandard = aGoldStandard.Length;
+            var parte = tamGoldStandard/20;
+
+            while (i < tamGoldStandard && j < aPrueba.Length)
             {
                 if (aGoldStandard[i].Split('\t')[0] == aPrueba[j].Split('\t')[0])
                 {
@@ -133,7 +151,7 @@ namespace ConsoleApplication1
 
                 i++;
                 j++;
-                if (i < aGoldStandard.Length && j < aPrueba.Length && aGoldStandard[i].Split('\t')[0] != aPrueba[j].Split('\t')[0])                    
+                if (i < tamGoldStandard && j < aPrueba.Length && aGoldStandard[i].Split('\t')[0] != aPrueba[j].Split('\t')[0])                    
                     {
                         var jj = j;
                         var ii = i;
@@ -157,6 +175,12 @@ namespace ConsoleApplication1
                         if (w > 4)
                             w = w;
                     }
+
+                if (i > parte*punto)
+                {
+                    Console.Write(".");
+                    punto++;
+                }
             }
         }
         #endregion
