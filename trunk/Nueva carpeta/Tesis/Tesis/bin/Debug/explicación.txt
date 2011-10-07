@@ -1,0 +1,16 @@
+Experimento 1:
+
+Extraccion:
+COBUILD.DAT -> Cobuild.original -> Cobuild.original.legible -> Cobuild.extracted -> (TNT con CORPUSgenia3) -> Cobuild.tagged 
+
+Cobuild.extracted y Cobuild.tagged -> Cobuild.final
+Cobuild.extracted y Cobuild.tagged -> Cobuild.mConf
+
+Entrenamiento, taggeado y medición:
+Dividir wsj en 4 cuartos y
+ Entrenar tnt con cada 1/4 wsj (con y sin cobuild) y taggear y medir contra el otro 3/4. 
+ 
+Dividir wsj en 2 medios y
+ Entrenar tnt con cada 1/2 wsj (con y sin cobuild) y taggear y medir contra el otro 1/2. 
+ 
+Entrenar wsj con wsj y con wsj + cobuild. taggear wsj y medir

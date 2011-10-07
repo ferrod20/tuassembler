@@ -115,7 +115,7 @@ namespace ConsoleApplication1
 
                     if (EsEjemplo(parte, formasDeLaPalabra))
                     {
-                        var tipo = ObtenerTipo(partes, i + 1, out deDondeSeSacoElTipo).Value;
+                        var tipo = ObtenerTipo(partes, i + 1, out deDondeSeSacoElTipo).Value;//Busca en la entrada, (en cada renglon) si hay alguna palabra que sea un tipo de palabra. Es decir si esta en el diccionario de tipos, y si es asi lo traduce al tipo correspondiente.
                         if (tipo != string.Empty)
                         {
                             if (!escribiLaPalabra)
