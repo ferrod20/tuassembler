@@ -1,0 +1,677 @@
+This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=pdflatex 2011.5.9)  2 OCT 2011 20:52
+entering extended mode
+**D:/Fer/Facultad/PLN/Tesis/Nueva*carpeta/Tesis/Latex/Tesis.tex
+("D:/Fer/Facultad/PLN/Tesis/Nueva carpeta/Tesis/Latex/Tesis.tex"
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, afrikaans, ancientgreek, ar
+abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
+croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
+lician, german, german-x-2009-06-19, greek, gujarati, hindi, hungarian, iceland
+ic, indonesian, interlingua, irish, italian, kannada, kurmanji, lao, latin, lat
+vian, lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerm
+an, ngerman-x-2009-06-19, nynorsk, oriya, panjabi, pinyin, polish, portuguese, 
+romanian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swis
+sgerman, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, u
+senglishmax, welsh, loaded.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\article.cls"
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\size10.clo"
+File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ams\math\amsmath.sty"
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ams\math\amstext.sty"
+Package: amstext 2000/06/29 v2.01
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ams\math\amsgen.sty"
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks14
+\ex@=\dimen103
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ams\math\amsbsy.sty"
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen104
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ams\math\amsopn.sty"
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count87
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count88
+\leftroot@=\count89
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count90
+\DOTSCASE@=\count91
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen105
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count92
+\c@MaxMatrixCols=\count93
+\dotsspace@=\muskip10
+\c@parentequation=\count94
+\dspbrk@lvl=\count95
+\tag@help=\toks15
+\row@=\count96
+\column@=\count97
+\maxfields@=\count98
+\andhelp@=\toks16
+\eqnshift@=\dimen106
+\alignsep@=\dimen107
+\tagshift@=\dimen108
+\tagwidth@=\dimen109
+\totwidth@=\dimen110
+\lineht@=\dimen111
+\@envbody=\toks17
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks18
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
+Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
+Package: amssymb 2009/06/22 v3.00
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks19
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2011/01/28 v0.05d Graphics/color for pdfTeX
+\Gread@gobject=\count99
+))
+\Gin@req@height=\dimen112
+\Gin@req@width=\dimen113
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\babel.sty"
+Package: babel 2008/07/06 v3.8l The Babel package
+
+*************************************
+* Local config file bblopts.cfg used
+*
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\bblopts.cfg"
+File: bblopts.cfg 2006/07/31 v1.0 MiKTeX 'babel' configuration
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\spanish.ldf"
+Language: spanish.ldf 2009/01/02 v5.0h Spanish support from the babel system
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\babel.def"
+File: babel.def 2008/07/06 v3.8l Babel common definitions
+\babel@savecnt=\count100
+\U@D=\dimen114
+)
+\es@datefmt=\count101
+\es@quottoks=\toks20
+\es@quotdepth=\count102
+Package babel Info: Making " an active character on input line 492.
+Package babel Info: Making . an active character on input line 585.
+Package babel Info: Making < an active character on input line 630.
+Package babel Info: Making > an active character on input line 630.
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\inputenc.sty"
+Package: inputenc 2008/03/30 v1.1d Input encoding file
+\inpenc@prehook=\toks21
+\inpenc@posthook=\toks22
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\latin1.def"
+File: latin1.def 2008/03/30 v1.1d Input encoding file
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\makeidx.sty"
+Package: makeidx 2000/03/29 v1.0m Standard LaTeX package
+)
+(C:\Users\User\AppData\Roaming\MiKTeX\2.9\tex\latex\moreverb\moreverb.sty
+Package: moreverb 2008/06/03 v2.3a `more' verbatim facilities
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\verbatim.sty"
+Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks23
+\verbatim@line=\toks24
+\verbatim@in@stream=\read1
+)
+\tab@position=\count103
+\tab@size=\count104
+\listing@line=\count105
+)
+(C:\Users\User\AppData\Roaming\MiKTeX\2.9\tex\latex\algorithms\algorithm.sty
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
+nment
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count106
+\float@exts=\toks25
+\float@box=\box28
+\@float@everytoks=\toks26
+\@floatcapt=\box29
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\@float@every@algorithm=\toks27
+\c@algorithm=\count107
+)
+(C:\Users\User\AppData\Roaming\MiKTeX\2.9\tex\latex\algorithms\algorithmic.sty
+Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
+\c@ALC@unique=\count108
+\c@ALC@line=\count109
+\c@ALC@rem=\count110
+\c@ALC@depth=\count111
+\ALC@tlm=\skip46
+\algorithmicindent=\skip47
+) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\longtable.sty"
+Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
+\LTleft=\skip48
+\LTright=\skip49
+\LTpre=\skip50
+\LTpost=\skip51
+\LTchunksize=\count112
+\LTcapwidth=\dimen115
+\LT@head=\box30
+\LT@firsthead=\box31
+\LT@foot=\box32
+\LT@lastfoot=\box33
+\LT@cols=\count113
+\LT@rows=\count114
+\c@LT@tables=\count115
+\c@LT@chunks=\count116
+\LT@p@ftn=\toks28
+)
+\c@theorem=\count117
+
+
+! LaTeX Error: Command \algorithm already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.21 \newtheorem{algorithm}[theorem]{Algorithm}
+                                               
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+("D:\Fer\Facultad\PLN\Tesis\Nueva carpeta\Tesis\Latex\Tesis.aux")
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+
+(C:\Users\User\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count118
+\scratchdimen=\dimen116
+\scratchbox=\box34
+\nofMPsegments=\count119
+\nofMParguments=\count120
+\everyMPshowfont=\toks29
+\MPscratchCnt=\count121
+\MPscratchDim=\dimen117
+\MPnumerator=\count122
+\everyMPtoPDFconversion=\toks30
+) ("D:\Fer\Facultad\PLN\Tesis\Nueva carpeta\Tesis\Latex\Caratula.tex"
+<img/dc.jpg, id=1, 188.705pt x 65.24374pt>
+File: img/dc.jpg Graphic file (type jpg)
+ <use img/dc.jpg>) [1
+
+{C:/Users/User/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <D:/Fer/Facul
+tad/PLN/Tesis/Nueva carpeta/Tesis/Latex/img/dc.jpg>]
+("D:\Fer\Facultad\PLN\Tesis\Nueva carpeta\Tesis\Latex\Tesis.toc"
+LaTeX Font Info:    Try loading font information for U+msa on input line 3.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 3.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+))
+\tf@toc=\write3
+ [2]
+("D:\Fer\Facultad\PLN\Tesis\Nueva carpeta\Tesis\Latex\Indice.tex"
+("D:\Fer\Facultad\PLN\Tesis\Nueva carpeta\Tesis\Latex\Introduccion.tex"
+Underfull \hbox (badness 10000) in paragraph at lines 10--46
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--46
+
+ []
+
+[3] [4])
+("D:\Fer\Facultad\PLN\Tesis\Nueva carpeta\Tesis\Latex\EtiquetadoGramatical.tex"
+) ("D:\Fer\Facultad\PLN\Tesis\Nueva carpeta\Tesis\Latex\Etiquetas.tex" [5]
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 22--25
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--25
+
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 32.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 32.
+
+Underfull \hbox (badness 10000) in paragraph at lines 46--48
+
+ []
+
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 69--75
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 69--75
+
+ []
+
+) ("D:\Fer\Facultad\PLN\Tesis\Nueva carpeta\Tesis\Latex\ConjuntosDeEtiquetas.te
+x"
+Underfull \hbox (badness 10000) in paragraph at lines 82--1
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 82--1
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 82--1
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 82--1
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 82--1
+
+ []
+
+[8])
+("D:\Fer\Facultad\PLN\Tesis\Nueva carpeta\Tesis\Latex\EtiquetadoresGramaticales
+Automaticos.tex"
+Underfull \hbox (badness 10000) in paragraph at lines 4--13
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--13
+
+ []
+
+[9] [10]
+Underfull \hbox (badness 10000) in paragraph at lines 38--44
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--44
+
+ []
+
+[11] [12] [13])
+("D:\Fer\Facultad\PLN\Tesis\Nueva carpeta\Tesis\Latex\CorporaDeEntrenamientoYVe
+rificacion.tex")
+("D:\Fer\Facultad\PLN\Tesis\Nueva carpeta\Tesis\Latex\EvaluacionDeEtiquetadores
+.tex" [14])
+("D:\Fer\Facultad\PLN\Tesis\Nueva carpeta\Tesis\Latex\AnalisisDeError.tex"
+Underfull \hbox (badness 10000) in paragraph at lines 2--5
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--5
+
+ []
+
+[15]
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.21 \\
+       
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.22 \\
+       
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 \\
+       
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.24 L
+      as etiquetas de la fila indican las etiquetas correctas, las etiquetas...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+) ("D:\Fer\Facultad\PLN\Tesis\Nueva carpeta\Tesis\Latex\PalabrasDesconocidas.te
+x" [16] [17])
+("D:\Fer\Facultad\PLN\Tesis\Nueva carpeta\Tesis\Latex\EtiquetadorGramaticalTnT.
+tex" [18] [19])
+("D:\Fer\Facultad\PLN\Tesis\Nueva carpeta\Tesis\Latex\DiccionarioCobuild.tex"
+[20]
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `latin1'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6 ... la información del corpus Bank of English™
+                                                   y el corpus Collins. Su s...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+)
+("D:\Fer\Facultad\PLN\Tesis\Nueva carpeta\Tesis\Latex\TraduccionDeEtiquetas.tex
+"
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 \\
+      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 \begin
+          {center}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Misplaced \noalign.
+\hline ->\noalign 
+                  {\ifnum 0=`}\fi \penalty \@M \futurelet \@let@token \LT@@h...
+l.11 	\hline
+            
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+! Misplaced \omit.
+\multispan ->\omit 
+                   \@multispan 
+l.12 \textbf
+            {Etiqueta COBUILD}	&	\textbf{Etiqueta PenTreeBank}\\
+I expect to see \omit only after tab marks or the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+! Extra alignment tab has been changed to \cr.
+<template> \endtemplate 
+                        
+l.12 \textbf
+            {Etiqueta COBUILD}	&	\textbf{Etiqueta PenTreeBank}\\
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+
+Underfull \vbox (badness 10000) detected at line 40
+ []
+
+[21]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.94  verb + adjunct (^
+                       i{to^i}) & VB \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+<template> \unskip \hfil }
+                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
+l.94  verb + adjunct (^i{to^i}) &
+                                  VB \\
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.94  verb + adjunct (^i{to^i}) &
+                                  VB \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.94  verb + adjunct (^i{to^i}) &
+                                  VB \\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.97  verb or verb + adjunct (^
+                               i{with) & VB \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.97  verb or verb + adjunct (^i{with) &
+                                         VB \\
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<template> \unskip \hfil }
+                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
+l.97  verb or verb + adjunct (^i{with) &
+                                         VB \\
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.97  verb or verb + adjunct (^i{with) &
+                                         VB \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.97  verb or verb + adjunct (^i{with) &
+                                         VB \\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+[22]
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 1 on input line 125.
+
+[23])
+("D:\Fer\Facultad\PLN\Tesis\Nueva carpeta\Tesis\Latex\ExtraccionDeInformacion.t
+ex"
+Overfull \hbox (90.7462pt too wide) in paragraph at lines 9--9
+[]\OT1/cmtt/m/n/10 If you are or come within an ace of something, you very near
+ly do or experience it.[] 
+ []
+
+
+Overfull \hbox (43.49661pt too wide) in paragraph at lines 20--20
+[]\OT1/cmtt/m/n/10 A person who is ace at something is extremely good at it; an
+ informal use.[] 
+ []
+
+
+Overfull \hbox (69.74638pt too wide) in paragraph at lines 32--32
+[]\OT1/cmtt/m/n/10 If you say that something is ace, you mean that you think th
+at it is very good;[] 
+ []
+
+[24]
+Overfull \hbox (106.49606pt too wide) in paragraph at lines 52--52
+[]\OT1/cmtt/m/n/10 If an object or surface bites, it grips another object or su
+rface rather than slipping[] 
+ []
+
+[25])
+("D:\Fer\Facultad\PLN\Tesis\Nueva carpeta\Tesis\Latex\NuevoCorpusGenerado.tex")
+("D:\Fer\Facultad\PLN\Tesis\Nueva carpeta\Tesis\Latex\Experimentacion.tex")
+("D:\Fer\Facultad\PLN\Tesis\Nueva carpeta\Tesis\Latex\Conclusiones.tex"))
+
+Package longtable Warning: Table widths have changed. Rerun LaTeX.
+
+[26] ("D:\Fer\Facultad\PLN\Tesis\Nueva carpeta\Tesis\Latex\Tesis.aux") ) 
+Here is how much of TeX's memory you used:
+ 3123 strings out of 494053
+ 41150 string characters out of 3146189
+ 109358 words of memory out of 3000000
+ 6314 multiletter control sequences out of 15000+200000
+ 11189 words of font info for 43 fonts, out of 3000000 for 9000
+ 715 hyphenation exceptions out of 8191
+ 27i,8n,27p,1194b,346s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Pro
+gram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Progr
+am Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program
+ Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxsl10.pfb><C:/Program
+ Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program F
+iles (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Fil
+es (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program Files 
+(x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files (x8
+6)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Program Files (x86)/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files (x86)/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files (x86)/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cm/cmsl10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmsl8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type
+1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/
+public/amsfonts/cm/cmsy7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/pub
+lic/amsfonts/cm/cmtt10.pfb>
+Output written on Tesis.pdf (26 pages, 290633 bytes).
+PDF statistics:
+ 155 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+
