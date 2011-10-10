@@ -1,0 +1,60 @@
+\subsection{Nuevo Corpus generado} 
+A partir del corpus parcialmente anotado obtenido en el proceso de extracción, se completarán las anotaciones automáticamente con un etiquetador gramatical. Manteniendo las etiquetas gramaticales obtenidas a partir de la información procedente del diccionario Cobuild. Es decir, una vez finalizado el proceso de extracción de información desde el diccionario, se obtiene un corpus nuevo con las etiquetas gramaticales correspondientes a las palabras definiadas en el diccionario. A continuación se exhibe un fragmento del mismo:\\\\
+
+A\\
+canary	NN\\
+is\\
+a\\
+small\\
+yellow\\
+bird\\
+which\\
+sings\\
+beautifully\\
+.\\
+People\\
+sometimes\\
+keep\\
+canaries	NNS\\
+in\\
+cages\\
+as\\
+pets\\
+.\\
+
+Este es el resultado de extracción y reconocimiento de formas flexionadas correspondiente a la entrada de Cobuild: 
+
+\begin{verbatim}
+DICTIONARY_ENTRY
+canary
+canaries
+A canary is a small yellow bird which sings beautifully. People sometimes keep
+canaries in cages as pets.  
+countable noun
+noun                                
+\end{verbatim}
+
+Se puede apreciar que se ha reconocido \textsl{canaries} como el plural de \textsl{canary} (etiqueta NNS) y que se han reconocido y extraído los ejemplos de estas palabras asignando las etiquetas gramaticales traducidas a partir de las etiquetas del diccionario correspondientes a \textsl{canary} (countable noun/NN) y \textsl{canaries} (noun/NNS).
+
+Una vez realizada esta tarea, se procederá a completar las anotaciones gramaticales para todas las palabras restantes. Este proceso se realiza anotando el corpus plano (sin las etiquetas obtenidas mediante Cobuild) con el etiquetador gramatical automático TnT. Luego se une este corpus anotado totalmente con TnT con el corpus anotado parcialmente procedente de Cobuild, preservando todas las etiquetas del diccionario. El resultado que se muestra a continuación es un nuevo corpus obtenido a partir de Cobuild, con las anotaciones que este provee y completado con anotaciones obtenidas mediante etiquetación automática utilizando TnT.\\\\
+
+A			DT\\
+canary			NN\\
+is			VBZ\\
+a			DT\\
+small			JJ\\
+yellow			JJ\\
+bird			NN\\
+which			WDT\\
+sings			VBZ\\
+beautifully		RB\\
+.			.\\
+People			NNS\\
+sometimes		RB\\
+keep			VB\\
+canaries		NNS\\
+in			IN\\
+cages			NNS\\
+as			IN\\
+pets			NNS\\
+.			.\\
