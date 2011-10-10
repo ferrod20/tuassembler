@@ -1,5 +1,5 @@
 \subsection{Extracción de la información} 
-El diccionario COBUILD guarda su información en un archivo de texto plano con un formato particular. El primer desafío de este trabajo fué comprender y extraer la información alamacenada en ese archivo. A continuación se muestra pequenio fragmento del mismo para ejemplificar
+El diccionario COBUILD guarda su información en un archivo de texto plano con un formato particular. El primer desafío de este trabajo fué comprender y extraer la información alamacenada en ese archivo. A continuación se muestra pequeño fragmento del mismo para ejemplificar
 
 \begin{verbatim}
 DICTIONARY_ENTRY
@@ -60,18 +60,19 @@ catch
 grip
 \end{verbatim}
 
-Aquí arriba podemos observar una entrada del diccionario para la palabra \textsl{bite}, conteniendo dos ejemplos de esta palabra con sus respectivas etiquetas gramaticales. Podemos notar que en el primer ejemplo la palabra aparece en plural; \textsl{bites}. Es decir que la entrada del diccionario nos está ofreciendo más información que la que se observa a simple vista. En el primer ejemplo la palabra aparece en plural y la entrada asigna la etiqueta \textsl{verb}. Reconociendo la forma plural de la misma (\textsl{bites}) podemos adicionarle información extra a la etiqueta \textsl{verb}, es decir que aparte de guardar la etiqueta \textsl{verb} podemos guardar la información de que ocurre en plural.
+Aquí arriba podemos observar una entrada del diccionario para la palabra \textsl{bite}, conteniendo dos ejemplos de esta palabra con sus respectivas etiquetas gramaticales. Podemos notar que en el primer ejemplo la palabra aparece en la forma flexionada; \textsl{bites}. Es decir que la entrada del diccionario nos está ofreciendo más información que la que se observa a simple vista. Se puede observar que en el primer ejemplo la palabra aparece en la forma flexionada \textsl{bites} y la entrada asigna la etiqueta \textsl{verb} mientras que en el segundo ejemplo la palabra aparece en su forma regular \textsl{bite} con la misma etiqueta. Reconociendo la forma flexionada (\textsl{bites}) podemos adicionarle información extra a la etiqueta \textsl{verb}, es decir que aparte de guardar la etiqueta \textsl{verb} podemos guardar la información de que ocurre en una forma flexionada.
 
-Las entradas de COBUILD exponen las formas derivadas de la palabra que pueden contener los ejemplos. En el ejemplo presentado anteriormente la palabra es \textsl{bite} y las formas derivadas de \textsl{bite} que muestra la entrada son \textsl{bites, biting, bit} y \textsl{bitten}. Con esta información y la etiqueta que fué anotada en COBUILD (\textsl{verb} en ambos casos) podemos inferir y generar información adicional para las etiquetas asignadas. Como ya mencionamos, en este caso la forma \textsl{bites} (derivada de la palabra \textsl{bite}) que aparece en el primer ejemplo posee la etiqueta \textsl{verb}. La tarea aquí será reconocer que \textsl{bites} es un verbo plural a partir de que \textsl{bites} está etiquetada como verbo y de que la palabra de la cual deriva es \textsl{bite}. Es decir, inferir el tipo de la forma derivada a partir de la palabra y la etiqueta asignada.
+Las entradas de COBUILD exponen las formas derivadas de la palabra que pueden contener los ejemplos. En el ejemplo presentado anteriormente la palabra es \textsl{bite} y las formas derivadas de \textsl{bite} que muestra la entrada son \textsl{bites, biting, bit} y \textsl{bitten}. Con esta información y la etiqueta que fué anotada en COBUILD (\textsl{verb} en ambos casos) podemos inferir y generar información adicional para las etiquetas asignadas. Como ya mencionamos, en este caso la forma \textsl{bites} (derivada de la palabra \textsl{bite}) que aparece en el primer ejemplo posee la etiqueta \textsl{verb}. La tarea aquí será reconocer que \textsl{bites} es un verbo flexionado a partir de que \textsl{bites} está etiquetada como verbo y de que la palabra de la cual deriva es \textsl{bite}. Es decir, inferir el tipo de la forma derivada a partir de la palabra y la etiqueta asignada.
 
-Con el objetivo de identificar las formas derivadas de una palabra se desarrollaron reglas y métodos para su reconocimiento, buscando preservar y aprovechar toda la información que ofrece COBUILD. 
+Con el objetivo de identificar las formas derivadas de una palabra se desarrollaron reglas y métodos para su reconocimiento, buscando preservar y aprovechar toda  la información que ofrece COBUILD. 
 Entonces, a partir de esta información: la palabra, la forma en que ocurre y la etiqueta asignada aplicamos las siguientes reglas para agregar información adicional a la etiqueta gramatical.
 
 \floatname{algorithm}{Algoritmo}
 \begin{algorithm}
 \caption{Reconocimiento de formas derivadas}
 \begin{algorithmic}
-\STATE Si la etiqueta asignada es
+\STATE Traducir la etiqueta asignada por Cobuild a PenTreeBank
+\STATE Si la etiqueta obtenida es
 \STATE
 \STATE \textbf{JJ}:
 \STATE\hspace{\algorithmicindent} Si la forma termina en \textsl{er} o empieza en \textsl{more} o \textsl{less} aplicar \textbf{JJR}
@@ -92,3 +93,5 @@ Entonces, a partir de esta información: la palabra, la forma en que ocurre y la 
 \STATE\hspace{\algorithmicindent} Si la forma termina en \textsl{s} aplicar \textbf{VBZ}
 \end{algorithmic}
 \end{algorithm}
+
+Aplicando el proceso de extracción y reconocimiento de formas derivadas explicado anteriormente se obtiene a partir del diccionario Cobuild un nuevo corpus parcialemente anotado. A continuación este corpus será procesado y utilizado como corpus de entrenamiento.

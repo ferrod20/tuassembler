@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=pdflatex 2011.5.9)  2 OCT 2011 20:52
+This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=pdflatex 2011.5.9)  10 OCT 2011 18:48
 entering extended mode
 **D:/Fer/Facultad/PLN/Tesis/Nueva*carpeta/Tesis/Latex/Tesis.tex
 ("D:/Fer/Facultad/PLN/Tesis/Nueva carpeta/Tesis/Latex/Tesis.tex"
@@ -280,78 +280,77 @@ File: umsb.fd 2009/06/22 v3.00 AMS symbols B
  [2]
 ("D:\Fer\Facultad\PLN\Tesis\Nueva carpeta\Tesis\Latex\Indice.tex"
 ("D:\Fer\Facultad\PLN\Tesis\Nueva carpeta\Tesis\Latex\Introduccion.tex"
-Underfull \hbox (badness 10000) in paragraph at lines 10--46
+Underfull \hbox (badness 10000) in paragraph at lines 8--46
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--46
+Underfull \hbox (badness 10000) in paragraph at lines 8--46
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--46
 
  []
 
 [3] [4])
 ("D:\Fer\Facultad\PLN\Tesis\Nueva carpeta\Tesis\Latex\EtiquetadoGramatical.tex"
-) ("D:\Fer\Facultad\PLN\Tesis\Nueva carpeta\Tesis\Latex\Etiquetas.tex" [5]
+)
+("D:\Fer\Facultad\PLN\Tesis\Nueva carpeta\Tesis\Latex\DefinicionesYMarcoTeorico
+.tex" [5]) ("D:\Fer\Facultad\PLN\Tesis\Nueva carpeta\Tesis\Latex\Etiquetas.tex"
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 22--25
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 22--25
-
- []
-
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 32.
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 12.
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 32.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 12.
 
-Underfull \hbox (badness 10000) in paragraph at lines 46--48
+Underfull \hbox (badness 10000) in paragraph at lines 22--25
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--25
 
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 69--75
+Underfull \hbox (badness 10000) in paragraph at lines 44--46
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 69--75
+Underfull \hbox (badness 10000) in paragraph at lines 59--65
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 59--65
+
+ []
+
+[8]
+Overfull \hbox (6.40868pt too wide) in paragraph at lines 67--68
+[]\OT1/cmr/bx/n/10 Conjunciones: \OT1/cmr/m/n/10 Las con-jun-cio-nes son uti-li
+-za-das pa-ra unir dos fra-ses, clausu-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 69--70
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 69--70
 
  []
 
 ) ("D:\Fer\Facultad\PLN\Tesis\Nueva carpeta\Tesis\Latex\ConjuntosDeEtiquetas.te
-x"
-Underfull \hbox (badness 10000) in paragraph at lines 82--1
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 82--1
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 82--1
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 82--1
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 82--1
-
- []
-
-[8])
+x")
 ("D:\Fer\Facultad\PLN\Tesis\Nueva carpeta\Tesis\Latex\EtiquetadoresGramaticales
-Automaticos.tex"
+Automaticos.tex" [9]
 Underfull \hbox (badness 10000) in paragraph at lines 4--13
 
  []
@@ -361,7 +360,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--13
 
  []
 
-[9] [10]
+[10]
 Underfull \hbox (badness 10000) in paragraph at lines 38--44
 
  []
@@ -373,10 +372,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 38--44
 
 [11] [12] [13])
 ("D:\Fer\Facultad\PLN\Tesis\Nueva carpeta\Tesis\Latex\CorporaDeEntrenamientoYVe
-rificacion.tex")
+rificacion.tex" [14])
 ("D:\Fer\Facultad\PLN\Tesis\Nueva carpeta\Tesis\Latex\EvaluacionDeEtiquetadores
-.tex" [14])
-("D:\Fer\Facultad\PLN\Tesis\Nueva carpeta\Tesis\Latex\AnalisisDeError.tex"
+.tex") ("D:\Fer\Facultad\PLN\Tesis\Nueva carpeta\Tesis\Latex\AnalisisDeError.te
+x" [15]
 Underfull \hbox (badness 10000) in paragraph at lines 2--5
 
  []
@@ -386,7 +385,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--5
 
  []
 
-[15]
 
 ! LaTeX Error: There's no line here to end.
 
@@ -443,26 +441,10 @@ or  <return>  to continue without it.
 ) ("D:\Fer\Facultad\PLN\Tesis\Nueva carpeta\Tesis\Latex\PalabrasDesconocidas.te
 x" [16] [17])
 ("D:\Fer\Facultad\PLN\Tesis\Nueva carpeta\Tesis\Latex\EtiquetadorGramaticalTnT.
-tex" [18] [19])
-("D:\Fer\Facultad\PLN\Tesis\Nueva carpeta\Tesis\Latex\DiccionarioCobuild.tex"
-[20]
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin1'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.6 ... la información del corpus Bank of English™
-                                                   y el corpus Collins. Su s...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-)
+tex" [18] [19] [20])
+("D:\Fer\Facultad\PLN\Tesis\Nueva carpeta\Tesis\Latex\DiccionarioCobuild.tex")
 ("D:\Fer\Facultad\PLN\Tesis\Nueva carpeta\Tesis\Latex\TraduccionDeEtiquetas.tex
-"
+" [21]
 
 ! LaTeX Error: There's no line here to end.
 
@@ -489,127 +471,11 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-! Misplaced \noalign.
-\hline ->\noalign 
-                  {\ifnum 0=`}\fi \penalty \@M \futurelet \@let@token \LT@@h...
-l.11 	\hline
-            
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-! Misplaced \omit.
-\multispan ->\omit 
-                   \@multispan 
-l.12 \textbf
-            {Etiqueta COBUILD}	&	\textbf{Etiqueta PenTreeBank}\\
-I expect to see \omit only after tab marks or the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-! Extra alignment tab has been changed to \cr.
-<template> \endtemplate 
-                        
-l.12 \textbf
-            {Etiqueta COBUILD}	&	\textbf{Etiqueta PenTreeBank}\\
-You have given more \span or & marks than there were
-in the preamble to the \halign or \valign now in progress.
-So I'll assume that you meant to type \cr instead.
-
 
 Underfull \vbox (badness 10000) detected at line 40
  []
 
-[21]
-! Missing $ inserted.
-<inserted text> 
-                $
-l.94  verb + adjunct (^
-                       i{to^i}) & VB \\
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-<template> \unskip \hfil }
-                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.94  verb + adjunct (^i{to^i}) &
-                                  VB \\
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.94  verb + adjunct (^i{to^i}) &
-                                  VB \\
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.94  verb + adjunct (^i{to^i}) &
-                                  VB \\
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.97  verb or verb + adjunct (^
-                               i{with) & VB \\
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.97  verb or verb + adjunct (^i{with) &
-                                         VB \\
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten $.
-<template> \unskip \hfil }
-                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.97  verb or verb + adjunct (^i{with) &
-                                         VB \\
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.97  verb or verb + adjunct (^i{with) &
-                                         VB \\
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.97  verb or verb + adjunct (^i{with) &
-                                         VB \\
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-[22]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 1 on input line 125.
-
-[23])
+[22] [23])
 ("D:\Fer\Facultad\PLN\Tesis\Nueva carpeta\Tesis\Latex\ExtraccionDeInformacion.t
 ex"
 Overfull \hbox (90.7462pt too wide) in paragraph at lines 9--9
@@ -623,30 +489,62 @@ Overfull \hbox (43.49661pt too wide) in paragraph at lines 20--20
  informal use.[] 
  []
 
-
+[24]
 Overfull \hbox (69.74638pt too wide) in paragraph at lines 32--32
 []\OT1/cmtt/m/n/10 If you say that something is ace, you mean that you think th
 at it is very good;[] 
  []
 
-[24]
+
 Overfull \hbox (106.49606pt too wide) in paragraph at lines 52--52
 []\OT1/cmtt/m/n/10 If an object or surface bites, it grips another object or su
 rface rather than slipping[] 
  []
 
 [25])
-("D:\Fer\Facultad\PLN\Tesis\Nueva carpeta\Tesis\Latex\NuevoCorpusGenerado.tex")
-("D:\Fer\Facultad\PLN\Tesis\Nueva carpeta\Tesis\Latex\Experimentacion.tex")
-("D:\Fer\Facultad\PLN\Tesis\Nueva carpeta\Tesis\Latex\Conclusiones.tex"))
+("D:\Fer\Facultad\PLN\Tesis\Nueva carpeta\Tesis\Latex\NuevoCorpusGenerado.tex"
+Underfull \hbox (badness 10000) in paragraph at lines 2--3
 
-Package longtable Warning: Table widths have changed. Rerun LaTeX.
+ []
 
-[26] ("D:\Fer\Facultad\PLN\Tesis\Nueva carpeta\Tesis\Latex\Tesis.aux") ) 
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--3
+
+ []
+
+[26]
+Underfull \hbox (badness 10000) in paragraph at lines 4--24
+
+ []
+
+
+Overfull \hbox (64.49643pt too wide) in paragraph at lines 31--31
+[]\OT1/cmtt/m/n/10 A canary is a small yellow bird which sings beautifully. Peo
+ple sometimes keep[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39--40
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39--40
+
+ []
+
+[27]) ("D:\Fer\Facultad\PLN\Tesis\Nueva carpeta\Tesis\Latex\Experimentacion.tex
+"
+Underfull \hbox (badness 10000) in paragraph at lines 41--1
+
+ []
+
+) ("D:\Fer\Facultad\PLN\Tesis\Nueva carpeta\Tesis\Latex\Conclusiones.tex"))
+[28] ("D:\Fer\Facultad\PLN\Tesis\Nueva carpeta\Tesis\Latex\Tesis.aux") ) 
 Here is how much of TeX's memory you used:
- 3123 strings out of 494053
- 41150 string characters out of 3146189
- 109358 words of memory out of 3000000
+ 3126 strings out of 494053
+ 41337 string characters out of 3146189
+ 111359 words of memory out of 3000000
  6314 multiletter control sequences out of 15000+200000
  11189 words of font info for 43 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
@@ -669,9 +567,9 @@ ype1/public/amsfonts/cm/cmsl8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type
 1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/
 public/amsfonts/cm/cmsy7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/pub
 lic/amsfonts/cm/cmtt10.pfb>
-Output written on Tesis.pdf (26 pages, 290633 bytes).
+Output written on Tesis.pdf (28 pages, 294671 bytes).
 PDF statistics:
- 155 PDF objects out of 1000 (max. 8388607)
+ 161 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

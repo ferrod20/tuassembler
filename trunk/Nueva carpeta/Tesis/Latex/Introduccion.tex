@@ -1,12 +1,12 @@
 \subsection{Motivación}
-El etiquetado gramatical, también conocido como Part-of-speech tagging, POS tagging o simplemente POST, es el proceso de asignar una etiqueta gramatical a cada una de las palabras de un texto según su categoría léxica. Como se menciona detalladamente más adelante, el etiquetado gramatical juega un papel fundamental en importantes áreas de la linguistica computacional como síntesis del habla, reconocimiento del habla y recuperación de la información.
+El etiquetado o anotado gramatical, también conocido como Part-of-speech tagging, POS tagging o simplemente POST, es el proceso de asignar una etiqueta gramatical a cada una de las palabras de un texto según su categoría léxica. Como se menciona más adelante, el etiquetado gramatical juega un papel importante en  áreas de la linguistica computacional como por ejemplo síntesis del habla, reconocimiento del habla y recuperación de la información.
 
-El etiquetado gramatical se realiza automáticamente mediante programas conocidos como etiquetadores gramaticales. Estos programas, los etiquetadores gramaticales, son entrenados para que aprendan a etiquetar. Este entrenamiento se realiza mediante un corpus etiquetado previamente denominado corpus de entrenamiento. De esta manera el etiquetador guarda información sobre como está etiquetado el corpus de entrenamiento para utilizarla al etiquetar. 
+Este proceso es realizado manualmente por linguistas o automáticamente mediante programas conocidos como etiquetadores gramaticales. Estos programas son entrenados con el objetivo de que aprendan a etiquetar. Este entrenamiento se realiza utilizando un corpus anotado previamente denominado corpus de entrenamiento. De esta manera el etiquetador obtiene, procesa y retiene información sobre como está anotado el corpus de entrenamiento que utiliza posteriormente durante el proceso de etiquetación gramatical. 
 
-Una vez realizado el entrenamiento del etiquetador, se procede a etiquetar el texto requerido utilizando la informacion adquirida en el proceso de entrenamiento.
+Una vez finalizado el entrenamiento, se procede a etiquetar el texto requerido utilizando la informacion adquirida.
 
 Basicamente un corpus etiquetado o anotado es una lista de palabras con su correspondiente etiqueta gramatical. Por ejemplo:
-
+\\ \\
 A			DT\\
 form			NN\\
 of			IN\\
@@ -46,18 +46,18 @@ reported		VBD\\
 
 La complejidad del etiquetado gramatical reside en que la etiqueta no depende solo de la palabra o tipo de palabra que se está etiquetando, por el contrario, la ubicación y el contexto de la palabra en donde ésta aparece es un factor determinante al asignar la etiqueta correspondiente.
 
-Por lo tanto la etapa de entrenamiento de un etiquetador gramatical procesa y retiene información sobre el contexto y la ubicación de una palabra y la etiqueta asignada. Luego se utiliza esta información en el proceso de etiquetacion, donde el etiquetador analiza para cada palabra su ubicación y contexto, y en base a ello y al conocimiento adquirido previamente con el corpus de entrenamiento determina una etiqueta gramatical.
+Como fué mencionado anteriormente, la etapa de entrenamiento de un etiquetador gramatical obtiene, procesa y retiene información sobre el contexto y la ubicación de una palabra y la etiqueta asignada. Luego se utiliza esta información en el proceso de etiquetacion, donde el etiquetador analiza para cada palabra su ubicación y contexto, y en base a ello y al conocimiento adquirido previamente con el corpus de entrenamiento determina una etiqueta gramatical.
 
-Uno de los grandes problemas del etiquetado gramatical reside en la falta de corpus etiquetados para utilizar en el entrenamiento de los etiquetadores gramaticales.
+Uno de los grandes problemas del etiquetado gramatical reside en la falta de corpus anotados para utilizar durante el entrenamiento.
 
-Los corpus etiquetados (también llamados corpus de entrenamiento) son etiquetados manualmente por linguistas especializados. Es un trabajo profundamente meticuloso y tedioso ya que el linguista debe dar una etiqueta gramatical palabra por palabra, en corpus del orden del MILLON de palabras. Ademas de lo tedioso y complejo del trabajo, el tiempo empleado para etiquetar un corpus es sumamente extenso y como consecuencia el valor economico es realmente alto, ya que intervienen grupos de personas altamente especializadas durante un tiempo prolongado.
+Los corpus etiquetados (también llamados corpus de entrenamiento) son etiquetados manualmente por linguistas especializados. Es un trabajo profundamente meticuloso y tedioso ya que el linguista debe dar una etiqueta gramatical palabra por palabra, en corpus del orden del MILLON de palabras. Ademas de lo tedioso y complejo del trabajo, el tiempo empleado para etiquetar un corpus es sumamente extenso y como consecuencia el valor economico es realmente alto, ya que intervienen grupos de trabajo altamente capacitados durante un tiempo prolongado.
 
 El resultado de este complejo proceso artesanal es una tabla de palabras con su correspondiente etiqueta gramatical como se mostró anteriormente. Ante la importancia que adquieren los corpus etiquetados es inevitable pensar en algún otro tipo de texto que posea información de etiquetas. 
 
-Por ejemplo un diccionario contiene una palabra, su definición y algunos ejemplos en donde ésta aparece con cada uno de sus sentidos. Es decir que de alguna manera un diccionario contiene por cada palabra uno o más contextos en donde ésta aparece etiquetada. Es decir, si tomamos todos los ejemplos de cada palabra de un diccionario podemos construir un corpus parcialmente anotado. 
+Por ejemplo un diccionario contiene una palabra, su definición y algunos ejemplos en donde ésta aparece con cada uno de sus sentidos. Es decir que de alguna manera un diccionario contiene por cada palabra uno o más contextos en donde ésta aparece etiquetada. Entonces si tomamos todos los ejemplos de cada palabra de un diccionario y su etiqueta podemos construir un corpus parcialmente anotado. 
 
 \subsection{Trabajo realizado}
-La idea de este trabajo es suplir la falta de corpus de enternamiento utilizar la información de etiquetado que posee un diccionario como una nueva fuente de información para entrenar etiquetadores automáticos. Utillizar esta información existente como una nueva fuente de información para etiquetar, medir y comparar resultados en la calidad del etiquetado conseguido. Combinar e integrar esta información obtenida con corpus de entrenamiento clásicos e inspeccionar resultados en el etiquetado.
+La idea de este trabajo es suplir la falta de corpus de enternamiento utilizando la información de etiquetado que posee un diccionario como una nueva fuente de información para entrenar etiquetadores automáticos. Utillizar esta información existente para etiquetar, medir y comparar resultados en el rendimiento conseguido. Combinar e integrar esta información obtenida con corpus de entrenamiento clásicos e inspeccionar resultados en el etiquetado.
 Este trabajo menciona detalladamente la forma de extraer la información relevante de etiquetas gramaticales a partir de un diccionario y las decisiones que fueron aplicadas.
 Por último se realizan mediciones entre esta nueva fuente de información y los corpus clásicos de entrenamiento y se presentan las conclusiones.
 

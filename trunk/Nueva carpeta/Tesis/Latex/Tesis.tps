@@ -3,9 +3,9 @@ Type=TeXnicCenterProjectSessionInformation
 Version=2
 
 [SessionInfo]
-ActiveTab=2
-FrameCount=9
-ActiveFrame=5
+ActiveTab=0
+FrameCount=12
+ActiveFrame=7
 
 [Frame0]
 Columns=1
@@ -61,9 +61,9 @@ cxCur=804
 cxMin=10
 
 [Frame1_View0,0]
-Cursor.row=0
+Cursor.row=62
 Cursor.column=0
-TopSubLine=0
+TopSubLine=120
 
 [Frame2]
 Columns=1
@@ -119,9 +119,9 @@ cxCur=804
 cxMin=10
 
 [Frame3_View0,0]
-Cursor.row=0
+Cursor.row=82
 Cursor.column=0
-TopSubLine=0
+TopSubLine=228
 
 [Frame4]
 Columns=1
@@ -148,15 +148,15 @@ cxCur=828
 cxMin=10
 
 [Frame4_View0,0]
-Cursor.row=0
-Cursor.column=0
-TopSubLine=0
+Cursor.row=12
+Cursor.column=580
+TopSubLine=33
 
 [Frame5]
 Columns=1
 Rows=1
-Flags=2
-ShowCmd=3
+Flags=0
+ShowCmd=1
 MinPos.x=-1
 MinPos.y=-1
 MaxPos.x=-8
@@ -169,17 +169,17 @@ Class=CLatexEdit
 Document=TraduccionDeEtiquetas.tex
 
 [Frame5_Row0]
-cyCur=379
+cyCur=381
 cyMin=10
 
 [Frame5_Col0]
-cxCur=1002
+cxCur=828
 cxMin=10
 
 [Frame5_View0,0]
-Cursor.row=108
-Cursor.column=1
-TopSubLine=111
+Cursor.row=0
+Cursor.column=0
+TopSubLine=0
 
 [Frame6]
 Columns=1
@@ -208,13 +208,13 @@ cxMin=10
 [Frame6_View0,0]
 Cursor.row=16
 Cursor.column=21
-TopSubLine=8
+TopSubLine=10
 
 [Frame7]
 Columns=1
 Rows=1
-Flags=0
-ShowCmd=1
+Flags=2
+ShowCmd=3
 MinPos.x=-1
 MinPos.y=-1
 MaxPos.x=-8
@@ -227,17 +227,17 @@ Class=CLatexEdit
 Document=NuevoCorpusGenerado.tex
 
 [Frame7_Row0]
-cyCur=212
+cyCur=619
 cyMin=10
 
 [Frame7_Col0]
-cxCur=928
+cxCur=1337
 cxMin=10
 
 [Frame7_View0,0]
-Cursor.row=0
+Cursor.row=31
 Cursor.column=0
-TopSubLine=0
+TopSubLine=30
 
 [Frame8]
 Columns=1
@@ -266,5 +266,92 @@ cxMin=10
 [Frame8_View0,0]
 Cursor.row=19
 Cursor.column=0
-TopSubLine=23
+TopSubLine=25
+
+[Frame9]
+Columns=1
+Rows=1
+Flags=0
+ShowCmd=1
+MinPos.x=-1
+MinPos.y=-1
+MaxPos.x=-8
+MaxPos.y=-30
+NormalPos.left=0
+NormalPos.top=0
+NormalPos.right=823
+NormalPos.bottom=440
+Class=CLatexEdit
+Document=DefinicionesYMarcoTeorico.tex
+
+[Frame9_Row0]
+cyCur=381
+cyMin=10
+
+[Frame9_Col0]
+cxCur=786
+cxMin=10
+
+[Frame9_View0,0]
+Cursor.row=0
+Cursor.column=0
+TopSubLine=0
+
+[Frame10]
+Columns=1
+Rows=1
+Flags=0
+ShowCmd=1
+MinPos.x=-1
+MinPos.y=-1
+MaxPos.x=-8
+MaxPos.y=-30
+NormalPos.left=25
+NormalPos.top=25
+NormalPos.right=848
+NormalPos.bottom=465
+Class=CLatexEdit
+Document=ConjuntosDeEtiquetas.tex
+
+[Frame10_Row0]
+cyCur=381
+cyMin=10
+
+[Frame10_Col0]
+cxCur=786
+cxMin=10
+
+[Frame10_View0,0]
+Cursor.row=0
+Cursor.column=0
+TopSubLine=0
+
+[Frame11]
+Columns=1
+Rows=1
+Flags=0
+ShowCmd=1
+MinPos.x=-1
+MinPos.y=-1
+MaxPos.x=-8
+MaxPos.y=-30
+NormalPos.left=50
+NormalPos.top=50
+NormalPos.right=873
+NormalPos.bottom=490
+Class=CLatexEdit
+Document=EtiquetadoGramatical.tex
+
+[Frame11_Row0]
+cyCur=381
+cyMin=10
+
+[Frame11_Col0]
+cxCur=786
+cxMin=10
+
+[Frame11_View0,0]
+Cursor.row=1
+Cursor.column=43
+TopSubLine=0
 

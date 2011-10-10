@@ -2,27 +2,27 @@
 \contentsline {section}{\numberline {1}Introducci\'on}{3}
 \contentsline {subsection}{\numberline {1.1}Motivaci\'on}{3}
 \contentsline {subsection}{\numberline {1.2}Trabajo realizado}{4}
+\contentsline {subsection}{\numberline {1.3}Etiquetado gramatical}{5}
 \contentsline {section}{\numberline {2}Definiciones y marco te\'orico}{5}
-\contentsline {subsection}{\numberline {2.1}Etiquetado gramatical}{5}
-\contentsline {subsection}{\numberline {2.2}Etiquetas}{5}
-\contentsline {subsection}{\numberline {2.3}Conjuntos de etiquetas}{9}
-\contentsline {subsection}{\numberline {2.4}Corpus}{9}
-\contentsline {subsection}{\numberline {2.5}Etiquetadores gramaticales autom\'aticos}{9}
-\contentsline {subsubsection}{\numberline {2.5.1}Etiquetadores gramaticales basados en reglas}{10}
-\contentsline {subsubsection}{\numberline {2.5.2}Etiquetadores gramaticales estoc\'asticos}{11}
-\contentsline {subsubsection}{\numberline {2.5.3}Etiquetadores gramaticales basado en HMM}{11}
-\contentsline {subsection}{\numberline {2.6}Corpora de entrenamiento y corpora de verificaci\'on}{14}
-\contentsline {subsection}{\numberline {2.7}Evaluaci\'on de etiquetadores gramaticales}{15}
-\contentsline {subsection}{\numberline {2.8}An\'alisis de error}{15}
-\contentsline {subsection}{\numberline {2.9}Palabras desconocidas}{16}
-\contentsline {subsection}{\numberline {2.10}Etiquetador Gramatical TnT}{18}
-\contentsline {subsubsection}{\numberline {2.10.1}Modelo te\'orico}{18}
-\contentsline {subsubsection}{\numberline {2.10.2}Suavizado}{18}
-\contentsline {subsubsection}{\numberline {2.10.3}Manejo de palabras desconocidas}{19}
-\contentsline {section}{\numberline {3}Desarrollo}{20}
-\contentsline {subsection}{\numberline {3.1}Diccionario COBUILD}{20}
+\contentsline {subsection}{\numberline {2.1}Etiquetas}{6}
+\contentsline {subsection}{\numberline {2.2}Conjuntos de etiquetas}{9}
+\contentsline {subsection}{\numberline {2.3}Corpus}{9}
+\contentsline {subsection}{\numberline {2.4}Etiquetadores gramaticales autom\'aticos}{10}
+\contentsline {subsubsection}{\numberline {2.4.1}Etiquetadores gramaticales basados en reglas}{11}
+\contentsline {subsubsection}{\numberline {2.4.2}Etiquetadores gramaticales estoc\'asticos}{11}
+\contentsline {subsubsection}{\numberline {2.4.3}Etiquetadores gramaticales basado en HMM}{11}
+\contentsline {subsection}{\numberline {2.5}Corpora de entrenamiento y corpora de verificaci\'on}{14}
+\contentsline {subsection}{\numberline {2.6}Evaluaci\'on de etiquetadores gramaticales}{15}
+\contentsline {subsection}{\numberline {2.7}An\'alisis de error}{16}
+\contentsline {subsection}{\numberline {2.8}Palabras desconocidas}{16}
+\contentsline {subsection}{\numberline {2.9}Etiquetador Gramatical TnT}{18}
+\contentsline {subsubsection}{\numberline {2.9.1}Modelo te\'orico}{18}
+\contentsline {subsubsection}{\numberline {2.9.2}Suavizado}{19}
+\contentsline {subsubsection}{\numberline {2.9.3}Manejo de palabras desconocidas}{19}
+\contentsline {section}{\numberline {3}Desarrollo}{21}
+\contentsline {subsection}{\numberline {3.1}Diccionario COBUILD}{21}
 \contentsline {subsection}{\numberline {3.2}Traducci\'on de etiquetas}{21}
 \contentsline {subsection}{\numberline {3.3}Extracci\'on de la informaci\'on}{24}
 \contentsline {subsection}{\numberline {3.4}Nuevo Corpus generado}{26}
-\contentsline {subsection}{\numberline {3.5}Experimentaci\'on}{26}
-\contentsline {subsection}{\numberline {3.6}Conclusiones}{26}
+\contentsline {subsection}{\numberline {3.5}Experimentaci\'on}{28}
+\contentsline {subsection}{\numberline {3.6}Conclusiones}{28}
