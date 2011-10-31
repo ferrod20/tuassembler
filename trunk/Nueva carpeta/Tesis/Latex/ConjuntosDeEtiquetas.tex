@@ -1,1 +1,119 @@
 \subsection{Conjuntos de etiquetas} 
+La sección anterior dió una descripción general de los tipos de clases sintácticas a las que pertenecen las palabras. Esta sección exhibe describiendo los conjuntos de etiquetas actuales utilizados en la etiquetación gramatical. 
+
+\begin{center}
+\begin{tabular}{|l | l | l |}
+	\hline
+	\textbf{Etiqueta}	&	\textbf{Descripción}	&	\textbf{Ejemplo}\\
+	\hline
+	\hline
+	CC &Coordinating conjunction &\textsl{and}\\
+CD &Cardinal number &\textsl{1, third}\\
+DT &Determiner &\textsl{the}\\
+EX &Existential &\textsl{there there is}\\
+FW &Foreign word &\textsl{d'hoevre}\\
+IN &Preposition/subordinating conjunction &\textsl{in, of, like}\\
+JJ &Adjective  &\textsl{green}\\
+JJR &Adjective, comparative &\textsl{greener}\\
+JJS &Adjective, superlative &\textsl{greenest}\\
+LS &List marker  &\textsl{1)}\\
+MD &Modal  &\textsl{could, will}\\
+NN &Noun, singular or mass &\textsl{table}\\
+NNS &Noun plural  &\textsl{tables}\\
+NNP &Proper noun, singular &\textsl{John}\\
+NNPS &Proper noun, plural &\textsl{Vikings}\\
+PDT &Predeterminer both &\textsl{the boys}\\
+POS &Possessive ending &\textsl{friend's}\\
+PRP &Personal pronoun &\textsl{I, he, it}\\
+PRP\$ &Possessive pronoun &\textsl{my, his}\\
+RB &Adverb &\textsl{however, usually, naturally, here, good}\\
+RBR &Adverb, comparative &\textsl{better}\\
+RBS &Adverb, superlative &\textsl{best}\\
+RP &Particle &\textsl{give up}\\
+SYM &Symbol &\textsl{+,\%,\&}\\
+TO &To &\textsl{to go, to him}\\
+UH &Interjection &\textsl{uhhuhhuhh}\\
+VB &Verb, base form &\textsl{take}\\
+VBD &Verb, past tense &\textsl{took}\\
+VBG &Verb, gerund/present participle &\textsl{taking}\\
+VBN &Verb, past participle &\textsl{taken}\\
+VBP &Verb, sing. present, non-3d &\textsl{take}\\
+VBZ &Verb, 3rd person sing. present &\textsl{takes}\\
+WDT &Wh-determiner &\textsl{which}\\
+WP &Wh-pronoun &\textsl{who, what}\\
+WP\$ &Possessive wh-pronoun &\textsl{whose}\\
+WRB &Wh-abverb  &\textsl{where, when}\\
+\$ &Dollar sign &\textsl{\$}\\
+\# &Pound sign &\textsl{\#}\\
+" &Left quote &(' or ")\\
+" &Right quote &(' or ")\\
+( &Left parenthesis &( [, (, \{, <)\\
+) &Right parenthesis &( ], ), \}, >)\\
+, &Comma &,\\
+. &Sentence-final punc &( . ! ?)\\
+: &Mid-sentence punc &( : ; ... -)\\
+	\hline
+\end{tabular}
+\end{center}
+
+Hay un pequeño número de conjuntos de etiquetas o tagsets populares para el idioma inglés, muchos de los cuales evolucionaron a partir del conjunto de etiquetas utilizado para el corpus Brown. Conocido como el Brown Corpus Tag-set, eun conjunto de 87 etiquetas que se utilizó para etiquetar el corpus Brown, un corpus de 1 millón de palabras de ejemplos obtenidos desde 500 textos escritos de diferentes géneros (diarios, novelas, no ficción, académico, étc.) que fué ensamblado en la Universidad Brown entre 1963 y 1964. Este corpus fué etiquetado gramaticalmente aplicando en primera instancia un etiquetador automático, el programa TAGGIT, y luego corregido manualmente.
+
+Al lado del conjunto de etiquetas original Brown, dos de los conjuntos de etiquetas más comunmente utilizados son el conjunto de etiquetas reducido Pen Treebank de 45 etiquetas y el conjunto de etiquetas CLAWS C5 de tamaño medio (62 etiquetas) utilizado por Lancaster UCREL en el proyecto CLAWS (Constitutent Likelihood Automatic Word-tagging System) para etiquetar el corpus British National Corpus (BNC).
+
+El conjunto de etiquetas Penn Treebank, mostrado anteriormente, fué utilizado en el corpus Brown, en el corpus Wall Street Journal y en el corpus Switchboard entre otros; en realidad, quizás en parte por su pequeño tamaño es uno de los conjuntos de etiquetas más extensamente utilizados. A continuación se exhiben algunos ejemplos de oraciones del corpus Brown etiquetadas con el conjunto de etiquetas Penn Treebank (representaremos una palabra etiquetada mediante la colocación de una etiqueta después de cada palabra, delimitada por una barra oblicua):
+\begin{enumerate}
+	\item The/DT grand/JJ jury/NN commented/VBD on/IN a/DT number/NN of/IN other/JJ topics/NNS ./.
+	\item \textbf{There/EX} are/VBP 70/CD children/NNS \textbf{there/RB}
+	\item Although/IN preliminary/JJ findings/NNS were/VBD \textbf{reported/VBN} more/RBR than/IN a/DT year/NN aho/IN ,/, the/DT latest/JJS results/NNS appear/VBP in/IN today/NN \textbf{'s/POS} New/NNP England/NNP Journal/NNP of/IN Medicine/NNP ./.
+\end{enumerate}
+El primer ejemplo exhibide los determinantes \textsl{the} y \textsl{a}, los adjetivos \textsl{grand} y \textsl{other}, los sustantivos comunes \textsl{jury}, \textsl{number} y \textsl{topics} y el verbo en tiempo pasado \textsl{commented}. El segundo ejemplo muestra el uso de la etiqueta ET para marcar la construcción existencial \textsl{there} y otro uso de de \textsl{there} que es etiquetado como un adverbio (RB). El tercer ejemplo muestra la segmentación del morfema posesivo \textsl{'s}, y muestra un ejemplo de una construcción pasiva, 'were reported', en la cual el verbo reported está marcado como un pasado participio (VBN) en vez de como un pasado simple (VBD). También es interesante notar que el sustantivo propio \textsl{New England} está etiquetado como NNP. Finalmente, se puede observar que como \textsl{New England Journal of Medicine} es un sustantivo propio, el etiquetado de Treebank elige marcar cada sustantivo separado como NNP, incluyendo \textsl{journal} y \textsl{medicine}, que en otros casos pueden ser etiquetados como sustantivos comunes (NN).
+
+Algunas distinciones de etiquetado son muy difíciles de realizar tanto para humanos como para máquinas. Por ejemplo las preposiciones (IN), participios (RP) y adverbios (RB) pueden tener un gran solapamiento. Las palabras como \textsl{around} pueden ser de los 3 tipos:
+\begin{enumerate}
+	\item Mrs./NNP Shaefer/NNP never/RB got/VBD \textbf{around/RP} to/TO joining/VBG
+	\item All/DT we/PRP gotta/VBN do/VB is/VBZ go/VB \textbf{around/IN} the/DT corner/NN
+	\item Chateau/NNP Petrus/NNP costs/VBZ \textbf{around/RB} 250/CD
+\end{enumerate}
+
+Tomar estas decisiones requiere un conocimiento sofisticado de la sintaxtis; los manuales de etiquetado ofrecen varias heurísticas que pueden ayudar a los codificadores humanos a tomar estas decisiones, y también puede proveer características útiles para los etiquetadores automáticos. Por ejemplo 2 heurísticas de Santorini son que las preposiciones generalmente son asociadas con la frase nominal siguiente (aunque también pueden ser seguidas por frases preposicionales), y que la palabra \textsl{around} es etiquetada como un adverbio cuando significa "aproximadamente""'. Además, mientras que los participios pueden preceder o seguir a un objeto de frase sustantiva, como en los siguientes ejemplos:
+
+\begin{enumerate}
+	\item She told off/RP her friends
+	\item She told her friends off/RP.
+\end{enumerate}
+las preposiciones no puede seguir sus frases nominales (* se utiliza para marcar oraciones no gramaticales)
+\begin{enumerate}
+	\item She stepped off/IN the train
+	\item *She stepped the train off/IN.
+\end{enumerate}
+Otra dificultad es etiquetar las palabras que pueden modificar sustantivos. Algunas veces los modificadores que preceden sustantivos son sustantivos comunes como \textsl{cotton} below, otras veces el manual de etiquetado del TreeBank especifica que los modificadores que serán etiquetados como adjetivos (por ejemplo si el modificador es un sustantivo propio guionado como \textsl{Gramm-Rudman}):
+\begin{enumerate}
+	\item cotton/NN sweater/NN
+	\item income-tax/JJ return/NN
+	\item the/DT Gramm-Rudman/NP Act/NP
+\end{enumerate}
+Algunas palabras que pueden ser adjetivos, sustantivos comunes o sustantivos propios son etiquetados en el Treebank como sustantivos comunes cuando actúan como modificadores:
+\begin{enumerate}
+	\item Chinese/NN cooking/NN
+	\item Pacific/NN waters/NNS
+\end{enumerate}
+Una tercera dificultad conocida en el etiquetado es distinguir pasado participio (VBN) de adjetivos (JJ). Una palabra como \textsl{married} es un pasado participio cuando está siendo utilizada en una forma verbal como se muestra a continuación en el primer ejemplo. Y es un adjetivo cuando está siendo utilizada para expresar una propiedad como en el segundo ejemplo.
+\begin{enumerate}
+	\item They were married/VBN by the Justice of the Peace yesterday at 5:00
+	\item At the time, she was already married/JJ.
+\end{enumerate}
+Los manuales de etiquetado como Santorini dan varias criterios útiles para decidir como clasificar entre verbo y evento una palabra particular en un contexto específico.
+
+El conjunto de etiquetas del Penn Treebank fué seleccionado a partir del conjunto de etiquetas original del corpus Brown (de 87 etiquetas). Este conjunto reducido deja afuera información que puede ser recuperada desde la identidad del item léxico. POr ejemplo los conjuntos de etiquetas Brown original y C5 incluyen una etiqueta separada para cada una de las diferentes formas de los verbos \textsl{do} (C5 propone la etiqueta VDD para \textsl{did} y VDG para \textsl{doing}), \textsl{be} y \textsl{have}. Estas etiquetas fueron omitidas en el conjunto de Treebank.
+
+Ciertas distinciones sintácticas no fueron marcadas en el conjunto de etiquetas Penn Treebank porque las oraciones de Treebank fueron parseadas, no meramente etiquetadas, y por lo tanto alguna información sintáctica es representada en la estructura de la frase. Por ejempo, la etiqueta simple IN es utilizada para preposiciones como para conjunciones subordinadas desde que la estructura de arbol de la oración las desambigua (las conjunciones subordinadas siempre preceden cláusulas, las preposiciones preceden frases nominales o frases preposicionales). La mayoría de las situaciones de etiquetado, sin embargo, no involucran corpora parseado; por esta razón el conjunto del Penn Treebank no es suficientemente específico para muchos usos. Los conjuntos de etiquetas de Brown original y C5 , por ejemplo, distinguen preposiciones (IN) de conjunciones subordinadas (CS), como en los siguiente ejemplos:
+\begin{enumerate}
+	\item \textbf{after/CS} spending/VBG a/AT few/AP days/NNS at/IN the/AT Brown/NP Palace/NN Hotel/NN
+	\item \textbf{after/IN} a/AT wedding/NN trip/NN to/IN Corpus/NP Christi/NP ./.
+\end{enumerate}
+El conjunto de etiquetas Brown original y C5 también tiene dos etiquetas para la palabra \textsl{to}; en Brown el uso del infinitivo es etiquetado como TO, mientras que las preposiciones utilizan IN:
+\begin{enumerate}
+	\item \textbf{to/TO} give/VB priority/NN \textbf{to/IN} teacher/NN pay/NN raises/NNS
+\end{enumerate}
+Brown también tiene la etiqueta NR para sustantivos adverbiales como \textsl{home}, \textsl{west}, \textsl{Monday} y \textsl{tomorrow}. Como el Treebank carece de esta etiqueta, hay una política mucho menos consciente para sustantivos adverbiales; \textsl{Monday}, \textsl{Tuesday} y otros días de la semana son marcados como NNP, \textsl{tomorrow}, \textsl{west} y \textsl{home} son marcados algunas veces como NN y algunas veces como RB. Esto hace el conjunto de etiquetas del Treebank menos útil para tareas de alto nivel linguístico como la detección del tiempo de frases.
+Sin embargo, el conjunto de etiquetas de Treebank ha sido el más extensamente utilizado en la evaluación de algoritmos de etiquetación automática. Esta es la razón por la cual elegimos este conjunto de etiquetas para utilizar en el desarrollo del presente trabajo.

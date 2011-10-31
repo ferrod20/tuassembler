@@ -3,15 +3,15 @@ Type=TeXnicCenterProjectSessionInformation
 Version=2
 
 [SessionInfo]
-ActiveTab=0
+ActiveTab=1
 FrameCount=12
-ActiveFrame=7
+ActiveFrame=0
 
 [Frame0]
 Columns=1
 Rows=1
-Flags=0
-ShowCmd=1
+Flags=2
+ShowCmd=3
 MinPos.x=-1
 MinPos.y=-1
 MaxPos.x=-8
@@ -24,16 +24,16 @@ Class=CLatexEdit
 Document=Indice.tex
 
 [Frame0_Row0]
-cyCur=377
+cyCur=379
 cyMin=10
 
 [Frame0_Col0]
-cxCur=800
+cxCur=1111
 cxMin=10
 
 [Frame0_View0,0]
-Cursor.row=0
-Cursor.column=0
+Cursor.row=4
+Cursor.column=18
 TopSubLine=0
 
 [Frame1]
@@ -61,9 +61,9 @@ cxCur=804
 cxMin=10
 
 [Frame1_View0,0]
-Cursor.row=62
-Cursor.column=0
-TopSubLine=120
+Cursor.row=59
+Cursor.column=18
+TopSubLine=116
 
 [Frame2]
 Columns=1
@@ -90,9 +90,9 @@ cxCur=804
 cxMin=10
 
 [Frame2_View0,0]
-Cursor.row=0
-Cursor.column=0
-TopSubLine=0
+Cursor.row=96
+Cursor.column=179
+TopSubLine=167
 
 [Frame3]
 Columns=1
@@ -119,9 +119,9 @@ cxCur=804
 cxMin=10
 
 [Frame3_View0,0]
-Cursor.row=82
+Cursor.row=0
 Cursor.column=0
-TopSubLine=228
+TopSubLine=207
 
 [Frame4]
 Columns=1
@@ -148,9 +148,9 @@ cxCur=828
 cxMin=10
 
 [Frame4_View0,0]
-Cursor.row=12
-Cursor.column=580
-TopSubLine=33
+Cursor.row=20
+Cursor.column=0
+TopSubLine=86
 
 [Frame5]
 Columns=1
@@ -206,15 +206,15 @@ cxCur=828
 cxMin=10
 
 [Frame6_View0,0]
-Cursor.row=16
-Cursor.column=21
-TopSubLine=10
+Cursor.row=24
+Cursor.column=0
+TopSubLine=23
 
 [Frame7]
 Columns=1
 Rows=1
-Flags=2
-ShowCmd=3
+Flags=0
+ShowCmd=1
 MinPos.x=-1
 MinPos.y=-1
 MaxPos.x=-8
@@ -227,17 +227,17 @@ Class=CLatexEdit
 Document=NuevoCorpusGenerado.tex
 
 [Frame7_Row0]
-cyCur=619
+cyCur=212
 cyMin=10
 
 [Frame7_Col0]
-cxCur=1337
+cxCur=928
 cxMin=10
 
 [Frame7_View0,0]
-Cursor.row=31
-Cursor.column=0
-TopSubLine=30
+Cursor.row=38
+Cursor.column=297
+TopSubLine=59
 
 [Frame8]
 Columns=1
@@ -264,9 +264,9 @@ cxCur=861
 cxMin=10
 
 [Frame8_View0,0]
-Cursor.row=19
-Cursor.column=0
-TopSubLine=25
+Cursor.row=9
+Cursor.column=34
+TopSubLine=13
 
 [Frame9]
 Columns=1
@@ -293,9 +293,9 @@ cxCur=786
 cxMin=10
 
 [Frame9_View0,0]
-Cursor.row=0
-Cursor.column=0
-TopSubLine=0
+Cursor.row=7
+Cursor.column=491
+TopSubLine=36
 
 [Frame10]
 Columns=1
@@ -322,9 +322,9 @@ cxCur=786
 cxMin=10
 
 [Frame10_View0,0]
-Cursor.row=0
+Cursor.row=63
 Cursor.column=0
-TopSubLine=0
+TopSubLine=97
 
 [Frame11]
 Columns=1

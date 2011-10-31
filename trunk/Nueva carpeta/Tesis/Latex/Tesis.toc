@@ -1,28 +1,38 @@
 \select@language {spanish}
-\contentsline {section}{\numberline {1}Introducci\'on}{3}
-\contentsline {subsection}{\numberline {1.1}Motivaci\'on}{3}
+\contentsline {section}{\numberline {1}Introducci\'on}{2}
+\contentsline {subsection}{\numberline {1.1}Motivaci\'on}{2}
 \contentsline {subsection}{\numberline {1.2}Trabajo realizado}{4}
-\contentsline {subsection}{\numberline {1.3}Etiquetado gramatical}{5}
+\contentsline {subsection}{\numberline {1.3}Etiquetado gramatical}{4}
 \contentsline {section}{\numberline {2}Definiciones y marco te\'orico}{5}
 \contentsline {subsection}{\numberline {2.1}Etiquetas}{6}
 \contentsline {subsection}{\numberline {2.2}Conjuntos de etiquetas}{9}
-\contentsline {subsection}{\numberline {2.3}Corpus}{9}
-\contentsline {subsection}{\numberline {2.4}Etiquetadores gramaticales autom\'aticos}{10}
-\contentsline {subsubsection}{\numberline {2.4.1}Etiquetadores gramaticales basados en reglas}{11}
-\contentsline {subsubsection}{\numberline {2.4.2}Etiquetadores gramaticales estoc\'asticos}{11}
-\contentsline {subsubsection}{\numberline {2.4.3}Etiquetadores gramaticales basado en HMM}{11}
-\contentsline {subsection}{\numberline {2.5}Corpora de entrenamiento y corpora de verificaci\'on}{14}
-\contentsline {subsection}{\numberline {2.6}Evaluaci\'on de etiquetadores gramaticales}{15}
-\contentsline {subsection}{\numberline {2.7}An\'alisis de error}{16}
-\contentsline {subsection}{\numberline {2.8}Palabras desconocidas}{16}
-\contentsline {subsection}{\numberline {2.9}Etiquetador Gramatical TnT}{18}
-\contentsline {subsubsection}{\numberline {2.9.1}Modelo te\'orico}{18}
-\contentsline {subsubsection}{\numberline {2.9.2}Suavizado}{19}
-\contentsline {subsubsection}{\numberline {2.9.3}Manejo de palabras desconocidas}{19}
-\contentsline {section}{\numberline {3}Desarrollo}{21}
-\contentsline {subsection}{\numberline {3.1}Diccionario COBUILD}{21}
-\contentsline {subsection}{\numberline {3.2}Traducci\'on de etiquetas}{21}
-\contentsline {subsection}{\numberline {3.3}Extracci\'on de la informaci\'on}{24}
-\contentsline {subsection}{\numberline {3.4}Nuevo Corpus generado}{26}
-\contentsline {subsection}{\numberline {3.5}Experimentaci\'on}{28}
-\contentsline {subsection}{\numberline {3.6}Conclusiones}{28}
+\contentsline {subsection}{\numberline {2.3}Corpus}{13}
+\contentsline {subsection}{\numberline {2.4}Etiquetadores gramaticales autom\'aticos}{14}
+\contentsline {subsubsection}{\numberline {2.4.1}Etiquetadores gramaticales basados en reglas}{15}
+\contentsline {subsubsection}{\numberline {2.4.2}Etiquetadores gramaticales estoc\'asticos}{15}
+\contentsline {subsubsection}{\numberline {2.4.3}Etiquetadores gramaticales basado en HMM}{15}
+\contentsline {subsection}{\numberline {2.5}Corpora de entrenamiento y corpora de verificaci\'on}{18}
+\contentsline {subsection}{\numberline {2.6}Evaluaci\'on de etiquetadores gramaticales}{19}
+\contentsline {subsection}{\numberline {2.7}An\'alisis de error}{20}
+\contentsline {subsection}{\numberline {2.8}Palabras desconocidas}{20}
+\contentsline {subsection}{\numberline {2.9}Etiquetador Gramatical TnT}{22}
+\contentsline {subsubsection}{\numberline {2.9.1}Modelo te\'orico}{22}
+\contentsline {subsubsection}{\numberline {2.9.2}Suavizado}{23}
+\contentsline {subsubsection}{\numberline {2.9.3}Manejo de palabras desconocidas}{23}
+\contentsline {section}{\numberline {3}Desarrollo}{25}
+\contentsline {subsection}{\numberline {3.1}Diccionario COBUILD}{25}
+\contentsline {subsubsection}{\numberline {3.1.1}M\'etodo de construcci\'on}{27}
+\contentsline {subsubsection}{\numberline {3.1.2}Evidencia}{27}
+\contentsline {subsubsection}{\numberline {3.1.3}Un corpus}{27}
+\contentsline {subsubsection}{\numberline {3.1.4}The Bank of English}{27}
+\contentsline {subsubsection}{\numberline {3.1.5}La lista de palabras principales}{28}
+\contentsline {subsubsection}{\numberline {3.1.6}Frecuencia}{28}
+\contentsline {subsubsection}{\numberline {3.1.7}Ejemplos}{29}
+\contentsline {subsubsection}{\numberline {3.1.8}Informaci\'on gramatical}{29}
+\contentsline {subsubsection}{\numberline {3.1.9}Pragmatismo}{29}
+\contentsline {subsubsection}{\numberline {3.1.10}Definici\'on del estilo}{29}
+\contentsline {subsection}{\numberline {3.2}Traducci\'on de etiquetas}{30}
+\contentsline {subsection}{\numberline {3.3}Extracci\'on de la informaci\'on}{32}
+\contentsline {subsection}{\numberline {3.4}Nuevo Corpus generado}{35}
+\contentsline {subsection}{\numberline {3.5}Experimentaci\'on}{37}
+\contentsline {subsection}{\numberline {3.6}Conclusiones}{37}
