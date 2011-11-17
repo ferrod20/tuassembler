@@ -3,15 +3,15 @@ Type=TeXnicCenterProjectSessionInformation
 Version=2
 
 [SessionInfo]
-ActiveTab=1
-FrameCount=12
-ActiveFrame=0
+ActiveTab=0
+FrameCount=14
+ActiveFrame=4
 
 [Frame0]
 Columns=1
 Rows=1
-Flags=2
-ShowCmd=3
+Flags=0
+ShowCmd=1
 MinPos.x=-1
 MinPos.y=-1
 MaxPos.x=-8
@@ -24,16 +24,16 @@ Class=CLatexEdit
 Document=Indice.tex
 
 [Frame0_Row0]
-cyCur=379
+cyCur=377
 cyMin=10
 
 [Frame0_Col0]
-cxCur=1111
+cxCur=800
 cxMin=10
 
 [Frame0_View0,0]
-Cursor.row=4
-Cursor.column=18
+Cursor.row=5
+Cursor.column=0
 TopSubLine=0
 
 [Frame1]
@@ -63,7 +63,7 @@ cxMin=10
 [Frame1_View0,0]
 Cursor.row=59
 Cursor.column=18
-TopSubLine=116
+TopSubLine=0
 
 [Frame2]
 Columns=1
@@ -90,9 +90,9 @@ cxCur=804
 cxMin=10
 
 [Frame2_View0,0]
-Cursor.row=96
-Cursor.column=179
-TopSubLine=167
+Cursor.row=0
+Cursor.column=0
+TopSubLine=23
 
 [Frame3]
 Columns=1
@@ -121,13 +121,13 @@ cxMin=10
 [Frame3_View0,0]
 Cursor.row=0
 Cursor.column=0
-TopSubLine=207
+TopSubLine=0
 
 [Frame4]
 Columns=1
 Rows=1
-Flags=0
-ShowCmd=1
+Flags=2
+ShowCmd=3
 MinPos.x=-1
 MinPos.y=-1
 MaxPos.x=-8
@@ -140,17 +140,17 @@ Class=CLatexEdit
 Document=DiccionarioCobuild.tex
 
 [Frame4_Row0]
-cyCur=381
+cyCur=379
 cyMin=10
 
 [Frame4_Col0]
-cxCur=828
+cxCur=1021
 cxMin=10
 
 [Frame4_View0,0]
-Cursor.row=20
-Cursor.column=0
-TopSubLine=86
+Cursor.row=72
+Cursor.column=1107
+TopSubLine=201
 
 [Frame5]
 Columns=1
@@ -177,7 +177,7 @@ cxCur=828
 cxMin=10
 
 [Frame5_View0,0]
-Cursor.row=0
+Cursor.row=3
 Cursor.column=0
 TopSubLine=0
 
@@ -206,9 +206,9 @@ cxCur=828
 cxMin=10
 
 [Frame6_View0,0]
-Cursor.row=24
-Cursor.column=0
-TopSubLine=23
+Cursor.row=18
+Cursor.column=1
+TopSubLine=0
 
 [Frame7]
 Columns=1
@@ -237,7 +237,7 @@ cxMin=10
 [Frame7_View0,0]
 Cursor.row=38
 Cursor.column=297
-TopSubLine=59
+TopSubLine=52
 
 [Frame8]
 Columns=1
@@ -264,9 +264,9 @@ cxCur=861
 cxMin=10
 
 [Frame8_View0,0]
-Cursor.row=9
-Cursor.column=34
-TopSubLine=13
+Cursor.row=0
+Cursor.column=0
+TopSubLine=0
 
 [Frame9]
 Columns=1
@@ -295,38 +295,9 @@ cxMin=10
 [Frame9_View0,0]
 Cursor.row=7
 Cursor.column=491
-TopSubLine=36
+TopSubLine=27
 
 [Frame10]
-Columns=1
-Rows=1
-Flags=0
-ShowCmd=1
-MinPos.x=-1
-MinPos.y=-1
-MaxPos.x=-8
-MaxPos.y=-30
-NormalPos.left=25
-NormalPos.top=25
-NormalPos.right=848
-NormalPos.bottom=465
-Class=CLatexEdit
-Document=ConjuntosDeEtiquetas.tex
-
-[Frame10_Row0]
-cyCur=381
-cyMin=10
-
-[Frame10_Col0]
-cxCur=786
-cxMin=10
-
-[Frame10_View0,0]
-Cursor.row=63
-Cursor.column=0
-TopSubLine=97
-
-[Frame11]
 Columns=1
 Rows=1
 Flags=0
@@ -342,16 +313,103 @@ NormalPos.bottom=490
 Class=CLatexEdit
 Document=EtiquetadoGramatical.tex
 
-[Frame11_Row0]
+[Frame10_Row0]
 cyCur=381
 cyMin=10
 
-[Frame11_Col0]
+[Frame10_Col0]
 cxCur=786
 cxMin=10
 
+[Frame10_View0,0]
+Cursor.row=0
+Cursor.column=0
+TopSubLine=0
+
+[Frame11]
+Columns=1
+Rows=1
+Flags=0
+ShowCmd=1
+MinPos.x=-1
+MinPos.y=-1
+MaxPos.x=-8
+MaxPos.y=-30
+NormalPos.left=0
+NormalPos.top=0
+NormalPos.right=1007
+NormalPos.bottom=275
+Class=CLatexEdit
+Document=PalabrasDesconocidas.tex
+
+[Frame11_Row0]
+cyCur=216
+cyMin=10
+
+[Frame11_Col0]
+cxCur=970
+cxMin=10
+
 [Frame11_View0,0]
-Cursor.row=1
-Cursor.column=43
+Cursor.row=3
+Cursor.column=395
+TopSubLine=15
+
+[Frame12]
+Columns=1
+Rows=1
+Flags=0
+ShowCmd=1
+MinPos.x=-1
+MinPos.y=-1
+MaxPos.x=-8
+MaxPos.y=-30
+NormalPos.left=25
+NormalPos.top=25
+NormalPos.right=1032
+NormalPos.bottom=300
+Class=CLatexEdit
+Document=EtiquetadorGramaticalTnT.tex
+
+[Frame12_Row0]
+cyCur=216
+cyMin=10
+
+[Frame12_Col0]
+cxCur=970
+cxMin=10
+
+[Frame12_View0,0]
+Cursor.row=7
+Cursor.column=25
+TopSubLine=11
+
+[Frame13]
+Columns=1
+Rows=1
+Flags=0
+ShowCmd=1
+MinPos.x=-1
+MinPos.y=-1
+MaxPos.x=-8
+MaxPos.y=-30
+NormalPos.left=125
+NormalPos.top=125
+NormalPos.right=1057
+NormalPos.bottom=565
+Class=CLatexEdit
+Document=ConjuntosDeEtiquetas.tex
+
+[Frame13_Row0]
+cyCur=381
+cyMin=10
+
+[Frame13_Col0]
+cxCur=895
+cxMin=10
+
+[Frame13_View0,0]
+Cursor.row=0
+Cursor.column=0
 TopSubLine=0
 
