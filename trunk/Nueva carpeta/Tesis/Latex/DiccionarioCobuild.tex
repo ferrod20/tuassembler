@@ -1,61 +1,207 @@
 \subsection{Diccionario COBUILD} 
-Como se menciona anteriormente, para suplir la falta de corpus de entrenamiento sin caer en la tediosa y costosa tarea de anotar un nuevo corpus manualmetne, se introduce una fuente de información existente y manualmente anotada. Estamos hablando de un diccionario, que no es ni más ni menos que un conjunto de palabras con su/s posible/s etiqueta/s y uno o más ejemplos en donde cada palabra aparece con cada una de esas etiquetas. 
-El primer paso es elegir un diccionario y extraer esta información. El diccionario elegido fué Cobuild.
+Como se menciona anteriormente, para suplir la falta de corpus de entrenamiento sin caer en la tediosa y costosa tarea de anotar un nuevo corpus manualmetne, se introduce una fuente de información existente y manualmente anotada. Estamos hablando de un diccionario, que no es ni más ni menos que un conjunto de palabras, donde cada palabra representa una entrada. Y a su vez cada entrada proporciona una explicación sobre el significado de esa palabra, algunas características como su propnunciación y clase gramatical y uno o más ejemplos que muestran su uso. Entonces si pegamos o concatenamos todas esas entradas podemos ver al diccionario como un grupo de palabras con información gramatical para aquellas palabras asociadas a una entrada. Es decir, estas entradas del diccionario:
+
+\begin{verbatim}
+siren
+sirens
+s*a*!i*%er%e0n    
+A woman is described as a siren when she is attractive and dangerous to men.
+One of the women, another of those sirens, haughtily regarded us as we talked.
+countable noun
+noun                                
+
+sirloin
+sirloins
+s*$e*:l!o!in    
+A sirloin is a piece of beef which is cut from the lower part of a cows back.
+...a sirloin of Scotch beef.
+mass noun
+noun                                                             
+
+sissy
+sissies
+s*!isi1    
+A boy is described as a sissy, especially by other boys, if he does not like sport and is afraid to do things that are slightly dangerous.
+Youre a lot of cry-babies and sissies... ...Mummys little sissy boy.
+countable noun: also vocative
+noun
+\end{verbatim}
+
+Pueden concatenarse y verse como:
+
+\begin{multicols}{2}
+A												\\
+woman                 	\\
+is                    	\\
+described             	\\
+as                    	\\
+a                     	\\
+siren	NN              	\\
+when                  	\\
+she                   	\\
+is                    	\\
+attractive            	\\
+and                   	\\
+dangerous             	\\
+to                    	\\
+men                   	\\
+.                     	\\
+One                   	\\
+of                    	\\
+the                   	\\
+women                 	\\
+,                     	\\
+another               	\\
+of                    	\\
+those                 	\\
+sirens	NNS           	\\
+,                     	\\
+haughtily             	\\
+regarded              	\\
+us                    	\\
+as                    	\\
+we                    	\\
+talked                	\\
+.                     	\\
+A                     	\\
+sirloin	NN            	\\
+is                    	\\
+a                     	\\
+piece                 	\\
+of                    	\\
+beef                  	\\
+which                 	\\
+is                    	\\
+cut                   	\\
+from                  	\\
+the                   	\\
+lower                 	\\
+part                  	\\
+of                    	\\
+a                     	\\
+cows                  	\\
+back                  	\\
+.                     	\\
+...                   	\\
+a                     	\\
+sirloin	NN            	\\
+of                    	\\
+Scotch                	\\
+beef                  	\\
+.                     	\\
+Long                  	\\
+fibres                	\\
+are                   	\\
+picked                	\\
+carefully             	\\
+from                  	\\
+the                   	\\
+sisal	NN              	\\
+leaves                	\\
+.                     	\\
+A                     	\\
+boy                   	\\
+is                    	\\
+described             	\\
+as                    	\\
+a                     	\\
+sissy	NN              	\\
+,                     	\\
+especially            	\\
+by                    	\\
+other                 	\\
+boys                  	\\
+,                     	\\
+if                    	\\
+he                    	\\
+does                  	\\
+not                   	\\
+like                  	\\
+sport                 	\\
+and                   	\\
+is                    	\\
+afraid                	\\
+to                    	\\
+do                    	\\
+things                	\\
+that                  	\\
+are                   	\\
+slightly              	\\
+dangerous             	\\
+.                     	\\
+Youre                 	\\
+a                     	\\
+lot                   	\\
+of                    	\\
+cry-babies            	\\
+and                   	\\
+sissies	NNS           	\\
+...                   	\\
+...                   	\\
+Mummys                	\\
+little                	\\
+sissy	NN              	\\
+boy                   	\\
+.                     	\\
+\end{multicols}
+
+
+Esta última información conforma un corpus parcialmente anotado que se utilizará como base para construir un nuevo corpus completamente anotado. El cual servirá como una nueva fuente de información para entrenar etiquetadores gramaticales.
+
+Claramente el primer paso para llevar a cabo esta tarea es elegir un diccionario y extraer esa información. El diccionario elegido fué Cobuild. A continuación se detallan las características que lo hicieron distintivo frente a otros diccionarios.
 
 Cobuild es un diccionario basado en la información del corpus Bank of English y el corpus Collins. Su siglas significan: Collins Birmingham University International Language Database.
 
 El corpus Collins es una base de datos con alrededor de 2.5 billones de palabras en Inglés. Contiene material escrito de websites, diarios, revistas y libros publicados en todo el mundo, y material hablado de radio, TV y conversaciones diarias. 
 
-A su vez, el Bank of English forma parte del corpus Collins. Contiene 650 millones de palabras de una cuidadosa selección de fuentes, para dar un reflejo preciso y balanceado del Inglés que es usado día a día.
+A su vez, el Bank of English forma parte del corpus Collins. Contiene 650 millones de palabras cuidadosamente seleccionadas para dar un reflejo preciso y balanceado del Inglés que es usado día a día.
 
-Como el corpus es tan extenso, se pueden apreciar una gran cantidad de ejemplos de como las personas utilizan realmente las palabras. Se puede entender como son utilizadas, que significan, que palabras ocurren juntas y que tan a menudo. Esta información sobre la frecuencia ha ayudado a decidir que palabras incluir en el diccionario Cobuild. Por ejemplo, alrededor del 90\% del inglés hablado y escrito está constituído de aproximadamente 3.500 palabras.
-
-El diccionario Cobuild fué concebido teniendo especial atención en los ejemplos expuestos. El proceso de agregado de palabras al diccionario es muy cuidadoso: cuando un editor quiere agregar una nueva palabra al diccionario, busca en el corpus cada ejemplo que contenga esa palabra. La palabra aparece en una larga lista de oraciones y el editor decide cuál de todos los ejemplos expresa mejor el sentido que está buscando en esa palabra. Todos los ejemplos del diccionario Cobuild muestran patrones gramaticales típicos, vocabulario típico y contextos típicos para cada palabra. 
-
-Cobuild fué el primer diccionario en presentar una cantidad exhaustiva del vocabulario inglés derivado de observaciones directas del lenguaje. Desde entonces el equipo de Cobuild ha continuado recolectando textos desde todas las fuentes para crear el corpus The Bank of English. The Bank of English es una colección o corpus de alrededor de 650 millones de palabras de inglés escrito y hablado ubicado en computadoras para el estudio del uso del lenguaje. 
+Gracias a la extensa amplitud del corpus se pueden apreciar una gran cantidad de ejemplos de como la gente utiliza realmente las palabras. Se puede observar como son utilizadas, que significan, que palabras ocurren juntas y que tan a menudo. Esta información sobre la frecuencia ha ayudado a decidir que palabras incluir en el diccionario Cobuild. Por ejemplo, alrededor del 90\% del inglés hablado y escrito está constituído de aproximadamente 3.500 palabras.
 
 The Bank of English contiene un amplio rango de tipos diferentes de lenguaje escrito y hablado proveniente de cientos de fuentes diferentes. Aunque la mayoría de las fuentes son británicas, aproximadamente el 25\%  de la información proviene de fuentes de inglés americano y alrededor del 5\% de otras variedades nativas del inglés como Australia y Singapur.                                                          
-Los textos escritos provienen de diarios, revistas, libros de ficción y de no ficción, folletos, informes y cartas. Dos tercios del corpus están confeccionados a partir del lenguaje de los medios: diarios, revistas, radio y televisión. Esta es una categoría significativa en vista de que millones de personas leen y escuchan el lenguaje presente en los medios. Publicaciones internacionales, nacionales y locales también fueron incluídas para capturar un rango general de temas importantes y estilos. Hay otros cientos de libros y revistas de especial interés, que abordan temas desde aeróbicos a zoología. Sin embargo los libros de texto técnicos, científicos, manuales, étc., no fueron incluídos en el corpus.
+Los textos escritos provienen de diarios, revistas, libros de ficción y de no ficción, folletos, informes y cartas. Dos tercios del corpus están confeccionados a partir del lenguaje de los medios: diarios, revistas, radio y televisión. Esta es una categoría significativa en vista de que millones de personas leen y escuchan el lenguaje presente en los medios. También fueron incluídas publicaciones internacionales, nacionales y locales para capturar un rango general de temas importantes y estilos. Hay otros cientos de libros y revistas de especial interés que abordan temas desde aeróbicos a zoología. Sin embargo los libros de texto técnicos, científicos, manuales, étc., no fueron incluídos en el corpus.
 
 El lenguaje hablado informal es representado por grabaciones de conversaciones diarias casuales, reuniones, entrevistas y discusiones. Alrededor de 15 millones de palabras de The Bank of English son transcripciones de lenguaje hablado de esta clase. Luego son seleccionados para incluir un amplio rango de temas y situaciones de habla.
 
-El propósito de recolectar todo esta valiosa información en computadoras fué para permitir a los linguistas (escritores de diccionarios) tener acceso a la mayor cantidad de información posible sobre cada una de las palabras que está definiendo. Desde luego, los linguistas son elegidos a partir de su habilidad con el lenguaje, pero incluso el linguista mas experimentado no puede deducir solo por su intuición todos los hechos relevantes sobre todas las palabras en un lenguaje. El corpus, y el software que se utiliza para analizarlo ayudó al equipo de Cobuild a ordenar la información y ganar valiosa percepción sobre la manera en que las palabras son utilizadas: sus significados, sus patrones gramaticales típicos y las maneras en que están relacionadas con otras palabras.
+El propósito de recolectar todo esta valiosa información en computadoras fué para permitir a los linguistas (escritores de diccionarios) tener acceso a la mayor cantidad de información posible sobre cada una de las palabras que está definiendo. Desde luego, los linguistas son elegidos a partir de su habilidad con el lenguaje, pero incluso el linguista mas experimentado no puede deducir utilizando solo su intuición todos los hechos relevantes sobre todas las palabras en un lenguaje. El corpus, y el software que se utiliza para analizarlo ayudó al equipo de Cobuild a ordenar la información y ganar valiosa percepción sobre la manera en que las palabras son utilizadas: sus significados, sus patrones gramaticales típicos y las maneras en que están relacionadas con otras palabras.
 
-Muchas palabras tienen más de una clase de palabra gramatical y a menudo es de mucha ayuda para los linguistas mirar solo a una clase de palabra por vez. Para ayudarlos a hacer esto, se ha desarrollado un software que muestra las clases de palabras en cada linea del corpus. De esta manera los linguistas pueden mirar la información completa con el código de clase de palabra o pueden preguntar solo por verbos, sustantivos, étc. 
+Muchas palabras tienen más de una clase de palabra gramatical y a menudo es de mucha ayuda para los linguistas mirar solo a una clase de palabra por vez. Para ayudarlos a hacer esto, se ha desarrollado un software que muestra las clases de palabras en cada linea del corpus. De esta manera los linguistas pueden mirar la información completa de la clase de palabra o pueden preguntar solo por verbos, sustantivos, étc. 
 
 Este tipo de software les permite a los linguistas a tomar decisiones sobre los diferentes sentidos de las palabras, el lenguaje de las definiciones, la selección de ejemplos, y la información gramatical dada. El corpus permite realizar esta tarea con confianza y exactitud. Y cuanto más grande es el corpus mayor es la confianza y la exactitud.
 
-\subsubsection{Método de construcción} 
-En 1987 se publicó el diccionario Cobuild basado en un corpus de 20 millones de palabras. A continuación se construyó un nuevo corpus, el Bank ok English con alrededor de 200 millones de palabras. La nueva edición del diccionario Cobuild se basa en este nuevo corpus.
+El diccionario Cobuild fué concebido teniendo especial atención en los ejemplos expuestos. Como se mencionó antes, el proceso de agregado de palabras al diccionario es muy cuidadoso: cuando un editor quiere agregar una nueva palabra al diccionario, busca en el corpus cada ejemplo que contenga esa palabra. La palabra aparece en una larga lista de oraciones y el editor decide cuál de todos los ejemplos expresa mejor el sentido que está buscando en esa palabra. Todos los ejemplos del diccionario Cobuild muestran patrones gramaticales típicos, vocabulario típico y contextos típicos para cada palabra. En consecuencia, Cobuild presenta una cantidad exhaustiva del vocabulario inglés derivado de observaciones directas del lenguaje.
 
-La construcción de este nuevo diccionario, es un proceso en donde se decide que palabras y frases presentes en el corpus incluir. Luego se examina el lenguaje palabra por palabra y frase por frase con el objetivo de dar clara cuenta de cada significado y uso. Entonces se escribe una definición, se eligen ejemplos típicos, y se agrega información sobre la pronunciación, la gramática, semántica, pragmatismos y frecuencia para completar cada entrada.
+\subsubsection{Método de construcción} 
+En 1987 se publicó el diccionario Cobuild basado en un corpus de 20 millones de palabras. A continuación se construyó un nuevo corpus, el Bank ok English con alrededor de 650 millones de palabras. La nueva edición del diccionario Cobuild se basa en este nuevo corpus.
+
+La construcción de este nuevo diccionario fué un proceso en donde se decidió que palabras y frases presentes en el corpus incluir. Luego se examinó el lenguaje palabra por palabra y frase por frase con el objetivo de dar clara cuenta de cada significado y uso. Entonces se escribió una definición, se eligieron ejemplos típicos, y se agregó información sobre la pronunciación, la gramática, semántica, pragmatismos y frecuencia para completar cada entrada.
 
 \subsubsection{Evidencia} 
-Un diccionario debe comenzar por la evidencia, los hechos. Los hablantes de un lenguaje conocen mucho sobre éste, a partir de que cada día leen y hablan sin esfuerzo durante horas. Sin embargo no son capaces de explicar que es lo que hacen. Utilizar un lenguaje es una habilidad para la cual la mayoría de las personas no son completamente conscientes; no pueden examinarlo en detalle, simplemente lo utilizan para comunicarse. Aquellos que aprenden a observar el lenguaje cuidadosamente pueden expresar y organizar algunos de los hechos sobre éste basados en la experiencia. De todas maneras hay muchos hechos sobre el lenguaje que no pueden ser descubiertos simplemente pensando y reflexionando sobre él, incluso leyendo y escuchando muy atentamente. Es por eso que Cobuild estableció la utilización de computadoras para identificar estos hechos.
+Un diccionario debe comenzar por la evidencia, los hechos. Los hablantes de un lenguaje conocen mucho sobre éste, a partir de que cada día leen y hablan sin esfuerzo durante horas. Sin embargo no son capaces de explicar que es lo que hacen. La mayoría de las personas no son conscientes de la habilidad que poseen para utilizar un lenguaje; no pueden examinarlo en detalle, simplemente lo utilizan para comunicarse. Aquellos que aprenden a observar el lenguaje cuidadosamente pueden expresar y organizar algunos de los hechos sobre éste basados en la experiencia. De todas maneras hay muchos hechos sobre el lenguaje que no pueden ser descubiertos simplemente pensando y reflexionando sobre él, incluso leyendo y escuchando muy atentamente. Es por eso que Cobuild estableció la utilización de computadoras para identificar estos hechos.
 
 \subsubsection{Un corpus} 
-El resultado de este fué que Cobuild estableció un nuevo tipo de evidencia, una colección de textos en inglés llamado corpus ubicado en una computadora de manera que pueda consultarse instantáneamente. Los creadores de Cobuild sabían que necesitaban millones de palabras de inglés, hablado y escrito, americano y británico, formal e informal, sobre hechos y sobre ficción, étc. Esta evidencia reunida durante varios años, permitió encontrar que palabras y expresiones son más utilizadas. Cuando una palabra tiene varios significados existe la capacidad de ver cuales son los significados importantes, y cuales frases se deben incluir.
+El resultado fué que Cobuild estableció un nuevo tipo de evidencia, una colección de textos en inglés llamado corpus ubicado en una computadora de manera que pueda consultarse instantáneamente. Los creadores de Cobuild sabían que necesitaban millones de palabras de inglés, hablado y escrito, americano y británico, formal e informal, sobre hechos y sobre ficción, étc. Esta evidencia reunida durante varios años, permitió encontrar las palabras y expresiones más utilizadas. Cuando una palabra tiene varios significados existe la capacidad de ver cuales son los significados importantes, y cuales frases se deben incluir.
 Tomaron como filosofía y fueron conscientes de que todos los detalles de un uso natural de una palabra son escenciales y no pueden ser falsificados. Se dieron cuenta de que debían utilizar ejemplos reales siguiendo la tradición de los grandes linguistas, en lugar de crearlos. 
 
 \subsubsection{The Bank of English} 
-Hace varios años que se ha hecho mucho más fácil reunir grandes cantidades de lenguaje hablado y escrito. Los publicadores de libros, revistas y diarios se hicieron conscientes de la gran cantidad de lenguaje que pasaba a través de sus manos y de que debe haber muchas buenas razones para conservarlo en formatos electrónicos. Un negocio apareció para el lenguaje electrónico entre la gente que quería encontrar o verificar sentencias, particularmente en las noticias, revistas y lenguaje legal. Gradualmente millones de palabras comenzaron a estar disponibles para los estudiosos del lenguaje. Hoy en día el problema no es encontrar el lenguaje sino manejarlo y realizar sensibles y balanceadas selecciones para las tareas analíticas.
+Hace varios años que se ha hecho mucho más fácil reunir grandes cantidades de lenguaje hablado y escrito. Los publicadores de libros, revistas y diarios se hicieron conscientes de la gran cantidad de lenguaje que pasaba a través de sus manos y de que debe haber muchas buenas razones para conservarlo en formatos electrónicos. Un negocio apareció para el lenguaje electrónico entre la gente que quería encontrar o verificar sentencias, particularmente en las noticias, revistas y lenguaje legal. Gradualmente millones de palabras comenzaron a estar disponibles para los estudiosos del lenguaje. Hoy en día el problema no es encontrar el lenguaje sino manejarlo y realizar selecciones sensibles y balanceadas para las tareas analíticas.
 
 Diseñando el corpus The Bank of English se balancearon un número de factores(inglés hablado y escrito, americano y británico y otras características: hablantes de comunidades nativas, libros y revistas y más clasificaciones dentro de ésas)
 
 Dentro del componente hablado, el tipo de lenguaje más dificil de recolectar fué como siempre la conversación informal grabada en la vida diaria de la gente común, sin pensar de que su lenguaje está siendo preservado en un corpus. Cada conversación tiene que ser grabada y transcripta por expertos para luego ser ingresada en una computdora. Esta clase de lenguaje improvisado es de un interés particular para los constructores de diccionarios. El Bank of English cuenta con un total de 15 millones de palabras de este tipo de grabaciones de lenguaje hablado.
 
 \subsubsection{La lista de palabras principales} 
-Es mucho más fácil decidir que palabras y frases incluir y cuales omitir, cuando se tienen cifras exactas a partir de una cantidad tan grande de lenguaje. Las computadoras pueden verificar instantáneamente la actividad del lenguaje de miles de hablantes y escritores. Un diccionario (incluso un gran diccionario) es capaz de elegir solo los hechos más importantes del lenguaje para presentar y los compiladores necesitan buena evidencia para sus selecciones. Cobuild se especializa en presentar las palabras y frases que son frecuentes en el uso diario. Lejos de ser un registro histórico del lenguaje es más bien una muestra del lenguaje contamporáneo.
+Es mucho más fácil decidir que palabras y frases incluir y cuales omitir, cuando se tienen cifras exactas a partir de una cantidad tan grande de lenguaje. Las computadoras pueden verificar instantáneamente la actividad del lenguaje de miles de hablantes y escritores. Un diccionario (incluso un gran diccionario) es capaz de elegir solo los hechos a presentar más importantes del lenguaje y los compiladores necesitan buena evidencia para sus selecciones. Cobuild se especializa en presentar las palabras y frases que son frecuentes en el uso diario. Lejos de ser un registro histórico del lenguaje es más bien una muestra del lenguaje contamporáneo.
 
 \subsubsection{Frecuencia} 
-Cobuild brinda información sobre la frecuencia de las palabras principales. Se establecieron 5 bandas de frecuencias. Comenzando con las palabras muy comunes (las de mayor frecuencia), oscila entre un vocabulario básico a uno intermedio y luego hasta cubrir el núcleo del vocabulario. Las palabras principales sin marca de frecuencia son las menos comunes, sin embargo vale la pena incluirlas en el diccionario. El punto es que el idioma inglés utiliza un número bastante pequeño de palabras para la mayoría de los propósitos pero también tiene disponible un rico y amplio vocabulario. Por ejemplo \textsl{be} y \textsl{because} son naturalmente pertenecientes a la banda de mayor frecuencia, por el otro lado, palabras como \textsl{barracuda}, \textsl{basalt} y \textsl{basrelief} no son tan frecuentes. Estas últimas son claramente utilizadas en ocasiones particulares. Cabe aclarar que incluso las palabras infrecuentes incluídas en el diccionario fueron seleccionadas por su utilidad relativa entre miles de palabras posibles.
+Cobuild brinda información sobre la frecuencia de las palabras principales. Se establecieron 5 bandas de frecuencias. Comenzando con las palabras muy comunes (las de mayor frecuencia), oscila entre un vocabulario básico a uno intermedio y hasta cubrir el núcleo del vocabulario. Las palabras principales sin marca de frecuencia son las menos comunes, sin embargo vale la pena incluirlas en el diccionario. El punto es que el idioma inglés utiliza un número bastante pequeño de palabras para la mayoría de los propósitos pero también tiene disponible un rico y amplio vocabulario. Por ejemplo \textsl{be} y \textsl{because} son naturalmente pertenecientes a la banda de mayor frecuencia, por el otro lado, palabras como \textsl{barracuda}, \textsl{basalt} y \textsl{basrelief} no son tan frecuentes. Estas últimas son claramente utilizadas en ocasiones particulares. Cabe aclarar que incluso las palabras infrecuentes incluídas en el diccionario fueron seleccionadas por su utilidad relativa entre miles de palabras posibles.
 
 Entonces Cobuild cuenta con un sistema de frecuencia que marca las palabras principales: una marca significa que la palabra tiene una alta frecuencia y por lo tanto es una palabra común dentro del lenguaje inglés. Dos o más marcas significan que la palabra es parte esencial del vocabulario, cuantas más marcas posee, menos frecuente es.
 
 \subsubsection{Ejemplos} 
 Todos los ejemplos fueron seleccionados del corpus The Bank of English. Como antes dijimos, los ejemplos son seleccionados cuidadosamente para mostrar los patrones que frecuentemente son hallados junto a una palabra o frase. El compilador tiene docenas, centenas o miles de ejemplos disponibles y rapidamente escoge los \textsl{colocados} (palabras particulares ubicadas cerca de la palabra principal) y las estructuras típicas en donde la palabra o frase es encontrada más a menudo.
 
-Esto significa que los ejemplos cumplen varias funciones. Desde luego ayudan a mostrar el significado de la palabra exhibiendo su uso. Las investigaciones sugieren que un gran número de usuarios comienza con los ejemplos antes que con el significado. Las definiciones de Cobuild son bastante claras por sí mismas y los ejemplos muestran el fraseo característico alrededor de la palabra. Como los ejemplos son piezas de texto genuinas y han sido elegidas cuidadosamente en base al uso de la palabra, pueden ser de confianza para exhibir la palabra en un contexto natural.
+Esto significa que los ejemplos cumplen varias funciones. Desde luego ayudan a mostrar el significado de la palabra exhibiendo su uso. Las investigaciones incluso sugieren que un gran número de usuarios comienza con los ejemplos antes que con el significado. Las definiciones de Cobuild son bastante claras por sí mismas y los ejemplos muestran el fraseo característico alrededor de la palabra. Como los ejemplos son piezas de texto genuinas y han sido elegidas cuidadosamente en base al uso de la palabra, pueden ser de confianza para exhibir la palabra en un contexto natural.
 
 \subsubsection{Información gramatical} 
 Casi cada sentido de cada entrada en el diccionario Cobuild tiene junto a esta una clasificación gramatical, usualmente una clase de palabra y a menudo también una nota estructural. Esta es la información sobre la que se sustenta este trabajo, ya que en base a ella se construirá el nuevo corpus de entrenamiento.
