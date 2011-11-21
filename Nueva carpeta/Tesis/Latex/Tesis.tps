@@ -3,9 +3,9 @@ Type=TeXnicCenterProjectSessionInformation
 Version=2
 
 [SessionInfo]
-ActiveTab=0
+ActiveTab=2
 FrameCount=14
-ActiveFrame=4
+ActiveFrame=6
 
 [Frame0]
 Columns=1
@@ -32,9 +32,9 @@ cxCur=800
 cxMin=10
 
 [Frame0_View0,0]
-Cursor.row=5
+Cursor.row=20
 Cursor.column=0
-TopSubLine=0
+TopSubLine=2
 
 [Frame1]
 Columns=1
@@ -126,8 +126,8 @@ TopSubLine=0
 [Frame4]
 Columns=1
 Rows=1
-Flags=2
-ShowCmd=3
+Flags=0
+ShowCmd=1
 MinPos.x=-1
 MinPos.y=-1
 MaxPos.x=-8
@@ -140,17 +140,17 @@ Class=CLatexEdit
 Document=DiccionarioCobuild.tex
 
 [Frame4_Row0]
-cyCur=379
+cyCur=381
 cyMin=10
 
 [Frame4_Col0]
-cxCur=1021
+cxCur=828
 cxMin=10
 
 [Frame4_View0,0]
-Cursor.row=72
-Cursor.column=1107
-TopSubLine=201
+Cursor.row=218
+Cursor.column=1120
+TopSubLine=395
 
 [Frame5]
 Columns=1
@@ -184,8 +184,8 @@ TopSubLine=0
 [Frame6]
 Columns=1
 Rows=1
-Flags=0
-ShowCmd=1
+Flags=2
+ShowCmd=3
 MinPos.x=-1
 MinPos.y=-1
 MaxPos.x=-8
@@ -198,16 +198,16 @@ Class=CLatexEdit
 Document=Tesis.tex
 
 [Frame6_Row0]
-cyCur=381
+cyCur=379
 cyMin=10
 
 [Frame6_Col0]
-cxCur=828
+cxCur=1021
 cxMin=10
 
 [Frame6_View0,0]
-Cursor.row=18
-Cursor.column=1
+Cursor.row=20
+Cursor.column=0
 TopSubLine=0
 
 [Frame7]
@@ -295,7 +295,7 @@ cxMin=10
 [Frame9_View0,0]
 Cursor.row=7
 Cursor.column=491
-TopSubLine=27
+TopSubLine=15
 
 [Frame10]
 Columns=1
@@ -409,7 +409,7 @@ cxCur=895
 cxMin=10
 
 [Frame13_View0,0]
-Cursor.row=0
-Cursor.column=0
-TopSubLine=0
+Cursor.row=71
+Cursor.column=57
+TopSubLine=104
 
