@@ -3,7 +3,7 @@ Type=TeXnicCenterProjectSessionInformation
 Version=2
 
 [SessionInfo]
-ActiveTab=2
+ActiveTab=0
 FrameCount=16
 ActiveFrame=15
 
@@ -32,7 +32,7 @@ cxCur=800
 cxMin=10
 
 [Frame0_View0,0]
-Cursor.row=19
+Cursor.row=0
 Cursor.column=1
 TopSubLine=0
 
@@ -206,7 +206,7 @@ cxCur=828
 cxMin=10
 
 [Frame6_View0,0]
-Cursor.row=19
+Cursor.row=15
 Cursor.column=1
 TopSubLine=0
 
@@ -459,7 +459,7 @@ Class=CLatexEdit
 Document=Corpus.tex
 
 [Frame15_Row0]
-cyCur=379
+cyCur=619
 cyMin=10
 
 [Frame15_Col0]
@@ -467,7 +467,7 @@ cxCur=1021
 cxMin=10
 
 [Frame15_View0,0]
-Cursor.row=21
-Cursor.column=31
-TopSubLine=69
+Cursor.row=34
+Cursor.column=4
+TopSubLine=94
 
