@@ -4,8 +4,8 @@ Version=2
 
 [SessionInfo]
 ActiveTab=0
-FrameCount=16
-ActiveFrame=15
+FrameCount=19
+ActiveFrame=18
 
 [Frame0]
 Columns=1
@@ -61,9 +61,9 @@ cxCur=804
 cxMin=10
 
 [Frame1_View0,0]
-Cursor.row=59
-Cursor.column=18
-TopSubLine=0
+Cursor.row=57
+Cursor.column=213
+TopSubLine=88
 
 [Frame2]
 Columns=1
@@ -409,9 +409,9 @@ cxCur=895
 cxMin=10
 
 [Frame13_View0,0]
-Cursor.row=71
-Cursor.column=57
-TopSubLine=110
+Cursor.row=82
+Cursor.column=472
+TopSubLine=140
 
 [Frame14]
 Columns=1
@@ -445,8 +445,8 @@ TopSubLine=0
 [Frame15]
 Columns=1
 Rows=1
-Flags=2
-ShowCmd=3
+Flags=0
+ShowCmd=1
 MinPos.x=-1
 MinPos.y=-1
 MaxPos.x=-8
@@ -459,15 +459,102 @@ Class=CLatexEdit
 Document=Corpus.tex
 
 [Frame15_Row0]
-cyCur=619
+cyCur=381
 cyMin=10
 
 [Frame15_Col0]
-cxCur=1021
+cxCur=805
 cxMin=10
 
 [Frame15_View0,0]
-Cursor.row=34
-Cursor.column=4
-TopSubLine=94
+Cursor.row=39
+Cursor.column=71
+TopSubLine=136
+
+[Frame16]
+Columns=1
+Rows=1
+Flags=0
+ShowCmd=1
+MinPos.x=-1
+MinPos.y=-1
+MaxPos.x=-8
+MaxPos.y=-30
+NormalPos.left=175
+NormalPos.top=175
+NormalPos.right=1017
+NormalPos.bottom=615
+Class=CLatexEdit
+Document=EtiquetadoresGramaticalesAutomaticos.tex
+
+[Frame16_Row0]
+cyCur=381
+cyMin=10
+
+[Frame16_Col0]
+cxCur=805
+cxMin=10
+
+[Frame16_View0,0]
+Cursor.row=77
+Cursor.column=170
+TopSubLine=211
+
+[Frame17]
+Columns=1
+Rows=1
+Flags=0
+ShowCmd=1
+MinPos.x=-1
+MinPos.y=-1
+MaxPos.x=-8
+MaxPos.y=-30
+NormalPos.left=125
+NormalPos.top=125
+NormalPos.right=1042
+NormalPos.bottom=400
+Class=CLatexEdit
+Document=CorporaDeEntrenamientoYVerificacion.tex
+
+[Frame17_Row0]
+cyCur=216
+cyMin=10
+
+[Frame17_Col0]
+cxCur=880
+cxMin=10
+
+[Frame17_View0,0]
+Cursor.row=11
+Cursor.column=352
+TopSubLine=28
+
+[Frame18]
+Columns=1
+Rows=1
+Flags=2
+ShowCmd=3
+MinPos.x=-1
+MinPos.y=-1
+MaxPos.x=-8
+MaxPos.y=-30
+NormalPos.left=0
+NormalPos.top=0
+NormalPos.right=842
+NormalPos.bottom=440
+Class=CLatexEdit
+Document=EvaluacionDeEtiquetadores.tex
+
+[Frame18_Row0]
+cyCur=619
+cyMin=10
+
+[Frame18_Col0]
+cxCur=1021
+cxMin=10
+
+[Frame18_View0,0]
+Cursor.row=7
+Cursor.column=109
+TopSubLine=0
 
