@@ -3,15 +3,15 @@ Type=TeXnicCenterProjectSessionInformation
 Version=2
 
 [SessionInfo]
-ActiveTab=0
+ActiveTab=2
 FrameCount=19
-ActiveFrame=18
+ActiveFrame=0
 
 [Frame0]
 Columns=1
 Rows=1
-Flags=0
-ShowCmd=1
+Flags=2
+ShowCmd=3
 MinPos.x=-1
 MinPos.y=-1
 MaxPos.x=-8
@@ -24,15 +24,15 @@ Class=CLatexEdit
 Document=Indice.tex
 
 [Frame0_Row0]
-cyCur=377
+cyCur=619
 cyMin=10
 
 [Frame0_Col0]
-cxCur=800
+cxCur=1021
 cxMin=10
 
 [Frame0_View0,0]
-Cursor.row=0
+Cursor.row=3
 Cursor.column=1
 TopSubLine=0
 
@@ -61,9 +61,9 @@ cxCur=804
 cxMin=10
 
 [Frame1_View0,0]
-Cursor.row=57
-Cursor.column=213
-TopSubLine=88
+Cursor.row=9
+Cursor.column=235
+TopSubLine=10
 
 [Frame2]
 Columns=1
@@ -90,9 +90,9 @@ cxCur=804
 cxMin=10
 
 [Frame2_View0,0]
-Cursor.row=0
-Cursor.column=0
-TopSubLine=23
+Cursor.row=103
+Cursor.column=53
+TopSubLine=142
 
 [Frame3]
 Columns=1
@@ -148,9 +148,9 @@ cxCur=828
 cxMin=10
 
 [Frame4_View0,0]
-Cursor.row=218
-Cursor.column=1120
-TopSubLine=395
+Cursor.row=0
+Cursor.column=0
+TopSubLine=0
 
 [Frame5]
 Columns=1
@@ -177,9 +177,9 @@ cxCur=828
 cxMin=10
 
 [Frame5_View0,0]
-Cursor.row=3
-Cursor.column=0
-TopSubLine=0
+Cursor.row=20
+Cursor.column=136
+TopSubLine=11
 
 [Frame6]
 Columns=1
@@ -236,8 +236,8 @@ cxMin=10
 
 [Frame7_View0,0]
 Cursor.row=38
-Cursor.column=297
-TopSubLine=52
+Cursor.column=189
+TopSubLine=41
 
 [Frame8]
 Columns=1
@@ -295,7 +295,7 @@ cxMin=10
 [Frame9_View0,0]
 Cursor.row=7
 Cursor.column=491
-TopSubLine=19
+TopSubLine=30
 
 [Frame10]
 Columns=1
@@ -353,7 +353,7 @@ cxMin=10
 [Frame11_View0,0]
 Cursor.row=3
 Cursor.column=395
-TopSubLine=15
+TopSubLine=14
 
 [Frame12]
 Columns=1
@@ -411,7 +411,7 @@ cxMin=10
 [Frame13_View0,0]
 Cursor.row=82
 Cursor.column=472
-TopSubLine=140
+TopSubLine=131
 
 [Frame14]
 Columns=1
@@ -467,9 +467,9 @@ cxCur=805
 cxMin=10
 
 [Frame15_View0,0]
-Cursor.row=39
-Cursor.column=71
-TopSubLine=136
+Cursor.row=20
+Cursor.column=0
+TopSubLine=40
 
 [Frame16]
 Columns=1
@@ -527,13 +527,13 @@ cxMin=10
 [Frame17_View0,0]
 Cursor.row=11
 Cursor.column=352
-TopSubLine=28
+TopSubLine=33
 
 [Frame18]
 Columns=1
 Rows=1
-Flags=2
-ShowCmd=3
+Flags=0
+ShowCmd=1
 MinPos.x=-1
 MinPos.y=-1
 MaxPos.x=-8
@@ -546,15 +546,15 @@ Class=CLatexEdit
 Document=EvaluacionDeEtiquetadores.tex
 
 [Frame18_Row0]
-cyCur=619
+cyCur=381
 cyMin=10
 
 [Frame18_Col0]
-cxCur=1021
+cxCur=805
 cxMin=10
 
 [Frame18_View0,0]
 Cursor.row=7
 Cursor.column=109
-TopSubLine=0
+TopSubLine=11
 
