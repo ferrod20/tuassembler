@@ -1,7 +1,26 @@
 \subsection{Traducción de etiquetas} 
-Ya que el diccionario COBUILD contiene una clase de etiquetas gramaticales distintas a las etiquetas gramaticales utilizadas por los corpus de verificación, se tomó la decisión de traducir estas en etiquetas de PenTreeBank. Para reaalizar sin inconvenientes la tarea posterior de evaluación y medición del rendimiento de los etiquetadores gramaticales entrenados con la información adicional obtenida de Cobuild.
+Para cada una de sus definiciones, el diccionario COBUILD expone información gramatical expresada mediante etiquetas. Estas etiquetas gramaticales poseen un formato propio. Por ejemplo en la siguiente entrada de COBUILD para la palabra \textsl{canary}
 
-A continuación se muestra la tabla de traducción empleada:
+\begin{verbatim}
+DICTIONARY_ENTRY
+canary
+canaries
+A canary is a small yellow bird which sings beautifully. People sometimes keep
+canaries in cages as pets.  
+countable noun
+noun                                
+\end{verbatim}
+
+Se expone la definición (1) y un ejemplo (2), ambos con información gramatical sobre la palabra:\\
+\\
+(1) \textsl{A canary is a small yellow bird which sings beautifully.} \\
+(2) \textsl{People sometimes keep canaries in cages as pets.}  \\
+\\
+Se puede apreciar la etiqueta de COUBUILD \textsl{countable noun} para la aparición de \textsl{canary} en (1) y la etiqueta \textsl{noun} para la aparición de \textsl{canary} en (2).\\
+
+Como la idea de este trabajo es producir un corpus anotado a partir de este diccionario para utilizar como fuente de entrenamiento de etiquetadores gramaticales es necesatio que el conjunto de etiquetas empleado sea el mismo que emplea el gold standard para poder medir posteriormente los resultados. Es por eso que se tomó la decisión de traducir estas etiquetas propias de COBUILD en etiquetas de Tree Bank, conjunto con el cual está anotado el gold standard.
+
+A continuación se presenta la tabla de traducción empleada:
 \begin{center}
 \begin{longtable}{| l | l |}
 \caption{Tabla de traducción de etiquetas}\\	
