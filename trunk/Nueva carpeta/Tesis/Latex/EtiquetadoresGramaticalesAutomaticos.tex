@@ -42,13 +42,13 @@ La clasificación bayesiana puede apreciarse como una tarea para la cual contamos
  \textsl{Secretariat is expected to race tomorrow}
  \\
  
- En este caso las observaciones son la secuencia de palabras (es decir la oración misma) y nuestro objetivo es asignarles las etiquetas correspondientes. Ya que una palabra puede ser ambigüa y tener más de una etiqueta posible, hay una pregunta clave que debemos hacernos: ¿Cuál es la mejor secuencia de etiquetas que corresponden a esta secuencia de palabras? 
+\noindent En este caso las observaciones son la secuencia de palabras (es decir la oración misma) y nuestro objetivo es asignarles las etiquetas correspondientes. Ya que una palabra puede ser ambigüa y tener más de una etiqueta posible, hay una pregunta clave que debemos hacernos: ¿Cuál es la mejor secuencia de etiquetas que corresponden a esta secuencia de palabras? 
 La interpretación bayesiana comienza considerando todas las posibles secuencias de clases --en nuestro caso, todas las posibles secuencias de etiquetas gramaticales. El objetivo aquí es elegir la secuencia de etiquetas que es más probable dada la secuencia de observaciones de $n$ palabras $w_1^n$. En otras palabras, queremos obtener, de todas las secuencias de $n$ etiquetas $t_1^n$ la secuencia de etiquetas tal que $P(t_1^n|w_1^n)$ sea mayor. Se utilizará la notación $\hat{}$ para decir ``nuestra estimación de la secuencia de etiquetas correcta''.
 
 \begin{equation}\label{uno} \hat{t}_1^n = \operatorname*{argmax}_{t_1^n} f  P(t_1^n|w_1^n) \end{equation}
- La ecuación anterior se lee así: de todas las secuencias de etiquetas de longitud $n$, queremos la secuencia particular \(t_1^n\) que maximiza el lado derecho.
+ La ecuación anterior se lee así: de todas las secuencias de etiquetas de longitud $n$, queremos la secuencia particular \(t_1^n\) que maximiza el lado derecho.\\
  
- Mientras que esta ecuación nos garantiza obtener la secuencia de etiquetas óptima, todavía no queda del todo claro como utilizarla. Es decir, para una secuencia de etiquetas dada \(t_1^n\) y una secuencia de palabras \(w_1^n\), no sabemos como computar directamente \(P(t_1^n|w_1^n)\).
+Mientras que esta ecuación nos garantiza obtener la secuencia de etiquetas óptima, todavía no queda del todo claro como utilizarla. Es decir, para una secuencia de etiquetas dada \(t_1^n\) y una secuencia de palabras \(w_1^n\), no sabemos como computar directamente \(P(t_1^n|w_1^n)\).
  Aquí entra en juego la clasificación Bayesiana, ofreciendo una forma de transformar la ecuación en un conjunto de otras probabilidades más sencillas de computar. Las reglas de Bayes reemplazan la probabilidad condicional \(P(x|y)\) por otras tres probabilidades:
 \begin{equation}\label{dos}P(x|y) \;=\;\frac{P(y|x)P(x)}{P(y)}\end{equation}
  Podemos sustituir  \eqref{dos} en \eqref{uno} para obtener \eqref{tres}: 
@@ -63,7 +63,7 @@ La segunda suposición es que la probabilidad de aparición de una etiqueta gramat
 \begin{equation}\label{dos2} P(t_1^n)\approx\prod_{i=1}^nP(t_i|t_{i-1}) \end{equation} Utilizando estas suposiciones obtenemos esta nueva ecuación, la cual es utilizada por los etiquetadores gramaticales basados en bigramas para estimar la secuencia de etiquetas gramaticales más probable.
  \begin{equation} \hat{t}_1^n = \operatorname*{argmax}_{t_1^n} P(t_1^n|w_1^n)\approx \operatorname*{argmax}_{t_1^n}\prod_{i=1}^nP(w_i|t_i)P(t_i|t_{i-1}) \end{equation}
  
- La ecuación anterior contiene dos clases de probabilidades, probabilidades de transición de etiquetas y probabilidades de palabras. Tomemos un momento para ver que es lo que representan estas probabilidades. 
+ \noindent La ecuación anterior contiene dos clases de probabilidades, probabilidades de transición de etiquetas y probabilidades de palabras. Tomemos un momento para ver que es lo que representan estas probabilidades. 
  
  
 \begin{itemize}

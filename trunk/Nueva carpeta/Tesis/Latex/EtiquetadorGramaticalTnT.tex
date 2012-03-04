@@ -28,7 +28,7 @@ TnT utiliza interpolación lineal de unigramas, bigramas y trigramas para realiza
 P(t_3|t_1,t_2)=\lambda_1\hat{P}(t_3)+\lambda_2\hat{P}(t_3|t_2)+\lambda_3\hat{P}(t_3|t_1,t_2)
 \end{equation}
 
-donde $\hat{P}$ son los estimadoes de máxima verosimilitud presentados anteriormente y $\lambda_1$, $\lambda_2$ y $\lambda_3$ son los pesos asociados a estos estimadores, tales que $\lambda_1 + \lambda_2 + \lambda_3 = 1$.
+\noindent donde $\hat{P}$ son los estimadoes de máxima verosimilitud presentados anteriormente y $\lambda_1$, $\lambda_2$ y $\lambda_3$ son los pesos asociados a estos estimadores, tales que $\lambda_1 + \lambda_2 + \lambda_3 = 1$.
 TnT utiliza interpolación lineal con independencia de contexto. Es decir que $\lambda_1, \lambda_2$ y $\lambda_3$ tienen el mismo valor para todos los trigramas, o lo que es lo mismo, $\lambda_1, \lambda_2$ y $\lambda_3$ son independientes del trigrama que se está calculando. 
 Los valores $\lambda_1, \lambda_2$ y $\lambda_3$ son estimados por interpolación de borrado. La idea es que se dará mayor peso a la información de unigrama, bigrama o trigrama más abundante. A continuación se presenta el algoritmo utilizado para realizar esta tarea
 
@@ -68,7 +68,7 @@ El estimador de máxima verosimilitud para un sufijo de longitud $i$ es
 \end{equation}
 TnT utiliza desvío estándard del estimador de máxima verosimilitud para calcular los pesos $\theta_i$.
 
-Decisiones de diseño:
+\noindent Decisiones de diseño:
 \begin{enumerate}
 	\item La primer decisión de diseño que afronta TnT es encontrar un buen valor para $n$, la longitud máxima de sufijo utilizada. TnT elige tomar la longitud del mayor sufijo encontrado en el corpus de entrenamiento, con la restricción de que sea menor o igual a $10$.
 

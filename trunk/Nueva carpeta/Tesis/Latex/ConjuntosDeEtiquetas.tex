@@ -1,61 +1,64 @@
 \subsection{Conjuntos de etiquetas} 
 La sección anterior dió una descripción general de los tipos de clases sintácticas a las que pertenecen las palabras. Esta sección presenta los conjuntos de etiquetas actuales utilizados en la etiquetación gramatical. Es decir, las etiquetas que se corresponden con cada una de estas clases sintácticas. Todavía no existe un consenso sobre el conjunto de etiquetas o tagset más adecuado. Generalmente los conjuntos de etiquetas grandes ofrecen una decripción sintáctica más específica mientras que los conjuntos de etiquetas más pequeños usualmente brindan una información linguística más acotada. Una de las características clave para decidir que conjunto de etiquetas es el más adecuado justamente depende del nivel de detalle linguístico que se esté buscando. Otro hecho notable referido a los conjuntos de etiquetas es que los más pequeños generalmente están contenidos en los conjuntos mayores. Ya que las etiquetas más específicas que se encuentran en los conjuntos mayores pueden ser convertidas en etiquetas de menor especificidad con la consecuente pérdida de detalle linguístico. Por el otro lado, también se pueden convertir las etiquetas pertenecientes a un conjuntos pequeños en etiquetas de mayor especificidad que pertenecen a conjuntos más grandes, ya que generalmente existen etiquetas equivalentes en los conjuntos de mayor tamaño.
-
 \begin{center}
-\begin{tabular}{|l | l | l |}
+\begin{longtable}{| l | l | l |}
+\caption{Conjunto de Etiquetas Penn Tree Bank}
 	\hline
-	\textbf{Etiqueta}	&	\textbf{Descripción}	&	\textbf{Ejemplo}\\
+\textbf{Etiqueta}	&	\textbf{Descripción}	&	\textbf{Ejemplo}\\
+\hline
+\endhead
+\hline
+\endfoot
+\endlastfoot
 	\hline
-	\hline
-	CC &Coordinating conjunction &\textsl{and}\\
-CD &Cardinal number &\textsl{1, third}\\
-DT &Determiner &\textsl{the}\\
-EX &Existential &\textsl{there there is}\\
-FW &Foreign word &\textsl{d'hoevre}\\
-IN &Preposition/subordinating conjunction &\textsl{in, of, like}\\
-JJ &Adjective  &\textsl{green}\\
-JJR &Adjective, comparative &\textsl{greener}\\
-JJS &Adjective, superlative &\textsl{greenest}\\
-LS &List marker  &\textsl{1)}\\
-MD &Modal  &\textsl{could, will}\\
-NN &Noun, singular or mass &\textsl{table}\\
-NNS &Noun plural  &\textsl{tables}\\
-NNP &Proper noun, singular &\textsl{John}\\
-NNPS &Proper noun, plural &\textsl{Vikings}\\
-PDT &Predeterminer both &\textsl{the boys}\\
-POS &Possessive ending &\textsl{friend's}\\
-PRP &Personal pronoun &\textsl{I, he, it}\\
-PRP\$ &Possessive pronoun &\textsl{my, his}\\
-RB &Adverb &\textsl{however, usually, naturally, here, good}\\
-RBR &Adverb, comparative &\textsl{better}\\
-RBS &Adverb, superlative &\textsl{best}\\
-RP &Particle &\textsl{give up}\\
-SYM &Symbol &\textsl{+,\%,\&}\\
-TO &To &\textsl{to go, to him}\\
-UH &Interjection &\textsl{uhhuhhuhh}\\
-VB &Verb, base form &\textsl{take}\\
-VBD &Verb, past tense &\textsl{took}\\
-VBG &Verb, gerund/present participle &\textsl{taking}\\
-VBN &Verb, past participle &\textsl{taken}\\
-VBP &Verb, sing. present, non-3d &\textsl{take}\\
-VBZ &Verb, 3rd person sing. present &\textsl{takes}\\
-WDT &Wh-determiner &\textsl{which}\\
-WP &Wh-pronoun &\textsl{who, what}\\
-WP\$ &Possessive wh-pronoun &\textsl{whose}\\
-WRB &Wh-abverb  &\textsl{where, when}\\
-\$ &Dollar sign &\textsl{\$}\\
-\# &Pound sign &\textsl{\#}\\
-" &Left quote &(' or ")\\
-" &Right quote &(' or ")\\
-( &Left parenthesis &( [, (, \{, <)\\
-) &Right parenthesis &( ], ), \}, >)\\
-, &Comma &,\\
-. &Sentence-final punc &( . ! ?)\\
-: &Mid-sentence punc &( : ; ... -)\\
-	\hline
-\end{tabular}
+CC & Coordinating conjunction &\textsl{and}\\
+CD & Cardinal number &\textsl{1, third}\\
+DT & Determiner &\textsl{the}\\
+EX & Existential &\textsl{there there is}\\
+FW & Foreign word &\textsl{d'hoevre}\\
+IN & Preposition/subordinating conjunction &\textsl{in, of, like}\\
+JJ & Adjective  &\textsl{green}\\
+JJR & Adjective, comparative &\textsl{greener}\\
+JJS & Adjective, superlative &\textsl{greenest}\\
+LS & List marker  &\textsl{1)}\\
+MD & Modal  &\textsl{could, will}\\
+NN & Noun, singular or mass &\textsl{table}\\
+NNS & Noun plural  &\textsl{tables}\\
+NNP & Proper noun, singular &\textsl{John}\\
+NNPS & Proper noun, plural &\textsl{Vikings}\\
+PDT & Predeterminer both &\textsl{the boys}\\
+POS & Possessive ending &\textsl{friend's}\\
+PRP & Personal pronoun &\textsl{I, he, it}\\
+PRP\$ & Possessive pronoun &\textsl{my, his}\\
+RB & Adverb &\textsl{however, usually, naturally, here, good}\\
+RBR & Adverb, comparative &\textsl{better}\\
+RBS & Adverb, superlative &\textsl{best}\\
+RP & Particle &\textsl{give up}\\
+SYM & Symbol &\textsl{+,\%,\&}\\
+TO & To &\textsl{to go, to him}\\
+UH & Interjection &\textsl{uhhuhhuhh}\\
+VB & Verb, base form &\textsl{take}\\
+VBD & Verb, past tense &\textsl{took}\\
+VBG & Verb, gerund/present participle &\textsl{taking}\\
+VBN & Verb, past participle &\textsl{taken}\\
+VBP & Verb, sing. present, non-3d &\textsl{take}\\
+VBZ & Verb, 3rd person sing. present &\textsl{takes}\\
+WDT & Wh-determiner &\textsl{which}\\
+WP & Wh-pronoun &\textsl{who, what}\\
+WP\$ & Possessive wh-pronoun &\textsl{whose}\\
+WRB & Wh-abverb  &\textsl{where, when}\\
+\$ & Dollar sign &\textsl{\$}\\
+\# & Pound sign &\textsl{\#}\\
+" & Left quote &(' or ")\\
+" & Right quote &(' or ")\\
+( & Left parenthesis &( [, (, \{, <)\\
+) & Right parenthesis &( ], ), \}, >)\\
+, & Comma &,\\
+. & Sentence-final punc &( . ! ?)\\
+: & Mid-sentence punc &( : ; ... -)\\
+\hline
+\end{longtable}
 \end{center}
-
 Más allá de que no exista aún un consenso sobre que conjunto de etiquetas utilizar, hay un pequeño número de conjuntos de etiquetas o tagsets populares para el idioma inglés, muchos de los cuales evolucionaron a partir del conjunto de etiquetas utilizado para etiquetar el corpus Brown. Este conjunto de etiquetas se conoció como el Brown Corpus Tag-set, un conjunto de 87 etiquetas que se utilizó para etiquetar el corpus Brown: un corpus de 1 millón de palabras construído a partir de ejemplos provenientes de 500 textos de diferentes géneros (diarios, novelas, no ficción, académico, étc.) que fué ensamblado en la Universidad Brown entre 1963 y 1964. Este corpus fué etiquetado gramaticalmente aplicando en primera instancia un etiquetador automático, el programa TAGGIT, y luego corregido manualmente.
 
 Al lado del conjunto de etiquetas Brown se encuentran dos de los conjuntos de etiquetas más utilizados: el conjunto de etiquetas reducido Pen Treebank de 45 etiquetas y el conjunto de etiquetas CLAWS C5 de tamaño medio con 62 etiquetas que fué utilizado para etiquetar el corpus British National Corpus (BNC).

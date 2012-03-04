@@ -1,17 +1,17 @@
 \subsection{Etiquetado gramatical}
-\noindent Como se mencionó anteriormente, el etiquetado gramatical, también conocido como Part-of-speech tagging, POS tagging o simplemente POST, es el proceso de asignar una etiqueta a cada una de las palabras de un texto según su categoría léxica. Este proceso se realiza en base a la definición de la palabra y la de sus palabras vecinas, es decir, el contexto en que ésta aparece. 
+\noindent Como se mencionó anteriormente, el etiquetado gramatical es el proceso de asignar una etiqueta a cada una de las palabras de un texto según su categoría léxica. Este proceso se realiza en base a la definición de la palabra y la de sus palabras vecinas, es decir, el contexto en que ésta aparece. \\
 
-Por ejemplo en: \\
+\noindent Por ejemplo en: \\
 \\
-\textsl{Does that flight serve dinner}, \\
+\textsl{Does that flight serve dinner} \\
 
-\textsl{dinner} es un sustantivo y por lo tanto recibe la etiqueta para sustantivos \textsl{NN}.\\
+\noindent \textsl{dinner} es un sustantivo y por lo tanto recibe la etiqueta para sustantivos NN.\\
 
 El etiquetado gramatical brinda una gran cantidad de información sobre una palabra y sus vecinas. Por ejemplo, las etiquetas distinguen entre pronombres posesivos (mi, tu, su, étc.) y pronombres personales (Yo, Tú, Él, étc.). Saber si una palabra es un pronombre posesivo o personal nos brinda información sobre las palabras que pueden ocurrir a continuación: los pronombres posesivos generalmente son sucedidos por un sustantivo (como en \textsl{Mi comida}) mientras que los personales son sucedios por un verbo (como en \textsl{Yo duermo}). 
 
-Utilizando esta deducción podemos aseverar que si una palabra fué etiquetada como pronombre personal, es muy probable que la próxima palabra sea un verbo. Este conocimiento puede ser de útil aplicación en modelos linguísticos para reconocimiento del habla (voz a texto). Pero esta no es la única información que una etiqueta gramatical nos puede ofrecer. 
+Utilizando esta deducción podemos aseverar que si una palabra fué etiquetada como pronombre personal, es muy probable que la próxima palabra sea un verbo. Este conocimiento puede ser de útil aplicación en modelos linguísticos para reconocimiento del habla (voz a texto). Pero esta no es la única información que una etiqueta gramatical puede ofrecer. 
 
-Una etiqueta gramatical también nos puede acercar información relacionada con la pronunciación de la palabra. En inglés la palabra \textsl{content} puede ser un sustantivo o un adjetivo y su pronunciación varía dependiendo de este hecho. Utilizando estas ideas podemos producir pronunciaciones más naturales en un sistema de síntesis del habla (texto a voz) o también podemos obtener más exactitud en un sistema de reconocimiento del habla (voz a texto).
+Una etiqueta gramatical también nos puede acercar información relacionada con la pronunciación de la palabra. En inglés la palabra \textsl{content} puede ser un sustantivo o un adjetivo y su pronunciación varía dependiendo de este hecho. Utilizando estas ideas se pueden producir pronunciaciones más naturales en un sistema de síntesis del habla (texto a voz) o también se puede obtener más exactitud en un sistema de reconocimiento del habla (voz a texto).
 
 Otra aplicación importante del etiquetado gramatical en sistemas de recuperación de la información es el reconocimiento de sustantivos u otro tipo de palabras importantes dentro de un documento, para guardar y utilizar esta información en búsquedas posteriores. 
 
