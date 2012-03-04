@@ -3,9 +3,15 @@ Para mejorar el rendimiento de un etiquetador gramatical necesitamos entender do
 \\
 \\
 \begin{center}
-\begin{tabular}{| l | c | c | c | c | c | c | c |}
-	\hline
-	&	\textbf{IN}	&	\textbf{JJ}	&	\textbf{NN}	&	\textbf{NNP} & \textbf{RB} & \textbf{VBD} & \textbf{VBN} \\
+\begin{longtable}{| l | c | c | c | c | c | c | c |}
+\caption{Ejemplo de matriz de confusión}\\	
+\hline		
+ &	\textbf{IN}	&	\textbf{JJ}	&	\textbf{NN}	&	\textbf{NNP} & \textbf{RB} & \textbf{VBD} & 
+\hline
+\endhead
+\hline
+\endfoot
+\endlastfoot
 	\hline
 \textbf{IN}	&	-	&	.2	&	&	& .7 & & \\	
 \textbf{JJ}	&	.2	&	-	&	3.3 & 2.1	& 1.7 & .2 & 2.7 \\	
@@ -14,8 +20,8 @@ Para mejorar el rendimiento de un etiquetador gramatical necesitamos entender do
 \textbf{RB} & 2.2 &	2.0	&	.5 &  & - & & \\	
 \textbf{VBD} & & .3	&	.5 &  &  & - & 4.4\\	
 \textbf{VBN} & & 2.8 & & & & 2.6 & -\\	
-	\hline
-\end{tabular}
+\hline
+\end{longtable}
 \end{center}
 Las etiquetas de la fila indican las etiquetas correctas, las etiquetas de las columnas indican las etiquetas asignadas por el etiquetador, y cada celda indica el porcentaje del error de etiquetado general. Por lo tanto 4.4\% del total de errores fueron causados por fallida etiquetacion de VBD como VBN.
 La matriz anterior y el análisis de error relacionado en Franz, Kupiec y Ratnaparkhi sugieren que algunos de los mayores problemas que encaran los etiquetadores actuales son:
