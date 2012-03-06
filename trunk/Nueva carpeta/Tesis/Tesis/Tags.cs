@@ -4,7 +4,34 @@ using System.Linq;
 
 namespace ConsoleApplication1
 {
-    internal class Tags : IComparer<Tags>
+    public static class MatrizDeConfusion
+    {
+        public static IList<string> ObtenerTags(this IEnumerable<Tags>  matrizDeConf)
+        {
+            var resultado = new List<string>();
+            foreach (var tags in matrizDeConf)
+                resultado.AddIfNoExists(tags.TagDePrueba, tags.TagGoldStandard);
+
+            return resultado;
+        }
+
+        public static int ObtenerError (this List<Tags>  matrizDeConf, string tagCol, string tagFila)
+        {
+            foreach (var tags in matrizDeConf)
+                if (tags.TagDePrueba == tagCol && tags.TagGoldStandard == tagFila)
+                    return tags.TotalDePalabras;
+
+            return 0;
+        }
+
+        public static void AddIfNoExists(this List<string> lista, params string[] palabras)
+        {
+            foreach (var palabra in palabras.Where(palabra => !lista.Contains(palabra)))
+                lista.Add(palabra);
+        }
+    }
+
+    public class Tags : IComparer<Tags>
     {
         #region Variables de instancia
         public string TagDePrueba;
@@ -71,7 +98,7 @@ namespace ConsoleApplication1
 
         public void AgregarPalabra(string palabra)
         {
-            if(!Palabras.AddIfNoExists(palabra, 1))
+            if(Palabras.AddIfNoExists(palabra, 1))
                 Palabras[palabra]++;
 
         }

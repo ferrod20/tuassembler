@@ -1,0 +1,18 @@
+PATH=$PATH:$HOME/bin
+
+tnt-diff -a -l Entrenado/wsj.lex  WSJ/wsj.gold 	Taggeado/wsj.tagged > Mediciones/wsj.medd
+tnt-diff WSJ/wsj.gold 	Taggeado/wsjMasCobuild.tagged > Mediciones/wsjMasCobuild.medd
+tnt-diff WSJ/wsjComplementoC1.gold 	Taggeado/wsjComplementoC1.tagged > Mediciones/wsjComplementC1.medd
+tnt-diff WSJ/wsjComplementoC2.gold 	Taggeado/wsjComplementoC2.tagged > Mediciones/wsjComplementC2.medd
+tnt-diff WSJ/wsjComplementoC3.gold 	Taggeado/wsjComplementoC3.tagged > Mediciones/wsjComplementC3.medd
+tnt-diff WSJ/wsjComplementoC4.gold 	Taggeado/wsjComplementoC4.tagged > Mediciones/wsjComplementC4.medd
+tnt-diff WSJ/wsjComplementoC1.gold 	Taggeado/wsjComplementoC1MasCobuild.tagged > Mediciones/wsjComplementC1MasCobuild.medd
+tnt-diff WSJ/wsjComplementoC2.gold 	Taggeado/wsjComplementoC2MasCobuild.tagged > Mediciones/wsjComplementC2MasCobuild.medd
+tnt-diff WSJ/wsjComplementoC3.gold 	Taggeado/wsjComplementoC3MasCobuild.tagged > Mediciones/wsjComplementC3MasCobuild.medd
+tnt-diff WSJ/wsjComplementoC4.gold 	Taggeado/wsjComplementoC4MasCobuild.tagged > Mediciones/wsjComplementC4MasCobuild.medd
+tnt-diff WSJ/wsjM1.gold 						Taggeado/wsjM1.tagged > Mediciones/wsjM1.medd
+tnt-diff WSJ/wsjM2.gold 						Taggeado/wsjM2.tagged > Mediciones/wsjM2.medd
+tnt-diff WSJ/wsjM1.gold 						Taggeado/wsjM1MasCobuild.tagged > Mediciones/wsjM1MasCobuild.medd
+tnt-diff WSJ/wsjM2.gold 						Taggeado/wsjM2MasCobuild.tagged > Mediciones/wsjM2MasCobuild.medd
+
+pause
