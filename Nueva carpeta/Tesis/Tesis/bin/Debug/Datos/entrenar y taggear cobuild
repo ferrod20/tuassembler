@@ -1,0 +1,6 @@
+PATH=$PATH:$HOME/bin
+pause
+cd Entrenado
+tnt-para ../Entrenamiento/wsj.gold
+cd ../Extraccion
+tnt ../Entrenado/wsj Cobuild.extracted > Cobuild.tagged

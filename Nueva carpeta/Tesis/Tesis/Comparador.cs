@@ -51,7 +51,6 @@ namespace ConsoleApplication1
              
             if( !string.IsNullOrEmpty(tagDePrueba) )
             {
-
                 var hasta = partesGoldStandard.Length;
                 var tagGoldStandard = "";
                 while (string.IsNullOrWhiteSpace(tagGoldStandard) && hasta > 1)
@@ -65,10 +64,6 @@ namespace ConsoleApplication1
 
                 if (!acierto)
                 {
-
-                    //comparacionW.WriteLine(lineaGoldStandard);
-                    //comparacionW.WriteLine(lineaPrueba);
-                    //comparacionW.WriteLine();
                     var palabra = string.Empty;
                     if( partesGoldStandard.Length > 0)
                         palabra = partesGoldStandard[0];
@@ -82,7 +77,6 @@ namespace ConsoleApplication1
                         matrizDeConfusión.Add(tags);
                 }    
             }
-            
         }
 
         public static void Comparar(string archGoldStandard, string archParaComparar, string salidaMatrizDeConf)
@@ -94,9 +88,72 @@ namespace ConsoleApplication1
             matrizDeConfusión = new List<Tags>();
 
             LeerArchivosParaComparar(archGoldStandard, archParaComparar);
-            GrabarComparación(salidaMatrizDeConf);
+            //GrabarComparación(salidaMatrizDeConf);
+            GrabarMatrizDeConfParaLatex(salidaMatrizDeConf);
             Console.WriteLine();
             Console.WriteLine();
+        }
+
+        private static void GrabarMatrizDeConfParaLatex(string archivoDeSalida)
+        {
+            TextWriter salida = new StreamWriter(archivoDeSalida);
+
+            var cantidadDeErrores = matrizDeConfusión.Sum(s => s.TotalDePalabras);
+
+            var porcentajeDeAciertos = (cantTags - cantidadDeErrores) / (double)cantTags * 100;
+            salida.WriteLine("Porcentaje de aciertos: " + porcentajeDeAciertos);
+
+            salida.WriteLine();
+            salida.WriteLine("Errores");
+            salida.WriteLine("TagWSJ\tTagAsignado\tPorcentajeDeError");
+
+            var tags = matrizDeConfusión.OrderByDescending(s => s.TotalDePalabras).ObtenerTags().Take(10);
+
+            salida.Write(
+@"\begin{center}
+\begin{longtable}{| l | ");
+            for(var i=0;i < tags.Count(); i++)
+                salida.Write("c | ");
+
+salida.Write(
+@"}
+\caption{Ejemplo de matriz de confusión}\\	
+\hline
+ &	");
+
+            foreach (var tag in tags)
+                salida.Write("\\textbf{" + tag + "}	&   ");
+salida.Write(@"\hline
+\endhead
+\hline
+\endfoot
+\endlastfoot
+	\hline
+");
+            foreach (var tagCol in tags)
+            {
+                salida.Write(@"\textbf{" + tagCol + "}");
+                foreach (var tagFila in tags)
+                {
+                    salida.Write(" & ");
+                    int error = matrizDeConfusión.ObtenerError(tagCol, tagFila);
+                    if(error == 0)
+                        salida.Write("-");
+                    else
+                    {
+                        var porcentaje = (error / (double)cantidadDeErrores);
+                        salida.Write(porcentaje.ToString("0.0000").Replace("0,", "."));                        
+                    }
+                }
+                salida.WriteLine(@"\\");
+            }
+                
+
+salida.Write(@"\hline
+\end{longtable}
+\end{center}");
+
+            salida.Close();
         }
 
         private static void GrabarComparación(string archivoDeSalida)
@@ -139,7 +196,6 @@ namespace ConsoleApplication1
             var punto = 1;
             var tamGoldStandard = aGoldStandard.Length;
             var parte = tamGoldStandard/20;
-
             while (i < tamGoldStandard && j < aPrueba.Length)
             {
                 if (aGoldStandard[i].Split('\t')[0] == aPrueba[j].Split('\t')[0])
@@ -148,7 +204,6 @@ namespace ConsoleApplication1
                     cantTags++;
                     w = 0;
                 }
-
                 i++;
                 j++;
                 if (i < tamGoldStandard && j < aPrueba.Length && aGoldStandard[i].Split('\t')[0] != aPrueba[j].Split('\t')[0])                    
