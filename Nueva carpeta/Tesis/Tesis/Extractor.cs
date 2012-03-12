@@ -13,17 +13,116 @@ namespace ConsoleApplication1
         #endregion
 
         #region Variables de clase
-        private static readonly Dictionary<string, string> tiposs = new Dictionary<string, string> {{"coordinating conjunction", "CC"}, {"number", "CD"}, {"determiner", "DT"}, {"determiner + countable noun in singular", "DT"}, {"preposition", "IN"}, {"subordinating conjunction", "IN"}, {"preposition, or adverb after verb", "IN"}, {"preposition after noun", "IN"}, {"adjective", "JJ"}, //ver como clasificar JJR y JJS
-                                                                                                    {"classifying adjective", "JJ"}, {"qualitative adjective", "JJ"}, {"adjective colour", "JJ"}, {"ordinal", "JJ"}, {"adjective after noun", "JJ"}, {"modal", "MD"}, {"adverb", "RB"}, {"noun", "NN"}, //ver q hacer con plurales....
-                                                                                                    {"countable noun", "NN"}, {"uncountable noun", "NN"}, {"noun singular", "NN"}, {"countable or uncountable noun", "NN"}, {"countable noun with supporter", "NN"}, {"uncountable or countable noun", "NN"}, {"noun singular with determiner", "NN"}, {"mass noun", "NN"}, {"uncountable noun with supporter", "NN"}, {"partitive noun", "NN"}, {"noun singular with determiner with supporter", "NN"}, {"countable noun + of", "NN"}, {"countable noun, or by + noun", "NN"}, {"countable noun or partitive noun", "NN"}, {"count or uncountable noun", "NN"}, {"countable noun or vocative", "NN"}, {"partitive noun + uncountable noun", "NN"}, {"noun singular with determiner + of", "NN"}, {"noun in titles", "NN"}, //Verificar
-                                                                                                    {"noun vocative", "NN"}, {"uncountable noun + of", "NN"}, {"indefinite pronoun", "NN"}, {"uncountable noun, or noun singular", "NN"}, {"countable noun, or in + noun", "NN"}, {"partitive noun + noun in plural", "NN"}, //Ver
-                                                                                                    {"countable or uncountable noun with supporter", "NN"}, {"uncountable noun, or noun before noun", "NN"}, {"uncountable or countable noun with supporter", "NN"}, {"noun before noun", "NN"}, {"noun plural with supporter", "NNP"}, {"noun in names", "NNP"}, //Verificar
-                                                                                                    {"proper noun or vocative", "NNP"}, {"proper noun", "NNP"}, {"noun plural", "NNS"}, {"predeterminer", "PDT"}, //si empieza con predeterminer....
-
-                                                                                                    {"pronoun", "PP"}, //Ver.....me parece q no va
-                                                                                                    {"possessive", "PPS"}, //si empieza con possessive....
-
-                                                                                                    {"adverb with verb", "RB"}, {"adverb after verb", "RB"}, {"sentence adverb", "RB"}, {"adverb + adjective or adverb", "RB"}, {"adverb + adjective", "RB"}, {"preposition or adverb", "RB"}, {"adverb after verb, or classifying adjective", "RB"}, {"adverb or sentence adverb", "RB"}, {"adverb with verb, or sentence adverb", "RB"}, {"exclamation", "UH"}, {"exclam", "UH"}, {"verb", "VB"}, {"verb + object", "VB"}, {"verb or verb + object", "VB"}, {"ergative verb", "VB"}, {"verb + adjunct", "VB"}, {"verb + object + adjunct", "VB"}, {"verb + object (noun group or reflexive)", "VB"}, {"verb + object or reporting clause", "VB"}, {"verb + object (reflexive)", "VB"}, {"verb + adjunct (^i{to^i})", "VB"}, {"verb + object, or phrasal verb", "VB"}, {"verb + to-infinitive", "VB"}, {"verb or verb + adjunct (^i{with)", "VB"}, {"verb + object, verb + object + object, or verb + object + adjunct (to)", "VB"}, {"ergative verb + adjunct", "VB"}, {"verb + object + adjunct (to)", "VB"}, {"verb + object, or verb + adjunct", "VB"}, {"verb + object + adjunct (with)", "VB"}, {"verb + adjunct (with)", "VB"}, {"verb + complement", "VB"}, {"verb + object, or verb", "VB"}, {"verb + object + to-infinitive", "VB"}, {"verb + reporting clause", "VB"}, {"verb or ergative verb", "VB"}, {"verb + adjunct (from)", "VB"}, {"verb + object, verb + object + object, or verb + object + adjunct (for)", "VB"}, {"wh: used as determiner", "WDT"}, {"wh: used as relative pronoun", "WP"}, {"wh: used as pronoun", "WP"}, {"wh: used as adverb", "WRB"}, {"phrase + noun group", ""}, {"convention", ""}, {"combining form", ""}, {"prefix", ""}, {"phrasal verb", ""}, {"other", ""}, {"phrase", ""}, {"suffix", ""}, {"wh", ""}, {"phrase after noun", ""}, {"phrase + reporting clause", ""}};
+        /// <summary>
+        /// Tabla para traducir etiquetas COBUILD en etiquetas Penn TreeBank
+        /// </summary>
+        private static readonly Dictionary<string, string> tablaDeTraducciónDeEtiquetas = new Dictionary<string, string> {
+        {"coordinating conjunction", "CC"}, 
+        {"number", "CD"}, 
+        {"determiner", "DT"}, 
+        {"determiner + countable noun in singular", "DT"}, 
+        {"preposition", "IN"}, 
+        {"subordinating conjunction", "IN"}, 
+        {"preposition, or adverb after verb", "IN"}, 
+        {"preposition after noun", "IN"}, 
+        {"adjective", "JJ"}, //ver como clasificar JJR y JJS
+        {"classifying adjective", "JJ"}, 
+        {"qualitative adjective", "JJ"}, 
+        {"adjective colour", "JJ"}, 
+        {"ordinal", "JJ"}, 
+        {"adjective after noun", "JJ"}, 
+        {"modal", "MD"}, 
+        {"adverb", "RB"}, 
+        {"noun", "NN"}, //ver q hacer con plurales....
+        {"countable noun", "NN"}, 
+        {"uncountable noun", "NN"}, 
+        {"noun singular", "NN"}, 
+        {"countable or uncountable noun", "NN"}, 
+        {"countable noun with supporter", "NN"}, 
+        {"uncountable or countable noun", "NN"}, 
+        {"noun singular with determiner", "NN"}, 
+        {"mass noun", "NN"}, 
+        {"uncountable noun with supporter", "NN"}, 
+        {"partitive noun", "NN"}, 
+        {"noun singular with determiner with supporter", "NN"}, 
+        {"countable noun + of", "NN"}, 
+        {"countable noun, or by + noun", "NN"}, 
+        {"countable noun or partitive noun", "NN"}, 
+        {"count or uncountable noun", "NN"}, 
+        {"countable noun or vocative", "NN"}, 
+        {"partitive noun + uncountable noun", "NN"}, 
+        {"noun singular with determiner + of", "NN"}, 
+        {"noun in titles", "NN"}, //Verificar
+        {"noun vocative", "NN"}, 
+        {"uncountable noun + of", "NN"}, 
+        {"indefinite pronoun", "NN"}, 
+        {"uncountable noun, or noun singular", "NN"}, 
+        {"countable noun, or in + noun", "NN"}, 
+        {"partitive noun + noun in plural", "NN"}, //Ver
+        {"countable or uncountable noun with supporter", "NN"}, 
+        {"uncountable noun, or noun before noun", "NN"}, 
+        {"uncountable or countable noun with supporter", "NN"}, 
+        {"noun before noun", "NN"}, 
+        {"noun plural with supporter", "NNS"}, 
+        {"noun in names", "NNP"}, //Verificar
+        {"proper noun or vocative", "NNP"}, 
+        {"proper noun", "NNP"}, 
+        {"noun plural", "NNS"}, 
+        {"predeterminer", "PDT"}, //si empieza con predeterminer....
+        {"pronoun", "PP"}, //Ver.....me parece q no va
+        {"possessive", "PPS"}, //si empieza con possessive....
+        {"adverb with verb", "RB"}, 
+        {"adverb after verb", "RB"}, 
+        {"sentence adverb", "RB"}, 
+        {"adverb + adjective or adverb", "RB"}, 
+        {"adverb + adjective", "RB"}, 
+        {"preposition or adverb", "RB"}, 
+        {"adverb after verb, or classifying adjective", "RB"}, 
+        {"adverb or sentence adverb", "RB"}, 
+        {"adverb with verb, or sentence adverb", "RB"}, 
+        {"exclamation", "UH"}, 
+        {"exclam", "UH"}, 
+        {"verb", "VB"}, 
+        {"verb + object", "VB"}, 
+        {"verb or verb + object", "VB"}, 
+        {"ergative verb", "VB"}, 
+        {"verb + adjunct", "VB"}, 
+        {"verb + object + adjunct", "VB"}, 
+        {"verb + object (noun group or reflexive)", "VB"}, 
+        {"verb + object or reporting clause", "VB"}, 
+        {"verb + object (reflexive)", "VB"}, 
+        {"verb + adjunct (^i{to^i})", "VB"}, 
+        {"verb + object, or phrasal verb", "VB"}, 
+        {"verb + to-infinitive", "VB"}, 
+        {"verb or verb + adjunct (^i{with)", "VB"}, 
+        {"verb + object, verb + object + object, or verb + object + adjunct (to)", "VB"}, 
+        {"ergative verb + adjunct", "VB"}, 
+        {"verb + object + adjunct (to)", "VB"}, 
+        {"verb + object, or verb + adjunct", "VB"}, 
+        {"verb + object + adjunct (with)", "VB"}, 
+        {"verb + adjunct (with)", "VB"}, 
+        {"verb + complement", "VB"}, 
+        {"verb + object, or verb", "VB"}, 
+        {"verb + object + to-infinitive", "VB"}, 
+        {"verb + reporting clause", "VB"}, 
+        {"verb or ergative verb", "VB"}, 
+        {"verb + adjunct (from)", "VB"}, 
+        {"verb + object, verb + object + object, or verb + object + adjunct (for)", "VB"}, 
+        {"wh: used as determiner", "WDT"}, 
+        {"wh: used as relative pronoun", "WP"}, 
+        {"wh: used as pronoun", "WP"}, 
+        {"wh: used as adverb", "WRB"}, 
+        {"phrase + noun group", ""}, 
+        {"convention", ""}, 
+        {"combining form", ""}, 
+        {"prefix", ""}, 
+        {"phrasal verb", ""}, 
+        {"other", ""}, 
+        {"phrase", ""}, 
+        {"suffix", ""}, 
+        {"wh", ""}, 
+        {"phrase after noun", ""}, 
+        {"phrase + reporting clause", ""}};
         #endregion
 
         #region Metodos
@@ -55,17 +154,21 @@ namespace ConsoleApplication1
             return parte.Contains(palabra) && parte.Length > palabra.Length + 2 && cantPalabras > 4 && parte.Sum(letra => letra == ',' ? 1 : 0) <= 3 && cantPalabras > parte.HowManyOcurrencies(palabra);
         }
 
-        private static bool EsTipo(string tipo, out KeyValuePair<string, string> parDeTipos)
+        /// <summary>
+        /// Busca en la tabla de traducción de etiquetas si existe alguna etiqueta Penn Treebank para la etiqueta Cobuild posibleEtiquetaCobuild
+        /// </summary>
+        private static string ObtenerEtiquetaPennTreebank(string posibleEtiquetaCobuild)
         {
-            parDeTipos = new KeyValuePair<string, string>("", "");
-            tipo = tipo.TrimEnd();
-            var tipos2 = tiposs.Where(t => t.Key.StartsWith(tipo));
-            if (tiposs.ContainsKey(tipo))
-                parDeTipos = new KeyValuePair<string, string>(tipo, tiposs[tipo]);
-            else if (tipos2.Count() > 0)
-                parDeTipos = tipos2.First();
+            string etiquetaPennTreebank = null;
+            posibleEtiquetaCobuild = posibleEtiquetaCobuild.TrimEnd();
+            var posiblesTags = tablaDeTraducciónDeEtiquetas.Where(t => t.Key.StartsWith(posibleEtiquetaCobuild));
+            
+            if (tablaDeTraducciónDeEtiquetas.ContainsKey(posibleEtiquetaCobuild))
+                etiquetaPennTreebank = tablaDeTraducciónDeEtiquetas[posibleEtiquetaCobuild];
+            else if (posiblesTags.Any())
+                etiquetaPennTreebank = posiblesTags.First().Value;
 
-            return tipos2.Count() > 0;
+            return etiquetaPennTreebank;
         }
 
         private static void ExtraerDatos(string texto, TextWriter tw)
@@ -80,7 +183,7 @@ namespace ConsoleApplication1
 #if HacerLegible
                     	datos = HacerLegiblElBloque(bloque);
 #else
-                    datos = ExtraerDatosDelBloque(bloque);
+                    datos = ExtraerDatosDeLaEntrada(bloque);
                 if (!string.IsNullOrEmpty(datos))
                     tw.Write(datos);
 #endif
@@ -95,36 +198,35 @@ namespace ConsoleApplication1
             tw.Close();
         }
 
-        private static string ExtraerDatosDelBloque(string bloque)
+        private static string ExtraerDatosDeLaEntrada(string entrada)
         {
-            var partes = bloque.Split('\n');
-            var palabra = partes[1].TrimEnd();
+            var líneas = entrada.Split('\n');
+            var palabra = líneas[1].TrimEnd();
             if (palabra.Contains(", "))
                 palabra = palabra.Substring(0, palabra.IndexOf(", "));
             var salida = "";
-            if (partes.Length > 2)
+            if (líneas.Length > 2)
             {
-                var formasDeLaPalabra = partes[2].Split(',').Select(forma => forma.Trim()).ToList();
+                var formasDeLaPalabra = líneas[2].Split(',').Select(forma => forma.Trim()).ToList();
                 formasDeLaPalabra.Add(palabra);
                 var escribiLaPalabra = false;
-                string deDondeSeSacoElTipo;
+                
 
-                for (var i = 2; i < partes.Length - 1; i++)
+                for (var i = 2; i < líneas.Length - 1; i++)
                 {
-                    var parte = partes[i].TrimEnd();
+                    var línea = líneas[i].TrimEnd();
 
-                    if (EsEjemplo(parte, formasDeLaPalabra))
+                    if (EsEjemplo(línea, formasDeLaPalabra))
                     {
-                        var tipo = ObtenerTipo(partes, i + 1, out deDondeSeSacoElTipo).Value;//Busca en la entrada, (en cada renglon) si hay alguna palabra que sea un tipo de palabra. Es decir si esta en el diccionario de tipos, y si es asi lo traduce al tipo correspondiente.
-                        if (tipo != string.Empty)
+                        var etiquetaPennTreebank = ObtenerEtiquetaPennTreebank(líneas, i + 1);//Busca en la entrada, (en cada renglon) si hay alguna palabra que sea un tipo de palabra. Es decir si esta en el diccionario de tipos, y si es asi lo traduce al tipo correspondiente.
+                        if (!string.IsNullOrEmpty(etiquetaPennTreebank))
                         {
                             if (!escribiLaPalabra)
-                                //  salida = palabra + " | " + deDondeSeSacoElTipo.TrimEnd() + "-->" + tipo + "\n";
                                 escribiLaPalabra = true;
 
-                            var palabrasConTipo = InferirTipoFormasDeLaPalabra(formasDeLaPalabra, palabra, tipo);
-                            palabrasConTipo.AddIfNoExists(palabra.ToLower(), tipo);
-                            salida += GetSalida(parte, palabrasConTipo);
+                            var etiquetasObtenidas = InferirEtiquetasParaLasFormasDeLaPalabra(formasDeLaPalabra, palabra, etiquetaPennTreebank);
+                            etiquetasObtenidas.AddIfNoExists(palabra.ToLower(), etiquetaPennTreebank);
+                            salida += ObtenerSalida(línea, etiquetasObtenidas);
                         }
                     }
                 }
@@ -138,15 +240,15 @@ namespace ConsoleApplication1
         ///   Obtiene una lista con cada palabra del ejemplo. En la palabra del ejemplo que es la entrada del diccionario, le pone el tipo.
         ///   Tiene en cuenta signos de puntuacion al final y al principio.
         /// </summary>
-        private static string GetSalida(string ejemplo, Dictionary<string, string> palabrasConTipo)
+        private static string ObtenerSalida(string ejemplo, Dictionary<string, string> etiquetas)
         {
             var salida = string.Empty;
 
-            foreach (var palConTipo in palabrasConTipo)
-                if (palConTipo.Key.Contains(' '))
+            foreach (var palabraConEtiqueta in etiquetas)
+                if (palabraConEtiqueta.Key.Contains(' '))
                 {
-                    var pal2 = palConTipo.Key;
-                    ejemplo = ejemplo.ReemplazarEspacioPorStringMagico(pal2);
+                    var palabra = palabraConEtiqueta.Key;
+                    ejemplo = ejemplo.ReemplazarEspacioPorStringMagico(palabra);
                 }
 
             var palabrasDelEjemplo = ejemplo.Split(new[] {' '}, StringSplitOptions.RemoveEmptyEntries);
@@ -154,39 +256,39 @@ namespace ConsoleApplication1
             for (var i = 0; i < palabrasDelEjemplo.Length; i++)
             {
                 var hayPuntuacion = false;
-                var palabraDelEjemplo = palabrasDelEjemplo[i].ReemplazarStringMagicoPorEspacio();
+                var palabra = palabrasDelEjemplo[i].ReemplazarStringMagicoPorEspacio();
                 string puntuacionFinal, parteOriginalSinPuntuacion;
 
-                if (palabraDelEjemplo.StartsWith("..."))
+                if (palabra.StartsWith("..."))
                 {
-                    palabraDelEjemplo = palabraDelEjemplo.Substring(3);
+                    palabra = palabra.Substring(3);
                     salida += "...\n";
                 }
 
-                if (palabraDelEjemplo.EndsWith("..."))
+                if (palabra.EndsWith("..."))
                 {
                     puntuacionFinal = "...";
-                    parteOriginalSinPuntuacion = palabraDelEjemplo.Substring(0, palabraDelEjemplo.Length - 3);
+                    parteOriginalSinPuntuacion = palabra.Substring(0, palabra.Length - 3);
                     hayPuntuacion = true;
                 }
                 else
                 {
-                    puntuacionFinal = (palabraDelEjemplo == string.Empty ? ' ' : palabraDelEjemplo.Last()).ToString();
+                    puntuacionFinal = (palabra == string.Empty ? ' ' : palabra.Last()).ToString();
                     if (char.IsPunctuation(puntuacionFinal[0]))
                     {
                         hayPuntuacion = true;
-                        parteOriginalSinPuntuacion = palabraDelEjemplo.Substring(0, palabraDelEjemplo.Length - 1);
+                        parteOriginalSinPuntuacion = palabra.Substring(0, palabra.Length - 1);
                     }
                     else
-                        parteOriginalSinPuntuacion = palabraDelEjemplo;
+                        parteOriginalSinPuntuacion = palabra;
                 }
 
                 salida += parteOriginalSinPuntuacion;
 
                 var parteSinPunt = parteOriginalSinPuntuacion.ToLower();
 
-                if (palabrasConTipo.ContainsKey(parteSinPunt))
-                    salida += "\t" + Desambiguar(parteSinPunt, palabrasDelEjemplo, i, palabrasConTipo[parteSinPunt]);
+                if (etiquetas.ContainsKey(parteSinPunt))
+                    salida += "\t" + Desambiguar(parteSinPunt, palabrasDelEjemplo, i, etiquetas[parteSinPunt]);
 
                 salida += "\n";
 
@@ -196,31 +298,34 @@ namespace ConsoleApplication1
             return salida;
         }
 
-        private static Dictionary<string, string> InferirTipoFormasDeLaPalabra(IEnumerable<string> formasDeLaPalabra, string palabra, string tipo)
+        /// <summary>
+        /// Para cada una de las formas de la palabra infiere su tipo basado en la palabra y su etiqueta PennTreebank
+        /// </summary>
+        private static Dictionary<string, string> InferirEtiquetasParaLasFormasDeLaPalabra(IEnumerable<string> formasDeLaPalabra, string palabra, string etiquetaPennTreebank)
         {
-            var formasConTipos = new Dictionary<string, string>();
-            var tipoDeLaForma = string.Empty;
+            var etiquetasInferidas = new Dictionary<string, string>();
+            var etiquetaInferida = string.Empty;
             foreach (var forma in formasDeLaPalabra)
             {
-                switch (tipo)
+                switch (etiquetaPennTreebank)
                 {
                     case "JJ":
-                        tipoDeLaForma = palabra.InferirTipoJJ(forma);
+                        etiquetaInferida = palabra.InferirTipoJJ(forma);
                         break;
                     case "VB":
-                        tipoDeLaForma = palabra.InferirTipoVB(forma);
+                        etiquetaInferida = palabra.InferirTipoVB(forma);
                         break;
                     case "RB":
-                        tipoDeLaForma = palabra.InferirTipoRB(forma);
+                        etiquetaInferida = palabra.InferirTipoRB(forma);
                         break;
                     case "NN":
-                        tipoDeLaForma = palabra.InferirTipoNN(forma);
+                        etiquetaInferida = palabra.InferirTipoNN(forma);
                         break;
                 }
-                if (tipoDeLaForma != string.Empty)
-                    formasConTipos.AddIfNoExists(forma.ToLower(), tipoDeLaForma);
+                if (etiquetaInferida != string.Empty)
+                    etiquetasInferidas.AddIfNoExists(forma.ToLower(), etiquetaInferida);
             }
-            return formasConTipos;
+            return etiquetasInferidas;
         }
 
         private static string ObtenerBloque(string texto, ref int indice)
@@ -239,19 +344,33 @@ namespace ConsoleApplication1
 
             return salida;
         }
-        private static KeyValuePair<string, string> ObtenerTipo(string[] partes, int i, out string obtenido)
+        
+        /// <summary>
+        /// Busca en la entrada, (en cada renglón) si hay alguna palabra que sea un tag COBUILD. Es decir; 
+        /// si está en la tabla de traducción de etiquetas, y si es así lo traduce con la etiqueta Penn Treebank correspondiente.
+        /// </summary>
+        private static string ObtenerEtiquetaPennTreebank(string[] líneas, int i, out string líneaDeDondeSeObtuvoLaEtiqueta)
         {
-            obtenido = string.Empty;
-            var tipo = new KeyValuePair<string, string>();
+            líneaDeDondeSeObtuvoLaEtiqueta = string.Empty;
+            string etiquetaPennTreebankObtenida = null;
 
-            for (; i < partes.Length; i++)
+            for (; i < líneas.Length && etiquetaPennTreebankObtenida == null; i++)
             {
-                obtenido = partes[i];
-                if (EsTipo(obtenido, out tipo))
-                    break;
+                líneaDeDondeSeObtuvoLaEtiqueta = líneas[i];
+                etiquetaPennTreebankObtenida = ObtenerEtiquetaPennTreebank(líneaDeDondeSeObtuvoLaEtiqueta);            
             }
 
-            return tipo;
+            return etiquetaPennTreebankObtenida;
+        }
+
+        /// <summary>
+        /// Busca en la entrada, (en cada renglón) si hay alguna palabra que sea un tag COBUILD. Es decir; 
+        /// si está en la tabla de traducción de etiquetas, y si es así lo traduce con la etiqueta Penn Treebank correspondiente.
+        /// </summary>
+        private static string ObtenerEtiquetaPennTreebank(string[] líneas, int i)
+        {
+            string líneaDeDondeSeObtuvoLaEtiqueta;
+            return ObtenerEtiquetaPennTreebank(líneas, i, out líneaDeDondeSeObtuvoLaEtiqueta);           
         }
         #endregion
     }

@@ -12,7 +12,7 @@ MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=32
 NormalPos.right=1697
-NormalPos.bottom=586
+NormalPos.bottom=620
 Class=LaTeXView
 Document=Experimentacion.tex
 
