@@ -11,9 +11,6 @@ namespace ConsoleApplication1
         private static int cantTags;
         private static List<Tags> matrizDeConfusión;
         #endregion
-
-       // private static readonly TextWriter comparacionW = new StreamWriter(@"D:\Fer\Facultad\PLN\Tesis\Nueva carpeta\ConsoleApplication1\ConsoleApplication1\bin\Debug\Datos\compa.txt");
-
         #region Metodos
         private static void BuscarProximaLinea(string[] uno, string[] otro, ref int i, ref int j)
         {
@@ -42,7 +39,6 @@ namespace ConsoleApplication1
             }
             return distancia;
         }
-
         private static void Comparar(string lineaGoldStandard, string lineaPrueba)
         {
             var partesGoldStandard = lineaGoldStandard.Split();
@@ -78,7 +74,6 @@ namespace ConsoleApplication1
                 }    
             }
         }
-
         public static void Comparar(string archGoldStandard, string archParaComparar, string salidaMatrizDeConf)
         {
             Console.WriteLine("Comparando: " + Path.GetFileName(archGoldStandard) + " contra " + Path.GetFileName(archParaComparar) );
@@ -93,7 +88,6 @@ namespace ConsoleApplication1
             Console.WriteLine();
             Console.WriteLine();
         }
-
         private static void GrabarMatrizDeConfParaLatex(string archivoDeSalida)
         {
             TextWriter salida = new StreamWriter(archivoDeSalida);
@@ -136,14 +130,15 @@ salida.Write(@"\hline
                 foreach (var tagFila in tags)
                 {
                     salida.Write(" & ");
-                    int error = matrizDeConfusión.ObtenerError(tagCol, tagFila);
-                    if(error == 0)
+                    var error = matrizDeConfusión.ObtenerCantidadDeErrores(tagCol, tagFila);
+                    if (error == 0)
                         salida.Write("-");
                     else
-                    {
-                        var porcentaje = (error / (double)cantidadDeErrores);
-                        salida.Write(porcentaje.ToString("0.0000").Replace("0,", "."));                        
-                    }
+                        salida.Write(error);
+                    //{
+                    //    var porcentaje = (error / (double)cantidadDeErrores);
+                    //    salida.Write(porcentaje.ToString("0.0000").Replace("0,", "."));                        
+                    //}
                 }
                 salida.WriteLine(@"\\");
             }
@@ -155,7 +150,6 @@ salida.Write(@"\hline
 
             salida.Close();
         }
-
         private static void GrabarComparación(string archivoDeSalida)
         {
             TextWriter salida = new StreamWriter(archivoDeSalida);
@@ -180,7 +174,6 @@ salida.Write(@"\hline
 
             salida.Close();
         }
-
         /// <summary>
         ///   Lee los archivos y va generando la matriz de confusión.
         /// </summary>

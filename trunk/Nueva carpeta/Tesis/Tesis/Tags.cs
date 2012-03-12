@@ -15,7 +15,8 @@ namespace ConsoleApplication1
             return resultado;
         }
 
-        public static int ObtenerError (this List<Tags>  matrizDeConf, string tagCol, string tagFila)
+
+        public static int ObtenerCantidadDeErrores(this List<Tags> matrizDeConf, string tagCol, string tagFila)
         {
             foreach (var tags in matrizDeConf)
                 if (tags.TagDePrueba == tagCol && tags.TagGoldStandard == tagFila)

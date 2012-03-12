@@ -130,7 +130,7 @@ namespace ConsoleApplication1
 
         public static bool EsVBDoVBN(this string palabra, string forma)
         {
-            return palabra.Length <= forma.Length && forma.ToLower().EndsWith("ed");
+            return palabra.Length <= forma.Length &&  forma.ToLower().EndsWith("ed");
         }
 
         public static bool EsVBG(this string palabra, string forma)
