@@ -10,22 +10,31 @@ namespace ConsoleApplication1
     public static class Metodos
     {
         #region Metodos
-        public static string SubstringBeetween(this string str, char a, char b)
-        {
-            var inicio = str.IndexOf(a);
-            var fin = str.IndexOf(b, inicio + 1);
-            var hasta = fin - (inicio + 1);
-            return str.Substring(inicio + 1, hasta);
-        }
+        //public static string SubstringEntre(this string str, char a, char b)
+        //{
+        //    var inicio = str.IndexOf(a);
+        //    var fin = str.IndexOf(b, inicio + 1);
+        //    var hasta = fin - (inicio + 1);
+        //    return str.Substring(inicio + 1, hasta);
+        //}
+        //public static string SubstringEntre(this string str, string a, string b)
+        //{
+        //    var inicio = str.IndexOf(a);
+        //    var fin = str.IndexOf(b, inicio + 1);
+        //    var hasta = fin - (inicio + a.Length);
+        //    return str.Substring(inicio + a.Length, hasta);
+        //}
+        //public static bool EsConsonante(this char c)
+        //{
+        //    return char.IsLetter(c) && !c.EsVocal();
+        //}
 
-        public static string SubstringBeetween(this string str, string a, string b)
-        {
-            var inicio = str.IndexOf(a);
-            var fin = str.IndexOf(b, inicio + 1);
-            var hasta = fin - (inicio + a.Length);
-            return str.Substring(inicio + a.Length, hasta);
-        }
-        public static bool AddIfNoExists<A, B>(this IDictionary<A, B> dic, A key, B value)
+        //public static bool EsVocal(this char c)
+        //{
+        //    return c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u' || c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U';
+        //}
+
+        public static bool AgregarSiNoExiste<A, B>(this IDictionary<A, B> dic, A key, B value)
         {
             var exists = dic.ContainsKey(key);
             if (!exists)
@@ -34,37 +43,33 @@ namespace ConsoleApplication1
             return exists;
         }
 
-        public static decimal HowManyOcurrencies(this string parte, string palabra)
+        public static IEnumerable<T> Unir<T>(this IEnumerable<T> lista, T elemento)
         {
-            var cantOc = 0;
-            var ind = parte.IndexOf(palabra);
-
-            while (ind != -1)
-            {
-                cantOc++;
-                if (palabra.Length - 1 < ind + 1)
-                    ind = -1;
-                else
-                    ind = parte.IndexOf(palabra, ind + 1);
-            }
-            return cantOc;
+            return lista.Concat(new List<T>{elemento});
         }
 
-        public static bool ContainsAny(this string str, params string[] pals)
+        public static decimal CantidadDeOcurrencias(this string texto, string palabra)
+        {
+            var cantidadDeOcurrencias = 0;
+            var índice = texto.IndexOf(palabra);
+
+            while (índice != -1)
+            {
+                cantidadDeOcurrencias++;
+                if (palabra.Length - 1 < índice + 1)
+                    índice = -1;
+                else
+                    índice = texto.IndexOf(palabra, índice + 1);
+            }
+            return cantidadDeOcurrencias;
+        }
+
+        public static bool ContieneAlgún(this string str, params string[] pals)
         {
             return pals.Any(pal => str.ToLower() == pal.ToLower());
         }
 
-        public static bool EsConsonante(this char c)
-        {
-            return char.IsLetter(c) && !c.EsVocal();
-        }
-
-        public static bool EsVocal(this char c)
-        {
-            return c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u' || c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U';
-        }
-
+        
         /// <summary>
         ///   Reemplaza el espacio con un \_/, tanto en la palabra como en la parte.
         ///   Solo para no tener problemas
@@ -115,18 +120,18 @@ namespace ConsoleApplication1
             return palabra.Length <= forma.Length && forma.ToLower().EndsWith("est") || forma.ToLower().StartsWith("most") || forma.ToLower().StartsWith("least");
         }
 
-        public static bool EsVBD(this string palabra, List<string> palabrasAnteriores, string forma)
-        {
-            var ultima = "";
-            var anteUltima = "";
+        //public static bool EsVBD(this string palabra, List<string> palabrasAnteriores, string forma)
+        //{
+        //    var ultima = "";
+        //    var anteUltima = "";
 
-            if (palabrasAnteriores.Count() > 0)
-                ultima = palabrasAnteriores.Last();
-            if (palabrasAnteriores.Count() > 1)
-                anteUltima = palabrasAnteriores[palabrasAnteriores.Count - 2];
+        //    if (palabrasAnteriores.Count() > 0)
+        //        ultima = palabrasAnteriores.Last();
+        //    if (palabrasAnteriores.Count() > 1)
+        //        anteUltima = palabrasAnteriores[palabrasAnteriores.Count - 2];
 
-            return palabra.Length <= forma.Length && forma.ToLower().EndsWith("ed") && !ultima.ContainsAny("have", "has", "had") && !anteUltima.ContainsAny("have", "has", "had");
-        }
+        //    return palabra.Length <= forma.Length && forma.ToLower().EndsWith("ed") && !ultima.ContieneAlgún("have", "has", "had") && !anteUltima.ContieneAlgún("have", "has", "had");
+        //}
 
         public static bool EsVBDoVBN(this string palabra, string forma)
         {
@@ -138,27 +143,20 @@ namespace ConsoleApplication1
             return palabra.Length <= forma.Length && forma.ToLower().EndsWith("ing");
         }
 
-        public static bool EsVBN(this string palabra, List<string> palabrasAnteriores, string forma)
-        {
-            var ultima = "";
-            var anteUltima = "";
+        //public static bool EsVBN(this string palabra, List<string> palabrasAnteriores, string forma)
+        //{
+        //    var ultima = "";
+        //    var anteUltima = "";
 
-            if (palabrasAnteriores.Count > 0)
-                ultima = palabrasAnteriores.Last();
-            if (palabrasAnteriores.Count > 1)
-                anteUltima = palabrasAnteriores[palabrasAnteriores.Count - 2];
+        //    if (palabrasAnteriores.Count > 0)
+        //        ultima = palabrasAnteriores.Last();
+        //    if (palabrasAnteriores.Count > 1)
+        //        anteUltima = palabrasAnteriores[palabrasAnteriores.Count - 2];
 
-            return palabra.Length <= forma.Length && forma.ToLower().EndsWith("ed") && (ultima.ContainsAny("have", "has", "had") || anteUltima.ContainsAny("have", "has", "had"));
-        }
+        //    return palabra.Length <= forma.Length && forma.ToLower().EndsWith("ed") && (ultima.ContieneAlgún("have", "has", "had") || anteUltima.ContieneAlgún("have", "has", "had"));
+        //}
 
-        public static bool EsVBP(this string palabra, List<string> palabrasAnteriores, string forma)
-        {
-            var ultima = "";
-            if (palabrasAnteriores.Count > 0)
-                ultima = palabrasAnteriores.Last();
-            return palabra == forma && ultima.ToLower() != "to";
-        }
-
+        
         public static bool EsVBZ(this string palabra, string forma)
         {
             return palabra.Length <= forma.Length && forma.ToLower().EndsWith("s");
@@ -169,50 +167,50 @@ namespace ConsoleApplication1
         /// </summary>
         public static string InferirTipoJJ(this string palabra, string forma)
         {
-            var tipoDeLaForma = string.Empty;
+            var etiquetaInferida = string.Empty;
             if (palabra.EsJJR(forma))
-                tipoDeLaForma = "JJR";
+                etiquetaInferida = "JJR";
             else if (palabra.EsJJS(forma))
-                tipoDeLaForma = "JJS";
+                etiquetaInferida = "JJS";
 
-            return tipoDeLaForma;
+            return etiquetaInferida;
         }
 
         public static string InferirTipoNN(this string palabra, string forma)
         {
-            var tipoDeLaForma = string.Empty;
+            var etiquetaInferida = string.Empty;
             if (palabra.EsNNS(forma))
-                tipoDeLaForma = "NNS";
+                etiquetaInferida = "NNS";
             else
-                tipoDeLaForma = "NN";
+                etiquetaInferida = "NN";
 
-            return tipoDeLaForma;
+            return etiquetaInferida;
         }
 
         public static string InferirTipoRB(this string palabra, string forma)
         {
-            var tipoDeLaForma = string.Empty;
+            var etiquetaInferida = string.Empty;
             if (palabra.EsRBR(forma))
-                tipoDeLaForma = "RBR";
+                etiquetaInferida = "RBR";
             else if (palabra.EsRBS(forma))
-                tipoDeLaForma = "RBS";
+                etiquetaInferida = "RBS";
 
-            return tipoDeLaForma;
+            return etiquetaInferida;
         }
 
         public static string InferirTipoVB(this string palabra, string forma)
         {
-            var tipoDeLaForma = string.Empty;
+            var etiquetaInferida = string.Empty;
             if (palabra.EsVBDoVBN(forma))
-                tipoDeLaForma = "VBD|VBN";
+                etiquetaInferida = "VBD|VBN";
             else if (palabra.EsVBG(forma))
-                tipoDeLaForma = "VBG";
+                etiquetaInferida = "VBG";
             else if (palabra.EsVBZ(forma))
-                tipoDeLaForma = "VBZ";
+                etiquetaInferida = "VBZ";
             else
-                tipoDeLaForma = "VB";
+                etiquetaInferida = "VB";
 
-            return tipoDeLaForma;
+            return etiquetaInferida;
         }
         #endregion
     }
@@ -269,9 +267,9 @@ namespace ConsoleApplication1
         private static void Main()
         {
             //HacerLegibleCobuild();
-            //Extractor.ExtraerDatos(cobuildOriginalLegible, cobuildExtraido);            
+            Extractor.ExtraerLaInformaciónDeCobuild(cobuildOriginalLegible, cobuildExtraido);            
             Comparador.Comparar(cobuildTaggeado, cobuildExtraido, matrizDeConfCobuild);
-            //UnirCobuildExtraidoConCobuildTaggeado();
+            UnirCobuildExtraidoConCobuildTaggeado();
 
             //Comparador.Comparar(@"Datos\WSJ\wsj.gold", @"Datos\Taggeado\wsj.tagged", @"Datos\Mediciones\wsj.mConf");
             //Comparador.Comparar(@"Datos\WSJ\wsj.gold", @"Datos\Taggeado\wsjMasCobuild.tagged", @"Datos\Mediciones\wsjMasCobuild.mConf");
@@ -300,27 +298,27 @@ namespace ConsoleApplication1
 
             TextWriter salida = new StreamWriter(cobuildFinal, false, Encoding.Default);
 
-            var lineaExt = textoExtraido.ReadLine();
-            var lineaTaggeado = textoTaggeado.ReadLine();
+            var líneaExtraída = textoExtraido.ReadLine();
+            var líneaTaggeada = textoTaggeado.ReadLine();
 
-
-            while (lineaExt != null && lineaTaggeado != null)
+            while (líneaExtraída != null && líneaTaggeada != null)
             {
-                if( lineaExt != string.Empty )
+                if( líneaExtraída != string.Empty )
                 {
-                    var partesExt = lineaExt.Split();
-                    salida.Write(partesExt[0]);
+                    var partesExtraídas = líneaExtraída.Split();
+                    salida.Write(partesExtraídas[0]);
                     salida.Write("\t");
-                    if (partesExt.Count() > 1 && !string.IsNullOrEmpty(partesExt.Last()))
-                        salida.Write(partesExt.Last());
+                    var etiquetaExtraída = partesExtraídas.Last();
+                    if (partesExtraídas.Count() > 1 && !string.IsNullOrEmpty(etiquetaExtraída) && etiquetaExtraída != "VBD|VBN")
+                        salida.Write(etiquetaExtraída);
                     else
-                        salida.Write(lineaTaggeado.Split().Last());
+                        salida.Write(líneaTaggeada.Split().Last());
 
                     salida.WriteLine();
                 }
 
-                lineaExt = textoExtraido.ReadLine();
-                lineaTaggeado = textoTaggeado.ReadLine();    
+                líneaExtraída = textoExtraido.ReadLine();
+                líneaTaggeada = textoTaggeado.ReadLine();    
             }
 
             salida.Close();

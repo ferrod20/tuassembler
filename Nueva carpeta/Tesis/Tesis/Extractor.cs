@@ -125,108 +125,86 @@ namespace ConsoleApplication1
         {"phrase + reporting clause", ""}};
         #endregion
 
+        private static int CantidadDeSignosDePuntuación = 0;
+        private static int CantidadDePalabras = 0;
+        private static int CantidadDePalabrasEtiquetadas = 0;
         #region Metodos
-        private static string Desambiguar(string forma, string[] palabrasDelEjemplo, int i, string tipo)
-        {
-            if (tipo.ContainsAny("VBD|VBN", "VB"))
-            {
-                var palabra = palabrasDelEjemplo[i];
-                var palAnteriores = new List<string>();
-                for (var j = 0; j < i; j++)
-                    palAnteriores.Add(palabrasDelEjemplo[j]);
-
-                if (tipo == "VBD|VBN")
-                    tipo = palabra.EsVBN(palAnteriores, forma) ? "VBN" : "VBD";
-                if (tipo == "VB" && palabra.EsVBP(palAnteriores, forma))
-                    tipo = "VBP";
-            }
-            return tipo;
-        }
-
-        private static bool EsEjemplo(string parte, IEnumerable<string> palabras)
-        {
-            return palabras.Any(p => EsEjemplo(parte, p));
-        }
-
-        private static bool EsEjemplo(string parte, string palabra)
-        {
-            var cantPalabras = parte.Split().Count();
-            return parte.Contains(palabra) && parte.Length > palabra.Length + 2 && cantPalabras > 4 && parte.Sum(letra => letra == ',' ? 1 : 0) <= 3 && cantPalabras > parte.HowManyOcurrencies(palabra);
-        }
-
-        /// <summary>
-        /// Busca en la tabla de traducción de etiquetas si existe alguna etiqueta Penn Treebank para la etiqueta Cobuild posibleEtiquetaCobuild
-        /// </summary>
-        private static string ObtenerEtiquetaPennTreebank(string posibleEtiquetaCobuild)
-        {
-            string etiquetaPennTreebank = null;
-            posibleEtiquetaCobuild = posibleEtiquetaCobuild.TrimEnd();
-            var posiblesTags = tablaDeTraducciónDeEtiquetas.Where(t => t.Key.StartsWith(posibleEtiquetaCobuild));
-            
-            if (tablaDeTraducciónDeEtiquetas.ContainsKey(posibleEtiquetaCobuild))
-                etiquetaPennTreebank = tablaDeTraducciónDeEtiquetas[posibleEtiquetaCobuild];
-            else if (posiblesTags.Any())
-                etiquetaPennTreebank = posiblesTags.First().Value;
-
-            return etiquetaPennTreebank;
-        }
-
-        private static void ExtraerDatos(string texto, TextWriter tw)
-        {
-            var indice = 0;
-            string bloque, datos = string.Empty;
-
-            while (indice != -1)
-            {
-                bloque = ObtenerBloque(texto, ref indice);
-                if (bloque != string.Empty)
-#if HacerLegible
-                    	datos = HacerLegiblElBloque(bloque);
-#else
-                    datos = ExtraerDatosDeLaEntrada(bloque);
-                if (!string.IsNullOrEmpty(datos))
-                    tw.Write(datos);
-#endif
-            }
-        }
-
-        public static void ExtraerDatos(string archCobuild, string archSalida)
+        public static void ExtraerLaInformaciónDeCobuild(string archCobuild, string archSalida)
         {
             var texto = File.ReadAllText(archCobuild);
             TextWriter tw = new StreamWriter(archSalida);
-            ExtraerDatos(texto, tw);
+            ExtraerLaInformaciónDeCobuild(texto, tw);
+            tw.WriteLine("Cantidad de palabras y signos puntuación: " + CantidadDePalabras + CantidadDeSignosDePuntuación);
+            tw.WriteLine("Cantidad de signos de puntuación: " + CantidadDeSignosDePuntuación);
+            tw.WriteLine("Cantidad de palabras: " + CantidadDePalabras);           
+            tw.WriteLine("Cantidad de palabras etiquetadas: " + CantidadDePalabrasEtiquetadas);            
             tw.Close();
         }
+        private static void ExtraerLaInformaciónDeCobuild(string texto, TextWriter tw)
+        {
+            var indice = 0;
+            string entradaCobuild, informaciónExtraída = string.Empty;
 
-        private static string ExtraerDatosDeLaEntrada(string entrada)
+            while (indice != -1)
+            {
+                entradaCobuild = ObtenerEntrada(texto, ref indice);
+                if (entradaCobuild != string.Empty)
+#if HacerLegible
+                    	datos = HacerLegiblElBloque(bloque);
+#else
+                    informaciónExtraída = ExtraerInformaciónDeLaEntrada(entradaCobuild);
+                if (!string.IsNullOrEmpty(informaciónExtraída))
+                    tw.Write(informaciónExtraída);
+#endif
+            }
+        }
+        /// <summary>
+        /// Obtiene la entrada de COBUILD a partir del indice pasado por parametro
+        /// Actualiza el indice apuntando a la próxima entrada
+        /// </summary>
+        private static string ObtenerEntrada(string texto, ref int indice)
+        {
+            var salida = string.Empty;
+            var inicio = texto.IndexOf(comienzoDeBloque, indice);
+            if (inicio != -1)
+            {
+                var fin = texto.IndexOf(finDeBloque, inicio);
+                indice = fin;
+                if (inicio != -1 && fin != -1)
+                    salida = texto.Substring(inicio, fin - inicio + 1);
+            }
+            else
+                indice = -1;
+
+            return salida;
+        }
+
+        /// <summary>
+        /// Dada una entrada de Cobuild, extrae la información almacenada (palabras y tags)
+        /// </summary>
+        private static string ExtraerInformaciónDeLaEntrada(string entrada)
         {
             var líneas = entrada.Split('\n');
-            var palabra = líneas[1].TrimEnd();
-            if (palabra.Contains(", "))
-                palabra = palabra.Substring(0, palabra.IndexOf(", "));
             var salida = "";
+
             if (líneas.Length > 2)
             {
+                var palabra = líneas[1].Split(',')[0].TrimEnd();//Pueden venir cosas del estilo: A, a
                 var formasDeLaPalabra = líneas[2].Split(',').Select(forma => forma.Trim()).ToList();
-                formasDeLaPalabra.Add(palabra);
-                var escribiLaPalabra = false;
+                var palabras = formasDeLaPalabra.Unir(palabra);
                 
-
                 for (var i = 2; i < líneas.Length - 1; i++)
                 {
                     var línea = líneas[i].TrimEnd();
 
-                    if (EsEjemplo(línea, formasDeLaPalabra))
+                    if (EsEjemploODefinición(línea, palabras))
                     {
-                        var etiquetaPennTreebank = ObtenerEtiquetaPennTreebank(líneas, i + 1);//Busca en la entrada, (en cada renglon) si hay alguna palabra que sea un tipo de palabra. Es decir si esta en el diccionario de tipos, y si es asi lo traduce al tipo correspondiente.
+                        var etiquetaPennTreebank = ObtenerEtiquetaPennTreebank(líneas, i + 1);//Busca en las próximas líneas la etiqueta Cobuild para la entrada. Es decir, una línea que esté en la tabla de traducción de etiquetas. Luego traduce esa etiqueta Cobuild en la etiqueta Penn Treebak correspondiente.
                         if (!string.IsNullOrEmpty(etiquetaPennTreebank))
                         {
-                            if (!escribiLaPalabra)
-                                escribiLaPalabra = true;
-
-                            var etiquetasObtenidas = InferirEtiquetasParaLasFormasDeLaPalabra(formasDeLaPalabra, palabra, etiquetaPennTreebank);
-                            etiquetasObtenidas.AddIfNoExists(palabra.ToLower(), etiquetaPennTreebank);
-                            salida += ObtenerSalida(línea, etiquetasObtenidas);
+                            var etiquetasInferidas = InferirEtiquetasParaLasFormasDeLaPalabra(formasDeLaPalabra, palabra, etiquetaPennTreebank);
+                            etiquetasInferidas.AgregarSiNoExiste(palabra, etiquetaPennTreebank);
+                            salida += GenerarSalidaEtiquetada(línea, etiquetasInferidas);
                         }
                     }
                 }
@@ -235,12 +213,36 @@ namespace ConsoleApplication1
 
             return salida;
         }
+       
 
         /// <summary>
-        ///   Obtiene una lista con cada palabra del ejemplo. En la palabra del ejemplo que es la entrada del diccionario, le pone el tipo.
+        /// Indica si la línea es un ejemplo o definición de Cobuild;
+        /// </summary>
+        private static bool EsEjemploODefinición(string línea, IEnumerable<string> formasDeLaPalabra)
+        {
+            return formasDeLaPalabra.Any(p => EsEjemploODefinición(línea, p));
+        }
+
+        /// <summary>
+        /// Indica si la línea es un ejemplo o definición de Cobuild;
+        /// si la linea contiene a la palabra 
+        /// y tiene al menos 2 letras más que la palabra
+        /// y tiene al menos 4 palabras
+        /// y tiene como máximo 3 comas
+        /// y tiene al menos una palabra que no es la 'palabra'
+        /// </summary>
+        private static bool EsEjemploODefinición(string línea, string palabra)
+        {
+            var cantPalabras = línea.Split().Count();
+            return línea.Contains(palabra) && línea.Length > palabra.Length + 2 && cantPalabras > 4 && línea.Sum(letra => letra == ',' ? 1 : 0) <= 3 && cantPalabras > línea.CantidadDeOcurrencias(palabra);
+        }
+
+        
+        /// <summary>
+        ///   Obtiene una lista con cada palabra del ejemplo. En la palabra o formas de palabra para las que se obtuvieron etiquetas, le asigna la etiqueta correspondiente.
         ///   Tiene en cuenta signos de puntuacion al final y al principio.
         /// </summary>
-        private static string ObtenerSalida(string ejemplo, Dictionary<string, string> etiquetas)
+        private static string GenerarSalidaEtiquetada(string ejemplo, Dictionary<string, string> etiquetas)
         {
             var salida = string.Empty;
 
@@ -263,6 +265,7 @@ namespace ConsoleApplication1
                 {
                     palabra = palabra.Substring(3);
                     salida += "...\n";
+                    CantidadDeSignosDePuntuación++;
                 }
 
                 if (palabra.EndsWith("..."))
@@ -284,16 +287,25 @@ namespace ConsoleApplication1
                 }
 
                 salida += parteOriginalSinPuntuacion;
+                CantidadDePalabras++;
 
                 var parteSinPunt = parteOriginalSinPuntuacion.ToLower();
 
                 if (etiquetas.ContainsKey(parteSinPunt))
-                    salida += "\t" + Desambiguar(parteSinPunt, palabrasDelEjemplo, i, etiquetas[parteSinPunt]);
+                {
+                    salida += "\t" + etiquetas[parteSinPunt];
+                    CantidadDePalabrasEtiquetadas++;
+                }
+                    
 
                 salida += "\n";
 
                 if (hayPuntuacion)
+                {
                     salida += puntuacionFinal + "\n";
+                    CantidadDeSignosDePuntuación++;
+                }
+                    
             }
             return salida;
         }
@@ -323,44 +335,9 @@ namespace ConsoleApplication1
                         break;
                 }
                 if (etiquetaInferida != string.Empty)
-                    etiquetasInferidas.AddIfNoExists(forma.ToLower(), etiquetaInferida);
+                    etiquetasInferidas.AgregarSiNoExiste(forma.ToLower(), etiquetaInferida);
             }
             return etiquetasInferidas;
-        }
-
-        private static string ObtenerBloque(string texto, ref int indice)
-        {
-            var salida = string.Empty;
-            var inicio = texto.IndexOf(comienzoDeBloque, indice);
-            if (inicio != -1)
-            {
-                var fin = texto.IndexOf(finDeBloque, inicio);
-                indice = fin;
-                if (inicio != -1 && fin != -1)
-                    salida = texto.Substring(inicio, fin - inicio + 1);
-            }
-            else
-                indice = -1;
-
-            return salida;
-        }
-        
-        /// <summary>
-        /// Busca en la entrada, (en cada renglón) si hay alguna palabra que sea un tag COBUILD. Es decir; 
-        /// si está en la tabla de traducción de etiquetas, y si es así lo traduce con la etiqueta Penn Treebank correspondiente.
-        /// </summary>
-        private static string ObtenerEtiquetaPennTreebank(string[] líneas, int i, out string líneaDeDondeSeObtuvoLaEtiqueta)
-        {
-            líneaDeDondeSeObtuvoLaEtiqueta = string.Empty;
-            string etiquetaPennTreebankObtenida = null;
-
-            for (; i < líneas.Length && etiquetaPennTreebankObtenida == null; i++)
-            {
-                líneaDeDondeSeObtuvoLaEtiqueta = líneas[i];
-                etiquetaPennTreebankObtenida = ObtenerEtiquetaPennTreebank(líneaDeDondeSeObtuvoLaEtiqueta);            
-            }
-
-            return etiquetaPennTreebankObtenida;
         }
 
         /// <summary>
@@ -373,5 +350,40 @@ namespace ConsoleApplication1
             return ObtenerEtiquetaPennTreebank(líneas, i, out líneaDeDondeSeObtuvoLaEtiqueta);           
         }
         #endregion
+
+        /// <summary>
+        /// Busca en la entrada, (en cada renglón) si hay alguna palabra que sea un tag COBUILD. Es decir; 
+        /// si está en la tabla de traducción de etiquetas, y si es así lo traduce con la etiqueta Penn Treebank correspondiente.
+        /// </summary>
+        private static string ObtenerEtiquetaPennTreebank(string[] líneas, int i, out string líneaDeDondeSeObtuvoLaEtiqueta)
+        {
+            líneaDeDondeSeObtuvoLaEtiqueta = string.Empty;
+            string etiquetaPennTreebankObtenida = null;
+
+            for (; i < líneas.Length && etiquetaPennTreebankObtenida == null; i++)
+            {
+                líneaDeDondeSeObtuvoLaEtiqueta = líneas[i];
+                etiquetaPennTreebankObtenida = ObtenerEtiquetaPennTreebank(líneaDeDondeSeObtuvoLaEtiqueta);
+            }
+
+            return etiquetaPennTreebankObtenida;
+        }
+        /// <summary>
+        /// Busca en la tabla de traducción de etiquetas si existe alguna etiqueta Penn Treebank para la etiqueta Cobuild posibleEtiquetaCobuild
+        /// </summary>
+        private static string ObtenerEtiquetaPennTreebank(string posibleEtiquetaCobuild)
+        {
+            string etiquetaPennTreebank = null;
+            posibleEtiquetaCobuild = posibleEtiquetaCobuild.TrimEnd();
+            var posiblesEtiquetasPennTreebank = tablaDeTraducciónDeEtiquetas.Where(t => t.Key.StartsWith(posibleEtiquetaCobuild));
+
+            if (tablaDeTraducciónDeEtiquetas.ContainsKey(posibleEtiquetaCobuild))
+                etiquetaPennTreebank = tablaDeTraducciónDeEtiquetas[posibleEtiquetaCobuild];
+            else if (posiblesEtiquetasPennTreebank.Any())
+                etiquetaPennTreebank = posiblesEtiquetasPennTreebank.First().Value;
+
+            return etiquetaPennTreebank;
+        }
+
     }
 }

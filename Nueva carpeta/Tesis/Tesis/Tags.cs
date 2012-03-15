@@ -15,7 +15,6 @@ namespace ConsoleApplication1
             return resultado;
         }
 
-
         public static int ObtenerCantidadDeErrores(this List<Tags> matrizDeConf, string tagCol, string tagFila)
         {
             foreach (var tags in matrizDeConf)
@@ -99,7 +98,7 @@ namespace ConsoleApplication1
 
         public void AgregarPalabra(string palabra)
         {
-            if(Palabras.AddIfNoExists(palabra, 1))
+            if(Palabras.AgregarSiNoExiste(palabra, 1))
                 Palabras[palabra]++;
 
         }
