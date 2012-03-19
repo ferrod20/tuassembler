@@ -223,10 +223,6 @@ namespace ConsoleApplication1
 
         #region Variables de clase
         private static string cobuildOriginalLegible = @"Datos\Extraccion\Cobuild.original.legible";
-        private static string cobuildExtraido = @"Datos\Extraccion\Cobuild.extracted";
-        private static string cobuildTaggeado = @"Datos\Extraccion\Cobuild.tagged";
-        private static string cobuildFinal = @"Datos\Extraccion\Cobuild.final";
-        private static string matrizDeConfCobuild = @"Datos\Extraccion\Cobuild.mConf";
         #endregion
 
         #region Metodos
@@ -264,44 +260,127 @@ namespace ConsoleApplication1
             return salida;
         }
 
-        private static void Main()
+        private static void Main(string[] args)
         {
-            //HacerLegibleCobuild();
-            Extractor.ExtraerLaInformaciónDeCobuild(cobuildOriginalLegible, cobuildExtraido);            
-            Comparador.Comparar(cobuildTaggeado, cobuildExtraido, matrizDeConfCobuild);
-            UnirCobuildExtraidoConCobuildTaggeado();
-
-            //Comparador.Comparar(@"Datos\WSJ\wsj.gold", @"Datos\Taggeado\wsj.tagged", @"Datos\Mediciones\wsj.mConf");
-            //Comparador.Comparar(@"Datos\WSJ\wsj.gold", @"Datos\Taggeado\wsjMasCobuild.tagged", @"Datos\Mediciones\wsjMasCobuild.mConf");
-
-            //Comparador.Comparar(@"Datos\WSJ\wsjComplementoC1.gold", @"Datos\Taggeado\wsjComplementoC1.tagged", @"Datos\Mediciones\wsjComplementoC1.mConf");
-            //Comparador.Comparar(@"Datos\WSJ\wsjComplementoC2.gold", @"Datos\Taggeado\wsjComplementoC2.tagged", @"Datos\Mediciones\wsjComplementoC2.mConf");
-            //Comparador.Comparar(@"Datos\WSJ\wsjComplementoC3.gold", @"Datos\Taggeado\wsjComplementoC3.tagged", @"Datos\Mediciones\wsjComplementoC3.mConf");
-            //Comparador.Comparar(@"Datos\WSJ\wsjComplementoC4.gold", @"Datos\Taggeado\wsjComplementoC4.tagged", @"Datos\Mediciones\wsjComplementoC4.mConf");
-
-            //Comparador.Comparar(@"Datos\WSJ\wsjComplementoC1.gold", @"Datos\Taggeado\wsjComplementoC1MasCobuild.tagged", @"Datos\Mediciones\wsjComplementoC1MasCobuild.mConf");
-            //Comparador.Comparar(@"Datos\WSJ\wsjComplementoC2.gold", @"Datos\Taggeado\wsjComplementoC2MasCobuild.tagged", @"Datos\Mediciones\wsjComplementoC2MasCobuild.mConf");
-            //Comparador.Comparar(@"Datos\WSJ\wsjComplementoC3.gold", @"Datos\Taggeado\wsjComplementoC3MasCobuild.tagged", @"Datos\Mediciones\wsjComplementoC3MasCobuild.mConf");
-            //Comparador.Comparar(@"Datos\WSJ\wsjComplementoC4.gold", @"Datos\Taggeado\wsjComplementoC4MasCobuild.tagged", @"Datos\Mediciones\wsjComplementoC4MasCobuild.mConf");
-
-            //Comparador.Comparar(@"Datos\WSJ\wsjM1.gold", @"Datos\Taggeado\wsjM1.tagged", @"Datos\Mediciones\wsjM1.mConf");
-            //Comparador.Comparar(@"Datos\WSJ\wsjM2.gold", @"Datos\Taggeado\wsjM2.tagged", @"Datos\Mediciones\wsjM2.mConf");
-            //Comparador.Comparar(@"Datos\WSJ\wsjM1.gold", @"Datos\Taggeado\wsjM1MasCobuild.tagged", @"Datos\Mediciones\wsjM1MasCobuild.mConf");
-            //Comparador.Comparar(@"Datos\WSJ\wsjM2.gold", @"Datos\Taggeado\wsjM2MasCobuild.tagged", @"Datos\Mediciones\wsjM2MasCobuild.mConf");
             
+            if(args.Length == 0)
+                Console.Write("-help para obtener información de los comandos disponibles");
+            else
+            {
+                var comando = args[0];
+                Console.WriteLine();
+                args = args.Select(a => a.Replace("\"", "")).ToArray();
+                switch (comando)
+                {
+                    
+                    case "-extraer":
+                        Extraer(args);
+                        break;
+                    case "-unir":
+                        Unir(args);
+                        break;
+                    case "-comparar":
+                        Comparar(args);
+                        break;
+                    case "-help":
+                        Help();
+                        break;
+                    default:
+                        Console.WriteLine("-help para obtener información de los comandos disponibles");
+                        break;
+                }
+            }
         }
 
-        private static void UnirCobuildExtraidoConCobuildTaggeado()
+        private static void Help()
+        {
+            Console.WriteLine("-help: este comando de ayuda");
+            Console.WriteLine();
+            Console.WriteLine("-extraer <CobuildOriginal> <Salida> <SalidaInfo>");
+            Console.WriteLine("\t Extrae la informacion gramatical de CobuildOriginal");
+            Console.WriteLine("\t CobuildOriginal: nombre del archivo cobuild original");
+            Console.WriteLine("\t Salida: nombre del archivo en donde se extraerá la información de cobuild");
+            Console.WriteLine(
+                "\t SalidaInfo: nombre del archivo en donde se guardará información del archivo extraido: cantidad de palabras, cantidad de etiquetas, etc.");
+            Console.WriteLine();
+            Console.WriteLine("-unir <CobuildExtraido> <CobuildEtiquetado> <Salida>");
+            Console.WriteLine(
+                "\t Une la información de etiquetas de cobuild con cobuild etiquetado. Manteniendo las etiquetas de cobuild.");
+            Console.WriteLine("\t CobuildExtraido: nombre del archivo extraido de cobuild");
+            Console.WriteLine("\t CobuildEtiquetado: nombre del archivo cobuild etiquetado");
+            Console.WriteLine("\t Salida: nombre del archivo cobuild etiquetado");
+            Console.WriteLine();
+            Console.WriteLine("-comparar <GoldStandard> <ArchivoAComparar> <Salida> [-l]");
+            Console.WriteLine("\t Compara el archivo GoldStandard contra el ArchivoAComparar generando una matriz de confusion en Salida.");
+            Console.WriteLine("\t -l: genera una matriz de confusión para latex");
+        }
+
+        private static void Comparar(string[] args)
+        {
+            if (args.Length < 4)
+            {
+                Console.WriteLine("No se han definido los archivos <GoldStandard> <ArchivoParaComparar> y <Salida>");
+                Console.WriteLine("-help para obtener información de los comandos disponibles");
+            }
+            else
+            {
+                Console.WriteLine("Comparando: " + Path.GetFileName(args[1]) + "(gold standard) contra " +
+                                  Path.GetFileName(args[2]));
+                Console.WriteLine("Salida: " + Path.GetFileName(args[3]));
+                Console.WriteLine();
+                var generarMatrizDeConfParaLatex = args.Length > 4 && args[3] == "-l";
+
+                Comparador.Comparar(args[1], args[2], args[3], generarMatrizDeConfParaLatex);
+            }
+        }
+
+        private static void Unir(string[] args)
+        {
+            if (args.Length < 4)
+            {
+                Console.WriteLine("No se han definido los archivos <CobuildExtraido> <CobuildEtiquetado> y <Salida>");
+                Console.WriteLine("-help para obtener información de los comandos disponibles");
+            }
+            else
+            {
+
+                Console.WriteLine("Uniendo: " + Path.GetFileName(args[1]) + " con " + Path.GetFileName(args[2]));
+                Console.WriteLine("Salida: " + Path.GetFileName(args[3]));
+                Console.WriteLine();
+
+                UnirCobuildExtraidoConCobuildTaggeado(args[1], args[2], args[3]);
+            }
+        }
+
+        private static void Extraer(string[] args)
+        {
+            if (args.Length < 4)
+            {
+                Console.WriteLine("No se han definido los archivos <CobuildOriginal> <CobuildExtraido> y <CobuildInfoExtraido>");
+                Console.WriteLine("-help para obtener información de los comandos disponibles");
+            }
+            else
+            {
+                Console.WriteLine("Extrayendo: " + Path.GetFileName(args[1]));
+                Console.WriteLine("Salida: " + Path.GetFileName(args[2]));
+                Console.WriteLine("Info: " + Path.GetFileName(args[3]));
+                Console.WriteLine();
+
+                Extractor.ExtraerLaInformaciónDeCobuild(args[1], args[2], args[3]);
+            }
+        }
+
+        private static void UnirCobuildExtraidoConCobuildTaggeado(string cobuildExtraido, string cobuildEtiquetado, string cobuildFinal)
         {
             var textoExtraido = new StreamReader(cobuildExtraido);
-            var textoTaggeado = new StreamReader(cobuildTaggeado);
+            var textoEtiquetado = new StreamReader(cobuildEtiquetado);
 
             TextWriter salida = new StreamWriter(cobuildFinal, false, Encoding.Default);
 
             var líneaExtraída = textoExtraido.ReadLine();
-            var líneaTaggeada = textoTaggeado.ReadLine();
+            var etiquetaEtiquetada = textoEtiquetado.ReadLine();
 
-            while (líneaExtraída != null && líneaTaggeada != null)
+            while (líneaExtraída != null && etiquetaEtiquetada != null)
             {
                 if( líneaExtraída != string.Empty )
                 {
@@ -312,18 +391,18 @@ namespace ConsoleApplication1
                     if (partesExtraídas.Count() > 1 && !string.IsNullOrEmpty(etiquetaExtraída) && etiquetaExtraída != "VBD|VBN")
                         salida.Write(etiquetaExtraída);
                     else
-                        salida.Write(líneaTaggeada.Split().Last());
+                        salida.Write(etiquetaEtiquetada.Split().Last());
 
                     salida.WriteLine();
                 }
 
                 líneaExtraída = textoExtraido.ReadLine();
-                líneaTaggeada = textoTaggeado.ReadLine();    
+                etiquetaEtiquetada = textoEtiquetado.ReadLine();    
             }
 
             salida.Close();
             textoExtraido.Close();
-            textoTaggeado.Close();
+            textoEtiquetado.Close();
         }
 
         private static void HacerLegibleCobuild()

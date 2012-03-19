@@ -74,21 +74,21 @@ namespace ConsoleApplication1
                 }    
             }
         }
-        public static void Comparar(string archGoldStandard, string archParaComparar, string salidaMatrizDeConf)
+        public static void Comparar(string archGoldStandard, string archParaComparar, string salidaMatrizDeConf, bool generarMatrizDeConfusionParaLatex)
         {
-            Console.WriteLine("Comparando: " + Path.GetFileName(archGoldStandard) + " contra " + Path.GetFileName(archParaComparar) );
-            Console.WriteLine("Salida: " + Path.GetFileName(salidaMatrizDeConf) );
-            Console.WriteLine();
             //matrizDeConfusión = new Dictionary<Tags, int>(EqualityComparer<Tags>.Default);
             matrizDeConfusión = new List<Tags>();
 
             LeerArchivosParaComparar(archGoldStandard, archParaComparar);
-            //GrabarComparación(salidaMatrizDeConf);
-            GrabarMatrizDeConfParaLatex(salidaMatrizDeConf);
+            if(generarMatrizDeConfusionParaLatex)
+                GenerarMatrizDeConfParaLatex(salidaMatrizDeConf);
+            else
+                GenerarMatrizDeConfusión(salidaMatrizDeConf);
+
             Console.WriteLine();
             Console.WriteLine();
         }
-        private static void GrabarMatrizDeConfParaLatex(string archivoDeSalida)
+        private static void GenerarMatrizDeConfParaLatex(string archivoDeSalida)
         {
             TextWriter salida = new StreamWriter(archivoDeSalida);
 
@@ -113,7 +113,7 @@ salida.Write(
 @"}
 \caption{Ejemplo de matriz de confusión}\\	
 \hline
- &	");
+ \backslashbox{\scriptsize{COBUILD}\kern-1em}{\kern-1em \scriptsize{WSJ}}  &	");
 
             foreach (var tag in tags)
                 salida.Write("\\textbf{" + tag + "}	&   ");
@@ -130,7 +130,7 @@ salida.Write(@"\hline
                 foreach (var tagFila in tags)
                 {
                     salida.Write(" & ");
-                    var error = matrizDeConfusión.ObtenerCantidadDeErrores(tagCol, tagFila);
+                    var error = matrizDeConfusión.ObtenerCantidadDeErrores(tagCol, tagFila);//tag columna es tag de prueba, tagFila es tag gold standard
                     if (error == 0)
                         salida.Write("-");
                     else
@@ -150,7 +150,7 @@ salida.Write(@"\hline
 
             salida.Close();
         }
-        private static void GrabarComparación(string archivoDeSalida)
+        private static void GenerarMatrizDeConfusión(string archivoDeSalida)
         {
             TextWriter salida = new StreamWriter(archivoDeSalida);
 
@@ -183,30 +183,30 @@ salida.Write(@"\hline
             cantTags = 0;
             
             var aGoldStandard = File.ReadAllText(archivoGoldStandard).Split('\n');
-            var aPrueba = File.ReadAllText(archivoParaComparar).Split('\n');
+            var aParaComparar = File.ReadAllText(archivoParaComparar).Split('\n');
             
             var w = 0;
             var punto = 1;
             var tamGoldStandard = aGoldStandard.Length;
             var parte = tamGoldStandard/20;
-            while (i < tamGoldStandard && j < aPrueba.Length)
+            while (i < tamGoldStandard && j < aParaComparar.Length)
             {
-                if (aGoldStandard[i].Split('\t')[0] == aPrueba[j].Split('\t')[0])
+                if (aGoldStandard[i].Split('\t')[0] == aParaComparar[j].Split('\t')[0])
                 {
-                    Comparar(aGoldStandard[i], aPrueba[j]);
+                    Comparar(aGoldStandard[i], aParaComparar[j]);
                     cantTags++;
                     w = 0;
                 }
                 i++;
                 j++;
-                if (i < tamGoldStandard && j < aPrueba.Length && aGoldStandard[i].Split('\t')[0] != aPrueba[j].Split('\t')[0])                    
+                if (i < tamGoldStandard && j < aParaComparar.Length && aGoldStandard[i].Split('\t')[0] != aParaComparar[j].Split('\t')[0])                    
                     {
                         var jj = j;
                         var ii = i;
                         var jjj = j;
                         var iii = i;
-                        BuscarProximaLinea(aGoldStandard, aPrueba, ref ii, ref jj);
-                        BuscarProximaLinea(aPrueba, aGoldStandard, ref jjj, ref iii);
+                        BuscarProximaLinea(aGoldStandard, aParaComparar, ref ii, ref jj);
+                        BuscarProximaLinea(aParaComparar, aGoldStandard, ref jjj, ref iii);
 
                         if (iii + jjj < ii + jj)
                         {
