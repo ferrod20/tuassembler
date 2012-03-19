@@ -15,10 +15,10 @@ namespace ConsoleApplication1
             return resultado;
         }
 
-        public static int ObtenerCantidadDeErrores(this List<Tags> matrizDeConf, string tagCol, string tagFila)
+        public static int ObtenerCantidadDeErrores(this List<Tags> matrizDeConf, string tagDePrueba, string tagGoldStandard)
         {
             foreach (var tags in matrizDeConf)
-                if (tags.TagDePrueba == tagCol && tags.TagGoldStandard == tagFila)
+                if (tags.TagDePrueba == tagDePrueba && tags.TagGoldStandard == tagGoldStandard)
                     return tags.TotalDePalabras;
 
             return 0;

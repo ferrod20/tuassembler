@@ -129,22 +129,27 @@ namespace ConsoleApplication1
         private static int CantidadDePalabras = 0;
         private static int CantidadDePalabrasEtiquetadas = 0;
         #region Metodos
-        public static void ExtraerLaInformaciónDeCobuild(string archCobuild, string archSalida)
+        public static void ExtraerLaInformaciónDeCobuild(string archCobuild, string archSalida, string archDeInformación)
         {
             var texto = File.ReadAllText(archCobuild);
             TextWriter tw = new StreamWriter(archSalida);
             ExtraerLaInformaciónDeCobuild(texto, tw);
-            tw.WriteLine("Cantidad de palabras y signos puntuación: " + CantidadDePalabras + CantidadDeSignosDePuntuación);
-            tw.WriteLine("Cantidad de signos de puntuación: " + CantidadDeSignosDePuntuación);
-            tw.WriteLine("Cantidad de palabras: " + CantidadDePalabras);           
-            tw.WriteLine("Cantidad de palabras etiquetadas: " + CantidadDePalabrasEtiquetadas);            
             tw.Close();
+
+            TextWriter info = new StreamWriter(archDeInformación);
+            var total = CantidadDePalabras + CantidadDeSignosDePuntuación;
+            info.WriteLine("Cantidad de palabras y signos puntuación: " + total);
+            info.WriteLine("Cantidad de signos de puntuación: " + CantidadDeSignosDePuntuación);
+            info.WriteLine("Cantidad de palabras: " + CantidadDePalabras);
+            info.WriteLine("Cantidad de palabras etiquetadas: " + CantidadDePalabrasEtiquetadas + "\t" + ((CantidadDePalabrasEtiquetadas * 100) / total) + "%");
+
+            info.Close();
         }
         private static void ExtraerLaInformaciónDeCobuild(string texto, TextWriter tw)
         {
             var indice = 0;
             string entradaCobuild, informaciónExtraída = string.Empty;
-
+            
             while (indice != -1)
             {
                 entradaCobuild = ObtenerEntrada(texto, ref indice);
@@ -226,6 +231,7 @@ namespace ConsoleApplication1
         /// <summary>
         /// Indica si la línea es un ejemplo o definición de Cobuild;
         /// si la linea contiene a la palabra 
+        /// y no contiene al caracter '/' (el caracter '/' se encuentra en la explicación de la pronunciación)
         /// y tiene al menos 2 letras más que la palabra
         /// y tiene al menos 4 palabras
         /// y tiene como máximo 3 comas
@@ -234,7 +240,7 @@ namespace ConsoleApplication1
         private static bool EsEjemploODefinición(string línea, string palabra)
         {
             var cantPalabras = línea.Split().Count();
-            return línea.Contains(palabra) && línea.Length > palabra.Length + 2 && cantPalabras > 4 && línea.Sum(letra => letra == ',' ? 1 : 0) <= 3 && cantPalabras > línea.CantidadDeOcurrencias(palabra);
+            return línea.Contains(palabra) && !línea.Contains('/') && línea.Length > palabra.Length + 2 && cantPalabras > 4 && línea.Sum(letra => letra == ',' ? 1 : 0) <= 3 && cantPalabras > línea.CantidadDeOcurrencias(palabra);
         }
 
         

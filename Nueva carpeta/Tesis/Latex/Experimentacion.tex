@@ -69,12 +69,12 @@ y los ejemplos\\
 \\
 Se puede notar la información gramatical expresada mediante las etiquetas NN y NNS para las palabras \textsl{cat} y \textsl{cats} respectivamente.
 La idea de este experimento será comparar estas etiquetas contra las etiquetas asignadas por el etiquetador automático TnT. Entonces se tomará este corpus plano (sin etiquetas), se lo etiquetará utilizando TnT entrenado con el corpus de entrenamiento Wall Street Journal (de ahora en más WSJ) \footnote{Wall Street Journal es un corpus anotado, parte del Penn Treebank} y luego se realizará la comparación.\\
-La matriz de confusión\footnote{Las matrices de confusión presentadas de aquí en adelante contienen las primeras 15 etiquetas de mayor error} generada a partir de dicha comparación es la siguiente:
+La matriz de confusión\footnote{Las matrices de confusión presentadas de aquí en adelante contienen las primeras 10 etiquetas de mayor error} generada a partir de dicha comparación es la siguiente:
 
 \begin{longtable}{| l | c | c | c | c | c | c | c | c | c | c | }
 \caption{Matriz de confusión para etiquetas extraídas de COBUILD vs WSJ}\\	
 \hline
- &	\textbf{VBD}	&   \textbf{VBN}	&   \textbf{VBP}	&   \textbf{VB}	&   \textbf{NN}	&   \textbf{JJ}	&   \textbf{VBZ}	&   \textbf{NNS}	&   \textbf{CC}	&   \textbf{NNP}	&   \hline
+ \backslashbox{\scriptsize{COBUILD}\kern-1em}{\kern-1em \scriptsize{WSJ}} &	\textbf{VBD}	&   \textbf{VBN}	&   \textbf{VBP}	&   \textbf{VB}	&   \textbf{NN}	&   \textbf{JJ}	&   \textbf{VBZ}	&   \textbf{NNS}	&   \textbf{CC}	&   \textbf{NNP}	&   \hline
 \endhead
 \hline
 \endfoot
