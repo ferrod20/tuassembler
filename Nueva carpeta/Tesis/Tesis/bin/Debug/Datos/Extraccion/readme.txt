@@ -1,4 +1,4 @@
-COBUILD.DAT -> Cobuild.original -> Cobuild.original.legible -> Cobuild.extracted -> (TNT con CORPUSgenia3) -> Cobuild.tagged 
+COBUILD.DAT -> Cobuild.original -> Cobuild.original.legible -> Cobuild.extracted -> (TNT entrenado con WSJ) -> Cobuild.tagged 
 
-Cobuild.extracted y Cobuild.tagged -> Cobuild.final
-Cobuild.extracted y Cobuild.tagged -> Cobuild.mConf
+Cobuild.extracted combinado con Cobuild.tagged (manteniendo tags de Cobuild, salvo VBN|VBD) -> Cobuild.final
+Cobuild.extracted contra Cobuild.tagged -> Cobuild.mConf
