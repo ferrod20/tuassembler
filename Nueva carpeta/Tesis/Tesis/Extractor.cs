@@ -194,11 +194,16 @@ namespace ConsoleApplication1
 
             if (líneas.Length > 2)
             {
+                var i = 2;
+
                 var palabra = líneas[1].Split(',')[0].TrimEnd();//Pueden venir cosas del estilo: A, a
-                var formasDeLaPalabra = líneas[2].Split(',').Select(forma => forma.Trim()).ToList();
+                var formasDeLaPalabra = líneas[2].Split(',').Select(forma => forma.Trim()).ToList();//A veces no hay formas de la palabra en la entrada (ver entrada ABC)
+                if(formasDeLaPalabra.Any(f=>f.Split().Length>2))
+                    formasDeLaPalabra.Clear();
+                    
                 var palabras = formasDeLaPalabra.Unir(palabra);
-                
-                for (var i = 2; i < líneas.Length - 1; i++)
+
+                for (; i < líneas.Length - 1; i++)
                 {
                     var línea = líneas[i].TrimEnd();
 
@@ -208,7 +213,7 @@ namespace ConsoleApplication1
                         if (!string.IsNullOrEmpty(etiquetaPennTreebank))
                         {
                             var etiquetasInferidas = InferirEtiquetasParaLasFormasDeLaPalabra(formasDeLaPalabra, palabra, etiquetaPennTreebank);
-                            etiquetasInferidas.AgregarSiNoExiste(palabra, etiquetaPennTreebank);
+                            etiquetasInferidas.AgregarSiNoExiste(palabra.ToLower(), etiquetaPennTreebank);
                             salida += GenerarSalidaEtiquetada(línea, etiquetasInferidas);
                         }
                     }
@@ -292,19 +297,22 @@ namespace ConsoleApplication1
                         parteOriginalSinPuntuacion = palabra;
                 }
 
-                salida += parteOriginalSinPuntuacion;
-                CantidadDePalabras++;
-
-                var parteSinPunt = parteOriginalSinPuntuacion.ToLower();
-
-                if (etiquetas.ContainsKey(parteSinPunt))
+                if (parteOriginalSinPuntuacion != string.Empty && !parteOriginalSinPuntuacion.Contains('/') && !parteOriginalSinPuntuacion.Contains('*'))
                 {
-                    salida += "\t" + etiquetas[parteSinPunt];
-                    CantidadDePalabrasEtiquetadas++;
-                }
-                    
+                    salida += parteOriginalSinPuntuacion;
+                    CantidadDePalabras++;    
 
-                salida += "\n";
+                    var parteSinPunt = parteOriginalSinPuntuacion.ToLower();
+
+                    if (etiquetas.ContainsKey(parteSinPunt))
+                    {
+                        salida += "\t" + etiquetas[parteSinPunt];
+                        CantidadDePalabrasEtiquetadas++;
+                    }
+                    salida += "\n";
+                }
+
+                
 
                 if (hayPuntuacion)
                 {
