@@ -54,9 +54,9 @@ namespace ConsoleApplication1
                     tagGoldStandard = partesGoldStandard[hasta - 1];
                     hasta--;
                 }
-                    
-                
-                var acierto = tagDePrueba == tagGoldStandard;
+
+
+                var acierto = tagDePrueba == tagGoldStandard || tagDePrueba == "VBD|VBN";
 
                 if (!acierto)
                 {
@@ -167,7 +167,8 @@ salida.Write(@"\hline
 
             foreach (var tags in matrizOrdenada)
             {
-                salida.WriteLine(tags.TagGoldStandard + " " + tags.TagDePrueba + " " + (tags.TotalDePalabras / (double)cantidadDeErrores) * 100 + "%");
+                var porcentaje = (tags.TotalDePalabras/(double) cantidadDeErrores)*100 + "%";
+                salida.WriteLine(tags.TagGoldStandard + " " + tags.TagDePrueba + " " + tags.TotalDePalabras);
                 foreach (var palabra in tags.Palabras.OrderByDescending(s=>s.Value).Take(40))
                     salida.WriteLine("\t" + palabra.Key + " " + palabra.Value);
             }            

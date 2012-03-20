@@ -262,7 +262,6 @@ namespace ConsoleApplication1
 
         private static void Main(string[] args)
         {
-            
             if(args.Length == 0)
                 Console.Write("-help para obtener información de los comandos disponibles");
             else
