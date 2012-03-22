@@ -5,6 +5,244 @@ using System.Linq;
 
 namespace ConsoleApplication1
 {
+    public static class StringHelper
+    {
+        #region Métodos
+        //public static string SubstringEntre(this string str, char a, char b)
+        //{
+        //    var inicio = str.IndexOf(a);
+        //    var fin = str.IndexOf(b, inicio + 1);
+        //    var hasta = fin - (inicio + 1);
+        //    return str.Substring(inicio + 1, hasta);
+        //}
+        //public static string SubstringEntre(this string str, string a, string b)
+        //{
+        //    var inicio = str.IndexOf(a);
+        //    var fin = str.IndexOf(b, inicio + 1);
+        //    var hasta = fin - (inicio + a.Length);
+        //    return str.Substring(inicio + a.Length, hasta);
+        //}
+        //public static bool EsConsonante(this char c)
+        //{
+        //    return char.IsLetter(c) && !c.EsVocal();
+        //}
+
+        //public static bool EsVocal(this char c)
+        //{
+        //    return c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u' || c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U';
+        //}
+
+        public static bool AgregarSiNoExiste<A, B>(this IDictionary<A, B> dic, A key, B value)
+        {
+            var exists = dic.ContainsKey(key);
+            if (!exists)
+                dic.Add(key, value);
+
+            return exists;
+        }
+
+        public static IEnumerable<T> Unir<T>(this IEnumerable<T> lista, T elemento)
+        {
+            return lista.Concat(new List<T> { elemento });
+        }
+
+        public static decimal CantidadDeOcurrencias(this string texto, string palabra)
+        {
+            var cantidadDeOcurrencias = 0;
+            var índice = texto.IndexOf(palabra);
+
+            while (índice != -1)
+            {
+                cantidadDeOcurrencias++;
+                if (palabra.Length - 1 < índice + 1)
+                    índice = -1;
+                else
+                    índice = texto.IndexOf(palabra, índice + 1);
+            }
+            return cantidadDeOcurrencias;
+        }
+
+        public static bool EsAlgunaDeEstas(this string str, params string[] pals)
+        {
+            return pals.Any(pal => str.ToLower() == pal.ToLower());
+        }
+
+        /// <summary>
+        /// Reconoce strings como: "tramo." y "tramo..."
+        /// Devuelve la palabra sin puntuación ("tramo" en este caso) y la puntuación final "." o "..."
+        /// </summary>
+        public static string HayPuntuaciónFinal(this string palabra, out string puntuaciónFinal)
+        {
+            var palabraSinPuntuación = palabra;
+            puntuaciónFinal = string.Empty;
+
+            if (palabra != string.Empty)
+            {
+                if (palabra.EndsWith("..."))
+                {
+                    palabraSinPuntuación = palabra.Substring(0, palabra.Length - 3);
+                    puntuaciónFinal = "...";
+                }
+                else if (char.IsPunctuation(palabra.Last()))
+                {
+                    palabraSinPuntuación = palabra.Substring(0, palabra.Length - 1);
+                    puntuaciónFinal = palabra.Last().ToString();
+                }
+            }
+
+            return palabraSinPuntuación;
+        }
+
+        /// <summary>
+        /// Si la palabra tiene espacios
+        /// Reemplaza los espacios de la palabra con el string especial: "\_/"
+        /// Devuelve el ejemplo reemplazado   
+        /// </summary>
+        public static string ReemplazarEspacioPorStringEspecial(this string ejemplo, string palabra)
+        {
+            var palabra2 = palabra.ReemplazarEspacioPorStringEspecial();
+            return ejemplo.Replace(palabra, palabra2);
+        }
+
+        /// <summary>
+        /// Reemplaza los espacios " " con el string especial "\_/"
+        /// </summary>
+        public static string ReemplazarEspacioPorStringEspecial(this string p)
+        {
+            return p.Replace(" ", @"\_/");
+        }
+
+        /// <summary>
+        /// Reemplaza los "\_/" con un espacio " " 
+        /// </summary>
+        public static string ReemplazarStringEspecialPorEspacio(this string p)
+        {
+            return p.Replace(@"\_/", " ");
+        }
+        #endregion
+    }
+
+    public static class InferirTipos
+    {
+        #region Métodos
+        public static bool EsVBP(this string palabra, List<string> palabrasAnteriores)
+        {
+            string ultima = "", anteUltima = "";
+            if (palabrasAnteriores.Count > 0)
+                ultima = palabrasAnteriores.Last();
+            if (palabrasAnteriores.Count > 1)
+                anteUltima = palabrasAnteriores[palabrasAnteriores.Count - 2];
+
+            if (palabrasAnteriores.Count > 0)
+                ultima = palabrasAnteriores.Last();
+
+            return ultima.ToLower() != "to" && anteUltima.ToLower() != "to";
+        }
+
+        public static bool EsJJR(this string palabra, string forma)
+        {
+            return palabra.Length <= forma.Length && forma.ToLower().EndsWith("er") || forma.ToLower().StartsWith("more") || forma.ToLower().StartsWith("less");
+        }
+
+        public static bool EsJJS(this string palabra, string forma)
+        {
+            return palabra.Length <= forma.Length && forma.ToLower().EndsWith("est") || forma.ToLower().StartsWith("most") || forma.ToLower().StartsWith("least");
+        }
+
+        public static bool EsNNS(this string palabra, string forma)
+        {
+            return palabra.Length < forma.Length && forma.ToLower().EndsWith("s");
+        }
+
+        public static bool EsRBR(this string palabra, string forma)
+        {
+            return palabra.Length <= forma.Length && forma.ToLower().EndsWith("er") || forma.ToLower().StartsWith("more") || forma.ToLower().StartsWith("less");
+        }
+
+        public static bool EsRBS(this string palabra, string forma)
+        {
+            return palabra.Length <= forma.Length && forma.ToLower().EndsWith("est") || forma.ToLower().StartsWith("most") || forma.ToLower().StartsWith("least");
+        }
+
+        public static bool EsVBDoVBN(this string palabra, string forma)
+        {
+            return palabra.Length <= forma.Length && forma.ToLower().EndsWith("ed");
+        }
+
+        public static bool EsVBG(this string palabra, string forma)
+        {
+            return palabra.Length <= forma.Length && forma.ToLower().EndsWith("ing");
+        }
+
+        /// <summary>
+        /// Dada una palabra etiquetada como VBD|VBN devuelve true si es VBN; esto es si alguna de las 2 palabras anteriores son have has o had
+        /// </summary>
+        public static bool EsVBN(this string palabra, List<string> palabrasAnteriores)
+        {
+            var ultima = "";
+            var anteUltima = "";
+
+            if (palabrasAnteriores.Count > 0)
+                ultima = palabrasAnteriores.Last();
+            if (palabrasAnteriores.Count > 1)
+                anteUltima = palabrasAnteriores[palabrasAnteriores.Count - 2];
+
+            return ultima.EsAlgunaDeEstas("have", "has", "had") || anteUltima.EsAlgunaDeEstas("have", "has", "had");
+        }
+
+
+        public static bool EsVBZ(this string palabra, string forma)
+        {
+            return palabra.Length <= forma.Length && forma.ToLower().EndsWith("s");
+        }
+
+        /// <summary>
+        ///   A partir de una palabra de tipo JJ, inferir el tipo de la forma
+        /// </summary>
+        public static string InferirTipoJJ(this string palabra, string forma)
+        {
+            var etiquetaInferida = string.Empty;
+            if (palabra.EsJJR(forma))
+                etiquetaInferida = "JJR";
+            else if (palabra.EsJJS(forma))
+                etiquetaInferida = "JJS";
+
+            return etiquetaInferida;
+        }
+
+        public static string InferirTipoNN(this string palabra, string forma)
+        {
+            return palabra.EsNNS(forma) ? "NNS" : "NN";
+        }
+
+        public static string InferirTipoRB(this string palabra, string forma)
+        {
+            var etiquetaInferida = string.Empty;
+            if (palabra.EsRBR(forma))
+                etiquetaInferida = "RBR";
+            else if (palabra.EsRBS(forma))
+                etiquetaInferida = "RBS";
+
+            return etiquetaInferida;
+        }
+
+        public static string InferirTipoVB(this string palabra, string forma)
+        {
+            var etiquetaInferida = string.Empty;
+            if (palabra.EsVBDoVBN(forma))
+                etiquetaInferida = "VBD|VBN";
+            else if (palabra.EsVBG(forma))
+                etiquetaInferida = "VBG";
+            else if (palabra.EsVBZ(forma))
+                etiquetaInferida = "VBZ";
+            else
+                etiquetaInferida = "VB";
+
+            return etiquetaInferida;
+        }
+        #endregion
+    }
+
     internal class Extractor
     {
         #region Constantes
@@ -13,6 +251,9 @@ namespace ConsoleApplication1
         #endregion
 
         #region Variables de clase
+        private static int CantidadDeSignosDePuntuación = 0;
+        private static int CantidadDePalabras = 0;
+        private static int CantidadDePalabrasEtiquetadas = 0;
         /// <summary>
         /// Tabla para traducir etiquetas COBUILD en etiquetas Penn TreeBank
         /// </summary>
@@ -124,24 +365,23 @@ namespace ConsoleApplication1
         {"phrase after noun", ""}, 
         {"phrase + reporting clause", ""}};
         #endregion
+        
+        #region Métodos
 
-        private static int CantidadDeSignosDePuntuación = 0;
-        private static int CantidadDePalabras = 0;
-        private static int CantidadDePalabrasEtiquetadas = 0;
-        #region Metodos
         public static void ExtraerLaInformaciónDeCobuild(string archCobuild, string archSalida, string archDeInformación)
         {
             var texto = File.ReadAllText(archCobuild);
             TextWriter tw = new StreamWriter(archSalida);
+        
             ExtraerLaInformaciónDeCobuild(texto, tw);
             tw.Close();
-
-            TextWriter info = new StreamWriter(archDeInformación);
+            
             var total = CantidadDePalabras + CantidadDeSignosDePuntuación;
+            TextWriter info = new StreamWriter(archDeInformación);
             info.WriteLine("Cantidad de palabras y signos puntuación: " + total);
             info.WriteLine("Cantidad de signos de puntuación: " + CantidadDeSignosDePuntuación);
             info.WriteLine("Cantidad de palabras: " + CantidadDePalabras);
-            info.WriteLine("Cantidad de palabras etiquetadas: " + CantidadDePalabrasEtiquetadas + "\t" + ((CantidadDePalabrasEtiquetadas * 100) / total) + "%");
+            info.WriteLine("Cantidad de palabras etiquetadas: " + CantidadDePalabrasEtiquetadas + "\t( " + ((double)(CantidadDePalabrasEtiquetadas * 100) / ((double)CantidadDePalabras)) + "% )");
 
             info.Close();
         }
@@ -187,7 +427,7 @@ namespace ConsoleApplication1
         /// <summary>
         /// Dada una entrada de Cobuild, extrae la información almacenada (palabras y tags)
         /// </summary>
-        private static string ExtraerInformaciónDeLaEntrada(string entrada)
+        public static string ExtraerInformaciónDeLaEntrada(string entrada)
         {
             var líneas = entrada.Split('\n');
             var salida = "";
@@ -197,7 +437,7 @@ namespace ConsoleApplication1
                 var i = 2;
 
                 var palabra = líneas[1].Split(',')[0].TrimEnd();//Pueden venir cosas del estilo: A, a
-                var formasDeLaPalabra = líneas[2].Split(',').Select(forma => forma.Trim()).ToList();//A veces no hay formas de la palabra en la entrada (ver entrada ABC)
+                var formasDeLaPalabra = líneas[2].Split(',', ';').Select(forma => forma.Trim()).ToList();//A veces no hay formas de la palabra en la entrada (ver entrada ABC)
                 if(formasDeLaPalabra.Any(f=>f.Split().Length>2))
                     formasDeLaPalabra.Clear();
                     
@@ -209,34 +449,33 @@ namespace ConsoleApplication1
 
                     if (EsEjemploODefinición(línea, palabras))
                     {
-                        var etiquetaPennTreebank = ObtenerEtiquetaPennTreebank(líneas, i + 1);//Busca en las próximas líneas la etiqueta Cobuild para la entrada. Es decir, una línea que esté en la tabla de traducción de etiquetas. Luego traduce esa etiqueta Cobuild en la etiqueta Penn Treebak correspondiente.
+                        var etiquetaPennTreebank = ObtenerEtiquetaPennTreebank(líneas, i + 1);//Busca en las próximas líneas la etiqueta Cobuild para la entrada. Es decir, una ejemplo que esté en la tabla de traducción de etiquetas. Luego traduce esa etiqueta Cobuild en la etiqueta Penn Treebak correspondiente.
                         if (!string.IsNullOrEmpty(etiquetaPennTreebank))
                         {
-                            var etiquetasInferidas = InferirEtiquetasParaLasFormasDeLaPalabra(formasDeLaPalabra, palabra, etiquetaPennTreebank);
-                            etiquetasInferidas.AgregarSiNoExiste(palabra.ToLower(), etiquetaPennTreebank);
-                            salida += GenerarSalidaEtiquetada(línea, etiquetasInferidas);
+                            var etiquetasObtenidas = InferirEtiquetasParaLasFormasDeLaPalabra(formasDeLaPalabra, palabra, etiquetaPennTreebank);
+                            etiquetasObtenidas.AgregarSiNoExiste(palabra.ToLower(), etiquetaPennTreebank);
+                            salida += GenerarSalidaEtiquetada(línea, etiquetasObtenidas);
                         }
                     }
                 }
-                //salida += "------------------------";
             }
 
             return salida;
         }
-       
 
         /// <summary>
-        /// Indica si la línea es un ejemplo o definición de Cobuild;
+        /// Indica si la ejemplo es un ejemplo o definición de Cobuild;
         /// </summary>
         private static bool EsEjemploODefinición(string línea, IEnumerable<string> formasDeLaPalabra)
         {
-            return formasDeLaPalabra.Any(p => EsEjemploODefinición(línea, p));
+            var esEjemploODefinición = !línea.Contains('/') && !línea.Contains('*') &&  !línea.Contains("is used in the present tense") && línea.Sum(letra => letra == ',' || letra == ';' ? 1 : 0) <= 3;
+            return esEjemploODefinición && formasDeLaPalabra.Any(p => EsEjemploODefinición(línea, p));
         }
 
         /// <summary>
-        /// Indica si la línea es un ejemplo o definición de Cobuild;
+        /// Indica si la ejemplo es un ejemplo o definición de Cobuild;
         /// si la linea contiene a la palabra 
-        /// y no contiene al caracter '/' (el caracter '/' se encuentra en la explicación de la pronunciación)
+        /// y no contiene al caracter '/' o '*' (los caracteres '/' y '*' se encuentran en la explicación de la pronunciación)
         /// y tiene al menos 2 letras más que la palabra
         /// y tiene al menos 4 palabras
         /// y tiene como máximo 3 comas
@@ -245,9 +484,8 @@ namespace ConsoleApplication1
         private static bool EsEjemploODefinición(string línea, string palabra)
         {
             var cantPalabras = línea.Split().Count();
-            return línea.Contains(palabra) && !línea.Contains('/') && línea.Length > palabra.Length + 2 && cantPalabras > 4 && línea.Sum(letra => letra == ',' ? 1 : 0) <= 3 && cantPalabras > línea.CantidadDeOcurrencias(palabra);
+            return línea.Contains(palabra) && línea.Length > palabra.Length + 2 && cantPalabras > 4 && cantPalabras > línea.CantidadDeOcurrencias(palabra);
         }
-
         
         /// <summary>
         ///   Obtiene una lista con cada palabra del ejemplo. En la palabra o formas de palabra para las que se obtuvieron etiquetas, le asigna la etiqueta correspondiente.
@@ -256,21 +494,13 @@ namespace ConsoleApplication1
         private static string GenerarSalidaEtiquetada(string ejemplo, Dictionary<string, string> etiquetas)
         {
             var salida = string.Empty;
-
-            foreach (var palabraConEtiqueta in etiquetas)
-                if (palabraConEtiqueta.Key.Contains(' '))
-                {
-                    var palabra = palabraConEtiqueta.Key;
-                    ejemplo = ejemplo.ReemplazarEspacioPorStringMagico(palabra);
-                }
+            ejemplo = ManejarPalabrasCompuestas(ejemplo, etiquetas);
 
             var palabrasDelEjemplo = ejemplo.Split(new[] {' '}, StringSplitOptions.RemoveEmptyEntries);
 
-            for (var i = 0; i < palabrasDelEjemplo.Length; i++)
+            foreach (var palabraDelEjemplo in palabrasDelEjemplo)
             {
-                var hayPuntuacion = false;
-                var palabra = palabrasDelEjemplo[i].ReemplazarStringMagicoPorEspacio();
-                string puntuacionFinal, parteOriginalSinPuntuacion;
+                var palabra = palabraDelEjemplo.ReemplazarStringEspecialPorEspacio();
 
                 if (palabra.StartsWith("..."))
                 {
@@ -279,53 +509,83 @@ namespace ConsoleApplication1
                     CantidadDeSignosDePuntuación++;
                 }
 
-                if (palabra.EndsWith("..."))
-                {
-                    puntuacionFinal = "...";
-                    parteOriginalSinPuntuacion = palabra.Substring(0, palabra.Length - 3);
-                    hayPuntuacion = true;
-                }
-                else
-                {
-                    puntuacionFinal = (palabra == string.Empty ? ' ' : palabra.Last()).ToString();
-                    if (char.IsPunctuation(puntuacionFinal[0]))
-                    {
-                        hayPuntuacion = true;
-                        parteOriginalSinPuntuacion = palabra.Substring(0, palabra.Length - 1);
-                    }
-                    else
-                        parteOriginalSinPuntuacion = palabra;
-                }
+                string puntuaciónFinal;
+                var palabraSinPuntuación = palabra.HayPuntuaciónFinal(out puntuaciónFinal);
 
-                if (parteOriginalSinPuntuacion != string.Empty && !parteOriginalSinPuntuacion.Contains('/') && !parteOriginalSinPuntuacion.Contains('*'))
+                if (palabraSinPuntuación != string.Empty )
                 {
-                    salida += parteOriginalSinPuntuacion;
+                    salida += palabraSinPuntuación;
                     CantidadDePalabras++;    
 
-                    var parteSinPunt = parteOriginalSinPuntuacion.ToLower();
+                    var palabraEnMinúscula = palabraSinPuntuación.ToLower();
 
-                    if (etiquetas.ContainsKey(parteSinPunt))
+                    if (etiquetas.ContainsKey(palabraEnMinúscula))
                     {
-                        salida += "\t" + etiquetas[parteSinPunt];
+                        var etiquetaPennTreebank = etiquetas[palabraEnMinúscula];
+                        //var etiquetaInferida = InferirEtiqueta(palabraSinPuntuación, etiquetaPennTreebank, palabrasDelEjemplo, i);
+                        
+                        salida += "\t" + etiquetaPennTreebank;
                         CantidadDePalabrasEtiquetadas++;
                     }
                     salida += "\n";
                 }
 
-                
-
-                if (hayPuntuacion)
+                if (puntuaciónFinal != string.Empty)
                 {
-                    salida += puntuacionFinal + "\n";
+                    salida += puntuaciónFinal + "\n";
                     CantidadDeSignosDePuntuación++;
                 }
-                    
             }
             return salida;
         }
 
         /// <summary>
-        /// Para cada una de las formas de la palabra infiere su tipo basado en la palabra y su etiqueta PennTreebank
+        /// Si la etiqueta es 
+        ///     VBD|VBN: desambigua a VBN si alguna de las 2 palabras anteriores es "has" "have" o "had"
+        ///     VB:      devuelve VBP si alguna de las 2 palabras anteriores "to"
+        /// si no, devuelve la etiquetaPennTreebank
+        /// </summary>
+        /// <param name="posición">posición de la palabra en el ejemplo</param>
+        private static string InferirEtiqueta(string palabra, string etiquetaPennTreebank, string[] palabrasDelEjemplo, int posición)
+        {
+            if (etiquetaPennTreebank.EsAlgunaDeEstas("VBD|VBN", "VB"))
+            {
+                var palAnteriores = new List<string>();
+                for (var j = 0; j < posición; j++)
+                    palAnteriores.Add(palabrasDelEjemplo[j]);
+
+                switch (etiquetaPennTreebank)
+                {
+                    case "VBD|VBN":
+                        etiquetaPennTreebank = palabra.EsVBN(palAnteriores) ? "VBN" : "VBD";
+                        break;
+                    case "VB":
+                        if (palabra.EsVBP(palAnteriores))
+                            etiquetaPennTreebank = "VBP";
+                        break;
+                }
+            }
+            return etiquetaPennTreebank;
+        }
+
+        /// <summary>
+        /// Cuando la palabra de la entrada es compuesta, por ejemplo: "bite back"
+        /// En la definición y el ejemplo se guarda bite\_/back para que el algoritmo funcione bien y luego se recompone a "bite back"
+        /// </summary>
+        private static string ManejarPalabrasCompuestas(string ejemplo, Dictionary<string, string> etiquetas)
+        {
+            foreach (var palabraConEtiqueta in etiquetas)
+                if (palabraConEtiqueta.Key.Contains(' '))//Si es una palabra compuesta
+                {
+                    var palabra = palabraConEtiqueta.Key;
+                    ejemplo = ejemplo.ReemplazarEspacioPorStringEspecial(palabra);
+                }
+            return ejemplo;
+        }
+
+
+        /// <summary>
+        /// Para cada una de las formas de la palabra infiere su etiquetaPennTreebank basado en la palabra y su etiqueta PennTreebank
         /// </summary>
         private static Dictionary<string, string> InferirEtiquetasParaLasFormasDeLaPalabra(IEnumerable<string> formasDeLaPalabra, string palabra, string etiquetaPennTreebank)
         {
@@ -348,7 +608,7 @@ namespace ConsoleApplication1
                         etiquetaInferida = palabra.InferirTipoNN(forma);
                         break;
                 }
-                if (etiquetaInferida != string.Empty)
+                if (etiquetaInferida != string.Empty && forma.ToLower() != palabra.ToLower())
                     etiquetasInferidas.AgregarSiNoExiste(forma.ToLower(), etiquetaInferida);
             }
             return etiquetasInferidas;
@@ -363,7 +623,6 @@ namespace ConsoleApplication1
             string líneaDeDondeSeObtuvoLaEtiqueta;
             return ObtenerEtiquetaPennTreebank(líneas, i, out líneaDeDondeSeObtuvoLaEtiqueta);           
         }
-        #endregion
 
         /// <summary>
         /// Busca en la entrada, (en cada renglón) si hay alguna palabra que sea un tag COBUILD. Es decir; 
@@ -398,6 +657,6 @@ namespace ConsoleApplication1
 
             return etiquetaPennTreebank;
         }
-
+        #endregion
     }
 }

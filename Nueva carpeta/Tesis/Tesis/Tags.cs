@@ -57,7 +57,7 @@ namespace ConsoleApplication1
 
         #endregion
 
-        #region Metodos
+        #region StringHelper
         public bool Equals(Tags obj)
         {
             if (ReferenceEquals(null, obj))

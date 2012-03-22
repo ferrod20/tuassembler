@@ -1,8 +1,10 @@
-Porcentaje de aciertos: 98,3847091305934
+Aciertos: 91235 ( 77,1961145990219% )
+Errores: 26951
+Cantidad de tags: 118186
 
 Errores
 TagWSJ	TagAsignado	PorcentajeDeError
-VBP VB 3768
+VBP VB 3733
 	have 67
 	get 42
 	take 39
@@ -38,12 +40,12 @@ VBP VB 3768
 	tend 11
 	turn 11
 	understand 11
-	bear 10
 	belong 10
 	bring 10
 	change 10
 	cross 10
-NN VB 2697
+	draw 10
+NN VB 2624
 	burst 14
 	share 14
 	name 12
@@ -84,13 +86,13 @@ NN VB 2697
 	wave 6
 	witness 6
 	belt 5
-JJ NN 1974
+JJ NN 1955
 	flat 13
 	wireless 12
 	second 11
-	joint 10
 	ribbon 10
 	carriage 9
+	joint 9
 	current 8
 	draught 8
 	pick-up 8
@@ -110,7 +112,6 @@ JJ NN 1974
 	dead 5
 	east 5
 	first 5
-	fitting 5
 	grand 5
 	gross 5
 	hush 5
@@ -125,7 +126,8 @@ JJ NN 1974
 	bad 4
 	blind 4
 	brute 4
-VBN JJ 1776
+	centenary 4
+VBN JJ 1769
 	lost 19
 	stuck 19
 	set 17
@@ -166,13 +168,8 @@ VBN JJ 1776
 	clipped 6
 	confused 6
 	depressed 6
-NNS VBZ 1749
+NNS VBZ 1674
 	rises 16
-	means 15
-	lies 13
-	fits 12
-	sounds 11
-	closes 9
 	fades 9
 	breaks 8
 	floods 8
@@ -183,7 +180,6 @@ NNS VBZ 1749
 	bubbles 6
 	changes 6
 	cracks 6
-	fouls 6
 	strikes 6
 	ails 5
 	blazes 5
@@ -195,7 +191,6 @@ NNS VBZ 1749
 	flashes 5
 	flows 5
 	lands 5
-	lashes 5
 	plants 5
 	races 5
 	reeks 5
@@ -207,7 +202,14 @@ NNS VBZ 1749
 	streaks 5
 	suits 5
 	yields 5
-NN JJ 1630
+	borders 4
+	bursts 4
+	clips 4
+	concerns 4
+	curls 4
+	deepens 4
+	drowns 4
+NN JJ 1617
 	firm 24
 	kind 14
 	level 14
@@ -216,7 +218,6 @@ NN JJ 1630
 	tender 10
 	alight 8
 	emergency 8
-	fun 8
 	light 8
 	official 8
 	resident 8
@@ -231,6 +232,7 @@ NN JJ 1630
 	daft 6
 	fine 6
 	four-square 6
+	fun 6
 	gaunt 6
 	grey 6
 	intent 6
@@ -248,7 +250,7 @@ NN JJ 1630
 	home 5
 	living 5
 	nothing 5
-NNP NN 1241
+NNP NN 1242
 	Line 10
 	Christmas 7
 	Church 7
@@ -289,20 +291,19 @@ NNP NN 1241
 	Clay 3
 	Coffee 3
 	Cotton 3
-VBD VB 1084
+VBD VB 1061
 	got 47
-	did 41
 	had 39
 	took 37
 	ran 28
 	caught 24
 	came 24
-	rose 23
-	lay 22
 	gave 21
 	drew 20
 	felt 20
+	lay 20
 	put 20
+	rose 20
 	threw 20
 	set 19
 	cut 18
@@ -321,6 +322,7 @@ VBD VB 1084
 	knew 13
 	beat 12
 	blew 12
+	did 12
 	spread 12
 	began 11
 	grew 11
@@ -330,48 +332,7 @@ VBD VB 1084
 	shook 10
 	shot 10
 	broke 9
-NN CC 908
-	run 70
-	set 38
-	cut 23
-	hit 19
-	beat 18
-	fit 16
-	fruit 16
-	put 16
-	spread 16
-	stone 15
-	nature 14
-	split 13
-	bet 11
-	cost 11
-	march 11
-	spit 11
-	anything 9
-	Fish 9
-	office 9
-	burst 8
-	bust 8
-	craft 8
-	hurt 8
-	firm 7
-	person 7
-	thrust 7
-	anchor 6
-	brother 6
-	part 6
-	school 6
-	thing 6
-	war 6
-	west 6
-	bowel 5
-	discovery 5
-	doubt 5
-	fight 5
-	gang 5
-	home 5
-	master 5
-JJ CC 808
+JJ CC 793
 	new 15
 	exquisite 14
 	thick 14
@@ -387,7 +348,6 @@ JJ CC 808
 	curious 7
 	heavy 7
 	painful 7
-	rid 7
 	soft 7
 	clever 6
 	giddy 6
@@ -405,13 +365,14 @@ JJ CC 808
 	vulnerable 5
 	big 4
 	blind 4
-	bold 4
 	careful 4
 	favourable 4
 	generous 4
 	honest 4
 	inside 4
 	liberal 4
+	mental 4
+	Politic 4
 VBG JJ 694
 	working 29
 	running 15
@@ -453,7 +414,7 @@ VBG JJ 694
 	sneaking 4
 	telling 4
 	unseeing 4
-RB JJ 677
+RB JJ 675
 	alone 22
 	even 16
 	still 15
@@ -494,17 +455,17 @@ RB JJ 677
 	about 3
 	afoot 3
 	ageless 3
-VB NN 643
+VB NN 639
 	shower 12
 	bother 8
 	compass 8
 	fork 8
-	hack 8
 	plague 8
 	stack 8
 	trace 8
 	crank 7
 	funnel 7
+	hack 7
 	tap 7
 	tread 7
 	chop 6
@@ -535,14 +496,54 @@ VB NN 643
 	pose 4
 	prod 4
 	rattle 4
-JJ VB 628
-	fancy 8
+NN CC 615
+	fruit 16
+	stone 15
+	nature 14
+	march 11
+	spit 11
+	anything 9
+	Fish 9
+	office 9
+	bust 8
+	craft 8
+	firm 7
+	person 7
+	anchor 6
+	brother 6
+	part 6
+	school 6
+	thing 6
+	war 6
+	west 6
+	bowel 5
+	discovery 5
+	doubt 5
+	fight 5
+	gang 5
+	home 5
+	master 5
+	pot 5
+	stroke 5
+	support 5
+	air 4
+	bottle 4
+	deck 4
+	discussion 4
+	future 4
+	Id 4
+	matter 4
+	minority 4
+	number 4
+	tribe 4
+	year 4
+JJ VB 614
 	separate 8
 	square 8
+	fancy 7
 	wet 7
-	corrupt 6
+	corrupt 5
 	hollow 5
-	lick 5
 	present 5
 	second 5
 	abstract 4
@@ -550,6 +551,7 @@ JJ VB 628
 	consummate 4
 	discriminate 4
 	last 4
+	lick 4
 	recast 4
 	steady 4
 	tidy 4
@@ -557,7 +559,6 @@ JJ VB 628
 	chase 3
 	cleave 3
 	direct 3
-	favour 3
 	foul 3
 	free 3
 	harden 3
@@ -566,7 +567,6 @@ JJ VB 628
 	light 3
 	mellow 3
 	net 3
-	obscure 3
 	outlive 3
 	overestimate 3
 	own 3
@@ -576,12 +576,16 @@ JJ VB 628
 	secure 3
 	squat 3
 	tame 3
-VBN VB 537
-	set 27
+	thin 3
+	underestimate 3
+VBN VB 571
+	set 26
+	done 20
 	caught 16
 	made 16
 	born 15
 	lost 14
+	meant 13
 	taken 12
 	given 11
 	left 11
@@ -615,50 +619,7 @@ VBN VB 537
 	sprung 5
 	wed 5
 	beset 4
-	bitten 4
-	blown 4
-VBG NN 438
-	basing 17
-	crossing 11
-	running 9
-	pounding 8
-	netting 7
-	sitting 7
-	sounding 7
-	hanging 6
-	awakening 5
-	carving 5
-	licking 5
-	mourning 5
-	walking 5
-	writing 5
-	battering 4
-	ending 4
-	going 4
-	heading 4
-	lashing 4
-	lying 4
-	meaning 4
-	sacking 4
-	tarting 4
-	being 3
-	breeding 3
-	cleaning 3
-	covering 3
-	fancying 3
-	knitting 3
-	posting 3
-	riding 3
-	rising 3
-	rumbling 3
-	saying 3
-	shooting 3
-	skirting 3
-	slacking 3
-	swelling 3
-	wood-carving 3
-	backsliding 2
-JJ RB 421
+JJ RB 417
 	early 19
 	next 13
 	hard 10
@@ -673,9 +634,7 @@ JJ RB 421
 	deep 5
 	east 5
 	honest 5
-	much 5
 	sidelong 5
-	whole 5
 	wide 5
 	clean 4
 	daily 4
@@ -687,6 +646,7 @@ JJ RB 421
 	plumb 4
 	second 4
 	uptown 4
+	whole 4
 	aft 3
 	backwards 3
 	enough 3
@@ -699,15 +659,59 @@ JJ RB 421
 	quarterly 3
 	scot-free 3
 	sensible 3
-NNS NN 364
+	single-handed 3
+VBG NN 379
+	running 9
+	pounding 8
+	netting 7
+	sitting 7
+	crossing 6
+	hanging 6
+	awakening 5
+	carving 5
+	licking 5
+	mourning 5
+	walking 5
+	writing 5
+	battering 4
+	going 4
+	heading 4
+	lashing 4
+	sacking 4
+	being 3
+	breeding 3
+	cleaning 3
+	covering 3
+	ending 3
+	knitting 3
+	posting 3
+	riding 3
+	rising 3
+	rumbling 3
+	saying 3
+	shooting 3
+	skirting 3
+	swelling 3
+	wood-carving 3
+	backsliding 2
+	betting 2
+	boating 2
+	buzzing 2
+	caring 2
+	climbing 2
+	cooling 2
+	costing 2
+NNS NN 373
 	people 8
+	feet 6
 	media 6
-	trout 6
-	axis 5
 	children 5
+	men 5
 	paraphernalia 5
 	swine 5
+	trout 5
 	women 5
+	axis 4
 	credentials 4
 	gentlemen 4
 	radius 4
@@ -737,10 +741,8 @@ NNS NN 364
 	underclothes 3
 	airwaves 2
 	atlas 2
-	axes 2
 	blinkers 2
-	clothes 2
-NNP JJ 286
+NNP JJ 283
 	Roman 5
 	Anglo-Saxon 4
 	Nice 4
@@ -764,7 +766,6 @@ NNP JJ 286
 	Christian 2
 	Coptic 2
 	Country 2
-	Dull 2
 	East 2
 	Elizabethan 2
 	External 2
@@ -781,47 +782,7 @@ NNP JJ 286
 	Outsize 2
 	Pacific 2
 	Persian 2
-NN VBG 282
-	clearing 15
-	closing 9
-	freezing 6
-	burning 5
-	fouling 5
-	grubbing 4
-	cleaning 3
-	fishing 3
-	landing 3
-	longing 3
-	narrowing 3
-	rustling 3
-	sailing 3
-	sewing 3
-	smoking 3
-	smuggling 3
-	spitting 3
-	sweating 3
-	blunting 2
-	bombing 2
-	bowling 2
-	brewing 2
-	churning 2
-	dieting 2
-	fencing 2
-	fiddling 2
-	gnawing 2
-	hunting 2
-	indexing 2
-	lunching 2
-	machining 2
-	patrolling 2
-	pinking 2
-	pruning 2
-	recording 2
-	shrilling 2
-	shunting 2
-	sniping 2
-	speaking 2
-	spilling 2
+	Saudi 2
 IN RB 270
 	on 27
 	out 26
@@ -863,8 +824,8 @@ IN RB 270
 	So 1
 	Underneath 1
 	up 1
-VBP CC 254
-	go 60
+VBP CC 252
+	go 58
 	get 55
 	Do 49
 	do 49
@@ -893,7 +854,7 @@ VBP CC 254
 	whistle 1
 	wholl 1
 	whore 1
-NN IN 237
+NN IN 235
 	front 17
 	round 16
 	way 15
@@ -920,7 +881,6 @@ NN IN 237
 	moment 3
 	o 3
 	person 3
-	reason 3
 	reference 3
 	region 3
 	verge 3
@@ -934,7 +894,49 @@ NN IN 237
 	comparison 2
 	course 2
 	default 2
-VBP NN 230
+	defiance 2
+NN VBG 229
+	freezing 6
+	burning 5
+	grubbing 4
+	fishing 3
+	landing 3
+	rustling 3
+	sailing 3
+	sewing 3
+	smoking 3
+	smuggling 3
+	spitting 3
+	sweating 3
+	bombing 2
+	bowling 2
+	brewing 2
+	churning 2
+	dieting 2
+	fencing 2
+	fiddling 2
+	gnawing 2
+	hunting 2
+	indexing 2
+	longing 2
+	lunching 2
+	machining 2
+	patrolling 2
+	pruning 2
+	recording 2
+	shunting 2
+	sniping 2
+	speaking 2
+	spilling 2
+	swearing 2
+	trading 2
+	trespassing 2
+	undoing 2
+	watering 2
+	wheeling 2
+	advertising 1
+	ballooning 1
+VBP NN 228
 	whistle 12
 	grill 8
 	gloss 7
@@ -975,48 +977,7 @@ VBP NN 230
 	overlap 2
 	peck 2
 	peg 2
-VBZ NNS 229
-	remains 7
-	crosses 6
-	rushes 6
-	cries 5
-	bristles 4
-	fancies 4
-	pores 4
-	regards 4
-	rhymes 4
-	dictates 3
-	doubles 3
-	groans 3
-	lies 3
-	preserves 3
-	shakes 3
-	works 3
-	covers 2
-	dislikes 2
-	equals 2
-	floats 2
-	frets 2
-	furrows 2
-	gauges 2
-	gears 2
-	holds 2
-	hops 2
-	knocks 2
-	pegs 2
-	poses 2
-	reverses 2
-	shouts 2
-	snaps 2
-	spears 2
-	springs 2
-	struggles 2
-	takes 2
-	wants 2
-	whips 2
-	anecdotes 1
-	beams 1
-NN RB 224
+NN RB 223
 	round 16
 	home 7
 	part 6
@@ -1045,7 +1006,6 @@ NN RB 224
 	briefly 2
 	broadside 2
 	fine 2
-	fit 2
 	fortissimo 2
 	freight 2
 	incognito 2
@@ -1057,10 +1017,51 @@ NN RB 224
 	perforce 2
 	plumb 2
 	right 2
-VB CC 191
+	side-saddle 2
+VBZ NNS 220
+	remains 7
+	rushes 6
+	cries 5
+	bristles 4
+	pores 4
+	regards 4
+	rhymes 4
+	dictates 3
+	doubles 3
+	groans 3
+	preserves 3
+	shakes 3
+	works 3
+	covers 2
+	dislikes 2
+	equals 2
+	floats 2
+	frets 2
+	furrows 2
+	gauges 2
+	gears 2
+	holds 2
+	hops 2
+	knocks 2
+	lies 2
+	means 2
+	pegs 2
+	poses 2
+	reverses 2
+	shouts 2
+	snaps 2
+	spears 2
+	springs 2
+	struggles 2
+	takes 2
+	wants 2
+	whips 2
+	anecdotes 1
+	beams 1
+	blisters 1
+VB CC 183
 	Do 98
 	fight 4
-	go 4
 	plead 4
 	come 3
 	congratulate 3
@@ -1071,8 +1072,8 @@ VB CC 191
 	elaborate 2
 	emphasize 2
 	fit 2
+	go 2
 	mean 2
-	overcome 2
 	put 2
 	recall 2
 	say 2
@@ -1083,7 +1084,6 @@ VB CC 191
 	arent 1
 	back 1
 	bow 1
-	browbeat 1
 	call 1
 	caricature 1
 	chaperone 1
@@ -1098,88 +1098,8 @@ VB CC 191
 	hatch 1
 	haw 1
 	honour 1
-NN JJR 167
-	hotter 15
-	quieter 11
-	blacker 10
-	finer 10
-	barer 8
-	keener 8
-	wetter 7
-	dirtier 6
-	emptier 6
-	briefer 5
-	dimmer 5
-	mellower 5
-	wilder 5
-	bluer 4
-	humbler 4
-	pinker 4
-	rounder 4
-	tidier 4
-	blunter 3
-	browner 3
-	fainter 3
-	nearer 3
-	paler 3
-	shriller 3
-	shyer 3
-	slacker 3
-	soberer 3
-	tenser 3
-	yellower 3
-	muddier 2
-	sterner 2
-	crisper 1
-	damper 1
-	dryer 1
-	franker 1
-	plumper 1
-	slicker 1
-	starker 1
-	stauncher 1
-	stranger 1
-RB CC 166
-	off 25
-	well 16
-	Well 12
-	often 10
-	as 8
-	east 7
-	hard 7
-	else 6
-	ill 6
-	either 5
-	kindly 5
-	now 5
-	outward 5
-	yet 5
-	pretty 4
-	enough 3
-	long 3
-	Now 3
-	only 3
-	best 2
-	close 2
-	fussy 2
-	together 2
-	back 1
-	badly 1
-	confidentially 1
-	deep 1
-	easily 1
-	faithfully 1
-	far 1
-	fro 1
-	inside 1
-	loud 1
-	masterly 1
-	moderately 1
-	Only 1
-	onward 1
-	safely 1
-	seriously 1
-	strictly 1
+	impersonate 1
+	irate 1
 NNP CC 164
 	Far 29
 	G 6
@@ -1221,6 +1141,47 @@ NNP CC 164
 	CD 1
 	Chairman 1
 	Cos 1
+RB CC 163
+	off 25
+	well 14
+	Well 12
+	often 10
+	as 8
+	east 7
+	hard 7
+	else 6
+	either 5
+	ill 5
+	kindly 5
+	now 5
+	outward 5
+	yet 5
+	pretty 4
+	enough 3
+	long 3
+	Now 3
+	only 3
+	best 2
+	close 2
+	fussy 2
+	together 2
+	back 1
+	badly 1
+	confidentially 1
+	deep 1
+	easily 1
+	faithfully 1
+	far 1
+	fro 1
+	inside 1
+	loud 1
+	masterly 1
+	moderately 1
+	Only 1
+	onward 1
+	safely 1
+	seriously 1
+	strictly 1
 RP RB 160
 	out 52
 	off 29
@@ -1273,7 +1234,7 @@ RB IN 145
 	off 1
 	Only 1
 	Up 1
-VBD JJ 142
+VBD JJ 140
 	crammed 5
 	massed 5
 	peppered 5
@@ -1286,7 +1247,6 @@ VBD JJ 142
 	minded 3
 	noted 3
 	plugged 3
-	shut 3
 	unrepresented 3
 	wrinkled 3
 	allied 2
@@ -1314,47 +1274,7 @@ VBD JJ 142
 	bushed 1
 	clipped 1
 	coiled 1
-JJ VBG 126
-	fitting 12
-	whirling 5
-	bubbling 4
-	clattering 3
-	nagging 3
-	sweeping 3
-	crowding 2
-	daring 2
-	drizzling 2
-	fading 2
-	puzzling 2
-	roasting 2
-	rusting 2
-	seething 2
-	shimmering 2
-	shovelling 2
-	sparkling 2
-	steadying 2
-	towering 2
-	troubling 2
-	wilting 2
-	adjoining 1
-	annoying 1
-	beaming 1
-	blaring 1
-	blossoming 1
-	booing 1
-	booming 1
-	browning 1
-	buffeting 1
-	burrowing 1
-	bustling 1
-	cartwheeling 1
-	chilling 1
-	clamouring 1
-	coasting 1
-	corresponding 1
-	creaking 1
-	crowing 1
-	crusading 1
+	cold-blooded 1
 NNPS NNS 115
 	Jews 3
 	Games 2
@@ -1396,10 +1316,51 @@ NNPS NNS 115
 	Germans 1
 	Grapnels 1
 	Guilds 1
-VB JJ 112
+JJ VBG 111
+	whirling 5
+	bubbling 4
+	clattering 3
+	nagging 3
+	sweeping 3
+	crowding 2
+	daring 2
+	drizzling 2
+	fading 2
+	puzzling 2
+	roasting 2
+	rusting 2
+	seething 2
+	shimmering 2
+	shovelling 2
+	sparkling 2
+	towering 2
+	troubling 2
+	wilting 2
+	adjoining 1
+	annoying 1
+	beaming 1
+	blaring 1
+	blossoming 1
+	booing 1
+	booming 1
+	buffeting 1
+	burrowing 1
+	bustling 1
+	cartwheeling 1
+	chilling 1
+	clamouring 1
+	coasting 1
+	corresponding 1
+	creaking 1
+	crowing 1
+	crusading 1
+	distorting 1
+	fitting 1
+	flaking 1
+VB JJ 111
 	erect 6
-	mean 6
 	open 6
+	mean 5
 	close 4
 	immaculate 4
 	borderline 3
@@ -1446,7 +1407,8 @@ RP IN 109
 	through 3
 	unto 1
 	upon 1
-NNP NNS 99
+NNP NNS 104
+	News 3
 	Amphitheatres 2
 	Queens 2
 	Authorities 1
@@ -1475,6 +1437,7 @@ NNP NNS 99
 	Falls 1
 	Flamingos 1
 	Flares 1
+	Foots 1
 	Gates 1
 	GIs 1
 	Giros 1
@@ -1485,12 +1448,10 @@ NNP NNS 99
 	Hairs 1
 	Haricots 1
 	Hills 1
-	HMIs 1
-	Hydraulics 1
-VBN NN 94
+VBN NN 89
 	rung 5
 	left 4
-	rounded 4
+	lit 4
 	run 3
 	set 3
 	wounded 3
@@ -1508,11 +1469,8 @@ VBN NN 94
 	bereaved 1
 	betrothed 1
 	billeted 1
-	blued 1
 	botched 1
 	bound 1
-	briefed 1
-	calmed 1
 	caught 1
 	chaplain 1
 	coloured 1
@@ -1522,13 +1480,16 @@ VBN NN 94
 	crippled 1
 	dipped 1
 	exiled 1
-	fainted 1
 	felt 1
 	filtered 1
-	fined 1
 	fired 1
 	heated 1
-RB NN 88
+	hit 1
+	hurt 1
+	implanted 1
+	injured 1
+	inserted 1
+RB NN 87
 	aside 5
 	well 5
 	backstage 4
@@ -1552,7 +1513,6 @@ RB NN 88
 	back 1
 	best 1
 	blasphemy 1
-	braver 1
 	corduroy 1
 	cranefly 1
 	darned 1
@@ -1569,6 +1529,7 @@ RB NN 88
 	monogamy 1
 	no 1
 	north 1
+	plain 1
 JJ IN 85
 	past 15
 	near 11
@@ -1596,69 +1557,48 @@ JJ IN 85
 	Short 1
 	whereupon 1
 	whilst 1
-JJS VB 82
-	meanest 15
-	fittest 11
-	closest 9
-	crossest 9
-	soundest 9
-	fanciest 5
-	freest 5
-	maturest 4
-	tamest 3
-	basest 2
-	stillest 2
-	bloodiest 1
-	detest 1
-	grossest 1
-	infest 1
-	limpest 1
-	longest 1
-	molest 1
-	worst 1
-JJS NN 78
-	basest 15
-	best 10
-	soundest 6
-	crossest 5
-	dearest 5
-	fittest 4
-	north-west 4
-	pest 4
-	south-west 4
-	tartest 4
-	fanciest 3
-	closest 2
-	grossest 2
-	meanest 2
-	stillest 2
-	tempest 2
-	eldest 1
-	frost 1
-	rainforest 1
-	zest 1
-VBN CC 77
-	come 46
-	wed 5
-	become 3
-	constrained 3
-	been 2
-	beset 2
-	forecast 2
-	Wed 2
-	Come 1
-	cut 1
-	determined 1
-	disciplined 1
-	fallen 1
-	hed 1
-	hurried 1
-	perverted 1
-	shed 1
-	Shed 1
-	swathed 1
-	tired 1
-NNP VB 77
+NN NNS 85
+	news 17
+	darts 4
+	shambles 4
+	headquarters 3
+	hustings 3
+	progeny 3
+	scum 3
+	Dominoes 2
+	dominoes 2
+	impedimenta 2
+	innings 2
+	stock 2
+	archive 1
+	brain 1
+	check 1
+	cotton 1
+	Darts 1
+	denim 1
+	earthworks 1
+	electronics 1
+	forks 1
+	fry 1
+	gentlefolk 1
+	grocery 1
+	institutes 1
+	instruction 1
+	land 1
+	man-hours 1
+	means 1
+	miseries 1
+	money 1
+	oat 1
+	poultry 1
+	pyjamas 1
+	rate 1
+	refreshment 1
+	roundabouts 1
+	sand 1
+	Scarves 1
+	service 1
+NNP VB 76
 	Have 9
 	Express 2
 	Flip 2
@@ -1680,7 +1620,6 @@ NNP VB 77
 	Confound 1
 	Control 1
 	Copulate 1
-	Corrupt 1
 	Cover 1
 	Credit 1
 	Disorient 1
@@ -1699,106 +1638,7 @@ NNP VB 77
 	Pin 1
 	Post 1
 	Preheat 1
-NN NNS 70
-	darts 4
-	shambles 4
-	headquarters 3
-	hustings 3
-	progeny 3
-	scum 3
-	Dominoes 2
-	dominoes 2
-	impedimenta 2
-	innings 2
-	means 2
-	stock 2
-	archive 1
-	brain 1
-	check 1
-	cotton 1
-	Darts 1
-	denim 1
-	earthworks 1
-	electronics 1
-	forks 1
-	fry 1
-	gentlefolk 1
-	grocery 1
-	institutes 1
-	instruction 1
-	land 1
-	man-hours 1
-	miseries 1
-	money 1
-	oat 1
-	poultry 1
-	pyjamas 1
-	rate 1
-	refreshment 1
-	roundabouts 1
-	sand 1
-	Scarves 1
-	service 1
-	silk 1
-VBD NN 67
-	bore 5
-	rounded 5
-	thought 4
-	rose 3
-	set 3
-	slacked 3
-	dove 2
-	fell 2
-	lay 2
-	shed 2
-	accused 1
-	AD 1
-	bet 1
-	blued 1
-	braved 1
-	briefed 1
-	broadcasted 1
-	chickenfeed 1
-	deathbed 1
-	departed 1
-	did 1
-	drove 1
-	electrode 1
-	firmed 1
-	god 1
-	intended 1
-	leaped 1
-	leapt 1
-	left 1
-	made 1
-	mashed 1
-	pinked 1
-	quieted 1
-	relayed 1
-	skunk 1
-	slammed 1
-	slicked 1
-	smelled 1
-	snore 1
-	speeded 1
-VBD CC 66
-	let 24
-	shed 9
-	were 7
-	quit 5
-	shut 3
-	whod 3
-	cut 2
-	put 2
-	undercut 2
-	Were 2
-	bowed 1
-	closed 1
-	hit 1
-	itd 1
-	lay 1
-	lent 1
-	set 1
+	Prick 1
 JJR JJ 61
 	better 24
 	lower 8
@@ -1813,42 +1653,9 @@ JJR JJ 61
 	greater 1
 	propitious 1
 	unambitious 1
-JJR VB 53
-	clearer 15
-	cleaner 3
-	cooler 3
-	narrower 3
-	smoother 3
-	thinner 3
-	calmer 2
-	looser 2
-	lower 2
-	steadier 2
-	trimmer 2
-	warmer 2
-	better 1
-	bicker 1
-	busier 1
-	dizzier 1
-	firmer 1
-	nearer 1
-	scarper 1
-	slighter 1
-	slimmer 1
-	slower 1
-	steeper 1
 TO IN 53
 	to 43
 	To 10
-RBR JJR 49
-	lower 16
-	faster 11
-	duller 7
-	firmer 5
-	smarter 4
-	louder 2
-	slicker 2
-	wearier 2
 JJS JJ 47
 	least 10
 	best 6
@@ -1864,12 +1671,43 @@ JJS JJ 47
 	south-west 2
 	dearest 1
 	downcast 1
-NN UH 47
-	blow 3
+VBD NN 46
+	bore 5
+	thought 4
+	rose 3
+	set 3
+	dove 2
+	fell 2
+	lay 2
+	shed 2
+	accused 1
+	AD 1
+	bet 1
+	chickenfeed 1
+	deathbed 1
+	departed 1
+	drove 1
+	electrode 1
+	god 1
+	intended 1
+	leaped 1
+	leapt 1
+	left 1
+	made 1
+	mashed 1
+	relayed 1
+	skunk 1
+	slammed 1
+	smelled 1
+	snore 1
+	speeded 1
+	Sprang 1
+	stole 1
+NN UH 45
 	haw 3
+	blow 2
 	brother 2
 	cor 2
-	deal 2
 	fun 2
 	goodness 2
 	poof 2
@@ -1885,6 +1723,7 @@ NN UH 47
 	bugger 1
 	coo 1
 	damnation 1
+	deal 1
 	drat 1
 	eureka 1
 	Goodness 1
@@ -1898,7 +1737,7 @@ NN UH 47
 	whoopee 1
 	Word 1
 	yuk 1
-RB VB 43
+RB VB 42
 	sully 4
 	back 3
 	well 3
@@ -1909,7 +1748,6 @@ RB VB 43
 	ply 2
 	prophesy 2
 	rifle 2
-	braver 1
 	close 1
 	creep 1
 	double 1
@@ -1953,14 +1791,18 @@ VBG VB 38
 	slug 1
 	snog 1
 	ting 1
-IN CC 36
-	like 14
-	as 8
-	that 4
-	if 3
-	in 3
-	within 3
-	between 1
+JJS NN 35
+	best 10
+	dearest 5
+	north-west 4
+	pest 4
+	south-west 4
+	newest 2
+	tempest 2
+	eldest 1
+	frost 1
+	rainforest 1
+	zest 1
 FW NN 34
 	theatre 11
 	amphitheatre 5
@@ -2011,11 +1853,24 @@ NNP RB 34
 	Too 1
 	Up 1
 	Well 1
-IN JJ 34
+DT RB 33
+	all 10
+	any 7
+	half 6
+	some 6
+	this 4
+IN CC 33
+	like 14
+	as 8
+	that 4
+	if 3
+	within 3
+	between 1
+IN JJ 33
 	through 5
 	before 4
-	in 4
 	underneath 4
+	in 3
 	off 3
 	on 3
 	outside 2
@@ -2026,12 +1881,6 @@ IN JJ 34
 	undemanding 1
 	unlike 1
 	up 1
-DT RB 33
-	all 10
-	any 7
-	half 6
-	some 6
-	this 4
 VBG IN 32
 	including 4
 	concerning 3
@@ -2071,23 +1920,6 @@ VBZ VB 29
 	hiss 2
 	truss 2
 	canvass 1
-JJR NN 27
-	elder 6
-	cleaner 4
-	lighter 2
-	marker 2
-	newer 2
-	breadwinner 1
-	calmer 1
-	cooler 1
-	dimmer 1
-	fancier 1
-	firmer 1
-	patter 1
-	shredder 1
-	slimmer 1
-	thinner 1
-	trimmer 1
 VB RB 26
 	mind 4
 	please 4
@@ -2104,7 +1936,49 @@ VB RB 26
 	see 1
 	See 1
 	underarm 1
-JJ UH 25
+VBN CC 25
+	wed 4
+	constrained 3
+	been 2
+	forecast 2
+	Wed 2
+	Come 1
+	cut 1
+	determined 1
+	disciplined 1
+	fallen 1
+	hed 1
+	hurried 1
+	perverted 1
+	shed 1
+	Shed 1
+	swathed 1
+	tired 1
+JJR NN 25
+	elder 6
+	cleaner 4
+	lighter 3
+	marker 2
+	newer 2
+	breadwinner 1
+	cooler 1
+	dimmer 1
+	fancier 1
+	patter 1
+	shredder 1
+	slimmer 1
+	thinner 1
+DT CC 24
+	another 7
+	either 5
+	this 4
+	all 2
+	This 2
+	both 1
+	some 1
+	That 1
+	that 1
+JJ UH 24
 	good 5
 	gracious 5
 	gee 2
@@ -2118,20 +1992,21 @@ JJ UH 25
 	Steady 1
 	steady 1
 	strewth 1
-	wham 1
-DT CC 24
-	another 7
-	either 5
-	this 4
-	all 2
-	This 2
-	both 1
-	some 1
-	That 1
-	that 1
 TO JJ 24
 	to 22
 	To 2
+VBD CC 21
+	were 7
+	whod 3
+	put 2
+	Were 2
+	bowed 1
+	closed 1
+	cut 1
+	itd 1
+	lay 1
+	lent 1
+	shut 1
 CC IN 21
 	but 8
 	or 8
@@ -2160,18 +2035,6 @@ NNS JJ 18
 	apropos 1
 	divers 1
 	marvellous 1
-NNP UH 18
-	Boy 3
-	O 3
-	Great 2
-	Ha 2
-	Jove 2
-	Blimey 1
-	Blow 1
-	Dear 1
-	Goodness 1
-	Pow 1
-	Shush 1
 WDT WP 18
 	which 13
 	whatever 4
@@ -2190,19 +2053,30 @@ NNS CC 17
 	Ones 1
 	whos 1
 	yours 1
-VB UH 17
-	dash 3
-	bother 2
-	bugger 2
-	drat 2
-	blast 1
-	Blow 1
-	bosh 1
-	darn 1
-	dearie 1
+NNP UH 17
+	Boy 3
+	O 3
+	Great 2
+	Ha 2
+	Jove 2
+	Blimey 1
+	Dear 1
 	Goodness 1
-	help 1
-	stop 1
+	Pow 1
+	Shush 1
+NN JJR 17
+	wilder 5
+	sterner 2
+	crisper 1
+	dryer 1
+	hotter 1
+	maturer 1
+	pinker 1
+	quieter 1
+	shriller 1
+	starker 1
+	stranger 1
+	tidier 1
 JJ NNS 17
 	young 3
 	earths 2
@@ -2218,6 +2092,18 @@ JJ NNS 17
 	solid 1
 	stills 1
 	vermin 1
+VB UH 16
+	dash 3
+	bother 2
+	bugger 2
+	drat 2
+	blast 1
+	bosh 1
+	darn 1
+	dearie 1
+	Goodness 1
+	help 1
+	stop 1
 MD CC 16
 	may 13
 	should 2
@@ -2240,20 +2126,8 @@ IN VB 15
 	deride 1
 	till 1
 	up 1
-JJ JJS 14
-	freest 3
-	obscurest 3
-	grossest 2
-	maturest 2
-	merest 2
-	crossest 1
-	limpest 1
-JJS RBS 14
-	stillest 7
-	longest 4
-	furthest 1
-	messiest 1
-	soonest 1
+VBD VBZ 14
+	was 14
 RBS RB 14
 	most 13
 	least 1
@@ -2432,15 +2306,6 @@ VBP UH 7
 	say 2
 	whoosh 2
 	declare 1
-RBR VB 7
-	duller 2
-	smarter 2
-	faster 1
-	flicker 1
-	wearier 1
-NN RBR 7
-	rounder 6
-	nearer 1
 WRB WP 7
 	when 4
 	why 3
@@ -2451,6 +2316,13 @@ JJ VBZ 6
 	befits 3
 	torpedoes 2
 	overtakes 1
+JJR VB 6
+	better 1
+	bicker 1
+	cooler 1
+	lower 1
+	nearer 1
+	scarper 1
 CC RB 6
 	but 3
 	nor 2
@@ -2465,14 +2337,16 @@ DT NN 5
 UH RB 5
 	please 4
 	alas 1
-JJR RBR 5
-	cleaner 2
-	deeper 2
-	slower 1
 SYM CC 5
 	d 2
 	g 2
 	x 1
+JJS RBS 5
+	farthest 1
+	furthest 1
+	longest 1
+	messiest 1
+	soonest 1
 WRB RB 5
 	hereby 3
 	Wherein 1
@@ -2483,6 +2357,16 @@ PRP$ CC 5
 RBR IN 5
 	sooner 3
 	less 2
+JJS VB 4
+	detest 1
+	infest 1
+	molest 1
+	worst 1
+JJ JJR 4
+	flatter 1
+	grubbier 1
+	weirder 1
+	wittier 1
 VBP RB 4
 	round 2
 	herewith 1
@@ -2515,24 +2399,22 @@ VBN UH 3
 	buggered 1
 	darn 1
 	sod 1
-VB JJS 3
-	darkest 1
-	freest 1
-	grossest 1
+JJ JJS 3
+	merest 2
+	commonest 1
 RB DT 3
 	either 2
 	yon 1
+RB RBR 3
+	longer 2
+	Further 1
+RBR JJR 3
+	louder 2
+	faster 1
 NNS UH 3
 	fiddlesticks 1
 	knickers 1
 	oops 1
-NN JJS 3
-	freest 2
-	grossest 1
-JJ JJR 3
-	grubbier 1
-	weirder 1
-	wittier 1
 RB WRB 3
 	however 2
 	However 1
@@ -2569,11 +2451,14 @@ RB VBG 2
 IN VBZ 2
 	bombards 1
 	overrides 1
-RB JJR 2
-	braver 2
+NN JJS 2
+	briefest 1
+	warmest 1
 LS CC 2
 	d 1
 	f 1
+JJR RBR 2
+	deeper 2
 VBN|JJ JJ 2
 	deprived 2
 FW VB 2
@@ -2597,18 +2482,18 @@ VBD RB 2
 	unmolested 1
 VBG NNS 2
 	veg 2
-WRB CC 2
-	why 2
 RP NN 1
 	back 1
 CC NNS 1
 	but 1
 JJ NNP 1
 	Chinese 1
+VB JJS 1
+	darkest 1
 NNP JJR 1
 	Drier 1
-JJ RBS 1
-	freest 1
+RBR VB 1
+	flicker 1
 TO VB 1
 	gonna 1
 MD|VB VB 1
@@ -2637,8 +2522,6 @@ VB NNS 1
 	police 1
 FW IN 1
 	pro 1
-VB VBZ 1
-	repossess 1
 FW VBZ 1
 	scours 1
 UH VB 1
