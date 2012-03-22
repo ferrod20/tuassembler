@@ -11,7 +11,7 @@ namespace ConsoleApplication1
         private static int cantTags;
         private static List<Tags> matrizDeConfusión;
         #endregion
-        #region Metodos
+        #region StringHelper
         private static void BuscarProximaLinea(string[] uno, string[] otro, ref int i, ref int j)
         {
             var iii = 0;
@@ -55,9 +55,8 @@ namespace ConsoleApplication1
                     hasta--;
                 }
 
-
                 var acierto = tagDePrueba == tagGoldStandard || tagDePrueba == "VBD|VBN";
-
+                cantTags++;
                 if (!acierto)
                 {
                     var palabra = string.Empty;
@@ -155,9 +154,11 @@ salida.Write(@"\hline
             TextWriter salida = new StreamWriter(archivoDeSalida);
 
             var cantidadDeErrores = matrizDeConfusión.Sum(s => s.TotalDePalabras);
-
-            var porcentajeDeAciertos = (cantTags - cantidadDeErrores)/(double) cantTags*100;
-            salida.WriteLine("Porcentaje de aciertos: " + porcentajeDeAciertos);
+            var aciertos = cantTags - cantidadDeErrores;
+            var porcentajeDeAciertos = aciertos / (double)cantTags * 100;
+            salida.WriteLine("Aciertos: " + aciertos + " ( " + porcentajeDeAciertos  + "% )");
+            salida.WriteLine("Errores: " + cantidadDeErrores);
+            salida.WriteLine("Cantidad de tags: " + cantTags);
 
             salida.WriteLine();
             salida.WriteLine("Errores");
@@ -195,7 +196,7 @@ salida.Write(@"\hline
                 if (aGoldStandard[i].Split('\t')[0] == aParaComparar[j].Split('\t')[0])
                 {
                     Comparar(aGoldStandard[i], aParaComparar[j]);
-                    cantTags++;
+                    
                     w = 0;
                 }
                 i++;
