@@ -1,0 +1,345 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<title>Demo 3</title>
+	
+    <!--
+	<link rel='stylesheet' type='text/css' href='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/themes/base/jquery-ui.css' />
+	-->
+
+    <link rel='stylesheet' type='text/css' href='libs/css/smoothness/jquery-ui-1.8.11.custom.css' />
+
+	<link rel="stylesheet" type="text/css" href="jquery.weekcalendar.css" />
+	<link rel="stylesheet" type="text/css" href="skins/default.css" />
+			<link rel="stylesheet" type="text/css" href="skins/gcalendar.css" />
+
+	<style type="text/css">
+body {
+			font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+			margin: 0;
+		}
+		
+		h1 {
+      margin:0 0 2em;
+			padding: 0.5em;
+			font-size: 1.3em;
+		} 
+h2 {
+	margin: 0.5em 0;
+	font-size: 1.4em;	
+}
+
+p {
+	margin: 0.5em;	
+}
+
+.ui-widget {
+	font-size: 1em;	
+}
+
+#event_edit_container, #about {
+	display: none;
+}
+
+#about_button_container {
+	position: absolute;
+	top: 0em;
+	right: 0em;	
+	padding: 0.5em 2em;
+	background: #ddf;
+	border: 1px solid #bbd;
+	width: 25em;
+	text-align: center;
+}
+
+.wc-header td {
+/*	background: url(images/header-bg.png) repeat-x;*/
+}
+
+#event_edit_container label {
+	display: block;
+	margin-top: 1em;
+	margin-bottom: 0.5em;
+}
+
+form ul {
+	padding: 0.3em;
+}
+
+select, input[type='text'], textarea {
+	width: 250px;
+	padding: 3px;
+}
+
+input[type='text'] {
+	width: 245px;
+}
+
+ul.formatted,ol.formatted {
+	display: block;
+	margin: 1em 0.5em;
+}
+
+ul.formatted li,ol.formatted li {
+	margin: 5px 30px;
+	display: auto;
+}
+
+ul.formatted li {
+	list-style-type: disc;
+}
+
+ol.formatted li {
+	list-style-type: decimal;
+}
+#switcher{float:left;}
+
+		
+		p.description {
+			font-size: 0.8em;
+			padding: 1em;
+			position: absolute;
+			top: 1.2em;
+			margin-right: 400px;
+		}
+		
+		#calendar_selection {
+			font-size: 0.7em;
+			position: absolute;
+			top: 1em; 
+			right: 1em;
+			padding: 1em;
+			background: #ffc;
+			border: 1px solid #dda;
+			width: 270px;
+		}
+		
+		#message {
+			font-size: 0.7em;
+			position: absolute;
+			top: 1em; 
+			right: 320px;
+			padding: 1em;
+			background: #ddf;
+			border: 1px solid #aad;
+			width: 270px;
+		}
+	</style>
+	
+	   <!--
+	<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js'></script>
+    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js'></script>
+    -->
+
+   <script type='text/javascript' src='libs/jquery-1.4.4.min.js'></script>
+   <script type='text/javascript' src='libs/jquery-ui-1.8.11.custom.min.js'></script>
+   <script type='text/javascript' src='libs/jquery-ui-i18n.js'></script>
+	<script type="text/javascript" src="http://jqueryui.com/themeroller/themeswitchertool/"></script>
+
+	<script type="text/javascript" src="libs/date.js"></script>
+	<script type="text/javascript" src="jquery.weekcalendar.js"></script>
+	<script type="text/javascript">
+  (function($) {
+		var d = new Date();
+		d.setDate(d.getDate() - d.getDay());
+		var year = d.getFullYear();
+		var month = d.getMonth();
+		var day = d.getDate();
+	
+		var eventData1 = {
+			options: {
+				timeslotsPerHour: 4,
+				timeslotHeight: 20,
+				defaultFreeBusy: {free: true}
+			},
+			events : [
+				{"id":1, "start": new Date(year, month, day+0, 12), "end": new Date(year, month, day+0, 13, 30), "title": "Lunch with Mike", userId: 0},
+				{"id":2, "start": new Date(year, month, day+0, 14), "end": new Date(year, month, day+0, 14, 45), "title": "Dev Meeting", userId: 1},
+				{"id":3, "start": new Date(year, month, day+1, 18), "end": new Date(year, month, day+1, 18, 45), "title": "Hair cut", userId: 1},
+				{"id":4, "start": new Date(year, month, day+2, 08), "end": new Date(year, month, day+2, 09, 30), "title": "Team breakfast", userId: 0},
+				{"id":5, "start": new Date(year, month, day+1, 14), "end": new Date(year, month, day+1, 15, 00), "title": "Product showcase", userId: 1}
+			],
+			freebusys: [
+				{"start": new Date(year, month, day+0, 00), "end": new Date(year, month, day+3, 00, 00), "free": false, userId: [0,1,2,3]},
+				{"start": new Date(year, month, day+0, 08), "end": new Date(year, month, day+0, 12, 00), "free": true, userId: [0,1,2,3]},
+				{"start": new Date(year, month, day+1, 08), "end": new Date(year, month, day+1, 12, 00), "free": true, userId: [0,1,2,3]},
+				{"start": new Date(year, month, day+2, 08), "end": new Date(year, month, day+2, 12, 00), "free": true, userId: [0,1,2,3]},
+				{"start": new Date(year, month, day+1, 14), "end": new Date(year, month, day+1, 18, 00), "free": true, userId: [0,1,2,3]},
+				{"start": new Date(year, month, day+2, 08), "end": new Date(year, month, day+2, 12, 00), "free": true, userId: [0,3]},
+				{"start": new Date(year, month, day+2, 14), "end": new Date(year, month, day+2, 18, 00), "free": true, userId: 1}
+			]
+		};
+	
+		d = new Date();
+		d.setDate(d.getDate() -(d.getDay() - 3));
+		year = d.getFullYear();
+		month = d.getMonth();
+		day = d.getDate();
+	
+		var eventData2 = {
+			options: {
+				timeslotsPerHour: 3,
+				timeslotHeight: 30,
+				defaultFreeBusy: {free: false}
+			},
+			events : [
+				{"id":1, "start": new Date(year, month, day+0, 12), "end": new Date(year, month, day+0, 13, 00), "title": "Lunch with Sarah", userId: 1},
+				{"id":2, "start": new Date(year, month, day+0, 14), "end": new Date(year, month, day+0, 14, 40), "title": "Team Meeting", userId: 0},
+				{"id":3, "start": new Date(year, month, day+1, 18), "end": new Date(year, month, day+1, 18, 40), "title": "Meet with Joe", userId: 1},
+				{"id":4, "start": new Date(year, month, day-1, 08), "end": new Date(year, month, day-1, 09, 20), "title": "Coffee with Alison", userId: 1},
+				{"id":5, "start": new Date(year, month, day+1, 14), "end": new Date(year, month, day+1, 15, 00), "title": "Product showcase", userId: 0}
+			],
+			freebusys: [
+				{"start": new Date(year, month, day-1, 08), "end": new Date(year, month, day-1, 18, 00), "free": true, userId: [0,1,2,3]},
+				{"start": new Date(year, month, day+0, 08), "end": new Date(year, month, day+0, 18, 00), "free": true, userId: [0,1,2,3]},
+				{"start": new Date(year, month, day+1, 08), "end": new Date(year, month, day+1, 18, 00), "free": true, userId: [0,3]},
+				{"start": new Date(year, month, day+2, 14), "end": new Date(year, month, day+2, 18, 00), "free": true, userId: 1}
+			]
+		};
+	
+		function updateMessage() {
+			var dataSource = $('#data_source').val();
+			$('#message').fadeOut(function() {
+				if(dataSource === "1") {
+					$('#message').text("Displaying event data set 1 with timeslots per hour of 4 and timeslot height of 20px. Moreover, the calendar is free by default.");
+				} else if(dataSource === "2") {
+					$('#message').text("Displaying event data set 2 with timeslots per hour of 3 and timeslot height of 30px. Moreover, the calendar is busy by default.");
+				} else {
+					$('#message').text("Displaying no events.");
+				}
+				$(this).fadeIn();
+			});
+		}
+		
+		$(document).ready(function() {
+	
+	 	$('#switcher').themeswitcher();
+	 
+			var $calendar = $('#calendar').weekCalendar({
+				timeslotsPerHour: 4,
+				scrollToHourMillis : 0,
+				height: function($calendar){
+					return $(window).height() - $('h1').outerHeight(true);
+				},
+				eventRender : function(calEvent, $event) {
+					if(calEvent.end.getTime() < new Date().getTime()) {
+						$event.css("backgroundColor", "#aaa");
+						$event.find(".wc-time").css({backgroundColor: "#999", border:"1px solid #888"});
+					}
+				},
+				eventNew : function(calEvent, $event) {
+         var $dialogContent = $("#event_edit_container");
+         resetForm($dialogContent);
+         var startField = $dialogContent.find("select[name='start']").val(calEvent.start);
+         var endField = $dialogContent.find("select[name='end']").val(calEvent.end);
+         var titleField = $dialogContent.find("input[name='title']");
+         var bodyField = $dialogContent.find("textarea[name='body']");
+
+
+         $dialogContent.dialog({
+            modal: true,
+            title: "Nuevo turno",
+            close: function() {
+               $dialogContent.dialog("destroy");
+               $dialogContent.hide();
+               $('#calendar').weekCalendar("removeUnsavedEvents");
+            },
+            buttons: {
+               save : function() {
+                  calEvent.id = id;
+                  id++;
+                  calEvent.start = new Date(startField.val());
+                  calEvent.end = new Date(endField.val());
+                  calEvent.title = titleField.val();
+                  calEvent.body = bodyField.val();
+
+                  $calendar.weekCalendar("removeUnsavedEvents");
+                  $calendar.weekCalendar("updateEvent", calEvent);
+                  $dialogContent.dialog("close");
+               },
+               cancel : function() {
+                  $dialogContent.dialog("close");
+               }
+            }
+         }).show();
+
+         $dialogContent.find(".date_holder").text($calendar.weekCalendar("formatDate", calEvent.start));
+         setupStartAndEndTimeFields(startField, endField, calEvent, $calendar.weekCalendar("getTimeslotTimes", calEvent.start));
+
+      },
+				data: function(start, end, callback) {
+					var dataSource = $('#data_source').val();
+					if(dataSource === "1") {
+						callback(eventData1);
+					} else if(dataSource === "2") {
+						callback(eventData2);
+					} else {
+						callback({options: {defaultFreeBusy:{free:true}}, events: []});
+					}
+	            },
+				users: ['Mimí', 'Pepe colores', 'El Richard', 'Luciana tijereta'],
+				showAsSeparateUser: true,
+				displayOddEven: true,
+				displayFreeBusys: true,
+				daysToShow: 1,
+				switchDisplay: {'1 day': 1, '3 next days': 3},
+        headerSeparator: ' ',
+        useShortDayNames: true,
+        // I18N
+        firstDayOfWeek: $.datepicker.regional['es'].firstDay,
+        shortDays: $.datepicker.regional['es'].dayNamesShort,
+        longDays: $.datepicker.regional['es'].dayNames,
+        shortMonths: $.datepicker.regional['es'].monthNamesShort,
+        longMonths: $.datepicker.regional['es'].monthNames,
+        dateFormat: "d F y"
+			});
+	
+			$('#data_source').change(function() {
+				$calendar.weekCalendar("refresh");
+				updateMessage();
+			});
+			
+			updateMessage();
+		});
+  })(jQuery);
+  function resetForm($dialogContent) {
+      $dialogContent.find("input").val("");
+      $dialogContent.find("textarea").val("");
+   }
+	</script>
+</head>
+<body>
+	<h1>Week Calendar Demo</h1>
+	<p class="description">This calendar demonstrates the differents new options that allow user management and freebusy display / computation.</p>
+	<div id="message" class="ui-corner-all"></div>
+	<div id="calendar_selection" class="ui-corner-all">
+		<strong>Event Data Source: </strong>
+		<select id="data_source">
+			<option value="">Select Event Data</option>
+			<option value="1">Event Data 1</option>
+			<option value="2">Event data 2</option>
+		</select>
+	</div>
+	<div id="about_button_container">
+		<div id="switcher"></div>		
+	</div>
+	<div id="calendar"></div>
+	<div id="event_edit_container">
+		<form>
+			<input type="hidden" />
+			<ul>
+				<li>
+					<span>Fecha: </span><span class="date_holder"></span> 
+				</li>				
+				<li>
+					<label for="title">Teléfono: </label><input type="text" name="title" />
+				</li>
+				<li>
+					<label for="body">Mail: </label><input name="body"></textarea>
+				</li>
+			</ul>
+		</form>
+	</div>
+</body>
+</html>

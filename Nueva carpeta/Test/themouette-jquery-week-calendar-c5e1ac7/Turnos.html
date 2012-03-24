@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<title>Demo 3</title>
+    <link rel='stylesheet' type='text/css' href='libs/css/smoothness/jquery-ui-1.8.11.custom.css' />
+	<link rel="stylesheet" type="text/css" href="jquery.weekcalendar.css" />
+	<link rel="stylesheet" type="text/css" href="skins/default.css" />
+	<link rel="stylesheet" type="text/css" href="skins/gcalendar.css" />
+	<link rel="stylesheet" type="text/css" href="turnos.css" />
+	<script type='text/javascript' src='libs/jquery-1.4.4.min.js'></script>
+	<script type='text/javascript' src='libs/jquery-ui-1.8.11.custom.min.js'></script>
+	<script type='text/javascript' src='libs/jquery-ui-i18n.js'></script>
+	<script type="text/javascript" src="http://jqueryui.com/themeroller/themeswitchertool/"></script>
+	<script type="text/javascript" src="libs/date.js"></script>
+	<script type="text/javascript" src="jquery.weekcalendar.js"></script>
+	<script type="text/javascript" src="turnos.js"></script></head>
+<body>
+	<h1>Turnos</h1>
+	<p class="description">Prueba de concepto para turnos</p>
+	<div id="message" class="ui-corner-all"></div>
+	<div id="calendar_selection" class="ui-corner-all">
+		<strong>Event Data Source: </strong>
+		<select id="data_source">
+			<option value="">Select Event Data</option>
+			<option value="1">Event Data 1</option>
+			<option value="2">Event data 2</option>
+		</select>
+	</div>
+	<div id="about_button_container">
+		<div id="switcher"></div>		
+	</div>
+	<div id="calendar"></div>
+	<div id="event_edit_container">
+		<form>
+			<input type="hidden" />
+			<ul>
+				<li>
+					<span>Fecha: </span><span class="date_holder"></span> 
+				</li>				
+				<li>
+					<label for="title">Teléfono: </label><input type="text" name="title" />
+				</li>
+				<li>
+					<label for="body">Mail: </label><input name="body"></textarea>
+				</li>
+			</ul>
+		</form>
+	</div>
+</body>
+</html>
