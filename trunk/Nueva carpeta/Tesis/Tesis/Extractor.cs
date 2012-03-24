@@ -67,6 +67,16 @@ namespace ConsoleApplication1
             return pals.Any(pal => str.ToLower() == pal.ToLower());
         }
 
+        public static bool ContieneAlgunaDeEstas(this string str, params string[] pals)
+        {
+            return pals.Any(str.Contains);
+        }
+
+        public static bool EmpiezaConAlgunaDeEstas(this string str, params string[] pals)
+        {
+            return pals.Any(str.StartsWith);
+        }
+
         /// <summary>
         /// Reconoce strings como: "tramo." y "tramo..."
         /// Devuelve la palabra sin puntuación ("tramo" en este caso) y la puntuación final "." o "..."
@@ -91,34 +101,7 @@ namespace ConsoleApplication1
             }
 
             return palabraSinPuntuación;
-        }
-
-        /// <summary>
-        /// Si la palabra tiene espacios
-        /// Reemplaza los espacios de la palabra con el string especial: "\_/"
-        /// Devuelve el ejemplo reemplazado   
-        /// </summary>
-        public static string ReemplazarEspacioPorStringEspecial(this string ejemplo, string palabra)
-        {
-            var palabra2 = palabra.ReemplazarEspacioPorStringEspecial();
-            return ejemplo.Replace(palabra, palabra2);
-        }
-
-        /// <summary>
-        /// Reemplaza los espacios " " con el string especial "\_/"
-        /// </summary>
-        public static string ReemplazarEspacioPorStringEspecial(this string p)
-        {
-            return p.Replace(" ", @"\_/");
-        }
-
-        /// <summary>
-        /// Reemplaza los "\_/" con un espacio " " 
-        /// </summary>
-        public static string ReemplazarStringEspecialPorEspacio(this string p)
-        {
-            return p.Replace(@"\_/", " ");
-        }
+        }        
         #endregion
     }
 
@@ -367,7 +350,6 @@ namespace ConsoleApplication1
         #endregion
         
         #region Métodos
-
         public static void ExtraerLaInformaciónDeCobuild(string archCobuild, string archSalida, string archDeInformación)
         {
             var texto = File.ReadAllText(archCobuild);
@@ -377,12 +359,15 @@ namespace ConsoleApplication1
             tw.Close();
             
             var total = CantidadDePalabras + CantidadDeSignosDePuntuación;
-            TextWriter info = new StreamWriter(archDeInformación);
+            
+            TextWriter info = new StreamWriter(archDeInformación);    
             info.WriteLine("Cantidad de palabras y signos puntuación: " + total);
             info.WriteLine("Cantidad de signos de puntuación: " + CantidadDeSignosDePuntuación);
             info.WriteLine("Cantidad de palabras: " + CantidadDePalabras);
-            info.WriteLine("Cantidad de palabras etiquetadas: " + CantidadDePalabrasEtiquetadas + "\t( " + ((double)(CantidadDePalabrasEtiquetadas * 100) / ((double)CantidadDePalabras)) + "% )");
+            info.WriteLine("Cantidad de palabras etiquetadas: " + CantidadDePalabrasEtiquetadas + "\t( " + ((CantidadDePalabrasEtiquetadas * 100) / (double)CantidadDePalabras) + "% )");
 
+            info.WriteLine();
+            info.WriteLine();
             info.Close();
         }
         private static void ExtraerLaInformaciónDeCobuild(string texto, TextWriter tw)
@@ -394,13 +379,9 @@ namespace ConsoleApplication1
             {
                 entradaCobuild = ObtenerEntrada(texto, ref indice);
                 if (entradaCobuild != string.Empty)
-#if HacerLegible
-                    	datos = HacerLegiblElBloque(bloque);
-#else
                     informaciónExtraída = ExtraerInformaciónDeLaEntrada(entradaCobuild);
                 if (!string.IsNullOrEmpty(informaciónExtraída))
                     tw.Write(informaciónExtraída);
-#endif
             }
         }
         /// <summary>
@@ -438,14 +419,14 @@ namespace ConsoleApplication1
 
                 var palabra = líneas[1].Split(',')[0].TrimEnd();//Pueden venir cosas del estilo: A, a
                 var formasDeLaPalabra = líneas[2].Split(',', ';').Select(forma => forma.Trim()).ToList();//A veces no hay formas de la palabra en la entrada (ver entrada ABC)
-                if(formasDeLaPalabra.Any(f=>f.Split().Length>2))
+                if (formasDeLaPalabra.Any(f => f.Split().Length > 2 || f.Contains('*') || f.Contains('!')))
                     formasDeLaPalabra.Clear();
                     
                 var palabras = formasDeLaPalabra.Unir(palabra);
 
                 for (; i < líneas.Length - 1; i++)
                 {
-                    var línea = líneas[i].TrimEnd();
+                    var línea = líneas[i].Trim();
 
                     if (EsEjemploODefinición(línea, palabras))
                     {
@@ -465,10 +446,15 @@ namespace ConsoleApplication1
 
         /// <summary>
         /// Indica si la ejemplo es un ejemplo o definición de Cobuild;
+        /// "used for the", "is used in the present tense", "Someone or something that is", "If something is", "If you are" son parte de la expliación del uso de la palabras
+        /// '/' es utilizado en las pronunciaciones
         /// </summary>
         private static bool EsEjemploODefinición(string línea, IEnumerable<string> formasDeLaPalabra)
         {
-            var esEjemploODefinición = !línea.Contains('/') && !línea.Contains('*') &&  !línea.Contains("is used in the present tense") && línea.Sum(letra => letra == ',' || letra == ';' ? 1 : 0) <= 3;
+            var esEjemploODefinición =
+                !línea.EmpiezaConAlgunaDeEstas("Someone or something that is","If something is","If you are") &&
+                !línea.ContieneAlgunaDeEstas("is used in the present tense", "used for the" , "/", "*") &&                 
+                línea.Sum(letra => letra == ',' || letra == ';' ? 1 : 0) <= 3;
             return esEjemploODefinición && formasDeLaPalabra.Any(p => EsEjemploODefinición(línea, p));
         }
 
@@ -480,11 +466,12 @@ namespace ConsoleApplication1
         /// y tiene al menos 4 palabras
         /// y tiene como máximo 3 comas
         /// y tiene al menos una palabra que no es la 'palabra'
+        /// y no tiene un espacio ' ' (no es una palabra compuesta)
         /// </summary>
         private static bool EsEjemploODefinición(string línea, string palabra)
         {
             var cantPalabras = línea.Split().Count();
-            return línea.Contains(palabra) && línea.Length > palabra.Length + 2 && cantPalabras > 4 && cantPalabras > línea.CantidadDeOcurrencias(palabra);
+            return !palabra.Contains(' ') && línea.Contains(palabra) && línea.Length > palabra.Length + 2 && cantPalabras > 4 && cantPalabras > línea.CantidadDeOcurrencias(palabra);
         }
         
         /// <summary>
@@ -494,13 +481,11 @@ namespace ConsoleApplication1
         private static string GenerarSalidaEtiquetada(string ejemplo, Dictionary<string, string> etiquetas)
         {
             var salida = string.Empty;
-            ejemplo = ManejarPalabrasCompuestas(ejemplo, etiquetas);
-
             var palabrasDelEjemplo = ejemplo.Split(new[] {' '}, StringSplitOptions.RemoveEmptyEntries);
 
             foreach (var palabraDelEjemplo in palabrasDelEjemplo)
             {
-                var palabra = palabraDelEjemplo.ReemplazarStringEspecialPorEspacio();
+                var palabra = palabraDelEjemplo;
 
                 if (palabra.StartsWith("..."))
                 {
@@ -515,7 +500,7 @@ namespace ConsoleApplication1
                 if (palabraSinPuntuación != string.Empty )
                 {
                     salida += palabraSinPuntuación;
-                    CantidadDePalabras++;    
+                    CantidadDePalabras++;        
 
                     var palabraEnMinúscula = palabraSinPuntuación.ToLower();
 
@@ -569,22 +554,6 @@ namespace ConsoleApplication1
         }
 
         /// <summary>
-        /// Cuando la palabra de la entrada es compuesta, por ejemplo: "bite back"
-        /// En la definición y el ejemplo se guarda bite\_/back para que el algoritmo funcione bien y luego se recompone a "bite back"
-        /// </summary>
-        private static string ManejarPalabrasCompuestas(string ejemplo, Dictionary<string, string> etiquetas)
-        {
-            foreach (var palabraConEtiqueta in etiquetas)
-                if (palabraConEtiqueta.Key.Contains(' '))//Si es una palabra compuesta
-                {
-                    var palabra = palabraConEtiqueta.Key;
-                    ejemplo = ejemplo.ReemplazarEspacioPorStringEspecial(palabra);
-                }
-            return ejemplo;
-        }
-
-
-        /// <summary>
         /// Para cada una de las formas de la palabra infiere su etiquetaPennTreebank basado en la palabra y su etiqueta PennTreebank
         /// </summary>
         private static Dictionary<string, string> InferirEtiquetasParaLasFormasDeLaPalabra(IEnumerable<string> formasDeLaPalabra, string palabra, string etiquetaPennTreebank)
@@ -620,23 +589,13 @@ namespace ConsoleApplication1
         /// </summary>
         private static string ObtenerEtiquetaPennTreebank(string[] líneas, int i)
         {
-            string líneaDeDondeSeObtuvoLaEtiqueta;
-            return ObtenerEtiquetaPennTreebank(líneas, i, out líneaDeDondeSeObtuvoLaEtiqueta);           
-        }
-
-        /// <summary>
-        /// Busca en la entrada, (en cada renglón) si hay alguna palabra que sea un tag COBUILD. Es decir; 
-        /// si está en la tabla de traducción de etiquetas, y si es así lo traduce con la etiqueta Penn Treebank correspondiente.
-        /// </summary>
-        private static string ObtenerEtiquetaPennTreebank(string[] líneas, int i, out string líneaDeDondeSeObtuvoLaEtiqueta)
-        {
-            líneaDeDondeSeObtuvoLaEtiqueta = string.Empty;
             string etiquetaPennTreebankObtenida = null;
 
             for (; i < líneas.Length && etiquetaPennTreebankObtenida == null; i++)
             {
-                líneaDeDondeSeObtuvoLaEtiqueta = líneas[i];
-                etiquetaPennTreebankObtenida = ObtenerEtiquetaPennTreebank(líneaDeDondeSeObtuvoLaEtiqueta);
+                var línea = líneas[i];
+                if(línea!= string.Empty)
+                    etiquetaPennTreebankObtenida = ObtenerEtiquetaPennTreebank(línea);
             }
 
             return etiquetaPennTreebankObtenida;
