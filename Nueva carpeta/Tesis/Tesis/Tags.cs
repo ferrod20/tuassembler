@@ -1,33 +1,163 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Text;
 
 namespace ConsoleApplication1
 {
-    public static class MatrizDeConfusion
+    public class MatrizDeConfusión
     {
-        public static IList<string> ObtenerTags(this IEnumerable<Tags>  matrizDeConf)
+        private List<Tags> listaDeTags;
+
+        public MatrizDeConfusión()
+        {
+            this.listaDeTags = new List<Tags>();
+        }
+
+        public int CantidadDeEtiquetas{get; set; }
+
+        public IList<string> ObtenerTags()
         {
             var resultado = new List<string>();
-            foreach (var tags in matrizDeConf)
-                resultado.AddIfNoExists(tags.TagDePrueba, tags.TagGoldStandard);
+            foreach (var tags in listaDeTags)
+            {
+                resultado.Add(tags.TagDePrueba);
+                resultado.Add(tags.TagGoldStandard);
+            }
 
             return resultado;
         }
 
-        public static int ObtenerCantidadDeErrores(this List<Tags> matrizDeConf, string tagDePrueba, string tagGoldStandard)
+        public int ObtenerCantidadDeErrores(string tagDePrueba, string tagGoldStandard)
         {
-            foreach (var tags in matrizDeConf)
+            foreach (var tags in listaDeTags)
                 if (tags.TagDePrueba == tagDePrueba && tags.TagGoldStandard == tagGoldStandard)
                     return tags.TotalDePalabras;
 
             return 0;
         }
 
-        public static void AddIfNoExists(this List<string> lista, params string[] palabras)
+        public void EscribirMatrizDeConfParaLatex(string archivoDeSalida)
         {
-            foreach (var palabra in palabras.Where(palabra => !lista.Contains(palabra)))
-                lista.Add(palabra);
+            TextWriter salida = new StreamWriter(archivoDeSalida);
+            var cantidadDeErrores = CantidadDeErrores();
+
+            var porcentajeDeAciertos = (CantidadDeEtiquetas - cantidadDeErrores) / (double)CantidadDeEtiquetas * 100;
+            salida.WriteLine("Porcentaje de aciertos: " + porcentajeDeAciertos);
+
+            salida.WriteLine();
+            salida.WriteLine("Errores");
+            salida.WriteLine("TagWSJ\tTagAsignado\tPorcentajeDeError");
+
+            var tags = TomarLosDeMayorError(10);
+
+            salida.Write(
+            @"\begin{center}
+\begin{longtable}{| l | ");
+            for (var i = 0; i < tags.Count(); i++)
+                salida.Write("c | ");
+
+            salida.Write(
+            @"}
+\caption{Ejemplo de matriz de confusión}\\	
+\hline
+ \backslashbox{\scriptsize{COBUILD}\kern-1em}{\kern-1em \scriptsize{WSJ}}  &	");
+
+            foreach (var tag in tags)
+                salida.Write("\\textbf{" + tag + "}	&   ");
+            salida.Write(@"\hline
+\endhead
+\hline
+\endfoot
+\endlastfoot
+	\hline
+");
+            foreach (var tagCol in tags)
+            {
+                salida.Write(@"\textbf{" + tagCol + "}");
+                foreach (var tagFila in tags)
+                {
+                    salida.Write(" & ");
+                    var error = ObtenerCantidadDeErrores(tagCol, tagFila);//tag columna es tag de prueba, tagFila es tag gold standard
+                    if (error == 0)
+                        salida.Write("-");
+                    else
+                        salida.Write(error);
+                }
+                salida.WriteLine(@"\\");
+            }
+
+
+            salida.Write(@"\hline
+\end{longtable}
+\end{center}");
+
+            salida.Close();
+        }
+
+        private IEnumerable<string> TomarLosDeMayorError(int cuantos)
+        {
+            OrdenarPorMayorError();
+            return ObtenerTags().Take(cuantos);
+        }
+
+        private void OrdenarPorMayorError()
+        {
+            listaDeTags = listaDeTags.OrderByDescending(s => s.TotalDePalabras).ToList();
+        }
+
+        public int CantidadDeErrores()
+        {
+            return listaDeTags.Sum(s => s.TotalDePalabras);
+        }
+
+        public void EscribirMatrizDeConfusión(string archivoDeSalida)
+        {
+            TextWriter salida = new StreamWriter(archivoDeSalida);
+
+            var cantidadDeErrores = CantidadDeErrores();
+            var aciertos = CantidadDeEtiquetas - cantidadDeErrores;
+            var porcentajeDeAciertos = aciertos / (double)CantidadDeEtiquetas * 100;
+            salida.WriteLine("Aciertos: " + aciertos + " ( " + porcentajeDeAciertos + "% )");
+            salida.WriteLine("Errores: " + cantidadDeErrores);
+            salida.WriteLine("Cantidad de tags: " + CantidadDeEtiquetas);
+
+            salida.WriteLine();
+            salida.WriteLine("Errores");
+            salida.WriteLine("TagWSJ\tTagAsignado\tPorcentajeDeError");
+
+            OrdenarPorMayorError();
+
+            foreach (var tags in listaDeTags)
+            {
+                salida.WriteLine(tags.TagGoldStandard + " " + tags.TagDePrueba + " " + tags.TotalDePalabras);
+                foreach (var palabra in tags.TomarPalabrasDeMayorError(40))
+                    salida.WriteLine("\t" + palabra.Key + " " + palabra.Value);
+            }
+
+            salida.Close();
+        }
+
+        public void AgregarError(string tagGoldStandard, string tagDePrueba, string palabra)
+        {
+            var tags = new Tags(tagGoldStandard, tagDePrueba, palabra);
+            if (listaDeTags.Contains(tags))
+            {
+                var i = listaDeTags.IndexOf(tags);
+                listaDeTags[i].AgregarPalabra(palabra);
+            }
+            else
+                listaDeTags.Add(tags);
+        }
+
+        public override string ToString()
+        {
+            var sb = new StringBuilder();
+            foreach (var tag in listaDeTags)
+                sb.AppendLine(tag.ToString());
+            return sb.ToString();
         }
     }
 
@@ -57,7 +187,7 @@ namespace ConsoleApplication1
 
         #endregion
 
-        #region StringHelper
+        #region Métodos
         public bool Equals(Tags obj)
         {
             if (ReferenceEquals(null, obj))
@@ -88,7 +218,7 @@ namespace ConsoleApplication1
 
         public override string ToString()
         {
-            return string.Format("{0}-{1}", TagDePrueba, TagGoldStandard);
+            return string.Format("{0}(gold)-{1}(prueba): {2}", TagGoldStandard, TagDePrueba, TotalDePalabras);
         }
 
         public int Compare(Tags x, Tags y)
@@ -103,5 +233,10 @@ namespace ConsoleApplication1
 
         }
         #endregion
+
+        public IEnumerable<KeyValuePair<string, int>> TomarPalabrasDeMayorError(int cuantas)
+        {
+            return Palabras.OrderByDescending(s => s.Value).Take(cuantas);
+        }
     }
 }

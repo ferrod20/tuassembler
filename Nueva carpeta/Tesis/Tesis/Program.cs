@@ -4,7 +4,8 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
-
+//-extraer "Datos/Extraccion/Cobuild.original.legible" "Datos/Extraccion/Cobuild.extracted" "Datos/Extraccion/Cobuild.extracted.info"
+//-comparar "Datos/Extraccion/Cobuild.tagged" "Datos/Extraccion/Cobuild.extracted" "Datos/Extraccion/Cobuild.mconf"
 namespace ConsoleApplication1
 {    
     internal class Program
