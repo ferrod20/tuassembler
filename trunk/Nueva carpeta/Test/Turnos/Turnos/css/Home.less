@@ -1,0 +1,598 @@
+@import "Global";
+@import "OrganizationSettings";
+
+
+/* Main structure */	
+body {
+    background-color: @light-blue;
+    overflow: hidden;
+    background-image: url("@{url}logos/leankit_logo_bkg.png");
+    background-repeat:no-repeat;
+    background-position:center;
+    }
+#toolbar{
+	background-color:@normal-blue;
+	background: -webkit-linear-gradient(90deg, @middle-blue, lighten(@middle-blue, 5%) 50%, @normal-blue 10%, lighten(@normal-blue, 5%));
+	background: -moz-linear-gradient(90deg, @middle-blue, lighten(@middle-blue, 5%) 50%, @normal-blue 10%, lighten(@normal-blue, 5%));
+	background: -o-linear-gradient(90deg, @middle-blue, lighten(@middle-blue, 5%) 50%, @normal-blue 10%, lighten(@normal-blue, 	5%));
+	background: linear-gradient(90deg, @middle-blue, lighten(@middle-blue, 5%) 50%, @normal-blue 10%, lighten(@normal-blue, 5%));
+	border-top: solid 1px lighten(@normal-blue, 20%);
+	height:43px;
+	margin:10px;
+	min-width: 1050px;
+	.border-radius;
+	color: @white;
+    font-weight: bold;
+	font-size: 0.8125em;//=13/16
+	.row;
+	z-index:0;	 
+	.box-shadow(1px, 1px, 3px, #666);   
+    }
+
+#content {
+
+	.no-select;
+	margin:10px;
+	height:auto;
+	margin-top:62px;//toolbar height + margin
+	.col;
+	.row;
+	right:0;
+	.scroll-y;
+	float:left;	//transition boards animation
+	}
+
+    
+#content.paletteShown{
+right:230px;//palette width + margin-right (when palette is shown)
+}
+
+/* Toolbar */
+#logo{
+    float: left;
+    width: 47px;
+    height: 45px;
+    margin: -2px 0 0 -2px;
+    background-image: url("@{url}Sprites/icons-home.png");
+    background-position: 266px -53px !important;
+	cursor: pointer;
+	&:hover{
+    background-position: 266px -5px !important;}
+	}
+#name{
+    float: left;
+    line-height:22px;
+	max-width:200px;
+  	margin: 10px; //there should be a better way to center vertically
+    text-shadow: 1px 1px 5px @dark-blue;
+	font-size: 1.2em;
+	overflow:hidden;
+	text-overflow: ellipsis;
+	white-space:nowrap;
+	}
+#view{
+    float: right;
+    line-height:27px;
+    .border-radius;
+	border:solid 1px #044670;
+  	.linear-gradient(90deg, #012a4c, #0a6586);
+	.light;
+    margin:7px 0;
+    padding:0 5px;
+	a {
+    text-shadow: 0 -1px 1px #012a4c;
+    padding-right: 15px;
+    margin-left: 15px;
+	color: @white;
+    cursor:pointer;
+	&:hover {
+            color: @yellow;
+        }
+        &.active
+        {
+            color: @yellow;
+        }
+	}
+}
+#new-board{
+    width: 100px;
+    float: right;
+    margin:7px 0px 7px 10px;
+	position:relative;
+	.toolbar-button;
+	padding-right:20px;
+}
+#new-template{
+    width:100px;
+    float: right;
+    margin:7px 0px 7px 10px;
+	.toolbar-button;
+	position:relative;
+	padding-right:20px;
+}
+#filter-templates
+{
+    float: right;
+    margin:7px 10px 7px 0;
+	position:relative;
+	.toolbar-button;
+	padding-right:20px;
+}
+
+.filter-menuitem
+{
+    cursor:pointer;
+    .filter-checkmark-icon 
+    {
+        width: 16px;
+        height: 16px;
+        margin-top: 4px;
+        background-image: url("../../Images/Sprites/icons-organization.png");
+        background-position: 122px -40px;
+        float: right;
+    }
+    &.selected .filter-checkmark-icon
+    {
+        background-position: 60px -40px;
+    }
+    &:hover .filter-checkmark-icon
+    {        
+        background-position: 122px -8px;
+    }
+    &:hover.selected .filter-checkmark-icon
+    {
+        background-position: 60px -8px;
+    }
+}
+
+.arrow {
+	position:absolute;
+	right:5px;
+	top:1px;
+	margin: 10px 0 10px 10px;
+	width:8px;
+	height:8px;  
+	background-image: url("@{url}arrow-down.png");
+}
+#icons{
+    float: right;
+	margin: 10px;
+	}
+#icons div{
+    float: right;
+    cursor: pointer;
+	&.toolbar-icon
+    {
+        background-image:  url("@{url}Sprites/icons-home.png");
+        width: 30px;
+        height: 30px;	
+    }
+}
+#settings {
+    background-image:  url("@{url}Sprites/icons-home.png");
+    background-position: -59px -65px !important;
+    width: 30px;
+    height: 30px;
+	&:hover {
+    background-position: -59px -35px !important;}
+	&:active {
+    background-position: -59px -5px !important;}
+}
+#by-name {
+    background-image:  url("@{url}Sprites/icons-home.png");
+    background-position: -29px -65px !important;
+    width: 30px;
+    height: 30px;
+	&:hover {
+    background-position: -29px -35px !important;}
+	&:active {
+    background-position: -29px -5px !important;}
+}
+#search{
+    float: right;
+    margin:6px 25px 6px 0;
+	input
+	{
+		.border-radius;
+		height: 27px;
+		border:none;
+		outline:none;
+		padding:0 10px;
+		-webkit-box-shadow: inset 0 1px 2px #044670,0px 1px 1px #4ec3da;
+		-moz-box-shadow: inset 0 1px 2px #044670,0px 1px 1px #4ec3da;
+		-ms-box-shadow: inset 0 1px 2px #044670,0px 1px 1px #4ec3da;
+		-o-box-shadow: inset 0 1px 2px #044670,0px 1px 1px #4ec3da;
+		box-shadow: inset 0 1px 2px #044670,0px 1px 1px #4ec3da;
+		background-color: lighten(@light-blue, 20%);
+		position:relative;
+        width:150px;
+		&:hover, &:focus
+			{
+			background-color: @white;
+            }	
+	}
+
+	input::-webkit-input-placeholder
+	{
+		color: #012a4c;
+		font-family: Helvetica, Arial, Sans-Serif;
+		font-size:13px;
+	}
+	
+	input:-moz-placeholder
+	{
+		color: #012a4c;
+		font-family: Helvetica, Arial, Sans-Serif;
+		font-size:13px;
+	}
+}
+	
+/* Content */
+.kbm-item-description, .kbm-item-name{
+	    padding-left: 5px;
+}
+
+.board-item-hover{
+
+	background-color: fadeout(@normal-blue, 10%);
+    position:absolute;
+    height:auto;
+    .kbm-item-name
+    {
+        h3
+        {
+            white-space: inherit;
+			color: @white;
+        }
+	}
+
+	.thumbnail-menu-container{
+	    display:block;
+		paddin-bottom:10px;
+	}
+	h3
+        {
+			color: @white;
+        }
+    .kbm-item-description
+        {
+            h4
+            {
+                white-space: inherit;
+				color: @white;
+            }
+		}
+}
+
+#preview-dialog {
+    
+    background-image: none;
+    
+    div.preview-image-container {
+
+        height: 100%;
+        width: 100%;
+        overflow : auto;
+    }
+}
+
+.board-list-item-wrapper{
+    width: 220px;
+    height: 175px;
+    margin: 0 20px 20px 0;
+    position:relative;
+
+        .board-list-item {
+	        width:220px;
+	        height:175px;
+	        padding:10px;
+	        .border-radius;
+            cursor: pointer;
+	        .transition(700ms);
+            position:relative;
+
+	        &:hover, &.hover {
+	            .transition(300ms);
+                position:absolute;
+                z-index:9;
+                .board-item-hover; //Class used when the menu is open top: keep the board highlighted
+            }
+
+            .thumbnail{
+                position:relative;
+                z-index:0;
+            	width:220px;
+            	height:124px;
+            	margin-bottom:5px;
+            	box-shadow:1px 1px 5px #666;
+            	-webkit-box-shadow:1px 1px 5px #666;
+            	-moz-box-shadow:1px 1px 5px #666;
+
+            	div {
+
+            		position: absolute;
+            		top: 0;
+            		height: 124px;
+            		width: 220px;
+            		background-repeat: no-repeat;
+            	}                
+            }
+
+            .thumbnail-menu-container{
+                z-index:1;
+            }
+
+            h3{
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+           .kbm-item-description{
+                h4
+                {
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                }
+            }
+        }
+}
+.board-list-item:hover .thumbnail-menu-container{
+	display:block;
+}
+ 
+
+#boards-list-container, #archive-list-container, #templates-list-container {
+	float:left;
+	ul {
+        display:inline; list-style:none;
+    li    {
+        float:left;
+		}
+	}
+}
+.thumbnail-menu-container{
+	float:none;
+	position:absolute;
+	display:none;
+	filter: alpha(opacity=60);
+	background-color: fadeout(@normal-blue, 40%);
+	width: 220px;
+	height: 20px;
+	color: black;
+	a {
+    	float: right;
+		margin:5px 10px;
+		width:12px;
+		height:10px;
+		background-image:  url("@{url}Sprites/arrow.png");
+		background-repeat:no-repeat;		
+        cursor: pointer;
+		&:hover{
+			background-position: 0px -10px;
+			}
+	}
+}
+.board-list-item:hover .thumbnail-menu-container{
+	display:block;
+}
+ /* Activity type row */
+
+.activity-type-row {
+	.border-radius;
+	clear: both;
+	height: 32px;
+	line-height:32px;
+	padding-left: 10px;
+	font-weight:bold;
+	font-size:13px;
+	overflow: hidden;
+	span {
+		
+		display:none;
+	}
+
+	&:hover {
+	
+		background-color: @light-blue;
+		color: @white;
+		span {
+		
+			display:inherit;
+		}
+	}
+
+	&.editing {
+
+		background-color: @light-blue;
+		span {
+
+			display: none;
+		}
+	}
+
+	form {
+
+		input {
+			border: dotted 1px @dark-blue;
+			color:@dark-blue;
+			background-color:none;
+			margin: 2px auto auto 0;
+			padding: 0;
+			min-width: 290px;
+			height: 20px !important;
+			padding-top: 0.5em;
+			font-size: 13px;
+			font-weight: bold;
+		}
+
+		button {
+
+			background: transparent;
+			color: @white;
+			border: none;
+			font-weight: bold;
+			text-shadow: 0 0 5px rgba(0,0,0,0.5);
+		}
+
+		button[type='submit'] {
+			
+			margin-left: 10px;
+		}
+	}
+}
+
+
+/*Transitions boards animation*/
+#transition-container {
+	/* this cannot be too large */
+	width:20000em;
+	position:absolute;
+	clear:both;
+} 	
+
+/*Trial account expiring notification*/
+#expiremsg {
+    overflow: hidden;
+    width: 370px;
+    text-align: center;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 25px;
+    background-color: #FFFF7C;
+    height: 20px;
+    color: #F3FDED;
+    filter:Alpha(Opacity=90);
+	-moz-opacity:0.90;
+	-khtml-opacity: 0.90;
+	opacity: 0.90;
+    -ms-filter:'alpha(opacity=90)';
+    display:none;
+    vertical-align:middle;
+    -moz-border-radius-bottomleft: 8px;
+    -moz-border-radius-bottomright: 8px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    box-shadow: 2px 2px 5px #333333;
+}
+
+/* Disable view
+----------------------------------------------------------*/
+.disabled-view{
+    display:none;
+}
+
+
+/* New Board dialog
+----------------------------------------------------------*/
+#save-board{
+    label:first-child{
+        margin-top:0;
+    }
+}
+
+#save-board-title
+{
+	width:425px;
+}
+#save-board-description
+{
+	height: 110px;
+}
+
+/* Save as Template dialog
+----------------------------------------------------------*/
+#board-template-name
+{
+	width:425px;
+}
+#board-template-description
+{
+	height: 200px;
+}
+
+.left
+{
+	float:left;
+	width: 48%;
+}
+.right
+{
+	float:right;
+	width: 48%;
+}
+
+/* Import template from a file
+----------------------------------------------------------*/
+#board-template{
+    label:first-child{
+        margin-top:0;
+    }
+    #boards-selector{
+        margin-top:20px;
+    }
+}
+#board-template-import{
+    margin-top:20px;
+    #templateFile{
+        width:424px;
+    }
+}
+
+
+/* New board from template
+----------------------------------------------------------*/
+#save-board-select-template-tab{
+    #save-board-select-template-list{
+        label{
+            margin-top:0;
+        }
+    }
+    #save-board-category-list{
+        margin-top:0;
+        input{
+            display:block;
+            margin-bottom:5px;
+            .activity-type-name;
+			.activity-type-row;
+			min-width:100%;
+			background:none;
+			background-color:transparent;
+            border:none;
+			color:@normal-blue;
+			text-shadow:none;
+			text-align:left;
+			margin-bottom:0;
+        }
+        input.selected{
+            background-color: darken(@light-blue,10%);
+			color: @white;
+        }
+    }
+    #save-board-templates-list, #save-board-category-list {
+        min-height:350px;
+        div.activity-type-row{
+            cursor:pointer;
+        }
+    }
+
+    #save-board-select-template-scroll-items{
+        #save-board-selected-template-description{
+            max-height: 55px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width:428px;
+        }
+        #save-board-selected-template-preview{
+            position:absolute;
+            top:0;
+            right:0;
+            width:80px;
+        }
+        label{
+            margin-top:5px;
+        }
+    }
+}
+

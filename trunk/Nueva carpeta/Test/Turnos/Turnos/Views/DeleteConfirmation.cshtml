@@ -1,0 +1,18 @@
+﻿@using System.Web.Mvc.Html
+
+<div id="users-delete-confirmation" class="hidden">
+    <form id="users-delete-confirmation-form" action="#" onsubmit="return false;">
+    <fieldset>
+        <h2>Delete Confirmation</h2>
+        <p>
+            Deleting this user will remove all of the user's assignments.
+            <br />
+            Are you sure you wish to delete this User?<br />
+        </p>
+        <div id="formButtons">
+            <input id="users-delete-confirmated" class="button" name="users-delete-confirmated" type="button" value="Yes" />
+            <input id="users-delete-confirmation-cancel" class="button cancel" name="users-delete-confirmation-cancel" type="button" value="Cancel" />
+        </div>       
+    </fieldset>
+    </form>
+</div>

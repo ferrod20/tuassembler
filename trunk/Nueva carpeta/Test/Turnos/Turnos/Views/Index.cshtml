@@ -1,0 +1,33 @@
+@using System.Web.Mvc.Html
+<script type="text/javascript" src="../js/Users.template.js"></script>
+<script type="text/javascript" src="../js/UsersController.js" ></script>
+
+<div id="users-scroll">
+    <div id="users-scroll-items">
+        <div id='users-root' class="slider-panel">
+            <div id="users-root-create-btn">
+                <input id="users-create" class="button" name="Create A New User" type="button" value="Create A New User" />               
+            </div>
+            
+            <input id="users-search" type="text" placeholder="Buscar" />
+                <div class="clear"></div>
+            <label id="users-by-name" title="sort by name">Recuros actuales</label>
+            <div id='users-list' class="container">
+            </div>
+            <div id="users-create-users-message" class="information">
+                Con su actual suscripción puede agregar hasta 6 users más.
+            </div>  
+        </div>
+        <div id="users-panel" class="slider-panel">
+            @{
+                //Html.RenderPartial("UserForm");
+            //Html.RenderPartial("PasswordForm");
+            Html.RenderPartial("DeleteConfirmation");
+            }
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    //resourcesList = new EntityList(@(Model.UsersJson);    
+</script>

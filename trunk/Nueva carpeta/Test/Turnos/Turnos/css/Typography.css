@@ -1,0 +1,110 @@
+﻿/* GLOBAL FONTS
+----------------------------------------------------------*/
+
+body
+{
+    font-family: Helvetica, Arial, Sans-Serif;
+    color: Black;
+}
+
+/* LINKS   
+----------------------------------------------------------*/
+a:link
+{
+    color: #034af3;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:visited
+{
+    color: #505abc;
+}
+a:hover
+{
+    color: #1d60ff;
+    text-decoration: none;
+}
+a:active
+{
+    color: #12eb87;
+}
+
+/* MENUS AND LABELS   
+----------------------------------------------------------*/
+.kb-primary-menu-list, .kb-secondary-menu-list
+{
+    font-weight:bold;
+    margin-bottom:0.625em;
+	font-size: .75em;
+}
+
+
+/* HEADINGS   
+----------------------------------------------------------*/
+h1
+{
+    font-size: 2em;
+}
+h2
+{
+    font-size: 1.5em;
+    font-weight:bold;
+    margin-bottom:0.625em;
+}
+h3
+{
+    font-size: 1.2em;
+    font-weight:bold;
+}
+h4
+{
+    font-size: 1.1em;
+}
+h5
+{
+    font-size: 1em;
+}
+h6
+{
+    font-size: 0.75em;
+    line-height: 0.875em;
+}
+
+/* HEADER
+----------------------------------------------------------*/
+.kb-leankit-title
+{
+	font-size: 2.43em;
+	color: White;	
+	margin:15px 0 0 10px;
+	float:left;
+}
+
+.kb-organization-title
+{
+	font-size: 1.5em;
+	color: white;
+	font-style:italic;
+	margin:50px 0 0 10px;
+	float:left;
+}
+
+
+/* Boards View: 
+headings defined by .nameLane
+----------------------------------------------------------*/
+
+/* MARGINS
+----------------------------------------------------------*/
+p, ul
+{
+    margin-bottom: 1.25em;
+    line-height: 1.4em;
+}
+
+/* CARDS
+----------------------------------------------------------*/
+.text
+{
+    line-height: 1.2em;
+}
