@@ -18,7 +18,7 @@ namespace ConsoleApplication1
         private static string cobuildOriginalLegible = @"Datos\Extraccion\Cobuild.original.legible";
         #endregion
 
-        #region StringHelper
+        #region Métodos
         private static string ConvertirAAscii(string texto)
         {
             var sb = new StringBuilder();
@@ -67,6 +67,9 @@ namespace ConsoleApplication1
                     
                     case "-extraer":
                         Extraer(args);
+                        break;
+                    case "-2pasada":
+                        SegundaPasada(args);
                         break;
                     case "-unir":
                         Unir(args);
@@ -126,6 +129,24 @@ namespace ConsoleApplication1
             }
         }
 
+        private static void SegundaPasada(string[] args)
+        {
+            if (args.Length < 4)
+            {
+                Console.WriteLine("No se han definido los archivos <CobuildExtraido> <CobuildEtiquetado> y <Salida>");
+                Console.WriteLine("-help para obtener información de los comandos disponibles");
+            }
+            else
+            {
+
+                Console.WriteLine("Generando la 2 pasada: " + Path.GetFileName(args[1]) + " con " + Path.GetFileName(args[2]));
+                Console.WriteLine("Salida: " + Path.GetFileName(args[3]));
+                Console.WriteLine();
+
+                UnirCobuildExtraidoConCobuildTaggeado(args[1], args[2], args[3], SegundaPasada);
+            }
+        }
+
         private static void Unir(string[] args)
         {
             if (args.Length < 4)
@@ -140,7 +161,7 @@ namespace ConsoleApplication1
                 Console.WriteLine("Salida: " + Path.GetFileName(args[3]));
                 Console.WriteLine();
 
-                UnirCobuildExtraidoConCobuildTaggeado(args[1], args[2], args[3]);
+                UnirCobuildExtraidoConCobuildTaggeado(args[1], args[2], args[3], Unir);
             }
         }
 
@@ -162,7 +183,7 @@ namespace ConsoleApplication1
             }
         }
 
-        private static void UnirCobuildExtraidoConCobuildTaggeado(string cobuildExtraido, string cobuildEtiquetado, string cobuildFinal)
+        private static void UnirCobuildExtraidoConCobuildTaggeado(string cobuildExtraido, string cobuildEtiquetado, string cobuildFinal, Func<TextWriter, string, string, string[], bool> Hacer)
         {
             var textoExtraido = new StreamReader(cobuildExtraido);
             var textoEtiquetado = new StreamReader(cobuildEtiquetado);
@@ -177,13 +198,9 @@ namespace ConsoleApplication1
                 if( líneaExtraída != string.Empty )
                 {
                     var partesExtraídas = líneaExtraída.Split();
-                    salida.Write(partesExtraídas[0]);
-                    salida.Write("\t");
+                    salida.Write(partesExtraídas[0]);                    
                     var etiquetaExtraída = partesExtraídas.Last();
-                    if (partesExtraídas.Count() > 1 && !string.IsNullOrEmpty(etiquetaExtraída) && etiquetaExtraída != "VBD|VBN")
-                        salida.Write(etiquetaExtraída);
-                    else
-                        salida.Write(etiquetaEtiquetada.Split().Last());
+                    Hacer(salida, etiquetaExtraída, etiquetaEtiquetada, partesExtraídas);
 
                     salida.WriteLine();
                 }
@@ -195,6 +212,46 @@ namespace ConsoleApplication1
             salida.Close();
             textoExtraido.Close();
             textoEtiquetado.Close();
+        }
+
+        private static bool Unir(TextWriter salida, string etiquetaExtraída, string etiquetaEtiquetada, string[] partesExtraídas)
+        {
+            salida.Write("\t");
+            if (partesExtraídas.Count() > 1 && !string.IsNullOrEmpty(etiquetaExtraída) && etiquetaExtraída != "VBD|VBN")
+                salida.Write(etiquetaExtraída);
+            else
+                salida.Write(etiquetaEtiquetada.Split().Last());
+
+            return true;
+        }
+
+        /// <summary>
+        /// Si se obtuvo de Cobuild NN 	pero TnT asigno NNS, NNP o NNPS,  asignar tag TnT
+        /// Si se obtuvo de Cobuild NNS pero TnT asigno NNPS, asignar NNPS
+        /// Si se obtuvo de Cobuild VB  pero TnT asigno VBP,  asignar VBP 
+        /// Si se obtuvo de Cobuild VB  pero TnT asigno VBD,  asignar VBD   
+        /// </summary>
+        private static bool SegundaPasada(TextWriter salida, string etiquetaExtraída, string etiquetaEtiquetada, string[] partesExtraídas)
+        {
+            var etiquetado = etiquetaEtiquetada.Split().Last();
+            if (partesExtraídas.Count() > 1 && !string.IsNullOrEmpty(etiquetaExtraída) )
+                switch (etiquetaExtraída)
+                {
+                    case "NN":
+                        salida.Write("\t");
+                        salida.Write(etiquetado.EsAlgunaDeEstas("NNS", "NNP", "NNPS") ? etiquetado : etiquetaExtraída);
+                        break;
+                    case "NNS":
+                        salida.Write("\t");
+                        salida.Write(etiquetado == "NNPS" ? etiquetado : etiquetaExtraída);
+                        break;
+                    case "VB":
+                        salida.Write("\t"); 
+                        salida.Write(etiquetado.EsAlgunaDeEstas("VBP", "VBD") ? etiquetado : etiquetaExtraída);                    
+                        break;
+                }
+
+            return true;
         }
 
         private static void HacerLegibleCobuild()
