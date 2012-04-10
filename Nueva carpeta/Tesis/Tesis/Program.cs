@@ -228,7 +228,7 @@ namespace ConsoleApplication1
         /// <summary>
         /// Si se obtuvo de Cobuild NN 	pero TnT asigno NNS, NNP o NNPS,  asignar tag TnT
         /// Si se obtuvo de Cobuild NNS pero TnT asigno NNPS, asignar NNPS
-        /// Si se obtuvo de Cobuild VB  pero TnT asigno VBP,  asignar VBP 
+        /// Si se obtuvo de Cobuild VB  pero TnT asigno VBN,  asignar VBN
         /// Si se obtuvo de Cobuild VB  pero TnT asigno VBD,  asignar VBD   
         /// </summary>
         private static bool SegundaPasada(TextWriter salida, string etiquetaExtraída, string etiquetaEtiquetada, string[] partesExtraídas)
@@ -246,8 +246,8 @@ namespace ConsoleApplication1
                         salida.Write(etiquetado == "NNPS" ? etiquetado : etiquetaExtraída);
                         break;
                     case "VB":
-                        salida.Write("\t"); 
-                        salida.Write(etiquetado.EsAlgunaDeEstas("VBP", "VBD") ? etiquetado : etiquetaExtraída);                    
+                        salida.Write("\t");
+                        salida.Write(etiquetado.EsAlgunaDeEstas("VBN", "VBD", "VBZ", "VBP") ? etiquetado : etiquetaExtraída);                    
                         break;
                 }
 

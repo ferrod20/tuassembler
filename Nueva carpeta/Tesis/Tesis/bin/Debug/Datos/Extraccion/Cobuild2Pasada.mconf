@@ -1,50 +1,9 @@
-Aciertos: 54803 ( 83,0449145350952% )
-Errores: 11189
+Aciertos: 58561 ( 88,7395441871742% )
+Errores: 7431
 Cantidad de tags: 65992
 
 Errores
 TagWSJ	TagAsignado	PorcentajeDeError
-VBP VB 3729
-	have 67
-	get 42
-	take 39
-	do 30
-	make 28
-	hold 27
-	run 27
-	work 25
-	leave 24
-	pull 21
-	need 20
-	follow 19
-	think 18
-	keep 17
-	see 16
-	stand 16
-	call 15
-	go 15
-	show 15
-	know 14
-	read 14
-	want 14
-	miss 13
-	throw 13
-	believe 12
-	feel 12
-	find 12
-	agree 11
-	expect 11
-	lose 11
-	move 11
-	speak 11
-	tend 11
-	turn 11
-	understand 11
-	belong 10
-	bring 10
-	change 10
-	cross 10
-	draw 10
 NN VB 2616
 	burst 14
 	share 14
@@ -643,13 +602,6 @@ JJS NN 33
 	frost 1
 	rainforest 1
 	zest 1
-VBZ VB 29
-	has 19
-	kiss 3
-	fuss 2
-	hiss 2
-	truss 2
-	canvass 1
 JJR NN 23
 	elder 6
 	cleaner 4
