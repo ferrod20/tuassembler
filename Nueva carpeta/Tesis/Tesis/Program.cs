@@ -233,9 +233,9 @@ namespace ConsoleApplication1
         /// </summary>
         private static bool SegundaPasada(TextWriter salida, string etiquetaExtraída, string etiquetaEtiquetada, string[] partesExtraídas)
         {
-            var etiquetado = etiquetaEtiquetada.Split().Last();
+            var etiquetado = etiquetaEtiquetada.Split().Last().Trim();
             if (partesExtraídas.Count() > 1 && !string.IsNullOrEmpty(etiquetaExtraída) )
-                switch (etiquetaExtraída)
+                switch (etiquetaExtraída.Trim())
                 {
                     case "NN":
                         salida.Write("\t");
@@ -247,8 +247,25 @@ namespace ConsoleApplication1
                         break;
                     case "VB":
                         salida.Write("\t");
-                        salida.Write(etiquetado.EsAlgunaDeEstas("VBN", "VBD", "VBZ", "VBP") ? etiquetado : etiquetaExtraída);                    
+                        salida.Write(etiquetado.EsAlgunaDeEstas("VBN", "VBD", "VBZ", "VBP", "VBG") ? etiquetado : etiquetaExtraída);                    
                         break;
+                    case "JJ":
+                        salida.Write("\t");
+                        salida.Write(etiquetado.EsAlgunaDeEstas("JJR", "JJS") ? etiquetado : etiquetaExtraída);
+                        break;
+                    case "RB":
+                        salida.Write("\t");
+                        salida.Write(etiquetado.EsAlgunaDeEstas("RBR", "RBS") ? etiquetado : etiquetaExtraída);
+                        break;
+                    case "WP":
+                        salida.Write("\t");
+                        salida.Write(etiquetado.EsAlgunaDeEstas("WP$") ? etiquetado : etiquetaExtraída);
+                        break;
+                    case "PRP":
+                        salida.Write("\t");
+                        salida.Write(etiquetado.EsAlgunaDeEstas("PRP$") ? etiquetado : etiquetaExtraída);
+                        break;
+
                 }
 
             return true;
