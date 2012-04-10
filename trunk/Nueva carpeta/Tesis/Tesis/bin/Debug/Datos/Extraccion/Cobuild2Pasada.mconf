@@ -1,9 +1,50 @@
-Aciertos: 57979 ( 87,8576191053461% )
-Errores: 8013
+Aciertos: 54803 ( 83,0449145350952% )
+Errores: 11189
 Cantidad de tags: 65992
 
 Errores
 TagWSJ	TagAsignado	PorcentajeDeError
+VBP VB 3729
+	have 67
+	get 42
+	take 39
+	do 30
+	make 28
+	hold 27
+	run 27
+	work 25
+	leave 24
+	pull 21
+	need 20
+	follow 19
+	think 18
+	keep 17
+	see 16
+	stand 16
+	call 15
+	go 15
+	show 15
+	know 14
+	read 14
+	want 14
+	miss 13
+	throw 13
+	believe 12
+	feel 12
+	find 12
+	agree 11
+	expect 11
+	lose 11
+	move 11
+	speak 11
+	tend 11
+	turn 11
+	understand 11
+	belong 10
+	bring 10
+	change 10
+	cross 10
+	draw 10
 NN VB 2616
 	burst 14
 	share 14
@@ -168,47 +209,6 @@ JJ VB 614
 	tame 3
 	thin 3
 	underestimate 3
-VBN VB 553
-	set 25
-	done 20
-	born 15
-	made 15
-	caught 13
-	lost 13
-	taken 12
-	given 11
-	left 11
-	meant 11
-	bound 10
-	come 10
-	hit 10
-	got 9
-	been 8
-	broken 8
-	brought 8
-	found 8
-	shot 8
-	spread 8
-	forgiven 7
-	sunk 7
-	cast 6
-	driven 6
-	led 6
-	run 6
-	seen 6
-	struck 6
-	swept 6
-	thrown 6
-	fallen 5
-	held 5
-	kept 5
-	knit 5
-	read 5
-	smelt 5
-	sprung 5
-	wed 5
-	blown 4
-	bred 4
 VBG NN 378
 	running 9
 	pounding 8
