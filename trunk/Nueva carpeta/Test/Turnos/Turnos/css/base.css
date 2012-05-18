@@ -32,17 +32,17 @@ a {
 
 /* ---------------------------------------- Global Layout ---------------------------------------- */
 
-.container {
+.contenedor {
     width: 960px;
     margin: 0 auto;
 }
 
-.primary {
+.primario {
     float: left;
     position: relative;
 }
 
-.secondary {
+.secundario {
     float: left;
     position: relative;
     padding: 150px;
@@ -50,19 +50,19 @@ a {
 
 /* ---------------------------------------- Base Content ---------------------------------------- */
 
-#content {
+#contenido {
     overflow: hidden;
     background: #e5e9ed;
     border-top: 1px solid #fff;
 }
 
-#content .container {
+#contenido .contenedor {
     padding: 100px 0;
 }
 
 /* ---------------------------------------- Base Footer ---------------------------------------- */
 
-#footer .container {
+#footer .contenedor {
     padding: 50px 0;
     text-shadow: 0 -1px 0 #484d55;
     overflow: hidden;
@@ -118,7 +118,7 @@ a {
     z-index: 12;
 }
 
-#global-nav {
+#menu {
     float: left;
     margin: 0 25%;
     overflow: hidden;
@@ -127,21 +127,21 @@ a {
     font-size: 16px;
 }
 
-#global-nav li a:hover {
+#menu li a:hover {
     color: white;
 }
 
-#global-nav ul li {
+#menu ul li {
     float: left;
     margin: 0 0 0 20px;
 }
 
-#global-nav ul li a {
+#menu ul li a {
     color: #c3ccd9;
 }
 
 /* -------------------------------------------- */
-.button {
+.boton {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
@@ -163,7 +163,7 @@ a {
   background: -o-linear-gradient(90deg, #046283, #8abcce);
   background: linear-gradient(90deg, #046283, #8abcce);
 }
-.button:hover {
+.boton:hover {
   background-color: #52a0bc;
   background: -webkit-linear-gradient(90deg, #0578a1, #a0c8d7);
   background: -moz-linear-gradient(90deg, #0578a1, #a0c8d7);
@@ -172,11 +172,11 @@ a {
   background: linear-gradient(90deg, #0578a1, #a0c8d7);
   text-shadow: 0 -1px 2px #0578a1;
 }
-.button:focus {
+.boton:focus {
   border: 0px;
   outline: none;
 }
-.button:disabled {
+.boton:disabled {
   background-color: #a5a1a0;
   background-color: #9b9796;
   background: -webkit-linear-gradient(90deg, #837e7d, #b4b1b0);
@@ -186,7 +186,7 @@ a {
   background: linear-gradient(90deg, #837e7d, #b4b1b0);
   text-shadow: 0 -1px 2px #a5a1a0;
 }
-.cancel {
+.cancelar {
   text-shadow: 0 -1px 2px #736f6e;
   background-color: #8c8887;
   background: -webkit-linear-gradient(90deg, #736f6e, #a5a1a0);
@@ -195,7 +195,7 @@ a {
   background: -o-linear-gradient(90deg, #736f6e, #a5a1a0);
   background: linear-gradient(90deg, #736f6e, #a5a1a0);
 }
-.cancel:hover {
+.cancelar:hover {
   background-color: #9b9796;
   background: -webkit-linear-gradient(90deg, #837e7d, #b4b1b0);
   background: -moz-linear-gradient(90deg, #837e7d, #b4b1b0);
@@ -204,7 +204,7 @@ a {
   background: linear-gradient(90deg, #837e7d, #b4b1b0);
   text-shadow: 0 -1px 2px #837e7d;
 }
-.cancel:focus {
+.cancelar:focus {
   border: 0px;
   outline: none;
 }
@@ -347,7 +347,7 @@ textarea.error {
 }
 /* MESSAGES & NOTIFICATIONS
 ----------------------------------------------------------*/
-.information {
+.informacion {
   background-color: #f4ee35;
   position: absolute;
   width: 425px;
@@ -357,7 +357,7 @@ textarea.error {
   font-size: 13px;
   color: #012a4c;
 }
-.information:before {
+.informacion:before {
   content: '';
   width: 24px;
   height: 12px;
@@ -366,11 +366,11 @@ textarea.error {
   top: -12px;
   background-image: url("../../Images/Sprites/yellow-arrow.png");
 }
-.information a {
+.informacion a {
   font-weight: bold;
   color: #012a4c;
 }
-.information a:hover {
+.informacion a:hover {
   color: #2b8eb3;
 }
 .instructions {
@@ -645,7 +645,7 @@ textarea.error {
 
 /* CONTAINERS
 ----------------------------------------------------------*/
-.container2 {
+.contenedor-2 {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
@@ -887,7 +887,7 @@ textarea.error {
   right: -12px;
   z-index: 1;
 }
-.secondary-dialog .button {
+.secondary-dialog .boton {
   margin-top: 20px;
   margin-right: 5px;
 }
@@ -994,84 +994,84 @@ textarea.error {
   width: 48%;
   margin-left: 2%;
 }
-#users-form .select-container {
+#recursos-formulario .select-container {
   width: 152px;
 }
-#users-form .timezone {
+#recursos-formulario .timezone {
   float: left;
 }
-#users-form .timezone .select-container {
+#recursos-formulario .timezone .select-container {
   width: 434px;
 }
-#users-form #User_FirstName,
-#users-form #User_LastName,
-#users-form #User_ConfirmPassword,
-#users-form #User_Password {
+#recursos-formulario #recurso-nombre,
+#recursos-formulario #User_LastName,
+#recursos-formulario #User_ConfirmPassword,
+#recursos-formulario #User_Password {
   width: 193px;
 }
-#users-form .user_dateformat {
+#recursos-formulario .user_dateformat {
   width: 201px;
 }
-#users-form #User_EmailAddress {
+#recursos-formulario #User_EmailAddress {
   width: 426px;
 }
-#users-form #user_emailaddress_label {
+#recursos-formulario #user_emailaddress_label {
   margin-top: 0;
 }
-#users-form .content_user_left {
+#recursos-formulario .content_user_left {
   float: left;
   margin-right: 18px;
   width: 215px;
 }
-#users-form .content_user_right {
+#recursos-formulario .content_user_right {
   float: left;
   width: 215px;
 }
-#users-form #info_ou_email {
+#recursos-formulario #info_ou_email {
   top: 12px;
   position: relative;
 }
-#users-create {
+#crear-recurso {
   width: 155px;
 }
-#users-root-create-btn {
+#recursos-principal-crear-btn {
   float: left;
   margin: 0;
   position: relative;
 }
-#users-scroll {
+#recursos-desplazable {
   /* required settings */
   position: relative;
   overflow: hidden;
   width: 488px;
   height: 498px;
 }
-#users-scroll-items {
+#recursos-desplazable-items {
   width: 20000em;
   position: absolute;
   height: 498px;
 }
-#users-scroll-items div.slider-panel {
+#recursos-desplazable-items div.slider-panel {
   float: left;
   width: 448px;
 }
-#users-root {
+#recursos-pantalla1 {
   margin: 20px;
 }
-#users-panel {
+#recursos-pantalla2 {
   margin: 20px;
 }
-#users-search {
+#recursos-busqueda {
   float: right;
 }
-#users-list {
+#recursos-lista {
   max-height: 310px;
   min-height: 37px;
 }
-#users-delete-confirmation {
+#recursos-confirmar-boarrado {
   margin: 20px;
 }
-.users-delete {
+.eliminar {
   width: 32px;
   height: 32px;
   background-image: url("../../Images/Sprites/icons-organization.png");
@@ -1079,7 +1079,7 @@ textarea.error {
   float: right;
   cursor: pointer;
 }
-.users-delete:hover {
+.eliminar:hover {
   background-position: 1px -30px !important;
 }
 .disabled-delete {
@@ -1087,7 +1087,7 @@ textarea.error {
   height: 32px;
   float: right;
 }
-.user-row {
+.recurso-fila {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
@@ -1102,23 +1102,23 @@ textarea.error {
   overflow: hidden;
   padding-left: 4px;
 }
-.user-row span {
+.recurso-fila span {
   display: none;
 }
-.user-row:hover {
+.recurso-fila:hover {
   background-color: #8abcce;
   color: white;
 }
-.user-row:hover span {
+.recurso-fila:hover span {
   display: inherit;
 }
-.user-row.editing {
+.recurso-fila.editing {
   background-color: #8abcce;
 }
-.user-row.editing span {
+.recurso-fila.editing span {
   display: none;
 }
-.user-row form input {
+.recurso-fila form input {
   border: dotted 1px #012a4c;
   color: #012a4c;
   background-color: none;
@@ -1130,23 +1130,23 @@ textarea.error {
   font-size: 13px;
   font-weight: bold;
 }
-.user-row form button {
+.recurso-fila form button {
   background: transparent;
   color: white;
   border: none;
   font-weight: bold;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
-.user-row form button[type='submit'] {
+.recurso-fila form button[type='submit'] {
   margin-left: 10px;
 }
-.user-row .user-status-enabled, .user-row .user-status-disabled {
+.recurso-fila .user-status-enabled, .recurso-fila .user-status-disabled {
   display: inherit;
 }
-.user-row:hover .users-status-enabled, .user-row:hover .user-status-disabled {
+.recurso-fila:hover .estado-habilitado, .recurso-fila:hover .user-status-disabled {
   display: none;
 }
-.users-edit {
+.editar {
   width: 32px;
   height: 32px;
   background-image: url("../../Images/Sprites/icons-organization.png");
@@ -1154,10 +1154,10 @@ textarea.error {
   float: right;
   cursor: pointer;
 }
-.users-edit:hover {
+.editar:hover {
   background-position: -31px -63px !important;
 }
-.users-enabled {
+.tilde {
   width: 32px;
   height: 32px;
   background-image: url("../../Images/Sprites/icons-organization.png");
@@ -1165,7 +1165,7 @@ textarea.error {
   float: right;
   cursor: pointer;
 }
-.users-enabled:hover {
+.tilde:hover {
   background-position: 68px -32px !important;
 }
 .users-disabled {
@@ -1190,7 +1190,7 @@ textarea.error {
 .users-change-password:hover {
   background-position: -126px -32px !important;
 }
-.users-status-enabled {
+.estado-habilitado {
   width: 32px;
   height: 32px;
   margin-right: 96px;
@@ -1206,10 +1206,10 @@ textarea.error {
   background-position: 35px -64px !important;
   float: right;
 }
-#users-change-password-form p, #users-delete-confirmation p {
+#users-change-password-form p, #recursos-confirmar-boarrado p {
   color: #2b8eb3;
 }
-#users-change-password-form input[type=password], #users-delete-confirmation input[type=password] {
+#users-change-password-form input[type=password], #recursos-confirmar-boarrado input[type=password] {
   width: 200px;
 }
 #users-remaining {
@@ -1224,25 +1224,25 @@ textarea.error {
   margin-right: 10px;
   margin-top: 3px;
 }
-#fullname, #emailaddress {
+#nombre, #emailaddress {
   font-size: 11px;
   line-height: 12px;
   height: 12px;
   font-weight: normal;
 }
-#fullname {
+#nombre {
   font-size: 13px;
   line-height: 15px;
   height: 15px;
   font-weight: bold;
 }
-#icons-container {
+.iconos-contenedor {
   float: right;
 }
-#name-container, .name-container {
+.nombre-contenedor {
   float: left;
 }
-#users-by-name {
+#recursos-por-nombre {
   -webkit-user-select: none;
   -khtml-user-select: none;
   -moz-user-select: none;
@@ -1255,13 +1255,13 @@ textarea.error {
   letter-spacing: 1px;
   cursor: pointer;
 }
-#users-by-name:focus {
+#recursos-por-nombre:focus {
   outline: none;
 }
-#users-by-name.asc {
+#recursos-por-nombre.asc {
   background-image: url("../../Images/Sprites/arrow-up.png");
 }
-#users-by-name.desc {
+#recursos-por-nombre.desc {
   background-image: url("../../Images/Sprites/arrow-down.png");
 }
 

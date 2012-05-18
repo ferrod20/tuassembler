@@ -1,6 +1,6 @@
 @using System.Web.Mvc.Html
-<div id="users-form-container">
-    <form id="users-form" action="#" onsubmit="return false;">
+<div id="recursos-contenedor">
+    <form id="recursos-formulario" action="#" onsubmit="return false;">
         @(Html.Hidden("User.Id", 0))
         <div id="organizational-users-tooltip" class="tooltip">
             This is also your username. If you change this while you are signed on, you will
@@ -18,7 +18,7 @@
         </div>
 
         <div class="content_user_left">
-            <label for="User_FirstName">First Name</label>
+            <label for="recurso-nombre">First Name</label>
             <div>
                 @(Html.TextBox("User.FirstName"))
             </div>
@@ -90,8 +90,8 @@
         <div class="clear"></div>
         <br /><br /><br />
         <div>
-            <input id="users-form-save" class="button" name="users-form-save" type="button" value="Save User" />
-            <input id="users-form-cancel" class="button cancel" name="users-form-cancel" type="button" value="Cancel" />
+            <input id="recursos-formulario-grabar" class="boton" name="recursos-formulario-save" type="button" value="Save User" />
+            <input id="recursos-formulario-cancelar" class="boton cancelar" name="recursos-formulario-cancelar" type="button" value="Cancel" />
         </div>
     </form>
 </div>

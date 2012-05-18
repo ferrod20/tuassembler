@@ -652,7 +652,7 @@
       },
 
       /**
-        * render the nav buttons on top of the calendar
+        * render the nav botons on top of the calendar
         */
       _renderCalendarButtons: function($calendarContainer) {
         var self = this, options = this.options;
@@ -662,9 +662,9 @@
             calendarNavHtml += '<div class=\"ui-widget-header wc-toolbar\">';
               calendarNavHtml += '<div class=\"wc-display\"></div>';
               calendarNavHtml += '<div class=\"wc-nav\">';
-                calendarNavHtml += '<button class=\"wc-prev\">' + options.buttonText.lastWeek + '</button>';
-                calendarNavHtml += '<button class=\"wc-today\">' + options.buttonText.today + '</button>';
-                calendarNavHtml += '<button class=\"wc-next\">' + options.buttonText.nextWeek + '</button>';
+                calendarNavHtml += '<boton class=\"wc-prev\">' + options.buttonText.lastWeek + '</boton>';
+                calendarNavHtml += '<boton class=\"wc-today\">' + options.buttonText.today + '</boton>';
+                calendarNavHtml += '<boton class=\"wc-next\">' + options.buttonText.nextWeek + '</boton>';
               calendarNavHtml += '</div>';
               calendarNavHtml += '<h1 class=\"wc-title\"></h1>';
             calendarNavHtml += '</div>';
@@ -697,7 +697,7 @@
                   return false;
                 });
 
-            // now add buttons to switch display
+            // now add botons to switch display
             if (this.options.switchDisplay && $.isPlainObject(this.options.switchDisplay)) {
               var $container = $calendarContainer.find('.wc-display');
               $.each(this.options.switchDisplay, function(label, option) {
