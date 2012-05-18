@@ -7,7 +7,7 @@ EntityList = function (list) {
      var getIndexById = function (id) {
          var index;
          $.grep(innerList, function (item, ix) {
-             if (item && item.Id == id) {
+             if (item && item.id == id) {
                  index = ix;
                  return true;
              }
@@ -17,7 +17,7 @@ EntityList = function (list) {
          return index;
      };
 
-     this.getById = function (id) {
+     this.obtenerPorId = function (id) {
          var index = getIndexById(id);
          if (index >= 0) {
              return innerList[index];
