@@ -7,12 +7,9 @@ Turnos.Recursos = new EntityList([
 
 function RecursoController() {
     this.SystemType = 'RecursoController';
-    this.selectedUserId = null;
-    this.scrollable = null;
-    this.hayBusqueda = false;
-    this.busquedaDescendente = true;
-
-    var thisController = this;
+    var scrollable = null;
+    var hayBusqueda = false;
+    var busquedaDescendente = true;
     
     var obtFilaId = function (item) {
         var rowid = $(item).parents(".recurso-fila").attr("id");
@@ -20,349 +17,167 @@ function RecursoController() {
         return id;
     };
 
-    var attachHandlers = function ($list) {
-        
-        $(".recurso-fila", $list).click(function () {
-            thisController.edit(obtFilaId($(".editar",this)));
+    var agregarManejadores = function (lista) {
+        $(".recurso-fila", lista).click(function () {
+            editar(obtFilaId($(".editar",this)));
         });
 
-        $(".editar", $list).click(function (e) {
+        $(".editar", lista).click(function (e) {
             e.stopPropagation(); 
-            thisController.edit(obtFilaId(this));
+            editar(obtFilaId(this));
         });
         
-        $('.eliminar', $list).click(function (e) {
-            e.stopPropagation(); 
-            thisController.deleteUserConfirmation(obtFilaId(this));
-        });        
-        
-        $('.users-disabled, .tilde', $list).click(function (e) {
-            e.stopPropagation();
-            thisController.changeUserState(obtFilaId(this));
-        });        
-    };
-
-    var getFormData = function () {
-        return {
-            Id: $("#User_Id").val(),
-            EmailAddress: $("#User_EmailAddress").val(),
-            FirstName: $("#recurso-nombre").val(),
-            LastName: $("#User_LastName").val(),
-            Enabled: $("#User_Enabled").is(":checked"),
-            Administrator: $("#User_Administrator").is(":checked"),
-            TimeZone: $("#User_TimeZone").val(),
-            DateFormat: $("#User_DateFormat").val(),
-            Password: $("#User_Password").val(),
-            ConfirmPassword: $("#User_ConfirmPassword").val(),
-            GrantAccessToBoards: $("#User_GrantAccessToBoards").val()
-        };
-    };
-
-    var clearForm = function() {
-        $("#User_Id").val("0");
-        $("#User_EmailAddress").val("");
-        $("#recurso-nombre").val("");
-        $("#User_LastName").val("");
-        $("#User_Enabled").attr("checked", false);
-        $("#User_Administrator").attr("checked", false);
-        $("#User_GrantAccessToBoards").attr("checked", false);
-        $("#User_TimeZone").val("");
-        $("#User_DateFormat").val("");
-        $("#User_Password").val("");
-        $("#User_ConfirmPassword").val("");
-    };
-
-    this.resetScreen = function () {
-        thisController.scrollable.seekTo(0, 0);
+        $('.eliminar', lista).click(confirmarBorrado);        
+        $('.users-disabled, .tilde', lista).click(activar);        
     };
     
-    this.showUsersList = function (users) {
-        if (!users)
-            users = Turnos.Recursos.toArray;
-        var html = $.tmpl(RecursoPlantilla.FilaPlantilla, users);
-        var $usersList = $('#recursos-lista').empty().append(html);
+    var limpiarForm = function() {
+        $("#recurso-nombre").val("");       
+    };
+
+    var reestablecerPantalla = function () {
+        scrollable.seekTo(0, 0);
+    };
+    
+    var mostrarListaDeRecursos = function (recursos) {
+        if (!recursos)
+            recursos = Turnos.Recursos.toArray;
+        var html = $.tmpl(RecursoPlantilla.FilaPlantilla, recursos);
+        var $listaRecursos = $('#recursos-lista').empty().append(html);
         
         $('#fila_' + Turnos.CurrentUserId + ' .eliminar')
             .removeClass('eliminar')
             .addClass('disabled-delete');
         
-        attachHandlers($usersList);        
+        agregarManejadores($listaRecursos);        
     };
 
-    this.renderUsersList = function () {
-        var users = Turnos.Recursos.toArray();
-        var result = '';
-        if (thisController.hayBusqueda) {
-            var criteria = $('#recursos-busqueda').val();
-            users = filterUsers(users, criteria);
-        }
+//    var mostrarListaDeRecursos = function () {
+//        var recursos = Turnos.Recursos.toArray();
+//        var resultado = '';
+//        if (hayBusqueda) {
+//            var criteria = $('#recursos-busqueda').val();
+//            recursos = filtrar(recursos, criteria);
+//        }
 
-        if (users && users.length > 0)
-            result = $.tmpl(RecursoPlantilla.FilaPlantilla, users);
+//        if (recursos && recursos.length > 0)
+//            resultado = $.tmpl(RecursoPlantilla.FilaPlantilla, recursos);
 
-        var $usersList = $('#recursos-lista').empty().append(result);
-        attachHandlers($usersList);
+//        var $usersList = $('#recursos-lista').empty().append(resultado);
+//        agregarManejadores($usersList);
+//    };
+
+    var confirmarBorrado = function (e) {
+        e.stopPropagation();
+        var idRecurso = obtFilaId(this);
+        $('#recursos-confirmar-borrado').show();
+        $("#User_Id").val(idRecurso);
+        scrollable.next();
     };
 
-    this.deleteUserConfirmation = function (idUser) {       
-        $('#recursos-confirmar-boarrado').show();
-
-        $("#User_Id").val(idUser);
-        thisController.scrollable.next();
+    var eliminarRecurso = function () {
+        //quitarRecursoDeLaLista(idUser);
+        //scrollable.prev();
     };
 
-    var updateRemainingCreateUsers = function (data) {
-        $('#users-remaining').text(data.usedUsersIndicator);                
-        $('#crear-recurso-users-message').text(data.createUsersMessage);
-        Turnos.AllowAddNewUsers = data.allowAddNewUsers;
-    };
-    
-    this.deleteUser = function () {
-        var idUser = $("#User_Id").val();
-        var apiOptions = {
-            success: function (result) {
-                if (result.ReplyCode === API.ResponseCode.DataDeleteSuccess) {
-                    removeUsersFromList(idUser);
-                    updateRemainingCreateUsers(result.ReplyData[0]);
-                    Turnos.showSuccess('The User was deleted succesfully');
-                }
-                else
-                    Turnos.showError(result.ReplyText);
-            }
-        };
-
-        API.users.deleteUser(idUser, apiOptions);
-        thisController.scrollable.prev();
-    };
-
-    var removeUsersFromList = function (id) {
-        var rowToRemove = $('#fila_' + id + '.recurso-fila');
-        rowToRemove.slideUp('slow', rowToRemove.remove);
+    var quitarRecursoDeLaLista = function (id) {
+        var filaAEliminar = $('#fila_' + id + '.recurso-fila');
+        filaAEliminar.slideUp('slow', filaAEliminar.remove);
         Turnos.Recursos.deleteById(id);
     };
 
     ///Filter users that match filterText
-    var filterUsers = function (usersList, filterText) {
-        filterText = filterText.toUpperCase();
-        var resultList = [];
-        $.each(usersList, function () {
-            if (!filterText || this.nombre.toUpperCase().indexOf(filterText) >= 0) {
-                resultList.push(this);
+    var filtrar = function (recursos, textoAFiltrar) {
+        textoAFiltrar = textoAFiltrar.toUpperCase();
+        var resultado = [];
+        $.each(recursos, function () {
+            if (!textoAFiltrar || this.nombre.toUpperCase().indexOf(textoAFiltrar) >= 0) {
+                resultado.push(this);
             }
         });
-        return resultList;
+        return resultado;
     };
   
-    this.search = function () {
+    var buscar = function () {
         var f = function () {
             var criteria = $('#recursos-busqueda').val();
-            thisController.hayBusqueda = criteria != '';
-            thisController.renderUsersList();
+            hayBusqueda = criteria != '';
+            mostrarListaDeRecursos();
         };
         setTimeout(f, 1);
     };
 
     this.inicializar = function () {
-        
+        $('.primario').html( $.tmpl(RecursoPlantilla.PlantillaGeneral));
 
-        this.scrollable = $("#recursos-desplazable").scrollable({onSeek: hidePanels}).data("scrollable");
-        hidePanels(null, 0);
-        this.showUsersList();
+        scrollable = $("#recursos-desplazable").scrollable({onSeek: ocultarPaneles}).data("scrollable");
+        ocultarPaneles(null, 0);
+        mostrarListaDeRecursos();
 
-        $("#recursos-formulario label.info").tooltip({ position: "bottom center", tip: "#organizational-users-tooltip" });
-        $("#organizational-users-tooltip").remove().appendTo("body");
-
-        $("#recursos-formulario-cancelar").click(function () {
-            thisController.scrollable.prev();
-        });
-
-        $("#crear-recurso").click(this.showCreate);
-
-        $("#recursos-formulario-save").click(this.save);
-
-        $('#recursos-busqueda').keydown(this.search);
-        $('#recursos-por-nombre').click(thisController.sortByName);
-        $('#users-change-password-cancelar').click(function () {
-            clearFields();
-            thisController.scrollable.prev();
-        });
-        $('#users-save-new-password').click(this.saveNewPassword);
-
-        $("#eliminacion-del-recurso-confirmada").click(thisController.deleteUser);
-        $("#recursos-confirmar-boarrado-cancelar").click(function () {
-            thisController.scrollable.prev();
-        });
+        $("#recursos-formulario-cancelar").click(scrollable.prev);
+        $("#crear-recurso").click(mostrarCrear);
+        $("#recursos-formulario-save").click(grabar);
+        $('#recursos-busqueda').keydown(buscar);
+        $('#recursos-por-nombre').click(ordenarPorNombre);        
+        $("#eliminacion-del-recurso-confirmada").click(eliminarRecurso);
+        $("#recursos-confirmar-borrado-cancelar").click(scrollable.prev);
     };
 
-    this.edit = function (userId) {
-        var user = Turnos.Recursos.getById(userId);
-        if (user) {
-            $("#User_Id").val(user.Id);
-            $("#User_EmailAddress").val(user.EmailAddress);
-            $("#recurso-nombre").val(user.FirstName);
-            $("#User_LastName").val(user.LastName);
-            $("#User_Enabled").attr("checked", user.Enabled);
-            $("#User_Administrator").attr("checked", user.Administrator);
-            $("#User_TimeZone").val(user.TimeZone);
-            $("#User_DateFormat").val(user.DateFormat);
-            $(".users-password").hide();
-            $("#users-grantAccess").hide();
-
+    var editar = function (recursoId) {
+        var recurso = Turnos.Recursos.obtenerPorId(recursoId);
+        if (recurso) {
+            $("#recurso-nombre").val(recurso.FirstName);
             $('#recursos-formulario-contenedor').show();
-            //$('#User_EmailAddress').select();
-            thisController.scrollable.next();
-            
+            scrollable.next();
         }
     };
 
-    this.showCreate = function () {
-        clearForm();
-        $(".users-password").show();
-        $("#users-grantAccess").show();
-
+    var mostrarCrear = function () {
+        limpiarForm();
         $('#recursos-formulario-contenedor').show();
-        $('#User_Enabled').attr('checked', Turnos.AllowAddNewUsers);
-        //$('#User_EmailAddress').select();
-        thisController.scrollable.next();
-        
+        scrollable.next();
     };
 
-    this.save = function () {
+    var grabar = function () {
         var user = getFormData();
-        
-        var shouldRefresh = false;
-        if (Turnos.CurrentUserId === user.Id) {
-            var currentUser = Turnos.Recursos.getById(Turnos.CurrentUserId);
-            if (currentUser.Administrator != user.Administrator) 
-                shouldRefresh = true;
-        }
-        
-        if ($("#recursos-formulario").valid()) {
-            API.users.save(user)
-            .done(function (response) {
-                if (shouldRefresh) {
-                    window.location.reload();
-                    return;
-                }
-                var userData = Turnos.Recursos.getById(user.Id);
-                var responseData = response.ReplyData[0];
-                var remainingCreateUsers;
-                if (userData) {
-                    remainingCreateUsers = responseData;
-                    userData.EmailAddress = user.EmailAddress;
-                    userData.FirstName = user.FirstName;
-                    userData.LastName = user.LastName;
-                    var separator = user.FirstName && user.LastName ? " " : "";
-                    userData.nombre = user.FirstName + separator + user.LastName;
-                    userData.Enabled = user.Enabled;
-                    userData.Administrator = user.Administrator;
-                    userData.TimeZone = user.TimeZone;
-                    userData.DateFormat = user.DateFormat;
-                } else {
-                    remainingCreateUsers = responseData.remainingCreateUsers;
-                    Turnos.Recursos.push(responseData.user);
-                    Turnos.tracker.create_user();
-                }
-                updateRemainingCreateUsers(remainingCreateUsers);
-                thisController.scrollable.prev();
-                thisController.showUsersList();
-                Turnos.showSuccess(response.ReplyText);
-            });
-        }
     };
     
-    this.sortByName = function () {
+    var ordenarPorNombre = function () {
         function sortByName(a, b) {
             var x = a.nombre.toLowerCase();
             var y = b.nombre.toLowerCase();
             return x < y ? -1 : (x > y ? 1 : 0);
         }
-        sort(sortByName);
+        ordenar(sortByName);
     };
 
-    var sort = function (sortFunction) {
-        var users = Turnos.Recursos.toArray();
-        users.sort(sortFunction);
+    var ordenar = function (funcionDeOrden) {
+        var recursos = Turnos.Recursos.toArray();
+        recursos.sort(funcionDeOrden);
 
         var label = $('#recursos-por-nombre');
         var asc = 'asc';
         var desc = 'desc';
 
-        if (thisController.busquedaDescendente) {
-            users.reverse();
+        if (busquedaDescendente) {
+            recursos.reverse();
             label.addClass(asc).removeClass(desc);
         } else 
             label.addClass(desc).removeClass(asc);
         
-        thisController.busquedaDescendente = !thisController.busquedaDescendente;
-        thisController.showUsersList(users);
+        busquedaDescendente = !busquedaDescendente;
+        mostrarListaDeRecursos(recursos);
     };
 
-    var getFormPassword = function () {
-        return {
-            Id: $('#User_Id').val(),
-            NewPassword: $('#User_NewPassword').val(),
-            ConfirmNewPassword: $('#User_ConfirmNewPassword').val()            
-        };
+    var activar = function () {
+        e.stopPropagation();
+        var recursoId = obtFilaId(this);
     };
 
-    this.changePassword = function (userId) {
-        clearFields();
-        var user = getFormPassword();
-        if (user) {
-            $("#User_Id").val(userId);
-
-            $('#users-change-password').show();
-            
-            thisController.scrollable.next();
+    var ocultarPaneles = function (e, index) {
+        if (index === 0) {
+            $('#recursos-formulario-contenedor').hide();
+            $('#recursos-confirmar-borrado').hide();
         }
-    };
-
-    this.saveNewPassword = function () {
-        if ($("#users-change-password-form").valid()) {
-            var user = getFormPassword();
-
-            if (user) {
-                API.users.saveNewPassword(user)
-                    .done(function (response) {
-                        
-                        thisController.scrollable.prev();
-                        thisController.showUsersList();
-                        Turnos.showSuccess(response.ReplyText);
-                    });
-            }
-        }
-    };
-
-    this.changeUserState = function (userId) {
-        if (userId) {
-            API.users.changeUserState(userId)
-                .done(function (response) {
-                    var userData = Turnos.Recursos.getById(userId);
-                    userData.Enabled = !userData.Enabled;
-                    updateRemainingCreateUsers(response.ReplyData[0]);
-                    thisController.showUsersList();
-                    Turnos.showSuccess(response.ReplyText);                    
-                });
-        }
-        };
-
-        var hidePanels = function (e, index) {
-            if (index === 0) {
-                $('#recursos-formulario-contenedor').hide();
-                $('#users-change-password').hide();
-                $('#recursos-confirmar-boarrado').hide();
-            }
-        };
-
-    var clearFields = function () {
-        $('#User_NewPassword').val('');
-        $('#User_ConfirmNewPassword').val('');
-    };
+    };    
 }
-
-function User(name) {
-    this.SystemType = 'User';
-    this.Id = 0;
-    this.Name = name?name:'';     
- }
