@@ -237,6 +237,7 @@ namespace ConsoleApplication1
         private static int CantidadDeSignosDePuntuación = 0;
         private static int CantidadDePalabras = 0;
         private static int CantidadDePalabrasEtiquetadas = 0;
+        
         /// <summary>
         /// Tabla para traducir etiquetas COBUILD en etiquetas Penn TreeBank
         /// </summary>
