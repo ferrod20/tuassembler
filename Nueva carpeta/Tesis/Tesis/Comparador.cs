@@ -47,21 +47,21 @@ namespace ConsoleApplication1
             {
                 matrizDeConfusión.CantidadDeEtiquetas++;
                 var tagGoldStandard = lineaGoldStandard.TrimEnd().Split().LastOrDefault();
-                var acierto = tagDePrueba == tagGoldStandard || tagDePrueba == "VBD|VBN";
+                var acierto = tagDePrueba == tagGoldStandard;
                 
                 if (!acierto)
                     matrizDeConfusión.AgregarError(tagGoldStandard, tagDePrueba, palabra);
             }
         }
-        public static void Comparar(string archGoldStandard, string archParaComparar, string salidaMatrizDeConf, bool generarMatrizDeConfusionParaLatex)
+        public static void Comparar(string archGoldStandard, string archParaComparar, string salidaMatrizDeConf, bool generarMatrizDeConfusionParaLatex, string titulo = "", string tituloFila = "", string tituloColumna = "")
         {
             matrizDeConfusión = new MatrizDeConfusión();
             GenerarMatrizDeConfusión(archGoldStandard, archParaComparar);
 
             if(generarMatrizDeConfusionParaLatex)
-                matrizDeConfusión.EscribirMatrizDeConfParaLatex(salidaMatrizDeConf);
+                matrizDeConfusión.EscribirMatrizDeConfParaLatex(salidaMatrizDeConf, titulo, tituloFila, tituloColumna);
             else
-                matrizDeConfusión.EscribirMatrizDeConfusión(salidaMatrizDeConf);
+                matrizDeConfusión.EscribirMatrizDeConfusión(salidaMatrizDeConf, titulo, tituloFila, tituloColumna);
         }
         /// <summary>
         ///   Lee los archivos y va generando la matriz de confusión.
