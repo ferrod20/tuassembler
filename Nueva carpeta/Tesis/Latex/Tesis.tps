@@ -10,15 +10,15 @@ MinPos.y=-1
 MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
-NormalPos.top=32
-NormalPos.right=1478
-NormalPos.bottom=620
+NormalPos.top=26
+NormalPos.right=1225
+NormalPos.bottom=566
 Class=LaTeXView
 Document=Experimentacion.tex
 
 [Frame0_View0,0]
-TopLine=60
-Cursor=2090
+TopLine=123
+Cursor=5350
 
 [Frame1]
 Flags=0
@@ -28,9 +28,9 @@ MinPos.y=-1
 MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
-NormalPos.top=32
-NormalPos.right=1478
-NormalPos.bottom=620
+NormalPos.top=26
+NormalPos.right=1225
+NormalPos.bottom=566
 Class=LaTeXView
 Document=Tesis.tex
 
@@ -46,9 +46,9 @@ MinPos.y=-1
 MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
-NormalPos.top=32
-NormalPos.right=1478
-NormalPos.bottom=620
+NormalPos.top=26
+NormalPos.right=1225
+NormalPos.bottom=566
 Class=LaTeXView
 Document=Indice.tex
 
@@ -64,14 +64,14 @@ MinPos.y=-1
 MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
-NormalPos.top=32
-NormalPos.right=1478
-NormalPos.bottom=620
+NormalPos.top=26
+NormalPos.right=1225
+NormalPos.bottom=566
 Class=LaTeXView
 Document=ExtraccionDeInformacion.tex
 
 [Frame3_View0,0]
-TopLine=89
+TopLine=74
 Cursor=6221
 
 [SessionInfo]

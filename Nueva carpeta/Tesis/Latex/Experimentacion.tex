@@ -71,31 +71,64 @@ Se puede notar la información gramatical expresada mediante las etiquetas NN y N
 La idea de este experimento será comparar estas etiquetas contra las etiquetas asignadas por el etiquetador automático TnT. Entonces se tomará este corpus plano (sin etiquetas), se lo etiquetará utilizando TnT entrenado con el corpus de entrenamiento Wall Street Journal (de ahora en más WSJ) \footnote{Wall Street Journal es un corpus anotado, parte del Penn Treebank} y luego se realizará la comparación.\\
 La matriz de confusión\footnote{Las matrices de confusión presentadas de aquí en adelante contienen las primeras 10 etiquetas de mayor error} generada a partir de dicha comparación es la siguiente:
 
+\begin{center}
 \begin{longtable}{| l | c | c | c | c | c | c | c | c | c | c | }
-\caption{Matriz de confusión para etiquetas extraídas de COBUILD vs WSJ}\\	
+\caption{Matriz de confusión para etiquetas extraídas de COBUILD vs generadas por TnT}\\	
 \hline
- \backslashbox{\scriptsize{COBUILD}\kern-1em}{\kern-1em \scriptsize{WSJ}} &	\textbf{VBD}	&   \textbf{VBN}	&   \textbf{VBP}	&   \textbf{VB}	&   \textbf{NN}	&   \textbf{JJ}	&   \textbf{VBZ}	&   \textbf{NNS}	&   \textbf{CC}	&   \textbf{NNP}	&   \hline
+ \backslashbox{\scriptsize{COBUILD}\kern-1em}{\kern-1em \scriptsize{TnT}}  &	\textbf{NN}	&   \textbf{VB}	&   \textbf{JJ}	&   \textbf{NN}	&   \textbf{NN}	&   \textbf{JJ}	&   \textbf{VBN}	&   \textbf{JJ}	&   \textbf{RB}	&   \textbf{JJ}	&   \hline
 \endhead
 \hline
 \endfoot
 \endlastfoot
 	\hline
-\textbf{VBD} & - & .1145 & .0009 & .0009 & .0003 & .0094 & - & - & - & .0001\\
-\textbf{VBN} & .0023 & - & - & - & - & .0008 & - & - & - & -\\
-\textbf{VBP} & .0298 & .0134 & - & .0978 & .0514 & .0141 & .0005 & .0001 & - & -\\
-\textbf{VB} & .0020 & .0022 & .0113 & - & .0261 & .0042 & .0000 & .0001 & - & .0022\\
-\textbf{NN} & .0020 & .0029 & .0068 & .0193 & - & .0591 & - & .0114 & .0000 & .0371\\
-\textbf{JJ} & .0042 & .0525 & .0004 & .0033 & .0463 & - & - & .0005 & .0001 & .0085\\
-\textbf{VBZ} & - & - & .0022 & .0042 & .0017 & .0004 & - & .0520 & - & .0001\\
-\textbf{NNS} & - & - & - & .0001 & .0020 & .0005 & .0068 & - & .0000 & .0029\\
-\textbf{CC} & .0022 & .0023 & .0082 & .0077 & .0433 & .0258 & .0000 & .0005 & - & .0049\\
-\textbf{NNP} & - & - & - & - & .0004 & .0000 & - & - & - & -\\
+ \backslashbox{\scriptsize{COBUILD}\kern-1em}{\kern-1em \scriptsize{TnT}}  &	\textbf{NN}	&   \textbf{VB}	&   \textbf{JJ}	&   \textbf{VBN}	&   \textbf{RB}	&   \textbf{VBG}	&   \textbf{NNP}	&   \textbf{IN}	&   \textbf{VBZ}	&   \textbf{NNS}	&   \hline
+\endhead
+\hline
+\endfoot
+\endlastfoot
+	\hline
+ \backslashbox{\scriptsize{COBUILD}\kern-1em}{\kern-1em \scriptsize{TnT}}  &	\textbf{NN}	&   \textbf{VB}	&   \textbf{JJ}	&   \textbf{VBN}	&   \textbf{RB}	&   \textbf{VBG}	&   \textbf{NNP}	&   \textbf{IN}	&   \textbf{VBZ}	&   \textbf{NNS}	&   \hline
+\endhead
+\hline
+\endfoot
+\endlastfoot
+	\hline
+ \backslashbox{\scriptsize{COBUILD}\kern-1em}{\kern-1em \scriptsize{TnT}}  &	\textbf{NN}	&   \textbf{VB}	&   \textbf{JJ}	&   \textbf{VBN}	&   \textbf{RB}	&   \textbf{VBG}	&   \textbf{NNP}	&   \textbf{IN}	&   \textbf{VBZ}	&   \textbf{NNS}	&   \hline
+\endhead
+\hline
+\endfoot
+\endlastfoot
+	\hline
+ \backslashbox{\scriptsize{COBUILD}\kern-1em}{\kern-1em \scriptsize{TnT}}  &	\textbf{NN}	&   \textbf{VB}	&   \textbf{JJ}	&   \textbf{VBN}	&   \textbf{RB}	&   \textbf{VBG}	&   \textbf{NNP}	&   \textbf{IN}	&   \textbf{VBZ}	&   \textbf{NNS}	&   \hline
+\endhead
+\hline
+\endfoot
+\endlastfoot
+	\hline
+ \backslashbox{\scriptsize{COBUILD}\kern-1em}{\kern-1em \scriptsize{TnT}}  &	\textbf{NN}	&   \textbf{VB}	&   \textbf{JJ}	&   \textbf{VBN}	&   \textbf{RB}	&   \textbf{VBG}	&   \textbf{NNP}	&   \textbf{IN}	&   \textbf{VBZ}	&   \textbf{NNS}	&   \hline
+\endhead
+\hline
+\endfoot
+\endlastfoot
+	\hline
+\textbf{NN} & - & \textbf{556} & \textbf{1953} & 52 & 86 & 276 & - & 8 & - & -\\
+\textbf{VB} & \textbf{2616} & - & \textbf{614} & - & 42 & - & 77 & 15 & - & 5\\
+\textbf{JJ} & \textbf{1577} & 96 & - & \textbf{1361} & \textbf{634} & \textbf{555} & \textbf{281} & 30 & - & 16\\
+\textbf{VBN} & - & - & - & - & - & - & - & - & - & -\\
+\textbf{RB} & 219 & 23 & \textbf{408} & 10 & - & 9 & 34 & 249 & - & 11\\
+\textbf{VBG} & - & - & - & - & - & - & - & - & - & -\\
+\textbf{NNP} & - & - & - & - & - & - & - & - & - & -\\
+\textbf{IN} & - & - & - & - & - & - & - & - & - & -\\
+\textbf{VBZ} & - & - & - & - & - & - & - & - & - & -\\
+\textbf{NNS} & 83 & 1 & 17 & - & 1 & 2 & 104 & 3 & 192 & -\\
 \hline
 \end{longtable}
+\end{center}
 
-\noindent Porcentaje de aciertos: 98,09\% \\
+\noindent Porcentaje de aciertos: 99,16\% \\
+\noindent Cantidad de errores: 13082\\
 
-Donde las etiquetas de las filas representan las etiquetas asignadas por TnT mientras que las etiquetas de las columnas representan las etiquetas extraídas de COBUILD. Se puede apreciar un alto porcentaje de aciertos entre las etiquetas extraídas de COBUILD (98,09\%) y las etiquetas asignadas por TnT. Este porcentaje indica que la información de etiquetas extraídas de COBUILD es consistente con las producidas por TnT. La mayoría de los errores se da en etiquetas VBN y VB de COBUILD cuando son etiquetadas como VBD y VBP por TnT respectivamente.
+Se puede apreciar un alto porcentaje de aciertos entre las etiquetas extraídas de COBUILD (99,16\%) y las etiquetas asignadas por TnT. Este porcentaje indica que la información de etiquetas extraídas de COBUILD es consistente con las producidas por TnT. La mayoría de los errores se da en etiquetas VB, NN y JJ de COBUILD cuando son etiquetadas como NN, JJ y NN por TnT respectivamente.
 
 \subsubsection{Segundo experimento: entrenamiento de TnT con la nueva fuente de información generada} 
 El segundo experimento realizado tiene como objetivo evaluar la nueva fuente de información obtenida (NFI) como corpus de entrenamiento. Para esto se utilizará el Wall Street Journal (WSJ), parte de Penn Tree Bank, como corpus objetivo.\\
