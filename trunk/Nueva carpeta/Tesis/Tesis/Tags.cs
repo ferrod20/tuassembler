@@ -18,18 +18,7 @@ namespace ConsoleApplication1
 
         public int CantidadDeEtiquetas{get; set; }
 
-        public IList<string> ObtenerTags()
-        {
-            var resultado = new List<string>();
-            foreach (var tags in listaDeTags)
-            {
-                resultado.Add(tags.TagDePrueba);
-                resultado.Add(tags.TagGoldStandard);
-            }
-
-            return resultado;
-        }
-
+        
         public int ObtenerCantidadDeErrores(string tagDePrueba, string tagGoldStandard)
         {
             foreach (var tags in listaDeTags)
@@ -39,19 +28,13 @@ namespace ConsoleApplication1
             return 0;
         }
 
-        public void EscribirMatrizDeConfParaLatex(string archivoDeSalida)
+        public void EscribirMatrizDeConfParaLatex(string archivoDeSalida, string titulo, string tituloFila, string tituloColumna)
         {
             TextWriter salida = new StreamWriter(archivoDeSalida);
-            var cantidadDeErrores = CantidadDeErrores();
-
-            var porcentajeDeAciertos = (CantidadDeEtiquetas - cantidadDeErrores) / (double)CantidadDeEtiquetas * 100;
-            salida.WriteLine("Porcentaje de aciertos: " + porcentajeDeAciertos);
-
-            salida.WriteLine();
-            salida.WriteLine("Errores");
-            salida.WriteLine("TagWSJ\tTagAsignado\tPorcentajeDeError");
+            EscribirEncabezado(salida);
 
             var tags = TomarLosDeMayorError(10);
+            var errores = ObtenerErrores(10);
 
             salida.Write(
             @"\begin{center}
@@ -61,9 +44,9 @@ namespace ConsoleApplication1
 
             salida.Write(
             @"}
-\caption{Ejemplo de matriz de confusión}\\	
+\caption{" + titulo+ @"}\\	
 \hline
- \backslashbox{\scriptsize{COBUILD}\kern-1em}{\kern-1em \scriptsize{WSJ}}  &	");
+ \backslashbox{\scriptsize{"+tituloFila+@"}\kern-1em}{\kern-1em \scriptsize{"+tituloColumna+@"}}  &	");
 
             foreach (var tag in tags)
                 salida.Write("\\textbf{" + tag + "}	&   ");
@@ -80,11 +63,17 @@ namespace ConsoleApplication1
                 foreach (var tagFila in tags)
                 {
                     salida.Write(" & ");
-                    var error = ObtenerCantidadDeErrores(tagCol, tagFila);//tag columna es tag de prueba, tagFila es tag gold standard
+                    var error = ObtenerCantidadDeErrores(tagFila, tagCol);//tag columna es tag de prueba, tagFila es tag gold standard
                     if (error == 0)
                         salida.Write("-");
                     else
-                        salida.Write(error);
+                    {
+                        if(errores.Contains(error) )
+                            salida.Write("\\textbf{" + error + "}");//negrita
+                        else
+                            salida.Write(error);
+                    }
+                        
                 }
                 salida.WriteLine(@"\\");
             }
@@ -97,10 +86,29 @@ namespace ConsoleApplication1
             salida.Close();
         }
 
-        private IEnumerable<string> TomarLosDeMayorError(int cuantos)
+        private List<int> ObtenerErrores(int cuantos)
+        {
+            return listaDeTags.Select(tags => tags.TotalDePalabras).Take(cuantos).ToList();
+        }
+
+        public IList<string> ObtenerTags()
+        {
+            var resultado = new List<string>();
+            foreach (var tags in listaDeTags)
+            {
+                if(!resultado.Contains(tags.TagDePrueba))
+                    resultado.Add(tags.TagDePrueba);
+                if (!resultado.Contains(tags.TagGoldStandard))
+                    resultado.Add(tags.TagGoldStandard);
+            }
+
+            return resultado;
+        }
+
+        private IList<string> TomarLosDeMayorError(int cuantos)
         {
             OrdenarPorMayorError();
-            return ObtenerTags().Take(cuantos);
+            return ObtenerTags().Take(cuantos).ToList();
         }
 
         private void OrdenarPorMayorError()
@@ -113,20 +121,17 @@ namespace ConsoleApplication1
             return listaDeTags.Sum(s => s.TotalDePalabras);
         }
 
-        public void EscribirMatrizDeConfusión(string archivoDeSalida)
+        public void EscribirMatrizDeConfusión(string archivoDeSalida, string titulo, string tituloFila, string tituloColumna)
         {
             TextWriter salida = new StreamWriter(archivoDeSalida);
-
-            var cantidadDeErrores = CantidadDeErrores();
-            var aciertos = CantidadDeEtiquetas - cantidadDeErrores;
-            var porcentajeDeAciertos = aciertos / (double)CantidadDeEtiquetas * 100;
-            salida.WriteLine("Aciertos: " + aciertos + " ( " + porcentajeDeAciertos + "% )");
-            salida.WriteLine("Errores: " + cantidadDeErrores);
-            salida.WriteLine("Cantidad de tags: " + CantidadDeEtiquetas);
+            salida.WriteLine(titulo);
+            salida.WriteLine();
+            EscribirEncabezado(salida);
 
             salida.WriteLine();
+            
             salida.WriteLine("Errores");
-            salida.WriteLine("TagWSJ\tTagAsignado\tPorcentajeDeError");
+            salida.WriteLine(tituloFila + "|\t" + tituloColumna + "|\tCantidadDeErrores");
 
             OrdenarPorMayorError();
 
@@ -138,6 +143,16 @@ namespace ConsoleApplication1
             }
 
             salida.Close();
+        }
+
+        private void EscribirEncabezado(TextWriter salida)
+        {
+            var cantidadDeErrores = CantidadDeErrores();
+            var aciertos = CantidadDeEtiquetas - cantidadDeErrores;
+            var porcentajeDeAciertos = aciertos/(double) CantidadDeEtiquetas*100;
+            salida.WriteLine("Aciertos: " + aciertos + " ( " + porcentajeDeAciertos + "% )");
+            salida.WriteLine("Errores: " + cantidadDeErrores);
+            salida.WriteLine("Cantidad de tags: " + CantidadDeEtiquetas);
         }
 
         public void AgregarError(string tagGoldStandard, string tagDePrueba, string palabra)
