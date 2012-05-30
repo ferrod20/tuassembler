@@ -1268,13 +1268,19 @@ namespace ConsoleApplication1
             }
             else
             {
-                Console.WriteLine("Comparando: " + Path.GetFileName(args[1]) + "(gold standard) contra " +
+                var generarMatrizDeConfParaLatex = args.Length > 4 && args[4] == "-l";
+
+                Console.WriteLine( (generarMatrizDeConfParaLatex? "(latex)":"") + "Comparando: " + Path.GetFileName(args[1]) + "(gold standard) contra " +
                                   Path.GetFileName(args[2]));
                 Console.WriteLine("Salida: " + Path.GetFileName(args[3]));
                 Console.WriteLine();
-                var generarMatrizDeConfParaLatex = args.Length > 4 && args[3] == "-l";
+                
+                var titulo = args.Length > 5? args[5]:"";
+                var tituloFila = args.Length > 6 ? args[6] : "";
+                var tituloColumna = args.Length > 7 ? args[7] : "";
 
-                Comparador.Comparar(args[1], args[2], args[3], generarMatrizDeConfParaLatex);
+
+                Comparador.Comparar(args[1], args[2], args[3], generarMatrizDeConfParaLatex, titulo, tituloFila, tituloColumna);
             }
         }
 
