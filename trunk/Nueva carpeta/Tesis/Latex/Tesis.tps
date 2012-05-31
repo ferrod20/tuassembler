@@ -17,8 +17,8 @@ Class=LaTeXView
 Document=Experimentacion.tex
 
 [Frame0_View0,0]
-TopLine=123
-Cursor=5350
+TopLine=351
+Cursor=18435
 
 [Frame1]
 Flags=0
@@ -71,7 +71,7 @@ Class=LaTeXView
 Document=ExtraccionDeInformacion.tex
 
 [Frame3_View0,0]
-TopLine=74
+TopLine=72
 Cursor=6221
 
 [SessionInfo]

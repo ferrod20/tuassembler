@@ -75,36 +75,6 @@ La matriz de confusión\footnote{Las matrices de confusión presentadas de aquí en
 \begin{longtable}{| l | c | c | c | c | c | c | c | c | c | c | }
 \caption{Matriz de confusión para etiquetas extraídas de COBUILD vs generadas por TnT}\\	
 \hline
- \backslashbox{\scriptsize{COBUILD}\kern-1em}{\kern-1em \scriptsize{TnT}}  &	\textbf{NN}	&   \textbf{VB}	&   \textbf{JJ}	&   \textbf{NN}	&   \textbf{NN}	&   \textbf{JJ}	&   \textbf{VBN}	&   \textbf{JJ}	&   \textbf{RB}	&   \textbf{JJ}	&   \hline
-\endhead
-\hline
-\endfoot
-\endlastfoot
-	\hline
- \backslashbox{\scriptsize{COBUILD}\kern-1em}{\kern-1em \scriptsize{TnT}}  &	\textbf{NN}	&   \textbf{VB}	&   \textbf{JJ}	&   \textbf{VBN}	&   \textbf{RB}	&   \textbf{VBG}	&   \textbf{NNP}	&   \textbf{IN}	&   \textbf{VBZ}	&   \textbf{NNS}	&   \hline
-\endhead
-\hline
-\endfoot
-\endlastfoot
-	\hline
- \backslashbox{\scriptsize{COBUILD}\kern-1em}{\kern-1em \scriptsize{TnT}}  &	\textbf{NN}	&   \textbf{VB}	&   \textbf{JJ}	&   \textbf{VBN}	&   \textbf{RB}	&   \textbf{VBG}	&   \textbf{NNP}	&   \textbf{IN}	&   \textbf{VBZ}	&   \textbf{NNS}	&   \hline
-\endhead
-\hline
-\endfoot
-\endlastfoot
-	\hline
- \backslashbox{\scriptsize{COBUILD}\kern-1em}{\kern-1em \scriptsize{TnT}}  &	\textbf{NN}	&   \textbf{VB}	&   \textbf{JJ}	&   \textbf{VBN}	&   \textbf{RB}	&   \textbf{VBG}	&   \textbf{NNP}	&   \textbf{IN}	&   \textbf{VBZ}	&   \textbf{NNS}	&   \hline
-\endhead
-\hline
-\endfoot
-\endlastfoot
-	\hline
- \backslashbox{\scriptsize{COBUILD}\kern-1em}{\kern-1em \scriptsize{TnT}}  &	\textbf{NN}	&   \textbf{VB}	&   \textbf{JJ}	&   \textbf{VBN}	&   \textbf{RB}	&   \textbf{VBG}	&   \textbf{NNP}	&   \textbf{IN}	&   \textbf{VBZ}	&   \textbf{NNS}	&   \hline
-\endhead
-\hline
-\endfoot
-\endlastfoot
-	\hline
  \backslashbox{\scriptsize{COBUILD}\kern-1em}{\kern-1em \scriptsize{TnT}}  &	\textbf{NN}	&   \textbf{VB}	&   \textbf{JJ}	&   \textbf{VBN}	&   \textbf{RB}	&   \textbf{VBG}	&   \textbf{NNP}	&   \textbf{IN}	&   \textbf{VBZ}	&   \textbf{NNS}	&   \hline
 \endhead
 \hline
@@ -137,24 +107,24 @@ La primer evaluación de este segundo experimento consiste en entrenar el etiquet
 
 \begin{center}
 \begin{longtable}{| l | c | c | c | c | c | c | c | c | c | c | }
-\caption{Matriz de confusión para WSJ etiquetado con TnT (entrenado con WSJ)}\\	
+\caption{WSJ original contra WSJ etiquetado con TnT (entrenado con WSJ)}\\	
 \hline
- &	\textbf{JJ}	&   \textbf{NN}	&   \textbf{NNP}	&   \textbf{VBN}	&   \textbf{VBD}	&   \textbf{IN}	&   \textbf{RB}	&   \textbf{RP}	&   \textbf{NNPS}	&   \textbf{VBG}	&   \hline
+ \backslashbox{\scriptsize{WSJ}\kern-1em}{\kern-1em \scriptsize{TnT(WSJ)}}  &	\textbf{JJ}	&   \textbf{NN}	&   \textbf{NNP}	&   \textbf{VBN}	&   \textbf{VBD}	&   \textbf{IN}	&   \textbf{RB}	&   \textbf{RP}	&   \textbf{NNPS}	&   \textbf{VBG}	&   \hline
 \endhead
 \hline
 \endfoot
 \endlastfoot
 	\hline
-\textbf{JJ} & - & .0766 & .0137 & .0367 & .0018 & .0033 & .0227 & .0001 & .0010 & .0124\\
-\textbf{NN} & .0274 & - & .0108 & .0011 & .0012 & .0001 & .0061 & - & - & .0265\\
-\textbf{NNP} & .0216 & .0507 & - & .0007 & .0002 & .0008 & .0014 & .0000 & .0126 & .0006\\
-\textbf{VBN} & .0281 & .0009 & .0001 & - & .0459 & - & .0001 & - & - & -\\
-\textbf{VBD} & .0015 & .0012 & .0001 & .0347 & - & - & .0000 & - & - & -\\
-\textbf{IN} & .0021 & .0006 & .0008 & - & - & - & .0453 & .0112 & - & -\\
-\textbf{RB} & .0172 & .0022 & .0014 & - & - & .0431 & - & .0043 & - & -\\
-\textbf{RP} & .0007 & .0002 & .0000 & - & - & .0408 & .0254 & - & - & -\\
-\textbf{NNPS} & .0000 & - & .0381 & - & - & - & - & - & - & -\\
-\textbf{VBG} & .0069 & .0188 & .0002 & - & - & .0001 & .0000 & - & - & -\\
+\textbf{JJ} & - & 909 & 717 & \textbf{932} & 51 & 71 & 569 & 23 & 1 & 229\\
+\textbf{NN} & \textbf{2537} & - & \textbf{1680} & 30 & 40 & 19 & 72 & 7 & - & 622\\
+\textbf{NNP} & 454 & 358 & - & 4 & 3 & 26 & 47 & 1 & \textbf{1262} & 7\\
+\textbf{VBN} & \textbf{1215} & 37 & 22 & - & \textbf{1151} & - & - & - & - & -\\
+\textbf{VBD} & 60 & 40 & 6 & \textbf{1522} & - & - & - & - & - & -\\
+\textbf{IN} & 109 & 4 & 28 & - & - & - & \textbf{1429} & \textbf{1353} & - & 2\\
+\textbf{RB} & 752 & 203 & 46 & 4 & 1 & \textbf{1500} & - & 842 & - & 1\\
+\textbf{RP} & 2 & - & 1 & - & - & 371 & 144 & - & - & -\\
+\textbf{NNPS} & 34 & - & 418 & - & - & - & - & - & - & -\\
+\textbf{VBG} & 411 & 879 & 19 & - & - & - & - & - & - & -\\
 \hline
 \end{longtable}
 \end{center}
@@ -163,54 +133,54 @@ La primer evaluación de este segundo experimento consiste en entrenar el etiquet
 
 \begin{center}
 \begin{longtable}{| l | c | c | c | c | c | c | c | c | c | c | }
-\caption{Matriz de confusión para WSJ etiquetado con TnT (entrenado con WSJ + NFI)}\\	
+\caption{WSJ original contra WSJ etiquetado con TnT (entrenado con WSJ + NFI)}\\	
 \hline
- &	\textbf{JJ}	&   \textbf{NN}	&   \textbf{NNP}	&   \textbf{IN}	&   \textbf{RB}	&   \textbf{RP}	&   \textbf{VBN}	&   \textbf{VBD}	&   \textbf{NNPS}	&   \textbf{VBG}	&   \hline
+ \backslashbox{\scriptsize{WSJ}\kern-1em}{\kern-1em \scriptsize{TnT(WSJ+NFI)}}  &	\textbf{JJ}	&   \textbf{NN}	&   \textbf{NNP}	&   \textbf{VBN}	&   \textbf{VBD}	&   \textbf{IN}	&   \textbf{RB}	&   \textbf{RP}	&   \textbf{NNPS}	&   \textbf{VB}	&   \hline
 \endhead
 \hline
 \endfoot
 \endlastfoot
 	\hline
-\textbf{JJ} & - & .0752 & .0096 & .0030 & .0226 & .0001 & .0362 & .0018 & .0009 & .0136\\
-\textbf{NN} & .0254 & - & .0084 & .0001 & .0052 & .0000 & .0011 & .0008 & - & .0223\\
-\textbf{NNP} & .0287 & .0559 & - & .0013 & .0015 & .0000 & .0007 & .0003 & .0120 & .0008\\
-\textbf{IN} & .0024 & .0005 & .0005 & - & .0471 & .0097 & - & - & - & .0001\\
-\textbf{RB} & .0173 & .0022 & .0012 & .0308 & - & .0022 & - & - & - & -\\
-\textbf{RP} & .0008 & .0002 & .0000 & .0425 & .0308 & - & - & - & - & -\\
-\textbf{VBN} & .0240 & .0011 & .0001 & - & .0001 & - & - & .0425 & - & -\\
-\textbf{VBD} & .0017 & .0011 & .0001 & - & .0000 & - & .0388 & - & - & -\\
-\textbf{NNPS} & .0000 & - & .0342 & - & - & - & - & - & - & -\\
-\textbf{VBG} & .0060 & .0225 & .0001 & .0001 & .0000 & - & - & - & - & -\\
+\textbf{JJ} & - & 895 & 1032 & 908 & 53 & 83 & 620 & 28 & 1 & 77\\
+\textbf{NN} & \textbf{2776} & - & \textbf{2087} & 48 & 43 & 16 & 83 & 7 & - & 337\\
+\textbf{NNP} & 361 & 256 & - & 4 & 2 & 19 & 45 & 1 & \textbf{1255} & 11\\
+\textbf{VBN} & \textbf{1326} & 35 & 27 & - & \textbf{1236} & - & - & - & - & 43\\
+\textbf{VBD} & 69 & 24 & 10 & \textbf{1760} & - & - & - & - & - & 42\\
+\textbf{IN} & 107 & 4 & 46 & - & - & - & \textbf{1163} & \textbf{1584} & - & 3\\
+\textbf{RB} & 834 & 193 & 63 & 4 & 1 & \textbf{1705} & - & \textbf{1138} & - & 50\\
+\textbf{RP} & 2 & 1 & 1 & - & - & 348 & 88 & - & - & -\\
+\textbf{NNPS} & 33 & - & 448 & - & - & - & - & - & - & -\\
+\textbf{VB} & 89 & 408 & 34 & 48 & 42 & 13 & 11 & - & - & -\\
 \hline
 \end{longtable}
 \end{center}
 
-\noindent Porcentaje de aciertos: 97,07\% \\
+\noindent Porcentaje de aciertos: 97,12\% \\
 
-Se puede observar que el rendimiento del etiquetador TnT entrenado con WSJ es un poco mejor (97,38\%) que el rendimiento de TnT entrenado con WSJ + NFI (97,07\%). La mayoría de los errores para TnT entrenado con WSJ se da en etiquetas JJ y NNP del gold standard cuando son etiquetadas como NN por TnT. Para TnT entrenado con WSJ + NFI la mayoría de los errores se da en las mismas etiquetas, pero con porcentaje de errores menor para JJ etiquetado como NN.\\
+Se puede observar que el rendimiento del etiquetador TnT entrenado con WSJ es un poco mejor (97,38\%) que el rendimiento de TnT entrenado con WSJ + NFI (97,12\%). La mayoría de los errores para TnT entrenado con WSJ se da en etiquetas NN del gold standard cuando son etiquetadas como JJ y NNP por TnT. Para TnT entrenado con WSJ + NFI la mayoría de los errores se da en las mismas etiquetas, pero con cantidad de errores mayor, sobre todo para NN etiquetado como JJ.\\
 
 La segunda evaluación de este experimento consiste en entrenar TnT con la mitad de WSJ y con la mitad de WSJ + NFI. Posteriormente con estos dos modelos se etiqueta la mitad restante de WSJ y se construye la matriz de confusión. Se realiza la misma operación para cada mitad:
 
 \begin{center}
 \begin{longtable}{| l | c | c | c | c | c | c | c | c | c | c | }
-\caption{Matriz de confusión para la 2 mitad de WSJ etiquetado con TnT (entrenado con la primer mitad de WSJ)}\\	
+\caption{Primer mitad WSJ original vs primer mitad WSJ etiquetado con TnT (entrenado con la segunda mitad de WSJ)}\\	
 \hline
- &	\textbf{JJ}	&   \textbf{NN}	&   \textbf{NNP}	&   \textbf{VBN}	&   \textbf{VBD}	&   \textbf{IN}	&   \textbf{RB}	&   \textbf{VB}	&   \textbf{VBP}	&   \textbf{RP}	&   \hline
+ \backslashbox{\scriptsize{WSJ}\kern-1em}{\kern-1em \scriptsize{TnT(2WSJ)}}  &	\textbf{JJ}	&   \textbf{NN}	&   \textbf{NNP}	&   \textbf{VBN}	&   \textbf{VBD}	&   \textbf{IN}	&   \textbf{RB}	&   \textbf{VB}	&   \textbf{VBP}	&   \textbf{RP}	&   \hline
 \endhead
 \hline
 \endfoot
 \endlastfoot
 	\hline
-\textbf{JJ} & - & .0827 & .0177 & .0254 & .0032 & .0029 & .0184 & .0032 & .0011 & -\\
-\textbf{NN} & .0438 & - & .0219 & .0011 & .0009 & .0002 & .0038 & .0174 & .0124 & -\\
-\textbf{NNP} & .0230 & .0490 & - & .0010 & .0005 & .0010 & .0011 & .0017 & .0008 & .0001\\
-\textbf{VBN} & .0340 & .0011 & .0004 & - & .0479 & .0000 & .0001 & .0011 & .0008 & -\\
-\textbf{VBD} & .0023 & .0010 & .0005 & .0349 & - & - & .0001 & .0005 & .0014 & -\\
-\textbf{IN} & .0008 & .0003 & .0008 & - & - & - & .0355 & .0003 & .0002 & .0097\\
-\textbf{RB} & .0131 & .0023 & .0018 & - & .0000 & .0259 & - & .0003 & .0002 & .0051\\
-\textbf{VB} & .0026 & .0114 & .0009 & .0016 & .0014 & .0000 & .0008 & - & .0262 & -\\
-\textbf{VBP} & .0003 & .0030 & .0001 & .0001 & .0003 & .0002 & .0001 & .0144 & - & -\\
-\textbf{RP} & .0003 & .0001 & - & - & - & .0259 & .0133 & - & - & -\\
+\textbf{JJ} & - & \textbf{1042} & 547 & \textbf{810} & 54 & 20 & 312 & 61 & 6 & 6\\
+\textbf{NN} & \textbf{1968} & - & \textbf{1167} & 25 & 24 & 6 & 55 & 272 & 72 & 2\\
+\textbf{NNP} & 422 & 520 & - & 9 & 11 & 19 & 43 & 21 & 3 & -\\
+\textbf{VBN} & 605 & 25 & 24 & - & \textbf{831} & - & - & 38 & 2 & -\\
+\textbf{VBD} & 75 & 21 & 12 & \textbf{1140} & - & - & 1 & 33 & 8 & -\\
+\textbf{IN} & 70 & 4 & 24 & 1 & - & - & \textbf{617} & 1 & 4 & \textbf{616}\\
+\textbf{RB} & 437 & 91 & 26 & 3 & 2 & \textbf{844} & - & 19 & 3 & 316\\
+\textbf{VB} & 77 & 414 & 41 & 25 & 13 & 6 & 8 & - & 343 & -\\
+\textbf{VBP} & 26 & 296 & 19 & 19 & 33 & 5 & 4 & \textbf{623} & - & -\\
+\textbf{RP} & - & - & 2 & - & - & 230 & 122 & - & - & -\\
 \hline
 \end{longtable}
 \end{center}
@@ -219,50 +189,50 @@ La segunda evaluación de este experimento consiste en entrenar TnT con la mitad 
 
 \begin{center}
 \begin{longtable}{| l | c | c | c | c | c | c | c | c | c | c | }
-\caption{Matriz de confusión para la 2 mitad de WSJ etiquetado con TnT (entrenado con la primer mitad de WSJ + NFI)}\\	
+\caption{Primer mitad WSJ original vs primer mitad WSJ etiquetado con TnT (entrenado con segunda mitad de WSJ + NFI)}\\	
 \hline
- &	\textbf{JJ}	&   \textbf{NN}	&   \textbf{NNP}	&   \textbf{VBD}	&   \textbf{VBN}	&   \textbf{IN}	&   \textbf{RB}	&   \textbf{RP}	&   \textbf{VBG}	&   \textbf{NNPS}	&   \hline
+ \backslashbox{\scriptsize{WSJ}\kern-1em}{\kern-1em \scriptsize{TnT(2WSJ+NFI)}}  &	\textbf{JJ}	&   \textbf{NN}	&   \textbf{NNP}	&   \textbf{VBN}	&   \textbf{VBD}	&   \textbf{IN}	&   \textbf{RB}	&   \textbf{RP}	&   \textbf{VBG}	&   \textbf{NNPS}	&   \hline
 \endhead
 \hline
 \endfoot
 \endlastfoot
 	\hline
-\textbf{JJ} & - & .0747 & .0142 & .0022 & .0272 & .0030 & .0193 & - & .0131 & .0011\\
-\textbf{NN} & .0389 & - & .0238 & .0006 & .0009 & .0001 & .0033 & - & .0207 & .0001\\
-\textbf{NNP} & .0302 & .0537 & - & .0007 & .0014 & .0014 & .0012 & .0001 & .0011 & .0220\\
-\textbf{VBD} & .0026 & .0010 & .0002 & - & .0435 & - & .0000 & - & - & -\\
-\textbf{VBN} & .0253 & .0011 & .0004 & .0394 & - & - & .0001 & - & - & -\\
-\textbf{IN} & .0017 & .0005 & .0008 & - & - & - & .0393 & .0080 & .0003 & -\\
-\textbf{RB} & .0146 & .0034 & .0019 & - & - & .0209 & - & .0023 & - & -\\
-\textbf{RP} & .0003 & .0001 & - & - & - & .0322 & .0225 & - & - & -\\
-\textbf{VBG} & .0092 & .0254 & .0009 & - & - & .0001 & - & - & - & -\\
-\textbf{NNPS} & - & .0000 & .0236 & - & - & - & - & - & - & -\\
+\textbf{JJ} & - & \textbf{879} & \textbf{674} & \textbf{616} & 29 & 37 & 337 & 7 & 210 & -\\
+\textbf{NN} & \textbf{1742} & - & \textbf{1293} & 29 & 27 & 6 & 65 & 2 & 560 & 1\\
+\textbf{NNP} & 336 & 354 & - & 6 & 4 & 15 & 42 & - & 22 & 557\\
+\textbf{VBN} & \textbf{636} & 15 & 25 & - & \textbf{716} & - & - & - & - & -\\
+\textbf{VBD} & 56 & 10 & 17 & \textbf{1073} & - & - & - & - & - & -\\
+\textbf{IN} & 66 & 3 & 32 & - & - & - & 506 & \textbf{750} & 2 & -\\
+\textbf{RB} & 448 & 79 & 31 & 2 & 1 & \textbf{894} & - & 521 & - & -\\
+\textbf{RP} & - & - & 2 & - & - & 182 & 53 & - & - & -\\
+\textbf{VBG} & 309 & 467 & 23 & - & - & - & - & - & - & -\\
+\textbf{NNPS} & 22 & 1 & 521 & - & - & - & - & - & - & -\\
 \hline
 \end{longtable}
 \end{center}
 
-\noindent Porcentaje de aciertos: 96,31\%
+\noindent Porcentaje de aciertos: 96,46\%
 
 \begin{center}
 \begin{longtable}{| l | c | c | c | c | c | c | c | c | c | c | }
-\caption{Matriz de confusión para la 1 mitad de WSJ etiquetado con TnT (entrenado con la 2 mitad de WSJ)}\\	
+\caption{Segunda mitad de WSJ original vs segunda mitad WSJ etiquetado con TnT (entrenado con la primera mitad de WSJ)}\\	
 \hline
- &	\textbf{JJ}	&   \textbf{NN}	&   \textbf{VBN}	&   \textbf{VBD}	&   \textbf{NNP}	&   \textbf{RB}	&   \textbf{IN}	&   \textbf{NNPS}	&   \textbf{RP}	&   \textbf{VB}	&   \hline
+ \backslashbox{\scriptsize{WSJ}\kern-1em}{\kern-1em \scriptsize{TnT(1WSJ)}}  &	\textbf{JJ}	&   \textbf{NN}	&   \textbf{VBN}	&   \textbf{VBD}	&   \textbf{NNP}	&   \textbf{RB}	&   \textbf{IN}	&   \textbf{NNPS}	&   \textbf{RP}	&   \textbf{VB}	&   \hline
 \endhead
 \hline
 \endfoot
 \endlastfoot
 	\hline
-\textbf{JJ} & - & .0761 & .0345 & .0029 & .0189 & .0160 & .0018 & .0005 & .0001 & .0032\\
-\textbf{NN} & .0451 & - & .0009 & .0016 & .0191 & .0068 & .0002 & - & .0000 & .0171\\
-\textbf{VBN} & .0254 & .0015 & - & .0461 & .0007 & .0001 & - & - & - & .0011\\
-\textbf{VBD} & .0033 & .0012 & .0364 & - & .0002 & - & - & - & - & .0009\\
-\textbf{NNP} & .0235 & .0459 & .0012 & .0005 & - & .0020 & .0008 & .0146 & .0000 & .0021\\
-\textbf{RB} & .0147 & .0021 & - & - & .0017 & - & .0354 & - & .0035 & .0004\\
-\textbf{IN} & .0018 & .0005 & - & - & .0008 & .0314 & - & - & .0095 & .0003\\
-\textbf{NNPS} & .0001 & - & - & - & .0354 & - & - & - & - & -\\
-\textbf{RP} & .0007 & .0002 & - & - & .0001 & .0213 & .0289 & - & - & -\\
-\textbf{VB} & .0035 & .0110 & .0014 & .0009 & .0007 & .0009 & .0002 & - & - & -\\
+\textbf{JJ} & - & \textbf{1084} & 610 & 79 & 564 & 352 & 44 & 2 & 18 & 83\\
+\textbf{NN} & \textbf{1828} & - & 36 & 30 & \textbf{1102} & 51 & 13 & - & 6 & 263\\
+\textbf{VBN} & \textbf{829} & 22 & - & \textbf{874} & 30 & - & - & - & - & 34\\
+\textbf{VBD} & 70 & 38 & \textbf{1107} & - & 13 & - & - & - & - & 21\\
+\textbf{NNP} & 454 & 458 & 18 & 5 & - & 40 & 19 & \textbf{850} & 2 & 18\\
+\textbf{RB} & 384 & 164 & 3 & - & 47 & - & \textbf{753} & - & 512 & 21\\
+\textbf{IN} & 43 & 5 & - & - & 19 & \textbf{851} & - & - & \textbf{693} & 4\\
+\textbf{NNPS} & 11 & - & - & - & 351 & - & - & - & - & -\\
+\textbf{RP} & 2 & 1 & - & - & 1 & 85 & 227 & - & - & -\\
+\textbf{VB} & 76 & 410 & 27 & 21 & 50 & 10 & 7 & - & - & -\\
 \hline
 \end{longtable}
 \end{center}
@@ -271,31 +241,85 @@ La segunda evaluación de este experimento consiste en entrenar TnT con la mitad 
 
 \begin{center}
 \begin{longtable}{| l | c | c | c | c | c | c | c | c | c | c | }
-\caption{Matriz de confusión para la 1 mitad de WSJ etiquetado con TnT (entrenado con la 2 mitad de WSJ + NFI)}\\	
+\caption{Segunda mitad de WSJ original vs segunda mitad WSJ etiquetado con TnT (entrenado con primera mitad de WSJ)}\\	
 \hline
- &	\textbf{JJ}	&   \textbf{NN}	&   \textbf{NNP}	&   \textbf{VBD}	&   \textbf{VBN}	&   \textbf{IN}	&   \textbf{RB}	&   \textbf{RP}	&   \textbf{NNPS}	&   \textbf{VBG}	&   \hline
+ \backslashbox{\scriptsize{WSJ}\kern-1em}{\kern-1em \scriptsize{TnT(1WSJ+NFI)}}  &	\textbf{JJ}	&   \textbf{NN}	&   \textbf{NNP}	&   \textbf{VBN}	&   \textbf{VBD}	&   \textbf{IN}	&   \textbf{RB}	&   \textbf{RP}	&   \textbf{NNPS}	&   \textbf{VB}	&   \hline
 \endhead
 \hline
 \endfoot
 \endlastfoot
 	\hline
-\textbf{JJ} & - & .0751 & .0140 & .0018 & .0347 & .0018 & .0178 & .0001 & .0006 & .0128\\
-\textbf{NN} & .0372 & - & .0218 & .0007 & .0010 & .0001 & .0057 & .0000 & - & .0194\\
-\textbf{NNP} & .0285 & .0520 & - & .0005 & .0011 & .0010 & .0021 & - & .0131 & .0014\\
-\textbf{VBD} & .0024 & .0012 & .0004 & - & .0438 & - & - & - & - & -\\
-\textbf{VBN} & .0204 & .0013 & .0005 & .0373 & - & - & .0001 & - & - & -\\
-\textbf{IN} & .0022 & .0005 & .0005 & - & - & - & .0376 & .0080 & - & .0003\\
-\textbf{RB} & .0150 & .0017 & .0010 & - & - & .0259 & - & .0018 & - & .0000\\
-\textbf{RP} & .0010 & .0002 & .0000 & - & - & .0373 & .0309 & - & - & -\\
-\textbf{NNPS} & .0001 & - & .0327 & - & - & - & - & - & - & -\\
-\textbf{VBG} & .0058 & .0233 & .0005 & - & - & .0000 & .0000 & - & - & -\\
+\textbf{JJ} & - & \textbf{842} & 661 & 504 & 35 & 51 & 353 & 23 & 2 & 64\\
+\textbf{NN} & \textbf{1808} & - & \textbf{1258} & 34 & 30 & 10 & 40 & 4 & - & 217\\
+\textbf{NNP} & 334 & 318 & - & 14 & 8 & 11 & 27 & 1 & \textbf{783} & 18\\
+\textbf{VBN} & \textbf{808} & 21 & 26 & - & \textbf{749} & - & - & - & - & 26\\
+\textbf{VBD} & 46 & 16 & 13 & \textbf{1072} & - & - & - & - & - & 19\\
+\textbf{IN} & 43 & 3 & 23 & - & - & - & 652 & \textbf{875} & - & 3\\
+\textbf{RB} & 426 & 137 & 56 & 2 & - & \textbf{878} & - & \textbf{692} & - & 36\\
+\textbf{RP} & 2 & 1 & - & - & - & 188 & 45 & - & - & -\\
+\textbf{NNPS} & 15 & - & 319 & - & - & - & - & - & - & -\\
+\textbf{VB} & 58 & 272 & 37 & 24 & 29 & 7 & 8 & - & - & -\\
 \hline
 \end{longtable}
 \end{center}
 
-\noindent Porcentaje de aciertos: 96,22\% \\
+\noindent Porcentaje de aciertos: 96,36\% \\
 
-Se puede apreciar una leve mejoría en el porcentaje de etiquetas acertadas; 96,23\% contra 96,31\% y 96,20\% contra 96,22\% para cada mitad respectivamente. Los errores más comunes son producidos en etiquetas JJ y NNP del gold standard cuando son etiquetadas como NN por TnT, para las dos mitades entrenadas tanto con WSJ como con WSJ + NFI. Se puede notar que el porcentaje de error al etiquetar JJ cuando era NN es menor en la evaluación realizada sobre TnT entrenado con WSJ + NFI.\\
+Se puede apreciar una leve mejoría en el porcentaje de etiquetas acertadas; 96,23\% contra 96,46\% y 96,20\% contra 96,36\% para cada mitad respectivamente. Los errores más comunes son producidos en etiquetas NN del gold standard cuando son etiquetadas como JJ y NNP por TnT, para las dos mitades entrenadas tanto con WSJ como con WSJ + NFI. Se puede notar que el porcentaje de error al etiquetar JJ cuando era NN es menor en la evaluación realizada sobre TnT entrenado con WSJ + NFI.\\
+
+A continuación se presentan las matrices de confusión entre la primer y segunda mitad de WSJ etiquetado con TnT entrenado con la mitad restante contra la misma mitad de WSJ etiquetado con TnT entrenado con la mitad restante + NFI.
+
+\begin{center}
+\begin{longtable}{| l | c | c | c | c | c | c | c | c | c | c | }
+\caption{Primer mitad de WSJ etiquetado por TnT (entrenado con la segunda mitad WSJ) vs primer mitad WSJ etiquetado con TnT (entrenado con la segunda  mitad de WSJ + NFI)}\\	
+\hline
+ \backslashbox{\scriptsize{TnT(2WSJ)}\kern-1em}{\kern-1em \scriptsize{TnT(2WSJ+NFI)}}  &	\textbf{NN}	&   \textbf{JJ}	&   \textbf{VBN}	&   \textbf{VBD}	&   \textbf{NNP}	&   \textbf{VBG}	&   \textbf{VBP}	&   \textbf{VB}	&   \textbf{RP}	&   \textbf{RB}	&   \hline
+\endhead
+\hline
+\endfoot
+\endlastfoot
+	\hline
+\textbf{NN} & - & \textbf{567} & 32 & 19 & \textbf{458} & \textbf{334} & 108 & \textbf{319} & - & 43\\
+\textbf{JJ} & \textbf{633} & - & 143 & 39 & \textbf{350} & 63 & 12 & 59 & 2 & 162\\
+\textbf{VBN} & 15 & \textbf{376} & - & \textbf{443} & 7 & - & 5 & 8 & - & -\\
+\textbf{VBD} & 10 & 36 & \textbf{499} & - & 13 & - & 5 & 8 & - & -\\
+\textbf{NNP} & 159 & 142 & 1 & 2 & - & 6 & 3 & 18 & - & 5\\
+\textbf{VBG} & 175 & 216 & - & 1 & 36 & - & - & 1 & - & 2\\
+\textbf{VBP} & 94 & 2 & - & 7 & 2 & - & - & 233 & - & 3\\
+\textbf{VB} & 198 & 56 & 24 & 23 & 12 & - & \textbf{326} & - & - & 1\\
+\textbf{RP} & - & - & - & - & - & - & - & - & - & 6\\
+\textbf{RB} & 26 & 146 & 1 & 1 & 13 & - & - & 7 & 302 & -\\
+\hline
+\end{longtable}
+\end{center}
+
+\noindent Porcentaje de aciertos: 98,39\% \\
+
+\begin{center}
+\begin{longtable}{| l | c | c | c | c | c | c | c | c | c | c | }
+\caption{Segunda mitad WSJ etiquetado por TnT (entrenado con la primera mitad WSJ) vs segunda mitad WSJ etiquetado con TnT (entrenado con la primera mitad de WSJ + NFI)}\\	
+\hline
+ \backslashbox{\scriptsize{TnT(1WSJ)}\kern-1em}{\kern-1em \scriptsize{TnT(1WSJ+NFI)}}  &	\textbf{JJ}	&   \textbf{NN}	&   \textbf{VBN}	&   \textbf{VBD}	&   \textbf{NNP}	&   \textbf{RP}	&   \textbf{RB}	&   \textbf{IN}	&   \textbf{VB}	&   \textbf{VBP}	&   \hline
+\endhead
+\hline
+\endfoot
+\endlastfoot
+	\hline
+\textbf{JJ} & - & \textbf{510} & 195 & 43 & \textbf{319} & - & 125 & 9 & 47 & 19\\
+\textbf{NN} & \textbf{729} & - & 27 & 25 & \textbf{426} & 1 & 41 & 4 & \textbf{291} & 69\\
+\textbf{VBN} & \textbf{282} & 20 & - & \textbf{438} & 4 & - & 1 & - & 11 & 5\\
+\textbf{VBD} & 56 & 12 & \textbf{522} & - & 3 & - & 1 & - & 8 & 3\\
+\textbf{NNP} & 117 & 133 & 5 & 3 & - & - & 10 & 9 & 25 & 4\\
+\textbf{RP} & - & 2 & - & - & 1 & - & 35 & 32 & - & -\\
+\textbf{RB} & 160 & 35 & - & - & 35 & \textbf{353} & - & \textbf{300} & 16 & 2\\
+\textbf{IN} & 2 & 2 & - & - & 14 & 159 & 73 & - & - & 1\\
+\textbf{VB} & 43 & 183 & 18 & 17 & 17 & 1 & 4 & 1 & - & 275\\
+\textbf{VBP} & 16 & 102 & 3 & 7 & 1 & - & 1 & 1 & 201 & -\\
+\hline
+\end{longtable}
+\end{center}
+
+\noindent Porcentaje de aciertos: 98,45\% \\
 
 La tercer evaluación de este experimento consiste en entrenar TnT con un cuarto de WSJ y con un cuarto de WSJ + NFI. Posteriormente con estos dos modelos se etiqueta los 3/4 restantes de WSJ y se construye la matriz de confusión. Se realiza la misma operación para cada uno de los cuartos:
 
@@ -310,25 +334,25 @@ La tercer evaluación de este experimento consiste en entrenar TnT con un cuarto 
 \endlastfoot
 	\hline
 TnT entrenado con el primer 1/4 de WSJ & 95.92\%  \\
-TnT entrenado con el primer 1/4 de WSJ + NFI & 96.06\% \\
+TnT entrenado con el primer 1/4 de WSJ + NFI & 96.25\% \\
 TnT entrenado con el segundo 1/4 de WSJ & 95.88\% \\
-TnT entrenado con el segundo 1/4 de WSJ + NFI & 96.06\% \\
+TnT entrenado con el segundo 1/4 de WSJ + NFI & 96.25\% \\
 TnT entrenado con el tercer 1/4 de WSJ & 95.90\% \\
-TnT entrenado con el tercer 1/4 de WSJ + NFI & 96.08\% \\
+TnT entrenado con el tercer 1/4 de WSJ + NFI & 96.28\% \\
 TnT entrenado con el cuarto 1/4 de WSJ & 95.89\% \\
-TnT entrenado con el cuarto 1/4 de WSJ + NFI & 96.09\% \\
+TnT entrenado con el cuarto 1/4 de WSJ + NFI & 96.29\% \\
 \hline
 \end{longtable}
 \end{center}
 
-En todos los casos se puede apreciar una mejoría en el acierto de etiquetas para el corpus de entrenamiento WSJ + NFI contra WSJ de alrededor del 18\% \\
+En todos los casos se puede apreciar una mejora en el acierto de etiquetas para el corpus de entrenamiento WSJ + NFI contra WSJ.\\
 
 La cuarta evaluación de este experimento consiste en entrenar TnT con un décimo de WSJ y con un décimo de WSJ + NFI. Posteriormente con estos dos modelos se etiqueta los 9/10 restantes de WSJ y se presentan los resultados:
 \begin{itemize}
 	\item 95.31\% de acierto de etiquetas para el etiquetado de 9/10 de WSJ con TnT entrenado con 1/10 WSJ
-	\item 95.81\% de acierto de etiquetas para el etiquetado de 9/10 de WSJ con TnT entrenado con 1/10 WSJ+NFI
+	\item 96.09\% de acierto de etiquetas para el etiquetado de 9/10 de WSJ con TnT entrenado con 1/10 WSJ+NFI
 \end{itemize}
 
-Se puede apreciar un aumento del porcentaje de aciertos de .50\% en el corpus de entrenamiento que incorpora NFI.
+Se puede apreciar un aumento del porcentaje de aciertos en el corpus de entrenamiento que incorpora NFI.
 
 \subsubsection{Tercer experimento} 

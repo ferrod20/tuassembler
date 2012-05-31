@@ -1,9 +1,11 @@
+Matriz de confusion entre Cobuild etiquetado con TnT (entrenado con WSJ) contra Cobuild extraido 2pasada
+
 Aciertos: 83150 ( 86,4057693906393% )
 Errores: 13082
 Cantidad de tags: 96232
 
 Errores
-TagWSJ	TagAsignado	PorcentajeDeError
+TnT (entrenado con WSJ)|	Cobuild 2pasada|	CantidadDeErrores
 NN VB 2616
 	burst 14
 	share 14

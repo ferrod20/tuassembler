@@ -57,6 +57,7 @@ namespace ConsoleApplication1
 \endlastfoot
 	\hline
 ");
+            var erroresTotales = 0;
             foreach (var tagCol in tags)
             {
                 salida.Write(@"\textbf{" + tagCol + "}");
@@ -64,6 +65,7 @@ namespace ConsoleApplication1
                 {
                     salida.Write(" & ");
                     var error = ObtenerCantidadDeErrores(tagFila, tagCol);//tag columna es tag de prueba, tagFila es tag gold standard
+                    erroresTotales += error;
                     if (error == 0)
                         salida.Write("-");
                     else
@@ -83,6 +85,9 @@ namespace ConsoleApplication1
 \end{longtable}
 \end{center}");
 
+            salida.WriteLine();
+            salida.WriteLine();
+            salida.WriteLine("Sumatoria de errores: " + erroresTotales);
             salida.Close();
         }
 

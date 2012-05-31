@@ -42,11 +42,14 @@ namespace ConsoleApplication1
         {
             var partesLineaDePrueba = lineaPrueba.TrimEnd().Split();
             var tagDePrueba = partesLineaDePrueba.Length > 1 ? partesLineaDePrueba.LastOrDefault() : "";
-            
-            if( !string.IsNullOrEmpty(tagDePrueba) )
+
+            var partesGoldStandard = lineaGoldStandard.TrimEnd().Split();
+            var tagGoldStandard = partesGoldStandard.Length > 1 ? partesGoldStandard.LastOrDefault() : "";
+
+            if (!string.IsNullOrEmpty(tagDePrueba) && !string.IsNullOrEmpty(tagGoldStandard))
             {
                 matrizDeConfusión.CantidadDeEtiquetas++;
-                var tagGoldStandard = lineaGoldStandard.TrimEnd().Split().LastOrDefault();
+                
                 var acierto = tagDePrueba == tagGoldStandard;
                 
                 if (!acierto)

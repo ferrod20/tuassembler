@@ -1,9 +1,52 @@
-Aciertos: 90009 ( 78,8819168141903% )
-Errores: 24097
+Matriz de confusion entre Cobuild etiquetado con TnT (entrenado con WSJ) contra Cobuild extraido 1pasada
+
+Aciertos: 81572 ( 71,487914745938% )
+Errores: 32534
 Cantidad de tags: 114106
 
 Errores
-TagWSJ	TagAsignado	PorcentajeDeError
+TnT (entrenado con WSJ)|	Cobuild 1pasada|	CantidadDeErrores
+VBN VBD|VBN 4412
+	placed 21
+	buried 14
+	passed 14
+	lodged 12
+	poisoned 12
+	transferred 12
+	followed 11
+	settled 11
+	tied 11
+	assigned 10
+	cleared 10
+	separated 10
+	whipped 10
+	dissolved 9
+	intended 9
+	planted 9
+	stretched 9
+	suspended 9
+	turned 9
+	carried 8
+	commanded 8
+	covered 8
+	filled 8
+	moved 8
+	overloaded 8
+	plucked 8
+	pressed 8
+	projected 8
+	pulled 8
+	reckoned 8
+	starved 8
+	swallowed 8
+	taxed 8
+	accredited 7
+	announced 7
+	attached 7
+	composed 7
+	cropped 7
+	embedded 7
+	expected 7
 VBP VB 3729
 	have 67
 	get 42
@@ -45,6 +88,47 @@ VBP VB 3729
 	change 10
 	cross 10
 	draw 10
+VBD VBD|VBN 3684
+	pulled 23
+	pushed 17
+	started 17
+	worked 16
+	showed 15
+	stopped 15
+	pressed 14
+	dropped 13
+	followed 13
+	opened 13
+	failed 12
+	passed 12
+	played 12
+	jumped 11
+	looked 11
+	rubbed 11
+	turned 11
+	called 10
+	carried 10
+	changed 10
+	flipped 10
+	folded 10
+	plunged 10
+	reported 10
+	settled 10
+	tried 10
+	gathered 9
+	lashed 9
+	slipped 9
+	tipped 9
+	appeared 8
+	asked 8
+	bounced 8
+	continued 8
+	curled 8
+	finished 8
+	flashed 8
+	lifted 8
+	mounted 8
+	offered 8
 NN VB 2616
 	burst 14
 	share 14
@@ -660,6 +744,47 @@ NNS NN 373
 	airwaves 2
 	atlas 2
 	blinkers 2
+JJ VBD|VBN 332
+	contrived 8
+	roasted 5
+	choreographed 4
+	inscribed 4
+	shackled 4
+	squashed 4
+	assimilated 3
+	beached 3
+	branded 3
+	chained 3
+	contented 3
+	crushed 3
+	gratified 3
+	interrelated 3
+	padded 3
+	pained 3
+	seasoned 3
+	slanted 3
+	transfigured 3
+	awed 2
+	blended 2
+	blighted 2
+	botched 2
+	buckled 2
+	celebrated 2
+	charted 2
+	constricted 2
+	contorted 2
+	correlated 2
+	coveted 2
+	crooked 2
+	dignified 2
+	discomfited 2
+	disfigured 2
+	encased 2
+	floored 2
+	fogged 2
+	gilded 2
+	grated 2
+	grilled 2
 NNP JJ 281
 	Roman 5
 	Anglo-Saxon 4
@@ -2046,6 +2171,10 @@ IN NNS 3
 	as 1
 	As 1
 	insides 1
+NNP VBD|VBN 3
+	Anglicized 1
+	Mortified 1
+	Punctured 1
 VBZ IN 3
 	apropos 1
 	cos 1
@@ -2063,6 +2192,9 @@ VBN UH 3
 JJ JJS 3
 	merest 2
 	commonest 1
+RB VBD|VBN 3
+	damned 2
+	wrong-footed 1
 DT CC 3
 	either 3
 RB DT 3
@@ -2126,6 +2258,8 @@ PRP NN 2
 	IOU 1
 VBD IN 2
 	provided 2
+VB VBD|VBN 2
+	reddened 2
 WRB NN 2
 	SEN 1
 	why 1
@@ -2139,6 +2273,8 @@ VBD RB 2
 	unmolested 1
 VBG NNS 2
 	veg 2
+NN VBD|VBN 1
+	abducted 1
 RP NN 1
 	back 1
 CC NNS 1
