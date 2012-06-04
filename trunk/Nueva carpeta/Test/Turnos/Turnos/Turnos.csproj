@@ -112,8 +112,8 @@
     <Content Include="images\Sprites\x.png" />
     <Content Include="images\Sprites\yellow-arrow-down.png" />
     <Content Include="images\Sprites\yellow-arrow.png" />
+    <Content Include="js\compartido\array.js" />
     <Content Include="js\compartido\date.js" />
-    <Content Include="js\compartido\EntityList.js" />
     <Content Include="js\jquery-1.6.2.min.js" />
     <Content Include="js\jquery-ui-1.8.16.custom.min.js" />
     <Content Include="js\jquery-ui-i18n.js" />
@@ -152,12 +152,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Recursos.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\DeleteConfirmation.cshtml" />
-    <Content Include="Views\Index.cshtml" />
-    <Content Include="Views\PasswordForm.cshtml" />
-    <Content Include="Views\UserForm.cshtml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
