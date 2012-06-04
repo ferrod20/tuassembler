@@ -38,13 +38,31 @@
                 </div>                                                                                                                  \
             </div>                                                                                                                      \
             <div id="recursos-contenedor">                                                                                              \
-                <form id="recursos-formulario" action="#" onsubmit="return false;">                                                     \
+                    <input type="hidden" id="recurso-id" value="0" /> \
                     <div class="content_user_left">                                                                                     \
                         <label>Nombre</label>                                                                                           \
                         <div>                                                                                                           \
                             <input id="recurso-nombre" type="text" />                                                                   \
                         </div>                                                                                                          \
                     </div>                                                                                                              \
+                    <div class="content_user_left">                                                                                     \
+                        <label>Especialidad</label>                                                                                           \
+                        <div>                                                                                                           \
+                            <input id="recurso-especialidad" type="text" />                                                                   \
+                        </div>                                                                                                          \
+                    </div>                                                                                                              \
+                    <div class="content_user_left">                                                                                     \
+                        <label>Email</label>                                                                                           \
+                        <div>                                                                                                           \
+                            <input id="recurso-email" type="text" />                                                                   \
+                        </div>                                                                                                          \
+                    </div> \
+                    <div class="content_user_left">                                                                                     \
+                        <label>Foto</label>                                                                                           \
+                        <div>                                                                                                           \
+                            <input id="recurso-foto" type="text" />                                                                   \
+                        </div>                                                                                                          \
+                    </div> \
                 <div class="content_user_left">                                                                                         \
                     <label>Disponibilidad</label>                                                                                       \
                 </div>                                                                                                                  \
@@ -57,7 +75,6 @@
                     <input id="recursos-formulario-grabar" class="boton" type="button" value="Grabar recurso" />                        \
                     <input id="recursos-formulario-cancelar" class="boton cancelar" type="button" value="Cancelar" />                   \
                 </div>                                                                                                                  \
-                </form>                                                                                                                 \
             </div>                                                                                                                      \
         </div>                                                                                                                          \
     </div>                                                                                                                              \
