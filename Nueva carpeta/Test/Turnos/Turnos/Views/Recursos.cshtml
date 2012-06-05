@@ -6,13 +6,19 @@
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
     <meta name="description" content="Turnos es un sistema que permite administrar y gestionar turnos."/>
     <title>Turnos </title>
-    <script src="http://cdn.jquerytools.org/1.2.6/full/jquery.tools.min.js" type="text/javascript"></script>
+    <link href="../css/base.css" type="text/css" rel="stylesheet"/>
+    
+    <script src="http://cdn.jquerytools.org/1.2.7/full/jquery.tools.min.js" type="text/javascript"></script>
     <script src="http://ajax.aspnetcdn.com/ajax/jquery.templates/beta1/jquery.tmpl.js" type="text/javascript"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js" type="text/javascript"></script>
+
     <script type="text/javascript" src="../js/compartido/array.js" ></script>
+    <script type="text/javascript" src="../js/compartido/notifications.js" ></script>
+
     <script type="text/javascript" src="../js/recursos.js"></script>
     <script type="text/javascript" src="../js/Recurso.plantilla.js"></script>
     <script type="text/javascript" src="../js/RecursoController.js"></script>                    
-    <link href="../css/base.css" type="text/css" rel="stylesheet"/>
+    
 </head>
 <body>
     <div id="encabezado">
@@ -25,6 +31,12 @@
                     <li id="preguntas-frecuentes"><a href="">Preguntas frecuentes</a></li>
                 </ul>
             </div>
+        </div>
+    </div>
+        <div class="notification-center">
+        <div id="notifications-container" class="infoNotification">
+            <h3 class="close"></h3>
+            <p></p>
         </div>
     </div>
     <div id="contenido">

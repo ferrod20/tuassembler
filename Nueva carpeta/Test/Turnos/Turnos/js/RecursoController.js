@@ -1,7 +1,4 @@
-﻿Turnos = {};
-
-    
-function RecursoController() {
+﻿function RecursoController() {
     this.SystemType = 'RecursoController';
     var scrollable = null;
     var hayBusqueda = false;
@@ -66,6 +63,7 @@ function RecursoController() {
             Turnos.Recursos.deleteById(id);
             scrollable.prev();
             mostrarListaDeRecursos();
+            Notificador.showSuccess('El recurso se ha eliminado correctamente.');
         });
     };
 
@@ -142,6 +140,7 @@ function RecursoController() {
             Turnos.Recursos.push(data);
             mostrarListaDeRecursos();
             scrollable.prev();
+            Notificador.showSuccess('El recurso se ha grabado correctamente.');
         });    
     };
     
