@@ -499,6 +499,7 @@ textarea.error {
   left: 50%;
   position: relative;
   z-index: 999999;
+  position: fixed;
 }
 #notifications-container {
   position: absolute;
