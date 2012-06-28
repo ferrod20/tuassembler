@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Text;
 
 namespace ConsoleApplication1
 {
@@ -93,10 +94,18 @@ namespace ConsoleApplication1
                     palabraSinPuntuación = palabra.Substring(0, palabra.Length - 3);
                     puntuaciónFinal = "...";
                 }
-                else if (char.IsPunctuation(palabra.Last()))
-                {
-                    palabraSinPuntuación = palabra.Substring(0, palabra.Length - 1);
-                    puntuaciónFinal = palabra.Last().ToString();
+                else
+                {                    
+                    var últimoChar = palabra.Last();
+                    if (char.IsPunctuation(últimoChar))
+                    {
+                        var posiblePalabraSinPuntuación = palabra.Substring(0, palabra.Length - 1);
+                        if (!posiblePalabraSinPuntuación.EsAlgunaDeEstas("Mr", "Mrs", "St", "Eds") && !posiblePalabraSinPuntuación.Contains("."))
+                        {
+                            palabraSinPuntuación = posiblePalabraSinPuntuación;
+                            puntuaciónFinal = últimoChar.ToString();    
+                        }
+                    }
                 }
             }
 
@@ -381,7 +390,7 @@ namespace ConsoleApplication1
                 entradaCobuild = ObtenerEntrada(texto, ref indice);
                 if (entradaCobuild != string.Empty)
                     informaciónExtraída = ExtraerInformaciónDeLaEntrada(entradaCobuild);
-                if (!string.IsNullOrEmpty(informaciónExtraída))
+                if (!string.IsNullOrEmpty(informaciónExtraída.Trim()))
                     tw.Write(informaciónExtraída);
             }
         }
@@ -412,7 +421,7 @@ namespace ConsoleApplication1
         public static string ExtraerInformaciónDeLaEntrada(string entrada)
         {
             var líneas = entrada.Split('\n');
-            var salida = "";
+            var salida = new StringBuilder();
 
             if (líneas.Length > 2)
             {
@@ -436,13 +445,13 @@ namespace ConsoleApplication1
                         {
                             var etiquetasObtenidas = InferirEtiquetasParaLasFormasDeLaPalabra(formasDeLaPalabra, palabra, etiquetaPennTreebank);
                             etiquetasObtenidas.AgregarSiNoExiste(palabra.ToLower(), etiquetaPennTreebank);
-                            salida += GenerarSalidaEtiquetada(línea, etiquetasObtenidas);
+                            salida.Append(GenerarSalidaEtiquetada(línea, etiquetasObtenidas));
                         }
                     }
                 }
             }
 
-            return salida;
+            return salida.ToString();
         }
 
         /// <summary>
@@ -481,8 +490,9 @@ namespace ConsoleApplication1
         /// </summary>
         private static string GenerarSalidaEtiquetada(string ejemplo, Dictionary<string, string> etiquetas)
         {
-            var salida = string.Empty;
+            var cantPalEtiquetadas = CantidadDePalabrasEtiquetadas;
             var palabrasDelEjemplo = ejemplo.Split(new[] {' '}, StringSplitOptions.RemoveEmptyEntries);
+            var salida = "";
 
             foreach (var palabraDelEjemplo in palabrasDelEjemplo)
             {
@@ -509,9 +519,9 @@ namespace ConsoleApplication1
                     {
                         var etiquetaPennTreebank = etiquetas[palabraEnMinúscula];
                         //var etiquetaInferida = InferirEtiqueta(palabraSinPuntuación, etiquetaPennTreebank, palabrasDelEjemplo, i);
-                        
+
                         salida += "\t" + etiquetaPennTreebank;
-                        CantidadDePalabrasEtiquetadas++;
+                        CantidadDePalabrasEtiquetadas++;                        
                     }
                     salida += "\n";
                 }
@@ -519,10 +529,15 @@ namespace ConsoleApplication1
                 if (puntuaciónFinal != string.Empty)
                 {
                     salida += puntuaciónFinal + "\n";
+                    if (puntuaciónFinal == "...")
+                        salida += "\n";
                     CantidadDeSignosDePuntuación++;
                 }
             }
-            return salida;
+
+            salida += "\n";
+            //Si se asginó alguna etiqueta
+            return CantidadDePalabrasEtiquetadas > cantPalEtiquetadas ? salida : string.Empty;
         }
 
         /// <summary>

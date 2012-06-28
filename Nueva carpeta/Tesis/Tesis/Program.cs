@@ -1356,9 +1356,9 @@ namespace ConsoleApplication1
                     salida.Write(partesExtraídas[0]);                    
                     var etiquetaExtraída = partesExtraídas.Last();
                     Hacer(salida, etiquetaExtraída, etiquetaEtiquetada, partesExtraídas);
-
-                    salida.WriteLine();
                 }
+
+                salida.WriteLine();
 
                 líneaExtraída = textoExtraido.ReadLine();
                 etiquetaEtiquetada = textoEtiquetado.ReadLine();    
