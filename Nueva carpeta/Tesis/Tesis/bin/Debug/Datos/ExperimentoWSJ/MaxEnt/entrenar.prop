@@ -1,0 +1,3 @@
+lang = english
+encoding = UTF-8 
+arch = left3words,naacl2003unknowns,wordshapes(-1,1)

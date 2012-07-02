@@ -1,0 +1,17 @@
+java -mx3800m -cp "stanford-postagger.jar;" edu.stanford.nlp.tagger.maxent.MaxentTagger -prop entrenar.prop -trainFile "format=TSV,wordColumn=0,tagColumn=1,../FuentesDeEntrenamiento/wsjD.g" -model Entrenado/wsjD
+java -mx3800m -cp "stanford-postagger.jar;" edu.stanford.nlp.tagger.maxent.MaxentTagger -prop entrenar.prop -trainFile "format=TSV,wordColumn=0,tagColumn=1,../FuentesDeEntrenamiento/wsjC1.g" -model Entrenado/wsjC1
+java -mx3800m -cp "stanford-postagger.jar;" edu.stanford.nlp.tagger.maxent.MaxentTagger -prop entrenar.prop -trainFile "format=TSV,wordColumn=0,tagColumn=1,../FuentesDeEntrenamiento/wsjC2.g" -model Entrenado/wsjC2
+java -mx3800m -cp "stanford-postagger.jar;" edu.stanford.nlp.tagger.maxent.MaxentTagger -prop entrenar.prop -trainFile "format=TSV,wordColumn=0,tagColumn=1,../FuentesDeEntrenamiento/wsjC3.g" -model Entrenado/wsjC3
+java -mx3800m -cp "stanford-postagger.jar;" edu.stanford.nlp.tagger.maxent.MaxentTagger -prop entrenar.prop -trainFile "format=TSV,wordColumn=0,tagColumn=1,../FuentesDeEntrenamiento/wsjC4.g" -model Entrenado/wsjC4
+java -mx3800m -cp "stanford-postagger.jar;" edu.stanford.nlp.tagger.maxent.MaxentTagger -prop entrenar.prop -trainFile "format=TSV,wordColumn=0,tagColumn=1,../FuentesDeEntrenamiento/wsjM1.g" -model Entrenado/wsjM1
+java -mx3800m -cp "stanford-postagger.jar;" edu.stanford.nlp.tagger.maxent.MaxentTagger -prop entrenar.prop -trainFile "format=TSV,wordColumn=0,tagColumn=1,../FuentesDeEntrenamiento/wsjM2.g" -model Entrenado/wsjM2
+java -mx3800m -cp "stanford-postagger.jar;" edu.stanford.nlp.tagger.maxent.MaxentTagger -prop entrenar.prop -trainFile "format=TSV,wordColumn=0,tagColumn=1,../FuentesDeEntrenamiento/wsj.g" -model Entrenado/wsj
+
+java -mx3800m -cp "stanford-postagger.jar;" edu.stanford.nlp.tagger.maxent.MaxentTagger -prop entrenar.prop -trainFile "format=TSV,wordColumn=0,tagColumn=1,../FuentesDeEntrenamiento/wsjD+NFI.g" -model Entrenado/wsjD+NFI
+java -mx3800m -cp "stanford-postagger.jar;" edu.stanford.nlp.tagger.maxent.MaxentTagger -prop entrenar.prop -trainFile "format=TSV,wordColumn=0,tagColumn=1,../FuentesDeEntrenamiento/wsjM1+NFI.g" -model Entrenado/wsjM1+NFI
+java -mx3800m -cp "stanford-postagger.jar;" edu.stanford.nlp.tagger.maxent.MaxentTagger -prop entrenar.prop -trainFile "format=TSV,wordColumn=0,tagColumn=1,../FuentesDeEntrenamiento/wsjM2+NFI.g" -model Entrenado/wsjM2+NFI
+java -mx3800m -cp "stanford-postagger.jar;" edu.stanford.nlp.tagger.maxent.MaxentTagger -prop entrenar.prop -trainFile "format=TSV,wordColumn=0,tagColumn=1,../FuentesDeEntrenamiento/wsjC1+NFI.g" -model Entrenado/wsjC1+NFI
+java -mx3800m -cp "stanford-postagger.jar;" edu.stanford.nlp.tagger.maxent.MaxentTagger -prop entrenar.prop -trainFile "format=TSV,wordColumn=0,tagColumn=1,../FuentesDeEntrenamiento/wsjC2+NFI.g" -model Entrenado/wsjC2+NFI
+java -mx3800m -cp "stanford-postagger.jar;" edu.stanford.nlp.tagger.maxent.MaxentTagger -prop entrenar.prop -trainFile "format=TSV,wordColumn=0,tagColumn=1,../FuentesDeEntrenamiento/wsjC3+NFI.g" -model Entrenado/wsjC3+NFI
+java -mx3800m -cp "stanford-postagger.jar;" edu.stanford.nlp.tagger.maxent.MaxentTagger -prop entrenar.prop -trainFile "format=TSV,wordColumn=0,tagColumn=1,../FuentesDeEntrenamiento/wsjC4+NFI.g" -model Entrenado/wsjC4+NFI
+java -mx6800m -cp "stanford-postagger.jar;" edu.stanford.nlp.tagger.maxent.MaxentTagger -prop entrenar.prop -trainFile "format=TSV,wordColumn=0,tagColumn=1,../FuentesDeEntrenamiento/wsj+NFI.g" -model Entrenado/wsj+NFI
