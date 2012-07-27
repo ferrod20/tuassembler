@@ -66,6 +66,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\demo_table.css" />
+    <Content Include="css\jquery.dataTables.css" />
     <Content Include="css\type.css" />
     <Content Include="css\reset.css" />
     <Content Include="css\base.css" />
@@ -115,10 +117,12 @@
     <Content Include="js\compartido\array.js" />
     <Content Include="js\compartido\date.js" />
     <Content Include="js\compartido\notifications.js" />
+    <Content Include="js\DisponibilidadController.js" />
     <Content Include="js\jquery-1.6.2.min.js" />
     <Content Include="js\jquery-ui-1.8.16.custom.min.js" />
     <Content Include="js\jquery-ui-i18n.js" />
     <Content Include="js\jquery.i18n.properties-min-1.0.9.js" />
+    <Content Include="js\jquery.jeditable.js" />
     <Content Include="js\jquery.weekcalendar.js" />
     <Content Include="js\recursos.js" />
     <Content Include="js\turnos.js" />
