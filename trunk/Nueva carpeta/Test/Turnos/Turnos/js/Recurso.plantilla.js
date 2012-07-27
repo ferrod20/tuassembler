@@ -65,6 +65,39 @@
                     </div> \
                 <div class="content_user_left">                                                                                         \
                     <label>Disponibilidad</label>                                                                                       \
+                        <table id="disponibilidad"> \
+    <thead> \
+        <tr> \
+            <th>Lunes</th> \
+            <th>Martes</th> \
+            <th>Miércoles</th> \
+            <th>Jueves</th> \
+            <th>Viernes</th> \
+            <th>Sábado</th> \
+            <th>Domingo</th> \
+        </tr> \
+    </thead> \
+    <tbody> \
+        <tr> \
+            <td>10-10.30</td> \
+            <td>10-10.30</td> \
+            <td>10-10.30</td> \
+            <td>10-10.30</td> \
+            <td>10-10.30</td> \
+            <td>10-10.30</td> \
+            <td>10-10.30</td> \
+        </tr> \
+        <tr> \
+            <td>11-11.30</td> \
+            <td>11-11.30</td> \
+            <td>11-11.30</td> \
+            <td>11-11.30</td> \
+            <td>11-11.30</td> \
+            <td>10-10.30</td> \
+            <td>11-11.30</td> \
+        </tr> \
+    </tbody> \
+</table>\ \
                 </div>                                                                                                                  \
                 <div class="clear">                                                                                                     \
                 </div>                                                                                                                  \
