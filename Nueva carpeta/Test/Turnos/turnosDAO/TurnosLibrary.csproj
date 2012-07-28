@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{EFCC05DE-8994-42DA-9365-B21653D8B389}</ProjectGuid>
+    <ProjectGuid>{F48AC5D1-4157-4305-BE3A-257DDC7E10A5}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>db4oDataHelper</RootNamespace>
-    <AssemblyName>db4oDataHelper</AssemblyName>
+    <RootNamespace>turnosDAO</RootNamespace>
+    <AssemblyName>turnosDAO</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <FileUpgradeFlags>
@@ -52,14 +52,12 @@
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Db4objects.Db4o">
-      <HintPath>..\lib\Db4objects.Db4o.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Xml.Linq">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
@@ -70,9 +68,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Connect.cs" />
-    <Compile Include="DomainObject.cs" />
+    <Compile Include="BusisnesObjects\boCalendario.cs" />
+    <Compile Include="DataObjects\Usuario.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="DataObjects\Cliente.cs" />
+    <Compile Include="BusisnesObjects\boClientes.cs" />
+    <Compile Include="DataAccess\ClientesDAO.cs" />
+    <Compile Include="BusisnesObjects\boDisponibilidad.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DataObjects\Recurso.cs" />
+    <Compile Include="BusisnesObjects\boRecursos.cs" />
+    <Compile Include="DataAccess\RecursosDAO.cs" />
+    <Compile Include="DataObjects\Turno.cs" />
+    <Compile Include="BusisnesObjects\boUsuarios.cs" />
+    <Compile Include="DataAccess\UsuariosDAO.cs" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
@@ -90,6 +103,16 @@
       <ProductName>Windows Installer 3.1</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

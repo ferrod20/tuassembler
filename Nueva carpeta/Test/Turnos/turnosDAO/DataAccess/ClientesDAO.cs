@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using db4oDataHelper.DAO;
@@ -7,46 +9,42 @@ using Db4objects.Db4o;
 using Db4objects.Db4o.Query;
 using Turnos.DTO;
 
-namespace Turnos.DAO
+namespace TurnosLib
 {
     public static class ClientesDAO
     {
-        public static Cliente Leer(long Id)
+        public static Cliente Leer(int Id)
         {
-            Cliente ClienteBuscar = new Cliente(Id);
-            List<Cliente> lClientes = ClientesDAO.Buscar(ClienteBuscar);
-            if (lClientes.Count == 1) return lClientes[0];
-            return null;
+            
+            string sqlConnectionString = System.Configuration.ConfigurationManager.ConnectionStrings["TurnosConnectionString"].ConnectionString;
+
+            using (var connection = new SqlConnection(sqlConnectionString))
+            {
+
+                SqlCommand command = connection.CreateCommand();
+                command.CommandText = "SELECT * FROM Clientes WHERE Id" + Id.ToString();
+                command.CommandType = CommandType.Text;
+
+                connection.Open();
+                SqlDataReader ret = command.ExecuteReader();
+                if(ret.HasRows)
+                {
+                    Cliente ClienteBuscar = new Cliente(Id); 
+                }
+               
+                List<Cliente> lClientes = ClientesDAO.Buscar(ClienteBuscar);
+                if (lClientes.Count == 1) return lClientes[0];
+                return null;
+            }
+           
         }
         static public Cliente Guardar(Cliente objetoAGuardar)
         {
-            using (IObjectContainer db = Connect.getDataBase())
-            {
-                try
-                {
-                    if (objetoAGuardar.dbId > 0)
-                    {
-                        //Asigna el ID interno de la clase con el 
-                        //de la instancia del objeto  asi evito duplicar objetos
-                        Connect.setdbId(db, objetoAGuardar);
-                    }
-                    db.Store(objetoAGuardar);
-                    db.Commit();
-                    //Si es un alta, recupero nuevamente el objeto y le seteo el campo Id
-                    //Hago esta grasada porque sino no puedo recuperar por el Id!
-                    if (objetoAGuardar.Id == 0)
-                    {
-                        objetoAGuardar.Id = db.Ext().GetID(objetoAGuardar);
-                        db.Store(objetoAGuardar);
-                        db.Commit();
-                    }
-                    return objetoAGuardar;
-                }
-                finally
-                {
-                    db.Close();
-                }
-            }
+            
+           
+           
+           
+            
         }
         static public bool Borrar(long Id)
         {

@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Turnos.DTO
+namespace TurnosLib
 {
-    public class Turno : db4oDataHelper.Domain.DomainObject
+    public class Turno 
     {
         int Id { get; set; }                        //Id del turno
         Usuario Usuario { get; set; }               //Usuario que realiza el turno
