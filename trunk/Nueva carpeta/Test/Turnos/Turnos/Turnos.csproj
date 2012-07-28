@@ -142,20 +142,6 @@
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\db4oDataHelper\db4oDataHelper.csproj">
-      <Project>{EFCC05DE-8994-42DA-9365-B21653D8B389}</Project>
-      <Name>db4oDataHelper</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\turnosBO\turnosBO.csproj">
-      <Project>{73D792C5-F92A-4266-8E49-7ABF91A83A69}</Project>
-      <Name>turnosBO</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\turnosDTO\turnosDTO.csproj">
-      <Project>{DA89E535-0498-4424-96EF-0B19E52367E6}</Project>
-      <Name>turnosDTO</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="Views\Recursos.cshtml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

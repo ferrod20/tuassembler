@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Turnos.DTO
+namespace TurnosLib
 {
-    public class Recurso : db4oDataHelper.Domain.DomainObject
+    public class Recurso 
     {
         public long Id { get; set; }                                    //Id del recurso a reservar
         public long IdCliente { get; set; }                           //Id del cliente dueño del recurso
