@@ -1,0 +1,19 @@
+PATH=$PATH:$HOME/bin
+cd BNC/Taggeado
+tnt ../../Entrenado/wsj ../../../BNC/BNC.g > wsj.tt
+tnt ../../Entrenado/wsj+NFI ../../../BNC/BNC.g > wsj+NFI.tt
+tnt ../../Entrenado/wsjC1 ../../../BNC/BNC.g > wsjCompC1.tt
+tnt ../../Entrenado/wsjC2 ../../../BNC/BNC.g > wsjCompC2.tt
+tnt ../../Entrenado/wsjC3 ../../../BNC/BNC.g > wsjCompC3.tt
+tnt ../../Entrenado/wsjC4 ../../../BNC/BNC.g > wsjCompC4.tt
+tnt ../../Entrenado/wsjM1 ../../../BNC/BNC.g > wsjM2.tt
+tnt ../../Entrenado/wsjM2 ../../../BNC/BNC.g > wsjM1.tt
+tnt ../../Entrenado/wsjD ../../../BNC/BNC.g > wsjCompD.tt
+
+tnt ../../Entrenado/wsjC1+NFI ../../../BNC/BNC.g > wsjCompC1+NFI.tt
+tnt ../../Entrenado/wsjC2+NFI ../../../BNC/BNC.g > wsjCompC2+NFI.tt
+tnt ../../Entrenado/wsjC3+NFI ../../../BNC/BNC.g > wsjCompC3+NFI.tt
+tnt ../../Entrenado/wsjC4+NFI ../../../BNC/BNC.g > wsjCompC4+NFI.tt
+tnt ../../Entrenado/wsjM1+NFI ../../../BNC/BNC.g > wsjM2+NFI.tt
+tnt ../../Entrenado/wsjM2+NFI ../../../BNC/BNC.g > wsjM1+NFI.tt
+tnt ../../Entrenado/wsjD+NFI  ../../../BNC/BNC.g > wsjCompD+NFI.tt
