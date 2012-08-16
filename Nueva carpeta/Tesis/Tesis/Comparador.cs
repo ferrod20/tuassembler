@@ -8,6 +8,62 @@ namespace ConsoleApplication1
     internal class Comparador
     {
         #region Variables de clase
+        private static Dictionary<string, List<string>> traducciónTreebankABNC = new Dictionary<string, List<string>>
+                                                                                     {
+                                                                                          {"JJ", new List<string>{"AJ0", "ORD"} },
+{"JJR", new List<string>{"AJC"} },
+{"JJS", new List<string>{"AJS"} },
+{"DT", new List<string>{"AT0", "DT0"} },
+{"RB", new List<string>{"AV0", "XX0"} }, 
+{"RP", new List<string>{"AVP"} }, 
+{"WRB", new List<string>{"AVQ"} }, 
+{"CC", new List<string>{"CJC"} }, 
+{"IN", new List<string>{"CJS", "CJT", "PRF", "PRP"} }, 
+{"CD", new List<string>{"CRD"} }, 
+{"PRP$", new List<string>{"DPS"} }, 
+{"WDT", new List<string>{"DTQ"} },   
+{"EX", new List<string>{"EX0"} },   
+{"UH", new List<string>{"ITJ"} },     
+{"NN", new List<string>{"NN0", "NN1", "PNI"} },     
+{"NNS", new List<string>{"NN2"} },      
+{"NNP", new List<string>{"NP0"} },        
+{"NNPS", new List<string>{"NP0"} },        
+{"PRP", new List<string>{"PNX", "PNP"} },        
+{"WP", new List<string>{"PNQ"} },        
+{"POS", new List<string>{"POS"} },        
+{"TO", new List<string>{"TO0"} },        
+{"VBP", new List<string>{"VBB", "VDB", "VHB"} },        
+{"VBD", new List<string>{"VBD", "VDD", "VHD", "VVD"} },        
+{"VBG", new List<string>{"VBG", "VDG", "VHG", "VVG"} },        
+{"VB", new List<string>{"VBI", "VDI", "VHI", "VVB", "VVI"} },        
+{"VBN", new List<string>{"VBN", "VHN", "VDN", "VVN"} },        
+{"VBZ", new List<string>{"VBZ", "VDZ", "VHZ", "VVZ"} },        
+{"MD", new List<string>{"VM0"} },        
+{"FW", new List<string>{"UNC"} },        
+{"LS", new List<string>{"ORD"} },        
+{"PDT", new List<string>{"DT0"} },        
+{"RBR", new List<string>{"AV0"} },        
+{"RBS", new List<string>{"AV0"} },        
+{"SYM", new List<string>{"ZZ0"} },        
+{"WP$", new List<string>{"PNQ"} },        
+ 
+
+{"'", new List<string>{"PUQ"} },        
+{"''", new List<string>{"PUQ"} },        
+{"\"", new List<string>{"PUQ"} },        
+{"(", new List<string>{"PUL"} },        
+{"[", new List<string>{"PUL"} },        
+{")", new List<string>{"PUR"} },        
+{"]", new List<string>{"PUR"} },        
+{",", new List<string>{"PUN"} },        
+{".", new List<string>{"PUN"} },        
+{"!", new List<string>{"PUN"} },        
+{"?", new List<string>{"PUN"} },        
+{":", new List<string>{"PUN"} },        
+{";", new List<string>{"PUN"} },        
+{"-", new List<string>{"PUN"} }
+                                                                                     };
+
         private static MatrizDeConfusión matrizDeConfusión;
         #endregion
         #region Métodos
@@ -38,7 +94,25 @@ namespace ConsoleApplication1
             }
             return distancia;
         }
-        private static void Comparar(string palabra, string lineaGoldStandard, string lineaPrueba)
+
+        private static bool ComparaciónSimple(string tag1, string tag2)
+        {
+            return tag1 == tag2;
+        }
+
+        private static bool CompararBNC_Treebank(string tagBNC, string tagTreebank)
+        {
+            var resultado = false;
+            if (traducciónTreebankABNC.ContainsKey(tagTreebank))
+            {
+                var tagsBNC = tagBNC.Split('-');
+                var tagsTraducidosABNC = traducciónTreebankABNC[tagTreebank];
+                resultado = tagsTraducidosABNC.Intersect(tagsBNC).Any();    
+            }
+            return resultado;
+        }
+
+        private static void Comparar(string palabra, string lineaGoldStandard, string lineaPrueba, Func<string, string, bool> compare)
         {
             var partesLineaDePrueba = lineaPrueba.TrimEnd().Split();
             var tagDePrueba = partesLineaDePrueba.Length > 1 ? partesLineaDePrueba.LastOrDefault() : "";
@@ -49,17 +123,17 @@ namespace ConsoleApplication1
             if (!string.IsNullOrEmpty(tagDePrueba) && !string.IsNullOrEmpty(tagGoldStandard))
             {
                 matrizDeConfusión.CantidadDeEtiquetas++;
-                
-                var acierto = tagDePrueba == tagGoldStandard;
+
+                var acierto = compare(tagGoldStandard, tagDePrueba);
                 
                 if (!acierto)
                     matrizDeConfusión.AgregarError(tagGoldStandard, tagDePrueba, palabra);
             }
         }
-        public static void Comparar(string archGoldStandard, string archParaComparar, string salidaMatrizDeConf, bool generarMatrizDeConfusionParaLatex, string titulo = "", string tituloFila = "", string tituloColumna = "")
+        public static void Comparar(string archGoldStandard, string archParaComparar, string salidaMatrizDeConf, bool generarMatrizDeConfusionParaLatex, bool compararContraBNC = false, string titulo = "", string tituloFila = "", string tituloColumna = "")
         {
             matrizDeConfusión = new MatrizDeConfusión();
-            GenerarMatrizDeConfusión(archGoldStandard, archParaComparar);
+            GenerarMatrizDeConfusión(archGoldStandard, archParaComparar, compararContraBNC);
 
             if(generarMatrizDeConfusionParaLatex)
                 matrizDeConfusión.EscribirMatrizDeConfParaLatex(salidaMatrizDeConf, titulo, tituloFila, tituloColumna);
@@ -69,7 +143,7 @@ namespace ConsoleApplication1
         /// <summary>
         ///   Lee los archivos y va generando la matriz de confusión.
         /// </summary>
-        private static void GenerarMatrizDeConfusión(string archivoGoldStandard, string archivoParaComparar)
+        private static void GenerarMatrizDeConfusión(string archivoGoldStandard, string archivoParaComparar, bool compararContraBNC = false)
         {
             int i,  j;
             var punto = 1;
@@ -86,7 +160,13 @@ namespace ConsoleApplication1
                 var palabraGoldStandard = aGoldStandard[i].Split('\t')[0].TrimEnd();
                 var palabraAComparar = aParaComparar[j].Split('\t')[0].TrimEnd();
                 if ( palabraGoldStandard == palabraAComparar )
-                    Comparar(palabraGoldStandard, aGoldStandard[i], aParaComparar[j]);
+                {
+                    if(compararContraBNC)
+                        Comparar(palabraGoldStandard, aGoldStandard[i], aParaComparar[j], CompararBNC_Treebank);
+                    else
+                        Comparar(palabraGoldStandard, aGoldStandard[i], aParaComparar[j], ComparaciónSimple);
+                        
+                }                    
 
                 BuscarNuevasPosicionesSiCorresponde(aGoldStandard, aParaComparar, tamGoldStandard, tamParaComparar, ref i, ref j);
 
@@ -122,5 +202,12 @@ namespace ConsoleApplication1
             }
         }
         #endregion
+
+        public static void GenerarTablaDeEtiquetas(string arch1, string arch2, string salida)
+        {
+            matrizDeConfusión = new MatrizDeConfusión();
+            GenerarMatrizDeConfusión(arch1, arch2);            
+            matrizDeConfusión.EscribirTablaDeTraducciónDeEtiquetas(salida);           
+        }
     }
 }
