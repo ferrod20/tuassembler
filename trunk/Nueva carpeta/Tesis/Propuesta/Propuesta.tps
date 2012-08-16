@@ -11,14 +11,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=32
-NormalPos.right=1562
-NormalPos.bottom=799
+NormalPos.right=1729
+NormalPos.bottom=606
 Class=LaTeXView
-Document=Tesis.tex
+Document=Resumen.tex
 
 [Frame0_View0,0]
-TopLine=0
-Cursor=513
+TopLine=15
+Cursor=2934
 
 [Frame1]
 Flags=0
@@ -29,14 +29,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=32
-NormalPos.right=1562
-NormalPos.bottom=799
+NormalPos.right=1729
+NormalPos.bottom=606
 Class=LaTeXView
-Document=Experimentacion.tex
+Document=Caratula.tex
 
 [Frame1_View0,0]
-TopLine=343
-Cursor=18435
+TopLine=0
+Cursor=167
 
 [Frame2]
 Flags=0
@@ -47,34 +47,16 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=32
-NormalPos.right=1562
-NormalPos.bottom=799
+NormalPos.right=1729
+NormalPos.bottom=606
 Class=LaTeXView
-Document=Indice.tex
+Document=Corpus.tex
 
 [Frame2_View0,0]
 TopLine=0
-Cursor=1
-
-[Frame3]
-Flags=0
-ShowCmd=1
-MinPos.x=-1
-MinPos.y=-1
-MaxPos.x=-1
-MaxPos.y=-1
-NormalPos.left=4
-NormalPos.top=32
-NormalPos.right=1562
-NormalPos.bottom=799
-Class=LaTeXView
-Document=ExtraccionDeInformacion.tex
-
-[Frame3_View0,0]
-TopLine=69
-Cursor=6221
+Cursor=20
 
 [SessionInfo]
-FrameCount=4
+FrameCount=3
 ActiveFrame=0
 

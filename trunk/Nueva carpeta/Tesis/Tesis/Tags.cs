@@ -126,6 +126,25 @@ namespace ConsoleApplication1
             return listaDeTags.Sum(s => s.TotalDePalabras);
         }
 
+        public void EscribirTablaDeTraducciónDeEtiquetas(string archivoDeSalida)
+        {
+            var incluidos = new List<string>();
+            TextWriter salida = new StreamWriter(archivoDeSalida);
+            
+            OrdenarPorMayorError();            
+
+            foreach (var tags in listaDeTags)
+            {
+                if(!incluidos.Contains(tags.TagGoldStandard))
+                {
+                    salida.WriteLine(tags.TagGoldStandard + " " + tags.TagDePrueba + " " + tags.TotalDePalabras);
+                    incluidos.Add(tags.TagGoldStandard);
+                }
+            }
+
+            salida.Close();
+        }
+
         public void EscribirMatrizDeConfusión(string archivoDeSalida, string titulo, string tituloFila, string tituloColumna)
         {
             TextWriter salida = new StreamWriter(archivoDeSalida);
@@ -163,6 +182,7 @@ namespace ConsoleApplication1
         public void AgregarError(string tagGoldStandard, string tagDePrueba, string palabra)
         {
             var tags = new Tags(tagGoldStandard, tagDePrueba, palabra);
+
             if (listaDeTags.Contains(tags))
             {
                 var i = listaDeTags.IndexOf(tags);

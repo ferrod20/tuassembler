@@ -1226,6 +1226,9 @@ namespace ConsoleApplication1
                     case "-comparar":
                         Comparar(args);
                         break;
+                    case "-tablaEtiq":
+                        GenerarTablaDeEtiquetas(args);
+                        break;
                     case "-help":
                         Help();
                         break;
@@ -1257,8 +1260,28 @@ namespace ConsoleApplication1
             Console.WriteLine("-comparar <GoldStandard> <ArchivoAComparar> <Salida> [-l]");
             Console.WriteLine("\t Compara el archivo GoldStandard contra el ArchivoAComparar generando una matriz de confusion en Salida.");
             Console.WriteLine("\t -l: genera una matriz de confusión para latex");
+            Console.WriteLine("-tablaEtiq <archEtiquetado1> <archEtiquetado2> <Salida> ");
+            Console.WriteLine("\t Genera una tabla de equivalencia de etiquetas entre las etiquetas de archEtiquetado1 y archEtiquetado2.");
+            
         }
 
+        private static void GenerarTablaDeEtiquetas(string[] args)
+        {
+            if (args.Length < 4)
+            {
+                Console.WriteLine("No se han definido los archivos <archEtiquetado1> <archEtiquetado2> y <Salida>");
+                Console.WriteLine("-help para obtener información de los comandos disponibles");
+            }
+            else
+            {                
+                Console.WriteLine("Generando tabla de etiquetaas: " + Path.GetFileName(args[1]) + " vs " + Path.GetFileName(args[2]));
+                Console.WriteLine("Salida: " + Path.GetFileName(args[3]));
+                Console.WriteLine();
+
+                Comparador.GenerarTablaDeEtiquetas(args[1], args[2], args[3]);
+            }
+        }
+        
         private static void Comparar(string[] args)
         {
             if (args.Length < 4)
@@ -1268,7 +1291,8 @@ namespace ConsoleApplication1
             }
             else
             {
-                var generarMatrizDeConfParaLatex = args.Length > 4 && args[4] == "-l";
+
+                var generarMatrizDeConfParaLatex = args.Contains("-l");
 
                 Console.WriteLine( (generarMatrizDeConfParaLatex? "(latex)":"") + "Comparando: " + Path.GetFileName(args[1]) + "(gold standard) contra " +
                                   Path.GetFileName(args[2]));
@@ -1278,9 +1302,9 @@ namespace ConsoleApplication1
                 var titulo = args.Length > 5? args[5]:"";
                 var tituloFila = args.Length > 6 ? args[6] : "";
                 var tituloColumna = args.Length > 7 ? args[7] : "";
+                var compararContraBNC = args.Contains("-bnc");
 
-
-                Comparador.Comparar(args[1], args[2], args[3], generarMatrizDeConfParaLatex, titulo, tituloFila, tituloColumna);
+                Comparador.Comparar(args[1], args[2], args[3], generarMatrizDeConfParaLatex, compararContraBNC, titulo, tituloFila, tituloColumna);
             }
         }
 
