@@ -18,9 +18,9 @@ namespace ConsoleApplication1
 {"RP", new List<string>{"AVP"} }, 
 {"WRB", new List<string>{"AVQ"} }, 
 {"CC", new List<string>{"CJC"} }, 
-{"IN", new List<string>{"CJS", "CJT", "PRF", "PRP"} }, 
+{"IN", new List<string>{"AV0", "AVP", "CJS", "CJT", "PRF", "PRP"} }, 
 {"CD", new List<string>{"CRD"} }, 
-{"PRP$", new List<string>{"DPS"} }, 
+{"PRP$", new List<string>{"DPS", "PNI"} }, 
 {"WDT", new List<string>{"DTQ"} },   
 {"EX", new List<string>{"EX0"} },   
 {"UH", new List<string>{"ITJ"} },     
@@ -29,10 +29,10 @@ namespace ConsoleApplication1
 {"NNP", new List<string>{"NP0"} },        
 {"NNPS", new List<string>{"NP0"} },        
 {"PRP", new List<string>{"PNX", "PNP"} },        
-{"WP", new List<string>{"PNQ"} },        
+{"WP", new List<string>{"PNQ", "DTQ"} },        
 {"POS", new List<string>{"POS"} },        
-{"TO", new List<string>{"TO0"} },        
-{"VBP", new List<string>{"VBB", "VDB", "VHB"} },        
+{"TO", new List<string>{"TO0", "PRP"} },        
+{"VBP", new List<string>{"VVB","VBB", "VDB", "VHB"} },        
 {"VBD", new List<string>{"VBD", "VDD", "VHD", "VVD"} },        
 {"VBG", new List<string>{"VBG", "VDG", "VHG", "VVG"} },        
 {"VB", new List<string>{"VBI", "VDI", "VHI", "VVB", "VVI"} },        
@@ -61,7 +61,10 @@ namespace ConsoleApplication1
 {"?", new List<string>{"PUN"} },        
 {":", new List<string>{"PUN"} },        
 {";", new List<string>{"PUN"} },        
-{"-", new List<string>{"PUN"} }
+{"-", new List<string>{"PUN"} },
+{"``", new List<string>{"PUQ"} },
+{"`", new List<string>{"PUQ"} }
+
                                                                                      };
 
         private static MatrizDeConfusión matrizDeConfusión;
