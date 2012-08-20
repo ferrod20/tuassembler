@@ -1,5 +1,5 @@
-\subsection{Experimentación} 
-\subsubsection{Primer experimento} 
+\section{Experimentación} 
+\subsection{Primer experimento} 
 El primer experimento consiste en medir (generando una matriz de confusión) la información extraída de COBUILD contra la misma información generada a partir de un etiquetador automático (TnT). Es decir, la información extraída de COBUILD, como se mencionó anteriormente, es la unión de definiciones y ejemplos, con la información gramatical correspondiente a la palabra definida.
 A continuación se presenta un pequeño extracto:\\
  
@@ -100,10 +100,12 @@ La matriz de confusión\footnote{Las matrices de confusión presentadas de aquí en
 
 Se puede apreciar un alto porcentaje de aciertos entre las etiquetas extraídas de COBUILD (99,16\%) y las etiquetas asignadas por TnT. Este porcentaje indica que la información de etiquetas extraídas de COBUILD es consistente con las producidas por TnT. La mayoría de los errores se da en etiquetas VB, NN y JJ de COBUILD cuando son etiquetadas como NN, JJ y NN por TnT respectivamente.
 
-\subsubsection{Segundo experimento: entrenamiento de TnT con la nueva fuente de información generada} 
-El segundo experimento realizado tiene como objetivo evaluar la nueva fuente de información obtenida (NFI) como corpus de entrenamiento. Para esto se utilizará el Wall Street Journal (WSJ), parte de Penn Tree Bank, como corpus objetivo.\\
+\subsection{Segundo experimento: Utilizar la nueva fuente de información generada para entrenar y etiquetar el corpus WSJ} 
+El segundo experimento realizado tiene como objetivo evaluar la nueva fuente de información obtenida (NFI) como corpus de entrenamiento. Para esto se entrenarán 2 etiquetadores gramaticales (Stanford Tagger y TnT) y se etiquetará con ellos el corpus Wall Street Journal (WSJ). Posteriormente se realizarán mediciones de desempeño pertinentes.
 
-La primer evaluación de este segundo experimento consiste en entrenar el etiquetador gramatical con WSJ como corpus de entrenamiento y con WSJ + NFI. Luego se procede a etiquetar el WSJ plano (sin etiquetas gramaticales) con estos dos modelos. Por último se contruye la matriz de confusión:
+
+\subsubsection{Etiquetar el corpus WSJ con TnT} 
+La primer evaluación de este segundo experimento consiste en entrenar el etiquetador gramatical TnT con WSJ como corpus de entrenamiento y con WSJ + NFI. Luego se procede a etiquetar el WSJ plano (sin etiquetas gramaticales) con estos dos modelos. Por último se contruye la matriz de confusión:
 
 \begin{center}
 \begin{longtable}{| l | c | c | c | c | c | c | c | c | c | c | }
@@ -355,4 +357,9 @@ La cuarta evaluación de este experimento consiste en entrenar TnT con un décimo 
 
 Se puede apreciar un aumento del porcentaje de aciertos en el corpus de entrenamiento que incorpora NFI.
 
-\subsubsection{Tercer experimento} 
+\subsection{Tercer experimento: Utilizar la nueva fuente de información generada para entrenar y etiquetar el corpus BNC} 
+El tercer experimento realizado tiene como objetivo evaluar la nueva fuente de información obtenida (NFI) como corpus de entrenamiento. Para esto se entrenarán 2 etiquetadores gramaticales (Stanford Tagger y TnT) y se etiquetará con ellos el corpus British National Corpus (BNC).
+
+
+\subsubsection{Etiquetar el corpus BNC con TnT} 
+\subsubsection{Etiquetar el corpus BNC con Stanford Tagger} 
