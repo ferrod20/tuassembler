@@ -1,0 +1,100 @@
+\subsection{Primer experimento} 
+El primer experimento consiste en medir (generando una matriz de confusión) la información extraída de COBUILD contra la misma información generada a partir de un etiquetador automático (TnT). Es decir, la información extraída de COBUILD, como se mencionó anteriormente, es la unión de definiciones y ejemplos, con la información gramatical correspondiente a la palabra definida.
+A continuación se presenta un pequeño extracto:\\
+ 
+\begin{multicols}{2} 
+\noindent A\\
+cat	NN\\
+is\\
+a\\
+small\\
+furry\\
+animal\\
+with\\
+a\\
+tail\\
+,\\
+whiskers\\
+,\\
+and\\
+sharp\\
+claws\\
+that\\
+kills\\
+smaller\\
+animals\\
+such\\
+as\\
+mice\\
+and\\
+birds\\
+.\\
+Cats	NNS\\
+are\\
+often\\
+kept\\
+as\\
+pets\\
+.\\
+She\\
+put\\
+out\\
+a\\
+hand\\
+and\\
+stroked\\
+the\\
+cat	NN\\
+softly\\
+...\\
+...\\
+domestic\\
+animals\\
+such\\
+as\\
+dogs\\
+and\\
+cats	NNS\\
+.\\
+\end{multicols}
+Esta es la información extraída de COBUILD para la palabra \textsl{cat}; la unión de la definición:\\
+\\
+\textsl{A cat is a small furry animal with a tail, whiskers, and sharp claws that kills smaller animals such as mice and birds. Cats are often kept as pets.}\\
+\\
+y los ejemplos\\
+\\
+\textsl{She put out a hand and stroked the cat softly... }\\
+\textsl{...domestic animals such as dogs and cats.}\\
+\\
+Se puede notar la información gramatical expresada mediante las etiquetas NN y NNS para las palabras \textsl{cat} y \textsl{cats} respectivamente.
+La idea de este experimento será comparar estas etiquetas contra las etiquetas asignadas por el etiquetador automático TnT. Entonces se tomará este corpus plano (sin etiquetas), se lo etiquetará utilizando TnT entrenado con el corpus de entrenamiento Wall Street Journal (de ahora en más WSJ) \footnote{Wall Street Journal es un corpus anotado, parte del Penn Treebank} y luego se realizará la comparación.\\
+La matriz de confusión\footnote{Las matrices de confusión presentadas de aquí en adelante contienen las primeras 10 etiquetas de mayor error} generada a partir de dicha comparación es la siguiente:
+
+\begin{center}
+\begin{longtable}{| l | c | c | c | c | c | c | c | c | c | c | }
+\caption{Matriz de confusión para etiquetas extraídas de COBUILD vs generadas por TnT}\\	
+\hline
+ \backslashbox{\scriptsize{COBUILD}\kern-1em}{\kern-1em \scriptsize{TnT}}  &	\textbf{NN}	&   \textbf{VB}	&   \textbf{JJ}	&   \textbf{VBN}	&   \textbf{RB}	&   \textbf{VBG}	&   \textbf{NNP}	&   \textbf{IN}	&   \textbf{VBZ}	&   \textbf{NNS}	&   \hline
+\endhead
+\hline
+\endfoot
+\endlastfoot
+	\hline
+\textbf{NN} & - & \textbf{556} & \textbf{1953} & 52 & 86 & 276 & - & 8 & - & -\\
+\textbf{VB} & \textbf{2616} & - & \textbf{614} & - & 42 & - & 77 & 15 & - & 5\\
+\textbf{JJ} & \textbf{1577} & 96 & - & \textbf{1361} & \textbf{634} & \textbf{555} & \textbf{281} & 30 & - & 16\\
+\textbf{VBN} & - & - & - & - & - & - & - & - & - & -\\
+\textbf{RB} & 219 & 23 & \textbf{408} & 10 & - & 9 & 34 & 249 & - & 11\\
+\textbf{VBG} & - & - & - & - & - & - & - & - & - & -\\
+\textbf{NNP} & - & - & - & - & - & - & - & - & - & -\\
+\textbf{IN} & - & - & - & - & - & - & - & - & - & -\\
+\textbf{VBZ} & - & - & - & - & - & - & - & - & - & -\\
+\textbf{NNS} & 83 & 1 & 17 & - & 1 & 2 & 104 & 3 & 192 & -\\
+\hline
+\end{longtable}
+\end{center}
+
+\noindent Porcentaje de aciertos: 99,16\% \\
+\noindent Cantidad de errores: 13082\\
+
+Se puede apreciar un alto porcentaje de aciertos entre las etiquetas extraídas de COBUILD (99,16\%) y las etiquetas asignadas por TnT. Este porcentaje indica que la información de etiquetas extraídas de COBUILD es consistente con las producidas por TnT. La mayoría de los errores se da en etiquetas VB, NN y JJ de COBUILD cuando son etiquetadas como NN, JJ y NN por TnT respectivamente.

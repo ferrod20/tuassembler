@@ -1,6 +1,6 @@
-Aciertos: 297856 ( 97,9019783788403% )
-Errores: 6383
-Cantidad de tags: 304239
+%Aciertos: 297856 ( 97,9019783788403% )
+%Errores: 6383
+%Cantidad de tags: 304239
 \begin{center}
 \begin{longtable}{| l | c | c | c | c | c | c | c | c | c | c | }
 \caption{WSJ original contra WSJ etiquetado con MaxEnt (entrenado con WSJ)}\\	
@@ -25,4 +25,5 @@ Cantidad de tags: 304239
 \end{longtable}
 \end{center}
 
-Sumatoria de errores: 4534
+%Sumatoria de errores: 4534
+\noindent Porcentaje de aciertos: 97,9\%

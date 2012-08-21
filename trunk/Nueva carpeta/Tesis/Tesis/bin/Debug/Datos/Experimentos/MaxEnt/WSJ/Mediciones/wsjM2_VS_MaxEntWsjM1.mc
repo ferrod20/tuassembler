@@ -1,8 +1,8 @@
 2 mitad WSJ original contra 2 mitad WSJ etiquetado con MaxEnt (entrenado con 1 mitad de WSJ)
 
-Aciertos: 610309 ( 96,6366875148444% )
-Errores: 21241
-Cantidad de tags: 631550
+%Aciertos: 610309 ( 96,6366875148444% )
+%Errores: 21241
+%Cantidad de tags: 631550
 
 Errores
 WSJ|	MaxEnt(1WSJ)|	CantidadDeErrores

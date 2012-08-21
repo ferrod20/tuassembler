@@ -1,6 +1,6 @@
-Aciertos: 622105 ( 98,5007299223844% )
-Errores: 9469
-Cantidad de tags: 631574
+%Aciertos: 622105 ( 98,5007299223844% )
+%Errores: 9469
+%Cantidad de tags: 631574
 \begin{center}
 \begin{longtable}{| l | c | c | c | c | c | c | c | c | c | c | }
 \caption{1 mitad WSJ etiquetado por MaxEnt (entrenado con 2 mitad WSJ) vs 1 mitad WSJ etiquetado con MaxEnt (entrenado con 2 mitad de WSJ + NFI)}\\	
@@ -25,4 +25,5 @@ Cantidad de tags: 631574
 \end{longtable}
 \end{center}
 
-Sumatoria de errores: 6129
+%Sumatoria de errores: 6129
+\noindent Porcentaje de aciertos: 98,5\%

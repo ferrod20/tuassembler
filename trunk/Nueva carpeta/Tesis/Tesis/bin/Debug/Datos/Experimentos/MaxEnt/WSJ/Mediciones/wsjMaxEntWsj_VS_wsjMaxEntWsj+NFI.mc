@@ -1,8 +1,8 @@
 WSJ etiquetado con MaxEnt (entrenado con WSJ) vs WSJ etiquetado con MaxEnt (entrenado con WSJ + NFI)
 
-Aciertos: 302032 ( 99,2745834689175% )
-Errores: 2207
-Cantidad de tags: 304239
+%Aciertos: 302032 ( 99,2745834689175% )
+%Errores: 2207
+%Cantidad de tags: 304239
 
 Errores
 MaxEnt(WSJ)|	MaxEnt(WSJ+NFI)|	CantidadDeErrores
