@@ -87,7 +87,8 @@ namespace ConsoleApplication1
 
             salida.WriteLine();
             salida.WriteLine();
-            salida.WriteLine("Sumatoria de errores: " + erroresTotales);
+            salida.WriteLine("%Sumatoria de errores: " + erroresTotales);
+            EscribirPorcentajeDeAciertos(salida);
             salida.Close();
         }
 
@@ -169,14 +170,22 @@ namespace ConsoleApplication1
             salida.Close();
         }
 
+        private void EscribirPorcentajeDeAciertos(TextWriter salida)
+        {
+            var cantidadDeErrores = CantidadDeErrores();
+            var aciertos = CantidadDeEtiquetas - cantidadDeErrores;
+            var porcentajeDeAciertos = aciertos / (double)CantidadDeEtiquetas * 100;
+            salida.WriteLine("\\noindent Porcentaje de aciertos: " + Math.Round(porcentajeDeAciertos, 2) + "\\%");
+        }
+
         private void EscribirEncabezado(TextWriter salida)
         {
             var cantidadDeErrores = CantidadDeErrores();
             var aciertos = CantidadDeEtiquetas - cantidadDeErrores;
             var porcentajeDeAciertos = aciertos/(double) CantidadDeEtiquetas*100;
-            salida.WriteLine("Aciertos: " + aciertos + " ( " + porcentajeDeAciertos + "% )");
-            salida.WriteLine("Errores: " + cantidadDeErrores);
-            salida.WriteLine("Cantidad de tags: " + CantidadDeEtiquetas);
+            salida.WriteLine("%Aciertos: " + aciertos + " ( " + porcentajeDeAciertos + "% )");
+            salida.WriteLine("%Errores: " + cantidadDeErrores);
+            salida.WriteLine("%Cantidad de tags: " + CantidadDeEtiquetas);
         }
 
         public void AgregarError(string tagGoldStandard, string tagDePrueba, string palabra)
