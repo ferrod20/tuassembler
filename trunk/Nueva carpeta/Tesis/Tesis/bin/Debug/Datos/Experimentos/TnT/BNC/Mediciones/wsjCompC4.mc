@@ -1,8 +1,8 @@
 
 
-Aciertos: 1816699 ( 90,8478958251551% )
-Errores: 183016
-Cantidad de tags: 1999715
+%Aciertos: 1832612 ( 91,6436592214391% )
+%Errores: 167103
+%Cantidad de tags: 1999715
 
 Errores
 |	|	CantidadDeErrores
@@ -47,9 +47,6 @@ NN1 NNP 27438
 	News 109
 	Union 109
 	State 108
-PUQ `` 15913
-	`` 15912
-	` 1
 AJ0 NNP 8924
 	British 337
 	National 315

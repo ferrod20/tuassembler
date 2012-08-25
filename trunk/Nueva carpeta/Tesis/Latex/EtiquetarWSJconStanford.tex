@@ -1,5 +1,5 @@
 \subsubsection{Etiquetar el corpus WSJ con Stanford Tagger} 
-La segunda evaluación de este experimento consiste en entrenar el etiquetador gramatical BNC con WSJ como corpus de entrenamiento y con WSJ + NFI. Luego se procede a etiquetar el WSJ plano (sin etiquetas gramaticales) con estos dos modelos. Por último se contruye la matriz de confusión:
+La segunda evaluación de este experimento consiste en entrenar el etiquetador gramatical Stanford Tagger con WSJ como corpus de entrenamiento y con WSJ + NFI. Luego se procede a etiquetar el WSJ plano (sin etiquetas gramaticales) con estos dos modelos. Por último se contruye la matriz de confusión:
 
 \input{../Tesis/Bin/Debug/Datos/Experimentos/MaxEnt/WSJ/Mediciones/wsj_VS_wsjMaxEntWsj.l}
 \input{../Tesis/Bin/Debug/Datos/Experimentos/MaxEnt/WSJ/Mediciones/wsj_VS_wsjMaxEntWsj+NFI.l}
@@ -24,7 +24,7 @@ La tercer evaluación de este experimento consiste en entrenar Stanford Tagger co
 
 \begin{center}
 \begin{longtable}{| l | c | }
-\caption{Rendimiento de TnT entrenado con cuartos de WSJ con y sin NFI}\\	
+\caption{Rendimiento de Stanford Tagger entrenado con cuartos de WSJ con y sin NFI}\\	
 \hline
  \textbf{Evaluación}	&   \textbf{Porcentaje de aciertos}	&   \hline
 \endhead

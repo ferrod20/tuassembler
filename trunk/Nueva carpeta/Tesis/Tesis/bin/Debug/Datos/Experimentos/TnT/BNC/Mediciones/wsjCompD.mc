@@ -1,8 +1,8 @@
 
 
-Aciertos: 1801862 ( 90,1059400964637% )
-Errores: 197853
-Cantidad de tags: 1999715
+%Aciertos: 1817775 ( 90,9017034927477% )
+%Errores: 181940
+%Cantidad de tags: 1999715
 
 Errores
 |	|	CantidadDeErrores
@@ -47,9 +47,6 @@ NN1 NNP 26812
 	State 106
 	War 105
 	Committee 104
-PUQ `` 15913
-	`` 15912
-	` 1
 AJ0 NNP 8725
 	National 315
 	Royal 285

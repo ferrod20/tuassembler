@@ -1,8 +1,8 @@
 
 
-Aciertos: 1836280 ( 91,8270853596638% )
-Errores: 163435
-Cantidad de tags: 1999715
+%Aciertos: 1852193 ( 92,6228487559477% )
+%Errores: 147522
+%Cantidad de tags: 1999715
 
 Errores
 |	|	CantidadDeErrores
@@ -47,9 +47,6 @@ NN1 NNP 26450
 	State 107
 	Service 106
 	Committee 104
-PUQ `` 15913
-	`` 15912
-	` 1
 AJ0 NNP 8921
 	British 375
 	Labour 366

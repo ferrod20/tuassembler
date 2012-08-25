@@ -1,11 +1,11 @@
-Aciertos: 1848799 ( 92,4529858710078% )
-Errores: 150919
-Cantidad de tags: 1999718
+%Aciertos: 1848799 ( 92,4529858710078% )
+%Errores: 150919
+%Cantidad de tags: 1999718
 \begin{center}
 \begin{longtable}{| l | c | c | c | c | c | c | c | c | c | c | }
-\caption{-bnc}\\	
+\caption{BNC original contra BNC etiquetado con MaxEnt (entrenado con 1 mitad de WSJ)}\\	
 \hline
- \backslashbox{\scriptsize{BNC original contra BNC etiquetado con TnT (entrenado con 1 mitad de WSJ)}\kern-1em}{\kern-1em \scriptsize{BNC}}  &	\textbf{NNP}	&   \textbf{NN1}	&   \textbf{AJ0}	&   \textbf{JJ}	&   \textbf{DT0}	&   \textbf{NN}	&   \textbf{VBN}	&   \textbf{AV0}	&   \textbf{NN2}	&   \textbf{NNS}	&   \hline
+ \backslashbox{\scriptsize{BNC}\kern-1em}{\kern-1em \scriptsize{MaxEnt(1WSJ)}}  &	\textbf{NNP}	&   \textbf{NN1}	&   \textbf{AJ0}	&   \textbf{JJ}	&   \textbf{DT0}	&   \textbf{NN}	&   \textbf{VBN}	&   \textbf{AV0}	&   \textbf{NN2}	&   \textbf{NNS}	&   \hline
 \endhead
 \hline
 \endfoot
@@ -25,4 +25,5 @@ Cantidad de tags: 1999718
 \end{longtable}
 \end{center}
 
-Sumatoria de errores: 69649
+%Sumatoria de errores: 69649
+\noindent Porcentaje de aciertos: 92,45\%

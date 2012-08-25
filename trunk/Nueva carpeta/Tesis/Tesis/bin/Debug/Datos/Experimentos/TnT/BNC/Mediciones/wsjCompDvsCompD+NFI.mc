@@ -1,8 +1,8 @@
 
 
-Aciertos: 182536 ( 9,12805054292438% )
-Errores: 1817190
-Cantidad de tags: 1999726
+%Aciertos: 182536 ( 9,12805054292438% )
+%Errores: 1817190
+%Cantidad de tags: 1999726
 
 Errores
 |	|	CantidadDeErrores
