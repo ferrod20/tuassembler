@@ -1,6 +1,6 @@
-Aciertos: 1249490 ( 98,9206127031075% )
-Errores: 13634
-Cantidad de tags: 1263124
+%Aciertos: 1249490 ( 98,9206127031075% )
+%Errores: 13634
+%Cantidad de tags: 1263124
 \begin{center}
 \begin{longtable}{| l | c | c | c | c | c | c | c | c | c | c | }
 \caption{WSJ etiquetado con TnT (entrenado con WSJ) vs WSJ etiquetado con TnT (entrenado con WSJ + NFI)}\\	
@@ -25,4 +25,5 @@ Cantidad de tags: 1263124
 \end{longtable}
 \end{center}
 
-Sumatoria de errores: 5901
+%Sumatoria de errores: 5901
+\noindent Porcentaje de aciertos: 98,92\%

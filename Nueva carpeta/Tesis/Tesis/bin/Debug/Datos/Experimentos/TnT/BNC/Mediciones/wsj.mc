@@ -1,8 +1,8 @@
 
 
-Aciertos: 1833127 ( 91,669412891337% )
-Errores: 166588
-Cantidad de tags: 1999715
+%Aciertos: 1849040 ( 92,465176287621% )
+%Errores: 150675
+%Cantidad de tags: 1999715
 
 Errores
 |	|	CantidadDeErrores
@@ -47,9 +47,6 @@ NN1 NNP 26585
 	Club 110
 	Service 106
 	State 106
-PUQ `` 15913
-	`` 15912
-	` 1
 AJ0 NNP 8608
 	Labour 363
 	National 315

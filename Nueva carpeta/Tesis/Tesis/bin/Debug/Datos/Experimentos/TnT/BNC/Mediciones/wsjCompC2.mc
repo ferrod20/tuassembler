@@ -1,8 +1,8 @@
 
 
-Aciertos: 1818546 ( 90,9402589869056% )
-Errores: 181169
-Cantidad de tags: 1999715
+%Aciertos: 1834459 ( 91,7360223831896% )
+%Errores: 165256
+%Cantidad de tags: 1999715
 
 Errores
 |	|	CantidadDeErrores
@@ -47,9 +47,6 @@ NN1 NNP 26599
 	State 110
 	Club 110
 	Service 106
-PUQ `` 15913
-	`` 15912
-	` 1
 AJ0 NNP 8647
 	National 315
 	Royal 285

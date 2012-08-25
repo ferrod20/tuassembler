@@ -1,8 +1,8 @@
 
 
-Aciertos: 1816659 ( 90,8458955401145% )
-Errores: 183056
-Cantidad de tags: 1999715
+%Aciertos: 1832572 ( 91,6416589363984% )
+%Errores: 167143
+%Cantidad de tags: 1999715
 
 Errores
 |	|	CantidadDeErrores
@@ -47,9 +47,6 @@ NN1 NNP 27158
 	Conference 103
 	English 103
 	State 103
-PUQ `` 15913
-	`` 15912
-	` 1
 AJ0 NNP 8806
 	British 345
 	National 315
