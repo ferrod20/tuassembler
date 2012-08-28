@@ -26,4 +26,5 @@
 \end{center}
 
 %Sumatoria de errores: 1373413
-\noindent Porcentaje de aciertos: 9,76\%
+\noindent Aciertos: 195.128 (9,76\%)\\
+\noindent Errores: 1.804.598 (90,24\%)

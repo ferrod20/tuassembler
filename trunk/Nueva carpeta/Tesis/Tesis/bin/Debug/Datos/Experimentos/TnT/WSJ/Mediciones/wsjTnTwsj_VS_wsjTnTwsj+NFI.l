@@ -5,25 +5,26 @@
 \begin{longtable}{| l | c | c | c | c | c | c | c | c | c | c | }
 \caption{WSJ etiquetado con TnT (entrenado con WSJ) vs WSJ etiquetado con TnT (entrenado con WSJ + NFI)}\\	
 \hline
- \backslashbox{\scriptsize{TnT(WSJ)}\kern-1em}{\kern-1em \scriptsize{TnT(WSJ+NFI)}}  &	\textbf{WDT}	&   \textbf{IN}	&   \textbf{8}	&   \textbf{CD}	&   \textbf{VBN}	&   \textbf{VBD}	&   \textbf{JJ}	&   \textbf{NN}	&   \textbf{NNP}	&   \textbf{4}	&   \hline
+ \backslashbox{\scriptsize{TnT(WSJ)}\kern-1em}{\kern-1em \scriptsize{TnT(WSJ+NFI)}}  &	\textbf{WDT}	&   \textbf{8}	&   \textbf{VBN}	&   \textbf{VBD}	&   \textbf{JJ}	&   \textbf{NNP}	&   \textbf{4}	&   \textbf{IN}	&   \textbf{RP}	&   \textbf{2}	&   \hline
 \endhead
 \hline
 \endfoot
 \endlastfoot
 	\hline
-\textbf{WDT} & - & 27 & - & - & - & - & - & - & - & -\\
-\textbf{IN} & \textbf{825} & - & - & - & - & - & 13 & - & 9 & -\\
-\textbf{8} & - & - & - & - & - & - & - & - & - & -\\
-\textbf{CD} & - & - & \textbf{643} & - & - & - & 4 & 14 & 7 & \textbf{546}\\
-\textbf{VBN} & - & - & - & - & - & \textbf{593} & 244 & 22 & 5 & -\\
-\textbf{VBD} & - & - & - & - & \textbf{596} & - & 24 & 8 & 5 & -\\
-\textbf{JJ} & - & 32 & - & 1 & 118 & 29 & - & 333 & \textbf{479} & -\\
-\textbf{NN} & - & - & - & 25 & 44 & 27 & \textbf{575} & - & \textbf{573} & -\\
-\textbf{NNP} & - & 1 & - & 7 & - & - & 47 & 25 & - & -\\
-\textbf{4} & - & - & - & - & - & - & - & - & - & -\\
+\textbf{IN} & \textbf{825} & - & - & - & 13 & 9 & - & - & 186 & -\\
+\textbf{CD} & - & \textbf{643} & - & - & 4 & 7 & \textbf{546} & - & - & 393\\
+\textbf{VBD} & - & - & \textbf{596} & - & 24 & 5 & - & - & - & -\\
+\textbf{VBN} & - & - & - & \textbf{593} & 244 & 5 & - & - & - & -\\
+\textbf{NN} & - & - & 44 & 27 & \textbf{575} & \textbf{573} & - & - & - & -\\
+\textbf{RB} & - & - & - & - & 220 & 23 & - & \textbf{514} & \textbf{444} & -\\
+\textbf{JJ} & - & - & 118 & 29 & - & \textbf{479} & - & 32 & - & 1\\
+\textbf{VB} & - & - & 21 & 30 & 38 & 8 & - & - & 1 & -\\
+\textbf{VBP} & - & - & 4 & 12 & 6 & 2 & - & 1 & - & -\\
+\textbf{VBZ} & - & - & - & - & - & 3 & - & - & - & -\\
 \hline
 \end{longtable}
 \end{center}
 
-%Sumatoria de errores: 5901
-\noindent Porcentaje de aciertos: 98,92\%
+%Sumatoria de errores: 7298
+\noindent Aciertos: 1.249.490 (98,92\%)\\
+\noindent Errores: 13.634 (1,08\%)

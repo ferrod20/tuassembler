@@ -5,25 +5,26 @@
 \begin{longtable}{| l | c | c | c | c | c | c | c | c | c | c | }
 \caption{BNC original contra BNC etiquetado con TnT (entrenado con 2 mitad de WSJ+NFI)}\\	
 \hline
- \backslashbox{\scriptsize{BNC}\kern-1em}{\kern-1em \scriptsize{TnT(2WSJ+NFI)}}  &	\textbf{NNP}	&   \textbf{NN1}	&   \textbf{AJ0}	&   \textbf{JJ}	&   \textbf{DT0}	&   \textbf{NN}	&   \textbf{AV0}	&   \textbf{VBN}	&   \textbf{NNS}	&   \textbf{NN0}	&   \hline
+ \backslashbox{\scriptsize{BNC}\kern-1em}{\kern-1em \scriptsize{TnT(2WSJ+NFI)}}  &	\textbf{NNP}	&   \textbf{JJ}	&   \textbf{NN}	&   \textbf{VBN}	&   \textbf{NNS}	&   \textbf{WRB}	&   \textbf{NNPS}	&   \textbf{VBD}	&   \textbf{CD}	&   \textbf{WDT}	&   \hline
 \endhead
 \hline
 \endfoot
 \endlastfoot
 	\hline
-\textbf{NNP} & - & - & - & - & - & - & - & - & - & -\\
-\textbf{NN1} & \textbf{26728} & - & - & \textbf{4264} & - & - & - & 101 & 663 & -\\
-\textbf{AJ0} & \textbf{8795} & - & - & - & - & 1793 & - & \textbf{3481} & 34 & -\\
-\textbf{JJ} & - & - & - & - & - & - & - & - & - & -\\
-\textbf{DT0} & 86 & - & - & \textbf{7648} & - & 204 & - & - & 1 & -\\
-\textbf{NN} & - & - & - & - & - & - & - & - & - & -\\
-\textbf{AV0} & 1074 & - & - & 1881 & - & \textbf{4382} & - & 15 & 216 & -\\
-\textbf{VBN} & - & - & - & - & - & - & - & - & - & -\\
-\textbf{NNS} & - & - & - & - & - & - & - & - & - & -\\
-\textbf{NN0} & 445 & - & - & 424 & - & - & - & 9 & \textbf{3380} & -\\
+\textbf{NN1} & \textbf{26728} & \textbf{4264} & - & 101 & 663 & 1 & 8 & 119 & 61 & 1\\
+\textbf{AJ0} & \textbf{8795} & - & 1793 & \textbf{3481} & 34 & - & 21 & 295 & 22 & -\\
+\textbf{DT0} & 86 & \textbf{7648} & 204 & - & 1 & - & - & - & - & 869\\
+\textbf{AV0} & 1074 & 1881 & \textbf{4382} & 15 & 216 & 1 & - & 4 & 130 & 4\\
+\textbf{NN0} & 445 & 424 & - & 9 & \textbf{3380} & - & 20 & - & 2177 & -\\
+\textbf{CJS} & 229 & 260 & 738 & 15 & 102 & \textbf{2903} & 1 & 48 & - & 17\\
+\textbf{NN2} & \textbf{2670} & 76 & 795 & - & - & - & 2331 & - & 22 & -\\
+\textbf{VVD} & 48 & 227 & 87 & \textbf{2458} & - & - & - & - & - & -\\
+\textbf{VVN} & 41 & 481 & 82 & - & - & - & - & 2318 & - & -\\
+\textbf{CJT} & 6 & - & 1 & - & - & - & - & - & - & 1857\\
 \hline
 \end{longtable}
 \end{center}
 
-%Sumatoria de errores: 65624
-\noindent Porcentaje de aciertos: 92,67\%
+%Sumatoria de errores: 87170
+\noindent Aciertos: 1.853.072 (92,67\%)\\
+\noindent Errores: 146.643 (7,33\%)
