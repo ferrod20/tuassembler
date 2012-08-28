@@ -1,29 +1,30 @@
-%Aciertos: 192268 ( 9,61471721625863% )
-%Errores: 1807458
+%Aciertos: 1938152 ( 96,920878160308% )
+%Errores: 61574
 %Cantidad de tags: 1999726
 \begin{center}
 \begin{longtable}{| l | c | c | c | c | c | c | c | c | c | c | }
 \caption{BNC etiquetado por TnT (entrenado con 2 mitad WSJ) vs BNC etiquetado con TnT (entrenado con 2 mitad de WSJ + NFI)}\\	
 \hline
- \backslashbox{\scriptsize{TnT(2WSJ)}\kern-1em}{\kern-1em \scriptsize{TnT(2WSJ+NFI)}}  &	\textbf{NN}	&   \textbf{IN}	&   \textbf{DT}	&   \textbf{NNP}	&   \textbf{JJ}	&   \textbf{NNS}	&   \textbf{,}	&   \textbf{.}	&   \textbf{RB}	&   \textbf{PRP}	&   \hline
+ \backslashbox{\scriptsize{TnT(2WSJ)}\kern-1em}{\kern-1em \scriptsize{TnT(2WSJ+NFI)}}  &	\textbf{NN}	&   \textbf{JJ}	&   \textbf{VBN}	&   \textbf{VB}	&   \textbf{NNP}	&   \textbf{NNS}	&   \textbf{VBD}	&   \textbf{VBP}	&   \textbf{RP}	&   \textbf{VBG}	&   \hline
 \endhead
 \hline
 \endfoot
 \endlastfoot
 	\hline
-\textbf{NN} & \textbf{256696} & 81 & 2 & 2027 & 4138 & 180 & - & - & 370 & 6\\
-\textbf{IN} & 52 & \textbf{211334} & 209 & 165 & 44 & - & - & - & 654 & -\\
-\textbf{DT} & 2 & 274 & \textbf{187254} & 88 & 3 & - & - & - & 666 & -\\
-\textbf{NNP} & 2220 & 33 & 61 & \textbf{129836} & 1337 & 708 & - & - & 159 & 4\\
-\textbf{JJ} & 5020 & 210 & - & 1470 & \textbf{129519} & 73 & - & - & 852 & 17\\
-\textbf{NNS} & 342 & 5 & - & 518 & 157 & \textbf{96351} & - & - & 95 & 34\\
-\textbf{,} & - & - & - & - & - & - & \textbf{95405} & - & - & -\\
-\textbf{.} & - & - & - & - & - & - & - & \textbf{86486} & - & -\\
-\textbf{RB} & 539 & 592 & 68 & 237 & 1146 & 26 & - & - & \textbf{79725} & -\\
-\textbf{PRP} & 121 & - & - & 18 & 19 & 7 & - & - & 2 & \textbf{73491}\\
+\textbf{JJ} & \textbf{5020} & - & 846 & 433 & 1470 & 73 & 260 & 77 & 2 & 324\\
+\textbf{NN} & - & \textbf{4138} & 67 & \textbf{2355} & \textbf{2027} & 180 & 81 & 455 & 3 & 932\\
+\textbf{VBD} & 133 & 304 & \textbf{2442} & 46 & 38 & 2 & - & 25 & - & -\\
+\textbf{NNP} & \textbf{2220} & 1337 & 23 & 242 & - & 708 & 10 & 22 & - & 85\\
+\textbf{VB} & \textbf{2193} & 359 & 116 & - & 140 & 3 & 189 & 1602 & 2 & 4\\
+\textbf{VBN} & 185 & \textbf{2091} & - & 53 & 28 & - & \textbf{1882} & 18 & - & 2\\
+\textbf{VBZ} & 16 & 31 & - & 3 & 51 & \textbf{1998} & - & 10 & - & -\\
+\textbf{VBP} & 599 & 50 & 10 & 1271 & 37 & 1 & 69 & - & - & -\\
+\textbf{RB} & 539 & 1146 & - & 467 & 237 & 26 & 1 & 24 & 1177 & -\\
+\textbf{VBG} & 1166 & 1172 & - & 5 & 200 & 3 & 10 & - & - & -\\
 \hline
 \end{longtable}
 \end{center}
 
-%Sumatoria de errores: 1371148
-\noindent Porcentaje de aciertos: 9,61\%
+%Sumatoria de errores: 45566
+\noindent Aciertos: 1.938.152 (96,92\%)\\
+\noindent Errores: 61.574 (3,08\%)

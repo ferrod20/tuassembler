@@ -5,25 +5,26 @@
 \begin{longtable}{| l | c | c | c | c | c | c | c | c | c | c | }
 \caption{1 mitad WSJ etiquetado por MaxEnt (entrenado con 2 mitad WSJ) vs 1 mitad WSJ etiquetado con MaxEnt (entrenado con 2 mitad de WSJ + NFI)}\\	
 \hline
- \backslashbox{\scriptsize{MaxEnt(2WSJ)}\kern-1em}{\kern-1em \scriptsize{MaxEnt(2WSJ+NFI)}}  &	\textbf{JJ}	&   \textbf{NN}	&   \textbf{RP}	&   \textbf{IN}	&   \textbf{VBN}	&   \textbf{VBD}	&   \textbf{RB}	&   \textbf{NNP}	&   \textbf{VB}	&   \textbf{WDT}	&   \hline
+ \backslashbox{\scriptsize{MaxEnt(2WSJ)}\kern-1em}{\kern-1em \scriptsize{MaxEnt(2WSJ+NFI)}}  &	\textbf{JJ}	&   \textbf{NN}	&   \textbf{RP}	&   \textbf{VBN}	&   \textbf{RB}	&   \textbf{NNP}	&   \textbf{VB}	&   \textbf{IN}	&   \textbf{VBD}	&   \textbf{VBG}	&   \hline
 \endhead
 \hline
 \endfoot
 \endlastfoot
 	\hline
-\textbf{JJ} & - & \textbf{596} & 1 & 15 & 175 & 19 & 202 & 183 & 48 & -\\
-\textbf{NN} & \textbf{686} & - & 2 & - & 13 & 21 & 46 & \textbf{291} & \textbf{276} & -\\
-\textbf{RP} & - & - & - & 6 & - & - & 7 & - & - & -\\
-\textbf{IN} & 17 & 6 & \textbf{507} & - & - & - & \textbf{318} & 8 & - & 41\\
-\textbf{VBN} & \textbf{309} & 18 & - & - & - & 248 & - & 9 & 2 & -\\
-\textbf{VBD} & 29 & 9 & - & - & \textbf{460} & - & - & 11 & 11 & -\\
-\textbf{RB} & 128 & 17 & 206 & 141 & 1 & - & - & 65 & 14 & -\\
-\textbf{NNP} & \textbf{268} & 242 & - & 4 & 5 & - & 8 & - & 14 & -\\
-\textbf{VB} & 21 & 113 & - & - & 12 & 15 & 3 & 10 & - & -\\
-\textbf{WDT} & - & - & - & \textbf{252} & - & - & - & - & - & -\\
+\textbf{NN} & \textbf{686} & - & 2 & 13 & 46 & \textbf{291} & \textbf{276} & - & 21 & 213\\
+\textbf{JJ} & - & \textbf{596} & 1 & 175 & 202 & 183 & 48 & 15 & 19 & 49\\
+\textbf{IN} & 17 & 6 & \textbf{507} & - & \textbf{318} & 8 & - & - & - & -\\
+\textbf{VBD} & 29 & 9 & - & \textbf{460} & - & 11 & 11 & - & - & -\\
+\textbf{VBN} & \textbf{309} & 18 & - & - & - & 9 & 2 & - & 248 & -\\
+\textbf{NNP} & \textbf{268} & 242 & - & 5 & 8 & - & 14 & 4 & - & 10\\
+\textbf{WDT} & - & - & - & - & - & - & - & \textbf{252} & - & -\\
+\textbf{VBP} & 15 & 123 & - & 5 & 2 & 6 & 246 & - & 13 & -\\
+\textbf{RB} & 128 & 17 & 206 & 1 & - & 65 & 14 & 141 & - & -\\
+\textbf{VBG} & 199 & 196 & - & - & 1 & 26 & - & - & - & -\\
 \hline
 \end{longtable}
 \end{center}
 
-%Sumatoria de errores: 6129
-\noindent Porcentaje de aciertos: 98,5\%
+%Sumatoria de errores: 7005
+\noindent Aciertos: 622.105 (98,50\%)\\
+\noindent Errores: 9.469 (1,50\%)

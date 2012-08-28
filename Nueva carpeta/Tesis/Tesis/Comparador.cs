@@ -168,7 +168,6 @@ namespace ConsoleApplication1
                         Comparar(palabraGoldStandard, aGoldStandard[i], aParaComparar[j], CompararBNC_Treebank);
                     else
                         Comparar(palabraGoldStandard, aGoldStandard[i], aParaComparar[j], ComparaciónSimple);
-                        
                 }                    
 
                 BuscarNuevasPosicionesSiCorresponde(aGoldStandard, aParaComparar, tamGoldStandard, tamParaComparar, ref i, ref j);
@@ -180,6 +179,7 @@ namespace ConsoleApplication1
                 }
             }
         }
+
         private static void BuscarNuevasPosicionesSiCorresponde(string[] aGoldStandard, string[] aParaComparar, int tamGoldStandard, int tamParaComparar, ref int i, ref int j)
         {
             int ii, iii, jj, jjj;

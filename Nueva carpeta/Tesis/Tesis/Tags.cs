@@ -31,40 +31,22 @@ namespace ConsoleApplication1
         public void EscribirMatrizDeConfParaLatex(string archivoDeSalida, string titulo, string tituloFila, string tituloColumna)
         {
             TextWriter salida = new StreamWriter(archivoDeSalida);
-            EscribirEncabezado(salida);
-
             var tags = TomarLosDeMayorError(10);
+            var tagsFila = tags.Item1;
+            var tagsColumna = tags.Item2;
             var errores = ObtenerErrores(10);
 
-            salida.Write(
-            @"\begin{center}
-\begin{longtable}{| l | ");
-            for (var i = 0; i < tags.Count(); i++)
-                salida.Write("c | ");
+            EscribirEncabezado(salida);
+            EscribirEncabezadoLatex(titulo, tituloFila, tituloColumna, tagsFila, tagsColumna, salida);
 
-            salida.Write(
-            @"}
-\caption{" + titulo+ @"}\\	
-\hline
- \backslashbox{\scriptsize{"+tituloFila+@"}\kern-1em}{\kern-1em \scriptsize{"+tituloColumna+@"}}  &	");
-
-            foreach (var tag in tags)
-                salida.Write("\\textbf{" + tag + "}	&   ");
-            salida.Write(@"\hline
-\endhead
-\hline
-\endfoot
-\endlastfoot
-	\hline
-");
             var erroresTotales = 0;
-            foreach (var tagCol in tags)
+            foreach (var tagFila in tagsFila)
             {
-                salida.Write(@"\textbf{" + tagCol + "}");
-                foreach (var tagFila in tags)
+                salida.Write(@"\textbf{" + tagFila + "}");
+                foreach (var tagCol in tagsColumna)
                 {
                     salida.Write(" & ");
-                    var error = ObtenerCantidadDeErrores(tagFila, tagCol);//tag columna es tag de prueba, tagFila es tag gold standard
+                    var error = ObtenerCantidadDeErrores(tagCol, tagFila);//tag columna es tag de prueba, tagFila es tag gold standard
                     erroresTotales += error;
                     if (error == 0)
                         salida.Write("-");
@@ -92,29 +74,57 @@ namespace ConsoleApplication1
             salida.Close();
         }
 
+        private static void EscribirEncabezadoLatex(string titulo, string tituloFila, string tituloColumna, IEnumerable<string> tagsFila,
+                                                    IEnumerable<string> tagsColumna, TextWriter salida)
+        {
+            salida.Write(
+                @"\begin{center}
+\begin{longtable}{| l | ");
+            for (var i = 0; i < tagsColumna.Count(); i++)
+                salida.Write("c | ");
+
+            salida.Write(
+                @"}
+\caption{" + titulo + @"}\\	
+\hline
+ \backslashbox{\scriptsize{" + tituloFila + @"}\kern-1em}{\kern-1em \scriptsize{" +
+                tituloColumna + @"}}  &	");
+
+            foreach (var tag in tagsColumna)
+                salida.Write("\\textbf{" + tag + "}	&   ");
+            salida.Write(@"\hline
+\endhead
+\hline
+\endfoot
+\endlastfoot
+	\hline
+");
+        }
+
         private List<int> ObtenerErrores(int cuantos)
         {
             return listaDeTags.Select(tags => tags.TotalDePalabras).Take(cuantos).ToList();
         }
 
-        public IList<string> ObtenerTags()
+        public Tuple<IEnumerable<string>, IEnumerable<string>> ObtenerTags(int cuantos)
         {
-            var resultado = new List<string>();
+            var tagsFila = new List<string>();
+            var tagsColumna = new List<string>();
             foreach (var tags in listaDeTags)
             {
-                if(!resultado.Contains(tags.TagDePrueba))
-                    resultado.Add(tags.TagDePrueba);
-                if (!resultado.Contains(tags.TagGoldStandard))
-                    resultado.Add(tags.TagGoldStandard);
+                if (!tagsColumna.Contains(tags.TagDePrueba))
+                    tagsColumna.Add(tags.TagDePrueba);
+                if (!tagsFila.Contains(tags.TagGoldStandard))
+                    tagsFila.Add(tags.TagGoldStandard);
             }
 
-            return resultado;
+            return new Tuple<IEnumerable<string>, IEnumerable<string>>(tagsFila.Take(cuantos), tagsColumna.Take(cuantos));
         }
 
-        private IList<string> TomarLosDeMayorError(int cuantos)
+        private Tuple<IEnumerable<string>, IEnumerable<string>> TomarLosDeMayorError(int cuantos)
         {
             OrdenarPorMayorError();
-            return ObtenerTags().Take(cuantos).ToList();
+            return ObtenerTags(cuantos);
         }
 
         private void OrdenarPorMayorError()
@@ -175,7 +185,9 @@ namespace ConsoleApplication1
             var cantidadDeErrores = CantidadDeErrores();
             var aciertos = CantidadDeEtiquetas - cantidadDeErrores;
             var porcentajeDeAciertos = aciertos / (double)CantidadDeEtiquetas * 100;
-            salida.WriteLine("\\noindent Porcentaje de aciertos: " + Math.Round(porcentajeDeAciertos, 2) + "\\%");
+            var porcentajeDeErrores = cantidadDeErrores / (double)CantidadDeEtiquetas * 100;
+            salida.WriteLine("\\noindent Aciertos: {0:n0} ({1:0.00}\\%)\\\\", aciertos, porcentajeDeAciertos);
+            salida.WriteLine("\\noindent Errores: {0:n0} ({1:0.00}\\%)", cantidadDeErrores, porcentajeDeErrores) ;
         }
 
         private void EscribirEncabezado(TextWriter salida)

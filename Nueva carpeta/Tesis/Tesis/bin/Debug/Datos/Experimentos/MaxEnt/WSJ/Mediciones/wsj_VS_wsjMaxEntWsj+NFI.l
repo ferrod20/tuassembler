@@ -5,25 +5,26 @@
 \begin{longtable}{| l | c | c | c | c | c | c | c | c | c | c | }
 \caption{WSJ original contra WSJ etiquetado con MaxEnt (entrenado con WSJ + NFI)}\\	
 \hline
- \backslashbox{\scriptsize{WSJ}\kern-1em}{\kern-1em \scriptsize{MaxEnt(WSJ+NFI)}}  &	\textbf{JJ}	&   \textbf{NN}	&   \textbf{IN}	&   \textbf{RB}	&   \textbf{NNP}	&   \textbf{VBD}	&   \textbf{VBN}	&   \textbf{RP}	&   \textbf{NNPS}	&   \textbf{VBG}	&   \hline
+ \backslashbox{\scriptsize{WSJ}\kern-1em}{\kern-1em \scriptsize{MaxEnt(WSJ+NFI)}}  &	\textbf{JJ}	&   \textbf{IN}	&   \textbf{NNP}	&   \textbf{NN}	&   \textbf{RB}	&   \textbf{VBD}	&   \textbf{RP}	&   \textbf{VBN}	&   \textbf{VBP}	&   \textbf{NNPS}	&   \hline
 \endhead
 \hline
 \endfoot
 \endlastfoot
 	\hline
-\textbf{JJ} & - & \textbf{1260} & 68 & 583 & 685 & 45 & 851 & 2 & - & 237\\
-\textbf{NN} & \textbf{1918} & - & 16 & 73 & \textbf{1314} & 21 & 19 & 3 & - & 440\\
-\textbf{IN} & 107 & 3 & - & \textbf{1062} & 29 & - & - & \textbf{1005} & - & 2\\
-\textbf{RB} & 742 & 177 & \textbf{1403} & - & 141 & - & 3 & 527 & - & 1\\
-\textbf{NNP} & 555 & 458 & 29 & 21 & - & 4 & 9 & 1 & 546 & 5\\
-\textbf{VBD} & 34 & 24 & - & - & 10 & - & \textbf{923} & - & - & -\\
-\textbf{VBN} & \textbf{980} & 49 & - & - & 29 & \textbf{1049} & - & - & - & -\\
-\textbf{RP} & 3 & - & 427 & 165 & 1 & - & - & - & - & -\\
-\textbf{NNPS} & 39 & - & - & - & \textbf{935} & - & - & - & - & -\\
-\textbf{VBG} & 294 & 817 & - & - & 25 & - & 1 & - & - & -\\
+\textbf{NN} & \textbf{1918} & 16 & \textbf{1314} & - & 73 & 21 & 3 & 19 & 30 & -\\
+\textbf{RB} & 742 & \textbf{1403} & 141 & 177 & - & - & 527 & 3 & 3 & -\\
+\textbf{JJ} & - & 68 & 685 & \textbf{1260} & 583 & 45 & 2 & 851 & 8 & -\\
+\textbf{IN} & 107 & - & 29 & 3 & \textbf{1062} & - & \textbf{1005} & - & 2 & -\\
+\textbf{VBN} & \textbf{980} & - & 29 & 49 & - & \textbf{1049} & - & - & 6 & -\\
+\textbf{NNPS} & 39 & - & \textbf{935} & - & - & - & - & - & - & -\\
+\textbf{VBD} & 34 & - & 10 & 24 & - & - & - & \textbf{923} & 15 & -\\
+\textbf{VBG} & 294 & - & 25 & 817 & - & - & - & 1 & 1 & -\\
+\textbf{NNP} & 555 & 29 & - & 458 & 21 & 4 & 1 & 9 & 4 & 546\\
+\textbf{VB} & 62 & 10 & 29 & 361 & 13 & 50 & - & 38 & 555 & -\\
 \hline
 \end{longtable}
 \end{center}
 
-%Sumatoria de errores: 20170
-\noindent Porcentaje de aciertos: 97,73\%
+%Sumatoria de errores: 20076
+\noindent Aciertos: 1.234.495 (97,73\%)\\
+\noindent Errores: 28.629 (2,27\%)

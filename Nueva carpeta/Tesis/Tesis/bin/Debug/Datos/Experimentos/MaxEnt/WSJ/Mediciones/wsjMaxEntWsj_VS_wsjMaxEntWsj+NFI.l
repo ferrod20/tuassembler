@@ -1,29 +1,30 @@
-%Aciertos: 302032 ( 99,2745834689175% )
-%Errores: 2207
-%Cantidad de tags: 304239
+%Aciertos: 1254207 ( 99,2940518903924% )
+%Errores: 8917
+%Cantidad de tags: 1263124
 \begin{center}
 \begin{longtable}{| l | c | c | c | c | c | c | c | c | c | c | }
 \caption{WSJ etiquetado con MaxEnt (entrenado con WSJ) vs WSJ etiquetado con MaxEnt (entrenado con WSJ + NFI)}\\	
 \hline
- \backslashbox{\scriptsize{MaxEnt(WSJ)}\kern-1em}{\kern-1em \scriptsize{MaxEnt(WSJ+NFI)}}  &	\textbf{RP}	&   \textbf{IN}	&   \textbf{JJ}	&   \textbf{NN}	&   \textbf{VBN}	&   \textbf{VBD}	&   \textbf{RB}	&   \textbf{VB}	&   \textbf{VBP}	&   \textbf{NNP}	&   \hline
+ \backslashbox{\scriptsize{MaxEnt(WSJ)}\kern-1em}{\kern-1em \scriptsize{MaxEnt(WSJ+NFI)}}  &	\textbf{RP}	&   \textbf{JJ}	&   \textbf{RB}	&   \textbf{VBN}	&   \textbf{NN}	&   \textbf{VBD}	&   \textbf{VB}	&   \textbf{NNP}	&   \textbf{VBG}	&   \textbf{IN}	&   \hline
 \endhead
 \hline
 \endfoot
 \endlastfoot
 	\hline
-\textbf{RP} & - & 3 & - & - & - & - & 8 & - & - & -\\
-\textbf{IN} & \textbf{197} & - & 10 & - & - & - & \textbf{105} & - & 1 & 9\\
-\textbf{JJ} & - & 5 & - & \textbf{93} & \textbf{86} & 2 & 61 & 4 & 3 & 45\\
-\textbf{NN} & - & 1 & \textbf{139} & - & 1 & 2 & 10 & 27 & 13 & \textbf{71}\\
-\textbf{VBN} & - & - & \textbf{83} & - & - & \textbf{66} & - & - & 1 & 2\\
-\textbf{VBD} & - & - & 5 & - & \textbf{107} & - & - & 3 & - & -\\
-\textbf{RB} & 63 & 46 & 30 & 4 & 1 & - & - & 3 & - & 5\\
-\textbf{VB} & - & 1 & 9 & 16 & 2 & 7 & 2 & - & 31 & -\\
-\textbf{VBP} & - & - & 4 & 25 & - & 3 & - & \textbf{92} & - & -\\
-\textbf{NNP} & - & - & 36 & 33 & - & - & 3 & 1 & - & -\\
+\textbf{IN} & \textbf{715} & 27 & \textbf{468} & - & - & - & - & 20 & - & -\\
+\textbf{NN} & 1 & \textbf{530} & 44 & 12 & - & 11 & 112 & \textbf{300} & 218 & 3\\
+\textbf{VBD} & - & 17 & - & \textbf{413} & 5 & - & 8 & 1 & - & -\\
+\textbf{JJ} & - & - & 270 & \textbf{299} & \textbf{322} & 9 & 17 & 166 & 38 & 14\\
+\textbf{VBN} & - & 292 & - & - & 9 & \textbf{303} & 7 & 6 & - & -\\
+\textbf{RB} & \textbf{303} & 191 & - & 2 & 25 & - & 19 & 18 & - & 196\\
+\textbf{VBP} & - & 8 & - & 9 & 110 & 22 & \textbf{301} & 1 & - & -\\
+\textbf{NNP} & - & 196 & 12 & 2 & 145 & - & 12 & - & 5 & 6\\
+\textbf{WDT} & - & - & - & - & - & - & - & - & - & 186\\
+\textbf{VBG} & - & 165 & - & - & 132 & - & 1 & 13 & - & -\\
 \hline
 \end{longtable}
 \end{center}
 
-%Sumatoria de errores: 1580
-\noindent Porcentaje de aciertos: 99,27\%
+%Sumatoria de errores: 6737
+\noindent Aciertos: 1.254.207 (99,29\%)\\
+\noindent Errores: 8.917 (0,71\%)
