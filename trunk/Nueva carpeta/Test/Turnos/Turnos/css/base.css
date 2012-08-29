@@ -1265,6 +1265,15 @@ textarea.error {
   background-image: url("../../Images/Sprites/arrow-down.png");
 }
 
-
+.invalid-error-text {
+position: absolute;
+margin-left: 220px;
+color: #D31B1B;
+}
 #dashboard {
 background: white url(http://mediacdn.disqus.com/1332464261/img/dashboard/sidebar-bg.gif) repeat-y;}
+.invalid-input {
+    color: #D31B1B;
+    border: solid #D31B1B 1px;
+    background-color: #FEE;
+}

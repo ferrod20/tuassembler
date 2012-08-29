@@ -72,8 +72,8 @@
     var filtrar = function (recursos, textoAFiltrar) {
         textoAFiltrar = textoAFiltrar.toUpperCase();
         return recursos.filter(function (recurso) {
-            return !textoAFiltrar || recurso.nombre.toUpperCase().indexOf(textoAFiltrar) >= 0
-        });                
+            return !textoAFiltrar || recurso.nombre.toUpperCase().indexOf(textoAFiltrar) >= 0;
+        });
     };
   
     var buscar = function () {
@@ -101,9 +101,20 @@
 
         $("#crear-recurso", contenedor).click(mostrarCrear);
         $("#recursos-formulario-grabar", contenedor).click(grabar);
-        $("#recursos-formulario-cancelar, #elminacion-del-recurso-cancelada", contenedor).click(scrollable.prev);
+        $("#recursos-formulario-cancelar", contenedor).click(cancelar);
+        $("#elminacion-del-recurso-cancelada", contenedor).click(scrollable.prev);
         $("#eliminacion-del-recurso-confirmada", contenedor).click(eliminarRecurso);
         disponibilidadController.inicializar();
+    };
+
+    var cancelar = function () {
+        if(disponibilidadController.datosSinGuardar)
+            $.confirm({ description: "Hay cambios sin guardar. \n\n Desea descartarlos?",
+                onAccept: function () {
+                    scrollable.prev();
+                }
+            });
+            else scrollable.prev();
     };
 
     var editar = function (recursoId) {
