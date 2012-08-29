@@ -108,6 +108,9 @@
                     <input id="recursos-formulario-grabar" class="boton" type="button" value="Grabar recurso" />                        \
                     <input id="recursos-formulario-cancelar" class="boton cancelar" type="button" value="Cancelar" />                   \
                 </div>                                                                                                                  \
+                    <div class="invalid-error-text">                                                                                    \
+                    <span id="error"></span>                                                                                    \
+                </div>                                                                                                                  \
             </div>                                                                                                                      \
         </div>                                                                                                                          \
     </div>                                                                                                                              \

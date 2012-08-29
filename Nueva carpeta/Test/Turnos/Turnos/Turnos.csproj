@@ -115,6 +115,7 @@
     <Content Include="images\Sprites\yellow-arrow-down.png" />
     <Content Include="images\Sprites\yellow-arrow.png" />
     <Content Include="js\compartido\array.js" />
+    <Content Include="js\compartido\prompt.js" />
     <Content Include="js\compartido\date.js" />
     <Content Include="js\compartido\notifications.js" />
     <Content Include="js\DisponibilidadController.js" />
