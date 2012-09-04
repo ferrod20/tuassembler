@@ -11,14 +11,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=32
-NormalPos.right=1656
+NormalPos.right=1476
 NormalPos.bottom=659
 Class=LaTeXView
-Document=Experimentacion.tex
+Document=Tesis.tex
 
 [Frame0_View0,0]
 TopLine=0
-Cursor=946
+Cursor=126
 
 [Frame1]
 Flags=0
@@ -29,10 +29,10 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=32
-NormalPos.right=1656
+NormalPos.right=1476
 NormalPos.bottom=659
 Class=LaTeXView
-Document=EtiquetarWSJconTnT.tex
+Document=Caratula.tex
 
 [Frame1_View0,0]
 TopLine=0
@@ -47,14 +47,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=32
-NormalPos.right=1656
+NormalPos.right=1476
 NormalPos.bottom=659
 Class=LaTeXView
-Document=EtiquetarWSJconStanford.tex
+Document=Indice.tex
 
 [Frame2_View0,0]
 TopLine=0
-Cursor=1027
+Cursor=598
 
 [Frame3]
 Flags=0
@@ -65,14 +65,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=32
-NormalPos.right=1656
+NormalPos.right=1476
 NormalPos.bottom=659
 Class=LaTeXView
-Document=1Experimento.tex
+Document=Experimentacion.tex
 
 [Frame3_View0,0]
-TopLine=79
-Cursor=2142
+TopLine=0
+Cursor=975
 
 [Frame4]
 Flags=0
@@ -83,14 +83,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=32
-NormalPos.right=1656
+NormalPos.right=1476
 NormalPos.bottom=659
 Class=LaTeXView
-Document=Tesis.tex
+Document=Corpus.tex
 
 [Frame4_View0,0]
-TopLine=0
-Cursor=591
+TopLine=57
+Cursor=8491
 
 [Frame5]
 Flags=0
@@ -101,14 +101,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=32
-NormalPos.right=1656
+NormalPos.right=1476
 NormalPos.bottom=659
 Class=LaTeXView
-Document=EtiquetarBNCconStanford.tex
+Document=ExtraccionDeInformacion.tex
 
 [Frame5_View0,0]
 TopLine=0
-Cursor=368
+Cursor=20
 
 [Frame6]
 Flags=0
@@ -119,16 +119,34 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=32
-NormalPos.right=1656
+NormalPos.right=1476
 NormalPos.bottom=659
 Class=LaTeXView
-Document=EtiquetarBNCconTnT.tex
+Document=DefinicionesYMarcoTeorico.tex
 
 [Frame6_View0,0]
 TopLine=0
-Cursor=407
+Cursor=40
+
+[Frame7]
+Flags=0
+ShowCmd=1
+MinPos.x=-1
+MinPos.y=-1
+MaxPos.x=-1
+MaxPos.y=-1
+NormalPos.left=4
+NormalPos.top=32
+NormalPos.right=1476
+NormalPos.bottom=659
+Class=LaTeXView
+Document=Introduccion.tex
+
+[Frame7_View0,0]
+TopLine=0
+Cursor=23
 
 [SessionInfo]
-FrameCount=7
+FrameCount=8
 ActiveFrame=0
 
