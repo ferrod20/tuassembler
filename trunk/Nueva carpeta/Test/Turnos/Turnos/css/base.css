@@ -45,7 +45,7 @@ a {
 .secundario {
     float: left;
     position: relative;
-    padding: 150px;
+    padding: 140px;
 }
 
 /* ---------------------------------------- Base Content ---------------------------------------- */
@@ -1043,17 +1043,17 @@ textarea.error {
   /* required settings */
   position: relative;
   overflow: hidden;
-  width: 488px;
+  width: 635px;
   height: 498px;
 }
 #recursos-desplazable-items {
   width: 20000em;
   position: absolute;
-  height: 498px;
+  height: 675px;
 }
 #recursos-desplazable-items div.slider-panel {
   float: left;
-  width: 448px;
+  width: 615px;
 }
 #recursos-pantalla1 {
   margin: 20px;
@@ -1276,4 +1276,28 @@ background: white url(http://mediacdn.disqus.com/1332464261/img/dashboard/sideba
     color: #D31B1B;
     border: solid #D31B1B 1px;
     background-color: #FEE;
+}
+
+
+#disponibilidad td {
+ padding: 4px 1px;   
+}
+
+#disponibilidad td input{
+ width: 70px;   
+ height: 27px;   
+ font-family: Helvetica, Arial, sans-serif;
+ font-size: 13px;
+ padding:0px 4px;
+}
+
+#disponibilidad thead th {
+padding: 3px 18px 3px 10px;
+border-bottom: 1px solid black;
+font-weight: bold;
+cursor: pointer;
+}
+
+#disponibilidad tbody tr {
+    background-color: #E2E4FF;
 }
