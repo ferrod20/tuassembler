@@ -108,13 +108,14 @@
     };
 
     var cancelar = function () {
-        if(disponibilidadController.datosSinGuardar)
+        if (disponibilidadController.datosSinGuardar)
             $.confirm({ description: "Hay cambios sin guardar. \n\n Desea descartarlos?",
                 onAccept: function () {
                     scrollable.prev();
+                    disponibilidadController.datosSinGuardar = false;
                 }
             });
-            else scrollable.prev();
+        else scrollable.prev();
     };
 
     var editar = function (recursoId) {

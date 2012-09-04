@@ -79,22 +79,31 @@
     </thead> \
     <tbody> \
         <tr> \
-            <td>10-10.30</td> \
-            <td>10-10.30</td> \
-            <td>10-10.30</td> \
-            <td>10-10.30</td> \
-            <td>10-10.30</td> \
-            <td>10-10.30</td> \
-            <td>10-10.30</td> \
+            <td><input value="10-10.30"></td> \
+    <td> <input value="10-10.30"></td> \
+    <td><input value="10-10.30"></td> \
+    <td><input value="10-10.30"></td> \
+    <td><input value="10-10.30"></td> \
+    <td><input value="10-10.30"></td> \
+    <td><input value="10-10.30"></td> \
         </tr> \
         <tr> \
-            <td>11-11.30</td> \
-            <td>11-11.30</td> \
-            <td>11-11.30</td> \
-            <td>11-11.30</td> \
-            <td>11-11.30</td> \
-            <td>10-10.30</td> \
-            <td>11-11.30</td> \
+    <td><input value="11-11.30"></td> \
+    <td><input value="11-11.30"></td> \
+    <td><input value="11-11.30"></td> \
+    <td><input value="11-11.30"></td> \
+    <td><input value="11-11.30"></td> \
+    <td><input value="11-11.30"></td> \
+    <td><input value="11-11.30"></td> \
+        </tr> \
+    <tr> \
+            <td><input value=""></td> \
+    <td><input value=""></td> \
+    <td><input value=""></td> \
+    <td><input value=""></td> \
+    <td><input value=""></td> \
+    <td><input value=""></td> \
+    <td><input value=""></td> \
         </tr> \
     </tbody> \
 </table>\ \
