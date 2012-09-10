@@ -1,6 +1,6 @@
 \subsection{Traducción de etiquetas} 
-Para cada una de sus definiciones, el diccionario COBUILD expone información gramatical expresada mediante etiquetas. Estas etiquetas gramaticales poseen un formato propio. Por ejemplo en la siguiente entrada de COBUILD para la palabra \textsl{canary}
-
+Para cada una de sus definiciones, el diccionario Cobuild expone información gramatical expresada mediante etiquetas. Estas etiquetas gramaticales poseen un formato propio. Por ejemplo en la siguiente entrada de Cobuild para la palabra \textsl{canary}
+{\small
 \begin{verbatim}
 DICTIONARY_ENTRY
 canary
@@ -10,22 +10,23 @@ People sometimes keep canaries in cages as pets.
 countable noun
 noun                                
 \end{verbatim}
+}
 
-Se expone la definición (1) y un ejemplo (2), ambos con información gramatical sobre la palabra:\\
+\noindent Se expone la definición (1) y un ejemplo (2), ambos con información gramatical sobre la palabra:\\
 \\
 (1) \textsl{A canary is a small yellow bird which sings beautifully.} \\
 (2) \textsl{People sometimes keep canaries in cages as pets.}  \\
 \\
-Se puede apreciar la etiqueta \textsl{noun} asignada por COUBUILD para canary.\\
+Se puede apreciar la etiqueta \textsl{noun} asignada por Cobuild para canary.\\
 
-Como la idea de este trabajo es producir un corpus anotado a partir de este diccionario para utilizar como fuente de entrenamiento de etiquetadores gramaticales es necesario que el conjunto de etiquetas empleado sea el mismo que emplea el gold standard para poder medir posteriormente los resultados. Es por eso que se tomó la decisión de traducir estas etiquetas propias de COBUILD en etiquetas de Tree Bank, conjunto con el cual está anotado el gold standard.
+Como la idea de este trabajo es producir un corpus anotado a partir de este diccionario para utilizar como fuente de entrenamiento de etiquetadores gramaticales es necesario que el conjunto de etiquetas empleado sea el mismo que emplea el \textsl{Gold Standard} para poder medir posteriormente los resultados. Es por eso que se tomó la decisión de traducir estas etiquetas propias de Cobuild en etiquetas \textsl{Penn Treebank}, conjunto con el cual está anotado el \textsl{Gold Standard}.
 
 A continuación se presenta la tabla de traducción empleada:
 \begin{center}
 \begin{longtable}{| l | l |}
 \caption{Tabla de traducción de etiquetas}\\	
 	\hline		
-\textbf{Etiqueta COBUILD}	&	\textbf{Etiqueta PenTreeBank}\\	
+\textbf{Etiqueta Cobuild}	&	\textbf{Etiqueta Penn Treebank}\\	
 \hline
 \endhead
 \hline
