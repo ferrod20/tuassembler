@@ -1,7 +1,7 @@
 \section{Desarrollo}
 \subsection{Extracción de la información} 
-El diccionario COBUILD guarda su información en un archivo de texto plano con un formato particular. El primer desafío de este trabajo fué comprender y extraer la información almacenada en ese archivo. A continuación se muestra un pequeño fragmento del mismo para ejemplificar
-
+El diccionario Cobuild guarda su información en un archivo de texto plano con un formato particular. El primer desafío de este trabajo fué comprender y extraer la información almacenada en ese archivo. A continuación se muestra un pequeño fragmento del mismo para ejemplificar
+{\footnotesize
 \begin{verbatim}
 DICTIONARY_ENTRY
 ace
@@ -31,21 +31,22 @@ Their new records really ace!
 qualitative adjective or exclamation
 adjective                                
 \end{verbatim}
+}
 
 Cada entrada arriba presentada tiene la característica de poseer una cantidad variable de campos y no es posible identificarlos exactamente. Sin embargo, contienen algunos rasgos comunes: la palabra, sus formas, la pronunciación, su definición y uno o más ejemplos donde se indica como se emplea (mediante una etiqueta gramatical). Por ejemplo, en la primer entrada se pueden distinguir estos campos:\\ \\
-\verb#DICTIONARY_ENTRY# \\
+{\footnotesize \verb#DICTIONARY_ENTRY# \\
 \verb#ace#  $\longrightarrow$ {\footnotesize \textsl{palabra}}\\
 \verb#aces# $\longrightarrow$ {\footnotesize \textsl{formas flexionadas}}\\
 \verb#*e*!is# $\longrightarrow$ {\footnotesize \textsl{pronunciación}}\\
 \verb#If you are or come within an ace of something, you very nearly do or experience it.# $\longrightarrow$ {\footnotesize \textsl{definición}}\\
 \verb#He came within an ace of being run over.# $\longrightarrow$ {\footnotesize \textsl{ejemplo}}\\
 \verb#phrase: verb inflects# $\longrightarrow$ {\footnotesize \textsl{etiqueta}}\\
-\verb#phrase# $\longrightarrow$ {\footnotesize \textsl{etiqueta}}\\
+\verb#phrase# $\longrightarrow$ {\footnotesize \textsl{etiqueta}}}\\ 
   
-Estas entradas, que conforman el diccionario COBUILD y que constituyen la fuente de información principal sobre la cual se basa este trabajo, fueron cuidadosamente procesadas y refinadas intentando mantener toda la información disponible. El primer desafío de esta etapa consistió en recuperar las entradas con toda la información gramatical disponible; explícita e implícita. Una primer tarea fué reconocer y registrar información relacionada a las formas flexionadas de la palabra (plurales, pasados, etc.), es decir, obtener información gramatical implícita.
+Estas entradas, que conforman el diccionario Cobuild y que constituyen la fuente de información principal sobre la cual se basa este trabajo, fueron cuidadosamente procesadas y refinadas intentando mantener toda la información disponible. El primer desafío de esta etapa consistió en recuperar las entradas con toda la información gramatical disponible; explícita e implícita. Una primer tarea fué reconocer y registrar información relacionada a las formas flexionadas de la palabra (plurales, pasados, etc.), es decir, obtener información gramatical implícita.
 
 \subsubsection{Reconocimiento de formas flexionadas} 
-En muchas entradas del diccionario COBUILD ocurre la palabra, uno o más ejemplos en donde ésta aparece con cierto sentido (indicado por medio de etiquetas gramaticales) pero dentro de los ejemplos hay apariciones de formas flexionadas. Tomemos la siguiente entrada:\\ \\
+En muchas entradas del diccionario Cobuild ocurre la palabra, uno o más ejemplos en donde ésta aparece con cierto sentido (indicado por medio de etiquetas gramaticales) pero dentro de los ejemplos hay apariciones de formas flexionadas. Tomemos la siguiente entrada:\\ \\
 \verb#DICTIONARY_ENTRY# \\
 \verb#bite#  $\longrightarrow$ {\footnotesize \textsl{palabra}}\\
 \verb#bites, biting, bit, bitten# $\longrightarrow$ {\footnotesize \textsl{formas flexionadas}}\\
@@ -62,17 +63,17 @@ on it or against it.}\\
 
 (2) \textsl{Let the clutch in slowly until it begins to bite.}\\
 \\
-En (2) aparece la palabra \textsl{bite} en su forma regular con la etiqueta \textsl{verb} mientras que en (1) aparece la forma flexionada \textsl{bites} con la etiqueta \textsl{verb}. En este caso (1) está ofreciendo más información gramatical que la expuesta por medio de la etiqueta. Reconociendo la forma flexionada (\textsl{bites}) podemos adicionarle información extra a la etiqueta \textsl{verb}; en vez de guardar la etiqueta de Tree Bank correspondiente a \textsl{verb} (VB), en este caso guardaríamos la etiqueta  VBZ (verbo de tiempo presente en tercera persona singular) que contiene más información gramatical que VB.
+En (2) aparece la palabra \textsl{bite} en su forma regular con la etiqueta \textsl{verb} mientras que en (1) aparece la forma flexionada \textsl{bites} con la etiqueta \textsl{verb}. En este caso (1) está ofreciendo más información gramatical que la expuesta por medio de la etiqueta. Reconociendo la forma flexionada (\textsl{bites}) podemos adicionarle información extra a la etiqueta \textsl{verb}; en vez de guardar la etiqueta \textsl{Penn Treebank} correspondiente a \textsl{verb} (VB), en este caso guardaríamos la etiqueta  VBZ (verbo de tiempo presente en tercera persona singular) que contiene más información gramatical que VB.
 
-Las entradas de COBUILD exponen las formas derivadas de la palabra que pueden contener los ejemplos. En el ejemplo presentado anteriormente la palabra es \textsl{bite} y las formas derivadas de \textsl{bite} que muestra la entrada son \textsl{bites, biting, bit} y \textsl{bitten}. Con esta información y la etiqueta que fué anotada en COBUILD (\textsl{verb}) se puede inferir y generar etiquetas de Tree Bank con información adicional. Como ya se mencionó anteriormente, en este caso la forma \textsl{bites} (derivada de la palabra \textsl{bite}) que aparece en la definición posee la etiqueta \textsl{verb}. La tarea aquí será reconocer que \textsl{bites} es un verbo de tiempo presente en tercera persona singular a partir de que \textsl{bites} está etiquetada como verbo y de que la palabra de la cual deriva es \textsl{bite}. Es decir, inferir el tipo de la forma derivada a partir de la palabra y la etiqueta asignada por COBUILD.
+Las entradas de Cobuild exponen las formas derivadas de la palabra que pueden contener los ejemplos. En el ejemplo presentado anteriormente la palabra es \textsl{bite} y las formas derivadas de \textsl{bite} que muestra la entrada son \textsl{bites, biting, bit} y \textsl{bitten}. Con esta información y la etiqueta que fué anotada en Cobuild (\textsl{verb}) se puede inferir y generar etiquetas de \textsl{Penn Treebank} con información adicional. Como ya se mencionó anteriormente, en este caso la forma \textsl{bites} (derivada de la palabra \textsl{bite}) que aparece en la definición posee la etiqueta \textsl{verb}. La tarea aquí será reconocer que \textsl{bites} es un verbo de tiempo presente en tercera persona singular a partir de que \textsl{bites} está etiquetada como verbo y de que la palabra de la cual deriva es \textsl{bite}. Es decir, inferir el tipo de la forma derivada a partir de la palabra y la etiqueta asignada por Cobuild.
 
-Con el objetivo de identificar las formas derivadas de una palabra se desarrollaron reglas y métodos para su reconocimiento, buscando preservar y aprovechar toda  la información que ofrece COBUILD. Entonces, a partir de esta información: la palabra, la forma en que ocurre y la etiqueta asignada se aplican las siguientes reglas para reconocer información adicional a la etiqueta gramatical.
+Con el objetivo de identificar las formas derivadas de una palabra se desarrollaron reglas y métodos para su reconocimiento, buscando preservar y aprovechar toda  la información que ofrece Cobuild. Entonces, a partir de esta información: la palabra, la forma en que ocurre y la etiqueta asignada se aplican las siguientes reglas para reconocer información adicional a la etiqueta gramatical.
 
 \floatname{algorithm}{Algoritmo}
 \begin{algorithm}
 \caption{Reconocimiento de formas derivadas}
 \begin{algorithmic}
-\STATE Traducir la etiqueta asignada por COBUILD a PenTreeBank
+\STATE Traducir la etiqueta asignada por Cobuild a PenTreeBank
 \STATE Si la etiqueta obtenida es
 \STATE
 \STATE \textbf{JJ}:

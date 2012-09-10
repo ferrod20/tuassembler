@@ -49,7 +49,7 @@ Los valores $\lambda_1, \lambda_2$ y $\lambda_3$ son estimados por interpolación
 \end{algorithm}
 
 \subsubsection{Manejo de palabras desconocidas}
-TnT, al igual que muchos otros etiquetadores gramaticales, maneja las palabras desconocidas mediantes análisis de sufijos. Los sufijos son fuertes predictores del tipo de palabra. Por ejemplo las palabras terminadas en \textsl{able} en el Wall Street Journal parte del Penn Treebank son adjetivos (JJ) en el 98\% de los casos (ej.:\textsl{fashionable}, \textsl{variable}) y sustantivos (NN) en el 2\% restante.
+TnT, al igual que muchos otros etiquetadores gramaticales, maneja las palabras desconocidas mediantes análisis de sufijos. Los sufijos son fuertes predictores del tipo de palabra. Por ejemplo las palabras terminadas en \textsl{able} en el corpus \textsl{Wall Street Journal} son adjetivos (JJ) en el 98\% de los casos (ej.:\textsl{fashionable}, \textsl{variable}) y sustantivos (NN) en el 2\% restante.
 
 La distribución de probabilidades para un sufijo particular es generada a partir de todas las palabras en el corpus de entrenamiento que comparten el mismo sufijo (de alguna longitud máxima predefinida). El término sufijo se entiende en este contexto como la secuencia final de letras de una palabra, que no coincide necesariamente con el significado lingüístico de sufijo.
 
@@ -76,11 +76,11 @@ TnT utiliza desvío estándard del estimador de máxima verosimilitud para calcular
 
 \item  Se utilizan estimadores distintos para mayúsculas y minúsculas. Es decir, se mantienen dos árboles de sufijos distintos, uno para mayúsculas y otro para minúsculas. 
 \item  La otra decisión relevante es: ¿Qué palabras del lexicon deben ser utilizadas para el manejo de sufijos?
-Basándose en el hecho de que las palabras desconocidas son más probablemente infrecuentes, TnT utiliza sufijos de palabras infrecuentes. Por lo tanto, restringe el procedimiento de cálculo de probabilidades de sufijos a palabras con una frecuencia menor o igual a $10$.
+Basándose en el hecho de que las palabras desconocidas son infrecuentes, TnT utiliza sufijos de palabras infrecuentes. Por lo tanto, restringe el procedimiento de cálculo de probabilidades de sufijos a palabras con una frecuencia menor o igual a $10$.
 \end{enumerate}
 
 Adicionalmente, TnT discrimina la información sobre mayúsculas y minúsculas. Esto es debido a que las probabilidades de las etiquetas de palabras con mayúsuculas son distintas a las de las palabras con minúsculas.
-Para llevar esto a cabo se utilizan flags en las probabilidades contextuales. En vez de
+Para llevar esto a cabo se utilizan \textsl{flags} en las probabilidades contextuales. En vez de
 
 \begin{equation}
 P(t_3|t_1,t_2)
