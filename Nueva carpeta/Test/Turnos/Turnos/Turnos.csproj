@@ -120,10 +120,6 @@
     <Content Include="js\compartido\notifications.js" />
     <Content Include="js\Rango.js" />
     <Content Include="js\DisponibilidadController.js" />
-    <Content Include="js\jquery-1.6.2.min.js" />
-    <Content Include="js\jquery-ui-1.8.16.custom.min.js" />
-    <Content Include="js\jquery-ui-i18n.js" />
-    <Content Include="js\jquery.i18n.properties-min-1.0.9.js" />
     <Content Include="js\jquery.jeditable.js" />
     <Content Include="js\jquery.weekcalendar.js" />
     <Content Include="js\recursos.js" />
