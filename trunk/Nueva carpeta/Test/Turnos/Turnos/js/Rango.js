@@ -35,8 +35,7 @@
     };
 
     this.seSolapaCon = function (otroRango) {
-        var disjuntos = otroRango.inicio >= self.fin || otroRango.fin <= self.inicio;
-        return !disjuntos;        
+        return otroRango.inicio <= self.fin && otroRango.fin >= self.inicio;        
     };
 
     this.seSolapaConAlguno = function (fila, horariosColumna) {
@@ -47,6 +46,9 @@
     };
 
     this.ordenar = function (fila, horariosColumna) {
+        horariosColumna = horariosColumna.filter(function (horario) {
+            return horario != '';
+        });
         horariosColumna.splice(fila, 1);
         var ubicarEnPos = -1;
         for (var i = 0, j = 1; ubicarEnPos === -1 && j < horariosColumna.length; i++, j++) {
@@ -62,10 +64,10 @@
 
         if (ubicarEnPos === -1) {
             ubicarEnPos = 0;
-            if (horariosColumna.length === 1) {
-                var rango = new Rango(horariosColumna[0]);
+            if (horariosColumna.length) {
+                var rango = new Rango(horariosColumna.last());
                 if (rango.fin <= self.inicio)
-                    ubicarEnPos = 1;
+                    ubicarEnPos = horariosColumna.length;
             }
         }
         return ubicarEnPos;

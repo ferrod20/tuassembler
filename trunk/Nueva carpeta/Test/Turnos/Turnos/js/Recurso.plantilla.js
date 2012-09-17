@@ -79,31 +79,31 @@
     </thead> \
     <tbody> \
         <tr> \
-            <td><input value="10-10.30"></td> \
-    <td> <input value="10-10.30"></td> \
-    <td><input value="10-10.30"></td> \
-    <td><input value="10-10.30"></td> \
-    <td><input value="10-10.30"></td> \
-    <td><input value="10-10.30"></td> \
-    <td><input value="10-10.30"></td> \
+            <td><input type="text" value="10-10.30"></td> \
+    <td> <input type="text" value="10-10.30"></td> \
+    <td><input type="text" value="10-10.30"></td> \
+    <td><input type="text" value="10-10.30"></td> \
+    <td><input type="text" value="10-10.30"></td> \
+    <td><input type="text" value="10-10.30"></td> \
+    <td><input type="text" value="10-10.30"></td> \
         </tr> \
         <tr> \
-    <td><input value="11-11.30"></td> \
-    <td><input value="11-11.30"></td> \
-    <td><input value="11-11.30"></td> \
-    <td><input value="11-11.30"></td> \
-    <td><input value="11-11.30"></td> \
-    <td><input value="11-11.30"></td> \
-    <td><input value="11-11.30"></td> \
+    <td><input type="text" value="11-11.30"></td> \
+    <td><input type="text" value="11-11.30"></td> \
+    <td><input type="text" value="11-11.30"></td> \
+    <td><input type="text" value="11-11.30"></td> \
+    <td><input type="text" value="11-11.30"></td> \
+    <td><input type="text" value="11-11.30"></td> \
+    <td><input type="text" value="11-11.30"></td> \
         </tr> \
     <tr> \
-            <td><input value=""></td> \
-    <td><input value=""></td> \
-    <td><input value=""></td> \
-    <td><input value=""></td> \
-    <td><input value=""></td> \
-    <td><input value=""></td> \
-    <td><input value=""></td> \
+            <td><input type="text" value=""></td> \
+    <td><input type="text" value=""></td> \
+    <td><input type="text" value=""></td> \
+    <td><input type="text" value=""></td> \
+    <td><input type="text" value=""></td> \
+    <td><input type="text" value=""></td> \
+    <td><input type="text" value=""></td> \
         </tr> \
     </tbody> \
 </table>\ \
