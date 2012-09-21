@@ -2,7 +2,7 @@
     this.SystemType = 'Rango';
     var self = this;
     this.inicio = new Date();
-    this.fin = new Date();
+    this.fin = new Date(this.inicio);
     var valor = v;
 
     var inicializar = function () {
@@ -13,11 +13,11 @@
 
             var horaMinutos = inicio.split('.');
             var minutos = horaMinutos.length > 1 ? horaMinutos[1] : 0;
-            self.inicio.setHours(horaMinutos[0], minutos);
+            self.inicio.setHours(horaMinutos[0], minutos, 0, 0);
 
             horaMinutos = fin.split('.');
             minutos = horaMinutos.length > 1 ? horaMinutos[1] : 0;
-            self.fin.setHours(horaMinutos[0], minutos);    
+            self.fin.setHours(horaMinutos[0], minutos, 0, 0);    
         }
     };
 
@@ -35,7 +35,7 @@
     };
 
     this.seSolapaCon = function (otroRango) {
-        return otroRango.inicio <= self.fin && otroRango.fin >= self.inicio;        
+        return otroRango.inicio < self.fin && otroRango.fin > self.inicio;        
     };
 
     this.seSolapaConAlguno = function (fila, horariosColumna) {
@@ -71,5 +71,10 @@
             }
         }
         return ubicarEnPos;
+    };
+
+    this.mostrar = function () {
+        return self.inicio.getHours() + '.' + self.inicio.getMinutes() + ' - '+
+        self.fin.getHours() + '.' + self.fin.getMinutes();        
     };
 }
