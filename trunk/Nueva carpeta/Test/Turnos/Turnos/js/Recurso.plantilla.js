@@ -112,14 +112,18 @@
                         </div>                                                                                                                  \
                     </div> \
                     <div id="recurso-excepciones-tab" class="ui-tabs-panel"> \
-                    </div> \
+                    <label>Fecha:</label> <input type="date" id="recurso-excepcion-fecha">\
+    <label>Desde: </label><input type="time" id="recurso-excepcion-hora-desde">\
+        <label>Hasta:</label><input type="time" id="recurso-excepcion-hora-hasta">\
+    <input type="checkbox" id="recurso-excepcion-todo-el-dia">Todo el día</input>\
+    </div> \
                 <div class="clear">                                                                                                     \
                 </div>                                                                                                                  \
                 <br />                                                                                                                  \
                 <br />                                                                                                                  \
                 <br />                                                                                                                  \
                 <div>                                                                                                                   \
-                    <input id="recursos-formulario-grabar" class="boton" type="button" value="Grabar recurso" />                        \
+                    <input id="recursos-formulario-grabar" class="boton" type="button" value="Grabar" />                        \
                     <input id="recursos-formulario-cancelar" class="boton cancelar" type="button" value="Cancelar" />                   \
                 </div>                                                                                                                  \
                 <div class="invalid-error-text">                                                                                    \
