@@ -47,7 +47,7 @@
     };
 
     var confirmarBorrado = function (e) {
-        cambiarAVistaDetalle();
+        scrollable.next();
         e.stopPropagation();
         var idRecurso = obtFilaId(this);
         $('#recursos-confirmar-borrado', contenedor).show();
@@ -63,7 +63,7 @@
             var filaAEliminar = $('#fila_' + id + '.recurso-fila', contenedor);
             filaAEliminar.slideUp('slow', filaAEliminar.remove);
             Turnos.Recursos.deleteById(id);
-            cambiarAVistaDeLista();
+            scrollable.prev();
             mostrarListaDeRecursos();
             Notificador.showSuccess('El recurso se ha eliminado correctamente.');
         });
