@@ -47,8 +47,7 @@
     };
 
     var confirmarBorrado = function (e) {
-        scrollable.next();
-        $('.tabs li').fadeIn();
+        cambiarAVistaDetalle();
         e.stopPropagation();
         var idRecurso = obtFilaId(this);
         $('#recursos-confirmar-borrado', contenedor).show();
@@ -64,8 +63,7 @@
             var filaAEliminar = $('#fila_' + id + '.recurso-fila', contenedor);
             filaAEliminar.slideUp('slow', filaAEliminar.remove);
             Turnos.Recursos.deleteById(id);
-            scrollable.prev();
-            $('.tabs li').fadeOut();
+            cambiarAVistaDeLista();
             mostrarListaDeRecursos();
             Notificador.showSuccess('El recurso se ha eliminado correctamente.');
         });
@@ -111,19 +109,27 @@
         disponibilidadController.inicializar();        
     };
 
+    var cambiarAVistaDeLista = function () {
+        scrollable.prev();
+        $('.tabs li').fadeOut();        
+    };
+
+    var cambiarAVistaDetalle = function() {
+        scrollable.next();
+        $('.tabs li').fadeIn();
+        $('#recurso-tabs').tabs('select', 0);
+    };
+
     var cancelar = function () {
         if (disponibilidadController.datosSinGuardar)
             $.confirm({ description: "Hay cambios sin guardar. \n\n Desea descartarlos?",
                 onAccept: function () {
-                    $('.tabs li').fadeOut();
-                    scrollable.prev();
+                    cambiarAVistaDeLista();
                     disponibilidadController.datosSinGuardar = false;
                 }
             });
-            else {
-                $('.tabs li').fadeOut();
-                scrollable.prev();
-            } 
+            else 
+                cambiarAVistaDeLista();
     };
 
     var editar = function (recursoId) {
@@ -137,8 +143,7 @@
             $("#recurso-foto", contenedor).val(recurso.foto);
             $('#recursos-confirmar-borrado', contenedor).hide();
             $('#recursos-contenedor', contenedor).show();
-            scrollable.next();
-            $('.tabs li').fadeIn();
+            cambiarAVistaDetalle();
         }
     };
 
@@ -146,28 +151,27 @@
         limpiarForm();
         $('#recursos-contenedor', contenedor).show();
         $('#recursos-confirmar-borrado', contenedor).hide();
-        scrollable.next();
-        $('.tabs li').fadeIn();
+        cambiarAVistaDetalle();
+        
     };
 
     var grabar = function () {
         var id = $("#recurso-id", contenedor).val();
         var recurso = {
-            id: id ==''?0:parseInt(id),
+            id: id == '' ? 0 : parseInt(id),
             nombre: $("#recurso-nombre", contenedor).val(),
             especialidad: $("#recurso-especialidad", contenedor).val(),
             habilitado: true,
             foto: $("#recurso-foto", contenedor).val(),
             email: $("#recurso-email", contenedor).val()
         };
-    
-     $.post('../Turno/GrabarRecurso', recurso).success(function (data) {
+
+        $.post('../Turno/GrabarRecurso', recurso).success(function (data) {
             Turnos.Recursos.push(data);
             mostrarListaDeRecursos();
-            scrollable.prev();
-            $('.tabs li').fadeOut();
+            cambiarAVistaDeLista();
             Notificador.showSuccess('El recurso se ha grabado correctamente.');
-        });    
+        });
     };
     
     var ordenarPorNombre = function () {
