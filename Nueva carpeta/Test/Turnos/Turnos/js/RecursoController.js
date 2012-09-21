@@ -48,6 +48,7 @@
 
     var confirmarBorrado = function (e) {
         scrollable.next();
+        $('.tabs li').fadeIn();
         e.stopPropagation();
         var idRecurso = obtFilaId(this);
         $('#recursos-confirmar-borrado', contenedor).show();
@@ -64,6 +65,7 @@
             filaAEliminar.slideUp('slow', filaAEliminar.remove);
             Turnos.Recursos.deleteById(id);
             scrollable.prev();
+            $('.tabs li').fadeOut();
             mostrarListaDeRecursos();
             Notificador.showSuccess('El recurso se ha eliminado correctamente.');
         });
@@ -104,18 +106,24 @@
         $("#recursos-formulario-cancelar", contenedor).click(cancelar);
         $("#elminacion-del-recurso-cancelada", contenedor).click(scrollable.prev);
         $("#eliminacion-del-recurso-confirmada", contenedor).click(eliminarRecurso);
-        disponibilidadController.inicializar();
+        $('#recurso-tabs').tabs();
+        $('.tabs li').hide();
+        disponibilidadController.inicializar();        
     };
 
     var cancelar = function () {
         if (disponibilidadController.datosSinGuardar)
             $.confirm({ description: "Hay cambios sin guardar. \n\n Desea descartarlos?",
                 onAccept: function () {
+                    $('.tabs li').fadeOut();
                     scrollable.prev();
                     disponibilidadController.datosSinGuardar = false;
                 }
             });
-        else scrollable.prev();
+            else {
+                $('.tabs li').fadeOut();
+                scrollable.prev();
+            } 
     };
 
     var editar = function (recursoId) {
@@ -128,8 +136,9 @@
             $("#recurso-email", contenedor).val(recurso.email);
             $("#recurso-foto", contenedor).val(recurso.foto);
             $('#recursos-confirmar-borrado', contenedor).hide();
-            $('#recursos-contenedor', contenedor).show();            
+            $('#recursos-contenedor', contenedor).show();
             scrollable.next();
+            $('.tabs li').fadeIn();
         }
     };
 
@@ -138,6 +147,7 @@
         $('#recursos-contenedor', contenedor).show();
         $('#recursos-confirmar-borrado', contenedor).hide();
         scrollable.next();
+        $('.tabs li').fadeIn();
     };
 
     var grabar = function () {
@@ -155,6 +165,7 @@
             Turnos.Recursos.push(data);
             mostrarListaDeRecursos();
             scrollable.prev();
+            $('.tabs li').fadeOut();
             Notificador.showSuccess('El recurso se ha grabado correctamente.');
         });    
     };

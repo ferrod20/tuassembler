@@ -44,8 +44,7 @@ a {
 
 .secundario {
     float: left;
-    position: relative;
-    padding: 140px;
+    position: relative;    
 }
 
 /* ---------------------------------------- Base Content ---------------------------------------- */
@@ -955,24 +954,9 @@ textarea.error {
   line-height: 30px;
   float: left;
   width: 222px;
-  margin: 16px 0;
+  margin: 16px 30px;
 }
 .ui-tabs-panel {
-  float: left;
-  width: 488px;
-  height: 100%;
-  background-color: white;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  border-radius: 5px;
-  -webkit-box-shadow: 1px 1px 2px #046283;
-  -moz-box-shadow: 1px 1px 2px #046283;
-  -ms-box-shadow: 1px 1px 2px #046283;
-  -o-box-shadow: 1px 1px 2px #046283;
-  box-shadow: 1px 1px 2px #046283;
-  font-size: 13px;
 }
 
 /* Organizational Settings Dialog */
