@@ -112,11 +112,18 @@
                         </div>                                                                                                                  \
                     </div> \
                     <div id="recurso-excepciones-tab" class="ui-tabs-panel"> \
-                    <label>Fecha:</label> <input type="date" id="recurso-excepcion-fecha">\
-    <label>Desde: </label><input type="time" id="recurso-excepcion-hora-desde">\
-        <label>Hasta:</label><input type="time" id="recurso-excepcion-hora-hasta">\
-    <input type="checkbox" id="recurso-excepcion-todo-el-dia">Todo el día</input>\
-    </div> \
+                        <label>Fecha:</label> <input type="date" id="recurso-excepcion-fecha">\
+                        <div id="recurso-excepciones-desde-hasta" > \
+                            <label>Desde: </label><input type="time" id="recurso-excepcion-hora-desde">\
+                            <label>Hasta:</label><input type="time" id="recurso-excepcion-hora-hasta">\
+                        </div>\
+                        <div class="form-check">\
+                            <input type="checkbox" id="recurso-excepcion-todo-el-dia">\
+                            <label>Todo el día</label>\
+                        </div>\
+                        <input id="recursos-agregar-excepcion" class="boton" type="button" value="Agregar" />                        \
+                        <div id="recursos-lista-de-excepciones" class="contenedor-2"></div>                                                                        \
+                    </div> \
                 <div class="clear">                                                                                                     \
                 </div>                                                                                                                  \
                 <br />                                                                                                                  \
@@ -134,6 +141,3 @@
     </div>                                                                                                                              \
 </div>')
 };
-
-
-
