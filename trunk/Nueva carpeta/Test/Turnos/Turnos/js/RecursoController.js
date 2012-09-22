@@ -104,11 +104,47 @@
         $("#recursos-formulario-cancelar", contenedor).click(cancelar);
         $("#elminacion-del-recurso-cancelada", contenedor).click(scrollable.prev);
         $("#eliminacion-del-recurso-confirmada", contenedor).click(eliminarRecurso);
-        $('#recurso-tabs').tabs();
+        $("#recursos-agregar-excepcion", contenedor).click(agregarExcepcion);
+        $('#recurso-tabs').tabs({ fx: { opacity: 'toggle'},
+            select: tabSelect
+            });
         $('.tabs li').hide();
+        $('#recurso-excepcion-todo-el-dia').click(todoElDiaClickeado);
+        
         disponibilidadController.inicializar();        
     };
 
+    var agregarExcepcion = function () {
+        var html = "<div class='recurso-fila' style='display: none;'>                 \
+    <div class='nombre-contenedor'>                                                                                               \
+        <div id='nombre'>19/2/2012  14hs a 20hs</div>                                                                              \
+    </div>                                                                                                                \
+    <div class='iconos-contenedor'>                                                                                             \
+    <span class='eliminar' title='Eliminar'></span>          \
+    </div>                                                                                                                  \
+</div>";
+        //.slideDown('slow');
+        var fila = $(html);
+        $('#recursos-lista-de-excepciones', contenedor).append(fila);
+        fila.slideDown('fast');
+    };
+    
+    var tabSelect = function (e, ui) {
+//        switch (ui.index) {
+//            case 0:
+//            case 1:
+//                $('#recursos-formulario-cancelar, #recursos-formulario-grabar', contenedor).fadeIn();
+//                break;
+//            case 2:
+//                $('#recursos-formulario-cancelar, #recursos-formulario-grabar', contenedor).fadeOut();
+//                break;
+//        }
+    };
+
+    var todoElDiaClickeado = function() {
+        $('#recurso-excepciones-desde-hasta', contenedor).slideToggle(!$(this).is(':checked'));        
+    };
+    
     var cambiarAVistaDeLista = function () {
         scrollable.prev();
         $('.tabs li').fadeOut();        
