@@ -906,9 +906,8 @@ textarea.error {
   font-weight: bold;
   list-style: none;
   line-height: 30px;
-  padding: 0;
   background-position: right top;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat;    
 }
 .tabs-container ul .ui-tabs-selected span, .tabs-container ul .ui-tabs-selected a {
   color: #012a4c;
@@ -1040,10 +1039,10 @@ textarea.error {
   width: 615px;
 }
 #recursos-pantalla1 {
-  margin: 20px;
+  margin-left: 20px;
 }
 #recursos-pantalla2 {
-  margin: 20px;
+  margin-left: 20px;
 }
 #recursos-busqueda {
   float: right;

@@ -118,6 +118,7 @@
     <Content Include="js\compartido\prompt.js" />
     <Content Include="js\compartido\date.js" />
     <Content Include="js\compartido\notifications.js" />
+    <Content Include="js\ExcepcionController.js" />
     <Content Include="js\Rango.js" />
     <Content Include="js\DisponibilidadController.js" />
     <Content Include="js\jquery.jeditable.js" />
