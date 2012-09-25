@@ -38,8 +38,7 @@
     };
 
     var eliminar = function () {
-
-        $(this).parent().parent().slideUp('slow');
+        $(this).parent().parent().slideUp();
 //        
 //        var idField = $("#recurso-id", contenedor).val();
 //        var id = idField == '' ? 0 : parseInt(idField);
