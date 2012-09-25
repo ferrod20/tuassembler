@@ -122,6 +122,8 @@
                             <label>Todo el día</label>\
                         </div>\
                         <input id="recursos-agregar-excepcion" class="boton" type="button" value="Agregar" />                        \
+                        <br>\
+                        <br>\
                         <div id="recursos-lista-de-excepciones" class="contenedor-2"></div>                                                                        \
                     </div> \
                 <div class="clear">                                                                                                     \

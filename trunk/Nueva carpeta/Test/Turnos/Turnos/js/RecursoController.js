@@ -5,6 +5,7 @@
     var hayBusqueda = false;
     var busquedaDescendente = true;
     var disponibilidadController = new DisponibilidadController(contenedor);
+    var excepcionController = new ExcepcionController(contenedor);
     
     var obtFilaId = function (item) {
         var rowid = $(item).parents(".recurso-fila").attr("id");
@@ -28,6 +29,7 @@
     
     var limpiarForm = function() {
         $("#recurso-id, #recurso-foto, #recurso-nombre, #recurso-especialidad, #recurso-email", contenedor).val("");
+        excepcionController.limpiarPantalla();
     };
 
     var mostrarListaDeRecursos = function (recursos) {
@@ -104,64 +106,45 @@
         $("#recursos-formulario-cancelar", contenedor).click(cancelar);
         $("#elminacion-del-recurso-cancelada", contenedor).click(scrollable.prev);
         $("#eliminacion-del-recurso-confirmada", contenedor).click(eliminarRecurso);
-        $("#recursos-agregar-excepcion", contenedor).click(agregarExcepcion);
-        $('#recurso-tabs').tabs({ fx: { opacity: 'toggle'},
-            select: tabSelect
-            });
+
+        $('#recurso-tabs').tabs({
+            fx: { opacity: 'toggle' },
+            select: tabSelected
+        });
         $('.tabs li').hide();
-        $('#recurso-excepcion-todo-el-dia').click(todoElDiaClickeado);
-        
-        disponibilidadController.inicializar();        
+
+        disponibilidadController.inicializar();
+        excepcionController.inicializar();
     };
 
-    var agregarExcepcion = function () {
-        var html = "<div class='recurso-fila' style='display: none;'>                 \
-    <div class='nombre-contenedor'>                                                                                               \
-        <div id='nombre'>19/2/2012  14hs a 20hs</div>                                                                              \
-    </div>                                                                                                                \
-    <div class='iconos-contenedor'>                                                                                             \
-    <span class='eliminar' title='Eliminar'></span>          \
-    </div>                                                                                                                  \
-</div>";
-        //.slideDown('slow');
-        var fila = $(html);
-        $('#recursos-lista-de-excepciones', contenedor).append(fila);
-        fila.slideDown('fast');
-    };
-    
-    var tabSelect = function (e, ui) {
-//        switch (ui.index) {
-//            case 0:
-//            case 1:
-//                $('#recursos-formulario-cancelar, #recursos-formulario-grabar', contenedor).fadeIn();
-//                break;
-//            case 2:
-//                $('#recursos-formulario-cancelar, #recursos-formulario-grabar', contenedor).fadeOut();
-//                break;
-//        }
-    };
+    var tabSelected = function (e, ui) {
+        switch (ui.index) {
+            case 0:
+            case 1:
 
-    var todoElDiaClickeado = function() {
-        $('#recurso-excepciones-desde-hasta', contenedor).slideToggle(!$(this).is(':checked'));        
+                break;
+            case 2:                
+                break;
+        }
     };
-    
     var cambiarAVistaDeLista = function () {
         scrollable.prev();
-        $('.tabs li').fadeOut();        
+        $('.tabs li').fadeOut(function () { $('.tabs').css({ margin: '', 'padding-left': '' }); });        
     };
 
     var cambiarAVistaDetalle = function() {
         scrollable.next();
+        $('.tabs').css({  'margin': '0px', 'padding-left': '58px' });
         $('.tabs li').fadeIn();
         $('#recurso-tabs').tabs('select', 0);
     };
 
     var cancelar = function () {
-        if (disponibilidadController.datosSinGuardar)
+        if (disponibilidadController.datosSinGuardar || excepcionController.datosSinGuardar)
             $.confirm({ description: "Hay cambios sin guardar. \n\n Desea descartarlos?",
                 onAccept: function () {
                     cambiarAVistaDeLista();
-                    disponibilidadController.datosSinGuardar = false;
+                    excepcionController.datosSinGuardar = disponibilidadController.datosSinGuardar = false;
                 }
             });
             else 
@@ -188,7 +171,6 @@
         $('#recursos-contenedor', contenedor).show();
         $('#recursos-confirmar-borrado', contenedor).hide();
         cambiarAVistaDetalle();
-        
     };
 
     var grabar = function () {
