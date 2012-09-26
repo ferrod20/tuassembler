@@ -115,6 +115,7 @@
     <Content Include="images\Sprites\yellow-arrow-down.png" />
     <Content Include="images\Sprites\yellow-arrow.png" />
     <Content Include="js\compartido\array.js" />
+    <Content Include="js\compartido\App.js" />
     <Content Include="js\compartido\prompt.js" />
     <Content Include="js\compartido\date.js" />
     <Content Include="js\compartido\notifications.js" />
@@ -123,7 +124,7 @@
     <Content Include="js\Recursos\DisponibilidadController.js" />
     <Content Include="js\jquery.jeditable.js" />
     <Content Include="js\viejo\jquery.weekcalendar.js" />
-    <Content Include="js\Recursos\recursos.js" />
+    <Content Include="js\home.js" />
     <Content Include="js\viejo\turnos.js" />
     <Content Include="js\Recursos\Recurso.plantilla.js" />
     <Content Include="js\Recursos\RecursoController.js" />

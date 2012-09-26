@@ -6,6 +6,8 @@
     var busquedaDescendente = true;
     var disponibilidadController = new DisponibilidadController(contenedor);
     var excepcionController = new ExcepcionController(contenedor);
+    var recursos;
+    var api = app.api.recursos;
     
     var obtFilaId = function (item) {
         var rowid = $(item).parents(".recurso-fila").attr("id");
@@ -32,13 +34,10 @@
         excepcionController.limpiarPantalla();
     };
 
-    var mostrarListaDeRecursos = function (recursos) {
-        if (!recursos)
-            recursos = Turnos.Recursos;
-
+    var mostrarListaDeRecursos = function () {
         if (hayBusqueda) {
             var criteria = $('#recursos-busqueda', contenedor).val();
-            recursos = filtrar(recursos, criteria);
+            recursos = filtrar(criteria);
         }
 
         var html = $.tmpl(RecursoPlantilla.FilaPlantilla, recursos);
@@ -60,18 +59,17 @@
     var eliminarRecurso = function () {
         var idField = $("#recurso-id", contenedor).val();
         var id = idField == '' ? 0 : parseInt(idField);
-
-        $.post('../Turno/EliminarRecurso', { id: id }).success(function (data) {
-            var filaAEliminar = $('#fila_' + id + '.recurso-fila', contenedor);
-            filaAEliminar.slideUp('slow', filaAEliminar.remove);
-            Turnos.Recursos.deleteById(id);
-            scrollable.prev();
-            mostrarListaDeRecursos();
-            Notificador.showSuccess('El recurso se ha eliminado correctamente.');
-        });
+        api.eliminarRecurso(id, function() {
+        var filaAEliminar = $('#fila_' + id + '.recurso-fila', contenedor);
+        filaAEliminar.slideUp('slow', filaAEliminar.remove);
+        recursos.deleteById(id);
+        scrollable.prev();
+        mostrarListaDeRecursos();
+        app.mostrarAcierto('El recurso se ha eliminado correctamente.');
+        });        
     };
 
-    var filtrar = function (recursos, textoAFiltrar) {
+    var filtrar = function (textoAFiltrar) {
         textoAFiltrar = textoAFiltrar.toUpperCase();
         return recursos.filter(function (recurso) {
             return !textoAFiltrar || recurso.nombre.toUpperCase().indexOf(textoAFiltrar) >= 0;
@@ -88,11 +86,11 @@
     };
 
     this.inicializar = function () {
-        $.post('../Turno/ObtenerRecursos', { id: 1 }).success(function (data) {
-            Turnos.Recursos = data;
+        api.obtenerRecursos(1, function(data) {
+            recursos = data;
             mostrarListaDeRecursos();
         });
-
+        
         contenedor.html($.tmpl(RecursoPlantilla.PlantillaGeneral));
 
         scrollable = $("#recursos-desplazable", contenedor).scrollable({ onSeek: ocultarPaneles }).data("scrollable");
@@ -141,7 +139,7 @@
 
     var cancelar = function () {
         if (disponibilidadController.datosSinGuardar || excepcionController.datosSinGuardar)
-            $.confirm({ description: "Hay cambios sin guardar. \n\n Desea descartarlos?",
+            app.ventanaDeConfirmacion({ description: "Hay cambios sin guardar. \n\n Desea descartarlos?",
                 onAccept: function () {
                     cambiarAVistaDeLista();
                     excepcionController.datosSinGuardar = disponibilidadController.datosSinGuardar = false;
@@ -152,7 +150,7 @@
     };
 
     var editar = function (recursoId) {
-        var recurso = Turnos.Recursos.getById(recursoId);
+        var recurso = recursos.getById(recursoId);
         if (recurso) {
             limpiarForm();
             $("#recurso-id", contenedor).val(recurso.id);
@@ -184,12 +182,12 @@
             email: $("#recurso-email", contenedor).val()
         };
 
-        $.post('../Turno/GrabarRecurso', recurso).success(function (data) {
-            Turnos.Recursos.push(data);
+        api.grabarRecurso(recurso, function(data) {
+            recursos.push(data);
             mostrarListaDeRecursos();
             cambiarAVistaDeLista();
-            Notificador.showSuccess('El recurso se ha grabado correctamente.');
-        });
+            app.mostrarAcierto('El recurso se ha grabado correctamente.');
+        });        
     };
     
     var ordenarPorNombre = function () {
@@ -202,7 +200,6 @@
     };
 
     var ordenar = function (funcionDeOrden) {
-        var recursos = Turnos.Recursos;
         recursos.sort(funcionDeOrden);
 
         var label = $('#recursos-por-nombre', contenedor);
@@ -216,7 +213,7 @@
             label.addClass(desc).removeClass(asc);
         
         busquedaDescendente = !busquedaDescendente;
-        mostrarListaDeRecursos(recursos);
+        mostrarListaDeRecursos();
     };
 
     var activar = function () {
