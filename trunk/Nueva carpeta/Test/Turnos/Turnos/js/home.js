@@ -28,6 +28,7 @@
 app = new App();
 
 $(document).ready(function () {
+    app.init();
     var homeController = new HomeController();
     homeController.inicializar();
 });
