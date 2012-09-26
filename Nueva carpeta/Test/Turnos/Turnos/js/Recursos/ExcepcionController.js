@@ -28,8 +28,8 @@
     };
 
     var mostrarListaDeExcepciones = function (excepciones) {
-        if (!excepciones)
-            excepciones = Turnos.Excepciones;
+        //if (!excepciones)
+          //  excepciones = Turnos.Excepciones;
 
         var html = $.tmpl(RecursoPlantilla.FilaExcepcion, excepciones);
 
@@ -46,10 +46,10 @@
 //        $.post('../Turno/EliminarRecurso', { id: id }).success(function (data) {
 //            var filaAEliminar = $('#fila_' + id + '.recurso-fila', contenedor);
 //            filaAEliminar.slideUp('slow', filaAEliminar.remove);
-//            Turnos.Recursos.deleteById(id);
+//            recursos.deleteById(id);
 //            //scrollable.prev();
 //            //mostrarListaDeRecursos();
-//            Notificador.showSuccess('El recurso se ha eliminado correctamente.');
+        //            app.mostrarAcierto('El recurso se ha eliminado correctamente.');
 //        });
     };
         
@@ -85,10 +85,10 @@
         };
 
         $.post('../Turno/GrabarRecurso', recurso).success(function (data) {
-            Turnos.Recursos.push(data);
+            recursos.push(data);
             //mostrarListaDeRecursos();
             //cambiarAVistaDeLista();
-            Notificador.showSuccess('El recurso se ha grabado correctamente.');
+            app.mostrarAcierto('El recurso se ha grabado correctamente.');
         });
     };        
 }
