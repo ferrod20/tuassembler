@@ -1,7 +1,7 @@
 ﻿function App() {
     this.SystemType = 'App';
     this.api = new Api();
-    this.notificador = new Notifier();
+    var notificador = new Notifier();
     var self = this;
 
     this.init = function() {
@@ -9,19 +9,19 @@
     };
 
     this.mostrarInfo = function (msg) {
-        return self.notificador.showInfo(msg);
+        return notificador.showInfo(msg);
     };
 
     this.mostrarError = function (msg) {
-        return self.notificador.showError(msg);
+        return notificador.showError(msg);
     };
 
     this.mostrarAdvertencia = function (msg) {
-        return self.notificador.showWarning(msg);
+        return notificador.showWarning(msg);
     };
     
     this.mostrarAcierto = function (msg) {
-        return self.notificador.showSuccess(msg);
+        return notificador.showSuccess(msg);
     };
 
     this.ventanaDeConfirmacion = function (opts) {
