@@ -14,7 +14,7 @@
 
     var establecerPantallaRecursos = function () {
         if (!recursoController)
-            recursoController = new RecursoController();
+            recursoController = new RecursosController();
         recursoController.inicializar();
     };
 

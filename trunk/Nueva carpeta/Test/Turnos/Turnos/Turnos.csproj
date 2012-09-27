@@ -130,7 +130,7 @@
     <Content Include="js\home.js" />
     <Content Include="js\viejo\turnos.js" />
     <Content Include="js\recursos\Recurso.plantilla.js" />
-    <Content Include="js\recursos\RecursoController.js" />
+    <Content Include="js\recursos\RecursosController.js" />
     <Content Include="Views\PaginaDePrueba.html" />
     <Content Include="Views\Turnos.html" />
     <Content Include="Web.config">
