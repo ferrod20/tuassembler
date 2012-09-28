@@ -1,12 +1,13 @@
 ﻿function RecursosController() {
     this.SystemType = 'RecursosController';
+    var self = this;
+
     var contenedor = $('.primario');    
     var scrollable = null;
     var hayBusqueda = false;
     var busquedaDescendente = true;
+    
     var recursoController = new RecursoController(contenedor);
-    var disponibilidadController = new DisponibilidadController(contenedor);
-    var excepcionController = new ExcepcionController(contenedor);
     var recursos;
     var api = app.api.recursos;
     
@@ -16,25 +17,49 @@
         return id;
     };
 
+    this.inicializar = function () {        
+        api.obtenerRecursos(1, function (data) {
+            recursos = data;
+            mostrarListaDeRecursos();
+        });
+
+        contenedor.html($.tmpl(RecursoPlantilla.PlantillaGeneral));
+
+        scrollable = $("#recursos-desplazable", contenedor).scrollable({ onSeek: ocultarPaneles }).data("scrollable");
+        ocultarPaneles(null, 0);
+
+        $('#recursos-busqueda', contenedor).keydown(buscar);
+        $('#recursos-por-nombre', contenedor).click(ordenarPorNombre);
+
+        $("#crear-recurso", contenedor).click(mostrarCrear);
+        $("#elminacion-del-recurso-cancelada", contenedor).click(scrollable.prev);
+        $("#eliminacion-del-recurso-confirmada", contenedor).click(eliminarRecurso);
+
+        recursoController.inicializar();
+        $(recursoController).bind('grabacionCancelada', cambiarAVistaDeLista);
+        $(recursoController).bind('recursoGrabado', recursoGrabado);
+    };
+
     var agregarManejadores = function (lista) {
         $(".recurso-fila", lista).click(function () {
-            editar(obtFilaId($(".editar",this)));
+            var recursoId = obtFilaId($(".editar", this));
+            //var recurso = api.obtenerRecurso(recursoId);
+            var recurso = recursos.getById(recursoId);
+            editar(recurso);
         });
 
         $(".editar", lista).click(function (e) {
-            e.stopPropagation(); 
-            editar(obtFilaId(this));
+            e.stopPropagation();
+            var recursoId = obtFilaId(this);
+            //var recurso = api.obtenerRecurso(recursoId);
+            var recurso = recursos.getById(recursoId);
+            editar(recurso);
         });
-        
-        $('.eliminar', lista).click(confirmarBorrado);        
-        $('.users-disabled, .tilde', lista).click(activar);        
-    };
-    
-    var limpiarForm = function() {
-        $("#recurso-id, #recurso-foto, #recurso-nombre, #recurso-especialidad, #recurso-email", contenedor).val("");
-        excepcionController.limpiarPantalla();
-    };
 
+        $('.eliminar', lista).click(confirmarBorrado);
+        $('.users-disabled, .tilde', lista).click(activar);
+    };
+        
     var mostrarListaDeRecursos = function () {
         if (hayBusqueda) {
             var criteria = $('#recursos-busqueda', contenedor).val();
@@ -86,46 +111,6 @@
         setTimeout(f, 1);
     };
 
-    this.inicializar = function () {
-        api.obtenerRecursos(1, function(data) {
-            recursos = data;
-            mostrarListaDeRecursos();
-        });
-        
-        contenedor.html($.tmpl(RecursoPlantilla.PlantillaGeneral));
-
-        scrollable = $("#recursos-desplazable", contenedor).scrollable({ onSeek: ocultarPaneles }).data("scrollable");
-        ocultarPaneles(null, 0);
-
-        $('#recursos-busqueda', contenedor).keydown(buscar);
-        $('#recursos-por-nombre', contenedor).click(ordenarPorNombre);
-
-        $("#crear-recurso", contenedor).click(mostrarCrear);
-        $("#recursos-formulario-grabar", contenedor).click(grabar);
-        $("#recursos-formulario-cancelar", contenedor).click(cancelar);
-        $("#elminacion-del-recurso-cancelada", contenedor).click(scrollable.prev);
-        $("#eliminacion-del-recurso-confirmada", contenedor).click(eliminarRecurso);
-
-        $('#recurso-tabs').tabs({
-            fx: { opacity: 'toggle' },
-            select: tabSelected
-        });
-        $('.tabs li').hide();
-
-        disponibilidadController.inicializar();
-        excepcionController.inicializar();
-    };
-
-    var tabSelected = function (e, ui) {
-        switch (ui.index) {
-            case 0:
-            case 1:
-
-                break;
-            case 2:                
-                break;
-        }
-    };
     var cambiarAVistaDeLista = function () {
         scrollable.prev();
         $('.tabs li').fadeOut(function () { $('.tabs').css({ margin: '', 'padding-left': '' }); });        
@@ -138,57 +123,21 @@
         $('#recurso-tabs').tabs('select', 0);
     };
 
-    var cancelar = function () {
-        if (disponibilidadController.datosSinGuardar || excepcionController.datosSinGuardar)
-            app.ventanaDeConfirmacion({ description: "Hay cambios sin guardar. \n\n Desea descartarlos?",
-                onAccept: function () {
-                    cambiarAVistaDeLista();
-                    excepcionController.datosSinGuardar = disponibilidadController.datosSinGuardar = false;
-                }
-            });
-            else 
-                cambiarAVistaDeLista();
-    };
-
-    var editar = function (recursoId) {
-        var recurso = recursos.getById(recursoId);
-        if (recurso) {
-            limpiarForm();
-            $("#recurso-id", contenedor).val(recurso.id);
-            $("#recurso-nombre", contenedor).val(recurso.nombre);
-            $("#recurso-especialidad", contenedor).val(recurso.especialidad);
-            $("#recurso-email", contenedor).val(recurso.email);
-            $("#recurso-foto", contenedor).val(recurso.foto);
-            $('#recursos-confirmar-borrado', contenedor).hide();
-            $('#recursos-contenedor', contenedor).show();
-            cambiarAVistaDetalle();
-        }
-    };
-
     var mostrarCrear = function () {
-        limpiarForm();
-        $('#recursos-contenedor', contenedor).show();
-        $('#recursos-confirmar-borrado', contenedor).hide();
+        recursoController.mostrarCrear();
         cambiarAVistaDetalle();
     };
 
-    var grabar = function () {
-        var id = $("#recurso-id", contenedor).val();
-        var recurso = {
-            id: id == '' ? 0 : parseInt(id),
-            nombre: $("#recurso-nombre", contenedor).val(),
-            especialidad: $("#recurso-especialidad", contenedor).val(),
-            habilitado: true,
-            foto: $("#recurso-foto", contenedor).val(),
-            email: $("#recurso-email", contenedor).val()
-        };
-
-        api.grabarRecurso(recurso, function(data) {
-            recursos.push(data);
-            mostrarListaDeRecursos();
-            cambiarAVistaDeLista();
-            app.mostrarAcierto('El recurso se ha grabado correctamente.');
-        });        
+    var editar = function(recurso) {
+        recursoController.editar(recurso);
+        cambiarAVistaDetalle();
+    };
+    
+    var recursoGrabado = function (recurso) {
+        recursos.push(recurso);
+        mostrarListaDeRecursos();
+        cambiarAVistaDeLista();
+        app.mostrarAcierto('El recurso se ha grabado correctamente.');        
     };
     
     var ordenarPorNombre = function () {

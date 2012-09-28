@@ -1,17 +1,21 @@
 ﻿function RecursoController(contenedor) {
     this.SystemType = 'RecursoController';
+    var self = this;
+    
     var disponibilidadController = new DisponibilidadController(contenedor);
     var excepcionController = new ExcepcionController(contenedor);
-    var recurso;
     var api = app.api.recursos;
     
-    var limpiarForm = function() {
+    this.recurso = null;
+    this.datosSinGuardar = false;
+    
+    var limpiarPantalla = function () {
         $("#recurso-id, #recurso-foto, #recurso-nombre, #recurso-especialidad, #recurso-email", contenedor).val("");
         excepcionController.limpiarPantalla();
+        disponibilidadController.limpiarPantalla();
     };
 
     this.inicializar = function () {
-        $("#crear-recurso", contenedor).click(mostrarCrear);
         $("#recursos-formulario-grabar", contenedor).click(grabar);
         $("#recursos-formulario-cancelar", contenedor).click(cancelar);
         
@@ -35,58 +39,52 @@
                 break;
         }
     };
-        
+
     var cancelar = function () {
-        if (disponibilidadController.datosSinGuardar || excepcionController.datosSinGuardar)
+        if (disponibilidadController.datosSinGuardar || excepcionController.datosSinGuardar || self.datosSinGuardar)
             app.ventanaDeConfirmacion({ description: "Hay cambios sin guardar. \n\n Desea descartarlos?",
                 onAccept: function () {
-                    cambiarAVistaDeLista();
-                    excepcionController.datosSinGuardar = disponibilidadController.datosSinGuardar = false;
+                    self.datosSinGuardar = excepcionController.datosSinGuardar = disponibilidadController.datosSinGuardar = false;
+                    $(self).trigger('grabacionCancelada');
                 }
             });
-            else 
-                cambiarAVistaDeLista();
+        else
+            $(self).trigger('grabacionCancelada');            
     };
 
-    var editar = function (recursoId) {
-        var recurso = recursos.getById(recursoId);
-        if (recurso) {
-            limpiarForm();
-            $("#recurso-id", contenedor).val(recurso.id);
-            $("#recurso-nombre", contenedor).val(recurso.nombre);
-            $("#recurso-especialidad", contenedor).val(recurso.especialidad);
-            $("#recurso-email", contenedor).val(recurso.email);
-            $("#recurso-foto", contenedor).val(recurso.foto);
+    this.editar = function (recurso) {
+        self.recurso = recurso;
+        if (self.recurso) {
+            limpiarPantalla();
+            $("#recurso-id", contenedor).val(self.recurso.id);
+            $("#recurso-nombre", contenedor).val(self.recurso.nombre);
+            $("#recurso-especialidad", contenedor).val(self.recurso.especialidad);
+            $("#recurso-email", contenedor).val(self.recurso.email);
+            $("#recurso-foto", contenedor).val(self.recurso.foto);
             $('#recursos-confirmar-borrado', contenedor).hide();
-            $('#recursos-contenedor', contenedor).show();
-            cambiarAVistaDetalle();
+            $('#recursos-contenedor', contenedor).show();            
         }
     };
 
-    var mostrarCrear = function () {
-        limpiarForm();
+    this.mostrarCrear = function () {
+        limpiarPantalla();
         $('#recursos-contenedor', contenedor).show();
-        $('#recursos-confirmar-borrado', contenedor).hide();
-        //cambiarAVistaDetalle();
+        $('#recursos-confirmar-borrado', contenedor).hide();        
     };
 
     var grabar = function () {
         var id = $("#recurso-id", contenedor).val();
-        var recurso = {
-            id: id == '' ? 0 : parseInt(id),
-            nombre: $("#recurso-nombre", contenedor).val(),
-            especialidad: $("#recurso-especialidad", contenedor).val(),
-            habilitado: true,
-            foto: $("#recurso-foto", contenedor).val(),
-            email: $("#recurso-email", contenedor).val()
-        };
-
-        api.grabarRecurso(recurso, function(data) {
-            recursos.push(data);
-    //        mostrarListaDeRecursos();
-      //      cambiarAVistaDeLista();
-            app.mostrarAcierto('El recurso se ha grabado correctamente.');
-        });        
-    };
         
+        if (!self.recurso)
+            self.recurso = new Recurso();
+
+        self.recurso.id = id == '' ? 0 : parseInt(id);
+        self.recurso.nombre = $("#recurso-nombre", contenedor).val();
+        self.recurso.especialidad = $("#recurso-especialidad", contenedor).val();
+        self.recurso.habilitado = true;
+        self.recurso.foto = $("#recurso-foto", contenedor).val();
+        self.recurso.email = $("#recurso-email", contenedor).val();
+
+        api.grabarRecurso(self.recurso, $(self).trigger('recursoGrabado', [self.recurso]) );
+    };
 }
