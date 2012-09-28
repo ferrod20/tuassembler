@@ -6,6 +6,10 @@
     var obtFila = function ($input) {
         return $input.parent().parent().prevAll().length;
     };
+
+    this.limpiarPantalla = function() {
+    
+    };
     
     var obtCol = function($input) {
         return $input.parent().prevAll().length;

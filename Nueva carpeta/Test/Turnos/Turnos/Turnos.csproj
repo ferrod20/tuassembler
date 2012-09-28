@@ -121,6 +121,7 @@
     <Content Include="js\compartido\prompt.js" />
     <Content Include="js\compartido\date.js" />
     <Content Include="js\compartido\notifications.js" />
+    <Content Include="js\recursos\RecursoController.js" />
     <Content Include="js\recursos\Recurso.js" />
     <Content Include="js\recursos\ExcepcionController.js" />
     <Content Include="js\recursos\Rango.js" />
