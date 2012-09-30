@@ -4,7 +4,7 @@
     this.recurso = null;
     this.datosSinGuardar = false;
     
-    var $nuevaFila = $('<tr> \
+    var nuevaFila = '<tr> \
                         <td><input  type="text" value=""></td> \
                         <td><input  type="text" value=""></td> \
                         <td><input  type="text" value=""></td> \
@@ -12,7 +12,7 @@
                         <td><input type="text" value=""></td> \
                         <td><input type="text" value=""></td> \
                         <td><input type="text" value=""></td> \
-                    </tr>');
+                    </tr>';
     
     var obtFila = function ($input) {
         return $input.parent().parent().prevAll().length;
@@ -31,8 +31,12 @@
         }
     };
 
-    this.limpiarPantalla = function() {
-        self.datosSinGuardar = false;    
+    this.limpiarPantalla = function () {
+        $('#disponibilidad', contenedor).find('tr:gt(1)').remove();
+        $('#disponibilidad input', contenedor).val('');
+        $('#disponibilidad input:first', contenedor).focus();
+
+        self.datosSinGuardar = false;
     };
     
     var obtCol = function($input) {
@@ -69,10 +73,11 @@
         var ultimaFilaVacia = $tabla.find('tr:last td').toArray().every(celdaVacia);
         var ultimas2FilasVacias = $tabla.find('tr').slice(-2).find('td').toArray().every(celdaVacia);
 
-        if (ultimas2FilasVacias) 
-            $tabla.find('tr:last').remove();        
+        if (ultimas2FilasVacias)
+            $tabla.find('tr:last').remove();
         else
-            if (!ultimaFilaVacia) {                
+            if (!ultimaFilaVacia) {
+                var $nuevaFila = $(nuevaFila);
                 $nuevaFila.find('input').blur(actualizarHorarioConBlur).keypress(actualizarHorarioConEnter);
                 $tabla.find('tbody').append($nuevaFila);
             }
@@ -111,9 +116,12 @@
         var col = obtCol($input);
         var $tbody = $input.parent().parent().parent();
 
-        var horariosColumna = $tbody.find('tr td:nth-child(' + (col + 1) + ') input').toArray();
-        horariosColumna.forEach(function (horario, i) {
-            horariosColumna[i] = $(horario).val();
+        var horsColumna = $tbody.find('tr td:nth-child(' + (col + 1) + ') input').toArray();
+        var horariosColumna = [];
+        horsColumna.forEach(function (horario) {
+            var val = $(horario).val();
+            if (val != '')
+                horariosColumna.push($(horario).val());
         });
 
         var solapa = rango.seSolapaConAlguno(fila, horariosColumna);
