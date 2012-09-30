@@ -1,12 +1,12 @@
-﻿function Recurso() {
+﻿function Recurso(recurso) {
     this.SystemType = 'Recurso';
 
-    this.id = null;
-    this.nombre = null;
-    this.especialidad = null;
-    this.habilitado = true;
-    this.foto = null;
-    this.email = null;
+    this.id = recurso ? recurso.id : null;
+    this.nombre = recurso ? recurso.nombre : null;
+    this.especialidad = recurso ? recurso.especialidad : null;
+    this.habilitado = recurso ? recurso.habilitado : null;
+    this.foto = recurso ? recurso.foto : null;
+    this.email = recurso ? recurso.email : null;
 
     var disponibilidad = {};
     var excepciones = [];

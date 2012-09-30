@@ -1,12 +1,13 @@
 ﻿function RecursoController(contenedor) {
     this.SystemType = 'RecursoController';
     var self = this;
+    this.recurso = null;
     
     var disponibilidadController = new DisponibilidadController(contenedor);
     var excepcionController = new ExcepcionController(contenedor);
     var api = app.api.recursos;
     
-    this.recurso = null;
+    
     this.datosSinGuardar = false;
     
     var limpiarPantalla = function () {
@@ -53,7 +54,7 @@
     };
 
     this.editar = function (recurso) {
-        self.recurso = recurso;
+        self.recurso = disponibilidadController.recurso = excepcionController.recurso = recurso;
         if (self.recurso) {
             limpiarPantalla();
             $("#recurso-id", contenedor).val(self.recurso.id);
@@ -67,14 +68,15 @@
     };
 
     this.mostrarCrear = function () {
+        self.recurso = new Recurso();
         limpiarPantalla();
         $('#recursos-contenedor', contenedor).show();
-        $('#recursos-confirmar-borrado', contenedor).hide();        
+        $('#recursos-confirmar-borrado', contenedor).hide();
     };
 
     var grabar = function () {
         var id = $("#recurso-id", contenedor).val();
-        
+
         if (!self.recurso)
             self.recurso = new Recurso();
 
@@ -85,6 +87,10 @@
         self.recurso.foto = $("#recurso-foto", contenedor).val();
         self.recurso.email = $("#recurso-email", contenedor).val();
 
-        api.grabarRecurso(self.recurso, $(self).trigger('recursoGrabado', [self.recurso]) );
+        disponibilidadController.extraerInfo();
+
+        api.grabarRecurso(self.recurso, function () {
+            $(self).trigger('recursoGrabado', [self.recurso]);
+        });
     };
 }

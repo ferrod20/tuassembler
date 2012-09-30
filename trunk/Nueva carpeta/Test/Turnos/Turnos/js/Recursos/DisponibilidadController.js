@@ -1,14 +1,38 @@
 ﻿function DisponibilidadController(contenedor) {
     this.SystemType = 'DisponibilidadController';
     var self = this;
+    this.recurso = null;
     this.datosSinGuardar = false;
-
+    
+    var $nuevaFila = $('<tr> \
+                        <td><input  type="text" value=""></td> \
+                        <td><input  type="text" value=""></td> \
+                        <td><input  type="text" value=""></td> \
+                        <td><input type="text" value=""></td> \
+                        <td><input type="text" value=""></td> \
+                        <td><input type="text" value=""></td> \
+                        <td><input type="text" value=""></td> \
+                    </tr>');
+    
     var obtFila = function ($input) {
         return $input.parent().parent().prevAll().length;
     };
 
+    this.extraerInfo = function () {
+        var $tabla = $('#disponibilidad', contenedor);
+        for (var dia = 1; dia <= 7; dia++) {
+            $tabla.find('tr td:nth-child(' + dia + ') input').each(function (ind, input) {
+                var val = $(input).val();
+                if(val!='') {
+                    var rango = new Rango(val);
+                    self.recurso.agregarDisponibilidad(dia, rango.inicio, rango.fin);    
+                }
+            });
+        }
+    };
+
     this.limpiarPantalla = function() {
-    
+        self.datosSinGuardar = false;    
     };
     
     var obtCol = function($input) {
@@ -21,6 +45,7 @@
         var valor = $input.val();
 
         if (valor != '') {
+            self.datosSinGuardar = true;
             var horarioValido = validarHorario($input);
             if (horarioValido[0]) {
                 intercambiar($input, horarioValido[1]); //ordenar el nuevo rango en la fila                    
@@ -36,7 +61,6 @@
     };
 
     var manejarFilaVacia = function () {
-
         var celdaVacia = function (td) {
             return $(td).find('input').val() == '';
         };
@@ -48,16 +72,7 @@
         if (ultimas2FilasVacias) 
             $tabla.find('tr:last').remove();        
         else
-            if (!ultimaFilaVacia) {
-                var $nuevaFila = $('<tr> \
-                        <td><input  type="text" value=""></td> \
-                        <td><input  type="text" value=""></td> \
-                        <td><input  type="text" value=""></td> \
-                        <td><input type="text" value=""></td> \
-                        <td><input type="text" value=""></td> \
-                        <td><input type="text" value=""></td> \
-                        <td><input type="text" value=""></td> \
-                    </tr>');
+            if (!ultimaFilaVacia) {                
                 $nuevaFila.find('input').blur(actualizarHorarioConBlur).keypress(actualizarHorarioConEnter);
                 $tabla.find('tbody').append($nuevaFila);
             }
