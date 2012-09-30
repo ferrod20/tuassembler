@@ -52,21 +52,22 @@
             e.stopPropagation();
             var recursoId = obtFilaId(this);
             //var recurso = api.obtenerRecurso(recursoId);
-            var recurso = recursos.getById(recursoId);
+            var recurso = new Recurso(recursos.getById(recursoId));
             editar(recurso);
         });
 
         $('.eliminar', lista).click(confirmarBorrado);
         $('.users-disabled, .tilde', lista).click(activar);
     };
-        
+
     var mostrarListaDeRecursos = function () {
+        var recursosAMostrar = recursos;
         if (hayBusqueda) {
             var criteria = $('#recursos-busqueda', contenedor).val();
-            recursos = filtrar(criteria);
+            recursosAMostrar = filtrar(criteria);
         }
 
-        var html = $.tmpl(RecursoPlantilla.FilaPlantilla, recursos);
+        var html = $.tmpl(RecursoPlantilla.FilaPlantilla, recursosAMostrar);
 
         var $listaRecursos = $('#recursos-lista', contenedor).empty().append(html);
         $('.recurso-fila', contenedor).hide().fadeIn(750);
@@ -133,7 +134,7 @@
         cambiarAVistaDetalle();
     };
     
-    var recursoGrabado = function (recurso) {
+    var recursoGrabado = function (evento, recurso) {
         recursos.push(recurso);
         mostrarListaDeRecursos();
         cambiarAVistaDeLista();

@@ -1,8 +1,9 @@
 ﻿function ExcepcionController(contenedor) {
     this.SystemType = 'ExcepcionController';
     this.datosSinGuardar = false;
+    this.recurso = null;
     var self = this;
-    
+        
     this.inicializar = function() {
         $("#recursos-agregar-excepcion", contenedor).click(agregarExcepcion);
         $('#recurso-excepcion-todo-el-dia', contenedor).click(todoElDiaClickeado);
