@@ -3,40 +3,29 @@
     this.datosSinGuardar = false;
     this.recurso = null;
     var self = this;
-        
+    var fila = "<div class='recurso-fila' style='display: none;'>                 \
+    <div class='nombre-contenedor'>                                                                                               \
+        <div id='nombre'></div>                                                                              \
+    </div>                                                                                                                \
+    <div class='iconos-contenedor'>                                                                                             \
+    <span class='eliminar' title='Eliminar'></span>          \
+    </div>                                                                                                                  \
+</div>";        
     this.inicializar = function() {
         $("#recursos-agregar-excepcion", contenedor).click(agregarExcepcion);
         $('#recurso-excepcion-todo-el-dia', contenedor).click(todoElDiaClickeado);
     };
-    
-    var agregarManejadores = function (lista) {
-        $(".recurso-fila", lista).click(function () {
-            editar(obtFilaId($(".editar",this)));
-        });
-
-        $(".editar", lista).click(function (e) {
-            e.stopPropagation(); 
-            editar(obtFilaId(this));
-        });
         
-        $('.eliminar', lista).click(confirmarBorrado);        
-        $('.users-disabled, .tilde', lista).click(activar);        
-    };
-
     this.limpiarPantalla = function () {
-        $("#recurso-excepcion-fecha, #recurso-excepcion-hora-desde, #recurso-excepcion-hora-hasta", contenedor).val("");
+        limpiarDatosExcepcion();
         $('#recursos-lista-de-excepciones', contenedor).html('');
     };
 
-    var mostrarListaDeExcepciones = function (excepciones) {
-        //if (!excepciones)
-          //  excepciones = Turnos.Excepciones;
-
-        var html = $.tmpl(RecursoPlantilla.FilaExcepcion, excepciones);
-
-        var $listaExcepciones = $('#recursos-lista-de-excepciones', contenedor).empty().append(html);
-        agregarManejadores($listaExcepciones);
-    };
+    var limpiarDatosExcepcion = function () {
+        $("#recurso-excepcion-fecha, #recurso-excepcion-hora-desde, #recurso-excepcion-hora-hasta", contenedor).val("");        
+        $('#recurso-excepcion-todo-el-dia', contenedor).attr('checked', false);
+        $('#recurso-excepciones-desde-hasta', contenedor).slideDown();                
+    };   
 
     var eliminar = function () {
         $(this).parent().parent().slideUp();
@@ -53,43 +42,27 @@
         //            app.mostrarAcierto('El recurso se ha eliminado correctamente.');
 //        });
     };
-        
-    var agregarExcepcion = function () {
-        var html = "<div class='recurso-fila' style='display: none;'>                 \
-    <div class='nombre-contenedor'>                                                                                               \
-        <div id='nombre'>19/2/2012  14hs a 20hs</div>                                                                              \
-    </div>                                                                                                                \
-    <div class='iconos-contenedor'>                                                                                             \
-    <span class='eliminar' title='Eliminar'></span>          \
-    </div>                                                                                                                  \
-</div>";
 
-        var fila = $(html);
-        fila.find('.eliminar').click(eliminar);
-        $('#recursos-lista-de-excepciones', contenedor).append(fila);
-        fila.slideDown('fast');
+    var agregarExcepcion = function () {
+        var fecha = $("#recurso-excepcion-fecha", contenedor).val();
+        var todoElDia = $('#recurso-excepcion-todo-el-dia', contenedor).is(':checked');
+
+        var horaDesde = todoElDia ? null : $("#recurso-excepcion-hora-desde", contenedor).val();
+        var horaHasta = todoElDia ? null : $("#recurso-excepcion-hora-hasta", contenedor).val();
+
+        var excepcion = self.recurso.agregarExcepcion(fecha, horaDesde, horaHasta);
+
+        var $fila = $(fila);
+        $fila.find('#nombre').html(excepcion.fecha + (todoElDia ? '' : ' ' + excepcion.desde + '-' + excepcion.hasta));
+        $fila.find('.eliminar').click(eliminar);
+        $('#recursos-lista-de-excepciones', contenedor).append($fila);
+        $fila.slideDown('fast');
+
+        limpiarDatosExcepcion();
     };
     
     var todoElDiaClickeado = function() {
-        $('#recurso-excepciones-desde-hasta', contenedor).slideToggle(!$(this).is(':checked'));        
+        $('#recurso-excepciones-desde-hasta', contenedor).slideToggle($(this).is(':checked'));        
     };
                 
-    var grabar = function () {
-        var id = $("#recurso-id", contenedor).val();
-        var recurso = {
-            id: id == '' ? 0 : parseInt(id),
-            nombre: $("#recurso-nombre", contenedor).val(),
-            especialidad: $("#recurso-especialidad", contenedor).val(),
-            habilitado: true,
-            foto: $("#recurso-foto", contenedor).val(),
-            email: $("#recurso-email", contenedor).val()
-        };
-
-        $.post('../Turno/GrabarRecurso', recurso).success(function (data) {
-            recursos.push(data);
-            //mostrarListaDeRecursos();
-            //cambiarAVistaDeLista();
-            app.mostrarAcierto('El recurso se ha grabado correctamente.');
-        });
-    };        
 }
