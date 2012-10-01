@@ -17,6 +17,16 @@
         return excepcion;
     };
 
+    this.eliminarExcepcion = function (excepcion) {
+        var eliminado = null;
+        var indice = excepciones.indexOf(excepcion);
+
+        if (indice)
+            eliminado = excepciones.splice(indice, 1);
+
+        return eliminado;
+    };
+
     this.agregarDisponibilidad = function (dia, desde, hasta) {
         if (disponibilidad[dia]) 
             disponibilidad[dia].push({ desde: desde, hasta: hasta });

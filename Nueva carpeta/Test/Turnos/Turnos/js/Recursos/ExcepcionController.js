@@ -25,22 +25,16 @@
         $("#recurso-excepcion-fecha, #recurso-excepcion-hora-desde, #recurso-excepcion-hora-hasta", contenedor).val("");        
         $('#recurso-excepcion-todo-el-dia', contenedor).attr('checked', false);
         $('#recurso-excepciones-desde-hasta', contenedor).slideDown();                
-    };   
+    };
 
-    var eliminar = function () {
-        $(this).parent().parent().slideUp();
-//        
-//        var idField = $("#recurso-id", contenedor).val();
-//        var id = idField == '' ? 0 : parseInt(idField);
+    var eliminarExcepcion = function () {
+        var $fila = $(this).parent().parent();
 
-//        $.post('../Turno/EliminarRecurso', { id: id }).success(function (data) {
-//            var filaAEliminar = $('#fila_' + id + '.recurso-fila', contenedor);
-//            filaAEliminar.slideUp('slow', filaAEliminar.remove);
-//            recursos.deleteById(id);
-//            //scrollable.prev();
-//            //mostrarListaDeRecursos();
-        //            app.mostrarAcierto('El recurso se ha eliminado correctamente.');
-//        });
+        var excepcion = $fila.find('#nombre').data('excepcion');
+        self.recurso.eliminarExcepcion(excepcion);
+        $fila.slideUp();
+
+        self.datosSinGuardar = true;
     };
 
     var agregarExcepcion = function () {
@@ -53,12 +47,15 @@
         var excepcion = self.recurso.agregarExcepcion(fecha, horaDesde, horaHasta);
 
         var $fila = $(fila);
-        $fila.find('#nombre').html(excepcion.fecha + (todoElDia ? '' : ' ' + excepcion.desde + '-' + excepcion.hasta));
-        $fila.find('.eliminar').click(eliminar);
+        var $nombre = $fila.find('#nombre');
+        $nombre.html(excepcion.fecha + (todoElDia ? '' : ' ' + excepcion.desde + '-' + excepcion.hasta));
+        $nombre.data('excepcion', excepcion);
+        $fila.find('.eliminar').click(eliminarExcepcion);
         $('#recursos-lista-de-excepciones', contenedor).append($fila);
         $fila.slideDown('fast');
 
         limpiarDatosExcepcion();
+        self.datosSinGuardar = true;
     };
     
     var todoElDiaClickeado = function() {
