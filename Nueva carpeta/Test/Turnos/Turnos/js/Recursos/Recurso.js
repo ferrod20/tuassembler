@@ -14,6 +14,7 @@
     this.agregarExcepcion = function (fecha, desde, hasta) {
         var excepcion = { fecha: fecha, desde: desde, hasta: hasta };
         excepciones.push(excepcion);
+        return excepcion;
     };
 
     this.agregarDisponibilidad = function (dia, desde, hasta) {
