@@ -7,7 +7,6 @@
     var excepcionController = new ExcepcionController(contenedor);
     var api = app.api.recursos;
     
-    
     this.datosSinGuardar = false;
     
     var limpiarPantalla = function () {
@@ -63,7 +62,9 @@
             $("#recurso-email", contenedor).val(self.recurso.email);
             $("#recurso-foto", contenedor).val(self.recurso.foto);
             $('#recursos-confirmar-borrado', contenedor).hide();
-            $('#recursos-contenedor', contenedor).show();            
+            $('#recursos-contenedor', contenedor).show();
+            disponibilidadController.editar();
+            excepcionController.editar();
         }
     };
 
