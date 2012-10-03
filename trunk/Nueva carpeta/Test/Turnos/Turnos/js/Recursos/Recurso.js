@@ -12,7 +12,7 @@
     var excepciones = [];
 
     this.agregarExcepcion = function (fecha, desde, hasta) {
-        var excepcion = { fecha: fecha, desde: desde, hasta: hasta };
+        var excepcion = new Excepcion(fecha, desde, hasta);
         excepciones.push(excepcion);
         return excepcion;
     };

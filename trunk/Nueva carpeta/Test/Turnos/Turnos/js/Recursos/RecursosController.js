@@ -32,9 +32,7 @@
         $('#recursos-por-nombre', contenedor).click(ordenarPorNombre);
 
         $("#crear-recurso", contenedor).click(mostrarCrear);
-        $("#elminacion-del-recurso-cancelada", contenedor).click(scrollable.prev);
-        $("#eliminacion-del-recurso-confirmada", contenedor).click(eliminarRecurso);
-
+        
         recursoController.inicializar();
         $(recursoController).bind('grabacionCancelada', cambiarAVistaDeLista);
         $(recursoController).bind('recursoGrabado', recursoGrabado);
@@ -78,9 +76,15 @@
         scrollable.next();
         e.stopPropagation();
         var idRecurso = obtFilaId(this);
-        $('#recursos-confirmar-borrado', contenedor).show();
-        $('#recursos-contenedor', contenedor).hide();
         $("#recurso-id", contenedor).val(idRecurso);
+        
+        app.ventanaDePregunta({
+            title: 'Confirmar elminación',
+            acceptButtonText: "Si",
+            cancelButtonText: "Cancelar",
+            description:'Eliminando este recurso se removerá toda la información relativa persistida<br />Continúa con la elminación de todos modos?<br/>',
+            onAccept: eliminarRecurso            
+        });
     };
 
     var eliminarRecurso = function () {

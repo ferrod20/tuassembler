@@ -5,19 +5,25 @@
     this.datosSinGuardar = false;
     
     var nuevaFila = '<tr> \
-                        <td><input  type="text" value=""></td> \
-                        <td><input  type="text" value=""></td> \
-                        <td><input  type="text" value=""></td> \
-                        <td><input type="text" value=""></td> \
-                        <td><input type="text" value=""></td> \
-                        <td><input type="text" value=""></td> \
-                        <td><input type="text" value=""></td> \
+                        <td><input type="text" ></td> \
+                        <td><input type="text" ></td> \
+                        <td><input type="text" ></td> \
+                        <td><input type="text" ></td> \
+                        <td><input type="text" ></td> \
+                        <td><input type="text" ></td> \
+                        <td><input type="text" ></td> \
                     </tr>';
     
     var obtFila = function ($input) {
         return $input.parent().parent().prevAll().length;
     };
-
+    
+    this.editar = function () {
+//        self.recurso.obtExcepciones().forEach(function (excepcion) {
+//            agregarExcepcion(excepcion, true);
+//        });
+    };
+    
     this.extraerInfo = function () {
         var $tabla = $('#disponibilidad', contenedor);
         for (var dia = 1; dia <= 7; dia++) {
