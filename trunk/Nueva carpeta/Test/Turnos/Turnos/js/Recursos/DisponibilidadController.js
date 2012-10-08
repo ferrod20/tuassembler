@@ -17,11 +17,27 @@
     var obtFila = function ($input) {
         return $input.parent().parent().prevAll().length;
     };
-    
+
     this.editar = function () {
-//        self.recurso.obtExcepciones().forEach(function (excepcion) {
-//            agregarExcepcion(excepcion, true);
-//        });
+        self.recurso.recorrerDisponibilidad(function (dispoFila) {
+            var info = new {
+                lu: dispoFila[0],
+                ma: dispoFila[1],
+                mi: dispoFila[2],
+                ju: dispoFila[3],
+                vi: dispoFila[4],
+                sa: dispoFila[5],
+                dom: dispoFila[6]
+            };
+            agregarDisponibilidad(info);
+        });
+    };
+
+    var agregarDisponibilidad = function (info) {
+        var $nuevaFila = $.tmpl(RecursoPlantilla.FilaDisponibilidad, info);
+        var $tabla = $('#disponibilidad', contenedor);
+        $nuevaFila.find('input').blur(actualizarHorarioConBlur).keypress(actualizarHorarioConEnter);
+        $tabla.find('tbody').append($nuevaFila);
     };
     
     this.extraerInfo = function () {

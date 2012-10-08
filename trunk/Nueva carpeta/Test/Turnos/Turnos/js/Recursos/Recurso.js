@@ -48,4 +48,14 @@
         
         return resultado;
     };
+
+    this.recorrerDisponibilidad = function (func) {
+        if(disponibilidad && disponibilidad[1] && disponibilidad[1].length) {
+            var cantidad = disponibilidad && disponibilidad[1].length;
+            for (var i = 0; i < cantidad; i++)
+                func([disponibilidad[0][i], disponibilidad[1][i], disponibilidad[2][i], disponibilidad[3][i], disponibilidad[4][i], disponibilidad[5][i], disponibilidad[6][i]]);            
+        }
+
+        return self;
+    };
 }
