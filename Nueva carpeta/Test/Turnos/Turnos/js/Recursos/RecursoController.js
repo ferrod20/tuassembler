@@ -91,7 +91,7 @@
         disponibilidadController.extraerInfo();
 
         api.grabarRecurso(self.recurso, function () {
-            $(self).trigger('recursoGrabado', [self.recurso]);
+            $(self).trigger('recursoGrabado', [self.recurso, self.recurso.id == 0]);
         });
     };
 }

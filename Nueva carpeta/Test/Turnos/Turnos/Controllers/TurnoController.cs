@@ -22,9 +22,9 @@ namespace Turnos.Controllers
         }
 
         [AcceptVerbs(HttpVerbs.Post)]
-        public JsonResult GrabarRecurso(long? id, Recurso recurso)
+        public JsonResult GrabarRecurso(Recurso recurso)
         {
-            if(id.HasValue)
+            if(recurso.id > 0)
                 AdministradorDeRecursos.ModificarRecurso(recurso);
             else
                 AdministradorDeRecursos.AgregarRecurso(recurso);
@@ -51,6 +51,7 @@ namespace Turnos.Controllers
 
         public static void AgregarRecurso(Recurso recurso)
         {
+            recurso.id = recursos.Max(r => r.id) + 1;
             recursos.Add(recurso);
         }
 
@@ -61,8 +62,8 @@ namespace Turnos.Controllers
 
         public static void ModificarRecurso(Recurso nuevoValor)
         {
-            var recurso = ObtenerRecurso(nuevoValor.id);
-            recurso = nuevoValor;
+            var indice = recursos.FindIndex(r => r.id == nuevoValor.id);
+            recursos[indice] = nuevoValor;            
         }
 
         public static void Inicializar()
