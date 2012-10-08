@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
+using Turnos.Controllers;
+
 //GOMEZ PASO POR ACA!
 namespace Turnos
 {
@@ -36,6 +38,7 @@ namespace Turnos
 
             RegisterGlobalFilters(GlobalFilters.Filters);
             RegisterRoutes(RouteTable.Routes);
+            AdministradorDeRecursos.Inicializar(); 
         }
     }
 }

@@ -39,19 +39,13 @@
     };
 
     var agregarManejadores = function (lista) {
-        $(".recurso-fila", lista).click(function () {
-            var recursoId = obtFilaId($(".editar", this));
-            //var recurso = api.obtenerRecurso(recursoId);
-            var recurso = recursos.getById(recursoId);
-            editar(recurso);
-        });
-
-        $(".editar", lista).click(function (e) {
+        $(".editar, .recurso-fila", lista).click(function (e) {
             e.stopPropagation();
             var recursoId = obtFilaId(this);
-            //var recurso = api.obtenerRecurso(recursoId);
-            var recurso = new Recurso(recursos.getById(recursoId));
-            editar(recurso);
+            api.obtenerRecurso(recursoId, function (data) {
+                var recurso = new Recurso(data);
+                editar(recurso);
+            });
         });
 
         $('.eliminar', lista).click(confirmarBorrado);
@@ -73,30 +67,28 @@
     };
 
     var confirmarBorrado = function (e) {
-        scrollable.next();
         e.stopPropagation();
         var idRecurso = obtFilaId(this);
         $("#recurso-id", contenedor).val(idRecurso);
         
-        app.ventanaDePregunta({
+        app.ventanaDeConfirmacion({
             title: 'Confirmar elminación',
             acceptButtonText: "Si",
             cancelButtonText: "Cancelar",
-            description:'Eliminando este recurso se removerá toda la información relativa persistida<br />Continúa con la elminación de todos modos?<br/>',
+            description:'Eliminando este recurso se removerá toda la información relativa persistida. Continúa con la elminación de todos modos?',
             onAccept: eliminarRecurso            
         });
     };
 
     var eliminarRecurso = function () {
         var idField = $("#recurso-id", contenedor).val();
-        var id = idField == '' ? 0 : parseInt(idField);
-        api.eliminarRecurso(id, function() {
-        var filaAEliminar = $('#fila_' + id + '.recurso-fila', contenedor);
-        filaAEliminar.slideUp('slow', filaAEliminar.remove);
-        recursos.deleteById(id);
-        scrollable.prev();
-        mostrarListaDeRecursos();
-        app.mostrarAcierto('El recurso se ha eliminado correctamente.');
+        var idRecurso = idField == '' ? 0 : parseInt(idField);
+        api.eliminarRecurso(idRecurso, function () {
+            var filaAEliminar = $('#fila_' + idRecurso + '.recurso-fila', contenedor);
+            filaAEliminar.slideUp('slow', filaAEliminar.remove);
+            recursos.deleteById(idRecurso);
+            mostrarListaDeRecursos();
+            app.mostrarAcierto('El recurso se ha eliminado correctamente.');
         });        
     };
 
