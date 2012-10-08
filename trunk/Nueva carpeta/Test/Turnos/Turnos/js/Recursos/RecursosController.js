@@ -129,12 +129,14 @@
         recursoController.editar(recurso);
         cambiarAVistaDetalle();
     };
-    
-    var recursoGrabado = function (evento, recurso) {
-        recursos.push(recurso);
+
+    var recursoGrabado = function (evento, recurso, grabado) {
+        if(grabado)
+            recursos.push(recurso);
         mostrarListaDeRecursos();
         cambiarAVistaDeLista();
-        app.mostrarAcierto('El recurso se ha grabado correctamente.');        
+
+        app.mostrarAcierto('El recurso se ha ' + (grabado ? 'grabado' : 'modificado') + ' correctamente.');        
     };
     
     var ordenarPorNombre = function () {
