@@ -132,5 +132,17 @@
             </div>                                                                                                                      \
         </div>                                                                                                                          \
     </div>                                                                                                                              \
-</div>')
+</div>'),
+    
+    FilaDisponibilidad: jQuery.template("recurso_fila_disponibilidad",
+    '<tr> \
+        <td><input type="text" >${lu}</td> \
+        <td><input type="text" >${ma}</td> \
+        <td><input type="text" >${mi}</td> \
+        <td><input type="text" >${ju}</td> \
+        <td><input type="text" >${vi}</td> \
+        <td><input type="text" >${sa}</td> \
+        <td><input type="text" >${dom}</td> \
+    </tr>')
+    
 };
