@@ -10,13 +10,6 @@ namespace Turnos.Controllers
         [AcceptVerbs(HttpVerbs.Post)]
         public JsonResult ObtenerRecursos(long idCliente)
         {
-            //var recursos = new [] {
-            //new { id = 1, nombre = "Sofia", especialidad = "peluquera", habilitado = true, foto = "", email = "sofia@peluque.com"},
-            //new { id = 2, nombre = "Carla", especialidad = "manos", habilitado = true, foto = "", email = "carla@peluque.com"},
-            //new { id = 3, nombre = "Jenifer", especialidad = "pedicura", habilitado = true, foto = "", email = "jeni@peluque.com"},
-            //new { id = 4, nombre = "Juan Carlos", especialidad = "coiffeur", habilitado = true, foto = "", email = "juanca@peluque.com"}
-            //};
-
             var recursos = AdministradorDeRecursos.ObtenerRecursos();
             return Json(recursos);
         }
@@ -77,10 +70,10 @@ namespace Turnos.Controllers
             if(recursos == null)
                 recursos = new List<Recurso>
                 {
-                    new Recurso("Sofia", "peluquera", true, "","sofia@peluque.com"),
-                    new Recurso("Carla", "manos", true, "","carla@peluque.com"),
-                    new Recurso("Jenifer", "pedicura", true, "","jeni@peluque.com"),
-                    new Recurso("Juan Carlos", "coiffeur", true, "","juanca@peluque.com"),
+                    new Recurso(1, "Sofia", "peluquera", true, "","sofia@peluque.com"),
+                    new Recurso(2, "Carla", "manos", true, "","carla@peluque.com"),
+                    new Recurso(3, "Jenifer", "pedicura", true, "","jeni@peluque.com"),
+                    new Recurso(4, "Juan Carlos", "coiffeur", true, "","juanca@peluque.com"),
                 };
         }
 
@@ -98,8 +91,9 @@ namespace Turnos.Controllers
             excepciones = new List<Excepcion>();
         }
 
-        public Recurso(string nombre, string especialidad, bool habilitado, string foto, string email): this()
+        public Recurso(long id, string nombre, string especialidad, bool habilitado, string foto, string email): this()
         {
+            this.id = id;
             this.nombre = nombre;
             this.especialidad = especialidad;
             this.habilitado = habilitado;
