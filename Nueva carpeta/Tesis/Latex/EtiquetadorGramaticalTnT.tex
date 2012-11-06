@@ -5,7 +5,9 @@ TnT(Trigrams' n' Tags) es un etiquetador gramatical estocástico basado en HMM. S
 
 TnT utiliza modelos de Markov de segundo órden para la etiquetación gramatical. Técnicamente calcula, dada una secuencia de $T$ palabras $w_1,\ldots ,w_T$
 \begin{equation} argmax_{\substack{t_1,\ldots ,t_T}} \left[ \prod_{i=1}^T   P(t_i|t_{i-1},t_{i-2})P(w_i|t_i)\right]P(t_{T+1}|t_T)\end{equation}
-para hallar las etiquetas $t_1,\ldots ,t_T$. Las etiquetas adicionales $t_{-1}, t_0$ y $t_T$ son delimitadores del principio y el final de la secuencia. Estas etiquetas adicionales mejoran levemente los resultados del etiquetado marcando una particularidad de TnT con respecto a otros etiquetadores. Las probabilidades son estimadas desde un corpus etiquetado previamente (el ya mencionado corpus de entrenamiento). Para ello TnT utiliza probabilidades de máxima verosimilitud $\hat{P}$ obtenidas a partir de la frecuencia relativa y luego aplica una técnica de suavizado
+para hallar las etiquetas $t_1,\ldots ,t_T$. Las etiquetas adicionales $t_{-1}, t_0$ y $t_T$ son delimitadores del principio y del final de la secuencia. Estas etiquetas adicionales mejoran levemente los resultados del etiquetado marcando una particularidad de TnT con respecto a otros etiquetadores. 
+
+Las probabilidades son estimadas a partir de un corpus etiquetado previamente (el ya mencionado corpus de entrenamiento). Para ello TnT utiliza probabilidades de máxima verosimilitud $\hat{P}$ obtenidas a partir de la frecuencia relativa y luego aplica una técnica de suavizado
 \begin{equation}
 \textrm{Unigramas:} \hat{P}(t_3)=\frac{f(t_3)}{N}
 \end{equation}
@@ -20,9 +22,10 @@ para hallar las etiquetas $t_1,\ldots ,t_T$. Las etiquetas adicionales $t_{-1}, 
 \hat{P}(w_3|t_3)=\frac{f(w_3,t_3)}{f(t_3)}
 \end{equation}
 donde $t_1, t_2$ y $t_3$ pertenecen al conjunto de etiquetas y $w_3$ pertenece al lexicon. $N$ es el número de \textsl{tokens} del corpus de entrenamiento. La probabilidad de máxima verosimilitud se calcula como cero si el denominador o el nominador son cero.
+
 \subsubsection{Suavizado}
 TnT aplica una técnica de suavizado sobre las frecuencias contextuales. Esto tiene lugar debido al problema de los datos esparsos en las probabilidades de los trigramas.
-Es decir, no hay suficientes instancias de cada trigrama para calcular confiablemente su probabilidad asociada. Incluso estableciendo a cero la probabilidad de un trigrama que no aparece en el corpus genera el efecto indeseado de convertir la probabilidad de una secuencia completa en cero.
+Es decir, no hay suficientes instancias de cada trigrama para calcular confiablemente su probabilidad asociada. Incluso establecer a cero la probabilidad de un trigrama que no aparece en el corpus genera el efecto indeseado de convertir la probabilidad de una secuencia completa en cero.
 TnT utiliza interpolación lineal de unigramas, bigramas y trigramas para realizar este proceso de suavizado. Es decir que se estima la probabilidad de un trigrama como sigue
 \begin{equation}
 P(t_3|t_1,t_2)=\lambda_1\hat{P}(t_3)+\lambda_2\hat{P}(t_3|t_2)+\lambda_3\hat{P}(t_3|t_1,t_2)
@@ -68,7 +71,7 @@ El estimador de máxima verosimilitud para un sufijo de longitud $i$ es
 \end{equation}
 TnT utiliza desvío estándard del estimador de máxima verosimilitud para calcular los pesos $\theta_i$.
 
-\noindent Decisiones de diseño:
+\noindent \textbf{Decisiones de diseño:}
 \begin{enumerate}
 	\item La primer decisión de diseño que afronta TnT es encontrar un buen valor para $n$, la longitud máxima de sufijo utilizada. TnT elige tomar la longitud del mayor sufijo encontrado en el corpus de entrenamiento, con la restricción de que sea menor o igual a $10$.
 

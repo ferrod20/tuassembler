@@ -1,12 +1,12 @@
 \subsection{Análisis de error} 
-Para mejorar el rendimiento de un etiquetador gramatical necesitamos entender donde está funcionando mal. Por eso el análisis de error tiene un papel preponderante. Esta tarea se realiza construyendo una matriz de confusión o tabla de contingencia. Una matriz de confusión es una matriz de $n$x$n$ donde la celda $(x,y)$ contiene el número de veces que una palabra con correcta etiqueta $x$ fué etiquetada por el modelo como $y$. Por ejemplo, la siguiente tabla muestra una porción de la matriz de confusión para los experimentos de etiquetado con HMM de \textsl{s}. 
+Para mejorar el rendimiento de un etiquetador gramatical necesitamos entender donde está funcionando mal. Por eso el análisis de error tiene un papel preponderante. Esta tarea se realiza construyendo una matriz de confusión o tabla de contingencia. Una matriz de confusión es una matriz de $n$x$n$ donde la celda $(x,y)$ contiene el número de veces que una palabra con correcta etiqueta $x$ fué etiquetada por el modelo como $y$. Por ejemplo, la siguiente tabla muestra una porción de la matriz de confusión para los experimentos de etiquetado con HMM. 
 \\
 \\
 \begin{center}
 \begin{longtable}{| l | c | c | c | c | c | c | c |}
 \caption{Ejemplo de matriz de confusión}\\	
 \hline		
- &	\textbf{IN}	&	\textbf{JJ}	&	\textbf{NN}	&	\textbf{NNP} & \textbf{RB} & \textbf{VBD} & 
+ &	\textbf{IN}	&	\textbf{JJ}	&	\textbf{NN}	&	\textbf{NNP} & \textbf{RB} & \textbf{VBD} & \textbf{VBN}
 \hline
 \endhead
 \hline
@@ -26,8 +26,8 @@ Para mejorar el rendimiento de un etiquetador gramatical necesitamos entender do
 Las etiquetas de la fila indican las etiquetas correctas, las etiquetas de las columnas indican las etiquetas asignadas por el etiquetador, y cada celda indica el porcentaje del error de etiquetado general. Por lo tanto 4.4\% del total de errores fueron causados por fallida etiquetación de VBD como VBN.
 La matriz anterior y el análisis de error relacionado en \textsl{Franz, Kupiec y Ratnaparkhi} sugieren que algunos de los mayores problemas que encaran los etiquetadores actuales son:
 \begin{enumerate}
-	\item NN contra NNP contra JJ: Estas etiquetas son difíciles de distinguir. Es especialmente importante distinguir entre sustantivos propios para extracción de la información y traducción automática.
-	\item RP contra RB contra IN: Todas estas etiquetas pueden aparecer inmediatamente después del verbo.
-	\item VBD contra VBN contra JJ: Distinguir estas etiquetas es importante para el \textsl{parsing} parcial (los participios son utilizados para encontrar pasivos), y para etiquetar correctamente los bordes de las frases nominales.
+	\item \textbf{NN contra NNP contra JJ:} Estas etiquetas son difíciles de distinguir. Es especialmente importante distinguir entre sustantivos propios para extracción de la información y traducción automática.
+	\item \textbf{RP contra RB contra IN:} Todas estas etiquetas pueden aparecer inmediatamente después del verbo.
+	\item \textbf{VBD contra VBN contra JJ:} Distinguir estas etiquetas es importante para el \textsl{parsing} parcial y para etiquetar correctamente los bordes de las frases nominales.
 \end{enumerate}      
 El análisis de error es una parte crucial de cualquier aplicación lingüística computacional. Puede ayudar a encontrar \textsl{bugs}, encontrar problemas en los datos de entrenamiento y lo más importante, ayuda en el desarrollo de conocimiento y/o algoritmos para utilizar en la solución de problemas.

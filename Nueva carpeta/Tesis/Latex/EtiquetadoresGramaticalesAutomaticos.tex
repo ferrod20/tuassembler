@@ -36,7 +36,7 @@ La inclusión de probabilidades también responde a otro factor importante: la con
 
 A continuación  vamos a presentar 2 tipos de etiquetadores gramaticales estocásticos: etiquetadores estocásticos basados en el modelo oculto de \textsl{Markov} o simplemente etiquetadores HMM\footnote{Por las siglas en inglés de Hidden Markov Model} y etiquetadores estocásticos basados en el modelo de máxima entropía.
 
-\subsubsection{Etiquetadores gramaticales basado en HMM}
+\subsubsection{Etiquetadores gramaticales basados en HMM}
 El uso del modelo oculto de Markov para realizar etiquetado gramatical es un caso especial de la inferencia bayesiana, un paradigma que fué conocido a partir del trabajo de Bayes (1763). La inferencia bayesiana o clasificación bayesiana fue aplicada exitosamente a problemas del lenguaje a partir de 1950.
 
 La clasificación bayesiana puede apreciarse como una tarea para la cual contamos con un conjunto de observaciones y el trabajo consiste en determinar a que conjunto de clases pertenece. En lo que respecta al etiquetado gramatical, se puede utilizar este mismo concepto para tratarlo como una tarea de clasificación de secuencia. En ese caso, la observación será una secuencia de palabras (digamos una oración) para la cual el trabajo consiste en asignar una secuencia de etiquetas gramaticales. Como ejemplo tomemos la oración que aparece a continuación:
@@ -49,7 +49,7 @@ La clasificación bayesiana puede apreciarse como una tarea para la cual contamos
 
 La interpretación bayesiana comienza considerando todas las posibles secuencias de clases --en nuestro caso, todas las posibles secuencias de etiquetas gramaticales. El objetivo aquí es elegir la secuencia de etiquetas que es más probable dada la secuencia de observaciones de $n$ palabras $w_1^n$. En otras palabras, queremos obtener, de todas las secuencias de $n$ etiquetas $t_1^n$ la secuencia de etiquetas tal que $P(t_1^n|w_1^n)$ sea mayor. Se utilizará la notación $\hat{}$ para decir ``nuestra estimación de la secuencia de etiquetas correcta''.
 
-\begin{equation}\label{uno} \hat{t}_1^n = \operatorname*{argmax}_{t_1^n} f  P(t_1^n|w_1^n) \end{equation}
+\begin{equation}\label{uno} \hat{t}_1^n = \operatorname*{argmax}_{t_1^n} P(t_1^n|w_1^n) \end{equation}
  La ecuación anterior se lee así: de todas las secuencias de etiquetas de longitud $n$, queremos la secuencia particular \(t_1^n\) que maximiza el lado derecho.\\
  
 Mientras que esta ecuación nos garantiza obtener la secuencia de etiquetas óptima, todavía no queda del todo claro como utilizarla. Es decir, para una secuencia de etiquetas dada \(t_1^n\) y una secuencia de palabras \(w_1^n\), no sabemos como computar directamente \(P(t_1^n|w_1^n)\).
@@ -59,13 +59,13 @@ Mientras que esta ecuación nos garantiza obtener la secuencia de etiquetas óptim
  \begin{equation}\label{tres} \hat{t}_1^n = \operatorname*{argmax}_{t_1^n} \frac{P(w_1^n|t_1^n)P(t_1^n)}{P(w_1^n)} \end{equation}
  Convenientemente podemos simplificar (3) eliminando el denominador $P(w_1^n)$. Esto sucede ya que estamos eligiendo una de todas las secuencias de etiquetas, computando $\frac{P(w_1^n|t_1^n)P(t_1^n)}{P(w_1^n)}$ en cada una de ellas. Pero $P(w_1^n)$ no cambia en ninguna secuencia de etiquetas, entonces estamos preguntando siempre por la misma observación $w_1^n$, que tiene la misma probabilidad $P(w_1^n)$. Por lo tanto podemos quitar el denominador con la garantía de que el máximo sea el mismo:
  \begin{equation} \hat{t}_1^n = \operatorname*{argmax}_{t_1^n} P(w_1^n|t_1^n)P(t_1^n) \end{equation}
-  En resúmen, la secuencia de etiquetas más probable $\hat{t}_1^n$ dada alguna palabra $w_1^n$ puede ser computada tomando el producto de dos probabilidades para cada secuencia de etiquetas y eligiendo la secuencia que lo maximiza. 
+En resúmen, la secuencia de etiquetas más probable $\hat{t}_1^n$ dada alguna palabra $w_1^n$ puede ser computada tomando el producto de dos probabilidades para cada secuencia de etiquetas y eligiendo la secuencia que lo maximiza. 
   
   Desafortunadamente todavía sigue siendo muy difícil computar esta ecuación directamente. Los etiquetadores gramaticales basados en HMM realizan dos suposiciones simplificadoras. La primera es que la probabilidad de aparición de una palabra depende solo de su etiqueta gramatical, es decir que es independiente de las palabras y etiquetas que tiene alrededor. Más técnicamente:
  \begin{equation}\label{uno2} P(w_1^n|t_1^n)\approx\prod_{i=1}^nP(w_i|t_i) \end{equation}
 La segunda suposición es que la probabilidad de aparición de una etiqueta gramatical depende solo de la etiqueta previa (sin tener en cuenta las etiquetas anteriores a la etiquetea previa), esto es la suposición de bigrama.
 \begin{equation}\label{dos2} P(t_1^n)\approx\prod_{i=1}^nP(t_i|t_{i-1}) \end{equation} Utilizando estas suposiciones obtenemos esta nueva ecuación, la cual es utilizada por los etiquetadores gramaticales basados en bigramas para estimar la secuencia de etiquetas gramaticales más probable.
- \begin{equation} \hat{t}_1^n = \operatorname*{argmax}_{t_1^n} P(t_1^n|w_1^n)\approx \operatorname*{argmax}_{t_1^n}\prod_{i=1}^nP(w_i|t_i)P(t_i|t_{i-1}) \end{equation}
+ \begin{equation} \hat{t}_1^n = \operatorname*{argmax}_{t_1^n} P(t_1^n|w_1^n)P(t_1^n)\approx \operatorname*{argmax}_{t_1^n}\prod_{i=1}^nP(w_i|t_i)P(t_i|t_{i-1}) \end{equation}
  
  \noindent La ecuación anterior contiene dos clases de probabilidades, probabilidades de transición de etiquetas y probabilidades de palabras. Tomemos un momento para ver que es lo que representan estas probabilidades. 
  
