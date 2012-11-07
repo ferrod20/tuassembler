@@ -1,55 +1,11 @@
 \subsubsection{Etiquetar el corpus BNC con TnT} 
+
 La primer evaluación de este experimento consiste en entrenar el etiquetador gramatical TnT con WSJ como corpus de entrenamiento y con WSJ + NFI. Luego se procede a etiquetar el BNC plano (sin etiquetas gramaticales) con estos dos modelos. Por último se contruye la matriz de confusión:
-
-\input{../Tesis/Bin/Debug/Datos/Experimentos/TnT/BNC/Mediciones/bnc_VS_bncTnTWSJ.l}
-\input{../Tesis/Bin/Debug/Datos/Experimentos/TnT/BNC/Mediciones/bnc_VS_bncTnTWsj+NFI.l}
-
-Se puede observar que el rendimiento del etiquetador TnT entrenado con WSJ+NFI es un poco mejor (97,14\%) que el rendimiento de TnT entrenado con WSJ (97,1\%). La mayoría de los errores para TnT entrenado con WSJ se da en etiquetas NN del gold standard cuando son etiquetadas como JJ y NNP por TnT. Para TnT entrenado con WSJ + NFI la mayoría de los errores se da en las mismas etiquetas, pero con cantidad de errores mayor, sobre todo para NN etiquetado como NNP.\\
 
 La segunda evaluación de este experimento consiste en entrenar TnT con la mitad de WSJ y con la mitad de WSJ + NFI. Posteriormente con estos dos modelos se etiqueta BNC y se construye la matriz de confusión. Se realiza la misma operación para cada mitad:
 
-\input{../Tesis/Bin/Debug/Datos/Experimentos/TnT/BNC/Mediciones/bnc_VS_bncTnTWsjM2.l}
-\input{../Tesis/Bin/Debug/Datos/Experimentos/TnT/BNC/Mediciones/bnc_VS_bncTnTWsjM2+NFI.l}
-\input{../Tesis/Bin/Debug/Datos/Experimentos/TnT/BNC/Mediciones/bnc_VS_bncTnTWsjM1.l}
-\input{../Tesis/Bin/Debug/Datos/Experimentos/TnT/BNC/Mediciones/bnc_VS_bncTnTWsjM1+NFI.l}
-
-Se puede apreciar una leve mejoría en el porcentaje de etiquetas acertadas para el modelo que incorpora NFI; 92,09\% contra 92,67\% y 92,14\% contra 92,7\% para cada mitad respectivamente. Los errores más comunes son producidos en etiquetas NN del gold standard cuando son etiquetadas como JJ y NNP por TnT, para las dos mitades entrenadas tanto con WSJ como con WSJ + NFI. Se puede notar que el porcentaje de error al etiquetar JJ cuando era NN es menor en la evaluación realizada sobre TnT entrenado con el modelo que incorpora NFI.\\
-
-A continuación se presentan las matrices de confusión entre las mitades de WSJ etiquetado con TnT entrenado con la mitad restante con y sin NFI.
-
-\input{../Tesis/Bin/Debug/Datos/Experimentos/TnT/BNC/Mediciones/bncTnTwsjM1_vs_bncTnTwsjM1+NFI.l}
-\input{../Tesis/Bin/Debug/Datos/Experimentos/TnT/BNC/Mediciones/bncTnTwsjM2_vs_bncTnTwsjM2+NFI.l}	
-
 La tercer evaluación de este experimento consiste en entrenar TnT con un cuarto de WSJ y con un cuarto de WSJ + NFI. Posteriormente con estos dos modelos se etiqueta los 3/4 restantes de WSJ y se construye la matriz de confusión. Se realiza la misma operación para cada uno de los cuartos:
 
-\begin{center}
-\begin{longtable}{| l | c | }
-\caption{Rendimiento de TnT entrenado con cuartos de WSJ con y sin NFI}\\	
-\hline
- \textbf{Evaluación}	&   \textbf{Porcentaje de aciertos}	&   \hline
-\endhead
-\hline
-\endfoot
-\endlastfoot
-	\hline
-TnT entrenado con el primer 1/4 de WSJ & 91.75\%  \\
-TnT entrenado con el primer 1/4 de WSJ + NFI & 92.62\% \\
-TnT entrenado con el segundo 1/4 de WSJ & 91.74\% \\
-TnT entrenado con el segundo 1/4 de WSJ + NFI & 92.63\% \\
-TnT entrenado con el tercer 1/4 de WSJ & 91.64\% \\
-TnT entrenado con el tercer 1/4 de WSJ + NFI & 92.62\% \\
-TnT entrenado con el cuarto 1/4 de WSJ & 91.64\% \\
-TnT entrenado con el cuarto 1/4 de WSJ + NFI & 92.58\% \\
-\hline
-\end{longtable}
-\end{center}
-
-En todos los casos se puede apreciar una mejora en el acierto de etiquetas para el modelo que incorpora NFI.\\
-
 La cuarta evaluación de este experimento consiste en entrenar TnT con un décimo de WSJ y con un décimo de WSJ + NFI. Posteriormente con estos dos modelos se etiqueta BNC y se presentan los resultados:
-\begin{itemize}
-	\item 90.9\% de acierto de etiquetas para el etiquetado de BNC con TnT entrenado con 1/10 WSJ
-	\item 92.55\% de acierto de etiquetas para el etiquetado de BNC con TnT entrenado con 1/10 WSJ+NFI
-\end{itemize}
 
-Se puede apreciar un aumento del porcentaje de aciertos en el modelo que incorpora NFI.
+En todos los casos (al igual que en los experimentos anteriores) se puede apreciar una leve mejora cuando se introduce NFI en el corpus de entrenamiento. Los datos y el detalle de estos experimentos se puede consultar en el apéndice.
