@@ -1,4 +1,4 @@
-\subsection{Etiquetadores gramaticales automáticos} 
+\section{Etiquetadores gramaticales automáticos} 
 Como se mencionó anteriormente, el etiquetado gramatical es el proceso que asigna a una secuencia de palabras una secuencia de etiquetas gramaticales para las mismas. Generalmente las etiquetas gramaticales también son aplicadas a los signos de puntuación, por lo tanto el etiquetado requiere que los signos de puntuación sean separados de las palabras. Este proceso se realiza previamente o como parte del etiquetado y es conocido como \textsl{tokenización}. El proceso de \textsl{tokenización} es el encargado de separar puntos, comas, paréntesis y otros caracteres de las palabras así como también desambigüar el fin de oración (por ejemplo un punto o signo de pregunta) de un signo de puntuación (como en una abreviación, por ejemplo \textsl{'étc.'})
 
 La entrada para un algoritmo de etiquetación automática es una cadena de palabras y un conjunto de etiquetas. La salida es la mejor etiqueta encontrada para cada palabra.
@@ -24,12 +24,12 @@ Los etiquetadores estocásticos generalmente resuelven la ambigüedad de etiquetas
 
 Adicionalmente existe una tercera clase de etiquetadores que es una mezcla de estos dos: etiquetadores basados en la transformación. Como los etiquetadores basados en reglas, están basados en reglas que determinan cuando una palabra ambigüa debe tener cierta etiqueta. Y como los etiquetadores estocásticos tienen un componente de aprendizaje automático; las reglas son inducidas automáticamente a partir de un corpus de entrenamiento previamente etiquetado.
 
-\subsubsection{Etiquetadores gramaticales basados en reglas} 
+\subsection{Etiquetadores gramaticales basados en reglas} 
 Los primeros algoritmos de asignación de etiquetas gramaticales estaban basados en un proceso de dos etapas. En la primer etapa utilizaban un diccionario para asignar a cada palabra una lista de potenciales etiquetas gramaticales. En la segunda etapa utilizaban grandes listas de reglas de desambigüación escritas a mano para reducir la lista de etiquetas hasta llegar a una para cada palabra. De esta manera eliminaban las etiquetas inconsistentes con el contexto.
 
 Las versiones actuales de los etiquetadores gramaticales basados en reglas mantienen los principios originales teniendo en cuenta que los diccionarios y el conjunto de reglas han adquirido un tamaño considerablemente mayor: manejan alrededor de 3800 reglas y un diccionario de etiquetas del órden de las 56.000 entradas para el idioma inglés. 
 
-\subsubsection{Etiquetadores gramaticales estocásticos} 
+\subsection{Etiquetadores gramaticales estocásticos} 
 La inclusión de probabilidades en el proceso de etiquetación gramatical no es una idea nueva. Surge como una consecuencia natural a partir del hecho de que una palabra es empleada con un sentido gramatical mucho más frecuentemente que con otro. Como se mencionó anteriormente, \textsl{a} es mucho más frecuentemente utilizada como determinante que como letra. 
 
 La inclusión de probabilidades también responde a otro factor importante: la construcción gramatical; cierta etiqueta es precedida frecuentemente por ciertas otra/s. Por ejemplo, como se mencionó anteriormente, los pronombres posesivos generalmente son sucedidos por verbos. Es decir que es más probable encontrar oraciones cuyas palabras estén etiquetadas con PP sucedida por NN que PP sucedida por otra etiqueta.
@@ -58,14 +58,14 @@ Mientras que esta ecuación nos garantiza obtener la secuencia de etiquetas óptim
  Podemos sustituir  \eqref{dos} en \eqref{uno} para obtener \eqref{tres}: 
  \begin{equation}\label{tres} \hat{t}_1^n = \operatorname*{argmax}_{t_1^n} \frac{P(w_1^n|t_1^n)P(t_1^n)}{P(w_1^n)} \end{equation}
  Convenientemente podemos simplificar (3) eliminando el denominador $P(w_1^n)$. Esto sucede ya que estamos eligiendo una de todas las secuencias de etiquetas, computando $\frac{P(w_1^n|t_1^n)P(t_1^n)}{P(w_1^n)}$ en cada una de ellas. Pero $P(w_1^n)$ no cambia en ninguna secuencia de etiquetas, entonces estamos preguntando siempre por la misma observación $w_1^n$, que tiene la misma probabilidad $P(w_1^n)$. Por lo tanto podemos quitar el denominador con la garantía de que el máximo sea el mismo:
- \begin{equation} \hat{t}_1^n = \operatorname*{argmax}_{t_1^n} P(w_1^n|t_1^n)P(t_1^n) \end{equation}
+ \begin{equation*} \hat{t}_1^n = \operatorname*{argmax}_{t_1^n} P(w_1^n|t_1^n)P(t_1^n) \end{equation*}
 En resúmen, la secuencia de etiquetas más probable $\hat{t}_1^n$ dada alguna palabra $w_1^n$ puede ser computada tomando el producto de dos probabilidades para cada secuencia de etiquetas y eligiendo la secuencia que lo maximiza. 
   
   Desafortunadamente todavía sigue siendo muy difícil computar esta ecuación directamente. Los etiquetadores gramaticales basados en HMM realizan dos suposiciones simplificadoras. La primera es que la probabilidad de aparición de una palabra depende solo de su etiqueta gramatical, es decir que es independiente de las palabras y etiquetas que tiene alrededor. Más técnicamente:
- \begin{equation}\label{uno2} P(w_1^n|t_1^n)\approx\prod_{i=1}^nP(w_i|t_i) \end{equation}
+ \begin{equation*}\label{uno2} P(w_1^n|t_1^n)\approx\prod_{i=1}^nP(w_i|t_i) \end{equation*}
 La segunda suposición es que la probabilidad de aparición de una etiqueta gramatical depende solo de la etiqueta previa (sin tener en cuenta las etiquetas anteriores a la etiquetea previa), esto es la suposición de bigrama.
-\begin{equation}\label{dos2} P(t_1^n)\approx\prod_{i=1}^nP(t_i|t_{i-1}) \end{equation} Utilizando estas suposiciones obtenemos esta nueva ecuación, la cual es utilizada por los etiquetadores gramaticales basados en bigramas para estimar la secuencia de etiquetas gramaticales más probable.
- \begin{equation} \hat{t}_1^n = \operatorname*{argmax}_{t_1^n} P(t_1^n|w_1^n)P(t_1^n)\approx \operatorname*{argmax}_{t_1^n}\prod_{i=1}^nP(w_i|t_i)P(t_i|t_{i-1}) \end{equation}
+\begin{equation*}\label{dos2} P(t_1^n)\approx\prod_{i=1}^nP(t_i|t_{i-1}) \end{equation*} Utilizando estas suposiciones obtenemos esta nueva ecuación, la cual es utilizada por los etiquetadores gramaticales basados en bigramas para estimar la secuencia de etiquetas gramaticales más probable.
+ \begin{equation*} \hat{t}_1^n = \operatorname*{argmax}_{t_1^n} P(t_1^n|w_1^n)P(t_1^n)\approx \operatorname*{argmax}_{t_1^n}\prod_{i=1}^nP(w_i|t_i)P(t_i|t_{i-1}) \end{equation*}
  
  \noindent La ecuación anterior contiene dos clases de probabilidades, probabilidades de transición de etiquetas y probabilidades de palabras. Tomemos un momento para ver que es lo que representan estas probabilidades. 
  
@@ -76,23 +76,51 @@ La segunda suposición es que la probabilidad de aparición de una etiqueta gramat
  Por otro lado, es infrecuente que los adjetivos precedan a los determinantes, entonces la probabilidad $P(DT|JJ)$ será pequeña.
 Podemos computar la máxima probabilidad estimada o MLE\footnote{Por sus siglas en inglés Maximum Likelihood Estimated} de una probabilidad de transición de etiquetas $P(NN|DT)$ etiquetando y contando las etiquetas gramaticales en un corpus. Esto es: de todas las veces que vemos DT, cuántas de esas veces vemos NN después de DT. Lo expresamos más formalmente con el siguiente cociente:
  
-\begin{equation}P(t_i|t_{i-1})=\frac{C(t_{i-1},t_i)}{C(t_i)}\end{equation}
+\begin{equation*}P(t_i|t_{i-1})=\frac{C(t_{i-1},t_i)}{C(t_i)}\end{equation*}
  
  Elijamos un corpus específico para examinar, por ejemplo el corpus Brown.
  
 En el corpus Brown etiquetado con el conjunto de etiquetas Treebank, la etiqueta DT ocurre 116.454 veces. De esas veces, DT es seguido por NN 56.509 veces. Por lo tanto esta probabilidad de transición se calcula como sigue:
 
-\begin{equation}P(NN|DT)=\frac{C(DT,NN)}{C(DT)}=\frac{56509}{116454}=.49\end{equation}
+\begin{equation*}P(NN|DT)=\frac{C(DT,NN)}{C(DT)}=\frac{56509}{116454}=.49\end{equation*}
  
  Claramente la probabilidad de obtener un sustantivo común después de un determinante es .49 y de hecho alta como sospechábamos.
 	\item \textbf{Probabilidades de la palabra}: Por otro lado las probabilidades de la palabra, $P(w_i|t_i)$, representan la probabilidad de que dada una etiqueta esta esté asociada con cierta palabra. Por ejemplo si tenemos la etiqueta VBZ (verbo singular de tiempo presente en tercera persona) y quisiéramos adivinar el verbo asociado a esa etiqueta, probablemente elegiríamos el verbo \textsl{is}\footnote{\textsl{is} es el presente en tercera persona del verbo \textsl{to be}}, debido a que el verbo \textsl{to be} es muy común en inglés.
  
 Podemos computar $P(is|VBZ)$ de nuevo contando de cuántas veces que vemos VBZ en un corpus cuántas de esas veces VBZ está etiquetando la palabra \textsl{is}. Esto es computar el siguiente cociente:
-\begin{equation}P(w_i|t_i)=\frac{C(t_i,w_i)}{C(t_i)}\end{equation}
+\begin{equation*}P(w_i|t_i)=\frac{C(t_i,w_i)}{C(t_i)}\end{equation*}
  En el corpus Brown etiquetado con Treebank, la etiqueta VBZ ocurre 21.627 veces y VBZ es la etiquetra para \textsl{is} 10.073 veces. Entonces:
-\begin{equation}P(is|VBZ)=\frac{C(VBZ,is)}{C(VBZ)}=\frac{10.073}{21.627}=0	.47\end{equation}
+\begin{equation*}P(is|VBZ)=\frac{C(VBZ,is)}{C(VBZ)}=\frac{10.073}{21.627}=0	.47\end{equation*}
 \end{itemize}
  
  Resumiendo, el etiquetado HMM es la tarea de elegir con la mayor probabilidad una secuencia de etiquetas para una secuencia de palabras dada. HMM incluye la suposición de ciertos hechos para simplificar las ecuaciones originales mejorando así la eficiencia de los cómputos.
 
 \subsubsection{Etiquetadores gramaticales de máxima entropía}
+El principio de máxima entropía observa que la correcta distribución de la probabilidad de etiquetar la palabra $w$ con una etiqueta $t$, $p(w,t)$, es aquella que maximiza la incertidumbre o entropía sujeta a restricciones que representan la evidencia; los hechos conocidos.
+Estas restricciones son llamadas características o \textsl{features} y se expresan mediante funciones.
+
+Dicho de otra manera, dada una sucesión de palabras que se quieren etiquetar con un conjunto de etiquetas (por ejemplo {NN, VB, JJ}), la asignación correcta de etiquetas es aquella que resulte más uniforme, es decir, la que asigne cada etiqueta a un número parecido de palabras. Penalizando además aquellas distribuciones de probabilidades con poca entropía. 
+
+Por ejemplo, una distribución de etiquetas poco uniforme sería asignar a todas las palabras la etiqueta NN, por lo que esta distribución de etiquetas se consideraría poco probable bajo un modelo de máxima entropía.
+
+La idea es encontrar la distribución de probabilidades de emisión de etiquetas que mejor modele la sucesión de palabras de entrada.
+Para lograr este objetivo, lo primero es entrenar el modelo. En este caso, al
+igual que en anteriores ocasiones, el entrenamiento viene dado por la observación de un determinado número de ejemplos de palabras y etiquetas asociadas, calculando la distribución de probabilidad de los mismos. Es decir, la frecuencia de ocurrencia de los pares [palabra, etiqueta]:
+
+\begin{equation*}p(w, t) = \frac{1}{n} \times OcurrenciasDe(w, t)\end{equation*}
+
+Además de estas estadísticas, también se pueden considerar diferentes características que no tienen referencia a la frecuencia de ocurrencia de las palabras, sino a aspectos dependientes del contexto de la palabra; que la palabra esté o no en mayúscula, o que sea principio de frase, etc. En general se pueden definir ciertos aspectos siempre y cuando se puedan expresar como una función binaria:
+
+\begin{equation*}
+f(w, t) = \left\{
+\begin{array}{rl}
+1 &  \text{si se cumple la condición deseada}\\
+0 &  \text{en otro caso} 
+\end{array} \right.
+\end{equation*}
+
+A estas funciones, o a los aspectos que representan se las denomina características
+o \textsl{features} y son utilizadas como restricciones en el modelo:
+
+
+\begin{equation*}p(f) = \sum_{w,t}p(w,t) f(w,t)\end{equation*}

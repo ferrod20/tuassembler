@@ -1,35 +1,35 @@
-\subsection{Etiquetador Gramatical TnT} 
+\section{Etiquetador Gramatical TnT} 
 TnT(Trigrams' n' Tags) es un etiquetador gramatical estocástico basado en HMM. Según Brants este etiquetador tiene un rendimiento mejor o igual a otros etiquetadores actuales de diferentes bases teóricas, incluyendo etiquetadores basados en máxima entropía.
 
-\subsubsection{Modelo teórico}
+\subsection{Modelo teórico}
 
 TnT utiliza modelos de Markov de segundo órden para la etiquetación gramatical. Técnicamente calcula, dada una secuencia de $T$ palabras $w_1,\ldots ,w_T$
-\begin{equation} argmax_{\substack{t_1,\ldots ,t_T}} \left[ \prod_{i=1}^T   P(t_i|t_{i-1},t_{i-2})P(w_i|t_i)\right]P(t_{T+1}|t_T)\end{equation}
+\begin{equation*} argmax_{\substack{t_1,\ldots ,t_T}} \left[ \prod_{i=1}^T   P(t_i|t_{i-1},t_{i-2})P(w_i|t_i)\right]P(t_{T+1}|t_T)\end{equation*}
 para hallar las etiquetas $t_1,\ldots ,t_T$. Las etiquetas adicionales $t_{-1}, t_0$ y $t_T$ son delimitadores del principio y del final de la secuencia. Estas etiquetas adicionales mejoran levemente los resultados del etiquetado marcando una particularidad de TnT con respecto a otros etiquetadores. 
 
 Las probabilidades son estimadas a partir de un corpus etiquetado previamente (el ya mencionado corpus de entrenamiento). Para ello TnT utiliza probabilidades de máxima verosimilitud $\hat{P}$ obtenidas a partir de la frecuencia relativa y luego aplica una técnica de suavizado
-\begin{equation}
+\begin{equation*}
 \textrm{Unigramas:} \hat{P}(t_3)=\frac{f(t_3)}{N}
-\end{equation}
-\begin{equation}
+\end{equation*}
+\begin{equation*}
 \textrm{Bigramas:} \hat{P}(t_3|t_2)=\frac{f(t_2,t_3)}{f(t_2)}
-\end{equation}
-\begin{equation}
+\end{equation*}
+\begin{equation*}
 \textrm{Trigramas:} \hat{P}(t_3|t_1,t_2)=\frac{f(t_1,t_2,t_3)}{f(t_1,t_2)}
-\end{equation}
-\begin{equation}
+\end{equation*}
+\begin{equation*}
 \textrm{Léxico:}
 \hat{P}(w_3|t_3)=\frac{f(w_3,t_3)}{f(t_3)}
-\end{equation}
+\end{equation*}
 donde $t_1, t_2$ y $t_3$ pertenecen al conjunto de etiquetas y $w_3$ pertenece al lexicon. $N$ es el número de \textsl{tokens} del corpus de entrenamiento. La probabilidad de máxima verosimilitud se calcula como cero si el denominador o el nominador son cero.
 
-\subsubsection{Suavizado}
+\subsection{Suavizado}
 TnT aplica una técnica de suavizado sobre las frecuencias contextuales. Esto tiene lugar debido al problema de los datos esparsos en las probabilidades de los trigramas.
 Es decir, no hay suficientes instancias de cada trigrama para calcular confiablemente su probabilidad asociada. Incluso establecer a cero la probabilidad de un trigrama que no aparece en el corpus genera el efecto indeseado de convertir la probabilidad de una secuencia completa en cero.
 TnT utiliza interpolación lineal de unigramas, bigramas y trigramas para realizar este proceso de suavizado. Es decir que se estima la probabilidad de un trigrama como sigue
-\begin{equation}
+\begin{equation*}
 P(t_3|t_1,t_2)=\lambda_1\hat{P}(t_3)+\lambda_2\hat{P}(t_3|t_2)+\lambda_3\hat{P}(t_3|t_1,t_2)
-\end{equation}
+\end{equation*}
 
 \noindent donde $\hat{P}$ son los estimadoes de máxima verosimilitud presentados anteriormente y $\lambda_1$, $\lambda_2$ y $\lambda_3$ son los pesos asociados a estos estimadores, tales que $\lambda_1 + \lambda_2 + \lambda_3 = 1$.
 TnT utiliza interpolación lineal con independencia de contexto. Es decir que $\lambda_1, \lambda_2$ y $\lambda_3$ tienen el mismo valor para todos los trigramas, o lo que es lo mismo, $\lambda_1, \lambda_2$ y $\lambda_3$ son independientes del trigrama que se está calculando. 
@@ -51,27 +51,27 @@ Los valores $\lambda_1, \lambda_2$ y $\lambda_3$ son estimados por interpolación
 \end{algorithmic}
 \end{algorithm}
 
-\subsubsection{Manejo de palabras desconocidas}
+\subsection{Manejo de palabras desconocidas}
 TnT, al igual que muchos otros etiquetadores gramaticales, maneja las palabras desconocidas mediantes análisis de sufijos. Los sufijos son fuertes predictores del tipo de palabra. Por ejemplo las palabras terminadas en \textsl{able} en el corpus \textsl{Wall Street Journal} son adjetivos (JJ) en el 98\% de los casos (ej.:\textsl{fashionable}, \textsl{variable}) y sustantivos (NN) en el 2\% restante.
 
 La distribución de probabilidades para un sufijo particular es generada a partir de todas las palabras en el corpus de entrenamiento que comparten el mismo sufijo (de alguna longitud máxima predefinida). El término sufijo se entiende en este contexto como la secuencia final de letras de una palabra, que no coincide necesariamente con el significado lingüístico de sufijo.
 
 La fórmula utilizada para calcular la probabilidad de que una etiqueta pertenezca a cierto sufijo es $P(t|l_{n-m+1},\ldots,l_n)$, es decir, la probabilidad de una etiqueta $t$ dadas las últimas letras $l_i$ de una palabra de $n$ letras. TnT aplica una técnica de suavizado utilizando sufijos cada vez más pequeños aplicando un peso $\theta_i$ a cada uno:
 
-\begin{equation}
+\begin{equation*}
 P(t|l_{n-m+1},\ldots,l_n)=\frac{\hat{P}(t|l_{n-i+1},\ldots,l_n)+\theta_iP(t|l_{n-i},\ldots,l_n)}{1+\theta_i}
-\end{equation}
+\end{equation*}
 para $i=m,\ldots ,0$, utilizando el estimador de máxima verosimilitud $\hat{P}$ para las frecuencias en el lexicon, los pesos $\theta_i$ y el caso base
-\begin{equation}
+\begin{equation*}
 P(t)=\hat{P}(t)
-\end{equation}
+\end{equation*}
 El estimador de máxima verosimilitud para un sufijo de longitud $i$ es 
-\begin{equation}
+\begin{equation*}
 \hat{P}(t|l_{n-i+1},\ldots,l_n)=\frac{f(t, l_{n-i+1},\ldots,l_n)}{f(l_{n-i+1},\ldots,l_n)}
-\end{equation}
+\end{equation*}
 TnT utiliza desvío estándard del estimador de máxima verosimilitud para calcular los pesos $\theta_i$.
 
-\noindent \textbf{Decisiones de diseño:}
+\textbf{Decisiones de diseño:}
 \begin{enumerate}
 	\item La primer decisión de diseño que afronta TnT es encontrar un buen valor para $n$, la longitud máxima de sufijo utilizada. TnT elige tomar la longitud del mayor sufijo encontrado en el corpus de entrenamiento, con la restricción de que sea menor o igual a $10$.
 
@@ -85,15 +85,15 @@ Basándose en el hecho de que las palabras desconocidas son infrecuentes, TnT uti
 Adicionalmente, TnT discrimina la información sobre mayúsculas y minúsculas. Esto es debido a que las probabilidades de las etiquetas de palabras con mayúsuculas son distintas a las de las palabras con minúsculas.
 Para llevar esto a cabo se utilizan \textsl{flags} en las probabilidades contextuales. En vez de
 
-\begin{equation}
+\begin{equation*}
 P(t_3|t_1,t_2)
-\end{equation}
+\end{equation*}
 
 se utiliza
 
-\begin{equation}
+\begin{equation*}
 P(t_3,c_3|t_1,c_1,t_2,c_2)
-\end{equation}
+\end{equation*}
 
 donde $c_1$, $c_2$ y $c_3$ son $1$ si la palabra contiene mayúsculas y $0$ en otro caso.
 Esto es equivalente a doblar el conjunto de etiquetas y utilizar etiquetas diferentes según si la palabra aparece en mayúscula o no.

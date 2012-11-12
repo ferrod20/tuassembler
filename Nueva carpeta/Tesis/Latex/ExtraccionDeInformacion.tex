@@ -1,5 +1,5 @@
-\section{Desarrollo}
-\subsection{Extracción de la información} 
+\chapter{Desarrollo}
+\section{Extracción de la información} 
 El diccionario Cobuild guarda su información en un archivo de texto plano con un formato particular. El primer desafío de este trabajo fué comprender y extraer la información almacenada en ese archivo. A continuación se muestra un pequeño fragmento del mismo para ejemplificar
 {\footnotesize
 \begin{verbatim}
@@ -45,7 +45,7 @@ Cada entrada arriba presentada tiene la característica de poseer una cantidad va
   
 Estas entradas, que conforman el diccionario Cobuild y que constituyen la fuente de información principal sobre la cual se basa este trabajo, fueron cuidadosamente procesadas y refinadas intentando mantener toda la información disponible. El primer desafío de esta etapa consistió en recuperar las entradas con toda la información gramatical disponible; explícita e implícita. Una primer tarea fué reconocer y registrar información relacionada a las formas flexionadas de la palabra (plurales, pasados, etc.), es decir, obtener información gramatical implícita.
 
-\subsubsection{Reconocimiento de formas flexionadas} 
+\subsection{Reconocimiento de formas flexionadas} 
 En muchas entradas del diccionario Cobuild ocurre la palabra, uno o más ejemplos en donde ésta aparece con cierto sentido (indicado por medio de etiquetas gramaticales) pero dentro de los ejemplos hay apariciones de formas flexionadas. Tomemos la siguiente entrada:\\ \\
 \verb#DICTIONARY_ENTRY# \\
 \verb#bite#  $\longrightarrow$ {\footnotesize \textsl{palabra}}\\
