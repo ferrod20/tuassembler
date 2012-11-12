@@ -1,0 +1,40 @@
+\section{Etiquetador Gramatical Stanford Tagger} 
+
+Stanford Tagger es un etiquetador gramatical estocástico basado en el modelo de máxima entropía.
+
+Al igual que otros etiquetadores estocásticos, Stanford Tagger aprende de texto etiquetado: analiza y preserva información estadística sobre las palabras y las etiquetas asignadas. Dada una palabra $w$ y un contexto $h$\footnote{El contexto generalmente se define como una secuencia de varias palabras y etiquetas precediendo a la palabra actual} el modelo asigna una probabilidad a cada etiqueta $t$ perteneciente al conjunto de todas las etiquetas posibles $T$.
+
+Etiquetado gramatical es el proceso de asignar la secuencia de etiquetas más probables a una cadena de palabras. La idea del modelo de máxima entropía es elegir la distribución de probabilidades p que tiene la mayor entropía entre todas las distribuciones que satisfacen ciertas restricciones.
+
+Las restricciones obligan al modelo a comportarse de acuerdo a un conjunto de estadísticas obtenidas del corpus de entrenamiento. Estas estadísticas son expresadas como los valores esperados de funciones definidas sobre los conjuntos $h$ y las etiquetas $t$.
+
+Por ejemplo si se quiere restringir el modelo a etiquetar la palabra \textsl{make} como verbo o sustantivo con la misma frecuencia del corpus de entrenamiento, se pueden definir las características:
+
+\begin{equation*}f_1(h, t) = 1 \Leftrightarrow w_i = \text{make} \wedge t=\text{NN}\end{equation*}
+\begin{equation*}f_2(h, t) = 1 \Leftrightarrow w_i = \text{make} \wedge t=\text{VB}\end{equation*}
+
+A diferencia del modelo oculto de Markov, máxima entropía permite definir e incorporar información estadística más compleja que información de frecuencia, bigramas y/o trigramas.
+
+Stanford Tagger define características generales clásicas (bigramas, trigramas y frecuencia de etiquetas) y también características especiales para palabras raras, con el objetivo de mejorar la capacidad de predicción del modelo en palabras desconocidas.
+
+\begin{itemize}
+	\item \textbf{Características generales}
+\begin{align*}
+w_i = X \wedge t_i=T\\
+t_{i-1} = T_1 \wedge t_i=T\\
+t_{i-1} = T_1 \wedge t_{i-2} = T_2 \wedge t_i=T\\
+w_{i+1} = X \wedge t_i=T\\
+\end{align*}
+ 	\item \textbf{Características para palabras raras}
+\begin{align*}
+\text{El sufijo de } w_i = S \wedge |S|<5 \wedge t_i=T\\
+\text{El prefijo de } w_i = P \wedge 1<|P|<5 \wedge t_i=T\\
+w_i \text{ contiene un número} \wedge t_i=T\\
+w_i \text{ contiene una mayúscula} \wedge t_i=T\\
+w_i \text{ contiene un guión} \wedge t_i=T\\
+\end{align*}
+\end{itemize}
+
+Las palabras raras son aquellas que aparecen pocas veces en el corpus de entrenamiento\footnote{Stanford Tagger toma como palabras raras aquellas que aparecen menos de 7 veces en el corpus}.
+
+El rendimiento reportado para Stanford Tagger se encuentra dentro de los mismos parámetros de rendimiento de otros etiquetadores estocásticos. La ventaja es la capacidad de experimentar nuevas características o \textsl{features} que ayudan a mejorar su rendimiento.

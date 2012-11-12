@@ -1,4 +1,4 @@
-\documentclass[a4paper]{article}%
+\documentclass[a4paper]{report}%
 \usepackage{amsmath}%
 \usepackage{amsfonts}%
 \usepackage{amssymb}%
@@ -16,6 +16,9 @@
 \usepackage{hyperref}
 %-------------------------------------------
 \begin{document}
+\let\stdsection\section
+\renewcommand\section{\newpage\stdsection}
+
 \setlength{\LTleft}{-20cm plus -1fill}
 \setlength{\LTright}{\LTleft}
 \setlength{\LTcapwidth}{7in}
