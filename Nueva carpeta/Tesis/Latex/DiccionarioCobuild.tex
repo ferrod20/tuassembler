@@ -227,3 +227,13 @@ Este segmento está compuesto en un 19\% por monólogos, en un 75\% por diálogos y
 Para obtener las grabaciones de encuentros informales se reclutaron 124 adultos, con aproximadamente la misma cantidad de hombres y mujeres, perteneciendo a una de 4 clases sociales distintas y a uno de 5 grupos de edades diferentes. Cada individuo utilizó un grabador portátil para grabar su propio discurso y las conversaciones que tuvieron con otras personas durante más de una semana.
 
 BNC posee información gramatical (POS) para cada una de sus palabras. Las 100 millones de palabras de BNC fueron etiquetadas automáticamente por CLAWS4, un etiquetador automático desarrollado en la universidad de Lancaster. El conjunto de etiquetas utilizado para dicha tarea fué C5 (58 etiquetas gramaticales).
+
+\section{Corpus WSJ} 
+El \textsl{Wall Street Journal} (WSJ) es un corpus de inglés americano cuyo tamaño es de alrededor de 1 millón de palabras. 
+Forma parte del proyecto \textsl{Peen Treebank}. 
+
+Como parte de este proyecto, WSJ fué etiquetado utilizando un proceso de 2 etapas: en la primer etapa se utilizó un etiquetador gramatical para asignar etiquetas automáticamente mientras que en la segunda se corrigieron los errores de etiquetado manualmente.
+
+El etiquetador gramatical utilizado fué PARTS, un etiquetador estocástico desarrollado en los laboratorios de AT\&T. Este etiquetador asigna etiquetas con un porcentaje de error de 3-5\%. PARTS genera etiquetas pertenecientes a un conjunto de etiquetas similar al conjunto \textsl{Brown} (levemente modificado). Por lo tanto, la salida de PARTS debe convertirse en etiquetas de \textsl{Penn Treebank}. Esta tarea introduce un error del 4\% ya que las etiquetas de \textsl{Penn Treebank} hacen ciertas distinciones que el conjunto de etiquetas PARTS no posee. Entonces el texto etiquetado posee un porcentaje de error total de 7-9\%.
+
+Una vez finalizada esta etapa de etiquetación y conversión automática, las etiquetas son corregidas manualmente.
