@@ -17,8 +17,8 @@ Class=LaTeXView
 Document=ExtraccionDeInformacion.tex
 
 [Frame0_View0,0]
-TopLine=82
-Cursor=7256
+TopLine=0
+Cursor=559
 
 [Frame1]
 Flags=0
@@ -143,7 +143,7 @@ Class=LaTeXView
 Document=EtiquetadoresGramaticalesAutomaticos.tex
 
 [Frame7_View0,0]
-TopLine=151
+TopLine=156
 Cursor=15902
 
 [Frame8]
@@ -287,7 +287,7 @@ Class=LaTeXView
 Document=DiccionarioCobuild.tex
 
 [Frame15_View0,0]
-TopLine=257
+TopLine=262
 Cursor=16804
 
 [Frame16]
