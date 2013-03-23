@@ -4,7 +4,7 @@ Stanford Tagger es un etiquetador gramatical estocástico basado en el modelo de 
 
 Al igual que otros etiquetadores estocásticos, Stanford Tagger aprende de texto etiquetado: analiza y preserva información estadística sobre las palabras y las etiquetas asignadas. Dada una palabra $w$ y un contexto $h$\footnote{El contexto generalmente se define como una secuencia de varias palabras y etiquetas precediendo a la palabra actual} el modelo asigna una probabilidad a cada etiqueta $t$ perteneciente al conjunto de todas las etiquetas posibles $T$.
 
-Etiquetado gramatical es el proceso de asignar la secuencia de etiquetas más probables a una cadena de palabras. La idea del modelo de máxima entropía es elegir la distribución de probabilidades p que tiene la mayor entropía entre todas las distribuciones que satisfacen ciertas restricciones.
+Como vimos anteriormente, la idea del modelo de máxima entropía es elegir la distribución de probabilidades p que tiene la mayor entropía entre todas las distribuciones que satisfacen ciertas restricciones.
 
 Las restricciones obligan al modelo a comportarse de acuerdo a un conjunto de estadísticas obtenidas del corpus de entrenamiento. Estas estadísticas son expresadas como los valores esperados de funciones definidas sobre los conjuntos $h$ y las etiquetas $t$.
 

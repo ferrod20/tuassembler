@@ -9,7 +9,7 @@ Consideremos  las siguientes oraciones etiquetadas gramaticalmente:
 Does/VBZ that/DT flight/NN serve/VB dinner/NN ?/.}
 \\
 \\
-Asginar una etiqueta gramatical a una palabra no es una tarea trivial incluso en estos sencillos ejemplos. Por ejemplo, la palabra \textsl{book} es ambigüa. Es decir que tiene más de un uso posible y por lo tanto más de una etiqueta gramatical posible. Puede ser un verbo (como en \textsl{\textbf{book} that flight} o \textsl{to \textbf{book} the suspect}) o un sustantivo (como en \textsl{hand me that \textbf{book}} o \textsl{a \textbf{book} of matches}). Análogamante \textsl{that} puede ser un determinante (como en \textsl{Does \textbf{that} flight serve dinner}) o un complementador (como en \textsl{I thought \textbf{that} your flight was earlier}). 
+Asignar una etiqueta gramatical a una palabra no es una tarea trivial incluso en estos sencillos ejemplos. Por ejemplo, la palabra \textsl{book} es ambigüa. Es decir que tiene más de un uso posible y por lo tanto más de una etiqueta gramatical posible. Puede ser un verbo (como en \textsl{\textbf{book} that flight} o \textsl{to \textbf{book} the suspect}) o un sustantivo (como en \textsl{hand me that \textbf{book}} o \textsl{a \textbf{book} of matches}). Análogamante \textsl{that} puede ser un determinante (como en \textsl{Does \textbf{that} flight serve dinner}) o un complementador (como en \textsl{I thought \textbf{that} your flight was earlier}). 
 
 El problema del etiquetado gramatical reside en resolver estas ambigüedades, eligiendo la etiqueta adecuada según el contexto. 
 ¿Pero qué magnitud tiene el problema de la ambigüedad de las palabras? Podemos apreciar que la mayoría de las palabras en inglés no son ambigüas, o lo que es lo mismo, tienen una única etiqueta posible. Sin embargo, muchas de las palabras más comunes del inglés son ambigüas, es decir que las palabras más utilizadas, las que se emplean con mayor frecuencia, pueden tener más de una etiqueta. Por ejemplo \textsl{can} puede ser un auxiliar (puede), un sustantivo (lata o contenedor de metal) o un verbo (poner algo en la lata).
@@ -29,17 +29,17 @@ Los primeros algoritmos de asignación de etiquetas gramaticales estaban basados 
 
 Las versiones actuales de los etiquetadores gramaticales basados en reglas mantienen los principios originales teniendo en cuenta que los diccionarios y el conjunto de reglas han adquirido un tamaño considerablemente mayor: manejan alrededor de 3800 reglas y un diccionario de etiquetas del órden de las 56.000 entradas para el idioma inglés. 
 
-\subsection{Etiquetadores gramaticales estocásticos} 
+\subsection{Etiquetadores gramaticales de aprendizaje automático} 
 La inclusión de probabilidades en el proceso de etiquetación gramatical no es una idea nueva. Surge como una consecuencia natural a partir del hecho de que una palabra es empleada con un sentido gramatical mucho más frecuentemente que con otro. Como se mencionó anteriormente, \textsl{a} es mucho más frecuentemente utilizada como determinante que como letra. 
 
-La inclusión de probabilidades también responde a otro factor importante: la construcción gramatical; cierta etiqueta es precedida frecuentemente por ciertas otra/s. Por ejemplo, como se mencionó anteriormente, los pronombres posesivos generalmente son sucedidos por verbos. Es decir que es más probable encontrar oraciones cuyas palabras estén etiquetadas con PP sucedida por NN que PP sucedida por otra etiqueta.
+La inclusión de probabilidades también responde a otro factor importante: la construcción gramatical; cierta etiqueta es precedida frecuentemente por ciertas otra/s. Por ejemplo, como se mencionó anteriormente, los pronombres posesivos generalmente son sucedidos por sustantivos. Es decir que es más probable encontrar oraciones cuyas palabras estén etiquetadas con PRP\$ sucedida por NN que PRP\$ sucedida por otra etiqueta.
 
-A continuación  vamos a presentar 2 tipos de etiquetadores gramaticales estocásticos: etiquetadores estocásticos basados en el modelo oculto de \textsl{Markov} o simplemente etiquetadores HMM\footnote{Por las siglas en inglés de Hidden Markov Model} y etiquetadores estocásticos basados en el modelo de máxima entropía.
+A continuación  vamos a presentar 2 tipos de etiquetadores gramaticales: etiquetadores basados en el modelo oculto de \textsl{Markov} o simplemente etiquetadores HMM\footnote{Por las siglas en inglés de Hidden Markov Model} y etiquetadores basados en el modelo de máxima entropía.
 
 \subsubsection{Etiquetadores gramaticales basados en HMM}
 El uso del modelo oculto de Markov para realizar etiquetado gramatical es un caso especial de la inferencia bayesiana, un paradigma que fué conocido a partir del trabajo de Bayes (1763). La inferencia bayesiana o clasificación bayesiana fue aplicada exitosamente a problemas del lenguaje a partir de 1950.
 
-La clasificación bayesiana puede apreciarse como una tarea para la cual contamos con un conjunto de observaciones y el trabajo consiste en determinar a que conjunto de clases pertenece. En lo que respecta al etiquetado gramatical, se puede utilizar este mismo concepto para tratarlo como una tarea de clasificación de secuencia. En ese caso, la observación será una secuencia de palabras (digamos una oración) para la cual el trabajo consiste en asignar una secuencia de etiquetas gramaticales. Como ejemplo tomemos la oración que aparece a continuación:
+La clasificación bayesiana puede apreciarse como una tarea para la cual contamos con un conjunto de observaciones y el trabajo consiste en determinar a que conjunto de clases pertenece. En lo que respecta al etiquetado gramatical, se puede utilizar este mismo concepto para tratarlo como una tarea de clasificación de secuencia. En ese caso, la observación será una secuencia de palabras (digamos una oración) para la cual el trabajo reside en asignar una secuencia de etiquetas gramaticales. Como ejemplo tomemos la oración que aparece a continuación:
 \\
  \\
  \textsl{Secretariat is expected to race tomorrow}
@@ -52,14 +52,14 @@ La interpretación bayesiana comienza considerando todas las posibles secuencias 
 \begin{equation}\label{uno} \hat{t}_1^n = \operatorname*{argmax}_{t_1^n} P(t_1^n|w_1^n) \end{equation}
  La ecuación anterior se lee así: de todas las secuencias de etiquetas de longitud $n$, queremos la secuencia particular \(t_1^n\) que maximiza el lado derecho.\\
  
-Mientras que esta ecuación nos garantiza obtener la secuencia de etiquetas óptima, todavía no queda del todo claro como utilizarla. Es decir, para una secuencia de etiquetas dada \(t_1^n\) y una secuencia de palabras \(w_1^n\), no sabemos como computar directamente \(P(t_1^n|w_1^n)\).
+Mientras que esta ecuación nos garantiza obtener la secuencia de etiquetas óptima, todavía no queda del todo claro como utilizarla. Es decir, para una secuencia de etiquetas dada \(t_1^n\) y una secuencia de palabras \(w_1^n\), no sabemos cómo computar directamente \(P(t_1^n|w_1^n)\).
  Aquí entra en juego la clasificación Bayesiana, ofreciendo una forma de transformar la ecuación en un conjunto de otras probabilidades más sencillas de computar. Las reglas de Bayes reemplazan la probabilidad condicional \(P(x|y)\) por otras tres probabilidades:
 \begin{equation}\label{dos}P(x|y) \;=\;\frac{P(y|x)P(x)}{P(y)}\end{equation}
  Podemos sustituir  \eqref{dos} en \eqref{uno} para obtener \eqref{tres}: 
  \begin{equation}\label{tres} \hat{t}_1^n = \operatorname*{argmax}_{t_1^n} \frac{P(w_1^n|t_1^n)P(t_1^n)}{P(w_1^n)} \end{equation}
  Convenientemente podemos simplificar (3) eliminando el denominador $P(w_1^n)$. Esto sucede ya que estamos eligiendo una de todas las secuencias de etiquetas, computando $\frac{P(w_1^n|t_1^n)P(t_1^n)}{P(w_1^n)}$ en cada una de ellas. Pero $P(w_1^n)$ no cambia en ninguna secuencia de etiquetas, entonces estamos preguntando siempre por la misma observación $w_1^n$, que tiene la misma probabilidad $P(w_1^n)$. Por lo tanto podemos quitar el denominador con la garantía de que el máximo sea el mismo:
  \begin{equation*} \hat{t}_1^n = \operatorname*{argmax}_{t_1^n} P(w_1^n|t_1^n)P(t_1^n) \end{equation*}
-En resúmen, la secuencia de etiquetas más probable $\hat{t}_1^n$ dada alguna palabra $w_1^n$ puede ser computada tomando el producto de dos probabilidades para cada secuencia de etiquetas y eligiendo la secuencia que lo maximiza. 
+En resumen, la secuencia de etiquetas más probable $\hat{t}_1^n$ dada alguna palabra $w_1^n$ puede ser computada tomando el producto de dos probabilidades para cada secuencia de etiquetas y eligiendo la secuencia que lo maximiza. 
   
   Desafortunadamente todavía sigue siendo muy difícil computar esta ecuación directamente. Los etiquetadores gramaticales basados en HMM realizan dos suposiciones simplificadoras. La primera es que la probabilidad de aparición de una palabra depende solo de su etiqueta gramatical, es decir que es independiente de las palabras y etiquetas que tiene alrededor. Más técnicamente:
  \begin{equation*}\label{uno2} P(w_1^n|t_1^n)\approx\prod_{i=1}^nP(w_i|t_i) \end{equation*}
@@ -74,7 +74,7 @@ La segunda suposición es que la probabilidad de aparición de una etiqueta gramat
 	\item \textbf{Probabilidades de transición de etiquetas}: Las probabilidades de transición de etiquetas, $P(t_i|t_{i-1})$, representan la probabilidad de que ocurra una etiqueta dada la etiqueta previa. Por ejemplo, es muy probable que un determinantes preceda a un adjetivos o a un sustantivo, como \textsl{that/DD flight/NN y the/DT yellow/JJ hat/NN}. Por lo tanto esperamos que las probabilidades $P(NN|DT)$ y $P(JJ|DT)$ sean altas. 
  
  Por otro lado, es infrecuente que los adjetivos precedan a los determinantes, entonces la probabilidad $P(DT|JJ)$ será pequeña.
-Podemos computar la máxima probabilidad estimada o MLE\footnote{Por sus siglas en inglés Maximum Likelihood Estimated} de una probabilidad de transición de etiquetas $P(NN|DT)$ etiquetando y contando las etiquetas gramaticales en un corpus. Esto es: de todas las veces que vemos DT, cuántas de esas veces vemos NN después de DT. Lo expresamos más formalmente con el siguiente cociente:
+Podemos computar el estimador de máxima verosimilitud o MLE\footnote{Por sus siglas en inglés Maximum Likelihood Estimated} de una probabilidad de transición de etiquetas $P(NN|DT)$ etiquetando y contando las etiquetas gramaticales en un corpus. Esto es: de todas las veces que vemos DT, cuántas de esas veces vemos NN después de DT. Lo expresamos más formalmente con el siguiente cociente:
  
 \begin{equation*}P(t_i|t_{i-1})=\frac{C(t_{i-1},t_i)}{C(t_i)}\end{equation*}
  
@@ -82,7 +82,7 @@ Podemos computar la máxima probabilidad estimada o MLE\footnote{Por sus siglas e
  
 En el corpus Brown etiquetado con el conjunto de etiquetas Treebank, la etiqueta DT ocurre 116.454 veces. De esas veces, DT es seguido por NN 56.509 veces. Por lo tanto esta probabilidad de transición se calcula como sigue:
 
-\begin{equation*}P(NN|DT)=\frac{C(DT,NN)}{C(DT)}=\frac{56509}{116454}=.49\end{equation*}
+\begin{equation*}P(NN|DT)=\frac{C(DT,NN)}{C(DT)}=\frac{56509}{116454}=0.49\end{equation*}
  
  Claramente la probabilidad de obtener un sustantivo común después de un determinante es .49 y de hecho alta como sospechábamos.
 	\item \textbf{Probabilidades de la palabra}: Por otro lado las probabilidades de la palabra, $P(w_i|t_i)$, representan la probabilidad de que dada una etiqueta esta esté asociada con cierta palabra. Por ejemplo si tenemos la etiqueta VBZ (verbo singular de tiempo presente en tercera persona) y quisiéramos adivinar el verbo asociado a esa etiqueta, probablemente elegiríamos el verbo \textsl{is}\footnote{\textsl{is} es el presente en tercera persona del verbo \textsl{to be}}, debido a que el verbo \textsl{to be} es muy común en inglés.
@@ -90,7 +90,7 @@ En el corpus Brown etiquetado con el conjunto de etiquetas Treebank, la etiqueta
 Podemos computar $P(is|VBZ)$ de nuevo contando de cuántas veces que vemos VBZ en un corpus cuántas de esas veces VBZ está etiquetando la palabra \textsl{is}. Esto es computar el siguiente cociente:
 \begin{equation*}P(w_i|t_i)=\frac{C(t_i,w_i)}{C(t_i)}\end{equation*}
  En el corpus Brown etiquetado con Treebank, la etiqueta VBZ ocurre 21.627 veces y VBZ es la etiquetra para \textsl{is} 10.073 veces. Entonces:
-\begin{equation*}P(is|VBZ)=\frac{C(VBZ,is)}{C(VBZ)}=\frac{10.073}{21.627}=0	.47\end{equation*}
+\begin{equation*}P(is|VBZ)=\frac{C(VBZ,is)}{C(VBZ)}=\frac{10.073}{21.627}=0.47\end{equation*}
 \end{itemize}
  
  Resumiendo, el etiquetado HMM es la tarea de elegir con la mayor probabilidad una secuencia de etiquetas para una secuencia de palabras dada. HMM incluye la suposición de ciertos hechos para simplificar las ecuaciones originales mejorando así la eficiencia de los cómputos.
@@ -103,11 +103,11 @@ Dicho de otra manera, dada una sucesión de palabras que se quieren etiquetar con
 
 Por ejemplo, una distribución de etiquetas poco uniforme sería asignar a todas las palabras la etiqueta NN, por lo que esta distribución de etiquetas se consideraría poco probable bajo un modelo de máxima entropía.
 
-La idea es encontrar la distribución de probabilidades de emisión de etiquetas que mejor modele la sucesión de palabras de entrada.
+La idea es encontrar la distribución de probabilidades de etiquetas que mejor modele la sucesión de palabras de entrada.
 Para lograr este objetivo, lo primero es entrenar el modelo. En este caso, al
-igual que en anteriores ocasiones, el entrenamiento viene dado por la observación de un determinado número de ejemplos de palabras y etiquetas asociadas, calculando la distribución de probabilidad de los mismos. Es decir, la frecuencia de ocurrencia de los pares [palabra, etiqueta]:
+igual que en anteriores ocasiones, el entrenamiento consiste en la observación de palabras y etiquetas asociadas. Para cada par de palabra y etiqueta [$w$, $t$] observado, se calcula:
 
-\begin{equation*}p(w, t) = \frac{1}{n} \times OcurrenciasDe(w, t)\end{equation*}
+\begin{equation*}p(w, t) = \frac{OcurrenciasDe(w, t)}{OcurrenciasDe(w)} \end{equation*}
 
 Además de estas estadísticas, también se pueden considerar diferentes características que no tienen referencia a la frecuencia de ocurrencia de las palabras, sino a aspectos dependientes del contexto de la palabra; que la palabra esté o no en mayúscula, o que sea principio de frase, etc. En general se pueden definir ciertos aspectos siempre y cuando se puedan expresar como una función binaria:
 
