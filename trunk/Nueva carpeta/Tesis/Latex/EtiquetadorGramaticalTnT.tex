@@ -1,5 +1,5 @@
 \section{Etiquetador Gramatical TnT} 
-TnT(Trigrams' n' Tags) es un etiquetador gramatical estocástico basado en HMM. Según Brants este etiquetador tiene un rendimiento mejor o igual a otros etiquetadores actuales de diferentes bases teóricas, incluyendo etiquetadores basados en máxima entropía.
+TnT(Trigrams' n' Tags) es un etiquetador gramatical estocástico basado en HMM. Según Brants este etiquetador tiene un rendimiento mejor o igual a otros etiquetadores de diferentes bases teóricas, incluyendo etiquetadores basados en máxima entropía.
 
 \subsection{Modelo teórico}
 
@@ -31,7 +31,7 @@ TnT utiliza interpolación lineal de unigramas, bigramas y trigramas para realiza
 P(t_3|t_1,t_2)=\lambda_1\hat{P}(t_3)+\lambda_2\hat{P}(t_3|t_2)+\lambda_3\hat{P}(t_3|t_1,t_2)
 \end{equation*}
 
-\noindent donde $\hat{P}$ son los estimadoes de máxima verosimilitud presentados anteriormente y $\lambda_1$, $\lambda_2$ y $\lambda_3$ son los pesos asociados a estos estimadores, tales que $\lambda_1 + \lambda_2 + \lambda_3 = 1$.
+\noindent donde $\hat{P}$ son los estimadores de máxima verosimilitud presentados anteriormente y $\lambda_1$, $\lambda_2$ y $\lambda_3$ son los pesos asociados a estos estimadores, tales que $\lambda_1 + \lambda_2 + \lambda_3 = 1$.
 TnT utiliza interpolación lineal con independencia de contexto. Es decir que $\lambda_1, \lambda_2$ y $\lambda_3$ tienen el mismo valor para todos los trigramas, o lo que es lo mismo, $\lambda_1, \lambda_2$ y $\lambda_3$ son independientes del trigrama que se está calculando. 
 Los valores $\lambda_1, \lambda_2$ y $\lambda_3$ son estimados por interpolación de borrado. La idea es que se dará mayor peso a la información de unigrama, bigrama o trigrama más abundante. A continuación se presenta el algoritmo utilizado para realizar esta tarea
 
