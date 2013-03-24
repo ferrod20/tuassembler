@@ -1,10 +1,23 @@
 \section{Diccionario Cobuild} 
-Como se menciona anteriormente, para suplir la falta de corpus de entrenamiento sin caer en la tediosa y costosa tarea de anotar un nuevo corpus, se introduce una fuente de información existente y manualmente anotada. Estamos hablando de un diccionario, que no es ni más ni menos que un conjunto de palabras, donde cada palabra representa una entrada que posee una explicación de su significado, algunas características como su pronunciación y clase gramatical y uno o más ejemplos que muestran su uso. Entonces si pegamos o concatenamos todas esas entradas podemos ver al diccionario como un grupo de palabras con información gramatical para aquellas palabras asociadas a una entrada. Es decir, estas entradas del diccionario:
+Como se mencionó anteriormente, utilizaremos el diccionario Cobuild para generar una nuevo corpus de entrenamiento. Cobuild es una fuente de información que contiene un conjunto de entradas. Cada entrada está asociada a una palabra; posee una explicación de su significado, algunas características como su pronunciación y clase gramatical y uno o más ejemplos que muestran su uso. 
+Para cada uno de los ejemplos de una entrada, Cobuild posee información gramatical sobre la palabra definida. Con esta información alcanza para construir un corpus parcialmente anotado. El proceso consiste en pegar o concatenar las palabras de los ejemplos y asignar la etiqueta gramatical correspondiente a la información gramatical que Coubild posee para la palabra asociada. Por ejemplo, en la siguiente entrada Cobuild asigna la información gramatical \textsl{countable noun} para la primer aparición de la palabra (la definición) \textsl{siren} y \textsl{noun} para la segunda (el ejemplo).
 
 \begin{verbatim}
 siren
 sirens
-s*a*!i*%er%e0n    
+s*a*!i*\%er\%e0n    
+A woman is described as a siren when she is attractive and dangerous to men.
+One of the women, another of those sirens, haughtily regarded us as we talked.
+countable noun
+noun                                
+\end{verbatim}
+
+Entonces, para estas entradas del diccionario:
+
+\begin{verbatim}
+siren
+sirens
+s*a*!i*\%er\%e0n    
 A woman is described as a siren when she is attractive and dangerous to men.
 One of the women, another of those sirens, haughtily regarded us as we talked.
 countable noun
@@ -12,9 +25,9 @@ noun
 
 sirloin
 sirloins
-s*$e*:l!o!in    
+s*\$e*:l!o!in    
 A sirloin is a piece of beef which is cut from the lower part of a cows back.
-...a sirloin of Scotch beef.
+... a sirloin of Scotch beef.
 mass noun
 noun                                                             
 
@@ -22,149 +35,37 @@ sissy
 sissies
 s*!isi1    
 A boy is described as a sissy, especially by other boys, if he does not like sport and is afraid to do things that are slightly dangerous.
-Youre a lot of cry-babies and sissies... ...Mummys little sissy boy.
+Youre a lot of cry-babies and sissies ... ... Mummys little sissy boy.
 countable noun: also vocative
 noun
 \end{verbatim}
 
-Pueden concatenarse y verse como:
+Se pueden concatenar sus ejemplos, traducir la información gramatical en etiquetas Penn Tree Bank y verse como:
 
-\begin{multicols}{2}
-\noindent A												\\
-woman                 	\\
-is                    	\\
-described             	\\
-as                    	\\
-a                     	\\
-siren	NN              	\\
-when                  	\\
-she                   	\\
-is                    	\\
-attractive            	\\
-and                   	\\
-dangerous             	\\
-to                    	\\
-men                   	\\
-.                     	\\
-One                   	\\
-of                    	\\
-the                   	\\
-women                 	\\
-,                     	\\
-another               	\\
-of                    	\\
-those                 	\\
-sirens	NNS           	\\
-,                     	\\
-haughtily             	\\
-regarded              	\\
-us                    	\\
-as                    	\\
-we                    	\\
-talked                	\\
-.                     	\\
-A                     	\\
-sirloin	NN            	\\
-is                    	\\
-a                     	\\
-piece                 	\\
-of                    	\\
-beef                  	\\
-which                 	\\
-is                    	\\
-cut                   	\\
-from                  	\\
-the                   	\\
-lower                 	\\
-part                  	\\
-of                    	\\
-a                     	\\
-cows                  	\\
-back                  	\\
-.                     	\\
-...                   	\\
-a                     	\\
-sirloin	NN            	\\
-of                    	\\
-Scotch                	\\
-beef                  	\\
-.                     	\\
-Long                  	\\
-fibres                	\\
-are                   	\\
-picked                	\\
-carefully             	\\
-from                  	\\
-the                   	\\
-sisal	NN              	\\
-leaves                	\\
-.                     	\\
-A                     	\\
-boy                   	\\
-is                    	\\
-described             	\\
-as                    	\\
-a                     	\\
-sissy	NN              	\\
-,                     	\\
-especially            	\\
-by                    	\\
-other                 	\\
-boys                  	\\
-,                     	\\
-if                    	\\
-he                    	\\
-does                  	\\
-not                   	\\
-like                  	\\
-sport                 	\\
-and                   	\\
-is                    	\\
-afraid                	\\
-to                    	\\
-do                    	\\
-things                	\\
-that                  	\\
-are                   	\\
-slightly              	\\
-dangerous             	\\
-.                     	\\
-Youre                 	\\
-a                     	\\
-lot                   	\\
-of                    	\\
-cry-babies            	\\
-and                   	\\
-sissies	NNS           	\\
-...                   	\\
-...                   	\\
-Mummys                	\\
-little                	\\
-sissy	NN              	\\
-boy                   	\\
-.                     	\\
-\end{multicols}
-
+\begin{verbatim}
+A woman is described as a siren/NN when she is attractive and dangerous to men. 
+One of the women, another of those sirens/NNS, haughtily regarded us as we talked. 
+A sirloin/NN is a piece of beef which is cut from the lower part of a cows back. 
+... a sirloin/NN of Scotch beef. 
+A boy is described as a sissy/NN, especially by other boys, if he does not like sport and is afraid to do things that are slightly dangerous. 
+Youre a lot of cry-babies and sissies/NNS ...
+... Mummys little sissy/NN boy.
+\end{verbatim}
 
 Esta última información conforma un corpus parcialmente anotado, es decir, un conjunto de oraciones donde alguna/s de las palabras que comprenden cada oración posee/n una etiqueta gramatical. Este corpus parcialmente anotado se utilizará como base para construir un nuevo corpus completamente anotado que servirá como una nueva fuente de información para entrenar etiquetadores gramaticales.
 
 Claramente el primer paso para llevar a cabo esta tarea es elegir un diccionario y extraer la información mencionada anteriormente. El diccionario elegido fué Cobuild. A continuación se detallan las características que lo hicieron distintivo frente a otros diccionarios.
 
 \subsection{Características} 
-Cobuild es un diccionario basado en la información del corpus \textsl{Bank of English} y el corpus \textsl{Collins}. Su siglas significan: \textsl{Collins Birmingham University International Language Database}. 
+Cobuild es un diccionario basado en la información del corpus \textsl{Bank of English}. Su siglas significan: \textsl{Collins Birmingham University International Language Database}. 
 
-El corpus \textsl{Collins} es una base de datos con alrededor de 2.5 billones de palabras en inglés. Contiene material escrito de websites, diarios, revistas y libros publicados en todo el mundo, y material hablado de radio, TV y conversaciones diarias. 
+El corpus \textsl{Bank of English} contiene 650 millones de palabras cuidadosamente seleccionadas del corpus \textsl{Collins}\footnote{El corpus Collins está compuesto por alrededor de 2.5 billones de palabras en inglés seleccionadas de websites, diarios, revistas, libros, material hablado de radio, TV y conversaciones diarias} para dar reflejo preciso y balanceado del inglés que se usa día a día. 
 
-A su vez el \textsl{Bank of English} forma parte del corpus \textsl{Collins}. Contiene 650 millones de palabras cuidadosamente seleccionadas para dar reflejo preciso y balanceado del inglés que se usa día a día. 
+Cobuild fué concebido teniendo especial atención en los ejemplos expuestos. Cada palabra incluída en el diccionario fué elegida utilizando información sobre la frecuencia de ocurrencia de la misma.
 
-El corpus y el software que se utilizó para analizarlo ayudó al equipo de Cobuild a ordenar la información y ganar percepción sobre la manera en que se utilizan las palabras: sus significados, sus patrones gramaticales típicos y las maneras en que están relacionadas con otras palabras.
+Todos los ejemplos expuestos muestran patrones gramaticales, vocabulario y contextos típicos para cada palabra. En consecuencia Cobuild presenta una cantidad exhaustiva del vocabulario inglés derivado de observaciones directas del lenguaje.
 
-El diccionario Cobuild fué concebido teniendo especial atención en los ejemplos expuestos. El proceso de agregado de palabras fué muy cuidadoso. Cada palabra incluída en el diccionario fué elegida utilizando información sobre la frecuencia de ocurrencia de la misma. Por ejemplo, alrededor del 90\% del inglés hablado y escrito está constituído por aproximadamente 3.500 palabras.
-
-Todos los ejemplos del diccionario Cobuild muestran patrones gramaticales típicos, vocabulario típico y contextos típicos para cada palabra. En consecuencia, Cobuild presenta una cantidad exhaustiva del vocabulario inglés derivado de observaciones directas del lenguaje.
-
-\subsection{Método de construcción} 
-En 1987 se publicó el diccionario Cobuild basado en un corpus de 20 millones de palabras. A continuación se construyó un nuevo corpus, el \textsl{Bank of English} con alrededor de 650 millones de palabras. La nueva edición del diccionario Cobuild se basa en este nuevo corpus. La construcción de Cobuild fué un proceso en donde se decidió que palabras y frases presentes en el corpus incluir. Luego se examinó el lenguaje palabra por palabra y frase por frase con el objetivo de dar clara cuenta de cada significado y uso. Entonces para cada entrada se escribió la definición, se eligieron ejemplos típicos, y se agregó información sobre la pronunciación, la gramática, semántica, pragmatismos y frecuencia.
+Cada entrada posee una definición, ejemplos típicos de uso e información sobre la gramática, semántica y pronunciación. Particularmente los ejemplos y la información gramatical asociada a la palabra definida son de particular interés para este trabajo y conforman la información de base que se utilizará para confeccionar un nuevo corpus. 
 
 \subsection{Evidencia} 
 Un diccionario debe comenzar por la evidencia, los hechos. Los hablantes de un lenguaje conocen mucho sobre éste porque cada día leen y hablan sin esfuerzo durante horas. Sin embargo no son capaces de explicar exactamente que es lo que hacen. La mayoría de las personas no son conscientes de la habilidad que poseen para utilizar un lenguaje; no pueden examinarlo en detalle, simplemente lo utilizan para comunicarse. Aquellos que aprenden a observar el lenguaje cuidadosamente pueden expresar y organizar algunos de los hechos sobre éste basados en la experiencia. De todas maneras hay muchos hechos sobre el lenguaje que no pueden ser descubiertos simplemente pensando y reflexionando sobre él, incluso leyendo y escuchando muy atentamente. Es por eso que Cobuild empleó las computadoras para identificar estos hechos.
