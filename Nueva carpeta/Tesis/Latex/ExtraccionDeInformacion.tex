@@ -98,3 +98,28 @@ Con el objetivo de identificar las formas derivadas de una palabra se desarrolla
 \end{algorithm}
 
 Aplicando algoritmos de extracción y el algoritmo de reconocimiento de formas derivadas explicado anteriormente se obtiene un nuevo corpus parcialemente anotado a partir del diccionario Cobuild. A continuación este corpus será procesado y utilizado como corpus de entrenamiento.
+
+\subsection{Preprocesamiento} 
+Se tomó el archivo cobuild en bruto, se hizo un primer preprocesado elminando caracteres no ascii para que puediera ser legible.
+Luego se separó cada entrada y se procesó individualmente identificando el/los ejemplos de cada entrada, la palabra que se está definiendo y su etiqueta asociada.
+También se tuvieron en cuenta palabras derivadas y cuando fué posible (cuando no hubo ambiguedad) se infirieron etiquetas para las mismas.
+Luego se tradujeron las etiquetas de Cobuild a Penn Tree Bank, para esto se utilizó un diccionario construído a doc. No fué posible incluir todas las etiquetas Cobuild, ya que no se conoce el formato concreto de las mismas ni pertenecen a ningún conjunto de etiquetas documentado. Sin embargo se realizó un análisis para contar las etiquetas Cobuild que más se repetían y en base a esas etiquetas se construyó la traducción.
+También cabe aclarar que las etiquetas Cobuild son muy ricas sintácticamente y un poco de esa información se perdió en la traducción ya que las etiquetas Penn Tree Bank carecen de ese nivel de detalle.
+Una vez realizado este proceso, verificamos que el etiquetado haya sido correcto. 
+Se realizó una rutina que etiquetara automáticamente todos los ejemplos de Cobuild (se utilizó el etiquetador TnT) y se comparó el resultado contra las etiquetas asignadas (se generó una matriz de confusión). El resultado fué de 71\% de aciertos. Se analizaron las etiquetas que diferían con mayor frecuencia, y en algunos casos se analizaron palabras particulares donde las etiquetas no coincidían. Se corrigieron las traducciones y se ajustaron los algoritmos del proceso de extracción y traducción de etiqueteas hasta alcanzar un grado de errores mínimo. Los máximos focos de error que no se pudieron corregir se deben a palabras etiquetadas con VBD cuando son VBN y viceversa. Estas etiquetas son dificilmente desmbiguables automaticamente.
+
+Una vez obtenidos los ejemplos con las etiquetas traducidas a Penn Tree Bank, se realiza un nuevo proceso para obtener precisión gramatical perdida en la traducción
+
+Para eso se comparan las etiquetas asignadas contra las etiquetas asignadas automáticamente por TnT. En caso de coincidir y en caso de que la etiqueta TnT aporte  mayor precisión, se asigna esta última. Se utilizó el siguiente algoritmo:\\\\
+
+Si se obtuvo de Cobuild NN 	pero TnT asigno NNS, NNP o NNPS,  asignar tag TnT\\
+Si se obtuvo de Cobuild NNS pero TnT asigno NNPS, asignar NNPS\\
+Si se obtuvo de Cobuild VB  pero TnT asigno VBN, VBD, VBZ, VBP, VBG  asignar tag TnT\\
+Si se obtuvo de Cobuild JJ  pero TnT asigno JJR o JJS  asignar tag TnT\\
+Si se obtuvo de Cobuild RB  pero TnT asigno RBR o RBS  asignar tag TnT\\
+Si se obtuvo de Cobuild WP  pero TnT asigno WP\$  asignar tag TnT \\
+Si se obtuvo de Cobuild PRP  pero TnT asigno PRP\$  asignar tag TnT \\
+\\\\
+
+Luego de este proceso, el análisis de comparación contra las etiquetas asignadas por TnT dió un 86\% de aciertos.
+

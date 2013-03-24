@@ -262,6 +262,9 @@ namespace ConsoleApplication1
         {"adjective", "JJ"}, //ver como clasificar JJR y JJS
         {"classifying adjective", "JJ"}, 
         {"qualitative adjective", "JJ"}, 
+        {"classifying adjective: attributive", "JJ"}, 
+        {"classifying adjective: ussually attributive", "JJ"}, 
+        {"qualitative adjective: attributive", "JJ"}, 
         {"adjective colour", "JJ"}, 
         {"ordinal", "JJ"}, 
         {"adjective after noun", "JJ"}, 
@@ -273,6 +276,13 @@ namespace ConsoleApplication1
         {"noun singular", "NN"}, 
         {"countable or uncountable noun", "NN"}, 
         {"countable noun with supporter", "NN"}, 
+        {"countable noun: ussually singular", "NN"}, 
+        {"countable noun: if + preposition then of", "NN"}, 
+        {"countable noun: ussually plural", "NNS"}, 
+        {"noun plural: the + noun", "NNS"}, 
+        {"countable noun: usually with supporter", "NN"}, 
+        {"noun singular: a + noun", "NN"}, 
+        {"noun singular: the + noun", "NN"}, 
         {"uncountable or countable noun", "NN"}, 
         {"noun singular with determiner", "NN"}, 
         {"mass noun", "NN"}, 
@@ -321,6 +331,7 @@ namespace ConsoleApplication1
         {"verb or verb + object", "VB"}, 
         {"ergative verb", "VB"}, 
         {"verb + adjunct", "VB"}, 
+        {"verb: usually + adjunct", "VB"}, 
         {"verb + object + adjunct", "VB"}, 
         {"verb + object (noun group or reflexive)", "VB"}, 
         {"verb + object or reporting clause", "VB"}, 
@@ -378,8 +389,14 @@ namespace ConsoleApplication1
 
             info.WriteLine();
             info.WriteLine();
+
+            var etiquetasOrdenadas = infoEtiquetasCobuild.OrderByDescending(infoEtiqueta => infoEtiqueta.Value);
+            foreach (var etiqueta in etiquetasOrdenadas.Take(200))
+                if (string.IsNullOrEmpty(ObtenerEtiquetaPennTreebank(etiqueta.Key)))
+                    info.WriteLine(etiqueta.Key + "\t\t" + etiqueta.Value);   
             info.Close();
         }
+
         private static void ExtraerLaInformaciónDeCobuild(string texto, TextWriter tw)
         {
             var indice = 0;
@@ -393,6 +410,8 @@ namespace ConsoleApplication1
                 if (!string.IsNullOrEmpty(informaciónExtraída.Trim()))
                     tw.Write(informaciónExtraída);
             }
+
+                   
         }
         /// <summary>
         /// Obtiene la entrada de COBUILD a partir del indice pasado por parametro
@@ -415,6 +434,8 @@ namespace ConsoleApplication1
             return salida;
         }
 
+        static Dictionary<string, int> infoEtiquetasCobuild = new Dictionary<string, int>();
+        
         /// <summary>
         /// Dada una entrada de Cobuild, extrae la información almacenada (palabras y tags)
         /// </summary>
@@ -440,6 +461,12 @@ namespace ConsoleApplication1
 
                     if (EsEjemploODefinición(línea, palabras))
                     {
+                        var etiquetaCobuild = líneas[i+1].Trim();
+                        if (infoEtiquetasCobuild.ContainsKey(etiquetaCobuild))
+                            infoEtiquetasCobuild[etiquetaCobuild]++;
+                        else
+                            infoEtiquetasCobuild[etiquetaCobuild] = 0;
+
                         var etiquetaPennTreebank = ObtenerEtiquetaPennTreebank(líneas, i + 1);//Busca en las próximas líneas la etiqueta Cobuild para la entrada. Es decir, una ejemplo que esté en la tabla de traducción de etiquetas. Luego traduce esa etiqueta Cobuild en la etiqueta Penn Treebak correspondiente.
                         if (!string.IsNullOrEmpty(etiquetaPennTreebank))
                         {
@@ -629,6 +656,15 @@ namespace ConsoleApplication1
                 etiquetaPennTreebank = tablaDeTraducciónDeEtiquetas[posibleEtiquetaCobuild];
             else if (posiblesEtiquetasPennTreebank.Any())
                 etiquetaPennTreebank = posiblesEtiquetasPennTreebank.First().Value;
+            else if (posibleEtiquetaCobuild.StartsWith("countable noun") || posibleEtiquetaCobuild.StartsWith("uncountable noun"))
+                etiquetaPennTreebank = "NN";
+            else if (posibleEtiquetaCobuild.StartsWith("verb"))
+                etiquetaPennTreebank = "VB";
+            else if (posibleEtiquetaCobuild.StartsWith("qualitative adjective"))
+                etiquetaPennTreebank = "JJ";
+            else if (posibleEtiquetaCobuild.StartsWith("classifying adjective"))
+                etiquetaPennTreebank = "JJ";
+
 
             return etiquetaPennTreebank;
         }
