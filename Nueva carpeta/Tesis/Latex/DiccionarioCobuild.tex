@@ -1,18 +1,41 @@
 \section{Diccionario Cobuild} 
-Como se mencionó anteriormente, utilizaremos el diccionario Cobuild para generar una nuevo corpus de entrenamiento. Cobuild es una fuente de información que contiene un conjunto de entradas. Cada entrada está asociada a una palabra; posee una explicación de su significado, algunas características como su pronunciación y clase gramatical y uno o más ejemplos que muestran su uso. 
-Para cada uno de los ejemplos de una entrada, Cobuild posee información gramatical sobre la palabra definida. Con esta información alcanza para construir un corpus parcialmente anotado. El proceso consiste en pegar o concatenar las palabras de los ejemplos y asignar la etiqueta gramatical correspondiente a la información gramatical que Coubild posee para la palabra asociada. Por ejemplo, en la siguiente entrada Cobuild asigna la información gramatical \textsl{countable noun} para la primer aparición de la palabra (la definición) \textsl{siren} y \textsl{noun} para la segunda (el ejemplo).
+Como se mencionó anteriormente, utilizaremos el diccionario Cobuild para generar una nuevo corpus de entrenamiento. Cobuild es una fuente de información que contiene un conjunto de entradas. Cada entrada está asociada a una palabra; posee una explicación de su significado, algunas características como su pronunciación y clase gramatical, uno o más ejemplos que muestran su uso y en algunos casos sinónimos. A continuación se muestra un ejemplo de una entrada para la palabra \textsl{acid}.\\
 
-\begin{verbatim}
-siren
-sirens
-s*a*!i*\%er\%e0n    
-A woman is described as a siren when she is attractive and dangerous to men.
-One of the women, another of those sirens, haughtily regarded us as we talked.
-countable noun
-noun                                
-\end{verbatim}
+\noindent{\footnotesize \verb#DICTIONARY_ENTRY# \\
+\verb#acid#  $\longrightarrow$ {\footnotesize \textsl{palabra}}\\
+\verb#acids# $\longrightarrow$ {\footnotesize \textsl{formas flexionadas}}\\
+\verb#*!as!id# $\longrightarrow$ {\footnotesize \textsl{pronunciación}}\\
+\verb#An acid fruit or drink has a sour or sharp taste.# $\longrightarrow$ {\footnotesize \textsl{definición}}\\
+\verb#These oranges are very acid.# $\longrightarrow$ {\footnotesize \textsl{ejemplo}}\\
+\verb#qualitative adjective# $\longrightarrow$ {\footnotesize \textsl{etiqueta específica}}\\
+\verb#adjective# $\longrightarrow$ {\footnotesize \textsl{etiqueta general}}}\\ 
 
-Entonces, para estas entradas del diccionario:
+Podemos apreciar que en esta entrada Cobuild asigna la etiqueta \textsl{qualitative adjective} a la palabra \textsl{acid} que aparece en el ejemplo. 
+Notemos que también aparece la etiqueta \textsl{adjective}: \textsl{qualitative adjective} es una etiqueta específica que brinda mayor información gramatical y sintáctica y \textsl{adjective} es una etiqueta general. Cada etiqueta general posee muchas etiquetas específicas.
+
+Veamos ejemplos para la etiqueta general \textsl{adjective}:
+\\\\
+\noindent Palabra: \textsl{abdominal}\\
+Ejemplo: \textsl{They suffered abdominal pains.}\\
+Etiqueta específica: \textsl{\textbf{classifying adjective: usually attributive}}\\
+Etiqueta general: \textsl{\textbf{adjective}}\\
+\\
+\noindent Palabra: \textsl{accessible}\\
+Ejemplo: \textsl{...computers cheap enough to be accessible to virtually everyone.}\\
+Etiqueta específica: \textsl{\textbf{qualitative adjective: predicative + to}}\\
+Etiqueta general: \textsl{\textbf{adjective}}\\
+\\
+\noindent Palabra: \textsl{acid}\\
+Ejemplo: \textsl{These oranges are very acid.}\\
+Etiqueta específica: \textsl{\textbf{qualitative adjective}}\\
+Etiqueta general: \textsl{\textbf{adjective}}\\
+\\
+\noindent Palabra: \textsl{abbreviated}\\
+Ejemplo: \textsl{Her lecture was an abbreviated version of a talk she had given the previous year.}\\
+Etiqueta específica: \textsl{\textbf{classifying adjective}}\\
+Etiqueta general: \textsl{\textbf{adjective}}\\
+
+Como vimos hasta ahora, para cada uno de los ejemplos de una entrada Cobuild posee información gramatical sobre la palabra definida. Con esta información alcanza para construir un corpus parcialmente anotado. El proceso consiste en pegar o concatenar las palabras de los ejemplos y asignar la etiqueta de Coubild para la palabra asociada. Entonces, para estas entradas del diccionario:
 
 \begin{verbatim}
 siren

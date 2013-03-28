@@ -391,7 +391,7 @@ namespace ConsoleApplication1
             info.WriteLine();
 
             var etiquetasOrdenadas = infoEtiquetasCobuild.OrderByDescending(infoEtiqueta => infoEtiqueta.Value);
-            foreach (var etiqueta in etiquetasOrdenadas.Take(200))
+            foreach (var etiqueta in etiquetasOrdenadas)
                 if (string.IsNullOrEmpty(ObtenerEtiquetaPennTreebank(etiqueta.Key)))
                     info.WriteLine(etiqueta.Key + "\t\t" + etiqueta.Value);   
             info.Close();
@@ -460,14 +460,18 @@ namespace ConsoleApplication1
                     var línea = líneas[i].Trim();
 
                     if (EsEjemploODefinición(línea, palabras))
-                    {
-                        var etiquetaCobuild = líneas[i+1].Trim();
-                        if (infoEtiquetasCobuild.ContainsKey(etiquetaCobuild))
-                            infoEtiquetasCobuild[etiquetaCobuild]++;
-                        else
-                            infoEtiquetasCobuild[etiquetaCobuild] = 0;
-
+                    {                        
                         var etiquetaPennTreebank = ObtenerEtiquetaPennTreebank(líneas, i + 1);//Busca en las próximas líneas la etiqueta Cobuild para la entrada. Es decir, una ejemplo que esté en la tabla de traducción de etiquetas. Luego traduce esa etiqueta Cobuild en la etiqueta Penn Treebak correspondiente.
+
+                        for (var j = i+1; j < líneas.Length && etiquetaPennTreebank == null; j++)
+                        {
+                            var etiquetaCobuild = líneas[j].Trim();
+                            if (infoEtiquetasCobuild.ContainsKey(etiquetaCobuild))
+                                infoEtiquetasCobuild[etiquetaCobuild]++;
+                            else
+                                infoEtiquetasCobuild[etiquetaCobuild] = 1;
+                        }
+
                         if (!string.IsNullOrEmpty(etiquetaPennTreebank))
                         {
                             var etiquetasObtenidas = InferirEtiquetasParaLasFormasDeLaPalabra(formasDeLaPalabra, palabra, etiquetaPennTreebank);
@@ -664,6 +668,12 @@ namespace ConsoleApplication1
                 etiquetaPennTreebank = "JJ";
             else if (posibleEtiquetaCobuild.StartsWith("classifying adjective"))
                 etiquetaPennTreebank = "JJ";
+
+            //if (etiquetaPennTreebank != null && posibleEtiquetaCobuild.Length <= 70)
+            //    if (infoEtiquetasCobuild.ContainsKey(posibleEtiquetaCobuild))
+            //        infoEtiquetasCobuild[posibleEtiquetaCobuild]++;
+            //else
+            //        infoEtiquetasCobuild[posibleEtiquetaCobuild] = 1;
 
 
             return etiquetaPennTreebank;
