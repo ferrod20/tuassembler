@@ -4,3 +4,5 @@ cd Extraccion
 ..\..\tesis -unir "Cobuild.2pasada" "Cobuild.tt" "Cobuild.final"
 ..\..\tesis -comparar "Cobuild.tt" "Cobuild.extracted" "CobuildExtracted.mc" -p "Matriz de confusion entre Cobuild etiquetado con TnT (entrenado con WSJ) contra Cobuild extraido 1pasada" "TnT (entrenado con WSJ)" "Cobuild 1pasada" 
 ..\..\tesis -comparar "Cobuild.tt" "Cobuild.2pasada"   "Cobuild2Pasada.mc" -p "Matriz de confusion entre Cobuild etiquetado con TnT (entrenado con WSJ) contra Cobuild extraido 2pasada" "TnT (entrenado con WSJ)" "Cobuild 2pasada" 
+..\..\tesis -comparar "Cobuild.tt" "Cobuild.extracted" "CobuildExtracted.l" -l "Matriz de confusion entre Cobuild etiquetado con TnT (entrenado con WSJ) contra Cobuild extraido 1pasada" "TnT (entrenado con WSJ)" "Cobuild 1pasada" 
+..\..\tesis -comparar "Cobuild.tt" "Cobuild.2pasada"   "Cobuild2Pasada.l" -l "Diferencias entre etiquetas generadas por TnT vs extraídas de Cobuild" "TnT" "Cobuild" 
