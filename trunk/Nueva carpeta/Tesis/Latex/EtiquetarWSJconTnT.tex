@@ -1,5 +1,5 @@
 \subsection{Etiquetar el corpus WSJ con TnT} 
-La primer evaluación de este segundo experimento consiste en entrenar el etiquetador gramatical TnT con WSJ como corpus de entrenamiento y con WSJ + NFI. Luego se procede a etiquetar el WSJ plano (sin etiquetas gramaticales) con estos dos modelos. Por último se contruye la matriz de confusión:
+Este experimento consiste en entrenar TnT con WSJ y con WSJ + NFI. Luego se procede a etiquetar el WSJ plano (sin etiquetas gramaticales) con estos dos modelos. Por último se contruye la matriz de confusión:
 
 \input{../Tesis/Bin/Debug/Datos/Experimentos/TnT/WSJ/Mediciones/wsj_VS_wsjTnTWsj.l}
 \input{../Tesis/Bin/Debug/Datos/Experimentos/TnT/WSJ/Mediciones/wsj_VS_wsjTnTWsj+NFI.l}
@@ -26,7 +26,7 @@ Específicamente se muestran las matrices de confusión entre las mitades de WSJ e
 La tercer evaluación de este experimento consiste en entrenar TnT con un cuarto de WSJ y con un cuarto de WSJ + NFI. Posteriormente con estos dos modelos se etiqueta los 3/4 restantes de WSJ y se construye la matriz de confusión. Se realiza la misma operación para cada uno de los cuartos:
 
 \begin{center}
-\begin{table}
+\begin{table}[H]
 \caption{Rendimiento de TnT entrenado con cuartos de WSJ con y sin NFI}\\	
 \begin{tabular}{| l | c | }
 \hline
