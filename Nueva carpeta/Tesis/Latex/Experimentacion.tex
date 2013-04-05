@@ -1,20 +1,20 @@
 \chapter{Experimentación} 
 \input{1Experimento} 
 
-\newpage
 \section{Segundo experimento: Etiquetar el corpus WSJ} 
-El segundo experimento realizado tiene como objetivo evaluar la nueva fuente de información obtenida (NFI) como corpus de entrenamiento. Para esto se entrenarán 2 etiquetadores gramaticales (Stanford Tagger y TnT) y se etiquetará con ellos el corpus Wall Street Journal (WSJ). Posteriormente se realizarán mediciones de desempeño pertinentes.
+El segundo experimento realizado tiene como objetivo evaluar la nueva fuente de información obtenida (NFI) como corpus de entrenamiento. Para esto se entrenará el etiquetador gramatical TnT y se etiquetará con él el corpus Wall Street Journal (WSJ). Posteriormente se realizarán mediciones de desempeño pertinentes.
 \input{EtiquetarWSJconTnT} 
-\newpage
-\input{EtiquetarWSJconStanford} 
-\newpage
 
-\section{Tercer experimento: Etiquetar el corpus BNC} 
-El tercer experimento realizado tiene como objetivo evaluar la nueva fuente de información obtenida (NFI) como corpus de entrenamiento. Para esto se entrenarán 2 etiquetadores gramaticales (Stanford Tagger y TnT) y se etiquetará con ellos el British National Corpus (BNC).
-\input{EtiquetarBNCconTnT} 
-\newpage
-\input{EtiquetarBNCconStanford} 
-\newpage
+\section{Experimentos adicionales} 
+Se realizaron experimentos similares al descripto en la sección anterior para explorar la existencia de variaciones en los resultados a partir de la utilización de otro corpus u otro etiquetador gramatical.
+En tal sentido se empleó el etiquetador gramatical automático de máxima entropía Stanford Tagger. También se repitieron los mismos experimentos utilizando ambos etiquetadores gramaticales (Stanford Tagger y TnT) sobre el corpus BNC.
+
+Los experimentos consistieron en comparar el resultado de ejecutar el etiquetador gramatical entrenado con WSJ vs WSJ más la incorporación de la nueva fuente de información generada (NFI) sobre el corpus. Se realizó este mismo experimento sobre particiones; mitades, cuartos y décimos del corpus, intentando encontrar variaciones.
+
+Para todos los casos se observaron resultados similares; un leve aumento del porcentaje de aciertos en el modelo que incorpora NFI. 
+El porcentaje de aciertos aumenta a medida que la partición es menor.
+
+Los datos y el detalle de estos experimentos se puede consultar en el apéndice.
 
 \chapter{Conclusiones} 
 Utilizar un diccionario como nueva fuente de información, convirtiéndolo en un corpus de entrenamiento para etiquetadores gramaticales aumenta levemente el rendimiento final del etiquetado. Esto es cierto incluso para etiquetadores de distintas bases teóricas (máxima entropía y modelos ocultos de Markov).
