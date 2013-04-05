@@ -2,7 +2,7 @@
 %Errores: 36636
 %Cantidad de tags: 1263120
 \begin{center}
-\begin{table}
+\begin{table}[h]
 \caption{WSJ original contra WSJ etiquetado con TnT (entrenado con WSJ)}\\	
 \begin{tabular}{| l | c | c | c | c | c | c | c | c | c | c | }
 \hline
