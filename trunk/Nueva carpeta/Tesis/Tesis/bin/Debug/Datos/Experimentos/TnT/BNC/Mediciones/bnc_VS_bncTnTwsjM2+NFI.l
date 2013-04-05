@@ -2,16 +2,11 @@
 %Errores: 146643
 %Cantidad de tags: 1999715
 \begin{center}
-\begin{longtable}{| l | c | c | c | c | c | c | c | c | c | c | }
-\caption{BNC original contra BNC etiquetado con TnT (entrenado con 2 mitad de WSJ+NFI)}\\	
+\begin{table}[H]
+\caption{Matriz de confusion para\\BNC$_{1}$ = BNC original contra\\NFI$_{2}$ = BNC etiquetado con TnT (entrenado con 2 mitad de WSJ+NFI)}\\	
+\begin{tabular}{| l | c | c | c | c | c | c | c | c | c | c | }
 \hline
- \backslashbox{\scriptsize{BNC}\kern-1em}{\kern-1em \scriptsize{TnT(2WSJ+NFI)}}  &	\textbf{NNP}	&   \textbf{JJ}	&   \textbf{NN}	&   \textbf{VBN}	&   \textbf{NNS}	&   \textbf{WRB}	&   \textbf{NNPS}	&   \textbf{VBD}	&   \textbf{CD}	&   \textbf{WDT}	&   \hline
-\endhead
-\hline
-\endfoot
-\endlastfoot
-	\hline
-\textbf{NN1} & \textbf{26728} & \textbf{4264} & - & 101 & 663 & 1 & 8 & 119 & 61 & 1\\
+ \backslashbox{\scriptsize{BNC$_{1}$}\kern-1em}{\kern-1em \scriptsize{NFI$_{2}$}}  &	\textbf{NNP}	&   \textbf{JJ}	&   \textbf{NN}	&   \textbf{VBN}	&   \textbf{NNS}	&   \textbf{WRB}	&   \textbf{NNPS}	&   \textbf{VBD}	&   \textbf{CD}	&   \textbf{WDT}	&   \hline\textbf{NN1} & \textbf{26728} & \textbf{4264} & - & 101 & 663 & 1 & 8 & 119 & 61 & 1\\
 \textbf{AJ0} & \textbf{8795} & - & 1793 & \textbf{3481} & 34 & - & 21 & 295 & 22 & -\\
 \textbf{DT0} & 86 & \textbf{7648} & 204 & - & 1 & - & - & - & - & 869\\
 \textbf{AV0} & 1074 & 1881 & \textbf{4382} & 15 & 216 & 1 & - & 4 & 130 & 4\\
@@ -22,9 +17,10 @@
 \textbf{VVN} & 41 & 481 & 82 & - & - & - & - & 2318 & - & -\\
 \textbf{CJT} & 6 & - & 1 & - & - & - & - & - & - & 1857\\
 \hline
-\end{longtable}
+\end{tabular}
+\end{table}
 \end{center}
 
 %Sumatoria de errores: 87170
 \noindent Aciertos: 1.853.072 (92,67\%)\\
-\noindent Errores: 146.643 (7,33\%)
+\noindent Errores: 146.643 (7,33\%)\\

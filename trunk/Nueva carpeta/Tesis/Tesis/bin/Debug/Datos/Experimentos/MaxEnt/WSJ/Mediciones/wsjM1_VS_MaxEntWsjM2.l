@@ -2,16 +2,11 @@
 %Errores: 21529
 %Cantidad de tags: 631574
 \begin{center}
-\begin{longtable}{| l | c | c | c | c | c | c | c | c | c | c | }
-\caption{1 mitad WSJ original contra 1 mitad WSJ etiquetado con MaxEnt (entrenado con 2 mitad de WSJ)}\\	
+\begin{table}[H]
+\caption{Matriz de confusion para\\WSJ$_{3}$ = 1 mitad WSJ original contra\\ME$_{1}$ = 1 mitad WSJ etiquetado con MaxEnt (entrenado con 2 mitad de WSJ)}\\	
+\begin{tabular}{| l | c | c | c | c | c | c | c | c | c | c | }
 \hline
- \backslashbox{\scriptsize{WSJ}\kern-1em}{\kern-1em \scriptsize{MaxEnt(2WSJ)}}  &	\textbf{JJ}	&   \textbf{NN}	&   \textbf{NNP}	&   \textbf{IN}	&   \textbf{VBN}	&   \textbf{VBD}	&   \textbf{RB}	&   \textbf{NNS}	&   \textbf{VBG}	&   \textbf{JJR}	&   \hline
-\endhead
-\hline
-\endfoot
-\endlastfoot
-	\hline
-\textbf{NN} & \textbf{1558} & - & \textbf{1027} & 6 & 22 & 15 & 38 & 133 & 403 & 8\\
+ \backslashbox{\scriptsize{WSJ$_{3}$}\kern-1em}{\kern-1em \scriptsize{ME$_{1}$}}  &	\textbf{JJ}	&   \textbf{NN}	&   \textbf{NNP}	&   \textbf{IN}	&   \textbf{VBN}	&   \textbf{VBD}	&   \textbf{RB}	&   \textbf{NNS}	&   \textbf{VBG}	&   \textbf{JJR}	&   \hline\textbf{NN} & \textbf{1558} & - & \textbf{1027} & 6 & 22 & 15 & 38 & 133 & 403 & 8\\
 \textbf{JJ} & - & \textbf{1309} & \textbf{606} & 32 & \textbf{746} & 39 & 299 & 65 & 263 & 5\\
 \textbf{RB} & 512 & 104 & 31 & \textbf{989} & 2 & 1 & - & 4 & 1 & 14\\
 \textbf{NNPS} & 31 & - & \textbf{943} & - & - & - & - & 246 & - & -\\
@@ -22,9 +17,10 @@
 \textbf{IN} & 72 & 5 & 26 & - & 1 & - & 489 & - & 2 & -\\
 \textbf{RP} & 2 & 3 & 1 & 449 & - & - & 179 & - & - & -\\
 \hline
-\end{longtable}
+\end{tabular}
+\end{table}
 \end{center}
 
 %Sumatoria de errores: 14736
 \noindent Aciertos: 610.045 (96,59\%)\\
-\noindent Errores: 21.529 (3,41\%)
+\noindent Errores: 21.529 (3,41\%)\\

@@ -2,11 +2,11 @@
 %Errores: 36636
 %Cantidad de tags: 1263120
 \begin{center}
-\begin{table}[h]
-\caption{WSJ original contra WSJ etiquetado con TnT (entrenado con WSJ)}\\	
+\begin{table}[H]
+\caption{Matriz de confusion para\\WSJ$_{1}$ = WSJ original contra\\ WSJ$_{2}$ = WSJ etiquetado con TnT (entrenado con WSJ)}\\	
 \begin{tabular}{| l | c | c | c | c | c | c | c | c | c | c | }
 \hline
- \backslashbox{\scriptsize{WSJ}\kern-1em}{\kern-1em \scriptsize{TnT(WSJ)}}  &	\textbf{JJ}	&   \textbf{NNP}	&   \textbf{VBN}	&   \textbf{RB}	&   \textbf{IN}	&   \textbf{RP}	&   \textbf{NNPS}	&   \textbf{VBD}	&   \textbf{NN}	&   \textbf{VB}	&   \hline\textbf{NN} & \textbf{2592} & \textbf{1649} & 28 & 79 & 18 & 7 & - & 39 & - & 316\\
+ \backslashbox{\scriptsize{WSJ$_{1}$}\kern-1em}{\kern-1em \scriptsize{WSJ$_{2}$}}  &	\textbf{JJ}	&   \textbf{NNP}	&   \textbf{VBN}	&   \textbf{RB}	&   \textbf{IN}	&   \textbf{RP}	&   \textbf{NNPS}	&   \textbf{VBD}	&   \textbf{NN}	&   \textbf{VB}	&   \hline\textbf{NN} & \textbf{2592} & \textbf{1649} & 28 & 79 & 18 & 7 & - & 39 & - & 316\\
 \textbf{VBD} & 70 & 5 & \textbf{1642} & - & - & - & - & - & 42 & 41\\
 \textbf{IN} & 108 & 30 & - & \textbf{1476} & - & \textbf{1376} & - & - & 4 & 2\\
 \textbf{RB} & 726 & 45 & 4 & - & \textbf{1459} & 857 & - & 1 & 200 & 37\\
@@ -23,4 +23,4 @@
 
 %Sumatoria de errores: 24292
 \noindent Aciertos: 1.226.484 (97,10\%)\\
-\noindent Errores: 36.636 (2,90\%)
+\noindent Errores: 36.636 (2,90\%)\\
