@@ -2,11 +2,11 @@
 %Errores: 13634
 %Cantidad de tags: 1263124
 \begin{center}
-\begin{table}
-\caption{WSJ etiquetado con TnT (entrenado con WSJ) vs WSJ etiquetado con TnT (entrenado con WSJ + NFI)}\\	
+\begin{table}[H]
+\caption{Matriz de confusion para\\WSJ$_{2}$ = WSJ etiquetado con TnT (entrenado con WSJ) vs\\NFI$_{1}$ = WSJ etiquetado con TnT (entrenado con WSJ + NFI)}\\	
 \begin{tabular}{| l | c | c | c | c | c | c | c | c | c | c | }
 \hline
- \backslashbox{\scriptsize{TnT(WSJ)}\kern-1em}{\kern-1em \scriptsize{TnT(WSJ+NFI)}}  &	\textbf{WDT}	&   \textbf{8}	&   \textbf{VBN}	&   \textbf{VBD}	&   \textbf{JJ}	&   \textbf{NNP}	&   \textbf{4}	&   \textbf{IN}	&   \textbf{RP}	&   \textbf{2}	&   \hline\textbf{IN} & \textbf{825} & - & - & - & 13 & 9 & - & - & 186 & -\\
+ \backslashbox{\scriptsize{WSJ$_{2}$}\kern-1em}{\kern-1em \scriptsize{NFI$_{1}$}}  &	\textbf{WDT}	&   \textbf{8}	&   \textbf{VBN}	&   \textbf{VBD}	&   \textbf{JJ}	&   \textbf{NNP}	&   \textbf{4}	&   \textbf{IN}	&   \textbf{RP}	&   \textbf{2}	&   \hline\textbf{IN} & \textbf{825} & - & - & - & 13 & 9 & - & - & 186 & -\\
 \textbf{CD} & - & \textbf{643} & - & - & 4 & 7 & \textbf{546} & - & - & 393\\
 \textbf{VBD} & - & - & \textbf{596} & - & 24 & 5 & - & - & - & -\\
 \textbf{VBN} & - & - & - & \textbf{593} & 244 & 5 & - & - & - & -\\
@@ -23,4 +23,4 @@
 
 %Sumatoria de errores: 7298
 \noindent Aciertos: 1.249.490 (98,92\%)\\
-\noindent Errores: 13.634 (1,08\%)
+\noindent Errores: 13.634 (1,08\%)\\

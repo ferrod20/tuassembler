@@ -2,16 +2,11 @@
 %Errores: 66144
 %Cantidad de tags: 1999718
 \begin{center}
-\begin{longtable}{| l | c | c | c | c | c | c | c | c | c | c | }
-\caption{BNC etiquetado por MaxEnt (entrenado con 2 mitad WSJ) vs BNC etiquetado con MaxEnt (entrenado con 2 mitad de WSJ + NFI)}\\	
+\begin{table}[H]
+\caption{Matriz de confusion para\\ME$_{2}$ = BNC etiquetado por MaxEnt (entrenado con 2 mitad WSJ) vs\\NFI$_{2}$ = BNC etiquetado con MaxEnt (entrenado con 2 mitad de WSJ + NFI)}\\	
+\begin{tabular}{| l | c | c | c | c | c | c | c | c | c | c | }
 \hline
- \backslashbox{\scriptsize{MaxEnt(2WSJ)}\kern-1em}{\kern-1em \scriptsize{MaxEnt(2WSJ+NFI)}}  &	\textbf{JJ}	&   \textbf{NN}	&   \textbf{NNP}	&   \textbf{VBN}	&   \textbf{NNS}	&   \textbf{VB}	&   \textbf{RP}	&   \textbf{VBG}	&   \textbf{RB}	&   \textbf{VBD}	&   \hline
-\endhead
-\hline
-\endfoot
-\endlastfoot
-	\hline
-\textbf{NN} & \textbf{4691} & - & \textbf{2413} & 152 & 392 & \textbf{1859} & 11 & 1579 & 813 & 192\\
+ \backslashbox{\scriptsize{ME$_{2}$}\kern-1em}{\kern-1em \scriptsize{NFI$_{2}$}}  &	\textbf{JJ}	&   \textbf{NN}	&   \textbf{NNP}	&   \textbf{VBN}	&   \textbf{NNS}	&   \textbf{VB}	&   \textbf{RP}	&   \textbf{VBG}	&   \textbf{RB}	&   \textbf{VBD}	&   \hline\textbf{NN} & \textbf{4691} & - & \textbf{2413} & 152 & 392 & \textbf{1859} & 11 & 1579 & 813 & 192\\
 \textbf{JJ} & - & \textbf{3864} & 1168 & 1524 & 85 & 356 & 2 & 336 & 1233 & 201\\
 \textbf{NNP} & \textbf{1688} & \textbf{2727} & - & 80 & 938 & 308 & - & 117 & 267 & 61\\
 \textbf{VBD} & 310 & 107 & 17 & \textbf{2345} & - & 135 & - & 6 & 21 & -\\
@@ -22,9 +17,10 @@
 \textbf{VBG} & 1220 & 1166 & 139 & 11 & - & 25 & - & - & 3 & 2\\
 \textbf{VB} & 300 & 1125 & 295 & 135 & 11 & - & - & 17 & 127 & 88\\
 \hline
-\end{longtable}
+\end{tabular}
+\end{table}
 \end{center}
 
 %Sumatoria de errores: 47444
 \noindent Aciertos: 1.933.574 (96,69\%)\\
-\noindent Errores: 66.144 (3,31\%)
+\noindent Errores: 66.144 (3,31\%)\\

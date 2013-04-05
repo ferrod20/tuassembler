@@ -15,7 +15,10 @@ La segunda evaluación de este experimento consiste en entrenar TnT con la mitad 
 
 Se puede apreciar una leve mejoría en el porcentaje de etiquetas acertadas para el modelo que incorpora NFI; 96,25\% contra 96,47\% y 96,21\% contra 96,37\% para cada mitad respectivamente. Los errores más comunes son producidos en etiquetas NN del gold standard cuando son etiquetadas como JJ y NNP por TnT, para las dos mitades entrenadas tanto con WSJ como con WSJ + NFI. Se puede notar que el porcentaje de error al etiquetar JJ cuando era NN es menor en la evaluación realizada sobre TnT entrenado con el modelo que incorpora NFI.\\
 
-A continuación se presentan las matrices de confusión entre las mitades de WSJ etiquetado con TnT entrenado con la mitad restante con y sin NFI.
+
+A continuación se presenta la comparación entre el etiquetado de TnT entrenado con WSJ contra el entrenado con WSJ + NFI. De esta manera se puede apreciar cuáles son las etiquetas que más difieren. 
+
+Específicamente se muestran las matrices de confusión entre las mitades de WSJ etiquetado con TnT entrenado con la mitad restante con y sin NFI.
 
 \input{../Tesis/Bin/Debug/Datos/Experimentos/TnT/WSJ/Mediciones/wsjM1__TnTWsjM2_vs_TnTWsjM2+NFI.l}
 \input{../Tesis/Bin/Debug/Datos/Experimentos/TnT/WSJ/Mediciones/wsjM2__TnTWsjM1_vs_TnTWsjM1+NFI.l}	

@@ -80,7 +80,7 @@ namespace ConsoleApplication1
         {
             salida.Write(
                 @"\begin{center}
-\begin{table}
+\begin{table}[H]
 \caption{" + titulo + @"}\\	
 \begin{tabular}{| l | ");
             for (var i = 0; i < tagsColumna.Count(); i++)
@@ -183,7 +183,7 @@ namespace ConsoleApplication1
             var porcentajeDeAciertos = aciertos / (double)CantidadDeEtiquetas * 100;
             var porcentajeDeErrores = cantidadDeErrores / (double)CantidadDeEtiquetas * 100;
             salida.WriteLine("\\noindent Aciertos: {0:n0} ({1:0.00}\\%)\\\\", aciertos, porcentajeDeAciertos);
-            salida.WriteLine("\\noindent Errores: {0:n0} ({1:0.00}\\%)", cantidadDeErrores, porcentajeDeErrores) ;
+            salida.WriteLine("\\noindent Errores: {0:n0} ({1:0.00}\\%)\\\\", cantidadDeErrores, porcentajeDeErrores);
         }
 
         private void EscribirEncabezado(TextWriter salida)
