@@ -2,16 +2,11 @@
 %Errores: 23695
 %Cantidad de tags: 631571
 \begin{center}
-\begin{longtable}{| l | c | c | c | c | c | c | c | c | c | c | }
+\begin{table}
 \caption{1 mitad WSJ original contra 1 mitad WSJ etiquetado con TnT (entrenado con 2 mitad de WSJ)}\\	
+\begin{tabular}{| l | c | c | c | c | c | c | c | c | c | c | }
 \hline
- \backslashbox{\scriptsize{WSJ}\kern-1em}{\kern-1em \scriptsize{TnT(2WSJ)}}  &	\textbf{JJ}	&   \textbf{NNP}	&   \textbf{VBN}	&   \textbf{NN}	&   \textbf{VBD}	&   \textbf{IN}	&   \textbf{RB}	&   \textbf{RP}	&   \textbf{VB}	&   \textbf{NNPS}	&   \hline
-\endhead
-\hline
-\endfoot
-\endlastfoot
-	\hline
-\textbf{NN} & \textbf{1959} & \textbf{1154} & 26 & - & 24 & 5 & 60 & 2 & 269 & 2\\
+ \backslashbox{\scriptsize{WSJ}\kern-1em}{\kern-1em \scriptsize{TnT(2WSJ)}}  &	\textbf{JJ}	&   \textbf{NNP}	&   \textbf{VBN}	&   \textbf{NN}	&   \textbf{VBD}	&   \textbf{IN}	&   \textbf{RB}	&   \textbf{RP}	&   \textbf{VB}	&   \textbf{NNPS}	&   \hline\textbf{NN} & \textbf{1959} & \textbf{1154} & 26 & - & 24 & 5 & 60 & 2 & 269 & 2\\
 \textbf{VBD} & 76 & 12 & \textbf{1129} & 19 & - & - & 1 & - & 29 & -\\
 \textbf{JJ} & - & 545 & \textbf{801} & \textbf{1039} & 52 & 19 & 313 & 9 & 62 & 1\\
 \textbf{VBN} & \textbf{617} & 23 & - & 24 & \textbf{819} & - & - & - & 36 & -\\
@@ -22,7 +17,8 @@
 \textbf{VBG} & 276 & 22 & - & 577 & - & - & - & - & - & -\\
 \textbf{NNPS} & 26 & 549 & - & - & - & - & - & - & - & -\\
 \hline
-\end{longtable}
+\end{tabular}
+\end{table}
 \end{center}
 
 %Sumatoria de errores: 16284

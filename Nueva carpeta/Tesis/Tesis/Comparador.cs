@@ -148,9 +148,7 @@ namespace ConsoleApplication1
         /// </summary>
         private static void GenerarMatrizDeConfusión(string archivoGoldStandard, string archivoParaComparar, bool compararContraBNC = false)
         {
-            int i,  j;
-            var punto = 1;
-            i = j = 0;
+            int i = 0, j = 0, punto = 1;
             matrizDeConfusión.CantidadDeEtiquetas = 0;
             var aGoldStandard = File.ReadAllText(archivoGoldStandard).Split('\n');
             var aParaComparar = File.ReadAllText(archivoParaComparar).Split('\n');

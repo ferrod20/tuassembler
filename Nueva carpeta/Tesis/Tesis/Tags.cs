@@ -64,7 +64,8 @@ namespace ConsoleApplication1
 
 
             salida.Write(@"\hline
-\end{longtable}
+\end{tabular}
+\end{table}
 \end{center}");
 
             salida.WriteLine();
@@ -79,26 +80,21 @@ namespace ConsoleApplication1
         {
             salida.Write(
                 @"\begin{center}
-\begin{longtable}{| l | ");
+\begin{table}
+\caption{" + titulo + @"}\\	
+\begin{tabular}{| l | ");
             for (var i = 0; i < tagsColumna.Count(); i++)
                 salida.Write("c | ");
 
             salida.Write(
                 @"}
-\caption{" + titulo + @"}\\	
 \hline
  \backslashbox{\scriptsize{" + tituloFila + @"}\kern-1em}{\kern-1em \scriptsize{" +
                 tituloColumna + @"}}  &	");
 
             foreach (var tag in tagsColumna)
                 salida.Write("\\textbf{" + tag + "}	&   ");
-            salida.Write(@"\hline
-\endhead
-\hline
-\endfoot
-\endlastfoot
-	\hline
-");
+            salida.Write(@"\hline");
         }
 
         private List<int> ObtenerErrores(int cuantos)

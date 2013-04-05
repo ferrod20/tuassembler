@@ -494,7 +494,7 @@ namespace ConsoleApplication1
         {
             var esEjemploODefinición =
                 !línea.EmpiezaConAlgunaDeEstas("Someone or something that is","If something is","If you are") &&
-                !línea.ContieneAlgunaDeEstas("is used in the present tense", "used for the" , "/", "*") &&                 
+                !línea.ContieneAlgunaDeEstas("is used in the present tense", "used for the" , "/", "*") &&
                 línea.Sum(letra => letra == ',' || letra == ';' ? 1 : 0) <= 3;
             return esEjemploODefinición && formasDeLaPalabra.Any(p => EsEjemploODefinición(línea, p));
         }
