@@ -24,10 +24,10 @@ Para mejorar el rendimiento de un etiquetador gramatical necesitamos entender do
 \end{longtable}
 \end{center}
 Las etiquetas de la fila indican las etiquetas correctas, las etiquetas de las columnas indican las etiquetas asignadas por el etiquetador, y cada celda indica el porcentaje del error de etiquetado general. Por lo tanto 4.4\% del total de errores fueron causados por fallida etiquetación de VBD como VBN.
-La matriz anterior y el análisis de error relacionado en \textsl{Franz, Kupiec y Ratnaparkhi} sugieren que algunos de los mayores problemas que encaran los etiquetadores actuales son:
+La matriz anterior y el análisis de error relacionado en \emph{Franz, Kupiec y Ratnaparkhi} sugieren que algunos de los mayores problemas que encaran los etiquetadores actuales son:
 \begin{enumerate}
 	\item \textbf{NN contra NNP contra JJ:} Estas etiquetas son difíciles de distinguir. Es especialmente importante distinguir entre sustantivos propios para extracción de la información y traducción automática.
 	\item \textbf{RP contra RB contra IN:} Todas estas etiquetas pueden aparecer inmediatamente después del verbo.
-	\item \textbf{VBD contra VBN contra JJ:} Distinguir estas etiquetas es importante para el \textsl{parsing} parcial y para etiquetar correctamente los bordes de las frases nominales.
+	\item \textbf{VBD contra VBN contra JJ:} Distinguir estas etiquetas es importante para el \emph{parsing} parcial y para etiquetar correctamente los bordes de las frases nominales.
 \end{enumerate}      
-El análisis de error es una parte crucial de cualquier aplicación lingüística computacional. Puede ayudar a encontrar \textsl{bugs}, encontrar problemas en los datos de entrenamiento y lo más importante, ayuda en el desarrollo de conocimiento y/o algoritmos para utilizar en la solución de problemas.
+El análisis de error es una parte crucial de cualquier aplicación lingüística computacional. Puede ayudar a encontrar \emph{bugs}, encontrar problemas en los datos de entrenamiento y lo más importante, ayuda en el desarrollo de conocimiento y/o algoritmos para utilizar en la solución de problemas.

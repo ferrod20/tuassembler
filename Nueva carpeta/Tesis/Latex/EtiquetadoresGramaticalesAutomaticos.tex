@@ -1,20 +1,20 @@
 \section{Etiquetadores gramaticales automáticos} 
-Como se mencionó anteriormente, el etiquetado gramatical es el proceso que asigna a una secuencia de palabras una secuencia de etiquetas gramaticales para las mismas. Generalmente las etiquetas gramaticales también son aplicadas a los signos de puntuación, por lo tanto el etiquetado requiere que los signos de puntuación sean separados de las palabras. Este proceso se realiza previamente o como parte del etiquetado y es conocido como \textsl{tokenización}. El proceso de \textsl{tokenización} es el encargado de separar puntos, comas, paréntesis y otros caracteres de las palabras así como también desambigüar el fin de oración (por ejemplo un punto o signo de pregunta) de un signo de puntuación (como en una abreviación, por ejemplo \textsl{'étc.'})
+Como se mencionó anteriormente, el etiquetado gramatical es el proceso que asigna a una secuencia de palabras una secuencia de etiquetas gramaticales para las mismas. Generalmente las etiquetas gramaticales también son aplicadas a los signos de puntuación, por lo tanto el etiquetado requiere que los signos de puntuación sean separados de las palabras. Este proceso se realiza previamente o como parte del etiquetado y es conocido como \emph{tokenización}. El proceso de \emph{tokenización} es el encargado de separar puntos, comas, paréntesis y otros caracteres de las palabras así como también desambigüar el fin de oración (por ejemplo un punto o signo de pregunta) de un signo de puntuación (como en una abreviación, por ejemplo \emph{'etc.'})
 
 La entrada para un algoritmo de etiquetación automática es una cadena de palabras y un conjunto de etiquetas. La salida es la mejor etiqueta encontrada para cada palabra.
 Consideremos  las siguientes oraciones etiquetadas gramaticalmente:
 \\
 \\
-\textsl{Book/VB that/DT flight/NN ./.\\
+\emph{Book/VB that/DT flight/NN ./.\\
 Does/VBZ that/DT flight/NN serve/VB dinner/NN ?/.}
 \\
 \\
-Asignar una etiqueta gramatical a una palabra no es una tarea trivial incluso en estos sencillos ejemplos. Por ejemplo, la palabra \textsl{book} es ambigüa. Es decir que tiene más de un uso posible y por lo tanto más de una etiqueta gramatical posible. Puede ser un verbo (como en \textsl{\textbf{book} that flight} o \textsl{to \textbf{book} the suspect}) o un sustantivo (como en \textsl{hand me that \textbf{book}} o \textsl{a \textbf{book} of matches}). Análogamante \textsl{that} puede ser un determinante (como en \textsl{Does \textbf{that} flight serve dinner}) o un complementador (como en \textsl{I thought \textbf{that} your flight was earlier}). 
+Asignar una etiqueta gramatical a una palabra no es una tarea trivial incluso en estos sencillos ejemplos. Por ejemplo, la palabra \emph{book} es ambigüa. Es decir que tiene más de un uso posible y por lo tanto más de una etiqueta gramatical posible. Puede ser un verbo (como en \emph{\textbf{book} that flight} o \emph{to \textbf{book} the suspect}) o un sustantivo (como en \emph{hand me that \textbf{book}} o \emph{a \textbf{book} of matches}). Análogamante \emph{that} puede ser un determinante (como en \emph{Does \textbf{that} flight serve dinner}) o un complementador (como en \emph{I thought \textbf{that} your flight was earlier}). 
 
 El problema del etiquetado gramatical reside en resolver estas ambigüedades, eligiendo la etiqueta adecuada según el contexto. 
-¿Pero qué magnitud tiene el problema de la ambigüedad de las palabras? Podemos apreciar que la mayoría de las palabras en inglés no son ambigüas, o lo que es lo mismo, tienen una única etiqueta posible. Sin embargo, muchas de las palabras más comunes del inglés son ambigüas, es decir que las palabras más utilizadas, las que se emplean con mayor frecuencia, pueden tener más de una etiqueta. Por ejemplo \textsl{can} puede ser un auxiliar (puede), un sustantivo (lata o contenedor de metal) o un verbo (poner algo en la lata).
+¿Pero qué magnitud tiene el problema de la ambigüedad de las palabras? Podemos apreciar que la mayoría de las palabras en inglés no son ambigüas, o lo que es lo mismo, tienen una única etiqueta posible. Sin embargo, muchas de las palabras más comunes del inglés son ambigüas, es decir que las palabras más utilizadas, las que se emplean con mayor frecuencia, pueden tener más de una etiqueta. Por ejemplo \emph{can} puede ser un auxiliar (puede), un sustantivo (lata o contenedor de metal) o un verbo (poner algo en la lata).
 
-Afortunadamente muchas de las palabras ambigüas son fácilmente desambigüables. Esto sucede porque las etiquetas asociadas a una palabra no suelen ocurrir con la misma frecuencia. Por ejemplo \textsl{a} puede ser un determinante o la letra \textsl{a} (quizás como parte de un acrónimo o una inicial), pero es preciso notar que el sentido de \textsl{a} es mucho más frecuente como determinante que como letra. Es decir que es mucho más frecuente encontrar \textsl{a} en oraciones como \textsl{My father bought \textbf{a} new car} o \textsl{There is \textbf{a} hair in my soup} que en oraciones como \textsl{Written by \textbf{A}. Kamio} o \textsl{The letter \textbf{a} is the first letter of the alphabet}.
+Afortunadamente muchas de las palabras ambigüas son fácilmente desambigüables. Esto sucede porque las etiquetas asociadas a una palabra no suelen ocurrir con la misma frecuencia. Por ejemplo \emph{a} puede ser un determinante o la letra \emph{a} (quizás como parte de un acrónimo o una inicial), pero es preciso notar que el sentido de \emph{a} es mucho más frecuente como determinante que como letra. Es decir que es mucho más frecuente encontrar \emph{a} en oraciones como \emph{My father bought \textbf{a} new car} o \emph{There is \textbf{a} hair in my soup} que en oraciones como \emph{Written by \textbf{A}. Kamio} o \emph{The letter \textbf{a} is the first letter of the alphabet}.
 
 Existen distintos métodos computacionales para asignar una etiqueta gramatical a una palabra. La mayoría de los algoritmos de etiquetado automático pertenecen a una de dos clases: etiquetadores basados en reglas o etiquetadores estocásticos.
 
@@ -30,11 +30,11 @@ Los primeros algoritmos de asignación de etiquetas gramaticales estaban basados 
 Las versiones actuales de los etiquetadores gramaticales basados en reglas mantienen los principios originales teniendo en cuenta que los diccionarios y el conjunto de reglas han adquirido un tamaño considerablemente mayor: manejan alrededor de 3800 reglas y un diccionario de etiquetas del órden de las 56.000 entradas para el idioma inglés. 
 
 \subsection{Etiquetadores gramaticales de aprendizaje automático} 
-La inclusión de probabilidades en el proceso de etiquetación gramatical no es una idea nueva. Surge como una consecuencia natural a partir del hecho de que una palabra es empleada con un sentido gramatical mucho más frecuentemente que con otro. Como se mencionó anteriormente, \textsl{a} es mucho más frecuentemente utilizada como determinante que como letra. 
+La inclusión de probabilidades en el proceso de etiquetación gramatical no es una idea nueva. Surge como una consecuencia natural a partir del hecho de que una palabra es empleada con un sentido gramatical mucho más frecuentemente que con otro. Como se mencionó anteriormente, \emph{a} es mucho más frecuentemente utilizada como determinante que como letra. 
 
 La inclusión de probabilidades también responde a otro factor importante: la construcción gramatical; cierta etiqueta es precedida frecuentemente por ciertas otra/s. Por ejemplo, como se mencionó anteriormente, los pronombres posesivos generalmente son sucedidos por sustantivos. Es decir que es más probable encontrar oraciones cuyas palabras estén etiquetadas con PRP\$ sucedida por NN que PRP\$ sucedida por otra etiqueta.
 
-A continuación  vamos a presentar 2 tipos de etiquetadores gramaticales: etiquetadores basados en el modelo oculto de \textsl{Markov} o simplemente etiquetadores HMM\footnote{Por las siglas en inglés de Hidden Markov Model} y etiquetadores basados en el modelo de máxima entropía.
+A continuación  vamos a presentar 2 tipos de etiquetadores gramaticales: etiquetadores basados en el modelo oculto de \emph{Markov} o simplemente etiquetadores HMM\footnote{Por las siglas en inglés de Hidden Markov Model} y etiquetadores basados en el modelo de máxima entropía.
 
 \subsubsection{Etiquetadores gramaticales basados en HMM}
 El uso del modelo oculto de Markov para realizar etiquetado gramatical es un caso especial de la inferencia bayesiana, un paradigma que fué conocido a partir del trabajo de Bayes (1763). La inferencia bayesiana o clasificación bayesiana fue aplicada exitosamente a problemas del lenguaje a partir de 1950.
@@ -42,7 +42,7 @@ El uso del modelo oculto de Markov para realizar etiquetado gramatical es un cas
 La clasificación bayesiana puede apreciarse como una tarea para la cual contamos con un conjunto de observaciones y el trabajo consiste en determinar a que conjunto de clases pertenece. En lo que respecta al etiquetado gramatical, se puede utilizar este mismo concepto para tratarlo como una tarea de clasificación de secuencia. En ese caso, la observación será una secuencia de palabras (digamos una oración) para la cual el trabajo reside en asignar una secuencia de etiquetas gramaticales. Como ejemplo tomemos la oración que aparece a continuación:
 \\
  \\
- \textsl{Secretariat is expected to race tomorrow}
+ \emph{Secretariat is expected to race tomorrow}
  \\
  
 \noindent En este caso la observación es la secuencia de palabras (es decir la oración misma) y nuestro objetivo es asignarle las etiquetas correspondientes. Ya que una palabra puede ser ambigüa y tener más de una etiqueta posible, hay una pregunta clave que debemos hacernos: ¿Cuál es la mejor secuencia de etiquetas que corresponden a esta secuencia de palabras? 
@@ -71,7 +71,7 @@ La segunda suposición es que la probabilidad de aparición de una etiqueta gramat
  
  
 \begin{itemize}
-	\item \textbf{Probabilidades de transición de etiquetas}: Las probabilidades de transición de etiquetas, $P(t_i|t_{i-1})$, representan la probabilidad de que ocurra una etiqueta dada la etiqueta previa. Por ejemplo, es muy probable que un determinantes preceda a un adjetivos o a un sustantivo, como \textsl{that/DD flight/NN y the/DT yellow/JJ hat/NN}. Por lo tanto esperamos que las probabilidades $P(NN|DT)$ y $P(JJ|DT)$ sean altas. 
+	\item \textbf{Probabilidades de transición de etiquetas}: Las probabilidades de transición de etiquetas, $P(t_i|t_{i-1})$, representan la probabilidad de que ocurra una etiqueta dada la etiqueta previa. Por ejemplo, es muy probable que un determinantes preceda a un adjetivos o a un sustantivo, como \emph{that/DD flight/NN y the/DT yellow/JJ hat/NN}. Por lo tanto esperamos que las probabilidades $P(NN|DT)$ y $P(JJ|DT)$ sean altas. 
  
  Por otro lado, es infrecuente que los adjetivos precedan a los determinantes, entonces la probabilidad $P(DT|JJ)$ será pequeña.
 Podemos computar el estimador de máxima verosimilitud o MLE\footnote{Por sus siglas en inglés Maximum Likelihood Estimated} de una probabilidad de transición de etiquetas $P(NN|DT)$ etiquetando y contando las etiquetas gramaticales en un corpus. Esto es: de todas las veces que vemos DT, cuántas de esas veces vemos NN después de DT. Lo expresamos más formalmente con el siguiente cociente:
@@ -85,11 +85,11 @@ En el corpus Brown etiquetado con el conjunto de etiquetas Treebank, la etiqueta
 \begin{equation*}P(NN|DT)=\frac{C(DT,NN)}{C(DT)}=\frac{56509}{116454}=0.49\end{equation*}
  
  Claramente la probabilidad de obtener un sustantivo común después de un determinante es .49 y de hecho alta como sospechábamos.
-	\item \textbf{Probabilidades de la palabra}: Por otro lado las probabilidades de la palabra, $P(w_i|t_i)$, representan la probabilidad de que dada una etiqueta esta esté asociada con cierta palabra. Por ejemplo si tenemos la etiqueta VBZ (verbo singular de tiempo presente en tercera persona) y quisiéramos adivinar el verbo asociado a esa etiqueta, probablemente elegiríamos el verbo \textsl{is}\footnote{\textsl{is} es el presente en tercera persona del verbo \textsl{to be}}, debido a que el verbo \textsl{to be} es muy común en inglés.
+	\item \textbf{Probabilidades de la palabra}: Por otro lado las probabilidades de la palabra, $P(w_i|t_i)$, representan la probabilidad de que dada una etiqueta esta esté asociada con cierta palabra. Por ejemplo si tenemos la etiqueta VBZ (verbo singular de tiempo presente en tercera persona) y quisiéramos adivinar el verbo asociado a esa etiqueta, probablemente elegiríamos el verbo \emph{is}\footnote{\emph{is} es el presente en tercera persona del verbo \emph{to be}}, debido a que el verbo \emph{to be} es muy común en inglés.
  
-Podemos computar $P(is|VBZ)$ de nuevo contando de cuántas veces que vemos VBZ en un corpus cuántas de esas veces VBZ está etiquetando la palabra \textsl{is}. Esto es computar el siguiente cociente:
+Podemos computar $P(is|VBZ)$ de nuevo contando de cuántas veces que vemos VBZ en un corpus cuántas de esas veces VBZ está etiquetando la palabra \emph{is}. Esto es computar el siguiente cociente:
 \begin{equation*}P(w_i|t_i)=\frac{C(t_i,w_i)}{C(t_i)}\end{equation*}
- En el corpus Brown etiquetado con Treebank, la etiqueta VBZ ocurre 21.627 veces y VBZ es la etiquetra para \textsl{is} 10.073 veces. Entonces:
+ En el corpus Brown etiquetado con Treebank, la etiqueta VBZ ocurre 21.627 veces y VBZ es la etiquetra para \emph{is} 10.073 veces. Entonces:
 \begin{equation*}P(is|VBZ)=\frac{C(VBZ,is)}{C(VBZ)}=\frac{10.073}{21.627}=0.47\end{equation*}
 \end{itemize}
  
@@ -97,7 +97,7 @@ Podemos computar $P(is|VBZ)$ de nuevo contando de cuántas veces que vemos VBZ en
 
 \subsubsection{Etiquetadores gramaticales de máxima entropía}
 El principio de máxima entropía observa que la correcta distribución de la probabilidad de etiquetar la palabra $w$ con una etiqueta $t$, $p(w,t)$, es aquella que maximiza la incertidumbre o entropía sujeta a restricciones que representan la evidencia; los hechos conocidos.
-Estas restricciones son llamadas características o \textsl{features} y se expresan mediante funciones.
+Estas restricciones son llamadas características o \emph{features} y se expresan mediante funciones.
 
 Dicho de otra manera, dada una sucesión de palabras que se quieren etiquetar con un conjunto de etiquetas (por ejemplo {NN, VB, JJ}), la asignación correcta de etiquetas es aquella que resulte más uniforme, es decir, la que asigne cada etiqueta a un número parecido de palabras. Penalizando además aquellas distribuciones de probabilidades con poca entropía. 
 
@@ -120,7 +120,7 @@ f(w, t) = \left\{
 \end{equation*}
 
 A estas funciones, o a los aspectos que representan se las denomina características
-o \textsl{features} y son utilizadas como restricciones en el modelo:
+o \emph{features} y son utilizadas como restricciones en el modelo:
 
 
 \begin{equation*}p(f) = \sum_{w,t}p(w,t) f(w,t)\end{equation*}
