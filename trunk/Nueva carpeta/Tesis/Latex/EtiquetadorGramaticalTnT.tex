@@ -21,7 +21,7 @@ Las probabilidades son estimadas a partir de un corpus etiquetado previamente (e
 \textrm{Léxico:}
 \hat{P}(w_3|t_3)=\frac{f(w_3,t_3)}{f(t_3)}
 \end{equation*}
-donde $t_1, t_2$ y $t_3$ pertenecen al conjunto de etiquetas y $w_3$ pertenece al lexicon. $N$ es el número de \textsl{tokens} del corpus de entrenamiento. La probabilidad de máxima verosimilitud se calcula como cero si el denominador o el nominador son cero.
+donde $t_1, t_2$ y $t_3$ pertenecen al conjunto de etiquetas y $w_3$ pertenece al lexicon. $N$ es el número de \emph{tokens} del corpus de entrenamiento. La probabilidad de máxima verosimilitud se calcula como cero si el denominador o el nominador son cero.
 
 \subsection{Suavizado}
 TnT aplica una técnica de suavizado sobre las frecuencias contextuales. Esto tiene lugar debido al problema de los datos esparsos en las probabilidades de los trigramas.
@@ -52,7 +52,7 @@ Los valores $\lambda_1, \lambda_2$ y $\lambda_3$ son estimados por interpolación
 \end{algorithm}
 
 \subsection{Manejo de palabras desconocidas}
-TnT, al igual que muchos otros etiquetadores gramaticales, maneja las palabras desconocidas mediantes análisis de sufijos. Los sufijos son fuertes predictores del tipo de palabra. Por ejemplo las palabras terminadas en \textsl{able} en el corpus \textsl{Wall Street Journal} son adjetivos (JJ) en el 98\% de los casos (ej.:\textsl{fashionable}, \textsl{variable}) y sustantivos (NN) en el 2\% restante.
+TnT, al igual que muchos otros etiquetadores gramaticales, maneja las palabras desconocidas mediantes análisis de sufijos. Los sufijos son fuertes predictores del tipo de palabra. Por ejemplo las palabras terminadas en \emph{able} en el corpus \emph{Wall Street Journal} son adjetivos (JJ) en el 98\% de los casos (ej.:\emph{fashionable}, \emph{variable}) y sustantivos (NN) en el 2\% restante.
 
 La distribución de probabilidades para un sufijo particular es generada a partir de todas las palabras en el corpus de entrenamiento que comparten el mismo sufijo (de alguna longitud máxima predefinida). El término sufijo se entiende en este contexto como la secuencia final de letras de una palabra, que no coincide necesariamente con el significado lingüístico de sufijo.
 
@@ -83,7 +83,7 @@ Basándose en el hecho de que las palabras desconocidas son infrecuentes, TnT uti
 \end{enumerate}
 
 Adicionalmente, TnT discrimina la información sobre mayúsculas y minúsculas. Esto es debido a que las probabilidades de las etiquetas de palabras con mayúsuculas son distintas a las de las palabras con minúsculas.
-Para llevar esto a cabo se utilizan \textsl{flags} en las probabilidades contextuales. En vez de
+Para llevar esto a cabo se utilizan \emph{flags} en las probabilidades contextuales. En vez de
 
 \begin{equation*}
 P(t_3|t_1,t_2)

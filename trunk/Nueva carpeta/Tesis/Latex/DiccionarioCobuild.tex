@@ -1,5 +1,5 @@
 \section{Diccionario Cobuild} 
-Como se mencionó anteriormente, utilizaremos el diccionario Cobuild para generar una nuevo corpus de entrenamiento. Cobuild es una fuente de información que contiene un conjunto de entradas. Cada entrada está asociada a una palabra; posee una explicación de su significado, algunas características como su pronunciación y clase gramatical, uno o más ejemplos que muestran su uso y en algunos casos sinónimos. A continuación se muestra un ejemplo de una entrada para la palabra \textsl{acid}.\\
+Como se mencionó anteriormente, utilizaremos el diccionario Cobuild para generar una nuevo corpus de entrenamiento. Cobuild es una fuente de información que contiene un conjunto de entradas. Cada entrada está asociada a una palabra; posee una explicación de su significado, algunas características como su pronunciación y clase gramatical, uno o más ejemplos que muestran su uso y en algunos casos sinónimos. A continuación se muestra un ejemplo de una entrada para la palabra \emph{acid}.\\
 
 \noindent{\footnotesize \verb#DICTIONARY_ENTRY# \\
 \verb#acid#  $\longrightarrow$ {\footnotesize \textsl{palabra}}\\
@@ -10,30 +10,30 @@ Como se mencionó anteriormente, utilizaremos el diccionario Cobuild para generar
 \verb#qualitative adjective# $\longrightarrow$ {\footnotesize \textsl{etiqueta específica}}\\
 \verb#adjective# $\longrightarrow$ {\footnotesize \textsl{etiqueta general}}}\\ 
 
-Podemos apreciar que en esta entrada Cobuild asigna la etiqueta \textsl{qualitative adjective} a la palabra \textsl{acid} que aparece en el ejemplo. 
-Notemos que también aparece la etiqueta \textsl{adjective}: \textsl{qualitative adjective} es una etiqueta específica que brinda mayor información gramatical y sintáctica y \textsl{adjective} es una etiqueta general. Cada etiqueta general posee muchas etiquetas específicas.
+Podemos apreciar que en esta entrada Cobuild asigna la etiqueta \emph{qualitative adjective} a la palabra \emph{acid} que aparece en el ejemplo. 
+Notemos que también aparece la etiqueta \emph{adjective}: \emph{qualitative adjective} es una etiqueta específica que brinda mayor información gramatical y sintáctica y \emph{adjective} es una etiqueta general. Cada etiqueta general posee muchas etiquetas específicas.
 
-Veamos ejemplos para la etiqueta general \textsl{adjective}:
+Veamos ejemplos para la etiqueta general \emph{adjective}:
 \\\\
-\noindent Palabra: \textsl{abdominal}\\
-Ejemplo: \textsl{They suffered abdominal pains.}\\
-Etiqueta específica: \textsl{\textbf{classifying adjective: usually attributive}}\\
-Etiqueta general: \textsl{\textbf{adjective}}\\
+\noindent Palabra: \emph{abdominal}\\
+Ejemplo: \emph{They suffered abdominal pains.}\\
+Etiqueta específica: \emph{\textbf{classifying adjective: usually attributive}}\\
+Etiqueta general: \emph{\textbf{adjective}}\\
 \\
-\noindent Palabra: \textsl{accessible}\\
-Ejemplo: \textsl{...computers cheap enough to be accessible to virtually everyone.}\\
-Etiqueta específica: \textsl{\textbf{qualitative adjective: predicative + to}}\\
-Etiqueta general: \textsl{\textbf{adjective}}\\
+\noindent Palabra: \emph{accessible}\\
+Ejemplo: \emph{...computers cheap enough to be accessible to virtually everyone.}\\
+Etiqueta específica: \emph{\textbf{qualitative adjective: predicative + to}}\\
+Etiqueta general: \emph{\textbf{adjective}}\\
 \\
-\noindent Palabra: \textsl{acid}\\
-Ejemplo: \textsl{These oranges are very acid.}\\
-Etiqueta específica: \textsl{\textbf{qualitative adjective}}\\
-Etiqueta general: \textsl{\textbf{adjective}}\\
+\noindent Palabra: \emph{acid}\\
+Ejemplo: \emph{These oranges are very acid.}\\
+Etiqueta específica: \emph{\textbf{qualitative adjective}}\\
+Etiqueta general: \emph{\textbf{adjective}}\\
 \\
-\noindent Palabra: \textsl{abbreviated}\\
-Ejemplo: \textsl{Her lecture was an abbreviated version of a talk she had given the previous year.}\\
-Etiqueta específica: \textsl{\textbf{classifying adjective}}\\
-Etiqueta general: \textsl{\textbf{adjective}}\\
+\noindent Palabra: \emph{abbreviated}\\
+Ejemplo: \emph{Her lecture was an abbreviated version of a talk she had given the previous year.}\\
+Etiqueta específica: \emph{\textbf{classifying adjective}}\\
+Etiqueta general: \emph{\textbf{adjective}}\\
 
 Como vimos hasta ahora, para cada uno de los ejemplos de una entrada Cobuild posee información gramatical sobre la palabra definida. Con esta información alcanza para construir un corpus parcialmente anotado. El proceso consiste en pegar o concatenar las palabras de los ejemplos y asignar la etiqueta de Coubild para la palabra asociada. Entonces, para estas entradas del diccionario:
 
@@ -80,9 +80,9 @@ Esta última información conforma un corpus parcialmente anotado, es decir, un co
 Claramente el primer paso para llevar a cabo esta tarea es elegir un diccionario y extraer la información mencionada anteriormente. El diccionario elegido fué Cobuild. A continuación se detallan las características que lo hicieron distintivo frente a otros diccionarios.
 
 \subsection{Características} 
-Cobuild es un diccionario basado en la información del corpus \textsl{Bank of English}. Su siglas significan: \textsl{Collins Birmingham University International Language Database}. 
+Cobuild es un diccionario basado en la información del corpus \emph{Bank of English}. Su siglas significan: \emph{Collins Birmingham University International Language Database}. 
 
-El corpus \textsl{Bank of English} contiene 650 millones de palabras cuidadosamente seleccionadas del corpus \textsl{Collins}\footnote{El corpus Collins está compuesto por alrededor de 2.5 billones de palabras en inglés seleccionadas de websites, diarios, revistas, libros, material hablado de radio, TV y conversaciones diarias} para dar reflejo preciso y balanceado del inglés que se usa día a día. 
+El corpus \emph{Bank of English} contiene 650 millones de palabras cuidadosamente seleccionadas del corpus \emph{Collins}\footnote{El corpus Collins está compuesto por alrededor de 2.5 billones de palabras en inglés seleccionadas de websites, diarios, revistas, libros, material hablado de radio, TV y conversaciones diarias} para dar reflejo preciso y balanceado del inglés que se usa día a día. 
 
 Cobuild fué concebido teniendo especial atención en los ejemplos expuestos. Cada palabra incluída en el diccionario fué elegida utilizando información sobre la frecuencia de ocurrencia de la misma.
 
@@ -97,15 +97,15 @@ Un diccionario debe comenzar por la evidencia, los hechos. Los hablantes de un l
 El resultado fué que Cobuild estableció la utilización de corpora para construir diccionarios. Los creadores de Cobuild sabían que necesitaban millones de palabras de inglés, hablado y escrito, americano y británico, formal e informal, sobre hechos y sobre ficción, étc. Esta evidencia reunida durante varios años, permitió encontrar las palabras y expresiones más utilizadas. Cuando una palabra tiene varios significados existe la capacidad de ver cuales son los significados importantes, y que frases se deben incluir. Tomaron como filosofía y fueron conscientes de que todos los detalles de un uso natural de una palabra son escenciales y no pueden ser falsificados. Se dieron cuenta de que debían utilizar ejemplos reales siguiendo la tradición de los grandes lingüistas, en lugar de crearlos. 
 
 \subsection{The Bank of English} 
-Diseñando el corpus \textsl{The Bank of English} se balancearon un número de factores importantes (inglés hablado y escrito, americano y británico y otras características: hablantes de comunidades nativas, libros y revistas y más clasificaciones dentro de ésas).
+Diseñando el corpus \emph{The Bank of English} se balancearon un número de factores importantes (inglés hablado y escrito, americano y británico y otras características: hablantes de comunidades nativas, libros y revistas y más clasificaciones dentro de ésas).
 
-Dentro del componente hablado, el tipo de lenguaje más dificil de recolectar fué como siempre la conversación informal grabada en la vida diaria de la gente común, sin pensar de que su lenguaje está siendo preservado en un corpus. Cada conversación tuvo que ser grabada y transcripta por expertos para luego ser ingresada en una computdora. Esta clase de lenguaje improvisado es de un interés particular para los constructores de diccionarios. El \textsl{Bank of English} cuenta con un total de 15 millones de palabras de este tipo de grabaciones de lenguaje hablado.
+Dentro del componente hablado, el tipo de lenguaje más dificil de recolectar fué como siempre la conversación informal grabada en la vida diaria de la gente común, sin pensar de que su lenguaje está siendo preservado en un corpus. Cada conversación tuvo que ser grabada y transcripta por expertos para luego ser ingresada en una computdora. Esta clase de lenguaje improvisado es de un interés particular para los constructores de diccionarios. El \emph{Bank of English} cuenta con un total de 15 millones de palabras de este tipo de grabaciones de lenguaje hablado.
 
 \subsection{La lista de palabras principales} 
 Es mucho más fácil decidir qué palabras y frases incluir y cuales omitir, cuando se tienen cifras exactas sobre una cantidad tan grande de lenguaje. Un diccionario (incluso un gran diccionario) es capaz de presentar solo los hechos más importantes del lenguaje y los compiladores necesitan buena evidencia para realizar sus selecciones. Cobuild se especializa en presentar las palabras y frases que son frecuentes en el uso diario. Lejos de ser un registro histórico del lenguaje es más bien una muestra del lenguaje contamporáneo.
 
 \subsection{Ejemplos} 
-Todos los ejemplos fueron cuidadosamente seleccionados, como se dijo anteriormente,  del corpus \textsl{The Bank of English} para mostrar los patrones que aparecen frecuentemente junto a una palabra o frase. 
+Todos los ejemplos fueron cuidadosamente seleccionados, como se dijo anteriormente,  del corpus \emph{The Bank of English} para mostrar los patrones que aparecen frecuentemente junto a una palabra o frase. 
 
 Desde luego éstos ayudan a mostrar el significado de la palabra exhibiendo su uso. Más aún, las investigaciones sugieren que un gran número de usuarios comienza leyendo los ejemplos antes que el significado. 
 
@@ -117,17 +117,17 @@ Casi cada sentido de cada entrada en el diccionario Cobuild tiene junto a esta u
 \subsection{Pragmatismo} 
 Muchos usos de una palabra necesitan más de una frase para explicar apropiadamente su significado. 
 
-El estudio y descripción de las formas en que la gente utiliza el lenguaje para realizar cosas es llamado pragmatismo. Este aspecto del lenguaje es muy importante y fácil de omitir. Cobuild posee mucha información sobre pragmatismo y la expone mediante un símbolo especial en cada entrada. Por ejemplo \textsl{and things like that} es definido como una expresión utilizada para ampliar el rango de una lista. 
+El estudio y descripción de las formas en que la gente utiliza el lenguaje para realizar cosas es llamado pragmatismo. Este aspecto del lenguaje es muy importante y fácil de omitir. Cobuild posee mucha información sobre pragmatismo y la expone mediante un símbolo especial en cada entrada. Por ejemplo \emph{and things like that} es definido como una expresión utilizada para ampliar el rango de una lista. 
 
 \subsection{Definición del estilo} 
 La característica más distintiva de Cobuild en su primera versión fué el uso de frases completas en las definiciones. El significado de una palabra fué establecido de la forma en que una persona ordinaria podría explicárselo a otra.
 
 Generalmente los diccionarios ofrecen definiciones breves y tradicionales, mientras que Cobuild expone definiciones realmente amplias y ricas. Si se observan detenidamente las definiciones particulares se puede apreciar que cada palabra es elegida para ilustrar ciertos aspectos del significado. Y en la medida en que es posible, las palabras utilizadas en una definición son más frecuentes que la palabra que está siendo definida.
 
-Las definiciones cortas no pueden decir demasiado. Por ejemplo, el primer sentido de verbo de \textsl{mean} podría ser definido como solo \textsl{signify}, que es cierto, pero no es todo lo que se puede decir. Cobuild expone esto: \textsl{If you want to know...} es decir que ese sentido surge cuando alguien está en la búsqueda de información.  La palabra \textsl{if} indica que esta es una opción, pero una perfectamente normal, y \textsl{you} nos dice que no es una característica de ningún grupo particular de gente (compararlo con \textsl{if a policeman arrests you...}). Entonces la definición dice lo que alguien puede querer saber sobre el significado de una \textsl{palabra, código, señal o gesto}, indicando que esas son las típicas clases de temas que serán encontradas con este sentido de \textsl{mean}. Solo después de toda esta información viene el equivalente de \textit{signify}: \textsl{lo que se refiere a o a que mensaje transmite}. Entonces hay 12 palabras antes de la palabra principal en este sentido, pero cada una de ellas transmite información vital que sería muy difícil de incluir en una definición corta.
+Las definiciones cortas no pueden decir demasiado. Por ejemplo, el primer sentido de verbo de \emph{mean} podría ser definido como solo \emph{signify}, que es cierto, pero no es todo lo que se puede decir. Cobuild expone esto: \emph{If you want to know...} es decir que ese sentido surge cuando alguien está en la búsqueda de información.  La palabra \emph{if} indica que esta es una opción, pero una perfectamente normal, y \emph{you} nos dice que no es una característica de ningún grupo particular de gente (compararlo con \emph{if a policeman arrests you...}). Entonces la definición dice lo que alguien puede querer saber sobre el significado de una \emph{palabra, código, señal o gesto}, indicando que esas son las típicas clases de temas que serán encontradas con este sentido de \emph{mean}. Solo después de toda esta información viene el equivalente de \textit{signify}: \emph{lo que se refiere a o a que mensaje transmite}. Entonces hay 12 palabras antes de la palabra principal en este sentido, pero cada una de ellas transmite información vital que sería muy difícil de incluir en una definición corta.
 
 \section{Corpus BNC}
-El \textsl{British National Corpus} (BNC) es un corpus de inglés británico cuyo tamaño es de alrededor de 100 millones de palabras. Está compuesto de una amplia gama de muestras de diferentes textos. La mayoría de estas muestras tienen un tamaño de entre 40 y 50 mil palabras; los textos publicados raramente aparecen completos.
+El \emph{British National Corpus} (BNC) es un corpus de inglés británico cuyo tamaño es de alrededor de 100 millones de palabras. Está compuesto de una amplia gama de muestras de diferentes textos. La mayoría de estas muestras tienen un tamaño de entre 40 y 50 mil palabras; los textos publicados raramente aparecen completos.
 
 El BNC fué diseñado para reflejar el uso del inglés británico contemporáneo. Está compuesto en un 90\% de inglés escrito y en un 10\% de transcripciones de inglés hablado. El inglés escrito está compuesto a su vez por muestras tomadas de las siguientes fuentes:
 
@@ -153,11 +153,11 @@ Para obtener las grabaciones de encuentros informales se reclutaron 124 adultos,
 BNC posee información gramatical (POS) para cada una de sus palabras. Las 100 millones de palabras de BNC fueron etiquetadas automáticamente por CLAWS4, un etiquetador automático desarrollado en la universidad de Lancaster. El conjunto de etiquetas utilizado para dicha tarea fué C5 (58 etiquetas gramaticales).
 
 \section{Corpus WSJ} 
-El \textsl{Wall Street Journal} (WSJ) es un corpus de inglés americano cuyo tamaño es de alrededor de 1 millón de palabras. 
-Forma parte del proyecto \textsl{Peen Treebank}. 
+El \emph{Wall Street Journal} (WSJ) es un corpus de inglés americano cuyo tamaño es de alrededor de 1 millón de palabras. 
+Forma parte del proyecto \emph{Peen Treebank}. 
 
 Como parte de este proyecto, WSJ fué etiquetado utilizando un proceso de 2 etapas: en la primer etapa se utilizó un etiquetador gramatical para asignar etiquetas automáticamente mientras que en la segunda se corrigieron los errores de etiquetado manualmente.
 
-El etiquetador gramatical utilizado fué PARTS, un etiquetador estocástico desarrollado en los laboratorios de AT\&T. Este etiquetador asigna etiquetas con un porcentaje de error de 3-5\%. PARTS genera etiquetas pertenecientes a un conjunto de etiquetas similar al conjunto \textsl{Brown} (levemente modificado). Por lo tanto, la salida de PARTS debe convertirse en etiquetas de \textsl{Penn Treebank}. Esta tarea introduce un error del 4\% ya que las etiquetas de \textsl{Penn Treebank} hacen ciertas distinciones que el conjunto de etiquetas PARTS no posee. Entonces el texto etiquetado posee un porcentaje de error total de 7-9\%.
+El etiquetador gramatical utilizado fué PARTS, un etiquetador estocástico desarrollado en los laboratorios de AT\&T. Este etiquetador asigna etiquetas con un porcentaje de error de 3-5\%. PARTS genera etiquetas pertenecientes a un conjunto de etiquetas similar al conjunto \emph{Brown} (levemente modificado). Por lo tanto, la salida de PARTS debe convertirse en etiquetas de \emph{Penn Treebank}. Esta tarea introduce un error del 4\% ya que las etiquetas de \emph{Penn Treebank} hacen ciertas distinciones que el conjunto de etiquetas PARTS no posee. Entonces el texto etiquetado posee un porcentaje de error total de 7-9\%.
 
 Una vez finalizada esta etapa de etiquetación y conversión automática, las etiquetas son corregidas manualmente.

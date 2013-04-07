@@ -38,27 +38,27 @@ Estas entradas, que conforman el diccionario Cobuild y que constituyen la fuente
 
 \subsection{Reconocimiento de formas flexionadas} 
 En muchas entradas del diccionario Cobuild ocurre la palabra, uno o más ejemplos en donde ésta aparece con cierto sentido (indicado por medio de etiquetas gramaticales) pero dentro de los ejemplos hay apariciones de formas flexionadas. Tomemos la siguiente entrada:\\ \\
-\verb#DICTIONARY_ENTRY# \\
+{\footnotesize \verb#DICTIONARY_ENTRY# \\
 \verb#bite#  $\longrightarrow$ {\footnotesize \textsl{palabra}}\\
 \verb#bites, biting, bit, bitten# $\longrightarrow$ {\footnotesize \textsl{formas flexionadas}}\\
 \verb#b*a*!it# $\longrightarrow$ {\footnotesize \textsl{pronunciación}}\\
 \verb#If an object or surface bites, it grips another object or surface rather than slipping on it or against it..# $\longrightarrow$ {\footnotesize \textsl{definición}}\\
 \verb#Let the clutch in slowly until it begins to bite.# $\longrightarrow$ {\footnotesize \textsl{ejemplo}}\\
 \verb#verb# $\longrightarrow$ {\footnotesize \textsl{etiqueta específica}}\\
-\verb#verb# $\longrightarrow$ {\footnotesize \textsl{etiqueta general}}\\
+\verb#verb# $\longrightarrow$ {\footnotesize \textsl{etiqueta general}}}\\
 
-Aquí arriba se puede observar una entrada del diccionario para la palabra \textsl{bite}, que contiene la definición y un ejemplo de esta palabra con sus respectivas etiquetas:\\
+Aquí arriba se puede observar una entrada del diccionario para la palabra \emph{bite}, que contiene la definición y un ejemplo de esta palabra con sus respectivas etiquetas:\\
 
-(1) \textsl{If an object or surface bites, it grips another object or surface rather than slipping
+(1) \emph{If an object or surface bites, it grips another object or surface rather than slipping
 on it or against it.}\\
 
-(2) \textsl{Let the clutch in slowly until it begins to bite.}\\
+(2) \emph{Let the clutch in slowly until it begins to bite.}\\
 \\
-En (2) aparece la palabra \textsl{bite} en su forma regular con la etiqueta \textsl{verb} mientras que en (1) aparece la forma flexionada \textsl{bites} con la etiqueta \textsl{verb}. En este caso (1) está ofreciendo más información gramatical que la expuesta por medio de la etiqueta. Reconociendo la forma flexionada (\textsl{bites}) podemos adicionarle información extra a la etiqueta \textsl{verb}; en vez de guardar la etiqueta \textsl{Penn Treebank} correspondiente a \textsl{verb} (VB), en este caso guardaríamos la etiqueta  VBZ (verbo de tiempo presente en tercera persona singular) que contiene más información gramatical que VB.
+En (2) aparece la palabra \emph{bite} en su forma regular con la etiqueta \emph{verb} mientras que en (1) aparece la forma flexionada \emph{bites} con la etiqueta \emph{verb}. En este caso (1) está ofreciendo más información gramatical que la expuesta por medio de la etiqueta. Reconociendo la forma flexionada (\emph{bites}) podemos adicionarle información extra a la etiqueta \emph{verb}; en vez de guardar la etiqueta \emph{Penn Treebank} correspondiente a \emph{verb} (VB), en este caso guardaríamos la etiqueta  VBZ (verbo de tiempo presente en tercera persona singular) que contiene más información gramatical que VB.
 
-Las entradas de Cobuild exponen las formas derivadas de la palabra que pueden contener los ejemplos. En el ejemplo presentado anteriormente la palabra es \textsl{bite} y las formas derivadas de \textsl{bite} que muestra la entrada son \textsl{bites, biting, bit} y \textsl{bitten}. Con esta información y la etiqueta que fué anotada en Cobuild (\textsl{verb}) se pueden inferir y generar etiquetas de \textsl{Penn Treebank} con información adicional. 
+Las entradas de Cobuild exponen las formas derivadas de la palabra que pueden contener los ejemplos. En el ejemplo presentado anteriormente la palabra es \emph{bite} y las formas derivadas de \emph{bite} que muestra la entrada son \emph{bites, biting, bit} y \emph{bitten}. Con esta información y la etiqueta que fué anotada en Cobuild (\emph{verb}) se pueden inferir y generar etiquetas de \emph{Penn Treebank} con información adicional. 
 
-Como ya se mencionó anteriormente, en este caso la forma \textsl{bites} (derivada de la palabra \textsl{bite}) que aparece en la definición posee la etiqueta \textsl{verb}. La tarea aquí será reconocer que \textsl{bites} es un verbo de tiempo presente en tercera persona singular a partir de que \textsl{bites} está etiquetada como verbo y de que la palabra de la cual deriva es \textsl{bite}. Es decir, inferir el tipo de la forma derivada a partir de la palabra y la etiqueta asignada por Cobuild.
+Como ya se mencionó anteriormente, en este caso la forma \emph{bites} (derivada de la palabra \emph{bite}) que aparece en la definición posee la etiqueta \emph{verb}. La tarea aquí será reconocer que \emph{bites} es un verbo de tiempo presente en tercera persona singular a partir de que \emph{bites} está etiquetada como verbo y de que la palabra de la cual deriva es \emph{bite}. Es decir, inferir el tipo de la forma derivada a partir de la palabra y la etiqueta asignada por Cobuild.
 
 Con el objetivo de identificar las formas derivadas de una palabra se desarrollaron reglas y métodos para su reconocimiento, buscando preservar y aprovechar toda  la información que ofrece Cobuild. Entonces, a partir de esta información: la palabra, la forma en que ocurre y la etiqueta asignada se aplican las siguientes reglas para reconocer información adicional a la etiqueta gramatical.
 
@@ -100,18 +100,39 @@ También cabe aclarar que las etiquetas Cobuild son muy ricas sintácticamente y u
 Una vez realizado este proceso, verificamos que el etiquetado haya sido correcto. 
 Se realizó una rutina que etiquetara automáticamente todos los ejemplos de Cobuild (se utilizó el etiquetador TnT) y se comparó el resultado contra las etiquetas asignadas (se generó una matriz de confusión). El resultado fué de 71\% de aciertos. Se analizaron las etiquetas que diferían con mayor frecuencia, y en algunos casos se analizaron palabras particulares donde las etiquetas no coincidían. Se corrigieron las traducciones y se ajustaron los algoritmos del proceso de extracción y traducción de etiqueteas hasta alcanzar un grado de error mínimo. Los máximos focos de error que no se pudieron corregir se deben a palabras etiquetadas con VBD cuando son VBN y viceversa. Estas etiquetas son dificilmente desmbiguables automaticamente.
 
-Una vez obtenidos los ejemplos con las etiquetas traducidas a Penn Tree Bank, se realiza un nuevo proceso para obtener precisión gramatical perdida en la traducción
+Una vez obtenidos los ejemplos con las etiquetas traducidas a Penn Treebank, se realiza un nuevo proceso para obtener precisión gramatical perdida en la traducción
 
 Para eso se comparan las etiquetas asignadas contra las etiquetas asignadas automáticamente por TnT. En caso de coincidir y en caso de que la etiqueta TnT aporte  mayor precisión, se asigna esta última. Se utilizó el siguiente algoritmo:\\\\
 
-Si se obtuvo de Cobuild NN 	pero TnT asigno NNS, NNP o NNPS,  asignar tag TnT\\
-Si se obtuvo de Cobuild NNS pero TnT asigno NNPS, asignar NNPS\\
-Si se obtuvo de Cobuild VB  pero TnT asigno VBN, VBD, VBZ, VBP, VBG  asignar tag TnT\\
-Si se obtuvo de Cobuild JJ  pero TnT asigno JJR o JJS  asignar tag TnT\\
-Si se obtuvo de Cobuild RB  pero TnT asigno RBR o RBS  asignar tag TnT\\
-Si se obtuvo de Cobuild WP  pero TnT asigno WP\$  asignar tag TnT \\
-Si se obtuvo de Cobuild PRP  pero TnT asigno PRP\$  asignar tag TnT \\
-\\\\
+\floatname{algorithm}{Algoritmo}
+\begin{algorithm}
+\caption{Obtener la etiqueta de mayor detalle gramatical}
+\begin{algorithmic}
+\STATE
+\STATE Si se obtuvo de Cobuild la etiqueta:
+\STATE
+\STATE \textbf{NN}:
+\STATE\hspace{\algorithmicindent} y TnT asignó NNS, NNP o NNPS, asignar la etiqueta de TnT
+\STATE
+\STATE \textbf{NNS}:
+\STATE\hspace{\algorithmicindent} y TnT asignó NNPS, asignar NNPS
+\STATE
+\STATE \textbf{VB}:
+\STATE\hspace{\algorithmicindent} y TnT asignó VBN, VBD, VBZ, VBP o VBG, asignar la etiqueta de TnT
+\STATE
+\STATE \textbf{JJ}:
+\STATE\hspace{\algorithmicindent} y TnT asignó JJR o JJS, asignar la etiqueta de TnT
+\STATE
+\STATE \textbf{RB}:
+\STATE\hspace{\algorithmicindent} y TnT asignó RBR o RBS, asignar la etiqueta de TnT
+\STATE
+\STATE \textbf{WP}:
+\STATE\hspace{\algorithmicindent} y TnT asignó asigno WP\$, asignar WP\$
+\STATE
+\STATE \textbf{PRP}:
+\STATE\hspace{\algorithmicindent} y TnT asignó asigno PRP\$, asignar PRP\$
+\STATE
+\end{algorithmic}
+\end{algorithm}
 
 Luego de este proceso, el análisis de comparación contra las etiquetas asignadas por TnT dió un 86\% de aciertos.
-
