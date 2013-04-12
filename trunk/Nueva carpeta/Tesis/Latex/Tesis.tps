@@ -17,8 +17,8 @@ Class=LaTeXView
 Document=ExtraccionDeInformacion.tex
 
 [Frame0_View0,0]
-TopLine=136
-Cursor=10813
+TopLine=139
+Cursor=10613
 
 [Frame1]
 Flags=0
@@ -89,7 +89,7 @@ Class=LaTeXView
 Document=Introduccion.tex
 
 [Frame4_View0,0]
-TopLine=141
+TopLine=142
 Cursor=8513
 
 [Frame5]
@@ -107,7 +107,7 @@ Class=LaTeXView
 Document=DiccionarioCobuild.tex
 
 [Frame5_View0,0]
-TopLine=99
+TopLine=98
 Cursor=7266
 
 [SessionInfo]

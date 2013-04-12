@@ -24,6 +24,8 @@ Los etiquetadores estocásticos generalmente resuelven la ambigüedad de etiquetas
 
 Adicionalmente existe una tercera clase de etiquetadores que es una mezcla de estos dos: etiquetadores basados en la transformación. Como los etiquetadores basados en reglas, están basados en reglas que determinan cuando una palabra ambigüa debe tener cierta etiqueta. Y como los etiquetadores estocásticos tienen un componente de aprendizaje automático; las reglas son inducidas automáticamente a partir de un corpus de entrenamiento previamente etiquetado.
 
+La información presentada en este subcapítulo está basada en \cite[sub~chapter~5.3]{Jurafsky}
+
 \subsection{Etiquetadores gramaticales basados en reglas} 
 Los primeros algoritmos de asignación de etiquetas gramaticales estaban basados en un proceso de dos etapas. En la primer etapa utilizaban un diccionario para asignar a cada palabra una lista de potenciales etiquetas gramaticales. En la segunda etapa utilizaban grandes listas de reglas de desambigüación escritas a mano para reducir la lista de etiquetas hasta llegar a una para cada palabra. De esta manera eliminaban las etiquetas inconsistentes con el contexto.
 
@@ -94,6 +96,8 @@ Podemos computar $P(is|VBZ)$ de nuevo contando de cuántas veces que vemos VBZ en
 \end{itemize}
  
  Resumiendo, el etiquetado HMM es la tarea de elegir con la mayor probabilidad una secuencia de etiquetas para una secuencia de palabras dada. HMM incluye la suposición de ciertos hechos para simplificar las ecuaciones originales mejorando así la eficiencia de los cómputos.
+
+La información presentada en este subcapítulo está basada en \cite[sub~chapter~5.5]{Jurafsky}
 
 \subsubsection{Etiquetadores gramaticales de máxima entropía}
 El principio de máxima entropía observa que la correcta distribución de la probabilidad de etiquetar la palabra $w$ con una etiqueta $t$, $p(w,t)$, es aquella que maximiza la incertidumbre o entropía sujeta a restricciones que representan la evidencia; los hechos conocidos.
