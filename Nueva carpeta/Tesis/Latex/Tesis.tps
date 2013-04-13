@@ -14,11 +14,11 @@ NormalPos.top=32
 NormalPos.right=1577
 NormalPos.bottom=580
 Class=LaTeXView
-Document=ExtraccionDeInformacion.tex
+Document=DiccionarioCobuild.tex
 
 [Frame0_View0,0]
-TopLine=139
-Cursor=10613
+TopLine=114
+Cursor=8395
 
 [Frame1]
 Flags=0
@@ -32,11 +32,11 @@ NormalPos.top=32
 NormalPos.right=1577
 NormalPos.bottom=580
 Class=LaTeXView
-Document=ConjuntosDeEtiquetas.tex
+Document=EtiquetadorGramaticalStanford.tex
 
 [Frame1_View0,0]
-TopLine=0
-Cursor=1228
+TopLine=24
+Cursor=3083
 
 [Frame2]
 Flags=0
@@ -50,11 +50,11 @@ NormalPos.top=32
 NormalPos.right=1577
 NormalPos.bottom=580
 Class=LaTeXView
-Document=Tesis.tex
+Document=Bibliografia.tex
 
 [Frame2_View0,0]
-TopLine=9
-Cursor=610
+TopLine=0
+Cursor=673
 
 [Frame3]
 Flags=0
@@ -68,11 +68,11 @@ NormalPos.top=32
 NormalPos.right=1577
 NormalPos.bottom=580
 Class=LaTeXView
-Document=Indice.tex
+Document=EtiquetadorGramaticalTnT.tex
 
 [Frame3_View0,0]
-TopLine=1
-Cursor=438
+TopLine=97
+Cursor=8306
 
 [Frame4]
 Flags=0
@@ -86,31 +86,13 @@ NormalPos.top=32
 NormalPos.right=1577
 NormalPos.bottom=580
 Class=LaTeXView
-Document=Introduccion.tex
+Document=PalabrasDesconocidas.tex
 
 [Frame4_View0,0]
-TopLine=142
-Cursor=8513
-
-[Frame5]
-Flags=0
-ShowCmd=1
-MinPos.x=-1
-MinPos.y=-1
-MaxPos.x=-1
-MaxPos.y=-1
-NormalPos.left=4
-NormalPos.top=32
-NormalPos.right=1577
-NormalPos.bottom=580
-Class=LaTeXView
-Document=DiccionarioCobuild.tex
-
-[Frame5_View0,0]
-TopLine=98
-Cursor=7266
+TopLine=24
+Cursor=5143
 
 [SessionInfo]
-FrameCount=6
+FrameCount=5
 ActiveFrame=0
 
