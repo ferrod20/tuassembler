@@ -1,22 +1,22 @@
 PATH=$PATH:$HOME/bin
 
-tnt-diff -a -l Entrenado/wsj.lex  ../WSJ/wsj.g 	Taggeado/wsj.tt > Mediciones/wsj.m
-tnt-diff ../WSJ/wsj.g 	Taggeado/wsj+NFI.tt > Mediciones/wsj+NFI.m
+tnt-diff -a -l Entrenado/wsj.lex  ../WSJ/wsj.g 	WSJ/Taggeado/wsj.tt > WSJ/Mediciones/wsj.m
+tnt-diff ../WSJ/wsj.g 	WSJ/Taggeado/wsj+NFI.tt > WSJ/Mediciones/wsj+NFI.m
 
-tnt-diff ../WSJ/wsjCompC1.g 	Taggeado/wsjCompC1.tt > Mediciones/wsjComplementC1.m
-tnt-diff ../WSJ/wsjCompC2.g 	Taggeado/wsjCompC2.tt > Mediciones/wsjComplementC2.m
-tnt-diff ../WSJ/wsjCompC3.g 	Taggeado/wsjCompC3.tt > Mediciones/wsjComplementC3.m
-tnt-diff ../WSJ/wsjCompC4.g 	Taggeado/wsjCompC4.tt > Mediciones/wsjComplementC4.m
+tnt-diff ../WSJ/wsjCompC1.g 	WSJ/Taggeado/wsjCompC1.tt > WSJ/Mediciones/wsjComplementC1.m
+tnt-diff ../WSJ/wsjCompC2.g 	WSJ/Taggeado/wsjCompC2.tt > WSJ/Mediciones/wsjComplementC2.m
+tnt-diff ../WSJ/wsjCompC3.g 	WSJ/Taggeado/wsjCompC3.tt > WSJ/Mediciones/wsjComplementC3.m
+tnt-diff ../WSJ/wsjCompC4.g 	WSJ/Taggeado/wsjCompC4.tt > WSJ/Mediciones/wsjComplementC4.m
 
-tnt-diff ../WSJ/wsjCompC1.g 	Taggeado/wsjCompC1+NFI.tt > Mediciones/wsjComplementC1+NFI.m
-tnt-diff ../WSJ/wsjCompC2.g 	Taggeado/wsjCompC2+NFI.tt > Mediciones/wsjComplementC2+NFI.m
-tnt-diff ../WSJ/wsjCompC3.g 	Taggeado/wsjCompC3+NFI.tt > Mediciones/wsjComplementC3+NFI.m
-tnt-diff ../WSJ/wsjCompC4.g 	Taggeado/wsjCompC4+NFI.tt > Mediciones/wsjComplementC4+NFI.m
+tnt-diff ../WSJ/wsjCompC1.g 	WSJ/Taggeado/wsjCompC1+NFI.tt > WSJ/Mediciones/wsjComplementC1+NFI.m
+tnt-diff ../WSJ/wsjCompC2.g 	WSJ/Taggeado/wsjCompC2+NFI.tt > WSJ/Mediciones/wsjComplementC2+NFI.m
+tnt-diff ../WSJ/wsjCompC3.g 	WSJ/Taggeado/wsjCompC3+NFI.tt > WSJ/Mediciones/wsjComplementC3+NFI.m
+tnt-diff ../WSJ/wsjCompC4.g 	WSJ/Taggeado/wsjCompC4+NFI.tt > WSJ/Mediciones/wsjComplementC4+NFI.m
 
-tnt-diff ../WSJ/wsjM1.g 						Taggeado/wsjM1.tt > Mediciones/wsjM1.m
-tnt-diff ../WSJ/wsjM2.g 						Taggeado/wsjM2.tt > Mediciones/wsjM2.m
+tnt-diff ../WSJ/wsjM1.g 						WSJ/Taggeado/wsjM1.tt > WSJ/Mediciones/wsjM1.m
+tnt-diff ../WSJ/wsjM2.g 						WSJ/Taggeado/wsjM2.tt > WSJ/Mediciones/wsjM2.m
 
-tnt-diff ../WSJ/wsjM1.g 						Taggeado/wsjM1+NFI.tt > Mediciones/wsjM1+NFI.m
-tnt-diff ../WSJ/wsjM2.g 						Taggeado/wsjM2+NFI.tt > Mediciones/wsjM2+NFI.m
+tnt-diff ../WSJ/wsjM1.g 						WSJ/Taggeado/wsjM1+NFI.tt > WSJ/Mediciones/wsjM1+NFI.m
+tnt-diff ../WSJ/wsjM2.g 						WSJ/Taggeado/wsjM2+NFI.tt > WSJ/Mediciones/wsjM2+NFI.m
 
 pause
