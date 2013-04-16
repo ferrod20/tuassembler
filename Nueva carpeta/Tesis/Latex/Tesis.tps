@@ -17,8 +17,8 @@ Class=LaTeXView
 Document=DiccionarioCobuild.tex
 
 [Frame0_View0,0]
-TopLine=114
-Cursor=8395
+TopLine=121
+Cursor=8074
 
 [Frame1]
 Flags=0
@@ -89,7 +89,7 @@ Class=LaTeXView
 Document=PalabrasDesconocidas.tex
 
 [Frame4_View0,0]
-TopLine=24
+TopLine=23
 Cursor=5143
 
 [SessionInfo]

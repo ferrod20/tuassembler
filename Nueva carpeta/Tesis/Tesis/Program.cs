@@ -1455,6 +1455,10 @@ namespace ConsoleApplication1
                             salida.Write("\t");
                             salida.Write(etiquetado.EsAlgunaDeEstas("PRP$") ? etiquetado : etiquetaExtraída);
                             break;
+                        default:
+                            salida.Write("\t");
+                            salida.Write(etiquetado);
+                            break;
 
                     }
                 }
