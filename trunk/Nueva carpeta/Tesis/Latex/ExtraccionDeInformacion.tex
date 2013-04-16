@@ -34,10 +34,12 @@ Cada entrada arriba presentada tiene la característica de poseer una cantidad va
 \verb#classifying adjective# $\longrightarrow$ {\footnotesize \textsl{etiqueta específica}}\\
 \verb#adjective# $\longrightarrow$ {\footnotesize \textsl{etiqueta general}}}\\ 
   
-Estas entradas, que conforman el diccionario Cobuild y que constituyen la fuente de información principal sobre la cual se basa este trabajo, fueron cuidadosamente procesadas y refinadas intentando mantener toda la información disponible. El primer desafío de esta etapa consistió en recuperar las entradas con toda la información gramatical disponible; explícita e implícita. Una primer tarea fué reconocer y registrar información relacionada a las formas flexionadas de la palabra (plurales, pasados, etc.), es decir, obtener información gramatical implícita.
+Estas entradas, que conforman el diccionario Cobuild y que constituyen la fuente de información principal sobre la cual se basa este trabajo, fueron cuidadosamente procesadas y refinadas intentando mantener toda la información disponible, explícita e implícita. Una primer tarea fué reconocer y registrar información relacionada a las formas flexionadas de la palabra (plurales, pasados, etc.), es decir, obtener información gramatical implícita.
 
 \subsection{Reconocimiento de formas flexionadas} 
-En muchas entradas del diccionario Cobuild ocurre la palabra, uno o más ejemplos en donde ésta aparece con cierto sentido (indicado por medio de etiquetas gramaticales) pero dentro de los ejemplos hay apariciones de formas flexionadas. Tomemos la siguiente entrada:\\ \\
+En muchas entradas del diccionario Cobuild ocurre la palabra, uno o más ejemplos en donde ésta aparece con cierto sentido (indicado por medio de etiquetas gramaticales) pero dentro de los ejemplos hay apariciones de formas flexionadas. 
+
+Tomemos la siguiente entrada:\\ \\
 {\footnotesize \verb#DICTIONARY_ENTRY# \\
 \verb#bite#  $\longrightarrow$ {\footnotesize \textsl{palabra}}\\
 \verb#bites, biting, bit, bitten# $\longrightarrow$ {\footnotesize \textsl{formas flexionadas}}\\
@@ -54,18 +56,20 @@ on it or against it.}\\
 
 (2) \emph{Let the clutch in slowly until it begins to bite.}\\
 \\
-En (2) aparece la palabra \emph{bite} en su forma regular con la etiqueta \emph{verb} mientras que en (1) aparece la forma flexionada \emph{bites} con la etiqueta \emph{verb}. En este caso (1) está ofreciendo más información gramatical que la expuesta por medio de la etiqueta. Reconociendo la forma flexionada (\emph{bites}) podemos adicionarle información extra a la etiqueta \emph{verb}; en vez de guardar la etiqueta \emph{Penn Treebank} correspondiente a \emph{verb} (VB), en este caso guardaríamos la etiqueta  VBZ (verbo de tiempo presente en tercera persona singular) que contiene más información gramatical que VB.
+Las entradas de Cobuild exponen formas derivadas de la palabra que eventualmente pueden pueden aparecer en los ejemplos. En el ejemplo presentado la palabra es \emph{bite} y las formas derivadas son \emph{bites, biting, bit} y \emph{bitten}. Con esta información y la etiqueta asignada por Cobuild se pueden inferir y generar etiquetas de \emph{Penn Treebank} con información adicional. 
 
-Las entradas de Cobuild exponen las formas derivadas de la palabra que pueden contener los ejemplos. En el ejemplo presentado anteriormente la palabra es \emph{bite} y las formas derivadas de \emph{bite} que muestra la entrada son \emph{bites, biting, bit} y \emph{bitten}. Con esta información y la etiqueta que fué anotada en Cobuild (\emph{verb}) se pueden inferir y generar etiquetas de \emph{Penn Treebank} con información adicional. 
+En (2) aparece la palabra \emph{bite} en su forma regular con la etiqueta \emph{verb} mientras que en (1) aparece la forma flexionada \emph{bites} con la etiqueta \emph{verb}. Reconociendo \emph{bites} podemos adicionar información extra a la etiqueta; en vez de guardar la etiqueta \emph{Penn Treebank} correspondiente a \emph{verb} (VB), guardaríamos la etiqueta  VBZ\footnote{verbo de tiempo presente en tercera persona singular} que contiene más información gramatical que VB.
 
-Como ya se mencionó anteriormente, en este caso la forma \emph{bites} (derivada de la palabra \emph{bite}) que aparece en la definición posee la etiqueta \emph{verb}. La tarea aquí será reconocer que \emph{bites} es un verbo de tiempo presente en tercera persona singular a partir de que \emph{bites} está etiquetada como verbo y de que la palabra de la cual deriva es \emph{bite}. Es decir, inferir el tipo de la forma derivada a partir de la palabra y la etiqueta asignada por Cobuild.
+La tarea aquí será reconocer \emph{bites} es un verbo de tiempo presente en tercera persona singular a partir de que está etiquetada como verbo y que deriva de \emph{bite}. Es decir, inferir el tipo de la forma derivada a partir de la palabra y la etiqueta asignada por Cobuild.
 
-Con el objetivo de identificar las formas derivadas de una palabra se desarrollaron reglas y métodos para su reconocimiento, buscando preservar y aprovechar toda  la información que ofrece Cobuild. Entonces, a partir de esta información: la palabra, la forma en que ocurre y la etiqueta asignada se aplican las siguientes reglas para reconocer información adicional a la etiqueta gramatical.
+En este sentido se desarrollaron reglas y métodos para aprovechar toda  la información que ofrece Cobuild. Entonces, a partir la palabra, la forma en que ocurre y la etiqueta asignada se aplican las siguientes reglas para reconocer etiquetas gramaticales para formas flexionadas:
 
 \floatname{algorithm}{Algoritmo}
-\begin{algorithm}
+\begin{algorithm}[H]
 \caption{Reconocimiento de formas derivadas}
 \begin{algorithmic}
+\REQUIRE Etiqueta asignada por Cobuild, forma flexionada
+\STATE
 \STATE Traducir la etiqueta asignada por Cobuild a PenTreeBank
 \STATE Si la etiqueta obtenida es
 \STATE
@@ -88,51 +92,20 @@ Con el objetivo de identificar las formas derivadas de una palabra se desarrolla
 \end{algorithmic}
 \end{algorithm}
 
-Aplicando algoritmos de extracción y el algoritmo de reconocimiento de formas derivadas explicado anteriormente se obtiene un nuevo corpus parcialemente anotado a partir del diccionario Cobuild. A continuación este corpus será procesado y utilizado como corpus de entrenamiento.
-
 \subsection{Preprocesamiento} 
 Se tomó el archivo cobuild en bruto, se hizo un primer preprocesado elminando caracteres no ascii para que puediera ser legible.
 Luego se separó cada entrada y se procesó individualmente identificando el/los ejemplos de cada entrada, la palabra que se está definiendo y su etiqueta asociada.
-También se tuvieron en cuenta palabras derivadas y cuando fué posible (cuando no hubo ambiguedad) se infirieron etiquetas para las mismas.
-Luego se tradujeron las etiquetas de Cobuild a Penn Tree Bank, para esto se utilizó un diccionario construído a doc. No fué posible incluir todas las etiquetas Cobuild, ya que no se conoce el formato concreto de las mismas ni pertenecen a ningún conjunto de etiquetas documentado. Sin embargo se realizó un análisis para contar las etiquetas Cobuild que más se repetían y en base a esas etiquetas se construyó la traducción.
-También cabe aclarar que las etiquetas Cobuild son muy ricas sintácticamente y un poco de esa información se perdió en la traducción ya que las etiquetas Penn Treebank carecen de ese nivel de detalle.
 
-Una vez realizado este proceso, verificamos que el etiquetado haya sido correcto. 
-Se realizó una rutina que etiquetara automáticamente todos los ejemplos de Cobuild (se utilizó el etiquetador TnT) y se comparó el resultado contra las etiquetas asignadas (se generó una matriz de confusión). El resultado fué de 71\% de aciertos. Se analizaron las etiquetas que diferían con mayor frecuencia, y en algunos casos se analizaron palabras particulares donde las etiquetas no coincidían. Se corrigieron las traducciones y se ajustaron los algoritmos del proceso de extracción y traducción de etiqueteas hasta alcanzar un grado de error mínimo. Los máximos focos de error que no se pudieron corregir se deben a palabras etiquetadas con VBD cuando son VBN y viceversa. Estas etiquetas son dificilmente desmbiguables automaticamente.
+Como consecuencia de esta etapa se determinó que no todas las entradas de Cobuild presentan los mismos campos.
 
-Una vez obtenidos los ejemplos con las etiquetas traducidas a Penn Treebank, se realiza un nuevo proceso para obtener precisión gramatical perdida en la traducción
+1) Algunas entradas presentan la pronunciación mientras que otras presentan detalles de la misma descriptos en lenguaje natural.
 
-Para eso se comparan las etiquetas asignadas contra las etiquetas asignadas automáticamente por TnT. En caso de coincidir y en caso de que la etiqueta TnT aporte  mayor precisión, se asigna esta última. Se utilizó el siguiente algoritmo:\\\\
+2) Algunas entradas presentan un ejemplo pero no una definición. Ej (a, as)
 
-\floatname{algorithm}{Algoritmo}
-\begin{algorithm}
-\caption{Obtener la etiqueta de mayor detalle gramatical}
-\begin{algorithmic}
-\STATE
-\STATE Si se obtuvo de Cobuild la etiqueta:
-\STATE
-\STATE \textbf{NN y TnT asignó NNS, NNP o NNPS}:
-\STATE\hspace{\algorithmicindent}Asignar la etiqueta de TnT
-\STATE
-\STATE \textbf{NNS y TnT asignó NNPS}:
-\STATE\hspace{\algorithmicindent}Asignar NNPS
-\STATE
-\STATE \textbf{VB y TnT asignó VBN, VBD, VBZ, VBP o VBG}:
-\STATE\hspace{\algorithmicindent}Asignar la etiqueta de TnT
-\STATE
-\STATE \textbf{JJ y TnT asignó JJR o JJS}:
-\STATE\hspace{\algorithmicindent}Asignar la etiqueta de TnT
-\STATE
-\STATE \textbf{RB y TnT asignó RBR o RBS}:
-\STATE\hspace{\algorithmicindent}Asignar la etiqueta de TnT
-\STATE
-\STATE \textbf{WP y TnT asignó asigno WP\$}:
-\STATE\hspace{\algorithmicindent}Asignar WP\$
-\STATE
-\STATE \textbf{PRP y TnT asignó asigno PRP\$}:
-\STATE\hspace{\algorithmicindent}Asignar PRP\$
-\STATE
-\end{algorithmic}
-\end{algorithm}
+3) En algunos casos las definiciones se presentan en una sola oración y en otros en más de una.
 
-Luego de este proceso, el análisis de comparación contra las etiquetas asignadas por TnT dió un 86\% de aciertos.
+4) En algunos casos las definiciones están mezcladas con ejemplos.
+
+Ante la imposibilidad de distinguir si una oración es parte de la definición o un ejemplo, se asumió que la primer oración de la entrada es la definición (esto es cierto para la mayoría de los ejemplos). 
+De esta manera se evita la pérdida de ejemplos confundiéndolos con la definición. Sin embargo se agrega algo de falsa información al confundir (en la minoría de los casos) parte de una definición con un ejemplo. Sin embargo este hecho no es tan grave; debido a la característica de Cobuild, la palabra es definida utilizadando el mismo sentido que se quiere mostrar en el ejemplo. Por lo tanto se puede intuir que las definiciones tomadas como ejemplo aportan información válida en la mayoría de los casos
+

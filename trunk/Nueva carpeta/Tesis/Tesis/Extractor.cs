@@ -455,29 +455,40 @@ namespace ConsoleApplication1
                     
                 var palabras = formasDeLaPalabra.Unir(palabra);
 
+                var encontréDefinición = false;
+
                 for (; i < líneas.Length - 1; i++)
                 {
                     var línea = líneas[i].Trim();
+                    var esEjemploODefinición = EsEjemploODefinición(línea, palabras);
 
-                    if (EsEjemploODefinición(línea, palabras))
-                    {                        
-                        var etiquetaPennTreebank = ObtenerEtiquetaPennTreebank(líneas, i + 1);//Busca en las próximas líneas la etiqueta Cobuild para la entrada. Es decir, una ejemplo que esté en la tabla de traducción de etiquetas. Luego traduce esa etiqueta Cobuild en la etiqueta Penn Treebak correspondiente.
-
-                        for (var j = i+1; j < líneas.Length && etiquetaPennTreebank == null; j++)
+                    if (esEjemploODefinición)
+                    {
+                        if (encontréDefinición)
                         {
-                            var etiquetaCobuild = líneas[j].Trim();
-                            if (infoEtiquetasCobuild.ContainsKey(etiquetaCobuild))
-                                infoEtiquetasCobuild[etiquetaCobuild]++;
-                            else
-                                infoEtiquetasCobuild[etiquetaCobuild] = 1;
-                        }
+                            var etiquetaPennTreebank = ObtenerEtiquetaPennTreebank(líneas, i + 1);
+                            //Busca en las próximas líneas la etiqueta Cobuild para la entrada. Es decir, una ejemplo que esté en la tabla de traducción de etiquetas. Luego traduce esa etiqueta Cobuild en la etiqueta Penn Treebak correspondiente.
 
-                        if (!string.IsNullOrEmpty(etiquetaPennTreebank))
-                        {
-                            var etiquetasObtenidas = InferirEtiquetasParaLasFormasDeLaPalabra(formasDeLaPalabra, palabra, etiquetaPennTreebank);
-                            etiquetasObtenidas.AgregarSiNoExiste(palabra.ToLower(), etiquetaPennTreebank);
-                            salida.Append(GenerarSalidaEtiquetada(línea, etiquetasObtenidas));
+                            for (var j = i + 1; j < líneas.Length && etiquetaPennTreebank == null; j++)
+                            {
+                                var etiquetaCobuild = líneas[j].Trim();
+                                if (infoEtiquetasCobuild.ContainsKey(etiquetaCobuild))
+                                    infoEtiquetasCobuild[etiquetaCobuild]++;
+                                else
+                                    infoEtiquetasCobuild[etiquetaCobuild] = 1;
+                            }
+
+                            if (!string.IsNullOrEmpty(etiquetaPennTreebank))
+                            {
+                                var etiquetasObtenidas = InferirEtiquetasParaLasFormasDeLaPalabra(formasDeLaPalabra,
+                                                                                                  palabra,
+                                                                                                  etiquetaPennTreebank);
+                                etiquetasObtenidas.AgregarSiNoExiste(palabra.ToLower(), etiquetaPennTreebank);
+                                salida.Append(GenerarSalidaEtiquetada(línea, etiquetasObtenidas));
+                            }
                         }
+                        else
+                            encontréDefinición = true;
                     }
                 }
             }
@@ -486,15 +497,15 @@ namespace ConsoleApplication1
         }
 
         /// <summary>
-        /// Indica si la ejemplo es un ejemplo o definición de Cobuild;
-        /// "used for the", "is used in the present tense", "Someone or something that is", "If something is", "If you are" son parte de la expliación del uso de la palabras
+        /// Indica si la linea es un ejemplo de Cobuild;
+        /// "used for the", "is used in the present tense", "Someone or something that is", "If something is", "If you are" son parte de la definición
         /// '/' es utilizado en las pronunciaciones
         /// </summary>
         private static bool EsEjemploODefinición(string línea, IEnumerable<string> formasDeLaPalabra)
         {
             var esEjemploODefinición =
-                !línea.EmpiezaConAlgunaDeEstas("Someone or something that is","If something is","If you are") &&
-                !línea.ContieneAlgunaDeEstas("is used in the present tense", "used for the" , "/", "*") &&
+                //!línea.EmpiezaConAlgunaDeEstas("Someone or something that is","If something is","If you are") &&
+                //!línea.ContieneAlgunaDeEstas("is used in the present tense", "used for the" , "/", "*") &&
                 línea.Sum(letra => letra == ',' || letra == ';' ? 1 : 0) <= 3;
             return esEjemploODefinición && formasDeLaPalabra.Any(p => EsEjemploODefinición(línea, p));
         }

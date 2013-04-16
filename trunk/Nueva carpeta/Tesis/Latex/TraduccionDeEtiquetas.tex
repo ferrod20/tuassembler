@@ -1,5 +1,8 @@
 \section{Traducción de etiquetas} 
-Para cada una de sus definiciones, el diccionario Cobuild expone información gramatical expresada mediante etiquetas. Estas etiquetas gramaticales poseen un formato propio. Por ejemplo en la siguiente entrada de Cobuild para la palabra \emph{canary}
+Cobuild presenta información gramatical para cada uno de sus ejemplos. Estas etiquetas no poseen un formato conocido ni pertenecen a ningún conjunto de etiquetas documentado.
+
+Por ejemplo en la siguiente entrada de Cobuild:
+
 {\small
 \begin{verbatim}
 DICTIONARY_ENTRY
@@ -13,7 +16,7 @@ noun
 \end{verbatim}
 }
 
-\noindent Se expone un ejemplo con información gramatical sobre la palabra:\\
+\noindent Se presenta un ejemplo con información gramatical para la palabra \emph{canaries}:\\
 \\
 \emph{People sometimes keep canaries in cages as pets.}  \\
 \\
@@ -22,8 +25,8 @@ Se puede apreciar la etiqueta específica \emph{countable noun} asignada por Cobu
 Como la idea de este trabajo es producir un corpus anotado a partir de este diccionario para utilizar como fuente de entrenamiento de etiquetadores gramaticales es necesario que el conjunto de etiquetas empleado sea el mismo que emplea el \emph{Gold Standard} para poder medir posteriormente los resultados. Es por eso que se tomó la decisión de traducir estas etiquetas propias de Cobuild en etiquetas \emph{Penn Treebank}, conjunto con el cual está anotado el \emph{Gold Standard}.
 En esta traducción se generó inevitablemente una pérdida de información semántica ya que las etiquetas \emph{Penn Treebank} son menos específicas que las etiquetas de Cobuild. 
 
-El proceso de traducción de etiquetas intenta primero encontrar una traducción a la etiqueta específica de Cobuild (en este ejemplo \emph{countable noun}), si no fuera el caso, busca una traducción a la etiqueta general (\emph{noun} para el ejemplo).
-Esta decisión fué tomada a partir de que se encontraron más de 3000 etiquetas específicas diferentes, por lo tanto se decidió crear una tabla de traducción de etiquetas sólo para las etiquetas (generales y específicas) que aparecen con mayor frecuencia. Con este método logramos traducir aproximadamente el 99.26\% de las etiquetas.
+El proceso de traducción de etiquetas consiste en intentar encontrar una traducción a la etiqueta específica de Cobuild (en este ejemplo \emph{countable noun}), si no fuera el caso busca una traducción a la etiqueta general (\emph{noun} para el ejemplo).
+Esta decisión fué tomada a partir de que se encontraron más de 4000 etiquetas específicas diferentes, por lo tanto se decidió crear una tabla de traducción de etiquetas sólo para las etiquetas (generales y específicas) que aparecen con mayor frecuencia. Con este método logramos traducir aproximadamente el 99.26\% de las etiquetas.
 
 A continuación se presenta la tabla de traducción empleada:
 \begin{center}
@@ -130,3 +133,44 @@ wh: used as adverb & WRB \\
 	\hline
 \end{longtable}
 \end{center}
+
+Una vez realizado este proceso, verificamos que el etiquetado haya sido correcto. 
+Se realizó una rutina que etiquetara automáticamente todos los ejemplos de Cobuild (se utilizó el etiquetador TnT) y se comparó el resultado contra las etiquetas asignadas (se generó una matriz de confusión). El resultado fué de 71\% de aciertos. Se analizaron las etiquetas que diferían con mayor frecuencia, y en algunos casos se analizaron palabras particulares donde las etiquetas no coincidían. Se corrigieron las traducciones y se ajustaron los algoritmos del proceso de extracción y traducción de etiqueteas hasta alcanzar un grado de error mínimo. Los máximos focos de error que no se pudieron corregir se deben a palabras etiquetadas con VBD cuando son VBN y viceversa. Estas etiquetas son dificilmente desmbiguables automaticamente.
+
+Una vez obtenidos los ejemplos con las etiquetas traducidas a Penn Treebank, se realiza un nuevo proceso para obtener precisión gramatical perdida en la traducción
+
+Para eso se comparan las etiquetas asignadas contra las etiquetas asignadas automáticamente por TnT. En caso de coincidir y en caso de que la etiqueta TnT aporte  mayor precisión, se asigna esta última. Se utilizó el siguiente algoritmo:\\\\
+
+\floatname{algorithm}{Algoritmo}
+\begin{algorithm}
+\caption{Obtener la etiqueta de mayor detalle gramatical}
+\begin{algorithmic}
+\REQUIRE Etiqueta obtenida de Cobuild, etiqueta asignada por TnT
+\STATE
+\STATE Si se obtuvo de Cobuild la etiqueta:
+\STATE
+\STATE \textbf{NN y TnT asignó NNS, NNP o NNPS}:
+\STATE\hspace{\algorithmicindent}Asignar la etiqueta de TnT
+\STATE
+\STATE \textbf{NNS y TnT asignó NNPS}:
+\STATE\hspace{\algorithmicindent}Asignar NNPS
+\STATE
+\STATE \textbf{VB y TnT asignó VBN, VBD, VBZ, VBP o VBG}:
+\STATE\hspace{\algorithmicindent}Asignar la etiqueta de TnT
+\STATE
+\STATE \textbf{JJ y TnT asignó JJR o JJS}:
+\STATE\hspace{\algorithmicindent}Asignar la etiqueta de TnT
+\STATE
+\STATE \textbf{RB y TnT asignó RBR o RBS}:
+\STATE\hspace{\algorithmicindent}Asignar la etiqueta de TnT
+\STATE
+\STATE \textbf{WP y TnT asignó asigno WP\$}:
+\STATE\hspace{\algorithmicindent}Asignar WP\$
+\STATE
+\STATE \textbf{PRP y TnT asignó asigno PRP\$}:
+\STATE\hspace{\algorithmicindent}Asignar PRP\$
+\STATE
+\end{algorithmic}
+\end{algorithm}
+
+Luego de este proceso, el análisis de comparación contra las etiquetas asignadas por TnT dió un 86\% de aciertos.
