@@ -1,8 +1,8 @@
+wsjM2.mc
 
-
-%Aciertos: 607593 ( 96,206786805141% )
+%Aciertos: 607592 ( 96,2067807989258% )
 %Errores: 23956
-%Cantidad de tags: 631549
+%Cantidad de tags: 631548
 
 Errores
 |	|	CantidadDeErrores

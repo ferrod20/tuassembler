@@ -1,0 +1,16 @@
+wsj.mc		&97,39
+wsj+NFI.mc		&97,25
+wsjCompC1.mc		&95,93
+wsjCompC1+NFI.mc		&96,27
+wsjCompC2.mc		&95,89
+wsjCompC2+NFI.mc		&96,27
+wsjCompC3.mc		&95,92
+wsjCompC3+NFI.mc		&96,29
+wsjCompC4.mc		&95,9
+wsjCompC4+NFI.mc		&96,3
+wsjM1.mc		&96,25
+wsjM1+NFI.mc		&96,48
+wsjM2.mc		&96,21
+wsjM2+NFI.mc		&96,39
+wsjCompD.mc		&95,32
+wsjCompD+NFI.mc		&96,05

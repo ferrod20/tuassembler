@@ -1,6 +1,7 @@
 PATH=$PATH:$HOME/bin
 pause
 cd Entrenado
+tnt-para ../../FuentesDeEntrenamiento/wsj.g
 tnt-para ../../FuentesDeEntrenamiento/wsjC1.g
 tnt-para ../../FuentesDeEntrenamiento/wsjC2.g
 tnt-para ../../FuentesDeEntrenamiento/wsjC3.g

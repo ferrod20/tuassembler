@@ -1,8 +1,8 @@
+wsjCompD.mc
 
-
-%Aciertos: 1083589 ( 95,3180555482251% )
+%Aciertos: 1083588 ( 95,3180514297426% )
 %Errores: 53225
-%Cantidad de tags: 1136814
+%Cantidad de tags: 1136813
 
 Errores
 |	|	CantidadDeErrores

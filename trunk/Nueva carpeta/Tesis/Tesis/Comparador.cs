@@ -7,7 +7,7 @@ namespace ConsoleApplication1
 {
     internal class Comparador
     {
-        #region Variables de clase
+        #region Variables
         private static Dictionary<string, List<string>> traducciónTreebankABNC = new Dictionary<string, List<string>>
                                                                                      {
                                                                                           {"JJ", new List<string>{"AJ0", "ORD"} },
@@ -64,13 +64,18 @@ namespace ConsoleApplication1
 {"-", new List<string>{"PUN"} },
 {"``", new List<string>{"PUQ"} },
 {"`", new List<string>{"PUQ"} }
-
-                                                                                     };
-
-        private static MatrizDeConfusión matrizDeConfusión;
+};
+        private MatrizEnProceso matrizEnProceso;
+        private string archGoldStandard, archParaComparar, salidaMatrizDeConf, titulo, tituloFila, tituloColumna, archivoTabla;
+        private bool generarMatrizDeConfusionParaLatex, compararContraBNC, hacerTabla;
+                //compararContraBNC = false
+                //hacerTabla = false
+                //string titulo = ""
+                //tituloFila = "", tituloColumna = "", archivoTabla = "", 
         #endregion
+
         #region Métodos
-        private static void BuscarProximaLinea(string[] uno, string[] otro, ref int i, ref int j)
+        private void BuscarProximaLinea(string[] uno, string[] otro, ref int i, ref int j)
         {
             var iii = 0;
             var dist = 100;
@@ -87,7 +92,7 @@ namespace ConsoleApplication1
             i = i + iii;
             j = j + dist;
         }
-        private static int BuscarProximaLinea2(string palabra, string proxPalabra, string[] lineas, int lineaI)
+        private int BuscarProximaLinea2(string palabra, string proxPalabra, string[] lineas, int lineaI)
         {
             var distancia = 0;
             while (lineaI + 2 < lineas.Length && lineas[lineaI].Split('\t')[0] != palabra && lineas[lineaI + 1].Split('\t')[0] != proxPalabra && distancia < 16)
@@ -98,12 +103,12 @@ namespace ConsoleApplication1
             return distancia;
         }
 
-        private static bool ComparaciónSimple(string tag1, string tag2)
+        private bool ComparaciónSimple(string tag1, string tag2)
         {
             return tag1 == tag2;
         }
 
-        private static bool CompararBNC_Treebank(string tagBNC, string tagTreebank)
+        private bool CompararBNC_Treebank(string tagBNC, string tagTreebank)
         {
             var resultado = false;
             if (traducciónTreebankABNC.ContainsKey(tagTreebank))
@@ -115,7 +120,7 @@ namespace ConsoleApplication1
             return resultado;
         }
 
-        private static void Comparar(string palabra, string lineaGoldStandard, string lineaPrueba, Func<string, string, bool> compare)
+        private void Comparar(string palabra, string lineaGoldStandard, string lineaPrueba, Func<string, string, bool> compare)
         {
             var partesLineaDePrueba = lineaPrueba.TrimEnd().Split();
             var tagDePrueba = partesLineaDePrueba.Length > 1 ? partesLineaDePrueba.LastOrDefault() : "";
@@ -125,31 +130,23 @@ namespace ConsoleApplication1
 
             if (!string.IsNullOrEmpty(tagDePrueba) && !string.IsNullOrEmpty(tagGoldStandard))
             {
-                matrizDeConfusión.CantidadDeEtiquetas++;
+                matrizEnProceso.SumarEtiqueta();
 
                 var acierto = compare(tagGoldStandard, tagDePrueba);
                 
                 if (!acierto)
-                    matrizDeConfusión.AgregarError(tagGoldStandard, tagDePrueba, palabra);
+                    matrizEnProceso.AgregarError(tagGoldStandard, tagDePrueba, palabra);
             }
         }
-        public static void Comparar(string archGoldStandard, string archParaComparar, string salidaMatrizDeConf, bool generarMatrizDeConfusionParaLatex, bool compararContraBNC = false, string titulo = "", string tituloFila = "", string tituloColumna = "")
-        {
-            matrizDeConfusión = new MatrizDeConfusión();
-            GenerarMatrizDeConfusión(archGoldStandard, archParaComparar, compararContraBNC);
-
-            if(generarMatrizDeConfusionParaLatex)
-                matrizDeConfusión.EscribirMatrizDeConfParaLatex(salidaMatrizDeConf, titulo, tituloFila, tituloColumna);
-            else
-                matrizDeConfusión.EscribirMatrizDeConfusión(salidaMatrizDeConf, titulo, tituloFila, tituloColumna);
-        }
+                
+        
         /// <summary>
         ///   Lee los archivos y va generando la matriz de confusión.
         /// </summary>
-        private static void GenerarMatrizDeConfusión(string archivoGoldStandard, string archivoParaComparar, bool compararContraBNC = false)
+        private MatrizDeConfusión GenerarMatrizDeConfusión(string archivoGoldStandard, string archivoParaComparar, bool compararContraBNC = false)
         {
+            matrizEnProceso = new MatrizEnProceso();
             int i = 0, j = 0, punto = 1;
-            matrizDeConfusión.CantidadDeEtiquetas = 0;
             var aGoldStandard = File.ReadAllText(archivoGoldStandard).Split('\n');
             var aParaComparar = File.ReadAllText(archivoParaComparar).Split('\n');
             var tamGoldStandard = aGoldStandard.Length;
@@ -176,9 +173,11 @@ namespace ConsoleApplication1
                     punto++;
                 }
             }
+
+            return matrizEnProceso.FinalizarProceso();
         }
 
-        private static void BuscarNuevasPosicionesSiCorresponde(string[] aGoldStandard, string[] aParaComparar, int tamGoldStandard, int tamParaComparar, ref int i, ref int j)
+        private void BuscarNuevasPosicionesSiCorresponde(string[] aGoldStandard, string[] aParaComparar, int tamGoldStandard, int tamParaComparar, ref int i, ref int j)
         {
             int ii, iii, jj, jjj;
             i++;
@@ -204,11 +203,45 @@ namespace ConsoleApplication1
         }
         #endregion
 
-        public static void GenerarTablaDeEtiquetas(string arch1, string arch2, string salida)
+        public void EstablecerOpciones(bool generarMatrizDeConfusionParaLatex, string titulo = "", string tituloFila = "", string tituloColumna = "", string archivoTabla = "", bool compararContraBnc = false, bool hacerTabla = false)
         {
-            matrizDeConfusión = new MatrizDeConfusión();
-            GenerarMatrizDeConfusión(arch1, arch2);            
-            matrizDeConfusión.EscribirTablaDeTraducciónDeEtiquetas(salida);           
+            this.titulo = titulo;
+            this.tituloFila = tituloFila;
+            this.tituloColumna = tituloColumna;
+            this.archivoTabla = archivoTabla;
+            this.generarMatrizDeConfusionParaLatex = generarMatrizDeConfusionParaLatex;
+            compararContraBNC = compararContraBnc;
+            this.hacerTabla = hacerTabla;
+        }
+        public Comparador(string archGoldStandard, string archParaComparar, string salidaMatrizDeConf)
+        {
+            this.archGoldStandard = archGoldStandard;
+            this.archParaComparar = archParaComparar;
+            this.salidaMatrizDeConf = salidaMatrizDeConf;
+        }
+        public void GenerarTablaDeEtiquetas()
+        {
+            var matrizDeConfusión = GenerarMatrizDeConfusión(archGoldStandard, archParaComparar);
+            var escritor = new EscritorDeMatrizDeConfusión(salidaMatrizDeConf, matrizDeConfusión);
+            escritor.EscribirTablaDeTraducciónDeEtiquetas();           
+        }
+        public void Comparar()
+        {
+            var matrizDeConfusión = GenerarMatrizDeConfusión(archGoldStandard, archParaComparar, compararContraBNC);
+            var escritor = new EscritorDeMatrizDeConfusión(salidaMatrizDeConf, matrizDeConfusión);
+
+            if (generarMatrizDeConfusionParaLatex)
+                escritor.EscribirMatrizDeConfParaLatex(titulo, tituloFila, tituloColumna);
+            else
+                escritor.EscribirMatrizDeConfusión(titulo, tituloFila, tituloColumna);
+
+            if (hacerTabla && !string.IsNullOrEmpty(archivoTabla))
+            {
+                TextWriter salida = new StreamWriter(archivoTabla, true);
+                salida.WriteLine(titulo + "\t\t&" + Math.Round(matrizDeConfusión.PorcentajeDeAciertos, 2));
+
+                salida.Close();
+            }
         }
     }
 }
