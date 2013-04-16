@@ -1278,7 +1278,8 @@ namespace ConsoleApplication1
                 Console.WriteLine("Salida: " + Path.GetFileName(args[3]));
                 Console.WriteLine();
 
-                Comparador.GenerarTablaDeEtiquetas(args[1], args[2], args[3]);
+                var comparador = new Comparador(args[1], args[2], args[3]);
+                comparador.GenerarTablaDeEtiquetas();
             }
         }
         
@@ -1291,6 +1292,7 @@ namespace ConsoleApplication1
             }
             else
             {
+                string titulo = null, tituloFila = null, tituloColumna=null, archivoTabla = null;
 
                 var generarMatrizDeConfParaLatex = args.Contains("-l");
 
@@ -1298,13 +1300,25 @@ namespace ConsoleApplication1
                                   Path.GetFileName(args[2]));
                 Console.WriteLine("Salida: " + Path.GetFileName(args[3]));
                 Console.WriteLine();
+
+                var hacerTabla = args.Contains("-tabla");
+                if (hacerTabla)
+                {
+                    archivoTabla = args[4];
+                    titulo = Path.GetFileName(args[3]);
+                }                    
+                else
+                {
+                    titulo = args.Length > 5 ? args[5] : "";
+                    tituloFila = args.Length > 6 ? args[6] : "";
+                    tituloColumna = args.Length > 7 ? args[7] : "";
+                }
                 
-                var titulo = args.Length > 5? args[5]:"";
-                var tituloFila = args.Length > 6 ? args[6] : "";
-                var tituloColumna = args.Length > 7 ? args[7] : "";
                 var compararContraBNC = args.Contains("-bnc");
 
-                Comparador.Comparar(args[1], args[2], args[3], generarMatrizDeConfParaLatex, compararContraBNC, titulo, tituloFila, tituloColumna);
+                var comparador = new Comparador(args[1], args[2], args[3]);
+                comparador.EstablecerOpciones(generarMatrizDeConfParaLatex, titulo, tituloFila, tituloColumna, archivoTabla, compararContraBNC, hacerTabla);
+                comparador.Comparar();
             }
         }
 

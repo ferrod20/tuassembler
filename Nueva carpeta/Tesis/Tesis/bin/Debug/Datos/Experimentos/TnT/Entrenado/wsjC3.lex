@@ -1,4 +1,4 @@
-%% lexicon created Wed Jun 27 16:50:13 2012 from file
+%% lexicon created Tue Apr 16 01:37:21 2013 from file
 %%     ../../FuentesDeEntrenamiento/wsjC3.g
 %% the corpus contained 315769 tokens
 %% this lexicon contains 24193 tokens

@@ -1,8 +1,8 @@
+wsjCompC4.mc
 
-
-%Aciertos: 908478 ( 95,897776933308% )
+%Aciertos: 908477 ( 95,8977726030492% )
 %Errores: 38862
-%Cantidad de tags: 947340
+%Cantidad de tags: 947339
 
 Errores
 |	|	CantidadDeErrores
