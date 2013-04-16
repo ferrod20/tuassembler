@@ -1,5 +1,5 @@
 \section{Diccionario Cobuild} 
-Como se mencionó anteriormente, utilizaremos el diccionario Cobuild para generar una nuevo corpus de entrenamiento. Cobuild es una fuente de información que contiene un conjunto de entradas donde cada una está asociada a una palabra; posee una explicación de su significado, algunas características como su pronunciación, uno o más ejemplos que muestran su uso y clase gramatical y en algunos casos sinónimos. 
+Cobuild es una fuente de información que contiene un conjunto de entradas donde cada una está asociada a una palabra; posee una explicación de su significado, algunas características como su pronunciación, uno o más ejemplos que muestran su uso y clase gramatical y en algunos casos sinónimos. 
 
 A continuación se muestra un ejemplo de una entrada para la palabra \emph{acid}.\\
 
@@ -37,7 +37,7 @@ Ejemplo: \emph{Her lecture was an abbreviated version of a talk she had given th
 Etiqueta específica: \emph{\textbf{classifying adjective}}\\
 Etiqueta general: \emph{\textbf{adjective}}\\
 
-Cobuild posee información gramatical sobre la palabra definida para cada uno de los ejemplos en donde aparece. Con esta información alcanza para construir un corpus parcialmente anotado. El proceso consiste en pegar o concatenar las palabras de los ejemplos y asignar la etiqueta de Coubild para la palabra asociada. 
+Cobuild posee información gramatical sobre la palabra definida para cada uno de los ejemplos en donde ésta aparece. Con dicha información alcanza para construir un corpus parcialmente anotado. El proceso consiste en pegar o concatenar las palabras de los ejemplos y asignar la etiqueta de Coubild para la palabra asociada. 
 
 Entonces, para estas entradas del diccionario:
 
@@ -76,21 +76,18 @@ Youre a lot of cry-babies and sissies/NNS ...
 ... Mummys little sissy/NN boy.
 \end{verbatim}
 
-Esta última información conforma un corpus parcialmente anotado, es decir, un conjunto de oraciones donde alguna/s de las palabras que comprenden cada oración posee/n una etiqueta gramatical. Este corpus parcialmente anotado se utilizará como base para construir un nuevo corpus completamente anotado que servirá como una nueva fuente de información para entrenar etiquetadores gramaticales.
+Esta última información conforma un corpus parcialmente anotado, es decir, un conjunto de oraciones donde alguna/s de las palabras que comprenden cada oración posee/n una etiqueta gramatical. Este corpus se utilizará como base para construir un nuevo corpus completamente anotado que servirá como una nueva fuente de información para entrenar etiquetadores gramaticales.
 
 Claramente el primer paso para llevar a cabo esta tarea es elegir un diccionario y extraer la información mencionada anteriormente. El diccionario elegido fué Cobuild. A continuación se detallan las características que lo hicieron distintivo frente a otros diccionarios.
 
 \subsection{Características} 
-Cobuild es un diccionario basado en la información del corpus \emph{Bank of English}\footnote{El corpus \emph{Bank of English} contiene 650 millones de palabras cuidadosamente seleccionadas del corpus \emph{Collins} (compuesto por alrededor de 2.5 billones de palabras en inglés seleccionadas de websites, diarios, revistas, libros, material hablado de radio, TV y conversaciones diarias) para dar reflejo preciso y balanceado del inglés que se usa día a día.}
+Cobuild es un diccionario basado en la información del corpus \emph{Bank of English}\footnote{El corpus \emph{Bank of English} contiene 650 millones de palabras seleccionadas del corpus \emph{Collins} (compuesto por alrededor de 2.5 billones de palabras en inglés provenientes de websites, diarios, revistas, libros, material hablado de radio, TV y conversaciones diarias) para dar reflejo preciso y balanceado del inglés que se usa día a día.}
 . Su siglas significan: \emph{Collins Birmingham University International Language Database}. 
 
-Cobuild fué concebido teniendo especial atención en los ejemplos expuestos. Cada palabra incluída en el diccionario fué elegida utilizando información sobre la frecuencia de ocurrencia de la misma.
-
-Todos los ejemplos expuestos muestran patrones gramaticales, vocabulario y contextos típicos para cada palabra. En consecuencia Cobuild presenta una cantidad exhaustiva del vocabulario inglés derivado de observaciones directas del lenguaje.
-
+Las palabras incluídas en el diccionario fueron elegidas utilizando información sobre la frecuencia de ocurrencia de las mismas.
 Cada entrada posee una definición, ejemplos típicos de uso e información sobre la gramática, semántica y pronunciación. 
 
-Los ejemplos y la información gramatical asociada a la palabra definida son de particular interés para este trabajo y conforman la información de base que se utilizará para confeccionar un nuevo corpus. 
+Los ejemplos y la información gramatical asociada a la palabra definida son de particular interés para este trabajo y conforman la información de base que se utilizará para confeccionar el nuevo corpus. 
 
 \subsection{Método de construcción} 
 Cobuild se caracteriza por utilizar ejemplos reales obtenidos de un corpus en lugar de crearlos. Dicho corpus se compone de inglés hablado y escrito, americano y británico, etc. Incluso contiene transcripciones de conversaciones informales.
@@ -98,14 +95,14 @@ Cobuild se caracteriza por utilizar ejemplos reales obtenidos de un corpus en lu
 Cobuild se especializa en presentar las palabras y frases que son frecuentes en el uso diario. Lejos de ser un registro histórico del lenguaje es más bien una muestra del lenguaje contamporáneo.
 
 \subsection{Definiciones} 
-La característica más distintiva de Cobuild en su primera versión fué el uso de frases completas en las definiciones. El significado de una palabra fué establecido de la forma en que una persona ordinaria podría explicárselo a otra.
+Cobuild se distingue en el uso de frases completas en las definiciones. El significado de una palabra es establecido de la forma en que una persona ordinaria podría explicárselo a otra.
 
 Generalmente los diccionarios ofrecen definiciones breves y tradicionales, mientras que Cobuild expone definiciones realmente amplias y ricas. Si se observan detenidamente las definiciones particulares se puede apreciar que cada palabra es elegida para ilustrar ciertos aspectos del significado. Y en la medida en que es posible, las palabras utilizadas en una definición son más frecuentes que la palabra que está siendo definida.
 
 \subsection{Ejemplos} 
-Todos los ejemplos fueron cuidadosamente seleccionados para mostrar los patrones que más frecuentemente aparecen junto a una palabra o frase. 
+Cobuild fué concebido teniendo especial atención en los ejemplos expuestos. Todos los ejemplos muestran patrones gramaticales, vocabulario y contextos típicos para cada palabra. Son piezas de texto genuinas elegidas en base al uso de la palabra que se está definiendo.
 
-Éstos ayudan a mostrar el significado de la palabra exhibiendo su uso en un contexto natural. Más aún, son piezas de texto genuinas y han sido elegidos cuidadosamente en base al uso de la palabra.
+En consecuencia Cobuild presenta una cantidad exhaustiva del vocabulario inglés derivado de observaciones directas del lenguaje.
 
 \subsection{Información gramatical} 
 Casi cada sentido de cada entrada en el diccionario Cobuild tiene junto a esta una clasificación gramatical, usualmente una clase de palabra y a menudo también una nota estructural. Esta es la información sobre la que se sustenta este trabajo, ya que en base a ella se construirá el nuevo corpus de entrenamiento.
