@@ -2,8 +2,11 @@
 El primer experimento consiste en medir (generando una matriz de confusión) la información extraída de Cobuild contra la misma información generada a partir de un etiquetador automático (TnT). De esta manera podremos observar la diferencia entre la información gramatical de Cobuild y la información que se podría generar automáticamente.
 
 Como se mencionó anteriormente la información extraída de Cobuild, es la unión de ejemplos con la información gramatical correspondiente a la palabra definida.
-A continuación se presenta un pequeño extracto:\\\\
-\small\emph{
+A continuación se presenta un pequeño extracto:
+
+\noindent
+\begin{small}
+\emph{
 \begin{tabular}{l l}
 Cats	&NNS \\
 are\\
@@ -33,12 +36,15 @@ and\\
 cats	&NNS\\
 .\\
 \end{tabular}}
+\end{small}
 \\\\
 Esta es la información extraída de Cobuild para la palabra \emph{cat}; la unión de los ejemplos\\
 \\
+\begin{small}
 \emph{Cats are often kept as pets.}\\
 \emph{She put out a hand and stroked the cat softly...}\\
 \emph{...domestic animals such as dogs and cats.}\\
+\end{small}
 \\
 Se puede notar la información gramatical expresada mediante las etiquetas NN y NNS para las palabras \emph{cat} y \emph{cats} respectivamente.
 La idea de este experimento será comparar estas etiquetas contra las etiquetas asignadas por el etiquetador automático TnT. Entonces se tomará este corpus plano (sin etiquetas), se lo etiquetará utilizando TnT entrenado con el corpus de entrenamiento Wall Street Journal (de ahora en más WSJ) \footnote{Wall Street Journal es un corpus anotado, parte del Penn Treebank} y luego se realizará la comparación.\\
