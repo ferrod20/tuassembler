@@ -1,26 +1,25 @@
-Cantidad de palabras y signos puntuación: 565560
-Cantidad de signos de puntuación: 77276
-Cantidad de palabras: 488284
-Cantidad de palabras etiquetadas: 52933	( 10,8406173456431% )
+Cantidad de palabras y signos puntuación: 562191
+Cantidad de signos de puntuación: 76772
+Cantidad de palabras: 485419
+Cantidad de palabras etiquetadas: 52746	( 10,8660765235807% )
 
 
-adverb noun		199
-adverb with verb uncountable noun		125
-adverb uncountable noun		56
-phrase phrase		41
-noun noun		25
+adverb noun		197
+adverb with verb uncountable noun		124
+adverb uncountable noun		55
+phrase phrase		40
+noun noun		24
 other other		16
 phrase: verb inflects phrase: verb inflects		12
 noun phrase		11
 adverb adverb		8
-adverb phrase		8
 noun plural: the + noun uncountable noun		8
 phrase: used as an adjunct phrase: used as an adjunct		7
-noun adjective		7
+adverb phrase		7
 phrase other		7
+noun adjective		6
 4		5
 pronoun determiner		5
-used as a noun.		4
 noun singular: the + noun uncountable noun		4
 adverb noun phrase		4
 wh: used as determiner wh: used as pronoun		4
@@ -32,11 +31,11 @@ used as a determiner.		3
 other adverb		3
 uncountable or countable noun classifying adjective: attributive		3
 A days march is the distance that you can march in one day. If part of an army is on the march, they are going somewhere by marching there.		3
-adverb with verb phrase: verb inflects		3
 other noun		3
 wetness		3
 ...the coldness and wetness of the British climate.		3
 adverb (as) + adjective or adverb + preposition as preposition		2
+used as a noun.		2
 noun singular: usually the + noun + of noun singular: usually the + noun + of		2
 beating		2
 We could hear only the beating of the rain on the tin roof of the shed.		2
@@ -55,9 +54,6 @@ phrase: used as complement		2
 homelessness		2
 For a growing number of young people, homelessness is becoming a way of life.		2
 adverb with verb uncountable or countable noun		2
-noun singular with determiner, or countable noun uncountable noun		2
-importation		2
-...the illegal importation of drugs into Britain.		2
 noun plural: the + noun countable or uncountable noun		2
 infirmity		2
 Rheumatism was an old infirmity in his family... ...old age and infirmity.		2
@@ -71,14 +67,11 @@ phrase: verb and noun inflect phrase: verb inflects		2
 adverb with verb uncountable noun with supporter		2
 marching		2
 They had mastered the techniques of marching... We heard the sounds of marching feet.		2
-noun singular: a + noun qualitative adjective		2
-polished		2
-She slipped and fell on the polished wooden floor.		2
+adverb with verb phrase: verb inflects		2
 noun singular with determiner uncountable noun		2
 phrase: used as sentence adverb phrase: used as sentence adverb		2
 richness		2
 For all its richness and all its progress, it is not an ideal society.		2
-If two or more people who are together in a group go their separate ways, they go to different places and do not see each other any more.		2
 noun plural: the + noun phrase: verb inflects phrase: used as an adjunct		2
 If someone falls sick, they become ill; a fairly literary expression. If you are off sick, you are absent from work or school because of illness or injury.		2
 noun singular: the + noun phrase: used as an adjunct		2
@@ -128,12 +121,8 @@ She speaks rather coarsely. With deliberate coarseness, he wiped his mouth with 
 If you cock an ear in a particular direction, you are listening carefully for any sound from that direction.		1
 coldly coldness		1
 Its yours, I said, politely, but coldly. Kay was a little stunned by the coldness in his voice.		1
-compactly compactness		1
-...liquid food compactly stored in a pressurized tank. We chose them for their compactness and ease of maintenance.		1
 noun plural: usually the + noun + of		1
 noun other		1
-If a company puts work out to contract, it employs another company to do it rather than doing it itself. If you are under contract to someone, you have signed a contract agreeing to work for them, and for no one else, during a fixed period of time.		1
-phrase: verb inflects phrase: used as an adjunct, if + preposition then to		1
 conventionally conventionality		1
 They went back to more conventionally acceptable ways of life. He stands for the strictest conventionality.		1
 coolness		1
@@ -206,7 +195,9 @@ adverb with verb phrase: used as sentence adverb		1
 If you say to be honest before or after a statement, you are emphasizing what you are saying, often when you are admitting a failure or disagreement.		1
 illegally illegality		1
 ...illegally parked cars. I spoke of the illegality of my arrest by the military... ...the illegality of abortion.		1
-The import of cotton goods went up sharply in 1859... They are being asked to register all imports and exports of conventional weapons... ...a system of import controls.		1
+noun singular with determiner, or countable noun uncountable noun		1
+importation		1
+...the illegal importation of drugs into Britain.		1
 uncountable or countable noun classifying adjective		1
 impulsively impulsiveness		1
 She kissed him impulsively on the mouth.		1
@@ -214,8 +205,6 @@ She kissed him impulsively on the mouth.		1
 phrase: used as adjunct or complement phrase: used as adjunct or complement		1
 adverb or preposition classifying adjective: attributive, or countable noun		1
 adverb adjective		1
-used of a meal, evening, etc that two, or sometimes more, people have in a place like this.		1
-We enjoyed an intimate meal together.		1
 phrase: verb inflects, usually with broad negative		1
 phrase: first verb inflects phrase: first verb inflects		1
 ...bringing hope to the old and the lame.		1
@@ -253,7 +242,9 @@ You say oddly enough when you think that your next statement is going to surpris
 phrase or phrase + with: reciprocal, used as an adjunct		1
 noun singular: the + noun + of phrase: verb inflects		1
 If you say that a smile plays on someones lips or over someones lips, you mean that they smile only a little or look as if they are going to smile; a literary expression.		1
-He wanted to give it a real polish.		1
+noun singular: a + noun qualitative adjective		1
+polished		1
+She slipped and fell on the polished wooden floor.		1
 adverb with verb phrase: used as an adjunct		1
 If you say or do something in public, you say or do it when a group of other people are present, especially people you do not know.		1
 purring		1
@@ -275,10 +266,7 @@ scraping		1
 There was a scraping of chairs.		1
 sedately		1
 He walked sedately off down the lane.		1
-separately separateness		1
-What we achieve together is more important than what we can do separately. ...the age of individualism, when separateness has become a playwrights clich.		1
-separately		1
-I remember each one of them separately... Wash each pile separately.		1
+If two or more people who are together in a group go their separate ways, they go to different places and do not see each other any more.		1
 adverb adverb with verb		1
 sharply		1
 It measures how sharply the curve bends round.		1

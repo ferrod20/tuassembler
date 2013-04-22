@@ -1,6 +1,6 @@
 \section{Nuevo Corpus generado} 
 A partir del corpus parcialmente anotado obtenido en el proceso de extracción, se completarán las anotaciones automáticamente con un etiquetador gramatical manteniendo las etiquetas gramaticales obtenidas a partir de la información procedente del diccionario Cobuild. Es decir, una vez finalizado el proceso de extracción de información desde el diccionario, se obtiene un corpus nuevo con las etiquetas gramaticales correspondientes a las palabras definiadas en el diccionario. A continuación se exhibe un fragmento del corpus extraído de Cobuild con el formato generado:\\\\
-\small\emph{
+\emph{\small
 \begin{tabular}{l l}
 A\\
 canary	&NN\\
@@ -42,7 +42,7 @@ Se puede apreciar que se ha reconocido \emph{canaries} como el plural de \emph{c
 El próximo paso será el de completar las anotaciones gramaticales para todas las palabras restantes. Este proceso se realiza anotando el corpus plano (sin las etiquetas obtenidas de Cobuild) con el etiquetador gramatical automático TnT. Luego se une este corpus anotado por TnT con el corpus anotado parcialmente procedente de Cobuild, preservando todas las etiquetas del diccionario. 
 
 El resultado que se muestra a continuación es un nuevo corpus obtenido a partir de Cobuild, con las anotaciones que este provee y completado con anotaciones obtenidas mediante etiquetación automática utilizando TnT.\\\\
-\small\emph{
+\emph{\small
 \begin{tabular}{l l}
 A & DT\\
 canary	& NN\\

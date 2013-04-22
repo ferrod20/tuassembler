@@ -1195,7 +1195,7 @@ namespace ConsoleApplication1
                 var parte = partes[i].TrimEnd();
                 salida += parte + "\n";
 
-                //if (EsEjemplo(ejemplo, palabra, palabrasAnteriores))
+                //if (EsEjemplo(ejemplo, Palabra, palabrasAnteriores))
                 //else if (EsTipo(ejemplo, out tip))
                 //  salida += ejemplo + "\n";                                    
             }
@@ -1372,7 +1372,8 @@ namespace ConsoleApplication1
                 Console.WriteLine("Info: " + Path.GetFileName(args[3]));
                 Console.WriteLine();
 
-                Extractor.ExtraerLaInformaciónDeCobuild(args[1], args[2], args[3]);
+                var extractor = new Extractor(args[1], args[2], args[3]);
+                extractor.ExtraerLaInformaciónDeCobuild();
             }
         }
 
@@ -1433,17 +1434,18 @@ namespace ConsoleApplication1
             var palabra = etiquetaEtiquetada.Split().First().Trim();
             if (partesExtraídas.Count() > 1 && !string.IsNullOrEmpty(etiquetaExtraída) )
             {
-                if (etiquetado.StartsWith("VB") && verbosIrregulares.Contains(palabra.Trim().ToLower()))
+                var isIrregular = etiquetado.StartsWith("VB") && verbosIrregulares.Contains(palabra.Trim().ToLower());
+                if (isIrregular || etiquetado == etiquetaExtraída)
                 {
                     salida.Write("\t");
                     salida.Write(etiquetado);
-                }
+                }                
                 else                
                     switch (etiquetaExtraída.Trim())
                     {
                         case "NN":
                             salida.Write("\t");
-                            salida.Write(etiquetado.EsAlgunaDeEstas("NNS", "NNP", "NNPS") ? etiquetado : etiquetaExtraída);
+  //                          salida.Write(etiquetado.EsAlgunaDeEstas("NNS", "NNP", "NNPS") ? etiquetado : etiquetaExtraída);
                             break;
                         case "NNS":
                             salida.Write("\t");
@@ -1471,7 +1473,7 @@ namespace ConsoleApplication1
                             break;
                         default:
                             salida.Write("\t");
-                            salida.Write(etiquetado);
+                            salida.Write(etiquetaExtraída);
                             break;
 
                     }
