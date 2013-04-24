@@ -188,7 +188,7 @@ namespace ConsoleApplication1
         /// <summary>
         /// Dada una entrada de Cobuild, extrae la información almacenada (palabras y tags)
         /// </summary>
-        private string ExtraerInformaciónDeLaEntrada(string entrada)
+        public string ExtraerInformaciónDeLaEntrada(string entrada)
         {
             var líneas = entrada.Split('\n');
             var salida = new StringBuilder();
@@ -291,7 +291,7 @@ namespace ConsoleApplication1
             var esEjemploODefinición =
                 //!línea.EmpiezaConAlgunaDeEstas("Someone or something that is","If something is","If you are") &&
                 //!línea.ContieneAlgunaDeEstas("is used in the present tense", "used for the" , "/", "*") &&
-                línea.Sum(letra => letra == ',' || letra == ';' ? 1 : 0) <= 3;
+                !string.IsNullOrWhiteSpace(línea) && línea.Sum(letra => letra == ',' || letra == ';' ? 1 : 0) <= 3;
             return esEjemploODefinición && formasDeLaPalabra.Any(p => EsEjemploODefinición(línea, p));
         }
 

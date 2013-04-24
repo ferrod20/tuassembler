@@ -1,67 +1,113 @@
 \section{Nuevo Corpus generado} 
-A partir del corpus parcialmente anotado obtenido en el proceso de extracción, se completarán las anotaciones automáticamente con un etiquetador gramatical manteniendo las etiquetas gramaticales obtenidas a partir de la información procedente del diccionario Cobuild. Es decir, una vez finalizado el proceso de extracción de información desde el diccionario, se obtiene un corpus nuevo con las etiquetas gramaticales correspondientes a las palabras definiadas en el diccionario. A continuación se exhibe un fragmento del corpus extraído de Cobuild con el formato generado:\\\\
-\emph{\small
-\begin{tabular}{l l}
-A\\
-canary	&NN\\
-is\\
-a\\
-small\\
-yellow\\
-bird\\
-which\\
-sings\\
-beautifully\\
-.\\
-People\\
-sometimes\\
-keep\\
-canaries	&NNS\\
-in\\
-cages\\
-as\\
-pets\\
-.\\
-\end{tabular}}
+A partir del corpus parcialmente anotado generado en la etapa anterior, se completarán las anotaciones con un etiquetador automático (TnT) preservando las etiquetas  obtenidas a partir de la información gramatical proveniente del diccionario \emph{Cobuild}. 
 
-\noindent Este es el resultado de extracción, reconocimiento y traducción de etiquetas y formas flexionadas correspondiente a la entrada de Cobuild: 
-{\small
+A continuación se exhibe un ejemplo de este proceso:\\\\
+\begin{samepage}
+\noindent
+Entrada \emph{Cobuild} para la palabra \emph{abide}
+\begin{small}
 \begin{verbatim}
 DICTIONARY_ENTRY
-k%en*!e*%eri
-canary
-canaries
-A canary is a small yellow bird which sings beautifully. 
-People sometimes keep canaries in cages as pets.  
-countable noun
-noun                                
+abide
+abides, abiding, abided
+%eb*a*!id    
+If something abides, it continues to happen or exist for a long time.
+We feel the need to lean on something that abides.
+verb
+verb
 \end{verbatim}
-}
-Se puede apreciar que se ha reconocido \emph{canaries} como el plural de \emph{canary} (etiqueta NNS) y que se han reconocido y extraído los ejemplos de estas palabras asignando las etiquetas gramaticales traducidas a partir de las etiquetas del diccionario correspondientes a \emph{canary} (countable noun/NN) y \emph{canaries} (noun/NNS).
+\end{small}
+\end{samepage}
+\\
+\newpage
+\begin{samepage}
+\noindent 
+Resultado de extracción, reconocimiento y traducción de etiquetas y formas flexionadas correspondiente a la entrada anterior: \\
 
-El próximo paso será el de completar las anotaciones gramaticales para todas las palabras restantes. Este proceso se realiza anotando el corpus plano (sin las etiquetas obtenidas de Cobuild) con el etiquetador gramatical automático TnT. Luego se une este corpus anotado por TnT con el corpus anotado parcialmente procedente de Cobuild, preservando todas las etiquetas del diccionario. 
-
-El resultado que se muestra a continuación es un nuevo corpus obtenido a partir de Cobuild, con las anotaciones que este provee y completado con anotaciones obtenidas mediante etiquetación automática utilizando TnT.\\\\
-\emph{\small
+\noindent 
+\begin{small}
+\emph{
 \begin{tabular}{l l}
-A & DT\\
-canary	& NN\\
-is	& VBZ\\
-a		& DT\\
-small	& JJ\\
-yellow	& JJ\\
-bird	& NN\\
-which	& WDT\\
-sings	& VBZ\\
-beautifully	& RB\\
-.	& .\\
-People	& NNS\\
-sometimes	& RB\\
-keep	& VB\\
-canaries	& NNS\\
-in	& IN\\
-cages	& NNS\\
-as	& IN\\
-pets	& NNS\\
-.	& .\\
+We&\\
+feel&\\
+the&\\
+need&\\
+to&\\
+lean&\\
+on&\\
+something&\\
+that&\\
+abides	&VBZ\\
+.&\\
 \end{tabular}}
+\end{small}
+\end{samepage}
+
+Se puede apreciar que en el ejemplo se ha reconocido \emph{abides} como verbo en tercera persona a partir de \emph{abide} y el rótulo \emph{verb}, asignando la etiqueta gramatical traducida correspondiente: VBZ (obtenida por inferencia).
+
+El próximo paso será el de completar las anotaciones gramaticales para las palabras restantes. Este proceso se realiza anotando el corpus plano con el etiquetador gramatical automático TnT, como puede verse en 2). Luego se une con el corpus anotado parcialmente procedente de Cobuild 1) con 2), preservando todas las etiquetas del diccionario. 
+
+El resultado es un nuevo corpus obtenido a partir de Cobuild, con las anotaciones que este provee y completado con anotaciones automáticas 3).\\\\
+\noindent 
+\begin{small}
+\begin{center}
+\begin{frame}
+
+\emph{
+	\begin{tabular}{|l|l|}
+	\hline
+  \multicolumn{2}{|c|}{1) Ejemplo extraído } \\
+  \hline
+	We&\\
+feel&\\
+the&\\
+need&\\
+to&\\
+lean&\\
+on&\\
+something&\\
+that&\\
+abides&\textbf{VBZ}\\
+.&\\
+	\hline
+	\end{tabular}
+	$\longrightarrow$	
+	\begin{tabular}{|l|l|}	
+	\hline
+  \multicolumn{2}{|c|}{2) Etiquetado automático} \\
+  \hline
+	We			&PRP\\
+	feel			&VBP\\
+	the			&DT\\
+	need			&NN\\
+	to			&TO\\
+	lean			&VB\\
+	on			&IN\\
+	something		&NN\\
+	that			&IN\\
+	abides&\textbf{NNS}\\
+	.			&.\\
+	\hline
+	\end{tabular}
+	$\longrightarrow$			
+	\begin{tabular}{|l|l|}
+	\hline
+  \multicolumn{2}{|c|}{3) Nuevo corpus} \\
+  \hline
+	We			&PRP\\
+	feel			&VBP\\
+	the			&DT\\
+	need			&NN\\
+	to			&TO\\
+	lean			&VB\\
+	on			&IN\\
+	something		&NN\\
+	that			&IN\\
+	abides			&\textbf{VBZ}\\
+	.			&.\\
+	\hline
+	\end{tabular}}
+\end{frame}
+
+\end{center}
+\end{small}
