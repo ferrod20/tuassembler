@@ -1,23 +1,26 @@
 \chapter{Desarrollo}
-Las entradas que conforman el diccionario Cobuild y que constituyen la fuente de información principal sobre la cual se basa este trabajo fueron cuidadosamente procesadas y refinadas intentando mantener toda la información disponible, explícita e implícita. 
+Las entradas que conforman el diccionario Cobuild y que constituyen el conjunto de datos principal sobre el cual se basa este trabajo fueron cuidadosamente procesadas y refinadas intentando mantener toda la información disponible, explícita e implícita. 
 
-Se desarrollaron algoritmos para extraer los ejemplos junto con la información gramatical disponible. Se tradujeron las etiquetas gramaticales provistas por Cobuild en etiquetas gramaticales standard. Se analizaron todos estos procesos y se ajustaron hasta aplacar sus fallas. 
+Se desarrollaron algoritmos para extraer los ejemplos junto a los rótulos asociados. Se tradujeron las etiquetas gramaticales provistas por Cobuild en etiquetas gramaticales standard. Se analizaron todos estos procesos y se ajustaron hasta aplacar sus fallas. 
 
-El resultado obtenido fué un corpus parcialmente anotado correspondiente a la concatenación de los ejemplos extraídos de Cobuild junto a sus etiqueteas gramaticales asociadas.
+El resultado obtenido fué un corpus parcialmente anotado correspondiente a la concatenación de los ejemplos extraídos de Cobuild junto a sus etiqueteas gramaticales.
 
 Luego se completó la anotación de ese corpus utilizando etiquetación automática, obteniendo como resultado final un corpus completamente anotado.
-
+\newpage
 \section{Extracción de la información} 
 Cobuild guarda su información en un archivo de texto difícilmente legible con un formato carente de documentación conocida. El primer desafío de este trabajo consistió en identificar y obtener las entradas del archivo mencionado. 
 
 En ese sentido se crearon los algoritmos de extracción necesarios que consistieron en la eliminación de caracteres no ascii para poder obtener un archivo legible y en identificar y separar cada entrada.
 
 A continuación se presentan extractos a modo de ejemplo:
+
+
+\begin{samepage}
 \begin{center}
 Archivo original Cobuild:
 \includegraphics[width=150mm]{img/aceExample.png}
 \end{center}
-
+\end{samepage}
 \noindent 
 
 Entradas extraídas correspondientes al fragmento anterior:\\
@@ -44,7 +47,7 @@ adjective
 \end{Verbatim}
 \end{footnotesize}
 
-Cada entrada arriba presentada tiene la característica de poseer una cantidad variable de campos y no es posible identificarlos exactamente. Sin embargo, contienen algunos rasgos comunes: la palabra, sus formas, la pronunciación, su definición y uno o más ejemplos donde se indica como se emplea (mediante una etiqueta gramatical). 
+Cada entrada arriba presentada tiene la característica de poseer una cantidad variable de campos y no es posible identificarlos exactamente. Sin embargo contienen algunos rasgos comunes: la palabra, sus formas, la pronunciación, su definición y uno o más ejemplos donde se indica como se emplea (mediante una etiqueta gramatical). 
 
 Por ejemplo, en la primer entrada se pueden distinguir estos campos:\\
 

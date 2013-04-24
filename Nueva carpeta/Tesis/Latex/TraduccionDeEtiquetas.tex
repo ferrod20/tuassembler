@@ -17,14 +17,13 @@ Por ejemplo en la siguiente entrada:\\
 \end{footnotesize}
 \end{minipage}
 
-Podemos apreciar que Cobuild asigna la etiqueta \emph{qualitative adjective} a la palabra \emph{acid}. 
-Notemos que también aparece la etiqueta \emph{adjective}: \emph{qualitative adjective} es una etiqueta específica que brinda mayor información gramatical y sintáctica y \emph{adjective} es una etiqueta general. Cada etiqueta general posee muchas etiquetas específicas.
+Podemos apreciar que la palabra \emph{acid} está anotada como \emph{qualitative adjective}. Notemos también la presencia de la anotación \emph{adjective}. Ésta es una etiqueta general mientras que \emph{qualitative adjective} es una etiqueta específica que brinda mayor información gramatical y sintáctica.
 
-Como la idea de este trabajo es producir un corpus anotado a partir de este diccionario para utilizar como fuente de entrenamiento de etiquetadores gramaticales es necesario que el conjunto de etiquetas empleado sea el mismo que emplea el \emph{Gold Standard} para poder medir posteriormente los resultados. Es por eso que se tomó la decisión de traducir estas etiquetas propias de Cobuild en etiquetas \emph{Penn Treebank}, conjunto con el cual está anotado el \emph{Gold Standard}.
+Como la idea de este trabajo es producir un corpus anotado a partir de este diccionario para utilizar como fuente de entrenamiento de etiquetadores gramaticales es necesario que el conjunto de etiquetas empleado sea el mismo que emplea el \emph{Gold Standard} para posteriormente  poder medir los resultados. En ese sentido se realizó la traducción de etiquetas \emph{Cobuild} en \emph{Penn Treebank}.
 
-Para realizar el proceso de traducción de etiquetas se construyó una tabla de conversión Cobuild-Penn Treebank. Ante la falta de documentación presente en las etiquetas de Cobuild se realizó un análisis que arrojó como resultado la existencia de más de 4000 etiquetas diferentes. 
+Para llevar a cabo este proceso se construyó una tabla de conversión. Se realizó un análisis sobre las entradas de \emph{Cobuild} arrojando como resultado la existencia de más de 4000 etiquetas diferentes. 
 
-A partir de este hecho se identificaron las etiquetas de Cobuild más frecuentes y se seleccionó la etiqueta Penn Treebank equivalente para cada una de ellas, obteniendo una tabla de traducción ad hoc que se presenta a continuación
+A partir de este hecho se identificaron las etiquetas \emph{Cobuild} que ocurren con mayor frecuencia y se seleccionó la etiqueta \emph{Penn Treebank} equivalente para cada una de ellas, obteniendo una tabla de traducción ad hoc que se presenta a continuación:
 
 \begin{center}
 \begin{longtable}{| l | l |}
@@ -131,16 +130,17 @@ wh: used as adverb & WRB \\
 \end{longtable}
 \end{center}
 
-El proceso de traducción de etiquetas consiste en intentar encontrar una traducción a la etiqueta específica de Cobuild (en el ejemplo anterior\emph{qualitative adjective}), si no fuera el caso se busca una traducción a la etiqueta general (\emph{adjective} para el ejemplo).
+El proceso de traducción de etiquetas consiste en intentar encontrar en la tabla la etiqueta \emph{Penn Treebank} correspondiente a la etiqueta específica de \emph{Cobuild} (en el ejemplo anterior\emph{qualitative adjective}), si no fuera el caso se busca \emph{Penn Treebank} correspondiente a la etiqueta general \emph{Cobuild}(\emph{adjective} para el ejemplo).
 
 Utilizando este método se logró traducir aproximadamente el 99.26\% de las etiquetas.
 
-Una vez realizado este proceso, se verificó que el etiquetado haya sido correcto: se realizó una rutina que etiquetara automáticamente todos los ejemplos de Cobuild (utilizando el etiquetador TnT) y se generó una matriz de confusión comparando las etiquetas extraídas y traducidas provenientes de Cobuild contra las asignadas por TnT. 
+Finalizado este proceso, se verificó que el etiquetado haya sido correcto: se realizó una rutina que etiquetara automáticamente todos los ejemplos de Cobuild (utilizando el etiquetador TnT) y se generó una matriz de confusión comparando las etiquetas extraídas y traducidas provenientes de Cobuild contra las asignadas por TnT. 
 
 El resultado fué de 71\% de aciertos. Se analizaron las etiquetas que diferían, luego se corrigieron las traducciones y se ajustaron los algoritmos de extracción y traducción de etiqueteas hasta alcanzar un grado de error mínimo. 
 
-Los mayores focos de error que no puedieron ser aplacados corresponden a palabras etiquetadas como VBD cuando son VBN y viceversa. Estas etiquetas son difícilmente desambigüables automáticamente.
+Los mayores focos de error que no pudieron ser aplacados corresponden a palabras etiquetadas como VBD cuando son VBN y viceversa. Estas etiquetas son difícilmente desambigüables automáticamente.
 
+\subsection{Recuperación de precisión gramatical} 
 Una vez obtenidos los ejemplos con las etiquetas traducidas a Penn Treebank, se realiza un nuevo proceso para recuperar precisión gramatical perdida en la traducción: se comparan las etiquetas traducidas contra las etiquetas asignadas automáticamente por TnT. En caso de coincidir y en caso de que la etiqueta TnT aporte  mayor precisión, se asigna esta última. Se utilizó el siguiente algoritmo:
 
 \floatname{algorithm}{Algoritmo}
@@ -168,7 +168,7 @@ Una vez obtenidos los ejemplos con las etiquetas traducidas a Penn Treebank, se 
 \end{algorithmic}
 \end{algorithm}
 
-A continuación se muestran ejemplos del resultado de este proceso:
+A continuación se exhiben ejemplos de este proceso:
 
 \begin{center}
 \begin{frame}
@@ -321,7 +321,6 @@ Las entradas de Cobuild exponen formas flexionadas de la palabra: plurales, pasa
 
 El objetivo entonces es reconocer y registrar esta información, o dicho de otra manera, obtener información gramatical implícita.
 
-
 Tomemos la siguiente entrada:\\ 
 
 \noindent
@@ -343,9 +342,9 @@ Aquí arriba se puede observar una entrada del diccionario para la palabra \emph{
 
 \emph{\small People were \textbf{celebrating} him as a bright alternative to Nixon.}\\
 
-En el ejemplo presentado la palabra definida es \emph{celebrate} y las formas derivadas son \emph{celebrates, celebrating} y \emph{celebrated}. Con esta información y la etiqueta asignada por Cobuild en el ejemplo (\emph{verb + object, or verb + object + adjunct (as/for)}) se pueden inferir y generar etiquetas \emph{Penn Treebank} con información adicional para las formas derivadas. 
+En la entrada presentada la palabra definida es \emph{celebrate} y las formas derivadas son \emph{celebrates, celebrating} y \emph{celebrated}. Con esta información y la etiqueta asignada por Cobuild en el ejemplo (\emph{verb + object, or verb + object + adjunct (as/for)}) se pueden inferir y generar etiquetas \emph{Penn Treebank} para las formas derivadas. 
 
-En el ejemplo ocurre la forma flexionada \emph{celebrating} con la etiqueta \emph{verb + object, or verb + object + adjunct (as/for)}. Reconociendo \emph{celebrating} podemos adicionar información extra a la etiqueta; en vez de guardar la etiqueta \emph{Penn Treebank} correspondiente a \emph{verb} (VB), guardaríamos la etiqueta  VBG\footnote{verbo gerundio o presente participio} que contiene más información gramatical que VB.
+En vez de guardar la etiqueta \emph{Penn Treebank} VB correspondiente a \emph{verb} para la palabra \emph{celebrating}, guardaríamos la etiqueta VBG\footnote{verbo gerundio o presente participio} que contiene más información gramatical.
 
 La tarea aquí será reconocer \emph{celebrating} como verbo gerundio o presente participio a partir de que está etiquetada como verbo y que deriva de \emph{celebrate}. Es decir, inferir el tipo de la forma derivada a partir de la palabra y la etiqueta asignada por Cobuild.
 
@@ -353,7 +352,7 @@ En este sentido se desarrollaron reglas y métodos para aprovechar toda la inform
 
 \floatname{algorithm}{Algoritmo}
 \begin{algorithm}[H]
-\caption{Reconocimiento de formas derivadas}
+\caption{Reconocimiento de formas flexionadas}
 \begin{algorithmic}
 \REQUIRE Etiqueta asignada por Cobuild, forma flexionada
 \STATE
@@ -381,6 +380,7 @@ En este sentido se desarrollaron reglas y métodos para aprovechar toda la inform
 
 A continuación se presentan algunos ejemplos del resultado de aplicar este proceso:\\
 
+\begin{samepage}
 \noindent 
 1. Forma derivada \emph{celebrating} inferida como VBG a partir de la palabra \emph{celebrate} y la etiqueta VB:\\
 
@@ -401,9 +401,11 @@ verb
 
 \noindent 
 \textbf{Resultado:} \emph{\small People were celebrating/\textbf{VBG} him as a bright alternative to Nixon.}\\
+\end{samepage}
 
-\noindent 2. 
-Forma derivada \emph{faults} inferida como NNS a partir de la palabra \emph{fault} y la etiqueta NN:
+\begin{samepage}
+\noindent 
+2. Forma derivada \emph{faults} inferida como NNS a partir de la palabra \emph{fault} y la etiqueta NN:
 
 \begin{footnotesize}
 \begin{Verbatim}[samepage=true]
@@ -420,10 +422,11 @@ noun
 \end{Verbatim}
 \end{footnotesize}
 
-
 \noindent 
 \textbf{Resultado:} \emph{\small Technicians laboriously tried to find and remedy faults/\textbf{NNS}.}\\
+\end{samepage}
 
+\begin{samepage}
 \noindent 
 3. Forma derivada \emph{larger} inferida como JJR a partir de la palabra \emph{large} y la etiqueta JJ:
 
@@ -442,8 +445,7 @@ adjective
 \end{Verbatim}
 \end{footnotesize}
 
-
 \noindent 
 \textbf{Resultado:} \emph{\small The central character is a larger/\textbf{JJR} than life, cantankerous New Englander...}
-
+\end{samepage}
 
