@@ -1,11 +1,11 @@
 \chapter{Desarrollo}
 Las entradas que conforman el diccionario Cobuild y que constituyen el conjunto de datos principal sobre el cual se basa este trabajo fueron cuidadosamente procesadas y refinadas intentando mantener toda la información disponible, explícita e implícita. 
 
-Se desarrollaron algoritmos para extraer los ejemplos junto a los rótulos asociados. Se tradujeron las etiquetas gramaticales provistas por Cobuild en etiquetas gramaticales standard. Se analizaron todos estos procesos y se ajustaron hasta aplacar sus fallas. 
+Se desarrollaron algoritmos para extraer de estas entradas los ejemplos junto a sus rótulos asociados. Se tradujeron las etiquetas gramaticales provistas por Cobuild en etiquetas gramaticales standard. Se analizaron todos estos procesos y se ajustaron hasta aplacar sus fallas. 
 
-El resultado obtenido fué un corpus parcialmente anotado correspondiente a la concatenación de los ejemplos extraídos de Cobuild junto a sus etiqueteas gramaticales.
+El resultado obtenido fué un corpus parcialmente anotado correspondiente a la concatenación de los ejemplos extraídos.
 
-Luego se completó la anotación de ese corpus utilizando etiquetación automática, obteniendo como resultado final un corpus completamente anotado.
+Luego se completó la anotación utilizando etiquetación automática, obteniendo como resultado final un corpus completamente anotado.
 \newpage
 \section{Extracción de la información} 
 Cobuild guarda su información en un archivo de texto difícilmente legible con un formato carente de documentación conocida. El primer desafío de este trabajo consistió en identificar y obtener las entradas del archivo mencionado. 
@@ -47,7 +47,7 @@ adjective
 \end{Verbatim}
 \end{footnotesize}
 
-Cada entrada arriba presentada tiene la característica de poseer una cantidad variable de campos y no es posible identificarlos exactamente. Sin embargo contienen algunos rasgos comunes: la palabra, sus formas, la pronunciación, su definición y uno o más ejemplos donde se indica como se emplea (mediante una etiqueta gramatical). 
+Las entradas de \emph{Cobuild} se caracterizan por poseer una cantidad variable de campos difícilmente identificables. Sin embargo contienen algunos rasgos comunes: la palabra, sus formas, la pronunciación, su definición y uno o más ejemplos donde se indica como se emplea (mediante una etiqueta gramatical). 
 
 Por ejemplo, en la primer entrada se pueden distinguir estos campos:\\
 
@@ -65,7 +65,7 @@ Por ejemplo, en la primer entrada se pueden distinguir estos campos:\\
 \end{footnotesize}
 \end{minipage}
 
-La siguiente tarea consistió en procesar individualmente cada entrada identificando la palabra que se está definiendo, las formas flexionadas de la misma y los ejemplos junto a su etiqueta gramatical asociada.
+Se procesó cada entrada identificando la palabra que se está definiendo, las formas flexionadas de la misma y los ejemplos junto a su etiqueta gramatical asociada.
 
 Como consecuencia se determinaron algunas características particulares para las entradas de Cobuild.
 
@@ -87,7 +87,7 @@ Como consecuencia se determinaron algunas características particulares para las 
 	\end{verbatim}
 	\end{footnotesize}
 
-	\item En la mayoría de los casos las definiciones se presentan en una sola oración y en otros en más de una.	Ejemplo:
+	\item En la mayoría de los casos las palabras se definen con una oración, sin embargo existen entradas que presentan definiciones utilizando más de una oración como se muestra abajo:
 	\begin{footnotesize}
 	\begin{verbatim}
 	DICTIONARY_ENTRY
@@ -106,8 +106,10 @@ Como consecuencia se determinaron algunas características particulares para las 
 
 Para el caso 1, las frases explicativas sobre pronunciación de las palabras fueron identificadas y descartadas, para no confundirlas con ejemplos.
 
-Ante la imposibilidad de distinguir si una oración es parte de la definición o un ejemplo (caso 2), se asumió que la primera oración de la entrada es la definición (esto es cierto en la mayoría de los casos). 
+Ante la imposibilidad de distinguir si una oración es parte de la definición o es parte de un ejemplo (caso 2), se asumió que la primera oración de la entrada corresponde a la definición (esto es cierto en la mayoría de los casos). 
 
-De esta manera se evita la pérdida de ejemplos por confundirlos con la definición. No obstante se introduce falsa información al identificar (en la minoría de los casos) una oración perteneciente a la definición como un ejemplo. Sin embargo este hecho no es tan grave: debido a las características de Cobuild, la palabra es generalmente definida utilizando el mismo sentido que se exhibe en el ejemplo. 
+De esta manera se evita la pérdida de ejemplos por confundirlos con la definición. No obstante puede introducirse falsa información al identificar una oración perteneciente a la definición como un ejemplo. 
 
-Por lo tanto se puede concluir que para la mayoría de los casos las oraciones pertenecientes a una definición que se identifican como un ejemplo aportan información válida.
+Sin embargo este hecho no es tan grave: debido a las características de Cobuild, la palabra es generalmente definida utilizando el mismo sentido que exhibe el ejemplo. 
+
+Por lo tanto se puede concluir que inclusive para los pocos casos en que las oraciones pertenecientes a una definición se identifican como un ejemplo, éstas aportan información gramatical válida.
