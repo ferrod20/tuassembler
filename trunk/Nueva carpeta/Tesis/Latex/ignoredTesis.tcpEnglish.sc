@@ -1,0 +1,4 @@
+center
+Bin
+empty
+entropía
