@@ -1445,11 +1445,16 @@ namespace ConsoleApplication1
                     {
                         case "NN":
                             salida.Write("\t");
+                            salida.Write("NN");
   //                          salida.Write(etiquetado.EsAlgunaDeEstas("NNS", "NNP", "NNPS") ? etiquetado : etiquetaExtraída);
                             break;
                         case "NNS":
                             salida.Write("\t");
                             salida.Write(etiquetado == "NNPS" ? etiquetado : etiquetaExtraída);
+                            break;
+                        case "VBD|VBN":    
+                            salida.Write("\t");
+                            salida.Write(etiquetado.EsAlgunaDeEstas("VBN", "VBD") ? etiquetado : etiquetaExtraída);
                             break;
                         case "VB":
                             salida.Write("\t");
