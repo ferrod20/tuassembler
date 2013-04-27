@@ -1,7 +1,7 @@
-Cantidad de palabras y signos puntuación: 598421
-Cantidad de signos de puntuación: 81607
-Cantidad de palabras: 516814
-Cantidad de palabras etiquetadas: 56479	( 10,9283030258468% )
+Cantidad de palabras y signos puntuación: 598454
+Cantidad de signos de puntuación: 81620
+Cantidad de palabras: 516834
+Cantidad de palabras etiquetadas: 56486	( 10,9292345317839% )
 
 
 adverb noun		199
@@ -191,7 +191,8 @@ phrase: verb inflects phrase: used as complement		1
 There are two hairdressers in the High Street.		1
 phrase: the + noun phrase: verb inflects phrase: used as an adjunct		1
 Someone who is as hard as nails doesnt care at all about how their actions might hurt or affect other people.		1
-adverb with verb phrase: used as complement phrase: verb inflects phrase: verb inflects  adverb phrase phrase phrase		1
+adverb with verb phrase: used as complement phrase: verb inflects phrase: verb inflects		1
+adverb phrase phrase phrase		1
 If you feel hard done by, you feel that you have not been treated fairly. Someone or something that is hard hit by something is affected very severely by it. If you take something unpleasant hard, you are very upset and severely affected by it.		1
 used as an adjective.		1
 My own home town is thousands of miles away.		1
@@ -267,6 +268,8 @@ rashly rashness		1
 Some people jumped rashly to the conclusion that something must be wrong. He could not disguise his pleasure at the rashness of what he was doing.		1
 phrase: used as complement phrase: used as complement		1
 Only the rich could afford his firms products... You can tell the very rich by their evening dress.		1
+phrase: used as an adjunct phrase: used as an adjunct phrase: used as an adjunct phrase: used as an adjunct		1
+phrase phrase phrase phrase		1
 I sold ice-cream, at 20p a scoop.		1
 scraping		1
 There was a scraping of chairs.		1
@@ -296,7 +299,8 @@ noun singular: a + noun phrase: used as an adjunct		1
 If a vehicle is on tow, it is being towed by another vehicle.		1
 unkindly unkindness		1
 Do it yourself, said Arthur unkindly. He wished to make amends for his former unkindness to her.		1
-wearily weariness  Leave her alone, Etta said wearily. She doesnt know what youre talking about.... The farmers trudged wearily to the nearest stream. Utter weariness overtook me an hour later... He didnt want to give in to his weariness.		1
+wearily weariness		1
+Leave her alone, Etta said wearily. She doesnt know what youre talking about.... The farmers trudged wearily to the nearest stream. Utter weariness overtook me an hour later... He didnt want to give in to his weariness.		1
 convention: usually + adjunct countable noun: usually singular		1
 wetly wetness		1
 She stood there, glistening wetly. ...the sticky wetness of blood.		1
