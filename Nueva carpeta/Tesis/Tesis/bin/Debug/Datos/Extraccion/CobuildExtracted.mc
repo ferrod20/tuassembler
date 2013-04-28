@@ -5,7 +5,7 @@ Matriz de confusion entre Cobuild etiquetado con TnT (entrenado con WSJ) contra 
 %Cantidad de tags: 56486
 
 Errores
-TnT (entrenado con WSJ)|	Cobuild 1pasada|	CantidadDeErrores
+TnT|	Cobuild 1pasada|	CantidadDeErrores
 VBN VBD|VBN 3671
 	buried 12
 	passed 11

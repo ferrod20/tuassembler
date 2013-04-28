@@ -1,135 +1,135 @@
 
 
-%Aciertos: 184744 ( 9,23850262887067% )
-%Errores: 1814974
+%Aciertos: 185960 ( 9,29931120287961% )
+%Errores: 1813758
 %Cantidad de tags: 1999718
 
 Errores
 |	|	CantidadDeErrores
-NN NN 248297
+NN NN 249369
 	time 2475
-	way 1592
-	work 1458
+	way 1591
+	work 1480
 	year 1425
 	world 1114
 	life 1083
 	man 1063
 	day 946
-	place 895
-	part 870
-	end 818
-	home 797
+	place 896
+	part 869
+	end 820
+	home 799
 	something 787
 	art 724
-	yesterday 715
+	yesterday 717
 	system 696
 	government 678
-	point 674
+	point 675
 	case 647
-	book 637
-	group 632
+	book 638
+	group 633
 	week 626
 	party 626
 	fact 595
-	number 592
+	number 594
 	market 586
 	country 583
 	side 581
-	hand 574
-	power 570
-	nothing 561
-	form 560
+	hand 578
+	power 576
+	form 563
+	nothing 560
 	company 559
 	head 558
 	state 552
+	use 534
 	night 532
-	use 526
 	thing 524
 	problem 521
-	mind 519
-IN IN 212016
+	mind 521
+IN IN 212716
 	of 52579
 	in 30692
 	for 14666
 	with 11906
 	on 11759
-	that 10649
+	that 10887
 	by 9184
-	as 8393
+	as 8459
 	at 7773
 	from 7410
-	about 3076
+	about 3188
 	into 2895
 	if 2686
 	In 2547
 	than 2043
-	like 1884
-	over 1795
+	like 1891
+	over 1876
 	after 1708
 	between 1548
 	If 1509
-	through 1379
+	through 1389
 	By 1352
-	before 1294
+	before 1315
 	because 1237
 	against 1074
 	without 905
 	under 880
 	As 782
-	while 780
+	while 779
 	For 776
 	since 755
 	during 665
 	until 629
+	around 615
 	At 605
-	around 604
 	within 588
-	though 506
+	though 554
 	On 483
 	From 468
 	whether 434
-DT DT 187831
+DT DT 188283
 	the 99712
 	a 38639
 	The 11937
 	an 6293
 	this 5973
 	some 2558
-	no 2431
-	all 2347
+	all 2466
+	no 2437
 	This 2281
-	A 2107
-	any 2051
+	A 2105
+	any 2052
 	these 1494
-	that 1399
+	that 1452
 	those 1350
+	both 993
 	another 970
-	both 966
 	each 725
+	That 693
 	every 679
-	No 516
+	No 503
 	THE 486
-	That 459
 	These 436
 	Some 427
 	An 321
-	All 262
+	All 265
 	Another 191
-	Both 147
+	Both 148
 	Each 120
 	Those 115
 	Any 107
+	either 83
 	Every 81
-	either 77
-	neither 61
-	Neither 24
+	neither 65
+	Neither 26
 	AN 23
+	half 21
+	la 16
 	Either 15
-	la 15
 	del 14
-	half 11
 	le 11
-NNP NNP 128085
+NNP NNP 126649
 	Mr 1551
 	London 979
 	Jay 623
@@ -140,89 +140,89 @@ NNP NNP 128085
 	England 515
 	New 476
 	US 472
-	West 433
+	West 435
 	Mrs 408
 	Pound 406
-	East 388
 	UK 385
+	East 377
 	Leonard 345
 	David 340
 	Sir 320
 	Europe 319
 	National 315
 	Ireland 309
-	South 299
+	South 302
 	October 293
 	United 289
 	City 289
 	Peter 287
 	Royal 286
 	September 285
-	Party 279
-	World 269
+	Party 278
+	World 272
 	Cameron 266
 	James 265
 	Hong 261
-	English 260
 	Lord 257
 	God 255
 	Germany 253
 	Dr 251
 	Kong 251
 	House 233
-JJ JJ 120992
+	York 233
+JJ JJ 122055
 	other 2172
 	new 1998
-	first 1958
+	first 1963
 	many 1528
-	own 1350
-	last 1304
-	good 1274
+	own 1351
+	last 1302
+	good 1273
 	same 990
-	such 933
-	few 833
+	such 925
+	few 832
 	old 809
-	next 789
+	next 792
 	local 765
-	British 732
-	little 727
+	British 744
+	little 738
 	different 726
 	important 718
 	great 666
 	small 652
 	high 651
 	possible 641
-	second 624
-	young 593
+	second 623
+	young 592
 	full 583
+	long 571
 	available 562
-	long 560
 	able 554
-	per_cent 536
+	early 531
+	per_cent 528
 	political 524
-	early 513
-	public 510
+	public 513
 	social 497
 	large 492
 	real 490
+	much 468
 	likely 458
-	much 456
-	free 448
+	further 447
+	free 447
+	whole 438
 	difficult 436
-	whole 435
-	main 432
 , , 95405
 	, 95405
-NNS NNS 94430
+NNS NNS 94495
 	people 2058
 	years 1674
 	things 630
-	children 566
+	children 565
 	days 547
-	men 522
+	men 520
 	problems 498
 	services 465
-	women 446
+	women 445
 	others 444
 	times 429
 	words 428
@@ -243,49 +243,49 @@ NNS NNS 94430
 	groups 272
 	cases 267
 	weeks 267
-	points 265
+	points 263
 	friends 262
 	rates 262
 	companies 248
-	works 243
 	changes 239
 	terms 238
 	systems 234
 	arms 232
+	as_well_as 231
+	works 230
 	authorities 226
-	events 226
 . . 86486
 	. 80711
 	? 4350
 	! 1425
-RB RB 75988
+RB RB 76027
 	not 8377
 	n't 2986
-	so 2371
+	so 2367
 	also 2308
-	only 2237
+	only 2233
 	then 1984
 	now 1843
-	very 1803
+	very 1801
 	just 1591
 	too 1422
-	even 1285
-	still 1256
-	back 1108
+	even 1286
+	still 1260
+	back 1176
 	never 1001
 	well 983
 	always 913
 	here 844
 	again 836
 	often 768
-	much 648
-	away 602
-	far 599
+	much 659
+	away 615
+	far 600
 	really 576
-	there 568
 	already 566
+	there 549
+	quite 548
 	However 547
-	quite 544
 	almost 523
 	however 520
 	yet 509
@@ -294,12 +294,12 @@ RB RB 75988
 	ever 450
 	particularly 413
 	Not 398
+	once 395
 	usually 389
-	So 383
 	else 382
-	once 375
+	So 381
 	rather 370
-PRP PRP 72561
+PRP PRP 72576
 	it 12535
 	I 11089
 	he 7954
@@ -320,7 +320,7 @@ PRP PRP 72561
 	himself 687
 	itself 567
 	themselves 388
-	her 335
+	her 350
 	myself 252
 	yourself 232
 	herself 221
@@ -328,7 +328,7 @@ PRP PRP 72561
 	theirs 24
 	Himself 3
 	One 1
-CC CC 63014
+CC CC 62997
 	and 45255
 	or 7144
 	but 5670
@@ -336,101 +336,101 @@ CC CC 63014
 	And 1601
 	& 366
 	Or 200
-	nor 193
+	nor 194
 	Nor 99
-	Yet 14
-	Either 7
-	either 6
-	versus 6
+	Yet 5
+	Either 4
+	versus 4
+	either 2
 	v. 1
-VB VB 61043
+VB VB 61151
 	be 12203
-	have 3190
-	make 1270
-	see 1060
-	do 1048
-	take 994
-	get 977
-	go 862
-	give 654
-	say 598
-	find 593
-	know 541
-	keep 427
-	come 408
-	use 407
-	help 391
-	look 340
-	think 340
+	have 3181
+	make 1307
+	see 1085
+	do 1057
+	take 1012
+	get 996
+	go 893
+	give 660
+	say 614
+	find 594
+	know 549
+	keep 437
+	use 410
+	come 409
+	help 389
+	think 344
+	look 336
 	work 327
-	provide 308
-	become 298
-	tell 292
+	provide 311
+	tell 293
+	become 292
 	pay 291
 	try 269
-	let 247
-	leave 231
-	want 230
-	bring 229
-	put 222
+	let 251
+	put 242
+	bring 234
+	leave 232
+	want 228
 	need 217
 	understand 214
-	stop 210
-	produce 207
-	turn 206
-	ask 204
+	turn 208
+	ask 207
+	produce 206
+	stop 206
 	meet 204
-	play 203
+	play 202
 	prevent 199
-	feel 196
+	feel 197
 	allow 196
 TO TO 47048
 	to 46422
 	To 547
 	TO 79
-VBP VBP 29154
+VBP VBP 29433
 	are 9186
-	have 4870
-	do 1967
+	have 4894
+	do 1969
 	're 628
 	've 612
-	'm 583
-	know 558
-	think 558
+	'm 584
+	know 562
+	think 559
 	am 515
-	want 465
-	need 433
-	say 375
+	want 462
+	need 440
+	say 373
 	feel 242
-	believe 209
-	see 201
-	get 191
-	make 176
-	include 174
+	believe 210
+	get 186
+	see 185
+	include 178
+	make 173
 	seem 173
-	go 160
-	find 154
-	mean 152
-	take 133
-	come 123
-	look 115
+	go 161
+	mean 145
+	find 139
+	come 124
+	take 120
+	look 116
 	hope 101
 	wish 100
-	use 96
-	give 95
-	appear 91
-	like 86
-	tend 84
+	use 92
+	appear 88
+	give 86
+	like 85
+	tend 85
 	Do 80
-	live 77
-	love 69
-	show 69
+	live 76
+	love 71
+	remember 69
+	show 68
 	suppose 67
-	remember 66
-	work 65
-	tell 60
-CD CD 28670
-	one 4147
+	work 57
+	continue 56
+CD CD 27642
+	one 4184
 	two 2126
 	three 975
 	One 599
@@ -470,11 +470,11 @@ CD CD 28670
 	100 117
 	1980 111
 	60 110
-PRP$ PRP$ 26352
+PRP$ PRP$ 26304
 	his 7430
 	their 4535
 	its 3441
-	her 2849
+	her 2801
 	your 2691
 	my 2358
 	our 1315
@@ -485,19 +485,19 @@ PRP$ PRP$ 26352
 	Your 169
 	Our 157
 	Its 127
-MD MD 24565
-	will 5305
+MD MD 24568
+	will 5307
 	can 4793
 	would 3927
 	could 2457
 	may 2152
 	should 2082
-	must 1397
+	must 1396
 	might 932
 	'll 472
 	ca 284
 	shall 199
-	'd 167
+	'd 169
 	wo 163
 	Can 91
 	ought 74
@@ -514,429 +514,425 @@ MD MD 24565
 `` `` 15913
 	`` 15912
 	` 1
-NN JJ 10277
-	per_cent 298
-	white 225
-	fine 205
-	right 203
-	cold 168
-	red 163
-	front 114
+NN JJ 10300
+	white 224
+	right 201
+	fine 201
+	red 164
+	cold 163
+	per_cent 159
+	front 122
 	official 97
-	maximum 91
-	ideal 90
-	out_of 80
-	chief 80
-	catholic 70
+	maximum 94
+	out_of 90
+	ideal 80
 	pink 69
-	grey 68
+	past 68
+	whole 68
 	strange 67
 	thick 62
-	alternative 57
-	black 56
-	second 55
-	underground 53
+	catholic 61
+	grey 59
+	second 57
+	chief 57
+	rather_than 56
+	black 54
 	cheap 52
 	brown 52
-	unknown 51
 	plain 49
+	unknown 49
+	underground 48
 	sheer 47
-	male 47
-	whole 45
-	middle 45
+	middle 44
 	pale 44
 	perfect 44
-	rather_than 43
-	calm 41
-	objective 40
+	because_of 43
+	favourite 43
+	labour 40
+	calm 40
 	pure 39
+	fat 38
 	immense 37
-	busy 36
-	fat 35
-	bare 34
-	dependent 34
-WDT WDT 9162
+	objective 36
+	male 36
+WDT WDT 9600
 	which 7504
-	that 1412
+	that 1852
 	whatever 163
 	Which 71
 	THAT 7
 	whichever 3
-	That 2
-WRB WRB 8258
+WRB WRB 8261
 	when 3120
 	where 1566
 	how 1408
 	When 704
-	why 540
+	why 543
 	How 425
 	Why 252
 	Where 166
 	whenever 47
 	whereby 30
-WP WP 7912
+WP WP 7921
 	who 3945
-	what 2657
+	what 2666
 	What 920
 	whom 252
 	Who 138
-JJ NN 6281
+JJ NN 6101
+	of_course 156
 	critic 137
-	light 107
+	light 129
 	opponent 91
 	fish 88
-	more_than 68
-	narrative 63
-	subject 58
-	north 55
+	north 65
+	subject 56
 	garden 55
-	cooking 46
-	funeral 44
+	narrative 51
+	interior 48
+	funeral 45
+	cooking 45
 	finish 44
-	top 41
-	interior 41
-	plastic 40
+	opposite 43
+	top 39
 	detective 39
-	opposite 38
-	of_course 35
+	spiritual 37
+	whisky 33
 	chocolate 33
-	whisky 32
-	key 30
-	future 30
+	key 31
+	square 31
+	whilst 30
 	locomotive 30
-	spiritual 29
-	square 28
 	anniversary 27
-	rather_than 27
 	birth 26
-	orange 26
 	vegetable 26
-	concrete 26
 	fabric 24
 	earth 23
-	parallel 22
-	brush 21
-	rear 21
+	future 22
+	medieval 22
+	brush 22
+	dark 22
+	parallel 21
+	academic 21
 	varnish 21
 	flesh 20
+	lyric 20
+	rear 20
 	muscle 20
-	army 19
+	graduate 20
 ) ) 5714
 	) 5714
 ( ( 5648
 	( 5648
-JJR JJR 4171
-	more 1045
-	better 367
+NNP NN 4984
+	For_example 79
+	in_Short 59
+	Conference 57
+	Princess 54
+	Campaign 45
+	Support 38
+	Division 37
+	Ms 37
+	IRA 36
+	Association 36
+	T 32
+	Academy 29
+	van 28
+	Highness 28
+	Jew 28
+	Dance 26
+	USSR 25
+	Duke 24
+	Prince 24
+	Of_course 23
+	Manor 23
+	Federation 23
+	Earth 22
+	Sabbath 22
+	Junction 22
+	Revolution 21
+	Bride 21
+	Game 21
+	CHAPTER 21
+	CB 21
+	Isle 20
+	Work 19
+	Life 19
+	Song 19
+	Church 19
+	TV 19
+	Class 19
+	Book 18
+	Autumn 18
+	Colour 18
+JJR JJR 4331
+	more 1088
+	better 368
 	higher 296
 	greater 239
+	less 227
 	older 226
-	lower 214
-	less 183
-	earlier 134
+	lower 225
+	earlier 146
 	easier 131
 	worse 130
 	larger 117
 	smaller 117
-	More 86
+	More 90
+	closer 68
 	stronger 67
-	closer 65
 	fewer 61
 	bigger 59
 	younger 56
-	harder 51
-	longer 35
+	harder 54
+	longer 48
 	cheaper 31
 	lighter 29
 	lesser 25
 	shorter 24
 	weaker 24
 	clearer 23
+	faster 23
 	broader 18
 	slower 18
 	Earlier 17
 	richer 15
-	no_longer 15
 	softer 15
 	heavier 14
 	fuller 12
 	deeper 12
+	no_longer 10
 	wider 8
 	tougher 8
-	cleaner 8
 	narrower 8
 	steeper 8
-EX EX 3876
-	there 2424
+EX EX 4140
+	there 2688
 	There 1452
-VBD VBN 3587
-	made 111
-	aged 48
-	used 41
-	published 41
-	left 40
-	described 37
-	led 30
-	covered 28
-	shown 28
-	developed 28
-	set 27
-	lost 26
-	established 24
-	built 24
-	done 24
-	understood 24
-	raised 23
-	laid 23
-	filled 20
-	passed 19
-	accused 19
-	fitted 19
-	meant 19
-	hated 17
-	forced 17
-	followed 17
-	intended 16
-	been 16
-	buried 16
-	determined 16
-	seen 15
-	allowed 15
-	entitled 14
-	come 14
-	shared 14
-	fed 14
-	divided 14
-	locked 14
-	supplied 14
-	involved 13
-IN RP 3371
-	out 1411
-	up 706
-	off 549
-	down 405
-	over 170
-	around 96
-	along 16
-	through 9
-	upon 8
-	across 1
-NN NNP 3249
-	Pound 163
-	Crime 75
-	Government 69
-	Department 69
-	In_addition 58
-	Act 51
-	Sport 50
-	World 49
-	Art 43
-	Father 37
-	Policy 32
-	King 30
-	Page 29
-	Work 28
-	Cup 28
-	Peace 27
-	Guide 27
-	Science 26
-	Fine 25
-	Use 24
-	UK 23
-	View 23
-	Correspondent 23
-	Today 22
-	Chapter 22
-	Beauty 21
-	Tel 21
-	War 20
-	GP 19
-	Class 19
-	President 17
-	Everything 17
-	End 17
-	Sky 16
-	Information 15
-	Man 15
-	MP 15
-	West 14
-	BOOK 13
-	Interest 12
-NNP NN 3198
-	Concern 190
-	in_Short 49
-	Campaign 41
-	Support 38
-	IRA 36
-	Underground 36
-	T 32
-	Ale 31
-	van 27
-	Help 25
-	Reading 24
-	USSR 22
-	No. 21
-	Grand_Prix 21
-	Obituary 20
-	Song 19
-	VAT 19
-	X 19
-	Book 18
-	Autumn 18
-	Sabbath 18
-	Flight 18
-	Work 17
-	Fish 17
-	SCREENING 17
-	P 16
-	Conference 16
-	DIY 16
-	Countess 16
-	Class 15
-	Duchess 15
-	Fascism 14
-	Y 14
-	Talk 14
-	Plan 14
-	Link 13
-	Government 13
-	Love 13
-	R 13
-	Catholicism 13
-VBN JJ 3086
+IN RP 3250
+	out 1437
+	up 685
+	off 518
+	down 418
+	around 90
+	over 90
+	along 12
+VBN JJ 3165
 	keen 63
-	left 50
-	proposed 45
-	experienced 43
-	fixed 38
-	broken 36
-	written 33
+	left 52
+	experienced 47
+	broken 44
+	finished 42
+	infected 36
+	at_least 36
+	proposed 34
+	fixed 33
+	varied 32
 	armed 30
-	finished 29
-	varied 28
+	more_than 29
 	distinguished 27
-	more_than 24
-	at_least 21
-	restricted 21
-	rooted 21
-	selected 20
+	restricted 26
+	rooted 24
+	printed 20
+	frozen 20
+	married 20
+	renewed 20
 	listed 20
-	infected 19
-	printed 19
-	frozen 19
-	married 19
-	renewed 19
-	improved 16
+	selected 19
+	lost 17
+	crowded 17
+	celebrated 16
+	sustained 16
 	talented 16
-	sustained 15
-	inspired 15
-	crowded 15
-	accepted 15
-	estimated 15
-	shared 14
-	isolated 14
+	inspired 16
+	fitted 16
+	isolated 15
+	stained 15
+	committed 15
+	stated 14
+	repeated 14
+	acknowledged 14
 	detailed 14
-	destined 13
-	stained 13
-	inclined 13
-	committed 13
-	guaranteed 12
-	repeated 12
-	celebrated 12
-	neglected 12
-NN VB 2986
-	visit 69
-	fit 54
-	try 54
-	escape 51
-	round 49
-	Use 37
-	notice 35
-	release 34
-	press 33
-	help 31
-	out_of 30
-	tap 28
-	close 27
-	hand 26
-	work 26
-	look 26
-	judge 23
-	date 22
-	plant 22
-	score 21
-	respect 20
-	count 18
-	turn 18
-	register 18
-	sort 17
-	Go 17
-	damage 16
-	blow 16
-	stage 15
-	spring 14
-	struggle 14
-	show 14
-	collapse 14
-	balance 14
-	talk 14
-	hook 13
-	guide 13
-	thank 13
-	fork 13
-	order 13
-NNP JJ 2950
-	Irish 144
-	American 121
-	English 101
-	Good 87
-	Greek 63
+	frightened 14
+	divided 14
+	determined 14
+	trained 13
+	guaranteed 13
+NNP JJ 2934
+	English 207
+	Irish 151
+	American 139
+	Good 88
+	Greek 65
 	Jewish 62
-	Dutch 48
+	Christian 51
+	Dutch 43
 	Marxist 42
-	African 39
-	Local 38
-	Christian 37
-	Catholic 36
+	British 41
+	East 40
+	German 38
+	African 36
 	Olympic 34
-	Special 33
-	German 32
-	Australian 32
-	Lebanese 31
-	East 29
+	Local 33
+	Lebanese 32
+	Independent 31
+	Australian 28
 	Arab 26
-	Communist 26
-	Real 24
-	Provincial 24
+	Catholic 25
+	Real 23
 	Victorian 22
 	Latin 22
-	British 21
-	Czechoslovak 21
-	Spanish 20
-	Gothic 20
-	West 20
-	Double 20
-	out_of 19
-	Belgian 19
-	European 17
-	Afghan 16
-	Pakistani 16
-	French 16
+	Spanish 21
+	Afghan 20
+	Israeli 20
+	out_of 20
+	Belgian 20
+	Pakistani 19
+	West 17
 	Georgian 16
-	Islamic 15
+	European 16
+	Gothic 15
+	French 15
+	Provincial 15
+	Symphonic 15
 	Nazi 14
+	Protestant 14
+	Original 14
 	Nice 14
-JJS JJS 2732
-	best 672
-	most 468
-	Most 225
+NN NNP 2921
+	Pound 163
+	Government 96
+	Letter 82
+	Crime 79
+	Department 67
+	In_addition 51
+	World 49
+	Act 47
+	Sport 45
+	Beauty 40
+	Football 39
+	Art 38
+	Father 37
+	Page 31
+	Cup 28
+	Guide 27
+	Peace 26
+	End 25
+	Use 25
+	Fine 25
+	Science 25
+	UK 23
+	View 23
+	Tel 21
+	No_one 20
+	War 19
+	King 19
+	President 17
+	Outlook 17
+	Everything 16
+	Chapter 16
+	Sky 16
+	Work 15
+	Information 14
+	West 14
+	Class 14
+	Law 14
+	Man 13
+	Guinness 13
+	Today 13
+VB NN 2893
+	love 277
+	dance 162
+	object 150
+	stick 107
+	paint 60
+	cover 58
+	check 38
+	channel 34
+	stay 31
+	climb 31
+	lift 31
+	cure 28
+	snap 28
+	mention 26
+	ease 24
+	sink 24
+	mind 23
+	map 22
+	wait 21
+	lease 21
+	hire 21
+	slip 21
+	walk 20
+	pair 20
+	stem 20
+	stop 20
+	jump 19
+	bed 19
+	lock 19
+	ring 19
+	shore 18
+	rage 18
+	wear 17
+	win 17
+	break 16
+	stretch 16
+	drift 15
+	grasp 14
+	treat 14
+	pose 13
+VBD VBN 2824
+	aged 46
+	left 43
+	published 36
+	shown 28
+	developed 27
+	led 25
+	built 24
+	done 24
+	lost 23
+	covered 22
+	established 22
+	laid 22
+	understood 21
+	made 21
+	accused 20
+	described 20
+	set 18
+	forced 18
+	been 16
+	hated 16
+	filled 16
+	fitted 15
+	come 15
+	buried 15
+	determined 15
+	locked 15
+	shared 14
+	intended 13
+	chosen 13
+	fed 13
+	dressed 13
+	created 13
+	seen 13
+	used 13
+	cut 13
+	supplied 13
+	passed 12
+	sold 12
+	supposed 11
+	meant 11
+JJS JJS 2787
+	best 691
+	most 487
+	Most 228
 	latest 158
 	largest 128
+	least 127
 	biggest 124
-	least 116
 	greatest 97
 	highest 96
-	worst 81
+	worst 84
 	finest 40
 	nearest 35
 	earliest 27
@@ -953,1136 +949,1089 @@ JJS JJS 2732
 	safest 11
 	richest 9
 	widest 8
+	at_least 8
 	cheapest 8
 	poorest 8
-	newest 7
 	shortest 7
 	toughest 7
 	Best 7
 	heaviest 7
-	at_least 6
 	weakest 6
 	best-selling 6
 	faintest 6
 	deepest 6
 	hardest 6
 	clearest 5
-VBZ NNS 2682
-	such_as 312
-	routes 104
-	leaves 94
-	faces 75
-	plays 57
+	truest 5
+NN VB 2672
+	visit 68
+	audition 64
+	fit 49
+	escape 45
+	try 45
+	Use 35
+	score 35
+	notice 34
+	release 34
+	press 32
+	tap 28
+	judge 25
+	out_of 22
+	hand 21
+	count 19
+	so_that 19
+	date 18
+	wake 18
+	register 18
+	damage 17
+	sort 17
+	Go 17
+	blow 16
+	plant 16
+	chisel 16
+	leave 15
+	show 15
+	stage 15
+	help 14
+	struggle 14
+	respect 14
+	collapse 14
+	turn 14
+	balance 14
+	order 14
+	thank 13
+	work 13
+	talk 13
+	construct 13
+	waste 12
+VBZ NNS 2505
+	such_as 298
+	routes 103
+	leaves 91
+	faces 83
+	as_well_as 81
+	plays 58
 	doubts 55
-	aims 49
-	awards 44
+	aims 48
+	awards 42
 	speeds 38
-	as_well_as 33
 	turns 32
+	remains 31
 	crowds 31
-	shows 25
-	remains 25
-	breaks 21
+	promises 21
 	pitches 21
-	centres 20
-	promises 20
-	looks 18
-	so_as 17
-	ranges 17
+	flies 20
+	centres 19
+	falls 19
+	looks 17
+	reviews 17
+	passes 15
 	programmes 14
 	fumes 14
+	ranges 14
+	supports 13
 	pubs 13
-	flies 13
-	touches 12
-	exhibits 11
-	claims 10
-	ends 10
+	as_soon_as 13
+	so_as 12
+	exhibits 12
+	ends 12
+	breaks 12
+	rejects 12
+	forces 10
+	wins 10
 	quotes 10
-	passes 10
-	visits 10
-	forces 9
 	artists 9
-	accounts 9
+	experiences 9
+	let's 9
 	grounds 9
-	reviews 9
-	places 8
-	lands 8
-	matters 8
-VB NN 2659
-	love 284
-	dance 161
-	object 150
-	stick 102
-	paint 60
-	cover 50
-	check 37
-	channel 34
-	climb 31
-	snap 30
-	lift 29
-	cure 28
-	stay 26
-	mention 24
-	ease 24
-	sink 23
-	map 22
-	lease 21
-	hire 21
-	slip 21
-	pair 20
-	stem 20
-	jump 19
-	bed 19
-	lock 19
-	wait 18
-	shore 18
-	rage 18
-	walk 17
-	ring 17
-	break 17
-	win 17
-	stop 16
-	drift 15
-	stretch 15
-	wear 15
-	grasp 14
-	matter 14
-	whilst 13
-	urge 13
-VBG NN 2643
-	feeling 177
-	planning 143
-	brewing 89
-	thinking 70
+	visits 9
+VBG NN 2412
+	feeling 175
+	planning 149
+	brewing 87
+	living 74
+	thinking 69
+	climbing 59
 	shopping 52
 	lighting 52
-	living 47
-	darling 43
-	nursing 34
-	meaning 30
-	setting 27
-	drawing 25
+	darling 46
+	carving 43
+	meaning 38
+	running 28
+	drawing 28
+	nursing 26
 	broadcasting 25
 	screening 24
-	sporting 24
 	wedding 23
+	setting 23
+	viewing 23
+	fighting 22
+	being 22
+	fitting 22
 	placing 22
-	climbing 21
-	viewing 21
-	fitting 20
-	swimming 19
-	racing 19
-	killing 18
-	being 18
-	undertaking 17
+	turning 21
+	ending 20
+	swimming 18
+	saving 18
+	racing 18
+	heading 17
+	breeding 17
+	making 17
+	feeding 17
+	printing 17
+	killing 16
 	dining 16
-	pruning 16
-	accounting 16
-	fighting 15
-	casting 15
-	opening 15
-	printing 15
-	saving 14
-	turning 14
-	singing 14
-	making 14
+	hiding 15
+	undertaking 15
+	calling 14
 	seating 14
-	edging 14
-	heading 13
-	breeding 13
-JJ RB 2601
-	much 495
-	later 409
-	enough 203
-	of_course 135
-	at_least 103
-	up_to 68
-	fast 60
-	as_though 57
-	very 49
-	straight 46
-	Later 45
-	long 34
-	late 31
-	further 31
-	north 27
-	early 26
-	only 26
-	ill 24
-	first 23
-	even_though 22
-	close 22
-	South-east 22
-	Much 21
-	along_with 19
-	far 16
-	away_from 16
-	little 16
-	genuinely 13
-	asleep 13
-	forth 12
-	correctly 11
-	plenty 11
-	wholly 11
-	instead_of 10
-	comparatively 9
-	back 9
-	Of_course 9
-	hard 9
-	daily 8
-	a_little 8
-RBR RBR 2181
-	more 1870
-	less 240
-	earlier 30
-	More 19
-	Earlier 11
-	better 6
-	harder 2
-	later 2
-	sooner 1
-VBN VBD 2138
-	had 240
-	said 218
-	called 112
+	processing 14
+VBN VBD 2386
+	had 241
+	said 230
+	called 117
+	made 44
 	arrived 38
-	got 30
-	left 22
-	commented 19
-	made 19
-	spent 17
-	opened 17
-	explained 16
-	looked 16
-	held 16
-	provided 16
-	played 15
-	saw 15
-	happened 15
-	lived 14
+	got 34
+	played 26
+	spent 25
+	held 21
+	explained 20
+	looked 19
+	provided 18
+	commented 16
+	lived 16
+	opened 16
+	saw 16
+	happened 16
+	wanted 15
+	left 15
+	started 15
 	Was 14
 	emerged 14
-	wanted 13
-	coincided 13
-	insisted 13
-	expected 12
+	insisted 14
+	needed 12
+	coincided 12
+	moved 12
 	stayed 12
 	enjoyed 11
+	produced 11
 	entered 11
-	existed 11
+	expected 11
+	carried 11
+	used 10
 	consisted 10
-	started 10
-	met 9
-	resulted 9
-	found 9
-	told 9
-	carried 9
-	ended 9
-	needed 8
-	put 8
-	rubbed 8
-	cast 8
-JJ NNP 2127
-	Roman 178
-	British 75
-	Scottish 55
-	Conservative 47
-	Third 41
-	English 39
-	West 37
-	German 37
-	Golden 28
-	Next 21
-	Modern 20
-	Far 20
-	Cultural 20
-	East 18
-	Long 17
-	Gillian 17
-	European 15
-	Inner 15
-	Edwardian 14
-	Anglo-Irish 13
-	Labour 13
-	Second 12
-	anti-Semitism 12
-	Little 12
-	Legislative 12
-	Private 11
-	Siberian 11
-	Independent 11
-	Classical 10
-	Democratic 10
-	Low 10
-	Classic 10
-	Indian 10
-	Guardian 9
-	Dead 9
-	Cold 9
-	As_though 9
-	Critical 9
-	Colombian 9
-	Inside 8
-VBP VB 2109
-	have 95
-	do 66
-	tell 41
-	give 41
-	happen 37
-	say 34
-	out_of 32
-	make 24
-	meet 22
-	even_if 21
-	go 21
-	find 19
-	continue 17
-	ask 17
-	know 17
-	see 16
-	write 16
-	understand 16
-	contain 15
-	pretend 15
-	close 14
-	remember 14
-	remove 13
-	help 13
-	hold 13
-	get 13
-	handle 13
-	follow 12
-	produce 12
-	pass 12
-	include 12
-	pick 12
-	win 12
-	stop 11
-	bend 11
-	like 11
-	need 11
-	cover 11
-	take 10
-	apply 10
-NNS VBZ 2057
-	leads 85
-	lies 71
-	surfaces 40
-	works 39
-	means 37
-	stems 37
-	needs 36
-	stands 29
-	as_well_as 24
-	varies 23
-	refers 22
-	forms 22
-	starts 21
-	tries 21
-	matches 21
-	fits 20
-	arrives 19
-	lectures 19
-	drives 19
-	reveals 19
-	climbs 19
-	dies 18
-	tends 18
-	rises 15
-	causes 15
-	stretches 14
-	hits 14
-	punches 14
-	arises 13
-	likes 13
-	bowls 13
-	pulls 13
-	remembers 12
-	differs 12
-	displays 12
-	smells 12
-	features 12
-	loves 11
-	reads 11
-	discovers 11
-VBG JJ 2055
-	existing 159
-	leading 130
-	following 98
-	remaining 40
-	convincing 30
-	boring 28
-	charming 27
-	demanding 27
-	fitting 25
-	loving 22
-	conflicting 21
-	misleading 20
-	satisfying 20
-	flowering 20
-	incoming 18
-	challenging 17
-	rewarding 16
-	encouraging 15
-	ageing 15
-	sparkling 15
-	stunning 15
-	missing 14
-	damaging 14
-	neighbouring 13
-	pressing 12
-	prevailing 12
-	tempting 12
-	astonishing 12
-	matching 12
-	winning 12
-	devastating 11
-	wanting 11
-	frightening 11
-	revealing 11
-	refreshing 11
-	puzzling 11
-	booming 11
-	amazing 11
-	seeming 11
-	comforting 11
-VBP NN 1967
-	dance 168
-	display 75
+	ended 10
+	attended 9
+	brought 9
+	joined 9
+	revealed 9
+	appeared 9
+JJ RB 2202
+	much 483
+	later 395
+	enough 209
+	up_to 106
+	fast 67
+	straight 51
+	as_though 48
+	very 45
+	Later 45
+	even_though 39
+	ill 28
+	long 23
+	Much 21
+	north 21
+	further 19
+	late 18
+	first 18
+	only 17
+	genuinely 13
+	forth 12
+	correctly 11
+	wholly 11
+	back 11
+	far 10
+	plenty 10
+	asleep 10
+	daily 9
+	comparatively 9
+	a_little 9
+	hard 9
+	early 8
+	inside 8
+	close 8
+	along_with 8
+	no_matter_how 7
+	no-one 7
+	in_relation_to 7
+	intensely 7
+	awake 7
+	no_doubt 7
+RBR RBR 2161
+	more 1875
+	less 237
+	earlier 30
+	Earlier 11
+	More 5
+	later 2
+	sooner 1
+VBP NN 2009
+	dance 167
+	display 77
 	pair 71
-	break 57
+	break 56
 	lift 52
+	hold 51
 	captain 49
-	hold 47
-	walk 45
-	love 42
-	draw 42
-	transfer 37
+	walk 46
+	draw 46
+	love 40
+	transfer 38
 	climb 37
 	win 37
 	tip 36
 	cry 35
 	ring 35
-	pose 23
+	pose 26
+	stop 24
 	gloss 23
-	stop 23
-	regard 19
-	paint 19
-	cover 18
+	cover 19
 	drift 18
+	regard 18
+	paint 18
 	fare 18
+	drag 18
 	breach 18
 	stretch 17
-	drag 17
+	pass 16
 	grasp 15
-	no_one 15
 	highlight 15
 	map 14
-	pass 13
-	pp 13
+	lock 13
 	polish 13
-	lock 12
-	contact 11
+	no_one 12
 	ward 10
+	form 10
 	object 10
-	at_all 10
-	advocate 9
-NN VBG 1919
-	writing 169
-	working 90
-	playing 75
-	suffering 55
-	reading 50
-	standing 48
-	finding 37
+	shore 10
+	whilst 10
+	produce 10
+NN VBG 1986
+	writing 135
+	working 88
+	playing 69
+	standing 56
+	catering 53
+	suffering 48
+	reading 45
 	flying 36
 	dancing 35
-	lifting 29
-	catering 26
+	finding 33
+	lifting 28
 	scoring 23
-	handling 22
 	drinking 20
 	gliding 19
-	buying 18
-	dying 14
-	beginning 14
+	beginning 18
+	meeting 16
+	handling 16
 	monitoring 14
-	learning 14
-	governing 14
-	planting 13
-	understanding 13
-	operating 13
-	showing 13
-	testing 12
-	spending 12
+	ringing 12
+	showing 12
 	stalling 12
-	ringing 11
-	meeting 11
-	holding 11
-	teaching 11
+	dying 11
+	campaigning 11
+	buying 11
 	switching 11
+	fucking 10
+	understanding 10
+	operating 10
+	typing 10
+	testing 10
 	listening 10
+	holding 9
 	staring 9
+	learning 9
 	kicking 9
 	hoping 8
-	finishing 8
+	chilling 8
 	staging 8
 	drying 8
-RP RP 1913
-	up 891
-	out 650
-	off 346
-	down 26
-IN RB 1888
-	as 434
-	so 272
-	about 272
-	down 145
-	though 113
-	So 100
-	ago 77
-	up 48
-	away_from 44
-	Once 37
-	out 32
-	according_to 30
-	behind 29
-	Of_course 26
-	before 24
-	along 21
-	since 19
-	alongside 16
-	off 15
-	in_addition_to 9
-	as_though 9
-	Well 7
-	below 7
-	Up 6
-	beyond 5
-	around 5
-	in_connection_with 4
-	as_to 4
-	in_relation_to 4
-	next_to 4
-	at_least 3
-	in_accordance_with 3
-	in_front_of 3
-	in_the_light_of 3
-	At_least 3
-	aboard 3
-	Out 3
-	in_conjunction_with 3
-	across 3
-	up_to 3
-RB RP 1865
-	up 1004
-	down 467
-	out 187
-	back 97
-	over 37
-	off 25
-	aside 18
-	away 15
-	around 11
-	along 4
-NNPS NNPS 1525
+	weakening 7
+JJ NNP 1981
+	Roman 176
+	British 63
+	Conservative 44
+	Scottish 43
+	Third 39
+	Golden 31
+	Modern 22
+	Next 19
+	Long 18
+	European 18
+	Basic 18
+	Gillian 17
+	Inner 15
+	Far 14
+	Edwardian 14
+	Different 13
+	Anglo-Irish 13
+	Little 13
+	Labour 13
+	up_to 12
+	Critical 12
+	Amnesty 11
+	Technical 11
+	West 11
+	Legislative 11
+	Cold 10
+	As_though 10
+	Low 10
+	Sicilian 10
+	Indian 10
+	Clear 10
+	Military 9
+	Guardian 9
+	Western 9
+	Dead 9
+	Classic 9
+	Inside 8
+	Sweet 8
+	In_particular 8
+	Hot 8
+RP RP 1892
+	up 880
+	out 641
+	off 343
+	down 28
+VBP VB 1879
+	have 71
+	do 64
+	tell 56
+	give 50
+	say 36
+	find 34
+	see 32
+	happen 28
+	make 27
+	meet 24
+	take 23
+	even_if 21
+	understand 21
+	go 21
+	ask 21
+	write 20
+	get 18
+	know 13
+	win 13
+	turn 12
+	use 12
+	burn 12
+	out_of 12
+	pass 12
+	leave 12
+	follow 11
+	remember 11
+	stop 11
+	like 11
+	accept 11
+	change 11
+	need 11
+	apply 11
+	handle 11
+	break 10
+	add 10
+	remove 10
+	hold 10
+	support 9
+	bend 9
+VBG JJ 1818
+	existing 132
+	leading 122
+	following 96
+	demanding 31
+	convincing 29
+	boring 28
+	charming 27
+	missing 25
+	remaining 24
+	fitting 23
+	flowering 22
+	conflicting 21
+	encouraging 20
+	misleading 20
+	satisfying 20
+	sporting 19
+	ageing 19
+	loving 19
+	challenging 18
+	incoming 18
+	wanting 17
+	neighbouring 17
+	rolling 17
+	rewarding 16
+	stunning 15
+	welcoming 15
+	sparkling 14
+	lacking 13
+	pressing 12
+	prevailing 12
+	tempting 12
+	astonishing 12
+	devastating 11
+	frightening 11
+	revealing 11
+	refreshing 11
+	stimulating 11
+	amazing 11
+	comforting 11
+	confusing 11
+NNS VBZ 1814
+	leads 91
+	lies 62
+	works 52
+	needs 37
+	stands 27
+	varies 23
+	starts 22
+	refers 22
+	bowls 22
+	drives 20
+	arrives 19
+	rises 19
+	tries 19
+	reveals 19
+	climbs 19
+	dies 18
+	tends 18
+	fits 18
+	means 17
+	clocks 15
+	stretches 14
+	likes 13
+	features 13
+	hits 13
+	remembers 12
+	differs 12
+	displays 12
+	smells 12
+	drops 12
+	stems 12
+	loves 11
+	reads 11
+	discovers 11
+	forms 11
+	pulls 11
+	matches 10
+	disappearances 9
+	applies 9
+	shows 9
+	escapes 9
+RB RP 1748
+	up 975
+	down 489
+	out 175
+	back 28
+	off 24
+	over 23
+	aside 16
+	around 13
+	along 3
+	away 2
+NNPS NNPS 1665
 	Services 121
 	States 116
-	Germans 58
+	Germans 44
 	Rangers 26
 	Nations 25
 	Brothers 25
-	Americans 24
+	Americans 25
+	Rights 23
 	Russians 23
+	Notes 22
+	Commons 21
+	Menzies 17
 	Airlines 16
 	Inns 16
-	Commons 16
 	Democrats 15
 	Teachers 14
 	Soviets 14
 	Records 14
 	Masters 14
-	Rights 13
 	Studies 13
+	Gardeners 13
 	Motors 13
+	Littlewoods 13
+	Writers 12
 	Monopolies 12
 	Mergers 12
-	Securities 11
-	Gardeners 10
+	Securities 12
+	Affairs 10
 	Republicans 9
-	Breweries 9
 	Italians 9
-	Regulations 9
 	Australians 9
+	Sylphides 9
 	Lakes 9
-	Stakes 9
 	Indians 8
 	Productions 8
+	Breweries 8
+	Netherlands 8
 	Muslims 7
 	Angels 7
-	Products 7
-	McLaggans 7
-	Affairs 7
-	Instruments 7
-	Investments 7
-	Blacks 7
-RB JJ 1463
-	long 113
-	first 90
-	hard 83
-	only 76
-	for_example 60
-	east 59
-	little 51
-	Further 48
-	much 38
-	forward 33
-	right 32
-	so_that 24
-	pretty 20
+	Arms 7
+IN RB 1515
+	as 368
+	so 255
+	about 160
+	down 113
+	So 110
+	though 65
+	ago 65
+	up_to 41
+	up 38
+	Once 37
+	out 33
+	behind 24
+	according_to 21
+	since 19
+	alongside 16
+	along 14
+	away_from 12
+	in_addition_to 9
+	beyond 9
+	in_relation_to 7
+	as_though 7
+	Well 7
+	above 7
+	as_to 6
+	off 6
+	Up 5
+	as_opposed_to 4
+	next_to 4
+	even_though 4
+	before 3
+	in_front_of 3
+	once 3
+	along_with 3
+	Furthermore 2
+	in_accordance_with 2
+	below 2
+	in_proportion_to 2
+	no_longer 2
+	in_connection_with 1
+	subsequent_to 1
+RB JJ 1452
+	long 114
+	first 82
+	only 80
+	hard 78
+	little 59
+	right 58
+	east 52
+	Further 49
+	early 48
+	forward 34
+	so_that 34
+	at_least 33
+	much 27
+	nevertheless 25
 	wide 19
-	south 17
 	lively 16
-	all_right 16
+	pretty 16
 	straightforward 15
-	early 15
-	bodily 15
-	straight 12
+	close 13
 	lonely 12
-	Late 12
-	enough 12
+	enough 11
+	all_right 11
+	south 11
+	deadly 10
 	fine 10
-	close 10
+	bodily 10
 	True 9
-	deadly 9
-	tight 8
-	further 8
-	Needless 7
-	Nice 7
-	daily 7
-	Fast 7
-	once_more 7
-	far_from 7
+	damn 8
+	tight 7
 	at_first 7
-	back 7
+	Needless 7
+	because_of 7
+	Nice 7
+	Fast 7
+	melancholy 7
+	far_from 7
 	upright 6
-	jolly 6
-JJ VBN 1342
-	interested 75
-	known 35
+	for_example 6
+	Late 6
+	beastly 6
+JJ VBN 1315
+	interested 56
+	known 31
+	delighted 23
 	used 23
-	injured 23
-	controlled 22
-	swept 20
-	delighted 19
-	established 16
+	established 18
+	favoured 18
+	swept 18
+	injured 17
 	balanced 16
-	relaxed 16
-	relieved 16
-	applied 15
-	needed 13
-	surprised 13
-	required 13
-	outraged 12
-	upset 12
+	applied 16
+	relieved 13
+	fit 13
+	well-behaved 12
 	dried 11
-	fit 11
-	abused 10
+	upset 11
+	needed 10
 	angled 10
+	outraged 10
+	required 10
+	controlled 10
 	twisted 10
 	aged 10
-	recorded 9
+	abused 9
+	accomplished 9
 	stunned 8
 	imagined 8
-	pleased 7
-	imprisoned 7
+	deferred 8
 	forbidden 7
+	recorded 7
 	deserted 7
 	struck 7
 	slotted 7
-	crushed 7
-	embarrassed 7
+	murmured 7
+	reduced 7
 	addressed 6
+	withheld 6
+	imprisoned 6
 	admired 6
-	grown 6
-	added 6
+	a_bit 6
 	weighted 6
-	funded 6
-VB VBP 1251
-	Do 266
-	Are 81
-	do 61
-	make 48
-	go 41
-	know 40
-	see 38
-	say 37
-	get 36
-	think 34
-	want 30
-	mean 29
-	Make 25
-	take 25
-	have 17
-	sit 17
-	feel 16
-	am 12
-	keep 12
-	remember 10
-	of_course 10
-	appear 9
-	bring 9
-	enjoy 8
-	give 7
-	so_that 7
-	provide 7
-	wish 6
-	resemble 6
-	look 6
-	use 6
-	eat 6
-	suppose 6
-	pine 6
-	love 5
-	remain 5
-	believe 5
-	become 5
-	wear 5
-	please 4
-NNP NNS 1187
-	People 58
-	Children 44
+NNP NNS 1028
+	People 52
+	Children 47
 	MPs 33
-	Leeds 29
-	Dogs 26
-	Women 18
+	Leeds 27
+	Women 23
 	Books 18
-	Variations 18
 	Lions 18
 	Tories 17
-	Poems 15
-	News 15
+	Variations 15
+	Dogs 14
 	Sixties 12
 	Girls 12
-	Guineas 12
 	Blues 11
 	GPs 11
-	Littlewoods 11
-	Police 10
-	Spurs 9
+	Guineas 10
+	Gorbals 9
 	Bachelors 8
 	Marxists 8
 	Hops 8
-	Greens 8
+	Spurs 8
+	Scots 7
 	Rocks 7
+	PCBs 7
 	Films 6
 	DMUs 6
+	Reeves 6
 	ENGAGEMENTS 6
-	Wolves 6
-	PCBs 6
+	Straits 6
 	Parents 5
 	Willows 5
+	Police 5
+	Saturdays 5
 	HSTs 5
+	PTEs 5
 	Ferries 5
 	Students 4
-	Keats 4
+	Honours 4
 	Boys 4
-	Bishops 4
 	Christians 4
 	Flowers 4
-JJR RBR 1014
-	more 565
-	less 260
-	longer 55
-	earlier 55
-	faster 54
-	More 12
-	louder 4
-	harder 3
-	closer 3
+VB VBP 1018
+	Do 266
+	Are 80
+	do 52
+	know 32
+	want 32
+	think 30
+	have 26
+	mean 26
+	say 21
+	get 17
+	feel 15
+	remember 14
+	see 13
+	am 12
+	go 11
+	make 11
+	in_case 9
+	enjoy 9
+	love 8
+	resemble 8
+	sit 8
+	remain 7
+	eat 7
+	ripen 7
+	take 7
+	look 6
+	suppose 6
+	please 5
+	wish 5
+	so_that 5
+	appear 4
+	arrive 4
+	bring 4
+	provide 4
+	become 4
+	affect 4
+	wear 4
+	pine 4
+	relate 3
+	Think 3
+DT PDT 929
+	all 606
+	All 148
+	both 103
+	half 72
+JJR RBR 866
+	more 522
+	less 216
+	longer 42
+	earlier 41
+	faster 34
+	More 8
 	further 2
-	better 1
-DT PDT 997
-	all 666
-	All 151
-	both 107
-	half 73
-IN DT 975
-	that 975
-NN RB 908
-	dear 60
-	Of_course 51
-	inside 46
-	right 44
+	louder 1
+NNS NN 814
+	police 98
+	grass 68
+	means 47
+	canvas 25
+	bourgeois 22
+	downstairs 21
+	cross 20
+	barracks 19
+	criteria 19
+	dress 19
+	physics 18
+	apparatus 18
+	ethos 16
+	per_cent 16
+	arthritis 12
+	brass 12
+	debris 11
+	upstairs 11
+	dramas 10
+	stimulus 10
+	whereabouts 9
+	electronics 9
+	cannabis 8
+	credentials 8
+	mass 7
+	aircraft 7
+	rabbis 6
+	mores 6
+	nitrogen 5
+	underclass 5
+	axis 5
+	corps 5
+	hubris 4
+	praxis 4
+	scarves 4
+	bronchitis 3
+	dross 3
+	kiss 3
+	linen 3
+	annals 3
+RBS RBS 798
+	most 798
+NNS NNP 768
+	Arts 46
+	Coopers 18
+	Men 16
+	Amis 13
+	Ministers 11
+	Sports 10
+	Citizens 9
+	English 9
+	Tests 8
+	Classes 8
+	Yeats 8
+	Athletics 8
+	Artists 7
+	Barnes 7
+	Seventies 7
+	Schools 7
+	Menzies 7
+	Byers 7
+	Richards 7
+	Alas 6
+	That_is 6
+	Trees 6
+	Midlands 5
+	Standards 5
+	Crafts 5
+	Mellowes 5
+	Connors 5
+	Employers 5
+	Lloyds 5
+	Hargreaves 5
+	Comments 4
+	Cheques 4
+	Supplies 4
+	Farmers 4
+	Scenes 4
+	Choreographers 4
+	Stars 4
+	Scholes 4
+	Roberts 4
+	Relations 4
+JJ VBG 714
+	acting 109
+	working 96
+	driving 38
+	standing 30
+	starting 29
+	flying 26
+	threatening 22
+	eating 14
+	dying 11
+	playing 11
+	cooking 8
+	touching 7
+	losing 7
+	promising 7
+	striking 6
+	Acting 5
+	stalling 5
+	thrusting 5
+	overlapping 5
+	lasting 4
+	thrilling 4
+	laughing 4
+	flung 4
+	fulfilling 3
+	soul-searching 3
+	murdering 3
+	closing 3
+	whirling 3
+	crushing 3
+	whipping 3
+	slipping 3
+	side-slipping 3
+	away_from 3
+	crumbling 3
+	stepping 3
+	disturbing 3
+	musing 2
+	generalizing 2
+	Bring 2
+	Interesting 2
+CD JJ 702
+	zero 29
+	19th 14
+	5th 10
+	2nd 9
+	3ft 9
+	+ 9
+	7th 6
+	50p 6
+	3rd 6
+	en 5
+	20p 5
+	6ft 5
+	25mm 5
+	eighteen 4
+	5ft 4
+	2ft 4
+	100% 4
+	21st 4
+	$7m 4
+	4th 4
+	110mph 4
+	4000m 4
+	$100m 4
+	$5m 4
+	$185m 4
+	2-1 4
+	40p 4
+	$20m 4
+	9th 3
+	6th 3
+	35mm 3
+	25p 3
+	10am 3
+	6in 3
+	5in 3
+	3/8in 3
+	6b 3
+	30p 3
+	$10m 3
+	45p 3
+NN RB 693
+	dear 64
+	inside 44
+	right 37
 	hence 36
-	instead_of 32
+	back 31
 	plenty 28
-	back 26
-	down 22
+	down 20
 	forth 17
 	asleep 17
-	as_to 15
-	according_to 14
-	at_least 14
+	according_to 15
+	as_to 14
+	instead_of 14
 	downwind 13
-	hitherto 12
 	whatsoever 12
 	halfway 12
-	away_from 11
-	as_well 9
+	downhill 10
+	from_time_to_time 10
+	in_relation_to 10
 	likewise 9
 	thereafter 9
-	in_relation_to 9
 	aloud 8
-	as_opposed_to 7
+	skew 8
 	a.m 7
 	truly 7
-	doubtless 7
 	astray 6
-	as_if 6
-	at_once 6
-	close 6
+	as_opposed_to 6
 	bit 6
 	midweek 6
 	incommunicado 5
-	thence 5
 	lightly 5
-	Out 5
-	Plenty 5
-	today 5
-NNPS NNP 799
-	Menzies 89
+	inward 4
+	with_a_view_to 4
+	awake 3
+	no-one 3
+	honest 3
+	in_addition_to 3
+	at_once 3
+	as_if 3
+	aft 3
+	furthermore 3
+NNPS NNP 691
+	Menzies 62
 	Midlands 49
-	Authorities 15
 	Indies 15
-	Works 15
 	Yes 14
-	Netherlands 12
-	Writers 12
-	Rights 10
-	Airways 10
+	Works 14
 	Thames 10
-	Electronics 10
-	Schools 9
+	Airways 9
 	Supplies 9
 	Docklands 9
 	Seventies 9
 	Maronites 9
-	Sports 8
-	Commons 8
-	Ladies 7
-	Classes 7
+	Schools 7
 	Metals 7
 	Tigers 6
 	Tools 6
-	Mellowes 6
-	Councils 6
-	Sylphides 6
 	Roberts 6
-	Churches 5
 	Standards 5
 	Breweries 5
 	Cuisinieres 5
 	Athletics 5
-	Robbins 5
-	Winters 5
-	Rawlins 5
-	Yugoslavs 5
-	Affairs 4
-	Headquarters 4
-	Telephones 4
-RBS RBS 792
-	most 792
-NN NNS 754
-	clergy 88
-	teeth 47
-	premises 40
-	species 37
-	phenomena 31
-	stimuli 22
-	lice 22
-	pas 20
-	data 19
-	policemen 16
-	kiss 14
-	1980s 13
-	media 10
-	menus 10
-	swine 10
-	trapezius 9
-	countrymen 9
-	workmen 8
-	a_little 7
-	fishermen 7
-	mice 6
-	flora 6
-	mathematics 5
-	churchmen 5
-	gunmen 5
-	spaghetti 5
-	radius 5
-	gentlemen 5
-	acumen 5
-	chairmen 5
-	schoolchildren 4
-	axis 4
-	progeny 4
-	trout 4
-	broccoli 4
-	fuss 4
-	acids 4
-	craftsmen 3
-	animus 3
-	clergymen 3
-JJ VB 742
-	close 35
-	fit 33
-	out_of 28
-	secure 22
-	dry 22
-	spare 18
-	live 16
-	upset 12
-	cool 12
-	at_least 11
-	open 11
-	light 9
-	co-operate 9
-	Try 9
-	even_though 8
-	a_little 8
-	lean 8
-	mean 7
-	equal 6
-	co-ordinate 6
-	forget 6
-	last 6
-	swear 6
-	warm 5
-	ye 5
-	rival 5
-	Add 5
-	Lean 5
-	square 5
-	At_least 4
-	abstract 4
-	as_yet 4
-	empty 4
-	fancy 4
-	slow 4
-	side-slip 4
-	because_of 4
-	laugh 4
-	in_front_of 4
-	Finish 4
-NNS NNP 727
-	Arts 50
-	English 28
-	Coopers 18
-	Men 17
-	Sports 11
-	Menzies 11
-	Amis 10
-	Ministers 9
-	Citizens 9
-	Schools 9
-	Tests 8
-	Athletics 8
-	Barnes 7
-	Seventies 7
-	Richards 7
-	Churches 6
-	Nowadays 6
-	Trees 6
-	Byers 6
-	Yeats 6
-	Midlands 5
-	Standards 5
-	Crafts 5
-	Birds 5
 	Mellowes 5
-	Connors 5
-	Lloyds 5
-	Hargreaves 5
-	Stones 4
-	Cheques 4
-	Memories 4
-	Supplies 4
-	Farmers 4
-	Classes 4
-	Stars 4
-	Scholes 4
-	Roberts 4
-	Hers 3
-	Parsons 3
-	Photos 3
-JJ VBG 717
-	acting 110
-	working 92
-	starting 38
-	driving 37
-	standing 29
-	flying 26
-	threatening 22
-	eating 16
-	dying 13
-	playing 11
-	losing 9
-	cooking 7
-	flung 7
-	promising 7
-	striking 6
-	lasting 5
-	Acting 5
-	stalling 5
-	thrusting 5
-	laughing 4
-	side-slipping 4
-	gripping 4
-	signalling 4
-	fulfilling 3
-	murdering 3
-	closing 3
-	crushing 3
-	finishing 3
-	whipping 3
-	slipping 3
-	because_of 3
-	crumbling 3
-	over-committing 3
-	stepping 3
-	disturbing 3
-	co-ordinating 3
-	hitch-hiking 2
-	musing 2
-	out_of 2
-	irrespective_of 2
-WDT IN 710
-	that 710
-NNPS NNS 680
-	Germans 38
-	Friends 19
-	Notes 18
-	Christians 16
-	Littlewoods 13
-	Unions 12
-	Sixties 11
-	Arms 11
-	Officers 10
-	Tories 10
-	Boys 9
-	Trusts 9
-	Regulations 7
-	Raiders 7
-	Delegates 6
-	Readers 6
-	Thirties 5
-	Romans 5
-	Computers 5
-	Britons 5
-	Films 5
-	Soldiers 5
-	Democrats 5
-	Lions 5
-	Witnesses 4
-	Cars 4
-	Galleries 4
-	Engineers 4
-	Secrets 4
-	Flowers 4
-	Projects 4
-	AGENCIES 4
-	Regions 4
-	Variations 4
-	MPs 4
-	ARTICLES 3
-	Fifties 3
-	Issues 3
-	Reports 3
-	Days 3
-NNP VB 669
-	Look 107
-	Thank 41
+	Ladies 5
+	Robbins 5
+	Syncopations 5
+	Winters 5
+	Stakes 5
+	Rawlins 5
+	Netherlands 4
+	Arms 4
+	Sports 4
+	Departments 4
+	McCullochs 4
+	Telephones 4
+	Ahlbergs 4
+	Ministers 4
+	Aids 3
+	Amis 3
+	Smiles 3
+	Meres 3
+	Burns 3
+NNP VB 680
+	Look 109
+	Thank 40
 	Keep 28
+	Help 26
 	Go 23
 	Rake 22
-	Show 19
-	Check 19
+	Update 21
+	Save 20
+	Stand 15
 	Let 14
-	Mind 14
+	Check 14
 	Pepper 13
-	Place 12
+	Mind 11
 	Name 10
+	Place 9
 	Listen 9
-	Walk 9
-	Help 8
+	Show 8
 	Draw 7
-	Beware 7
 	Welcome 7
 	Be 7
 	Suppose 7
 	Try 7
-	Fuck 6
-	Stand 6
+	No_doubt 6
+	Beware 6
+	Anne 6
 	Breathe 6
-	Update 6
-	Tell 5
-	Dare 5
+	Change 5
 	Raise 5
 	Sign 5
 	Tear 4
 	Say 4
 	Spark 4
-	Anne 4
+	Tell 4
 	Ask 4
 	Follow 4
 	Wait 4
 	Imagine 4
+	UPdate 4
 	Ostend 4
 	Shoot 3
-	Out_of 3
-VBD JJ 664
-	varied 16
-	armed 10
-	distinguished 10
-	shared 9
-	disabled 7
-	padded 7
-	disposed 6
-	left 6
-	detailed 6
-	naked 6
-	dotted 6
-	handicapped 6
-	sacred 6
-	branded 6
-	other_than 5
-	contrived 5
-	out_of 5
-	experienced 5
-	disliked 5
-	dedicated 5
-	licensed 5
-	baked 5
-	closed 5
-	destined 5
-	recycled 5
-	chained 4
-	increased 4
-	acknowledged 4
-	inspired 4
-	advanced 4
-	glazed 4
-	bent 4
-	packed 4
-	flushed 4
-	isolated 4
-	lost 4
-	esteemed 4
-	wanted 4
-	wounded 3
-	crowded 3
-NNP NNPS 632
+IN DT 659
+	that 657
+	That 2
+NNPS NNS 651
+	Germans 52
+	Friends 19
+	Authorities 17
+	Christians 16
+	Unions 12
+	Sixties 11
+	Menzies 10
+	Tories 10
+	Officers 9
+	Boys 9
+	Thirties 8
+	Regulations 7
+	Forces 6
+	Readers 6
+	Councils 6
+	Birthdays 6
+	Europeans 5
+	Computers 5
+	Britons 5
+	Films 5
+	Delegates 5
+	Soldiers 5
+	Variations 5
+	Democrats 5
+	Lions 5
+	Raiders 5
+	Witnesses 4
+	Cars 4
+	Mythologies 4
+	Flowers 4
+	Ladies 4
+	Regions 4
+	MPs 4
+	Eighties 3
+	Fifties 3
+	Issues 3
+	Reports 3
+	Days 3
+	Cities 3
+	Screenings 3
+NNP NNPS 650
 	Games 28
 	Lords 21
 	Gardens 18
@@ -2090,8 +2039,11 @@ NNP NNPS 632
 	Muslims 13
 	Hotels 13
 	Nazis 12
+	Littlewoods 11
 	Englishmen 10
+	Olympics 8
 	Directors 7
+	Patineurs 7
 	Poles 7
 	Ages 6
 	Kings 6
@@ -2099,597 +2051,529 @@ NNP NNPS 632
 	Hawks 6
 	Studies 6
 	Czechs 6
+	Rights 5
 	Africans 5
-	Lessons 5
-	Variations 5
-	Albans 5
-	Cliffs 5
+	Studios 5
 	Israelis 5
 	Turks 5
-	Jays 5
-	Eagles 5
-	JONES 5
-	Palestinians 4
+	Affairs 4
 	Blacks 4
-	Springs 4
-	Olympics 4
+	Systems 4
+	Gents 4
 	Publishers 4
+	Sparrows 4
+	Lessons 4
 	Accents 4
 	Catholics 4
-	Guards 4
 	Greeks 3
-	Systems 3
-	Places 3
-	Communications 3
-	THERE 3
+	Muses 3
+	Romans 3
+	Palestinians 3
 	Masters 3
-VB JJ 623
-	welcome 52
+	Workshops 3
+	Shots 3
+VBD JJ 645
+	varied 16
+	armed 10
+	celebrated 10
+	distinguished 10
+	because_of 9
+	disabled 8
+	experienced 7
+	closed 7
+	padded 7
+	other_than 6
+	out_of 6
+	naked 6
+	handicapped 6
+	sacred 6
+	branded 6
+	fitted 5
+	contrived 5
+	disposed 5
+	dedicated 5
+	detailed 5
+	licensed 5
+	baked 5
+	wanted 5
+	recycled 5
+	chained 4
+	printed 4
+	committed 4
+	married 4
+	packed 4
+	left 4
+	isolated 4
+	destined 4
+	lost 4
+	finished 4
+	aged 4
+	acknowledged 3
+	frightened 3
+	scattered 3
+	crowded 3
+	inspired 3
+JJ VB 637
+	fit 32
+	secure 23
+	live 19
+	spare 18
+	dry 17
+	open 16
+	light 14
+	out_of 12
+	upset 12
+	cool 11
+	equal 9
+	co-operate 9
+	mean 9
+	Try 9
+	last 8
+	lean 7
+	a_little 7
+	mash 7
+	close 7
+	ye 6
+	at_all 6
+	forget 6
+	slow 6
+	swear 6
+	warm 5
+	rival 5
+	Add 5
+	square 5
+	abstract 4
+	co-ordinate 4
+	make-believe 4
+	empty 4
+	fancy 4
+	side-slip 4
+	laugh 4
+	Finish 4
+	counter-attack 4
+	further 4
+	pedal 3
+	confine 3
+RB NN 630
+	for_example 111
+	south 52
+	each_other 40
+	and_so_on 34
+	back 24
+	for_instance 22
+	so_that 18
+	Right 13
+	folly 13
+	a.m. 12
+	of_course 12
+	right 11
+	at_least 11
+	no_one 11
+	away_from 10
+	bet 10
+	damn 10
+	east 8
+	once_again 8
+	award 7
+	Apart_from 7
+	and_so_forth 6
+	at_last 5
+	woolly 5
+	at_once 5
+	rigidly 5
+	apart_from 5
+	a_little 5
+	aluminium 5
+	filly 5
+	one_another 4
+	upright 4
+	a_lot 4
+	all_right 4
+	belly 4
+	briefly 4
+	no_longer 4
+	forward 4
+	aside 3
+	reply 3
+VB JJ 621
 	clean 52
+	welcome 50
+	out_of 22
 	pure 14
 	remote 14
-	out_of 13
 	pale 10
 	plain 9
 	wise 9
-	in_case 8
-	Put 8
+	snap 9
+	check 8
 	prompt 7
-	honest 7
 	perfect 7
-	snap 7
-	west 7
+	because_of 6
+	honest 6
+	west 6
+	Put 6
 	strange 6
 	faint 5
 	explicit 5
 	cheap 5
+	double 5
 	in_part 5
-	of_course 5
-	at_least 5
 	clear 5
-	at_all 5
 	brave 5
 	flush 5
-	so_that 4
-	by_far 4
-	check 4
-	erect 4
+	as_if 5
+	mass 4
+	of_course 4
+	at_least 4
+	jerk 4
 	sober 4
 	subtle 4
-	colour 3
-	russet 3
-	own 3
-	sound 3
+	grave 4
+	centre 3
 	alert 3
-	busy 3
 	purple 3
 	dense 3
-NNS NN 614
-	police 97
-	grass 68
-	means 30
-	canvas 25
-	downstairs 21
-	barracks 19
-	apparatus 18
-	dress 18
-	cross 18
-	physics 17
-	ethos 16
-	arthritis 12
-	debris 11
-	upstairs 11
-	brass 11
-	dramas 10
-	stimulus 10
-	whereabouts 9
-	mass 8
-	aircraft 7
-	nitrogen 5
-	underclass 5
-	metaphysics 5
-	corps 5
-	dross 4
-	scarves 4
-	miseries 3
-	linen 3
-	annals 3
-	darts 3
-	antithesis 3
-	abyss 3
-	headquarters 3
-	pancreas 3
-	fortress 3
-	gauss/ampere 3
-	enteriditis 2
-	trellis 2
-	thuringiensis 2
-	k.p.h. 2
-NN VBP 577
-	need 43
-	feel 34
-	round 28
-	look 18
-	use 16
-	notice 15
-	visit 13
-	fit 13
-	work 13
-	show 9
-	traverse 9
-	move 8
-	regret 8
-	call 7
-	leave 6
-	count 6
-	fall 6
-	suppose 5
-	stress 5
-	stink 5
-	start 5
-	try 5
-	talk 5
-	gaze 5
-	stand 5
-	lie 4
-	search 4
-	support 4
-	offer 4
-	turn 4
-	form 4
-	value 4
-	reveal 4
-	twist 4
-	face 4
-	Lie 4
-	hope 3
-	match 3
-	wish 3
-	abound 3
-EX RB 565
-	there 565
-RB NN 564
-	so_that 48
-	south 44
-	for_example 40
-	and_so_on 34
-	each_other 31
-	for_instance 24
-	back 16
-	no_one 13
-	folly 13
-	right 12
-	a.m. 12
-	damn 10
-	no_longer 9
-	bet 9
-	Apart_from 8
-	All_right 8
-	award 7
-	upright 7
-	at_once 7
-	no 7
-	and_so_forth 7
-	once_again 7
-	in_part 6
-	a_little 6
-	at_last 5
-	at_all 5
-	aluminium 5
-	filly 5
-	forward 5
-	one_another 4
-	rigidly 4
-	belly 4
-	from_time_to_time 4
-	at_least 3
-	aside 3
-	all_at_once 3
-	yes 3
-	once_more 3
-	for_the_most_part 3
-	melancholy 3
-RBR JJR 554
-	more 316
-	better 201
-	More 15
-	less 13
-	harder 5
-	Earlier 4
+	erect 3
+	mad 3
+	by_far 3
+CD NNP 581
+	* 127
+	/ 41
+	Four 15
+	+ 15
+	W1 13
+	= 9
+	UB40 7
+	M4 7
+	SW1 6
+	E1 5
+	W5 4
+	N1 4
+	M25 4
+	Fifty 4
+	E6 4
+	R2 4
+	5TF 3
+	BBC1 3
+	W9 3
+	Fill 3
+	M9 3
+	37pp 3
+	AL1 3
+	3BW 3
+	E2 3
+	C1 3
+	M50 3
+	A4 2
+	CO2 2
+	A1 2
+	6DJ 2
+	F1 2
+	K6E 2
+	P300 2
+	T110 2
+	3D 2
+	2HU 2
+	31st 2
+	N8 2
+	SE1 2
 PDT PDT 551
 	all 485
 	half 56
 	such 6
 	All 4
-JJS RBS 542
-	most 539
-	Most 3
+NN NNS 550
+	clergy 88
+	teeth 47
+	premises 40
+	species 32
+	laity 31
+	pas 20
+	data 18
+	policemen 15
+	1980s 13
+	menus 10
+	lice 9
+	fishermen 7
+	mice 6
+	mathematics 5
+	gunmen 5
+	spaghetti 5
+	graffiti 5
+	gentlemen 5
+	workmen 5
+	chairmen 5
+	schoolchildren 4
+	dying 4
+	faithful 4
+	progeny 4
+	broccoli 4
+	phenomena 4
+	pas_de_deux 4
+	acids 4
+	innings 4
+	shambles 4
+	clergymen 3
+	trout 3
+	rather_than 3
+	veg 3
+	deer 3
+	genteel 3
+	dos 3
+	statesmen 3
+	servicemen 3
+	cameras 2
+RBR JJR 547
+	more 311
+	better 180
+	More 29
+	less 16
+	harder 7
+	Earlier 4
+NN VBP 543
+	need 43
+	round 30
+	feel 29
+	audition 19
+	visit 14
+	fit 13
+	notice 13
+	look 10
+	surround 10
+	respect 8
+	use 8
+	regret 8
+	abound 6
+	value 6
+	reveal 6
+	count 6
+	hamstring 6
+	show 5
+	suppose 5
+	hope 5
+	stress 5
+	face 5
+	call 5
+	stink 5
+	soar 4
+	lie 4
+	work 4
+	fancy 4
+	try 4
+	progress 4
+	gaze 4
+	fall 4
+	realise 3
+	search 3
+	offer 3
+	wish 3
+	escape 3
+	recognise 3
+	so_that 3
+	share 3
+JJS RBS 520
+	most 520
 WP$ WP$ 477
 	whose 477
-NN IN 470
-	inside 125
+IN WDT 474
+	that 453
+	Whatever 21
+NN IN 462
+	inside 119
 	beside 66
-	beneath 48
-	as_if 33
-	even_if 26
-	worth 18
-	outside 18
-	because_of 17
-	nearer 14
-	while 11
-	as_to 10
+	beneath 49
+	as_if 26
+	even_if 18
+	plus 18
+	outside 15
+	while 14
+	* 12
 	albeit 8
+	past 8
 	Slide 8
 	amongst 8
-	underneath 7
-	plus 6
-	minus 5
-	aff 3
-	unto 3
-	past 3
+	at_once 6
+	underneath 5
+	worth 4
+	because_of 4
+	at_least 4
+	i 3
+	so_that 3
+	at_last 3
 	next_to 3
-	according_to 2
-	* 2
-	so_that 2
-	betide 2
+	d 3
+	courtesy 3
+	ahead_of 2
+	t 2
+	in_that 2
+	out_of 2
+	in_terms_of 2
 	as_well 2
-	/ 2
-	as_for 1
-	ahead_of 1
+	= 2
+	for_instance 2
+	in_favour_of 2
+	Re 2
+	in_excess_of 1
+	dint 1
+	shape 1
+	no_doubt 1
 	in 1
 	lest 1
-	an' 1
-	in_common 1
-	in_that 1
-	up_to 1
-	UP 1
-	Off 1
-	along_with 1
-	whether_or_not 1
-	HF 1
-NNS RB 423
-	forwards 159
-	backwards 43
-	upwards 32
-	nowadays 24
-	indoors 23
-	sideways 21
-	upstairs 19
-	alas 14
-	outdoors 10
-	besides 8
-	outwards 8
-	nevertheless 7
-	Afterwards 7
-	Alas 6
-	downstairs 6
-	inwards 6
-	westwards 5
-	downwards 5
-	hereabouts 4
-	Upstairs 3
-	Nowadays 3
-	thereabouts 2
-	doubtless 2
-	lengthways 2
-	leftwards 2
-	as_well_as 1
-	asides 1
-JJ PDT 422
-	such 371
+JJ PDT 430
+	such 379
 	Such 47
 	half 4
-DT WDT 418
-	That 232
-	that 186
-NNS IN 414
+NNS IN 418
 	towards 375
 	whereas 28
-	as_soon_as 4
-	as_long_as 3
+	besides 8
+	throes 3
 	Towards 1
-	as_well_as 1
+	as_soon_as 1
 	Across 1
-	according_as 1
-VBN NN 398
-	left 85
-	bed 75
-	cast 45
-	converted 13
-	saw 11
-	rather_than 9
-	no_one 9
-	abducted 8
-	garden 8
-	oxygen 6
-	in_common 5
-	no_longer 5
-	a_lot 3
-	other_than 3
-	room 3
-	oven 3
-	upside_down 3
-	untouched 3
-	won 3
-	read 2
-	damned 2
-	salt 2
-	just_about 2
-	weed 2
-	seaweed 2
-	hazard 2
-	Turn 2
-	queen 2
-	bloodshed 2
-	overrun 2
-	at_least 2
-	once_again 2
-	so_that 2
-	accused 2
-	yard 1
-	supper 1
-	intended 1
-	prior_to 1
-	sullen 1
-	detested 1
-IN WDT 397
-	that 373
-	Whatever 21
-	That 3
-NN VBN 383
-	set 57
-	rid 38
-	bound 32
-	thought 27
-	shot 19
-	run 16
-	thrown 13
-	agreed 13
-	sung 10
-	dealt 9
-	undertaken 8
-	cut 7
-	strewn 7
-	spread 6
-	rebuilt 6
-	burnt 6
-	sunk 6
-	blown 6
-	sprung 4
-	struck 4
-	put 4
-	cost 4
-	even_when 4
-	knit 4
-	worn 3
-	stung 3
-	misunderstood 3
-	hit 3
-	fit 3
-	bitten 3
-	wrought 2
-	withheld 2
-	smelt 2
-	eaten 2
-	broadcast 2
-	swept 2
-	dug 2
-	shod 2
-	shrunk 2
-	Bend 2
-NNP RB 375
-	Well 96
-	Furthermore 42
-	according_to 29
-	Of_course 22
-	Never 13
-	Hence 13
-	Out 11
-	Course 8
-	At_least 6
-	Down 6
-	Electronic 6
-	Fortunately 5
-	Nay 5
-	Round 5
-	Anyway 5
-	Likewise 4
-	Below 4
-	away_from 4
-	Hitherto 3
-	Plenty 3
-	Quite 3
-	Together 3
-	Thereafter 3
-	Less 3
-	apart_from 3
-	Away 3
-	Forward 2
-	Prior_to 2
-	Apart 2
-	Twice 2
-	Somehow 2
-	up_to 2
-	Happily 2
-	Alas 2
-	that_is_to_say 2
-	Positively 2
-	Lyrical 2
-	Westward 2
-	Nearly 2
-	at_least 2
-NN VBD 365
-	thought 41
-	put 21
+	alas 1
+RB IN 389
+	before 49
+	over 38
+	plus 36
+	as 33
+	so_that 25
+	regardless 23
+	Instead 19
+	apart_from 18
+	up 16
+	above 14
+	about 13
+	at_least 13
+	once 11
+	Immediately 9
+	at_once 5
+	along_with 5
+	ago 5
+	around 5
+	so 4
+	all_at_once 4
+	except_that 3
+	along 3
+	below 3
+	away_from 3
+	albeit 3
+	for_instance 3
+	So 2
+	After 2
+	for_once 2
+	at_last 1
+	and_so_on 1
+	sooner 1
+	all_of_a_sudden 1
+	Provided_that 1
+	tho' 1
+	n 1
+	now_that 1
+	* 1
+	all_the_same 1
+	at_first 1
+NNS RB 375
+	forwards 159
+	backwards 42
+	nowadays 24
+	upwards 24
+	indoors 23
+	sideways 22
+	upstairs 19
+	downwards 15
+	Nowadays 9
+	outwards 8
+	Afterwards 7
+	westwards 5
+	inwards 5
+	downstairs 4
+	hereabouts 4
+	Upstairs 3
+	leftwards 2
+CD NN 365
+	one 39
+	* 22
+	/ 8
+	$5.2m 5
+	= 5
+	M1 5
+	6b 5
+	6a 4
+	$10m 4
+	$1bn 4
+	$1m 4
+	$7m 4
+	$150m 4
+	V8 4
+	p 3
+	10km 3
+	M6 2
+	Fist 2
+	6in 2
+	K8 2
+	K6E 2
+	4b 2
+	10pp 2
+	5c 2
+	6c 2
+	4m 2
+	1&frac12;in 2
+	Q1 2
+	IC1 2
+	$50m 2
+	$5m 2
+	$20m 2
+	$30m 2
+	$100m 2
+	$3m 2
+	$413m 2
+	$2m 2
+	$2.5m 2
+	i. 1
+	no.1 1
+NN VBD 364
+	thought 40
 	shook 20
 	shot 17
-	set 16
-	arose 13
-	dug 12
-	woke 10
-	hit 10
-	spread 9
-	in_front_of 8
-	cost 8
+	put 17
+	set 17
+	in_front_of 15
+	arose 12
+	bore 11
+	cost 9
+	woke 9
+	dug 8
 	tore 7
+	swept 7
 	swore 7
 	swung 7
-	swept 6
-	ahead_of 6
+	wrought 5
 	sprang 5
-	ate 5
+	undertaken 5
 	rode 5
 	struck 5
 	blew 5
-	bore 4
 	dove 4
 	flew 4
+	hit 4
 	wore 4
-	instead_of 4
+	ate 4
 	wept 4
-	wrought 3
+	ahead_of 4
+	agreed 4
+	in_terms_of 4
+	because_of 3
 	away_from 3
+	spread 3
 	on_to 3
-	agreed 3
+	rather_than 3
+	flung 3
+	instead_of 3
 	cut 2
 	threw 2
-	bade 2
-	stole 2
-	strode 2
-	foresaw 2
-	because_of 2
-	in_search_of 2
-CD NN 359
-	one 102
-	* 71
-	zero 11
-	/ 10
-	M1 5
-	x 4
-	p 3
-	$5.2m 3
-	pp 2
-	Fist 2
-	1920s 2
-	up_to 2
-	5407 2
-	87010 2
-	6a 2
-	IC1 2
-	.. 2
-	$150m 2
-	$1bn 2
-	no.1 1
-	el 1
-	e 1
-	M6 1
-	'ome 1
-	MM106 1
-	ASW17 1
-	K6E 1
-	MV.11 1
-	CH.1 1
-	CH.11 1
-	on_to 1
-	P300 1
-	470 1
-	46cm 1
-	50mm 1
-	$58.10 1
-	$88.45 1
-	50021 1
-	31486 1
-	37669 1
-DT RB 359
-	all 239
-	either 57
-	no 26
-	neither 18
-	half 18
-	any 1
-VB NNP 350
-	Tel 22
-	Sit 13
-	Rome 12
-	Write 8
-	Love 7
-	Shut 7
-	GO 6
-	Mr 6
-	Face 5
-	Remove 5
-	Contact 5
-	Labour 5
-	Know 4
-	AI 3
-	Dr 3
-	Wear 3
-	Cut 3
-	Fort 3
-	Eliot 3
-	Ulster 2
-	e.g. 2
-	Cover 2
-	Cheer 2
-	Select 2
-	Teach 2
-	Lucy 2
-	Enter 2
-	Thrust 2
-	Practise 2
-	Clear 2
-	Jean 2
-	Run 2
-	BE 2
-	Colm 2
-	Win 2
-	BR 2
-	Save 2
-	Le 2
-	Coat 2
-	Top 2
-NNS NNPS 343
-	Americans 28
-	Studies 19
-	Workers 16
-	Catholics 12
-	Masters 9
-	Consultants 9
-	Jews 6
-	Hotels 6
-	Italians 6
-	Words 6
-	Protestants 6
-	Arabs 5
-	Clothes 4
-	Games 4
-	Directors 4
-	Places 4
-	Roses 4
-	Communists 4
-	Germans 4
-	Muslims 4
-	Historians 3
-	Lords 3
-	Socialists 3
-	Shops 3
-	Turks 3
-	Championships 3
-	Dances 3
-	Departments 3
-	Russians 3
-	Australians 3
-	Ties 3
-	Malawians 2
-	Tuesdays 2
-	Statistics 2
-	Vultures 2
-	Commissioners 2
-	Gardens 2
-	Ages 2
-	ADVANTAGES 2
-	FACTS 2
-NN JJR 341
+	wound 2
+NN JJR 363
 	wider 62
 	deeper 35
 	darker 20
@@ -2698,349 +2582,665 @@ NN JJR 341
 	poorer 13
 	tighter 12
 	simpler 11
+	each_other 11
 	healthier 10
-	elder 10
 	brighter 10
-	each_other 9
 	wiser 8
 	firmer 8
+	in_order 7
 	quicker 7
-	in_order 6
+	thinner 7
 	taller 6
-	rarer 5
-	livelier 4
 	milder 4
+	elder 4
 	fairer 4
+	louder 4
+	glacier 4
+	rarer 3
 	fatter 3
+	quieter 3
+	slimmer 3
 	thicker 3
-	bolder 3
 	dearer 3
 	freer 3
-	nicer 2
-	truer 2
+	one_another 2
 	keener 2
 	warmer 2
 	calmer 2
-	harsher 2
-	thinner 2
 	madder 2
-	zer 2
+	straighter 2
+	hotter 2
+	bolder 2
 	sadder 2
-	one_another 2
-	refresher 1
+	surer 2
 	'er 1
-	sillier 1
-UH UH 338
-	Oh 239
-	yes 49
-	oh 42
-	OK 8
-IN VB 333
-	out_of 145
-	Be 15
-	like 15
-	because_of 13
-	Out_of 11
-	Instead_of 6
-	as_if 6
-	on_to 5
-	For_example 4
-	Whether_or_not 4
-	even_though 4
-	At_least 4
-	in_front_of 4
-	In_spite_of 4
-	Go 3
-	in_terms_of 3
-	according_to 3
-	at_least 3
-	By_far 3
-	Thought 3
-	Dip 3
-	ahead_of 3
-	on_behalf_of 2
-	In_place_of 2
-	In_terms_of 2
-	Up_until 2
-	as_though 2
-	Ignore 2
-	into_line_with 2
-	Provided_that 2
-	instead_of 2
-	In_front_of 2
-	away_from 2
-	At_present 2
-	rather_than 2
-	Beware 2
-	in_spite_of 1
-	In_Search_of 1
-	no_matter_what 1
-	Become 1
-CD NNP 331
-	* 111
-	/ 37
-	+ 18
-	W1 13
-	M4 10
-	Four 8
-	SW1 6
-	M25 4
-	Fifty 4
-	W9 3
-	Fill 3
-	Mk4 3
-	M50 3
-	42nd 3
-	BBC1 2
-	CO2 2
-	UB40 2
-	M9 2
-	K6E 2
-	P300 2
-	T110 2
-	2HU 2
-	3A 2
-	Mk1 2
-	BT10 2
-	AD534 2
-	.... 2
-	M8 2
-	M6 2
-	M3 2
-	E9 1
-	A4 1
-	W5 1
-	W4 1
-	MI5 1
-	MI6 1
-	O 1
-	Found 1
-	SW13 1
-	a' 1
-JJ CD 331
-	twenty 30
-	thirty 23
-	twelve 23
-	eleven 8
-	ten 6
-	125mph 5
-	2-1 4
-	Seven 3
-	110mph 3
-	100mph 3
-	2-0 3
-	$6bn 3
-	11am-7pm 2
-	6ft 2
-	Twenty-five 2
-	Forty-five 2
-	5/8in 2
-	9&ins; 2
-	$395m 2
-	$20bn 2
-	2p 2
-	$20m 2
-	$10m 2
-	$50m 2
-	$330m 2
-	300th 1
-	5-7,000 1
-	9-12 1
-	128k 1
-	500g 1
-	250km 1
-	12.30pm-2pm 1
-	2-6pm 1
-	9.30an-4.30pm 1
-	1-1/2oz 1
-	1/2oz-sq 1
-	p102 1
-	p106 1
-	2-4ft 1
-	15-18in 1
-VBP VBD 324
-	lay 43
-	wore 31
-	put 26
-	cost 15
-	set 14
-	woke 13
-	bore 11
-	rode 8
-	shook 8
-	ate 7
-	spread 7
-	forgot 7
-	arose 7
-	shut 6
-	tore 6
-	hit 6
-	blew 5
-	flew 5
-	beat 5
-	swore 4
-	swung 4
-	overcame 4
-	swept 4
-	flung 4
-	threw 4
-	dug 3
-	rather_than 3
-	clung 3
-	away_from 3
-	thrust 3
-	strode 3
-	because_of 2
-	undertook 2
-	stole 2
-	let 2
-	cut 2
-	forbade 2
-	up_to 2
-	read 2
-	struck 2
-PRP$ PRP 312
-	her 312
-VBP JJ 302
-	clean 38
-	out_of 29
-	clear 24
-	faint 13
-	present 8
-	welcome 6
-	whilst 6
-	prone 5
-	last 5
-	express 5
-	as_if 4
-	worldwide 3
-	delicate 3
-	rather_than 3
+VBN NN 363
+	left 80
+	bed 75
+	cast 48
+	saw 12
+	rather_than 9
+	abducted 8
+	garden 8
+	Left 7
+	oxygen 6
+	no_one 5
+	in_common 4
+	won 4
+	a_lot 3
 	other_than 3
-	remote 3
-	obsolete 3
-	strange 3
-	open 3
-	pale 3
-	flush 3
-	so_that 2
-	plain 2
-	sound 2
-	devoid 2
-	instead_of 2
-	a_little 2
-	busy 2
-	in_front_of 2
-	away_from 2
-	sur 2
-	and/or 2
-	complete 2
-	top 2
-	by_way_of 2
-	more_than 2
-	wise 2
-	no_one 2
-	corinii 1
-	correct 1
-CD NNS 299
-	1970s 68
-	1950s 61
+	read 3
+	room 3
+	oven 3
+	at_least 3
+	accused 3
+	salt 2
+	upside_down 2
+	weed 2
+	seaweed 2
+	hazard 2
+	amplified 2
+	Turn 2
+	queen 2
+	once_again 2
+	yard 1
+	supper 1
+	suck 1
+	more'n 1
+	fr.r. 1
+	edited 1
+	motherhood 1
+	troggin 1
+	watershed 1
+	set 1
+	cocopeat 1
+	Kitchen 1
+PRP$ PRP 360
+	her 360
+NNS NNPS 358
+	Jews 37
+	Americans 27
+	Studies 19
+	Workers 17
+	Catholics 12
+	Masters 9
+	Consultants 7
+	Hotels 6
+	Italians 6
+	Words 6
+	Protestants 6
+	Arabs 5
+	Games 4
+	Directors 4
+	Roses 4
+	Rights 4
+	Communists 4
+	Muslims 4
+	Historians 3
+	Lords 3
+	Socialists 3
+	Arms 3
+	Gardeners 3
+	Shops 3
+	Turks 3
+	Championships 3
+	Russians 3
+	Germans 3
+	Spaniards 3
+	Australians 3
+	Malawians 2
+	Tuesdays 2
+	Studios 2
+	Restaurants 2
+	Names 2
+	Commissioners 2
+	Nineties 2
+	Gardens 2
+	Ages 2
+	ADVANTAGES 2
+UH UH 356
+	Oh 239
+	yes 55
+	oh 42
+	OK 20
+CD NNS 348
+	1970s 67
+	1950s 59
 	1960s 58
-	1990s 21
-	1920s 17
+	1990s 25
+	1920s 19
 	1940s 11
 	1840s 7
-	70s 6
+	70s 5
+	+ 5
 	60s 5
-	90s 3
+	90s 4
+	1850s 4
+	1860s 4
+	40s 3
+	1040s 3
 	80s 3
+	1890s 3
+	3s 3
+	1s 3
+	'90s 2
 	1880s 2
-	1040s 2
+	70's 2
+	1870s 2
 	16's 2
-	1890s 2
-	1860s 2
+	2s 2
+	2tbs 2
 	1000s 1
-	1850s 1
 	1530s 1
+	30s 1
 	'60s 1
 	30's 1
 	80's 1
 	1930's 1
 	90's 1
+	501s 1
 	4Os 1
 	60's 1
+	&dollar;45 1
 	1760s 1
-	+ 1
-	73s 1
-	1980s 1
-	Mk2As 1
-	08s 1
-	27s 1
-	45s 1
-	105s 1
-	317s 1
-	310s 1
-	1600s 1
-	1700s 1
+	50mm 1
+NN VBN 335
+	rid 38
+	bound 33
+	set 31
+	thought 22
+	shot 19
+	thrown 12
+	run 11
+	sung 10
+	dealt 9
+	strewn 7
+	cost 7
+	sunk 6
+	fit 6
+	put 6
+	dug 6
+	blown 6
+	rebuilt 5
+	spread 5
+	burnt 4
+	sprung 4
+	undertaken 4
+	struck 4
+	agreed 4
+	ground 4
+	knit 4
+	worn 3
+	stung 3
+	misunderstood 3
+	bitten 3
+	cut 3
+	withheld 2
+	eaten 2
+	clad 2
+	woke 2
+	shod 2
+	shrunk 2
+	borne 2
+	spelt 2
+	smelt 1
+	slain 1
+VB NNP 332
+	Tel 22
+	Rome 12
+	Sit 11
+	Read 9
+	Love 7
+	Shut 7
+	Enter 7
+	GO 6
+	Mr 6
+	Face 5
+	Contact 5
+	Labour 5
+	e.g. 3
+	AI 3
+	Dr 3
+	Cover 3
+	Cut 3
+	Fort 3
+	Eliot 3
+	Ulster 2
+	Feel 2
+	Set 2
+	Ensure 2
+	Select 2
+	Wear 2
+	Lucy 2
+	Cool 2
+	Lift 2
+	Thrust 2
+	Practise 2
+	Clear 2
+	Jean 2
+	Colm 2
+	BR 2
+	Le 2
+	Top 2
+	HF 2
+	Pound 2
+	St 2
+	UK 2
+VBP JJ 320
+	clean 41
+	out_of 29
+	clear 24
+	faint 13
+	present 10
+	open 9
+	last 8
+	welcome 7
+	prone 5
+	express 5
+	worldwide 4
+	in_front_of 4
+	delicate 3
+	rather_than 3
+	other_than 3
+	remote 3
+	obsolete 3
+	sound 3
+	strange 3
+	a_little 3
+	pale 3
+	away_from 3
+	flush 3
+	parallel 3
+	close 3
+	at_least 2
+	wan 2
+	plain 2
+	at_first 2
+	en 2
+	devoid 2
+	2in 2
+	instead_of 2
+	busy 2
+	damp 2
+	complete 2
+	by_way_of 2
+	wise 2
+	correct 1
+	so_that 1
+VBP VBD 310
+	lay 42
+	wore 31
+	put 24
+	cost 16
+	set 13
+	woke 13
+	bore 11
+	rode 8
+	shook 8
+	arose 8
+	ate 7
+	spread 7
+	forgot 7
+	shut 6
+	tore 5
+	hit 5
+	blew 5
+	flew 5
+	flung 5
+	swore 4
+	swung 4
+	overcame 4
+	swept 4
+	threw 4
+	beat 4
+	dug 3
+	thrust 3
+	strode 3
+	undertook 2
+	stole 2
+	cut 2
+	forbade 2
+	struck 2
+	at_once 2
+	clung 2
+	foresaw 2
+	Were 2
+	once_more 1
+	burnt 1
+	trod 1
+IN VB 302
+	out_of 134
+	like 24
+	As_for 16
+	Be 15
+	due_to 11
+	according_to 10
+	rather_than 8
+	because_of 7
+	on_to 7
+	For_example 4
+	even_though 3
+	Go 3
+	At_least 3
+	By_far 3
+	Dip 3
+	ahead_of 3
+	even_if 2
+	Up_until 2
+	Ignore 2
+	next_to 2
+	Once_again 2
+	By_now 2
+	subject_to 2
+	Beware 2
+	on_behalf_of 1
+	adjacent_to 1
+	no_matter_what 1
+	by_now 1
+	in_response_to 1
+	in_addition_to 1
+	as_though 1
+	Whilst 1
+	no_matter_how 1
+	at_all 1
+	Arrange 1
+	Drill 1
+	&rsqb; 1
+	thru' 1
+	Hug 1
+	Underline 1
+EX RB 301
+	there 301
+JJ IN 301
+	above 31
+	unlike 31
+	outside 26
+	past 26
+	albeit 19
+	inside 18
+	at_least 17
+	amongst 16
+	like 13
+	whether_or_not 10
+	near 8
+	Outside 7
+	as_if 7
+	underneath 7
+	beside 6
+	At_least 4
+	as_yet 4
+	Past 3
+	irrespective_of 3
+	Near 3
+	beneath 3
+	off 3
+	even_though 2
+	in_front_of 2
+	as_though 2
+	vis-a-vis 2
+	Through 2
+	At_present 2
+	over 2
+	an' 1
+	n 1
+	Inside 1
+	Throughout 1
+	on_top_of 1
+	up_to 1
+	no_doubt 1
+	at_first 1
+	on_account_of 1
+	on_behalf_of 1
+	at_most 1
+NNP VBG 293
+	Living 19
+	Reading 18
+	Writing 13
+	Making 12
+	Meeting 11
+	Going 11
+	Leading 11
+	Peking 10
+	Changing 5
+	Turning 5
+	Skiing 5
+	Falling 4
+	Fundraising 3
+	Growing 3
+	Acting 3
+	Selling 3
+	Giving 3
+	Looking 3
+	Dancing 3
+	Walking 3
+	Cycling 3
+	Riding 3
+	Chang 2
+	WRITING 2
+	Recruiting 2
+	Leaving 2
+	Organizing 2
+	Waging 2
+	Coping 2
+	Hanging 2
+	GETTING 2
+	Ealing 2
+	Playing 2
+	Mayerling 2
+	Climbing 2
+	SECURING 2
+	Plotting 2
+	Cocking 2
+	Investing 2
+	Smacking 2
+IN NNP 285
+	According_to 24
+	de 21
+	Because_of 21
+	* 17
+	In_addition_to 12
+	Out_of 11
+	Even_if 11
+	Amongst 10
+	Even_though 9
+	Instead_of 6
+	Depending_on 4
+	Except_for 4
+	Thought 4
+	IN 4
+	AT 4
+	Once_again 4
+	In_spite_of 4
+	UK 3
+	Along_with 3
+	WITH 3
+	Due_to 3
+	Wrap 3
+	Thanks_to 3
+	AS 3
+	In_place_of 2
+	In_particular 2
+	Up_to 2
+	In_terms_of 2
+	Out 2
+	Ca' 2
+	Prior_to 2
+	As_if 2
+	Whichever 2
+	In_front_of 2
+	As_to 2
+	in_association_with 2
+	De 2
+	At_present 2
+	In_view_of 2
+	Better 2
+DT RB 279
+	all 180
+	either 62
+	no 17
+	neither 14
+	half 6
+NNP RB 275
+	Well 84
+	Furthermore 42
+	Never 13
+	Hence 13
+	according_to 11
+	Out 10
+	Electronic 6
+	Fortunately 5
+	Nay 5
+	Anyway 5
+	Likewise 4
+	Below 4
+	Forward 3
+	Quite 3
+	Together 3
+	Away 3
+	Apart 2
+	Twice 2
+	Somehow 2
+	up_to 2
+	Happily 2
+	that_is_to_say 2
+	Positively 2
+	apart_from 2
+	West 2
+	Lyrical 2
+	Westward 2
+	Nearly 2
+	Keneally 2
+	in_addition_to 1
+	Grahamly 1
+	Gratefully 1
+	Of_course 1
+	Daintily 1
+	Upstairs 1
+	Downwind 1
+	Internally 1
+	from_time_to_time 1
+	For_ever 1
+	Aside_from 1
+WDT IN 271
+	that 271
+VBD VB 255
+	out_of 52
+	so_that 29
+	cut 20
+	let 17
+	put 17
+	read 10
+	thank 9
+	become 8
+	come 7
+	shed 6
+	run 6
+	on_to 5
+	provided_that 4
+	up_to 3
+	because_of 3
+	drill 3
+	brew 3
+	set 2
+	hug 2
+	knock 2
+	now_that 2
+	proceed 2
+	other_than 2
+	no_doubt 1
+	rather_than 1
+	solve 1
+	uphold 1
+	laugh 1
+	sneak 1
+	at_least 1
+	upset 1
+	droop 1
+	&lsqb; 1
+	drool 1
+	wound 1
+	by_now 1
+	up_until 1
+	bleed 1
+	dread 1
+	Add 1
+VBZ IN 240
+	towards 84
+	whereas 74
+	as_well_as 28
+	besides 14
+	Towards 8
+	as_soon_as 6
+	such_as 5
+	as_long_as 5
+	cos 2
+	because_of 2
+	s 2
+	'Cos 1
+	vis-a-vis 1
+	* 1
 	1s 1
-NNP CD 295
-	Three 45
-	Seven 18
-	Eight 14
-	Twenty 9
-	Twelve 6
-	NFT2 6
-	1,500V 3
-	NFT1 3
-	1AY 2
-	Eighteen 2
-	No.8 2
-	54A 2
-	1TT 2
-	NW11 2
-	NW3 2
-	CM20 2
-	2YE 2
-	25kV 2
-	Forty 2
-	240mV 2
-	0.04dB 2
-	50&micro;T 2
-	FFr40m 2
-	7.30pm 2
-	8.55am 1
-	fr. 1
-	57F 1
-	Thirty 1
-	IR$150m 1
-	UB40 1
-	p26 1
-	N.B.G. 1
-	Thirteen 1
-	59F 1
-	SE5 1
-	9NR 1
-	No.11 1
-	1PP 1
-	$6.00+VAT 1
-	$8.50+VAT 1
-RB NNP 287
+	ls 1
+	except_that 1
+	at_least 1
+	apropos 1
+	as_to 1
+	at_last 1
+NNS JJ 230
+	per_cent 41
+	English 34
+	ours 16
+	cross 9
+	nevertheless 7
+	wasps 6
+	mass 5
+	meaningless 5
+	downstairs 5
+	apples 3
+	backwards 3
+	working-class 2
+	none_the_less 2
+	doubtless 2
+	stainless 2
+	upstairs 2
+	mid-1950s 2
+	piss 2
+	lifeless 2
+	breathless 2
+	bourgeois 2
+	limitless 2
+	rumours 2
+	listless 2
+	avionics 2
+	treacherous 2
+	worthless 2
+	ticketless 2
+	merciless 1
+	accentless 1
+	momentous 1
+	conscious 1
+	religious 1
+	synonymous 1
+	asparagus 1
+	cheek-bones 1
+	acanthus 1
+	needless 1
+	streptocarpus 1
+	careless 1
+RB NNP 227
 	Very 52
-	for_example 30
-	for_instance 23
-	Right 20
-	Far 20
+	All_right 12
 	Lucy 11
+	Right 9
 	Alone 8
-	All_right 6
+	Must 7
+	No 6
+	for_instance 6
 	Easy 5
-	None_the_less 4
-	From_time_to_time 4
-	Quickly 4
+	Far 4
 	Sally 4
 	Billy 4
 	Enough 3
-	Somewhat 3
 	* 3
 	Ahead 3
 	Free 3
@@ -3049,396 +3249,106 @@ RB NNP 287
 	Willy 3
 	Esther 2
 	Folly 2
+	Thought 2
 	Top 2
 	Madly 2
+	Somewhat 2
+	Yes 2
 	Och 2
 	Tonight 2
+	Damn 2
 	Piccadilly 2
 	Highly 2
 	Molly 2
-	Given_that 2
-	Sicily 2
 	Lancashire 2
 	W&ouml;lflinn 1
 	Suicide 1
 	Roth 1
-	Exactly 1
+	Doubtless 1
 	Mum 1
 	At_last 1
-JJ IN 283
-	outside 33
-	up_to 28
-	unlike 27
-	inside 21
-	albeit 19
-	above 18
-	amongst 16
-	opposite 14
-	worth 9
-	like 9
-	near 9
-	whether_or_not 8
-	Outside 7
-	underneath 7
-	as_if 6
-	unto 6
-	beside 6
-	past 4
-	Near 3
-	beneath 3
-	off 3
-	even_if 2
-	as_yet 2
-	Through 2
-	over 2
-	an' 1
-	Inside 1
-	in_front_of 1
-	Throughout 1
-	As_if 1
-	at_first 1
-	along_with 1
-	on_account_of 1
-	relative_to 1
-	ie. 1
-	en 1
-	whereas 1
-	iso- 1
-	at_least 1
-	on_to 1
-NNP VBG 276
-	Living 19
-	Leading 14
-	Writing 13
-	Making 12
-	Meeting 11
-	Going 11
-	Changing 5
-	Turning 5
-	Hang 4
-	Falling 4
-	Boxing 4
-	Growing 3
-	Acting 3
-	Selling 3
-	Giving 3
-	Looking 3
-	Climbing 3
-	Walking 3
-	SECURING 3
-	Riding 3
-	Chang 2
-	WRITING 2
-	Waiting 2
-	Doing 2
-	Leaving 2
-	Organizing 2
-	Ring 2
-	Closing 2
-	Waging 2
-	Coping 2
-	Hanging 2
-	Gliding 2
-	GETTING 2
-	CUTTING 2
-	USING 2
-	Drawing 2
-	ARRANGING 2
-	Fundraising 2
-	Caring 2
-	Passing 2
-IN NNP 263
-	According_to 24
-	de 22
-	Because_of 21
-	As_for 17
-	* 16
-	In_addition_to 12
-	Even_if 11
-	Amongst 10
-	Even_though 9
-	IN 6
-	Once_again 6
-	Below 5
-	Depending_on 5
-	UK 3
-	Along_with 3
-	WITH 3
-	Due_to 3
-	Beyond 3
-	Wrap 3
-	Thanks_to 3
-	AS 3
-	O 2
-	Till 2
-	Ca' 2
-	Prior_to 2
-	even_though 2
-	Whichever 2
-	De 2
-	Better 2
-	Tho 1
-	Exeunt 1
-	Cry 1
-	An' 1
-	In_particular 1
-	As_usual 1
-	Swivel 1
-	Top 1
-	Syphon 1
-	SO 1
-	Except_for 1
-NNS JJ 252
-	per_cent 57
-	English 23
-	bourgeois 20
-	ours 16
-	cross 9
-	wasps 6
-	meaningless 5
-	mass 4
-	apples 4
-	honours 4
-	downstairs 3
-	working-class 2
-	none_the_less 2
-	conscious 2
-	bishops 2
-	stainless 2
-	divers 2
-	yours 2
-	upstairs 2
-	mid-1950s 2
-	lifeless 2
-	breathless 2
-	backwards 2
-	sideways 2
-	limitless 2
-	as_well_as 2
-	listless 2
-	gauss 2
-	avionics 2
-	treacherous 2
-	worthless 2
-	ticketless 2
-	merciless 1
-	even_when 1
-	accentless 1
-	momentous 1
-	religious 1
-	dead-ends 1
-	synonymous 1
-	cheek-bones 1
-VBD VB 248
-	out_of 64
-	so_that 22
-	let 16
-	because_of 10
-	become 9
-	thank 9
-	come 8
-	run 6
-	read 6
-	cut 6
-	on_to 6
-	put 4
-	proceed 3
-	provided_that 3
-	knock 3
-	now_that 3
-	leant 3
-	drill 3
-	at_least 2
-	&lsqb; 2
-	hug 2
-	straighten 2
-	brew 2
-	60%of 1
-	seeing_that 1
-	no_doubt 1
-	shed 1
-	bent 1
-	rather_than 1
-	solve 1
-	uphold 1
-	up_to 1
-	as_if 1
-	laugh 1
-	upset 1
-	droop 1
-	&rarr; 1
-	drool 1
-	sip 1
-	Stop 1
-RB IN 230
-	as 49
-	once 31
-	before 26
-	above 23
-	over 19
-	so_that 17
-	plus 10
-	up 9
-	along_with 8
-	along 5
-	around 5
-	below 3
-	albeit 3
-	out 2
-	up_to 2
-	near 2
-	After 2
-	except_that 1
-	and_so_on 1
-	all_at_once 1
-	tho' 1
-	* 1
-	as_to 1
-	amongst 1
-	because_of 1
-	after 1
-	Near 1
-	underneath 1
-	as_of 1
-	apart_from 1
-	beside 1
-NN CD 226
-	ten 62
-	twenty 28
-	one 20
-	thirty 12
-	twelve 10
-	lb. 4
-	depending_on 3
-	One 2
-	5pm 2
-	6in 2
-	6-3 2
-	p. 2
-	$15.5million 2
-	$1.2bn 2
-	70p 1
-	&dollar;300 1
-	$10.80 1
-	'er 1
-	eleven 1
-	3ft 1
-	6ft 1
-	29-30 1
-	27-30 1
-	&dollar;16million 1
-	&dollar;2,000 1
-	40-50 1
-	$8.25+VAT 1
-	60-69 1
-	1656 1
-	$16.4million 1
-	$157million 1
-	$150million 1
-	Mk1 1
-	$4.5million 1
-	$&frac12;million 1
-	$281mi1lion 1
-	$69million 1
-	$1.5million 1
-	$257million 1
-	5,850hp 1
-JJ VBD 222
-	beat 7
-	delighted 6
+	Deeply 1
+JJ VBD 214
 	threw 6
+	swept 6
 	wept 5
-	wrecked 5
-	smoked 4
-	startled 4
-	held 4
-	swept 4
-	failed 4
-	boiled 4
-	reported 3
-	dug 3
-	broadcast 3
-	crushed 3
-	withheld 2
+	delighted 5
+	beat 5
+	refurbished 4
+	crushed 4
+	polished 3
+	softened 3
+	smoked 3
+	massed 3
+	held 3
+	failed 3
+	allied 3
+	applied 3
+	leaked 3
 	offered 2
-	polished 2
-	promised 2
-	updated 2
-	murmured 2
+	criss-crossed 2
 	accomplished 2
+	grassed 2
 	balanced 2
+	sided 2
 	dreaded 2
-	softened 2
-	thrust 2
+	flung 2
 	wondered 2
 	relieved 2
 	twisted 2
-	announced 2
-	preferred 2
-	vacuum-braked 2
-	added 2
-	applied 2
+	reduced 2
+	broadcast 2
 	enlarged 2
 	unearthed 2
-	continued 2
+	reported 2
 	stunned 2
 	deserved 2
+	forbid 1
+	imprisoned 1
+	tortured 1
 	dismembered 1
-VBZ IN 220
-	towards 84
-	whereas 74
-	such_as 16
-	as_well_as 10
-	besides 10
-	Towards 8
-	as_soon_as 7
-	as_long_as 2
-	as_to 2
-	because_of 2
-	as_if 1
-	up_to 1
-	onwards 1
-	at_last 1
-	ahead_of 1
-NNP DT 208
-	A 179
-	All 23
-	The 6
-RB UH 203
-	Well 80
-	No 55
-	Yes 48
-	yes 16
+	barricaded 1
+	distorted 1
+RB UH 211
+	Well 82
+	No 51
+	Yes 46
+	yes 28
 	Ah 4
-VB VBN 192
-	Come 53
-	come 26
+NNP DT 199
+	A 171
+	All 22
+	The 6
+VB VBN 195
+	Come 57
+	come 24
 	ibid. 13
-	read 12
-	put 11
+	become 10
+	read 9
+	put 6
 	eaten 6
 	knit 6
+	thrust 5
 	run 5
 	struck 5
-	thrust 4
-	spread 4
-	become 3
+	out_of 3
+	overcome 3
 	dealt 3
-	cut 3
-	e.g. 2
-	overcome 2
+	spread 3
 	shut 2
-	set 2
+	cut 2
 	worn 2
-	hit 2
+	dug 2
 	forbid 2
 	repressed. 1
 	clad 1
+	shook 1
 	flown 1
-	subject_to 1
 	thrown 1
 	blown 1
 	woke 1
+	burst 1
+	set 1
 	wed 1
 	pinched 1
 	woken 1
@@ -3446,156 +3356,136 @@ VB VBN 192
 	cracked 1
 	rebuilt 1
 	undercut 1
+	descend 1
+	overload 1
 	reread 1
 	strewn 1
-	cost 1
-	expend 1
-	sunk 1
-VBD NN 184
-	bed 21
-	so_that 17
-	rather_than 11
-	left 5
-	won 5
-	bent 4
-	other_than 4
-	out_of 4
-	on_to 4
-	no_longer 3
-	on_top_of 3
-	disabled 3
-	beat 2
-	award 2
-	bloodshed 2
-	saxophonist 2
-	untouched 2
-	x 2
-	tweed 2
-	scored 2
-	a' 2
-	on_behalf_of 2
-	creed 2
-	whether_or_not 2
-	dipped 2
-	run 2
-	d 2
-	drill 2
-	skateboard 2
-	at_last 1
-	now_that 1
-	shrift 1
-	oppressed 1
-	drama 1
-	cast 1
-	dread 1
-	draught 1
-	grilled 1
-	lad 1
-	n 1
-RB VB 184
-	so_that 27
-	for_example 17
-	close 13
-	reply 10
-	for_instance 9
-	ye 7
-	multiply 5
-	at_least 4
-	Keep 4
-	At_least 4
-	comply 4
-	a_little 3
-	bet 3
-	Wire 3
-	back 3
-	for_once 3
-	forward 3
-	Try 3
-	slow 3
-	Apply 3
-	right 2
-	in_terms_of 2
-	because_of 2
-	even 2
-	provided_that 2
-	no_one 2
-	triple 2
-	no_matter_how 2
-	no_matter_what 1
-	y'know 1
-	at_last 1
-	Let 1
-	A_bit 1
-	Over_here 1
-	occupy 1
-	arrange 1
-	deteriorated' 1
-	fine 1
-	reapply 1
-	Toss 1
-VBG NNP 182
-	Racing 21
-	Working 17
-	Flying 7
-	Brewing 6
-	Saving 6
-	Bearing 5
-	Struggling 4
-	Travelling 4
-	Aveling 4
-	Managing 4
-	Peking 4
-	Nursing 3
-	Fighting 3
-	Fleming 3
-	Bunting 3
-	Breathing 2
-	Setting 2
-	Planting 2
-	Sitting 2
-	Kissing 2
-	Meaning 2
-	Woodturning 2
-	Budgeting 2
-	Housebuilding 2
-	Appointing 1
-	Educating 1
-	Auditioning 1
-	Desiring 1
-	Banning 1
-	Training 1
-	Catering 1
-	Shopping 1
-	Ingoing 1
-	Sailing 1
-	Gathering 1
-	Paving 1
-	Preparing 1
-	Limewashing 1
-	Hailing 1
-	Imposing 1
-JJR NN 176
-	no_longer 27
-	cleaner 19
+NN FW 188
+	theatre 145
+	ie. 4
+	et 3
+	est 3
+	vie 2
+	hi 2
+	etcetera 2
+	faille 1
+	foedera 1
+	jungi 1
+	quo 1
+	dis 1
+	merde 1
+	cremona 1
+	basilic 1
+	foi 1
+	guerre 1
+	jolie 1
+	da 1
+	ecarte 1
+	croise 1
+	i.e. 1
+	aka 1
+	densis 1
+	circumdati 1
+	rien 1
+	il 1
+	meum 1
+	li 1
+	dolh 1
+	ehl 1
+	planh 1
+	el 1
+	meme 1
+FW FW 183
+	etc 83
+	etc. 35
+	les 28
+	la 8
+	di 5
+	seconde 4
+	vi 2
+	dei 2
+	me. 2
+	et 2
+	beaux 1
+	rigueur 1
+	ho 1
+	aa 1
+	ben 1
+	oui 1
+	i 1
+	aka 1
+	nu 1
+	da 1
+	uzh 1
+	Deutsche 1
+NNP CD 175
+	Three 44
+	Seven 18
+	Eight 14
+	Twenty 9
+	.... 9
+	Twelve 6
+	Appendix 6
+	..... 6
+	....... 4
+	...... 3
+	........ 3
+	Eighteen 2
+	1,500V 2
+	Forty 2
+	SE9 2
+	57F 1
+	Thirty 1
+	M25 1
+	ibid. 1
+	nothing. 1
+	Thirteen 1
+	vol. 1
+	59F 1
+	SE5 1
+	9NR 1
+	$33.00+VAT 1
+	MAC750 1
+	SF200 1
+	BH8 1
+	8AL 1
+	8DJ 1
+	SE18 1
+	5NW 1
+	NW3 1
+	1HL 1
+	SW5 1
+	9EB 1
+	AC/750V 1
+	EC3 1
+	SE8 1
+JJR NN 174
+	cleaner 25
 	soldier 18
+	no_longer 15
 	lager 12
+	nearer 8
 	finger 8
+	newer 4
+	shower 4
 	drawer 4
-	one_another 3
 	each_other 3
-	shower 3
-	sterner 3
-	striker 3
+	Answer 2
 	nigger 2
+	one_another 2
+	lacquer 2
 	clover 2
+	cooler 2
 	fitter 2
-	stagger 2
+	bother 2
+	neater 2
 	hunger 2
 	ginger 1
 	worrier 1
-	wanner 1
+	nobler 1
+	yonder 1
 	geezer 1
-	togewer 1
+	him/her 1
 	his/her 1
 	tiddler 1
 	subtler 1
@@ -3605,776 +3495,820 @@ JJR NN 176
 	Minotaur 1
 	ladder 1
 	ledger 1
-	pinker 1
-	fancier 1
 	Temper 1
+	nicer 1
 	foreigner 1
 	joye-killer 1
-	poirier 1
 	opener 1
-	briefer 1
-	gutter 1
-	littler 1
-MD VBD 173
-	'd 173
-NNP MD 172
-	Would 80
-	Will 45
-	Should 28
-	Shall 10
-	Must 7
-	May 2
-NN FW 171
-	theatre 143
-	et 3
-	ie. 3
-	hi 2
-	faille 1
-	foedera 1
-	jungi 1
-	quo 1
-	merde 1
-	cremona 1
-	truffe 1
-	basilic 1
-	femme 1
-	guerre 1
-	i.e. 1
-	aka 1
-	densis 1
-	circumdati 1
-	rien 1
-	hf' 1
-	meum 1
-	est 1
-	even_if 1
-	meme 1
-FW FW 170
-	etc 77
-	etc. 35
-	les 28
-	la 10
-	di 5
-	seconde 3
-	dei 2
-	nouvelle 2
-	et 2
-	beaux 1
-	rigueur 1
-	fr. 1
-	ho 1
-	aka 1
-	Deutsche 1
-VB RB 165
-	Please 54
-	of_course 15
-	at_least 10
-	Hence 8
-	dear 7
-	please 6
-	away_from 4
-	back 4
-	henceforth 3
-	west 3
-	hence 3
-	as_if 2
-	instead_of 2
-	briefly 2
-	up_to 2
-	as_for 2
-	whence 2
-	doubtless 2
-	even 1
-	thence 1
-	i 1
-	perforce 1
-	as_well 1
-	Round 1
-	mind 1
-	Well 1
-	as_though 1
-	uptown 1
-	subject_to 1
-	awake 1
-	ipso_facto 1
-	in_front_of 1
-	anew 1
-	due_to 1
-	in_order 1
-	as_it_were 1
-	in_terms_of 1
-	Likewise 1
-	digitally 1
-	readily 1
-NNP VBD 164
+NNP IN 170
+	Within 25
+	according_to 12
+	Near 10
+	IN 8
+	Around 7
+	Through 7
+	Between 6
+	Re 6
+	UP 6
+	At_least 6
+	Remove 5
+	Off 4
+	Throughout 4
+	Towards 4
+	Into 3
+	Beneath 3
+	Beyond 3
+	FROM 2
+	Whereupon 2
+	Upon 2
+	For_once 2
+	Must 2
+	BY 2
+	Across 2
+	NO 1
+	For_instance 1
+	IS 1
+	DURING 1
+	Past 1
+	Whether_or_not 1
+	BETWEEN 1
+	OG 1
+	* 1
+	OR 1
+	AFTER 1
+	All_at_once 1
+	Nearest 1
+	In 1
+	Slide 1
+	de 1
+MD VBD 170
+	'd 170
+NN CD 166
+	ten 62
+	twenty 28
+	one 15
+	thirty 12
+	twelve 10
+	thirteen 8
+	depending_on 3
+	One 2
+	6-3 2
+	&dollar;300 1
+	$10.80 1
+	29-30 1
+	27-30 1
+	&dollar;16million 1
+	&dollar;2,000 1
+	fifteen 1
+	40-50 1
+	$53.40 1
+	60-69 1
+	1656 1
+	$16.4million 1
+	$157million 1
+	$15.5million 1
+	$4.5million 1
+	$&frac12;million 1
+	4&frac12;in 1
+	ver 1
+	mid-1989 1
+	1-1 1
+	$5,912 1
+	6-2 1
+	&dollar;5.2m 1
+	&dollar;50,000 1
+VBD NN 166
+	bed 21
+	rather_than 6
+	so_that 6
+	out_of 5
+	left 5
+	won 5
+	bent 4
+	beat 3
+	other_than 3
+	on_to 3
+	tweed 3
+	leant 3
+	read 3
+	edited 3
+	on_board 3
+	.. 3
+	award 2
+	saxophonist 2
+	untouched 2
+	away_from 2
+	on_top_of 2
+	a' 2
+	agreed 2
+	creed 2
+	of_course 2
+	whether_or_not 2
+	run 2
+	saw 2
+	no_longer 2
+	fell 2
+	drill 2
+	a_lot 2
+	tested 2
+	skateboard 2
+	at_last 1
+	now_that 1
+	drama 1
+	an' 1
+	cast 1
+	dread 1
+NNP VBD 163
 	Did 94
-	Had 39
-	Set 4
+	Had 43
+	Lost 4
 	Were 4
-	Lost 3
-	as_to 1
-	Understand 1
-	Undiscovered 1
+	Told 2
+	Born 2
 	up_to 1
-	Told 1
-	WOULD 1
-	a' 1
-	Armisted 1
-	for_good 1
-	prior_to 1
-	of_course 1
-	Got 1
-	'Fraid 1
-	keepin' 1
+	exhib. 1
+	on_top_of 1
+	Made 1
+	Held 1
+	Passed 1
 	Bend 1
-	Fa&ccedil;ade 1
-	CAUGHT 1
+	Handcrafted 1
+	Region-inspired 1
+	GREW 1
+	Feed 1
 	Inspired 1
 	Wired 1
 	threw 1
-IN NN 152
-	rather_than 18
-	Apart_from 15
+VB IN 162
+	like 42
+	beside 13
+	as_if 13
+	amongst 10
+	at_least 8
 	away_from 7
-	on_top_of 6
-	on_behalf_of 5
-	on_to 5
-	even_though 4
-	in_front_of 4
-	like 4
-	out_of 4
+	Remove 7
+	except_for 6
 	* 4
-	in_relation_to 4
-	n 3
-	Except_for 3
-	because_of 3
-	according_to 3
-	behind 3
-	by_means_of 2
-	no_matter_what 2
-	o 2
-	once_again 2
-	next_to 2
-	nearer_to 2
-	other_than 2
-	while 2
-	in_accordance_with 1
-	no_longer 1
+	e.g. 4
+	so_that 3
+	whether_or_not 3
+	albeit 3
+	as_for 2
+	in_that 2
+	even_if 2
+	up_to 2
+	lest 2
+	depending_on 2
+	except_that 2
+	apart_from 2
+	at_once 1
+	i.e. 1
 	in_response_to 1
-	Except_that 1
-	ado 1
-	ma 1
-	in_comparison_with 1
-	Drill 1
-	x 1
-	solo 1
-	on_the_part_of 1
-	as_though 1
-	depending_on 1
-	in_keeping_with 1
-	outside_of 1
-VBN NNP 150
-	Left 31
-	Possessed 24
-	Even_when 9
-	Pound 4
-	Taken 3
-	Bed 3
-	Jen 3
-	Armed 3
-	Ben 3
-	Ahmed 2
-	Siegfried 2
-	Hemmed 2
-	Ted 2
-	Learn 2
-	Written 2
-	Published 2
-	Created 1
-	Produced 1
-	POCs 1
-	Consigned 1
-	Intended 1
-	Hidden 1
-	Ovid 1
-	Tried 1
-	Denied 1
-	Decided 1
-	Refronted 1
-	Brazen 1
-	Ingested 1
-	Punctured 1
-	Stranded 1
-	Slurred 1
-	Raddled 1
-	Begin 1
-	Blackfaced 1
-	Glen 1
-	Kohen 1
-	Praised 1
-	Blessed 1
-	Commented 1
-PRP PRP$ 150
-	her 150
-CD JJ 149
-	zero 15
-	19th 14
-	5th 10
-	+ 10
-	eighteen 5
-	21st 4
-	4th 4
-	thirteen 2
-	17th 2
-	25th 2
-	27th 2
-	28th 2
-	14th 2
-	30th 2
-	100mph 2
-	15th 2
-	16mm 2
-	13th 2
-	$2bn 2
-	33rd 2
-	24-year-old 1
-	fifteen 1
-	NE 1
-	P11 1
-	15in 1
-	112ft 1
-	th' 1
-	Fond 1
-	Keen 1
-	* 1
-	N400 1
-	&dollar;712.10 1
-	24th 1
-	26th 1
-	U.21 1
-	sixteen 1
-	6th 1
-	39in 1
-	12th 1
-	at_most 1
-VBP IN 138
-	beside 17
-	* 16
-	as_to 15
-	even_if 14
-	up_to 11
-	as_if 10
-	beneath 6
-	towards 5
-	underneath 5
-	like 4
-	en 4
-	amongst 4
-	ahead_of 3
-	an' 2
-	away_from 2
-	d' 2
-	because_of 2
-	p. 1
-	as_of 1
-	but_for 1
-	relative_to 1
-	at_least 1
-	&rsqb; 1
-	a' 1
-	in_the_light_of 1
-	due_to 1
-	e.g. 1
-	as_for 1
-	n1 1
-	instead_of 1
-	on_to 1
-	as_against 1
-	v 1
-NNP IN 136
-	Within 25
-	Near 10
-	Around 7
-	Through 7
-	according_to 6
-	Between 6
-	UP 6
-	Whilst 4
-	Off 4
-	IN 4
-	Throughout 4
-	AT 4
-	Into 3
-	Beneath 3
-	OR 3
-	Next_to 3
-	* 2
-	Upon 2
-	UNDER 2
-	Down 2
-	ABOUT 2
-	Across 2
-	NO 1
-	AGAINST 1
-	FROM 1
-	DURING 1
-	Whether_or_not 1
-	BETWEEN 1
-	up_to 1
-	de 1
-	Nearest 1
-	In 1
-	Even_if 1
+	of_course 1
+	unto 1
+	whit 1
+	al_dente 1
+	astride 1
+	towards 1
+	provided_that 1
+	view 1
+	beneath 1
+	out_of 1
 	Slide 1
-	Beside 1
-	According_to 1
-	ARE 1
-	Remove 1
-	WITH 1
-	as_to 1
-NNP UH 136
-	Well 59
+	in_front_of 1
+	ie 1
+	default 1
+	at_last 1
+	quest 1
+NNP UH 159
+	Well 67
 	Yeah 28
 	Ah 19
 	Hello 16
+	Boy 9
+	Ha 7
 	Cicely 3
 	Wow 3
-	Okay 3
 	Ooh 2
+	Okay 2
 	Amen 2
-	Wham 1
-VBD VBP 134
-	read 28
+	Jove 1
+VBD VBP 154
+	read 26
+	so_that 11
 	come 11
-	become 10
-	so_that 6
-	on_to 5
+	out_of 10
+	become 7
+	on_to 6
 	a_lot 4
-	out_of 4
-	proceed 3
+	proceed 4
 	at_least 3
 	leant 3
+	a_bit 3
+	up_to 3
+	because_of 3
+	bent 2
 	dread 2
-	burst 2
-	a_bit 2
-	at_present 2
 	learnt 2
-	let 2
+	straighten 2
+	knock 2
+	run 2
 	chart 1
+	shrift 1
 	split 1
 	with_reference_to 1
 	begat 1
 	surround 1
 	oft 1
+	as_if 1
 	bai 1
 	shine 1
 	niver 1
-	just_about 1
-	sneak 1
-	in_front_of 1
-	Dot 1
+	next_to 1
+	aback 1
+	Provided_that 1
 	smell 1
+	&rarr; 1
 	knelt 1
-	hurt 1
-	by_now 1
 	sort_of 1
+	Stop 1
 	as_against 1
 	quell 1
-	mauna 1
-	hast 1
-	givest 1
-	grist 1
-VB VBD 133
-	put 23
-	of_course 7
+NNP MD 153
+	Would 80
+	Will 39
+	Should 28
+	Shall 4
+	May 2
+JJ CD 153
+	twenty 30
+	thirty 23
+	twelve 23
+	eleven 8
+	ten 6
+	Seven 3
+	thirteen 2
+	up_to 2
+	Forty-five 2
+	prior_to 1
+	5-7,000 1
+	9-12 1
+	15-18in 1
+	Twenty-five 1
+	Seven-thirty 1
+	six-thirty 1
+	safe. 1
+	eight-thirty 1
+	Fifty-five 1
+	&dollar;5,885 1
+	&dollar;2,200 1
+	&dollar;625 1
+	10-20 1
+	20-30 1
+	30-40 1
+	5/8in 1
+	14in 1
+	Twenty 1
+	8783/071-962 1
+	out_of 1
+	Seventy-five 1
+	pre-1923 1
+	8&frac12; 1
+	mid-1988 1
+	$50-$100 1
+	8-9cm 1
+	mid-1989 1
+	80mW 1
+	more_than 1
+	wh. 1
+RB VB 153
+	so_that 30
+	reply 9
+	ye 7
+	close 7
+	a_little 6
+	comply 5
+	At_least 5
+	Apply 5
+	for_example 5
+	Keep 4
+	a_lot 4
+	multiply 4
+	bet 3
+	forward 3
+	Try 3
+	slow 3
+	apart_from 3
+	right 2
+	at_least 2
+	Wire 2
+	for_once 2
+	even 2
+	provided_that 2
+	at_all 2
+	no_matter_what 1
+	no_one 1
+	according_to 1
+	thereto 1
+	Let 1
+	A_bit 1
+	greenfly 1
+	occupy 1
+	arrange 1
+	depending_on 1
+	fine 1
+	reapply 1
+	because_of 1
+	Gather 1
+	thee 1
+	doubtless 1
+VBN NNP 149
+	Possessed 28
+	Left 22
+	Even_when 10
+	Taken 4
+	Pound 4
+	Written 3
+	Bed 3
+	Jen 3
+	Ben 3
+	Selected 3
+	Ahmed 2
+	Hemmed 2
+	Ted 2
+	Learn 2
+	Claimed 2
+	Created 1
+	Intended 1
+	Torn 1
+	Hidden 1
+	Ovid 1
+	Painted 1
+	Complained 1
+	Denied 1
+	Described 1
+	Dried 1
+	Brazen 1
+	Ingested 1
+	Beset 1
+	Riven 1
+	Ripen 1
+	Stranded 1
+	Slurred 1
+	Raddled 1
+	Seemed 1
+	Rooted 1
+	Begin 1
+	Blackfaced 1
+	Glen 1
+	Kohen 1
+	Commented 1
+VB RB 147
+	Please 51
+	no_longer 16
+	Hence 8
+	back 8
+	please 7
+	dear 7
+	up_to 6
+	hence 3
+	as_well 2
+	as_to 2
+	briefly 2
+	henceforth 2
+	even 1
+	as_if 1
+	at_least 1
+	Well 1
+	in_relation_to 1
+	in_case 1
+	counter 1
+	as_though 1
+	west 1
+	uptown 1
+	away_from 1
+	awake 1
+	skew 1
+	anew 1
+	due_to 1
+	once_again 1
+	as_it_were 1
+	in_terms_of 1
+	Likewise 1
+	y 1
+	digitally 1
+	readily 1
+	thereafter 1
+	dimly 1
+	a_little 1
+	honest 1
+	trifle 1
+	halfway 1
+IN JJ 141
+	worth 40
+	because_of 22
+	out_of 14
+	next 9
+	outside 7
+	as_if 6
+	in_front_of 3
+	near 3
+	other_than 2
+	in_the_light_of 2
+	outside_of 2
+	+ 2
+	in_terms_of 2
+	on_behalf_of 2
+	in_conjunction_with 2
+	in_accordance_with 1
+	in_spite_of 1
+	once_more 1
+	though 1
+	on_top_of 1
+	on_to 1
+	on_account_of 1
+	off 1
+	into_line_with 1
+	up_to 1
+	in_touch_with 1
+	by_means_of 1
+	through 1
+	in_favour_of 1
+	out 1
+	no_matter_what 1
+	by_far 1
+	in_respect_of 1
+	in_common_with 1
+	in_line_with 1
+	in_connection_with 1
+	more_than 1
+	according_to 1
+VBG NNP 140
+	Working 17
+	Training 9
+	Flying 7
+	Saving 6
+	Brewing 4
+	Travelling 4
+	Managing 4
+	Nursing 3
+	Fighting 3
+	Fleming 3
+	Supporting 2
+	Breathing 2
+	Planting 2
+	Sitting 2
+	Choosing 2
+	Kissing 2
+	Meaning 2
+	Woodturning 2
+	Bunting 2
+	Peking 2
+	Housebuilding 2
+	Educating 1
+	Desiring 1
+	Banning 1
+	Shopping 1
+	Ingoing 1
+	Paving 1
+	Preparing 1
+	Sowing 1
+	Limewashing 1
+	Imposing 1
+	Peeping 1
+	Burgeoning 1
+	Clipping 1
+	Launching 1
+	Landing 1
+	Positioning 1
+	Thermalling 1
+	Breastfeeding 1
+	Sniffing 1
+NNP VBP 139
+	Have 70
+	Count 12
+	Walk 9
+	Know 4
+	Mind 3
+	Name 2
+	BENEFIT 1
+	REFER 1
+	Provide 1
+	Understand 1
+	Beware 1
+	Of_course 1
+	WOULD 1
+	Rik 1
+	Out_of 1
+	Wire 1
+	TALK 1
+	Open 1
+	Kick 1
+	Fuck 1
+	Pass 1
+	up_to 1
+	Start 1
+	By_now 1
+	Stand 1
+	Change 1
+	Unit 1
+	CAUGHT 1
+	Glue 1
+	Control 1
+	SAYS 1
+	Thank 1
+	Cuk 1
+	Because_of 1
+	Acre 1
+	Full 1
+	Connect 1
+	Move 1
+	'M 1
+	Knew 1
+PRP PRP$ 135
+	her 135
+IN NN 134
+	away_from 16
+	Of_course 14
+	rather_than 6
+	out_of 6
+	even_though 4
+	next_to 4
+	in_relation_to 4
+	D' 4
+	on_behalf_of 3
+	once_again 3
+	because_of 3
+	while 3
+	till 2
+	by_means_of 2
+	as_though 2
+	'Course 2
+	like 2
+	according_to 2
+	on_to 2
+	nearer_to 2
+	behind 2
+	Apart_from 2
+	in_accordance_with 1
+	no_longer 1
+	up_to 1
+	O 1
+	'fore 1
+	an' 1
+	Except_that 1
+	near_to 1
+	ado 1
+	in_comparison_with 1
+	* 1
+	in_keeping_with 1
+	&rsqb; 1
+	outside_of 1
+	prior_to 1
+	na 1
+	Ug 1
+	at_least 1
+DT WDT 116
+	that 116
+VBP IN 116
+	beside 17
+	even_if 12
+	* 11
+	depending_on 8
+	at_least 8
+	beneath 6
+	towards 5
+	like 5
+	as_if 5
+	amongst 4
+	underneath 4
+	rather_than 3
+	away_from 3
+	/ 3
+	view 2
+	p. 2
+	= 2
+	d' 2
+	top 2
+	at_last 2
+	wherein 1
+	an' 1
+	em 1
+	a' 1
+	e.g. 1
+	n1 1
+	ahead_of 1
+	as_against 1
+	complete 1
+	v 1
+NNS PRP 116
+	ourselves 82
+	hers 32
+	ours 2
+VBN VB 113
+	come 15
+	listen 13
+	cast 11
+	become 8
+	even_when 8
+	let 6
+	offset 5
+	proceed 4
+	run 4
+	put 3
+	reddened 3
+	straighten 3
+	read 3
+	Listen 2
+	overrun 2
+	rewritten 2
+	lay 1
+	due_to 1
+	rahnd 1
+	wrung 1
+	drown 1
+	shed 1
+	shorten 1
+	cut 1
+	overspeed 1
+	lookin 1
+	by_now 1
+	swum 1
+	deepen 1
+	darken 1
+	overtighten 1
+	a_lot 1
+	set 1
+	cleft 1
+	yearn 1
+	fed_up 1
+	other_than 1
+RB DT 108
+	No 82
+	no 12
+	all 11
+	neither 3
+VB VBD 105
+	bore 8
+	put 8
 	lay 6
-	bore 6
 	tore 5
 	rode 5
 	Were 4
 	ate 4
 	struck 4
 	wore 4
-	thrust 4
 	set 4
 	stole 3
-	shook 3
 	strode 3
-	spread 3
-	let 3
+	thrust 3
 	quit 3
-	dug 3
-	read 2
+	of_course 2
 	arose 2
+	shook 2
 	flew 2
 	wept 2
 	hit 2
+	let 2
 	blew 2
-	apprehend 2
-	encode 2
-	rewrote 2
+	screw 2
+	in_the_light_of 1
 	forbid 1
-	rend 1
+	in_accordance_with 1
+	read 1
 	once_again 1
 	Bend 1
 	weld 1
 	woke 1
 	/love 1
-	Lend 1
 	forgot 1
 	swore 1
-	mistook 1
+	Bore 1
 	threw 1
-VB IN 132
-	like 41
-	beside 13
-	as_if 13
-	amongst 10
-	up_to 8
-	Remove 5
-	so_that 4
-	* 4
-	e.g. 4
-	albeit 3
-	as_for 2
-	even_if 2
-	lest 2
-	due_to 2
-	nearer 2
-	i.e. 1
-	in_response_to 1
-	in_that 1
-	whether_or_not 1
-	&lsqb; 1
-	unto 1
-	astride 1
-	towards 1
-	near_to 1
-	beneath 1
-	Slide 1
-	ie 1
-	en 1
-	and/or 1
-	at_least 1
-	Nearer 1
-	by_far 1
-VBZ NNP 119
-	des 28
-	Yes 11
-	Ms 8
-	Les 7
-	Amis 4
-	Sports 3
-	Plus 3
-	Perkins 2
-	Tues 2
-	Moses 2
-	Angus 2
-	Does 2
-	/ 2
-	Biggs 2
-	Aims 1
-	Threes 1
-	Lucas 1
-	Burns 1
-	TDs 1
-	Teases 1
-	Links 1
-	Eames 1
-	Tees 1
-	Prins 1
-	Spores 1
-	Hughes 1
-	Piss 1
-	-was 1
-	Nudists 1
-	such_as 1
-	Andres 1
-	Seles 1
-	Orpheus 1
-	DMUs 1
-	Sins 1
-	Bloggs 1
-	Hots 1
-	Clarks 1
-	Jess 1
-	Diabetes 1
-NNS PRP 117
-	ourselves 82
-	hers 32
-	ours 2
-	s 1
-NNP VBN 115
-	Sven 16
-	Aged 8
-	Born 8
-	ibid. 8
-	Had 7
-	Lost 6
-	Been 6
-	Come 5
-	Made 3
-	Gone 3
-	Controlled 3
-	Jailed 2
-	Bored 2
-	Chosen 2
-	Ahmed 1
-	Quoted 1
-	Backed 1
-	Jung 1
-	Signed 1
-	WORRIED 1
-	Paved 1
-	Glad 1
-	Felt 1
-	Killed 1
-	Cast 1
-	Held 1
-	bassoons. 1
-	Passed 1
-	Bold 1
-	Refurbished 1
-	Pressed 1
-	Arranged 1
-	Compiled 1
-	Feed 1
-	sod 1
-	Rendered 1
-	Allowed 1
-	Baked 1
-	Loaded 1
-	Rd 1
-JJ VBP 114
+	overcame 1
+	let_alone 1
+	instead_of 1
+	gird 1
+POS VBZ 100
+	's 100
+JJR RB 99
+	no_longer 61
+	longer 16
+	earlier 8
+	better 5
+	for_ever 2
+	any_longer 2
+	Never 2
+	each_other 2
+	whatsoever 1
+JJ VBP 98
 	live 13
-	open 8
-	mean 6
+	lean 5
 	fit 5
-	lean 4
-	of_course 4
 	employ 3
-	a_little 3
+	make-believe 3
+	thrive 3
 	finish 2
-	ye 2
+	in_terms_of 2
 	fancy 2
 	face 2
+	as_though 2
 	Push 2
+	appropriate 2
+	a_bit 2
 	even_though 2
-	punch 1
-	unlock 1
-	select 1
+	up_to 1
+	tacit 1
+	spiral 1
 	oscillate 1
 	suppress 1
-	eschew 1
 	in_line_with 1
-	last 1
+	a_little 1
+	out_of 1
+	macaroni 1
+	hurry 1
+	nigh 1
+	Council/Channel 1
 	forget 1
-	in_order 1
-	Trim 1
+	of_course 1
+	unite 1
 	strive 1
-	with_a_view_to 1
 	stall 1
 	over-correct 1
+	over-indulge 1
+	subject 1
 	reveal 1
 	inhabit 1
-	crash 1
-	f 1
-	miscalculate 1
-	whether_or_not 1
-	dress 1
-	as_though 1
-	l'effet 1
-	weary 1
-	dry 1
-RB RBR 109
-	earlier 46
-	further 20
-	sooner 18
-	longer 18
-	later 3
-	imperfectly 2
-	farther 2
-RB DT 108
-	No 82
-	all 15
-	no 9
-	neither 2
-NNP VBP 106
-	Have 70
-	Stand 10
-	Count 5
-	Name 2
-	REFER 1
-	HAVE 1
-	Rik 1
-	Out_of 1
-	Trim 1
-	Angel 1
-	Open 1
-	Karate 1
-	Kick 1
-	of_course 1
-	Hull 1
-	Help 1
-	Trust 1
-	GREW 1
-	Control 1
-	SAYS 1
-	Acre 1
-	Move 1
-	WAS 1
-JJS RB 103
-	best 55
-	least 31
-	at_least 10
-	North-west 3
-	worst 3
-	South-west 1
-VBN VB 103
-	come 17
-	listen 13
-	cast 11
-	become 10
-	offset 7
-	proceed 4
-	let 4
-	run 4
-	reddened 3
-	read 3
-	straighten 3
-	Listen 2
-	set 2
-	saw 2
-	lay 1
-	rahnd 1
-	wrung 1
-	drown 1
-	shorten 1
-	overspeed 1
-	even_when 1
-	lookin 1
-	by_now 1
-	swum 1
-	deepen 1
-	let_alone 1
-	darken 1
-	cleft 1
-	licensed 1
-	heed 1
-	fed_up 1
-	other_than 1
-VB CD 102
-	twelve 6
-	twenty 4
-	ten 3
-	$6.3m 3
-	thirty 2
-	10in 2
-	$10.5m 2
-	&dollar;1.6102 2
-	r. 1
-	$140,00 1
-	thirteen 1
-	write. 1
-	4in 1
-	2ft 1
-	6ft 1
-	less_than 1
-	eleven 1
-	&dollar;2m 1
-	eg. 1
-	fig. 1
-	24in 1
-	l25mph 1
-	5b 1
-	24ft 1
-	4&frac12;l 1
-	$81.69 1
-	&frac38;in 1
-	10nF 1
-	90&micro;V 1
-	$1.28m 1
-	&dollar;300m 1
-	$500m 1
-	31,000 1
-	$1.76m 1
-	357p 1
-	$7bn 1
-	4.65p 1
-	11.20pm 1
-	22.5p 1
-	208p 1
-VBZ POS 100
-	's 100
-JJ NNS 98
-	a_little 6
-	a_lot 5
+	Of_course 1
+	in_front_of 1
+	knelt 1
+NNS UH 95
+	Yes 91
+	Congratulations 4
+JJ NNS 91
+	Japanese 5
+	damned 5
 	clergy 4
-	for_example 3
-	vis-a-vis 3
-	runners-up 3
-	animus 2
+	dead 3
+	privileged 2
 	workmen 2
 	grown-ups 2
 	gentlemen 2
-	nous 2
+	Scottish 2
 	sit-ups 2
-	latissimus 2
+	wealthy 2
+	elderly 2
 	tear-gas 2
-	habeas_corpus 1
-	Prometheus 1
+	faint-hearted 1
+	well-born 1
+	well-off 1
+	retarded 1
 	after-tastes 1
 	Thirties 1
 	broccoli 1
-	macaroni 1
 	menus 1
 	below-stairs 1
-	fuss 1
-	an_awful_lot 1
-	hollow-tines 1
-	Hang-ups 1
-	out-of-work-hours 1
+	few 1
+	disabled 1
 	policemen 1
 	&lsqb; 1
 	sign-systems 1
 	night-rainbows 1
 	half-points 1
+	well-to-do 1
 	water-meadows 1
-	abacus 1
 	firemen 1
 	three-year-olds 1
-	slide-shows 1
 	X-rays 1
+	s 1
 	elbows 1
-	gluteus 1
-NNS UH 96
-	Yes 92
-	Congratulations 4
-POS VBZ 87
-	's 87
-NNP PRP 86
-	I 61
-	Me 14
-	Us 7
-	Him 4
-NN JJS 85
+	latissimus 1
+	non-ratepayers 1
+	pre-meetings 1
+	even_when 1
+NN SYM 90
+	x 56
+	g 32
+	i 1
+	/ 1
+NN JJS 88
 	closest 15
 	hardest 11
+	dearest 7
 	simplest 5
 	easiest 5
-	at_best 5
 	deepest 4
+	commonest 3
 	richest 3
-	est 3
 	coldest 3
 	truest 2
 	clearest 2
-	blest 2
+	at_best 2
 	happiest 1
 	sharpest 1
 	hardiest 1
 	shadiest 1
-	liest 1
+	est 1
 	chiefest 1
 	toothiest 1
 	rarest 1
@@ -4382,10 +4316,11 @@ NN JJS 85
 	prettiest 1
 	kindest 1
 	bravest 1
+	counterzest 1
 	subtlest 1
+	blest 1
 	fullest 1
 	youngest 1
-	sorriest 1
 	shabbiest 1
 	keenest 1
 	cosiest 1
@@ -4395,403 +4330,412 @@ NN JJS 85
 	wildest 1
 	cleanest 1
 	trustiest 1
-VBP RB 84
-	away_from 12
-	as_well 8
-	at_least 7
-	as_to 6
-	as_though 4
-	asleep 3
-	up_to 3
-	west 3
-	at_once 2
-	dear 2
-	whatsoever 2
-	last 2
-	next_to 2
-	in_accordance_with 1
-	once_more 1
-	wherein 1
-	an' 1
-	no_longer 1
-	m 1
-	daresay 1
-	wan 1
-	Damn 1
-	in_front_of 1
-	hereby 1
-	thereto 1
-	sur 1
-	ashore 1
-	in_pursuit_of 1
-	likewise 1
-	aloud 1
-	astray 1
-	a_little 1
-	hence 1
-	relatedto 1
-	over_here 1
-	rugby 1
-	back 1
-	in_vain 1
-	apace 1
-	pray 1
-JJ RBR 79
-	further 66
-	later 13
-NNP VBZ 79
-	Has 13
-	Sears 4
-	WHILE 3
-	NEEDS 2
-	WORKS 2
-	Out_Of 2
-	WALLS 2
-	IS 2
-	Bowls 2
-	SAYS 1
-	LEAVING 1
-	SURVEYS 1
-	WITH 1
-	RAISONNeS 1
-	Gallops 1
-	Saves 1
-	AXIS 1
-	MOVEMENT 1
-	Focus 1
-	Gives 1
-	INFORMATION 1
-	Photographs 1
-	Creations 1
-	l'hay 1
-	Looks 1
-	GOES 1
-	Levi-Strauss 1
-	Seminars 1
-	SEVEN 1
-	CONNORS 1
-	ORGANISATIONS 1
-	Counts 1
-	PROGRAMME 1
-	AGEING 1
-	LISTS 1
-	SCHEME 1
-	Needs 1
-	Potters 1
-	Loves 1
-	Les 1
-IN JJ 75
-	worth 13
-	next 13
-	because_of 4
-	out_of 4
-	outside 3
-	on_behalf_of 3
-	near 3
-	as_though 2
-	other_than 2
-	on_top_of 2
-	+ 2
-	through 2
-	as_if 2
-	once_more 1
-	on_the_part_of 1
-	'fore 1
-	an' 1
-	nothin' 1
-	by_now 1
-	though 1
-	in_terms_of 1
-	all_the_same 1
-	up_to 1
-	na 1
-	Thought 1
-	in_front_of 1
-	in_touch_with 1
-	no_matter_what 1
-	by_far 1
-	In_particular 1
-	but_for 1
-	in_respect_of 1
-	in_common_with 1
-VBD IN 74
-	up_to 27
-	because_of 13
-	lest 3
-	next_to 3
-	so_that 3
-	whether_or_not 3
-	due_to 2
-	an' 2
-	on_to 2
-	as_to 2
-	as_if 2
-	amongst 2
-	e.g. 1
-	as_against 1
-	wi' 1
-	at_least 1
-	by_means_of 1
-	out_of 1
-	according_to 1
-	albeit 1
-	* 1
-	n'y 1
-VBP NNP 73
+DT IN 86
+	that 86
+VBZ NNP 86
+	Yes 14
+	Les 6
+	Amis 4
+	/ 3
+	Perkins 2
+	Tues 2
+	Moses 2
+	Piss 2
+	Angus 2
+	Describes 2
+	Plus 2
+	Biggs 2
+	Aims 1
+	Threes 1
+	Lucas 1
+	Burns 1
+	Alas 1
+	TDs 1
+	Teases 1
+	Links 1
+	Eames 1
+	Tees 1
+	Sports 1
+	Prins 1
+	Spores 1
+	Hughes 1
+	-was 1
+	Nudists 1
+	Andres 1
+	Seles 1
+	Orpheus 1
+	HSTs 1
+	Sins 1
+	Methinks 1
+	Clarks 1
+	Jess 1
+	Diabetes 1
+	Drunks 1
+	Vous 1
+	Richards 1
+NNP VBN 84
+	Aged 8
+	ibid. 7
+	Born 6
+	Been 6
+	Come 5
+	Lost 5
+	Gone 3
+	Had 3
+	Registered 2
+	Made 2
+	Bored 2
+	Chartered 2
+	Unprepared 1
+	Maud 1
+	Backed 1
+	Signed 1
+	Designed 1
+	Pictured 1
+	Powered 1
+	Paused 1
+	Glad 1
+	Ruffled 1
+	Mentioned 1
+	Killed 1
+	Cast 1
+	'Fraid 1
+	Pied 1
+	Arranged 1
+	Compiled 1
+	Rendered 1
+	Entitled 1
+	Goodnatured 1
+	Authorized 1
+	Hung 1
+	Loaded 1
+	Rd 1
+	Aled 1
+	Wired 1
+	'said 1
+	Fooled 1
+RB RBR 83
+	earlier 32
+	further 17
+	Less 17
+	longer 12
+	sooner 2
+	imperfectly 2
+	farther 1
+NNP PRP 80
+	I 60
+	Me 14
+	Him 4
+	Us 2
+VBZ POS 78
+	's 78
+RBR RB 75
+	better 58
+	later 12
+	Later 5
+CD IN 70
+	* 57
+	= 4
+	/ 4
+	on_to 1
+	at_last 1
+	82 1
+	even_when 1
+	M4 1
+WDT DT 69
+	that 67
+	That 2
+CD 4 67
+	1% 9
+	10% 6
+	3pm 4
+	8m 3
+	50mm 3
+	8pm 3
+	46% 2
+	2ft 2
+	26m 2
+	9pm 2
+	$90m 2
+	NFT2 2
+	12pm 1
+	35m 1
+	32p 1
+	5ft 1
+	2x 1
+	7m 1
+	26% 1
+	23% 1
+	8pp 1
+	45m 1
+	12m 1
+	73m 1
+	21m 1
+	3.6m 1
+	25mm 1
+	10ft 1
+	108mm 1
+	3D 1
+	140mm 1
+	8ft 1
+	70cm 1
+	1.3m 1
+	9in 1
+	$40m 1
+	3.5p 1
+	2oz 1
+	$11m 1
+VBP NNP 66
 	Am 12
 	du 5
 	Centre 3
-	BR 2
+	Love 2
 	Pound 2
 	Eliot 2
 	Mr 2
 	/ 2
 	DO 1
-	DIE 1
-	ACT 1
 	Amnesty 1
 	Ii 1
-	KNOW 1
 	UK 1
 	THOUGHT 1
+	Sow 1
 	* 1
 	Yew 1
-	CA 1
-	luv 1
 	An' 1
 	Wo 1
-	Puss 1
+	Damn 1
 	Face 1
 	Uncover 1
-	'she 1
 	V 1
 	Tye 1
-	SWEEP 1
 	Q 1
 	Noverre 1
 	e.g. 1
+	Lise 1
 	Fokine 1
 	Tynemouth 1
-	RECENTLY 1
+	ANYWHERE 1
 	W 1
 	Porfiry 1
 	512K 1
 	AC 1
-	p. 1
-DT IN 71
-	that 69
-	That 2
-UH JJ 69
-	OK 69
-WDT DT 68
-	that 68
-RB CC 65
-	plus 48
-	either 10
-	Yet 7
-JJS NN 56
-	west 12
-	best 10
-	forest 9
-	priest 4
-	earnest 3
-	north-west 3
-	pest 2
-	disinterest 2
-	quest 2
-	dearest 1
-	nest 1
-	theorist 1
-	inquest 1
-	zest 1
-	conquest 1
-	eldest 1
-	loyalist 1
-	at_least 1
-JJR JJ 55
-	no_longer 35
-	clever 12
-	sheer 2
-	er 1
-	super 1
-	bustier 1
-	subtler 1
-	kosher 1
-	foster 1
-IN VBP 54
-	like 30
-	on_behalf_of 4
-	on_to 4
-	even_though 3
-	in_terms_of 2
-	with_a_view_to 2
-	subsequent_to 1
-	Of_course 1
-	outside_of 1
-	in_lieu_of 1
-	instead_of 1
-	with_reference_to 1
-	in_connection_with 1
-	in_common_with 1
-	Unroll 1
-VBZ NN 53
+	RDS 1
+	Newbolt 1
+	Max 1
+	Elaine 1
+	Live 1
+	NZ 1
+CD VB 66
+	Find 5
+	100Hz 2
+	135p 2
+	639p 2
+	190p 2
+	340p 2
+	pp 1
+	every_so_often 1
+	150mm 1
+	10.30pm 1
+	$9m 1
+	5621m 1
+	ye 1
+	15dBm 1
+	b4 1
+	1Fh 1
+	18MHz 1
+	120Hz 1
+	127p 1
+	FFr146bn 1
+	$186m 1
+	334p 1
+	4.25p 1
+	232p 1
+	700p 1
+	C&dollar;19 1
+	4.30pm 1
+	thank 1
+	$292m 1
+	$1.6bn 1
+	599p 1
+	646p 1
+	374p 1
+	67p 1
+	5p 1
+	7p 1
+	633p 1
+	560p 1
+	62.5p 1
+	324p 1
+VBZ NN 65
+	Ms 8
+	means 4
 	bus 4
-	means 3
 	amellus 3
 	apparatus 3
 	terminus 3
+	mass 3
 	dress 2
-	mass 2
-	audits 2
+	fuss 2
+	axis 2
 	en_route 1
-	prior_to 1
 	permissiveness 1
 	canvas 1
 	supper 1
 	coward 1
 	chorus 1
+	opulus 1
 	padus 1
-	trellis 1
+	sativus 1
 	fungus 1
-	* 1
 	behaviour 1
 	&rsqb; 1
 	conscious 1
-	clitoris 1
 	princess 1
 	consciousness 1
 	stimulus 1
 	nonsense 1
-	celsius 1
-	fuss 1
-	except_that 1
+	emus 1
 	mellitus 1
-	piss 1
+	parvovirus 1
+	compris 1
+	puss 1
 	psychoanalysis 1
 	distress 1
 	in_return_for 1
 	circus 1
 	hiatus 1
+	embryo 1
 	brass 1
-	congress 1
-IN VBD 52
-	on_the_part_of 8
-	on_behalf_of 7
-	on_to 4
-	away_from 3
+	darts 1
+JJ RBR 62
+	further 50
+	later 12
+JJS RB 60
+	best 38
+	least 20
+	worst 2
+VBP RB 59
+	up_to 11
+	no_longer 7
+	asleep 3
+	no_one 3
+	as_to 3
+	as_though 2
+	dear 2
+	daresay 2
+	whatsoever 2
+	for_ever 1
+	no-one 1
+	SO 1
+	ashtray 1
+	counter 1
+	hereby 1
+	even_if 1
+	underneath 1
+	away_from 1
+	express 1
+	ashore 1
+	at_once 1
+	likewise 1
+	aloud 1
+	due_to 1
+	astray 1
+	hence 1
+	over_here 1
+	on_to 1
+	back 1
+	next_to 1
+	apace 1
+	west 1
+	pray 1
+JJS NN 59
+	west 12
+	forest 9
+	newest 6
+	best 5
+	priest 4
+	eldest 3
+	earnest 3
+	North-west 3
+	north-west 3
+	pest 2
+	disinterest 2
+	quest 2
+	nest 1
+	theorist 1
+	inquest 1
+	conquest 1
+	loyalist 1
+IN VBD 59
+	in_front_of 9
+	on_to 8
+	on_behalf_of 4
+	on_top_of 4
+	in_favour_of 4
 	in_charge_of 3
-	in_favour_of 3
-	in_front_of 2
 	in_conjunction_with 2
 	Did 2
+	in_the_light_of 2
+	in_response_to 2
 	in_terms_of 2
 	Had 2
-	on_top_of 2
-	no_matter_how 1
+	in_support_of 2
+	on_the_part_of 1
+	in_respect_of 1
+	along_with 1
 	in_search_of 1
 	next_to 1
-	in_the_light_of 1
 	by_means_of 1
 	instead_of 1
-	for_fear_of 1
+	away_from 1
+	in_addition_to 1
+	in_line_with 1
 	in_spite_of 1
-	in_support_of 1
 	rather_than 1
-	with_a_view_to 1
-	because_of 1
-VBP VBN 52
-	come 15
-	dealt 6
-	spread 3
-	worn 2
-	i.e. 2
-	e.g. 2
-	read 1
-	even_when 1
-	run 1
-	burnt 1
-	COME 1
-	eaten 1
-	become 1
-	blown 1
-	hit 1
-	even_if 1
-	bound 1
-	strewn 1
-	froze 1
-	woven 1
-	viz. 1
-	undercut 1
-	shut 1
-	thrown 1
-	hurt 1
-	rewoven 1
-	arose 1
-	undertaken 1
-VB UH 50
-	please 49
-	wow 1
-VBN RB 49
-	at_least 20
-	damned 3
-	hitherto 3
-	even_when 2
-	next_to 2
-	at_last 2
-	up_to 2
-	for_ever 1
-	under_way 1
-	overboard 1
-	on_to 1
-	upside_down 1
-	Rooted 1
-	in_common_with 1
-	barefooted 1
-	of_course 1
-	in_front_of 1
-	all_of_a_sudden 1
-	subject_to 1
-	once_more 1
-	seaward 1
-	from_time_to_time 1
-CD SYM 48
-	= 30
-	* 18
-VBZ RB 48
-	away_from 5
-	nowadays 4
-	besides 4
-	forwards 4
-	as_well 3
-	upwards 3
-	at_least 2
-	nevertheless 2
-	upstairs 2
-	alas 2
-	outwards 2
-	downwards 2
-	Alas 1
+	and/or 1
+IN VBP 58
+	like 16
+	on_behalf_of 5
+	because_of 4
+	according_to 4
+	on_to 4
+	instead_of 3
+	away_from 2
+	in_terms_of 2
+	with_a_view_to 2
+	subsequent_to 1
+	on_the_part_of 1
+	in_proportion_to 1
+	Depending_on 1
+	as_though 1
+	With_reference_to 1
+	out_of 1
+	relative_to 1
+	in_lieu_of 1
+	even_though 1
+	Of_course 1
 	as_to 1
-	indoors 1
-	outdoors 1
-	hernias 1
-	leftwards 1
-	lengthways 1
-	up_to 1
-	backwards 1
-	as_well_as 1
-	sideways 1
-	doubtless 1
-	thereabouts 1
-JJR NNP 48
-	Higher 8
+	along_with 1
+	in_connection_with 1
+	in_common_with 1
+	in_relation_to 1
+UH JJ 57
+	OK 57
+RB CC 48
+	Yet 27
+	plus 21
+CD PRP 47
+	one 29
+	One 18
+JJR NNP 46
+	Higher 9
 	Larger 5
-	Answer 3
 	Better 3
 	Glasser 2
 	Lager 2
+	Answer 2
 	Finger 2
-	Courier 2
 	Auger 2
 	Younger 2
 	Ulster 1
@@ -4800,95 +4744,119 @@ JJR NNP 48
 	Whyever 1
 	Glider 1
 	Servier 1
+	Courier 1
 	Woodworker 1
 	Whistler 1
 	Speller 1
 	Lucifer 1
-	Gautier 1
 	Hitler 1
 	Tillyer 1
 	Dearer 1
 	Buzzer 1
 	Dexter 1
-	Runner 1
-RBR RB 48
-	better 31
-	later 12
-	Later 5
-LS NN 47
-	b 47
-NN CC 47
-	plus 47
-RB VBN 46
-	done 33
-	a_lot 2
-	for_the_most_part 1
-	for_example 1
-	Need 1
-	Lost 1
-	all_of_a_sudden 1
-	Fond 1
-	thrust 1
-	for_good 1
-	Made 1
-	all_but 1
-	for_certain 1
-DT CC 43
-	both 23
-	either 12
-	Neither 7
-	Both 1
-NN SYM 42
-	g 32
-	x 6
-	= 4
-NNP JJS 41
+	No_longer 1
+VBD IN 45
+	at_least 6
+	provided 5
+	whether_or_not 5
+	lest 3
+	up_to 3
+	an' 2
+	as_if 2
+	amongst 2
+	because_of 2
+	e.g. 1
+	seeing_that 1
+	as_against 1
+	next_to 1
+	so_that 1
+	now_that 1
+	n 1
+	wi' 1
+	on_to 1
+	&lsqb; 1
+	out_of 1
+	in_terms_of 1
+	t 1
+	albeit 1
+	va 1
+VB UH 45
+	please 42
+	Please 3
+RB JJR 45
+	each_other 14
+	earlier 12
+	longer 4
+	quicker 3
+	quieter 3
+	for_ever 2
+	thinner 2
+	any_longer 2
+	smoother 1
+	er 1
+	farther 1
+VBP VBN 44
+	come 14
+	dealt 6
+	spread 3
+	run 3
+	worn 2
+	hit 2
+	read 1
+	even_when 1
+	eaten 1
+	blown 1
+	clad 1
+	tore 1
+	froze 1
+	woven 1
+	undercut 1
+	interwoven 1
+	shut 1
+	thrown 1
+	hurt 1
+	rewoven 1
+NNP JJS 43
 	Best 30
-	NorthWest 4
+	NorthWest 3
+	C'est 2
 	Greatest 2
 	Nest 1
-	C'est 1
+	Earnest 1
+	Cruftiest 1
 	NatWest 1
 	at_least 1
 	Saddest 1
-JJR RB 40
-	longer 16
-	earlier 6
-	no_longer 5
-	better 5
-	Never 2
-	yonder 1
-	for_ever 1
-	any_longer 1
-	each_other 1
-	whither 1
-	whatsoever 1
-NN VBZ 39
-	as_if 7
-	as_to 5
-	in_terms_of 3
-	in_front_of 2
-	in_favour_of 2
-	provided_that 1
-	even_if 1
-	doth 1
+RB VBN 41
+	done 33
+	for_certain 3
+	Need 1
+	Lost 1
+	a_bit 1
+	for_the_most_part 1
 	a_lot 1
-	leuaosis 1
-	incorporates 1
-	purpurea 1
-	serotina 1
-	g' 1
-	in_association_with 1
-	sharpens 1
-	ADVICE 1
-	COMMISSIONER 1
-	in_place_of 1
-	PRESSURE 1
-	truth' 1
-	meaning' 1
-	as_of 1
-	out_of 1
-	/ 1
+RB VBP 41
+	so_that 17
+	apart_from 3
+	a_little_bit 2
+	bet 2
+	fine 1
+	reply 1
+	10ft 1
+	multiply 1
+	Wire 1
+	Mind 1
+	given_that 1
+	at_all 1
+	sort_of 1
+	employ 1
+	and/or 1
+	at_once 1
+	at_length 1
+	along_with 1
+	ply 1
+	at_least 1
+	awight 1
 VBZ JJ 39
 	portentous 2
 	populous 1
@@ -4896,17 +4864,17 @@ VBZ JJ 39
 	drinkin' 1
 	because_of 1
 	cornus 1
-	at_all 1
+	at_least 1
 	purple 1
 	sorbus 1
 	let's 1
 	numinous 1
 	conscious 1
-	honours 1
+	in_the_light_of 1
 	restless 1
 	wasps 1
 	in_defence_of 1
-	such_as 1
+	lengthways 1
 	piteous 1
 	joyous 1
 	colobus 1
@@ -4914,359 +4882,434 @@ VBZ JJ 39
 	bodiless 1
 	rigorous 1
 	crass 1
+	nevertheless 1
 	surpass 1
 	senseless 1
+	doubtless 1
 	needless 1
+	veteris 1
 	formless 1
-	as_well_as 1
-	mass 1
 	in_favour_of 1
 	horrendous 1
+	destroys 1
 	ironic 1
 	heinous 1
-	IS 1
 	religious 1
-	embryo 1
 	disastrous 1
-FW NN 38
-	c 13
-	etc 6
-	vi 2
-	belle 2
-	aye 2
-	nap 2
-	i. 1
-	r 1
-	mare 1
-	aa 1
-	n 1
-	me. 1
-	oui 1
-	seconde 1
-	nu 1
-	ne 1
-	seuill 1
-RB VBD 38
-	bet 13
-	Were 11
-	for_example 2
-	apart_from 2
-	Had 2
-	once_more 1
-	all_at_once 1
-	all_the_same 1
-	swore 1
-	away_from 1
-	no_matter_how 1
-	a_little 1
-	along_with 1
-VBN CD 37
-	ten 9
-	Seven 4
-	eleven 2
-	IR$841m 1
-	fifteen 1
-	$5m 1
-	5/8in 1
-	1/2in 1
-	4x4in 1
-	1/8in 1
-	9&ins; 1
-	$302million 1
-	$2,420 1
-	14.2GHz 1
-	&frac12; 1
-	$7m 1
-	$4.7bn 1
-	$5.4bn 1
-	$402m 1
-	$16bn 1
-	$9.4m 1
-	$850m 1
-	&dollar;10m 1
-	$5,000 1
-	$565m 1
-VBD NNP 36
+NN MD 37
+	can 17
+	might 15
+	will 5
+JJS JJ 36
+	merest 8
+	west 6
+	best 5
+	manifest 5
+	honest 5
+	earnest 3
+	dishonest 2
+	at_least 2
+NNP VBZ 35
+	Has 13
+	Gars 2
+	SAYS 1
+	as_to 1
+	Saves 1
+	Shows 1
+	FOOLS 1
+	Photographs 1
+	l'hay 1
+	Looks 1
+	GOES 1
+	WORKS 1
+	Seminars 1
+	Mellowes 1
+	keepin' 1
+	Carries 1
+	Counts 1
+	Les 1
+	Climbs 1
+	OFFERS 1
+	Clocks 1
+	Bowls 1
+VBD NNP 35
 	Left 6
 	du 4
 	Ted 3
 	Ned 2
+	* 2
 	Want 2
 	/ 2
-	.. 2
+	so_that 1
 	Sentenced 1
 	Art 1
 	Cox 1
-	Organized 1
-	Provided_that 1
-	* 1
+	by_reason_of 1
+	Dot 1
+	STRAIGHT 1
 	w/e 1
-	Bed 1
 	Sent 1
 	up_to 1
-	because_of 1
+	Liberated 1
+	Finished 1
 	COULD 1
 	WHILE 1
-	nt 1
-	-in 1
-NN MD 36
-	can 16
-	might 13
-	will 6
-	need 1
-RB JJR 36
-	each_other 18
-	for_ever 3
-	quicker 3
-	no_longer 2
-	longer 2
-	thinner 2
-	earlier 2
-	smoother 1
-	Moreover 1
-	none_other 1
-	any_longer 1
-RB NNS 36
-	for_example 30
-	a_lot 1
-	R's 1
-	so_long_as 1
-	apropos 1
-	southwards 1
-	a_little 1
-JJS JJ 36
-	merest 8
-	west 6
-	manifest 5
-	honest 5
-	commonest 4
-	earnest 3
-	dishonest 2
-	best 2
-	at_least 1
-VBP CD 36
-	p. 10
+VBN RB 35
+	up_to 9
+	no_longer 6
+	no_one 3
+	next_to 2
+	upside_down 2
+	for_ever 1
+	under_way 1
+	overboard 1
+	on_to 1
+	up_until 1
+	damned 1
+	honest 1
+	$5m 1
+	once_more 1
+	seaward 1
+	no_doubt 1
+	from_time_to_time 1
+	&dollar;10m 1
+VBP CD 34
+	p. 11
+	pp 10
 	ten 4
-	2in 3
-	27.4kg 1
 	* 1
-	6in 1
-	5pm 1
-	15cm 1
+	thirteen 1
 	36in 1
-	p7 1
-	300mm 1
-	150mm 1
+	2in 1
 	thirty 1
-	1mm 1
 	$305 1
-	1.7mm 1
-	1p 1
-	42p 1
+	pg 1
 	$110 1
 	1&frac12; 1
-	/ 1
-	84p 1
-VBN VBP 33
-	come 15
-	become 9
-	even_when 2
-	read 2
-	Stand 1
-	raid 1
-	licensed 1
-	soar 1
-	have 1
-IN VBG 33
-	out_of 5
-	on_behalf_of 4
-	subject_to 3
-	on_the_part_of 2
-	in_front_of 2
-	in_spite_of 2
-	in_view_of 2
-	other_than 2
-	in_pursuit_of 1
-	on_account_of 1
-	Understanding 1
-	due_to 1
-	outside_of 1
-	* 1
-	relative_to 1
-	in_terms_of 1
-	eg 1
-	because_of 1
-	instead_of 1
-JJ FW 31
-	i.e. 10
-	fig. 5
+VB CD 32
+	twelve 6
+	twenty 4
+	ten 3
+	thirty 2
+	10in 2
+	$140,00 1
+	thirteen 1
+	eleven 1
+	disabled* 1
+	$81.69 1
+	&frac38;in 1
+	31,000 1
+	$7bn 1
+	23.2m 1
+	$14.3m 1
+	&frac12; 1
+	$91.7m 1
+	$911,608 1
+	$1.17m 1
+	$677 1
+JJ FW 32
+	i.e. 14
 	et 4
 	anti 4
-	a_la 2
+	ibid. 2
+	ie. 2
 	theatre 1
+	ere 1
 	leur 1
 	c.g. 1
 	e.g. 1
-	ie. 1
-	viz. 1
-VBD RB 29
-	at_least 7
+	c 1
+VBD RB 32
+	up_to 20
 	aloud 6
-	up_to 5
 	tonight 3
-	of_course 2
-	damned 2
-	next_to 1
-	in_touch_with 1
-	all_right 1
-	unaided 1
-CD IN 28
-	* 15
-	en 6
-	as_if 1
-	up_to 1
-	on_to 1
+	no_longer 1
+	even_though 1
+	skew 1
+RB VBD 31
+	Were 11
+	bet 10
+	Had 2
+	along_with 2
+	for_example 1
+	once_more 1
+	all_the_same 1
+	swore 1
+	away_from 1
+	Made 1
+VBD VBZ 31
+	up_to 10
+	because_of 9
+	out_of 3
+	as_if 2
+	due_to 1
+	as_to 1
+	prior_to 1
+	on_behalf_of 1
+	as_of 1
+	ahead_of 1
+	kind_of 1
+RB EX 31
+	there 31
+LS LS 31
+	b 28
+	3 2
+	4 1
+RP IN 31
+	up 20
+	off 6
+	out 5
+NN VBZ 29
+	as_to 7
+	as_if 7
+	even_if 2
+	a_lot 1
+	incorporates 1
+	away_from 1
+	cornus 1
+	corylus 1
+	sharpens 1
+	maximus 1
+	because_of 1
+	cmos 1
+	reproduce' 1
+	truth' 1
+	out_of 1
+	ahead_of 1
+NNP JJR 28
+	Morse 9
+	Older 8
+	Courier 2
+	Newer 1
+	Happier 1
+	Fusilier 1
+	Smaller 1
+	Grenadier 1
+	Sinner 1
+	Weissbier 1
+	Gautier 1
+	Lovelier 1
+VBG IN 28
+	at_least 13
+	Providing 5
+	ahead_of 2
+	at_best 2
 	at_last 1
-	/ 1
-	82 1
-	even_when 1
-VBP VBG 26
-	depending_on 9
-	eg 8
-	rather_than 3
-	flung 2
-	prior_to 2
-	catering 1
-	pg 1
-NN PRP 26
-	oneself 16
-	Me 7
-	Mine 3
-JJ JJS 24
-	at_least 14
+	contrary_to 1
+	providing 1
+	in_spite_of 1
+	Notwithstanding 1
+	whether_or_not 1
+VBZ VBP 27
+	IS 8
+	COSTS 3
+	at_all 2
+	as_well 2
+	at_least 1
+	withal 1
+	ye 1
+	but_for 1
+	as_though 1
+	such_as 1
+	complement 1
+	impress 1
+	cross 1
+	Kiss 1
+	bypass 1
+	interrupt 1
+VBN VBP 27
+	come 10
+	become 6
+	even_when 2
+	begotten 1
+	cast 1
+	Stand 1
+	run 1
+	raid 1
+	soar 1
+	read 1
+	have 1
+	in_between 1
+VB FW 26
+	i.e. 9
+	ii 4
+	p. 4
+	theatre 2
+	eg. 2
+	ie. 1
+	e.g. 1
+	eg 1
+	c. 1
+	d. 1
+JJ JJS 26
+	at_least 17
+	At_last 1
 	human-interest 1
 	easiest 1
 	cruelest 1
 	widest 1
-	second-biggest 1
 	extremest 1
 	ablest 1
-	northwest 1
 	weakest 1
-	second-best 1
-NNP FW 24
-	e.g. 11
-	.. 4
+	At_least 1
+NN PRP 26
+	oneself 16
+	Me 7
+	Mine 3
+NNP FW 25
+	Vera 11
+	e.g. 8
 	et 2
 	i.e. 1
 	hi 1
-	up_to 1
-	tel. 1
+	Hi-Fi 1
 	op._cit. 1
-	........ 1
-	Mouche 1
-JJR VB 23
-	lower 12
-	no_longer 3
-	shower 3
-	bother 2
-	lacquer 1
-	Pepper 1
-	micropower 1
-VBG VB 23
-	at_least 5
-	Bring 4
-	cling 3
-	sing 3
-	prolong 2
-	so_that 2
-	confront 1
-	contrary_to 1
-	in_connection_with 1
-	no_longer 1
-CD VBZ 23
-	* 10
-	/ 9
-	510740 1
-	86244 1
-	37235 1
-	86427 1
-DT NN 22
-	half 21
-	no 1
-NNP WDT 21
-	Whatever 21
-JJ JJR 21
+VBZ RB 25
+	nowadays 4
+	forwards 4
+	upwards 3
+	upstairs 2
+	outwards 2
+	downwards 2
+	as_to 1
+	as_well 1
+	indoors 1
+	hernias 1
+	no_one 1
+	leftwards 1
+	backwards 1
+	sideways 1
+JJ JJR 24
 	simpler 4
 	safer 3
-	unambitious 3
 	re-established 3
 	wider 2
 	firmer 1
+	in_order 1
 	quieter 1
+	hotter 1
 	hungrier 1
+	steel-liner 1
+	noisier 1
 	dearer 1
+	friendlier 1
 	untidier 1
+	slimmer 1
 	non-skier 1
-VB FW 21
-	i.e. 9
-	p. 4
-	theatre 2
-	eg. 1
-	ie. 1
-	e.g. 1
+VB JJR 24
+	er 5
+	safer 3
+	o'er 2
+	wider 2
+	greener 1
+	paler 1
+	Nearer 1
+	concealer 1
+	lower 1
+	simpler 1
+	subtler 1
+	Gaudier 1
+	each_other 1
+	poorer 1
+	dearer 1
+	nearer 1
+DT NN 24
+	half 24
+IN NNS 23
+	As_soon_as 6
+	As_well_as 6
+	as_well_as 4
+	as_long_as 2
 	as_to 1
-	c. 1
-	d. 1
-VBD VBZ 21
-	as_if 3
-	out_of 2
-	no_doubt 2
-	an' 1
 	&lsqb; 1
+	as_if 1
+	as_soon_as 1
+	so_long_as 1
+VBN CD 23
+	ten 9
+	Seven 4
+	thirteen 2
+	eleven 2
+	fifteen 1
+	9&ins; 1
+	$2,420 1
+	$16bn 1
+	$5,000 1
+	$565m 1
+NN UH 23
+	hello 10
+	Boy 6
+	goodbye 4
+	yeah 2
+	heck 1
+RP RB 23
+	up 12
+	out 11
+NNP WDT 21
+	Whatever 21
+VBN NNS 21
+	policemen 4
+	damned 2
+	fishermen 2
+	disabled 2
+	POCs 1
+	such_as 1
+	even_when 1
+	gentlemen 1
+	beliefs 1
+	o'ergiven 1
+	ombudsmen 1
+	Congressmen 1
+	sportsmen 1
+	gunmen 1
+	Policemen 1
+JJR JJ 20
+	clever 12
+	subtler 2
+	sheer 2
+	er 1
+	super 1
+	bustier 1
+	foster 1
+IN VBZ 20
+	away_from 9
+	Has 4
+	because_of 2
+	in_front_of 1
 	up_to 1
-	WORKS 1
-	other_than 1
-	on_behalf_of 1
-	a_lot 1
-	as_of 1
-	ahead_of 1
-	in_aid_of 1
-	kind_of 1
-	apart_from 1
-	a_bit 1
-	in_connection_with 1
-CD PRP 21
-	One 17
-	one 3
-	s 1
-NNPS VBZ 21
-	WORKS 7
-	Contains 1
-	ADVANTAGES 1
-	Addresses 1
-	Fractures 1
-	Supports 1
-	ACCOUNTS 1
-	DEPOSITS 1
-	Procedures 1
-	WINNERS 1
-	Prizes 1
-	Parties 1
-	Interfaces 1
-	Propertius 1
-	Photographs 1
-VB VBG 20
-	eg 6
-	of_course 4
-	out_of 4
-	due_to 1
-	baring 1
-	typing 1
-	except_for 1
-	hoping 1
+	at_all 1
+	as_to 1
+	for_fear_of 1
+VBZ VB 20
+	kiss 4
+	cross 2
+	out_of 2
+	even_if 2
+	dress 1
 	depending_on 1
-VB NNS 20
+	confess 1
+	even_when 1
+	piss 1
+	as_if 1
+	impress 1
+	renders 1
+	compress 1
+	prior_to 1
+LS NN 19
+	b 19
+CC RB 18
+	Yet 11
+	either 7
+FW SYM 17
+	c 13
+	i 3
+	v 1
+VBN IN 17
+	even_when 10
+	at_last 3
+	at_least 2
+	provided 2
+VB NNS 17
 	hedges 2
 	themes 1
 	ears 1
@@ -5279,597 +5322,544 @@ VB NNS 20
 	dogs 1
 	pups 1
 	figs 1
-	a_lot 1
-	veteris 1
-	plans 1
 	Congressmen 1
 	jams 1
 	agouti 1
 	GPs 1
-LS CD 20
-	3 10
+VBP FW 17
+	e.g. 4
+	et 3
+	i.e. 3
+	eg 3
+	p. 1
+	pp. 1
+	even_if 1
+	ie. 1
+LS CD 17
+	3 8
 	2 5
 	5 3
-	4 2
-RB VBP 19
-	so_that 8
-	fine 1
-	comply 1
-	given_that 1
-	sort_of 1
-	apart_from 1
-	employ 1
-	at_least 1
-	at_once 1
-	for_example 1
-	per_annum 1
-	ply 1
-VBZ VB 19
-	kiss 3
-	cross 2
-	piss 2
-	out_of 2
-	dress 1
-	confess 1
-	no_one 1
-	complement 1
-	in_order 1
-	impress 1
-	compress 1
-	prior_to 1
-	even_if 1
-	interrupt 1
-RP IN 19
-	up 12
-	out 4
-	off 3
-VBP VBZ 18
-	d' 4
-	&rsqb; 2
-	kiss 2
-	thou 1
-	hath 1
-	'as 1
-	&lsqb; 1
-	no_one 1
-	as_if 1
-	factsheet(s) 1
-	ANYWHERE 1
-	at_once 1
-	divides 1
-VB JJR 17
-	er 5
-	safer 3
-	wider 2
-	in_order 1
-	o'er 1
-	greener 1
-	simpler 1
-	each_other 1
-	poorer 1
-	dearer 1
-VBN NNS 17
-	policemen 4
-	fishermen 2
-	even_when 2
-	such_as 1
-	boys/men 1
-	gentlemen 1
-	beliefs 1
-	o'ergiven 1
-	ombudsmen 1
-	Congressmen 1
-	sportsmen 1
-	gunmen 1
-IN NNS 17
-	As_soon_as 7
-	As_well_as 6
-	as_long_as 1
-	as_well_as 1
-	so_long_as 1
-	Wolves 1
-VBZ UH 17
-	Yes 17
-NN UH 17
-	goodbye 12
-	hello 3
-	yeah 2
-VBZ VBP 16
-	IS 8
-	withal 1
-	so_much_as 1
-	ye 1
-	at_all 1
-	impress 1
-	cross 1
-	bypass 1
-	bergier 1
+	4 1
+JJS IN 16
+	at_least 9
+	nearest 4
+	At_least 2
+	Lest 1
+MD NN 16
+	will 10
+	must 6
+VBG VB 16
+	cling 3
+	Bring 3
+	prolong 2
+	sing 2
+	confront 1
+	no_doubt 1
+	by_far 1
+	by_and_large 1
+	so_that 1
+	hamstring 1
 CC IN 16
-	versus 14
-	minus 2
-JJ RP 16
-	off 14
-	back 2
-NNS VB 16
-	cross 4
-	dress 3
-	police 3
-	listen 2
-	kiss 1
-	guess 1
-	toss 1
-	fellas 1
-VBP NNS 15
-	mus 3
-	as_well_as 2
-	policemen 1
-	fuss 1
-	menus 1
-	check 1
-	such_as 1
-	&lsqb; 1
-	pas 1
-	seamen 1
-	swine 1
-	-as 1
-IN VBN 15
-	due_to 6
-	out_of 4
-	adjacent_to 2
-	once_again 1
-	relative_to 1
-	ahead_of 1
-IN VBZ 15
-	in_front_of 5
-	Has 4
-	in_regard_to 1
-	as_long_as 1
-	because_of 1
-	on_to 1
-	in_spite_of 1
-	according_to 1
-VBN IN 15
-	up_to 6
-	en 4
-	due_to 1
-	more'n 1
-	even_when 1
-	at_last 1
-	nearer 1
-RBS JJS 15
-	most 15
-NNPS NN 15
+	versus 16
+NNPS NN 16
 	Commons 10
 	Synthesis 2
-	COMMITMENTS 1
+	Metamorphosis 1
+	M&ouml;nch 1
 	Seriousness 1
 	Americanness 1
-VBP FW 15
-	et 3
-	e.g. 3
-	p. 2
-	i.e. 2
-	.. 2
-	pp. 1
-	viz. 1
-	ie. 1
-NNP JJR 15
-	Older 7
-	Morse 3
-	Fusilier 1
-	Smaller 1
-	Grenadier 1
-	Amplifier 1
-	Lovelier 1
+NN PDT 15
+	half 10
+	Half 5
+DT NNP 15
+	No 13
+	A 2
+NNS VB 15
+	cross 3
+	police 3
+	dress 2
+	listen 2
+	even_when 1
+	kiss 1
+	guess 1
+	confess 1
+	dross 1
+IN VBN 15
+	out_of 8
+	due_to 5
+	once_again 1
+	ahead_of 1
 NN WRB 14
 	wherever 14
-JJR IN 14
-	nearer 14
-JJ VBZ 14
-	up_to 3
-	rumbustious 1
-	in_spite_of 1
-	on_top_of 1
-	at_all 1
-	kiss 1
-	other_than 1
-	s 1
-	even_though 1
-	rather_than 1
-	acidulous 1
-	out_of 1
-MD NN 14
-	will 9
-	must 5
-RP RB 14
-	up 9
-	out 3
-	down 2
+NN RP 14
+	down 14
+JJ RP 14
+	off 14
 JJS NNP 14
 	Latest 4
 	Pest 2
 	Forest 2
-	Seest 1
 	Brest 1
+	At_best 1
 	Strongest 1
 	Contest 1
 	Everest 1
 	Protest 1
-NN PDT 13
-	half 8
-	Half 5
-UH RB 13
-	yes 13
-RB FW 13
-	theatre 11
-	an' 1
-	qui 1
-NN RP 13
-	down 13
+VBZ UH 14
+	Yes 14
+VBP VBG 13
+	eg 5
+	in_accordance_with 1
+	catering 1
+	BUYING 1
+	clung 1
+	clog 1
+	rather_than 1
+	flung 1
+	ahead_of 1
+FW NN 13
+	belle 2
+	aye 2
+	nouvelle 2
+	nap 2
+	i. 1
+	fr. 1
+	r 1
+	mare 1
+	seuill 1
+CD RB 13
+	up_to 5
+	$1m 2
+	on_to 1
+	6mm 1
+	y 1
+	$2m 1
+	$44m 1
+	$130m 1
+CD FW 13
+	6a 5
+	et 2
+	i.e. 1
+	e.g. 1
+	146f 1
+	on_to 1
+	5a 1
+	p.22 1
+VBZ NNPS 12
+	Sports 2
+	Ages 1
+	Proteus 1
+	Nanus 1
+	Rites 1
+	Nudists 1
+	COSTS 1
+	Muss 1
+	Naxos 1
+	Acts 1
+	Irises 1
+VB VBG 12
+	eg 3
+	of_course 2
+	instead_of 2
+	in_search_of 1
+	baring 1
+	typing 1
+	clog 1
+	hoping 1
 JJ UH 12
 	yeah 6
 	Ah 4
 	Ooh 1
 	goodbye 1
-DT FW 12
-	la 12
-RB EX 12
-	there 12
-VBG RB 11
-	at_least 2
-	blinking 2
-	slinking 2
-	in_relation_to 1
-	roaring 1
-	in_charge_of 1
-	in_conjunction_with 1
-	with_regard_to 1
-CD VB 11
-	Find 5
-	t' 1
-	Fix 1
-	ye 1
-	thank 1
-	Fit 1
-	een 1
+RB PDT 12
+	Quite 7
+	quite 5
+CD SYM 12
+	* 5
+	x 4
+	= 3
+RB FW 11
+	theatre 11
+DT FW 11
+	la 11
+NNPS VBZ 11
+	WORKS 7
+	Contains 1
+	TESTS 1
+	Prizes 1
+	Photographs 1
+NN CC 11
+	plus 11
 '' POS 11
 	' 11
-VBZ NNPS 10
-	Ages 1
-	Nanus 1
-	Rites 1
-	Nudists 1
-	Methinks 1
-	Explodes 1
-	Muss 1
-	Naxos 1
-	Acts 1
-	Irises 1
-VBN JJS 10
-	closest 3
-	at_best 3
-	kindest 1
-	friendliest 1
-	c'est 1
-	hardest 1
-VBP WRB 10
-	wherever 10
-NN DT 10
-	A 9
-	half 1
-RB CD 10
-	2ft 1
-	8mm 1
-	&dollar;500m 1
-	$28.3m 1
-	&dollar;63.2m 1
-	$1m 1
-	$10.5m 1
-	$19.7m 1
-	&dollar;80 1
-	&dollar;7m 1
-NNP PDT 10
-	All 8
-	Half 2
-JJS VB 9
-	At_least 5
-	at_least 2
-	worst 2
-RB PDT 9
-	quite 9
-WP WDT 9
-	what 9
-LS NNP 9
-	Third 9
-NNS CD 9
-	&dollar;150m 2
-	1840s 1
-	&dollar;9bn 1
-	$2.2bn 1
-	710lbs 1
-	39lbs 1
-	14-year-olds 1
-	&dollar;4m 1
-VB SYM 8
+VB SYM 10
 	e 3
 	i 2
 	v 2
 	d 1
+	x 1
+	n 1
+VBP NNS 10
+	mus 3
+	as_well_as 2
+	policemen 1
+	menus 1
+	such_as 1
+	pas 1
+	-as 1
+VBP WRB 10
+	wherever 10
+CC DT 9
+	Either 9
+RBS JJS 9
+	most 9
+VBG RB 9
+	as_though 2
+	blinking 2
+	subject_to 1
+	in_relation_to 1
+	once_more 1
+	no_longer 1
+	with_regard_to 1
+VBN JJS 9
+	closest 3
+	at_best 2
+	kindest 1
+	friendliest 1
+	c'est 1
+	hardest 1
+NN DT 9
+	A 9
+IN VBG 9
+	subject_to 2
+	away_from 1
+	Understanding 1
+	out_of 1
+	relative_to 1
+	eg 1
+	because_of 1
+	on_behalf_of 1
+LS NNP 9
+	Third 9
+VBP MD 8
+	dare 8
 NNP WRB 8
 	Whenever 5
 	Wherever 3
-VBD MD 8
-	'd 8
-32 32 8
+VBN VBG 8
+	subject_to 1
+	seeing_that 1
+	overhung 1
+	moping 1
+	sewing 1
+	such_as 1
+	once_again 1
+	in_favour_of 1
+CD 8 8
+	9p 2
+	6p 2
+	3lb 1
+	8p 1
+	2p 1
+	3p 1
+RB JJS 7
+	at_best 5
+	at_last 2
+UH RB 7
+	yes 7
+VBN JJR 7
+	safer 2
+	in_order 2
+	wiser 1
+	simpler 1
+	nearer 1
+CD VBP 7
+	* 1
+	46cm 1
+	15cm 1
+	10mm 1
+	$20m 1
+	300mm 1
+	b7 1
+32 32 7
 	0332 2
 	522032 1
-	262262 1
 	0232 1
 	0532 1
 	87,652 1
 	$132 1
-RB JJS 7
-	at_best 5
-	at_last 2
-RB MD 7
-	Must 7
-VBZ VBD 7
-	because_of 3
-	COSTS 3
-	up_to 1
 NN WP 6
 	whoever 6
-CC RB 6
-	either 3
-	Yet 2
-	nor 1
-VBG VBN 6
-	strung 2
-	relative_to 1
-	prior_to 1
-	just_about 1
-	subject_to 1
 IN MD 6
 	Would 4
 	Should 2
-CC DT 6
-	Either 6
 IN WRB 6
 	Wherever 3
 	Whenever 3
-CD RB 6
-	up_to 4
-	on_to 1
-	y 1
-VBN JJR 6
-	safer 2
-	wiser 1
-	in_order 1
-	no_longer 1
-	simpler 1
+DT CC 6
+	Neither 5
+	either 1
+RB NNS 6
+	for_the_most_part 1
+	R's 1
+	darlin' 1
+	so_long_as 1
+	s 1
+	southwards 1
+VBG VBP 6
+	cling 3
+	sing 3
+NNP PDT 6
+	All 4
+	Half 2
+IN SYM 6
+	g 5
+	x 1
 NNPS UH 6
 	Yes 6
 VB PRP 6
 	oneself 3
 	Him 3
-NN RBR 6
-	louder 6
-VB JJS 5
-	easiest 2
-	at_last 2
-	at_least 1
-VBP MD 5
-	dare 3
-	need 2
-IN FW 5
-	de 4
-	no. 1
+CD VBD 6
+	9.5yd 1
+	8.3yd 1
+	22nd 1
+	23rd 1
+	7.45pm 1
+	12.45pm 1
+VBP VBZ 5
+	d' 2
+	divides 1
+	decry 1
+	Ai 1
 VBP JJS 5
 	at_best 4
 	deepest 1
-VBG VBP 5
-	cling 3
-	sing 2
-VBP SYM 5
-	= 3
+JJR VB 5
+	shower 2
+	lower 1
+	Pepper 1
+	bother 1
+NNPS JJ 5
+	FEATURES 1
+	TMS320C3x 1
+	Browningese 1
+	SPORTS 1
+	Third-round 1
+VBD VBG 5
+	by_way_of 1
+	because_of 1
+	save_for 1
+	ahead_of 1
+	rather_than 1
+NNP SYM 5
+	x 2
+	v 2
 	* 1
-	w 1
-IN SYM 5
-	g 5
 JJR WP 5
 	Whoever 4
 	whoever 1
-VBZ CD 5
-	27s 1
-	37s 1
-	4s 1
-	1s 1
-	18ins 1
-CD FW 5
-	et 2
-	.. 2
-	p.22 1
-VB VBZ 4
-	as_yet 1
-	as_to 1
-	away_from 1
-	in_terms_of 1
-FW SYM 4
-	i 3
-	v 1
-VBD FW 4
-	et 2
-	no. 1
-	.. 1
+JJ VBZ 4
+	even_though 1
+	ahead_of 1
+	vous 1
+	up_to 1
+VBD JJS 4
+	knowest 1
+	at_least 1
+	n'est 1
+	c'est 1
+JJR VBP 4
+	any_longer 1
+	stagger 1
+	sweeter 1
+	no_longer 1
+VBD MD 4
+	'd 4
+VBD NNS 4
+	disabled 2
+	damned 1
+	aged 1
 VB WP 4
 	whoever 3
 	Whoever 1
-VBP JJR 4
-	er 1
-	in_order 1
-	no_longer 1
-	ne'er 1
-VBG IN 4
-	ahead_of 2
-	at_least 1
-	whether_or_not 1
-JJS IN 4
-	nearest 4
-VBD VBG 3
-	by_way_of 2
-	even_if 1
-VBD JJS 3
-	knowest 1
-	n'est 1
-	c'est 1
-WRB NN 3
-	why 3
-JJR VBP 3
-	any_longer 1
-	sweeter 1
-	no_longer 1
-MD VB 3
-	will 3
-VBN MD 3
-	'd 3
-VBP UH 3
+VBP UH 4
 	yeah 2
 	please 1
+	heck 1
+DT UH 4
+	no 4
+VB JJS 4
+	at_least 2
+	at_last 1
+	easiest 1
+VBG VBN 3
+	strung 2
+	prior_to 1
+VBD FW 3
+	et 2
+	n'y 1
+IN FW 3
+	ma 1
+	de 1
+	no. 1
+VBP JJR 3
+	er 1
+	in_order 1
+	thinner 1
 VBP WP 3
 	whoever 3
-VBN VBG 3
-	overhung 1
-	moping 1
-	once_again 1
-VBG JJS 3
-	at_best 2
-	at_least 1
-FW JJ 3
-	ben 1
-	d' 1
-	je 1
-RB VBZ 3
-	s 1
-	a_bit 1
-	apart_from 1
+JJS VB 3
+	At_least 3
+NNPS IN 3
+	Towards 2
+	Apropos 1
+VBD SYM 3
+	x 2
+	d 1
+NNP RBR 3
+	Less 3
+JJ DT 3
+	half 3
+CD VBN 3
+	8.3yd 1
+	$55m 1
+	$350m 1
 VBG VBD 3
 	sprang 2
 	swung 1
-VBD CD 3
-	30p 1
-	&dollar;112 1
-	150ft 1
-FW NNP 3
-	da 1
-	uzh 1
-	du 1
 VBN NNPS 3
 	Russians 1
 	Englishmen 1
 	Catholics 1
-IN CD 3
-	400Gflops. 1
-	A&dollar;35m 1
-	450p 1
 $ $ 2
 	$ 2
 JJR VBD 2
 	no_longer 2
+RB VBG 2
+	that_is_to_say 1
+	in_favour_of 1
+MD VBN 2
+	'd 2
+FW RB 2
+	'em 1
+	je 1
+FW VB 2
+	perfecte 1
+	ere 1
+VBN MD 2
+	'd 2
+NN 4 2
+	* 1
+	kg 1
+VBZ VBD 2
+	because_of 1
+	HELPS 1
 VBZ PRP 2
 	ourselves 2
 JJ PRP 2
 	oneself 2
-VBD NNS 2
-	tweed 1
-	a_lot 1
-JJ DT 2
-	half 2
+POS '' 2
+	' 2
 NN WDT 2
 	Whatever 2
-CD VBN 2
-	every_so_often 1
-	5/8in 1
-FW NNS 2
-	i 1
-	fas 1
+FW JJ 2
+	d' 1
+	ne 1
+NNPS RB 2
+	Nowadays 2
 CD 32 2
-	061-832 1
-	091-232 1
-NN NNPS 2
-	Thameslink 1
-	Americanness 1
-IN JJR 2
-	no_longer 2
+	p.802 1
+	55032 1
+VBZ JJR 2
+	in_order 1
+	bergier 1
+CD VBZ 2
+	2s 1
+	3s 1
 VB PDT 2
 	Quite 1
 	Half 1
-RB VBG 2
-	for_the_most_part 1
-	out_of_line_with 1
-NNPS JJ 2
-	Thirties 1
-	SPORTS 1
-NNP SYM 2
-	v 2
-MD VBN 1
-	'd 1
-FW RB 1
-	'em 1
+NN RBR 2
+	louder 2
+FW DT 2
+	la 2
+IN CD 2
+	on_to 1
+	450p 1
 RB PRP 1
 	oneself 1
 NNPS VB 1
 	Stockhausen 1
-VBZ VBG 1
-	depending_on 1
+CD VBG 1
+	4.7kg 1
 NNS FW 1
 	coulis 1
 JJ WP 1
 	whoever 1
-FW VBP 1
-	perfecte 1
-16 SYM 1
+VBZ SYM 1
+	s 1
+16 NN 1
 	* 1
-NNP RBR 1
-	Sooner 1
-NNS VBP 1
-	cross 1
-POS '' 1
-	' 1
-FW CD 1
-	me. 1
+VBN VBZ 1
+	even_when 1
+NNS CD 1
+	that_is 1
+RB SYM 1
+	t 1
+FW IN 1
+	n 1
+JJR VBG 1
+	no_longer 1
 RB NNPS 1
 	Englishness 1
-CD VBD 1
-	23rd 1
+JJ MD 1
+	dare 1
+JJ SYM 1
+	x 1
+32 CD 1
+	262262 1
+JJ 32 1
+	fig.2 1
+VBZ CD 1
+	4s 1
+NNP JJ|IN 1
+	Absent 1
+VBZ VBG 1
+	such_as 1
 VBZ FW 1
 	nubibus 1
 JJ WRB 1
 	wherever 1
 VB WRB 1
 	wherever 1
-FW VB 1
-	ere 1
-NNPS CD 1
-	TMS320C3x 1
-JJR VBN 1
-	no_longer 1
-NNPS IN 1
-	Towards 1
+NNP 8 1
+	mA 1
+CC NN 1
+	minus 1
 VBP PRP 1
 	oneself 1
-VBZ VBN 1
-	such_as 1
+VB VBD|VBP 1
+	read 1
+NN NNPS 1
+	Americanness 1
 VBN UH 1
 	Amen 1
+VBD CD 1
+	&dollar;112 1
+VBD UH 1
+	heck 1
 JJR WRB 1
 	wherever 1
-JJR VBZ 1
-	no_longer 1
+FW NNP 1
+	du 1
+FW NNS 1
+	fas 1
+CC JJ 1
+	minus 1
 VBG JJR 1
 	no_longer 1
-JJ NNPS 1
-	Dolphin-class 1
-VBD SYM 1
-	v 1
-VBG VBZ 1
+JJS VBG 1
+	at_least 1
+VBG NNS 1
 	by_no_means 1

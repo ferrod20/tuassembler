@@ -1,26 +1,26 @@
-%Aciertos: 195128 ( 9,75773680994296% )
-%Errores: 1804598
-%Cantidad de tags: 1999726
+%Aciertos: 197205 ( 9,86164049130927% )
+%Errores: 1802513
+%Cantidad de tags: 1999718
 \begin{center}
 \begin{table}[H]
 \caption{Matriz de confusion para\\BNC$_{2}$ = BNC etiquetado con TnT (entrenado con WSJ) vs\\ NFI$_{1}$ = BNC etiquetado con TnT (entrenado con WSJ + NFI)}\\	
 \begin{tabular}{| l | c | c | c | c | c | c | c | c | c | c | }
 \hline
- \backslashbox{\scriptsize{BNC$_{2}$}\kern-1em}{\kern-1em \scriptsize{NFI$_{1}$}}  &	\textbf{NN}	&   \textbf{IN}	&   \textbf{DT}	&   \textbf{JJ}	&   \textbf{NNP}	&   \textbf{NNS}	&   \textbf{,}	&   \textbf{.}	&   \textbf{RB}	&   \textbf{PRP}	&   \hline\textbf{NN} & \textbf{260225} & 55 & 3 & 2517 & 1418 & 154 & - & - & 361 & 27\\
-\textbf{IN} & 32 & \textbf{211522} & 171 & 18 & 96 & 7 & - & - & 416 & -\\
-\textbf{DT} & - & 180 & \textbf{187324} & 1 & 111 & - & - & - & 473 & -\\
-\textbf{JJ} & 3961 & 153 & - & \textbf{133582} & 991 & 63 & - & - & 739 & 6\\
-\textbf{NNP} & 1529 & 20 & 78 & 903 & \textbf{129940} & 526 & - & - & 137 & 13\\
-\textbf{NNS} & 286 & 3 & - & 97 & 360 & \textbf{96672} & - & - & 52 & 3\\
+ \backslashbox{\scriptsize{BNC$_{2}$}\kern-1em}{\kern-1em \scriptsize{NFI$_{1}$}}  &	\textbf{NN}	&   \textbf{IN}	&   \textbf{DT}	&   \textbf{JJ}	&   \textbf{NNP}	&   \textbf{NNS}	&   \textbf{,}	&   \textbf{.}	&   \textbf{RB}	&   \textbf{PRP}	&   \hline\textbf{NN} & \textbf{262914} & 167 & 1 & 2357 & 896 & 108 & - & - & 262 & 4\\
+\textbf{IN} & 35 & \textbf{211988} & 118 & 21 & 68 & 1 & - & - & 362 & -\\
+\textbf{DT} & 1 & 59 & \textbf{187975} & 1 & 61 & - & - & - & 435 & -\\
+\textbf{JJ} & 2851 & 71 & - & \textbf{135642} & 522 & 66 & - & - & 599 & 2\\
+\textbf{NNP} & 1676 & 23 & 17 & 774 & \textbf{130067} & 371 & - & - & 59 & 10\\
+\textbf{NNS} & 329 & 9 & - & 115 & 258 & \textbf{97296} & - & - & 45 & 6\\
 \textbf{,} & - & - & - & - & - & - & \textbf{95405} & - & - & -\\
 \textbf{.} & - & - & - & - & - & - & - & \textbf{86486} & - & -\\
-\textbf{RB} & 454 & 554 & 99 & 1008 & 180 & 9 & - & - & \textbf{80427} & -\\
-\textbf{PRP} & 32 & - & - & 2 & 19 & 4 & - & - & - & \textbf{73509}\\
+\textbf{RB} & 296 & 211 & 40 & 994 & 113 & 17 & - & - & \textbf{81377} & -\\
+\textbf{PRP} & 14 & - & - & 2 & 18 & 5 & - & - & 1 & \textbf{73694}\\
 \hline
 \end{tabular}
 \end{table}
 \end{center}
 
-%Sumatoria de errores: 1373413
-\noindent Aciertos: 195.128 (9,76\%)\\
-\noindent Errores: 1.804.598 (90,24\%)\\
+%Sumatoria de errores: 1377315
+\noindent Aciertos: 197.205 (9,86\%)\\
+\noindent Errores: 1.802.513 (90,14\%)\\

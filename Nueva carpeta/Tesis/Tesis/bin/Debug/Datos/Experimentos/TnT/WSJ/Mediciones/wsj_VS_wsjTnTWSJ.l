@@ -1,6 +1,6 @@
-%Aciertos: 1230150 ( 97,3898737965307% )
+%Aciertos: 1230151 ( 97,3898758629426% )
 %Errores: 32969
-%Cantidad de tags: 1263119
+%Cantidad de tags: 1263120
 \begin{center}
 \begin{table}[H]
 \caption{Matriz de confusion para\\WSJ$_{1}$ = WSJ original contra\\ WSJ$_{2}$ = WSJ etiquetado con TnT (entrenado con WSJ)}\\	
@@ -22,5 +22,5 @@
 \end{center}
 
 %Sumatoria de errores: 23602
-\noindent Aciertos: 1.230.150 (97,39\%)\\
+\noindent Aciertos: 1.230.151 (97,39\%)\\
 \noindent Errores: 32.969 (2,61\%)\\
