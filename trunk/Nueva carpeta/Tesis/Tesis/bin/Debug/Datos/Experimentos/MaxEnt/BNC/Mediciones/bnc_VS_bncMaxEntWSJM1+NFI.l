@@ -1,26 +1,26 @@
-%Aciertos: 1857971 ( 92,9116505427265% )
-%Errores: 141747
+%Aciertos: 1858602 ( 92,9432049919039% )
+%Errores: 141116
 %Cantidad de tags: 1999718
 \begin{center}
 \begin{table}[H]
 \caption{Matriz de confusion para\\BNC$_{1}$ = BNC original contra\\NFI$_{3}$ = BNC etiquetado con MaxEnt (entrenado con 1 mitad de WSJ+NFI)}\\	
 \begin{tabular}{| l | c | c | c | c | c | c | c | c | c | c | }
 \hline
- \backslashbox{\scriptsize{BNC$_{1}$}\kern-1em}{\kern-1em \scriptsize{NFI$_{3}$}}  &	\textbf{NNP}	&   \textbf{JJ}	&   \textbf{NN}	&   \textbf{CD}	&   \textbf{VBN}	&   \textbf{NNS}	&   \textbf{WRB}	&   \textbf{RB}	&   \textbf{VBD}	&   \textbf{NNPS}	&   \hline\textbf{NN1} & \textbf{26776} & \textbf{3786} & - & 20 & 109 & 684 & - & 282 & 94 & 1\\
-\textbf{AJ0} & \textbf{8368} & - & 2113 & 3 & \textbf{3249} & 32 & - & 853 & 215 & 10\\
-\textbf{DT0} & 108 & \textbf{7768} & 192 & - & - & 1 & - & 883 & - & -\\
-\textbf{AV0} & 950 & 2360 & \textbf{3475} & 194 & 90 & 325 & - & - & 39 & 2\\
-\textbf{NN0} & 473 & 752 & - & \textbf{3302} & 2 & \textbf{3193} & - & - & 4 & 4\\
-\textbf{CJS} & 151 & 409 & 348 & - & 33 & 150 & \textbf{2901} & 856 & 39 & 1\\
-\textbf{NN2} & \textbf{2831} & 66 & 797 & 74 & 1 & - & - & 8 & 1 & 1636\\
-\textbf{AVP} & 32 & 6 & 139 & - & - & - & - & 2080 & - & -\\
-\textbf{VVN} & 77 & 492 & 94 & - & - & 1 & - & 1 & 1756 & -\\
-\textbf{PRP} & 605 & 1613 & 925 & - & 129 & 741 & - & 802 & 122 & -\\
+ \backslashbox{\scriptsize{BNC$_{1}$}\kern-1em}{\kern-1em \scriptsize{NFI$_{3}$}}  &	\textbf{NNP}	&   \textbf{JJ}	&   \textbf{NN}	&   \textbf{VBN}	&   \textbf{NNS}	&   \textbf{WRB}	&   \textbf{CD}	&   \textbf{RB}	&   \textbf{VBD}	&   \textbf{VBG}	&   \hline\textbf{NN1} & \textbf{26026} & \textbf{4058} & - & 92 & 528 & - & 24 & 228 & 99 & 1259\\
+\textbf{AJ0} & \textbf{8418} & - & 2221 & \textbf{3338} & 68 & - & 5 & 876 & 217 & 1831\\
+\textbf{DT0} & 117 & \textbf{7825} & 195 & - & 1 & - & - & 741 & - & -\\
+\textbf{AV0} & 1083 & 2502 & \textbf{3839} & 88 & 230 & - & 124 & - & 37 & 88\\
+\textbf{NN0} & 518 & 1115 & - & 13 & \textbf{3154} & - & \textbf{2522} & 7 & 3 & 4\\
+\textbf{NN2} & \textbf{2932} & 79 & 967 & 1 & - & - & 37 & 7 & - & -\\
+\textbf{CJS} & 170 & 288 & 297 & 33 & 159 & \textbf{2901} & 2 & 702 & 48 & 34\\
+\textbf{AVP} & 37 & 8 & 140 & - & - & - & - & 2073 & - & -\\
+\textbf{VVN} & 89 & 567 & 97 & - & 1 & - & - & - & 1855 & 7\\
+\textbf{UNC} & 1739 & 275 & 470 & 3 & 257 & - & 395 & 2 & 2 & 3\\
 \hline
 \end{tabular}
 \end{table}
 \end{center}
 
-%Sumatoria de errores: 90629
-\noindent Aciertos: 1.857.971 (92,91\%)\\
-\noindent Errores: 141.747 (7,09\%)\\
+%Sumatoria de errores: 90171
+\noindent Aciertos: 1.858.602 (92,94\%)\\
+\noindent Errores: 141.116 (7,06\%)\\

@@ -1,12 +1,12 @@
+wsjCompC4.mc
 
-
-%Aciertos: 1832612 ( 91,6436592214391% )
-%Errores: 167103
-%Cantidad de tags: 1999715
+%Aciertos: 1832612 ( 91,6436133931018% )
+%Errores: 167104
+%Cantidad de tags: 1999716
 
 Errores
 |	|	CantidadDeErrores
-NN1 NNP 27438
+NN1 NNP 27439
 	World 326
 	Government 312
 	Party 273

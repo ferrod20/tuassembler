@@ -1,16 +1,15 @@
-%% lexicon created Tue Apr 16 01:37:29 2013 from file
+%% lexicon created Sat Apr 27 21:32:10 2013 from file
 %%     ../../FuentesDeEntrenamiento/wsjM1+NFI.g
-%% the corpus contained 1166542 tokens
-%% this lexicon contains 55609 tokens
+%% the corpus contained 1199368 tokens
+%% this lexicon contains 55930 tokens
 %% upper/lower case is significant
 @USECASE		1
-@CARD			11161	,	1	CD	11128	JJ	1	LS	27	NNP	3	VBN	1
+@CARD			11201	,	1	CD	11167	JJ	1	LS	28	NNP	3	VBN	1
 @CARDPUNCT		2	CD	2
-@CARDSUFFIX		1219	2	202	4	253	8	346	CD	187	JJ	141	NN	2	NNP	18	NNS	70
-@CARDSEPS		6035	CD	6008	JJ	23	NNP	1	RB	3
-			10	CD	1	JJ	1	NN	2	NNP	3	VBD	1	VBG	1	VBZ	1
-			1	VBZ	1
-!			325	.	325
+@CARDSUFFIX		1229	2	203	4	261	8	351	CD	143	JJ	170	NN	2	NNP	21	NNS	78
+@CARDSEPS		6042	CD	6015	JJ	23	NNP	1	RB	3
+			1	CD	1
+!			336	.	336
 #			78	#	78
 $			4393	$	4393
 $1.71.			1	CD	1
@@ -19,16 +18,18 @@ $2,500			1	CD	1
 $2,700			1	CD	1
 $20			1	CD	1
 $20,000			1	CD	1
+$242			1	CD	1
 $26			1	CD	1
 $3.50			1	CD	1
 $30			1	CD	1
 $300,000		1	CD	1
 $40			1	CD	1
 $400			1	CD	1
+$6.1			1	CD	1
 $60			1	CD	1
 $7			1	CD	1
 $7.95			1	CD	1
-%			3189	JJ	8	NN	3181
+%			3192	JJ	8	NN	3184
 &			689	CC	687	SYM	2
 '			483	''	77	POS	406
 ''			4708	''	4708
@@ -58,167 +59,41 @@ $7.95			1	CD	1
 (I			1	NNP	1
 (a			1	NN	1
 (and			1	VBD	1
-(as			3	NNS	3
+(as			4	NNS	4
 (as/so			1	NN	1
 (assuming		1	JJ	1
 (briefly		1	RB	1
+(each			1	NN	1
 (in			2	JJ	1	VB	1
 (including		2	VBG	2
 (inclusive		1	JJ	1
+(one			1	NN	1
 (the			2	JJ	1	NN	1
-(though			1	JJ	1
+(though			1	NN	1
 (to			1	NN	1
 (typically		1	RB	1
 (unspecified)		1	NN	1
 (which			1	NN	1
-(whoever		1	WRB	1
-)			818	)	818
+(whoever		1	WP	1
+)			819	)	819
 *F1/2*F			1	NNP	1
-+			41	CD	1	JJ	18	NNP	1	NNS	11	RB	2	VB	6	VBN	2
-,			39720	,	39720
++			44	CD	1	JJ	17	NN	1	NNP	1	NNS	14	RB	2	VB	6	VBN	2
+,			40027	,	40027
 -			48	:	48
 --			1432	:	1432
-.			57369	.	57369
-...			32048	:	32048
-..a			3	JJ	1	NN	2
+.			58146	.	58146
+...			35422	:	35422
+..a			3	NN	3
+..an			1	JJ	1
 .23			1	CD	1
 .270			1	CD	1
 .303			1	CD	1
 .9			1	CD	1
-.a			4	JJ	2	NN	2
-.an			1	JJ	1
+.a			4	NN	4
+.an			1	NN	1
 .her			1	NN	1
 .his			1	NNS	1
 .what			1	WDT	1
-/			205	JJ	16	NN	168	NNP	1	NNS	20
-/!i!n1kr*i*:s		1	VBZ	1
-/!i2kstr*!akt		2	JJ	2
-/!i2ntr*%a*:ns		1	VBZ	1
-/!i2sk*!o*:t		2	JJ	2
-/!ikspl*!o*!it		2	JJ	2
-/!imp*!o*:t		1	JJ	1
-/!ins*!ens		1	VBZ	1
-/!ins*$e*:t		1	JJ	1
-/!ins*%ult		1	JJ	1
-/!int!im*e*!it		5	JJ	5
-/!inv*!al!id		3	JJ	3
-/%e3bs*!ent		1	JJ	1
-/%e3bstr*!akt		2	JJ	2
-/%e3pr*%e*!upr!i%et	1	JJ	1
-/%e3pr*%e*!upr!ie!it	1	JJ	1
-/%e3pr*%oks%e1m%et	2	JJ	2
-/%e3pr*%oks%e1me!it	2	JJ	2
-/%e3tr*!ibju:t		2	JJ	2
-/%o8lt*$e*:n%et		2	JJ	2
-/%upl*!ift		1	JJ	1
-/*!abs%e2nt		1	JJ	1
-/*!abstr!akt		2	JJ	2
-/*!atr!ibju:t		2	JJ	2
-/*!ekspl!o!it		2	JJ	2
-/*!ekstr!akt		2	JJ	2
-/*!entr%ens		1	NNS	1
-/*!esk!o:t		2	JJ	2
-/*!est!im%et		1	JJ	1
-/*!est!ime!it		1	JJ	1
-/*!i!n1kri:s		1	NNS	1
-/*!imp!o:t		1	JJ	1
-/*!impl!i1m%e2nt	1	JJ	1
-/*!impl!i1m%ent		1	JJ	1
-/*!ins!ens		1	NNS	1
-/*!ins$e:t		1	JJ	1
-/*!ins%ult		1	JJ	1
-/*!int!im%et		5	JJ	5
-/*!inv%el!id		3	JJ	3
-/*%olt%ene!it		2	JJ	2
-/*%upl!ift		1	JJ	1
-/b*!ufe!i		2	JJ	2
-/b*$e*:nd		3	JJ	3
-/b*$e*:nt/		3	NN	3
-/b*%e*!u		2	NN	2
-/b*%uf%et		2	JJ	2
-/b*a*!u			2	JJ	2
-/bl!est			2	JJ	2
-/bl*!es!i2d		2	JJ	2
-/d!ifj*u*:s		2	VBZ	2
-/d!ifj*u*:z		2	NN	2
-/d!ist!s*%a*:d!z	2	NN	2
-/d*!es%e5t		4	JJ	4
-/d*!es%e7l%et		1	JJ	1
-/d*!es%e7le!it		1	JJ	1
-/d*!ist!s%a:d!z		2	NN	2
-/di1l*!ib%er%et		2	JJ	2
-/di1l*!ib%ere!it	2	JJ	2
-/di1z*$e*:t/when	4	VB	4
-/dj*u*:pl!ik%et		1	JJ	1
-/dj*u*:pl!ike!it	1	JJ	1
-/f			1	NN	1
-/fr!agm*!ent		1	JJ	1
-/fr*!agm%e2nt		1	JJ	1
-/gr*%a*:v		2	JJ	2
-/gr*e*!iv		2	JJ	2
-/h*a*!us		6	JJ	6
-/h*a*!uz		6	NN	6
-/h*a*!uz!i1z/		6	JJ	6
-/i1l*!ab%er%et		3	JJ	3
-/i1l*!ab%ere!it		3	JJ	3
-/k%e7mpr*!es		3	NNS	3
-/k%e7nfl*!ikt		1	JJ	1
-/k%e7ns*%e*!ul		1	JJ	1
-/k%e7nskr*!ipt		2	JJ	2
-/k%e7ntr*!akt		2	JJ	2
-/k%e7ntr*!e*%eri1/	2	NNS	2
-/k%e7ntr*%a*:st		1	JJ	1
-/k%e7nv*!ikt		1	JJ	1
-/k%e7nv*$e*:t		1	JJ	1
-/k%el*!ekt		1	JJ	1
-/k%en/			1	NNS	1
-/k*!an			1	NN	1
-/k*!an/			1	NNS	1
-/k*!ompr!es		3	VBZ	3
-/k*%ol!i2kt		1	JJ	1
-/k*%onfl!ikt		1	JJ	1
-/k*%ons%e!ul		1	JJ	1
-/k*%onsj0%e4m%et	2	JJ	2
-/k*%onsj0%e4me!it	2	JJ	2
-/k*%onskr!ipt		2	JJ	2
-/k*%ontr!akt		2	JJ	2
-/k*%ontr%a:st		1	JJ	1
-/k*%ontr%eri1/		2	NN	2
-/k*%onv!ikt		1	JJ	1
-/k*%onv$e:t		1	JJ	1
-/l!i2d!*!it!im*e*!it	2	JJ	2
-/l!i2d!z*!it!im!i1t	2	JJ	2
-/l*!ed/			2	NNS	2
-/l*!iv			2	JJ	2
-/l*a*!iv		2	JJ	2
-/l*i*:d			2	JJ	2
-/m*!isj*u*:s		1	NNS	1
-/m*!isj*u*:z		1	NN	1
-/m*%od%er%et		3	JJ	3
-/p*!at%e0nt		3	JJ	3
-/p*%ol!i!s		1	NNS	1
-/pr%ostr*e*!it		2	JJ	2
-/pr*%ostre!it		2	JJ	2
-/r!i1k*!o*:d		1	JJ	1
-/r*!ag!id/		2	NNS	2
-/r*!agd/		2	NNS	2
-/r*!ed/			2	NNS	2
-/r*!ek!o:d		1	JJ	1
-/r*%e*!u		1	JJ	1
-/r*a*!u			1	NN	1
-/r*i*:d/		2	NNS	2
-/s			1	NNS	1
-/s%eb*!o*:d!in%et	1	JJ	1
-/tr!ansf*$e*:		6	JJ	6
-/tr!anspl*%a*:nt	1	JJ	1
-/tr*!ansf%e5		6	CD	6
-/tr*!anspl%a:nt		1	JJ	1
-/v			1	NNP	1
-/w*!ind			1	JJ	1
-/w*a*!ind		1	JJ	1
-/w*a*!und/		2	NNS	2
-/w*u*:nd		2	JJ	2
-/z/			1	NNP	1
 0			1	CD	1
 0-60			1	CD	1
 0.0002			1	CD	1
@@ -287,8 +162,8 @@ $7.95			1	CD	1
 0.95			2	CD	2
 0.99			1	CD	1
 0535			1	CD	1
-1			447	CD	440	LS	7
-1%			1	CD	1
+1			437	CD	430	LS	7
+1%			1	4	1
 1,000			68	CD	68
 1,000-ship		1	JJ	1
 1,001			1	CD	1
@@ -377,7 +252,6 @@ $7.95			1	CD	1
 1,908			1	CD	1
 1,940			2	CD	2
 1,977			1	CD	1
-1-10			1	CD	1
 1-2			1	CD	1
 1-Dec			1	NNP	1
 1-for-10		2	JJ	2
@@ -388,7 +262,7 @@ $7.95			1	CD	1
 1.02			6	CD	6
 1.03			2	CD	2
 1.04			3	CD	3
-1.05			4	CD	4
+1.05			5	CD	5
 1.06			4	CD	4
 1.07			1	CD	1
 1.08			1	CD	1
@@ -426,7 +300,7 @@ $7.95			1	CD	1
 1.27			2	CD	2
 1.28			2	CD	2
 1.29			2	CD	2
-1.2m			2	CD	2
+1.2m			2	CD	1	JJ	1
 1.3			28	CD	28
 1.30			2	CD	2
 1.31			1	CD	1
@@ -500,7 +374,7 @@ $7.95			1	CD	1
 1.78			4	CD	4
 1.79			1	CD	1
 1.8			28	CD	28
-1.8%			1	CD	1
+1.8%			1	JJ	1
 1.80			5	CD	5
 1.82			3	CD	3
 1.8200			2	CD	2
@@ -532,8 +406,8 @@ $7.95			1	CD	1
 1.9375			1	CD	1
 1.98			1	CD	1
 1.99			1	CD	1
-10			391	CD	391
-10%			1	CD	1
+10			392	CD	392
+10%			1	4	1
 10%-owned		1	JJ	1
 10,000			76	CD	76
 10,000-circulation	1	JJ	1
@@ -586,7 +460,7 @@ $7.95			1	CD	1
 10.9			2	CD	2
 10.93			1	CD	1
 10.97			1	CD	1
-100			219	CD	219
+100			220	CD	220
 100,000			34	CD	34
 100,000-guest		1	JJ	1
 100,980			1	CD	1
@@ -610,7 +484,7 @@ $7.95			1	CD	1
 101.95			1	CD	1
 102			19	CD	19
 102.01			1	CD	1
-103			8	CD	8
+103			9	CD	9
 103,000			1	CD	1
 103.05			1	CD	1
 103.1			1	CD	1
@@ -643,10 +517,10 @@ $7.95			1	CD	1
 10:30			3	CD	3
 10:33			1	CD	1
 10:40			2	CD	2
-10?			1	CD	1
+10?			1	JJ	1
 10\/32			2	32	2
-10cc			1	CD	1
-10p			4	CD	4
+10cc			1	8	1
+10p			4	4	1	8	1	CD	1	JJ	1
 10th			3	JJ	3
 10th-biggest		1	JJ	1
 11			163	CD	162	NNP	1
@@ -711,7 +585,7 @@ $7.95			1	CD	1
 114.3			1	CD	1
 114.6			1	CD	1
 114.63			1	CD	1
-114p			2	CD	2
+114p			2	2	1	CD	1
 115			9	CD	9
 116			1	CD	1
 116,000			1	CD	1
@@ -741,7 +615,7 @@ $7.95			1	CD	1
 11th			4	JJ	4
 11th-biggest		2	JJ	2
 11th-grade		1	JJ	1
-12			174	CD	174
+12			176	CD	176
 12,000			4	CD	4
 12,190,000		1	CD	1
 12,252			1	CD	1
@@ -794,7 +668,7 @@ $7.95			1	CD	1
 12.9375			1	CD	1
 12.95			2	CD	2
 12.97			2	CD	2
-120			41	CD	41
+120			42	CD	42
 120,000			8	CD	8
 120-a-share		1	JJ	1
 120-day			3	JJ	3
@@ -824,7 +698,7 @@ $7.95			1	CD	1
 125,000			3	CD	3
 125,849			1	CD	1
 125.1			2	CD	2
-125?No			1	CD	1
+125?No			1	NNS	1
 126			1	CD	1
 126,000			1	CD	1
 126,630,000		2	CD	2
@@ -850,14 +724,14 @@ $7.95			1	CD	1
 129.91			1	CD	1
 12:01			2	CD	2
 12\/32			3	32	3
-12a			1	CD	1
+12a			1	JJ	1
 12th			1	JJ	1
-13			169	CD	169
+13			171	CD	171
 13,000			4	CD	4
 13,056			1	CD	1
 13,249			1	CD	1
 13-7			1	CD	1
-13-amp			1	CD	1
+13-amp			1	JJ	1
 13-hour			1	JJ	1
 13-week			4	JJ	4
 13.02			1	CD	1
@@ -917,7 +791,7 @@ $7.95			1	CD	1
 134-lawyer		1	JJ	1
 134.8			2	CD	2
 135			10	CD	10
-135,000			1	CD	1
+135,000			2	CD	2
 135.2			1	CD	1
 135.6			1	CD	1
 135.9			2	CD	2
@@ -930,14 +804,14 @@ $7.95			1	CD	1
 136.4			1	CD	1
 137			1	CD	1
 137.8			1	CD	1
-137th			1	CD	1
+137th			1	JJ	1
 138			2	CD	2
 138.4			1	CD	1
 139			1	CD	1
 139.75			1	CD	1
 13\/16			8	16	8
 13\/32			1	32	1
-13th			6	JJ	6
+13th			7	JJ	6	NNP	1
 14			96	CD	96
 14,000			2	CD	2
 14,099			1	CD	1
@@ -1052,7 +926,7 @@ $7.95			1	CD	1
 14\/32			3	32	3
 14th			1	JJ	1
 14the			1	CD	1
-15			305	CD	304	VBN	1
+15			306	CD	305	VBN	1
 15%			1	CD	1
 15,000			31	CD	31
 15,000-foot		1	JJ	1
@@ -1081,7 +955,7 @@ $7.95			1	CD	1
 15.85			1	CD	1
 15.87			1	CD	1
 15.97			1	CD	1
-150			84	CD	84
+150			85	CD	85
 150,000			5	CD	5
 150,000-square-foot	1	JJ	1
 150-foot-tall		1	JJ	1
@@ -1090,13 +964,13 @@ $7.95			1	CD	1
 150-point		1	JJ	1
 150.00			1	CD	1
 150.2			1	CD	1
-1500			3	CD	3
+1500			5	CD	5
 1503			1	CD	1
 1507.37			1	CD	1
 151			2	CD	2
 151,000			3	CD	3
 151.20			2	CD	2
-152			1	CD	1
+152			2	CD	2
 152,000			1	CD	1
 152.08			1	CD	1
 1522			1	CD	1
@@ -1139,7 +1013,7 @@ $7.95			1	CD	1
 15\/32			3	32	3
 15p			2	CD	2
 15th			6	JJ	6
-16			103	CD	103
+16			105	CD	105
 16,000			5	CD	5
 16,072			1	CD	1
 16-50			1	CD	1
@@ -1156,7 +1030,7 @@ $7.95			1	CD	1
 16.1			1	CD	1
 16.125			1	CD	1
 16.2			5	CD	5
-16.2%			1	CD	1
+16.2%			1	JJ	1
 16.20			1	CD	1
 16.25			1	CD	1
 16.3			3	CD	3
@@ -1206,7 +1080,7 @@ $7.95			1	CD	1
 16\/32			3	32	3
 16th			1	JJ	1
 16th-century		1	JJ	1
-17			104	CD	104
+17			105	CD	105
 17,000			4	CD	4
 17,500			1	CD	1
 17,699			1	CD	1
@@ -1291,7 +1165,6 @@ $7.95			1	CD	1
 18			111	CD	111
 18,000			4	CD	4
 18,444			1	CD	1
-18-13			1	CD	1
 18-a-share		6	JJ	6
 18-hole			2	JJ	2
 18-month-old		1	JJ	1
@@ -1351,8 +1224,8 @@ $7.95			1	CD	1
 1862			1	CD	1
 1868			2	CD	2
 187			3	CD	3
-1870			1	CD	1
-1870s			2	CD	2
+1870			2	CD	2
+1870s			2	JJ	1	NNS	1
 1872			2	CD	2
 1875			1	CD	1
 188			4	CD	4
@@ -1373,7 +1246,7 @@ $7.95			1	CD	1
 1891			1	CD	1
 18\/32			5	32	5
 18th			2	JJ	2
-19			68	CD	68
+19			69	CD	69
 19,000			2	CD	2
 19-building		1	JJ	1
 19-inch			1	JJ	1
@@ -1405,7 +1278,7 @@ $7.95			1	CD	1
 1900s			2	CD	1	NNS	1
 1901			3	CD	3
 1902			1	CD	1
-1903			1	CD	1
+1903			2	CD	2
 1904			1	CD	1
 1905			1	CD	1
 1906			4	CD	4
@@ -1415,9 +1288,10 @@ $7.95			1	CD	1
 1910			2	CD	2
 1911			4	CD	4
 1912			3	CD	3
-1913			1	CD	1
+1913			2	CD	2
 1914			4	CD	4
 1914-18			2	CD	2
+1915			1	CD	1
 1916			1	CD	1
 1917			2	CD	2
 1918			3	CD	3
@@ -1426,7 +1300,7 @@ $7.95			1	CD	1
 192.5			1	CD	1
 192.9			1	CD	1
 1920			1	CD	1
-1920s			9	CD	5	NN	1	NNS	3
+1920s			10	CD	5	NN	1	NNS	4
 1921			4	CD	4
 1922			2	CD	2
 1924			1	CD	1
@@ -1438,10 +1312,10 @@ $7.95			1	CD	1
 193			2	CD	2
 1930			2	CD	2
 1930-50			1	CD	1
-1930s			6	CD	3	NNS	3
+1930s			7	CD	3	NNS	4
 1931			2	CD	2
 1932			3	CD	3
-1933			2	CD	2
+1933			3	CD	3
 1934			3	CD	3
 1935			2	CD	2
 1936			1	CD	1
@@ -1471,23 +1345,23 @@ $7.95			1	CD	1
 1950s			15	CD	8	NNS	7
 1951			3	CD	3
 1952			7	CD	7
-1953			3	CD	3
+1953			4	CD	4
 1954			3	CD	3
 1955			5	CD	5
-1956			5	CD	5
+1956			6	CD	6
 1957			4	CD	4
 1958			1	CD	1
 1959			5	CD	5
 196.2			1	CD	1
 196.8			1	CD	1
-1960			11	CD	11
-1960s			23	CD	7	NNS	16
+1960			13	CD	13
+1960s			24	CD	7	NNS	17
 1961			8	CD	8
 1962			3	CD	3
 1963			10	CD	10
 1964			9	CD	9
 1965			7	CD	7
-1966			8	CD	8
+1966			9	CD	9
 1966-67			1	CD	1
 1967			11	CD	11
 1967-68			1	CD	1
@@ -1500,21 +1374,21 @@ $7.95			1	CD	1
 1972			24	CD	24
 1973			13	CD	13
 1973-75			1	CD	1
-1974			34	CD	34
+1974			35	CD	35
 1974-75			2	CD	2
 1975			21	CD	21
 1976			26	CD	26
 1977			14	CD	14
 1978			13	CD	13
-1979			24	CD	24
+1979			25	CD	25
 1979-80			2	CD	2
 198			1	CD	1
-1980			33	CD	33
+1980			34	CD	34
 1980s			27	CD	19	NN	1	NNS	7
-1981			29	CD	29
+1981			30	CD	30
 1981s			1	CD	1
 1982			35	CD	35
-1983			28	CD	28
+1983			29	CD	29
 1983-84			1	CD	1
 1983-85			1	CD	1
 1984			45	CD	45
@@ -1581,8 +1455,8 @@ $7.95			1	CD	1
 1\/32			3	32	3
 1\/4			100	4	100
 1\/8			86	8	86
-1st			3	CD	3
-2			238	,	1	CD	230	LS	7
+1st			4	CD	4
+2			237	,	1	CD	229	LS	7
 2%			1	CD	1
 2%-3			1	JJ	1
 2,000			36	CD	36
@@ -1611,7 +1485,7 @@ $7.95			1	CD	1
 2,500			8	CD	8
 2,500-person		1	JJ	1
 2,520			1	CD	1
-2,600			1	CD	1
+2,600			2	CD	2
 2,633,700		1	CD	1
 2,680			1	CD	1
 2,700			2	CD	2
@@ -1723,7 +1597,7 @@ $7.95			1	CD	1
 2.9622			1	CD	1
 20			240	CD	240
 20%-owned		1	JJ	1
-20,000			27	CD	27
+20,000			28	CD	28
 20,000-gallon		1	JJ	1
 20-day			1	JJ	1
 20-hour			1	JJ	1
@@ -1750,7 +1624,7 @@ $7.95			1	CD	1
 20.6			3	CD	3
 20.9			4	CD	4
 20.988.12		1	CD	1
-200			96	CD	96
+200			98	CD	98
 200,000			21	CD	21
 200,000-share		2	JJ	2
 200-300			1	CD	1
@@ -1805,7 +1679,7 @@ $7.95			1	CD	1
 2082.1			1	CD	1
 209,000			1	CD	1
 20\/32			1	32	1
-20p			1	CD	1
+20p			2	JJ	2
 20s			1	CD	1
 20th			5	JJ	5
 21			56	CD	56
@@ -1865,7 +1739,7 @@ $7.95			1	CD	1
 219.27			1	CD	1
 21\/32			4	32	4
 21st			3	JJ	3
-22			58	CD	58
+22			61	CD	61
 22,336			1	CD	1
 22,925			1	CD	1
 22-acre			1	JJ	1
@@ -1889,7 +1763,7 @@ $7.95			1	CD	1
 220-yards		1	NNS	1
 220.45			1	CD	1
 2200			2	CD	2
-221			4	CD	4
+221			5	CD	5
 221-person		1	JJ	1
 221.4			1	CD	1
 221.61			1	CD	1
@@ -1918,8 +1792,8 @@ $7.95			1	CD	1
 229.03			1	CD	1
 22\/32			7	32	7
 22nd			2	CD	1	JJ	1
-23			71	CD	71
-23%			1	CD	1
+23			72	CD	72
+23%			1	4	1
 23*F1			1	CD	1
 23,000			1	CD	1
 23,275			1	CD	1
@@ -1943,7 +1817,7 @@ $7.95			1	CD	1
 23.8			3	CD	3
 23.9			1	CD	1
 230			8	CD	8
-230,000			1	CD	1
+230,000			2	CD	2
 230-215			1	CD	1
 230-person		1	JJ	1
 231			2	CD	2
@@ -1951,7 +1825,7 @@ $7.95			1	CD	1
 232			3	CD	3
 232.12			1	CD	1
 232.4			1	CD	1
-232m			1	CD	1
+232m			1	4	1
 233			1	CD	1
 233,000			2	CD	2
 234			1	CD	1
@@ -1976,6 +1850,7 @@ $7.95			1	CD	1
 238.3			1	CD	1
 23\/32			2	32	2
 24			61	CD	61
+24%			1	CD	1
 24,000			5	CD	5
 24,985,000		1	CD	1
 24,999			1	CD	1
@@ -2027,7 +1902,7 @@ $7.95			1	CD	1
 249.68			1	CD	1
 24\/32			2	32	2
 24th			1	JJ	1
-25			157	CD	157
+25			158	CD	158
 25,000			18	CD	18
 25-mile			1	JJ	1
 25-year-old		3	JJ	3
@@ -2051,7 +1926,7 @@ $7.95			1	CD	1
 250-170			1	JJ	1
 250.2			1	CD	1
 2500			1	CD	1
-250g			1	CD	1
+250g			1	JJ	1
 251			3	CD	3
 251.2			1	CD	1
 251.8			1	CD	1
@@ -2070,8 +1945,8 @@ $7.95			1	CD	1
 259			1	CD	1
 2596.72			3	CD	3
 25\/32			1	32	1
-25lb			1	CD	1
-25p			1	CD	1
+25lb			1	JJ	1
+25p			1	JJ	1
 25th			3	JJ	3
 26			58	CD	58
 26,000			1	CD	1
@@ -2122,7 +1997,7 @@ $7.95			1	CD	1
 2692.65			1	CD	1
 2697.58			1	CD	1
 26th			1	NNP	1
-27			47	CD	47
+27			48	CD	48
 27,000			2	CD	2
 27,500			1	CD	1
 27-March		1	NNP	1
@@ -2203,7 +2078,7 @@ $7.95			1	CD	1
 289			1	CD	1
 2890			1	CD	1
 28th			1	JJ	1
-29			50	CD	50
+29			48	CD	48
 29,700			1	CD	1
 29-2			1	CD	1
 29-inch			1	JJ	1
@@ -2230,10 +2105,10 @@ $7.95			1	CD	1
 29year			1	JJ	1
 2:25			1	CD	1
 2:43			1	CD	1
-2A			1	CD	1
+2A			1	8	1
 2\/32			12	32	12
-2lb			2	CD	2
-3			165	CD	158	LS	7
+2lb			2	JJ	2
+3			164	CD	157	LS	7
 3,000			17	CD	17
 3,000,000		1	CD	1
 3,027,330		1	CD	1
@@ -2260,6 +2135,7 @@ $7.95			1	CD	1
 3-for-1			2	JJ	2
 3-for-2			3	JJ	3
 3-inch			1	JJ	1
+3-mile-wide		1	JJ	1
 3.0			1	CD	1
 3.00			1	CD	1
 3.01			1	CD	1
@@ -2292,7 +2168,7 @@ $7.95			1	CD	1
 3.36			1	CD	1
 3.375			2	CD	2
 3.39			1	CD	1
-3.3m			1	CD	1
+3.3m			1	4	1
 3.4			15	CD	15
 3.40			2	CD	2
 3.41			1	CD	1
@@ -2336,7 +2212,7 @@ $7.95			1	CD	1
 3.92			1	CD	1
 3.95			2	CD	2
 3.97			1	CD	1
-30			348	CD	348
+30			352	CD	352
 30%-owned		1	JJ	1
 30,000			13	CD	13
 30,180			1	CD	1
@@ -2364,7 +2240,7 @@ $7.95			1	CD	1
 30.84			1	CD	1
 30.9			1	CD	1
 30.96			1	CD	1
-300			69	CD	69
+300			72	CD	72
 300,000			5	CD	5
 300-113			1	CD	1
 300-a-share		4	JJ	4
@@ -2373,7 +2249,8 @@ $7.95			1	CD	1
 300.1			1	CD	1
 3000			3	CD	3
 300ZX			3	NNP	3
-300ft			1	CD	1
+300ft			1	JJ	1
+300th			1	JJ	1
 301			2	CD	2
 302,000			1	CD	1
 303			1	CD	1
@@ -2388,10 +2265,10 @@ $7.95			1	CD	1
 309			5	CD	5
 3090			2	CD	2
 30\/32			1	32	1
-30p			1	CD	1
+30p			1	JJ	1
 30s			2	CD	1	NNS	1
-30th			3	JJ	3
-31			115	CD	115
+30th			3	CD	1	JJ	1	NNP	1
+31			114	CD	114
 31,143			1	CD	1
 31,329			1	CD	1
 31,777			1	CD	1
@@ -2420,7 +2297,7 @@ $7.95			1	CD	1
 318			2	CD	2
 318.79			1	CD	1
 319.75			1	CD	1
-31st			1	CD	1
+31st			1	NNP	1
 32			24	CD	24
 32,000			1	CD	1
 32-a-share		2	JJ	2
@@ -2518,7 +2395,7 @@ $7.95			1	CD	1
 349			1	CD	1
 349,900			1	CD	1
 349-0126		1	CD	1
-35			61	CD	61
+35			64	CD	64
 35,000			4	CD	4
 35,000-to-$50,000	1	CD	1
 35-hour			2	JJ	2
@@ -2668,8 +2545,9 @@ $7.95			1	CD	1
 38.75			1	CD	1
 38.875			1	CD	1
 38.9			1	CD	1
-380			7	CD	7
+380			8	CD	8
 380.80			1	CD	1
+381			1	CD	1
 381,000			1	CD	1
 382			1	CD	1
 382-37			1	CD	1
@@ -2710,11 +2588,11 @@ $7.95			1	CD	1
 3\/32			10	32	10
 3\/4			153	4	153
 3\/8			84	8	84
-3ft			1	CD	1
-3lb			1	CD	1
-3pm			1	CD	1
+3ft			1	JJ	1
+3lb			1	8	1
+3pm			1	4	1
 3rd-biggest		1	JJ	1
-4			138	CD	134	LS	4
+4			134	CD	129	LS	5
 4%			1	CD	1
 4,000			11	CD	11
 4,090,000		1	CD	1
@@ -2783,7 +2661,7 @@ $7.95			1	CD	1
 4.93			1	CD	1
 4.97			1	CD	1
 4.99			1	CD	1
-40			163	CD	163
+40			164	CD	164
 40,000			9	CD	9
 40,800			1	CD	1
 40-foot			2	JJ	2
@@ -2805,7 +2683,7 @@ $7.95			1	CD	1
 400-500			1	CD	1
 400-day			1	JJ	1
 400-member		1	JJ	1
-400-mph			1	CD	1
+400-mph			1	JJ	1
 400.0			1	CD	1
 400.4			1	CD	1
 4000			1	CD	1
@@ -2818,7 +2696,7 @@ $7.95			1	CD	1
 405.9			1	CD	1
 406			1	CD	1
 406,000			1	CD	1
-40p			1	CD	1
+40p			1	JJ	1
 40s			1	CD	1
 40th			1	JJ	1
 41			27	CD	27
@@ -2870,7 +2748,7 @@ $7.95			1	CD	1
 428,000			1	CD	1
 429			1	CD	1
 429.9			1	CD	1
-42m			1	CD	1
+42m			1	JJ	1
 42nd			1	NNP	1
 43			26	CD	26
 43%-owned		2	JJ	2
@@ -2884,7 +2762,7 @@ $7.95			1	CD	1
 43.5			1	CD	1
 43.50			4	CD	4
 43.6			1	CD	1
-43.7%			1	CD	1
+43.7%			1	8	1
 43.75			1	CD	1
 43.875			2	CD	2
 430			4	CD	4
@@ -2909,7 +2787,7 @@ $7.95			1	CD	1
 44.8			1	CD	1
 44.875			1	CD	1
 44.92			1	CD	1
-440			1	CD	1
+440			2	CD	2
 440.99			1	CD	1
 4400			1	CD	1
 441.1			1	CD	1
@@ -3054,7 +2932,7 @@ $7.95			1	CD	1
 4\/32			6	32	6
 4s			1	CD	1
 4th			4	JJ	4
-5			168	CD	166	LS	2
+5			165	CD	163	LS	2
 5,000			43	CD	43
 5,000-room		1	JJ	1
 5,200			2	CD	2
@@ -3138,11 +3016,11 @@ $7.95			1	CD	1
 5.95			1	CD	1
 5.99			1	CD	1
 5/7			1	CD	1
-50			248	CD	248
-50%			1	CD	1
+50			250	CD	250
+50%			2	CD	2
 50%-leveraged		1	JJ	1
 50%-state-owned		1	JJ	1
-50,000			35	CD	35
+50,000			36	CD	36
 50,085			1	CD	1
 50-100			2	CD	2
 50-50			4	CD	1	JJ	3
@@ -3163,8 +3041,8 @@ $7.95			1	CD	1
 50.875			2	CD	2
 50.9			1	CD	1
 50.9375			1	CD	1
-500			156	CD	156
-500,000			28	CD	28
+500			158	CD	158
+500,000			29	CD	29
 500,004			1	CD	1
 500-Stock		4	NNP	4
 500-seat		1	JJ	1
@@ -3172,7 +3050,7 @@ $7.95			1	CD	1
 500.20			1	CD	1
 500.26			1	CD	1
 5000			3	CD	3
-500cc			1	CD	1
+500cc			1	JJ	1
 501			2	CD	2
 502			1	CD	1
 502,000			1	CD	1
@@ -3183,7 +3061,7 @@ $7.95			1	CD	1
 507			1	CD	1
 508			1	CD	1
 50\/50			1	50	1
-50p			2	CD	2
+50p			3	CD	1	JJ	1	NNS	1
 50th			3	JJ	3
 50thats			1	JJ	1
 51			39	CD	39
@@ -3209,7 +3087,7 @@ $7.95			1	CD	1
 518			2	CD	2
 518.7			1	CD	1
 519			1	CD	1
-52			16	CD	16
+52			17	CD	17
 52%-36			1	CD	1
 52,000			2	CD	2
 52-page			1	JJ	1
@@ -3242,7 +3120,7 @@ $7.95			1	CD	1
 528.56			1	CD	1
 529			1	CD	1
 529.32			1	CD	1
-52nd			2	CD	2
+52nd			2	NNS	2
 53			16	CD	16
 53%-owned		1	JJ	1
 53-45			1	JJ	1
@@ -3304,7 +3182,7 @@ $7.95			1	CD	1
 555.5			1	CD	1
 557			2	CD	2
 557.7			1	CD	1
-56			16	CD	16
+56			17	CD	17
 56,500			1	CD	1
 56,565,000		1	CD	1
 56,900			1	CD	1
@@ -3365,7 +3243,7 @@ $7.95			1	CD	1
 598			3	CD	3
 599.1			1	CD	1
 5:30			1	CD	1
-5?			1	CD	1
+5?			1	JJ	1
 5\/16			8	16	8
 5\/32			5	32	5
 5\/8			88	8	88
@@ -3403,7 +3281,7 @@ $7.95			1	CD	1
 6.25			11	CD	11
 6.26			1	CD	1
 6.3			9	CD	9
-6.30			5	CD	5
+6.30			6	CD	6
 6.30.			1	CD	1
 6.31			1	CD	1
 6.36			1	CD	1
@@ -3499,6 +3377,7 @@ $7.95			1	CD	1
 632			2	CD	2
 633.8			1	CD	1
 635			1	CD	1
+636			1	CD	1
 637.7			1	CD	1
 639.9			1	CD	1
 64			16	CD	16
@@ -3512,7 +3391,7 @@ $7.95			1	CD	1
 645			1	CD	1
 645,000			2	CD	2
 648.2			2	CD	2
-65			36	CD	36
+65			37	CD	37
 65,000			2	CD	2
 65,200			1	CD	1
 65.4			2	CD	2
@@ -3578,7 +3457,7 @@ $7.95			1	CD	1
 694,000			1	CD	1
 6\/2			7	2	7
 6\/32			1	32	1
-7			138	CD	138
+7			139	CD	139
 7,000			5	CD	5
 7,400			1	CD	1
 7,440			1	CD	1
@@ -3649,7 +3528,7 @@ $7.95			1	CD	1
 7.78			6	CD	6
 7.79			2	CD	2
 7.8			5	CD	5
-7.8%			1	CD	1
+7.8%			1	JJ	1
 7.80			3	CD	3
 7.82			1	CD	1
 7.84			1	CD	1
@@ -3671,7 +3550,7 @@ $7.95			1	CD	1
 7.98			4	CD	4
 7.986			1	CD	1
 7.99			2	CD	2
-70			79	CD	79
+70			80	CD	80
 70,000			8	CD	8
 70,315,000		1	CD	1
 70,765			1	CD	1
@@ -3848,8 +3727,8 @@ $7.95			1	CD	1
 7\/16			24	16	24
 7\/32			5	32	5
 7\/8			88	8	88
-7th			1	CD	1
-8			281	CD	281
+7th			1	JJ	1
+8			277	CD	277
 8%			1	CD	1
 8,000			10	CD	10
 8,200			1	CD	1
@@ -3861,6 +3740,7 @@ $7.95			1	CD	1
 8,839			1	CD	1
 8,930,000		1	CD	1
 8-10			1	CD	1
+8-10,000		1	CD	1
 8-11			1	CD	1
 8-2			1	CD	1
 8-9			2	CD	2
@@ -4105,7 +3985,7 @@ $7.95			1	CD	1
 8\/32			3	32	3
 8th			2	JJ	2
 9			130	CD	130
-9%			1	CD	1
+9%			1	JJ	1
 9,000			4	CD	4
 9,118			1	CD	1
 9,232			1	CD	1
@@ -4143,7 +4023,7 @@ $7.95			1	CD	1
 9.53			1	CD	1
 9.55			1	CD	1
 9.58			1	CD	1
-9.5m.			1	CD	1
+9.5m.			1	JJ	1
 9.6			5	CD	5
 9.62			1	CD	1
 9.625			1	CD	1
@@ -4197,7 +4077,7 @@ $7.95			1	CD	1
 917			1	CD	1
 918			1	CD	1
 919			1	CD	1
-92			8	CD	8
+92			9	CD	9
 92%-owned		1	JJ	1
 92-14			1	CD	1
 92.2			1	CD	1
@@ -4219,7 +4099,7 @@ $7.95			1	CD	1
 932			1	CD	1
 933			1	CD	1
 934,242			1	CD	1
-93W			1	CD	1
+93W			1	4	1
 94			6	CD	6
 94,243			1	CD	1
 94,425,000		1	CD	1
@@ -4317,12 +4197,12 @@ $7.95			1	CD	1
 9:30			5	CD	5
 9\/16			14	16	14
 9\/32			4	32	4
-9th			2	CD	2
-:			1038	:	1038
-;			918	:	918
-?			1025	.	1025
+9th			2	CD	1	JJ	1
+:			1046	:	1046
+;			922	:	922
+?			1076	.	1076
 @			2	IN	1	SYM	1
-A			1470	DT	1423	NN	10	NNP	37
+A			1525	DT	1478	NN	9	NNP	38
 A$			11	$	11
 A&E			1	NNP	1
 A's			2	NNP	2
@@ -4332,7 +4212,7 @@ A-level			2	NNP	2
 A.			85	JJ	1	NN	33	NNP	51
 A.B.C.			1	NNP	1
 A.C.			6	NNP	6
-A.D.			2	NNP	2
+A.D.			3	NNP	3
 A.G.			4	NNP	4
 A.H.			3	NNP	3
 A.I.R.			1	NNP	1
@@ -4345,7 +4225,7 @@ AB			9	NNP	9
 ABA			6	NNP	6
 ABB			5	NNP	5
 ABBIE			2	NNP	2
-ABC			37	NNP	37
+ABC			37	NN	2	NNP	35
 ABM			6	NNP	6
 ABORTION		2	NN	2
 ABUSE			1	NN	1
@@ -4368,7 +4248,7 @@ AFRICAN-AMERICAN	1	JJ	1
 AG			31	NNP	31
 AGI			1	NNP	1
 AGIP			5	NNP	5
-AGM			2	NNP	2
+AGM			2	NN	2
 AGREES			1	VBZ	1
 AH-64			1	NNP	1
 AIDS			29	NNP	29
@@ -4393,6 +4273,7 @@ AND			9	CC	8	NNP	1
 ANGELES			1	NNP	1
 ANNOUNCED		1	VBD	1
 ANNUITIES		1	NNS	1
+ANY			1	NNP	1
 AP-Dow			1	NNP	1
 AP600			1	NN	1
 APARTHEID		1	NNP	1
@@ -4408,7 +4289,7 @@ ASSETS			7	NNP	3	NNPS	4
 ASSOCIATES		1	NNPS	1
 ASSOCIATION		8	NNP	8
 AST			1	NNP	1
-AT			1	NNP	1
+AT			2	NNP	2
 AT&T			43	NN	1	NNP	42
 AT&T-sponsored		1	JJ	1
 AT*/NNP&T		1	NNP&T	1
@@ -4425,14 +4306,14 @@ Aalseth			1	NNP	1
 Aaron			3	NNP	3
 Ababa			1	NNP	1
 Abalkin			2	NNP	2
-Abbey			9	NNP	9
+Abbey			9	NN	1	NNP	8
 Abbie			6	NNP	6
 Abbot			2	NNP	2
 Abbott			1	NNP	1
 Abby			4	NNP	4
 Abdu			1	NNP	1
 Abe			1	NNP	1
-Aberdeen		2	NNP	2
+Aberdeen		3	NNP	3
 Abernethy		1	NNP	1
 Abidjan			1	NNP	1
 Abitibi-Price		1	NNP	1
@@ -4443,7 +4324,7 @@ Aborigines		1	NNS	1
 Abortion		4	NN	1	NNP	3
 Abortion-rights		1	NNS	1
 Abortions		1	NNS	1
-About			47	IN	34	RB	13
+About			49	IN	36	RB	13
 Above			4	IN	3	NNP	1
 Abraham			2	NNP	2
 Abrams			4	NNP	4
@@ -4453,7 +4334,7 @@ Abrupt			1	JJ	1
 Absaroka		1	NNP	1
 Abscam-indicted		1	JJ	1
 Absence			1	NNP	1
-Absent			1	VB	1
+Absent			1	JJ|IN	1
 Absolute		1	JJ	1
 Absolutely		2	RB	2
 Absorbed		1	VBN	1
@@ -4462,7 +4343,7 @@ Abuse			1	NN	1
 Abyss			1	NN	1
 Academic		3	NNP	3
 Academically		1	RB	1
-Academy			8	NNP	8
+Academy			8	NN	1	NNP	7
 Acadia			6	NNP	6
 Acapulco		1	NNP	1
 Acceptance		10	NNP	10
@@ -4495,7 +4376,7 @@ Acquisition		23	NNP	23
 Acre			1	VB	1
 Across			1	IN	1
 Acrylic			1	NNP	1
-Act			76	NN	2	NNP	74
+Act			77	NN	3	NNP	74
 Acting			2	NN	1	VBG	1
 Action			3	NNP	3
 Active			1	JJ	1
@@ -4505,7 +4386,7 @@ Acton			1	NNP	1
 Actors			1	NNS	1
 Actress			2	NN	1	NNP	1
 Actresses		1	NNS	1
-Acts			2	NNPS	1	NNS	1
+Acts			3	NNPS	1	NNS	2
 Actually		3	RB	3
 Acura			2	NNP	2
 Acuvue			1	NNP	1
@@ -4583,28 +4464,28 @@ Afghanistan		5	NNP	5
 Afif			1	NNP	1
 Aflatoxin		1	NN	1
 Afnasjev		1	NNP	1
-Africa			75	NNP	75
-African			54	JJ	42	NN	2	NNP	10
+Africa			80	NNP	80
+African			55	JJ	43	NN	2	NNP	10
 African-Americans	1	NNPS	1
 Africans		4	NNPS	4
 Africas			1	NNP	1
-Afrikaans		6	JJ	1	NNP	3	NNS	2
+Afrikaans		6	JJ	1	NN	1	NNP	2	NNPS	1	NNS	1
 Afrikaner		1	JJ	1
 Afrikaners		1	NNPS	1
-Afro			3	NNP	3
-After			190	IN	189	RB	1
+Afro			3	NN	2	NNP	1
+After			197	IN	196	RB	1
 Afterward		1	RB	1
-Afterwards		3	RB	3
+Afterwards		4	RB	4
 Aga			6	NNP	6
 Agadir			1	NNP	1
 Again			10	NNP	1	RB	9
 Against			4	IN	4
 Age			8	NNP	8
 Agencies		2	NNPS	2
-Agency			28	NN	2	NNP	26
+Agency			28	NN	3	NNP	25
 Agent			2	NNP	2
 Agents			3	NNPS	1	NNS	2
-Ages			2	NNPS	2
+Ages			3	NNPS	3
 Aggressive		1	JJ	1
 Agincourt		1	NNP	1
 Agnelli			15	NNP	15
@@ -4613,8 +4494,8 @@ Agnellis		2	NNPS	2
 Agnes			2	NNP	2
 Agnew			3	NNP	3
 Agoglia			1	NNP	1
-Agrarian		1	NNP	1
-Agreement		6	NN	3	NNP	3
+Agrarian		1	JJ	1
+Agreement		7	NN	3	NNP	4
 Agreements		2	NNP	1	NNS	1
 Agricola		1	NNP	1
 Agricultural		3	NNP	3
@@ -4657,6 +4538,7 @@ Aktiebolaget		1	NNP	1
 Akzo			30	NNP	30
 Al			7	NNP	7
 Al-Seyassah		1	NNP	1
+AlI			1	NNP	1
 Ala			2	NNP	2
 Ala.			3	NNP	3
 Alabama			4	NNP	4
@@ -4664,7 +4546,7 @@ Aladdin			1	NNP	1
 Alagoas			1	NNP	1
 Alain			1	NNP	1
 Alamos			2	NNP	2
-Alan			62	NNP	62
+Alan			63	NNP	63
 Alans			1	NNPS	1
 Alar			5	NN	1	NNP	4
 Alarcon			2	NNP	2
@@ -4673,9 +4555,10 @@ Alaska			13	NNP	13
 Alaskan			5	JJ	5
 Albanese		1	NNP	1
 Albanians		1	NNS	1
-Albany			4	NNP	4
+Albany			5	NNP	5
 Alberg			1	NNP	1
-Albert			21	NNP	21
+Albert			22	NNP	22
+Albert.I		1	NNP	1
 Alberta			7	NNP	7
 Albertville		1	NNP	1
 Albion			1	NNP	1
@@ -4690,8 +4573,9 @@ Aldred			1	NNP	1
 Aldwych			1	NNP	1
 Alec			3	NNP	3
 Alecs			1	NNP	1
+Alegre			1	NNP	1
 Alert			2	NNP	2
-Alex			14	NNP	14
+Alex			15	NNP	15
 Alexander		13	NNP	13
 Alexandra		3	NNP	3
 Alexandria		1	NNP	1
@@ -4708,28 +4592,29 @@ Algom			4	NNP	4
 Algonquin		1	NNP	1
 Ali			5	NNP	5
 Alice			14	NNP	14
+Alien			1	NNP	1
 Alis			1	NNP	1
 Alisarda		1	NNP	1
 Alisky			1	NNP	1
 Alistair		3	NNP	3
 Alito			2	NNP	2
 Aljian			1	NNP	1
-All			291	DT	177	NNP	2	PDT	111	RB	1
+All			307	DT	187	NNP	2	PDT	117	RB	1
 All-Time		1	NNP	1
 All-day			1	NNP	1
-Allah			4	NNP	4
+Allah			5	NNP	5
 Allan			5	NNP	5
 Allegany		1	NNP	1
 Alleghany		2	NNP	2
 Allegheny		1	NNP	1
 Allegro			1	NNP	1
-Allen			22	NNP	22
+Allen			24	NNP	24
 Allendale		1	NNP	1
 Allens			1	NNP	1
 Allentown		1	NNP	1
 Allergan		3	NNP	3
 Alley			6	NNP	6
-Alliance		8	NNP	8
+Alliance		8	NN	1	NNP	7
 Allianz			24	NNP	24
 Allied			17	JJ	2	NNP	15
 Allied-Signal		4	NNP	4
@@ -4760,7 +4645,7 @@ Alterations		1	NNS	1
 Alternative		1	NNP	1
 Alternatively		5	RB	5
 Althea			3	NNP	3
-Although		109	IN	109
+Although		110	IN	110
 Altimari		3	NNP	3
 Altman			3	NNP	3
 Alto			3	NNP	3
@@ -4797,11 +4682,11 @@ Amdahl			3	NNP	3
 Amdec			1	NNP	1
 Amelia			3	NNP	3
 Amelias			1	NNP	1
-Amen			2	UH	2
-Amendment		13	NNP	13
-America			183	NNP	183
+Amen			3	UH	3
+Amendment		13	NN	1	NNP	12
+America			188	NNP	188
 America!		1	CD	1
-American		481	JJ	247	NN	1	NNP	233
+American		488	JJ	253	NN	1	NNP	234
 American-built		2	JJ	2
 American-developed	1	JJ	1
 American-made		2	JJ	2
@@ -4809,8 +4694,8 @@ American-style		3	JJ	3
 Americana		4	NN	1	NNS	3
 Americanisms		1	NNPS	1
 Americanizing		1	VBG	1
-Americans		89	NNP	2	NNPS	67	NNS	19	VBP	1
-Americas		4	NNP	2	NNPS	2
+Americans		93	NNP	2	NNPS	69	NNS	21	VBP	1
+Americas		5	NNP	2	NNPS	3
 Ames			1	NNP	1
 Amesville		1	NNP	1
 Amex			2	NNP	2
@@ -4821,12 +4706,12 @@ Amid			3	IN	3
 Amin			1	NNP	1
 Amira			5	NNP	5
 Amirya			1	NNP	1
-Amiss			1	NNPS	1
+Amiss			1	NNP	1
 Amitai			1	NNP	1
 Amity			4	NN	1	NNP	3
 Amityvilles		1	NNPS	1
 Ammonium		1	NN	1
-Ammunition		1	NNP	1
+Ammunition		1	NN	1
 Amoco			9	NNP	9
 Amoebae			1	NNP	1
 Among			91	IN	91
@@ -4836,12 +4721,12 @@ Amparano		1	NNP	1
 Amphibians		1	NNPS	1
 Amritsar		1	NNP	1
 Amschel			1	NNP	1
-Amsterdam		12	NN	1	NNP	11
+Amsterdam		13	NN	1	NNP	12
 Amsterdam-Rotterdam	1	NNP	1
 Amtran			1	NNP	1
 Amvest			5	NNP	5
 Amy			6	NNP	6
-An			195	DT	195
+An			198	DT	198
 Ana			7	NNP	7
 Anac			1	NNP	1
 Anadarko		1	NNP	1
@@ -4857,7 +4742,7 @@ Anarchists		1	NNS	1
 Anatol			1	NNP	1
 Anchor			4	NNP	4
 Ancient			6	NNP	6
-And			378	CC	378
+And			381	CC	381
 Andean			2	JJ	2
 Andersen		5	NNP	5
 Anderson		10	NNP	10
@@ -4869,21 +4754,21 @@ Andre			1	NNP	1
 Andrea			2	NNP	2
 Andreas			1	NNP	1
 Andreotti		1	NNP	1
-Andrew			18	NNP	18
+Andrew			21	NNP	21
 Andrews			7	NNP	7
 Andrzej			1	NNP	1
 Andy			5	NNP	5
-Andy?			1	VBP	1
+Andy?			1	.the	1
 Andys			1	NNS	1
 Anfield			1	NNP	1
-Angela			3	NNP	3
+Angela			4	NNP	4
 Angeles			76	NNP	76
 Angeles-based		7	JJ	7
 Angelica		4	NNP	4
 Angell			3	NNP	3
 Angelo			10	NNP	10
 Angels			13	NNP	1	NNPS	12
-Angelus			1	NNS	1
+Angelus			1	NN	1
 Anger			3	NN	1	NNP	2
 Angevin			1	NNP	1
 Angier			1	NNP	1
@@ -4930,17 +4815,17 @@ Annual			4	JJ	3	NNP	1
 Annualized		8	JJ	2	VBN	6
 Annuities		1	NNS	1
 Annuity			1	NNP	1
-Another			65	DT	65
+Another			67	DT	67
 Ansco			1	NNP	1
 Anselm			1	NNP	1
 Answers			2	NNS	2
 Antar			17	NNP	17
-Antarctic		3	NNP	3
+Antarctic		3	NN	2	NNP	1
 Antarctica		4	NNP	4
 Antelope		1	NNP	1
 Anthong			1	NNP	1
-Anthony			26	NNP	26
-Anthonys		2	NNP	2
+Anthony			27	NNP	27
+Anthonys		3	NNP	3
 Anthropology		1	NNP	1
 Anti-Christ		1	NNP	1
 Anti-Deficiency		1	NNP	1
@@ -4965,14 +4850,14 @@ Anxiously		1	RB	1
 Any			48	DT	48
 Anybody			2	NN	2
 Anyone			13	NN	13
-Anything		7	NN	4	NNP	3
+Anything		7	NN	5	NNP	2
 Anyway			2	RB	2
 Aoun			5	NNP	5
 Aoyama			1	NNP	1
 Apache			1	NNP	1
-Apart			4	RB	4
+Apart			4	IN	1	RB	3
 Apartheid		1	NN	1
-Apes			1	NNP	1
+Apes			2	NNP	1	NNS	1
 Apicella		1	NNP	1
 Apogee			4	NNP	4
 Apollo			2	NNP	2
@@ -4995,19 +4880,19 @@ Applicants		2	NNPS	1	NNS	1
 Applied			9	NNP	9
 Apply			1	VB	1
 Appropriations		16	NNP	8	NNPS	6	NNS	2
-April			100	NNP	100
+April			100	NN	2	NNP	98
 Apt			1	JJ	1
 Aptitude		1	NNP	1
 Aquino			6	NNP	6
 Aquitaine		1	NNP	1
 Ara			1	NNP	1
-Arab			11	JJ	8	NNP	3
+Arab			12	JJ	9	NNP	3
 Arab-Jewish		1	JJ	1
 Arab-sponsored		3	JJ	3
 Arabi			1	NNP	1
 Arabia			7	NNP	7
 Arabian			3	NNP	3
-Arabic			9	NNP	9
+Arabic			11	NN	1	NNP	10
 Arabs			6	NNPS	5	NNS	1
 Arafat			9	NNP	9
 Aragon			1	NNP	1
@@ -5038,7 +4923,7 @@ Arctic			11	NNP	11
 Arden			1	NNP	1
 Ardennes		1	NNP	1
 Ardent			2	NNP	2
-Are			65	NNP	2	VBP	63
+Are			76	NNP	2	VBP	74
 Area			6	NNP	6
 Areas			1	NNS	1
 Arens			1	NNP	1
@@ -5060,7 +4945,7 @@ Arising			1	VBG	1
 Arista			1	NNP	1
 Ariz			4	NNP	4
 Ariz.			10	NNP	10
-Arizona			13	NNP	13
+Arizona			14	NNP	14
 Ark			4	NNP	4
 Ark.			2	NNP	2
 Arkansas		4	NNP	3	NNS	1
@@ -5076,12 +4961,12 @@ Armco			5	NNP	5
 Armed			7	JJ	1	NNP	4	VBN	2
 Armen			1	NNP	1
 Armenia			1	NNP	1
-Armenian		1	JJ	1
+Armenian		2	JJ	2
 Armonk			4	NNP	4
 Armored			1	NNP	1
 Arms			1	NNS	1
-Armstrong		17	NNP	17
-Army			37	NN	1	NNP	36
+Armstrong		18	NNP	18
+Army			39	NN	3	NNP	36
 Arnason			1	NNP	1
 Arnold			20	NNP	20
 Aromatiques		1	NNP	1
@@ -5101,9 +4986,9 @@ Arroyo			1	NNP	1
 Arsenal			2	NNP	2
 Arsenals		1	NNS	1
 Arseneault		1	NNP	1
-Art			29	NN	4	NNP	25
+Art			30	NN	4	NNP	26
 Arteries		1	NN	1
-Arthur			31	NNP	31
+Arthur			33	NNP	33
 Arthurian		1	JJ	1
 Arthurs			1	NNP	1
 Article			13	NN	2	NNP	11
@@ -5113,10 +4998,10 @@ Artist			8	NNP	8
 Artistes		1	NNP	1
 Artists			1	NNP	1
 Artra			1	NNP	1
-Arts			8	NNP	3	NNPS	2	NNS	3
+Arts			9	NNP	3	NNPS	3	NNS	3
 Artzt			1	NNP	1
 Arvind			1	NNP	1
-As			358	IN	346	NNS	1	RB	11
+As			363	IN	351	NNS	1	RB	11
 Asa			2	NNP	2
 Asada			1	NNP	1
 Asahi			2	NNP	2
@@ -5130,14 +5015,14 @@ Ash			6	NNP	6
 Ashcroft		1	NNP	1
 Asher			2	NNP	2
 Ashurst			5	NNP	5
-Asia			51	NN	2	NNP	49
+Asia			52	NN	2	NNP	50
 Asia-Pacific		5	JJ	1	NNP	4
-Asian			26	JJ	21	NNP	5
+Asian			27	JJ	22	NNP	5
 Asians			3	NNPS	3
 Asias			2	NNP	2
 Aside			6	RB	6
 Asil			1	NNP	1
-Ask			7	VB	7
+Ask			8	VB	8
 Aska			4	NNP	4
 Asked			12	VBD	1	VBN	11
 Asking			1	VBG	1
@@ -5157,7 +5042,7 @@ Assistant		8	JJ	2	NNP	6
 Associate		1	NNP	1
 Associated		4	NNP	4
 Associates		41	NNP	13	NNPS	27	NNS	1
-Association		113	NN	3	NNP	110
+Association		113	NN	5	NNP	108
 Association-College	1	NNP	1
 Assume			3	VB	3
 Assuming		4	VBG	4
@@ -5168,7 +5053,7 @@ Astec			1	NNP	1
 Astoria			1	NNP	1
 Astors			1	NNP	1
 Aswan			1	NNP	1
-At			346	IN	346
+At			360	IN	360
 Ate			1	VBD	1
 Ateliers		1	NNP	1
 Athena			3	NNP	3
@@ -5193,7 +5078,7 @@ Attendance		1	NNP	1
 Attendants		3	NNPS	2	NNS	1
 Attention		3	NN	2	VB	1
 Attic			2	JJ	2
-Attitudes		2	NNS	2
+Attitudes		4	NNS	4
 Attlee			2	NNP	2
 Attorney		14	NNP	14
 Attorneys		4	NNP	1	NNS	3
@@ -5209,22 +5094,22 @@ Audrey			2	NNP	2
 Audubon			1	NNP	1
 Auerbach		1	NNP	1
 Aug.			27	NNP	27
-August			155	NNP	155
+August			158	NNP	158
 Augusta			1	NNP	1
 Augustines		1	NNPS	1
-Aunt			9	NNP	9
-Auntie			1	NNP	1
+Aunt			9	NN	1	NNP	8
+Auntie			1	NN	1
 Aurora			3	NNP	3
 Aussie			1	JJ	1
 Austen			3	NNP	3
 Austin			9	NNP	9
 Austin-Rovers		1	NNP	1
-Australia		56	NNP	56
+Australia		58	NNP	58
 Australia-based		1	JJ	1
 Australian		41	JJ	35	NNP	6
 Australians		2	NNPS	2
 Australias		1	NNP	1
-Austria			4	NNP	4
+Austria			5	NNP	5
 Austrian		9	JJ	6	NNP	3
 Author			1	NN	1
 Authoritarian		2	JJ	2
@@ -5278,7 +5163,7 @@ Aztar			3	NNP	3
 Aztec			2	JJ	2
 Aztecs			1	NNPS	1
 Azucena			1	NNP	1
-B			39	NN	2	NNP	37
+B			40	NN	2	NNP	38
 B-1B			2	JJ	1	NN	1
 B-2			6	NN	2	NNP	4
 B-2s			1	NNS	1
@@ -5291,7 +5176,7 @@ B.J.			1	NNP	1
 B.Sc.			1	NNP	1
 B.V.			4	NNP	4
 B2			1	JJ	1
-BA			3	NNP	3
+BA			3	NN	3
 BA072			1	NN	1
 BA205			1	NNS	1
 BACKED			1	VBD	1
@@ -5306,7 +5191,7 @@ BANKERS			7	NNPS	1	NNS	6
 BART			4	NNP	4
 BASF			1	NNP	1
 BASIC			1	NNP	1
-BBC			17	NNP	17
+BBC			17	NN	2	NNP	15
 BBCs			2	NNP	2
 BBN			1	NNP	1
 BC			1	NNP	1
@@ -5345,7 +5230,7 @@ BROKERAGE		1	NN	1
 BROWN-FORMAN		1	NNP	1
 BSB			4	NNP	4
 BSN			2	NNP	2
-BSc			1	NNP	1
+BSc			1	NN	1
 BT			3	NNP	3
 BTR			2	NNP	2
 BUELL			1	NNP	1
@@ -5441,7 +5326,7 @@ Bancorp			24	NNP	24
 Bancorp.		1	NNP	1
 Bancroft		6	NNP	6
 Bancshares		1	NNP	1
-Band			1	NNP	1
+Band			1	NN	1
 Banerian		1	NNP	1
 Bang			3	NNP	3
 Bangalore		1	NNP	1
@@ -5463,9 +5348,9 @@ Bar			7	NNP	6	VB	1
 Barabolak		1	NNP	1
 Barba			1	NNP	1
 Barbados		1	NNP	1
-Barbara			16	NNP	16
+Barbara			20	NNP	20
 Barbaresco		1	NNP	1
-Barbary			1	NNP	1
+Barbary			1	JJ	1
 Barber			6	NNP	6
 Barber-Greene		1	NNP	1
 Barbera			1	NNP	1
@@ -5494,21 +5379,21 @@ Baris			1	NNP	1
 Barker			1	NNP	1
 Barksdale		1	NNP	1
 Barnard			2	NNP	2
-Barnes			2	NNP	2
+Barnes			3	NNP	3
 Barnett			8	NNP	8
 Barney			22	NNP	22
 Barneys			2	NNP	2
 Barnham			1	NNP	1
 Barnhardt		4	NNP	4
 Barnum			3	NNP	3
-Baron			5	NNP	5
+Baron			5	NN	1	NNP	4
 Baroness		1	NNP	1
 Barr			5	NNP	5
 Barrack			1	NNP	1
 Barred			1	VBN	1
 Barrel			1	NN	1
 Barrels			1	NNS	1
-Barrett			7	NNP	7
+Barrett			8	NNP	8
 Barretts		1	NNP	1
 Barrick			1	NNP	1
 Barrier			1	NNP	1
@@ -5519,7 +5404,7 @@ Barrow			1	NNP	1
 Barry			11	NNP	11
 Barrys			1	NNP	1
 Barter			1	NNP	1
-Barters			1	NNP	1
+Barters			1	NNS	1
 Barth			1	NNP	1
 Bartlett		22	NNP	22
 Bartok			1	NNP	1
@@ -5538,7 +5423,7 @@ Basil			4	NNP	4
 Basildon		1	NNP	1
 Basin			7	NNP	7
 Basingstoke		1	NNP	1
-Basket			2	NNP	2
+Basket			2	NN	1	NNP	1
 Basketball		1	NNP	1
 Baskets			2	NNS	2
 Bass			12	NNP	12
@@ -5557,7 +5442,7 @@ Battalion		1	NN	1
 Batten			1	NNP	1
 Batteries		1	NNS	1
 Battery			2	NNP	2
-Battle			10	NN	1	NNP	9
+Battle			11	NN	2	NNP	9
 Battle-tested		1	JJ	1
 Bauer			1	NNP	1
 Bauernfeind		1	NNP	1
@@ -5566,10 +5451,11 @@ Baum			9	NNP	9
 Bauman			4	NNP	4
 Bausch			3	NNP	3
 Bauser			1	NNP	1
+Bauxite			1	NNP	1
 Bavaria			1	NNP	1
 Baverstock		1	NNP	1
 Baxter			1	NNP	1
-Bay			38	NN	1	NNP	37
+Bay			39	NN	3	NNP	36
 Bayer			1	NNP	1
 Bayerische		2	NNP	2
 Baynton			1	NNP	1
@@ -5577,17 +5463,17 @@ Bayonne			1	NNP	1
 Bayreuth		1	NNP	1
 Be			34	VB	34
 Beach			11	NNP	11
-Beacon			3	NNP	3
+Beacon			4	NNP	4
 Beagle			1	NNP	1
 Beale			2	NNP	2
 Beall			2	NNP	2
 Beame			1	NNP	1
 Beamish			2	NNP	2
 Bear			32	NNP	32
-Bears			2	NNPS	1	NNS	1
+Bears			3	NNPS	1	NNS	2
 Bears-Cleveland		1	NNP	1
 Beat			2	NN	1	VB	1
-Beatles			8	NNP	8
+Beatles			9	NNP	9
 Beaton			1	NNP	1
 Beatrice		8	NN	1	NNP	7
 Beatty			1	NNP	1
@@ -5595,7 +5481,7 @@ Beaubien		1	NNP	1
 Beauforts		1	NNP	1
 Beaumont		2	NNP	2
 Beautiful		1	JJ	1
-Beauty			4	NN	2	NNP	2
+Beauty			4	NN	1	NNP	3
 Beautys			1	NNS	1
 Beauvoir		1	NNP	1
 Beaverbrook		1	NNP	1
@@ -5603,7 +5489,7 @@ Beaverbrooks		1	NNP	1
 Beaverton		1	NNP	1
 Bebear			6	NNP	6
 Bebop			1	NNP	1
-Because			72	IN	72
+Because			74	IN	74
 Becca			1	NNP	1
 Bechtel			4	NNP	4
 Beck			1	NNP	1
@@ -5613,8 +5499,9 @@ Beckman			3	NNP	3
 Beckwith		1	NNP	1
 Becky			1	NNP	1
 Become			1	VB	1
+Bedding			1	NN	1
 Bedford			3	NNP	3
-Bedouin			2	NNP	2
+Bedouin			2	NN	2
 Beds			1	NNS	1
 Beech			3	NNP	3
 Beech-Nut		1	NNP	1
@@ -5624,7 +5511,7 @@ Been			1	VBN	1
 Beer			2	NNP	2
 Beermann		1	NNP	1
 Beers			10	NNP	10
-Bees			3	NNS	3
+Bees			2	NNS	2
 Beethovens		1	NNP	1
 Beetles			1	NNPS	1
 Before			39	IN	39
@@ -5634,7 +5521,7 @@ Beghin-Say		5	NNP	5
 Beginning		3	NN	2	VBG	1
 Begins			1	VBZ	1
 Behave			1	VB	1
-Behind			9	IN	9
+Behind			10	IN	9	RB	1
 Behringwerke		1	NNP	1
 Beige			1	NNP	1
 Beijing			28	NNP	28
@@ -5646,7 +5533,7 @@ Beit			1	NNP	1
 Bel			1	NNP	1
 Belding			1	NNP	1
 Belfast			5	NNP	5
-Belgian			8	JJ	8
+Belgian			9	JJ	9
 Belgians		1	NNPS	1
 Belgium			13	NN	1	NNP	12
 Belgrade		1	JJ	1
@@ -5657,14 +5544,15 @@ Belinda			1	NNP	1
 Bell			39	NNP	39
 BellSouth		26	NNP	26
 BellSouth-LIN		2	JJ	1	NNP	1
+Bella			1	NNP	1
 Belli			1	NNP	1
 Bello			2	NNP	2
 Bellows			1	NNP	1
-Bells			2	NNP	1	NNPS	1
+Bells			2	NNP	2
 Belo			5	NNP	5
 Belo-Universal		1	NNP	1
 Belov			1	NNP	1
-Below			5	IN	1	NNP	2	RB	2
+Below			5	IN	2	NNP	2	RB	1
 Belt			3	NNP	3
 Belth			1	NNP	1
 Beltway			1	NNP	1
@@ -5676,7 +5564,7 @@ Benackova		1	NNP	1
 Benazir			1	NNP	1
 Bendectin		2	NNP	2
 Bendix\/King		1	King	1
-Beneath			4	IN	4
+Beneath			5	IN	5
 Benedek			1	NNP	1
 Benedict		1	NNP	1
 Benedictine		2	JJ	2
@@ -5684,14 +5572,14 @@ Beneficial		3	NNP	3
 Benefit			7	NNP	6	VB	1
 Benelux			1	NNP	1
 Bengal			2	NNP	2
-Bengali			1	NNP	1
+Bengali			1	NN	1
 Benito			1	NNP	1
 Benjamin		9	NNP	9
 Benn			15	NNP	15
 Bennett			7	NNP	7
 Bennigsen-Foerder	1	NNP	1
 Benninger		1	NNP	1
-Benns			3	NNP	3
+Benns			4	NNP	4
 Benny			1	NNP	1
 Bennys			1	NNP	1
 Bens			1	NNP	1
@@ -5753,6 +5641,7 @@ Bettencourt		1	NNP	1
 Better			8	JJR	1	NNP	6	RBR	1
 Betting			1	NNP	1
 Betty			4	NNP	4
+Bettys			1	NNP	1
 Between			11	IN	11
 Beulah			1	NNP	1
 Beverly			15	NNP	15
@@ -5760,14 +5649,14 @@ Bevmark			1	NNP	1
 Bew			1	NNP	1
 Beware			3	VB	3
 Bewkes			1	NNP	1
-Beynon			1	NNP	1
+Beynon			2	NNP	2
 Beyond			6	IN	5	NNP	1
 Bhagat			1	NNP	1
 Bhutto			3	NNP	3
 Biaggi			1	NNP	1
 Bianchi			3	NNP	3
 Bias			5	NNP	5
-Bible			6	NNP	6
+Bible			7	NNP	7
 Biblical		1	NNP	1
 Bick			2	NNP	2
 Bickford		1	NNP	1
@@ -5779,6 +5668,7 @@ Bids			4	NNS	4
 Biedermann		1	NNP	1
 Bien			1	NNP	1
 Bierbower		1	NNP	1
+Bierces			1	NNP	1
 Big			202	JJ	23	NNP	179
 Bigger			2	JJR	2
 Bignold			1	NNP	1
@@ -5787,7 +5677,7 @@ Bikini			1	NNP	1
 Bilanz			2	NNP	2
 Bilbao			1	NNP	1
 Bilbrey			1	NNP	1
-Bill			69	NN	3	NNP	65	VB	1
+Bill			71	NN	5	NNP	65	VB	1
 Billie			1	NNP	1
 Billings		1	NNS	1
 Billions		1	NNS	1
@@ -5798,7 +5688,7 @@ Binchy			1	NNP	1
 Bindal			1	NNP	1
 Binder			1	NNP	1
 Bindweed		3	NNP	3
-Bing			2	NNP	2
+Bing			3	NNP	3
 Binghamton		1	NNP	1
 Bintas			1	NNP	1
 Bio-Technology		2	NNP	2
@@ -5813,9 +5703,10 @@ Biondi-Santi		2	NNP	2
 Biosource		2	NNP	2
 Biotechnical		2	NNP	2
 Biotechnology		3	NN	1	NNP	2
+Birdbrains		1	VBZ	1
 Birds			3	NNS	3
 Birmingham		27	NNP	27
-Birmingham?		1	NNP	1
+Birmingham?		1	.the	1
 Birminghams		1	NNP	1
 Birns			1	NNP	1
 Birtcher		3	NNP	3
@@ -5828,7 +5719,7 @@ Bismarckian		1	JJ	1
 Biting			1	VBG	1
 Bitter			1	NNP	1
 Bixby			7	NNP	7
-Black			28	NNP	28
+Black			29	NNP	29
 Blackhawk		1	NNP	1
 Blackie			1	NNP	1
 Blackpool		1	NNP	1
@@ -5856,7 +5747,7 @@ Bloch			1	NNP	1
 Block			3	NNP	3
 Blockbuster		5	NNP	5
 Bloedel			2	NNP	2
-Blood			6	NNP	6
+Blood			7	NNP	7
 Bloody			1	NNP	1
 Bloom			1	NNP	1
 Bloomingdale		22	NNP	22
@@ -5874,7 +5765,7 @@ Blumstein		2	NNP	2
 Blunt			1	NNP	1
 Boake			1	NNP	1
 Boaks			1	NNP	1
-Board			227	NN	2	NNP	225
+Board			228	NN	3	NNP	225
 Board-listed		1	JJ	1
 Boards			1	NNPS	1
 Boat			2	NNP	2
@@ -5917,9 +5808,10 @@ Bolshevik		2	JJ	2
 Bolsover		1	NNP	1
 Bolstering		1	VBG	1
 Bolton			2	NNP	2
-Bombay			8	NNP	8
+Bombay			9	NNP	9
 Bomberg			1	NNP	1
 Bombergs		1	NNPS	1
+Bombs			1	NNP	1
 Bon			2	NNP	2
 Bonasera		1	NNP	1
 Bonaventure		1	NNP	1
@@ -5941,11 +5833,11 @@ Bookin			1	NNP	1
 Books			6	NNPS	1	NNS	5
 Booksellers		1	NNS	1
 Bookshop		1	NNP	1
-Boom			2	JJ	1	NNP	1
+Boom			2	JJ	1	NN	1
 Boon			8	NNP	8
 Boon-Sanwa		1	NNP	1
 Boone			4	NNP	4
-Boons			2	NNP	2
+Boons			2	NNP	1	NNPS	1
 Boorse			1	NNP	1
 Boost			1	VB	1
 Booth			2	NNP	2
@@ -5954,7 +5846,7 @@ Booz-Allen		1	NNP	1
 Borax			1	NNP	1
 Bordeaux		4	NNP	4
 Borden			4	NNP	4
-Border			1	NNP	1
+Border			1	NN	1
 Bordetella		1	NN	1
 Boredom			1	NN	1
 Boren			21	NNP	21
@@ -5963,7 +5855,7 @@ Borgs			1	NNS	1
 Boris			3	NNP	3
 Born			1	VBN	1
 Borneo			1	NNP	1
-Borough			3	NNP	3
+Borough			3	NN	1	NNP	2
 Boroughs		1	NNP	1
 Borrowers		1	NNS	1
 Bosch			1	NNP	1
@@ -5979,7 +5871,7 @@ Bostik			2	NNP	2
 Boston			123	NNP	123
 Boston-based		1	JJ	1
 Bosworth		1	NNP	1
-Both			105	CC	8	DT	97
+Both			111	CC	4	DT	106	PDT	1
 Botham			3	NNP	3
 Bother			1	VB	1
 Bottle			1	NN	1
@@ -6008,26 +5900,26 @@ Bowery			1	NNP	1
 Bowes			1	NNP	1
 Bowing			2	VBG	2
 Bowker			1	NNP	1
-Bowl			4	NNP	4
+Bowl			5	NN	1	NNP	4
 Bowles			2	NNP	2
 Bowling			1	NNP	1
 Bowman			5	NNP	5
 Box			2	NNP	2
 Boxer			1	NNP	1
-Boxers			1	NNP	1
-Boy			3	NNP	3
+Boxers			1	NNS	1
+Boy			3	NNP	1	UH	2
 Boyd			13	NNP	13
 Boyer			5	NNP	5
-Boylan			15	JJ	1	NNP	14
+Boylan			17	JJ	1	NNP	16
 Boylans			3	NNP	2	NNPS	1
-Boys			9	NNP	1	NNPS	4	NNS	4
+Boys			10	NNP	1	NNPS	5	NNS	4
 Bozell			1	NNP	1
 Brace			2	NNP	2
 Brad			2	NNP	2
 Braddock		1	NNP	1
 Bradford		1	NNP	1
-Bradley			8	NNP	8
-Bradshaw		3	NNP	3
+Bradley			9	NNP	9
+Bradshaw		4	NNP	4
 Bradstreet		10	NNP	10
 Brady			35	NNP	35
 Brady-type		1	JJ	1
@@ -6051,7 +5943,7 @@ Brand-Name		1	NN	1
 Brandenburg		1	NNP	1
 Brando			1	NNP	1
 Brands			20	NNP	15	NNPS	5
-Brandt			1	NNP	1
+Brandt			2	NNP	2
 Braniff			7	NNP	7
 Brannon			1	NNP	1
 Branson			1	NNP	1
@@ -6067,7 +5959,7 @@ Brazil			35	NNP	35
 Brazilian		14	JJ	14
 Brazilians		2	NNS	2
 Brazils			2	NNP	2
-Bread			1	NNP	1
+Bread			2	NNP	2
 Break			1	NN	1
 Breakey			1	NNP	1
 Breaking		1	VBG	1
@@ -6091,7 +5983,7 @@ Brenmor			1	NNP	1
 Brent			4	NNP	4
 Breslin			1	NNP	1
 Breslow			1	NNP	1
-Breslows		1	NNP	1
+Breslows		1	NNS	1
 Brest			1	NNP	1
 Bretz			3	NNP	3
 Breuners		1	NNP	1
@@ -6119,12 +6011,12 @@ Bridgeville		1	NNP	1
 Bridson			1	NNP	1
 Brief			1	NN	1
 Brigade			1	NNP	1
-Brigadier		1	NNP	1
+Brigadier		1	NN	1
 Briggs			3	NNP	3
 Briggss			1	NNP	1
 Brigham			2	NNP	2
 Bright			2	JJ	2
-Brighton		7	NNP	7
+Brighton		8	NNP	8
 Brilliant		2	JJ	1	NNP	1
 Bring			3	VB	2	VBG	1
 Brisk			1	JJ	1
@@ -6132,10 +6024,10 @@ Brissette		2	NNP	2
 Bristol			13	NNP	13
 Bristol-Myers		4	NNP	4
 Brit			1	NN	1
-Britain			191	NNP	191
-Britains		27	NNP	23	NNS	4
+Britain			200	NNP	200
+Britains		30	NNP	22	NNPS	2	NNS	6
 Britannica		2	NNP	2
-British			356	JJ	263	NN	2	NNP	86	NNPS	4	NNS	1
+British			362	JJ	267	NN	2	NNP	88	NNPS	4	NNS	1
 British-based		1	JJ	1
 British-born		1	JJ	1
 British-owned		2	JJ	2
@@ -6144,25 +6036,27 @@ Briton			3	NN	3
 Britons			1	NNS	1
 Brits			1	NNS	1
 Britta			1	NNP	1
+Brittany		1	NNP	1
 Brittens		1	NNP	1
 Britto			1	NNP	1
 Britton			1	NNP	1
 Brixton			4	NNP	4
 Brizola			2	NNP	2
 Broad			7	JJ	1	NNP	6
-Broadcast		3	NNP	3
+Broadcast		3	NN	1	NNP	2
 Broadcasters		2	NNPS	1	NNS	1
 Broadcasting		25	NNP	25
 Broader			1	JJR	1
 Broadhurst		1	NNP	1
 Broadstar		1	NNP	1
-Broadway		7	NNP	7
+Broadway		8	NNP	8
 Broberg			3	NNP	3
-Brochure.Which		1	NNP	1
+Brochure.Which		1	WDT	1
 Brockville		2	NNP	2
 Broder			2	NNP	2
 Broderick		7	NNP	7
-Brody			34	NNP	34
+Brody			39	NNP	39
+Brodys			1	NNP	1
 Broiler			1	NN	1
 Broken			1	NNP	1
 Brokerage		1	NNP	1
@@ -6179,9 +6073,9 @@ Bronner			2	NNP	2
 Bronstein		1	NNP	1
 Bronx			8	NNP	8
 Bronx...		1	NNP	1
-Brook			5	NNP	5
-Brooke			5	NNP	5
-Brookes			1	NNP	1
+Brook			6	NNP	6
+Brooke			6	NNP	6
+Brookes			1	NNPS	1
 Brookings		4	NNP	4
 Brooklyn		16	NNP	16
 Brooks			37	NNP	37
@@ -6210,7 +6104,7 @@ Brunswick		10	NNP	10
 Brunswig		1	NNP	1
 Brush			2	NNP	2
 Brussels		21	NNP	21
-Brussels?		1	CD	1
+Brussels?		1	.a	1
 Brutus			2	NNP	2
 Bryan			2	NNP	2
 Bryant			4	NNP	4
@@ -6232,7 +6126,7 @@ Bucknell		1	NNP	1
 Buckton			1	NNP	1
 Bud			3	NNP	3
 Budapest		3	JJS	1	NNP	2
-Buddha			1	NNP	1
+Buddha			1	NN	1
 Buddhas			1	NNP	1
 Buddhist		5	JJ	3	NN	1	NNP	1
 Buddy			8	NNP	8
@@ -6252,10 +6146,11 @@ Bugs			2	NNP	1	NNS	1
 Buhrmann-Tetterode	1	NNP	1
 Buick			19	NNP	19
 Builders		2	NNPS	2
-Building		8	NN	2	NNP	5	VBG	1
+Building		9	NN	2	NNP	6	VBG	1
 Buildings		2	NNS	2
 Built			1	VBN	1
 Bull			4	NNP	4
+Bulldozers		1	NNS	1
 Buller			1	NNP	1
 Bulletin		1	NNP	1
 Bullhead		1	NNP	1
@@ -6276,7 +6171,7 @@ Bunting			2	NNP	2
 Buoyed			1	VBN	1
 Burbank			1	NNP	1
 Burchette		1	NNP	1
-Bureau			21	NNP	21
+Bureau			21	NN	1	NNP	20
 Bureaucrats		1	NNS	1
 Bureaus			1	NNP	1
 Bureaux			1	NNP	1
@@ -6295,6 +6190,7 @@ Burkina			1	NNP	1
 Burlington		4	NNP	4
 Burma			1	NNP	1
 Burmah			2	NNP	2
+Burmese			1	NNP	1
 Burnand			2	NNP	2
 Burned			1	VBN	1
 Burnham			31	NNP	31
@@ -6315,13 +6211,13 @@ Busby			2	NNP	2
 Busch			2	NNP	2
 Busey			1	NNP	1
 Bush			261	NNP	261
-Business		64	NN	10	NNP	54
+Business		64	NN	11	NNP	53
 Businesses		4	NNS	4
 Businessland		3	NNP	3
 Businessmen		1	NNS	1
 Bussieres		2	NNP	2
 Buster			1	NNP	1
-But			1243	CC	1241	IN	1	NNP	1
+But			1244	CC	1242	IN	1	NNP	1
 Butane			1	NN	1
 Butch			1	NNP	1
 Butcher			1	NNP	1
@@ -6334,13 +6230,13 @@ Buxton			1	NNP	1
 Buy			7	VB	7
 Buyer			1	NNP	1
 Buyers			3	NNS	3
-Buying			13	NN	3	NNP	3	VBG	7
+Buying			14	NN	3	NNP	3	VBG	8
 Buzaruto		2	NNP	2
 Buzzy			1	NNP	1
-By			160	IN	159	RB	1
+By			164	IN	163	RB	1
 Byrd			5	NNP	5
 Byrne			1	NNP	1
-Byron			5	NNP	5
+Byron			6	NNP	6
 Byzantine		2	JJ	2
 C			17	$	1	NNP	16
 C$			64	$	64
@@ -6368,7 +6264,7 @@ CAMPAIGN		1	NNP	1
 CANCER			1	NNP	1
 CAPITAL			2	NN	1	NNP	1
 CAT			6	NNP	6
-CB			3	NNP	3
+CB			3	NN	2	NNP	1
 CBI			2	NNP	2
 CBOE			6	NNP	6
 CBS			102	NNP	102
@@ -6397,7 +6293,7 @@ CHIEF			1	JJ	1
 CHW			1	NNP	1
 CIA			21	NNP	21
 CIAs			1	NNP	1
-CID			4	NNP	4
+CID			4	NN	1	NNP	3
 CLAUSE			2	NN	2
 CLEARS			1	VBZ	1
 CLUBS			1	NNS	1
@@ -6434,7 +6330,7 @@ CRRES			2	NNP	2
 CRS			1	NNP	1
 CRs			1	NNS	1
 CS			14	NNP	14
-CSE			1	NNP	1
+CSE			1	NN	1
 CSEs			2	NNS	2
 CSFB			1	NNP	1
 CSV			1	NNP	1
@@ -6449,15 +6345,15 @@ Cab			1	NNP	1
 Cabbage			1	NNP	1
 Cabernet		6	NNP	6
 Cabernets		2	NNPS	2
-Cabinet			10	NNP	10
-Cabinets		1	NNP	1
+Cabinet			12	NNP	12
+Cabinets		2	NNPS	2
 Cable			14	NNP	14
 Cablevision		3	NNP	3
 Cadbury			2	NNP	2
 Cadillac		2	NN	1	NNP	1
 Cadogan			2	NNP	2
 Cadwell			1	NNP	1
-Caesar			2	NNP	2
+Caesar			3	NNP	3
 Caesarean		1	JJ	1
 Caesars			4	NNP	4
 Caf			1	NNP	1
@@ -6475,7 +6371,8 @@ Cal			3	NNP	3
 CalFed			1	NNP	1
 Calabria)		1	NNP	1
 Calais			1	NNP	1
-Calcutta		7	NNP	7
+Calcutta		8	NNP	8
+Calcutta?		1	.a	1
 Calder			1	NNP	1
 Calderwood		2	NNP	2
 Caldor			2	NNP	2
@@ -6487,19 +6384,19 @@ Caliban			1	NNP	1
 Calif			23	NNP	23
 Calif.			69	NNP	69
 Calif.-based		3	JJ	3
-California		159	NNP	159
+California		160	NNP	160
 California-based	4	JJ	4
 California-bashing	1	JJ	1
 Californian		1	NN	1
 Californians		3	NNPS	3
 Call			10	NN	1	VB	9
 Callaghan		2	NNP	2
-Callaghans		2	NNP	1	NNPS	1
+Callaghans		2	NNPS	2
 Callas			1	NNP	1
 Called			2	VBN	2
 Callendar		2	NNP	2
 Callender		2	NNP	2
-Calls			1	NNS	1
+Calls			1	NNP	1
 Callum			1	NNP	1
 Calm			1	NNP	1
 Calvary			1	NNP	1
@@ -6510,7 +6407,7 @@ Cambria			11	NNP	11
 Cambrian		1	NNP	1
 Cambridge		16	NNP	16
 Camden			2	NNP	2
-Camels			3	NNS	3
+Camels			3	NNPS	2	NNS	1
 Camera			2	NN	1	NNP	1
 Camerino		1	NNP	1
 Cameron			3	NNP	3
@@ -6528,12 +6425,12 @@ Campeau-related		1	JJ	1
 Campion			1	NNP	1
 Camry			1	NNP	1
 Camrys			1	NNPS	1
-Can			73	MD	73
+Can			81	MD	81
 Canaan			2	NNP	2
 Canada			108	NNP	108
-Canadian		114	JJ	96	NN	1	NNP	17
+Canadian		116	JJ	98	NN	1	NNP	17
 Canadians		2	NNPS	2
-Canal			4	NNP	4
+Canal			4	NN	1	NNP	3
 Canalettos		1	NNP	1
 Cananea			4	NNP	4
 Canberra		1	NNP	1
@@ -6542,9 +6439,11 @@ Candace			1	NNP	1
 Candela			6	NNP	6
 Candice			1	NNP	1
 Candid			1	JJ	1
+Candidates		1	NNS	1
 Candlelight		1	NNP	1
 Candlestick		5	NNP	5
 Candu			1	NNP	1
+Candy			1	NN	1
 Canepa			3	NNP	3
 Canetti			1	NNP	1
 Cannell			3	NNP	3
@@ -6552,17 +6451,17 @@ Canner			1	NNP	1
 Cannes			3	NNP	3
 Cannon			2	NNP	2
 Cano			1	NNP	1
-Canon			2	NNP	2
+Canon			2	NN	1	NNP	1
 Canonie			3	NNP	3
-Cant			9	JJ	1	NN	7	NNP	1
+Cant			10	JJ	1	NN	8	NNP	1
 Canter			2	NNP	2
 Cantobank		1	NNP	1
-Canton			6	NNP	6
+Canton			8	NNP	8
 Cantor			4	NNP	4
-Canyon			2	NNP	2
+Canyon			2	NN	1	NNP	1
 Cap			1	NNP	1
 Capacitors		1	NNP	1
-Cape			9	NNP	9
+Cape			9	NN	1	NNP	8
 Capel			8	NNP	8
 Capistrano		1	NNP	1
 Capital			105	NN	6	NNP	99
@@ -6571,14 +6470,14 @@ Capitalists		1	NNPS	1
 Capitol			14	NNP	14
 Caprice			1	NNP	1
 Capricorn		1	NNP	1
-Captain			17	NN	4	NNP	12	VBP	1
+Captain			18	NN	5	NNP	12	VBP	1
 Car			9	NN	6	NNP	3
 Cara			3	NNP	3
 Caracas			1	NNP	1
 Caravans		1	NNPS	1
 Carballo		1	NNP	1
 Carbide			6	NNP	6
-Carbohydrate		1	NNP	1
+Carbohydrate		1	NN	1
 Carbon			6	NNP	6
 Card			3	NN	1	NNP	2
 Cardiff			9	NNP	9
@@ -6588,9 +6487,10 @@ Cardinal		2	NNP	2
 Cardinals		1	NNPS	1
 Care			28	NN	1	NNP	27
 Care-Unit		1	NNP	1
-Career			1	NNP	1
+Career			2	NNP	2
 Careers			3	NNS	3
 Careful			3	JJ	2	NNP	1
+Carefully		1	RB	1
 Caretaker		1	NNP	1
 Carew			4	NNP	4
 Carews			1	NNPS	1
@@ -6601,7 +6501,7 @@ Carisbrook		1	NNP	1
 Carl			24	NNP	24
 Carla			5	NNP	5
 Carleson		1	NNP	1
-Carlesons		2	NNP	2
+Carlesons		2	NNS	2
 Carlo			1	NNP	1
 Carlos			12	NNP	12
 Carlton			2	NNP	2
@@ -6634,9 +6534,11 @@ Carried			1	VBN	1
 Carrier			1	NN	1
 Carriers		1	NNP	1
 Carroll			1	NNP	1
+Carrots			1	NNS	1
 Carrying		1	VBG	1
-Cars			8	NNPS	3	NNS	5
+Cars			8	NNPS	2	NNS	6
 Carson			4	NNP	4
+Carstairs		1	NNP	1
 Carstens		1	NNP	1
 Carston			1	NNP	1
 Carter			10	NNP	10
@@ -6670,12 +6572,13 @@ Cassel			1	NNP	1
 Cassell			1	NNP	1
 Cassidy			1	NNP	1
 Cassidys		1	NNP	1
-Casson			7	NN	1	NNP	6
-Cassons			3	NNP	3
+Cassius			1	NNP	1
+Casson			8	NNP	8
+Cassons			3	NNP	2	NNS	1
 Cast			2	VBN	2
 Castaneda		2	NNP	2
-Caste			1	NNP	1
-Castle			23	NNP	23
+Caste			1	NN	1
+Castle			26	NN	1	NNP	25
 Castleman		1	NNP	1
 Castles			2	NNP	2
 Castors			1	NNS	1
@@ -6687,6 +6590,7 @@ Catalogue		1	NNP	1
 Catalyst		1	NNP	1
 Catania			1	NNP	1
 Cataracts		1	NNS	1
+Catarina		1	NNP	1
 Catastrophe		1	NN	1
 Catastrophic		3	NNP	3
 Catch			1	VB	1
@@ -6698,11 +6602,11 @@ Caters			1	NNP	1
 Cath			1	NNP	1
 Cathcart		6	NNP	6
 Cathdral		1	NNP	1
-Cathedral		6	NN	1	NNP	5
+Cathedral		6	NN	2	NNP	4
 Catherall		3	NNP	3
 Catherine		4	NNP	4
 Catherines		1	NNPS	1
-Catholic		25	JJ	10	NNP	15
+Catholic		25	JJ	10	NN	1	NNP	14
 Catholics		7	NNPS	7
 Cathryn			2	NNP	2
 Cathy			3	NNP	3
@@ -6749,7 +6653,7 @@ Centerior		2	NNP	2
 Centers			8	NNP	2	NNPS	5	VBZ	1
 Centigrade.Whats	1	NNS	1
 Central			44	JJ	6	NNP	38
-Centre			6	NNP	6
+Centre			7	NNP	7
 Centres			1	NNP	1
 Cents			2	NNS	2
 Centurion		1	NNP	1
@@ -6759,7 +6663,7 @@ Ceramics		1	NNPS	1
 Cereal			2	NN	2
 Ceremonies		1	NNS	1
 Cerf			1	NNP	1
-Certain			15	JJ	14	NNP	1
+Certain			16	JJ	15	NNP	1
 Certainly		9	RB	9
 Certificate		1	NNP	1
 Certificates		3	NNP	1	NNPS	2
@@ -6771,7 +6675,7 @@ Chabrol			2	NNP	2
 Chad			1	NNP	1
 Chadha			1	NNP	1
 Chafic			1	NNP	1
-Chairman		119	NN	2	NNP	117
+Chairman		120	NN	3	NNP	117
 Chairman-Elect		1	NNP	1
 Chairmans		2	NNP	2
 Chairmanship		1	NNP	1
@@ -6789,22 +6693,22 @@ Champion		6	NNP	6
 Championship		2	NNP	2
 Championships		2	NNPS	2
 Chance			1	NNP	1
-Chancellor		32	NNP	32
+Chancellor		33	NNP	33
 Chancellors		2	NNP	2
 Chancery		6	NNP	6
 Chandler		6	NNP	6
 Chandross		3	NNP	3
-Chang			4	NNP	4
-Change			1	NNP	1
+Chang			5	NNP	4	VBG	1
+Change			2	NNP	1	VB	1
 Change-ringing		1	NN	1
 Changes			3	NNS	3
 Changing		2	VBG	2
-Channel			16	NNP	16
+Channel			17	NN	2	NNP	15
 Channing		1	NNP	1
 Channon			1	NNP	1
 Chaos			2	NNP	2
 Chapdelaine		1	NNP	1
-Chapel			5	NNP	5
+Chapel			6	NN	2	NNP	4
 Chapin			1	NNP	1
 Chaplin			6	NNP	6
 Chapman			3	NNP	3
@@ -6817,18 +6721,18 @@ Charge			1	VB	1
 Charing			1	NNP	1
 Charities		3	NNPS	1	NNS	2
 Charity			4	NN	4
-Charles			65	NNP	65
+Charles			66	NNP	66
 Charleston		4	NNP	4
 Charlet			1	NNP	1
 Charlie			18	NNP	18
 Charlies		1	NNP	1
-Charlotte		17	NNP	17
+Charlotte		18	NNP	18
 Charlottes		1	NNP	1
 Charlottesville		1	NNP	1
 Charlton		1	NNP	1
 Charltons		2	NNPS	2
 Charnwood		1	NNP	1
-Charter			11	NNP	11
+Charter			11	NN	1	NNP	10
 Chartered		1	NNP	1
 Chartwell		1	NNP	1
 Chase			17	NNP	17
@@ -6848,12 +6752,13 @@ Cheez			1	NNP	1
 Chekhov			3	NNP	3
 Chekhovian		1	JJ	1
 Chelsea			3	NNP	3
-Cheltenham		2	NNP	2
+Cheltenham		3	NNP	3
 Chem			1	NNP	1
 ChemPlus		1	NNP	1
 Chemex			1	NNP	1
 Chemfix			1	NNP	1
 Chemical		69	NN	1	NNP	68
+Chemically		1	RB	1
 Chemicals		4	NNPS	2	NNS	2
 Chemistry		1	NNP	1
 Cheney			4	NNP	4
@@ -6892,12 +6797,12 @@ Chicago-area		1	JJ	1
 Chicago-based		7	JJ	7
 Chicago-style		1	JJ	1
 Chichester		1	NNP	1
-Chief			19	JJ	1	NNP	18
+Chief			21	JJ	1	NN	1	NNP	19
 Chiefs			3	NNP	1	NNPS	2
 Child			6	NN	2	NNP	4
 Child-bearing		1	NNP	1
 Child-raising		1	VBG	1
-Children		37	NNP	5	NNS	32
+Children		41	NNP	3	NNS	38
 Childrens		9	NNP	9
 Childs			1	NNP	1
 Chile			10	NNP	10
@@ -6906,13 +6811,13 @@ Chill			1	NNP	1
 Chilmark		1	NNP	1
 Chilver			1	NNP	1
 Chimpanzees		1	NNS	1
-China			117	NNP	117
+China			118	NNP	118
 China-Japan		1	NNP	1
 China-bound		1	JJ	1
 Chinas			6	NNP	6
 Chincha			1	NNP	1
 Chinchon		1	NNP	1
-Chinese			78	JJ	54	NN	2	NNP	11	NNPS	11
+Chinese			80	JJ	54	NN	4	NNP	13	NNPS	9
 Chinese-American	1	NNP	1
 Ching			1	NNP	1
 Chiodo			1	NNP	1
@@ -6926,10 +6831,11 @@ Chisholm		2	NNP	2
 Chiswick		1	NNP	1
 Chiusano		3	NNP	3
 Chivas			11	NNP	11
+Chloe			1	NNP	1
 Chocolate		1	NN	1
 Choice			2	NN	2
 Choices			1	NNS	1
-Choir			1	NNP	1
+Choir			1	NN	1
 Chojnowski		2	NNP	2
 Cholet			2	NNP	2
 Cholet-Dupont		2	NNP	2
@@ -6947,21 +6853,22 @@ Chris			11	NNP	11
 Chriss			1	NNP	1
 Christ			10	NNP	10
 Christensen		2	NNP	2
-Christian		37	JJ	25	NNP	12
-Christian?		1	NN	1
+Christian		39	JJ	27	NNP	12
+Christian?		1	.the	1
 Christianity		9	NNP	9
 Christians		2	NNS	2
 Christie		6	NNP	6
 Christies		6	NNP	6
 Christina		2	NNP	2
 Christine		4	NNP	4
-Christmas		55	NNP	55
+Christmas		56	NNP	56
+Christmas!		1	NN	1
 Christmas-like		1	JJ	1
 Christmas.Oh		1	NNP	1
-Christmas?		1	NN	1
+Christmas?		1	.the	1
 Christmases		2	NNS	2
 Christmastree		1	NNP	1
-Christopher		36	NNP	36
+Christopher		37	NNP	37
 Christs			1	NNS	1
 Christy			1	NNP	1
 Chrome			1	NNP	1
@@ -6972,15 +6879,16 @@ Chuck			7	NNP	6	VB	1
 Chugai			12	NNP	12
 Chugoku			1	NNP	1
 Chung			10	NNP	10
-Church			45	NN	1	NNP	44
+Church			47	NN	4	NNP	43
 Churchill		10	NNP	10
-Churchills		2	NNP	2
+Churchills		3	NNP	3
 Churchs			1	NNP	1
 Chutney			1	NNP	1
 Chyron			1	NNP	1
 Cia.			1	NNP	1
 Ciba			4	NNP	4
 Ciba-Geigy		10	NNP	10
+Cicely			1	UH	1
 Cichan			1	NNP	1
 Cie			7	NNP	7
 Cie.			5	NNP	5
@@ -6999,7 +6907,7 @@ Cinema			1	NNP	1
 Cinematografica		1	NNP	1
 Cineplex		15	NNP	15
 Cinzano			1	NNP	1
-Circle			7	NNP	7
+Circle			7	NN	1	NNP	6
 Circuit			13	NN	1	NNP	12
 Circulation		2	NNP	2
 Circulations		1	NNP	1
@@ -7020,7 +6928,7 @@ City-type		1	JJ	1
 Citys			1	NNP	1
 Civic			1	NNP	1
 Civil			19	JJ	2	NNP	17
-Civilian		1	NNP	1
+Civilian		1	NN	1
 Civilization		2	NN	2
 Civilized		1	JJ	1
 Clad			1	VBN	1
@@ -7030,15 +6938,16 @@ Claimants		2	NNPS	2
 Claiming		1	VBG	1
 Claire			1	NNP	1
 Clairton		2	NNP	2
+Clapham			1	NNP	1
 Clara			2	NNP	2
 Claravallis		1	NNP	1
 Clarcor			4	NNP	4
-Clare			1	NNP	1
+Clare			2	NNP	2
 Clarence		1	NNP	1
 Clares			3	NNP	3
 Clarinet		1	NN	1
 Clarion			1	NNP	1
-Clarissa		15	NNP	15
+Clarissa		16	NNP	16
 Clarissas		4	NNP	3	NNS	1
 Clark			11	NNP	11
 Clarke			1	NNP	1
@@ -7048,19 +6957,19 @@ Class			32	NN	10	NNP	22
 Classic			1	JJ	1
 Classics		2	NNS	2
 Classroom		1	NNP	1
-Claud			7	JJ	2	NNP	5
-Claude			14	NNP	14
+Claud			7	NNP	7
+Claude			18	NNP	18
 Claudia			1	NNP	1
 Claudio			5	NNP	5
 Claudius		2	NNP	2
 Clauds			1	NNP	1
-Claus			1	NNP	1
+Claus			2	NNP	2
 Clause			3	NN	3
 Claws			1	NNS	1
 Clay			2	NNP	2
 Clays			1	NNP	1
 Clayton			4	NNP	4
-Clean			4	NNP	4
+Clean			5	NNP	5
 Cleaning		1	VBG	1
 Cleanliness		1	NN	1
 Cleanse			1	VB	1
@@ -7072,16 +6981,16 @@ Clements		3	NNP	3
 Cleopatra		1	NNP	1
 Cleveland		16	NNP	16
 Cleveland-based		2	JJ	2
-Cleves			1	NNP	1
+Cleves			1	NNS	1
 Clients			2	NNS	2
 Cliff			5	NNP	5
 Clifford		4	NNP	4
 Climate			1	NN	1
 Climbing		2	NN	1	VBG	1
-Clinic			3	NNP	3
+Clinic			3	NN	1	NNP	2
 Clint			2	NNP	2
 Clinton			2	NNP	2
-Clive			5	NNP	5
+Clive			6	NNP	6
 Clives			1	NNP	1
 Close			4	JJ	1	NNP	2	RB	1
 Closed			1	JJ	1
@@ -7092,18 +7001,19 @@ Cloth			1	NN	1
 Clothiers		2	NNP	2
 Clothing		2	NNP	2
 Cloudcroft		1	NNP	1
-Clouds			4	NNP	1	NNS	3
+Clouds			5	NNP	1	NNS	4
 Clow			1	NNP	1
 Club			13	NNP	13
 Clubs			3	NNP	1	NNPS	1	NNS	1
 Cluff			1	NNP	1
-Clyde			1	NNP	1
+Clyde			2	NNP	2
 Co			106	NNP	106
 Co-operatives		1	NNP	1
 Co.			600	NNP	600
 Coal			4	NN	1	NNP	3
-Coalition		2	NNP	2
-Coast			31	NNP	31
+Coal-burning		1	NNP	1
+Coalition		2	NN	1	NNP	1
+Coast			31	NN	2	NNP	29
 Coast-based		1	JJ	1
 Coates			6	NNP	6
 Coatings		1	NNP	1
@@ -7112,10 +7022,10 @@ Cobb			1	NNP	1
 Cobbs			1	NNS	1
 Cobra			1	NNP	1
 Coburn			1	NNP	1
-Coca-Cola		12	NNP	12
+Coca-Cola		12	NN	1	NNP	11
 Coche-Dury		1	NNP	1
 Cockburn		3	NNP	3
-Cockney			3	NNP	3
+Cockney			3	NN	1	NNP	2
 Cockneys		1	NNS	1
 Cocoa			2	NNP	2
 Cocom			6	NNP	6
@@ -7123,6 +7033,7 @@ Coconut			1	NNP	1
 Coda			6	NNP	6
 Code			15	NNP	15
 Codifying		1	VBG	1
+Coe			1	NNP	1
 Coelho			4	NNP	4
 Coen			1	NNP	1
 Coeur			1	NNP	1
@@ -7139,6 +7050,7 @@ Coincident		1	JJ	1
 Coins			1	NNS	1
 Coke			14	NN	1	NNP	13
 Cokely			2	NNP	2
+Coker			1	NNP	1
 Col.			2	NNP	2
 Colchester		1	NNP	1
 Cold			6	NNP	6
@@ -7157,16 +7069,16 @@ Coliseum		1	NN	1
 Collagen		1	NNP	1
 Collateralized		1	NNP	1
 Colleagues		1	NNS	1
-Collection		1	NNP	1
+Collection		1	NN	1
 Collector		1	NNP	1
 Colleen			1	NNP	1
-College			19	NNP	19
+College			20	NN	2	NNP	18
 Colleges		2	NNP	1	NNS	1
 Collegiate		1	NNP	1
 Colley			1	NNP	1
 Colleys			1	NNS	1
-Colliery		1	NNP	1
-Collindeane		1	NNP	1
+Colliery		1	NN	1
+Collindeane		2	NNP	2
 Collins			8	NNP	8
 Collision		1	NNP	1
 Collor			3	NNP	3
@@ -7176,7 +7088,7 @@ Colodny			1	NNP	1
 Colombia		10	NNP	10
 Colombian		10	JJ	10
 Colon			1	NN	1
-Colonel			19	NNP	19
+Colonel			20	NN	1	NNP	19
 Colonels		5	NNP	4	NNS	1
 Colonial		4	NNP	4
 Colonialism		1	NNP	1
@@ -7186,31 +7098,31 @@ Colony			2	NN	1	NNP	1
 Color			7	NNP	7
 Colorado		15	NNP	15
 Colorliner		1	NNP	1
-Colour			1	NNP	1
+Colour			1	NN	1
 Colourful		1	NNP	1
 Colson			1	NNP	1
 Columbia		102	NNP	102
 Columbian		1	JJ	1
 Columbus		5	NNP	5
 Columbuss		1	NNP	1
-Column			1	NNP	1
+Column			1	NN	1
 Com			1	NNP	1
 Combe			1	NNP	1
 Combined		4	JJ	1	NNP	1	VBN	2
 Combo			2	NNP	2
 Combustion		3	NNP	3
 Comcast			1	NNP	1
-Come			21	VB	6	VBN	15
+Come			26	VB	5	VBN	21
 Comeau			1	NNP	1
-Comedy			2	NNP	2
+Comedy			2	NN	1	NNP	1
 Comerica		1	NNP	1
 Comes			2	VBZ	2
 Comex			2	NNP	2
 Comfort			2	NN	1	NNP	1
 Coming			2	VBG	2
 Comission		1	NNP	1
-Commandant		1	NNP	1
-Commander		3	NNP	3
+Commandant		1	NN	1
+Commander		3	NN	1	NNP	2
 Commanders		1	NNP	1
 Commandment		1	NN	1
 Commando		1	NNP	1
@@ -7221,18 +7133,18 @@ Comments		4	NNS	4
 Commerce		54	NNP	54
 Commercial		12	JJ	7	NN	1	NNP	4
 Commerzbank		5	NNP	5
-Commission		112	FW	1	NNP	111
+Commission		113	FW	1	NN	1	NNP	111
 Commissioner		3	NNP	3
 Commissioners		1	NNPS	1
 Commissioning		1	VBG	1
 Commissions		3	NNS	3
-Committee		87	NN	1	NNP	86
+Committee		90	NN	3	NNP	87
 Committees		2	NNS	2
 Commodities		10	NNP	3	NNS	7
 Commodity		16	NN	1	NNP	15
 Commodore		1	NNP	1
-Common			16	JJ	11	NNP	5
-Commons			29	NN	2	NNP	9	NNPS	18
+Common			17	JJ	12	NNP	5
+Commons			30	NN	2	NNP	10	NNPS	18
 Commonwealth		24	NNP	24
 Communication		12	NNP	12
 Communications		55	NNP	28	NNPS	27
@@ -7244,7 +7156,7 @@ Communities		1	NNS	1
 Community		45	NNP	45
 Compania		1	NNP	1
 Companies		19	NNP	1	NNPS	3	NNS	15
-Company			30	NN	12	NNP	18
+Company			31	NN	16	NNP	15
 Companys		1	NNP	1
 Compaq			29	NNP	28	VB	1
 Comparable		1	JJ	1
@@ -7254,7 +7166,7 @@ Compared		3	VBN	3
 Comparing		2	VBG	2
 Competes		1	VBZ	1
 Competing		1	VBG	1
-Competition		8	NN	8
+Competition		9	NN	9
 Competitors		1	NNS	1
 Compiled		1	VBN	1
 Complaints		2	NNS	2
@@ -7269,20 +7181,22 @@ Composer		1	NN	1
 Composite		21	NNP	21
 Compound		1	NN	1
 Compounding		1	VBG	1
-Comprehensive		21	JJ	1	NNP	20
+Comprehensive		21	JJ	1	NN	1	NNP	19
+Compromise		1	NNP	1
 Compromises		1	NNS	1
 Comptroller		4	NNP	4
-Computer		63	NN	1	NNP	62
+Computer		65	NN	1	NNP	64
 Computer-generated	1	JJ	1
 ComputerLand		1	NNP	1
-Computers		10	NNP	1	NNPS	3	NNS	6
+Computers		10	NNP	1	NNPS	4	NNS	5
+Computing		1	NNP	1
 Comsat			1	NNP	1
 Comtes			1	NNP	1
 ConAgra			1	NNP	1
 Conant			7	NNP	7
 Conasupo		6	NNP	6
 Concentrate		1	VB	1
-Conceptual		1	NNP	1
+Conceptual		1	JJ	1
 Conceptually		1	RB	1
 Concern			2	NN	2
 Concerned		2	JJ	1	VBN	1
@@ -7294,7 +7208,7 @@ Concertos		1	NNP	1
 Concessions		1	NNS	1
 Concocts		1	VBZ	1
 Concord			4	NNP	4
-Concorde		4	NNP	4
+Concorde		5	NNP	5
 Concurrence		1	NN	1
 Concurrent		1	JJ	1
 Conde			3	NNP	3
@@ -7305,11 +7219,12 @@ Conduct			1	NNP	1
 Conduits		1	NNS	1
 Cone			1	NNP	1
 Confectioner		1	NNP	1
-Confederation		5	NNP	5
+Confederate		1	JJ	1
+Confederation		5	NN	1	NNP	4
 Confederations		1	NNPS	1
 Confer			1	NNP	1
 Conferees		1	NNS	1
-Conference		18	NN	6	NNP	12
+Conference		18	NN	7	NNP	11
 Confession		1	NNP	1
 Confidence		2	NN	1	NNP	1
 Confidential		2	NNP	2
@@ -7325,7 +7240,7 @@ Conger			1	NNP	1
 Congo			5	NNP	5
 Congolese		1	JJ	1
 Congratulations		1	UH	1
-Congress		258	NNP	258
+Congress		259	NNP	259
 Congressional		12	JJ	4	NNP	8
 Congressman		2	NNP	2
 Congressmen		4	NNPS	1	NNS	3
@@ -7336,7 +7251,7 @@ Conn			12	NNP	12
 Conn.			30	NNP	30
 Conn.-based		3	JJ	3
 Conn.based		1	JJ	1
-Connally		1	NNP	1
+Connally		1	RB	1
 Connaught		14	NN	1	NNP	13
 Connect			1	VB	1
 Connecticut		17	NNP	17
@@ -7362,8 +7277,8 @@ Consequently		6	RB	6
 Conservancy		1	NNP	1
 Conservation		2	NNP	2
 Conservationists	1	NNS	1
-Conservative		19	JJ	15	NN	1	NNP	3
-Conservatives		16	NNPS	3	NNS	13
+Conservative		20	JJ	14	NN	2	NNP	4
+Conservatives		17	NNPS	3	NNS	14
 Conservatory		1	NNP	1
 Consider		9	VB	9
 Considerable		1	JJ	1
@@ -7412,11 +7327,11 @@ Contrary		2	JJ	2
 Contras			15	NNP	2	NNPS	12	NNS	1
 Contributing		1	VBG	1
 Contributions		1	NNS	1
-Control			38	NN	1	NNP	36	VB	1
-Controller		3	NNP	3
+Control			39	NN	1	NNP	37	VB	1
+Controller		3	NN	1	NNP	2
 Controls		2	NNP	2
 Convenience		7	JJ	1	NNP	6
-Convent			1	NNP	1
+Convent			1	NN	1
 Convention		4	NNP	4
 Conventional		1	JJ	1
 Conversation		2	NN	2
@@ -7427,7 +7342,7 @@ Convex			1	NNP	1
 Convict			1	NNP	1
 Convicts		1	NNS	1
 Conway			2	NNP	2
-Conways			1	NNP	1
+Conways			1	NNS	1
 Coogan			2	NNP	2
 Cook			7	NNP	7
 Cooke			1	NNP	1
@@ -7438,8 +7353,9 @@ Cooperation		2	NNP	2
 Cooperative		1	NNP	1
 Coopers			2	NNP	2
 Coor			1	NNP	1
+Coordination		1	NNP	1
 Coors			54	NNP	53	NNS	1
-Copenhagen		1	NNP	1
+Copenhagen		2	NNP	2
 Copernicus		1	NNP	1
 Copiague		1	NNP	1
 Copper			5	JJ	1	NN	3	NNP	1
@@ -7455,7 +7371,7 @@ Corbehem		1	NNP	1
 Cordelia		1	NNP	1
 CoreStates		1	NNP	1
 Corfu			2	NNP	2
-Corinne?		1	NN	1
+Corinne?		1	.the	1
 Corinthians		1	NNPS	1
 Cork			1	NNP	1
 Corn			4	NN	1	NNP	3
@@ -7473,7 +7389,7 @@ Coronets		1	NNPS	1
 Corp			111	NNP	111
 Corp.			753	NN	2	NNP	751
 Corporate		23	JJ	13	NNP	10
-Corporation		6	NNP	6
+Corporation		6	NN	2	NNP	4
 Corporations		2	NNS	2
 Corps			8	NNP	8
 Corps.			1	NNPS	1
@@ -7486,7 +7402,7 @@ Corrupt			3	NNP	3
 Corruption		1	NNP	1
 Corry			34	NNP	34
 Corsican		1	NNP	1
-Cortes			3	NNP	3
+Cortes			5	NNP	5
 Cortina			1	NNP	1
 Corton-Charlemagne	1	NNP	1
 Corvette		1	NNP	1
@@ -7507,19 +7423,19 @@ Cote			1	NNP	1
 Cotran			1	NNP	1
 Cott			1	NNP	1
 Cottage			2	NNP	2
-Cotton			8	NN	1	NNP	7
+Cotton			9	NN	1	NNP	8
 Cottrell		1	NNP	1
 Coudert			1	NNP	1
 Cougar			1	NNP	1
 Coughing		1	VBG	1
-Could			31	MD	31
-Council			54	NN	2	NNP	52
-Councillor		1	NNP	1
+Could			38	MD	38
+Council			55	NN	2	NNP	53
+Councillor		1	NN	1
 Councillors		1	NNS	1
-Councils		6	NNP	1	NNPS	1	NNS	4
+Councils		6	NNS	6
 Counsel			2	NNP	2
 Counsellors		1	NNS	1
-Count			3	NN	1	VBP	2
+Count			4	NN	1	VBP	3
 Counter			2	NNP	2
 Counterpoint		2	NN	2
 Countess		2	NN	2
@@ -7527,20 +7443,20 @@ Counting		1	VBG	1
 Countless		1	JJ	1
 Countries		5	NNP	1	NNPS	3	NNS	1
 Country			4	NN	2	NNP	2
-County			42	NNP	42
+County			42	NN	1	NNP	41
 Couples			1	NNS	1
 Coupon			1	NN	1
 Courant			1	NNP	1
 Course			1	NNP	1
-Court			111	NN	1	NNP	110
+Court			113	NN	1	NNP	112
 Courtaulds		13	NNP	13
 Courter			11	NNP	11
 Courting		1	VBG	1
 Courtis			1	NNP	1
 Courtney		1	NNP	1
-Courts			3	NNS	3
+Courts			4	NNS	4
 Covas			1	NNP	1
-Cove			1	NNP	1
+Cove			1	NN	1
 Covell			1	NNP	1
 Covent			1	NNP	1
 Coventry		3	NNP	3
@@ -7585,7 +7501,7 @@ Crazy			2	NNP	2
 Cream			3	NN	1	VB	2
 Created			1	VBN	1
 Creations		1	NNPS	1
-Creative		2	JJ	1	NNP	1
+Creative		2	JJ	2
 Creativity		1	NN	1
 Creator			1	NNP	1
 Credibility		1	NN	1
@@ -7593,7 +7509,7 @@ Credit			54	NN	5	NNP	48	VB	1
 CreditWatch		2	NNP	2
 Creditbank		1	NNP	1
 Cree			1	NNP	1
-Creek			15	NNP	15
+Creek			15	NN	1	NNP	14
 Crematorium		1	NNP	1
 Crescott		3	NNP	3
 Cresta			1	NNP	1
@@ -7601,13 +7517,14 @@ Crestmont		3	NNP	3
 Creswell		1	NNP	1
 Crete			3	NNP	3
 Crew			2	NNP	2
+Crewe			1	NNP	1
 Crewmembers		1	NNP	1
 Crickets		1	NNS	1
 Crime			6	NN	2	NNP	4
 Crimes			2	NNP	1	NNS	1
 Criminal		6	JJ	2	NNP	4
 Crimson			1	NNP	1
-Cringing		1	NN	1
+Cringing		1	VBG	1
 Crippling		1	JJ	1
 Crisco			1	NNP	1
 Crises			1	NNS	1
@@ -7620,16 +7537,16 @@ Criticism		3	NN	2	NNP	1
 Criticisms		1	NNP	1
 Critics			12	NNS	12
 Crocodiles		1	NNS	1
-Crocuses		1	NNS	1
+Crocuses		1	NNPS	1
 Croissier		1	NNP	1
 Crompton		1	NNP	1
 Cromwell		3	NNP	3
 Crone			1	NNP	1
 Cronkite		1	NNP	1
 Crook			1	NNP	1
-Crop			1	NNP	1
+Crop			2	NNP	2
 Crosby			1	NNP	1
-Croslands		1	NNP	1
+Croslands		1	NNPS	1
 Cross			20	NNP	20
 Crossland		11	NNP	11
 Crouched		1	VBN	1
@@ -7637,7 +7554,7 @@ Crow			1	NNP	1
 Crowds			3	NNP	2	NNS	1
 Crowe			2	NNP	2
 Crowell			1	NNP	1
-Crown			5	NNP	5
+Crown			6	NNP	6
 Crowntuft		3	NNP	3
 Croydon			2	NNP	2
 Crozier			2	NNP	2
@@ -7653,7 +7570,7 @@ Crutcher		1	NNP	1
 Crutzen			2	NNP	2
 Crystal			3	NNP	3
 Crystals		1	NNS	1
-Cuba			7	NNP	7
+Cuba			8	NNP	8
 Cuban			5	JJ	5
 Cubans			1	NNPS	1
 Cuckoo			1	NN	1
@@ -7664,7 +7581,7 @@ Cullinet		3	NNP	3
 Cullowhee		1	NNP	1
 Cult			2	NN	1	NNP	1
 Cultural		2	JJ	1	NNP	1
-Culture			11	NNP	11
+Culture			12	NNP	12
 Culver			2	NNP	2
 Cuomo			3	NNP	3
 Cup			11	NNP	11
@@ -7681,16 +7598,16 @@ Currier			1	NNP	1
 Curry			8	NNP	8
 Cursing			1	VBG	1
 Curt			1	NNP	1
-Curtain			3	NNP	3
+Curtain			3	NN	1	NNP	2
 Curtin			1	NNP	1
 Curtis			2	NNP	2
-Curzon			1	NNP	1
+Curzon			3	NNP	3
 Cushman			4	NNP	4
 Custers			1	NNP	1
 Custom			2	NNP	2
-Customers		1	NNS	1
+Customers		2	NNS	2
 Customized		1	JJ	1
-Customs			4	NNP	3	NNS	1
+Customs			5	NNP	4	NNS	1
 Cut			11	NNP	2	VB	9
 Cutbacks		1	NNP	1
 Cutlass			1	NNP	1
@@ -7705,7 +7622,7 @@ Cycling			2	NNP	2
 Cyclones		1	NNP	1
 Cymerau			1	NNP	1
 Cynthia			7	NNP	7
-Cynthias		1	NNP	1
+Cynthias		1	NNS	1
 Cypress			2	NNP	2
 Cypriots		1	NNPS	1
 Cyprus			3	NNP	3
@@ -7721,7 +7638,7 @@ D'Amico			1	NNP	1
 D'Arcy			1	NNP	1
 D-day			1	NNP	1
 D.			102	NNP	102
-D.A.			1	NNP	1
+D.A.			1	NN	1
 D.C			2	NNP	2
 D.C.			22	NNP	22
 D.C.-based		1	JJ	1
@@ -7780,7 +7697,7 @@ Da			1	NNP	1
 DaPuzzo			6	NNP	6
 Dab			1	NNP	1
 Dabney			1	NNP	1
-Dad			16	NNP	16
+Dad			17	NN	1	NNP	16
 Daddy			3	NNP	3
 Daddy!			1	NNP	1
 Daddys			1	NNS	1
@@ -7790,7 +7707,7 @@ Daewoo			1	NNP	1
 Daffodils		1	NNP	1
 Daffynition		3	NN	2	NNP	1
 Dagenham		2	NNP	2
-Daggers			1	NNS	1
+Daggers			1	NNP	1
 Dahl			2	NNP	2
 Dahlberg		1	NNP	1
 Dai-Ichi		5	NNP	5
@@ -7805,7 +7722,7 @@ Daimler-Benz		5	NNP	5
 Dain			1	NNP	1
 Dain-sponsored		1	JJ	1
 Daintry			3	NNP	3
-Dainty			1	NNP	1
+Dainty			1	NN	1
 Daisie			1	NNP	1
 Daisy			3	NNP	3
 Daiwa			6	NNP	6
@@ -7823,7 +7740,7 @@ Dallas-based		3	JJ	3
 Dalldorf		1	NNP	1
 Dalton			1	NNP	1
 Daly			9	NNP	9
-Dam			2	NNP	2
+Dam			2	NN	1	NNP	1
 Damascus		1	NNP	1
 Dame			4	NNP	4
 Damn			4	NNP	1	RB	2	UH	1
@@ -7852,7 +7769,7 @@ Darin			2	NNP	2
 Dark			5	JJ	2	NNP	3
 Darkhorse		3	NNP	3
 Darkness		1	NN	1
-Darley			2	NNP	2
+Darley			3	NNP	3
 Darling			2	NN	2
 Darlington		2	NNP	2
 Darman			6	NNP	6
@@ -7876,22 +7793,23 @@ Datson			1	NNP	1
 Datuk			1	NNP	1
 Dave			20	JJ	1	NNP	19
 Davenport		2	NNP	2
-David			128	NNP	128
+David			130	NNP	130
 David?Yes		1	NNS	1
 Davidge			1	NNP	1
 Davidovitch		1	NNP	1
 Davidow			1	NNP	1
-Davids			3	NNP	3
+Davids			4	NNP	4
 Davidson		2	NNP	2
 Davies			11	NNP	11
-Davis			35	NNP	35
-Davis?			1	CD	1
+Davis			38	NNP	38
+Davis?			1	.the	1
 Davison			2	NNP	2
 Daviss			2	NNP	2
 Davy			2	NNP	2
 Dawlish			1	NNP	1
 Dawn			2	NN	1	NNP	1
-Day			19	NNP	19
+Day			21	NNP	21
+Day-dreams		1	NNS	1
 Days			2	NNPS	1	NNS	1
 Dayton			1	NNP	1
 Daytona			1	NNP	1
@@ -7904,13 +7822,13 @@ DeScenza		1	NNP	1
 DeSoto			2	NN	1	NNP	1
 DeVille			1	NNP	1
 Deacon			1	NNP	1
-Dead			1	NNP	1
+Dead			2	NNP	2
 Deal			4	NNP	4
 Dealer			1	NNP	1
 Dealers			33	NNP	1	NNPS	7	NNS	25
 Dean			22	NNP	22
 Deane			1	NNP	1
-Deans			1	NNP	1
+Deans			1	NNPS	1
 Dear			1	NNP	1
 Dearborn		6	NNP	6
 Dearie			1	NNP	1
@@ -7929,11 +7847,11 @@ Debussy			3	NNP	3
 Dec			1	NNP	1
 Dec.			90	NN	3	NNP	86	VB	1
 Decades			2	NNS	2
-December		87	NNP	87
+December		90	NNP	90
 Deciding		1	VBG	1
 Decisions		3	NNS	3
 Decker			11	NNP	11
-Declaration		2	NNP	2
+Declaration		2	NN	1	NNP	1
 Declaring		1	VBG	1
 Declines		1	NNS	1
 Declining		7	VBG	7
@@ -7957,7 +7875,7 @@ Defense			32	NN	4	NNP	28
 Defining		1	VBG	1
 Degrees			1	NNS	1
 Deighton		1	NNP	1
-Deirdre			2	NNP	2
+Deirdre			3	NNP	3
 Deirdres		1	NNP	1
 Deity			1	NN	1
 Dekker			4	NNP	4
@@ -7974,7 +7892,7 @@ Delegates		3	NNPS	2	NNS	1
 Delgado			2	NNP	2
 Delhi			6	NNP	6
 Delia			2	NNP	2
-Delicacy		1	NNP	1
+Delicacy		1	NN	1
 Delicious		18	NNP	18
 Delightful		1	NNP	1
 Delinquency		1	NNP	1
@@ -7991,7 +7909,7 @@ Delphic			1	JJ	1
 Delta			30	NN	1	NNP	29
 Deltacorp		9	NN	2	NNP	7
 Delwin			1	NNP	1
-Demand			5	NN	5
+Demand			6	NN	6
 Demands			2	NNS	2
 Demler			4	NNP	4
 Democracy		2	NN	1	NNP	1
@@ -8008,6 +7926,7 @@ Dena			1	NNP	1
 Denby			1	NNP	1
 Denenchofu		1	NNP	1
 Deng			9	NNP	9
+Denial			1	NNP	1
 Denis			2	NNP	2
 Denise			3	NNP	3
 Denizens		1	NNS	1
@@ -8034,7 +7953,7 @@ Depositary		1	NNP	1
 Deposits		1	NNS	1
 Deposits-a		1	NNP	1
 Depot			3	NNP	3
-Depression		4	NNP	4
+Depression		5	NN	1	NNP	4
 Deprivation		1	NN	1
 Dept.			1	NNP	1
 Deputies		2	NNPS	1	NNS	1
@@ -8054,7 +7973,7 @@ Desarrollo		1	NNP	1
 Descendants		1	NNS	1
 Describing		3	VBG	3
 Deseret			5	NNP	5
-Desert			5	NNP	5
+Desert			5	NN	1	NNP	4
 Design			2	NN	1	NNP	1
 Designated		1	NNP	1
 Designing		2	NNP	2
@@ -8067,8 +7986,8 @@ Despite			73	IN	73
 Destinations		1	NNS	1
 Destruction		2	NNP	2
 Detached		1	VBN	1
-Details			5	NNP	1	NNS	4
-Detective		1	NNP	1
+Details			6	NNP	1	NNS	5
+Detective		1	NN	1
 Detention		1	NNP	1
 Detergent		1	NNP	1
 Determining		2	VBG	2
@@ -8079,7 +7998,7 @@ Deukmejian		7	NNP	7
 Deutsche		20	FW	1	NNP	19
 Devario			2	NNP	2
 Devastation		1	NN	1
-Develop			1	VB	1
+Develop			2	VB	2
 Developed		1	VBN	1
 Developer		1	NNP	1
 Developers		5	NNP	2	NNS	3
@@ -8109,16 +8028,16 @@ Dickens			8	NNP	8
 Dickensian		2	JJ	2
 Dickie			1	NNP	1
 Dicks			1	NNP	1
-Dicky			2	NNP	1	RB	1
-Dictaphone		3	NNP	3
+Dicky			2	NNP	2
+Dictaphone		3	NN	1	NNP	2
 Dictator		1	NNP	1
 Dictionary		2	NNP	2
-Did			36	VBD	36
+Did			41	VBD	41
 Didlington		1	NNP	1
 Didnt			2	NNP	2
 Die			2	VB	1	VBP	1
 Died			5	VBD	3	VBN	2
-Diego			6	NNP	6
+Diego			7	NNP	7
 Diego-based		1	JJ	1
 Dieppe			1	NNP	1
 Dies			1	VBZ	1
@@ -8180,13 +8099,13 @@ Discrimination		1	NN	1
 Discussion		2	NNP	2
 Disease			6	NNP	6
 Disgrace		1	NN	1
-Disguise		1	NNP	1
-Dishwashers		1	NNPS	1
+Disguise		1	NN	1
+Dishwashers		1	NNP	1
 Dismissing		1	VBG	1
 Disney			14	NNP	14
 Disneyland		1	NNP	1
 Disorderly		1	JJ	1
-Dispatch		3	NNP	3
+Dispatch		4	NNP	4
 Disposal		1	NNP	1
 Disputada		1	NNP	1
 Disputado		2	NNP	2
@@ -8197,32 +8116,32 @@ Distant			1	JJ	1
 Distinguished		1	JJ	1
 Distribution		1	NN	1
 Distributors		1	NNPS	1
-District		25	NNP	25
+District		26	NN	2	NNP	24
 Disturbing		1	JJ	1
 Ditch			1	NNP	1
 Divers			1	NNS	1
 Diverse			1	JJ	1
 Diversified		4	NNP	4
 Diversity		1	NN	1
-Divide			1	VB	1
+Divide			3	VB	3
 Divide-and-rule		1	NNP	1
 Dividend		3	NN	3
 Dividend-related	2	JJ	2
 Divine			1	JJ	1
-Division		14	NN	1	NNP	13
+Division		14	NN	2	NNP	12
 Divorce			1	NN	1
 Dixie			1	NNP	1
 Dixiecrat		1	NNP	1
 Dixieland		1	NNP	1
 Dixon			7	NNP	7
 Dixons			1	NNP	1
-Do			150	NNP	1	VB	5	VBP	144
+Do			161	NNP	1	VB	10	VBP	150
 Doak			1	NNP	1
 Dobson			1	NNP	1
 Docks			1	NNS	1
 Dockyard		1	NNP	1
-Doctor			10	NNP	10
-Doctors			8	NNS	8
+Doctor			10	NN	1	NNP	9
+Doctors			9	NNS	9
 Doctrine		2	NNP	2
 Document		1	NNP	1
 Documentaries		1	NNS	1
@@ -8232,8 +8151,8 @@ Dodge			13	NNP	13
 Dodger			2	NNP	2
 Dodgers			4	NNP	2	NNPS	2
 Doerflinger		1	NNP	1
-Does			21	NNP	1	VBZ	20
-Doesnt			2	NNP	2
+Does			24	NNP	3	VBZ	21
+Doesnt			3	NNP	3
 Dog			2	NNP	2
 Dogs			7	NNP	2	NNS	5
 Doherty			1	NNP	1
@@ -8241,10 +8160,11 @@ Dolan			1	NNP	1
 Dole			13	NNP	13
 Dollar			12	NN	9	NNP	3
 Dollar-yen		1	JJ	1
-Dolly			11	NNP	6	RB	5
+Dolls			1	NNP	1
+Dolly			11	NNP	7	RB	4
 Dolores			1	NNP	1
 Dolphin			1	NNP	1
-Dolphins		2	NNPS	2
+Dolphins		3	NNPS	3
 Dom			1	NNP	1
 Domaine			1	NNP	1
 Dome			2	NNP	2
@@ -8271,10 +8191,10 @@ Donnelley		4	NNP	4
 Donnelly		1	NNP	1
 Donoghue		5	NNP	5
 Donohue			1	NNP	1
-Donovan			3	NNP	3
-Dont			152	JJ	1	NNP	151
+Donovan			4	NNP	4
+Dont			166	NNP	166
 Donuts			7	NNP	6	NNPS	1
-Dookies			1	VBZ	1
+Dookies			1	NNP	1
 Dooley			1	NNP	1
 Dooling			3	NNP	3
 Doolittle		1	NNP	1
@@ -8285,6 +8205,7 @@ Doreen			1	NNP	1
 Dorfman			3	NNP	3
 Dorgan			3	NNP	3
 Dorgen			1	NNP	1
+Dorings			1	NNP	1
 Doris			4	NNP	4
 Dornan			2	NNP	2
 Dorothea		1	NNP	1
@@ -8295,6 +8216,7 @@ Dorset			1	NNP	1
 Dorsey			2	NNP	2
 Doskocil		1	NNP	1
 Dostoevski		1	NNP	1
+Dostoyevski		1	NNP	1
 Dots			1	NNS	1
 Dotson			1	NNP	1
 Double			1	RB	1
@@ -8302,12 +8224,13 @@ Double-Jointed		1	NNP	1
 Doubleday		3	NNP	3
 Doubles			2	NNP	2
 Doubts			3	NNS	3
-Doug			4	NNP	4
+Doug			5	NNP	5
 Dougherty		3	NNP	3
 Douglas			43	NNP	43
 Doulting		1	NNP	1
 Dover			10	NNP	10
 Dow			194	NNP	194
+Dowell			1	NNP	1
 Dowling			1	NNP	1
 Down			6	IN	2	NNP	4
 Downes			1	NNP	1
@@ -8316,17 +8239,19 @@ Downing			5	NNP	5
 Doyle			5	NNP	5
 Dozen			1	NNP	1
 Dozens			4	NNS	4
-Dr			33	NNP	33
+Dr			35	NN	1	NNP	34
 Dr.			72	NNP	72
+Drabble			1	NNP	1
 Drabinsky		18	NNP	18
-Draculas		1	VBZ	1
+Draculas		1	NNP	1
 Dragon			1	NNP	1
-Dragonflies		3	NNS	3
+Dragonflies		3	NNPS	1	NNS	2
 Drake			3	NNP	3
+Drama			1	NNP	1
 Drat			1	NNP	1
 Draw			1	VB	1
 Dreams			3	NNS	3
-Drenching		2	NN	1	VBG	1
+Drenching		2	NN	1	NNP	1
 Dresden			1	NN	1
 Dresdner		9	NNP	9
 Dresdner-ABD		1	NNP	1
@@ -8373,16 +8298,17 @@ Dubonnet		1	NNP	1
 Dubose			1	NNP	1
 Duchess			1	NN	1
 Duchossois		1	NNP	1
+Duck			1	NNP	1
 Duclos			1	NNP	1
 Ducret			1	NNP	1
 Dudley			1	NNP	1
 Dudleys			2	NNP	2
-Due			5	JJ	5
+Due			7	JJ	5	NNP	2
 Duesseldorf		1	NNP	1
 Duff			5	NNP	5
 Dugdale			1	NNP	1
 Duggan			1	NNP	1
-Duke			16	NNP	16
+Duke			16	NN	1	NNP	15
 Dukes			2	NNP	2
 Duluth			1	NNP	1
 Dumbo			2	NNP	2
@@ -8406,8 +8332,8 @@ Durand			2	NNP	2
 During			84	IN	84
 Duriron			3	NNP	3
 Dusk			1	NN	1
-Dust			3	NN	1	NNP	2
-Dutch			33	JJ	20	NNP	9	NNPS	4
+Dust			4	NN	1	NNP	3
+Dutch			33	JJ	20	NNP	10	NNPS	3
 Dutch\/Shell		3	Shell	3
 Duty			2	NNP	2
 Dwight			1	NNP	1
@@ -8427,7 +8353,7 @@ Dynamics		10	NNP	10
 Dynapert		1	NNP	1
 Dynascan		1	NNP	1
 Dynasty			1	NNP	1
-E			7	NN	3	NNP	4
+E			8	NN	4	NNP	4
 E.			44	NNP	44
 E.C.			1	NNP	1
 E.E.			1	NNP	1
@@ -8447,7 +8373,7 @@ ECONOMY			1	NN	1
 EDS			5	NNP	5
 EDT			8	NNP	8
 EEC			17	NNP	17
-EEC?			1	NN	1
+EEC?			1	.the	1
 EEOC			4	NNP	4
 EG&G			5	NNP	5
 ELP			1	NNP	1
@@ -8478,31 +8404,31 @@ EVERYONE		1	NN	1
 EWDB			1	NNP	1
 EXCHANGE		1	NN	1
 EXECUTIVES		1	NNPS	1
-Each			106	DT	106
+Each			108	DT	108
 Eagle			1	NNP	1
 Eagles			1	NNPS	1
 Eagleton		1	NNP	1
 Eakle			2	NNP	2
 Ear			1	NN	1
-Earl			10	NNP	10
+Earl			10	NN	1	NNP	9
 Earle			1	NNP	1
 Earlham			1	NNP	1
 Earlier			48	JJR	4	RB	6	RBR	38
 Earls			1	NNP	1
-Early			8	NNP	1	RB	7
+Early			9	NNP	1	RB	8
 Earnings		13	NNS	13
 Earns			1	VBZ	1
-Earth			13	NN	5	NNP	8
+Earth			13	NN	4	NNP	9
 Earthquake		1	NN	1
 Earthquakes		1	NNP	1
 Earths			1	NNS	1
 Easing			1	VBG	1
-East			107	JJ	14	NNP	89	NNPS	1	NNS	2	RB	1
+East			111	JJ	14	NN	2	NNP	91	NNPS	1	NNS	2	RB	1
 East-West		7	JJ	4	NNP	3
 East-lon		1	NNP	1
 Eastbourne		1	NNP	1
 Easter			7	NNP	7
-Eastern			106	JJ	19	NNP	87
+Eastern			107	JJ	19	NNP	88
 Eastfield		1	NNP	1
 Eastman			8	NNP	8
 Eastwards		1	NNS	1
@@ -8526,17 +8452,17 @@ Economics		11	NNP	11
 Economist		3	NNP	3
 Economists		14	NNS	14
 Economy			4	NN	1	NNP	3
-Ed			7	NNP	7
-Eddie			17	NNP	17
+Ed			8	NNP	8
+Eddie			19	NNP	19
 Eddies			1	NNP	1
 Edelman			8	NNP	8
 Edelmann		1	NNP	1
 Edelson			4	NNP	4
 Eden			2	NNP	2
-Edgar			2	NNP	2
+Edgar			3	NNP	3
 Edgbaston		1	NNP	1
 Edge			2	NNP	2
-Edinburgh		12	NNP	12
+Edinburgh		13	NNP	13
 Edison			28	NN	1	NNP	27
 Edisto			9	NNP	9
 Edita			1	NNP	1
@@ -8550,12 +8476,13 @@ Ednie			1	NNP	1
 Edouard			1	NNP	1
 Eduard			5	NNP	5
 Educating		1	NNP	1
-Education		22	NNP	22
+Education		24	NNP	24
+Education?		1	.a	1
 Educational		5	NNP	5
 Educator		1	NNP	1
 Educators		1	NNP	1
-Edward			45	NNP	45
-Edwardian		4	NNP	4
+Edward			46	NNP	46
+Edwardian		5	NNP	5
 Edwards			18	NNP	18
 Edwin			8	NNP	8
 Effect			1	NN	1
@@ -8579,7 +8506,7 @@ Ehrlichman		1	NNP	1
 Eichof			1	NNP	1
 Eidsmo			6	NNP	6
 Eiffel			1	NNP	1
-Eiger			1	NNP	1
+Eiger			2	NNP	2
 Eight			13	CD	13
 Eight-foot-tall		1	JJ	1
 Eighteen		2	CD	2
@@ -8618,7 +8545,7 @@ Electricity		2	NNP	2
 Electro-mechanical	1	NNP	1
 Electron		4	NNP	4
 Electronic		10	JJ	1	NNP	8	RB	1
-Electronics		17	NNP	13	NNPS	4
+Electronics		17	NNP	12	NNPS	5
 Electrosurgery		1	NNP	1
 Elf			1	NNP	1
 Elfner			1	NNP	1
@@ -8634,12 +8561,12 @@ Elisa			1	NNP	1
 Elisabeth		2	NNP	2
 Elise			1	NNP	1
 Elizabeth		19	NNP	19
-Elizabethan		3	JJ	3
+Elizabethan		4	JJ	4
 Elkin			1	NNP	1
 Elkins			1	NNP	1
 Ella			7	NNP	7
 Elle			1	NNP	1
-Ellen			23	NNP	23
+Ellen			25	NNP	25
 Ellens			7	NNP	7
 Ellesmere		1	NNP	1
 Ellie			1	NNP	1
@@ -8655,10 +8582,10 @@ Elvis			2	NNP	2
 Ely			1	NNP	1
 Emancipation		2	NNP	2
 Emanuel			1	NNP	1
-Embankment		1	NNP	1
+Embankment		1	NN	1
 Embassies		1	NNS	1
-Embassy			13	NNP	13
-Embassy?		1	NN	1
+Embassy			13	NN	1	NNP	12
+Embassy?		1	.a	1
 Embedded		3	VBN	3
 Emboldened		1	VBN	1
 Embryo			1	NN	1
@@ -8670,10 +8597,11 @@ Emhart			11	NNP	11
 Emigration		2	NN	2
 Emil			1	NNP	1
 Emile			1	NNP	1
-Emily			4	NNP	3	RB	1
+Emily			4	NNP	2	RB	2
 Emilys			1	NNP	1
 Eminase			2	NNP	2
 Emma			2	NNP	2
+Emmanuel		1	NNP	1
 Emory			1	NNP	1
 Emperor			8	NNP	8
 Emperors		1	NNP	1
@@ -8681,10 +8609,10 @@ Empire			8	NN	5	NNP	3
 Employee		3	NNP	3
 Employee-benefit	1	JJ	1
 Employees		6	NNPS	1	NNS	5
-Employers		9	NNP	2	NNPS	1	NNS	6
+Employers		9	NNP	3	NNPS	1	NNS	5
 Employment		5	NNP	5
 Empty			2	JJ	2
-Empyrean		1	NNP	1
+Empyrean		1	NN	1
 Emyanitoff		2	NNP	2
 Enclose			1	RB	1
 Enclosure		1	NNP	1
@@ -8706,11 +8634,11 @@ Enforcement		6	NNP	6
 Engelken		31	NNP	31
 Engineering		7	NNP	7
 Engineers		6	NNP	1	NNPS	3	NNS	2
-England			128	NNP	128
+England			132	NNP	132
 England?Okay		1	NNP	1
 Englander		1	NNP	1
 Englands		2	NNP	2
-English			146	JJ	88	NNP	52	NNS	6
+English			158	JJ	98	NN	1	NNP	50	NNS	9
 English-language	2	JJ	2
 English-speaking	4	JJ	4
 English-style		1	JJ	1
@@ -8722,7 +8650,7 @@ EniChem			1	NNP	1
 Enichem			2	NNP	2
 Enimont			3	NNP	3
 Enormous		3	JJ	3
-Enough			4	JJ	2	NNP	2
+Enough			4	JJ	1	NNP	3
 Enquirer		1	NNP	1
 Enright			1	NNP	1
 Enrique			1	NNP	1
@@ -8736,7 +8664,7 @@ Entertainment		42	NN	1	NNP	41
 Entex			2	NNP	2
 Enthusiastic		2	JJ	2
 Entrance		1	NN	1
-Entreaty		1	NNP	1
+Entreaty		1	NN	1
 Entrekin		1	NNP	1
 Entrepreneurs		2	NNS	2
 Entry			1	NN	1
@@ -8772,7 +8700,7 @@ Erath			1	NNP	1
 Erbamont		11	NN	1	NNP	10
 Erburu			1	NNP	1
 Erdolversorgungs	1	NNP	1
-Eric			13	NNP	13
+Eric			14	NNP	14
 Erich			3	NNP	3
 Erics			1	NNP	1
 Ericson			2	NNP	2
@@ -8783,7 +8711,7 @@ Ernesto			1	NNP	1
 Ernests			1	NNP	1
 Ernie			1	NNP	1
 Ernst			5	NNP	5
-Eros			1	NNS	1
+Eros			1	NNP	1
 Erotic			4	NNP	4
 Erskine			1	NNP	1
 Erwin			2	NNP	2
@@ -8792,6 +8720,7 @@ Escort			2	NNP	2
 Escorts			1	NNS	1
 Escudome		1	NNP	1
 Esher			1	NNP	1
+Eskdale			1	NNP	1
 Esmeralda		1	NNP	1
 Esnard			1	NNP	1
 Esopus			1	NNP	1
@@ -8825,7 +8754,7 @@ Etienne-Emile		1	NNP	1
 Etna			1	NNP	1
 Eton			4	NNP	4
 Etonian			1	JJ	1
-Etta			21	NNP	21
+Etta			27	NNP	27
 Ettas			2	NNP	2
 Ettaso			1	NNP	1
 Etudes			1	NNP	1
@@ -8842,24 +8771,24 @@ Eurodebt		1	NNP	1
 Eurodollar		6	JJ	1	NN	4	NNP	1
 Euroissues		1	NNS	1
 Euromarket		2	NNP	2
-Europe			191	NNP	191
+Europe			194	NNP	194
 Europe-wide		1	JJ	1
-European		184	JJ	137	NN	1	NNP	46
+European		187	JJ	139	NN	1	NNP	47
 European-American	1	NNP	1
 European-minded		1	JJ	1
-Europeans		15	NNPS	14	NNS	1
-Europes			1	NNP	1
+Europeans		16	NNPS	14	NNS	2
+Europes			2	NNP	2
 Eurostat		2	NNP	2
 Eustachian		1	NNP	1
 Euston			1	NNP	1
 Eva			1	NNP	1
 Evacuee			1	NNP	1
 Evan			2	NNP	2
-Evans			23	NNP	23
+Evans			25	NNP	25
 Evans-Black		1	NNP	1
 Eve			2	NNP	2
 Evel			1	NNP	1
-Even			127	JJ	2	RB	125
+Even			130	IN	2	JJ	2	RB	126
 Evening			5	NNP	5
 Event			1	NN	1
 Events			8	NNS	8
@@ -8870,13 +8799,13 @@ Everest			2	NNP	2
 Everglades		1	NNS	1
 Evert			2	NNP	2
 Everton			2	NNP	2
-Every			58	DT	58
-Everybody		17	NN	17
-Everybodys		1	NNP	1
+Every			64	DT	64
+Everybody		20	NN	20
+Everybodys		2	NNP	1	NNS	1
 Everyman		2	NNP	2
-Everyone		38	NN	38
+Everyone		42	NN	42
 Everyones		2	NNP	2
-Everything		29	NN	21	NNP	8
+Everything		35	NN	23	NNP	12
 Everythingll		1	NNP	1
 Everythings		1	NNS	1
 Everywhere		3	RB	3
@@ -8898,8 +8827,8 @@ Examples		1	NNS	1
 Excalibur		3	NNP	3
 Excavators		1	NNS	1
 Excel			1	NNP	1
-Excellency		2	NN	1	NNP	1
-Excellency?		1	NN	1
+Excellency		2	NN	2
+Excellency?		1	.the	1
 Excellent		1	NNP	1
 Excelsior		1	NNP	1
 Except			9	IN	9
@@ -8914,7 +8843,7 @@ Excluding		8	VBG	8
 Excuse			3	NNP	2	VB	1
 Excuses			1	NNPS	1
 Executions		1	NNS	1
-Executive		20	NNP	20
+Executive		21	NN	1	NNP	20
 Executives		7	NNS	7
 Exeter			4	NNP	4
 Exhibit			1	NN	1
@@ -8927,11 +8856,12 @@ Expansion		1	NN	1
 Expect			2	VB	2
 Expectations		3	NNS	3
 Expedition		1	NNP	1
+Expenditure		1	NN	1
 Expenses		1	NNS	1
 Expensive		1	JJ	1
 Experience		2	NN	2
 Experiments		2	NNS	2
-Experts			4	NNS	4
+Experts			5	NNS	5
 Explaining		1	VBG	1
 Explonaft		2	NNP	2
 Exploration		5	NN	1	NNP	4
@@ -8940,15 +8870,15 @@ Export			4	NN	1	NNP	3
 Export-Import		4	NNP	4
 Exporting		3	NNP	3
 Exports			5	NNS	5
-Express			78	NN	1	NNP	75	VB	2
+Express			78	NN	2	NNP	74	VB	2
 Express-Buick		1	NNP	1
 Expressionism		3	NN	3
-Expressway		1	NNP	1
+Expressway		1	NN	1
 Extension		1	NNP	1
 Exterior		14	JJ	1	NNP	13
 Exteriors		1	NNS	1
 External		2	NNP	2
-Extra			1	JJ	1
+Extra			2	JJ	2
 Extra-mural		1	JJ	1
 Extraordinary		2	JJ	2
 Exxon			31	NN	1	NNP	30
@@ -8979,7 +8909,7 @@ FAMILY			1	NN	1
 FAR			1	RB	1
 FASB			9	NNP	9
 FAX			1	NNP	1
-FBI			19	NNP	19
+FBI			20	NNP	20
 FCB\/Leber		3	Leber	3
 FCC			29	NNP	29
 FDA			27	NNP	27
@@ -9020,7 +8950,7 @@ Fabi			2	NNP	2
 Fabian			2	NNP	2
 Fabric			1	NN	1
 Fabulous		1	JJ	1
-Face			2	NNP	2
+Face			3	NNP	3
 Faced			3	VBN	3
 Facilities		2	NNP	1	NNPS	1
 Facing			1	VBG	1
@@ -9036,7 +8966,7 @@ Fahrenheit		3	NN	3
 Fails			1	VBZ	1
 Failure			8	NN	8
 Failures		1	NNS	1
-Fair			12	NN	1	NNP	11
+Fair			14	NN	1	NNP	13
 Fairbairn		1	NNP	1
 Fairbourne		1	NNP	1
 Fairfax			1	NNP	1
@@ -9057,7 +8987,7 @@ Falls			4	NNP	3	NNS	1
 Fame			2	NNP	2
 Familiar		1	JJ	1
 Families		4	NNS	4
-Family			10	NN	1	NNP	9
+Family			11	NN	2	NNP	9
 Family-owned		1	JJ	1
 Famine			1	NN	1
 Famous			3	NNP	3
@@ -9071,16 +9001,16 @@ Fantasia		1	NNP	1
 Fantasy			1	NNP	1
 Fanuc			2	NNP	2
 Fanucci			1	NNP	1
-Far			22	JJ	2	NNP	17	RB	3
+Far			22	JJ	2	NNP	16	RB	4
 Fares			1	NNS	1
 Fargo			5	NNP	5
 Farlows			1	NNS	1
 Farm			11	NN	3	NNP	8
 Farm-machine		1	NN	1
 Farmer			1	NNP	1
-Farmers			32	NNP	23	NNPS	3	NNS	6
+Farmers			33	NNP	23	NNPS	4	NNS	6
 Farmington		2	NNP	2
-Farms			1	NNS	1
+Farms			1	NNPS	1
 Farnbachs		1	NNP	1
 Farney			2	NNP	2
 Farquharson		1	NNP	1
@@ -9103,7 +9033,7 @@ Father			16	NNP	16
 Fathers			2	NNS	2
 Fathomless!		1	NN	1
 Fatman			1	NNP	1
-Fatty			1	NNP	1
+Fatty			1	NN	1
 Faulding		3	NNP	3
 Faulds			1	NNP	1
 Faulkner		1	NNP	1
@@ -9119,15 +9049,15 @@ Fear			4	NN	4
 Fearon			1	NNP	1
 Fears			1	NNS	1
 Feather-bedding		1	NN	1
-Feathers		1	NNPS	1
+Feathers		2	NNS	2
 Feb.			17	NNP	17
-February		41	NNP	41
+February		42	NNP	42
 Fed			104	NNP	104
 Fedders			3	NNP	3
 Federal			184	JJ	11	NNP	173
 Federalist		2	NNP	2
 Federated		12	NNP	12
-Federation		15	NNP	15
+Federation		15	NN	1	NNP	14
 Federico		1	NNP	1
 Feders			1	NNP	1
 Fee			1	NN	1
@@ -9146,7 +9076,7 @@ Felix			3	NNP	3
 Fellini			1	NNP	1
 Fellow			1	NNP	1
 Fellowship		2	NNP	2
-Felt			2	NNP	1	VBN	1
+Felt			2	NNP	1	VBD	1
 Felten			2	NNP	2
 Female			2	JJ	1	NNP	1
 Femina			2	NNP	2
@@ -9156,6 +9086,7 @@ Feng-hsiung		1	NNP	1
 Feniger			1	NNP	1
 Fenn			1	NNP	1
 Ferdinand		4	NNP	4
+Ferdinard		1	NNP	1
 Ferguson		4	NNP	4
 Fernand			1	NNP	1
 Fernandez		1	NNP	1
@@ -9169,12 +9100,13 @@ Fertitta		1	NNP	1
 Fery			1	NNP	1
 Feshbach		3	NNP	3
 Festival		5	NNP	5
+Fetch			1	NNP	1
 Feud			1	NN	1
 Feudalism		1	NNP	1
 Feverish		1	JJ	1
-Few			27	JJ	27
+Few			30	JJ	28	PP	2
 Fewer			3	JJR	3
-Fiat			13	NNP	13
+Fiat			14	NNP	14
 Fiats			1	NNP	1
 Fiberall		1	NNP	1
 Fibreboard		1	NNP	1
@@ -9190,17 +9122,18 @@ Fifteenth		1	NNP	1
 Fifth			11	NNP	11
 Fifties			1	NNS	1
 Fifty			4	NNP	4
+Fifty-Third		1	NNP	1
 Fifty-five		1	CD	1
 Fifty-two		1	JJ	1
 Fight			1	VB	1
-Fighting		3	NN	2	NNP	1
-Fights			1	NNS	1
-Figures			3	NNS	3
+Fighting		3	NN	1	NNP	2
+Fights			2	NNS	2
+Figures			4	NNS	4
 Fiji			1	NNP	1
-Filibustering		1	NNP	1
+Filibustering		1	VBG	1
 Filipino		16	JJ	1	NNP	15
 Filipinos		6	NNPS	5	NNS	1
-Fill			1	VB	1
+Fill			2	NNP	1	VB	1
 Filling			1	VBG	1
 Film			10	NNP	10
 Filmed			1	VBN	1
@@ -9226,7 +9159,7 @@ Fingers			3	NNP	3
 Fink			1	NNP	1
 Finkelstein		5	NNP	5
 Finland			16	NN	1	NNP	15
-Finlays			1	NNPS	1
+Finlays			1	NNP	1
 Finmeccanica		2	NNP	2
 Finn			1	NNP	1
 Finnair			6	NNP	6
@@ -9240,9 +9173,10 @@ Fires			2	VBZ	2
 Fireside\/Simon		1	Simon	1
 Firestone		2	NNP	2
 Firewood		1	NNP	1
+Firle			1	NNP	1
 Firm			2	NN	2
 Firms			3	NNPS	1	NNS	2
-First			206	JJ	21	LS	2	NNP	171	RB	12
+First			206	JJ	20	LS	2	NNP	173	RB	11
 First-section		1	JJ	1
 Firth			1	NNP	1
 Fiscal			2	NN	1	NNP	1
@@ -9261,7 +9195,7 @@ Fit			1	VB	1
 Fitch			1	NNP	1
 Fitness			3	NNP	3
 Fitzgerald		3	NNP	3
-Fitzgeralds		1	NNP	1
+Fitzgeralds		1	NNPS	1
 Fitzsimmons		1	NNP	1
 Fitzwater		4	NNP	4
 Five			22	CD	22
@@ -9282,6 +9216,7 @@ Flanagans		1	NNPS	1
 Flannery		1	NNP	1
 Flattau			1	NNP	1
 Flattered		1	JJ	1
+Flea			1	NNP	1
 Fleas			1	NNS	1
 Fleece			1	NNP	1
 Fleet			8	NNP	8
@@ -9295,20 +9230,20 @@ Flick			1	NN	1
 Flies			2	NNS	1	VBZ	1
 Flight			8	NN	4	NNP	4
 Flint			5	NNP	5
-Flip			1	VB	1
+Flip			2	VB	2
 Floating		1	VBG	1
 Flocks			1	NNP	1
 Flom			5	NNP	5
 Flood			1	NNP	1
 Floods			2	NNP	1	NNS	1
 Floor			4	NN	2	NNP	2
-Flora			8	NNP	4	NNS	4
+Flora			10	NNP	6	NNS	4
 Floral			1	NNP	1
 Florence		9	NNP	9
 Florida			37	NNP	37
 Florio			8	NNP	8
 Florrie			4	NNP	4
-Flow			2	NNP	2
+Flow			2	NN	1	NNP	1
 Flower			1	NNP	1
 Flower-arranging	1	NNP	1
 Flowering		1	JJ	1
@@ -9327,7 +9262,7 @@ Foley			4	NNP	4
 Folk			2	NN	2
 Folkestone		1	NNP	1
 Folks			1	NNS	1
-Follow			2	VB	2
+Follow			4	VB	4
 Follow-up		1	JJ	1
 Following		12	VBG	12
 Folsom			1	NNP	1
@@ -9346,11 +9281,11 @@ Footballand		1	NNP	1
 Foote			1	NNP	1
 Foothills		12	NNP	11	NNS	1
 Foots			1	NNP	1
-For			376	IN	376
+For			381	IN	381
 Forbes			2	NNP	2
-Force			33	NNP	33
-Forces			2	NNS	2
-Ford			150	NNP	150
+Force			33	NN	1	NNP	32
+Forces			3	NNS	3
+Ford			151	NNP	151
 Fordham			1	NNP	1
 Fords			3	NNPS	3
 Forecasting		1	NN	1
@@ -9362,7 +9297,7 @@ Foreign-exchange	1	NN	1
 Foreigners		2	NNS	2
 Foremost		1	NNP	1
 Foresight		1	NN	1
-Forest			5	NNP	5
+Forest			5	NN	1	NNP	4
 Forest-products		1	NNS	1
 Forests			1	NNS	1
 Foret			3	NNP	3
@@ -9371,7 +9306,7 @@ Forfeiture		1	NNP	1
 Forge			2	NNP	2
 Forget			2	VB	2
 Forgive			2	NNP	1	VB	1
-Form			4	NN	2	NNP	2
+Form			4	NN	3	NNP	1
 Forman			2	NNP	2
 Formby			1	NNP	1
 Former			7	JJ	2	NNP	5
@@ -9382,31 +9317,31 @@ Forth			1	NNP	1
 Fortney			2	NNP	2
 Fortran			1	NNP	1
 Forts			1	NNS	1
-Fortunately		10	RB	10
-Fortune			3	NNP	3
+Fortunately		11	RB	11
+Fortune			3	NN	1	NNP	2
 Forty			3	CD	3
 Forty-five		2	CD	2
 Forum			2	NNP	2
 Forward			3	RB	3
 Fossan			1	NNP	1
 Fossil			1	JJ	1
-Foster			15	NNP	15
+Foster			18	NNP	18
 Foster-Smith		1	NNP	1
 Foucault		1	NNP	1
 Foulds			2	NNP	2
 Found			1	NNP	1
-Foundation		13	NNP	13
+Foundation		13	NN	1	NNP	12
 Founded			3	VBN	3
 Founders		2	NNP	1	NNS	1
 Founding		1	VBG	1
 Fountain		1	NNP	1
-Four			27	CD	20	NNP	7
+Four			29	CD	22	NNP	7
 Four-fifths		1	NNS	1
 Fourier			1	NNP	1
 Fournier		11	NNP	11
 Fours			1	NNPS	1
 Fourteen		1	CD	1
-Fourth			3	JJ	3
+Fourth			5	JJ	5
 Fowler			1	NNP	1
 Fox			4	NNP	4
 Fox-Meyer		1	NNP	1
@@ -9417,7 +9352,7 @@ Fracturing		1	NNP	1
 Framatome		1	NNP	1
 Francais		1	NNP	1
 Francaises		1	NNP	1
-France			114	NNP	114
+France			116	NNP	116
 Frances			4	NNP	4
 Francis			13	NNP	13
 Francisco		100	NNP	100
@@ -9428,10 +9363,11 @@ Franco			4	NNP	4
 Francois		4	NNP	4
 Francoise		2	NNP	2
 Franconia		1	NNP	1
-Frank			44	NNP	44
+Frank			47	NNP	47
 Frankel			1	NNP	1
 Frankenberry		1	NNP	1
 Frankfurt		50	NN	1	NNP	48	NNPS	1
+Frankie			1	NNP	1
 Frankies		1	NNP	1
 Franklin		19	NNP	19
 Frankly			6	NNP	1	RB	5
@@ -9440,17 +9376,18 @@ Franks			1	NNS	1
 Franval			1	NNP	1
 Franz			2	NNP	2
 Fraser			9	NNP	9
+Frau			1	NNP	1
 Frawley			3	NNP	3
 Frazer			1	NNP	1
 Fred			13	NNP	13
 Freddie			19	NNP	19
-Frederica		2	NN	1	NNP	1
+Frederica		2	NNP	2
 Frederick		13	NNP	13
 Free			12	JJ	2	NNP	9	RB	1
 Freed			1	NNP	1
 Freedman		3	NNP	3
 Freedom			4	NN	1	NNP	3
-Freefone		1	NNP	1
+Freefone		1	NN	1
 Freeman			3	NNP	3
 Freeport-McMoRan	7	NNP	7
 Freetown		1	NNP	1
@@ -9459,11 +9396,11 @@ Freezing		1	NNP	1
 Freight			1	NNP	1
 Freightways		1	NNPS	1
 Fremantle		1	NNP	1
-French			183	JJ	166	NNP	15	NNPS	2
+French			187	JJ	168	NNP	17	NNPS	2
 French-franc		1	NN	1
 French-language		1	JJ	1
 French-speaking		2	JJ	2
-Frenchman		6	NNP	6
+Frenchman		7	NNP	7
 Frenchmen		2	NNP	1	NNS	1
 Frenzel			1	NNP	1
 Frenzy			4	NNP	4
@@ -9478,9 +9415,9 @@ Freshman		3	NN	3
 Fresno			1	NNP	1
 Freud			9	NNP	9
 FreudToy		1	NNP	1
-Freuds			3	NNP	3
-Frey			1	NNP	1
-Friday			184	NNP	184
+Freuds			4	NNP	4
+Frey			2	NNP	2
+Friday			184	NN	2	NNP	182
 Friday-the-13th		6	JJ	5	NN	1
 Fridays			2	NNP	1	NNPS	1
 Fridges			1	NNPS	1
@@ -9495,14 +9432,14 @@ Friends			7	NNPS	4	NNS	3
 Friendships		1	NNS	1
 Frith			1	NNP	1
 Frogs			4	NNP	2	NNS	2
-From			68	IN	68
-Front			4	NNP	4
+From			73	IN	73
+Front			5	NNP	5
 Frontier		1	NNP	1
 Frost			2	NNP	2
 Frosted			1	NNP	1
 Frucher			1	NNP	1
 Fruits			1	NNS	1
-Fry			2	NN	1	NNP	1
+Fry			3	NN	1	NNP	2
 Fryar			1	NNP	1
 Fu			1	NNP	1
 Fudosan			1	NNP	1
@@ -9545,7 +9482,7 @@ Future			3	NNP	3
 Futures			39	NNP	13	NNPS	11	NNS	15
 Futures-related		1	JJ	1
 Fylingdales		1	NNP	1
-G			4	NNP	4
+G			4	NN	2	NNP	2
 G-7			2	NNP	2
 G.			17	NNP	17
 G.D.			1	NNP	1
@@ -9565,9 +9502,9 @@ GEC			1	NNP	1
 GERMANS			1	NNS	1
 GERMANY'S		1	NNP	1
 GHKM			1	NNP	1
-GHQ			1	NNP	1
+GHQ			1	NN	1
 GHS			1	NNP	1
-GI			1	NNP	1
+GI			1	NN	1
 GIs			1	NNS	1
 GLITTER			1	NN	1
 GM			97	NNP	97
@@ -9609,8 +9546,9 @@ Gain			1	NN	1
 Gains			2	NNS	2
 Gainsborough		1	NNP	1
 Gaithersburg		1	NNP	1
+Gaitskell		1	NNP	1
 Gaja			1	NNP	1
-Gala			2	NNP	2
+Gala			2	NN	1	NNP	1
 Galanter		1	NNP	1
 Galapagos		1	NNS	1
 Galbani			1	NNP	1
@@ -9619,7 +9557,7 @@ Gale			1	NNP	1
 Galileo			1	NNP	1
 Galipault		1	NNP	1
 Gallagher		1	NNP	1
-Gallery			9	NNP	9
+Gallery			10	NN	1	NNP	9
 Gallitzin		1	NNP	1
 Galloway		1	NNP	1
 Gallup			2	NNP	2
@@ -9630,7 +9568,7 @@ Galway			1	NNP	1
 Gambia			1	NNP	1
 Gamble			13	NNP	13
 Gambling		2	JJ	1	NNP	1
-Game			7	NN	1	NNP	6
+Game			7	NN	2	NNP	5
 Games			13	NNP	1	NNPS	12
 Gandhi			8	NNP	8
 Gandhis			1	NNP	1
@@ -9664,7 +9602,7 @@ Garroway		1	NNP	1
 Garry			2	NNP	2
 Garth			3	NNP	3
 Gartner			1	NNP	1
-Gary			19	NNP	19
+Gary			20	NNP	20
 Gas			24	NNP	24
 Gases			2	NNS	2
 Gasich			2	NNP	2
@@ -9691,7 +9629,7 @@ Gazeta			1	NNP	1
 Gazette			1	NNP	1
 Gdansk			1	NNP	1
 Gear			1	NNP	1
-Gearbox			1	NNP	1
+Gearbox			1	NN	1
 Geard			2	NNP	2
 Geards			1	NNP	1
 Gebhard			2	NNP	2
@@ -9713,7 +9651,7 @@ Gene-Spliced		1	JJ	1
 Gene-splicing		1	NN	1
 Genel			2	NNP	2
 Genentech		12	NN	3	NNP	9
-General			169	JJ	4	NNP	165
+General			169	JJ	4	NN	1	NNP	164
 Generale		4	NNP	4
 Generalized		1	NNP	1
 Generally		7	RB	7
@@ -9729,13 +9667,13 @@ Geno			1	NNP	1
 Gentlemen		1	NNP	1
 Geocryology		1	NNP	1
 Geodetic		1	NNP	1
-Geoffrey		9	NNP	9
+Geoffrey		10	NNP	10
 Geoffrion		1	NNP	1
 Geographic		1	NNP	1
 Geography		1	NNP	1
 Georg			1	NNP	1
-George			99	NNP	99
-Georges			9	NNP	7	NNPS	2
+George			101	NNP	101
+Georges			10	NNP	8	NNPS	2
 Georgescu		1	NNP	1
 Georgeson		2	NNP	2
 Georgetown		5	NNP	5
@@ -9743,6 +9681,7 @@ Georgia			35	NNP	35
 Georgia-Pacific		54	NNP	54
 Georgian		1	JJ	1
 Gephardt		1	NNP	1
+Geraint			1	NNP	1
 Gerald			19	NNP	19
 Geraldo			2	NNP	2
 Gerard			2	NNP	2
@@ -9750,11 +9689,11 @@ Gerardo			1	NNP	1
 Gerd			1	NNP	1
 Gerhard			1	NNP	1
 Germain			1	NNP	1
-German			121	JJ	103	NN	3	NNP	15
+German			123	JJ	105	NN	3	NNP	15
 German-built		1	JJ	1
 Germanic		2	JJ	2
 Germans			18	NNP	1	NNPS	12	NNS	5
-Germany			102	NNP	102
+Germany			106	NNP	106
 Germany-based		1	JJ	1
 Germanys		1	NNP	1
 Germeten		2	NNP	2
@@ -9766,16 +9705,17 @@ Gerry			3	NNP	3
 Gerstner		4	NNP	4
 Gertie			1	NNP	1
 Gertrude		7	JJ	1	NNP	6
-Gertrudes		3	NNP	3
-Gestalt			1	NNP	1
+Gertrudes		3	NNP	2	VBZ	1
+Gestalt			1	NN	1
 Gestures		2	NNPS	1	NNS	1
-Get			26	VB	25	VBP	1
+Get			27	VB	26	VBP	1
 Gets			1	VBZ	1
 Getting			5	VBG	5
 Gettysburg		1	NNP	1
 Ghana			2	NNP	2
 Ghastly			1	JJ	1
 Ghazel			1	NNP	1
+Ghent			1	NNP	1
 Ghost			3	NN	3
 Ghostbusters		2	NNP	1	NNS	1
 Ghosts			1	NNS	1
@@ -9802,7 +9742,7 @@ Gillers			1	NNP	1
 Gillespie		4	NNP	4
 Gillett			15	NNP	15
 Gillette		6	NNP	6
-Gillian			2	NNP	2
+Gillian			3	NNP	3
 Gilmore			4	NNP	4
 Gilts			1	NNS	1
 Ginger			1	NNP	1
@@ -9824,21 +9764,22 @@ Girl			1	NNP	1
 Girls			3	NNS	3
 Giroux			1	NNP	1
 Giscard			2	NNP	1	VBN	1
+Gita			1	NNP	1
 Giuliani		11	NNP	11
 Giulio			1	NNP	1
-Give			31	VB	31
+Give			33	VB	33
 Given			11	VBN	11
 Givens			3	NNP	3
 Giving			2	VBG	2
 Glaciology		1	NNP	1
 Gladwell		1	NNP	1
-Gladys			2	NNP	1	NNS	1
+Gladys			3	NNP	2	NNS	1
 Glamorous		1	JJ	1
 Glaser			3	NNP	3
 Glasgow			8	NNP	8
 Glasnost		2	FW	2
 Glass			7	NNP	7
-Glastonbury		1	NNP	1
+Glastonbury		2	NNP	2
 Glauber			2	NNP	2
 Glaxo			3	NNP	3
 Glazer			2	NNP	2
@@ -9867,9 +9808,9 @@ Glucksman		1	NNP	1
 Glue			1	VB	1
 Glutted			1	VBN	1
 Gnu-Emacs		2	NNP	2
-Go			19	NNP	1	VB	18
+Go			22	NNP	1	VB	21
 Goats			1	NNS	1
-God			53	NNP	53
+God			56	NNP	56
 Godels			1	NNP	1
 Godfrey			1	NNP	1
 Godiva			1	NNP	1
@@ -9883,7 +9824,7 @@ Godwin			1	NNP	1
 Goes			1	VBZ	1
 Gogh			1	NNP	1
 Going			10	VBG	10
-Gold			24	NN	2	NNP	22
+Gold			25	NN	2	NNP	23
 Goldberg		5	NNP	5
 Golden			20	JJ	2	NNP	18
 Goldin			1	NNP	1
@@ -9909,7 +9850,7 @@ Goodbye			2	NNP	2
 Goode			1	NNP	1
 Goodfriend		1	NNP	1
 Goodman			3	NNP	3
-Goodness		5	NN	1	NNP	3	VB	1
+Goodness		6	NN	3	NNP	1	UH	2
 Goodnight		1	NNP	1
 Goods			2	NNP	2
 Goodwill		17	NNP	17
@@ -9933,7 +9874,7 @@ Gosplan			1	NNP	1
 Gossett			1	NNP	1
 Gossips			1	NNS	1
 Gossnab			1	NNP	1
-Gothic			4	JJ	2	NNP	2
+Gothic			4	JJ	2	NN	1	NNP	1
 Goths			1	NNS	1
 Gotlieb			1	NNP	1
 Gotshal			1	NNP	1
@@ -9943,13 +9884,13 @@ Gottlieb		4	NNP	4
 Gould			10	NNP	10
 Gouldoid		1	JJ	1
 Gov.			16	NNP	16
-Government		87	NN	38	NNP	49
+Government		92	NN	38	NNP	54
 Government-Sponsored	1	NNP	1
 Government-paid		1	JJ	1
 Governmental		1	NNP	1
 Governments		23	NNS	23
-Governor		11	NNP	11
-Governor-General	1	NNP	1
+Governor		11	NN	2	NNP	9
+Governor-General	1	NN	1
 Governors		3	NNP	1	NNS	2
 Gowan			1	NNP	1
 Gower			4	NNP	4
@@ -9961,11 +9902,11 @@ Grace-Sierra		1	NNP	1
 Grade			1	NNP	1
 Gradmann		3	NNP	3
 Gradual			1	JJ	1
-Gradually		11	RB	11
+Gradually		12	RB	12
 Graduate		7	NN	1	NNP	6
 Graduate-student	1	NN	1
 Graduates		1	NNS	1
-Grady			1	NNP	1
+Grady			2	NNP	2
 Graedel			2	NNP	2
 Graeme			3	NNP	3
 Graffiti		1	NNP	1
@@ -9986,12 +9927,12 @@ Grand			28	NNP	28
 Grande			2	NNP	2
 Grandfathers		1	NNS	1
 Grandma			3	NNP	3
-Grandmother		3	NN	1	NNP	1	RB	1
+Grandmother		4	NN	1	NNP	2	RB	1
 Grandsire		1	NNP	1
-Grange			2	NNP	2
+Grange			1	NNP	1
 Grannies		2	NNPS	2
 Granny			2	NNP	2
-Grant			4	NNP	4
+Grant			5	NNP	5
 Grantham		1	NNP	1
 Grantor			1	NNP	1
 Granville		2	NNP	2
@@ -10007,13 +9948,13 @@ Graveyard		1	NN	1
 Gray			13	NNP	13
 Grayson			1	NNP	1
 Grease			1	NN	1
-Great			54	JJ	9	NNP	44	RB	1
+Great			55	JJ	10	NNP	44	RB	1
 Greater			2	NNP	2
 Greatest		1	JJS	1
 Greece			12	NNP	12
 Greed			2	NNP	2
 Greek			25	JJ	25
-Greek?			1	CD	1
+Greek?			1	.the	1
 Greeka			1	NNP	1
 Greeks			2	NNPS	2
 Green			22	NN	1	NNP	21
@@ -10036,23 +9977,23 @@ Greer			2	NNP	2
 Greetings		2	NNP	1	NNS	1
 Greg			2	NNP	2
 Gregor-Smith		1	NNP	1
-Gregory			6	NNP	6
+Gregory			7	NNP	7
 Gregorys		1	NNP	1
 Greif			1	NNP	1
 Grenada			2	NNP	2
 Grenfell		16	NNP	16
 Gressette		2	NNP	2
 Greta			1	NNP	1
-Gretchen		9	NNP	9
+Gretchen		10	NNP	10
 Grey			4	JJ	1	NNP	3
-Greyhound		1	NNP	1
+Greyhound		2	NNP	2
 Grgich			1	NNP	1
 Gridgeley		1	NNP	1
 Grieco			2	NNP	2
 Griesa			1	NNP	1
 Griffin			2	NNP	2
 Griffith-Jones		1	NNP	1
-Griffiths		3	NNP	2	NNS	1
+Griffiths		3	NNP	1	NNS	2
 Grigsby			1	NNP	1
 Grilled			1	JJ	1
 Grim			1	JJ	1
@@ -10179,7 +10120,7 @@ HIS			1	PRP$	1
 HK$			6	$	6
 HMIs			1	NNS	1
 HMS			2	NNP	2
-HNC			1	NNP	1
+HNC			1	NN	1
 HOBBY			1	NN	1
 HOLD			1	VB	1
 HOLIDAY			2	NN	1	NNP	1
@@ -10192,7 +10133,7 @@ HUD			28	NNP	28
 HUGO			1	NNP	1
 HUH			1	NNP	1
 HUSBANDS		1	NNS	1
-Ha			1	NNP	1
+Ha			1	UH	1
 Haag			2	NNP	2
 Haagen-Dazs		1	NNP	1
 Haas			4	NNP	4
@@ -10226,14 +10167,14 @@ Haitian			1	JJ	1
 Hajime			1	NNP	1
 Hakim			1	NNP	1
 Hal			1	NNP	1
-Haldane			9	NNP	9
+Haldane			10	NNP	10
 Haldanes		4	NNP	4
 Hale			3	NNP	3
 Half			12	NN	3	PDT	9
 Half-year		1	JJ	1
 Halfway			1	RB	1
 Halifax			1	NNP	1
-Hall			31	NNP	31
+Hall			31	NN	2	NNP	29
 Hallam			1	NNP	1
 Halle			1	NNP	1
 Hallett			2	NNP	2
@@ -10241,7 +10182,7 @@ Halliburton		1	NN	1
 Halliday		4	NNP	4
 Halliwell		1	NNP	1
 Hallmark		1	NNP	1
-Halloween		5	NNP	5
+Halloween		5	NN	2	NNP	3
 Halls			1	NNP	1
 Hallucigenia		1	NNP	1
 Hallwood		2	NNP	2
@@ -10323,14 +10264,15 @@ Harlow			1	NNP	1
 Harlowe			2	NNP	2
 Harman			1	NNP	1
 Harmonia		1	NNP	1
-Harold			35	NNP	35
-Harolds			2	NNP	2
+Harold			37	NNP	37
+Harolds			2	NNP	1	NNPS	1
 Harpener		2	NNP	2
 Harper			8	NNP	8
 Harpo			1	NNP	1
 Harrier			1	NNP	1
+Harriet			1	NNP	1
 Harrington		3	NNP	3
-Harris			24	NNP	24
+Harris			26	NNP	26
 Harrisburg		2	NNP	2
 Harrison		5	NNP	5
 Harriss			2	NNP	2
@@ -10356,6 +10298,7 @@ Harvard			25	NNP	25
 Harvest			1	NNP	1
 Harvey			2	NNP	2
 Harwood			2	NNP	2
+Haryana			1	NNP	1
 Has			14	VBZ	14
 Hasbrouk		1	NNP	1
 Haseldens		1	NNP	1
@@ -10369,24 +10312,24 @@ Haswell			1	NNP	1
 Hatakeyama		1	NNP	1
 Hatch			5	NNP	5
 Hatchett		1	NNP	1
-Hate			1	VBP	1
+Hate			1	NN	1
 Hatfield		1	NNP	1
 Hathaway		1	NNP	1
 Hatred			1	NN	1
 Hats			1	NNS	1
 Haussmann		2	NNP	2
 Haut-Brion		1	NNP	1
-Havana			1	NNP	1
-Have			71	NNP	5	VBP	66
+Havana			2	NNP	2
+Have			78	NNP	4	VBP	74
 Haven			7	NNP	7
-Havent			1	NNP	1
-Having			13	VBG	13
+Havent			2	NNP	1	VB	1
+Having			14	VBG	14
 Hawaii			12	NNP	11	NNS	1
 Hawaiian		4	JJ	4
 Hawesville		1	NNP	1
 Hawke			2	NNP	2
 Hawkers			1	NNS	1
-Hawkins			3	NNP	3
+Hawkins			4	NNP	4
 Hawkmoths		1	NNS	1
 Hawks			4	NNPS	4
 Hawthorne		1	NN	1
@@ -10404,7 +10347,7 @@ Haze			5	NNP	5
 Hazel			1	NNP	1
 Hazell			1	NNP	1
 Hazlitt			1	NNP	1
-He			5200	PRP	5200
+He			5515	PRP	5515
 Head			4	NNP	4
 Headed			1	VBN	1
 Headley			1	NNP	1
@@ -10412,7 +10355,7 @@ Headmaster		1	NNP	1
 Healey			2	NNP	2
 Healeys			1	NNP	1
 Healing			1	NNP	1
-Health			62	NNP	62
+Health			63	NNP	63
 Health-insurance	1	NN	1
 HealthVest		12	NNP	12
 Healthcare		17	NNP	17
@@ -10432,24 +10375,25 @@ Heat			4	NNP	4
 Heath			3	NN	1	NNP	2
 Heatherington		1	NNP	1
 Heathrow		5	NNP	5
-Heaths			1	NNP	1
+Heaths			2	NNP	2
 Heating			3	NN	3
 Heaton			1	NNP	1
 Heave			1	VB	1
 Heaven			2	NNP	2
-Heavy			14	JJ	2	NNP	12
+Heavy			15	JJ	2	NNP	13
 Heber			1	NNP	1
 Hebrew			3	JJ	1	NNP	2
 Heckling		1	NNP	1
 Hecla			2	NNP	2
 Hector			2	NNP	2
-Hed			22	JJ	5	NNP	16	VBN	1
+Hed			23	JJ	4	NNP	17	VBN	2
 Heddas			1	NNP	1
 Hedges			1	NNP	1
 Hees			8	NNP	8
 Heffner			1	NNP	1
 Hefner			2	NNP	2
-Heidelberg		1	NNP	1
+Hegel			1	NNP	1
+Heidelberg		2	NNP	2
 Heightened		1	JJ	1
 Heights			8	NNP	8
 Heimers			1	NNP	1
@@ -10460,7 +10404,7 @@ Heinhold		1	NNP	1
 Heinz			1	NNP	1
 Heisbourg		1	NNP	1
 Heissman		1	NNP	1
-Heissman?		1	NNP	1
+Heissman?		1	.a	1
 Heiwa			1	NNP	1
 Heiwado			1	NNP	1
 Helen			10	NNP	10
@@ -10469,11 +10413,12 @@ Helens			2	NNP	2
 Helford			1	NNP	1
 Helga			1	NNP	1
 Helicopters		3	NNPS	3
-Hell			10	NN	6	NNP	4
+Hell			11	NN	5	NNP	5	UH	1
 Heller			7	NNP	7
 Heller\/Breene		1	Breene	1
-Hello			6	UH	6
+Hello			7	UH	7
 Hello?Operator?Yes.Can	1	MD	1
+HelloCan		1	MD	1
 Hells			7	NNP	7
 Helmsley		1	NNP	1
 Helmsley-Spear		1	NNP	1
@@ -10503,7 +10448,7 @@ Henrietta		1	NNP	1
 Henry			59	NNP	59
 Henson			1	NNP	1
 Hepburn			1	NNP	1
-Her			459	PRP	3	PRP$	456
+Her			496	PPS	2	PRP	3	PRP$	491
 Herald			19	NNP	19
 Herald-American		1	NNP	1
 Herb			1	NNP	1
@@ -10513,7 +10458,7 @@ Herbs			1	NNS	1
 Hercule			2	NNP	2
 Herculean		1	JJ	1
 Hercules		3	NNP	2	NNS	1
-Here			65	RB	65
+Here			66	RB	66
 Heres			3	NNP	3
 Heritage		16	NNP	16
 Herman			1	NNP	1
@@ -10534,7 +10479,7 @@ Hertz			3	NNP	3
 Herwick			1	NNP	1
 Herzfeld		1	NNP	1
 Herzog			1	NNP	1
-Hes			215	NNP	164	NNS	51
+Hes			234	NNP	179	NNS	55
 Hess			3	NNP	3
 Hesse			2	NNP	2
 Hewlett			2	NNP	2
@@ -10542,6 +10487,7 @@ Hewlett-Packard		22	NNP	22
 Hewson-Smarts		1	NNS	1
 Hey			6	NNP	1	UH	5
 Heyden			3	NN	2	NNP	1
+Heywatch		1	NNP	1
 Hi			1	NNP	1
 Hiawatha		1	NNP	1
 Hibbard			1	NNP	1
@@ -10562,7 +10508,7 @@ Highland		6	NNP	6
 Highlands		2	NNPS	2
 Highlights		1	NNS	1
 Highly			1	NNP	1
-Highness		2	NN	1	NNP	1
+Highness		2	NN	2
 Highway			8	NN	2	NNP	6
 Hijet			1	NNP	1
 Hilary			3	NNP	3
@@ -10573,18 +10519,19 @@ Hilger			2	NNP	2
 Hill			27	NNP	27
 Hillary			3	NNP	3
 Hillhaven		1	NNP	1
-Hills			32	NNP	29	NNPS	3
+Hills			33	NNP	29	NNPS	3	NNS	1
 Hillsboro		1	NNP	1
 Hilton			3	NNP	3
 Hiltons			1	NNPS	1
 Hiltunen		1	NNP	1
 Him			2	PRP	2
-Himalayas		2	NNP	1	NNPS	1
+Himalayas		3	NNP	1	NNPS	1	NNS	1
 Hime			1	NNP	1
 Himont			1	NNP	1
 Himself			1	PRP	1
 Hinckley		1	NNP	1
 Hindemith		1	NNP	1
+Hindi			1	NNP	1
 Hindu			1	NNP	1
 Hinduism		1	NNP	1
 Hines			6	NNP	6
@@ -10593,28 +10540,29 @@ Hippie			1	NNP	1
 Hiroshi			2	NNP	2
 Hiroshima		13	NNP	13
 Hirsch			3	NNP	3
-His			886	PRP$	886
+His			930	PRP$	930
 Hisham			1	NNP	1
 Hismanal		1	NNP	1
 Hispanic		10	JJ	8	NNP	2
 Hispanics		4	NNPS	4
 Hiss			2	NNP	2
 Hissing			1	VBG	1
+Historians		1	NNPS	1
 Historic		1	NNP	1
-History			8	NN	8
+History			11	NN	11
 Hit			1	VBP	1
 Hitachi			5	NNP	5
 Hitch-hikings		1	NNP	1
 Hitchcock		3	NNP	3
 Hitchcocks		1	NNP	1
-Hitler			3	NNP	3
+Hitler			4	NNP	4
 Hitlers			1	NNP	1
 Hixson			2	NNP	2
 Hmong			1	NNPS	1
 Hobbs			1	NNP	1
 Hoc			1	NNP	1
-Hochstadt		8	NNP	8
-Hochstadts		1	NNP	1
+Hochstadt		10	NNP	10
+Hochstadts		2	NNP	1	NNS	1
 Hocke			1	NNP	1
 Hockstadt		1	NNP	1
 Hoddles			2	NNP	2
@@ -10626,7 +10574,7 @@ Hoechst			11	NNP	11
 Hoenlein		1	NNP	1
 Hoffman			16	NNP	16
 Hoffmann-La		1	NNP	1
-Hogan			4	NNP	4
+Hogan			5	NNP	5
 Hogans			2	NNPS	2
 Hogarths		1	NNP	1
 Hogg			1	NNP	1
@@ -10641,6 +10589,7 @@ Holders			3	NNS	3
 Holding			21	NNP	21
 Holdings		33	NNP	15	NNPS	17	NNS	1
 Hole			3	NNP	3
+Holes			1	NNS	1
 Holford			1	NNP	1
 Holiday			5	NNP	5
 Holland			6	NNP	6
@@ -10664,7 +10613,7 @@ Holyhead		2	NNP	2
 Holyoke			1	NNP	1
 Holywell		1	NNP	1
 Homage			1	NN	1
-Home			46	NN	6	NNP	40
+Home			49	NN	6	NNP	43
 HomeFed			11	NNP	9	VBN	2
 Homebrew		1	NNP	1
 Homeland		1	NN	1
@@ -10683,14 +10632,14 @@ Honduras		2	NNP	1	NNS	1
 Honestly		1	RB	1
 Honey			1	NNP	1
 Honeywell		6	NNP	6
-Hong			92	NNP	92
+Hong			93	NNP	93
 Hongkong		1	NNP	1
 Honolulu		3	NNP	3
 Honolulu-based		2	JJ	2
 Honshu			1	NNP	1
 Hook			1	NNP	1
 Hooker			10	NNP	10
-Hooper			3	NNP	3
+Hooper			8	NNP	8
 Hoopers			2	NNP	1	NNS	1
 Hoosier			1	NNP	1
 Hope			5	NNP	5
@@ -10698,7 +10647,7 @@ Hopefully		1	NNP	1
 Hopes			1	NNS	1
 Hoping			2	VBG	2
 Hopkins			9	NNP	9
-Hopper			1	NNP	1
+Hopper			1	NN	1
 Hops			1	NNS	1
 Hopwood			5	NNP	5
 Horace			1	NNP	1
@@ -10715,7 +10664,7 @@ Horne			3	NNP	3
 Horns			1	NNP	1
 Horse			3	NNP	3
 Horsehead		1	NNP	1
-Horsemen		1	NNP	1
+Horsemen		1	NN	1
 Horses			1	NNS	1
 Horsham			1	NNP	1
 Horticultural		1	NNP	1
@@ -10724,14 +10673,14 @@ Horwitz			1	NNP	1
 Hose			1	VB	1
 Hosokawa		1	NNP	1
 Hospitable		1	JJ	1
-Hospital		27	NN	2	NNP	25
+Hospital		28	NN	2	NNP	26
 Host			2	NN	1	NNP	1
 Hostel			1	NNP	1
 Hostess			1	NNP	1
 Hostile			1	JJ	1
 Hostilities		1	NNS	1
-Hot			10	JJ	2	NNP	8
-Hotel			27	NN	1	NNP	26
+Hot			11	JJ	2	NNP	9
+Hotel			27	NN	2	NNP	25
 Hotel-casino		1	NN	1
 Hotels			2	NNPS	2
 Houdinis		1	NNP	1
@@ -10739,24 +10688,24 @@ Houghton		1	NNP	1
 Houlian			1	NNP	1
 Hour			1	NNP	1
 Hours			2	NNS	2
-House			340	NN	6	NNP	334
+House			343	NN	10	NNP	333
 House-Senate		14	JJ	2	NNP	12
 House-passed		4	JJ	4
-Household		4	NNP	4
+Household		4	NN	1	NNP	3
 Houses			6	NNS	6
 Housework		1	NNP	1
 Housing			23	NN	4	NNP	19
 Houston			32	NNP	32
 Houston-based		1	JJ	1
 Hovnanian		2	NNP	2
-How			185	WRB	185
+How			202	WRB	202
 Howard			52	NNP	51	RP	1
-Howards			2	NNP	1	RB	1
+Howards			2	NNS	1	RB	1
 Howe			4	NNP	4
 Howell			4	NNP	4
 However			99	RB	98	WRB	1
 Howick			2	NNP	2
-Hows			9	NNP	7	NNS	1	VBZ	1
+Hows			8	NNP	5	NNS	3
 Howson-Algraphy		1	NNP	1
 Howve			1	NNP	1
 Hoylake			4	NNP	4
@@ -10772,6 +10721,7 @@ Hudnut			1	NNP	1
 Hudson			16	NN	1	NNP	15
 Hueglin			2	NNP	2
 Huerta			1	NNP	1
+Huey			2	NNP	2
 Huge			11	JJ	11
 Hugel			1	NNP	1
 Huggins			3	NNP	3
@@ -10802,7 +10752,7 @@ Hungarian		7	JJ	5	NN	2
 Hungary			24	NNP	24
 Hunger			2	NN	1	NNP	1
 Hungerfords		1	NNP	1
-Huns			1	NNP	1
+Huns			1	NNPS	1
 Hunt			21	NNP	21
 Hunter			14	NNP	14
 Hunting			2	NN	2
@@ -10825,22 +10775,24 @@ Hussein			1	NNP	1
 Hutchinson		3	NNP	3
 Hutchison		1	NNP	1
 Hutton			49	NNP	49
+Huw			1	NNP	1
 Huxtable		1	NNP	1
 Hwang			2	NNP	2
 Hyatt			1	NNP	1
 Hyde			9	NNP	9
 Hydro			3	NNP	3
+Hyenas			2	NNPS	1	NNS	1
 Hyman			5	NNP	5
 Hymowitz		5	NNP	5
 HyperCard		5	NNP	5
 Hypocrisy		1	NNP	1
 Hypothermia		1	NNP	1
 Hyundai			7	NNP	7
-I			5607	CD	2	NN	5	NNP	8	PRP	5592
+I			6079	CD	2	NN	6	NNP	7	PRP	6064
 I.			11	NN	2	NNP	9
 I.C.H.			2	NNP	2
 IATA			2	NNP	2
-IBA			2	NNP	2
+IBA			2	NN	1	NNP	1
 IBC			1	NNP	1
 IBC\/Donoghue		1	Donoghue	1
 IBJ			2	NNP	2
@@ -10856,10 +10808,10 @@ IF			1	IN	1
 IFAR			5	NNP	5
 IFI			6	NNP	6
 IG			5	NNP	5
-II			39	CD	1	NNP	38
+II			41	CD	1	NNP	40
 III			19	NNP	19
 IIIs			1	NNP	1
-ILEA			1	NN	1
+ILEA			1	NNP	1
 ILLINOIS		1	NNP	1
 IMA			11	NNP	11
 IMELDA			1	NNP	1
@@ -10880,7 +10832,7 @@ INTERPUBLIC		1	NNP	1
 INVESTMENT		2	NN	1	NNP	1
 IOU			1	NN	1
 IOUs			5	NNS	5
-IQ			6	NNP	6
+IQ			6	NN	2	NNP	4
 IRA			30	NN	21	NNP	9
 IRAs			14	NNPS	3	NNS	11
 IRS			56	NNP	56
@@ -10897,18 +10849,18 @@ IX			1	CD	1
 IXL			1	NNP	1
 Iacocca			3	NNP	3
 Iain			3	NN	1	NNP	2
-Ian			7	NNP	7
-Ian?			1	NNP	1
+Ian			8	NNP	8
+Ian?			1	.a	1
 Ibbotson		1	NNP	1
 Ibn			1	NNP	1
-Ibsens			1	NNP	1
+Ibsens			2	NNP	2
 Icahn			28	NNP	28
 Ice			2	NNP	2
 Iceland			4	NNP	4
 Iceland-based		1	JJ	1
 Ichiro			1	NNP	1
 Icy			1	NNP	1
-Id			86	NN	86
+Id			90	NN	90
 Ida			6	NNP	6
 Idaho			3	NNP	3
 Ideal			1	NNP	1
@@ -10918,7 +10870,7 @@ Idleness		1	NN	1
 Idris			1	NNP	1
 Idrissa			1	NNP	1
 Idrocarburi		2	NNP	2
-If			546	IN	546
+If			567	IN	567
 Ifint			3	NNP	3
 Igdaloff		2	NNP	2
 Ignacio			2	NNP	2
@@ -10926,9 +10878,10 @@ Ignatius		1	NNP	1
 Ignore			1	VB	1
 Il			1	FW	1
 Ilford			1	NNP	1
+Iliad			1	NN	1
 Ilich			1	NNP	1
 Ilkka			1	NNP	1
-Ill			130	NNP	130
+Ill			147	NNP	147
 Ill.			26	NNP	26
 Ill.-based		2	JJ	2
 Illegal			1	NNP	1
@@ -10939,16 +10892,16 @@ Illuminating		14	NNP	14
 Illustrated		2	NNP	2
 Illustrations		1	NNS	1
 Ilminster		1	NNP	1
-Im			394	FW	1	JJ	11	NN	5	NNP	368	RB	1	UH	1	VB	2	VBP	5
+Im			429	FW	1	JJ	7	NN	4	NNP	411	UH	1	VB	1	VBP	4
 Image			2	NN	2
 Imagine			2	VB	2
 Imai			1	NNP	1
 Imelda			1	NNP	1
 Imhoff			2	NNP	2
-Immediate		4	JJ	1	NNP	3
-Immediately		2	RB	2
+Immediate		5	JJ	2	NNP	3
+Immediately		2	IN	1	RB	1
 Immerse			1	VBP	1
-Immersion		1	NNP	1
+Immersion		1	NN	1
 Immigrants		1	NNPS	1
 Immigration		1	NNP	1
 Immune			1	NNP	1
@@ -10969,21 +10922,21 @@ Impressionist		1	JJ	1
 Imprimis		2	NNP	2
 Improvement		2	NNP	2
 Improvements		1	NNP	1
-Imrie			5	NNP	5
+Imrie			6	NNP	6
 Imrie?Agreed		1	VBD	1
 Imries			1	NNS	1
-In			1564	IN	1558	NNP	5	RB	1
+In			1582	IN	1576	NNP	5	RB	1
 Inacio			1	NNP	1
 Inada			1	NNP	1
 Inc			153	NNP	153
 Inc.			709	NN	4	NNP	705
-Include			1	VBP	1
+Include			1	VB	1
 Included		1	VBN	1
 Includes		3	VBZ	3
 Including		3	VBG	3
 Inco			6	NNP	6
-Income			10	NN	1	NNP	9
-Incomes			5	NNP	1	NNS	4
+Income			11	NN	1	NNP	10
+Incomes			6	NNP	4	NNS	2
 Increasing		3	VBG	3
 Increasingly		6	RB	6
 Incredulous		1	JJ	1
@@ -10993,21 +10946,21 @@ Indecon			1	NNP	1
 Indeed			47	RB	46	UH	1
 Indemnity		1	NNP	1
 Indentical		1	JJ	1
-Independence		5	NN	1	NNP	4
+Independence		6	NNP	6
 Independent		7	JJ	3	NNP	4
 Index			64	NN	8	NNP	56
 Index-arbitrage		1	NN	1
 Indexing		1	NN	1
-India			57	NNP	57
+India			60	NNP	60
 India.			1	NNP	1
-Indian			42	JJ	31	NNP	11
+Indian			43	JJ	33	NNP	10
 Indian-Pakistani	1	JJ	1
 Indian-owned		1	JJ	1
 Indiana			9	NNP	9
 Indianapolis		9	NNP	9
 Indianapolis-based	1	JJ	1
 Indians			10	NNPS	10
-Indias			2	NNP	2
+Indias			4	NNP	4
 Indicative		1	JJ	1
 Indicators		1	NNPS	1
 Indies			3	NNP	3
@@ -11018,7 +10971,7 @@ Indonesia		8	NNP	8
 Indonesian		1	JJ	1
 Indosuez		23	NNP	23
 Industria		1	NNP	1
-Industrial		81	JJ	2	NNP	79
+Industrial		82	JJ	2	NNP	80
 Industriale		1	NNP	1
 Industrialised		1	JJ	1
 Industrialists		2	NNPS	1	NNS	1
@@ -11033,10 +10986,10 @@ Inez			1	NNP	1
 Infant			1	JJ	1
 Infanticide		2	NNP	2
 Infantry		1	NNP	1
-Infants			1	NNS	1
+Infants			2	NNS	2
 Infection		1	NN	1
 Infiniti		11	NNP	11
-Infirmary		1	NNP	1
+Infirmary		1	NN	1
 Inflation		13	NN	13
 Inflation-adjusted	1	VBN	1
 Inflationary		1	JJ	1
@@ -11054,10 +11007,10 @@ Ingredients		1	NNS	1
 Initial			3	JJ	3
 Initially		1	RB	1
 Initiative		5	NNP	5
-Injury			2	NNP	2
+Injury			3	NN	1	NNP	2
 Injustice		1	NNP	1
 Ink			1	NNP	1
-Inland			5	NNP	5
+Inland			6	NNP	6
 Inn			2	NNP	2
 Inner			4	JJ	2	NNP	2
 Innis-Maggiore-Olson	1	NNP	1
@@ -11084,9 +11037,9 @@ Inspectorate-Adia	1	NNP	1
 Inspire			1	NNP	1
 Installation		2	NN	2
 Instant			1	JJ	1
-Instead			52	RB	52
+Instead			52	IN	1	RB	51
 Institut		3	NNP	3
-Institute		84	NNP	84
+Institute		84	NN	2	NNP	82
 Institutes		12	NNP	2	NNPS	10
 Institution		6	NNP	6
 Institutional		5	JJ	3	NNP	2
@@ -11149,6 +11102,7 @@ Intrigued		1	JJ	1
 Introducing		1	VBG	1
 Inuit			1	NNP	1
 Invalid			1	NNP	1
+Invalids		1	NNS	1
 Invariably		2	RB	2
 Invasion		1	NNP	1
 Inventiveness		1	NN	1
@@ -11174,8 +11128,8 @@ Io			1	NNP	1
 Iona			2	NNP	2
 Ionesco			1	NNP	1
 Iowa			25	NNP	25
-Ipswich			3	NNP	3
-Ira			3	NNP	3
+Ipswich			4	NNP	4
+Ira			4	NNP	4
 Iran			6	NNP	6
 Iran-Contra		9	NNP	9
 Iran-Iraq		1	NNP	1
@@ -11184,12 +11138,13 @@ Iranian			4	JJ	4
 Iraq			5	NNP	5
 Iraqi			1	JJ	1
 Ireland			15	NNP	15
-Ireland?		1	CD	1
+Ireland?		1	.the	1
 Irene			2	NNP	2
 Irian			1	NNP	1
-Irish			26	JJ	25	NNS	1
-Irishman		2	NN	1	NNP	1
-Irishwoman		1	NNP	1
+Irish			28	JJ	27	NNS	1
+Irish-Canadian		1	JJ	1
+Irishman		2	NN	2
+Irishwoman		1	NN	1
 Irmin			1	NNP	1
 Iron			10	NNP	10
 Ironically		7	NNP	1	RB	6
@@ -11197,9 +11152,9 @@ Ironweed		1	NN	1
 Irony			1	NN	1
 Irun			1	NNP	1
 Irvine			6	NNP	6
-Irving			10	NNP	10
+Irving			11	NNP	11
 Irwin			1	NNP	1
-Is			89	NNP	1	VBZ	88
+Is			96	NNP	1	VBZ	95
 Isaac			4	NNP	4
 Isaacs			1	NNP	1
 Isabel			1	NNP	1
@@ -11210,18 +11165,19 @@ Isadore			1	NNP	1
 Isaiah			3	NNP	3
 Isetan			2	NNP	2
 Isikoff			1	NNP	1
-Islam			4	NNP	4
+Islam			4	NN	3	NNP	1
 Islamabad		2	NNP	2
 Islamic			4	JJ	1	NNP	3
-Island			21	NNP	21
+Island			22	NNP	22
 Islander		1	NNP	1
 Islanders		1	NNPS	1
 Islands			6	NNPS	6
-Isles			1	NNS	1
+Isle			2	NN	2
+Isles			2	NNS	2
 Ismaili			1	NNP	1
-Isnt			8	NNP	8
-Isobels			1	NNP	1
-Israel			35	NNP	35
+Isnt			11	NNP	11
+Isobels			1	NNPS	1
+Israel			36	NNP	36
 Israeli			13	JJ	9	NNP	4
 Israeli-Palestinian	1	JJ	1
 Israeli-occupied	2	JJ	2
@@ -11232,23 +11188,23 @@ Issues			12	NNP	2	NNPS	4	NNS	6
 Istanbul		3	NNP	3
 Istat			4	NNP	4
 Istituto		1	NNP	1
-It			1976	PRP	1976
-Italian			40	JJ	39	NN	1
+It			2089	PRP	2089
+Italian			41	JJ	40	NN	1
 Italian-led		1	JJ	1
 Italian-looking		1	NNP	1
 Italianate		1	JJ	1
 Italians		5	NNPS	5
-Italy			46	NNP	46
+Italy			47	NNP	47
 Itel			3	NNP	3
-Item			1	NNP	1
+Item			1	NN	1
 Items			1	NNS	1
 Itford			1	NNP	1
 Itll			9	NNP	9
 Ito			2	NNP	2
 Itoh			2	NNP	2
-Its			488	PRP$	488
+Its			529	PRP$	529
 Ivan			5	NNP	5
-Ive			222	CD	1	JJ	1	NNP	202	RB	1	VB	2	VBP	15
+Ive			237	CD	3	NNP	208	RB	1	VB	2	VBP	23
 Ivern			2	NNP	2
 Iverson			7	NNP	7
 Ivey			1	NNP	1
@@ -11275,16 +11231,16 @@ JAPANESE		1	JJ	1
 JCP			2	NNP	2
 JERSEY			1	NNP	1
 JH			1	NNP	1
-JP			3	NNP	3
+JP			3	NN	1	NNP	2
 JUDGE			3	NN	3
 JUDICIAL		1	JJ	1
 JUST			1	RB	1
 Jaap			1	NNP	1
-Jack			67	NNP	67
+Jack			71	NNP	71
 Jackal			1	NNP	1
 Jackals			1	NNS	1
 Jackie			4	NNP	4
-Jacks			6	NNP	4	NNS	2
+Jacks			7	NNP	4	NNPS	1	NNS	2
 Jackson			16	NNP	16
 Jacksonville		2	NNP	2
 Jaclyn			1	NNP	1
@@ -11306,22 +11262,22 @@ Jaguar-GM		2	NNP	2
 Jahn			2	NNP	2
 Jail			1	NN	1
 Jaime			1	NNP	1
-Jake			5	NN	1	NNP	4
+Jake			5	NN	2	NNP	3
 Jakes			2	NNP	2
 Jalaalwalikraam		1	NNP	1
 Jamaica			7	NNP	7
 Jamaican		1	JJ	1
-James			152	NNP	152
+James			153	NNP	153
 Jameson			1	NNP	1
-Jamess			4	NNP	4
+Jamess			5	NNP	5
 Jamie			6	NNP	6
 Jamieson		2	NNP	2
-Jan			2	NNP	2
+Jan			3	NNP	3
 Jan.			31	NNP	30	VB	1
 Janacek			2	NNP	2
 Janachowski		1	NNP	1
 Jandrell		1	NNP	1
-Jane			24	NNP	24
+Jane			26	NNP	26
 Jane?Just		1	NNP	1
 Janeiro			1	NNP	1
 Janes			3	NNP	3
@@ -11334,8 +11290,8 @@ Janitor			1	NNP	1
 Janlori			1	NNP	1
 Janney			3	NNP	3
 Jansen			1	NNP	1
-January			71	NNP	71
-Japan			373	NNP	373
+January			73	NNP	73
+Japan			374	NNP	374
 Japan-U.S		1	NNP	1
 Japan-U.S.		1	JJ	1
 Japanese		432	JJ	357	NN	4	NNP	30	NNPS	26	NNS	15
@@ -11364,7 +11320,7 @@ Jeancourt-Galignani	3	NNP	3
 Jeanette		1	NNP	1
 Jeannie			2	NNP	2
 Jeb			2	NNP	2
-Jeddah?			1	CD	1
+Jeddah?			1	.the	1
 Jeep			2	NNP	2
 Jeeps			1	NNS	1
 Jeff			7	NNP	7
@@ -11384,10 +11340,10 @@ Jenkins			7	NNP	7
 Jenks			2	NNP	2
 Jennet			1	NNP	1
 Jennie			1	NNP	1
-Jennifer		6	NNP	6
+Jennifer		7	NNP	7
 Jennifers		2	NNP	1	NNS	1
 Jennison		5	NNP	5
-Jenny			18	NNP	18
+Jenny			23	NNP	23
 Jennys			4	NNP	3	NNS	1
 Jenrette		19	NNP	19
 Jens-Uwe		1	NNP	1
@@ -11409,25 +11365,25 @@ Jess			1	NNP	1
 Jesse			3	NNP	3
 Jessye			1	NNP	1
 Jesus			4	NNP	4
-Jet			1	NNP	1
+Jet			1	NN	1
 Jets			1	NNS	1
-Jew			2	NNP	2
+Jew			2	NN	1	NNP	1
 Jewboy			1	NN	1
 Jewelers		1	NNPS	1
 Jewelry			3	NN	3
-Jewish			17	JJ	16	NNP	1
+Jewish			18	JJ	17	NNP	1
 Jews			8	NNPS	7	NNS	1
 Jiang			2	NNP	2
 Jihad			3	NNP	3
-Jill			5	NNP	5
+Jill			6	NNP	6
 Jim			30	NNP	30
 Jimenez			1	NNP	1
 Jimmie			3	NNP	2	VB	1
 Jimmy			10	NNP	10
 Jims			1	NNP	1
 Jittery			1	JJ	1
-Jo			5	NNP	5
-Joan			8	NNP	8
+Jo			6	NNP	6
+Joan			9	NNP	9
 Joann			1	NNP	1
 Joanna			1	NNP	1
 Joanne			2	NNP	2
@@ -11435,8 +11391,8 @@ Joannie			1	NNP	1
 Joans			1	NNP	1
 Job			1	NNP	1
 Jobs			5	NNP	2	NNS	3
-Jocasta			1	NNP	1
-Jockey			1	NNP	1
+Jocasta			2	NNP	2
+Jockey			1	NN	1
 Joe			18	NNP	18
 Joel			7	NNP	7
 Joels			1	NNP	1
@@ -11445,13 +11401,13 @@ Johann			1	NNP	1
 Johanna			1	NNP	1
 Johannesburg		1	NNP	1
 Johanson		1	NNP	1
-John			258	NNP	258
+John			265	NNP	265
 Johnnie			2	NNP	2
 Johnny			6	NNP	6
-Johns			18	NNP	18
+Johns			19	NNP	19
 Johnson			51	NNP	51
 Johnson-era		1	NN	1
-Johnsons		2	NNP	2
+Johnsons		2	NNP	1	NNS	1
 Johnston		6	NNP	6
 Johnstone		1	NNP	1
 Johnstown		3	NNP	3
@@ -11464,17 +11420,17 @@ Jolt			1	VB	1
 Jon			6	NNP	6
 Jonas			1	NNP	1
 Jonathan		10	NNP	10
-Jones			194	NNP	194
-Jones?			1	NNP	1
+Jones			196	NNP	196
+Jones?			1	.a	1
 Joness			1	NNP	1
 Joni			2	NNP	2
 Jordache		2	NNP	2
-Jordache?		1	NNP	1
+Jordache?		1	.a	1
 Jordan			8	NNP	8
 Jos			1	NNP	1
 Jos.			2	NNP	2
 Jose			7	NNP	7
-Joseph			41	NNP	41
+Joseph			42	NNP	42
 Josephs			1	NNP	1
 Josephson		1	NNP	1
 Josephthal		1	NNP	1
@@ -11489,7 +11445,7 @@ Journalists		3	NNS	3
 Journals		2	NNPS	2
 Journey			1	NNP	1
 Jovanovich		2	NNP	2
-Jove			1	NNP	1
+Jove			1	UH	1
 Jowett			1	NNP	1
 Joy			6	NNP	6
 Joyce			5	NNP	5
@@ -11502,31 +11458,32 @@ Juarez			1	NNP	1
 Jubilee			1	NNP	1
 Judah			1	NNP	1
 Judaism			1	NNP	1
-Judas			1	NNPS	1
+Judas			1	NN	1
 Jude			2	NNP	2
-Judge			100	NNP	99	VB	1
-Judgement		1	NNP	1
+Judge			100	NN	1	NNP	98	VB	1
+Judgement		2	NNP	2
 Judges			7	NNP	2	NNPS	3	NNS	2
 Judging			3	VBG	3
 Judgment		1	NN	1
 Judicial		3	NNP	3
 Judiciary		5	NNP	5
 Judie			1	NNP	1
-Judith			3	NNP	3
-Judy			26	NNP	26
+Judith			4	NNP	4
+Judy			28	NNP	28
 Judys			2	NNP	2
-Juffure			2	NNP	2
+Juffure			3	NNP	2	VB	1
 Jujo			3	NNP	3
 Jukes			1	NNP	1
 Jules			1	NNP	1
 Julia			6	NNP	6
 Julian			2	NNP	2
-Julie			12	NNP	12
-Julies			7	NNP	7
+Julie			13	NNP	13
+Julies			8	NNP	8
 Juliet			2	NNP	2
-Julius			1	NNP	1
-July			116	NNP	116
+Julius			2	NNP	2
+July			118	NNP	118
 Jump			1	NN	1
+Junction		1	NN	1
 June			128	NNP	128
 Junior			2	NN	2
 Junius			2	NNP	2
@@ -11537,12 +11494,12 @@ Junk-bond		1	NN	1
 Junk-fund		1	NN	1
 Junk-holders		1	NNS	1
 Junk-portfolio		1	NN	1
-Jupiter			3	NNP	3
-Jupiters		5	NNP	3	NNS	2
+Jupiter			4	NNP	4
+Jupiters		5	NNP	2	NNS	3
 Jurisprudence		3	NN	3
-Jurong			1	NNP	1
-Just			68	RB	68
-Justice			81	JJ	1	NN	2	NNP	78
+Jurong			1	JJ	1
+Just			72	RB	72
+Justice			83	JJ	1	NN	2	NNP	80
 Justin			2	NNP	2
 K			14	NN	1	NNP	13
 K.			9	NNP	9
@@ -11584,6 +11541,7 @@ Kaminski		4	NNP	4
 Kampala			1	NNP	1
 Kan			2	NNP	2
 Kan.			4	NNP	4
+Kandahar		1	NNP	1
 Kane			5	NNP	5
 Kang			1	NNP	1
 Kangaroos		1	NNP	1
@@ -11595,7 +11553,7 @@ Kao			1	NNP	1
 Kaplan			1	NNP	1
 Kappa			1	NNP	1
 Karajans		1	NNP	1
-Karen			16	NNP	16
+Karen			17	NNP	17
 Karim			1	NNP	1
 Karin			1	NNP	1
 Karl			7	JJ	1	NNP	6
@@ -11620,7 +11578,7 @@ Katz			8	NNP	8
 Katzenjammer		1	NNP	1
 Katzenstein		5	NNP	5
 Kaufman			4	NNP	4
-Kaul			4	NNP	4
+Kaul			5	NNP	5
 Kauls			4	NNP	3	NNPS	1
 Kavanagh		2	NNP	2
 Kawasaki		3	NNP	3
@@ -11642,7 +11600,7 @@ Keehn			1	NNP	1
 Keeler			1	NNP	1
 Keenan			10	NNP	10
 Keene			2	NNP	2
-Keep			22	VB	22
+Keep			26	VB	26
 Keeping			8	VBG	8
 Keffer			1	NNP	1
 Kegler			2	NNP	2
@@ -11670,7 +11628,7 @@ Kendrick		1	NNP	1
 Kenji			1	NNP	1
 Kenmore			1	NNP	1
 Kennametal		3	NNP	3
-Kennedy			23	NNP	23
+Kennedy			24	NNP	24
 Kennedy-Waxman		1	NNP	1
 Kennedys		1	NNP	1
 Kenneth			16	NNP	16
@@ -11679,10 +11637,10 @@ Kennewick		1	NNP	1
 Kenosha			1	NNP	1
 Kensetsu		1	NNP	1
 Kensington		4	NNP	4
-Kent			13	NNP	13
+Kent			14	NNP	14
 Kents			1	NNP	1
 Kentucky		11	NNP	11
-Kenya			2	NNP	2
+Kenya			3	NNP	3
 Kenyan			2	JJ	2
 Keogh			2	NNP	2
 Keough			1	NNP	1
@@ -11712,20 +11670,22 @@ Khe			2	NNP	2
 Khmer			3	NNP	3
 Khomeini		1	NNP	1
 Khrushchev		1	NNP	1
+Khulaifi		1	NNP	1
 Khyber			1	NNP	1
 Kicking			1	VBG	1
 Kid			1	NNP	1
 Kidder			92	NNP	92
-Kids			1	NNPS	1
+Kids			2	NNP	1	NNPS	1
 Kiel			1	NNP	1
 Kiels			1	NNPS	1
 Kiep			2	NNP	2
-Kiertons		1	NNP	1
+Kiertons		1	NNS	1
 Kiki			1	NNP	1
 Kiko			1	NNP	1
 Kildare			1	NNP	1
 Kill			1	VB	1
 Killeen			1	NNP	1
+Killing			1	NNP	1
 Kilpatrick		2	NNP	2
 Kilvert			1	NNP	1
 Kim			2	NNP	2
@@ -11742,8 +11702,8 @@ KinderCare		1	NNP	1
 Kindertotenlieder	1	FW	1
 Kindly			3	RB	3
 Kindness		1	NNP	1
-King			40	NNP	40
-Kingdom			16	NNP	16
+King			43	NN	3	NNP	40
+Kingdom			17	NN	2	NNP	15
 Kingdom-based		1	JJ	1
 Kingdoms		1	NNP	1
 Kingfisher		1	NNP	1
@@ -11763,7 +11723,7 @@ Kirk			5	NNP	5
 Kirkendall		1	NNP	1
 Kirkland		1	NNP	1
 Kirkpatrick		1	NNP	1
-Kirks			5	NNP	1	NNPS	3	NNS	1
+Kirks			6	NNP	3	NNS	3
 Kirschbaum		1	NNP	1
 Kirschner		2	NNP	2
 Kissinger		1	NNP	1
@@ -11779,7 +11739,7 @@ Kiyotaka		1	NNP	1
 Klan			1	NNP	1
 Klara			1	NNP	1
 Klauser			4	NNP	4
-Kleenex			2	NNP	2
+Kleenex			2	NN	2
 Kleiber			3	NNP	3
 Klein			11	NNP	11
 Kleinman		2	NNP	2
@@ -11799,13 +11759,13 @@ Knievel			1	NNP	1
 Knife			1	NNP	1
 Knight			6	NNP	6
 Knight-Ridder		7	NNP	7
-Knightsbridge		1	NNP	1
+Knightsbridge		2	NNP	2
 Knit			1	VBN	1
 Knives			1	NNS	1
 Knocks			1	VBZ	1
 Knole			2	NNP	2
 Knopf			4	NNP	4
-Know			1	VBP	1
+Know			2	VBP	2
 Knowing			2	VBG	2
 Knowle			1	JJ	1
 KnowledgeWare		1	NNP	1
@@ -11831,7 +11791,7 @@ Kolber			3	NNP	3
 Komatsu			2	NNP	2
 Kompakt			1	NNP	1
 Kondo			1	NNP	1
-Kong			88	NNP	88
+Kong			89	NNP	89
 Kong-dollar		2	NN	2
 Kongs			1	NNP	1
 Kongsberg		1	NNP	1
@@ -11865,7 +11825,7 @@ Krampe			2	NNP	2
 Krasnoyarsk		8	NNP	8
 Kravis			13	NNP	13
 Krebs			2	NNP	2
-Kremlin			9	NNP	9
+Kremlin			9	NN	2	NNP	7
 Krenz			9	NNP	9
 Krick			1	NNP	1
 Krisher			3	NNP	3
@@ -11891,12 +11851,12 @@ Kuiper			1	NNP	1
 Kume			8	NNP	8
 Kummerfeld		2	NNP	2
 Kung			1	NNP	1
-Kunta			8	NNP	8
+Kunta			9	NNP	9
 Kuntas			2	NNP	2
 Kurland			2	NNP	2
 Kurnit			2	NNP	2
 Kurt			9	NNP	9
-Kurts			2	NNP	2
+Kurts			2	NNS	2
 Kurtz			1	NNP	1
 Kushnick		1	NNP	1
 Kutney			1	NNP	1
@@ -11951,7 +11911,7 @@ LONDON			14	NNP	14
 LONG-TERM		1	JJ	1
 LOOM			1	VBZ	1
 LOS			1	NNP	1
-LP			1	NNP	1
+LP			1	NN	1
 LS400			1	NN	1
 LSI			4	NNP	4
 LTCB			2	NNP	2
@@ -11975,8 +11935,8 @@ Laboratorium		1	NNP	1
 Laboratory		7	NN	1	NNP	6
 Laboring		1	VBG	1
 Labouisse		1	NNP	1
-Labour			79	NNP	79
-Labours			9	NNP	6	NNS	3
+Labour			81	NNP	81
+Labours			8	NNP	3	NNS	5
 Labovitz		1	NNP	1
 Labrador		1	NNP	1
 Labs			1	NNPS	1
@@ -11986,22 +11946,23 @@ Lack			11	NN	10	NNP	1
 Lada			1	NNP	1
 Ladders			1	NNP	1
 Ladenburg		4	NNP	4
-Ladies			2	NNP	2
+Ladies			3	NNP	2	NNS	1
 Ladislav		1	NNP	1
 Lady			10	NNP	10
 Laff			14	NNP	14
 Lafite-Rothschild	1	NNP	1
 Lag			1	NN	1
 Lagnado			4	NNP	4
+Lagos			1	NNS	1
 Laidig			3	NNP	3
 Laing			4	NNP	3	VBG	1
 Laird			1	NNP	1
 Lairg			1	NNP	1
-Lake			17	NNP	17
+Lake			18	NNP	18
 Lakeland		4	NNP	4
 Lakes			2	NNP	1	NNPS	1
 Lakshmipura		1	NNP	1
-Lally			5	NNP	2	RB	3
+Lally			6	NNP	3	RB	3
 Lama			5	NNP	5
 Lambert			29	NNP	29
 Lamin			2	NNP	2
@@ -12029,7 +11990,7 @@ Landrovers		1	NNS	1
 Landscape		1	NNP	1
 Landseer		2	NNP	2
 Landy			2	NNP	2
-Lane			24	NNP	24
+Lane			24	NN	1	NNP	23
 Lanfranco		1	NNP	1
 Lang			11	NNP	11
 Langendorf		1	NNP	1
@@ -12046,8 +12007,9 @@ Laotian			2	JJ	2
 Large			14	JJ	14
 Large-scale		2	JJ	1	NNP	1
 Largely			1	RB	1
+Larger			1	NNP	1
 Larkin			1	NNP	1
-Larry			14	NNP	14
+Larry			15	NNP	15
 Larrys			1	NNP	1
 Larsen			9	NNP	9
 Las			32	NNP	32
@@ -12060,8 +12022,8 @@ Lately			1	RB	1
 Later			23	JJ	1	RB	21	RBR	1
 Latest			1	JJS	1
 Latham			1	NNP	1
-Latin			43	JJ	20	NN	1	NNP	21	NNPS	1
-Latins			2	NNP	1	NNS	1
+Latin			44	JJ	21	NN	1	NNP	21	NNPS	1
+Latins			2	NNPS	1	NNS	1
 Latour			2	NNP	2
 Latowski		1	NNP	1
 Laud			1	NNP	1
@@ -12072,12 +12034,13 @@ Laugh			1	NNP	1
 Laughlin		3	NNP	3
 Laughter		1	NNP	1
 Laundered		1	VBN	1
-Laundromat		1	NNP	1
+Laundromat		1	NN	1
 Laura			6	NNP	6
 Laurel			7	NNP	7
 Lauren			2	NNP	2
 Laurence		6	NNP	6
 Laurie			1	NNP	1
+Lauter			1	NNP	1
 Lavaro			1	NN	1
 Lavelle			1	NNP	1
 Laverne			1	NNP	1
@@ -12087,7 +12050,7 @@ Law			22	NN	5	NNP	17
 Lawful			1	JJ	1
 Lawless			1	NNP	1
 Lawmakers		8	NNPS	1	NNS	7
-Lawrence		32	NNP	32
+Lawrence		33	NNP	33
 Lawrences		1	NNS	1
 Lawrenceville		1	NNP	1
 Lawrenson		3	NNP	3
@@ -12116,20 +12079,20 @@ Leahy			1	NNP	1
 Leakey			2	NNP	2
 Leap			3	NNP	3
 Lear			3	NNP	3
-Learn			2	NNP	1	VBN	1
-Learning		17	NNP	16	VBG	1
+Learn			2	NNP	2
+Learning		17	NNP	17
 Leary			1	NNP	1
 Lease			2	NNP	2
 Leaseway		7	NNP	7
 Leasing			2	NNP	2
-Leather			2	NN	2
-Leave			13	VB	13
+Leather			1	NN	1
+Leave			15	VB	15
 Leaves			1	NNS	1
 Leaving			4	VBG	4
 Leavitt			1	NNP	1
 Lebanese		2	JJ	2
 Lebanon			16	NNP	16
-Lebel			3	NN	1	NNP	2
+Lebel			3	NNP	3
 Lech			1	NNP	1
 Leche			3	NNP	3
 Lecheria		2	NNP	2
@@ -12138,13 +12101,13 @@ Lectureship		1	NNP	1
 Led			2	VBN	2
 Lederer			1	NNP	1
 Lee			45	NNP	45
-Leeds			5	NNP	1	NNS	4
+Leeds			6	NNP	1	NNS	5
 Leemans			3	NNP	3
 Lees			1	NNP	1
 Leeza			1	NNP	1
 Lefcourt		2	NNP	2
 Lefever			1	NNP	1
-Left			11	NNP	7	VBD	1	VBN	3
+Left			12	NN	1	NNP	7	VBD	1	VBN	3
 Leftovers		1	NNP	1
 Lefty			1	NNP	1
 Legal			5	JJ	1	NNP	4
@@ -12153,7 +12116,7 @@ Legg			2	NNP	2
 Leggett			1	NNP	1
 Legion			3	NNP	3
 Legislating		1	VBG	1
-Legislation		7	NN	6	NNP	1
+Legislation		8	NN	7	NNP	1
 Legislators		2	NNS	2
 Legislature		3	NNP	3
 Lego			3	NNP	3
@@ -12173,11 +12136,11 @@ Leish			1	NNP	1
 Leisure			1	NN	1
 Leming			2	NNP	2
 Lemmon			1	NNP	1
-Lemon			1	NNP	1
+Lemon			2	NNP	2
 Lemont			1	NNP	1
 Len			6	NNP	6
 Lenaut			2	NNP	2
-Lenauts			1	NNP	1
+Lenauts			1	NNS	1
 Lenders			1	NNP	1
 Lenin			3	NNP	3
 Leningrad		2	NNP	2
@@ -12190,7 +12153,7 @@ Lentjes			5	NNP	5
 Leo			8	NNP	8
 Leomine			1	NNP	1
 Leominster		3	NNP	3
-Leon			5	NNP	5
+Leon			6	NNP	6
 Leona			1	NNP	1
 Leonard			7	NNP	7
 Leonardo		1	NNP	1
@@ -12212,8 +12175,8 @@ Lessing			1	NNP	1
 Lessings		1	NNP	1
 Lester			3	NNP	3
 Lesutis			1	NNP	1
-Let			58	NNP	2	VB	55	VBD	1
-Lets			37	NNP	4	NNS	12	VBZ	21
+Let			62	NNP	2	VB	59	VBD	1
+Lets			39	NNP	4	NNPS	2	NNS	11	VBZ	22
 Letter			2	NN	1	NNP	1
 Letters			2	NNS	2
 Letting			1	VBG	1
@@ -12238,7 +12201,7 @@ Lewala			1	NNP	1
 Lewes			1	NNS	1
 Lewis			24	NNP	24
 Lewisham		1	NNP	1
-Lexington		11	NNP	11
+Lexington		12	NNP	12
 Lexus			10	NNP	10
 Leyland			1	NNP	1
 Leylands		1	NNPS	1
@@ -12249,14 +12212,14 @@ Liaisons		1	NNS	1
 Liang			1	NNP	1
 Lib			1	NNP	1
 Libera			1	FW	1
-Liberal			17	JJ	5	NNP	12
+Liberal			20	JJ	7	NNP	13
 Liberalism		1	NN	1
 Liberals		4	NNS	4
 Liberation		2	NNP	2
 Liberties		4	NNP	1	NNPS	3
 Liberty			6	NNP	6
 Libraries		1	NNS	1
-Library			3	NNP	3
+Library			4	NNP	4
 Libya			2	NNP	2
 Libyan			2	JJ	2
 Libyans			3	NNPS	3
@@ -12268,11 +12231,11 @@ Lie			1	NN	1
 Lieb			2	NNP	2
 Lieber			3	NNP	3
 Lieberman		2	NNP	2
-Liebermann		5	NNP	5
-Liebermanns		1	NNP	1
-Lieutenant		2	NNP	2
-Lieutenants		1	NNP	1
-Life			50	NN	2	NNP	48
+Liebermann		6	NNP	6
+Liebermanns		2	NNP	1	NNS	1
+Lieutenant		2	NN	1	NNP	1
+Lieutenants		1	NNPS	1
+Life			52	NN	5	NNP	47
 LifeSavers		4	NNP	1	NNPS	3
 Lifestyles		1	NNP	1
 Lifland			1	NNP	1
@@ -12282,7 +12245,7 @@ Lighthouse		1	NNP	1
 Lighting		5	NNP	5
 Lightning		2	NN	1	NNP	1
 Lights			4	NNP	3	NNS	1
-Like			40	IN	40
+Like			41	IN	41
 Likely			2	JJ	1	RB	1
 Likewise		4	RB	4
 Likins			1	NNP	1
@@ -12291,7 +12254,7 @@ Lilian			2	NNP	2
 Lilliputian		1	JJ	1
 Lilly			17	NNP	17
 Lily			2	NNP	2
-Lilys			1	NNS	1
+Lilys			1	NNP	1
 Lima			1	NNP	1
 Limitations		1	NNPS	1
 Limited			10	NNP	10
@@ -12302,6 +12265,7 @@ Lincolnshire		1	NNP	1
 Lind			1	NNP	1
 Lind-Waldock		1	NNP	1
 Linda			10	NNP	10
+Lindberghs		1	NNP	1
 Linden			3	NNP	3
 Lindens			1	NNPS	1
 Lindesay		1	NNP	1
@@ -12324,7 +12288,7 @@ Lion			10	NNP	10
 Lionel			4	NNP	4
 Lionels			2	NNP	2
 Lions			2	NNS	2
-Lip			1	JJ	1
+Lip			1	NN	1
 Lipman			1	NNP	1
 Lipper			2	NNP	2
 Lipps			1	NNP	1
@@ -12337,7 +12301,7 @@ Lisa			1	NNP	1
 Lisbeth			1	NNP	1
 Lish			1	NNP	1
 List			1	NN	1
-Listen			6	VB	6
+Listen			7	VB	7
 Listeners		1	NNS	1
 Listening		1	VBG	1
 Liszt			1	NNP	1
@@ -12348,15 +12312,16 @@ Literature		2	NNP	2
 Lithgow			1	NNP	1
 Lithox			3	NNP	3
 Litigation		18	NN	3	NNP	15
-Little			26	JJ	8	NNP	15	RB	3
+Little			28	JJ	9	NNP	16	RB	3
 Littleton		1	NNP	1
+Littlewoods		1	NNPS	1
 Littman			1	NNP	1
 Litton			2	NNP	2
 Litvack			3	NNP	3
 Litvinchuk		2	NNP	2
 Liu			2	NNP	2
 Live			4	NNP	3	VBP	1
-Liverpool		17	NNP	17
+Liverpool		18	NNP	18
 Liverpools		2	NNP	2
 Lives			2	NNS	1	VBZ	1
 Living			5	VBG	5
@@ -12366,7 +12331,7 @@ Lizzie			1	NNP	1
 Lizzies			1	NNP	1
 Llosa			8	NNP	8
 Lloyd			26	NNP	26
-Lloyds			4	NNP	4
+Lloyds			5	NNP	5
 Lo			1	NNP	1
 Loach			1	NNP	1
 Loan			28	NN	3	NNP	25
@@ -12393,7 +12358,7 @@ Loews			2	NNP	2
 Lofoten			1	NNP	1
 Loft			1	NN	1
 Logan			2	NNP	2
-Logic			4	NN	1	NNP	3
+Logic			4	NN	2	NNP	2
 Logical			1	NNP	1
 Logistic		1	RB	1
 Logistics		2	NNP	1	NNS	1
@@ -12404,10 +12369,10 @@ Lolita			1	NNP	1
 Lolly			1	NNP	1
 Loman			1	NNP	1
 Lomas			1	NNP	1
-Lomax			2	NNP	2
+Lomax			3	NNP	3
 Lomb			3	NNP	3
 Lombard			2	NNP	2
-London			351	JJ	1	NNP	350
+London			363	JJ	1	NNP	362
 London-based		9	JJ	9
 Londoner		2	NN	1	NNP	1
 Londoners		2	NNS	2
@@ -12426,14 +12391,14 @@ Longmont		2	NNP	2
 Longwood		1	NNP	1
 Lonnie			2	NNP	2
 Lonski			2	NNP	2
-Look			26	NN	2	VB	24
-Looking			9	VBG	9
+Look			28	NN	1	VB	27
+Looking			10	VBG	10
 Looks			4	NNS	2	VBZ	2
 Loosely			1	RB	1
 Lopez			2	NNP	2
 Lorain			2	NNP	2
 Loral			2	NNP	2
-Lord			35	NNP	35
+Lord			36	NNP	36
 Lord!			1	NN	1
 Lords			18	NNPS	18
 Lordship		5	NN	5
@@ -12482,7 +12447,7 @@ Lovely			1	RB	1
 Lover			1	NNP	1
 Loves			1	VBZ	1
 Lovett			1	NNP	1
-Loving			2	JJ	1	VBG	1
+Loving			2	NNP	1	VBG	1
 Lowe			3	NNP	3
 Lowell			1	NNP	1
 Lowenthal		1	NNP	1
@@ -12514,6 +12479,7 @@ Ludlow			1	NNP	1
 Lufkin			20	NNP	20
 Lufthansa		1	NN	1
 Lugar			1	NNP	1
+Luggage			1	NNP	1
 Luis			3	NNP	3
 Lukacss			1	NNP	1
 Lukassen		1	NNP	1
@@ -12545,7 +12511,7 @@ Lyn			2	NNP	2
 Lynch			75	NNP	75
 Lynden			1	NNP	1
 Lynford			2	NNP	2
-Lynn			14	NNP	14
+Lynn			16	NNP	16
 Lynne			3	NNP	3
 Lynns			4	NNP	3	NNS	1
 Lyon			1	NNP	1
@@ -12556,6 +12522,7 @@ Lyric			1	NNP	1
 Lyrical			1	RB	1
 Lyrics			1	NNS	1
 Lys			1	NNP	1
+Lyttleton		1	NNP	1
 M			4	NNP	4
 M&A			3	NN	1	NNP	2
 M'Bow			3	NNP	3
@@ -12570,10 +12537,10 @@ M.J.			1	NNP	1
 M.P.			1	NNP	1
 M.W.			1	NNP	1
 M1			2	NN	2
-M5			1	NNP	1
+M5			2	NN	1	NNP	1
 M6			3	NN	1	NNP	2
 M8.7sp			1	NNP	1
-MA			1	NNP	1
+MA			1	NN	1
 MALAISE			1	NNP	1
 MANAGEMENT		1	NNP	1
 MANUALS			1	NNS	1
@@ -12581,11 +12548,11 @@ MARCOS			1	NNP	1
 MARKET			1	NN	1
 MAY			1	NNP	1
 MBA			1	NNP	1
-MC			1	NNP	1
+MC			1	NN	1
 MCA			23	NNP	23
 MCI			23	NNP	23
 MCMLXXXIII		1	NNP	1
-MD			1	NNP	1
+MD			1	NN	1
 MD-11			2	NNP	2
 MD-80			3	NN	1	NNP	2
 MEA			1	NNP	1
@@ -12618,9 +12585,9 @@ MORE			1	JJR	1
 MORGAN			1	NNP	1
 MORTGAGE		14	NNP	14
 MOST			1	JJS	1
-MP			15	NNP	15
+MP			16	NN	3	NNP	13
 MPD			2	NNP	2
-MPs			17	NNP	2	NNPS	3	NNS	12
+MPs			17	NNP	3	NNPS	2	NNS	12
 MRI			1	NNP	1
 MRI-type		1	JJ	1
 MTM			14	NNP	14
@@ -12631,11 +12598,12 @@ MUST-SIGN		1	JJ	1
 MX			2	NNP	2
 Ma			1	NNP	1
 Mabel			5	NNP	5
+Mabel.			1	NNP	1
 Mabellini		1	NNP	1
 Mabuse			1	NNP	1
 Mac			19	NNP	19
 Mac-Laren		1	NNP	1
-MacDonald		6	NNP	6
+MacDonald		7	NNP	7
 MacLellan		1	NNP	1
 MacMillan		2	NNP	2
 MacSharry		1	NNP	1
@@ -12647,13 +12615,13 @@ Maccabee		2	NNP	2
 Macchiarola		1	NNP	1
 Macdonald		1	NNP	1
 Macfarlane		1	NNP	1
-Mach			1	NNP	1
+Mach			1	NN	1
 Macheski		1	NNP	1
 Machiavellian		1	JJ	1
 Machiguenga		5	NNP	5
 Machiguengas		2	NNPS	1	NNS	1
 Machine			6	NN	5	NNP	1
-Machinery		3	NNP	3
+Machinery		3	NN	1	NNP	2
 Machines		29	NNP	8	NNPS	19	NNS	2
 Machinists		9	NNP	1	NNPS	1	NNS	7
 Macintosh		2	NNP	2
@@ -12682,7 +12650,7 @@ Madeleines		2	NNP	2
 Mademoiselle		1	NNP	1
 Madge			1	NNP	1
 Madison			17	NNP	17
-Madonna			2	NNP	2
+Madonna			2	NN	1	NNP	1
 Madrid			6	NNP	6
 Madrid-based		1	JJ	1
 Mae			34	NNP	34
@@ -12732,11 +12700,11 @@ Maisie			2	NNP	2
 Maize			1	NNP	1
 Majestic		1	NNP	1
 Majestys		1	NNP	1
-Major			33	JJ	4	NNP	29
+Major			33	JJ	4	NN	1	NNP	28
 Majorca			1	NNP	1
 Majority		12	NNP	12
 Makato			1	NNP	1
-Make			34	NNP	1	VB	17	VBP	16
+Make			35	NNP	1	VB	27	VBP	7
 Makers			2	NNPS	1	NNS	1
 Makin			2	NNP	1	VBG	1
 Making			2	VBG	2
@@ -12752,11 +12720,12 @@ Malaysian		1	JJ	1
 Malaysian-based		1	JJ	1
 Malcolm			21	NNP	21
 Male			6	JJ	3	NN	2	NNP	1
+Mali			1	NNP	1
 Malibu			1	NNP	1
 Malice			1	NN	1
 Malis			1	NNP	1
 Malizia			2	NNP	2
-Mall			1	NNP	1
+Mall			2	NNP	2
 Mallinckrodt		2	NNP	2
 Mallory			1	NNP	1
 Maloney			1	NNP	1
@@ -12765,19 +12734,20 @@ Malta			1	NNP	1
 Maltese			1	JJ	1
 Malthus			1	NNP	1
 Maluf			1	NNP	1
-Malvolio		1	NNP	1
+Malvern			1	NNP	1
+Malvolio		1	NN	1
 Mamma			1	NNP	1
-Man			16	NN	6	NNP	10
-Management		54	NN	3	NNP	51
+Man			17	NN	6	NNP	11
+Management		56	NN	3	NNP	53
 Manager			4	NNP	4
-Managers		9	NNP	1	NNPS	1	NNS	7
+Managers		10	NNP	1	NNPS	1	NNS	8
 Managing		2	NNP	1	VBG	1
 Managua			2	NNP	2
 Manalapan		1	NNP	1
-Manchester		11	NNP	11
+Manchester		12	NNP	12
 Mandab			1	NNP	1
 Mandela			2	NNP	2
-Mandinkas		1	NNS	1
+Mandinkas		1	NNP	1
 Mandle			1	NNP	1
 Mandom			1	NNP	1
 Manek			1	NNP	1
@@ -12787,9 +12757,9 @@ Mangel			1	NNP	1
 Manger			1	NNP	1
 Manges			1	NNP	1
 Mangino			1	NNP	1
-Manhattan		53	NNP	53
+Manhattan		54	NNP	54
 Manic			6	NNP	6
-Manifesto		1	NNP	1
+Manifesto		2	NNP	2
 Manila			9	NNP	9
 Manila-based		1	JJ	1
 Manitoba		1	NNP	1
@@ -12800,7 +12770,7 @@ Manners			1	NNS	1
 Manning			1	NNP	1
 Mannington		1	NNP	1
 Mannix			1	NNP	1
-Manor			2	NNP	2
+Manor			2	NN	2
 Mans			5	NNP	3	NNS	2
 Mansell			1	NNP	1
 Mansfield		1	NNP	1
@@ -12810,7 +12780,7 @@ Manuel			5	NNP	5
 Manufacturers		31	NNP	9	NNPS	17	NNS	5
 Manufacturing		7	NNP	7
 Manville		31	NNP	31
-Many			229	DT	2	JJ	226	PDT	1
+Many			233	DT	2	JJ	230	PDT	1
 Manzanec		2	NNP	2
 Manzoni			1	NNP	1
 Mao			4	NNP	4
@@ -12820,10 +12790,10 @@ MarCor			2	NNP	2
 Mara			1	NNP	1
 Marathon		9	NNP	9
 Marble			1	NNP	1
-Marc			3	NNP	3
+Marc			4	NNP	4
 Marcello		1	NNP	1
 Marcels			1	NNP	1
-March			129	NNP	129
+March			129	NN	1	NNP	128
 Marchaiss		1	NNP	1
 Marchand		2	NNP	2
 Marchands		1	NNP	1
@@ -12833,11 +12803,11 @@ Marco			1	NNP	1
 Marconi			5	NNP	5
 Marcos			26	NNP	26
 Marcoses		2	NNPS	2
-Marcus			10	NNP	10
+Marcus			11	NNP	11
 Marcuse			1	NNP	1
 Marcuss			1	NNP	1
 Marder			1	NNP	1
-Margaret		28	NNP	28
+Margaret		30	NNP	30
 Margarine		1	NN	1
 Marge			2	NNP	2
 Margeotes		4	NNP	3	NNS	1
@@ -12855,19 +12825,21 @@ Marie			5	NNP	5
 Marie-Louise		3	NNP	3
 Marietta		3	NNP	3
 Marigolds		1	NNP	1
-Marilyn			1	NNP	1
+Marilyn			2	NNP	2
 Marin			1	NNP	1
 Marina			4	NNP	4
-Marine			30	NNP	30
+Marine			31	NNP	31
 Marines			9	NNPS	9
 Marino			1	NNP	1
 Mario			7	NNP	7
 Marion			6	NNP	6
 Mariotta		4	NNP	4
 Marital			1	NNP	1
+Maritzburg		1	NNP	1
 Marjoram		1	NNP	1
-Mark			26	NNP	26
-Market			58	NN	23	NNP	35
+Mark			26	NN	1	NNP	25
+Market			59	NN	23	NNP	36
+Market?			1	.a	1
 Marketers		2	NNPS	1	NNS	1
 Marketing		6	NNP	6
 Marketplace		1	NNP	1
@@ -12898,11 +12870,12 @@ Marsam			1	NNP	1
 Marschalk		1	NNP	1
 Marseilles		2	NNP	1	NNPS	1
 Marsh			8	NNP	8
-Marsha			12	NNP	12
-Marshal			2	NNP	2
+Marsha			15	NNP	15
+Marshal			2	NN	1	NNP	1
 Marshall		17	NNP	17
-Marshas			2	NNP	2
+Marshas			3	NNP	3
 Marston			2	NNP	2
+Marsupials		1	NNS	1
 Martex			1	NNP	1
 Martha			8	NNP	8
 Martian			1	JJ	1
@@ -12925,13 +12898,13 @@ Marxism			7	NNP	7
 Marxist			12	JJ	11	NN	1
 Marxist-Leninist	1	JJ	1
 Marxist-leaning		1	NNP	1
-Marxist?		1	NN	1
+Marxist?		1	.a	1
 Marxists		3	NNPS	1	NNS	2
 Marxs			1	NNP	1
-Mary			63	NNP	63
+Mary			70	NNP	70
 Mary-Lou		1	NNP	1
 Maryland		14	NNP	14
-Marys			6	NNP	4	NNPS	2
+Marys			7	NNP	5	NNPS	2
 Mascarita		1	NNP	1
 Masculine		1	NNP	1
 Masius			1	NNP	1
@@ -12981,12 +12954,12 @@ Matthews		8	NNP	8
 Mattress		3	NNP	3
 Matuschka		1	NNP	1
 Maugham			1	NNP	1
-Maughams		1	NNP	1
+Maughams		1	NNPS	1
 Maughan			2	NNP	2
 Maui			1	NNP	1
 Maureen			2	NNP	2
 Maurer			2	NNP	2
-Maurice			7	NNP	7
+Maurice			8	NNP	8
 Maury			1	NNP	1
 Max			8	NNP	8
 Maxicare		9	NNP	9
@@ -12995,9 +12968,9 @@ Maxima			2	NNP	2
 Maximum			1	NNP	1
 Maxton			2	NNP	2
 Maxwell			28	NNP	28
-May			104	MD	6	NNP	98
+May			107	MD	8	NNP	99
 Mayan			1	JJ	1
-Maybe			26	RB	26
+Maybe			32	RB	32
 Maybelline		2	NNP	2
 Mayer			5	NNP	5
 Mayfair			4	NNP	4
@@ -13007,6 +12980,7 @@ Mayland			1	NNP	1
 Maynard			3	NNP	3
 Mayo			1	NNP	1
 Mayor			13	NNP	13
+Mayor?			1	.the	1
 Maytag			1	NNP	1
 Mayumi			1	NNP	1
 Mazda			12	NNP	12
@@ -13040,7 +13014,7 @@ McDermott		1	NNP	1
 McDonald		24	NNP	24
 McDonnell		13	NNP	13
 McEnaney		2	NNP	2
-McEnroe			6	NNP	5	RB	1
+McEnroe			6	NNP	6
 McEnroes		1	NNP	1
 McEwans			1	NNP	1
 McFadden		2	NNP	2
@@ -13063,7 +13037,7 @@ McKee			1	NNP	1
 McKellen		1	NNP	1
 McKenna			2	NNP	2
 McKenzie		2	NNP	2
-McKinley		2	NNP	2
+McKinley		3	NNP	3
 McKinleys		1	NNP	1
 McKinleyville		1	NNP	1
 McKinnon		1	NNP	1
@@ -13105,10 +13079,10 @@ Measurement		1	NNP	1
 Measures		4	NNS	4
 Meat			4	NN	1	NNP	3
 Mecaniques		1	NNP	1
-Mecca			5	NNP	5
+Mecca			5	NN	1	NNP	4
 Mechanical		1	NNP	1
 Mechanized		1	JJ	1
-Medal			1	NNP	1
+Medal			1	NN	1
 Medco			2	NNP	2
 Medellin		1	NNP	1
 Medfield		1	NNP	1
@@ -13124,7 +13098,7 @@ Medicines		2	NNP	2
 Medieval		1	JJ	1
 Mediobanca		2	NNP	2
 Mediocrity		1	NNP	1
-Mediterranean		11	JJ	1	NNP	10
+Mediterranean		12	JJ	1	NN	2	NNP	9
 Mediterranean-inspired	1	JJ	1
 Medtronic		3	NNP	3
 Medusa			1	NNP	1
@@ -13134,7 +13108,7 @@ Meese			1	NNP	1
 Meet			4	NNP	2	VB	2
 Meeting			6	VBG	6
 Meetings		1	NNS	1
-Meg			2	NNP	1	VBG	1
+Meg			3	NNP	2	VBG	1
 Mega			1	JJ	1
 Megane			1	NNP	1
 Megargel		2	NNP	2
@@ -13162,10 +13136,10 @@ Meltzer			2	NNP	2
 Melvins			1	NNP	1
 Melvyn			2	NNP	2
 Member			1	NNP	1
-Members			22	NNP	2	NNPS	1	NNS	19
-Membership		4	NN	1	NNP	3
-Memoirs			1	NNS	1
-Memorial		5	JJ	1	NNP	4
+Members			23	NNP	2	NNPS	1	NNS	20
+Membership		6	NN	1	NNP	5
+Memoirs			2	NNS	2
+Memorial		5	JJ	1	NN	1	NNP	3
 Memories		3	NNPS	3
 Memory			1	NN	1
 Memphis			6	NNP	6
@@ -13181,7 +13155,7 @@ Mens			2	NNP	2
 Ment			1	NNP	1
 Mental			2	NNP	2
 Mentality		1	NN	1
-Mention			1	NNP	1
+Mention			1	NN	1
 Mentor			1	NNP	1
 Merc			37	NNP	37
 Mercantile		23	NNP	23
@@ -13219,7 +13193,7 @@ Messages		2	NNS	2
 Messiaen		1	NNP	1
 Messiah			6	NNP	6
 Messinger		2	NNP	2
-Messrs			1	NNP	1
+Messrs			1	NN	1
 Messrs.			19	NN	1	NNP	8	NNPS	9	NNS	1
 Met			5	NNP	5
 Metal			8	NNP	8
@@ -13231,7 +13205,7 @@ Metamucil		4	NNP	4
 Methodist		6	JJ	2	NNP	4
 Methodists		2	NNPS	2
 Metric			1	NNP	1
-Metro			3	NNP	3
+Metro			3	NN	1	NNP	2
 Metromedia		8	NNP	8
 Metromedia-ITT		1	NNP	1
 Metropole		1	NNP	1
@@ -13251,10 +13225,11 @@ Mfg.			1	NNP	1
 Miami			17	NNP	17
 Miami-Madrid		1	NNP	1
 Miami-based		5	JJ	5
+Mice			1	NNS	1
 Mich			6	NNP	6
 Mich.			24	NNP	24
 Mich.-based		2	JJ	2
-Michael			101	NNP	101
+Michael			102	NNP	102
 Michaels		2	NNP	2
 Michaelson		2	NNP	2
 Michel			4	NNP	4
@@ -13278,7 +13253,7 @@ Microsystems		9	NNP	1	NNPS	8
 Microwave		1	NNP	1
 Mid-Century		4	NNP	4
 Mid-State		1	NNP	1
-Middle			5	JJ	1	NNP	4
+Middle			8	JJ	1	NNP	7
 Middle-size		1	NNP	1
 Middlebury		1	NNP	1
 Middlemarch		2	NNP	2
@@ -13288,7 +13263,7 @@ Mideast			3	JJ	1	NN	1	NNP	1
 Midges			1	NNP	1
 Midgetman		1	NNP	1
 Midland			8	NNP	8
-Midlands		4	NNP	3	NNPS	1
+Midlands		4	NN	2	NNP	2
 Midler			7	NNP	7
 Midmorning		1	NN	1
 Midsized		1	JJ	1
@@ -13318,7 +13293,7 @@ Miles			6	NNP	6
 Milgrim			2	NNP	2
 Militarism		1	NN	1
 Military		7	JJ	5	NNP	2
-Milk			4	NN	4
+Milk			5	NN	5
 Milken			4	NNP	4
 Mill			2	NNP	2
 Millamant		1	NNP	1
@@ -13327,7 +13302,7 @@ Miller			40	NNP	40
 Millie			3	NNP	3
 Millington		1	NNP	1
 Million-dollar		1	JJ	1
-Millions		4	NNS	4
+Millions		5	NNS	5
 Millis			4	NNP	4
 Mills			14	NNP	10	NNPS	4
 Milne			2	NNP	2
@@ -13363,21 +13338,21 @@ Minikes			1	NNP	1
 Minimum			1	NNP	1
 Mining			9	NNP	9
 Miniscribe		1	NNP	1
-Minister		115	NNP	115
+Minister		118	NN	1	NNP	117
 Ministers		8	NNP	5	NNPS	3
-Ministry		45	NNP	45
+Ministry		46	NN	2	NNP	44
 Minitruck		1	NN	1
 Minn.			6	NNP	6
 Minna			3	NNP	3
 Minneapolis		20	NNP	20
 Minneapolis-based	2	JJ	2
-Minnesota		8	NNP	8
+Minnesota		9	NNP	9
 Minor			3	NNP	3
 Minorities		1	NNS	1
 Minority		5	NNP	5
 Minpeco			9	NNP	9
 Minpeco-Manufacturers	1	NNPS	1
-Mint			4	NNP	4
+Mint			4	NN	1	NNP	3
 Minuses			1	NNS	1
 Minute			1	NN	1
 Minuteman		3	NNP	3
@@ -13391,19 +13366,20 @@ Mirante			1	NNP	1
 Miriam			1	NNP	1
 Miron			1	NNP	1
 Mirror			2	NNP	2
+Mirrors			1	NNS	1
 Misanthrope		1	NN	1
 Misawa			1	NNP	1
 Miser			1	NNP	1
 Misery			2	NN	2
 Misled			1	VBN	1
-Miss			54	NNP	54
+Miss			57	NNP	57
 Miss.			3	NNP	3
 Missiles		1	NNP	1
 Missing			1	VBG	1
-Mission			3	NNP	3
+Mission			3	NN	1	NNP	2
 Missions		1	NNS	1
 Mississippi		19	NNP	19
-Missouri		9	NNP	9
+Missouri		10	NNP	10
 Misubishi		1	NNP	1
 Misunderstanding	1	VBG	1
 Mitchell		31	NNP	31
@@ -13462,20 +13438,21 @@ Moloch			1	NNP	1
 Molokai			2	NNP	2
 Molotov			1	NNP	1
 Molten			1	NNP	1
-Mom			2	NN	2
+Mom			3	NN	3
 Moments			1	NNS	1
 Mommy			2	NNP	2
 Mona			1	NNP	1
 Monahan			1	NNP	1
-Monarch			1	NNP	1
+Monarch			1	NN	1
 Monchecourt		1	NNP	1
-Monday			166	NNP	166
-Mondays			4	NNP	1	NNPS	1	NNS	2
+Monday			166	NN	1	NNP	165
+Monday?			1	.a	1
+Mondays			4	NNPS	1	NNS	3
 Monet			2	NNP	2
 Monetarism		1	NNP	1
 Monetary		13	NNP	13
 Monets			1	NNPS	1
-Money			28	NN	10	NNP	18
+Money			29	NN	10	NNP	19
 Money-making		1	JJ	1
 Moneylenders		1	NNS	1
 Mongol			1	JJ	1
@@ -13489,9 +13466,9 @@ Monmouth		1	NNP	1
 Monogram		3	NNP	3
 Monolithic		1	JJ	1
 Monopolies		2	NNP	1	NNPS	1
-Monroe			3	NNP	3
+Monroe			4	NNP	4
 Monsanto		3	NNP	3
-Monsignor		1	NNP	1
+Monsignor		1	NN	1
 Monster			1	NN	1
 Monsters		1	NNS	1
 Mont			1	NNP	1
@@ -13528,13 +13505,13 @@ Moonachie		1	NNP	1
 Moonie			1	NN	1
 Moonies			2	NNPS	1	NNS	1
 Moorcroft		1	NNP	1
-Moore			13	NNP	13
+Moore			14	NNP	14
 Moorish			2	JJ	2
 Moral			2	NNP	2
 Morale			1	NNP	1
 Morality		1	NNP	1
 Moran			4	NNP	4
-More			63	JJR	36	RBR	27
+More			67	JJR	39	RBR	28
 More-detailed		1	JJR	1
 Morecambe		1	NNP	1
 Morell			1	NNP	1
@@ -13576,14 +13553,14 @@ Moslems			1	NNPS	1
 Moss			1	NNP	1
 Mossman			2	NNP	2
 Mossoviet		1	NNP	1
-Most			192	JJS	168	NNP	1	RBS	23
+Most			199	JJS	174	NNP	1	RBS	24
 Most-Favored		1	JJS	1
 Mostly			2	RB	2
 Motel			2	NNP	2
 Mother			16	NNP	16
 Mother!			1	NNP	1
 Mothers			8	NNP	1	NNS	7
-Moths			1	NNS	1
+Moths			2	NNS	2
 Motif			1	NN	1
 Motor			72	NNP	72
 Motorcycle		1	NNP	1
@@ -13606,7 +13583,7 @@ Mourners		2	NNS	2
 Mourning		1	VBG	1
 Mouth			1	NNP	1
 Move			5	VB	4	VBP	1
-Movement		3	NNP	3
+Movement		3	NN	1	NNP	2
 Moves			2	NNS	2
 Movie			2	NN	1	NNP	1
 Moving			2	VBG	2
@@ -13615,28 +13592,29 @@ Moxley			1	NNP	1
 Mozambique		3	NNP	3
 Mozart			5	NNP	5
 Mozarts			1	NNP	1
-Mr			154	NNP	154
+Mr			160	NN	2	NNP	158
 Mr.			2749	NN	1	NNP	2748
 Mr.Woods		1	NNP	1
-Mrs			116	NNP	116
-Mrs.			150	NNP	150
-Ms			2	NNP	2
+Mrs			123	NNP	123
+Mrs.			151	NNP	151
+Ms			1	NN	1
 Ms.			165	NNP	165
-Mt			1	NNP	1
+Mt			1	NN	1
 Mts			1	NNPS	1
 Muammar			1	NNP	1
-Much			42	JJ	15	RB	27
+Much			44	JJ	16	RB	28
 Muck			1	NN	1
 Muddy			1	NNP	1
 Mueller			4	NNP	4
-Mug			1	NNP	1
+Mug			1	NN	1
 Mugging			1	NN	1
 Muhammad		1	NNP	1
 Muhammed		1	NNP	1
 Mulberry		2	NNP	2
 Mulford			10	NNP	10
 Mulhouse		1	NNP	1
-Muller			2	NNP	2
+Muller			3	NNP	3
+Mullers			1	NNP	1
 Mullins			1	NNP	1
 Mulroney		4	NNP	4
 Multi-Income		1	NNP	1
@@ -13645,8 +13623,8 @@ Multimedia		1	NNP	1
 Multiplication		1	NNP	1
 Multiply		2	VB	2
 Multiponics		1	NNP	1
-Mum			7	JJ	1	NNP	6
-Mummy			3	NNP	2	RB	1
+Mum			7	JJ	1	NN	1	NNP	5
+Mummy			3	NNP	3
 Mummys			1	NNP	1
 Munching		1	VBG	1
 Mundo			1	NNP	1
@@ -13673,7 +13651,7 @@ Muscles			2	NNS	2
 Muscolina		1	NNP	1
 Muscovites		1	NNS	1
 Muse			1	NNP	1
-Museum			20	NNP	20
+Museum			20	NN	1	NNP	19
 Museums			1	NNS	1
 Mushkat			5	NNP	5
 Music			9	NNP	9
@@ -13685,14 +13663,14 @@ Muslims			3	NNPS	3
 Musprat			1	NNP	1
 Mussolini		3	NNP	3
 Musson			3	NNP	3
-Mussorgskys		1	NNP	1
+Mussorgskys		2	NNP	2
 Mutchin			1	NNP	1
-Mutiny			1	NNP	1
+Mutiny			1	NN	1
 Mutual			13	JJ	4	NNP	9
 Muzzling		1	JJ	1
-My			417	NNP	7	PRP$	410
+My			453	NNP	6	PPS	1	PRP$	446
 Myers			1	NNP	1
-Myra			3	NNP	3
+Myra			4	NNP	4
 Myron			3	NNP	3
 Mysore			1	NNP	1
 Mysteries		1	NNPS	1
@@ -13735,7 +13713,7 @@ NBC-owned		1	JJ	1
 NBI			13	NNP	13
 NCAA			6	NNP	6
 NCNB			3	NNP	3
-NCO			1	NNP	1
+NCO			1	NN	1
 NCR			1	NNP	1
 NEC			31	NNP	31
 NEC-compatible		1	JJ	1
@@ -13746,7 +13724,7 @@ NEWS			2	NN	1	NNP	1
 NFIB			3	NNP	3
 NFL			2	NNP	2
 NHI			1	NNP	1
-NHS			2	NNP	1	NNS	1
+NHS			3	NNP	1	NNS	2
 NHTSA			1	NNP	1
 NI			1	NNP	1
 NICHOLS			1	NNP	1
@@ -13813,15 +13791,16 @@ Namibia			8	NNP	8
 Namibian		2	JJ	2
 Namur			1	NNP	1
 Nancy			12	NNP	12
-Nanny			2	NNP	2
-Nansera			1	NNP	1
+Nanny			2	NN	1	NNP	1
+Nansera			1	Contra	1
 Nantucket		1	NNP	1
 Naomi			1	NNP	1
 Napa			1	NNP	1
 Naperville		1	NNP	1
 Naples			4	NNP	4
 Napoleon		4	NNP	4
-Napoleons		3	NNP	2	NNS	1
+Napoleonic		1	NNP	1
+Napoleons		4	NNP	4
 Napolitan		1	NNP	1
 Narrowing		1	VBG	1
 Nasdaq			54	NNP	54
@@ -13838,16 +13817,17 @@ NatWest			1	NNP	1
 Nathan			10	NNP	10
 Natick			5	NNP	5
 Nation			2	NN	2
-National		234	JJ	1	NNP	233
+National		236	JJ	1	NNP	235
 Nationale		4	NNP	4
 Nationalisation		1	NNP	1
+Nationalism		1	NNP	1
 Nationalist		4	JJ	4
 Nationalists		2	NNPS	2
 Nationally		1	RB	1
-Nations			19	NNP	1	NNPS	18
+Nations			20	NNP	1	NNPS	19
 Nationwide		3	NNP	3
 Nativity		1	NN	1
-Natural			10	NNP	10
+Natural			11	NNP	11
 Naturalization		1	NNP	1
 Naturally		1	RB	1
 Nature			13	NN	1	NNP	12
@@ -13857,7 +13837,7 @@ Nautilus		1	JJ	1
 Navaho			1	NNP	1
 Naval			1	NNP	1
 Navigation		44	NNP	44
-Navy			28	NNP	28
+Navy			28	NN	1	NNP	27
 Nay			1	RB	1
 Nazareth		1	NNP	1
 Nazer			1	NNP	1
@@ -13870,7 +13850,7 @@ Neander			1	NNP	1
 Neanderthals		1	NNS	1
 Near			3	IN	3
 Nearby			5	JJ	2	RB	3
-Nearly			17	RB	17
+Nearly			18	RB	18
 Neave			3	NNP	3
 Neb.			3	NNP	3
 Nebraska		9	NNP	9
@@ -13887,7 +13867,7 @@ Needs			1	NNS	1
 Negative		1	JJ	1
 Negotiable		7	JJ	7
 Negotiations		2	NNS	2
-Negro			3	NNP	3
+Negro			3	NN	1	NNP	2
 Negroes			1	NNPS	1
 Negus			2	NNP	2
 Nehru			1	NNP	1
@@ -13897,9 +13877,9 @@ Neill			1	NNP	1
 Neils			1	NNP	1
 Neilson)		1	NNP	1
 Neinas			1	NNP	1
-Neither			26	CC	9	DT	16	RB	1
+Neither			27	CC	9	DT	17	RB	1
 Nekoosa			50	NN	2	NNP	48
-Nell			10	NNP	10
+Nell			12	NNP	11	Varnell	1
 Nellies			1	NNP	1
 Nelly			1	NNP	1
 Nelms			1	NNP	1
@@ -13927,11 +13907,11 @@ Neurosciences		1	NNP	1
 Nev			2	NNP	2
 Nev.			7	NNP	7
 Nevada			10	NNP	10
-Never			24	NNP	2	RB	22
+Never			26	NNP	2	RB	24
 Nevertheless		16	RB	16
 Neville			1	NNP	1
 Nevis			1	NNP	1
-New			955	JJ	18	NNP	936	NNPS	1
+New			961	JJ	18	NNP	942	NNPS	1
 New-issue		1	JJ	1
 Newark			6	NNP	6
 Newbury			1	NNP	1
@@ -13947,7 +13927,7 @@ Newmarket		1	NNP	1
 Newmont			3	NNP	3
 Newport			6	NNP	6
 Newquist		3	NNP	3
-News			61	NN	4	NNP	56	NNS	1
+News			62	NN	4	NNP	57	NNS	1
 News-American		1	NNP	1
 Newsday			1	NNP	1
 Newsmen			1	NNP	1
@@ -13959,7 +13939,7 @@ Newsweek		10	NNP	10
 Newt			1	NNP	1
 Newton			3	NNP	3
 Newtons			2	NNP	2
-Next			34	IN	1	JJ	23	NNP	6	RB	4
+Next			37	IN	1	JJ	26	NNP	6	RB	4
 Niagara			2	NNP	2
 Nicaragua		12	NNP	12
 Nicaraguan		12	JJ	11	NNP	1
@@ -13967,12 +13947,12 @@ Nicastro		2	NNP	2
 Nice			3	JJ	3
 Niche-itis		1	NN	1
 Nichol			3	NNP	3
-Nicholas		22	NNP	21	NNS	1
+Nicholas		23	NNP	22	NNS	1
 Nichols			1	NNP	1
 Nicholson		1	NNP	1
 Nicholsons		1	NNPS	1
 Niciporuk		4	NNP	4
-Nick			9	NNP	9
+Nick			10	NNP	10
 Nickerson		1	NNP	1
 Nicklaus		3	NNP	3
 Nickle			1	NNP	1
@@ -13984,7 +13964,7 @@ Nicole			2	NNP	2
 Nielsen			5	NNP	5
 Nieman			1	NNP	1
 Nigel			22	NNP	22
-Nigeria			6	NNP	6
+Nigeria			7	NNP	7
 Nigerian		1	NNP	1
 Night			10	NNP	10
 Nightingale		1	NNP	1
@@ -14001,9 +13981,10 @@ Nile			3	NNP	3
 Nilson			1	NNP	1
 Nina			1	NNP	1
 Ninas			1	NNP	1
-Nine			6	CD	6
+Nine			8	CD	8
 Nine-month		1	JJ	1
 Nineteenth-century	1	NNP	1
+Ninety			1	CD	1
 Nino			2	NNP	2
 Nintendo		1	NNP	1
 Ninth			1	NNP	1
@@ -14022,15 +14003,15 @@ Niva			1	NNP	1
 Nixdorf			4	NNP	4
 Nixon			37	NNP	37
 Nixons			1	NNP	1
-No			184	DT	165	NNP	3	RB	7	UH	9
+No			191	DT	171	NNP	4	RB	6	UH	10
 No!			1	CD	1
 No-Smoking		1	NNP	1
 No-one			2	NNP	2
 No.			40	JJ	1	NN	36	NNP	2	VB	1
 Nob			2	NNP	2
-Nobel			4	NNP	4
+Nobel			6	NNP	6
 Noble			5	NNP	5
-Nobody			30	NN	30
+Nobody			36	NN	36
 Nobrega			1	NNP	1
 Nobuyuki		2	NNP	2
 Noel			2	NNP	2
@@ -14046,7 +14027,7 @@ Non-disposable		1	JJ	1
 Non-fat			1	JJ	1
 NonProfit		1	NNP	1
 Nonconformist		1	JJ	1
-None			28	NN	27	NNP	1
+None			30	NN	29	NNP	1
 Nonetheless		12	RB	12
 Nonperforming		2	JJ	2
 Nonprofit		1	JJ	1
@@ -14075,13 +14056,13 @@ Norris			4	NNP	4
 Norse			1	JJR	1
 Norsk			2	NNP	2
 Norske			2	NNP	2
-North			100	JJ	19	NNP	81
+North			104	JJ	21	NNP	83
 North-East		1	NN	1
 North-Rhine		1	NNP	1
 Northampton		2	NNP	2
 Northbrook		1	NNP	1
 Northcliffe		6	NNP	6
-Northcliffes		2	NNP	2
+Northcliffes		3	NNP	2	NNPS	1
 Northeast		29	NN	4	NNP	25
 Northern		35	JJ	1	NNP	34
 Northington		1	NNP	1
@@ -14102,10 +14083,10 @@ Norwich			3	NNP	3
 Norwick			1	NNP	1
 Norwitz			1	NNP	1
 Norwood			5	NNP	5
-Not			94	RB	94
+Not			98	RB	98
 Note			4	VB	4
 Notes			6	NNPS	2	NNS	4
-Nothing			22	NN	22
+Nothing			23	NN	23
 Notice			2	NNP	2
 Noticias		1	NNP	1
 Noting			7	VBG	7
@@ -14121,10 +14102,10 @@ Novell			1	NNP	1
 Novello			2	NNP	2
 November		55	NNP	55
 Novo\/Nordisk		1	Nordisk	1
-Now			133	NNP	1	RB	132
-Nowadays		2	NNP	1	RB	1
+Now			137	IN	2	NNP	1	RB	134
+Nowadays		3	NNP	1	RB	2
 Nowak			2	NNP	2
-Nowhere			2	RB	2
+Nowhere			3	RB	3
 Nows			1	NNP	1
 Noxell			4	NNP	4
 Nucci			1	NNP	1
@@ -14136,7 +14117,7 @@ Numerous		2	JJ	2
 Nunn			1	NNP	1
 Nuns			1	NNS	1
 Nuremberg		1	NNP	1
-Nurse			2	NNP	2
+Nurse			2	NN	1	NNP	1
 Nursery			1	NN	1
 Nursing			3	NNP	3
 Nusbaum			1	NNP	1
@@ -14146,6 +14127,7 @@ Nutritional		5	NNP	5
 Nuts			1	NNS	1
 Nutshells		1	NNP	1
 Nutt			1	NNP	1
+Nuttall			1	NNP	1
 Nuveen			3	NNP	3
 Nux			1	NN	1
 Nuys			2	NNP	2
@@ -14153,7 +14135,7 @@ Nyasaland		1	NNP	1
 Nye			6	NNP	6
 Nylev			1	NNP	1
 Nynex			5	NNP	5
-O			12	NN	4	NNP	7	UH	1
+O			13	NN	5	NNP	5	UH	3
 O&Y			2	NNP	2
 O'Boyle			1	NNP	1
 O'Brien			5	NNP	5
@@ -14166,25 +14148,26 @@ O'Loughlin		1	NNP	1
 O'Neill			8	NNP	8
 O.			9	NNP	9
 O.P.			1	NNP	1
-OAP			1	NNP	1
+OAP			1	VBP	1
 OAPs			2	NNP	1	NNS	1
 OAS			8	NNP	8
 OBrien			1	NNP	1
 OCN-PPL			2	NNP	2
+OClock			1	RB	1
 OConnors		1	NNP	1
 ODI			1	NNP	1
 OECD			3	NNP	3
 OF			10	IN	10
 OFFERED			7	JJ	1	NNP	3	VBN	3
 OIL			1	NNP	1
-OK			14	JJ	6	UH	8
+OK			15	JJ	7	UH	8
 OKeene			1	NNP	1
 OMB			2	NNP	2
 ON			3	IN	1	NNP	1	RP	1
 ONCE			1	RB	1
 ONEIDA			1	NNP	1
 ONeill			2	NNP	2
-OPEC			13	NNP	13
+OPEC			14	NNP	14
 OPPENHEIMER		1	NNP	1
 ORGAN-TRANSPLANT	1	JJ	1
 ORGANIZED		1	VBN	1
@@ -14197,7 +14180,7 @@ OTC			36	NNP	36
 OUSTED			1	VBN	1
 OVER			1	IN	1
 OVERHAUL		1	NN	1
-Oak			7	NNP	7
+Oak			8	NNP	8
 Oakes			6	NNP	6
 Oakland			17	NN	1	NNP	16
 Oakley			1	NNP	1
@@ -14211,12 +14194,12 @@ Oberstar		1	NNP	1
 Obesity			1	NNP	1
 Objections		3	NNS	3
 Obligations		1	NNS	1
-Obscure			1	NNP	1
+Obscure			1	NN	1
 Observe			1	VBP	1
 Observer		1	NNP	1
 Observers		1	NNS	1
 Observing		1	VBG	1
-Obviously		13	RB	13
+Obviously		14	RB	14
 Occasionally		5	RB	5
 Occidental		1	NNP	1
 Occupational		3	NNP	3
@@ -14233,18 +14216,19 @@ Oddly			1	RB	1
 Odds			5	NNPS	2	NNS	3
 Odell			1	NNP	1
 Odeon			2	NNP	2
+Odeon?			1	.a	1
 Odyssey			2	NN	1	NNP	1
 Oedipus			1	NNP	1
 Oerlikon-Buehrle	1	NNP	1
-Of			56	IN	56
+Of			57	IN	57
 Off			9	IN	8	RP	1
 Off-Track		1	NNP	1
 Offensive		1	NN	1
 Offer			1	NN	1
 Offered			1	NNP	1
 Offering		2	NNP	1	VBG	1
-Office			60	NN	2	NNP	58
-Officer			7	NNP	7
+Office			62	NN	2	NNP	60
+Officer			7	NN	1	NNP	6
 Offices			4	NNS	4
 Official		5	JJ	1	NNP	4
 Officially		1	RB	1
@@ -14256,25 +14240,25 @@ Ogden			9	NNP	9
 Ogilvy			34	NN	1	NNP	33
 Ogilvyspeak		1	NNP	1
 Ogonyok			4	NNP	4
-Oh			57	UH	57
+Oh			59	UH	59
 Oh-Hyun			1	NNP	1
 Ohbayashi		4	NNP	4
-Ohio			39	NNP	39
+Ohio			40	NNP	40
 Ohio-based		3	JJ	3
 Ohioan			1	NNP	1
 Ohmae			1	NNP	1
-Oil			41	NN	10	NNP	31
+Oil			42	NN	10	NNP	32
 Oil-tool		1	NN	1
 Oils			1	NNS	1
 Oji			4	NNP	4
 Oka			3	NNP	3
-Okay			2	UH	2
+Okay			4	JJ	1	UH	3
 Okla			1	NNP	1
 Okla.			1	NNP	1
 Oklahoma		16	NNP	16
 Okobank			1	NNP	1
 Olay			3	NNP	3
-Old			45	JJ	2	NNP	43
+Old			47	JJ	2	NNP	45
 Old-House		1	NNP	1
 Old-time		1	JJ	1
 Old-world		1	NNP	1
@@ -14284,12 +14268,13 @@ Oldsmobile		1	NNP	1
 Olean			1	NNP	1
 Oleg			1	NNP	1
 Olga			1	NNP	1
-Oliver			27	NNP	27
+Oliver			29	NNP	29
 Olivetti		5	NNP	5
 Olivia			1	NNP	1
 Oliviers		3	NNP	3
 Ollari			1	NNP	1
 Olmsted			1	NNP	1
+Olney			1	NNP	1
 Olsen			2	NNP	2
 Olson			4	NNP	4
 Olympia			6	NNP	6
@@ -14306,20 +14291,20 @@ Omnicom			2	NNP	2
 Omnicorp		1	NNP	1
 Omo			1	NNP	1
 Omron			2	NNP	2
-On			237	IN	236	NNP	1
-Once			57	IN	6	RB	51
+On			243	IN	242	NNP	1
+Once			59	IN	6	RB	53
 Oncogenes		1	NNS	1
 Ondaatje		3	NNP	3
-One			383	CD	337	NN	8	NNP	6	PRP	32
+One			392	CD	345	NN	8	NNP	6	PRP	33
 One-room		1	NNP	1
 One-third		1	NNP	1
 Oneida			3	NNP	3
-Only			75	JJ	3	RB	72
+Only			78	IN	1	JJ	3	RB	74
 Ontario			9	NNP	9
 Onward			1	IN	1
 Ooh			1	UH	1
 Opel			1	NNP	1
-Open			8	JJ	1	NNP	6	VB	1
+Open			10	JJ	1	NNP	7	VB	2
 Opera			16	NNP	16
 Operating		6	NN	5	NNP	1
 Operating-profit	1	NN	1
@@ -14332,8 +14317,8 @@ Opinions		1	NNS	1
 Oppenheimer		16	NNP	16
 Opponents		4	NNS	4
 Opportunity		3	NNP	3
-Opposite		2	JJ	1	RB	1
-Opposition		5	NN	5
+Opposite		3	JJ	1	RB	2
+Opposition		7	NN	7
 Oppositions		2	NNS	2
 Oppressive		1	JJ	1
 Oprah			1	NNP	1
@@ -14351,7 +14336,7 @@ Oranjemund		3	NNP	3
 Oration			1	NN	1
 Orbe			1	NNP	1
 Orchard			2	NNP	2
-Orchestra		3	NNP	3
+Orchestra		3	NN	1	NNP	2
 Orchestration		1	NNP	1
 Order			7	NN	4	NNP	3
 Ordering		1	VBG	1
@@ -14402,7 +14387,7 @@ Osborn			1	NNP	1
 Osborne			3	NNP	3
 Oscar			3	NNP	3
 Oshkosh			3	NNP	3
-Oslo			1	NNP	1
+Oslo			2	NN	1	NNP	1
 Osprey			1	NNP	1
 Ostend			1	VB	1
 Ostensibly		1	RB	1
@@ -14413,7 +14398,7 @@ Osun			1	NNP	1
 Oswald			1	NNP	1
 Otero			3	NNP	3
 Other			84	JJ	82	NNP	2
-Others			21	NNS	21
+Others			22	NNS	22
 Otherwise		8	RB	8
 Otto			9	NNP	9
 Ottoman			1	NNP	1
@@ -14421,7 +14406,8 @@ Ottoni			3	NNP	3
 Ottos			1	NNP	1
 Otunnu			1	NNP	1
 Ouedraogo		1	NNP	1
-Our			160	NNP	1	PRP$	159
+Ought			1	MD	1
+Our			166	NNP	1	PRP$	165
 Ouse			1	NNP	1
 Ousley			2	NNP	2
 Out			16	IN	6	NNP	1	RB	9
@@ -14431,14 +14417,14 @@ Outokumpu		2	NNP	2
 Outplacement		2	NN	1	NNP	1
 Output			3	NN	3
 Outraged		1	JJ	1
-Outrageous!		1	NNP	1
+Outrageous!		1	NN	1
 Outside			13	IN	8	JJ	5
 Outsider		1	NN	1
 Outstanding		1	JJ	1
 Outwardly		1	RB	1
 Oval			1	NNP	1
 Ovalle			2	NNP	2
-Over			42	IN	41	NNP	1
+Over			43	IN	42	NNP	1
 Overall			8	JJ	4	NNP	1	RB	3
 Overbuilding		1	NN	1
 Overbuilt		1	JJ	1
@@ -14456,7 +14442,7 @@ Owner			1	NNP	1
 Owners			4	NNP	1	NNS	3
 Ownership		2	NN	1	NNP	1
 Oxen			1	NNP	1
-Oxford			15	NNP	15
+Oxford			16	NNP	16
 Oxfordshire		1	NNP	1
 Oxnard			4	NNP	4
 Oy			7	NNP	7
@@ -14470,7 +14456,7 @@ P-5-39			1	NNP	1
 P.			20	NNP	20
 P.G.			1	NNP	1
 P3			1	NNP	1
-PA			2	NNP	2
+PA			2	NN	2
 PACs			3	NNPS	2	NNS	1
 PAP			1	NNP	1
 PAPER			14	NN	10	NNP	4
@@ -14527,10 +14513,10 @@ PROPERTY		1	NN	1
 PROPOSAL		1	NN	1
 PROSECUTORS		1	NNS	1
 PROTECT			1	VB	1
-PS			26	NNP	26
+PS			26	NN	1	NNP	25
 PSE			1	NNP	1
 PS\/2			1	2	1
-PTA			2	NNP	2
+PTA			2	NN	1	NNP	1
 PTL			1	NNP	1
 PWA			13	NNP	13
 PWA-owned		1	JJ	1
@@ -14554,7 +14540,7 @@ Pacwest			1	NNP	1
 Paddington		1	NNP	1
 Padget			1	NNP	1
 Padovan			2	NNP	2
-Padre			1	NNP	1
+Padre			1	NN	1
 Paestum			1	NNP	1
 Pageant			1	NN	1
 Paget			2	NNP	2
@@ -14571,13 +14557,14 @@ Painting		1	NNP	1
 Pakistan		4	NNP	4
 Pakistani		3	JJ	2	NNP	1
 Pakistans		1	NNP	1
-Palace			21	NN	3	NNP	18
+Palace			21	NN	4	NNP	17
 Pale			1	NNP	1
 Palermo			1	NNP	1
 Palestine		2	NNP	2
 Palestinian		9	JJ	6	NN	1	NNP	2
 Palestinians		2	NNPS	2
 Palisades		2	NNP	2
+Pall			1	NNP	1
 Palladian		1	NNP	1
 Palladium		1	NNP	1
 Palm			2	NNP	2
@@ -14585,7 +14572,7 @@ Palmer			2	NNP	2
 Palmero			4	NNP	4
 Palo			3	NNP	3
 Palomino		1	NNP	1
-Pam			2	NNP	2
+Pam			3	NNP	3
 Pamela			2	NNP	2
 Pamelas			1	NNP	1
 Pamplin			2	NNP	2
@@ -14604,14 +14591,15 @@ Panet-Raymond		2	NNP	2
 Panetta			2	NNP	2
 Pangbourne		1	NNP	1
 Panhandle		4	NNP	4
+Panic			2	NN	2
 Panisse			4	NNP	4
 Panorama		1	NNP	1
 Pantheon		1	NNP	1
 Panthers		1	NNS	1
 Pao			3	NNP	3
+Paolo			1	NNP	1
 Paos			1	NNPS	1
-Papa			3	NN	3
-Papa!			1	CD	1
+Papa			1	NN	1
 Paper			29	NN	2	NNP	27
 Paperboard		2	NNP	2
 Papermils		1	NNP	1
@@ -14635,15 +14623,16 @@ Parcel			1	NNP	1
 Pardus			1	NNP	1
 Parent			3	NNP	3
 Parenthood		3	NN	1	NNP	2
-Parents			12	NNP	2	NNS	10
+Parents			13	NNP	2	NNS	11
 Pareo			1	NNP	1
 Pareto			1	NNP	1
 Parfums			2	NNP	2
 Paribas			39	NNP	38	NNS	1
-Paris			74	NNP	74
+Paris			78	NNP	78
+Paris?			1	.the	1
 Parish			1	NNP	1
 Parisian		3	JJ	3
-Park			52	NNP	52
+Park			52	NN	1	NNP	51
 Park-affiliated		1	JJ	1
 Parker			13	NNP	13
 Parkhaji		1	NNP	1
@@ -14653,14 +14642,14 @@ Parkland		1	NNP	1
 Parks			4	NNP	2	NNPS	2
 Parkway			1	NNP	1
 Parkways		1	NNP	1
-Parliament		45	NNP	45
+Parliament		49	NNP	49
 Parliamentary		3	NNP	3
 Parrino			1	NNP	1
 Parrott			1	NNP	1
 Parry			1	NNP	1
 Parsippany		1	NNP	1
 Parsons			2	NNP	2
-Part			18	NN	12	NNP	6
+Part			20	NN	14	NNP	6
 Participants		1	NNS	1
 Participation		1	NNP	1
 Particularly		1	RB	1
@@ -14671,7 +14660,7 @@ Partnership		12	NNP	12
 Partridge		1	NNP	1
 Partridges		1	NNPS	1
 Parts			5	NNS	5
-Party			120	NNP	120
+Party			127	NN	2	NNP	125
 Party.			1	NNP	1
 Partys			6	NNP	6
 Partyvictory		1	NNP	1
@@ -14679,14 +14668,14 @@ Pasadena		4	NNP	4
 Pascals			1	NNP	1
 Paschi			1	NNP	1
 Paso			7	NNP	7
-Pass			4	NNP	1	NNS	1	VB	2
+Pass			4	NN	1	NNP	1	VB	2
 Passaic-Clifton		1	NNP	1
 Passed			1	VBN	1
 Passenger		2	NN	1	NNP	1
 Passengers		4	NNS	4
-Passers-by		1	NNP	1
+Passers-by		1	NN	1
 Passion			1	NNP	1
-Past			1	NNP	1
+Past			1	IN	1
 Pastaria		1	NNP	1
 Pasteur			1	NNP	1
 Pat			8	NNP	8
@@ -14697,7 +14686,7 @@ Patent			1	NNP	1
 Patents			2	NNP	2
 Paterson		6	NNP	6
 Path			1	NNP	1
-Patients		5	NNPS	4	NNS	1
+Patients		5	NNPS	3	NNS	2
 Patriarca		2	NNP	2
 Patricelli		1	NNP	1
 Patricia		2	NNP	2
@@ -14705,17 +14694,17 @@ Patrick			13	NNP	13
 Patricks		2	NNP	2
 Patricof		2	NNP	2
 Patrol			2	NNP	2
-Patrolman		1	NNP	1
+Patrolman		1	NN	1
 Pats			1	NNP	1
 Pattenden		1	NNP	1
 Patterson		8	NNP	8
 Pattersons		1	NNS	1
 Pattison		5	NNP	5
-Paul			64	NNP	64
+Paul			66	NNP	66
 Paula			1	NNP	1
 Pauline			2	NNP	2
 Paulo			4	NNP	4
-Pauls			4	NNP	4
+Pauls			5	NNP	5
 Pautsch			1	NNP	1
 Pavarotti		1	NNP	1
 Pavel			1	NNP	1
@@ -14731,7 +14720,7 @@ Payout			2	NN	2
 Payouts			1	NNS	1
 Payroll			2	NNP	2
 Peabody			27	NNP	27
-Peace			5	NN	3	NNP	2
+Peace			5	NN	2	NNP	3
 Peaceful		1	JJ	1
 Peacocks		1	NNS	1
 Peake			1	NNP	1
@@ -14770,8 +14759,8 @@ Pell			2	NNP	2
 Peltz			4	NNP	4
 Penang			1	NNP	1
 Pence			1	NNP	1
-Pencil			2	NNP	1	VB	1
-Pending			2	NNP	1	VBG	1
+Pencil			2	NNP	2
+Pending			2	IN	1	NNP	1
 Penelope		1	NNP	1
 Peng			2	NNP	2
 Penh			1	NNP	1
@@ -14790,10 +14779,10 @@ Pensacola		2	NNP	2
 Pension			6	NN	1	NNP	5
 Pentagon		49	NNP	49
 Pentagon-related	1	JJ	1
-People			159	NNP	4	NNPS	4	NNS	151
+People			169	NNP	4	NNPS	4	NNS	161
 Peoples			6	NNP	3	NNPS	3
 Peoria			2	NNP	2
-Pepita			1	NNP	1
+Pepita			1	JJ	1
 Pepper			1	VB	1
 Pepperdine		1	NNP	1
 Pepperidge		2	NNP	2
@@ -14817,7 +14806,7 @@ Perfect			2	NNP	2
 Performance		2	NNP	2
 Performances		2	NNPS	2
 Performing		1	VBG	1
-Perhaps			54	RB	54
+Perhaps			62	RB	62
 Perignon		1	NNP	1
 Period			1	NN	1
 Periodically		2	RB	2
@@ -14840,10 +14829,10 @@ Perrys			1	NNP	1
 Pershare		1	JJ	1
 Pershing		2	NN	1	VBG	1
 Persia			1	NNP	1
-Persian			4	NNP	4
+Persian			5	NNP	5
 Persky			1	NNP	1
 Personal		12	JJ	7	NNP	5
-Personality		2	NNP	2
+Personality		2	NN	1	NNP	1
 Personally		4	RB	4
 Perspective		8	NNP	8
 Persuading		1	VBG	1
@@ -14856,18 +14845,18 @@ Pestered		1	VBN	1
 Pet			1	NNP	1
 Petaluma		1	NNP	1
 Pete			6	NNP	6
-Peter			99	NNP	99
+Peter			100	NNP	100
 Peterborough		2	NNP	2
 Peters			55	NNP	55
 Petersburg		4	NNP	4
 Petersen		3	NNP	3
-Petes			1	VBZ	1
+Petes			1	NNP	1
 Petit			1	NNP	1
 Petitions		1	NNS	1
 Petrie			12	NNP	12
 Petrochemical		3	NNP	3
 Petrocorp		2	NNP	2
-Petrol			1	NNP	1
+Petrol			2	NN	1	NNP	1
 Petrolane		1	NNP	1
 Petroleos		4	NNP	4
 Petroleum		25	NN	2	NNP	23
@@ -14882,7 +14871,7 @@ Peyrelongue		1	NNP	1
 Pfeiffer		16	NNP	16
 Pfizer			2	NNP	2
 Ph.			2	NNP	2
-PhD			5	NN	1	NNP	4
+PhD			5	NN	3	NNP	2
 PhacoFlex		1	NNP	1
 Phantoms		1	NNP	1
 Pharaoh			1	NNP	1
@@ -14897,10 +14886,10 @@ Pherwani		1	NNP	1
 Phi			1	NNP	1
 Phibro			1	NNP	1
 Phil			6	NNP	6
-Philadelphia		37	NNP	37
+Philadelphia		38	NNP	38
 Philadelphia-based	3	JJ	3
 Philharmonic		1	NNP	1
-Philip			61	NNP	61
+Philip			62	NNP	62
 Philippe		2	NNP	2
 Philippine		12	JJ	9	NNP	3
 Philippine-studies	1	NN	1
@@ -14909,7 +14898,7 @@ Philips			13	NNP	13
 Phillip			4	NNP	4
 Phillips		27	NNP	26	NNS	1
 Philo			1	NNP	1
-Philosophy		1	NN	1
+Philosophy		1	NNP	1
 Phineas			1	NNP	1
 Phipps			1	NNP	1
 Phoebe			1	NNP	1
@@ -14934,7 +14923,7 @@ Physiology		1	NNP	1
 Piaget			1	NNP	1
 Piano			1	NNP	1
 Picasso			6	NNP	6
-Picassos		4	NNPS	4
+Picassos		5	NNPS	5
 Piccadilly		3	NNP	3
 Pichia			1	NN	1
 Pick			1	VB	1
@@ -14947,7 +14936,7 @@ Pie			1	NNP	1
 Piece			1	NN	1
 Pieces			4	NNS	4
 Piedmont		1	NNP	1
-Pier			1	NNP	1
+Pier			1	NN	1
 Pierce			10	NNP	9	VB	1
 Piero			2	NNP	2
 Pierre			6	NNP	6
@@ -14967,8 +14956,9 @@ Pilots			3	NNP	1	NNPS	1	NNS	1
 Pilson			30	NNP	30
 Pimlico			3	NNP	3
 Pimlott			2	NNP	2
+Pimpinone		1	NN	1
 Pimps			1	NNS	1
-Pin			1	VB	1
+Pin			2	NNP	1	VB	1
 Pine			2	NNP	2
 Pinewood		1	NNP	1
 Pinick			2	NNP	2
@@ -14976,7 +14966,7 @@ Pinkerton		28	NNP	28
 Pinnacle		1	NNP	1
 Pinocchio		3	NNP	3
 Pinter			1	NNP	1
-Pinters			1	NNP	1
+Pinters			1	NNPS	1
 Pinto			1	NNP	1
 Pioneer			11	NNP	11
 Pipe			4	NNP	4
@@ -15001,8 +14991,9 @@ Pittsburg		1	NNP	1
 Pittsburgh		21	NNP	21
 Pittsburgh-based	2	JJ	2
 Pittston		5	NNP	5
-Pity			2	NNP	2
+Pity			2	NN	1	NNP	1
 Pizza			1	NNP	1
+Pizzaro			2	NNP	2
 Pizzo			1	NNP	1
 Plac			1	NNP	1
 Place			8	NN	1	NNP	3	VB	4
@@ -15013,7 +15004,7 @@ Placido			1	NNP	1
 Plain			2	NNP	2
 Plaines			1	NNP	1
 Plainly			1	RB	1
-Plains			7	NNP	3	NNPS	3	NNS	1
+Plains			7	NNP	1	NNPS	5	NNS	1
 Plan			10	NN	3	NNP	7
 Planck			2	NNP	2
 Planes			2	NNP	1	NNS	1
@@ -15033,19 +15024,19 @@ Plastics		3	NNPS	3
 Plato			3	NNP	3
 Platonic		2	JJ	2
 Platt			2	NNP	2
-Play			5	NNP	5
+Play			5	NN	1	NNP	4
 Playboy			1	NNP	1
 Player			3	NN	1	NNP	2
 Players			1	NNS	1
 Playfulness		1	NN	1
 Playgroups		1	NNS	1
-Playhouse		2	NNP	2
+Playhouse		2	NN	1	NNP	1
 Playing			2	VBG	2
 Plays			1	NNP	1
 Playwrights		1	NNP	1
 Plaza			4	NNP	4
 Pleasant		1	NNP	1
-Please			28	RB	20	UH	5	VB	3
+Please			31	RB	19	UH	9	VB	3
 Plenitude		1	NNP	1
 Plews			1	NNP	1
 Plotinus		1	NNP	1
@@ -15065,28 +15056,30 @@ Poetry			1	NNP	1
 Poets			2	NNPS	1	NNS	1
 Pohs			4	NNP	4
 Poindexter		4	NNP	4
-Point			5	NNP	5
+Point			5	NN	1	NNP	4
 Pointe			3	NNP	3
 Pointes			1	NNP	1
 Pointing		1	VBG	1
-Poirot			4	NNP	4
+Poirot			5	NNP	5
 Poison			2	NN	2
 Poisons			1	NNS	1
+Poke			1	NNP	1
 Poland			47	NNP	47
 Polands			2	NNP	2
 Polar			1	NNP	1
 Polaroids		1	NNS	1
+Polegate		1	NNP	1
 Poles			3	NNPS	3
 Poliakin		1	NNP	1
-Police			16	NNP	11	NNS	5
+Police			16	NNP	12	NNS	4
 Policies		1	NNS	1
 Policy			7	NN	4	NNP	3
-Polish			25	JJ	23	NNP	2
+Polish			24	JJ	22	NNP	2
 Polished		1	JJ	1
-Politburo		4	NNP	4
+Politburo		4	NN	1	NNP	3
 Political		13	JJ	11	NNP	2
 Politically		2	RB	2
-Politicians		2	NNS	2
+Politicians		3	NNS	3
 Politics		7	NN	1	NNP	4	NNPS	1	NNS	1
 Politrick		1	NN	1
 Polk			1	NNP	1
@@ -15106,7 +15099,7 @@ Polygram		1	NNP	1
 Polymer			1	NNP	1
 Polynesians		1	NNPS	1
 Polystyrene		3	NNP	3
-Polytechnic		3	NNP	3
+Polytechnic		3	NN	1	NNP	2
 Polyurethane		1	NN	1
 Pompano			1	NNP	1
 Pompey			1	NNP	1
@@ -15127,27 +15120,29 @@ Poor			38	JJ	1	NNP	37
 Poore			4	NNP	4
 Poorest			1	JJS	1
 Pop			2	NN	2
-Pope			15	NNP	15
-Popes			3	NNP	2	NNS	1
+Pope			15	NN	2	NNP	13
+Popes			3	NNP	3
 Poppea			2	FW	2
 Poppy			2	NNP	2
-Popsicle		1	NNP	1
-Popular			1	NNP	1
+Popsicle		1	NN	1
+Popular			2	NNP	2
 Populares		1	NNP	1
 Population		3	NNP	3
 Porche			1	NNP	1
 Porkapolis		1	NNP	1
 Porridge		1	NN	1
 Porsche-like		1	JJ	1
-Port			9	NNP	9
+Port			10	NN	1	NNP	9
 Porter			8	NNP	8
 Portfolio		7	NN	2	NNP	5
 Portland		5	NNP	5
+Porto			1	NNP	1
+Portrait		1	NN	1
 Portrayal		1	NN	1
 Ports			1	NNS	1
 Portsmouth		3	NNP	3
 Portugal		5	NNP	5
-Portuguese		5	JJ	1	NNP	4
+Portuguese		5	JJ	1	NN	2	NNP	2
 Posner			5	NNP	5
 Possession		1	NN	1
 Possible		3	JJ	3
@@ -15159,13 +15154,14 @@ Posters			1	NNS	1
 Postipankki		2	NNP	2
 Postmaster-General	1	NNP	1
 Posts			2	VBZ	2
-Posy			12	NNP	10	RB	2
+Posy			15	NNP	13	RB	2
 Posys			1	NNS	1
 Potash			1	NNP	1
 Potatoes		1	NNP	1
+Potent			1	JJ	1
 Pothier			1	NNP	1
 Pots			2	NNS	2
-Potter			1	NNP	1
+Potter			2	NNP	2
 Potts			1	NNP	1
 Poughkeepsie		6	NNP	6
 Poulenc			1	NNP	1
@@ -15181,6 +15177,7 @@ Pozen			1	NNP	1
 Practical		1	NNP	1
 Practice		1	NN	1
 Practices		3	NNP	1	NNPS	2
+Practise		1	NNP	1
 Prague			3	NNP	3
 Pramual			1	NNP	1
 Prater			1	NNP	1
@@ -15207,8 +15204,8 @@ Prehistoric		1	NNP	1
 Preliminary		2	JJ	2
 Prelude			1	NNP	1
 Premark			1	NNP	1
-Premier			7	NNP	7
-Premium			1	NNP	1
+Premier			7	NN	1	NNP	6
+Premium			1	NN	1
 Prenatal		1	JJ	1
 Prentice		5	NNP	5
 Preparations		2	NNS	2
@@ -15219,10 +15216,11 @@ Presence		1	NNP	1
 Present			1	NN	1
 Presently		1	RB	1
 Presidency		2	NNP	2
-President		255	NN	1	NNP	254
+Presidency?		1	.the	1
+President		264	NN	4	NNP	260
 President?Thats		1	NNS	1
 Presidential		4	JJ	3	NNP	1
-Presidents		18	NNP	4	NNPS	6	NNS	8
+Presidents		19	NNP	4	NNPS	5	NNS	10
 Presidio		3	NN	1	NNP	2
 Presley			3	NNP	3
 Press			18	NNP	18
@@ -15252,15 +15250,15 @@ Priest			1	NNP	1
 Priestley		1	NNP	1
 Primarily		1	RB	1
 Primate			1	NN	1
-Prime			89	NNP	89
+Prime			90	NNP	90
 Prime-1			3	JJ	2	NN	1
 Prime-2			2	JJ	2
 Primerica		6	NNP	6
 Primula			1	NNP	1
-Primus			1	NNP	1
-Prince			16	NNP	16
-Princes			1	NNS	1
-Princess		5	NNP	5
+Primus			1	NN	1
+Prince			17	NN	1	NNP	16
+Princes			2	NNP	1	NNS	1
+Princess		5	NN	1	NNP	4
 Princeton		4	NNP	4
 Princeton\/Newport	5	Newport	5
 Princeton\/Newport-like	1	Newport-like	1
@@ -15280,7 +15278,7 @@ Privately		1	RB	1
 Privatization		1	NNP	1
 Privy			1	NNP	1
 Prix			1	NNP	1
-Prize			5	NNP	5
+Prize			6	NNP	6
 Prize-winning		1	JJ	1
 Prizes			1	NNPS	1
 Prizm			1	NNP	1
@@ -15293,7 +15291,7 @@ Problems		2	NNPS	1	NNS	1
 Proceedings		1	NNP	1
 Proceeds		12	NNS	12
 Processing		2	NNP	2
-Proclamation		2	NNP	2
+Proclamation		2	NN	1	NNP	1
 Procter			13	NNP	13
 Prodigal		1	NNP	1
 Produce			1	VB	1
@@ -15308,11 +15306,12 @@ Prof.			8	NNP	8
 Professional		15	JJ	1	NNP	14
 Professionalism		1	NNP	1
 Professionally		1	RB	1
-Professor		12	NNP	12
+Professor		13	NNP	13
 Professors		1	NNP	1
 Profit			17	NN	16	NNP	1
 Profit-taking		1	NN	1
-Profits			7	NNPS	1	NNS	6
+Profitability		1	NN	1
+Profits			9	NNPS	1	NNS	8
 Program			23	NN	17	NNP	6
 Program-Trading		1	JJ	1
 Programming		1	NN	1
@@ -15325,10 +15324,10 @@ Project			7	NN	1	NNP	6
 Projects		5	NNPS	4	NNS	1
 Proleukin		2	NNP	2
 Promise			1	NNP	1
-Promising		2	JJ	1	NNP	1
+Promising		2	JJ	1	VBG	1
 Promotion		1	NNP	1
 Promotional		1	JJ	1
-Propaganda		1	NN	1
+Propaganda		2	NN	2
 Proper			1	JJ	1
 Properties		2	NNP	1	NNPS	1
 Property		1	NN	1
@@ -15358,10 +15357,10 @@ Provide			1	VB	1
 Provided		1	VBN	1
 Providence		4	NNP	4
 Provident		3	NNP	3
-Providing		1	VBG	1
+Providing		1	IN	1
 Provigo			16	NNP	16
-Province		3	NNP	3
-Provinces		1	NNP	1
+Province		3	NN	1	NNP	2
+Provinces		1	NNPS	1
 Provisional		1	JJ	1
 Provost			1	NNP	1
 Prudential		1	NNP	1
@@ -15371,7 +15370,7 @@ Pruett			1	NNP	1
 Prufrock		1	NNP	1
 Prussia			1	NNP	1
 Pryor			1	NNP	1
-Psalm			1	NNP	1
+Psalm			2	NN	1	NNP	1
 Psyche			1	NNP	1
 Psychiatry		2	NNP	2
 Psychological		1	NNP	1
@@ -15402,9 +15401,9 @@ Pulteney		2	NNP	2
 Pump			1	NNP	1
 Pumpkin			1	NNP	1
 Punching		1	VBG	1
-Punctured		1	NNP	1
+Punctured		1	JJ	1
 Punishment		2	NN	2
-Punjab			2	NNP	2
+Punjab			3	NNP	3
 Pupils			1	NNS	1
 Purcell			1	NNP	1
 Purchase		3	NNP	3
@@ -15412,16 +15411,17 @@ Purchasing		5	NNP	5
 Purdue			1	NNP	1
 Purepac			1	NNP	1
 Purina			2	NNP	2
-Puritan			2	NNP	2
+Puritan			2	NN	1	NNP	1
 Puritans		1	NNS	1
+Purple			1	NNP	1
 Push			3	VBP	3
 Pushing			1	VBG	1
 Pushkin			1	NNP	1
-Puss			1	NNP	1
-Put			29	JJ	1	NN	2	VB	20	VBD	3	VBN	3
+Puss			1	NN	1
+Put			32	JJ	2	NN	2	VB	23	VBD	3	VBN	2
 Putford			1	NNP	1
 Putnam			1	NNP	1
-Putting			2	VBG	2
+Putting			3	VBG	3
 Putty			1	NN	1
 Pymm			2	NNP	2
 Pyramid			2	NNP	2
@@ -15449,7 +15449,7 @@ Quartet			2	NN	2
 Quayle			5	NNP	5
 Quebec			12	NNP	12
 Quebecor		25	NNP	25
-Queen			31	NNP	31
+Queen			32	NN	1	NNP	31
 Queens			4	NNP	3	NNS	1
 Quelle			2	NNP	2
 Quennell		2	NNP	2
@@ -15463,6 +15463,7 @@ Queue			1	VB	1
 Queuing			1	VBG	1
 Quezon			1	NNP	1
 Quick			1	RB	1
+Quickly			1	RB	1
 Quickview		6	NNP	6
 Quill			1	NNP	1
 Quill\/William		1	William	1
@@ -15487,6 +15488,7 @@ R.H.			3	NNP	3
 R.I			1	NNP	1
 R.I.			4	NNP	4
 R.L.			1	NNP	1
+R.L.Stevenson		1	NNP	1
 R.P.			2	NNP	2
 R.R.			2	NNP	2
 R.W.			1	NNP	1
@@ -15497,7 +15499,7 @@ RALLIED			1	VBD	1
 RANSOM			1	NNP	1
 RATE			15	NN	9	NNP	6
 RATES			14	NNP	1	NNPS	4	NNS	9
-RB211			1	JJ	1
+RB211			1	NNP	1
 RBC			1	NNP	1
 RC6280			2	NN	2
 RCSB			1	NNP	1
@@ -15536,7 +15538,7 @@ RU-486			15	NNP	15
 RULES			2	NNS	2
 RULING			1	NN	1
 RXDC			1	NNP	1
-Rabbits			1	NNP	1
+Rabbits			2	NNP	1	NNS	1
 Rabia			1	NNP	1
 Rabin			1	NNP	1
 Rabinowitz		4	NNP	4
@@ -15552,8 +15554,9 @@ Racketeer		2	NNP	2
 Racketeering		1	NNP	1
 Rackham			1	NNP	1
 Radar			2	NN	2
-Radiation		1	NNP	1
-Radio			30	NN	1	NNP	29
+Radcliffe		1	NNP	1
+Radiation		2	NNP	2
+Radio			32	NN	1	NNP	31
 Radzymin		3	NNP	3
 Rae			1	NNP	1
 Rafferty		1	NNP	1
@@ -15567,7 +15570,7 @@ Railcar			1	NNP	1
 Railroad		3	NN	2	NNP	1
 Rails			2	NNPS	2
 Railway			1	NNP	1
-Railways		1	NNS	1
+Railways		2	NNP	1	NNS	1
 Raimondo		1	NNP	1
 Rain			5	NN	5
 Rainbow			2	NNP	2
@@ -15583,7 +15586,7 @@ Rajiv			1	NNP	1
 Rake			1	VB	1
 Raleigh			4	NNP	4
 Rally			31	NN	1	NNP	30
-Ralph			50	NNP	50
+Ralph			58	NNP	58
 Ralphs			3	NNP	3
 Ralston			7	NNP	7
 Ram			1	NNP	1
@@ -15592,14 +15595,16 @@ Ramada			12	NNP	12
 Ramirez			5	NNP	5
 Ramon			1	NNP	1
 Ramos			1	NNP	1
+Ramsay			1	NNP	1
 Ramsdale		1	NNP	1
+Ranchers		1	NNPS	1
 Rancho			1	NNP	1
 Rand			4	NNP	4
 Randall			2	NNP	2
 Randolph		5	NNP	5
 Random			13	NNP	13
 Randy			1	NNP	1
-Range			2	NNP	2
+Range			2	NN	1	NNP	1
 Rangel			3	NNP	3
 Ranger			1	NNP	1
 Rangers			2	NNPS	2
@@ -15653,24 +15658,24 @@ Rayon			1	NNP	1
 Rayos			2	NNP	2
 Rays			1	NNP	1
 Raytheon		1	NNP	1
-Re			2	NNP	2
+Re			2	IN	1	NNP	1
 Re-creating		1	VBG	1
 Re-enactments		1	NNS	1
 Reached			1	VBN	1
-Reaching		1	VBG	1
-Read			7	NNP	3	VB	4
+Reaching		2	VBG	2
+Read			9	NNP	7	VB	2
 Reader			1	NNP	1
 Readers			4	NNS	4
-Reading			4	NN	2	VBG	2
+Reading			5	NN	3	VBG	2
 Ready			2	JJ	1	NNP	1
 Reagan			62	JJ	1	NNP	61
 Reagan-Bush		1	JJ	1
 Reagan-era		4	JJ	2	NN	2
-Reagans			1	NNP	1
+Reagans			1	NNPS	1
 Real			17	JJ	10	NNP	6	RB	1
 Reality			2	NN	2
-Really			2	RB	2
-Really?			1	NNS	1
+Really			2	RB	1	UH	1
+Really?			1	.the	1
 Realty			1	NNP	1
 Reames			2	NNP	2
 Reason			1	NNP	1
@@ -15684,18 +15689,18 @@ Rebels			1	NNS	1
 Rebuilding		1	VBG	1
 Receipts		2	NNPS	2
 Receivables		1	NNPS	1
-Recent			5	JJ	5
-Recently		14	RB	14
+Recent			6	JJ	6
+Recently		15	RB	15
 Reception		1	NN	1
 Receptionists		1	NNS	1
 Recess			1	NN	1
 Recife			1	NNP	1
 Reconsideration		1	NN	1
-Record			2	NNP	1	VB	1
+Record			3	NN	1	NNP	1	VB	1
 Recorder		1	NNP	1
 Recording		2	NNP	2
 Records			12	NNP	4	NNPS	8
-Recovery		5	NN	1	NNP	4
+Recovery		5	NN	2	NNP	3
 Recreation		1	NN	1
 Recruit			3	NNP	3
 Recruiter		1	NNP	1
@@ -15714,6 +15719,7 @@ Reding			1	NN	1
 Reds			1	NNP	1
 Reducing		3	VBG	3
 Reduction		2	NN	1	NNP	1
+Redundancy		1	NNP	1
 Redwood			2	NNP	2
 Reebok			12	NNP	12
 Reece			1	NNP	1
@@ -15724,7 +15730,7 @@ Rees			1	NNP	1
 Reese			1	NNP	1
 Refco			1	NNP	1
 Refcorp			3	NN	1	NNP	2
-Reference		3	NNP	3
+Reference		3	NN	2	NNP	1
 Refinery		2	NNP	2
 Refining		2	NN	1	NNP	1
 Reflecting		1	VBG	1
@@ -15738,13 +15744,13 @@ Regarding		3	VBG	3
 Regardless		1	RB	1
 Regency			1	NNP	1
 Regie			1	NNP	1
-Regiment		5	NN	1	NNP	4
+Regiment		5	NN	2	NNP	3
 Reginald		2	NNP	2
-Region			2	NNP	2
+Region			2	NN	1	NNP	1
 Regional		7	JJ	2	NNP	5
 Regions			1	NNS	1
 Register		4	NNP	4
-Registers		1	NNP	1
+Registers		1	NNPS	1
 Regular			3	JJ	3
 Regulation		2	NN	1	NNP	1
 Regulations		1	NNPS	1
@@ -15785,9 +15791,9 @@ Remember		15	VB	15
 Remfrey			1	NNP	1
 Remic			9	JJ	1	NNP	8
 Remics			1	NNS	1
-Remind			1	VB	1
+Remind			2	VB	2
 Remingtons		1	NNP	1
-Removal			2	NNP	2
+Removal			2	NN	1	NNP	1
 Remove			7	IN	1	VB	6
 Removed			1	VBN	1
 Remy			1	NNP	1
@@ -15819,7 +15825,7 @@ Repeat			1	NN	1
 Repertory		1	NNP	1
 Replace			2	NNP	2
 Replete			1	JJ	1
-Report			37	NN	1	NNP	35	VB	1
+Report			37	NN	2	NNP	34	VB	1
 Reported		1	JJ	1
 Reporter		1	NNP	1
 Reporters		3	NNS	3
@@ -15834,9 +15840,9 @@ Reproductive		2	NNP	2
 Reps.			3	NNP	1	NNPS	2
 Repsol			2	NNP	2
 Reptile			1	NNP	1
-Reptiles		3	NNP	2	NNS	1
+Reptiles		3	NNP	3
 Republic		9	NNP	9
-Republican		35	JJ	21	NNP	14
+Republican		36	JJ	22	NNP	14
 Republicanism		1	NNP	1
 Republicans		35	NNP	1	NNPS	33	NNS	1
 Republics		1	NNPS	1
@@ -15864,7 +15870,7 @@ Resort			1	NNP	1
 Resorts			1	NNPS	1
 Resource		3	NNP	3
 Resources		28	NNP	12	NNPS	16
-Respect			2	NN	2
+Respect			3	NN	3
 Respiratory		1	JJ	1
 Response		1	NNP	1
 Responses		1	NNS	1
@@ -15893,11 +15899,11 @@ Rev.			8	NNP	8
 Revco			19	NNP	19
 Reveals			1	VBZ	1
 Revenge			1	NN	1
-Revenue			68	NN	57	NNP	11
+Revenue			69	NN	58	NNP	11
 Revenues		2	NNS	2
 Reverence		1	NN	1
 Reverse			1	NN	1
-Review			10	NNP	10
+Review			11	NNP	11
 Reviewing		1	VBG	1
 Reviglio		2	NNP	2
 Revised			2	VBN	2
@@ -15906,7 +15912,7 @@ Revision		1	NNP	1
 Revisited		1	NNP	1
 Revitalized		2	VBN	2
 Revlon			3	NN	1	NNP	2
-Revolution		17	NN	6	NNP	11
+Revolution		17	NN	8	NNP	9
 Revolutionary		3	NNP	3
 Rewards			2	NNS	2
 Rexall			2	NNP	2
@@ -15940,7 +15946,7 @@ Ricardian		1	NNP	1
 Ricca			1	NNP	1
 Rice			6	NNP	6
 Rich			9	JJ	2	NNP	7
-Richard			100	NNP	100
+Richard			101	NNP	101
 Richards		5	NNP	5
 Richardson		8	NNP	8
 Richardson-Vicks	1	NNP	1
@@ -15950,7 +15956,7 @@ Richfield		3	NNP	3
 Richmond		9	NNP	9
 Richter			3	NNP	3
 Richterian		1	JJ	1
-Rick			10	NNP	10
+Rick			11	NNP	11
 Rickel			1	NNP	1
 Ricken			1	NNP	1
 Rickey			2	NNP	2
@@ -15970,8 +15976,9 @@ Rifenburgh		6	NNP	6
 Rifkin			1	NNP	1
 Rifkind			1	NNP	1
 Rifle			1	NNP	1
-Riflemen		1	NNP	1
-Right			15	NNP	4	RB	11
+Riflemen		1	NN	1
+Rift			1	NNP	1
+Right			15	NN	2	NNP	2	RB	11
 Rights			18	NNP	8	NNPS	9	NNS	1
 Rigid			2	JJ	2
 Rigoletto		1	NNP	1
@@ -15980,7 +15987,7 @@ Rill			1	NNP	1
 Rilling			2	NNP	2
 Rima			1	NNP	1
 Rindos			1	NNP	1
-Ring			1	NN	1
+Ring			2	NN	1	VBG	1
 Ringbaum		3	NNP	3
 Ringers			3	NNP	1	NNS	2
 Ringing			2	NN	1	NNP	1
@@ -15997,9 +16004,10 @@ Risk			2	NN	1	NNP	1
 Risking			1	VBG	1
 Risks			1	NNS	1
 Risley			1	NNP	1
-Rita			8	NNP	8
+Rita			9	NNP	9
 Ritter			1	NNP	1
 Ritterman		3	NNP	3
+Ritual			1	NN	1
 Rituals			1	NNS	1
 Ritz			1	NNP	1
 Rival			1	JJ	1
@@ -16010,36 +16018,36 @@ Rivers			1	NNP	1
 Riviera			4	NNP	4
 Riyadh			1	NNP	1
 Roach			1	NNP	1
-Road			19	NNP	19
+Road			18	NNP	18
 Roads			1	NNS	1
-Rob			1	NNP	1
+Rob			2	NNP	2
 Robb			1	NNP	1
 Robbers			1	NNS	1
 Robbie			2	NNP	2
 Robbins			1	NNP	1
-Robert			177	NNP	177
+Robert			178	NNP	178
 Roberti			6	NNP	6
 Roberts			24	NNP	24
 Robertson		16	NNP	16
 Robertsons		1	NNP	1
-Robin			8	NNP	8
+Robin			9	NNP	9
 Robins			2	NNP	2
 Robinson		5	NNP	5
 Robson			4	NNP	4
 Roche			1	NNP	1
 Rochester		8	NNP	8
-Rock			7	NNP	7
+Rock			7	NN	1	NNP	6
 Rockefeller		50	NNP	50
 Rockford		3	NNP	3
 Rockies			1	NNPS	1
-Rocks			2	NNS	2
+Rocks			3	NNS	3
 Rockwell		8	NNP	8
 Rocky			3	NNP	3
 Rod			3	NNP	3
 Rodeo			2	NN	1	NNP	1
 Roderick		13	NNP	13
 Rodgers			3	NNP	3
-Rodin			6	NNP	6
+Rodin			7	NNP	7
 Rodman			1	NNP	1
 Rodrigo			1	NNP	1
 Rodriguez		1	NNP	1
@@ -16048,7 +16056,7 @@ Roebuck			5	NNP	5
 Roeck			1	NNP	1
 Roederer		3	NNP	3
 Roeser			1	NNP	1
-Roger			28	NNP	28
+Roger			30	NNP	30
 Roger.That		1	NNP	1
 Rogers			7	NNP	7
 Roh			2	NNP	2
@@ -16069,7 +16077,7 @@ Rolm			1	NNP	1
 Rolodex			1	NNP	1
 Rolodexes		1	NNPS	1
 Romain			1	NNP	1
-Roman			42	JJ	5	NNP	36	NNPS	1
+Roman			43	JJ	4	NN	1	NNP	37	NNPS	1
 Romance			2	NNP	2
 Romanee-Conti		3	NNP	3
 Romanesque		1	JJ	1
@@ -16081,6 +16089,7 @@ Romeo			2	NNP	2
 Ron			6	NNP	6
 Ronald			20	NNP	20
 Roof			1	NNP	1
+Roofs			1	NNP	1
 Rooker			1	NNP	1
 Rookes			1	NNP	1
 Rooks			2	NNS	2
@@ -16095,7 +16104,7 @@ Rosa			7	NNP	7
 Rosalco			1	NNP	1
 Rosalind		1	NNP	1
 Rosamund		2	NNP	2
-Rose			20	NNP	20
+Rose			21	NNP	21
 Roseburn		1	NNP	1
 Roselle			1	NNP	1
 Rosemary		3	NNP	3
@@ -16107,11 +16116,11 @@ Rosenblum		2	NNP	2
 Rosencrants		1	NNP	1
 Rosenfeld		1	NNP	1
 Rosenthal		6	NNP	6
-Roses			3	NNPS	3
+Roses			4	NNPS	4
 Rosie			1	NNP	1
 Ross			35	NNP	35
 Rosses			1	NNS	1
-Rossetti		2	NNP	2
+Rossetti		3	NNP	3
 Rossettis		2	NNP	2
 Rossini			2	NNP	2
 Rossiter		1	NNP	1
@@ -16127,7 +16136,7 @@ Rothwell		1	NNP	1
 Rotie			1	NNP	1
 Rotten			1	JJ	1
 Rouge			6	NNP	6
-Rough			2	NNP	2
+Rough			3	NNP	3
 Roughly			2	RB	2
 Roukema			2	NNP	2
 Rousseau		1	NNP	1
@@ -16135,6 +16144,7 @@ Roussel			1	NNP	1
 Roussel-Uclaf		1	NNP	1
 Roustabouts		1	NNPS	1
 Route			1	NNP	1
+Routine			1	JJ	1
 Row			2	NNP	2
 Rowe			12	NNP	12
 Rowland-Molina		2	NNP	2
@@ -16152,7 +16162,7 @@ Rs			1	NNS	1
 Rub			2	NN	1	VB	1
 Rubber			4	NNP	4
 Rubbermaid		9	NNP	9
-Rubbish			1	NNP	1
+Rubbish			1	NN	1
 Rubel			4	NNP	4
 Rubeli			1	NNP	1
 Rubella			1	NNP	1
@@ -16170,8 +16180,8 @@ Ruder			8	NNP	8
 Rudman			2	NNP	2
 Rudnick			1	NNP	1
 Rudolf			2	NNP	2
-Rudolph			23	NNP	23
-Rudolph?		1	NNP	1
+Rudolph			26	NNP	26
+Rudolph?		1	.a	1
 Rudolphs		2	NNP	2
 Rudy			1	NNP	1
 Rue			1	NN	1
@@ -16184,12 +16194,12 @@ Rum			1	NNP	1
 Rumack			1	NNP	1
 Rummidge		2	NNP	2
 Rumors			4	NNS	4
-Rumour			1	NNP	1
-Rumours			4	NNP	2	NNS	2
-Run			2	NNP	1	VB	1
+Rumour			1	NN	1
+Rumours			4	NNS	4
+Run			2	NN	1	VB	1
 Runkel			8	NNP	8
 Runner			1	NNP	1
-Running			2	VBG	2
+Running			3	NN	1	VBG	2
 Rupert			6	NNP	6
 Rural			6	JJ	2	NNP	4
 Rushdie			1	NNP	1
@@ -16200,7 +16210,7 @@ Russell			12	NNP	12
 Russells		1	NNP	1
 Russia			15	NNP	15
 Russian			29	JJ	25	NN	2	NNP	2
-Russians		4	NNPS	4
+Russians		5	NNPS	5
 Russo			4	NNP	4
 Rust			1	NNP	1
 Rustie			1	NNP	1
@@ -16237,7 +16247,7 @@ SAID			1	VBD	1
 SALARIES		1	NNS	1
 SALES			2	NNS	2
 SALT			1	NNP	1
-SAS			6	NNP	6
+SAS			6	NN	1	NNP	5
 SAT			1	NNP	1
 SAVINGS			2	NNP	1	NNPS	1
 SCI			56	NNP	56
@@ -16270,10 +16280,10 @@ SMU			3	NNP	3
 SOCIETY			1	NNP	1
 SONG			3	NNP	3
 SONGsters		1	NNS	1
-SOS			1	NNP	1
+SOS			1	NN	1
 SOYBEANS		5	NNPS	1	NNS	4
 SPD			1	NNP	1
-SRN			2	NN	1	NNP	1
+SRN			2	NN	2
 SS			3	NNP	3
 STAGED			1	VBD	1
 STANDARDS		1	NNPS	1
@@ -16295,7 +16305,7 @@ Saab			6	NNP	6
 Saab-Scania		2	NNP	2
 Saatchi			13	NNP	13
 Sabawalas		1	NNP	1
-Sabbath			3	NN	2	NNP	1
+Sabbath			3	NN	3
 Sabena			1	NNP	1
 Sabhavasu		1	NNP	1
 Sabine			2	NNP	2
@@ -16322,9 +16332,9 @@ Sahibs			1	NNPS	1
 Sahour			1	NNP	1
 Said			11	NNP	7	VBD	3	VBN	1
 Saigon			2	NNP	2
-Sailing			1	NNP	1
+Sailing			1	NN	1
 Sain			2	NNP	2
-Saint			4	NNP	4
+Saint			4	NN	1	NNP	3
 Saint-Saens		2	NNP	2
 Saints			1	NNP	1
 Saitama			1	NNP	1
@@ -16337,17 +16347,17 @@ Salaries		1	NNS	1
 Sale			3	NN	1	NNP	2
 Salem			1	NNP	1
 Salembier		4	NNP	4
-Sales			87	NNS	87
+Sales			89	NNS	89
 Salesman		1	NN	1
 Salesmen		2	NNS	2
 Salford			1	NNP	1
 Salim			1	NNP	1
 Salinas			8	NNP	8
 Salinger		9	NNP	9
-Salisbury		4	NNP	4
+Salisbury		5	NNP	5
 Salk			1	NNP	1
 Sallay			1	NNP	1
-Sally			10	NNP	10
+Sally			11	NNP	11
 Sallys			2	NNP	2
 Salman			1	NNP	1
 Salmon			1	NNP	1
@@ -16361,23 +16371,23 @@ Saltzburg		4	NNP	4
 Salvador		4	NNP	4
 Salvadoran		1	JJ	1
 Salvagni		2	NNP	2
-Salvation		3	NNP	3
+Salvation		3	NN	1	NNP	2
 Salvatore		1	NNP	1
 Salvatori		3	NNP	3
 Salzman			4	NNP	4
-Sam			35	NNP	35
+Sam			39	NNP	39
 Samantha		1	NNP	1
-Samaritan		1	NNP	1
+Samaritan		1	NN	1
 Samaritans		2	NNS	2
 Sambourne		1	NNP	1
 Same			1	JJ	1
 Samford			1	NNP	1
 Sammye			1	NNP	1
 Samnick			3	NNP	3
-Sams			2	NNP	2
+Sams			3	NNP	3
 Samsung			2	NNP	2
 Samuel			14	NNP	14
-San			128	NNP	128
+San			129	NNP	129
 Sand			2	NN	1	NNP	1
 Sandberg		1	NNP	1
 Sanderoff		1	NNP	1
@@ -16393,7 +16403,7 @@ Sandra			8	NNP	8
 Sandrucci		1	NNP	1
 Sands			4	NNP	3	NNPS	1
 Sandwich		2	NNP	2
-Sandy			9	NNP	9
+Sandy			11	NNP	11
 Sandys			1	NNS	1
 Sanford			6	NNP	6
 Sanger			3	NNP	3
@@ -16403,16 +16413,16 @@ Sanjay			1	NNP	1
 Sanraku			1	NNP	1
 Sanskrit		1	NN	1
 Sansui			20	NNP	20
-Santa			38	NNP	38
+Santa			39	NNP	39
 Sante			2	NNP	2
 Santiago		2	NNP	2
 Santos			1	NNP	1
 Sanwa			2	NNP	2
 Sanyo			1	NNP	1
-Sao			3	NNP	3
+Sao			4	NNP	4
 Sappora			1	NNP	1
 Sapporo			1	NNP	1
-Sarah			10	NNP	10
+Sarah			13	NNP	13
 Sarahs			2	NNP	2
 Sarawak			1	NNP	1
 Sardina			1	NNP	1
@@ -16432,15 +16442,15 @@ Satoko			1	NNP	1
 Satoshi			1	NNP	1
 Satrum			1	NNP	1
 Sattig			1	NNP	1
-Saturday		47	NNP	47
+Saturday		49	NN	1	NNP	48
 Saturday?I		1	NNP	1
-Saturdays		5	NNP	4	NNS	1
+Saturdays		5	NNS	5
 Saturn			1	NNP	1
 Saturns			1	NNS	1
 Saudi			11	JJ	1	NNP	10
 Saudis			1	NNPS	1
 Saul			9	NNP	9
-Saunders		1	NNP	1
+Saunders		2	NNP	2
 Saussure		1	NNP	1
 Sauternes		1	NNP	1
 Sauvignon		1	NNP	1
@@ -16453,7 +16463,7 @@ Savings			54	NNP	31	NNPS	20	NNS	3
 Saviour			1	NNP	1
 Savoy			3	NNP	3
 Sawyer			1	NNP	1
-Saxon			5	NNP	5
+Saxon			6	NNP	6
 Say			3	VB	3
 Sayers			3	NNP	3
 Saying			2	VBG	2
@@ -16472,6 +16482,7 @@ Scaring			1	VBG	1
 Scarman			2	NNP	2
 Scarmans		1	NNPS	1
 Scarves			1	NN	1
+Scattered		1	JJ	1
 Scenario		4	NN	4
 Scenarios		1	NNS	1
 Scent			1	NNP	1
@@ -16500,14 +16511,14 @@ Scholars		1	NNS	1
 Scholastic		1	NNP	1
 School			38	NNP	38
 Schoolboys		1	NNS	1
-Schools			6	NNP	5	NNS	1
+Schools			6	NNP	4	NNS	2
 Schramm			2	NNP	2
 Schreyer		1	NNP	1
 Schroder		4	NNP	4
 Schroders		1	NNP	1
 Schroeder		1	NNP	1
 Schubert		4	NNP	4
-Schuberts		1	NNP	1
+Schuberts		1	NNS	1
 Schuler			1	NNP	1
 Schulof			2	NNP	2
 Schulte			4	NNP	4
@@ -16515,7 +16526,7 @@ Schultz			1	NNP	1
 Schulz			2	NNP	2
 Schumacher		1	NNP	1
 Schumann		1	NNP	1
-Schumann?		1	NN	1
+Schumann?		2	.a	2
 Schuster		6	NNP	6
 Schwab			2	NNP	2
 Schwartz		1	NNP	1
@@ -16525,26 +16536,26 @@ Schweiz			1	NNP	1
 Schweppes		2	NNP	2
 Schwerin		1	NNP	1
 Schwinn			2	NNP	2
-Science			13	NN	2	NNP	11
+Science			14	NN	2	NNP	12
 Sciences		22	NNPS	22
 Scientific		12	NNP	12
 Scientific-Atlanta	2	NNP	2
 Scientists		13	NNS	13
 Scientology		1	NNP	1
-Scofield		2	NNP	2
+Scofield		3	NNP	3
 Scopes			2	NNP	2
 Score			4	NN	4
 Scores			1	NNS	1
 Scoring			13	NNP	13
 Scorpio			1	NNP	1
-Scot			1	NNP	1
-Scotch			7	NNP	7
+Scot			2	NNP	2
+Scotch			8	NNP	8
 Scotia			2	NNP	2
-Scotland		29	NNP	29
+Scotland		30	NNP	30
 Scots			2	NNS	2
 Scott			26	NNP	26
 Scotticisms		1	NNS	1
-Scottish		18	JJ	12	NNP	4	NNS	2
+Scottish		19	JJ	13	NNP	4	NNS	2
 Scottish-born		1	JJ	1
 Scottishness		1	NN	1
 Scotto			3	NNP	3
@@ -16554,9 +16565,10 @@ Scouts			1	NNPS	1
 Scowcroft		1	NNP	1
 Scrabster		1	NNP	1
 Scram			1	VB	1
+Scrape			1	VB	1
 Scratches		1	NNS	1
 Scrawny			1	NNP	1
-Screw			1	NNP	1
+Screw			2	NNP	1	VB	1
 Scripps			3	NNP	3
 Scrum			1	NNP	1
 Scully			1	NNP	1
@@ -16565,7 +16577,7 @@ Sculptures		1	NNS	1
 Scurlock		1	NNP	1
 Scylla			4	NNP	4
 Scypher			1	NNP	1
-Sea			46	NNP	46
+Sea			49	NN	2	NNP	47
 Sea-snakes		1	NNPS	1
 Seabrook		5	NNP	5
 Seacomb			1	NNP	1
@@ -16594,18 +16606,19 @@ Second			27	JJ	6	LS	2	NNP	18	RB	1
 Second-tier		1	JJ	1
 Secondary		1	JJ	1
 Secondly		2	RB	2
+Seconds			1	NNS	1
 Secord			2	NNP	2
 Secret			8	JJ	3	NNP	5
 Secretariat		1	NNP	1
-Secretary		68	NNP	68
+Secretary		70	NNP	70
 Secretary-General	2	NNP	2
-Secrets			3	NNPS	2	NNS	1
-Section			28	NN	16	NNP	12
+Secrets			3	NNPS	3
+Section			28	NN	17	NNP	11
 Secured			1	JJ	1
 Securities		172	NNP	62	NNPS	99	NNS	11
 Security		49	NN	2	NNP	47
 Securitys		1	NNP	1
-See			26	NNP	1	VB	25
+See			27	NNP	1	VB	26
 Seed			1	NN	1
 Seeing			6	NNP	1	VBG	5
 Seek			1	VBP	1
@@ -16639,9 +16652,10 @@ Selkin			1	NNP	1
 Selkirk			1	NNP	1
 Sellars			1	NNP	1
 Selling			2	VBG	2
-Sellotape		2	NNP	2
+Sellotape		2	NN	1	NNP	1
 Sellotaped		1	VBD	1
 Sells			3	NNP	3
+Selly			1	NNP	1
 Selman			1	NNP	1
 Selmer-Sande		1	NNP	1
 Seltzer			1	NNP	1
@@ -16656,21 +16670,21 @@ Seminar			1	NNP	1
 Semitic			4	JJ	4
 Sen			2	NNP	2
 Sen.			72	NNP	72
-Senate			146	NNP	146
+Senate			146	NN	4	NNP	142
 Senate-House		1	JJ	1
 Senate-passed		1	JJ	1
-Senator			13	NNP	13
+Senator			13	NN	1	NNP	12
 Senators		7	NNP	1	NNPS	4	NNS	2
 Send			8	VB	8
 Seneca			1	NNP	1
 Senegal			1	NNP	1
-Senegalese		1	NNP	1
+Senegalese		1	NN	1
 Seng			6	NNP	6
 Senior			7	JJ	4	NNP	3
 Seniors			2	NNP	2
 Sens.			4	NNP	4
 Sense			2	NN	2
-Sensing			1	VBG	1
+Sensing			1	NNP	1
 Sentelle		2	NNP	2
 Sentence		1	NN	1
 Sentences		1	NNS	1
@@ -16680,7 +16694,7 @@ Sentra			2	NNP	2
 Seoul			19	NNP	19
 Separate		1	VB	1
 Separately		47	NNP	13	RB	34
-Separation		2	NN	1	NNP	1
+Separation		2	NN	2
 Sepoy			1	NNP	1
 Sept			1	NNP	1
 Sept.			115	JJ	1	NN	1	NNP	113
@@ -16690,7 +16704,7 @@ September-October	1	NNP	1
 Serafina		1	NNP	1
 Serfs			1	NNP	1
 Serge			1	NNP	1
-Sergeant		3	NNP	3
+Sergeant		3	NN	1	NNP	2
 Sergiusz		1	NNP	1
 Serial			5	JJ	5
 Series			78	NN	17	NNP	59	NNS	2
@@ -16713,7 +16727,7 @@ Seven			4	CD	3	NNP	1
 Seventh			1	NNP	1
 Seventies		1	NNP	1
 Seventy-five		2	CD	2
-Several			52	JJ	52
+Several			54	JJ	54
 Severe			1	JJ	1
 Severn			1	NNP	1
 Sewells			1	NNP	1
@@ -16721,7 +16735,7 @@ Sewing			1	NNP	1
 Sex			4	NN	4
 Seyer			1	NNP	1
 Seymour			6	NNP	6
-Sh			1	NNP	1
+Sh			1	UH	1
 Shack			4	NNP	4
 Shadow			1	NNP	1
 Shady			1	NNP	1
@@ -16732,10 +16746,10 @@ Shake			1	NNP	1
 Shaken			1	VBN	1
 Shakespeare		26	NN	2	NNP	24
 Shakespearean		2	JJ	2
-Shakespeares		3	NNP	3
+Shakespeares		5	NNP	5
 Shale			5	NNP	5
 Shales			1	NNP	1
-Shall			8	MD	7	NNP	1
+Shall			11	MD	8	NNP	3
 Shalov			1	NNP	1
 Shamir			2	NNP	2
 Shane			1	NNP	1
@@ -16759,6 +16773,7 @@ Sharon			11	NNP	11
 Sharons			1	NNP	1
 Sharp			8	JJ	1	NNP	7
 Sharp-eyed		1	JJ	1
+Sharpe?			1	.a	1
 Sharpest		1	JJS	1
 Sharpshooter		5	NNP	5
 Shaving			1	VBG	1
@@ -16766,11 +16781,11 @@ Shaw			13	NNP	13
 Shaw-Walker		2	NNP	2
 Shawcross		2	NNP	2
 Shaws			3	NNP	1	NNPS	1	NNS	1
-She			2858	NN	1	PRP	2857
+She			3065	NN	1	PRP	3064
 Shea			1	NNP	1
 Shearman		1	NNP	1
 Shearson		78	NNP	78
-Shed			8	NNP	2	VB	2	VBN	4
+Shed			8	NNP	1	VB	2	VBN	5
 Sheehan			2	NNP	2
 Sheep			4	NNP	4
 Sheet			1	NNP	1
@@ -16800,7 +16815,7 @@ Sherry			1	NNP	1
 Sherwin			1	NNP	1
 Sherwin-Williams	3	NNP	3
 Sherwood		5	NNP	5
-Shes			102	NNP	71	NNS	30	VBZ	1
+Shes			111	NNP	75	NNS	35	VBZ	1
 Shetland		1	NNP	1
 Shevardnadze		13	NNP	13
 Shicoff			2	NNP	2
@@ -16817,11 +16832,11 @@ Shimla			1	NNP	1
 Shin			6	NNP	6
 Shining			2	NNP	1	VBG	1
 Shiny			1	NNP	1
-Shipboard		1	NNP	1
+Shipboard		1	NN	1
 Shipbuilding		4	NN	1	NNP	3
 Shipments		2	NNS	2
 Shipping		4	NN	1	NNP	3
-Ships			5	NNP	1	NNS	4
+Ships			6	NNP	2	NNS	4
 Shiraz			1	NNP	1
 Shirer			1	NNP	1
 Shires			1	NNP	1
@@ -16841,7 +16856,7 @@ Shops			9	NNPS	9
 Shore			7	NNP	7
 Shoreline		1	NN	1
 Shores			2	NNP	2
-Short			16	JJ	13	NNP	3
+Short			16	IN	1	JJ	12	NNP	3
 Short-term		4	JJ	4
 Shortageflation		1	NN	1
 Shorted			1	JJ	1
@@ -16849,7 +16864,8 @@ Shorter			1	JJR	1
 Shorting		1	VBG	1
 Shortly			9	RB	9
 Shostakovich		1	NNP	1
-Should			17	MD	17
+Should			19	MD	19
+Shouldnt		1	NNP	1
 Show			14	NN	1	NNP	12	VB	1
 ShowBiz			1	NNP	1
 Showa			2	NNP	2
@@ -16865,13 +16881,14 @@ Shugart			1	NNP	1
 Shulman			2	NNP	2
 Shultz			2	NNP	2
 Shupe			1	NNP	1
-Shush			2	NNP	2
+Shush			2	UH	2
 Shut			1	NNP	1
 Shutter			1	NNP	1
 Shuwa			1	NNP	1
 Shuxian			1	NNP	1
 Shy			1	JJ	1
 Si			1	NNP	1
+Siamese			1	NNP	1
 Sian			2	JJ	1	NNP	1
 Sibelius		3	NNP	3
 Siberia			2	NNP	2
@@ -16880,8 +16897,9 @@ Sicilians		1	NNS	1
 Sicily			3	NNP	2	RB	1
 Sid			1	NNP	1
 Sidak			1	NNP	1
-Side			5	NN	1	NNP	4
+Side			5	NN	2	NNP	3
 Sider			2	NNP	2
+Sides			1	NNS	1
 Sidewalk		4	NNP	4
 Sidhpur			6	NNP	6
 Sidley			5	NNP	5
@@ -16927,7 +16945,7 @@ Similarly		9	RB	9
 Simmel			2	NNP	2
 Simmer			1	NNP	1
 Simmons			13	NNP	13
-Simon			19	NNP	19
+Simon			20	NNP	20
 Simonds-Gooding		4	NNP	4
 Simone			1	NNP	1
 Simons			2	NNP	1	NNS	1
@@ -16959,16 +16977,16 @@ Sino-U.S.		3	JJ	2	NNP	1
 Sins			1	NNP	1
 Sinyard			10	NNP	10
 Sioux			8	NNP	8
-Sir			70	NNP	70
+Sir			71	NNP	71
 Sirens			1	NNP	1
 Sis			1	NNP	1
 Sisk			1	NNP	1
 Sisley			1	NNP	1
 Sister			2	NNP	2
-Sisters			1	NNS	1
+Sisters			2	NNPS	1	NNS	1
 Sistine			1	NNP	1
 Sisulu			7	NNP	7
-Sit			5	NNP	3	VB	2
+Sit			7	NNP	4	VB	3
 Sita			1	NNP	1
 Siti			1	NNP	1
 Sitting			1	VBG	1
@@ -16992,13 +17010,14 @@ Skim			1	VB	1
 Skin			1	NN	1
 Skinner			7	NNP	7
 Skipping		1	VBG	1
+Skipton			1	NNP	1
 Skokie			2	NNP	2
 Skopbank		1	NNP	1
 Sky			4	NN	1	NNP	3
 Slacken			1	VB	1
 Slate			3	NNP	3
 Slater			2	NNP	2
-Slav			1	NNP	1
+Slav			1	NN	1
 Slavery			1	NN	1
 Slavin			1	NNP	1
 Slavonic		2	JJ	1	NNP	1
@@ -17009,6 +17028,7 @@ Slide			1	IN	1
 Slides			1	NNS	1
 Slightly		1	RB	1
 Slims			1	NNP	1
+Slip			1	NNP	1
 Sloan			2	NNP	2
 Slosberg		1	NNP	1
 Slote			1	NNP	1
@@ -17022,13 +17042,13 @@ Sluggish		1	JJ	1
 Slums			1	NNS	1
 Slyke			1	NNP	1
 Smaby			2	NNP	2
-Small			22	JJ	18	NNP	4
+Small			23	JJ	18	NNP	5
 Small-business		1	NN	1
 Small-lot		1	JJ	1
 Small-scale		1	JJ	1
-Smaller			3	JJR	3
+Smaller			4	JJR	4
 Smallpox		1	NN	1
-Smash			1	VB	1
+Smash			2	VB	2
 Smeal			1	NNP	1
 Smear			2	NNP	1	VB	1
 Smedes			1	NNP	1
@@ -17037,13 +17057,13 @@ Smethurst		1	NNP	1
 Smethwick		1	NNP	1
 Smiles			2	NNP	1	NNS	1
 Smiling			2	VBG	2
-Smith			80	NNP	80
+Smith			81	NNP	81
 SmithKline		7	NNP	7
-Smiths			3	NNP	2	NNPS	1
+Smiths			4	NNP	2	NNS	2
 Smithson		1	NNP	1
 Smithsonian		1	NNP	1
 Smithy			9	NNP	9
-Smoke			4	NN	2	NNP	2
+Smoke			5	NN	2	NNP	3
 Smokers			1	NNS	1
 Smoking			4	NN	4
 Smoky			1	NNP	1
@@ -17066,7 +17086,7 @@ Snow			6	NNP	6
 Snowdon			1	NNP	1
 Snowdonia		2	NNP	2
 Snyder			1	NNP	1
-So			148	CC	1	IN	47	RB	100
+So			151	CC	1	IN	47	RB	103
 So-called		2	JJ	2
 Soak			1	VB	1
 Soap			2	NNP	2
@@ -17077,7 +17097,7 @@ Sobel			4	NNP	4
 Sochaux			2	NNP	2
 Social			36	NNP	36
 Socialism		3	NNP	3
-Socialist		14	JJ	4	NNP	10
+Socialist		15	JJ	4	NN	1	NNP	10
 Socialists		9	NNPS	8	NNS	1
 Societe			3	NNP	3
 Societies		2	NNPS	1	NNS	1
@@ -17114,26 +17134,26 @@ Solving			1	VBG	1
 Solzhenitsyn		1	NNP	1
 Somali			1	JJ	1
 Somalis			1	NNPS	1
-Some			383	DT	381	RB	2
-Somebody		5	NN	5
+Some			396	DT	394	RB	2
+Somebody		6	NN	6
 Somebodys		1	NNP	1
 Somehow			7	RB	7
 Someone			22	NN	22
 Someones		3	NNP	2	NNS	1
-Somers			1	NNP	1
-Somerset		5	NNP	5
-Something		20	NN	20
+Somers			1	NNS	1
+Somerset		6	NNP	6
+Something		24	NN	24
 Sometime		3	RB	3
-Sometimes		37	RB	37
+Sometimes		38	RB	38
 Somewhere		3	NNP	1	RB	2
 Son			5	NNP	5
 Sonar			1	NN	1
 Sonata			5	NN	2	NNP	3
 Sonet			2	NNP	2
 Sonet-based		1	JJ	1
-Song			7	NN	7
+Song			8	NN	8
 Sonnett			4	NNP	4
-Sonny			6	NNP	6
+Sonny			7	NNP	7
 Sons			17	NNP	10	NNPS	7
 Sony			87	NNP	87
 Sony-owned		1	JJ	1
@@ -17150,8 +17170,9 @@ Sorel			1	NNP	1
 Soros			1	NNP	1
 Sorrell			1	NNP	1
 Sorrow			1	NNP	1
-Sorry			9	JJ	9
+Sorry			10	JJ	10
 Sorrycant		1	JJ	1
+Sort			1	NN	1
 Sosuke			1	NNP	1
 Sotela			1	NNP	1
 Sotheby			7	NNP	7
@@ -17164,8 +17185,8 @@ Souper			2	NNP	2
 Soups			1	NNP	1
 Source			31	NN	30	NNP	1
 Sources			8	NNS	8
-South			183	JJ	20	NN	1	NNP	162
-South-West		1	NNP	1
+South			184	JJ	20	NN	1	NNP	163
+South-West		1	NN	1
 Southam			10	NN	1	NNP	9
 Southampton		4	NNP	4
 Southbrook		1	NNP	1
@@ -17181,7 +17202,7 @@ Southwide		1	NNP	1
 Souza			1	NNP	1
 Sovereign		1	NNP	1
 Sovereigns		1	NNS	1
-Soviet			200	JJ	102	NNP	98
+Soviet			201	JJ	102	NNP	99
 Soviet-German		1	NNP	1
 Soviet-accredited	1	JJ	1
 Soviet-style		1	JJ	1
@@ -17198,15 +17219,15 @@ Space			8	NNP	8
 Spaghetti		1	NNP	1
 Spagnolli		1	NNP	1
 Spahr			2	NNP	2
-Spain			45	NNP	45
+Spain			46	NNP	46
 Spalding		1	NNP	1
-Spaniards		1	NNP	1
+Spaniards		1	NNPS	1
 Spanish			40	JJ	32	NNP	7	NNS	1
 Spanish-language	2	JJ	1	NN	1
-Spanish?		1	JJ	1
+Spanish?		1	.the	1
 Sparc			1	NNP	1
 Sparcstation		1	NNP	1
-Spare			2	JJ	1	VB	1
+Spare			3	JJ	1	VB	2
 Spark			1	VB	1
 Sparkling		1	NNP	1
 Sparks			4	VBZ	4
@@ -17275,29 +17296,31 @@ Springs			7	NNP	4	NNPS	3
 Sprint			4	NNP	4
 Spruell			2	NNP	2
 Spurling		1	NNP	1
-Spurs			3	NNPS	1	NNS	2
+Spurs			3	NNP	1	NNPS	1	NNS	1
 Sputnik			2	NNP	2
 Spy			2	NNP	2
 Squad			1	NNP	1
 Squadron		2	NNP	2
-Square			20	NNP	20
+Square			21	NN	1	NNP	20
+Squeaking		1	VBG	1
 Squeeze			2	VB	2
 Squibb			6	NNP	6
-Squids			1	NNS	1
+Squids			2	NNS	2
 Squier			1	NNP	1
-Squire			2	NNP	2
+Squire			2	NN	1	NNP	1
 Squirt			1	VB	1
 Sr.			4	NNP	4
 Sri			3	NNP	3
-St			36	NNP	36
-St.			47	NNP	47
+St			37	NN	1	NNP	36
+St.			48	NNP	48
 Staar			3	NNP	3
 Stabilizing		1	VBG	1
 Stackup			1	NNP	1
-Stadium			4	NN	1	NNP	3
+Stadium			4	NN	2	NNP	2
 Stadiums		1	NNS	1
-Staff			8	NN	1	NNP	7
+Staff			9	NN	1	NNP	8
 Stafford		1	NNP	1
+Staffordshire		1	NNP	1
 Stag			3	NNP	3
 Stage			4	NN	2	NNP	2
 Staircase		1	NNP	1
@@ -17310,7 +17333,7 @@ Staloff			2	NNP	2
 Stals			1	NNP	1
 Stamford		7	NNP	7
 Stan			3	NNP	3
-Stand			6	VB	6
+Stand			7	VB	7
 Standard		38	JJ	1	NNP	37
 Standardized		1	JJ	1
 Standards		4	NNP	3	NNPS	1
@@ -17324,7 +17347,7 @@ Star			22	JJ	1	NN	1	NNP	20
 Starch			1	NN	1
 Stardent		3	NNP	3
 Stardust		1	NNP	1
-Starfish		1	NNP	1
+Starfish		1	JJ	1
 Stark			3	NNP	3
 Starke			5	NNP	5
 Starkes			2	NNP	2
@@ -17334,16 +17357,16 @@ Start			5	NN	2	VB	3
 Start-up		1	JJ	1
 Started			1	VBN	1
 Starting		3	VBG	3
-State			101	NN	7	NNP	94
+State			104	NN	9	NNP	95
 State-controlled	1	JJ	1
 State-owned		2	JJ	2
 Staten			5	NNP	5
-States			81	NNP	3	NNPS	77	NNS	1
+States			88	NNP	3	NNPS	84	NNS	1
 StatesWest		15	NNP	15
 Statesman		2	NNP	2
 Stateswest		1	NNP	1
 Station			6	NNP	6
-Statistics		16	NNP	4	NNPS	10	NNS	2
+Statistics		17	NNP	5	NNPS	10	NNS	2
 Statue			2	NNP	2
 Stauffer		1	NNP	1
 Stay			3	NNP	3
@@ -17362,7 +17385,7 @@ Steelmaking		1	NN	1
 Steelworkers		5	NNP	2	NNPS	3
 Stehlin			1	NNP	1
 Steiger			1	NNP	1
-Stein			7	NNP	7
+Stein			8	NNP	8
 Steinbach		1	NNP	1
 Steinberg		9	NNP	9
 Steiner			1	NNP	1
@@ -17390,7 +17413,7 @@ Stertz			1	NNP	1
 Steve			22	NNP	22
 Steven			14	NNP	14
 Stevens			26	NNP	26
-Stevenson		5	NNP	5
+Stevenson		6	NNP	6
 Stevric			3	NNP	3
 Stewart			8	NNP	8
 Stewarts		1	NNP	1
@@ -17398,7 +17421,7 @@ Stibel			1	NNP	1
 Stick			3	NNP	1	VB	2
 Sticking		1	NN	1
 Stieglitz		2	NNP	2
-Still			72	RB	72
+Still			73	RB	73
 Stinnett		4	NNP	4
 Stir			3	VB	3
 Stirlen			1	NNP	1
@@ -17422,10 +17445,10 @@ Stoll			13	NNP	13
 Stoltzman		10	NNP	10
 Stolzman		2	NNP	2
 Stone			15	NNP	15
-Stonehenge		3	NNP	3
-Stonehenges		1	NNP	1
+Stonehenge		4	NNP	4
+Stonehenges		1	VBZ	1
 Stoneman		1	NNP	1
-Stop			21	NNP	13	VB	8
+Stop			22	NNP	13	VB	9
 Stop-loss		1	NN	1
 Stoppards		1	NNP	1
 Storage			2	NNP	2
@@ -17441,7 +17464,7 @@ Stovall			4	NNP	4
 Stovall\/Twenty-First	1	Twenty-First	1
 Straightening		1	VBG	1
 Strain			2	NNP	2
-Strait			2	NNP	2
+Strait			2	NN	1	NNP	1
 Straits			1	NNS	1
 Strand			1	NNP	1
 Strange			3	JJ	2	NNP	1
@@ -17460,7 +17483,8 @@ Strawberries		2	NNS	2
 Strawberry		1	NNP	1
 Stray			1	JJ	1
 Stream			1	NNP	1
-Street			226	NN	1	NNP	225
+Streaming		1	VBG	1
+Street			231	NN	1	NNP	230
 Streets			1	NNPS	1
 Strehler		1	NNP	1
 Strength		1	NN	1
@@ -17468,6 +17492,7 @@ Stress			1	NN	1
 Stretch			1	VB	1
 Stretching		2	VBG	2
 Strickland		1	NNP	1
+Strict			1	JJ	1
 Stricter		1	JJR	1
 Strictness		1	NNP	1
 Strieber		3	NNP	3
@@ -17486,13 +17511,13 @@ Strokes			1	NNS	1
 Strom			1	NNP	1
 Stromeyer		1	NNP	1
 Stronach		5	NNP	5
-Strong			6	JJ	6
+Strong			7	JJ	7
 Stronger		1	JJR	1
 Strongly		1	RB	1
 Strother		1	NNP	1
 Stroud			1	NNP	1
 Structural		2	NNP	2
-Structure		1	NNP	1
+Structure		1	NN	1
 Struggle		1	NN	1
 Stryker			1	NNP	1
 Strykers		1	NNP	1
@@ -17506,7 +17531,7 @@ Student			4	NN	2	NNP	2
 Students		8	NNS	8
 Studies			5	NNPS	4	NNS	1
 Studio-City		1	NNP	1
-Studios			1	NNP	1
+Studios			1	NNPS	1
 Study			2	NNP	2
 Stuecker		1	NNP	1
 Stuffing		1	VBG	1
@@ -17515,7 +17540,7 @@ Stunned			1	VBN	1
 Stuttgart-based		1	JJ	1
 Stygian			1	JJ	1
 Stylistic		1	RB	1
-Sub-titles		1	NNPS	1
+Sub-titles		2	NNP	1	NNPS	1
 Subaru			1	NNP	1
 Subcommittee		1	NNP	1
 Subcontractors		2	NNS	2
@@ -17537,14 +17562,14 @@ Success			7	NNP	7
 Successful		2	JJ	2
 Succession		1	NN	1
 Successive		2	JJ	2
-Such			95	JJ	71	PDT	24
+Such			99	JJ	73	PDT	26
 Suckow			1	NNP	1
 Sucre			1	NNP	1
 Sudanese		1	JJ	1
 Sudden			2	JJ	1	NNP	1
-Suddenly		24	RB	24
+Suddenly		25	RB	25
 Sudhir			3	NNP	3
-Sue			5	NNP	3	VB	2
+Sue			6	NNP	3	UH	1	VB	2
 Suez			4	NNP	4
 Suffice			1	VB	1
 Suffolk			1	NNP	1
@@ -17555,7 +17580,8 @@ Sugarman		12	NNP	12
 Sugarman-led		1	JJ	1
 Suisse			14	NNP	14
 Suisse-First		1	NNP	1
-Suite			1	NNP	1
+Suitable		1	NNP	1
+Suite			1	NN	1
 Sukle			2	NNP	2
 Sulaiman		1	NNP	1
 Sullivan		15	NNP	15
@@ -17574,11 +17600,11 @@ Sun			42	NNP	42
 Sunbird			2	NNP	2
 Suncor			1	NNP	1
 Sundance		4	NNP	4
-Sunday			69	NNP	69
+Sunday			70	NN	1	NNP	69
 Sundays			6	NNPS	1	NNS	5
 Sunderland		1	NNP	1
 Sung			2	NNP	2
-Sunlight		1	NNP	1
+Sunlight		3	NNP	3
 Sunnyvale		4	NNP	4
 Suns			3	NNPS	3
 Sununu			1	NNP	1
@@ -17588,19 +17614,20 @@ SuperDot		2	NNP	2
 Superconductors		1	NNS	1
 Superdome		2	NNP	2
 Superfund		1	NNP	1
-Superintendent		3	NNP	3
+Superintendent		3	NN	1	NNP	2
 Superior		5	NNP	5
 Superman		1	NNP	1
 Supermarkets		1	NNS	1
 Supervision		8	NNP	8
 Supervisors		1	NNPS	1
+Supplement		1	NNP	1
 Suppliers		1	NNS	1
 Supplies		1	NNP	1
 Supply			3	NNP	3
 Support			2	NN	2
 Supporters		5	NNS	5
 Supportive		1	JJ	1
-Suppose			1	VB	1
+Suppose			2	VB	2
 Supposedly		1	RB	1
 Suppression		1	NN	1
 Supremacy		1	NN	1
@@ -17619,11 +17646,12 @@ Survival		2	NNP	2
 Survive			2	VB	2
 Survived		1	VBD	1
 Surviving		1	VBG	1
+Survivor		1	NNP	1
 Susan			10	NNP	10
 Sushma			1	NNP	1
 Susie			4	NN	1	NNP	3
 Suspicion		1	NNP	1
-Sussex			3	NNP	3
+Sussex			5	NNP	5
 Sutcliffe		2	NNP	2
 Sutermeister		1	NNP	1
 Sutherland		2	NNP	2
@@ -17649,16 +17677,17 @@ Swarms			1	NNS	1
 Swavely			2	NNP	2
 Swearing		1	VBG	1
 Swearingen		1	NNP	1
-Sweden			9	NNP	9
-Swedish			10	JJ	8	NNP	2
+Sweden			10	NNP	10
+Swedes			1	NNS	1
+Swedish			11	JJ	9	NNP	2
 Swedish-Swiss		1	JJ	1
 Sweet			1	NNP	1
 Sweets			1	NNS	1
 Swift			1	NNP	1
-Swifts			1	NNPS	1
+Swifts			1	NNS	1
 Swimming		1	NNP	1
 Swindon			1	NNP	1
-Swing			1	VBP	1
+Swing			1	VB	1
 Swiss			68	JJ	54	NN	2	NNP	11	NNPS	1
 Swiss-based		1	JJ	1
 Swiss-franc		1	NN	1
@@ -17672,8 +17701,8 @@ Sybil			2	NNP	2
 Sydney			10	NNP	10
 Sydneys			1	NNP	1
 Sylvester		2	NNP	2
-Sylvia			10	NNP	10
-Sylvie			1	NNP	1
+Sylvia			11	NNP	11
+Sylvie			2	NNP	2
 Symbol			4	NN	4
 Symphony		3	NNP	3
 SynOptics		1	NNPS	1
@@ -17689,8 +17718,9 @@ System			31	NN	2	NNP	29
 Systems			62	NNP	26	NNPS	36
 Systemwide		1	NNP	1
 Szeto			1	NNP	1
-T			5	NN	5
+T			6	NN	6
 T-45			1	NNP	1
+T-80			1	NN	1
 T-bill			1	NNP	1
 T-bills			4	NNS	4
 T-bond			2	JJ	2
@@ -17720,6 +17750,7 @@ THREAT			1	NN	1
 THREE			1	CD	1
 THYSELF			1	PRP	1
 TI			2	NNP	2
+TIME			1	NNP	1
 TIRED			1	JJ	1
 TNT			3	NNP	3
 TO			2	TO	2
@@ -17745,7 +17776,7 @@ TRUSTEE			1	NN	1
 TRUSTS			1	NNS	1
 TRW			2	NNP	2
 TURNS			1	VBZ	1
-TV			163	NN	108	NNP	55
+TV			165	NN	111	NNP	54
 TV-am			1	NNP	1
 TVS			14	NNP	14
 TVs			3	NNS	3
@@ -17768,7 +17799,7 @@ Tae			1	NNP	1
 Tagalog			1	NNP	1
 Tagliabue		2	NNP	2
 Tagora			1	NNP	1
-Tagores			2	NNP	2
+Tagores			3	NNP	2	NNS	1
 Tahitian		1	NNP	1
 Tailors			1	NNP	1
 Taipei			11	NNP	11
@@ -17785,7 +17816,7 @@ Takashi			2	NNP	2
 Takashima		1	NNP	1
 Takashimaya		2	NNP	2
 Takayama		1	NNP	1
-Take			33	VB	31	VBP	2
+Take			35	VB	33	VBP	2
 Taken			3	VBN	3
 Takeover		7	NN	7
 Takeover-stock		1	JJ	1
@@ -17806,6 +17837,7 @@ Talking			2	VBG	2
 Talks			1	NNS	1
 Tall			2	NNP	2
 Tallahassee		1	NNP	1
+Tamazight		1	NNP	1
 Tambo			1	NNP	1
 Tammany			1	NNP	1
 Tampa			1	NNP	1
@@ -17816,7 +17848,7 @@ Tangyanika		1	NNP	1
 Tanii			1	NNP	1
 Tank			1	NNP	1
 Tanks			1	NNS	1
-Tannoy			1	NNP	1
+Tannoy			1	NN	1
 Tanya			1	NNP	1
 Tanyas			1	NNP	1
 Tanzania		2	NNP	2
@@ -17824,6 +17856,7 @@ Tap			1	VB	1
 Tape			1	NNP	1
 Tappet			1	NNP	1
 Taps			2	VBZ	2
+Tar			1	NN	1
 Tarbuck			1	NNP	1
 Tariff			5	NN	5
 Tariffs			2	NNP	1	NNPS	1
@@ -17839,7 +17872,7 @@ Tastes			1	NNS	1
 Tasurinchi		1	NNP	1
 Taswell			1	NNP	1
 Tata			2	NNP	2
-Tate			3	NNP	3
+Tate			4	NNP	4
 Tateishi		1	NNP	1
 Tateisi			1	NNP	1
 Tator			2	NNP	2
@@ -17852,36 +17885,36 @@ Taurus			2	NNP	2
 Tax			21	NN	3	NNP	18
 Tax-exempt		2	JJ	2
 Tax-loss		1	NN	1
-Taxation		5	NNP	5
+Taxation		6	NNP	6
 Taxes			3	NNS	3
 Taxi			1	NN	1
-Taxi-drivers		2	NNP	1	NNS	1
+Taxi-drivers		2	NNP	2
 Taxpayer		1	NNP	1
-Taylor			14	NNP	14
+Taylor			15	NNP	15
 Taylors			2	NNP	2
 Tbond			1	JJ	1
-Tea			5	NNP	5
+Tea			6	NNP	6
 Teacher			1	NN	1
 Teachers		12	NNPS	12
 Teaching		2	NN	2
 Teagan			6	NNP	6
 Team			2	NN	1	NNP	1
 Tear			1	VB	1
-Tears			8	NNS	8
+Tears			7	NNS	7
 Teas			1	NNP	1
 Tech			1	NNP	1
 TechDesign		1	NNP	1
 Technical		2	NNP	2
 Technically		2	NNP	1	RB	1
 Technicians		2	NNP	1	NNS	1
-Technicolor		1	NNP	1
+Technicolor		1	NN	1
 Techniques		1	NNS	1
 Technocratic		1	NNP	1
 Technologies		17	NNP	6	NNPS	11
-Technology		38	NN	3	NNP	35
+Technology		39	NN	3	NNP	36
 Ted			13	NNP	13
-Teddy			18	NNP	18
-Teds			1	NNPS	1
+Teddy			18	NN	1	NNP	17
+Teds			1	NNS	1
 Teenagers		2	NNS	2
 Teeside			1	NNP	1
 Tehran			1	NNP	1
@@ -17900,7 +17933,7 @@ Telefonos		1	NNP	1
 Telegraaf		1	NNP	1
 Telegraph		17	NNP	17
 Telemann		1	NNP	1
-Telemanns		2	NNP	2
+Telemanns		3	NNP	3
 Telemedia		1	NNP	1
 Telephone		26	NNP	26
 Telephones		1	NNP	1
@@ -17909,8 +17942,8 @@ Teleprinters		1	NNP	1
 Telerama		1	NNP	1
 Telerate		79	NN	4	NNP	75
 Telesis			2	NNP	2
-Television		21	NN	1	NNP	20
-Tell			13	VB	13
+Television		22	NN	2	NNP	20
+Tell			15	VB	15
 Teller			2	NNP	2
 Tellers			1	NNS	1
 Telling			1	VBG	1
@@ -17956,7 +17989,7 @@ Terrizzi		4	NNP	4
 Terror			2	NN	2
 Terrorism		1	NNP	1
 Terrorists		1	NNS	1
-Terry			17	NNP	17
+Terry			18	NNP	18
 Terson			1	NNP	1
 Terylene		1	NNP	1
 Tess			1	NNP	1
@@ -17976,7 +18009,7 @@ Texan			1	NN	1
 Texans			1	NNPS	1
 Texas			128	NNP	128
 Texas-based		2	JJ	2
-Texas?			1	NNP	1
+Texas?			1	.the	1
 Textbooks		1	NNS	1
 Textile			3	NNP	3
 Textiles		1	NNP	1
@@ -17986,47 +18019,47 @@ Thai			1	NNP	1
 Thailand		6	NNP	6
 Thales			1	NNS	1
 Thalmann		3	NNP	3
-Thames			5	NNP	5
+Thames			7	NNP	7
 Than			4	IN	4
 Thank			13	VB	13
 Thankfully		1	RB	1
 Thanks			3	NNS	3
 Thanksgiving		3	NNP	3
-That			413	DT	350	IN	13	WDT	50
+That			424	DT	400	IN	14	WDT	10
 Thatcher		87	NNP	87
 Thatcherism		1	NNP	1
 Thatchers		2	NNPS	2
-Thatll			1	NNP	1
-Thats			64	NNP	32	NNS	31	VBZ	1
+Thatll			2	NNP	2
+Thats			68	NNP	23	NNS	45
 Thayer			1	NNP	1
-The			12195	DT	12168	NNP	27
+The			12516	DT	12489	NNP	27
 Theater			4	NNP	4
-Theatre			17	NNP	17
+Theatre			17	NN	1	NNP	16
 Theft			1	NN	1
 Thefts			1	NNS	1
-Their			267	PRP$	267
+Their			290	PRP$	290
 Thelma			2	NNP	2
-Then			93	RB	93
+Then			94	RB	94
 Theodore		3	NNP	3
 Theological		1	JJ	1
 Theoretical		1	NNP	1
 Theoretically		2	RB	2
 Theorists		1	NNS	1
-There			1179	EX	1175	RB	4
+There			1238	EX	1234	RB	4
 Thereafter		2	RB	2
 Therefore		3	RB	3
 Therell			2	NNP	2
-Theres			108	NNP	105	NNS	1	VBZ	2
+Theres			121	NNP	121
 Thermo			5	NNP	5
 Thermometer		1	NNP	1
-Thermos			1	NNPS	1
+Thermos			2	NN	1	NNP	1
 Thermoses		1	NNS	1
-Therouxs		1	NNS	1
-These			382	DT	382
-They			2363	PRP	2363
+Therouxs		1	VBZ	1
+These			398	DT	398
+They			2511	PRP	2511
 Theyd			2	NNP	2
-Theyll			7	NNP	7
-Theyre			58	NNP	57	VB	1
+Theyll			8	NNP	8
+Theyre			65	NNP	64	VB	1
 Theyve			30	NNP	28	VB	1	VBP	1
 Thibon			1	NNP	1
 Thick			2	JJ	2
@@ -18041,10 +18074,11 @@ Think			12	VB	5	VBP	7
 Third			29	JJ	7	LS	2	NNP	19	RB	1
 Third-period		1	JJ	1
 Third-quarter		15	JJ	13	NN	2
-Thirty			3	CD	1	NNP	2
+Thirteen		1	CD	1
+Thirty			4	CD	1	NNP	3
 Thirty-four		1	CD	1
 Thirty-two		1	JJ	1
-This			1092	DT	1090	NNP	2
+This			1143	DT	1141	NNP	2
 Thistledown		1	NNP	1
 Thomae			1	NNP	1
 Thomas			68	NNP	68
@@ -18061,7 +18095,7 @@ Thornton		1	NNP	1
 Thoroughbred		1	NNP	1
 Thorp			3	NNP	3
 Thorpes			1	NNP	1
-Those			80	DT	80
+Those			82	DT	82
 Though			37	IN	31	NNP	6
 Thought			1	NNP	1
 Thoughts		1	NNS	1
@@ -18070,21 +18104,21 @@ Thousands		14	NNS	14
 Thrall			1	NNP	1
 Threadneedle		1	NNP	1
 Threats			1	NNS	1
-Three			64	CD	52	NNP	12
+Three			66	CD	53	NNP	13
 Three-month		1	JJ	1
 Three-quarters		2	NNS	2
 Threlkeld		5	NNP	5
 Thrift			9	NN	2	NNP	7
 Thrive			1	VBP	1
-Through			21	IN	21
+Through			22	IN	22
 Throughout		11	IN	11
 Throw			2	VB	2
 Thun			1	NNP	1
 Thunderbird		2	NNP	2
-Thunderclouds		1	NNP	1
+Thunderclouds		1	NNS	1
 Thurber			5	NNP	5
 Thurmond		9	NNP	9
-Thursday		78	NNP	78
+Thursday		78	NN	2	NNP	76
 Thursdays		2	NNPS	2
 Thurso			1	NNP	1
 Thus			34	RB	34
@@ -18095,10 +18129,11 @@ Tiant			2	NNP	2
 Tibbs			1	NNP	1
 Tibet			3	NNP	3
 Ticketron		2	NNP	2
-Ticklaw			1	NNP	1
+Tickets			1	NNS	1
+Ticklaw			1	McGraw	1
 Tidal			1	JJ	1
 Tide			3	NNP	3
-Tidy			1	RB	1
+Tidy			1	NNP	1
 Tie			2	NNP	1	VB	1
 Tiempo			1	NNP	1
 Tierney			3	NNP	3
@@ -18120,9 +18155,9 @@ Tim			13	NNP	13
 Timber			2	NNP	2
 Timbers			4	NNP	4
 Timbuktu		2	NNP	2
-Time			62	NN	7	NNP	55
+Time			62	NN	9	NNP	53
 Time-Life		1	NNP	1
-Times			69	NNP	60	NNPS	8	NNS	1
+Times			72	NNP	63	NNPS	8	NNS	1
 Times-Mirror		1	NNP	1
 Times-Stock		3	NNP	3
 Timex			3	NNP	3
@@ -18130,13 +18165,14 @@ Timing			1	NN	1
 Timothy			4	NNP	4
 Tims			2	NNP	2
 Tina			5	NNP	5
-Ting			1	NNP	1
+Ting			1	NN	1
 Tinker			4	NNP	4
 Tintin			1	NNP	1
 Tiny			2	JJ	1	NNP	1
 Tip			2	NNP	2
 Tipasa			1	NNP	1
 Tiphook			3	NNP	3
+Tipperary		1	NNP	1
 Tips			1	NNP	1
 Tire			4	NNP	4
 Tisch			8	NNP	8
@@ -18146,14 +18182,15 @@ Title			3	NN	2	NNP	1
 Titled			1	VBN	1
 Tito			1	NNP	1
 Tlaloc			1	NNP	1
-To			181	TO	181
+To			187	IN	6	TO	181
 Tobacco			1	NNP	1
 Toby			2	NNP	2
 Todaro			1	NNP	1
-Today			41	NN	28	NNP	13
-Todays			3	NNP	2	NNS	1
+Today			41	NN	33	NNP	8
+Todays			4	NNP	2	NNS	2
 Todd			2	NNP	2
 Todt			2	NNP	2
+Toffler			1	NNP	1
 Together		5	RB	5
 Tokai			1	NNP	1
 Tokio			2	NNP	2
@@ -18168,13 +18205,13 @@ Tolls			1	NNS	1
 Tolmere			1	NNP	1
 Tolpuddle		1	NNP	1
 Tolstoys		1	NNP	1
-Tom			41	NNP	41
+Tom			42	NNP	42
 Tomash			3	NNP	3
 Tombrello		1	NNP	1
 Tombstones		1	NNP	1
 Tomlinson		1	NNP	1
 Tommy			3	NNP	3
-Tomorrow		9	NN	6	NNP	3
+Tomorrow		10	NN	8	NNP	2
 Tomorrows		1	NNP	1
 Tomoshige		1	NNP	1
 Toms			4	NNP	4
@@ -18183,11 +18220,11 @@ Tonawanda		2	NNP	2
 Tong			2	NNP	2
 Tong'Il			1	NNP	1
 Toni			3	NNP	3
-Tonight			4	NN	1	NNP	3
+Tonight			5	NN	1	NNP	4
 Tonights		3	NNP	3
 Tonkin			5	NNP	5
 Tons			1	NNS	1
-Tony			27	NNP	27
+Tony			30	NNP	30
 Too			16	NNP	2	RB	14
 Tool			2	NNP	2
 Tootal			4	NNP	4
@@ -18199,7 +18236,7 @@ Topper			2	NNP	2
 Topson			2	NNP	2
 Torch			1	NNP	1
 Torchmark		1	NNP	1
-Tories			10	NNPS	6	NNS	4
+Tories			10	NNPS	5	NNS	5
 Tornados		2	NNP	1	NNS	1
 Toronto			43	NNP	43
 Toronto-area		1	JJ	1
@@ -18209,7 +18246,7 @@ Torrington		2	NNP	2
 Torstar			3	NNP	3
 Tortoises		1	NNS	1
 Torture			1	NNP	1
-Tory			8	NNP	8
+Tory			8	NN	1	NNP	7
 Toseland		9	NNP	9
 Toshiba			12	NNP	12
 Toshiki			1	NNP	1
@@ -18231,8 +18268,8 @@ Tourists		2	NNS	2
 Tours			1	NNPS	1
 Tove			1	NNP	1
 Toward			1	IN	1
-Towards			2	IN	1	NNP	1
-Tower			17	NNP	17
+Towards			2	IN	1	RB	1
+Tower			18	NN	1	NNP	17
 Towering		1	VBG	1
 Towers			1	NNP	1
 Town			11	NNP	11
@@ -18253,17 +18290,17 @@ Track			1	NNP	1
 Tracking		1	NNP	1
 Tractors		2	NNS	2
 Tracy			4	NNP	4
-Trade			53	NNP	53
+Trade			54	NNP	54
 Traded			1	NNP	1
-Traders			35	NNS	35
+Traders			36	NNS	36
 Trades			2	NNP	2
 Trading			24	NN	12	NNP	11	VBG	1
 Tradition		1	NNP	1
 Traditional		3	JJ	3
 Traditionalism		1	NNP	1
 Traditionally		3	RB	3
-Trafalgar		3	NNP	3
-Traffic			6	NN	2	NNP	4
+Trafalgar		4	NNP	4
+Traffic			7	NN	2	NNP	5
 Traficant		1	NNP	1
 Trailer			1	NNP	1
 Trails			1	NNS	1
@@ -18282,7 +18319,7 @@ Transkei		2	NNP	2
 Translated		1	VBN	1
 Transmission		4	NNP	4
 Transport		9	NNP	8	VB	1
-Transport?		1	NNP	1
+Transport?		1	.the	1
 Transportation		27	NNP	27
 Transvaal		1	NNP	1
 Transylvania		1	NNP	1
@@ -18293,8 +18330,8 @@ Travelers		7	NNP	1	NNPS	6
 Traveling		1	VBG	1
 Travellers		1	NNP	1
 Travelling		2	NNP	2
-Travels			2	NNPS	2
-Travers			8	NNP	3	NNPS	5
+Travels			2	NNP	1	NNPS	1
+Travers			8	NNP	1	NNPS	7
 Traverse		1	NNP	1
 Traverso		1	NNP	1
 Traviata		5	NNP	5
@@ -18304,25 +18341,26 @@ Tray			1	NNP	1
 Tread			1	VB	1
 Treason			1	NNP	1
 Treasure		1	NNP	1
-Treasurer		4	NNP	4
+Treasurer		5	NN	1	NNP	4
 Treasurers		1	NNPS	1
 Treasury		245	NN	5	NNP	240
 Treasury-bill		1	NN	1
 Treasury?Yes		1	NNS	1
 Treasurys		5	NNPS	3	NNS	2
 Treat			1	VB	1
-Treatment		7	NNP	7
-Treaty			8	NNP	8
+Treatment		8	NNP	8
+Treaty			8	NN	1	NNP	7
 Treble			1	NNP	1
 Tree			1	NN	1
 Trees			2	NNP	2
 Trek			3	NNP	3
+Tremendous		1	JJ	1
 Trend			1	NNP	1
 Trespassers		1	NNS	1
 Tressell		1	NNP	1
 Trettien		2	NNP	2
 Trevino			4	NNP	4
-Trevinos		1	NNP	1
+Trevinos		1	NNPS	1
 Trevor			1	NNP	1
 Triad			1	NNP	1
 Trial			3	NN	1	NNP	2
@@ -18337,7 +18375,7 @@ Trim			2	VBP	2
 Tring			1	NNP	1
 Trinity			10	NN	1	NNP	9
 Trinova			3	NNP	3
-Trio			1	NNP	1
+Trio			1	NN	1
 Tripoli			1	NNP	1
 Trish			1	NNP	1
 Triton			3	NNP	3
@@ -18363,7 +18401,7 @@ Troubled		3	JJ	1	NNP	2
 Trout			2	NNP	2
 Troutman		1	NNP	1
 Troy			1	NNP	1
-Truant			1	NNP	1
+Truant			1	NN	1
 Truck			4	NNP	4
 Truckee			1	NNP	1
 Trucks			1	NNPS	1
@@ -18378,7 +18416,7 @@ Trust			59	NNP	58	VB	1
 Trustco			1	NNP	1
 Trustcorp		2	NNP	2
 Truth			1	NN	1
-Try			31	VB	30	VBP	1
+Try			34	VB	33	VBP	1
 Trying			3	VBG	3
 Tryon			1	NNP	1
 Tsao			3	NNP	3
@@ -18386,11 +18424,11 @@ Tsar			1	NNP	1
 Tsarist			1	NNP	1
 Tse			1	NNP	1
 Tshabo			1	NNP	1
-Tub			1	NNP	1
-Tube			2	NNP	2
+Tub			1	NN	1
+Tube			2	NN	1	NNP	1
 Tucker			7	NNP	7
 Tucson			2	NNP	2
-Tuesday			136	NNP	136
+Tuesday			136	NN	2	NNP	134
 Tuesdays		2	NNPS	2
 Tufts			1	NNP	1
 Tug			1	NN	1
@@ -18410,7 +18448,7 @@ Turkeys			1	NNP	1
 Turkish			5	JJ	5
 Turkmenia		1	NNP	1
 Turks			3	NNPS	3
-Turn			11	NN	11
+Turn			12	NN	12
 Turnaround		1	NNP	1
 Turner			10	NNP	10
 Turning			1	VBG	1
@@ -18421,26 +18459,27 @@ Turpin			1	NNP	1
 Tuscany			2	NNP	2
 Tusker			1	NNP	1
 Twaron			2	NNP	2
-Tweet			1	NNP	1
+Tweet			1	NN	1
 Twelfth			1	NNP	1
 Twelve			4	CD	3	NNP	1
 Twentieth		1	NNP	1
 Twentieth-century	1	NNP	1
 Twenty			5	CD	5
 Twenty-First		2	NNP	2
-Twenty-eight		1	NNP	1
+Twenty-eight		1	NN	1
 Twenty-five		1	CD	1
 Twenty-one		1	CD	1
-Twice			3	RB	3
+Twice			4	RB	4
 Twickenham		1	NNP	1
 Twins			4	NNP	4
 Twinsburg		1	NNP	1
-Two			115	CD	115
+Two			124	CD	124
 Two-part		1	JJ	1
 Two-thirds		1	NNS	1
 Ty			1	NN	1
 Tyburn			1	NNP	1
 Tyler			6	NNP	6
+Tylers			1	NNS	1
 Tymnet			1	NNP	1
 Tynans			1	NNP	1
 Tyneside		1	NNP	1
@@ -18449,7 +18488,7 @@ Typical			9	JJ	9
 Typically		7	RB	7
 Tyre			5	NNP	5
 Tyszkiewicz		4	NNP	4
-U			1	NNP	1
+U			2	NNP	2
 U-turn			3	NN	3
 U.B.U.			1	NNP	1
 U.K			2	NNP	2
@@ -18457,7 +18496,7 @@ U.K.			56	NN	1	NNP	55
 U.N.			10	NNP	10
 U.N.-supervised		1	JJ	1
 U.S			59	NNP	59
-U.S.			1079	JJ	2	NNP	1076	VBP	1
+U.S.			1080	JJ	2	NNP	1077	VBP	1
 U.S.-China		2	NNP	2
 U.S.-Japan		4	JJ	3	NNP	1
 U.S.-Japanese		1	JJ	1
@@ -18530,20 +18569,21 @@ Ultimately		5	RB	5
 Ulysses			2	NN	1	NNP	1
 Umbrella		1	NN	1
 Umtata			3	NNP	3
+Una			1	NNP	1
 Unable			6	JJ	6
 Unbeatable		1	JJ	1
 Unbeknownst		1	NNP	1
 Unbind			1	VB	1
 Uncertain		1	NNP	1
 Uncertainty		2	NN	2
-Uncle			19	NNP	19
+Uncle			19	NN	1	NNP	18
 Unconstitutional	1	JJ	1
 Uncover			1	NNP	1
 Undaunted		1	JJ	1
 Undead			1	NN	1
 Undecided		1	JJ	1
 Under			121	IN	121
-Under-Secretary		1	NNP	1
+Under-Secretary		1	NN	1
 Underemployment		1	NN	1
 Underneath		2	IN	1	RB	1
 Underscoring		1	VBG	1
@@ -18558,7 +18598,7 @@ Uneasiness		1	NN	1
 Unemployed		1	NNP	1
 Unemployment		13	NN	13
 Unfilled		1	JJ	1
-Unfortunately		18	RB	18
+Unfortunately		19	RB	19
 Ungaretti		1	NNP	1
 Ungermann-Bass		1	NNP	1
 Unhappily		3	RB	3
@@ -18574,34 +18614,34 @@ Unified			1	NNP	1
 Unigesco		1	NNP	1
 Unilateral		1	JJ	1
 Unilever		12	NNP	12
-Union			149	NN	2	NNP	147
+Union			153	NN	2	NNP	151
 Unionism		1	NNP	1
 Unions			5	NNS	5
 Uniroyal		9	NNP	9
 Unisys			22	NNP	22
 Unit			3	NN	1	NNP	2
-United			173	JJ	3	NNP	169	VBN	1
+United			181	JJ	3	NNP	177	VBN	1
 Uniteds			1	NNP	1
 Unitholders		1	NNS	1
 Unitours		1	NNPS	1
 Units			2	NNP	1	NNS	1
 Universal		6	NNP	6
 Universities		2	NNS	2
-University		135	NN	1	NNP	134
+University		139	NN	2	NNP	137
 University.		1	NNP	1
 Univest			1	NNP	1
 Unix			5	NNP	5
 Unleaded		1	JJ	1
-Unless			12	IN	12
+Unless			13	IN	13
 Unlike			16	IN	16
 Unluckily		1	RB	1
 Unnecessarily		1	RB	1
-Unnecessary		1	NNP	1
+Unnecessary		1	JJ	1
 Uno			1	NNP	1
 Uno-Ven			1	NNP	1
 Unocal			14	NNP	14
 Unofficial		2	JJ	2
-Unprofitable		1	JJ	1
+Unprofitable		1	NNP	1
 Unroll			1	VBP	1
 Unruh			2	NNP	2
 Unscrew			1	NNP	1
@@ -18614,7 +18654,7 @@ Unusual			1	JJ	1
 Unveiled		1	VBN	1
 Unwilling		1	JJ	1
 Unwrap			1	NNP	1
-Up			10	IN	7	NNP	1	RB	1	RP	1
+Up			11	IN	7	NNP	1	RB	2	RP	1
 Upchurch		1	NNP	1
 Upgrades		1	NNS	1
 Upham			15	NNP	15
@@ -18632,7 +18672,7 @@ Urdu			1	NNP	1
 Urging			1	NNP	1
 Uruguay			1	NNP	1
 Us			2	NNP	1	PRP	1
-Use			22	NN	1	NNP	9	VB	12
+Use			22	NN	1	NNP	8	VB	13
 Used			1	VBN	1
 Users			1	NNS	1
 Usery			1	NNP	1
@@ -18648,7 +18688,7 @@ Utah			14	NNP	14
 Utahans			1	NNPS	1
 Utilities		14	NNP	6	NNPS	6	NNS	2
 Utility			6	NN	1	NNP	5
-Utopia			1	NNP	1
+Utopia			1	NN	1
 Utrecht			2	NNP	2
 Utsumi			1	NNP	1
 Utsunomiya		2	NNP	2
@@ -18658,7 +18698,7 @@ Uzi-model		1	JJ	1
 V			2	NNP	2
 V-22			1	NNP	1
 V-6			2	NN	1	NNP	1
-V-sign			3	NN	1	NNP	2
+V-sign			3	NN	2	NNP	1
 V-signs			1	NNS	1
 V.			5	NNP	5
 V.H.			1	NNP	1
@@ -18674,9 +18714,10 @@ VICTIMS			1	NNS	1
 VICTORIES		1	NNS	1
 VII			5	NNP	5
 VIII			3	NNP	3
-VIP			1	NNP	1
+VIP			1	NN	1
 VIPs			1	NNS	1
 VISA			1	NNP	1
+VISITORS		1	NNP	1
 VISUALIZING		1	VBG	1
 VOA			3	NNP	3
 VOLUNTARISM		1	NN	1
@@ -18691,7 +18732,7 @@ Vail			1	NNP	1
 Val			1	NNP	1
 Valais			1	NNP	1
 Valdez			4	NNP	4
-Vale			2	NNP	2
+Vale			2	NN	1	NNP	1
 Valentin		1	NNP	1
 Valentina		1	NNP	1
 Valentine		3	NN	2	NNP	1
@@ -18704,7 +18745,7 @@ Valhi			2	NNP	2
 Valiant			1	NNP	1
 Valid			1	JJ	1
 Valladolid		1	NNP	1
-Valley			27	NNP	27
+Valley			28	NNP	28
 Valrico			1	NNP	1
 Valspar			8	NNP	8
 Valu			1	NNP	1
@@ -18720,6 +18761,7 @@ Vancouver		2	NNP	2
 Vandals			2	NNS	2
 Vandenberg		3	NNP	3
 Vanderbilt		2	NNP	2
+Vanderhoff		1	NNP	1
 Vane			1	NNP	1
 Vanessa			1	NNP	1
 Vanguard		6	NNP	6
@@ -18755,13 +18797,13 @@ Vellante		1	NNP	1
 Venetian		3	JJ	3
 Venezuela		6	NNP	6
 Venezuelan		1	JJ	1
-Venice			16	NNP	16
+Venice			17	NNP	17
 Venlo			2	NNP	2
 Ventura			2	NNP	2
 Venture			5	NNP	5
 Ventures		2	NNP	2
 Venus			2	NNP	2
-Vera			1	NNP	1
+Vera			1	FW	1
 Veraldi			5	NNP	5
 Verbatim		1	JJ	1
 Verdi			5	NNP	5
@@ -18772,28 +18814,29 @@ Vernon			5	NNP	5
 Vernons			2	NNP	1	NNPS	1
 Versailles		1	NNP	1
 Verwoerd		1	NNP	1
-Very			16	NNP	16
+Very			18	NNP	18
 Veselich		1	NNP	1
 Veslefrikk		4	NNP	4
 Veterans		4	NNP	2	NNPS	1	NNS	1
 Veterinary		1	JJ	1
 Vevey			2	NNP	2
 Viacom			18	NNP	18
-Vic			2	NNP	2
+Vic			3	NNP	3
 Vicar			2	NNP	2
 Vice			23	NN	1	NNP	22
-Vice-President		3	JJ	1	NNP	2
+Vice-Chancellor		1	NNP	1
+Vice-President		3	JJ	2	NNP	1
 Vichy			2	NNP	2
 Vickers			2	NNP	2
 Vics			1	NNP	1
 Victor			11	NNP	11
 Victoria		15	NNP	15
-Victorian		28	JJ	27	NN	1
+Victorian		30	JJ	29	NN	1
 Victorians		1	NNPS	1
 Victorias		2	NNP	2
 Victors			2	NNS	2
 Video			4	NNP	4
-Vienna			10	NNP	10
+Vienna			11	NNP	11
 Viennese		1	JJ	1
 Viet			1	NNP	1
 Vietcong		1	JJ	1
@@ -18810,9 +18853,9 @@ Vikings			1	NNPS	1
 Viktor			2	NNP	2
 Vila			11	NNP	11
 Villacoublay		1	NNP	1
-Village			3	NNP	3
+Village			4	NNP	4
 Villagers		1	NNS	1
-Villages		1	NNS	1
+Villages		2	NNS	2
 Villanueva		1	NNP	1
 Vincent			5	NNP	5
 Vinci			1	NNP	1
@@ -18846,11 +18889,12 @@ Visker			1	NNP	1
 Vista			1	NNP	1
 Vita			11	NNP	11
 Vitaly			1	NNP	1
+Vitas			1	NNP	1
 Vitro			5	NNP	5
 Vitulli			2	NNP	2
 Viv			1	NNP	1
 Viva			1	FW	1
-Vivaldi			1	NNP	1
+Vivaldi			2	NNP	2
 Vivaldi-at-brunch	1	JJ	1
 Vivaldis		1	NNP	1
 Vivis			1	NNP	1
@@ -18868,7 +18912,7 @@ Voice			14	NNP	14
 Voices			3	NNS	3
 Volatility		4	NN	4
 Volcanic		1	NNP	1
-Volcanoes		1	NNS	1
+Volcanoes		2	NNP	1	NNS	1
 Volcker			2	NNP	2
 Volga			1	NNP	1
 Volk			2	NNP	2
@@ -18891,7 +18935,7 @@ Voter			1	NNP	1
 Voters			2	NNPS	1	NNS	1
 Votes			1	NNS	1
 Voting			8	NNP	8
-Vowels			2	NNS	2
+Vowels			1	NNS	1
 Voyager			2	NNP	2
 Vranian			1	NNP	1
 Vries			2	NNP	2
@@ -18918,9 +18962,11 @@ WARNED			1	VBD	1
 WARS			1	NNS	1
 WASHINGTON		1	NNP	1
 WBBM-TV			1	NNP	1
+WC			1	NNP	1
 WCRS			3	NNP	3
 WDB			5	NN	4	NNP	1
 WEFA			1	NNP	1
+WELCOME			1	NNP	1
 WFAA-TV			1	NNP	1
 WFRR			1	NNP	1
 WGBH			1	NNP	1
@@ -18950,7 +18996,7 @@ Wachtell		1	NNP	1
 Wachtler		1	NNP	1
 Waddell			1	NNP	1
 Wade			3	NNP	3
-Waders			1	NNP	1
+Waders			1	NNPS	1
 Wades			2	NNP	2
 Wadsworth		4	NNP	4
 Waertsilae		25	NNP	25
@@ -18976,11 +19022,11 @@ Wakui			3	NNP	3
 Walbrecher		1	NNP	1
 Walcott			1	NNP	1
 Waldorf			1	NNP	1
-Wales			14	NNP	14
+Wales			16	NNP	16
 Walesa			1	NNP	1
 Waleson			1	NNP	1
 Walk			5	VBP	5
-Walker			7	NNP	7
+Walker			8	NNP	8
 Walkers			1	NNP	1
 Walkin			1	NNP	1
 Walking			2	VBG	2
@@ -18999,7 +19045,7 @@ Walnut			4	NNP	4
 Walt			7	NNP	7
 Waltana			1	NNP	1
 Walter			26	NNP	26
-Walters			13	NNP	13
+Walters			14	NNP	14
 Waltham			2	NNP	2
 Walther			1	NNP	1
 Wamre			1	NNP	1
@@ -19013,7 +19059,7 @@ Wanniski		7	NNP	7
 Want			1	NNP	1
 Wanted			1	VBN	1
 Wapping			1	NNP	1
-War			52	NN	2	NNP	50
+War			54	NN	2	NNP	52
 Warburg			3	NNP	3
 Warburton		1	NNP	1
 Ward			16	NNP	16
@@ -19023,23 +19069,23 @@ Warehouse		1	NNP	1
 Warhol			1	NNP	1
 Warm			1	JJ	1
 Warman			1	NNP	1
-Warn			1	VB	1
+Warn			1	VBP	1
 Warner			132	NNP	132
 Warren			21	NNP	21
 Warrens			1	NNS	1
 Warrenton		1	NNP	1
 Warrington		1	NNP	1
 Wars			5	NNP	1	NNPS	3	NNS	1
-Warsaw			14	NNP	14
+Warsaw			15	NNP	15
 Wartime			1	JJ	1
 Warwick			1	NNP	1
 Wary			1	JJ	1
-Was			26	VBD	26
+Was			27	VBD	27
 Wasatch			1	NNP	1
 Wash			10	NNP	9	VB	1
 Wash.			7	NNP	7
-Washing			3	NN	1	NNP	1	VBG	1
-Washington		152	NNP	152
+Washing			3	NN	1	VBG	2
+Washington		153	NNP	153
 Washington-based	6	JJ	6
 Washingtons		1	NNP	1
 Wasnt			1	NNP	1
@@ -19050,35 +19096,35 @@ Wastewater		5	NNP	5
 Watanabe		2	NNP	2
 Watch			4	NNP	4
 Watchers		1	NNPS	1
-Water			26	NNP	26
+Water			26	NN	1	NNP	25
 Waterbury		1	NNP	1
-Watergate		6	NNP	6
+Watergate		7	NNP	7
 Watergate-beleaguered	1	JJ	1
 Waterhouse		1	NNP	1
 Waterloo		2	NNP	2
 Watermouth		4	NNP	4
 Waters			2	NNP	2
-Watford			2	NNP	2
+Watford			3	NNP	3
 Wathen			18	NNP	18
 Watkins			2	NNP	2
-Watson			11	NNP	11
+Watson			12	NNP	12
 Watsons			1	NNP	1
 Watsonville		2	NNP	2
 Watt			1	NNP	1
 Watteau			1	NNP	1
-Waugh			2	JJ	1	NNP	1
-Wave			1	NNP	1
+Waugh			2	NNP	2
+Wave			1	NN	1
 Waverly			1	NNP	1
 Waves			3	NNS	3
 Waving			3	VBG	3
 Waxman			6	NNP	6
 Waxy			1	NN	1
-Way			11	NN	2	NNP	9
+Way			11	NN	4	NNP	7
 WayMar			1	NNP	1
 Wayland			1	NNP	1
 Wayne			7	NNP	7
 Ways			6	NNP	3	NNPS	3
-We			1781	PRP	1781
+We			1899	PRP	1899
 Weakens			1	VBZ	1
 Weakness		1	NN	1
 Wealth			1	NNP	1
@@ -19093,14 +19139,14 @@ Weaver.Mr		1	NNP	1
 Webb			2	NNP	2
 Webbs			1	NNP	1
 Webster			7	NNP	7
-Wed			8	NNP	3	VBN	5
+Wed			9	NNP	4	VBN	5
 Wedd			5	NNP	5
 Wedderburns		1	NNP	1
 Wedding			4	NN	4
 Wedge			1	VB	1
 Wedgwood		2	NNP	2
 Wednesday		93	NNP	93
-Wednesday?		1	NNS	1
+Wednesday?		1	.the	1
 Wednesdays		3	NNS	3
 Wedtech			13	NNP	13
 Weedon			1	NNP	1
@@ -19128,36 +19174,37 @@ Welch			7	NNP	7
 Welcome			3	UH	1	VB	2
 Welfare			5	NNP	5
 Welko			1	NNP	1
-Well			76	NNP	3	RB	47	UH	26
+Well			85	NNP	3	RB	49	UH	33
 Well-Seasoned		1	JJ	1
 Wellcome		9	NNP	9
 Wellesley		1	NNP	1
 Wellington		11	NNP	11
 Wellman			1	NNP	1
 Wells			14	NNP	14
-Wells?			1	NNP	1
-Welsh			12	JJ	4	NNP	8
+Wells?			1	.the	1
+Welsh			12	JJ	4	NN	1	NNP	7
+Welshman		1	NN	1
 Welty			1	NNP	1
 Wembley			1	NNP	1
 Wenceslas		1	NNP	1
 Wendy			8	NNP	8
 Wendyll			1	NNP	1
 Wentworth		1	NNP	1
-Were			62	VB	1	VBD	61
+Were			66	VB	2	VBD	64
 Werke			2	NNP	2
 Werner			4	NNP	4
 Wertheim		4	NNP	4
 Wertheimer		1	NNP	1
 Wesker			2	NNP	2
 Wessels			3	NNP	3
-West			219	JJ	45	NN	6	NNP	165	NNPS	2	RB	1
+West			222	JJ	45	NN	6	NNP	168	NNPS	2	RB	1
 Westboro		1	NNP	1
 Westborough		2	NNP	2
 Westcoast		2	NNP	2
 Westendorf		2	NNP	2
 Westerly		1	NNP	1
-Westermans		1	NNPS	1
-Western			119	JJ	71	NNP	48
+Westermans		1	NNP	1
+Western			121	JJ	72	NNP	49
 Western-style		3	JJ	3
 Westernized		1	JJ	1
 Westfield		1	NNP	1
@@ -19168,40 +19215,41 @@ Weston			1	NNP	1
 Westpac			1	NNP	1
 Westphalia		1	NNP	1
 Westport		2	NNP	2
-Wests			1	NNP	1
+Wests			1	NNPS	1
 Wet			2	NNP	2
-Weve			52	NNP	51	VBP	1
+Weve			54	NNP	53	VBP	1
 Weyerhaeuser		7	NNP	7
 Weyler			1	NNP	1
 Weylers			1	NNP	1
-Whales			1	NNPS	1
+Whales			1	NNP	1
 Wham			1	UH	1
 Wharton			2	NNP	2
-What			371	WP	371
-Whatever		11	WDT	11
-Whats			33	NNP	19	NNS	14
+What			405	WDT	2	WP	403
+Whatever		13	WDT	13
+Whats			40	NNP	11	NNS	29
 Wheat			7	NN	2	NNP	5
 Wheeland		1	NNP	1
 Wheeler			1	NNP	1
 Whelan			1	NNP	1
 Whelen			4	NNP	4
-When			347	WRB	347
+When			367	WRB	367
 Whenever		9	WRB	9
 Whens			1	NNP	1
-Where			33	WRB	33
+Where			36	WRB	36
 Whereas			3	IN	3
-Wheres			7	NNP	6	VBZ	1
+Wheres			8	NNP	8
 Wherever		1	WRB	1
 Whether			8	IN	7	NNP	1
-Which			15	WDT	14	WP	1
-While			153	IN	153
+Which			17	WDT	16	WP	1
+While			154	IN	154
 Whinney			1	NNP	1
 Whip			2	NNP	2
+Whirl			1	VB	1
 Whirlpool		1	NNP	1
 Whisky			1	NNP	1
 Whisky?Thank		1	VB	1
 Whisper			1	NNP	1
-White			130	NNP	130
+White			131	NNP	131
 White-haired		1	JJ	1
 Whitehall		3	NNP	3
 Whitehalls		1	NNP	1
@@ -19219,17 +19267,17 @@ Whittier		1	NNP	1
 Whittington		1	NNP	1
 Whittle			13	NN	1	NNP	12
 Whiz			1	NNP	1
-Who			55	WP	55
-Whoever			3	WP	3
+Who			56	WP	56
+Whoever			4	WP	4
 Whole			4	JJ	4
 Wholesale		2	JJ	2
 Wholl			1	NNP	1
 Whom			1	WP	1
 Whoop-whoop		1	NNP	1
 Whoopee			1	NN	1
-Whos			13	NNP	10	NNS	3
+Whos			14	NNP	10	NNS	4
 Whose			3	NNP	3
-Why			91	WRB	91
+Why			96	WRB	96
 Wichita			3	NNP	3
 Wick			2	NNP	2
 Wickes			1	NNP	1
@@ -19244,6 +19292,7 @@ Wiesenthal		1	NNP	1
 Wieslawa		1	NNP	1
 Wiess			1	NNP	1
 Wigan			1	NNP	1
+Wigg			1	NNP	1
 Wigglesworth		1	NNP	1
 Wigs			1	NNS	1
 Wigtown			1	NNP	1
@@ -19262,14 +19311,14 @@ Wilkinson		2	NNP	2
 Wilkinsons		1	NNS	1
 Wilko			1	NNP	1
 Wilks			2	NNP	1	NNS	1
-Will			50	MD	40	NNP	10
+Will			54	MD	43	NNP	11
 Willam			1	NNP	1
 Willamette		1	NNP	1
 Willard			1	NNP	1
 Willens			1	NNP	1
 Willet			2	NNP	2
 Willett			1	NNP	1
-William			117	NNP	117
+William			118	NNP	118
 Williams		26	NNP	26
 Williamsburg		1	NNP	1
 Willie			5	NNP	5
@@ -19292,7 +19341,7 @@ Wiltshire		2	NNP	2
 Wimbledon		3	NNP	3
 Wimsey			1	NNP	1
 Winchester		1	NNP	1
-Wind			3	NNP	1	VB	2
+Wind			3	NNP	1	VB	1	VBP	1
 Windows			1	NNS	1
 Windscale		1	NNP	1
 Windsor			5	NNP	5
@@ -19322,12 +19371,12 @@ Wisdom			1	NN	1
 Wise			3	NNP	3
 Wiseguy			1	NNP	1
 Wisely			1	RB	1
-Wish			1	NNP	1
+Wish			1	VBP	1
 Wisps			1	NNS	1
-With			175	IN	174	NNP	1
+With			177	IN	176	NNP	1
 Witham			1	NNP	1
 Withholding		1	VBG	1
-Within			22	IN	22
+Within			23	IN	23
 Without			32	IN	32
 Withrow			1	NNP	1
 Witman			2	NNP	2
@@ -19340,19 +19389,20 @@ Wixom			1	NNP	1
 Wodehouse		1	NNP	1
 Wohlstetter		9	NNP	9
 Wolf			9	NNP	9
-Wolfe			1	NNP	1
+Wolfe			2	NNP	2
 Wolfgang		3	NNP	3
 Wolfit			1	NNP	1
-Woman			4	NNP	4
+Woman			4	NN	1	NNP	3
 Womans			2	NNP	2
-Women			24	NNP	14	NNS	10
-Womens			7	NNP	6	NNPS	1
+Women			28	NNP	13	NNS	15
+Womens			7	NNP	7
 Won			2	NNP	2
 Wonder			1	NN	1
 Wonderful		1	JJ	1
 Wonderland		1	NNP	1
 Wong			2	NNP	2
 Wonham			2	NNP	2
+Wont			1	NNP	1
 Woo			1	NNP	1
 Wood			11	NNP	11
 Woodbridge		3	NNP	3
@@ -19360,7 +19410,7 @@ Woodcliff		1	NNP	1
 Wooden			1	JJ	1
 Woodland		1	NNP	1
 Woodrow			1	NNP	1
-Woodruff		1	NNP	1
+Woodruff		2	NNP	2
 Woods			4	NNP	4
 Woodside		1	NNP	1
 Woodward		2	NNP	2
@@ -19371,28 +19421,29 @@ Wooli			1	NNP	1
 Woolworth		4	NNP	4
 Woong			1	NNP	1
 Worcester		5	NNP	5
+Worcestershire		1	NNP	1
 Words			2	NNPS	2
-Work			9	NN	3	NNP	3	VB	3
+Work			9	NN	4	NNP	3	VB	2
 Worker			1	NNP	1
-Workers			22	NNP	3	NNPS	13	NNS	6
-Working			9	JJ	1	NNP	7	VBG	1
+Workers			23	NNP	3	NNPS	13	NNS	7
+Working			10	JJ	1	NNP	8	VBG	1
 Works			4	NNP	3	NNPS	1
 Worksheets		1	NNS	1
-World			124	NN	4	NNP	120
+World			126	NN	5	NNP	121
 World-Wide		1	NNP	1
 World-wide		1	JJ	1
 Worlds			2	NNPS	2
 Worldwide		5	NNP	5
 Worn			1	VBN	1
-Worse			6	JJR	4	RBR	1	RBR|JJR	1
+Worse			6	JJR	5	RBR|JJR	1
 Worsening		1	VBG	1
 Worst			1	RBS	1
 Worth			7	JJ	1	NNP	6
 Worthing		1	NN	1
 Worthington		1	NNP	1
-Would			38	MD	38
+Would			41	MD	41
 Would-be		1	JJ	1
-Wouldnt			5	NNP	5
+Wouldnt			6	NNP	6
 Wow			1	UH	1
 Wozniak			1	NNP	1
 Wrangler		1	NNP	1
@@ -19402,7 +19453,7 @@ Wren			1	NNP	1
 Wright			23	NNP	23
 Wrighting		1	NN	1
 Write			4	JJ	1	NNP	1	VB	2
-Writers			3	NNP	1	NNPS	2
+Writers			3	NNPS	3
 Writes			1	VBZ	1
 Writing			4	VBG	4
 Written			1	VBN	1
@@ -19412,7 +19463,7 @@ Wrote			1	VBD	1
 Wu			1	NNP	1
 Wussler			2	NNP	2
 Wuthering		1	NNP	1
-Wycherly		1	RB	1
+Wycherly		1	NNP	1
 Wye			3	NN	3
 Wyman			1	NNP	1
 Wynn			2	NNP	2
@@ -19421,15 +19472,15 @@ Wyo.			1	NNP	1
 Wyoming			3	NNP	3
 Wyss			3	NNP	3
 Wytham			1	NNP	1
-X			7	NNP	7
-X-ray			11	NN	11
+X			8	NNP	8
+X-ray			12	NN	12
 X-rayed			1	VBN	1
 X-rays			7	NNS	7
 XIV			1	NNP	1
 XL\/Datacomp		2	Datacomp	2
 XVIII			1	NNP	1
 Xenophon		1	NNP	1
-Xerox			19	NNP	19
+Xerox			19	NN	3	NNP	16
 Xeroxed			1	JJ	1
 Xhosa			2	NNP	2
 Xiaoping		2	NNP	2
@@ -19440,12 +19491,12 @@ Y-MP8-232		1	NNP	1
 Y.J.			1	NNP	1
 YALE			1	NNP	1
 YEARS			1	NNS	1
-YMCA			3	NNP	3
+YMCA			3	NN	1	NNP	2
 YOU			1	PRP	1
 YOUR			1	JJ	1
-YWCA			2	NNP	2
+YWCA			2	NN	1	NNP	1
 Yaaba			1	NNP	1
-Yacht			1	NNP	1
+Yacht			1	NN	1
 Yacos			1	NNP	1
 Yale			11	NNP	11
 Yale-New		1	NNP	1
@@ -19477,13 +19528,13 @@ Year-earlier		1	JJ	1
 Year-to-date		1	JJ	1
 Yeargin			37	NNP	37
 Yearly			1	JJ	1
-Years			8	NNPS	1	NNS	7
+Years			9	NNPS	2	NNS	7
 Yeast			1	NN	1
 Yellow-pages		1	NN	1
 Yemma			1	NNP	1
-Yes			15	NNP	2	UH	13
+Yes			16	NNP	2	UH	14
 Yesterday		63	NN	62	NNP	1
-Yet			49	CC	24	RB	25
+Yet			50	CC	25	RB	25
 Yetnikoff		6	NNP	6
 Yeutter			7	NNP	7
 Yevtushenko		1	NNP	1
@@ -19496,11 +19547,11 @@ Yitzhak			2	NNP	2
 Yogi			1	NNP	1
 Yokohama		2	NNP	2
 Yonehara		4	NNP	4
-York			668	NNP	668
+York			672	NNP	672
 York-Boston		1	NNP	1
 York-Moscow		1	NNP	1
 York-based		24	JJ	23	NNP	1
-York?			1	NNP	1
+York?			1	.a	1
 Yorker			5	NNP	5
 Yorkers			3	NNPS	3
 Yorks			2	NNP	2
@@ -19508,21 +19559,21 @@ Yorkshire		5	NNP	5
 Yoshihashi		1	NNP	1
 Yoshihisa		1	NNP	1
 Yoshio			2	NNP	2
-You			663	PRP	663
+You			712	PRP	712
 Youd			11	NNP	11
-Youll			39	NNP	39
+Youll			43	NNP	43
 Young			45	NN	1	NNP	44
 Youngberg		1	NNP	1
 Youngsters		1	NNS	1
 Youngstown		1	NNP	1
 Younkers		6	NNP	5	NNS	1
-Your			108	PRP$	108
-Youre			98	JJ	2	NNP	95	RB	1
+Your			112	PRP$	112
+Youre			107	NN	10	NNP	95	RB	2
 Yourself		1	NNP	1
 Yousoupoff		1	NNP	1
-Youth			5	NNP	5
+Youth			6	NN	1	NNP	5
 Youths			3	NNP	3
-Youve			41	NNP	41
+Youve			44	NNP	44
 Yquem			2	NNP	2
 Yu			1	NNP	1
 Yugoslavia		4	NNP	4
@@ -19531,7 +19582,7 @@ Yule			1	NNP	1
 Yuri			2	NNP	2
 Yutaka			2	NNP	2
 Yvon			1	NNP	1
-Z			10	NN	1	NNP	9
+Z			11	NN	1	NNP	10
 Z.			4	NNP	4
 ZBB			3	NNP	3
 Zacharias		1	NNP	1
@@ -19607,16 +19658,16 @@ Zygmunt			1	NNP	1
 \*\*			2	SYM	2
 `			67	``	67
 ``			4717	``	4717
-a			29101	DT	29087	FW	3	IN	1	JJ	2	LS	1	NNP	1	SYM	6
+a			29945	DT	29931	FW	3	IN	1	JJ	2	LS	1	NNP	1	SYM	6
 a.m			4	RB	4
-a.m.			26	NN	19	RB	7
+a.m.			28	NN	21	RB	7
 a.m.-1:30		1	CD	1
 a/b/c/d/e		1	NN	1
 aback			1	RB	1
-abacus			2	NNS	2
+abacus			2	NN	1	NNS	1
 abacuses		1	NNS	1
 abandon			14	NN	1	VB	12	VBP	1
-abandoned		34	JJ	1	VBD	13	VBN	20
+abandoned		37	JJ	1	VBD	14	VBN	22
 abandoning		3	VBG	3
 abandonment		3	NN	3
 abandons		1	VBZ	1
@@ -19635,7 +19686,7 @@ abbreviation		1	NN	1
 abdicate		1	VBP	1
 abdicated		1	VBD	1
 abdicating		2	VBG	2
-abdomen			3	JJ	1	NNS	2
+abdomen			3	NN	2	NNS	1
 abdominal		4	JJ	4
 abducted		3	NN	3
 abduction		2	NN	2
@@ -19647,13 +19698,13 @@ abhorrence		2	NN	2
 abhorrent		2	JJ	2
 abhors			1	VBZ	1
 abide			4	VB	4
-abides			1	NNS	1
+abides			1	VBZ	1
 abilities		7	NNS	7
-ability			90	NN	90
+ability			94	NN	94
 abject			1	JJ	1
 abjured			1	VBN	1
 ablaze			3	JJ	3
-able			222	JJ	222
+able			229	JJ	229
 able-bodied		2	JJ	2
 abler			1	NN	1
 abnormal		7	JJ	7
@@ -19670,7 +19721,7 @@ abolition		5	NN	5
 abominable		2	JJ	2
 abominated		1	JJ	1
 abomination		1	NN	1
-aboriginal		1	JJ	1
+aboriginal		2	JJ	2
 aborted			3	JJ	2	VBN	1
 abortion		62	NN	62
 abortion-funding	1	JJ	1
@@ -19683,28 +19734,28 @@ abound			5	VBP	5
 abounded		1	VBD	1
 abounding		1	VBG	1
 abounds			1	VBZ	1
-about			2390	IN	1849	JJ	3	RB	528	RBR	1	RP	9
+about			2480	IN	1933	JJ	3	RB	534	RBR	1	RP	9
 about-face		4	NN	4
 about-turn		1	NN	1
 about?			2	NN	2
-above			189	IN	169	JJ	7	RB	13
+above			190	IN	169	JJ	8	RB	13
 above-average		1	JJ	1
 above-market		1	JJ	1
 abrasions		1	NNS	1
 abrasive		5	JJ	3	NN	2
 abrasives		2	NNS	2
-abreast			3	NN	1	RB	2
+abreast			3	IN	1	RB	2
 abridging		1	VBG	1
-abroad			57	RB	57
+abroad			59	RB	59
 abroad?			1	NN	1
 abrupt			12	JJ	12
 abruptly		12	RB	12
 abruptness		1	NN	1
-abscess			1	NN	1
+abscess			2	JJ	1	NN	1
 absconded		1	VBD	1
 absence			25	NN	25
-absences		3	NNS	3
-absent			11	JJ	11
+absences		4	NNS	4
+absent			10	JJ	10
 absent-minded		1	JJ	1
 absent-mindedly		1	RB	1
 absent-mindedness	1	NN	1
@@ -19712,7 +19763,7 @@ absented		1	VBN	1
 absentee		1	NN	1
 absenteeism		1	NN	1
 absolute		16	JJ	16
-absolutely		54	RB	54
+absolutely		56	RB	56
 absolutes		1	NNS	1
 absolution		1	NN	1
 absolve			1	VBP	1
@@ -19727,7 +19778,7 @@ abstained		2	VBD	2
 abstention		1	NN	1
 abstentions		1	NNS	1
 abstinence		1	NN	1
-abstract		15	JJ	10	NN	4	VB	1
+abstract		13	JJ	10	NN	2	VB	1
 abstracted		2	JJ	1	VBN	1
 abstraction		1	NN	1
 abstracts		1	NNS	1
@@ -19735,7 +19786,7 @@ absurd			16	JJ	16
 absurdities		2	NNS	2
 absurdity		2	NN	2
 absurdly		2	RB	2
-abundant		7	JJ	7
+abundant		8	JJ	8
 abundantly		2	RB	2
 abuse			26	NN	25	VB	1
 abused			6	JJ	2	VBD	1	VBN	3
@@ -19744,7 +19795,7 @@ abusive			5	JJ	5
 abuts			1	VBZ	1
 abuzz			1	JJ	1
 abysmally		1	RB	1
-abyss			2	NN	1	NNS	1
+abyss			2	NN	2
 academe			1	NN	1
 academia		2	NN	2
 academic		26	JJ	25	NN	1
@@ -19760,22 +19811,22 @@ accelerated		8	JJ	2	VBD	3	VBN	3
 accelerates		1	VBZ	1
 accelerating		3	VBG	3
 acceleration		7	NN	7
-accelerator		3	NN	3
-accent			33	NN	32	VB	1
+accelerator		4	NN	4
+accent			34	NN	33	VB	1
 accented		1	JJ	1
 accents			3	NNS	3
 accentuate		1	VB	1
-accept			79	VB	71	VBP	8
+accept			82	VB	74	VBP	8
 acceptable		18	JJ	18
 acceptance		11	NN	11
 acceptances		4	NNS	4
-accepted		66	JJ	1	VBD	41	VBN	24
-accepting		16	VBG	16
+accepted		67	JJ	1	VBD	42	VBN	24
+accepting		17	VBG	17
 accepts			10	VBZ	10
 access			58	NN	57	VB	1
 accessible		9	JJ	9
 accessories		9	NNS	9
-accident		52	NN	52
+accident		55	NN	55
 accidental		4	JJ	4
 accidentally		4	RB	4
 accidents		7	NNS	7
@@ -19787,13 +19838,13 @@ accolade		2	NN	2
 accolades		1	NNS	1
 accommodate		20	VB	20
 accommodating		3	JJ	1	VBG	2
-accommodation		10	NN	10
+accommodation		11	NN	11
 accommodations		2	NNS	2
 accommodative		1	JJ	1
-accompanied		23	VBD	1	VBN	22
+accompanied		23	VBD	2	VBN	21
 accompanies		7	VBZ	7
 accompaniment		7	NN	7
-accompany		4	VB	4
+accompany		5	VB	5
 accompanying		6	JJ	1	VBG	5
 accomplice		1	NN	1
 accomplish		11	VB	11
@@ -19818,7 +19869,7 @@ accountants		12	NNS	12
 accounted		29	VBD	21	VBN	8
 accounting		45	JJ	1	NN	38	VBG	6
 accounting-rules	1	JJ	1
-accounts		107	NNS	97	VBZ	10
+accounts		108	NNS	98	VBZ	10
 accredited		5	JJ	1	VBN	4
 accrue			5	VB	5
 accrued			11	JJ	3	VBN	8
@@ -19830,9 +19881,9 @@ accumulating		3	VBG	3
 accumulation		3	NN	3
 accumulations		1	NNS	1
 accumulative		2	JJ	2
-accuracy		8	NN	8
-accurate		18	JJ	18
-accurately		12	RB	12
+accuracy		9	NN	9
+accurate		19	JJ	19
+accurately		13	RB	13
 accursed		3	JJ	3
 accusation		12	NN	12
 accusations		9	NNS	9
@@ -19850,13 +19901,13 @@ ace			3	JJ	1	NN	2
 aces			1	VBZ	1
 acetate			1	NN	1
 ache			5	NN	4	VB	1
-ached			6	VBD	4	VBN	2
+ached			7	VBD	4	VBN	3
 aches			3	NNS	3
-achieve			27	VB	26	VBP	1
-achieved		46	VBD	12	VBN	34
-achievement		26	NN	26
+achieve			28	VB	27	VBP	1
+achieved		47	VBD	14	VBN	33
+achievement		27	NN	27
 achievement-test	1	NN	1
-achievements		9	NNS	9
+achievements		11	NNS	11
 achieves		1	VBZ	1
 achieving		10	VBG	10
 aching			7	VBG	7
@@ -19901,37 +19952,37 @@ acrobatic		3	JJ	3
 acrobatics		1	NNS	1
 acrobats		4	NNS	4
 acronym			1	NN	1
-across			228	IN	215	RB	4	RP	9
+across			235	IN	222	RB	4	RP	9
 across-the-board	4	JJ	4
-act			109	NN	63	VB	40	VBP	6
-act?			1	NN	1
-acted			36	VBD	27	VBN	9
-acting			57	JJ	4	NN	3	VBG	50
-action			200	NN	200
+act			110	NN	63	VB	39	VBP	8
+act?			1	NNS	1
+acted			39	VBD	27	VBN	12
+acting			60	JJ	4	NN	3	VBG	53
+action			206	NN	206
 action?			1	NN	1
-actions			60	NNS	60
+actions			62	NNS	62
 activate		2	VBP	2
 activated		1	VBN	1
-active			94	JJ	94
+active			96	JJ	96
 actively		13	RB	13
 actives			1	NNS	1
 activism		1	NN	1
 activist		7	JJ	1	NN	6
 activists		19	NNS	19
-activities		105	NNS	105
-activity		99	NN	99
-actor			22	NN	22
-actors			35	NNS	35
-actress			21	NN	21
-actresses		4	NNS	3	VBZ	1
-acts			40	NNS	30	VBZ	10
+activities		106	NNS	106
+activity		101	NN	101
+actor			23	NN	23
+actors			37	NNS	37
+actress			22	NN	22
+actresses		5	NNS	4	VBZ	1
+acts			41	NNS	31	VBZ	10
 actual			72	JJ	72
-actually		92	RB	92
+actually		93	RB	93
 actuaries		1	NNS	1
 actuary			1	NN	1
 actuated		1	VBN	1
 acupuncture		1	NN	1
-acute			11	JJ	11
+acute			12	JJ	12
 acutely			1	RB	1
 ad			103	NN	103
 ad-free			1	JJ	1
@@ -19947,25 +19998,25 @@ adapted			11	JJ	2	VBD	2	VBN	7
 adapting		3	NN	1	VBG	2
 add			68	VB	58	VBP	10
 add-on			1	JJ	1
-added			264	JJ	12	VBD	226	VBN	26
+added			265	JJ	12	VBD	227	VBN	26
 addict			4	NN	4
 addicted		4	JJ	2	VBN	2
 addiction		3	NN	3
 addictive		1	JJ	1
 addicts			8	NNS	8
 adding			60	VBG	60
-addition		136	NN	136
+addition		137	NN	137
 additional		108	JJ	108
 additions		3	NNS	3
 additives		2	NNS	2
-address			45	NN	26	VB	18	VBP	1
+address			48	NN	30	VB	17	VBP	1
 address.No,		1	JJ	1
 address?		1	NN	1
 address?Positive.	1	NN	1
 addressed		14	VBD	7	VBN	7
-addresses		5	NNS	3	VBZ	2
+addresses		6	NNS	4	VBZ	2
 addressing		7	VBG	7
-adds			70	VBZ	70
+adds			71	VBZ	71
 adduced			1	VBD	1
 adenocard		1	NN	1
 adept			3	JJ	3
@@ -19980,18 +20031,18 @@ adhering		1	VBG	1
 adhesive		5	JJ	2	NN	3
 adhesives		2	NNS	2
 adjacent		7	JJ	7
-adjective		60	NN	60
+adjective		26	NN	26
 adjectives		1	NNS	1
-adjoining		2	JJ	2
+adjoining		2	JJ	1	VBG	1
 adjourn			1	VB	1
 adjourned		2	VBN	2
 adjournment		2	NN	2
 adjudicate		2	VB	2
-adjunct			2	NN	2
+adjunct			2	JJ	1	NN	1
 adjuncts		1	NNS	1
 adjuring		1	VBG	1
-adjust			14	VB	10	VBP	4
-adjustable		16	JJ	16
+adjust			15	VB	11	VBP	4
+adjustable		17	JJ	17
 adjusted		42	JJ	8	VBD	2	VBN	32
 adjuster		6	NN	6
 adjusters		11	NNS	11
@@ -20005,10 +20056,10 @@ admin			2	NN	2
 administer		6	VB	6
 administered		7	VBN	7
 administers		1	VBZ	1
-administration		150	NN	150
+administration		151	NN	151
 administration-Fed	1	JJ	1
 administrations		2	NNS	2
-administrative		31	JJ	31
+administrative		32	JJ	32
 administrator		11	NN	11
 administrators		4	NNS	4
 adminstrative		1	JJ	1
@@ -20016,18 +20067,18 @@ admirable		8	JJ	8
 admirably		2	RB	2
 admiral			1	NN	1
 admiralty		1	NN	1
-admiration		11	NN	11
+admiration		12	NN	12
 admire			6	VB	4	VBP	2
-admired			10	VBD	5	VBN	5
+admired			11	VBD	6	VBN	5
 admirer			4	NN	4
 admirers		9	NNS	9
 admires			1	VBZ	1
 admiring		6	JJ	2	VBG	4
 admiringly		1	RB	1
 admissible		2	JJ	2
-admission		13	NN	13
+admission		14	NN	14
 admissions		3	NNS	3
-admit			28	VB	25	VBP	3
+admit			29	VB	26	VBP	3
 admits			15	VBZ	15
 admitted		31	VBD	16	VBN	15
 admittedly		1	RB	1
@@ -20037,10 +20088,11 @@ admonition		2	NN	2
 adolescence		4	NN	4
 adolescent		2	JJ	2
 adolescents		2	NNS	2
-adopt			22	VB	21	VBP	1
+adopt			23	VB	22	VBP	1
 adopted			57	VBD	27	VBN	30
-adopting		6	VBG	6
+adopting		7	VBG	7
 adoption		12	NN	12
+adoptions		1	NNS	1
 adoptive		1	JJ	1
 adopts			2	VBZ	2
 adorable		3	JJ	3
@@ -20055,27 +20107,27 @@ adrift			3	JJ	3
 adroit			2	JJ	2
 adroitly		1	RB	1
 ads			64	NNS	64
-adult			24	JJ	4	NN	20
+adult			25	JJ	4	NN	21
 adulterated		1	VBN	1
 adultery		4	NN	4
 adulthood		2	NN	2
-adults			26	NNS	26
-advance			62	JJ	2	NN	49	VB	10	VBP	1
+adults			29	NNS	29
+advance			64	JJ	2	NN	50	VB	11	VBP	1
 advanced		78	JJ	34	VBD	34	VBN	10
 advanced-technology	1	JJ	1
 advancers		3	NNS	3
-advances		14	NNS	14
+advances		16	NNS	15	VBZ	1
 advancing		12	VBG	12
-advantage		52	NN	51	VB	1
+advantage		54	NN	53	VB	1
 advantageous		2	JJ	2
 advantages		17	NNS	17
 advent			8	NN	8
 adventitious		1	JJ	1
-adventure		10	NN	10
+adventure		11	NN	11
 adventurers		2	NNS	2
 adventures		6	NNS	6
 adventurous		3	JJ	3
-adverb			13	JJ	5	NN	8
+adverb			13	JJ	7	NN	3	SYM	3
 adversaries		4	NNS	4
 adversary		10	NN	10
 adverse			16	JJ	16
@@ -20084,14 +20136,14 @@ advert			3	NN	3
 advertise		6	VB	4	VBP	2
 advertised		10	JJ	1	VBD	5	VBN	4
 advertisement		12	NN	12
-advertisements		16	NNS	16
+advertisements		18	NNS	18
 advertiser		2	NN	2
 advertisers		44	NNS	44
 advertises		1	VBZ	1
-advertising		113	NN	96	VBG	17
+advertising		115	NN	97	VBG	18
 advertorial		2	JJ	2
 adverts			3	NNS	1	VBZ	2
-advice			51	NN	51
+advice			55	NN	55
 advisable		4	JJ	4
 advise			10	VB	9	VBP	1
 advised			30	VBD	16	VBN	14
@@ -20102,7 +20154,7 @@ advises			8	VBZ	8
 advising		7	VBG	7
 advisories		1	NNS	1
 advisors		1	NNS	1
-advisory		14	JJ	11	NN	3
+advisory		15	JJ	12	NN	3
 advocacy		2	NN	2
 advocate		8	NN	6	VBP	2
 advocated		6	VBD	4	VBN	2
@@ -20117,6 +20169,7 @@ aerobic			1	JJ	1
 aerobics		3	NN	3
 aerodrome		1	NN	1
 aerodynamic		3	JJ	3
+aeronautics		1	NNS	1
 aeroplane		9	NN	9
 aeroplanes		3	NNS	3
 aerosol			1	JJ	1
@@ -20125,13 +20178,13 @@ aesthetic		1	JJ	1
 aesthetics		1	NNS	1
 aeterna			1	FW	1
 affable			1	JJ	1
-affair			27	NN	27
-affairs			61	NNS	61
+affair			28	NN	28
+affairs			63	NNS	63
 affairs?		1	NN	1
-affect			38	VB	32	VBP	6
-affected		46	JJ	8	RB	1	VBD	8	VBN	29
+affect			39	VB	33	VBP	6
+affected		46	JJ	8	JJ|VBN	1	RB	1	VBD	8	VBN	28
 affecting		10	JJ	2	VBG	8
-affection		14	NN	14
+affection		16	NN	16
 affectionate		8	JJ	6	RB	2
 affectionately		2	RB	2
 affections		3	NNS	3
@@ -20154,7 +20207,7 @@ afflictions		1	NNS	1
 afflicts		2	VBZ	2
 affluence		2	NN	2
 affluent		8	JJ	8
-afford			47	VB	47
+afford			48	VB	48
 affordability		1	NN	1
 affordable		3	JJ	3
 afforded		3	VBN	3
@@ -20167,17 +20220,17 @@ aflatoxin		3	NN	3
 afloat			7	JJ	5	RB	2
 afoot			3	JJ	2	RB	1
 aforementioned		1	JJ	1
-afraid			63	JJ	63
-afresh			3	JJ	1	RB	2
+afraid			68	JJ	64	RB	4
+afresh			3	NN	1	RB	2
 aft			2	RB	2
-after			892	IN	883	RB	9
+after			911	IN	902	RB	9
 after-dinner		1	JJR	1
 after-hours		3	JJ	2	NNS	1
 after-tax		19	JJ	19
 aftereffects		2	NNS	2
-afterlife		2	NN	2
+afterlife		3	NN	3
 aftermath		15	NN	15
-afternoon		101	NN	101
+afternoon		102	NN	102
 afternoons		7	NNS	7
 aftershock		2	NN	2
 aftershocks		1	NNS	1
@@ -20185,46 +20238,47 @@ aftertaste		1	NN	1
 aftertax		2	JJ	2
 afterthought		1	NN	1
 afterward		5	RB	5
-afterwards		13	RB	13
-again			330	RB	330
+afterwards		14	RB	14
+again			341	RB	341
 again.			1	NN	1
 again.I			1	NNS	1
-again?			3	JJ	1	NN	2
+again?			3	JJ	1	NN	1	NNP	1
 again?..		1	CC	1
-against			697	IN	694	RB	3
+again?Not		1	NN	1
+against			708	IN	705	RB	3
 against.I		1	NNP	1
 agape			2	JJ	2
 agate			1	NN	1
-age			166	NN	165	VBP	1
+age			174	NN	173	VBP	1
 age-band		1	NN	1
 age-bias		2	JJ	2
 age-discrimination	1	JJ	1
 age-old			2	JJ	2
-aged			17	JJ	5	NNS	2	VBN	10
+aged			18	JJ	5	NNS	2	VBN	11
 ageing			5	JJ	3	VBG	2
 ageless			4	JJ	4
 agencies		52	NNS	52
-agency			201	NN	201
+agency			202	NN	202
 agenda			20	NN	20
 agendas			3	NNS	3
 agent			32	NN	32
 agents			35	NNS	35
-ages			17	NNS	17
+ages			18	NNS	18
 ages.			1	NN	1
 agglomeration		1	NN	1
 agglomerations		1	NNS	1
 aggrandizement		1	NN	1
-aggravate		4	VB	3	VBP	1
+aggravate		4	VB	2	VBP	2
 aggravated		3	VBD	2	VBN	1
 aggravating		3	JJ	1	VBG	2
 aggregate		5	JJ	3	NN	2
 aggregates		7	NNS	7
 aggression		11	NN	11
-aggressive		42	JJ	42
+aggressive		44	JJ	44
 aggressively		17	RB	17
 aggressiveness		2	NN	2
 aggressors		1	NNS	1
-aggrieved		2	JJ	2
+aggrieved		2	JJ	1	VBN	1
 aghast			3	JJ	3
 agile			2	JJ	2
 agility			3	NN	3
@@ -20232,46 +20286,47 @@ aging			6	VBG	6
 agitate			2	VB	2
 agitated		7	JJ	3	VBN	4
 agitating		2	VBG	2
+agitation		1	NN	1
 aglow			2	JJ	2
 agnostic		2	JJ	2
-ago			355	IN	88	RB	267
+ago			367	IN	90	RB	277
 agonies			1	NNS	1
 agonised		1	VBD	1
 agonize			2	VB	2
 agonizing		7	JJ	7
 agony			7	NN	7
-agree			70	VB	36	VBP	34
+agree			77	VB	38	VBP	39
 agreeable		11	JJ	11
-agreed			260	JJ	1	NN	1	VBD	182	VBN	76
+agreed			264	JJ	1	NN	1	VBD	185	VBN	77
 agreed-upon		1	JJ	1
 agreeing		11	VBG	11
-agreement		250	NN	250
+agreement		251	NN	251
 agreements		37	NNS	37
 agrees			14	VBZ	14
-agricultural		24	JJ	24
+agricultural		26	JJ	26
 agriculture		18	NN	18
 agro-industry		1	JJ	1
 agrochemical		1	NN	1
-ahead			129	JJ	2	RB	127
+ahead			134	JJ	2	RB	132
 ai			6	VBP	6
-aid			98	NN	90	VB	8
+aid			99	IN	1	NN	90	VB	8
 aide			24	NN	24
 aided			6	VBN	6
-aides			20	NNS	20
+aides			22	NNS	22
 aiding			3	VBG	3
-aids			7	NNS	6	VBZ	1
+aids			7	NNS	5	VBZ	2
 ailed			1	VBD	1
-ailing			11	JJ	5	VBG	6
+ailing			15	JJ	9	VBG	6
 ailment			2	NN	2
 ailments		4	NNS	4
-ails			3	NNS	3
-aim			34	NN	27	VB	3	VBP	4
-aimed			61	VBD	10	VBN	51
+ails			3	NNS	1	VBZ	2
+aim			36	NN	28	VB	3	VBP	5
+aimed			62	VBD	10	VBN	52
 aiming			9	VBG	9
 aimless			2	JJ	2
 aimlessly		1	RB	1
-aims			25	NNS	15	VBZ	10
-air			227	NN	220	VB	6	VBP	1
+aims			25	NNS	13	VBZ	12
+air			235	NN	228	VB	6	VBP	1
 air-conditioned		1	JJ	1
 air-conditioning	3	JJ	1	NN	2
 air-crash		1	JJ	1
@@ -20283,9 +20338,9 @@ air?			1	NNP	1
 airborne		7	JJ	7
 airbus			1	JJ	1
 airconditioner		1	JJR	1
-aircraft		86	NN	83	NNS	3
+aircraft		88	NN	85	NNS	3
 aircraft?		1	NNP	1
-aircrafts		1	JJ	1
+aircrafts		1	NNS	1
 aircrew			1	NN	1
 aired			11	VBD	6	VBN	5
 airfield		5	NN	5
@@ -20306,9 +20361,9 @@ airmen			1	NNS	1
 airmens			1	NNS	1
 airplane		10	NN	10
 airplanes		4	NNS	4
-airport			29	NN	29
+airport			31	NN	31
 airport?		1	NN	1
-airports		6	NNS	6
+airports		7	NNS	7
 airs			2	NNS	1	VBZ	1
 airsick			1	JJ	1
 airspace		1	NN	1
@@ -20316,7 +20371,7 @@ airstrikes		2	NNS	2
 airstrip		1	NN	1
 airtight		2	JJ	2
 airtime			1	NN	1
-airwaves		6	NNS	6
+airwaves		6	NN	1	NNS	5
 airways			1	NNS	1
 airworthy		1	JJ	1
 airy			4	JJ	4
@@ -20328,21 +20383,21 @@ ake			1	VB	1
 akin			5	JJ	5
 al			1	JJ	1
 alabaster		1	NN	1
-alarm			26	NN	25	VB	1
+alarm			28	NN	27	VB	1
 alarmed			9	JJ	4	VBN	5
 alarming		11	JJ	10	VBG	1
 alarmingly		1	RB	1
 alarmist		2	JJ	2
 alarms			1	NNS	1
 alas			1	UH	1
-albatross		2	NN	1	NNS	1
+albatross		2	NN	2
 albeit			5	IN	5
 albino			1	NN	1
 album			10	NN	10
 album?			1	NNP	1
 albums			2	NNS	2
 alchemists		1	NNS	1
-alcohol			18	NN	18
+alcohol			19	NN	19
 alcoholic		4	JJ	3	NN	1
 alcoholics		2	NNS	2
 alcoholism		3	NN	3
@@ -20357,8 +20412,8 @@ alfalfa			1	NN	1
 alfresco		3	JJ	1	RB	2
 algae			2	NN	2
 algebra			1	NN	1
-alibi			4	NN	3	NNS	1
-alien			8	JJ	6	NN	2
+alibi			4	NN	4
+alien			9	JJ	7	NN	2
 alienate		3	VB	3
 alienated		3	VBN	3
 alienates		1	VBZ	1
@@ -20366,30 +20421,30 @@ alienating		4	VBG	4
 aliens			7	NNS	7
 alight			6	JJ	5	VB	1
 alight...		1	CC	1
-alighted		5	VBD	2	VBN	3
+alighted		5	JJ	1	VBD	2	VBN	2
 align			1	VBP	1
 aligned			6	VBN	6
 alignment		3	NN	3
-alike			14	JJ	2	RB	12
-alive			23	JJ	23
+alike			16	JJ	2	RB	14
+alive			24	JJ	24
 alkaline		2	JJ	2
-all			1884	DT	1153	PDT	526	RB	204	RB|DT	1
+all			1957	DT	1202	PDT	542	RB	212	RB|DT	1
 all-black		1	JJ	1
 all-cash		1	JJ	1
 all-embracing		1	JJ	1
 all-female		1	JJ	1
 all-important		1	JJ	1
 all-in-all		1	RB	1
-all-night		2	JJ	2
+all-night		3	JJ	3
 all-out			5	JJ	5
-all-powerful		2	JJ	2
+all-powerful		3	JJ	3
 all-purpose		1	JJ	1
 all-time		5	JJ	5
 allI			1	NNS	1
 allay			4	VB	4
 allayed			1	VBN	1
 allegation		4	NN	4
-allegations		34	NNS	34
+allegations		35	NNS	35
 allege			2	VB	1	VBP	1
 alleged			41	JJ	16	VBD	4	VBN	21
 allegedly		32	RB	32
@@ -20405,7 +20460,7 @@ alleviated		1	VBN	1
 alley			5	NN	5
 alleys			3	NNS	3
 allgedly		1	RB	1
-alliance		33	NN	33
+alliance		34	NN	34
 alliances		6	NNS	6
 allied			1	VBD	1
 allies			24	NNS	24
@@ -20420,10 +20475,10 @@ allotted		5	JJ	2	VBD	2	VBN	1
 allow			118	VB	106	VBP	12
 allowable		5	JJ	5
 allowance		8	NN	8
-allowancebut		1	VB	1
+allowancebut		1	NN	1
 allowances		3	NNS	3
-allowed			113	JJ	1	VBD	34	VBN	78
-allowing		30	VBG	30
+allowed			115	JJ	1	VBD	35	VBN	79
+allowing		31	VBG	31
 allows			21	VBZ	21
 alloy			2	NN	2
 allrightniks		1	NNS	1
@@ -20435,54 +20490,55 @@ allusions		2	NNS	2
 ally			14	NN	13	VB	1
 almighty		4	JJ	4
 almonds			2	NNS	2
-almost			259	RB	259
+almost			270	RB	270
 aloft			4	RB	4
-alone			108	JJ	14	RB	94
+alone			112	JJ	14	RB	98
 alone?As		1	VBZ	1
 aloneshe		1	NN	1
-along			229	IN	176	RB	29	RB|RP	1	RP	23
+along			233	IN	176	RB	29	RB|RP	1	RP	27
 along.			1	NN	1
 alongside		6	IN	3	RB	3
 aloof			5	JJ	5
 aloud			7	RB	7
 alpha			1	NN	1
 alphabet		6	NN	6
+alphabetical		1	JJ	1
 alphabetically		1	RB	1
-already			322	RB	322
+already			328	RB	328
 already!		1	NNP	1
 already-sizable		1	JJ	1
 already-tense		1	JJ	1
 alright			1	RB	1
-also			1087	RB	1087
+also			1092	RB	1092
 alsohighly		1	RB	1
 altar			7	NN	7
-alter			15	VB	14	VBP	1
+alter			16	VB	15	VBP	1
 alteration		2	NN	2
 alterations		3	NNS	3
 altercation		1	NN	1
 altered			14	JJ	2	VBD	3	VBN	9
 altering		3	VBG	3
-alternate		3	JJ	2	RB	1
+alternate		1	JJ	1
 alternated		1	VBD	1
 alternates		2	VBZ	2
 alternating		4	VBG	4
-alternative		42	JJ	16	NN	26
+alternative		43	JJ	16	NN	27
 alternatively		3	RB	3
 alternatives		42	NNS	42
 although		92	IN	92
 altitude		5	NN	5
 altitudes		1	NNS	1
 alto			3	NN	3
-altogether		22	RB	22
+altogether		23	RB	23
 altogether?		1	NN	1
 altruism		1	NN	1
 altruistic		3	JJ	3
-aluminium		11	NN	11
+aluminium		12	NN	12
 aluminum		5	NN	5
 alumni			4	NNS	4
-always			424	RB	424
-am			151	VBP	151
-am!			1	JJ	1
+always			447	RB	447
+am			167	VBP	167
+am!			1	NN	1
 amahs			1	NNS	1
 amalgam			1	NN	1
 amalgamated		4	JJ	1	VBN	3
@@ -20495,9 +20551,9 @@ amateur			13	JJ	12	NN	1
 amateurish		4	JJ	4
 amateurs		3	NNS	3
 amaze			1	VB	1
-amazed			6	JJ	3	VBN	3
-amazement		7	NN	7
-amazing			12	JJ	12
+amazed			10	JJ	3	VBN	7
+amazement		8	NN	8
+amazing			17	JJ	17
 amazingly		2	RB	2
 ambassador		8	NN	8
 ambassadors		2	NNS	2
@@ -20528,10 +20584,10 @@ amending		1	VBG	1
 amendment		32	NN	32
 amendments		10	NNS	10
 amenities		3	NNS	3
-amiable			3	JJ	3
+amiable			4	JJ	4
 amicable		3	JJ	3
 amid			54	IN	54
-amidst			1	JJ	1
+amidst			1	NN	1
 amino			1	JJ	1
 amiss			4	JJ	4
 ammo			1	NN	1
@@ -20539,25 +20595,25 @@ ammonium		3	NN	3
 ammunition		7	NN	7
 amnesty			3	NN	3
 amok			1	RB	1
-among			293	IN	293
+among			298	IN	298
 amongst			8	IN	8
 amoral			2	JJ	2
 amorous			1	JJ	1
 amorphous		3	JJ	3
 amortization		4	NN	4
-amount			201	NN	195	VB	6
+amount			207	NN	201	VB	6
 amounted		14	VBD	13	VBN	1
 amounting		1	VBG	1
-amounts			59	NNS	51	VBZ	8
+amounts			60	NNS	52	VBZ	8
 amphibian		2	JJ	1	NN	1
-amphibians		3	NNS	3
+amphibians		4	NNS	4
 amphibious		5	JJ	5
 amphitheatre		3	NN	3
 amphobiles		1	NNS	1
 ample			9	JJ	9
 amplification		1	NN	1
 amplified		3	NN	1	VBN	2
-amplifier		2	NN	2
+amplifier		3	NN	3
 amplifiers		2	NNS	2
 amplify			4	VB	4
 amplifying		2	VBG	2
@@ -20566,11 +20622,11 @@ amputate		1	VB	1
 amputation		2	NN	2
 amulets			1	NNS	1
 amuse			4	VBP	4
-amused			11	JJ	7	VBN	4
+amused			12	JJ	8	VBN	4
 amusement		7	NN	7
 amusements		2	NNS	2
-amusing			17	JJ	17
-an			4342	,	1	DT	4341
+amusing			18	JJ	18
+an			4405	,	1	DT	4404
 anachronism		2	NN	2
 anachronistic		1	JJ	1
 anaemic			4	JJ	4
@@ -20590,7 +20646,7 @@ analyse			4	VB	4
 analysed		2	VBD	1	VBN	1
 analyses		1	NNS	1
 analysing		2	VBG	2
-analysis		31	NN	31
+analysis		32	NN	32
 analyst			170	NN	170
 analysts		275	NNS	275
 analytic		1	JJ	1
@@ -20618,14 +20674,14 @@ anchorage		1	NN	1
 anchored		5	VBN	5
 anchorman		1	NN	1
 anchors			2	NNS	2
-anchovies		1	NNS	1
+anchovies		2	NNS	2
 anchovy			1	NN	1
-ancient			38	JJ	38
+ancient			39	JJ	39
 ancillary		4	JJ	4
-and			18371	CC	18362	IN	1	JJ	3	NN	2	NNP	2	VBP	1
+and			18624	CC	18615	IN	1	JJ	3	NN	2	NNP	2	VBP	1
 andsilly		1	RB	1
 anecdotal		3	JJ	3
-anecdotes		2	NNS	2
+anecdotes		3	NNS	2	VBZ	1
 anemia			1	NN	1
 anemias			1	NNS	1
 anemic			2	JJ	2
@@ -20636,7 +20692,7 @@ angel			1	NN	1
 angelfish		1	NN	1
 angelic			2	JJ	2
 angels			3	NNS	3
-anger			40	NN	39	VB	1
+anger			41	NN	40	VB	1
 angered			7	JJ	1	VBD	4	VBN	2
 anglais			1	NNS	1
 angle			13	NN	13
@@ -20644,36 +20700,36 @@ angled			3	VBN	3
 anglers			1	NNS	1
 angles			12	NNS	12
 angling			2	VBG	2
-angrier			1	NN	1
+angrier			1	JJR	1
 angrily			7	RB	7
-angry			48	JJ	48
+angry			52	JJ	52
 angst			1	NN	1
 anguish			8	NN	8
 angular			2	JJ	2
-animal			55	JJ	9	NN	46
+animal			59	JJ	10	NN	49
 animal-based		1	JJ	1
 animal-like		1	JJ	1
 animal-welfare		1	JJ	1
-animals			74	NNS	74
+animals			77	NNS	77
 animals?		1	NNP	1
 animate			1	JJ	1
-animated		6	JJ	5	VBN	1
+animated		7	JJ	6	VBN	1
 animation		2	NN	2
 animosities		1	NNS	1
 animosity		2	NN	2
-aniseed			1	JJ	1
+aniseed			1	VBD	1
 ankle			11	NN	11
 ankles			4	NNS	4
 annals			1	NN	1
 annexed			1	VBN	1
 annexing		1	VBG	1
 annihilated		4	VBD	1	VBN	3
-anniversary		11	NN	11
+anniversary		12	NN	12
 annnouncement		1	NN	1
 annotated		2	JJ	1	VBN	1
-announce		20	VB	19	VBP	1
-announced		224	JJ	3	VBD	150	VBN	71
-announcement		92	NN	92
+announce		21	VB	20	VBP	1
+announced		225	JJ	3	VBD	150	VBN	72
+announcement		93	NN	93
 announcements		10	NNS	10
 announcer		12	NN	12
 announces		2	VBZ	2
@@ -20682,12 +20738,12 @@ annoy			3	VB	3
 annoyance		7	NN	7
 annoyances		1	NNS	1
 annoyed			11	JJ	3	VBD	4	VBN	4
-annoying		7	JJ	7
+annoying		7	JJ	6	VBG	1
 annoyingly		1	RB	1
 annoys			1	VBZ	1
 annual			158	JJ	158
 annualized		8	JJ	2	VBN	6
-annually		44	RB	44
+annually		45	RB	45
 annuities		5	NNS	5
 annuity			4	NN	4
 annulled		1	VBN	1
@@ -20701,12 +20757,12 @@ anonymous		11	JJ	11
 anonymously		1	RB	1
 anorak			1	NN	1
 anoraks			1	NNS	1
-another			464	DT	464
-answer			102	NN	69	VB	32	VBP	1
+another			480	DT	480
+answer			111	NN	74	VB	36	VBP	1
 answer?Its		1	NNS	1
 answerable		3	JJ	3
-answered		29	VBD	20	VBN	9
-answering		13	JJ	2	NN	1	VBG	10
+answered		31	VBD	23	VBN	8
+answering		13	JJ	2	VBG	11
 answers			41	NNS	36	VBZ	5
 ant			1	NN	1
 ant-eater		1	NN	1
@@ -20764,7 +20820,7 @@ anti-development	2	JJ	2
 anti-diarrheal		1	JJ	1
 anti-discrimination	3	JJ	3
 anti-drug		12	JJ	12
-anti-drugs		2	JJ	2
+anti-drugs		2	NNS	2
 anti-dumping		4	JJ	4
 anti-flag-burning	1	JJ	1
 anti-foreigner		1	NN	1
@@ -20793,7 +20849,7 @@ anti-snake		1	NN	1
 anti-social		7	JJ	7
 anti-submarine		1	JJ	1
 anti-takeover		6	JJ	6
-anti-tank		5	JJ	2	NN	3
+anti-tank		5	NN	5
 anti-terrorist		1	JJ	1
 anti-trust		1	NN	1
 anti-viral		1	JJ	1
@@ -20802,10 +20858,10 @@ anti-war-related	1	JJ	1
 anti-white		1	JJ	1
 antiSony		1	JJ	1
 antibiotic		4	JJ	3	NN	1
-antibiotics		6	NNS	6
+antibiotics		8	NNS	8
 antibody		9	NN	9
-anticipate		5	VB	2	VBP	3
-anticipated		26	JJ	9	VBD	4	VBN	13
+anticipate		7	VB	3	VBP	4
+anticipated		28	JJ	9	VBD	4	VBN	15
 anticipates		8	VBZ	8
 anticipating		7	VBG	7
 anticipation		18	NN	18
@@ -20829,7 +20885,7 @@ antiquity		2	NN	2
 antirealistic		1	JJ	1
 antiseptic		4	JJ	3	NN	1
 antisocial		1	JJ	1
-antitheses		1	NNS	1
+antitheses		1	NN	1
 antithesis		1	NN	1
 antithetical		1	JJ	1
 antitrust		39	JJ	39
@@ -20841,28 +20897,29 @@ antonymous		1	JJ	1
 ants			8	NNS	8
 anvil			1	NN	1
 anxieties		7	NNS	7
-anxiety			18	NN	18
-anxiety...		1	JJ	1
-anxious			31	JJ	31
+anxiety			19	NN	19
+anxiety...		1	NN	1
+anxious			33	JJ	33
 anxiously		4	RB	4
-any			921	DT	911	RB	10
-anybody			22	NN	22
+any			958	DT	950	RB	8
+anybody			24	NN	24
 anyhow			1	JJ	1
 anymore			11	RB	11
-anyone			98	NN	98
+anyone			104	NN	104
 anyones			3	NNS	3
-anything		183	NN	181	RB	2
+anything		196	NN	194	RB	2
+anything.		1	VBN	1
 anything?		1	NNS	1
 anythinga		1	JJ	1
 anythinghes		1	NNS	1
 anytime			6	RB	6
-anyway			19	RB	19
-anyway..		1	FW	1
-anywhere		34	RB	34
+anyway			20	RB	20
+anyway..		1	CC	1
+anywhere		35	RB	35
 anywhere.)		1	NN	1
 aorta			1	NN	1
 apace			2	RB	2
-apart			40	JJ	3	RB	37
+apart			45	IN	2	JJ	3	RB	40
 apartheid		8	NN	8
 apartment		23	NN	23
 apartments		5	NNS	5
@@ -20886,36 +20943,36 @@ apolitical		1	JJ	1
 apologetic		3	JJ	2	RB	1
 apologetically		1	RB	1
 apologies		8	NNS	8
-apologise		1	JJ	1
+apologise		2	JJ	1	VBP	1
 apologists		3	NNS	3
 apologize		10	VB	10
-apologized		4	VBD	4
+apologized		6	VBD	6
 apologizing		1	VBG	1
-apology			11	NN	11
+apology			12	NN	12
 apostasy		1	NN	1
 apostate		1	JJ	1
 apostle			2	NN	2
 apotheosis		2	NN	2
 appalled		6	JJ	3	VBN	3
-appalling		15	JJ	15
+appalling		16	JJ	16
 appallingly		1	RB	1
 apparat			1	NN	1
 apparatus		9	NN	9
 apparel			8	NN	8
-apparent		25	JJ	25
+apparent		26	JJ	26
 apparently		74	RB	74
 apparition		3	NN	3
 apparitions		1	NNS	1
 appartus		1	NN	1
-appeal			65	NN	51	VB	12	VBP	2
+appeal			66	NN	52	VB	12	VBP	2
 appealed		11	VBD	10	VBN	1
-appealing		11	JJ	5	VBG	6
+appealing		12	JJ	5	VBG	7
 appeals			35	NNS	35
 appeals-court		1	NN	1
-appear			84	VB	56	VBP	28
-appearance		38	NN	38
+appear			87	VB	58	VBP	29
+appearance		40	NN	40
 appearances		8	NNS	8
-appeared		84	VBD	78	VBN	6
+appeared		85	VBD	79	VBN	6
 appearing		12	VBG	12
 appears			59	VBZ	59
 appease			6	VB	6
@@ -20925,11 +20982,11 @@ appellate		7	JJ	5	NN	2
 appellation		1	NN	1
 appendage		1	NN	1
 appendages		2	NNS	2
-appendicitis		2	NNS	2
+appendicitis		2	NN	2
 appendix		2	NN	2
 appends			1	VBZ	1
 appertaining		1	VBG	1
-appetite		15	NN	15
+appetite		16	NN	16
 appetite?		1	NN	1
 appetites		3	NNS	3
 appetizer		1	NN	1
@@ -20939,10 +20996,10 @@ applauded		8	VBD	8
 applauding		2	VBG	2
 applauds		2	VBZ	2
 applause		14	NN	14
-apple			47	NN	47
+apple			49	NN	49
 apple-industry		1	NN	1
 applelike		1	JJ	1
-apples			27	JJ	1	NNS	26
+apples			28	JJ	1	NNS	27
 apples?No		1	NN	1
 appliance		2	NN	2
 appliances		15	NNS	15
@@ -20955,13 +21012,13 @@ application?		1	NN	1
 applications		30	NNS	30
 applied			43	JJ	1	VBD	19	VBN	23
 applies			6	VBZ	6
-apply			49	VB	42	VBP	7
+apply			50	VB	43	VBP	7
 applying		5	VBG	5
 appoint			3	VB	3
-appointed		38	JJ	1	VBD	3	VBN	34
+appointed		42	JJ	1	VBD	4	VBN	37
 appointees		2	NNS	2
-appointment		30	NN	30
-appointments		9	NNS	9
+appointment		31	NN	31
+appointments		10	NNS	10
 apportion		2	VBP	2
 apposite		2	JJ	2
 appraisal		2	NN	2
@@ -20984,10 +21041,10 @@ apprenticeship		2	NN	2
 apprised		1	VBN	1
 approach		93	NN	80	VB	7	VBP	6
 approachable		4	JJ	4
-approached		28	VBD	14	VBN	14
+approached		30	VBD	16	VBN	14
 approaches		13	NNS	9	VBZ	4
-approaching		15	VBG	15
-appropriate		24	JJ	21	RB	1	VB	2
+approaching		16	VBG	16
+appropriate		27	JJ	25	VB	2
 appropriate?		1	VBN	1
 appropriated		5	VBN	5
 appropriately		2	RB	2
@@ -20997,11 +21054,11 @@ appropriators		3	NNS	3
 approval		116	NN	116
 approvals		5	NNS	5
 approve			34	VB	28	VBP	6
-approved		138	JJ	6	VBD	65	VBN	67
+approved		139	JJ	6	VBD	65	VBN	68
 approved?		1	JJ	1
 approves		6	VBZ	6
 approving		1	VBG	1
-approximate		10	JJ	6	RB	2	VB	2
+approximate		8	JJ	6	VB	2
 approximated		2	VBD	2
 approximately		24	RB	24
 approximates		1	VBZ	1
@@ -21011,8 +21068,8 @@ apricot-coloured	1	JJ	1
 apricots		3	NNS	3
 apron			12	NN	12
 aprons			1	NNS	1
-apropos			3	JJ	1	NNS	2
-apt			8	JJ	8
+apropos			3	IN	2	JJ	1
+apt			9	JJ	9
 aptitude		2	NN	2
 aptitudes		1	NNS	1
 aptly			2	RB	2
@@ -21047,14 +21104,14 @@ arch-rival		1	JJ	1
 archaeological		1	JJ	1
 archaeologists		2	NNS	2
 archaic			4	JJ	4
-arched			9	JJ	6	VBD	3
+arched			9	JJ	5	VBD	4
 archers			1	NNS	1
 arches			7	NNS	7
 arching			2	VBG	2
 architect		14	NN	14
 architects		10	NNS	10
 architectural		7	JJ	7
-architecture		27	NN	27
+architecture		28	NN	28
 archive			2	NN	2
 archives		4	NNS	4
 archrival		2	JJ	2
@@ -21065,98 +21122,101 @@ ardent			7	JJ	7
 ardently		1	RB	1
 ardour			1	NN	1
 arduous			3	JJ	3
-are			4475	IN	1	NN	1	NNP	1	VBP	4472
-are!			2	JJ	1	VBD	1
-are?			2	CD	1	JJ	1
-area			189	NN	189
+are			4626	IN	1	NN	1	NNP	1	VBP	4623
+are!			2	JJ	1	NN	1
+are?			3	JJ	2	NN	1
+area			197	NN	197
 area-code		1	JJ	1
-areas			138	NNS	138
+areas			143	NNS	143
 arelike			1	VBP	1
 arena			7	NN	7
 arenas			2	NNS	2
-arent			15	JJ	2	VB	3	VBP	10
+arent			16	JJ	4	VB	2	VBP	10
 argot			2	NN	2
 arguably		1	RB	1
-argue			50	VB	15	VBP	35
-argued			44	VBD	40	VBN	4
+argue			51	VB	16	VBP	35
+argued			45	VBD	41	VBN	4
 arguedeconomic		1	JJ	1
 argues			21	VBZ	21
 arguing			24	VBG	24
-argument		77	NN	77
+argument		79	NN	79
 argument?		1	NN	1
 argumentative		1	JJ	1
-arguments		51	NNS	51
+arguments		52	NNS	52
 aria			2	NN	2
 arias			1	NNS	1
 arid			6	JJ	6
 aright			1	RB	1
-arise			17	VB	10	VBP	7
+arise			17	VB	9	VBP	8
 arisen			1	VBN	1
 arising			4	VBG	4
 aristocracies		1	NNS	1
-aristocracy		3	NN	3
+aristocracy		4	NN	4
 aristocrat		3	NN	3
-aristocratic		3	JJ	3
+aristocratic		4	JJ	4
 arithmetic		3	JJ	2	NN	1
-arithmetic?		1	CD	1
-arm			116	NN	115	VB	1
+arithmetic?		1	NNP	1
+arm			124	NN	123	VB	1
 armada			1	NN	1
 armaments		4	NNS	4
-armchair		15	NN	15
+armchair		16	NN	16
 armchairs		3	NNS	3
-armed			33	JJ	22	VBN	11
+armed			34	JJ	23	VBN	11
 armful			3	JJ	2	NN	1
 armfuls			3	NNS	3
-armies			6	NNS	6
+armies			7	NNS	7
 arming			1	NN	1
 armistice		2	NN	2
 armored			2	JJ	2
 armour			10	NN	10
 armour-plated		1	JJ	1
-armoured		8	JJ	8
+armoured		8	JJ	7	VBD	1
 armoury			4	NN	4
 armpit			1	NN	1
 armpits			1	NNS	1
-arms			108	NNS	108
+arms			114	NNS	114
 arms-carrying		1	JJ	1
 arms-control		6	JJ	1	NN	5
 arms-reduction		1	JJ	1
 arms.,			1	JJ	1
 armsthey		1	NN	1
-army			63	NN	63
+army			66	NN	66
 armys			3	JJ	3
-aroma			1	NN	1
+aroma			2	NN	2
 aromas			2	NNS	2
 aromatic		3	JJ	3
 arose			12	VBD	12
-around			410	IN	275	RB	42	RP	93
+around			434	IN	289	RB	43	RP	102
 around-the-clock	1	JJ	1
+around.			1	VBN	1
 arousal			1	NN	1
 arouse			5	VB	5
 aroused			12	VBD	1	VBN	11
 arouses			1	VBZ	1
-arousing		1	VBG	1
+arousing		2	VBG	2
 arraigned		1	VBN	1
-arrange			20	VB	20
-arranged		36	JJ	1	VBD	17	VBN	18
-arrangement		35	NN	35
-arrangements		19	NNS	19
+arrange			24	VB	24
+arranged		38	JJ	1	VBD	18	VBN	19
+arrangement		37	NN	37
+arrangements		20	NNS	20
 arrangements?		1	NNS	1
-arranges		2	VBZ	2
+arranges		3	VBZ	3
 arranging		5	VBG	5
 array			18	NN	17	VB	1
 arrayed			3	VBN	3
 arrears			3	NNS	3
-arrest			21	NN	17	VB	4
-arrested		27	VBD	1	VBN	26
-arrests			6	NNS	6
-arrival			29	NN	29
+arrest			26	NN	22	VB	4
+arrested		28	VBD	2	VBN	26
+arresting		1	VBG	1
+arrests			7	NNS	7
+arrival			31	NN	31
 arrivals		5	NNS	5
-arrive			17	VB	9	VBP	8
-arrived			72	VBD	51	VBN	21
+arrive			18	VB	10	VBP	8
+arrive.			1	CD	1
+arrived			81	VBD	56	VBN	25
 arrived.I		1	RB	1
 arrives			6	VBZ	6
-arriving		5	VBG	5
+arriving		6	VBG	6
 arrogance		5	NN	5
 arrogant		15	JJ	15
 arrogating		1	VBG	1
@@ -21168,7 +21228,7 @@ arsenals		5	NNS	5
 arsenide		1	NN	1
 arson			3	NN	3
 arsonist		1	NN	1
-art			83	NN	83
+art			89	NN	89
 artefacts		1	NNS	1
 arterial		1	JJ	1
 arteries		6	NNS	6
@@ -21178,7 +21238,7 @@ arthritic		2	JJ	2
 arthritics		1	NNS	1
 arthritis		1	NN	1
 artichokes		1	NNS	1
-article			104	NN	104
+article			105	NN	105
 articled		2	JJ	2
 articles		19	NNS	19
 articulate		7	JJ	1	NN	1	VB	5
@@ -21187,19 +21247,20 @@ artifact		1	NN	1
 artifical		1	JJ	1
 artifice		1	NN	1
 artifices		1	NNS	1
-artificial		11	JJ	11
+artificial		13	JJ	13
 artificially		5	RB	5
-artillery		10	NN	10
-artisans		1	NNS	1
-artist			29	NN	29
+artillery		11	NN	11
+artisans		2	NNS	2
+artist			31	NN	31
+artist?			1	NN	1
 artiste			1	NN	1
 artistes		1	NNS	1
 artistic		22	JJ	22
-artists			25	NNS	25
+artists			24	NNS	24
 artless			1	JJ	1
-arts			14	NNS	14
+arts			15	NNS	15
 artwork			1	NN	1
-as			4552	IN	3790	JJ	1	RB	761
+as			4669	IN	3884	JJ	1	RB	784
 as-yet			1	RB	1
 asay			1	RB	1
 asbestos		18	NN	18
@@ -21220,22 +21281,23 @@ ascribed		6	VBN	6
 aseptic			1	JJ	1
 aseptically		1	RB	1
 asexual			1	JJ	1
-ash			7	JJ	1	NN	6
+ash			9	JJ	1	NN	8
+ash-like		1	JJ	1
 ashamed			11	JJ	11
 ashen			1	JJ	1
-ashes			7	NNS	7
-ashore			8	RB	8
-ashtray			9	NN	8	RB	1
+ashes			8	NNS	8
+ashore			9	RB	9
+ashtray			10	NN	9	RB	1
 ashtrays		4	NNS	4
 ashy			2	JJ	2
-aside			44	NN	2	RB	27	RP	15
-ask			98	VB	82	VBP	16
+aside			48	NN	2	RB	29	RP	17
+ask			105	VB	88	VBP	17
 ask?			1	VB	1
-asked			260	JJ	1	VBD	187	VBN	72
+asked			270	JJ	1	VBD	197	VBN	72
 askew			2	JJ	1	RB	1
-asking			49	JJ	1	NN	2	VBG	46
-asks			24	VBZ	24
-asleep			18	JJ	4	RB	14
+asking			51	JJ	1	NN	2	VBG	48
+asks			25	VBZ	25
+asleep			19	JJ	5	RB	14
 asparagus		2	JJ	1	NNS	1
 aspect			24	NN	24
 aspects			26	NNS	26
@@ -21251,15 +21313,15 @@ aspires			1	VBZ	1
 aspirin			6	NN	6
 aspiring		2	JJ	1	VBG	1
 aspirins		2	NNS	2
-ass			2	NN	1	NNS	1
+ass			2	NN	2
 assailant		2	NN	2
 assailed		4	VBD	2	VBN	2
 assailing		1	VBG	1
 assassin		4	NN	4
 assassinate		2	VB	2
-assassinated		3	VBD	1	VBN	2
+assassinated		4	VBD	1	VBN	3
 assassinating		2	VBG	2
-assassination		13	NN	13
+assassination		14	NN	14
 assassinations		3	NNS	3
 assassins		4	NNS	4
 assault			13	NN	13
@@ -21272,7 +21334,7 @@ assemble		4	VB	3	VBP	1
 assembled		12	VBD	4	VBN	8
 assemblies		2	NNS	2
 assembling		2	VBG	2
-assembly		34	NN	34
+assembly		35	NN	35
 assembly-line		2	NN	2
 assent			7	NN	7
 assented		2	VBD	2
@@ -21301,16 +21363,16 @@ asset-valuation		1	NN	1
 assets			198	NNS	198
 assiduous		2	JJ	2
 assiduously		2	RB	2
-assign			3	VB	1	VBP	2
+assign			4	VB	2	VBP	2
 assignation		1	NN	1
-assigned		13	VBN	13
+assigned		16	VBN	16
 assignment		8	NN	8
 assignments		1	NNS	1
 assigns			1	VBZ	1
 assimilate		1	VB	1
 assimilated		2	JJ	2
 assist			22	VB	21	VBP	1
-assistance		32	NN	32
+assistance		33	NN	33
 assistant		42	JJ	16	NN	26
 assistants		5	NNS	5
 assisted		6	VBN	6
@@ -21319,16 +21381,16 @@ associate		13	JJ	8	NN	5
 associated		30	JJ	1	VBN	29
 associates		21	NNS	21
 associating		2	VBG	2
-association		47	NN	47
+association		47	IN	1	NN	46
 associations		9	NNS	9
 assorted		8	JJ	8
 assortment		8	NN	8
 assuage			1	VB	1
 assuaged		1	VBN	1
-assume			26	VB	18	VBP	8
-assumed			25	JJ	1	VBD	14	VBN	10
+assume			28	VB	18	VBP	10
+assumed			26	JJ	1	VBD	14	VBN	11
 assumes			11	VBZ	11
-assuming		21	VBG	21
+assuming		22	IN	1	VBG	21
 assumption		29	NN	29
 assumptions		11	NNS	11
 assurance		13	NN	13
@@ -21343,12 +21405,13 @@ asteroid		3	JJ	1	NN	2
 asthma			4	NN	4
 asthmatic		2	NN	2
 astonish		2	VB	2
+astonished		4	JJ	4
 astonishing		14	JJ	14
 astonishingly		2	RB	2
 astonishment		7	NN	7
-astound			1	VB	1
+astound			2	VB	2
 astounded		3	JJ	3
-astounding		3	JJ	3
+astounding		4	JJ	4
 astounds		1	VBZ	1
 astray			4	RB	4
 astride			2	IN	2
@@ -21358,13 +21421,14 @@ astronaut		4	NN	4
 astronomer		2	NN	2
 astronomers		2	NNS	2
 astronomical		4	JJ	4
+astronomically		1	RB	1
 astronomy		1	NN	1
 astrophysicist		1	NN	1
 astute			6	JJ	6
 asunder			3	RB	3
 asylum			5	NN	5
 asymmetrical		2	JJ	2
-at			4903	IN	4903
+at			5076	IN	5076
 at-bat			1	NN	1
 at-large		1	JJ	1
 atavistic		1	JJ	1
@@ -21379,8 +21443,8 @@ athletes		9	NNS	9
 athletic		10	JJ	10
 athletic-shoe		1	NN	1
 athletics		10	NNS	10
-atlas			3	NNS	3
-atmosphere		54	NN	54
+atlas			3	NN	1	NNS	2
+atmosphere		56	NN	56
 atmospheric		6	JJ	6
 atom			8	NN	8
 atomic			2	JJ	2
@@ -21397,36 +21461,36 @@ atrophy			5	NN	3	VB	2
 atrun			1	JJ	1
 attach			10	VB	9	VBP	1
 attache			1	NN	1
-attached		26	JJ	3	VBD	4	VBN	19
+attached		27	JJ	3	VBD	4	VBN	20
 attaches		3	VBZ	3
 attaching		1	VBG	1
 attachment		2	NN	2
 attachments		1	NNS	1
-attack			108	NN	97	VB	10	VBP	1
+attack			112	NN	100	VB	10	VBP	2
 attacked		26	VBD	13	VBN	13
 attacker		2	NN	2
 attackers		2	NNS	2
 attacking		10	NN	1	VBG	9
-attacks			45	NNS	43	VBZ	2
+attacks			46	NNS	45	VBZ	1
 attainable		1	JJ	1
 attained		5	VBN	5
 attainment		1	NN	1
 attainments		1	NNS	1
-attempt			137	NN	123	VB	10	VBP	4
-attempted		37	JJ	8	VBD	17	VBN	12
-attempting		20	VBG	20
-attempts		35	NNS	30	VBZ	5
-attend			17	VB	16	VBP	1
+attempt			142	NN	126	VB	10	VBP	6
+attempted		38	JJ	8	VBD	18	VBN	12
+attempting		23	VBG	23
+attempts		36	NNS	31	VBZ	5
+attend			18	VB	17	VBP	1
 attendance		6	NN	6
 attendances		2	NNS	2
 attendant		7	JJ	1	NN	6
 attendants		8	NNS	8
-attended		34	VBD	27	VBN	7
+attended		35	VBD	27	VBN	8
 attendee		1	NN	1
 attendees		2	NNS	2
 attending		12	VBG	12
 attends			3	VBZ	3
-attention		94	NN	94
+attention		111	NN	111
 attention?		1	NN	1
 attentive		2	JJ	2
 attentively		2	RB	2
@@ -21440,23 +21504,23 @@ attic			8	NN	8
 attics			1	NNS	1
 attire			1	NN	1
 attired			1	JJ	1
-attitude		65	NN	65
+attitude		71	NN	71
 attitude?		1	NN	1
-attitudes		30	NNS	30
+attitudes		31	NNS	31
 attorney		78	NN	78
 attorney-client		3	JJ	3
 attorney-consultant	1	NN	1
 attorneys		38	NNS	38
-attract			37	VB	32	VBP	5
-attracted		27	JJ	3	VBD	15	VBN	9
+attract			38	VB	33	VBP	5
+attracted		27	JJ	3	VBD	14	VBN	10
 attracting		14	VBG	14
-attraction		6	NN	6
+attraction		7	NN	7
 attractions		8	NNS	8
-attractive		46	JJ	46
+attractive		47	JJ	47
 attractiveness		6	NN	6
 attracts		7	VBZ	7
 attributable		3	JJ	3
-attribute		6	NN	3	VBP	3
+attribute		4	NN	1	VBP	3
 attributed		43	VBD	30	VBN	13
 attributes		5	NNS	2	VBZ	3
 attributing		1	VBG	1
@@ -21472,10 +21536,10 @@ auctioneer		2	NN	2
 auctions		10	NNS	10
 audacious		3	JJ	3
 audible			7	JJ	7
-audience		95	NN	95
+audience		96	NN	96
 audience-friendly	1	JJ	1
 audience?		1	FW	1
-audiences		14	NNS	14
+audiences		15	NNS	15
 audio			5	JJ	3	NN	2
 audio-specialty		1	NN	1
 audio-typist		1	NN	1
@@ -21486,9 +21550,9 @@ audit			14	NN	11	VB	3
 audited			2	VBN	2
 auditing		1	VBG	1
 audition		3	VB	3
-auditioned		1	VBD	1
+auditioned		1	VBN	1
 auditor			4	NN	4
-auditorium		5	NN	5
+auditorium		6	NN	6
 auditors		2	NNS	2
 auditory		1	JJ	1
 audits			6	NN	6
@@ -21498,13 +21562,13 @@ augur			1	VB	1
 augured			1	VBN	1
 augury			1	NN	1
 august			3	JJ	3
-aunt			17	NN	17
+aunt			18	NN	18
 auntie			2	NN	2
 aunts			5	NNS	5
 aura			3	NN	3
 aural			1	JJ	1
 aureus			1	NN	1
-auspices		3	NNS	3
+auspices		3	IN	1	NNS	2
 auspicious		2	JJ	2
 austere			10	JJ	10
 austerity		1	NN	1
@@ -21518,7 +21582,7 @@ authoritarian		12	JJ	12
 authoritarianism	1	NN	1
 authoritarians		1	NNS	1
 authoritative		4	JJ	4
-authorities		52	NNS	52
+authorities		53	NNS	53
 authority		77	NN	77
 authorization		8	NN	8
 authorize		5	VB	5
@@ -21563,7 +21627,7 @@ automotive-lighting	1	JJ	1
 automotive-parts	1	JJ	1
 autonomous		5	JJ	5
 autonomy		5	NN	5
-autopsy			1	NN	1
+autopsy			2	NN	2
 autos			3	NNS	3
 autumn			22	NN	22
 autumnal		2	JJ	2
@@ -21572,15 +21636,15 @@ auxiliaries		3	NNS	3
 auxiliary		2	JJ	2
 avail			3	NN	2	VB	1
 availability		11	NN	11
-available		120	JJ	120
+available		128	JJ	128
 avalanche		4	NN	4
 avant-garde		3	JJ	2	NNS	1
 avaricious		2	JJ	2
 avec			1	FW	1
 avenge			4	VB	4
-avenue			7	NN	7
+avenue			8	NN	8
 avenues			2	NNS	2
-average			273	JJ	154	NN	115	VB	2	VBP	2
+average			276	JJ	157	NN	115	VB	2	VBP	2
 averaged		14	VBD	11	VBN	3
 averages		8	NNS	8
 averaging		3	VBG	3
@@ -21592,46 +21656,48 @@ avert			3	VB	3
 averted			5	VBN	5
 averting		1	VBG	1
 averts			1	VBZ	1
-aviation		3	NN	3
+aviation		4	NN	4
 aviators		1	NNS	1
 avid			2	JJ	2
 avidly			2	RB	2
 avocado			1	NN	1
 avocets			1	NNS	1
-avoid			91	VB	87	VBP	4
+avoid			92	VB	88	VBP	4
 avoidance		3	NN	3
 avoided			14	VBD	6	VBN	8
 avoiding		8	VBG	8
+avoids			1	VBZ	1
 avow			1	VB	1
 avowal			1	NN	1
 avowed			1	JJ	1
 avuncular		2	JJ	2
-await			4	VB	1	VBP	3
+await			6	VB	3	VBP	3
 awaited			6	VBD	6
-awaiting		7	VBG	7
+awaiting		10	VBG	10
 awaits			1	VBZ	1
-awake			18	JJ	5	RB	12	VB	1
-awaken			2	VB	2
+awake			19	JJ	6	RB	12	VB	1
+awaken			3	VB	3
 awakened		6	VBN	6
 awakening		5	NN	3	VBG	2
 award			25	NN	22	VB	3
-awarded			30	VBD	15	VBN	15
+award-winner		1	NN	1
+awarded			31	VBD	15	VBN	16
 awarding		3	NN	1	VBG	2
-awards			4	NNS	2	VBZ	2
-aware			55	JJ	55
+awards			5	NNS	3	VBZ	2
+aware			60	JJ	60
 awareness		10	NN	10
 awash			3	JJ	2	RB	1
-away			411	RB	367	RP	44
+away			445	RB	401	RP	44
 away!			1	NNS	1
 away-from-home		1	JJ	1
-away?			2	JJ	1	NN	1
+away?			2	NN	2
 awe			2	NN	2
 awe-inspiring		3	JJ	3
 awe-struck		1	JJ	1
 awed			3	JJ	3
 awesome			7	JJ	7
 awestruck		3	JJ	2	NN	1
-awful			30	JJ	30
+awful			31	JJ	31
 awfully			11	RB	11
 awkward			23	JJ	23
 awkwardness		2	NN	2
@@ -21639,11 +21705,11 @@ awoke			4	VBD	4
 awry			5	JJ	2	RB	3
 ax			1	NN	1
 axe			2	NN	2
-axes			2	NNS	2
+axes			2	NN	1	NNS	1
 axiom			2	NN	2
 axiomatic		1	JJ	1
 axioms			1	NNS	1
-axis			3	NN	1	NNS	2
+axis			4	NN	3	NNS	1
 axle			1	JJ	1
 aye			1	NN	1
 ayes			1	NNS	1
@@ -21653,21 +21719,21 @@ babbled			2	VBD	2
 babbling		1	VBG	1
 babe			2	NN	2
 babel			1	NN	1
-babies			41	NNS	41
+babies			42	NNS	42
 baboons			4	NNS	4
-baby			103	NN	103
+baby			111	NN	111
 baby-faced		1	JJ	1
 baby-minder		1	NN	1
 baby-sit		1	VB	1
 baby-sitter		1	NN	1
 baby-sitting		1	NN	1
 babyish			2	JJ	2
-babys			9	JJ	7	NNS	1	VBZ	1
+babys			9	JJ	6	NNS	2	VBZ	1
 babysitter		1	NN	1
 bacchanalian		1	JJ	1
 bachelor		7	NN	7
 bachelors		1	NNS	1
-back			799	JJ	44	NN	133	RB	484	RP	121	VB	14	VBP	3
+back			852	JJ	48	NN	146	RB	521	RP	120	VB	14	VBP	3
 back-bench		2	JJ	2
 back-breaking		1	NN	1
 back-dating		1	VBG	1
@@ -21679,6 +21745,7 @@ back-to-back		1	JJ	1
 back-up			2	NN	2
 back-ups		2	NNS	2
 back.			2	NN	1	VBN	1
+back?			1	JJ	1
 back?No			1	NN	1
 backache		1	NN	1
 backbench		2	JJ	1	NN	1
@@ -21693,7 +21760,7 @@ backers			8	NNS	8
 backfire		4	VB	4
 backfired		2	VBD	1	VBN	1
 backfires		1	VBZ	1
-background		31	NN	31
+background		32	NN	32
 backgrounds		11	NNS	11
 backhand		3	NN	3
 backhander		1	NN	1
@@ -21706,7 +21773,7 @@ backlog			16	NN	16
 backlogs		8	NNS	8
 backpacks		1	NNS	1
 backpedaling		1	VBG	1
-backs			20	NNS	14	VBZ	6
+backs			21	NNS	15	VBZ	6
 backside		2	NN	2
 backstage		3	NN	2	RB	1
 backstop		1	NN	1
@@ -21715,33 +21782,34 @@ backward		7	JJ	4	RB	3
 backwards		15	JJ	2	RB	13
 backwash		1	NN	1
 backwater		1	NN	1
-backwoods		2	NNS	2
+backwoods		2	NN	2
 backyard		1	NN	1
 bacon			11	NN	11
-bacteria		18	NNS	18
+bacteria		19	NNS	19
 bacteria-free		1	JJ	1
 bacterial		3	JJ	3
 bacterias		1	NNS	1
 bacterium		6	NN	6
-bad			161	JJ	158	NN	2	RB	1
+bad			175	JJ	172	NN	2	RB	1
 bad-expectations	1	JJ	1
 bad-mannered		1	JJ	1
 bad-news		1	JJ	1
 bad?			1	NN	1
 baddebt			1	JJ	1
 baddies			1	NNS	1
+baddy			1	NN	1
 badge			8	NN	8
 badger			2	NN	1	VB	1
 badgered		2	VBD	1	VBN	1
 badgers			2	NNS	2
 badges			4	NNS	4
-badly			74	RB	74
+badly			77	RB	77
 badly-paid		1	JJ	1
 baffled			4	VBN	4
 baffling		2	JJ	2
-bag			58	NN	57	VB	1
+bag			63	NN	62	VB	1
 baggage			7	NN	7
-bags			24	NNS	24
+bags			25	NNS	25
 bags?			1	NN	1
 bail			9	NN	6	VB	3
 bail-jumping		1	NN	1
@@ -21754,11 +21822,12 @@ baiting			1	VBG	1
 bake			1	VB	1
 baked			5	JJ	5
 baker			1	NN	1
+bakeries		1	NNS	1
 bakers			2	NNS	2
 bakery			5	NN	5
 bakery)			1	NNP	1
 baking			7	JJ	4	VBG	3
-balance			64	NN	58	VB	6
+balance			65	NN	59	VB	6
 balance-of-payments	2	NNS	2
 balance-sheet		2	NN	2
 balanced		12	JJ	8	VBN	4
@@ -21772,22 +21841,22 @@ balding			3	JJ	3
 baldness		2	NN	2
 baldnot			1	JJ	1
 baleful			2	JJ	2
-bales			2	NNS	2
+bales			3	NNS	3
 balk			3	VB	2	VBP	1
 balkanized		1	JJ	1
 balked			7	VBD	7
 balking			2	VBG	2
-ball			63	NN	63
+ball			64	NN	64
 ball-bearing		1	NN	1
 ballads			2	NNS	2
 ballet			11	NN	11
 ballistic		3	JJ	3
-balloon			16	NN	15	VB	1
+balloon			17	NN	16	VB	1
 ballooned		1	VBD	1
-ballooning		10	NN	8	VBG	2
+ballooning		10	NN	7	VBG	3
 balloonists		3	NNS	3
 balloons		4	NNS	4
-ballot			18	NN	17	VB	1
+ballot			19	NN	18	VB	1
 balloting		6	NN	6
 ballots			3	NNS	3
 ballpark		3	NN	3
@@ -21800,16 +21869,16 @@ ballyhoo		1	NN	1
 ballyhooed		1	VBN	1
 balmy			2	JJ	2
 balsa-wood		1	NN	1
-bamboo			12	JJ	7	NN	5
+bamboo			12	JJ	6	NN	6
 bamboozle		1	VB	1
 bamboozled		1	VBN	1
-ban			42	NN	31	VB	10	VBP	1
+ban			44	NN	33	VB	10	VBP	1
 banal			2	JJ	2
 banana			2	NN	2
-bananas			4	NNS	4
+bananas			5	NNS	5
 band			39	NN	38	VB	1
 band-wagon		1	JJ	1
-bandage			5	NN	5
+bandage			6	NN	6
 bandaged		2	VBN	2
 bandages		5	NNS	5
 banded			2	VBN	2
@@ -21819,14 +21888,14 @@ bands			7	NNS	7
 bandwagon		3	NN	3
 bane			2	NN	2
 bang			12	NN	8	RB	2	VB	2
-banged			4	VBD	2	VBN	2
+banged			4	VBD	3	VBN	1
 banging			3	NN	1	VBG	2
 bangles			1	NNS	1
 bangs			1	VBZ	1
 banish			1	VB	1
 banished		3	VBN	3
 banishment		1	NN	1
-bank			326	NN	326
+bank			327	NN	327
 bank-backed		7	JJ	7
 bank-debt		1	NN	1
 bank-giro		1	NN	1
@@ -21844,8 +21913,8 @@ bankruptcy-court	4	JJ	1	NN	3
 bankruptcy-law		18	JJ	1	NN	17
 bankruptcy-reorganization	1	NN	1
 bankrupty-law		1	NN	1
-banks			267	NNS	267
-banned			24	VBD	5	VBN	19
+banks			268	NNS	268
+banned			25	VBD	6	VBN	19
 banner			5	NN	5
 banners			6	NNS	6
 banning			15	NN	1	VBG	14
@@ -21855,29 +21924,30 @@ banshee			1	NN	1
 bantered		1	VBD	1
 baptism			3	NN	3
 baptized		1	VBN	1
-bar			58	NN	55	VB	3
+bar			60	NN	57	VB	3
 barb			1	NN	1
 barbarians		1	NNS	1
 barbaric		2	JJ	2
 barbarities		1	NNS	1
 barbarous		4	JJ	4
 barbecue		2	NN	2
-barbed			6	JJ	2	VBN	4
+barbed			7	JJ	2	VBN	5
 barber			2	NN	2
 barbers			3	NNS	3
-bare			28	JJ	28
+bare			31	JJ	31
 bare-bones		1	JJ	1
 bareback		1	NN	1
 bared			2	JJ	1	VBD	1
 barefoot		8	JJ	7	RB	1
 bareheaded		1	JJ	1
-barely			33	RB	33
+barely			38	RB	38
 barest			3	JJS	3
-bargain			12	NN	12
+bargain			15	NN	15
+bargain!		1	NN	1
 bargain-basement	2	JJ	1	NN	1
 bargain-hunting		2	NN	2
 bargained		1	VBN	1
-bargaining		11	NN	11
+bargaining		12	NN	12
 bargains		8	NNS	8
 barge			4	NN	3	VB	1
 barged			1	VBN	1
@@ -21886,7 +21956,7 @@ barging			1	VBG	1
 baring			1	VBG	1
 baritone		3	NN	3
 baritones		1	NNS	1
-bark			6	JJ	1	NN	3	VB	2
+bark			7	JJ	1	NN	4	VB	2
 bark-nibbling		1	JJ	1
 barked			2	VBD	2
 barking			6	NN	1	VBG	5
@@ -21895,7 +21965,7 @@ barley			2	NN	2
 barmaid			1	NN	1
 barman			1	NN	1
 barmy			3	JJ	2	RB	1
-barn			7	NN	7
+barn			8	NN	8
 barns			1	NNS	1
 barnyard		1	NN	1
 barometer		7	NN	7
@@ -21907,7 +21977,7 @@ baroque			3	JJ	3
 barracks		1	NN	1
 barrage			6	NN	6
 barred			19	VBD	4	VBN	15
-barrel			23	NN	23
+barrel			24	NN	24
 barrel-a-day		1	JJ	1
 barrels			30	NNS	30
 barren			4	JJ	4
@@ -21923,16 +21993,16 @@ bars			21	NNS	20	VBZ	1
 bartender		2	NN	2
 barter			2	NN	1	VB	1
 bartering		1	NN	1
-base			109	JJ	10	NN	95	VB	2	VBP	2
+base			110	JJ	10	NN	96	VB	2	VBP	2
 base-price		1	NN	1
 baseball		44	NN	44
 baseball-loving		1	JJ	1
 baseballs		1	NNS	1
-based			211	VBD	3	VBN	208
+based			212	VBD	3	VBN	209
 baseless		2	JJ	2
 baseline		7	JJ	1	NN	6
 baseman			2	NN	2
-basement		8	NN	8
+basement		10	NN	10
 basements		1	NNS	1
 bases			27	NNS	26	VBZ	1
 basest			1	JJS	1
@@ -21940,13 +22010,13 @@ bash			3	NN	2	VB	1
 bashed			3	VBD	2	VBN	1
 bashful			2	JJ	2
 bashing			4	VBG	4
-basic			61	JJ	60	NN	1
+basic			62	JJ	61	NN	1
 basically		22	RB	22
 basics			2	NNS	2
-basin			7	NN	7
+basin			8	NN	8
 basing			2	VBG	2
-basins			2	NNS	2
-basis			94	NN	94
+basins			3	NNS	3
+basis			99	NN	99
 basked			2	VBD	1	VBN	1
 basket			45	NN	45
 basket-weaving		1	VBG	1
@@ -21965,19 +22035,20 @@ bastions		1	NNS	1
 bat			6	NN	5	VB	1
 batch			6	NN	6
 batches			1	NNS	1
-bath			32	NN	32
+bath			35	NN	35
 bath-tub		1	NN	1
 bathe			4	VB	4
 bathed			5	VBN	5
-bathers			1	NNS	1
-bathing			4	NN	4
-bathroom		27	NN	27
-bathrooms		3	NNS	3
+bathers			2	NNS	2
+bathing			6	NN	6
+bathroom		29	NN	29
+bathrooms		4	NNS	4
 baths			4	NNS	4
 batik			1	NN	1
 batiks			1	NNS	1
 baton-changing		1	NN	1
 bats			7	NNS	7
+batsman			1	NN	1
 batsmen			1	NNS	1
 battalion		6	NN	6
 battalions		1	NNS	1
@@ -21987,12 +22058,12 @@ battered		9	JJ	1	VBD	1	VBN	7
 battered-child		1	NN	1
 batteries		11	NNS	11
 battering		5	NN	3	VBG	2
-battery			23	NN	23
+battery			24	NN	24
 battery-operated	1	JJ	1
 battery-powered		1	JJ	1
 batterys		1	VBZ	1
 batting			5	NN	4	VBG	1
-battle			114	NN	113	VBP	1
+battle			115	NN	114	VBP	1
 battle-axe		1	NN	1
 battle-ground		1	JJ	1
 battled			4	VBD	4
@@ -22007,18 +22078,18 @@ battleships		2	NNS	2
 battling		4	VBG	4
 batty			1	JJ	1
 baulk			1	VB	1
-bawl			1	VBP	1
-bawling			1	NN	1
-bay			6	NN	6
+bawl			1	VB	1
+bawling			1	VBG	1
+bay			8	NN	8
 baying			1	VBG	1
 bayonet			1	JJ	1
 bays			1	NNS	1
 bazaar			2	NN	2
 bazaars			1	NNS	1
-be			4691	VB	4691
+be			4840	VB	4840
 be!			1	VB	1
 be)			1	VB	1
-beach			47	NN	47
+beach			48	NN	48
 beach?			1	NN	1
 beached			2	JJ	2
 beaches			11	NNS	11
@@ -22027,20 +22098,20 @@ beachhead		1	NN	1
 beacon			3	NN	3
 bead			1	JJ	1
 beaded			1	JJ	1
-beads			9	NNS	9
+beads			10	NNS	10
 beak			5	NN	5
 beakers			1	NNS	1
 beam			6	NN	5	VB	1
-beamed			1	VBN	1
-beaming			2	JJ	1	VBG	1
+beamed			4	VBN	4
+beaming			3	JJ	1	VBG	2
 beams			1	NNS	1
 bean			2	NN	2
 bean-counting		1	NN	1
 beanballs		1	NNS	1
 beans			19	NNS	19
-bear			43	NN	13	VB	25	VBP	5
+bear			46	NN	14	VB	27	VBP	5
 bearable		4	JJ	4
-beard			10	NN	10
+beard			10	JJ	2	NN	8
 bearded			2	JJ	2
 beards			1	NNS	1
 bearer			3	NN	3
@@ -22055,29 +22126,29 @@ beasties		1	NNS	1
 beastly			3	JJ	3
 beasts			5	NNS	5
 beastsa			1	NN	1
-beat			59	JJ	1	NN	13	VB	24	VBD	16	VBP	5
+beat			59	JJ	1	NN	12	VB	24	VBD	18	VBP	4
 beaten			18	JJ	2	VBN	16
 beater			1	NN	1
-beating			16	NN	8	VBG	8
+beating			18	NN	9	VBG	9
 beatings		3	NNS	3
 beats			8	NNS	2	VBZ	6
 beaut			1	NN	1
 beauties		3	NNS	3
-beautiful		72	JJ	72
+beautiful		83	JJ	83
 beautifully		9	RB	9
 beautifully?		1	JJ	1
 beautifying		1	VBG	1
-beauty			36	NN	36
-became			257	VBD	257
+beauty			39	NN	39
+became			264	VBD	264
 becase			1	IN	1
-because			795	IN	761	RB	34
+because			801	IN	767	RB	34
 beckon			1	VBP	1
-beckoned		1	VBN	1
+beckoned		5	VBD	2	VBN	3
 beckoning		2	NN	1	VBG	1
-become			314	VB	155	VBD	1	VBN	130	VBP	28
-becomes			45	VBZ	45
-becoming		73	VBG	73
-bed			108	NN	108
+become			323	VB	158	VBD	1	VBN	135	VBP	29
+becomes			48	VBZ	48
+becoming		74	VBG	74
+bed			117	NN	117
 bed-clothes		1	NNS	1
 bed-jacket		1	NN	1
 bed-making		1	JJ	1
@@ -22093,10 +22164,10 @@ bedfellows		2	NNS	2
 bedlam			2	NN	2
 bedraggled		2	JJ	2
 bedrock			4	NN	4
-bedroom			32	NN	32
+bedroom			33	NN	33
 bedrooms		4	NNS	4
 beds			13	NNS	13
-bedside			9	NN	9
+bedside			11	NN	11
 bedsitters		1	NNS	1
 bedspreads		1	NNS	1
 bedsteads		1	NNS	1
@@ -22104,58 +22175,60 @@ bedtime			7	JJ	2	NN	5
 bee			6	NN	6
 beech			6	JJ	1	NN	4	UH	1
 beeches			3	NNS	3
-beef			18	NN	18
+beef			19	NN	19
 beefing			2	VBG	2
 beefy			1	JJ	1
-been			2314	VBN	2314
+been			2403	VBN	2403
 beep			1	NN	1
 beeper			5	JJR	1	NN	4
 beeping			3	NN	2	VBG	1
-beer			62	NN	62
+beer			64	NN	64
 beer-belly		1	NN	1
 beer-distribution	1	NN	1
 beer-industry		1	NN	1
 beers			3	NNS	3
-bees			9	NNS	9
+bees			10	NNS	10
 beeswax			2	NN	2
 beet			1	NN	1
 beetle			4	JJ	1	NN	3
 beetled			1	VBN	1
 beetles			5	NNS	5
 beetroot		2	JJ	2
+beetroot?No		1	NN	1
 befall			2	VBP	2
 befallen		1	VBN	1
 befell			2	VBD	2
-befits			2	JJ	1	VBZ	1
+befits			2	VBZ	2
 befitting		1	JJ	1
-before			673	IN	617	JJ	2	RB	54
+before			683	IN	628	JJ	2	RB	53
 before?			1	NNP	1
 beforehand		5	RB	5
 befriended		1	VBN	1
 befuddle		1	VB	1
 befuddled		1	VBD	1
-beg			4	VB	4
-began			374	VBD	374
-begets			1	NNS	1
+beg			5	VB	5
+began			390	VBD	390
+begets			1	VBZ	1
 beggar			4	JJ	1	NN	3
 beggar-thy-neighbor	1	JJ	1
 beggarly		2	JJ	1	RB	1
 beggars			5	NNS	5
-begged			6	VBN	6
+begged			7	VBN	7
 begging			3	VBG	3
-begin			118	VB	105	VBP	13
+begin			119	VB	105	VBP	14
 begining		1	NN	1
 beginner		2	NN	2
 beginners		3	NNS	3
-beginning		134	NN	48	VBG	86
-begins			43	VBZ	43
+beginning		143	NN	53	VBG	90
+beginnings		1	NNS	1
+begins			44	VBZ	44
 begot			2	VBD	2
 begrudge		1	VB	1
 begrudging		1	JJ	1
 begs			1	VBZ	1
 beguile			1	VB	1
 beguiling		1	JJ	1
-begun			51	VBN	51
+begun			52	VBN	52
 behalf			29	NN	29
 behave			13	VB	13
 behaved			10	VBD	7	VBN	3
@@ -22164,13 +22237,13 @@ behaving		10	VBG	10
 behavior		9	NN	9
 behavior-modification	1	NN	1
 behavioral		1	JJ	1
-behaviour		68	JJ	8	NN	58	VB	2
+behaviour		72	JJ	10	NN	60	VB	1	or	1
 beheading		1	NN	1
 beheld			1	VBN	1
 behemoth		1	NN	1
 behemoths		1	NNS	1
 behest			4	NN	4
-behind			195	IN	175	NN	1	RB	18	RP	1
+behind			200	IN	176	NN	1	RB	22	RP	1
 behind-schedule		1	JJ	1
 behind-the-scenes	2	JJ	2
 behindhand		1	RB	1
@@ -22178,7 +22251,7 @@ behold			1	VB	1
 beholden		1	JJ	1
 beholder		1	NN	1
 beige			4	JJ	3	NN	1
-being			636	JJ	2	NN	11	VBG	622	VBG|JJ	1
+being			651	JJ	2	NN	11	VBG	637	VBG|JJ	1
 beings			17	NNS	17
 belabour		2	VB	2
 belated			5	JJ	5
@@ -22188,18 +22261,18 @@ belfries		1	NNS	1
 belfry			3	NN	3
 belie			3	VB	1	VBP	2
 belied			2	VBD	2
-belief			40	NN	40
+belief			41	IN	1	NN	40
 beliefs			11	NNS	11
 believable		3	JJ	3
-believe			185	VB	64	VBP	121
-believed		82	VBD	45	VBN	37
+believe			198	VB	70	VBP	128
+believed		86	VBD	49	VBN	37
 believer		10	NN	10
 believers		3	NNS	3
 believes		66	VBZ	66
-believing		5	VBG	5
+believing		7	VBG	7
 belittle		1	VB	1
 belittled		1	VBD	1
-bell			29	NN	29
+bell			34	NN	34
 bell-ringer		1	NN	1
 bell-ringing		1	JJ	1
 belle			2	FW	1	NN	1
@@ -22216,13 +22289,13 @@ belly			11	NN	11
 belly-flopped		1	VBD	1
 belly-up		1	RB	1
 bellyaching		1	VBG	1
-belong			24	VB	10	VBP	14
+belong			25	VB	10	VBP	15
 belonged		6	VBD	6
 belonging		10	VBG	10
-belongings		8	NNS	8
+belongings		8	NN	2	NNS	6
 belongs			12	VBZ	12
-beloved			5	JJ	4	NN	1
-below			157	IN	141	RB	16
+beloved			9	JJ	8	NN	1
+below			165	IN	146	RB	19
 belt			17	NN	17
 belted			5	JJ	1	VBD	3	VBN	1
 belting			2	VBG	2
@@ -22237,14 +22310,14 @@ benchmarks		1	NNS	1
 bend			8	VB	8
 bender			1	NN	1
 bending			5	VBG	5
-bends			4	NNS	2	VBZ	2
-beneath			44	IN	41	RB	3
+bends			4	NNS	1	VBZ	3
+beneath			46	IN	43	RB	3
 benefactor		2	NN	2
 beneficent		1	JJ	1
 beneficial		19	JJ	19
 beneficiaries		10	NNS	10
 beneficiary		3	NN	3
-benefit			72	NN	36	VB	33	VBP	3
+benefit			73	NN	34	VB	34	VBP	5
 benefit-plan		1	JJ	1
 benefited		17	VBD	12	VBN	5
 benefiting		2	VBG	2
@@ -22252,7 +22325,7 @@ benefits		77	NNS	74	VBZ	3
 benevolent		4	JJ	4
 benighted		2	JJ	2
 benign			9	JJ	8	RB	1
-bent			24	JJ	9	NN	13	VB	2
+bent			24	JJ	10	NN	12	VB	2
 bequeathed		2	VBD	2
 bequest			1	NN	1
 bequests		4	NNS	4
@@ -22265,18 +22338,18 @@ berries			11	NNS	11
 berry			1	NN	1
 berserk			1	JJ	1
 berth			1	NN	1
-berthed			1	VBN	1
+berthed			1	VBD	1
 beseech			1	VBP	1
 beseeching		3	JJ	2	VBG	1
 beset			2	JJ	1	VBN	1
-beside			30	IN	26	RB	4
+beside			31	IN	27	RB	4
 besides			8	IN	8
 besieged		7	JJ	1	VBN	6
 besmirch		1	VB	1
 besotted		2	JJ	2
 bespeaks		1	VBZ	1
 bespectacled		2	JJ	2
-best			233	JJ	3	JJS	198	NN	3	RB	14	RBS	15
+best			243	JJ	3	JJS	205	NN	7	RB	13	RBS	15
 best-actor		1	NN	1
 best-known		2	JJ	1	JJS	1
 best-of-seven		1	JJ	1
@@ -22286,7 +22359,7 @@ best-seller		3	NN	3
 best-selling		2	JJS	2
 bested			3	VBD	1	VBN	2
 bestirred		1	VBN	1
-bestthe			1	JJ	1
+bestthe			2	JJ	2
 besuboru		1	FW	1
 bet			29	NN	15	RB	1	VB	5	VBD	7	VBN	1
 beta-blocker		1	NN	1
@@ -22301,32 +22374,32 @@ betrays			1	VBZ	1
 betrothal		1	NN	1
 betrothed		4	JJ	1	NNS	3
 bets			4	NNS	4
-better			273	JJ	4	JJR	167	RB	48	RBR	53	RBR|JJR	1
+better			291	JJ	6	JJR	179	RB	51	RBR	54	RBR|JJR	1
 better-known		1	JJ	1
 better-off		1	JJ	1
 better-than-average	1	JJ	1
 better-than-expected	1	JJ	1
-better.			1	IN	1
+better.			1	NN	1
 better.As		1	NNS	1
 better?Lots		1	NNS	1
 bettered		1	JJ	1
 betterment		2	NN	2
 betting			12	VBG	12
-between			711	IN	711
+between			734	IN	734
 beverage		3	NN	3
 beverages		3	NNS	3
 bevy			4	NN	4
 bewail			1	VB	1
 beware			3	VB	3
 bewilder		2	VB	1	VBP	1
-bewildered		4	VBN	4
+bewildered		8	JJ	4	VBN	4
 bewildering		3	JJ	3
 bewitched		4	VBN	4
 bewitching		1	VBG	1
-beyond			92	IN	87	RB	5
+beyond			93	IN	88	RB	5
 biannual		2	JJ	2
 bias			19	NN	17	VB	2
-biased			4	JJ	3	VBN	1
+biased			5	JJ	3	VBN	2
 biassed			1	VBN	1
 bible			6	JJ	1	NN	5
 bibliography		1	NN	1
@@ -22334,10 +22407,10 @@ bicameral		1	JJ	1
 bicentennial		3	JJ	1	NN	2
 bicker			1	VB	1
 bickered		1	VBN	1
-bickering		4	NN	4
-bicycle			21	NN	21
+bickering		4	NN	3	VBG	1
+bicycle			22	NN	22
 bicycled		1	VBN	1
-bicycles		2	NNS	2
+bicycles		3	NNS	3
 bicycling		1	NN	1
 bid			252	NN	213	VB	20	VBD	13	VBN	5	VBP	1
 bid-to-cover		2	JJ	1	NN	1
@@ -22351,7 +22424,7 @@ biennial		3	JJ	3
 biff			1	NN	1
 biffed			1	VBD	1
 bifurcated		1	JJ	1
-big			465	JJ	465
+big			474	JJ	474
 big-boned		1	JJ	1
 big-business		1	NN	1
 big-headed		1	JJ	1
@@ -22361,12 +22434,12 @@ big-souled		1	JJ	1
 big-ticket		5	JJ	5
 big-time		6	JJ	6
 bigger			43	JJR	43
-biggest			105	JJS	105
+biggest			107	JJS	107
 bigot			1	NN	1
 bigoted			2	JJ	2
 bigotry			2	NN	2
 bigwig			1	NN	1
-bike			15	NN	15
+bike			16	NN	16
 bike.Oh			1	NN	1
 bikes			14	NNS	14
 biking			2	NN	2
@@ -22376,13 +22449,14 @@ bilateral		4	JJ	4
 bilge			2	NN	2
 bilingual		2	JJ	2
 bilking			1	VBG	1
-bill			254	NN	251	VB	1	VBP	2
+bill			255	NN	252	VB	1	VBP	2
 billboards		1	NNS	1
 billed			5	VBD	1	VBN	4
 billeted		1	VBN	1
+billiard		1	JJ	1
 billing			16	NN	13	VBG	3
 billings		6	NNS	6
-billion			1159	CD	1159
+billion			1160	CD	1160
 billion-a-year		1	JJ	1
 billion-dollar		5	JJ	5
 billion-pound		1	JJ	1
@@ -22392,9 +22466,9 @@ billions		17	NNS	17
 billow			1	NN	1
 billowed		3	VBD	1	VBN	2
 billows			2	NNS	2
-bills			136	NNS	136
+bills			137	NNS	137
 bimonthly		2	JJ	2
-bin			7	NN	7
+bin			8	NN	8
 binary			3	JJ	3
 bind			6	NN	5	VB	1
 binder			4	NN	4
@@ -22429,52 +22503,53 @@ bipartisanship		1	NN	1
 biped			1	NN	1
 birch			4	JJ	1	NN	3
 birches			1	NNS	1
-bird			43	NN	43
+bird			47	NN	47
 bird's-eye		1	JJ	1
 bird-like		1	JJ	1
+bird?It			1	NN	1
 birdcage		1	NN	1
 birdlike		1	JJ	1
-birds			74	NNS	74
+birds			80	NNS	80
 birds?Thirty-five	1	JJ	1
 birth			33	NN	33
 birth-control		3	JJ	1	NN	2
-birthday		24	NN	24
+birthday		25	NN	25
 birthday!		1	NNP	1
 birthdays		2	NNS	2
 birthmark		1	NN	1
-birthplace		4	NN	4
+birthplace		5	NN	5
 birthright		1	NN	1
-births			2	NNS	2
+births			3	NNS	3
 biscuit			4	NN	4
 biscuit.No		1	NN	1
 biscuits		2	NNS	2
 bisects			1	VBZ	1
 bishop			8	NN	8
-bishops			5	JJ	1	NNS	2	VBZ	2
+bishops			5	NNS	3	VBZ	2
 bison			1	NN	1
 bistros			1	NNS	1
-bit			234	NN	223	RB	11
+bit			244	NN	234	RB	10
 bit?			1	NN	1
 bitch			3	NN	2	VB	1
 bitches			2	NNS	1	VBZ	1
 bitchy			1	JJ	1
-bite			14	NN	10	VB	4
+bite			15	NN	10	VB	5
 bite-sized		1	JJ	1
 bites			10	NNS	7	VBZ	3
 biting			12	JJ	6	VBG	6
 bits			23	NNS	23
 bitten			8	VBN	8
-bitter			36	JJ	36
+bitter			38	JJ	38
 bitter-sweet		2	JJ	2
 bitterest		3	JJS	3
-bitterly		11	RB	11
+bitterly		12	RB	12
 bitterness		8	NN	8
 bitty			1	JJ	1
 bivouacked		1	VBN	1
 bizarre			9	JJ	9
 blabbed			1	VBD	1
 blabbing		1	VBG	1
-black			222	JJ	217	NN	5
+black			228	JJ	223	NN	5
 black-and-white		8	JJ	8
 black-draped		1	JJ	1
 black-faced		1	JJ	1
@@ -22500,26 +22575,26 @@ blackmail		4	VB	4
 blackmailed		1	VBN	1
 blackmailers		1	NNS	1
 blackness		1	NN	1
-blackout		3	NN	3
+blackout		4	NN	4
 blackouts		1	NNS	1
 blacks			32	NNS	32
 blacksmiths		1	NNS	1
 bladder			3	NN	3
 bladders		1	NNS	1
 blade			7	NN	7
-blades			10	NNS	10
+blades			12	NNS	12
 blame			41	NN	15	VB	17	VBP	9
-blamed			30	VBD	14	VBN	16
+blamed			31	VBD	14	VBN	17
 blameless		2	JJ	2
 blames			7	VBZ	7
 blameworthy		1	JJ	1
 blaming			2	VBG	2
 bland			1	JJ	1
-blank			19	JJ	16	NN	3
+blank			20	JJ	17	NN	3
 blanket			12	NN	10	VB	1	VBP	1
 blanketed		1	VBD	1
 blanketing		1	VBG	1
-blankets		19	NNS	19
+blankets		20	NNS	20
 blare			3	NN	3
 blared			1	VBD	1
 blaring			1	VBG	1
@@ -22532,7 +22607,7 @@ blasphemy		1	NN	1
 blast			12	NN	10	VB	2
 blasted			4	VBD	4
 blasting		3	NN	1	VBG	2
-blasts			7	NNS	7
+blasts			8	NNS	8
 blatant			2	JJ	2
 blaze			7	NN	6	VBP	1
 blazed			1	VBN	1
@@ -22543,15 +22618,15 @@ blazoned		1	VBD	1
 bleach			10	NN	9	VB	1
 bleached		1	JJ	1
 bleaches		1	VBZ	1
-bleak			16	JJ	16
+bleak			17	JJ	17
 bleary			1	JJ	1
 bleat			1	NN	1
 bleated			1	VBN	1
-bleating		1	VBG	1
+bleating		2	NN	1	VBG	1
 bleats			1	NNS	1
 bled			3	VBD	3
 bleed			2	VB	2
-bleeding		9	NN	3	VBG	6
+bleeding		10	NN	4	VBG	6
 bleeps			1	NNS	1
 blemish			2	NN	2
 blemished		1	VBN	1
@@ -22563,10 +22638,10 @@ blender			3	NN	3
 blending		5	NN	2	VBG	3
 blends			1	NNS	1
 bless			5	VB	5
-blessed			12	JJ	5	RB	1	VBN	6
+blessed			10	JJ	4	VBN	6
 blessing		13	NN	13
 blethering		1	VBG	1
-blew			28	VBD	28
+blew			33	VBD	33
 blight			2	NN	2
 blighted		3	JJ	3
 blighter		1	NN	1
@@ -22581,12 +22656,12 @@ blindness		2	NN	2
 blinds			3	NNS	3
 blink			5	NN	5
 blinked			5	VBD	5
-blinkers		2	NNS	2
-blinking		1	RB	1
+blinkers		2	NN	1	NNS	1
+blinking		2	RB	2
 blinks			1	VBZ	1
 blip			2	VB	1	VBP	1
 blips			1	NNS	1
-bliss			4	NNS	4
+bliss			4	JJ	1	NNS	3
 blissful		5	JJ	5
 blister			2	NN	2
 blistered		1	VBN	1
@@ -22601,7 +22676,7 @@ bloated			2	JJ	2
 blob			2	NN	2
 blobs			1	NNS	1
 bloc			15	NN	15
-block			84	JJ	1	NN	45	VB	38
+block			86	JJ	1	NN	47	VB	38
 blockade		5	NN	5
 blockaded		1	VBD	1
 blockage		1	NN	1
@@ -22610,11 +22685,11 @@ blocked			11	VBD	2	VBN	9
 blocking		12	VBG	12
 blocks			22	NNS	21	VBZ	1
 blocs			2	NNS	2
-bloke			8	NN	6	VB	2
+bloke			8	NN	7	VB	1
 blond			6	JJ	6
 blonde			21	JJ	20	NN	1
 blondes			1	NNS	1
-blood			104	NN	104
+blood			108	NN	108
 blood!			1	NN	1
 blood-and-guts		1	JJ	1
 blood-cell		1	NN	1
@@ -22631,16 +22706,16 @@ bloods			1	NNS	1
 bloodstained		1	JJ	1
 bloodstream		2	NN	2
 bloodthirsty		1	JJ	1
-bloody			11	JJ	11
+bloody			12	JJ	12
 bloody-minded		1	JJ	1
 bloom			1	NN	1
 bloomed			1	VBN	1
 bloomer			1	NN	1
 blooming		3	JJ	2	VBG	1
-blooms			4	NNS	3	VBZ	1
+blooms			4	NNS	2	VBZ	2
 blossom			2	NN	2
 blossomed		5	VBD	2	VBN	3
-blossoming		1	JJ	1
+blossoming		1	VBG	1
 blossoms		4	NNS	4
 blot			1	NN	1
 blotched		1	JJ	1
@@ -22649,22 +22724,22 @@ blots			1	NNS	1
 blotted			1	VBD	1
 blotting		2	VBG	2
 blouse			5	NN	5
-blow			51	NN	43	VB	8
+blow			52	NN	44	VB	8
 blow-dried		1	VBD	1
 blow-dry		2	NN	2
 blow-out		2	NN	2
 blow-up			1	NN	1
 blowed			1	VBD	1
 blower			1	NN	1
-blowing			11	VBG	11
+blowing			13	VBG	13
 blowlamp		1	NN	1
-blown			12	VBN	12
-blows			9	NNS	9
+blown			15	VBN	15
+blows			10	NNS	10
 blowtorch		1	NN	1
 blowup			1	NN	1
 bludgeon		2	VB	2
 bludgeoned		1	VBN	1
-blue			106	JJ	90	NN	16
+blue			109	JJ	93	NN	16
 blue-black		1	JJ	1
 blue-chip		22	JJ	22
 blue-chips		1	NNS	1
@@ -22677,7 +22752,7 @@ bluff			6	NN	4	VB	2
 bluish			1	JJ	1
 blunder			4	NN	3	VB	1
 blundered		1	VBD	1
-blunt			8	JJ	7	VB	1
+blunt			9	JJ	8	VB	1
 blunted			3	VBD	1	VBN	2
 bluntly			3	RB	3
 blur			4	NN	2	VB	2
@@ -22685,42 +22760,42 @@ blurb			2	NN	2
 blurred			6	VBD	6
 blurring		1	VBG	1
 blurry			2	JJ	2
-blurted			2	VBD	2
+blurted			3	VBD	2	VBN	1
 blurting		2	VBG	2
 blush			2	NN	2
 blushed			1	VBD	1
-blushing		2	JJ	1	VBG	1
+blushing		2	NN	1	VBG	1
 blustered		1	VBD	1
 blustering		1	VBG	1
 boa			1	NN	1
-boar			1	NN	1
-board			243	NN	243
+boar			1	JJ	1
+board			246	NN	246
 boarded			4	VBD	3	VBN	1
-boarding		9	VBG	9
+boarding		10	VBG	10
 boardroom		7	NN	7
 boardrooms		1	NNS	1
-boards			23	NNS	23
+boards			24	NNS	24
 boars			2	NNS	2
-boast			6	NN	2	VB	2	VBP	2
+boast			6	NN	3	VB	2	VBP	1
 boasted			6	VBD	4	VBN	2
 boasts			6	VBZ	6
-boat			68	NN	68
+boat			72	NN	72
 boaters			1	NNS	1
 boating			4	VBG	4
 boatload		1	NN	1
 boats			14	NNS	14
 bob			4	NN	4
-bobbed			6	JJ	1	VBD	3	VBN	2
+bobbed			6	VBD	3	VBN	3
 bobbing			5	VBG	5
 bobble			1	JJ	1
 bode			2	VB	2
 bodegas			1	NNS	1
 bodes			1	VBZ	1
 bodge			2	NN	1	VB	1
-bodice			5	NN	5
-bodies			38	NNS	38
-bodily			3	JJ	2	RB	1
-body			133	NN	133
+bodice			5	NN	3	NNS	2
+bodies			40	NNS	40
+bodily			4	JJ	2	RB	2
+body			142	NN	142
 bodyguard		2	NN	2
 bodyguards		1	NNS	1
 bodys			2	JJ	2
@@ -22733,9 +22808,9 @@ bogged			1	VBD	1
 bogging			1	VBG	1
 boggle			2	VB	2
 boggled			1	VBN	1
-boggles			1	NNS	1
+boggles			1	VBZ	1
 bogus			2	JJ	2
-boil			8	NN	4	VB	4
+boil			8	NN	5	VB	3
 boiled			7	VBD	7
 boiler			3	NN	3
 boilers			3	NNS	3
@@ -22753,7 +22828,7 @@ bolsters		1	VBZ	1
 bolt			7	NN	5	VB	2
 bolted			4	VBN	4
 bolts			6	NNS	6
-bomb			29	NN	29
+bomb			32	NN	32
 bombarded		3	VBD	2	VBN	1
 bombarding		2	VBG	2
 bombardment		4	NN	4
@@ -22762,7 +22837,7 @@ bombed			3	VBN	3
 bombed-out		1	JJ	1
 bomber			5	NN	5
 bombers			4	NNS	4
-bombing			22	NN	22
+bombing			22	NN	20	VBG	2
 bombings		5	NNS	5
 bomblets		1	NNS	1
 bombs			11	NNS	11
@@ -22770,7 +22845,7 @@ bombshell		3	NN	3
 bombsite		1	NN	1
 bon			1	FW	1
 bonanza			3	NN	3
-bond			182	NN	182
+bond			183	NN	183
 bond-equivalent		3	JJ	3
 bond-holders		1	NNS	1
 bond-price		2	JJ	2
@@ -22792,18 +22867,20 @@ bonsai			1	NN	1
 bonus			14	NN	14
 bonuses			9	NNS	9
 bony			9	JJ	9
-boo			1	VB	1
+boo			2	VB	2
 boob			1	NN	1
 booby			1	JJ	1
 booby-trap		1	NN	1
 booby-trapped		2	VBN	2
+booed			2	VBD	2
 boogied			1	VBD	1
 boogieman		1	NN	1
 boohooing		1	VBG	1
-booing			1	VBG	1
-book			248	NN	242	VB	6
+booing			2	VBG	2
+book			260	NN	254	VB	6
 book-entry		1	JJ	1
 book-keeping		1	NN	1
+book-purchasing		1	VBG	1
 book?			3	NN	3
 bookcase		1	NN	1
 booked			9	VBD	3	VBN	6
@@ -22812,28 +22889,29 @@ booking			9	NN	7	VBG	2
 bookings		3	NNS	3
 bookish			1	JJ	1
 bookkeeping		1	NN	1
-booklet			4	NN	4
+booklet			5	NN	5
 booklets		6	NNS	6
 bookmakers		2	NNS	2
-books			147	NNS	147
+books			158	NNS	158
+books?			1	NN	1
 bookseller		1	NN	1
 booksellers		1	NNS	1
 bookshelves		5	NNS	5
 bookshop		4	NN	4
 bookshops		1	NNS	1
 bookstore		1	NN	1
-boom			38	JJ	1	NN	35	VB	2
+boom			42	JJ	1	NN	39	VB	2
 boom-or-bust		1	JJ	1
 boomed			2	VBD	1	VBN	1
-boomerang		1	VBG	1
+boomerang		1	VB	1
 boomers			1	NNS	1
-booming			13	JJ	8	VBG	5
+booming			13	JJ	7	VBG	6
 booms			2	NNS	2
 boon			4	NN	4
 boorish			2	JJ	2
 boos			1	NNS	1
 boost			71	NN	22	VB	48	VBP	1
-boosted			35	VBD	19	VBN	16
+boosted			36	VBD	19	VBN	17
 boosters		3	NNS	3
 boosting		12	VBG	12
 boosts			11	NNS	3	VBZ	8
@@ -22842,7 +22920,7 @@ booted			1	VBD	1
 booth			2	NN	2
 booths			2	NNS	2
 bootleggers		1	NNS	1
-boots			23	NNS	23
+boots			24	NNS	24
 booze			1	VB	1
 boozer			2	NN	2
 boozing			1	VBG	1
@@ -22850,18 +22928,18 @@ boozy			1	JJ	1
 bop			2	NN	2
 bopped			1	VBN	1
 bopping			1	VBG	1
-border			33	NN	33
+border			34	NN	34
 bordered		3	VBN	3
 bordering		2	VBG	2
 borderland		1	NN	1
 borderline		4	JJ	2	NN	2
-borders			7	NNS	7
-bore			28	NN	2	VB	1	VBD	25
-bored			23	JJ	9	VBN	14
+borders			7	NNS	6	VBZ	1
+bore			28	VBD	28
+bored			24	JJ	9	VBN	15
 bored!For		1	NN	1
 boredom			11	NN	11
 borer			1	NN	1
-boring			27	JJ	25	NN	1	VBG	1
+boring			29	JJ	26	NN	1	VBG	2
 boringly		1	RB	1
 born			41	VBN	41
 borne			4	VBN	4
@@ -22876,11 +22954,11 @@ borrowings		9	NNS	9
 borrows			2	VBZ	2
 borstal			1	NN	1
 borstals		1	NNS	1
-bosh			1	NN	1
+bosh			1	UH	1
 bosom			9	NN	9
 bosoms			1	NNS	1
 boss			37	NN	37
-bosses			13	NNS	13
+bosses			14	NNS	14
 bossiness		2	NN	2
 bosss			2	JJ	2
 bossy			2	JJ	2
@@ -22890,27 +22968,27 @@ botanists		1	NNS	1
 botch			3	NN	2	VB	1
 botch-up		1	NN	1
 botched			5	JJ	3	VBN	2
-both			366	CC	38	CD	1	DT	304	PDT	23
-bother			17	NN	3	VB	12	VBP	2
+both			376	CC	29	CD	1	DT	320	PDT	26
+bother			21	NN	3	VB	15	VBP	3
 bothered		11	VBD	3	VBN	8
-bothering		2	VBG	2
+bothering		3	VBG	3
 bothersome		1	JJ	1
-bottle			79	NN	78	VB	1
+bottle			82	NN	81	VB	1
 bottle-opener		1	NN	1
 bottled			7	JJ	5	VBN	2
 bottled-water		1	NN	1
 bottleneck		2	NN	2
 bottlenecks		2	NNS	2
 bottlers		1	NNS	1
-bottles			21	NNS	21
+bottles			22	NNS	22
 bottling		6	NN	2	VBG	4
-bottom			58	JJ	14	NN	44
+bottom			66	JJ	16	NN	50
 bottom-line		2	JJ	2
 bottomless		2	JJ	2
 bottoms			2	NNS	2
 boughs			2	NNS	2
-bought			153	VBD	112	VBN	41
-boulder			1	NN	1
+bought			160	VBD	115	VBN	45
+boulder			1	JJ	1
 boulders		6	NNS	6
 boulevards		1	NNS	1
 bounce			12	NN	7	VB	4	VBP	1
@@ -22918,8 +22996,8 @@ bounced			13	VBD	13
 bounces			5	NNS	2	VBZ	3
 bouncier		1	JJR	1
 bouncing		6	VBG	6
-bouncy			3	JJ	3
-bound			31	JJ	2	VBN	29
+bouncy			4	JJ	3	NN	1
+bound			32	JJ	2	VBN	30
 boundaries		4	NNS	4
 boundary		10	NN	10
 bounded			4	VBD	2	VBN	2
@@ -22932,76 +23010,79 @@ bounty			4	NN	4
 bouquet			4	NN	4
 bouquets		1	NNS	1
 bourbon			1	NN	1
-bourgeois		3	JJ	1	NN	1	NNS	1
+bourgeois		3	JJ	1	NN	2
 bourgeois-bashing	1	JJ	1
-bourgeoisie		2	NN	2
+bourgeoisie		6	NN	6
 bout			9	NN	9
 boutique		3	NN	3
 boutiques		3	NNS	3
 bouts			3	NNS	3
 bovine			5	JJ	5
-bow			21	JJ	1	NN	19	VB	1
+bow			19	NN	19
 bow-tie			2	NN	2
 bowed			9	JJ	2	VBD	6	VBN	1
 bowel			2	NN	2
 bowels			2	NNS	2
 bowing			2	VBG	2
-bowl			23	NN	20	VBP	3
+bowl			28	NN	26	VBP	2
 bowled			3	VBD	3
 bowler			1	NN	1
 bowler-hatted		1	JJ	1
 bowling			13	NN	10	VBG	3
 bowling-related		1	JJ	1
-bowls			7	VBZ	7
+bowls			9	VBZ	9
 bows			3	NNS	3
-box			59	NN	58	VB	1
+box			65	NN	64	VB	1
 boxed			2	JJ	2
 boxer			6	NN	6
-boxes			22	NNS	22
+boxes			24	NNS	24
 boxing			2	JJ	1	NN	1
 boxy			4	JJ	4
-boy			101	NN	96	UH	5
+boy			106	NN	103	UH	3
 boycott			9	NN	5	VB	4
 boycotted		1	VBN	1
-boyfriend		4	NN	4
+boyfriend		5	NN	5
 boyfriends		3	NNS	3
 boyhood			1	NN	1
 boyish			6	JJ	6
-boys			89	NNS	89
+boys			104	NNS	104
 bra			3	NN	3
 brace			4	NN	2	VB	2
 braced			6	VBD	3	VBN	3
-bracelet		5	NN	5
+bracelet		6	NN	6
 bracelets		5	NNS	4	VBZ	1
 braces			1	NNS	1
 bracing			8	JJ	1	VBG	7
-bracken			1	NN	1
+bracken			2	JJ	2
 bracket			5	NN	5
 bracketed		2	VBD	1	VBN	1
-brackets		3	NNS	3
+brackets		3	NNS	2	VBZ	1
+brag			1	VB	1
 braggart		1	NN	1
+bragged			2	VBD	2
+bragging		1	VBG	1
 brags			1	VBZ	1
-braid			2	NN	1	VBD	1
+braid			2	NN	2
 braided			3	JJ	1	VBN	2
 braids			2	NNS	2
-brain			63	NN	62	VB	1
+brain			66	NN	65	VB	1
 brain-wave		1	JJ	1
 brainchild		3	NN	3
 brainless		1	JJ	1
-brains			10	NNS	10
+brains			13	NNS	13
 brainstorm		1	NN	1
 brainwave		1	NN	1
-brake			8	NN	6	VB	2
-braked			4	VBD	3	VBN	1
+brake			8	NN	7	VB	1
+braked			5	VBD	5
 brakes			12	NNS	12
 braking			2	VBG	2
 bramble			2	NN	2
 brambles		3	NNS	3
 bran			7	NN	7
 bran-processing		1	JJ	1
-branch			55	NN	52	VB	3
+branch			56	NN	53	VB	3
 branched		1	VBN	1
-branches		47	NNS	47
+branches		52	NNS	52
 brand			34	NN	34
 brand-name		7	JJ	6	NN	1
 brand-new		2	JJ	1	NN	1
@@ -23012,7 +23093,7 @@ brands			25	NNS	24	VBZ	1
 brandy			12	NN	12
 bras			2	NNS	2
 brash			4	JJ	4
-brass			16	NN	16
+brass			17	NN	17
 brasses			1	NNS	1
 brassy			3	JJ	3
 brat			4	NN	4
@@ -23028,10 +23109,11 @@ braying			2	VBG	2
 brazen			2	VB	2
 brazenly		1	RB	1
 brazier			1	NN	1
-breach			14	NN	10	VB	4
+breach			17	NN	13	VB	4
 breach-of-contract	3	JJ	3
 breached		2	VBD	1	VBN	1
-bread			55	NN	55
+breaches		1	NNS	1
+bread			56	NN	56
 bread-and-butter	3	JJ	3
 bread.			1	NN	1
 breadcrumbs		1	NNS	1
@@ -23039,7 +23121,7 @@ breaded			1	VBN	1
 breadline		2	NN	2
 breadth			6	NN	6
 breadwinner		3	JJR	1	NN	2
-break			105	NN	34	VB	66	VBP	5
+break			106	NN	34	VB	68	VBP	4
 break-even		3	JJ	3
 break-in		1	NN	1
 break-up		7	NN	7
@@ -23053,9 +23135,9 @@ breakdown		22	NN	22
 breakdowns		3	NNS	3
 breaker			8	NN	8
 breakers		12	NNS	12
-breakfast		41	NN	41
+breakfast		43	NN	43
 breakfasted		1	VBD	1
-breaking		34	NN	7	VBG	27
+breaking		35	NN	7	VBG	28
 breakneck		3	JJ	3
 breaks			17	NNS	4	VBZ	13
 breakthrough		8	NN	8
@@ -23073,7 +23155,7 @@ breath			29	NN	29
 breathe			8	VB	8
 breathed		10	VBD	10
 breather		3	NN	3
-breathing		18	NN	11	VBG	7
+breathing		19	NN	11	VBG	8
 breathless		4	JJ	4
 breaths			2	NNS	2
 breathtaking		7	JJ	7
@@ -23085,8 +23167,8 @@ breed			11	NN	6	VB	3	VBP	2
 breeder			3	NN	3
 breeders		2	NNS	2
 breeding		15	NN	9	VBG	6
-breeds			4	NNS	4
-breeze			22	NN	22
+breeds			4	NNS	2	VBZ	2
+breeze			23	NN	23
 breezed			1	VBD	1
 breezes			2	NNS	2
 breezy			3	JJ	3
@@ -23095,16 +23177,16 @@ brew			6	NN	4	VB	2
 brewed			6	VBN	6
 brewer			6	NN	6
 brewery			1	NN	1
-brewing			20	NN	17	VBG	3
+brewing			20	NN	15	VBG	5
 brews			1	NNS	1
 briars			2	NNS	2
-bribe			5	NN	3	VB	2
+bribe			6	NN	3	VB	3
 bribed			3	VBD	2	VBN	1
 bribery			3	NN	3
 bribes			3	NNS	3
 bribing			2	VBG	2
 bric-a-brac		1	JJ	1
-brick			29	NN	29
+brick			31	NN	31
 brick-paved		1	JJ	1
 brick-red		1	JJ	1
 bricked			2	JJ	1	VBN	1
@@ -23115,43 +23197,43 @@ bride-to-be		1	NN	1
 bridegroom		2	NN	2
 brides			3	NNS	3
 bridesmaids		3	NNS	3
-bridge			56	NN	52	VB	4
+bridge			59	NN	55	VB	4
 bridged			6	VBD	1	VBN	5
 bridgeheads		1	NNS	1
 bridges			15	NNS	15
 bridging		3	VBG	3
 bridled			3	VBD	2	VBN	1
-brief			70	JJ	56	NN	11	VB	3
-briefcase		8	NN	8
+brief			72	JJ	58	NN	11	VB	3
+briefcase		10	NN	10
 briefed			2	VBD	1	VBN	1
-briefest		2	JJS	1	NN	1
+briefest		2	JJS	2
 briefing		3	NN	3
 briefings		2	NNS	2
-briefly			23	NN	6	RB	17
+briefly			24	NN	8	RB	16
 briefs			3	NNS	3
 brigade			4	NN	4
-brigade.		1	NN	1
+brigade.		1	FW	1
 brigades		4	NNS	4
 brigadier		1	NN	1
-bright			59	JJ	59
+bright			61	JJ	61
 bright-coloured		1	VBN	1
 brighten		8	VB	8
 brightened		4	VBD	4
 brightening		2	VBG	2
 brighter		1	JJR	1
 brightest		6	JJS	6
-brightly		7	RB	7
+brightly		8	RB	8
 brightness		2	NN	2
 brilliance		4	NN	4
 brilliant		56	JJ	54	RB	2
-brilliantly		6	RB	6
+brilliantly		7	RB	7
 brim			4	NN	4
 brimful			3	JJ	3
 brimmed			2	VBD	2
 brine			1	NN	1
-bring			114	VB	101	VBP	13
-bringing		36	NN	1	VBG	35
-brings			26	VBZ	26
+bring			120	VB	106	VBP	14
+bringing		37	NN	1	VBG	36
+brings			29	VBZ	29
 brink			8	NN	8
 brinksmanship		1	NN	1
 briny			1	JJ	1
@@ -23160,12 +23242,12 @@ briskly			2	RB	2
 bristle			1	NN	1
 bristled		2	VBD	2
 bristles		4	NNS	2	VBZ	2
-bristling		1	JJ	1
+bristling		1	VBG	1
 bristly			3	JJ	3
 brittle			6	JJ	6
 broach			2	VB	2
 broached		1	VBD	1
-broad			73	JJ	73
+broad			78	JJ	78
 broad-based		4	JJ	4
 broad-shouldered	1	JJ	1
 broadcast		24	NN	11	VB	2	VBD	3	VBN	8
@@ -23173,9 +23255,9 @@ broadcaster		3	NN	3
 broadcasters		3	NNS	3
 broadcasting		15	NN	12	VBG	3
 broadcasts		10	NNS	9	VBZ	1
-broaden			4	VB	4
+broaden			7	VB	7
 broadened		2	VBD	2
-broadening		2	VBG	2
+broadening		3	VBG	3
 broadens		2	VBZ	2
 broader			22	JJR	22
 broadest		4	JJS	4
@@ -23188,10 +23270,10 @@ broccoli		1	NNS	1
 brochure		3	NN	3
 brochures		7	NNS	7
 brogue			1	NN	1
-broke			63	RB	1	VBD	62
-broken			94	JJ	41	VBN	53
+broke			65	RB	1	VBD	64
+broken			95	JJ	42	VBN	53
 broken-down		2	JJ	2
-broker			25	NN	25
+broker			26	NN	26
 broker-dealer		4	JJ	4
 broker-sold		1	JJ	1
 brokerage		79	NN	79
@@ -23199,6 +23281,7 @@ brokerages		1	NNS	1
 brokering		1	VBG	1
 brokers			64	NNS	64
 bromides		2	NNS	2
+bronchitis		1	NN	1
 broncs			1	NNS	1
 bronze			10	NN	10
 bronzed			2	JJ	1	VBN	1
@@ -23209,31 +23292,31 @@ brooding		3	JJ	2	NN	1
 broods			1	VBZ	1
 broody			1	JJ	1
 brook			6	NN	4	VB	2
-broom			3	NN	3
+broom			4	NN	4
 broomstick		1	NN	1
 brothel			1	NN	1
-brother			67	NN	67
+brother			72	NN	71	UH	1
 brother-in-law		3	NN	3
 brotherhood		1	NN	1
 brotherism		1	NN	1
 brotherll		1	NN	1
 brotherly		1	JJ	1
-brothers		33	NNS	33
-brought			164	VBD	103	VBN	61
+brothers		36	NNS	36
+brought			171	VBD	106	VBN	65
 brouhaha		1	NN	1
 brow			17	NN	17
 brow-beating		1	NN	1
 browbeat		2	VB	2
 browbeaten		1	JJ	1
-brown			59	JJ	58	VB	1
+brown			65	JJ	64	VB	1
 browned			1	VBD	1
 brownish		1	JJ	1
 brownish-grey		1	JJ	1
 browns			1	NNS	1
 brows			1	NNS	1
 browse			1	NN	1
-browsed			2	VBN	2
-browsing		1	NN	1
+browsed			2	VBD	1	VBN	1
+browsing		1	VBG	1
 bruise			4	NN	3	VBP	1
 bruised			4	VBN	4
 bruiser			1	NN	1
@@ -23241,7 +23324,7 @@ bruises			5	NNS	5
 bruising		1	JJ	1
 brunette		1	NN	1
 brunt			4	NN	4
-brush			10	NN	6	VB	4
+brush			11	NN	7	VB	4
 brushbacks		1	NNS	1
 brushed			14	VBD	13	VBN	1
 brushes			10	NNS	10
@@ -23259,15 +23342,16 @@ bubble			5	NN	4	VB	1
 bubbled			3	VBD	1	VBN	2
 bubblelike		1	JJ	1
 bubbles			5	NNS	5
-bubbling		3	JJ	2	VBG	1
+bubbling		3	VBG	3
 bubbly			2	JJ	2
 buccaneers		1	NNS	1
 buck			8	NN	5	VB	2	VBP	1
 bucked			3	JJ	1	VBD	2
 bucket			14	NN	13	VB	1
+bucket?			1	NN	1
 bucketful		2	JJ	1	NN	1
 bucketing		1	VBG	1
-buckets			14	NNS	14
+buckets			15	NNS	15
 bucking			3	VBG	3
 buckle			6	NN	2	VB	4
 buckled			5	JJ	3	VBD	2
@@ -23280,7 +23364,7 @@ budding			6	JJ	3	VBG	3
 buddy			2	NN	2
 budge			5	VB	5
 budged			2	VBN	2
-budget			143	NN	142	VB	1
+budget			144	NN	143	VB	1
 budget-cutting		1	NN	1
 budget-reconciliation	1	JJ	1
 budget-reduction	1	JJ	1
@@ -23297,9 +23381,9 @@ buffaloes		1	NNS	1
 buffed			1	VBD	1
 buffer			7	NN	4	VB	3
 buffers			2	NNS	2
-buffet			12	NN	11	VB	1
+buffet			10	NN	9	VB	1
 buffeted		5	VBN	5
-buffeting		2	JJ	1	NN	1
+buffeting		2	NN	1	VBG	1
 buffets			2	NNS	2
 buffetting		1	NN	1
 buffoon			2	NN	2
@@ -23308,28 +23392,28 @@ bug			6	NN	5	VB	1
 bugaboo			1	NN	1
 bugbear			2	NN	2
 bugged			4	VBN	4
-bugging			2	NN	2
+bugging			2	NN	1	VBG	1
 buggy			1	NN	1
 bugless			1	JJ	1
 buglike			1	JJ	1
-bugs			18	NNS	18
-build			132	VB	122	VBP	10
+bugs			18	NNS	17	VBZ	1
+build			134	VB	123	VBP	11
 build-up		3	NN	3
 builder			5	NN	5
 builders		13	NNS	13
-building		207	NN	163	VBG	44
+building		216	NN	173	VBG	43
 building-materials	1	NNS	1
 building-products	1	NNS	1
-buildings		56	NNS	56
+buildings		61	NNS	61
 builds			7	VBZ	7
 buildup			8	NN	8
-built			127	VBD	19	VBN	108
+built			130	VBD	19	VBN	111
 built-from-kit		1	JJ	1
-built-in		8	JJ	8
+built-in		9	JJ	9
 built-up		2	JJ	2
 bulb			8	NN	8
 bulbous			2	JJ	2
-bulbs			11	NNS	11
+bulbs			12	NNS	12
 bulge			5	NN	5
 bulged			6	VBN	6
 bulging			7	VBG	7
@@ -23342,9 +23426,9 @@ bulky			6	JJ	6
 bull			17	NN	17
 bulldoze		1	VB	1
 bulldozed		2	VBN	2
-bulldozer		5	NN	5
+bulldozer		6	NN	6
 bulldozers		3	NNS	3
-bullet			22	NN	22
+bullet			23	NN	23
 bullet-proof		2	JJ	2
 bulletin		5	NN	5
 bulletins		1	NNS	1
@@ -23362,7 +23446,7 @@ bulls			7	NNS	7
 bulls-eye		1	NN	1
 bullshit		1	VB	1
 bullshitting		1	VBG	1
-bully			4	NN	4
+bully			5	NN	5
 bullying		4	NN	1	VBG	3
 bulrushes		1	NNS	1
 bulwark			1	NN	1
@@ -23380,10 +23464,10 @@ bumptious		1	JJ	1
 bumpy			4	JJ	4
 bums			1	NNS	1
 bun			3	NN	3
-bunch			22	NN	21	VB	1
+bunch			26	NN	25	VB	1
 bunched			1	VBN	1
 bunches			2	NNS	2
-bundle			10	NN	10
+bundle			11	NN	11
 bundled			3	VBN	3
 bundles			8	NNS	8
 bundling		2	VBG	2
@@ -23392,11 +23476,11 @@ bungalow		2	NN	2
 bungalows		2	NNS	2
 bungled			2	VBN	2
 bungling		1	VBG	1
-bunk			7	NN	7
+bunk			8	NN	8
 bunker			2	NN	2
 bunkers			3	NNS	3
 bunks			2	NNS	2
-bunkthere		1	JJ	1
+bunkthere		1	NN	1
 buns			2	NNS	2
 bunt			1	NN	1
 buoy			3	NN	1	VB	2
@@ -23431,37 +23515,37 @@ burgled			2	VBN	2
 burgs			1	NNS	1
 burial			10	NN	10
 burials			1	NNS	1
-buried			35	VBD	10	VBN	25
+buried			36	VBD	10	VBN	26
 burlap			1	NN	1
 burlesque		2	NN	2
 burly			6	JJ	6
-burn			13	VB	10	VBP	3
-burned			26	VBD	3	VBN	23
+burn			14	VB	11	VBP	3
+burned			23	VBD	5	VBN	18
 burner			3	NN	3
 burners			1	NNS	1
-burning			29	JJ	3	NN	15	VBG	11
+burning			29	JJ	3	NN	10	VBG	16
 burnished		2	JJ	2
 burnishing		1	VBG	1
 burnouts		1	NNS	1
-burns			11	NNS	9	VBZ	2
-burnt			18	JJ	7	NN	2	VBN	9
+burns			11	NNS	8	VBZ	3
+burnt			16	JJ	7	NN	2	VB	1	VBN	6
 burp			1	NN	1
 burped			2	VBD	2
 burr			2	NN	2
 burrow			5	NN	3	VB	2
 burrowed		2	VBD	1	VBN	1
-burrowing		2	JJ	1	VBG	1
+burrowing		2	VBG	2
 burrows			1	VBZ	1
 burrs			1	NNS	1
-burst			42	NN	22	VB	8	VBD	4	VBP	8
+burst			47	NN	23	VB	12	VBD	5	VBP	7
 bursting		7	VBG	7
-bursts			5	NNS	5
-bury			6	VB	3	VBP	3
+bursts			7	NNS	6	VBZ	1
+bury			6	VB	4	VBP	2
 burying			4	VBG	4
-bus			72	NN	72
-bus-stop		1	JJ	1
-buses			20	NNS	20
-bush			11	JJ	2	NN	9
+bus			83	NN	83
+bus-stop		2	JJ	2
+buses			21	NNS	21
+bush			12	JJ	2	NN	10
 bushed			1	JJ	1
 bushel			9	NN	9
 bushels			3	NNS	3
@@ -23470,15 +23554,16 @@ bushy			4	JJ	4
 busier			1	JJR	1
 busiest			2	JJS	2
 busily			4	RB	4
-business		688	NN	688
+business		691	NN	691
 business-communications	1	NNS	1
 business-like		1	JJ	1
 business-machines	1	NNS	1
 business-partners	1	NNS	1
 business-to-business	2	NN	2
+business.		1	NN	1
 business?Quiet		2	NN	2
-businesses		155	NNS	155
-businesslike		2	JJ	2
+businesses		156	NNS	156
+businesslike		3	JJ	3
 businessman		9	NN	9
 businessmen		25	NNS	25
 buskers			1	NNS	1
@@ -23492,20 +23577,20 @@ buster			1	NN	1
 busting			2	VBG	2
 bustle			2	NN	1	VB	1
 bustled			3	VBD	3
-bustling		6	JJ	6
-busy			61	JJ	60	VB	1
+bustling		6	JJ	5	VBG	1
+busy			62	JJ	61	VB	1
 busybody		2	NN	2
 busying			1	VBG	1
-but			1662	CC	1655	IN	4	RB	3
+but			1690	CC	1682	IN	5	RB	3
 butch			1	JJ	1
 butcher			10	NN	10
 butchered		2	VBD	1	VBN	1
-butchers		3	NNS	3
+butchers		4	NNS	4
 butler			1	NN	1
 butlers			1	NNS	1
 butt			10	NN	9	VB	1
-butted			2	JJ	1	VBN	1
-butter			24	NN	24
+butted			2	VBN	2
+butter			25	NN	25
 butter?It		1	NN	1
 buttered		1	VBD	1
 butterfat		3	NN	3
@@ -23513,20 +23598,20 @@ butterflies		4	NNS	4
 butterfly		6	NN	6
 buttering		1	VBG	1
 buttery			1	NN	1
-button			19	NN	18	VB	1
+button			20	NN	19	VB	1
 buttoned		1	VBN	1
 buttoned-down		2	JJ	2
 buttoned-up		2	JJ	2
 buttonhole		3	NN	3
 buttonholed		1	VBD	1
 buttoning		2	VBG	2
-buttons			10	NNS	10
+buttons			11	NNS	11
 buttress		4	VB	4
 buttressed		1	VBN	1
 buttresses		1	NNS	1
 butts			1	NNS	1
 buxom			1	JJ	1
-buy			377	JJ	4	NN	28	VB	313	VBP	31	VB|NN	1
+buy			378	JJ	4	NN	28	VB	314	VBP	31	VB|NN	1
 buy-back		17	JJ	4	NN	13
 buy-now			1	JJ	1
 buy-out			92	JJ	10	NN	82
@@ -23535,16 +23620,16 @@ buy-sell		1	JJ	1
 buyback			1	NN	1
 buyer			38	NN	38
 buyers			78	NNS	78
-buying			177	JJ	1	NN	68	VBG	108
+buying			179	JJ	1	NN	68	VBG	110
 buyout			2	NN	2
 buys			11	NNS	1	VBZ	10
-buzz			7	NN	4	VB	3
-buzzed			6	VBN	6
-buzzer			4	NN	4
+buzz			6	NN	3	VB	3
+buzzed			5	VBD	1	VBN	4
+buzzer			5	NN	5
 buzzes			1	VBZ	1
-buzzing			14	NN	2	VBG	12
+buzzing			13	NN	2	VBG	11
 buzzword		1	NN	1
-by			4882	IN	4876	RB	2	RP	4
+by			4962	IN	4956	RB	2	RP	4
 by-election		9	NN	9
 by-elections		2	NNS	2
 by-laws			1	NNS	1
@@ -23563,21 +23648,21 @@ byword			2	NN	2
 c			3	SYM	3
 c.i.f			1	JJ	1
 ca			112	MD	112
-cab			7	NN	7
+cab			8	NN	8
 cabal			2	NN	2
 cabbage			4	NN	4
 cabbages		2	NNS	2
-cabin			12	NN	12
+cabin			13	NN	13
 cabin-crew		1	NNS	1
 cabin?			1	NN	1
-cabinet			23	NN	23
+cabinet			24	NN	24
 cabinets		4	NNS	4
 cabins			2	NNS	2
 cable			46	NN	46
 cable-TV		3	NN	3
 cable-programming	1	JJ	1
 cable-television	3	NN	3
-cabled			4	VBD	3	VBN	1
+cabled			4	JJ	1	VBD	2	VBN	1
 cables			3	NNS	3
 cabs			3	NNS	3
 cache			3	NN	3
@@ -23586,8 +23671,8 @@ cachet			2	NN	2
 cackle			2	NN	2
 cackled			2	VBD	2
 cacophony		4	NN	4
-cacti			1	NNS	1
-cactus			2	NNS	2
+cacti			1	NN	1
+cactus			2	NN	1	NNS	1
 cadaverous		2	JJ	2
 cadence			2	NN	2
 cadenza			1	NN	1
@@ -23596,49 +23681,49 @@ cadets			2	NNS	2
 cadge			1	VBP	1
 cadmium			1	NN	1
 cadres			1	NNS	1
-caf			3	NN	3
+caf			4	NN	4
 cafe			7	NN	7
 cafes			1	NNS	1
 cafeteria		4	NN	4
 caffeine		1	JJ	1
 cafs			1	NNS	1
 caftans			1	NNS	1
-cage			10	NN	10
+cage			11	NN	11
 cage)			1	NN	1
 cages			1	NNS	1
 cagey			1	JJ	1
 cajoled			1	VBN	1
-cake			22	NN	22
+cake			23	NN	23
 caked			4	VBD	4
 cakes			17	NNS	17
 caking			1	VBG	1
 calamities		1	NNS	1
 calamitous		2	JJ	2
 calamity		2	NN	2
-calculate		6	VB	5	VBP	1
+calculate		7	VB	5	VBP	2
 calculated		28	JJ	6	VBD	1	VBN	21
 calculating		4	JJ	2	VBG	2
 calculation		7	NN	7
 calculations		19	NNS	19
-calculator		6	NN	6
+calculator		9	NN	9
 calculator-toting	1	JJ	1
 calculators		11	NNS	11
 calendar		9	JJ	2	NN	7
 calendars		1	NNS	1
 calf			2	NN	2
-calibre			6	NN	6
-call			134	JJ	1	NN	55	VB	53	VBP	25
-called			328	VB	1	VBD	167	VBN	160
+calibre			7	NN	7
+call			142	JJ	1	NN	61	VB	52	VBP	28
+called			334	VB	1	VBD	172	VBN	161
 caller			2	NN	2
 callers			3	NNS	3
-calling			43	NN	3	VBG	40
+calling			45	NN	3	VBG	42
 calling?		1	JJ	1
 callous			5	JJ	5
 calloused		1	JJ	1
 calls			98	NNS	33	VBZ	65
-calm			39	JJ	21	NN	7	VB	11
-calmed			2	VBN	2
-calmer			1	JJR	1
+calm			43	JJ	26	NN	7	VB	10
+calmed			3	VBN	3
+calmer			2	JJR	2
 calming			1	JJ	1
 calmly			2	RB	2
 calmness		2	NN	2
@@ -23648,61 +23733,60 @@ calves			5	NNS	5
 calving			2	NN	1	VBG	1
 camaraderie		1	NN	1
 camber			1	NN	1
-came			450	VBD	450
+came			467	VBD	467
 came?..			1	CC	1
 camel			3	NN	3
 camels			7	NNS	7
 cameo			1	NN	1
 cameos			1	NNS	1
-camera			32	NN	32
+camera			34	NN	34
 camera-shy		1	JJ	1
 cameraman		3	NN	3
-cameras			12	NNS	12
+cameras			13	NNS	13
 camomile		1	JJ	1
-camouflage		4	NN	4
+camouflage		5	NN	5
 camouflaged		2	VBN	2
 camp			28	JJ	1	NN	27
 camp-beds		1	NNS	1
 camp-sites		1	NNS	1
-campaign		151	NN	150	VB	1
+campaign		153	NN	152	VB	1
 campaigned		6	VBN	6
 campaigner		4	NN	4
 campaigners		1	NNS	1
-campaigning		5	NN	5
+campaigning		6	NN	5	VBG	1
 campaigns		17	NNS	17
-camped			4	VBD	4
+camped			5	VBD	5
 camper			1	NN	1
 campers			3	NNS	3
 campfire		1	NN	1
 campgrounds		1	NNS	1
-camping			7	JJ	2	NN	1	VBG	4
-camps			13	NNS	13
-campus			21	NN	21
+camping			7	JJ	2	VBG	5
+camps			14	NNS	14
+campus			22	NN	22
 campuses		2	NNS	2
-can			1340	JJ	1	MD	1333	NN	5	VB	1
-can-can			1	NN	1
+can			1388	MD	1382	NN	5	VB	1
 canal			7	NN	7
 canalized		1	VBN	1
 canals			12	NNS	12
 canaps			1	NNS	1
 canard			1	NN	1
-canary			2	NN	2
+canary			2	JJ	1	NN	1
 cancel			12	VB	12
 canceled		11	VBD	4	VBN	6	VBN|JJ	1
 canceling		1	VBG	1
 cancellation		5	NN	5
 cancellations		2	NNS	2
-cancelled		5	VBD	3	VBN	2
+cancelled		6	VBD	3	VBN	3
 cancelling		2	VBG	2
 cancels			1	VBZ	1
-cancer			101	NN	101
+cancer			105	NN	105
 cancer-causing		2	JJ	2
 cancer-gene		1	JJ	1
 cancer-related		1	JJ	1
 cancer-suppressing	1	JJ	1
 cancer-suppressors	1	NNS	1
 cancer-susceptible	1	JJ	1
-cancer?			1	NN	1
+cancer?			2	NN	2
 cancerous		4	JJ	4
 cancers			13	NNS	13
 candelabra		2	NN	2
@@ -23717,7 +23801,7 @@ candidum		1	NN	1
 candies			3	NNS	3
 candle			6	NN	6
 candlelight		2	NN	2
-candles			7	NNS	7
+candles			8	NNS	8
 candlestick		2	NN	2
 candor			2	NN	2
 candour			1	NN	1
@@ -23733,7 +23817,7 @@ canned			7	JJ	5	VBN	2
 canning			2	NN	1	VBG	1
 cannon			6	NN	6
 cannonade		1	NN	1
-cannot			98	JJ	7	NN	39	RB	10	VBP	42
+cannot			105	JJ	7	NN	44	RB	12	VBP	42
 canoe			5	NN	5
 canoes			2	NNS	2
 canon			3	NN	3
@@ -23741,8 +23825,8 @@ canons			1	NNS	1
 canoodling		1	VBG	1
 canopied		1	JJ	1
 canopy			4	NN	4
-cans			9	NNS	9
-cant			151	NN	151
+cans			11	NNS	11
+cant			168	NN	168
 cantankerous		2	JJ	2
 cantatas		1	NNS	1
 canteen			4	JJ	1	NN	3
@@ -23753,16 +23837,16 @@ canton			1	NN	1
 cantonal		1	JJ	1
 canvas			9	NN	9
 canvases		2	NNS	2
-canvass			2	NNS	1	VB	1
+canvass			2	NN	1	VB	1
 canvassed		2	VBN	2
 canvasses		1	NNS	1
 canvassing		1	VBG	1
 canyon			5	NN	5
 canyons			2	NNS	2
-cap			29	NN	28	VBP	1
+cap			30	NN	29	VBP	1
 capabilities		7	NNS	7
 capability		13	NN	13
-capable			32	JJ	32
+capable			38	JJ	38
 capacious		1	JJ	1
 capacities		4	NNS	4
 capacitors		1	NNS	1
@@ -23772,7 +23856,7 @@ cape			3	NN	3
 caper			1	NN	1
 capered			1	VBN	1
 capita			4	NN	3	NNS	1
-capital			219	JJ	9	NN	210
+capital			222	JJ	9	NN	213
 capital-draining	1	VBG	1
 capital-gains		53	JJ	15	NNS	38
 capital-gains-cut	1	JJ	1
@@ -23802,11 +23886,12 @@ caprices		2	NNS	2
 capricious		5	JJ	5
 caps			6	NNS	6
 capsize			1	VBP	1
-capsized		1	JJ	1
+capsized		2	JJ	2
 capsule			6	NN	6
 capsules		4	NNS	4
 captain			25	NN	24	VBP	1
 captained		1	VBN	1
+captains		1	NNS	1
 caption			3	NN	2	VB	1
 captivated		1	VBN	1
 captivating		2	JJ	1	VBG	1
@@ -23815,7 +23900,7 @@ captives		4	NNS	4
 capture			15	NN	3	VB	12
 captured		15	VBD	1	VBN	13	VBN|JJ	1
 capturing		2	VBG	2
-car			428	NN	428
+car			447	NN	447
 car-care		1	JJ	1
 car-cleaning		1	JJ	1
 car-crash		1	JJ	1
@@ -23839,37 +23924,37 @@ carburettor		1	NN	1
 carcass			3	NN	3
 carcinogen		1	NN	1
 carcinogenic		1	JJ	1
-card			56	NN	56
+card			57	NN	57
 card-carrying		1	JJ	1
 card-index		1	JJ	1
 card-member		1	NN	1
-cardboard		12	NN	12
+cardboard		13	NN	13
 cardholders		1	NNS	1
-cardiac			3	JJ	3
+cardiac			4	JJ	4
 cardiac-drug		1	JJ	1
 cardigan		1	NN	1
 cardigans		2	NNS	2
 cardinal		2	JJ	2
 cardinals		2	NNS	2
 cardiovascular		2	JJ	2
-cards			42	NNS	42
-care			123	NN	99	VB	18	VBP	6
-care.			1	CD	1
-cared			9	VBD	6	VBN	3
+cards			44	NNS	44
+care			136	NN	106	VB	21	VBP	9
+care.			1	FW	1
+cared			10	VBD	7	VBN	3
 careen			1	VB	1
 careening		1	VBG	1
-career			85	NN	85
+career			90	NN	90
 careered		1	VBN	1
 careering		1	VBG	1
 careers			24	NNS	24
 carefree		6	JJ	6
-careful			63	JJ	63
-carefully		69	RB	69
+careful			65	JJ	65
+carefully		73	RB	73
 carefulness		1	NN	1
 careless		15	JJ	15
-carelessly		2	RB	2
+carelessly		3	RB	3
 carelessness		3	NN	3
-cares			3	NNS	1	VBZ	2
+cares			4	NNS	1	VBZ	3
 caressed		1	VBD	1
 caresses		1	NNS	1
 caretaker		2	NN	2
@@ -23897,29 +23982,30 @@ carpark			1	NN	1
 carpenter		2	NN	2
 carpenters		2	NNS	2
 carpentry		1	NN	1
-carpet			39	NN	38	VB	1
+carpet			42	NN	41	VB	1
 carpet?			1	NN	1
-carpeted		3	VBD	3
+carpeted		4	VBD	4
 carpeting		6	NN	6
 carpets			10	NNS	10
-carping			1	NN	1
+carping			1	VBG	1
 carriage		8	JJ	4	NN	4
 carriages		1	NNS	1
 carriageway		1	NN	1
 carriageways		1	NNS	1
-carried			87	VBD	56	VBN	31
+carried			89	VBD	57	VBN	32
 carrier			43	NN	43
 carrier-based		1	JJ	1
-carriers		20	NNS	20
+carriers		21	NNS	21
 carries			39	VBZ	39
-carrot			4	NN	4
+carrot			5	NN	5
 carrots			5	NNS	5
-carry			81	VB	64	VBP	17
+carry			83	VB	66	VBP	17
 carry-forward		2	NN	2
 carry-forwards		1	NNS	1
 carryforwards		1	NNS	1
-carrying		42	NN	1	VBG	41
-cars			171	NNS	171
+carrying		43	NN	1	VBG	42
+cars			176	NNS	176
+cars?			1	NNS	1
 carsick			1	JJ	1
 cart			10	NN	9	VBP	1
 carted			3	VBD	3
@@ -23934,10 +24020,10 @@ cartoonists		1	NNS	1
 cartoons		3	NNS	3
 cartridge		1	NN	1
 carts			5	NNS	5
-cartwheeling		1	JJ	1
+cartwheeling		1	VBG	1
 cartwheels		2	NNS	2
 carve			4	VB	3	VBP	1
-carved			17	VBD	2	VBN	15
+carved			18	VBD	2	VBN	16
 carvers			1	NNS	1
 carves			2	VBZ	2
 carving			6	NN	2	VBG	4
@@ -23946,13 +24032,13 @@ cascade			3	NN	3
 cascaded		2	VBD	2
 cascades		1	NNS	1
 cascading		1	VBG	1
-case			342	NN	342
+case			348	NN	348
 case-by-case		1	JJ	1
 cased			1	VBN	1
 caseloads		1	NNS	1
 casement		1	NN	1
-cases			127	NNS	127
-cash			255	NN	252	VB	3
+cases			128	NNS	128
+cash			256	NN	253	VB	3
 cash-and-stock		1	JJ	1
 cash-deferred		1	JJ	1
 cash-flow		2	JJ	2
@@ -23983,7 +24069,7 @@ casseroles		1	NNS	1
 cassette		3	NN	3
 cassettes		1	NNS	1
 cassock			1	NN	1
-cast			59	NN	21	VB	8	VBD	14	VBN	16
+cast			60	NN	22	VB	8	VBD	13	VBN	17
 cast-iron		6	JJ	2	NN	4
 cast-offs		1	NNS	1
 cast-proof		1	JJ	1
@@ -23993,7 +24079,7 @@ caster			2	NN	2
 castigate		1	VB	1
 castigated		2	VBN	2
 castigating		2	VBG	2
-casting			14	NN	2	VBG	12
+casting			15	NN	2	VBG	13
 castings		1	NNS	1
 castle			19	NN	19
 castle-like		1	JJ	1
@@ -24003,13 +24089,13 @@ castor-oil		2	NN	2
 castrated		1	VBN	1
 castration		1	NN	1
 casts			5	VBZ	5
-casual			23	JJ	23
+casual			24	JJ	24
 casually		3	RB	3
 casualness		1	NN	1
-casualties		11	NNS	11
+casualties		13	NNS	13
 casualty		10	NN	10
 casualty-loss		1	JJ	1
-cat			33	NN	33
+cat			34	NN	34
 cat-and-mouse		1	JJ	1
 cataclysm		1	NN	1
 cataclysmic		3	JJ	3
@@ -24031,7 +24117,7 @@ catastrophic		9	JJ	9
 catastrophic-care	4	NN	4
 catastrophic-illness	2	JJ	1	NN	1
 catcalls		1	NNS	1
-catch			59	NN	13	VB	42	VBP	4
+catch			61	NN	16	VB	42	VBP	3
 catch-up		2	NN	2
 catcher			1	NN	1
 catchers		1	NNS	1
@@ -24046,10 +24132,10 @@ categorize		1	VB	1
 categorized		2	VBN	2
 category		18	NN	18
 cater			11	VB	8	VBP	3
-catered			4	VBD	4
+catered			5	VBD	5
 caterer			2	NN	2
 catering		3	NN	2	VBG	1
-caterpillar		2	NN	2
+caterpillar		3	NN	3
 caterwaul		1	NN	1
 cathartic		1	JJ	1
 cathedral		13	JJ	5	NN	8
@@ -24059,23 +24145,23 @@ catheters		1	NNS	1
 cathode			1	NN	1
 cathodes		1	NNS	1
 catnaps			1	NNS	1
-cats			13	NNS	13
+cats			14	NNS	14
 catsup			1	NN	1
 cattiness		1	NN	1
-cattle			26	NNS	26
-cattle-dealer		1	NN	1
+cattle			30	NNS	30
+cattle-dealer		1	JJ	1
 cattlemen		1	NNS	1
 catty			1	JJ	1
 catwalk			3	NN	3
-caucus			2	NN	1	NNS	1
+caucus			2	NN	2
 caucuses		1	NNS	1
-caught			107	VBD	56	VBN	51
+caught			108	VBD	57	VBN	51
 cauldron		1	NN	1
-cause			116	NN	67	VB	43	VBP	6
-caused			115	VBD	53	VBN	62
-causes			40	NNS	26	VBZ	14
+cause			126	NN	73	VB	47	VBP	6
+caused			120	VBD	58	VBN	62
+causes			42	NNS	26	VBZ	16
 causeways		1	NNS	1
-causing			30	VBG	30
+causing			31	VBG	31
 caustic			4	JJ	4
 cauterized		1	VBD	1
 caution			24	NN	17	VB	1	VBP	6
@@ -24095,7 +24181,7 @@ caved			1	VBD	1
 cavern			1	NN	1
 cavernous		2	JJ	2
 caverns			1	NNS	1
-caves			8	NNS	8
+caves			9	NNS	9
 caviar			1	NN	1
 cavil			2	NN	1	VB	1
 cavity			2	NN	2
@@ -24104,36 +24190,37 @@ caw			1	NN	1
 cawed			1	VBN	1
 cease			11	VB	11
 cease-fire		12	NN	12
-ceased			15	VBD	10	VBN	5
+ceased			17	VBD	11	VBN	6
 ceasefire		3	NN	3
 ceaselessly		1	RB	1
 ceases			2	VBZ	2
 ceasing			1	VBG	1
-cedar			3	NN	3
+cedar			4	NN	4
 cedars			1	NNS	1
 cede			1	VB	1
 ceded			1	VBN	1
 ceding			1	VBG	1
-ceiling			52	NN	52
+ceiling			55	NN	55
 ceilings		3	NNS	3
-celebrate		10	VB	9	VBP	1
-celebrated		4	JJ	4
+celebrate		12	VB	11	VBP	1
+celebrated		6	JJ	6
 celebrates		1	VBZ	1
 celebrating		3	VBG	3
-celebration		14	NN	14
-celebrations		1	NNS	1
+celebration		18	NN	18
+celebrations		2	NNS	2
 celebratory		1	JJ	1
 celebrities		3	NNS	3
 celebrity		6	NN	6
 celestial		2	JJ	2
 celibacy		2	NN	2
 celibate		1	NN	1
-cell			37	NN	37
+cell			38	NN	38
 cellar			15	NN	15
 cellars			1	NNS	1
 cellists		1	NNS	1
 cello			1	NN	1
-cells			48	NNS	48
+cellophane		1	NN	1
+cells			50	NNS	50
 cellular		16	JJ	16
 cellular-phone		2	NN	2
 cellular-telephone	1	NN	1
@@ -24146,14 +24233,14 @@ cemented		2	VBN	2
 cementing		1	VBG	1
 cemeteries		1	NNS	1
 cemetery		9	NN	9
-censor			3	NN	1	VBP	2
+censor			4	NN	1	VBP	3
 censored		4	VBN	4
 censorious		2	JJ	2
 censors			1	NNS	1
 censorship		9	NN	9
 censured		1	VBD	1
 census			7	NN	7
-cent			96	NN	96
+cent			99	NN	99
 centenary		5	JJ	2	NN	3
 centennial		9	JJ	2	NN	7
 center			53	JJ	2	NN	50	VBP	1
@@ -24167,13 +24254,13 @@ centigrade		3	JJ	2	NN	1
 centimeter		1	NN	1
 centimeters		1	NNS	1
 centimetre		1	JJ	1
-centimetres		4	NNS	4
+centimetres		5	NNS	5
 central			91	JJ	91
 centralization		1	NN	1
 centralize		1	VB	1
 centralized		3	JJ	2	VBN	1
 centrally		2	RB	2
-centre			66	JJ	5	NN	60	VBD	1
+centre			70	JJ	5	NN	65
 centred			4	JJ	2	VBD	1	VBN	1
 centrepiece		3	NN	3
 centres			11	NNS	8	VBZ	3
@@ -24182,23 +24269,23 @@ cents			449	NNS	449
 cents-a-share		1	JJ	1
 cents-a-unit		1	JJ	1
 cents-off		1	JJ	1
-centuries		12	NNS	12
+centuries		14	NNS	14
 centurion		1	NN	1
 centurions		1	NNS	1
-century			104	NN	104
+century			105	NN	105
 century-old		1	JJ	1
 ceramic			6	JJ	6
 ceramics		2	NNS	2
-cereal			17	NN	17
+cereal			18	NN	18
 cereals			9	NNS	9
 cerebral		4	JJ	4
 ceremonial		9	JJ	7	NN	2
 ceremonies		3	NNS	3
 ceremonious		2	JJ	2
-ceremony		17	NN	17
+ceremony		19	NN	19
 cert			1	NN	1
-certain			240	JJ	240
-certainly		82	RB	82
+certain			254	JJ	254
+certainly		85	RB	85
 certainly.		1	FW	1
 certainty		8	NN	8
 certifiable		1	JJ	1
@@ -24213,42 +24300,43 @@ cervical		1	JJ	1
 cervix			2	NN	2
 cessation		2	NN	2
 cetera			1	FW	1
+ch			1	JJ	1
 chafe			2	VBP	2
 chaff			1	NN	1
 chafing			2	VBG	2
 chagrined		1	VBN	1
-chain			82	NN	81	VBP	1
-chain-smoking		2	NN	2
+chain			84	NN	83	VBP	1
+chain-smoking		2	NN	1	VBG	1
 chain-store		3	JJ	3
 chained			8	JJ	8
-chains			29	NNS	29
-chair			77	NN	76	VB	1
+chains			31	NNS	31
+chair			87	NN	86	VB	1
 chaired			3	VBD	1	VBN	2
 chairits		1	NNS	1
 chairman		303	NN	303
 chairman-elect		1	NN	1
-chairmans		2	JJ	1	NNS	1
+chairmans		2	NNS	2
 chairmanship		2	NN	2
 chairmen		3	NNS	3
 chairperson		1	NN	1
 chairs			25	NNS	22	VBZ	3
 chairwoman		1	NN	1
-chalk			6	NN	6
+chalk			7	NN	7
 chalked			2	VBN	2
 chalking		2	VBG	2
 chalks			1	NNS	1
 chalky			2	JJ	2
-challenge		61	NN	47	VB	12	VBP	2
+challenge		62	NN	48	VB	12	VBP	2
 challenged		23	VBD	12	VBN	11
 challenger		2	NN	2
 challengers		1	NNS	1
-challenges		14	NNS	12	VBZ	2
+challenges		14	NNS	11	VBZ	3
 challenging		19	JJ	9	VBG	10
 chamber			25	NN	25
 chambers		4	NNS	4
-champagne		18	NN	18
+champagne		19	NN	19
 champing		3	VBG	3
-champion		18	NN	15	VB	2	VBP	1
+champion		18	NN	15	VB	1	VBP	2
 championed		1	VBD	1
 championing		1	VBG	1
 champions		3	NNS	3
@@ -24256,49 +24344,50 @@ championship		8	NN	8
 championship-team	1	JJ	1
 championships		3	NNS	3
 champs			1	NNS	1
-chance			110	NN	108	VB	1	VBP	1
+chance			116	NN	114	VB	1	VBP	1
 chanced			2	JJ	1	VBD	1
 chancellor		8	NN	8
-chances			20	NNS	20
+chances			22	NNS	22
 chances?		1	NN	1
 chancy			2	JJ	2
+chandelier		1	NN	1
 chandeliers		2	NNS	2
-change			282	NN	175	VB	96	VBP	11
+change			306	NN	186	VB	106	VBP	14
 change-ringing		1	NN	1
 changeable		3	JJ	3
-changed			119	JJ	2	VBD	45	VBN	72
+changed			123	JJ	2	VBD	47	VBN	74
 changed?		1	NNS	1
 changeless		2	JJ	2
 changeover		2	NN	2
-changes			204	NNS	198	VBZ	6
-changing		42	VBG	42
+changes			211	NNS	204	VBZ	7
+changing		44	VBG	44
 channel			14	NN	9	VB	4	VBP	1
-channelled		2	VBN	2
+channelled		2	VBD	1	VBN	1
 channels		13	NNS	13
 chant			3	NN	3
 chanted			6	VBD	5	VBN	1
 chanting		6	VBG	6
-chaos			13	NN	13
+chaos			14	NN	14
 chaotic			8	JJ	8
 chap			6	NN	6
-chapel			14	NN	14
+chapel			15	NN	15
 chapels			1	NNS	1
 chaperone		2	NN	2
 chaperoned		1	VBN	1
 chaplain		2	NN	2
 chapped			1	JJ	1
 chaps			5	NNS	5
-chapter			28	NN	28
+chapter			29	NN	29
 chapters		10	NNS	10
 char-broiled		1	JJ	1
 charabanc		1	NN	1
-character		78	NN	78
+character		81	NN	81
 characterised		1	VBN	1
-characteristic		12	JJ	9	NN	3
+characteristic		13	JJ	10	NN	3
 characteristically	1	RB	1
 characteristics		6	NNS	6
 characterization	1	NN	1
-characterize		4	VB	3	VBP	1
+characterize		4	VB	2	VBP	2
 characterized		7	VBD	5	VBN	2
 characterizes		2	VBZ	2
 characterizing		1	VBG	1
@@ -24306,11 +24395,11 @@ characterless		1	JJ	1
 characters		26	NNS	26
 charade			3	NN	3
 charcoal		3	JJ	3
-charge			177	NN	149	VB	14	VBP	14
+charge			181	NN	151	VB	15	VBP	15
 charge?			1	CD	1
 charge?6		1	CD	1
 chargeable		4	JJ	4
-charged			64	JJ	5	VBD	12	VBN	47
+charged			67	JJ	5	VBD	12	VBN	50
 charger			1	NN	1
 charges			127	NNS	114	VBZ	13
 charging		22	VBG	22
@@ -24327,7 +24416,7 @@ charlatans		1	NNS	1
 charm			16	NN	16
 charmed			1	VBN	1
 charmers		1	NNS	1
-charming		12	JJ	12
+charming		13	JJ	13
 charred			4	VBN	4
 chart			11	NN	7	VB	3	VBP	1
 charted			3	JJ	2	VBD	1
@@ -24346,7 +24435,7 @@ chaste			3	JJ	3
 chastened		1	VBN	1
 chastised		4	VBD	3	VBN	1
 chastity		1	NN	1
-chat			13	NN	3	VB	10
+chat			14	NN	3	VB	11
 chateau			1	NN	1
 chatted			2	VBD	2
 chattels		1	NNS	1
@@ -24360,7 +24449,7 @@ chauffeured		1	JJ	1
 chauvinism		2	NN	2
 chauvinist		1	JJ	1
 chauvinistic		2	JJ	2
-cheap			53	JJ	51	RB	2
+cheap			55	JJ	53	RB	2
 cheap-shot		1	JJ	1
 cheapen			1	VB	1
 cheapens		1	VBZ	1
@@ -24369,7 +24458,7 @@ cheapest		4	JJS	4
 cheaply			4	RB	4
 cheat			5	NN	2	VB	3
 cheated			4	JJ	2	VBD	2
-cheating		14	NN	12	VBG	2
+cheating		14	NN	13	VBG	1
 cheats			2	NNS	2
 check			46	JJ	2	NN	17	VB	25	VBP	2
 check-in		1	NN	1
@@ -24382,8 +24471,8 @@ checking		6	NN	3	VBG	3
 checkmating		1	VBG	1
 checkout		2	NN	2
 checkpoint		1	NN	1
-checks			19	NNS	18	VBZ	1
-cheddar			1	JJ	1
+checks			19	NNS	17	VBZ	2
+cheddar			1	NN	1
 cheek			21	NN	21
 cheek-bones		1	JJ	1
 cheek-to-jowl		1	RB	1
@@ -24393,17 +24482,17 @@ cheeked			1	VBD	1
 cheeks			28	NNS	28
 cheeky			5	JJ	5
 cheer			8	NN	4	VB	4
-cheered			9	VBD	5	VBN	4
-cheerful		17	JJ	17
+cheered			10	VBD	6	VBN	4
+cheerful		18	JJ	18
 cheerfully		4	RB	4
 cheerfulness		1	NN	1
-cheering		6	VBG	6
+cheering		7	VBG	7
 cheerleader		1	NN	1
 cheerleaders		1	NNS	1
 cheerleading		1	NN	1
 cheerless		1	JJ	1
 cheers			10	NNS	10
-cheery			4	JJ	4
+cheery			5	JJ	5
 cheese			24	NN	24
 cheese-paring		1	JJ	1
 cheeseboard		3	NN	3
@@ -24421,7 +24510,7 @@ chemist-turned-entrepreneur	1	NN	1
 chemistry		11	NN	11
 chemists		2	NNS	2
 chenille		1	NN	1
-cheque			19	JJ	2	NN	17
+cheque			18	NN	18
 cheque?			1	CD	1
 chequered		2	JJ	2
 cheques			4	NNS	4
@@ -24437,14 +24526,14 @@ chess			11	NN	11
 chess-playing		1	NN	1
 chess?			2	JJ	1	NNP	1
 chessboard		1	NN	1
-chest			31	NN	31
-chestnut		8	JJ	4	NN	4
+chest			32	NN	32
+chestnut		8	JJ	3	NN	5
 chestnut-brown		1	JJ	1
 chevrons		2	NNS	2
 chew			6	NN	1	VB	2	VBP	3
 chewed			8	VBD	8
 chewing			4	VBG	4
-chews			2	NNS	2
+chews			2	NNS	1	VBZ	1
 chewy			2	JJ	2
 chi-chi			1	JJ	1
 chic			7	JJ	5	NN	2
@@ -24454,15 +24543,15 @@ chicken			35	NN	35
 chicken-mutilating	1	JJ	1
 chickens		14	NNS	14
 chicks			3	NNS	3
-chided			4	VBD	3	VBN	1
+chided			5	VBN	5
 chides			1	VBZ	1
-chief			386	JJ	206	NN	180
+chief			387	JJ	207	NN	180
 chiefly			3	RB	3
 chiefs			7	NNS	7
 chieftain		1	NN	1
 chiffon			3	NN	3
 chilblains		1	NNS	1
-child			197	NN	197
+child			205	NN	205
 child-as-required-yuppie-possession	1	NN	1
 child-care		7	JJ	5	NN	2
 child-minder		2	NN	2
@@ -24471,7 +24560,8 @@ child-parent		1	JJ	1
 child-rearing		1	VBG	1
 child-safety		1	JJ	1
 childbirth		2	NN	2
-childhood		39	NN	39
+childhood		40	NN	40
+childhood?		1	NN	1
 childish		5	JJ	5
 childishly		1	RB	1
 childishness		1	NN	1
@@ -24479,13 +24569,13 @@ childless		1	JJ	1
 childlike		2	JJ	2
 childminder		1	NN	1
 childproof		1	JJ	1
-children		463	NNS	463
-children!		1	CD	1
-childrens		22	JJ	3	NNS	19
-childs			18	JJ	11	NNS	7
+children		502	NN	5	NNS	497
+children!		1	JJ	1
+childrens		24	NNS	24
+childs			18	JJ	8	NNS	10
 chill			13	JJ	1	NN	11	VB	1
 chilled			4	VBN	4
-chilling		5	JJ	4	VBG	1
+chilling		5	JJ	3	VBG	2
 chillingly		1	RB	1
 chilly			8	JJ	8
 chime			2	NN	2
@@ -24506,7 +24596,7 @@ chins			1	NNS	1
 chinwag			1	NN	1
 chip			38	NN	37	VB	1
 chipped			7	VBN	7
-chipping		2	VBG	2
+chipping		3	VBG	3
 chips			42	NNS	42
 chirp			1	VB	1
 chirped			2	VBD	1	VBN	1
@@ -24523,10 +24613,10 @@ chlorofluorocarbons	5	NNS	5
 chloroformed		1	VBN	1
 chock-a-block		2	JJ	2
 chock-full		1	JJ	1
-chocolate		21	JJ	1	NN	20
+chocolate		22	JJ	1	NN	21
 chocolate-coated	1	JJ	1
-chocolates		12	NNS	12
-choice			57	NN	57
+chocolates		12	NNS	11	VBZ	1
+choice			60	NN	60
 choices			12	NNS	12
 choir			7	NN	7
 choirboys		2	NNS	2
@@ -24558,12 +24648,12 @@ chords			6	NNS	6
 chore			2	NN	2
 choreographed		4	JJ	4
 choreographers		1	NNS	1
-chores			7	NNS	7
+chores			8	NNS	8
 chores?			1	NN	1
 chortled		2	VBD	2
 chorus			18	NN	17	VB	1
 choruses		1	NNS	1
-chose			25	VBD	25
+chose			26	VBD	26
 chosen			23	VBN	23
 chosen?			1	VBN	1
 christen		1	VB	1
@@ -24592,41 +24682,43 @@ chuckling		2	VBG	2
 chug			2	NN	1	VBP	1
 chugged			2	VBD	2
 chugging		2	VBG	2
-chum			1	NN	1
+chum			2	NN	2
 chump			1	NN	1
 chunk			13	NN	13
 chunks			4	NNS	4
 chunky			3	JJ	3
-church			96	NN	96
+church			101	NN	101
 church-goers		1	NNS	1
 church-going		1	JJ	1
 church-owned		1	JJ	1
 church-state		1	JJ	1
 churches		13	NNS	13
-churchmen		1	NNS	1
+churchmen		1	NN	1
 churchs			1	JJ	1
 churchyard		1	NN	1
 churn			2	VB	1	VBP	1
 churned			2	VBD	2
-churning		5	JJ	1	NN	1	VBG	3
+churning		5	JJ	1	NN	2	VBG	2
 chute			1	NN	1
 chutzpah		1	NN	1
 cider			1	NN	1
-cigar			10	NN	10
+cigar			12	NN	12
 cigar-box		1	NN	1
 cigar-chomping		1	JJ	1
 cigar-shaped		1	JJ	1
-cigarette		55	NN	55
-cigarettes		28	NNS	28
+cigar.			1	NN	1
+cigarette		59	NN	59
+cigarettes		31	NNS	31
 cigarettes.No,		1	JJ	1
 cigars			2	NNS	2
 cinder			2	NN	2
+cine			1	JJ	1
 cinema			20	NN	20
 cinematic		1	JJ	1
 cinnamon		2	NN	2
 cipher			3	NN	3
 ciphered		1	JJ	1
-circle			32	NN	32
+circle			35	NN	35
 circled			9	VBD	9
 circles			15	NNS	15
 circling		3	VBG	3
@@ -24637,23 +24729,23 @@ circuitous		4	JJ	4
 circuits		4	NNS	4
 circular		11	JJ	10	NN	1
 circulars		2	NNS	2
-circulate		5	VB	3	VBP	2
+circulate		5	VB	1	VBP	4
 circulated		11	VBD	6	VBN	5
 circulating		7	VBG	7
-circulation		37	NN	37
+circulation		39	NN	39
 circumcision		2	NN	2
 circumference		2	NN	2
 circumlocutions		1	NNS	1
 circumscribed		2	VBN	2
 circumspect		4	JJ	3	RB	1
 circumstance		1	NN	1
-circumstances		53	NNS	53
+circumstances		57	NNS	57
 circumstantial		1	JJ	1
 circumvent		5	VB	5
 circumventing		2	VBG	2
 circumvents		1	VBZ	1
 circus			9	NN	9
-cirrhosis		1	NNS	1
+cirrhosis		1	NN	1
 cistern			2	NN	2
 citadel			1	NN	1
 citation		3	NN	3
@@ -24661,14 +24753,14 @@ citations		5	NNS	5
 cite			5	VB	4	VBP	1
 cited			50	VBD	28	VBN	22
 cites			8	VBZ	8
-cities			79	NNS	79
+cities			81	NNS	81
 citing			27	VBG	27
 citizen			13	NN	13
 citizen-sparked		1	JJ	1
 citizenry		2	NN	2
 citizens		32	NNS	32
 citizenship		2	NN	2
-city			213	NN	213
+city			216	NN	216
 city-dwellers		1	NNS	1
 city-owned		1	JJ	1
 city-wide		1	JJ	1
@@ -24676,26 +24768,26 @@ citys			4	JJ	3	NNS	1
 citywide		1	JJ	1
 civic			2	JJ	2
 civics			3	NNS	3
-civil			91	JJ	91
+civil			93	JJ	93
 civil-rights		2	NNS	2
 civil-service		1	JJ	1
 civilian		9	JJ	9
 civilians		4	NNS	4
-civilisation		2	NN	2
-civilised		8	JJ	8
-civilization		10	NN	10
+civilisation		3	NN	3
+civilised		9	JJ	9
+civilization		11	NN	11
 civilizations		3	NNS	3
 civilize		1	VB	1
-civilized		7	JJ	7
+civilized		8	JJ	8
 civilizing		1	VBG	1
 clack			3	NN	2	VB	1
 clad			5	JJ	1	VBN	4
 claim			77	NN	49	VB	11	VBP	17
 claimant		3	NN	3
 claimants		1	NNS	1
-claimed			38	VBD	30	VBN	8
+claimed			43	VBD	34	VBN	9
 claiming		20	VBG	20
-claims			118	NNS	88	VBZ	30
+claims			120	NNS	90	VBZ	30
 clairvoyant		1	NN	1
 clamber			2	NN	1	VB	1
 clambered		2	VBD	2
@@ -24704,7 +24796,7 @@ clammy			3	JJ	3
 clamorous		3	JJ	3
 clamour			2	NN	2
 clamoured		1	VBD	1
-clamouring		4	JJ	1	VBG	3
+clamouring		4	VBG	4
 clamp			2	VB	2
 clampdown		1	NN	1
 clamped			6	VBN	6
@@ -24714,13 +24806,13 @@ clams			1	NNS	1
 clan			3	NN	3
 clandestine		6	JJ	6
 clang			2	NN	2
-clanging		4	NN	2	VBG	2
+clanging		4	NN	1	VBG	3
 clank			1	NN	1
 clanked			1	VBD	1
 clanking		2	VBG	2
 clannish		1	JJ	1
 clans			1	NNS	1
-clap			4	NN	3	VB	1
+clap			4	NN	4
 clapped			5	VBD	5
 clapped-out		1	JJ	1
 clapping		1	VBG	1
@@ -24732,26 +24824,27 @@ clarifies		1	VBZ	1
 clarify			6	VB	6
 clarinet		5	NN	5
 clarinetist		3	NN	3
-clarity			3	NN	3
+clarity			5	NN	5
 clash			15	NN	13	VB	2
 clashed			8	VBD	5	VBN	3
-clashes			6	NNS	6
+clashes			6	NNS	5	VBZ	1
 clashing		2	NN	1	VBG	1
 clasp			5	NN	5
 clasped			6	VBD	4	VBN	2
 clasping		2	VBG	2
-class			93	NN	93
+clasps			1	NNS	1
+class			101	NN	101
 class-action		2	JJ	1	NN	1
 class-conscious		1	JJ	1
 classed			2	VBN	2
-classes			33	NNS	33
-classes.Never!		1	CD	1
+classes			34	NNS	34
+classes.Never!		1	NNS	1
 classic			25	JJ	22	NN	3
 classical		18	JJ	18
 classics		7	NNS	7
 classification		1	NN	1
 classifications		3	NNS	3
-classified		12	JJ	5	VBD	1	VBN	6
+classified		14	JJ	4	VBD	1	VBN	9
 classifies		1	VBZ	1
 classify		1	VB	1
 classifying		5	VBG	5
@@ -24760,29 +24853,29 @@ classmates		2	NNS	2
 classroom		17	NN	17
 classrooms		1	NNS	1
 classy			2	JJ	2
-clatter			5	NN	5
+clatter			6	NN	5	VB	1
 clattered		2	VBD	1	VBN	1
-clattering		3	JJ	3
+clattering		6	JJ	3	VBG	3
 claudication		1	NN	1
 clause			23	NN	23
 clauses			4	NNS	4
 claustrophobic		6	JJ	6
 clavichord		1	NN	1
-claw			3	NN	3
-clawed			1	VBD	1
+claw			4	NN	4
+clawed			1	VBN	1
 clawing			1	VBG	1
-claws			5	NNS	5
-clay			16	JJ	3	NN	11	RB	1	VB	1
-clean			70	JJ	46	NN	1	RB	4	VB	19
+claws			6	NNS	6
+clay			16	JJ	2	NN	12	RB	1	VB	1
+clean			71	JJ	48	NN	1	RB	4	VB	18
 clean-air		4	JJ	4
 clean-cut		5	JJ	5
 clean-shaven		1	VBN	1
 clean-up		3	JJ	1	NN	2
-cleaned			8	VBD	3	VBN	5
-cleaner			22	JJR	10	NN	12
+cleaned			9	VBD	4	VBN	5
+cleaner			23	JJR	11	NN	12
 cleaner-burning		1	JJ	1
 cleaners		4	NNS	4
-cleaning		27	NN	13	VBG	14
+cleaning		28	NN	14	VBG	14
 cleanliness		4	NN	4
 cleanly			1	RB	1
 cleans			3	VBZ	3
@@ -24791,37 +24884,38 @@ cleansed		1	VBD	1
 cleansers		1	NNS	1
 cleansing		1	VBG	1
 cleanup			11	NN	11
-clear			222	JJ	197	RB	4	VB	21
+clear			226	JJ	198	RB	4	VB	24
 clear-cut		7	JJ	7
 clear-headed		2	JJ	2
 clear-out		1	NN	1
 clear-sighted		2	JJ	2
 clearance		21	NN	21
-cleared			42	VBD	21	VBN	21
+cleared			45	VBD	22	VBN	23
 clearer			8	JJR	8
 clearest-headed		1	JJ	1
-clearing		22	NN	12	VBG	10
+clearing		24	NN	12	VBG	12
 clearinghouse		1	NN	1
 clearings		1	NNS	1
-clearly			68	RB	68
-clears			2	VBZ	2
+clearly			70	RB	70
+clears			3	VBZ	3
 cleavage		1	NN	1
 cleavages		1	NNS	1
 cleave			2	VB	2
 cleaved			1	VBD	1
 cleft			3	NN	2	VB	1
 clench			1	VB	1
-clenched		6	JJ	2	VBD	2	VBN	2
+clenched		7	JJ	2	VBD	3	VBN	2
 clenches		1	VBZ	1
 clergy			2	NNS	2
 clergyman		7	NN	7
 clergymen		3	NNS	3
 clerical		3	JJ	2	NN	1
 clerics			1	NNS	1
-clerk			13	NN	13
+clerk			15	NN	15
 clerk-turned		1	JJ	1
 clerks			6	NNS	6
-clever			21	JJ	21
+clever			22	JJ	22
+cleverer		1	NN	1
 cleverest		1	JJS	1
 cleverly		1	RB	1
 clevernessand		1	JJ	1
@@ -24831,14 +24925,14 @@ cliche			1	NN	1
 clichs			3	NNS	3
 click			7	NN	6	VB	1
 clicked			6	VBD	6
-clicking		6	NN	3	VBG	3
+clicking		6	VBG	6
 client			48	NN	48
 client-service		1	JJ	1
-clientele		4	NN	2	NNS	2
+clientele		4	NN	3	NNS	1
 clients			108	NNS	108
-cliff			15	NN	15
+cliff			16	NN	16
 cliff-hanger		1	NN	1
-cliffs			17	NNS	17
+cliffs			20	NNS	20
 climactic		2	JJ	2
 climate			35	NN	35
 climatein		1	NN	1
@@ -24851,17 +24945,17 @@ climb-down		1	NN	1
 climbed			66	VBD	61	VBN	5
 climber			3	NN	3
 climbers		6	NNS	6
-climbing		17	NN	1	VBG	16
+climbing		18	NN	1	VBG	17
 climbs			3	VBZ	3
 climes			1	NNS	1
 clinch			2	VB	2
 clincher		2	NN	2
 cling			6	VB	3	VBP	3
 clinging		6	NN	1	VBG	5
-clinic			6	NN	6
+clinic			7	NN	7
 clinical		15	JJ	14	RB	1
 clinically		1	RB	1
-clinics			7	NNS	7
+clinics			8	NNS	8
 clink			2	NN	2
 clinked			1	JJ	1
 clip			7	NN	3	VB	4
@@ -24871,7 +24965,7 @@ clipped			12	JJ	4	VBD	5	VBN	3
 clippers		2	NNS	2
 clipping		2	NN	1	VBG	1
 clippings		3	NNS	3
-clips			6	NNS	6
+clips			7	NNS	6	VBZ	1
 clique			2	NN	2
 cliquey			1	JJ	1
 cloak			10	NN	10
@@ -24879,7 +24973,7 @@ cloaked			3	VBN	3
 cloakroom		1	NN	1
 clobber			1	VB	1
 clobbered		7	VBD	2	VBN	5
-clock			32	NN	32
+clock			34	NN	34
 clock-tower		1	NN	1
 clocks			5	NNS	2	VBZ	3
 clockwise		2	NN	1	RB	1
@@ -24895,42 +24989,42 @@ clones			1	NNS	1
 cloning			1	NN	1
 clonk			1	NN	1
 clopping		1	VBG	1
-close			289	JJ	82	NN	63	RB	44	VB	100
+close			293	JJ	85	NN	62	RB	48	VB	98
 close-cropped		2	JJ	2
 close-knit		1	JJ	1
 close-mouthed		1	JJ	1
 close-set		1	JJ	1
 close-up		5	NN	5
 close-ups		1	NNS	1
-closed			266	JJ	12	VBD	208	VBN	45	VBN|VBD	1
+closed			270	JJ	13	VBD	211	VBN	45	VBN|VBD	1
 closed-door		2	JJ	2
 closed-end		8	JJ	8
 closedown		1	NN	1
-closely			84	RB	84
+closely			85	RB	85
 closeness		2	NN	2
-closer			36	JJR	19	RB	1	RBR	16
+closer			37	JJR	19	RB	1	RBR	17
 closes			6	VBZ	6
 closest			5	JJS	5
-closet			5	NN	5
+closet			7	NN	7
 closeted		1	VBD	1
-closing			75	JJ	4	NN	38	VBG	33
+closing			76	JJ	4	NN	38	VBG	34
 closings		3	NNS	3
 closure			9	NN	9
 closures		3	NNS	3
-clot			3	NN	3
+clot			4	NN	4
 clot-reducing		1	JJ	1
-cloth			35	NN	35
+cloth			37	NN	37
 clothed			4	VBN	4
-clothes			89	NNS	89
+clothes			98	NNS	97	VBZ	1
 clothier		1	NN	1
 clothiers		1	NNS	1
-clothing		26	NN	26
+clothing		30	NN	30
 cloths			2	NNS	2
 clotted			1	JJ	1
 cloture			2	NN	2
-cloud			17	NN	15	VB	1	VBP	1
+cloud			18	NN	16	VB	1	VBP	1
 clouded			4	JJ	1	VBN	3
-clouding		2	NN	2
+clouding		2	NN	1	VBG	1
 cloudless		2	JJ	2
 clouds			26	NNS	26
 cloudy			8	JJ	8
@@ -24941,38 +25035,40 @@ clove			2	NN	2
 cloven			1	VBN	1
 clover			1	NN	1
 cloves			1	NNS	1
-clown			4	NN	2	VB	1	VBP	1
+clown			4	NN	2	VB	1	VBN	1
 clowning		1	VBG	1
 clownish		2	JJ	2
 clowns			3	NNS	3
 cloying			3	JJ	3
-club			50	NN	49	VB	1
+club			53	NN	52	VB	1
 club-owners		1	NNS	1
+club?			1	NN	1
 clubbed			3	VBD	3
 clubhouse		1	NN	1
-clubs			17	NNS	17
+clubs			18	NNS	18
 cluck			1	NN	1
 clucked			3	VBD	3
-clucking		2	NN	1	VBG	1
+clucking		2	VBG	2
 clue			11	NN	11
 clued-up		2	JJ	2
 clues			13	NNS	13
 clump			8	NN	8
-clumped			2	VBD	2
+clumped			2	VBD	1	VBN	1
 clumping		2	VBG	2
 clumps			3	NNS	3
+clumsier		1	JJR	1
 clumsily		1	RB	1
 clumsiness		1	NN	1
 clumsy			16	JJ	16
 clung			7	VBD	2	VBG	5
 clunk			2	NN	2
 clunky			1	JJ	1
-cluster			10	NN	10
+cluster			11	NN	11
 clustered		4	VBN	4
-clusters		6	NNS	6
+clusters		7	NNS	7
 clutch			10	NN	9	VBP	1
-clutched		6	JJ	1	VBD	4	VBN	1
-clutching		5	VBG	5
+clutched		8	JJ	1	VBD	6	VBN	1
+clutching		8	VBG	8
 clutter			11	NN	9	VB	2
 cluttered		3	JJ	1	VBN	2
 co-author		6	NN	6
@@ -24989,32 +25085,31 @@ co-founders		1	NNS	1
 co-manager		1	NN	1
 co-managing		2	JJ	2
 co-op			1	NN	1
-co-operate		4	VB	3	VBP	1
-co-operation		8	NN	8
+co-operate		4	JJ	1	VB	3
+co-operation		10	NN	10
 co-operative		3	JJ	3
 co-operatives		2	NNS	2
 co-opt			1	VB	1
 co-opted		1	VBN	1
-co-ordinate		2	VB	2
 co-ordinated		2	JJ	2
-co-ordinates		2	VBZ	2
+co-ordinates		1	VBZ	1
 co-ordinator		1	NN	1
 co-owner		2	NN	2
 co-payments		1	NNS	1
-co-pilot		1	NNS	1
+co-pilot		1	NN	1
 co-presidents		1	NNS	1
 co-sponsor		1	VB	1
 co-sponsored		1	VBN	1
 co-star			1	NN	1
 co-starred		1	VBD	1
-coach			17	NN	16	VB	1
+coach			18	NN	17	VB	1
 coach-and-four		1	NN	1
 coached			2	VBN	2
 coaches			12	NNS	12
 coaching		6	NN	6
 coachload		1	NN	1
 coachman		1	NN	1
-coal			53	NN	53
+coal			56	NN	56
 coal-fired		2	JJ	2
 coal-mining		1	NN	1
 coal-owners		1	NNS	1
@@ -25027,7 +25122,7 @@ coals-to-Newcastle	1	JJ	1
 coarse			14	JJ	14
 coarsely		1	RB	1
 coarsened		2	VBN	2
-coast			43	NN	42	VB	1
+coast			44	NN	43	VB	1
 coastal			3	JJ	3
 coasted			1	VBD	1
 coaster			2	NN	2
@@ -25036,13 +25131,14 @@ coastline		7	NN	7
 coasts			1	NNS	1
 coat			53	NN	53
 coat-tails		1	NNS	1
+coat?Thanks		1	NNS	1
 coated			4	VBN	4
 coating			3	NN	3
 coatings		7	NNS	7
-coats			8	NNS	8
+coats			9	NNS	9
 coattails		1	NNS	1
 coax			2	VB	2
-coaxed			2	VBD	2
+coaxed			3	VBD	3
 coaxing			1	NN	1
 cobble			1	JJ	1
 cobbled			4	VBD	2	VBN	2
@@ -25070,8 +25166,8 @@ cocksure		2	JJ	2
 cocktail		13	NN	13
 cocktails		3	NNS	3
 cocky			4	JJ	4
-cocoa			21	NN	21
-coconut			2	JJ	2
+cocoa			22	NN	22
+coconut			2	JJ	1	NN	1
 cocoon			5	NN	5
 cocooned		2	JJ	1	VBD	1
 cocotte			1	NN	1
@@ -25095,14 +25191,15 @@ coerce			2	VB	2
 coercion		1	NN	1
 coercive		2	JJ	2
 coexist			2	VB	2
-coffee			97	NN	97
+coffee			101	NN	101
 coffee-houses		1	NNS	1
 coffee.I		1	NNP	1
 coffee.Ill		1	JJ	1
+coffee?			1	NNP	1
 coffee?No		1	NN	1
-coffees			1	VBZ	1
+coffees			1	NNS	1
 coffin			9	NN	9
-coffins			2	NNS	2
+coffins			3	NNS	3
 cogency			1	NN	1
 cogeneration		1	NN	1
 cogeneration-plant	1	NN	1
@@ -25111,17 +25208,17 @@ cogitating		1	VBG	1
 cognac			2	NN	2
 cognizant		1	JJ	1
 cognoscenti		2	NNS	2
-cogs			4	NNS	4
+cogs			5	JJ	1	NNS	4
 coherent		6	JJ	6
 coherently		1	RB	1
 cohesion		1	NN	1
 cohesive		3	JJ	3
 cohort			1	NN	1
 cohorts			2	NNS	2
-coil			3	NN	2	VB	1
+coil			4	NN	3	VB	1
 coiled			5	JJ	2	VBD	3
 coils			4	NNS	4
-coin			11	JJ	1	NN	10
+coin			12	JJ	1	NN	11
 coin-cleaning		1	JJ	1
 coin-operated		1	JJ	1
 coinage			1	NN	1
@@ -25133,18 +25230,19 @@ coincidental		4	JJ	4
 coincides		1	VBZ	1
 coined			3	VBN	3
 coining			1	VBG	1
-coins			18	NNS	18
+coins			19	NNS	19
 coke			3	NN	3
 cola			1	NN	1
 colander		1	NN	1
-cold			136	JJ	119	NN	16	RB	1
+cold			145	JJ	124	NN	20	RB	1
 cold-blooded		3	JJ	2	VBD	1
 cold-shouldered		1	VBD	1
 cold-storage		2	JJ	2
-cold-water		1	JJ	1
+cold-water		1	NN	1
 cold?			1	NN	1
 colder			4	JJR	4
 coldest			2	JJS	2
+coldly			1	RB	1
 coldness		1	NN	1
 colds			1	NNS	1
 coli			1	NNS	1
@@ -25159,8 +25257,8 @@ collaborators		1	NNS	1
 collage			2	NN	2
 collagen		2	NN	2
 collages		2	NNS	2
-collapse		48	NN	42	VB	6
-collapsed		29	JJ	2	VBD	18	VBN	9
+collapse		49	NN	43	VB	6
+collapsed		30	JJ	2	VBD	19	VBN	9
 collapses		2	VBZ	2
 collapsible		2	JJ	2
 collapsing		3	VBG	3
@@ -25175,12 +25273,12 @@ collateralized		5	JJ	4	VBN	1
 collation		1	NN	1
 colleague		3	NN	3
 colleagues		62	NNS	62
-collect			32	RB	2	VB	25	VBP	5
+collect			32	RB	1	VB	26	VBP	5
 collected		14	VBD	5	VBN	9
 collecting		20	JJ	1	NN	2	VBG	17
 collection		36	NN	36
 collections		8	NNS	8
-collective		10	JJ	10
+collective		11	JJ	11
 collective-bargaining	1	JJ	1
 collectively		2	RB	2
 collectives		1	NNS	1
@@ -25190,17 +25288,17 @@ collectivizers		1	NNS	1
 collector		5	NN	5
 collectors		4	NNS	4
 collects		3	VBZ	3
-college			65	NN	65
+college			68	NN	68
 college-bound		1	JJ	1
 college-bowl		1	NN	1
 college-educated	1	JJ	1
 college-sports		2	JJ	1	NNS	1
 college?		1	CD	1
-colleges		9	NNS	9
+colleges		11	NNS	11
 collegial		1	JJ	1
 collegiate		2	JJ	2
 collide			1	VB	1
-collided		3	VBD	2	VBN	1
+collided		3	JJ	1	VBD	2
 colliery		1	NN	1
 collision		6	NN	6
 collision-damage	1	NN	1
@@ -25209,7 +25307,7 @@ collisions		1	NNS	1
 colloquies		1	NNS	1
 colloquium		1	NN	1
 colluded		1	VBN	1
-collywobbles		1	NNS	1
+collywobbles		1	NN	1
 cologne			1	NN	1
 colon			9	NN	9
 colonel			12	NN	12
@@ -25235,14 +25333,14 @@ colorlessness		1	NN	1
 colors			6	NNS	6
 colossal		6	JJ	6
 colossus		3	NN	3
-colour			50	JJ	9	NN	39	VB	1	VBP	1
+colour			54	JJ	9	NN	43	VB	1	VBP	1
 colour-coded		1	JJ	1
-coloured		22	JJ	14	NN	1	VBN	7
+coloured		22	JJ	12	NN	1	VBN	9
 coloureds		1	NNS	1
 colourful		9	JJ	9
-colouring		2	NN	2
+colouring		2	NN	1	VBG	1
 colourless		4	JJ	4
-colours			24	NNS	24
+colours			26	NNS	26
 column			18	NN	18
 columnist		5	NN	5
 columns			11	NNS	11
@@ -25267,12 +25365,12 @@ combo			1	NN	1
 combs			1	VBZ	1
 combustible		2	JJ	2
 combustion		8	NN	8
-come			360	VB	189	VBD	3	VBN	110	VBP	58
+come			386	VB	203	VBD	3	VBN	117	VBP	63
 come-down		2	NN	2
 come-on			2	NN	2
 come-uppance		2	NN	2
 come.You		1	NN	1
-come?			1	CD	1
+come?			2	NN	1	VB	1
 come?No			1	NN	1
 comeI			1	NNS	1
 comeback		7	NN	7
@@ -25281,12 +25379,12 @@ comedic			2	JJ	2
 comedies		4	NNS	4
 comedown		1	NN	1
 comedy			26	NN	26
-comes			105	VBZ	105
+comes			110	VBZ	110
 comet			1	NN	1
 comets			1	NNS	1
-comfort			15	NN	13	VB	2
+comfort			16	NN	14	VB	2
 comfortable		33	JJ	33
-comfortably		10	RB	10
+comfortably		11	RB	11
 comforted		3	VBN	3
 comforter		2	NN	2
 comforting		1	JJ	1
@@ -25294,12 +25392,12 @@ comforts		1	NNS	1
 comic			22	JJ	18	NN	4
 comical			3	JJ	3
 comics			1	NNS	1
-coming			160	JJ	20	VBG	140
+coming			166	JJ	21	VBG	145
 coming...		1	FW	1
 coming?I		1	NNP	1
 comity			1	NN	1
 comma			1	NN	1
-command			31	NN	28	VB	3
+command			32	NN	28	VB	4
 commandant		1	NN	1
 commanded		16	VBN	16
 commandeered		2	VBD	1	VBN	1
@@ -25331,9 +25429,9 @@ commentator		3	NN	3
 commentators		5	NNS	5
 commented		4	VBD	4
 commenting		6	VBG	6
-comments		48	NNS	47	VBZ	1
-commerce		6	NN	6
-commercial		148	JJ	137	NN	11
+comments		49	NNS	48	VBZ	1
+commerce		7	NN	7
+commercial		149	JJ	138	NN	11
 commercialised		1	VBN	1
 commercialism		2	NN	2
 commercialization	2	NN	2
@@ -25351,20 +25449,20 @@ commissioner		10	NN	10
 commissioners		4	NNS	4
 commissions		25	NNS	24	VBZ	1
 commit			9	VB	7	VBP	2
-commitment		27	NN	27
+commitment		28	NN	28
 commitments		35	NNS	35
 commits			2	VBZ	2
-committed		38	JJ	7	VBD	4	VBN	27
-committee		143	NN	143
-committees		26	NNS	24	VBZ	2
+committed		41	JJ	7	VBD	5	VBN	29
+committee		151	NN	151
+committees		28	NNS	27	VBZ	1
 committing		9	VBG	9
 commmon			1	JJ	1
 commodious		1	JJ	1
-commodities		17	NNS	17
+commodities		18	NNS	18
 commoditize		1	VB	1
 commodity		37	NN	37
 commodity-oriented	1	JJ	1
-common			306	JJ	298	NN	8
+common			310	JJ	302	NN	8
 common-carrier		1	NN	1
 common-law		2	NN	2
 common-sense		1	JJ	1
@@ -25372,19 +25470,20 @@ common-share		1	JJ	1
 common-stock		1	JJ	1
 commonality		1	NN	1
 commoners		1	NNS	1
-commonest		2	JJ	2
+commonest		2	JJ	1	JJS	1
 commonly		7	RB	7
 commonplace		9	JJ	5	NN	4
 commotion		5	NN	5
 communal		4	JJ	4
-commune			6	NN	6
+commune			6	JJ	2	NN	4
 communed		1	VBD	1
 communicants		1	NNS	1
 communicate		8	VB	8
+communicate?		1	VB	1
 communicated		4	VBD	2	VBN	2
 communicating		2	VBG	2
 communication		15	NN	15
-communications		42	NN	2	NNS	40
+communications		43	NN	2	NNS	41
 communications-network	1	JJ	1
 communicative		1	JJ	1
 communing		1	VBG	1
@@ -25394,8 +25493,8 @@ communiques		1	NNS	1
 communism		6	NN	6
 communist		7	JJ	3	NN	4
 communists		1	NNS	1
-communities		21	NNS	21
-community		103	NN	103
+communities		23	NNS	23
+community		106	NN	106
 community?		1	NN	1
 commute			7	NN	6	VB	1
 commuted		1	VBN	1
@@ -25406,26 +25505,26 @@ commuting		2	VBG	2
 compact			9	JJ	6	NN	2	VB	1
 compacted		1	JJ	1
 compacting		1	VBG	1
-companies		543	NNS	543
+companies		544	NNS	544
 companion		17	NN	17
 companionable		2	JJ	2
-companions		4	NNS	4
+companions		5	NNS	5
 companionship		1	NN	1
-company			1898	NN	1898
+company			1912	IN	1	NN	1911
 company-owned		1	JJ	1
-companys		16	JJ	12	NNS	4
+companys		18	JJ	12	NNS	6
 comparability		1	NN	1
 comparable		33	JJ	33
 comparative		5	JJ	5
 comparatively		7	RB	7
 comparatives		1	NNS	1
 compare			18	VB	13	VBP	5
-compared		190	VBD	4	VBN	186
+compared		191	VBD	4	VBN	187
 compares		17	VBZ	17
 comparing		5	VBG	5
-comparison		22	NN	22
+comparison		23	NN	23
 comparisons		6	NNS	6
-compartment		13	NN	13
+compartment		14	NN	14
 compartmentalize	1	VB	1
 compass			8	NN	5	VB	3
 compasses		1	VBZ	1
@@ -25451,8 +25550,8 @@ competence		3	NN	3
 competent		4	JJ	4
 competes		5	VBZ	5
 competing		28	JJ	1	VBG	27
-competition		97	NN	97
-competitions		3	NNS	3
+competition		99	NN	99
+competitions		4	NNS	4
 competitive		52	JJ	52
 competitively		1	RB	1
 competitiveness		2	NN	2
@@ -25465,32 +25564,32 @@ compiles		1	VBZ	1
 compiling		1	VBG	1
 complacency		4	NN	4
 complacent		3	JJ	3
-complain		26	VB	15	VBP	11
+complain		27	VB	15	VBP	12
 complainant		1	NN	1
-complained		40	VBD	32	VBN	8
-complaining		16	VBG	16
+complained		42	VBD	34	VBN	8
+complaining		17	VBG	17
 complains		11	VBZ	11
-complaint		20	NN	20
-complaints		35	NNS	35
+complaint		22	NN	22
+complaints		37	NNS	37
 complaisant		1	JJ	1
 complement		9	NN	4	VB	5
 complementary		4	JJ	4
 complemented		2	VBD	2
 complements		2	VBZ	2
-complete		107	JJ	73	VB	34
+complete		108	IN	2	JJ	72	VB	34
 completed		105	JJ	1	VBD	42	VBN	62
-completely		86	RB	86
+completely		92	RB	92
 completeness		1	NN	1
 completes		3	VBZ	3
 completing		9	VBG	9
 completion		14	NN	14
 completions		1	NNS	1
-complex			80	JJ	56	NN	24
+complex			82	JJ	58	NN	24
 complexes		2	NNS	2
 complexion		11	NN	11
 complexions		1	NNS	1
-complexities		3	NNS	3
-complexity		4	NN	4
+complexities		4	NNS	4
+complexity		5	NN	5
 compliance		23	NN	23
 compliant		1	JJ	1
 complicate		5	VB	5
@@ -25498,19 +25597,19 @@ complicated		25	IN	1	JJ	15	VBD	1	VBN	8
 complication		4	NN	4
 complications		5	NNS	5
 complied		2	VBN	2
-compliment		10	NN	10
+compliment		11	NN	11
 complimentary		2	JJ	2
 complimented		3	VBD	1	VBN	2
 compliments		4	NNS	4
 comply			13	VB	13
 complying		1	VBG	1
-component		9	JJ	2	NN	7
+component		10	JJ	2	NN	8
 components		24	NNS	24
 comport			1	VB	1
 compose			3	VB	1	VBP	2
-composed		15	JJ	2	VBN	13
+composed		16	JJ	2	VBN	14
 composer		4	NN	4
-composers		3	NNS	3
+composers		4	NNS	4
 composes		2	VBZ	2
 composite		117	JJ	106	NN	11
 composites		1	NNS	1
@@ -25520,20 +25619,20 @@ compositions		3	NNS	3
 compositionsthe		1	NN	1
 compost			3	JJ	1	NN	2
 composted		1	VBN	1
-composting		2	NN	2
+composting		2	NN	1	VBG	1
 composure		4	NN	4
 compound		18	JJ	3	NN	13	VB	2
 compounded		6	VBD	2	VBN	4
 compounding		1	VBG	1
 compounds		4	NNS	4
-comprehend		3	VB	2	VBN	1
+comprehend		3	VB	3
 comprehending		1	VBG	1
 comprehensible		3	JJ	1	NN	2
 comprehension		5	NN	5
 comprehensive		16	JJ	16
 comprehensiveness	1	NN	1
 comprehensives		1	NNS	1
-compress		4	NN	3	VB	1
+compress		1	VB	1
 compressed		7	VBN	7
 compresses		1	NNS	1
 compressors		1	NNS	1
@@ -25547,9 +25646,9 @@ compromising		1	VBG	1
 comptroller		6	NN	6
 compulsion		4	NN	4
 compulsive		5	JJ	5
-compulsory		3	JJ	3
+compulsory		5	JJ	5
 compute			2	VB	2
-computer		227	NN	227
+computer		233	NN	233
 computer-aided		5	JJ	5
 computer-assisted	8	JJ	8
 computer-controlled	1	JJ	1
@@ -25560,6 +25659,7 @@ computer-maintenance	2	NN	2
 computer-market		1	JJ	1
 computer-network	1	NN	1
 computer-printer	1	NN	1
+computer-science	1	NN	1
 computer-service	1	JJ	1
 computer-services	1	NNS	1
 computer-servicing	2	JJ	1	NN	1
@@ -25571,7 +25671,7 @@ computerised		1	JJ	1
 computerize		1	VB	1
 computerized		10	JJ	8	NN	1	VBN	1
 computerizing		2	VBG	2
-computers		129	NNS	129
+computers		133	NNS	133
 computing		14	NN	12	VBG	2
 computing-services	1	JJ	1
 comradely		2	JJ	2
@@ -25579,11 +25679,11 @@ comrades		6	NNS	6
 con			4	JJ	1	NN	1	RB	1	VB	1
 concave			2	JJ	2
 conceal			10	VB	10
-concealed		12	VBN	12
+concealed		13	VBN	13
 concealing		2	VBG	2
 concealment		1	NN	1
-concede			14	VB	8	VBP	6
-conceded		14	VBD	12	VBN	2
+concede			15	VB	9	VBP	6
+conceded		17	VBD	15	VBN	2
 concedes		13	VBZ	13
 conceding		2	VBG	2
 conceit			2	NN	2
@@ -25598,29 +25698,30 @@ conceiving		1	VBG	1
 concentrate		25	NN	2	VB	21	VBP	2
 concentrated		13	JJ	3	VBD	4	VBN	6
 concentrates		3	VBZ	3
-concentrating		10	VBG	10
-concentration		11	NN	11
+concentrating		11	VBG	11
+concentration		12	NN	12
 concentrations		7	NNS	7
-concept			34	NN	34
+concept			36	NN	36
 conception		9	NN	9
 conceptions		2	NNS	2
 concepts		6	NNS	6
 conceptual		5	JJ	5
 conceptualize		1	VB	1
-concern			273	NN	270	VB	3
-concerned		78	JJ	23	RB	2	VBD	1	VBN	52
-concerning		15	VBG	15
-concerns		87	NNS	84	VBZ	3
-concert			24	NN	24
+concern			275	NN	272	VB	3
+concerned		79	JJ	23	RB	2	VBD	1	VBN	53
+concerning		16	VBG	16
+concerns		87	NNS	83	VBZ	4
+concert			27	NN	27
 concert-goers		1	NNS	1
 concerted		6	JJ	6
 concertinas		1	VBZ	1
 concertos		2	NNS	2
-concerts		6	NNS	6
+concerts		8	NNS	8
 concession		6	NN	6
 concessions		14	NNS	14
 concierge		1	NN	1
 conciliate		2	VB	2
+conciliation		2	JJ	2
 conciliatory		5	JJ	5
 concise			1	JJ	1
 conclave		2	NN	2
@@ -25629,7 +25730,7 @@ concluded		34	VBD	26	VBN	8
 concludes		6	VBZ	6
 concluding		5	VBG	5
 conclusion		26	NN	26
-conclusions		13	NNS	13
+conclusions		15	NNS	15
 conclusive		2	JJ	2
 conclusively		1	RB	1
 concoct			1	VB	1
@@ -25637,7 +25738,7 @@ concocted		2	VBN	2
 concoction		4	NN	4
 concoctions		1	NNS	1
 concomitant		4	JJ	2	NN	2
-concordance		3	NN	3
+concordance		3	IN	1	NN	2
 concourse		1	NN	1
 concrete		25	JJ	18	NN	7
 concrete-lined		1	VBN	1
@@ -25656,16 +25757,16 @@ condemns		2	VBZ	2
 condense		1	VB	1
 condensed		4	JJ	4
 condensers		1	NNS	1
-condenses		1	NNS	1
+condenses		1	VBZ	1
 condescend		1	VBN	1
 condescended		2	VBD	2
 condescension		1	NN	1
-condition		61	NN	61
+condition		63	IN	2	NN	61
 conditional		9	JJ	9
 conditioned		7	VBN	7
 conditioners		4	NNS	4
 conditioning		4	NN	4
-conditions		118	NNS	118
+conditions		120	NNS	120
 condolences		1	NNS	1
 condom			2	NN	2
 condominium		1	NN	1
@@ -25689,7 +25790,7 @@ confederates		1	NNS	1
 confederation		2	NN	2
 confer			3	VB	3
 conferees		8	NNS	8
-conference		100	NN	100
+conference		101	NN	101
 conference?		1	NN	1
 conferences		7	NNS	7
 conferred		5	VBD	5
@@ -25700,13 +25801,13 @@ confessing		1	VBG	1
 confession		9	NN	9
 confessional		2	NN	2
 confessions		1	NNS	1
-confetti		1	NNS	1
+confetti		1	NN	1
 confict			1	NN	1
 confidant		3	NN	3
 confided		5	VBD	5
-confidence		57	NN	57
+confidence		61	NN	61
 confidences		1	NNS	1
-confident		33	JJ	33
+confident		34	JJ	34
 confidential		15	JJ	15
 confidentiality		1	NN	1
 confidently		1	RB	1
@@ -25721,20 +25822,20 @@ confinements		1	NNS	1
 confines		5	NNS	5
 confirm			17	VB	11	VBP	6
 confirmation		9	NN	9
-confirmed		41	VBD	27	VBN	14
+confirmed		42	VBD	28	VBN	14
 confirming		5	VBG	5
 confirms		7	VBZ	7
 confiscate		2	VB	2
 confiscated		7	VBN	7
 confiscating		2	VBG	2
 confiscation		1	NN	1
-conflict		41	JJ	1	NN	39	VBP	1
+conflict		42	NN	41	VBP	1
 conflict-of-interest	2	JJ	1	NN	1
 conflicted		1	VBN	1
-conflicting		2	JJ	1	VBG	1
+conflicting		3	JJ	2	VBG	1
 conflicts		14	NNS	14
 confluence		4	NN	4
-conform			12	VB	12
+conform			13	VB	13
 conformed		1	VBD	1
 conforming		2	VBG	2
 conformist		3	JJ	3
@@ -25745,7 +25846,7 @@ confront		6	VB	5	VBP	1
 confrontation		26	NN	26
 confrontational		3	JJ	3
 confrontations		2	NNS	2
-confronted		6	VBN	6
+confronted		7	VBN	7
 confronting		3	VBG	3
 confronts		2	VBZ	2
 confuse			8	VB	8
@@ -25764,11 +25865,11 @@ congratulate		4	VB	4
 congratulated		6	VBD	5	VBN	1
 congratulating		1	NN	1
 congratulation		1	NN	1
-congratulations		1	NNS	1
+congratulations		6	NNS	6
 congratulatory		2	JJ	2
 congregate		1	VB	1
 congregated		1	VBD	1
-congregation		4	NN	4
+congregation		5	NN	5
 congress		8	NN	8
 congresses		1	NNS	1
 congressional		59	JJ	59
@@ -25789,8 +25890,8 @@ conjures		2	VBZ	2
 connect			10	VB	7	VBP	3
 connected		25	JJ	6	VBN	19
 connecting		4	VBG	4
-connection		45	NN	45
-connections		6	NNS	6
+connection		46	IN	2	NN	44
+connections		7	NNS	7
 connects		4	VBZ	4
 conned			4	VBD	1	VBN	3
 conning			1	VBG	1
@@ -25809,10 +25910,10 @@ cons			2	NNS	2
 conscience		9	NN	9
 consciences		1	NNS	1
 conscientious		2	JJ	2
-conscious		18	JJ	17	NN	1
-consciously		4	RB	4
+conscious		19	JJ	18	NN	1
+consciously		5	RB	5
 consciousness		12	NN	12
-conscript		3	JJ	1	NN	1	VB	1
+conscript		1	NN	1
 conscripted		2	VBN	2
 conscription		1	NN	1
 conscripts		1	NNS	1
@@ -25824,7 +25925,7 @@ consented		16	VBD	14	VBN	2
 consents		3	NNS	3
 consentual		1	JJ	1
 consequence		12	NN	12
-consequences		31	NNS	31
+consequences		32	NNS	32
 consequent		3	JJ	3
 consequential		1	JJ	1
 consequently		1	RB	1
@@ -25834,16 +25935,17 @@ conservatism		5	NN	5
 conservative		49	JJ	46	NN	2	RB	1
 conservatives		10	NNS	10
 conservatories		1	NNS	1
-conserve		5	VB	5
+conserve		6	VB	6
 conserved		1	VBN	1
 conserving		1	VBG	1
-consider		93	VB	67	VBP	26
+consider		95	VB	69	VBP	26
 considerable		51	JJ	51
-considerably		28	RB	28
+considerably		29	RB	29
 considerate		4	JJ	4
 consideration		17	NN	17
+consideration?		1	JJ	1
 considerations		6	NNS	6
-considered		126	JJ	3	VBD	25	VBN	98
+considered		128	JJ	3	VBD	26	VBN	99
 considering		61	VBG	61
 considers		13	VBZ	13
 consign			1	VB	1
@@ -25857,7 +25959,7 @@ consistently		16	RB	16
 consisting		11	VBG	11
 consists		21	VBZ	21
 consolation		1	NN	1
-console			4	JJ	1	NN	1	VB	2
+console			3	NN	1	VB	2
 consoled		1	VBD	1
 consolidate		4	VB	4
 consolidated		18	JJ	13	VBD	4	VBN	1
@@ -25867,7 +25969,7 @@ consolidation		14	NN	14
 consolidations		1	NNS	1
 consomme		1	NN	1
 consonant		4	JJ	3	NN	1
-consonants		5	NNS	5
+consonants		3	NNS	3
 consort			2	NN	1	VB	1
 consortia		2	NN	2
 consorting		2	VBG	2
@@ -25882,7 +25984,7 @@ conspire		1	VBP	1
 conspired		5	VBD	5
 conspiring		6	VBG	6
 constables		2	NNS	2
-constant		38	JJ	38
+constant		40	JJ	40
 constantly		26	RB	26
 constants		2	NNS	2
 constellation		1	NN	1
@@ -25890,8 +25992,8 @@ constipated		1	JJ	1
 constituencies		1	NNS	1
 constituency		10	NN	10
 constituent		4	JJ	2	NN	2
-constituents		11	NNS	11
-constitute		14	VB	4	VBP	10
+constituents		12	NNS	12
+constitute		16	VB	5	VBP	11
 constituted		4	VBD	4
 constitutes		4	VBZ	4
 constitution		16	NN	16
@@ -25925,10 +26027,10 @@ consult			7	VB	7
 consultancy		3	NN	3
 consultant		40	NN	40
 consultants		35	NNS	35
-consultation		5	NN	5
+consultation		6	NN	6
 consultations		1	NNS	1
 consultative		1	JJ	1
-consulted		6	VBN	6
+consulted		7	VBN	7
 consulting		33	JJ	1	NN	19	VBG	13
 consulting-firm		2	NN	2
 consume			4	VB	2	VBP	2
@@ -25942,17 +26044,17 @@ consumer-product	1	NN	1
 consumer-products	2	NNS	2
 consumers		57	NNS	57
 consumes		1	VBZ	1
-consuming		4	JJ	2	NN	2
-consummate		5	JJ	1	NN	2	VB	2
+consuming		4	JJ	2	NN	1	VBG	1
+consummate		3	JJ	1	VB	2
 consummated		4	VBN	4
 consumption		26	NN	26
 cont'd.			1	VBN	1
-contact			28	NN	22	VB	6
+contact			29	NN	22	VB	7
 contacted		6	VBD	1	VBN	5
 contacting		1	VBG	1
-contacts		14	NNS	14
+contacts		15	NNS	15
 contagious		4	JJ	4
-contain			23	VB	14	VBP	9
+contain			23	VB	13	VBP	10
 contained		34	JJ	1	VBD	20	VBN	13
 container		7	NN	7
 containerboard		3	NN	3
@@ -25971,7 +26073,7 @@ contemplative		1	JJ	1
 contemporaneous		1	JJ	1
 contemporaries		2	NNS	2
 contemporary		21	JJ	20	NN	1
-contempt		16	NN	16
+contempt		20	NN	20
 contemptible		1	JJ	1
 contemptuous		5	JJ	5
 contemptuously		1	RB	1
@@ -25981,12 +26083,12 @@ contender		1	NN	1
 contenders		1	NNS	1
 contending		5	VBG	5
 contends		29	VBZ	29
-content			31	JJ	15	NN	15	VB	1
+content			32	JJ	14	NN	17	VB	1
 contented		6	JJ	6
 contention		8	NN	8
 contentious		7	JJ	7
 contentment		4	NN	4
-contents		27	NNS	27
+contents		28	NNS	28
 contest			25	NN	22	VB	3
 contestant		1	NN	1
 contestants		3	NNS	3
@@ -26005,9 +26107,9 @@ contingent		10	JJ	4	NN	6
 continual		7	JJ	7
 continually		11	RB	11
 continuation		5	NN	5
-continue		211	VB	165	VBP	46
-continued		164	JJ	25	VBD	91	VBN	48
-continues		82	VBZ	82
+continue		217	VB	170	VBP	47
+continued		170	JJ	25	VBD	97	VBN	48
+continues		83	VBZ	83
 continuing		78	JJ	10	VBG	68
 continuingly		1	RB	1
 continuity		2	NN	2
@@ -26022,8 +26124,9 @@ contours		2	NNS	2
 contraception?		1	NNP	1
 contraceptive		7	JJ	5	NN	2
 contraceptives		3	NNS	3
-contract		256	NN	254	VB	2
+contract		254	NN	252	VB	2
 contract-drilling	3	NN	2	VBG	1
+contract?		1	NNP	1
 contracted		16	VBD	11	VBN	5
 contracted-for		1	JJ	1
 contracting		5	NN	3	VBG	2
@@ -26031,7 +26134,7 @@ contraction		6	NN	6
 contractions		4	NNS	4
 contractor		22	NN	22
 contractors		14	NNS	14
-contracts		136	NN	1	NNS	133	VBZ	2
+contracts		136	NN	1	NNS	131	VBZ	4
 contractual		4	JJ	4
 contradict		5	VB	5
 contradicted		2	VBN	2
@@ -26043,20 +26146,20 @@ contradicts		2	VBZ	2
 contralto		4	JJ	1	NN	3
 contraption		2	NN	2
 contrarian		1	JJ	1
-contrary		14	JJ	8	NN	6
-contrast		55	JJ	1	NN	51	VB	2	VBP	1
+contrary		12	IN	1	JJ	8	NN	3
+contrast		54	NN	51	VB	2	VBP	1
 contrasted		3	VBD	2	VBN	1
 contrasting		3	VBG	3
 contrasts		3	VBZ	3
 contravened		6	NN	1	VBN	5
 contravenes		1	NNS	1
 contravention		1	NN	1
-contretemps		1	NNS	1
+contretemps		1	NN	1
 contribute		17	VB	13	VBP	4
 contributed		58	VBD	48	VBN	10
 contributes		3	VBZ	3
 contributing		11	JJ	1	VBG	10
-contribution		14	NN	14
+contribution		16	NN	16
 contributions		32	NNS	32
 contributor		6	NN	6
 contributors		3	NNS	3
@@ -26065,17 +26168,17 @@ contrite		2	JJ	2
 contrivance		3	NN	3
 contrivances		1	NNS	1
 contrived		8	JJ	8
-control			213	JJ	1	NN	168	VB	37	VBP	7
+control			218	JJ	1	NN	173	VB	37	VBP	7
 control-room		1	NN	1
 controllable		1	JJ	1
-controlled		57	JJ	3	VBD	11	VBN	43
+controlled		57	JJ	3	VBD	12	VBN	42
 controller		5	NN	5
 controllers		1	NNS	1
-controlling		26	JJ	7	VBG	19
+controlling		27	JJ	7	VBG	20
 controls		57	NNS	37	VBZ	20
-controversial		48	JJ	48
+controversial		49	JJ	49
 controversies		2	NNS	2
-controversy		25	NN	25
+controversy		26	NN	26
 contusion		1	NN	1
 conundrums		1	NNS	1
 conurbation		1	NN	1
@@ -26095,7 +26198,7 @@ conveniently		1	RB	1
 convenientthe		1	JJ	1
 convening		1	VBG	1
 convenor		1	NN	1
-convent			6	NN	6
+convent			7	NN	7
 convention		12	NN	12
 convention-goers	1	NNS	1
 conventional		43	JJ	43
@@ -26107,7 +26210,7 @@ converged		1	VBD	1
 convergence		2	NN	2
 converging		1	VBG	1
 conversant		1	JJ	1
-conversation		68	NN	68
+conversation		73	NN	73
 conversational		2	JJ	2
 conversationalist	2	NN	2
 conversations		23	NNS	23
@@ -26115,14 +26218,14 @@ converse		3	JJ	1	NN	1	VB	1
 conversed		1	VBN	1
 conversion		22	NN	22
 conversions		1	NNS	1
-convert			28	JJ	1	NN	1	VB	24	VBP	2
+convert			27	NN	1	VB	24	VBP	2
 converted		23	JJ	1	VBD	5	VBN	17
 converter		1	NN	1
 convertibility		1	NN	1
 convertible		81	JJ	73	NN	8
 converting		11	VBG	11
 convertor		1	NN	1
-converts		8	NNS	3	VBZ	5
+converts		9	NNS	4	VBZ	5
 convex			2	JJ	2
 convexity		1	NN	1
 convey			11	VB	7	VBP	4
@@ -26130,14 +26233,14 @@ conveyance		1	NN	1
 conveyed		3	VBD	3
 conveying		1	VBG	1
 conveyor		2	NN	2
-convict			4	JJ	1	VB	3
+convict			4	VB	4
 convicted		24	VBD	1	VBN	23
-conviction		18	NN	18
+conviction		19	NN	19
 convictions		9	NNS	9
 convince		16	VB	15	VBP	1
 convinced		28	JJ	9	VBD	2	VBN	16	VBN|JJ	1
 convinces		2	VBZ	2
-convincing		16	JJ	10	NN	1	VBG	5
+convincing		18	JJ	11	NN	2	VBG	5
 convincingly		1	RB	1
 convivial		1	NN	1
 convocation		4	NN	4
@@ -26146,25 +26249,25 @@ convolutions		2	NNS	2
 convoy			9	NN	9
 convoys			5	NNS	5
 convulsed		3	VBD	1	VBN	2
-convulsing		1	NN	1
+convulsing		1	VBG	1
 convulsion		1	NN	1
 convulsions		1	NNS	1
 convulsive		5	JJ	5
 cooed			1	VBN	1
 cooing			3	VBG	3
-cook			20	NN	13	VB	7
+cook			21	NN	13	VB	8
 cook?			1	NN	1
 cookbook		2	NN	2
 cookbooks		1	NNS	1
-cooked			8	VBN	8
+cooked			9	VBN	9
 cooker			9	NN	9
 cookers			3	NNS	3
 cookery			4	NN	4
 cookie			1	NN	1
 cookies			7	NNS	7
-cooking			30	JJ	1	NN	22	VBG	7
+cooking			32	JJ	1	NN	23	VBG	8
 cooks			1	NNS	1
-cool			43	JJ	35	NN	2	VB	5	VBP	1
+cool			47	JJ	39	NN	2	VB	5	VBP	1
 coolant			1	NN	1
 coolants		2	NNS	2
 cooled			6	VBD	1	VBN	5
@@ -26182,14 +26285,14 @@ cooperative-care	1	JJ	1
 cooperatively		1	RB	1
 cooperatives		11	NNS	11
 coops			2	NNS	2
-coordinate		8	VB	8
+coordinate		7	VB	7
 coordinated		1	VBN	1
 coordination		3	NN	3
 coordinator		4	NN	4
 cop			6	NN	6
 cop-killer		3	JJ	3
 cop-out			1	NN	1
-cope			21	VB	21
+cope			25	VB	25
 copied			6	VBD	3	VBN	3
 copier			5	NN	5
 copiers			2	NNS	2
@@ -26207,16 +26310,16 @@ coppices		1	NNS	1
 cops			4	NNS	4
 copses			1	NNS	1
 copulate		1	VBP	1
-copy			49	NN	40	VB	8	VBP	1
+copy			50	NN	41	VB	8	VBP	1
 copycats		1	NNS	1
-copying			11	NN	5	VBG	6
+copying			11	NN	6	VBG	5
 copyright		14	JJ	1	NN	13
 copyrighted		3	VBN	3
 copyrights		5	NNS	5
 coquette		1	NN	1
 coquettish		3	JJ	2	RB	1
-cor			2	NN	2
-coral			7	JJ	5	NN	2
+cor			2	NN	1	UH	1
+coral			7	JJ	6	NN	1
 corals			4	NNS	4
 corbel			1	NN	1
 cord			6	NN	6
@@ -26230,19 +26333,19 @@ core			48	JJ	9	NN	38	VB	1
 coriander		1	NN	1
 corinthian		1	JJ	1
 cork			5	NN	4	VB	1
-corks			1	NNS	1
-corkscrew		1	NN	1
+corks			2	NNS	2
+corkscrew		2	NN	2
 corkscrews		1	NNS	1
 cormorants		1	NNS	1
-corn			61	NN	61
+corn			63	NN	63
 corn-based		1	JJ	1
 corn-buying		1	JJ	1
 cornea			1	NN	1
 corneal			2	JJ	2
-corner			86	JJ	1	NN	82	VB	3
+corner			88	JJ	1	NN	84	VB	3
 corner?			1	NN	1
 cornered		5	VBN	5
-corners			13	NNS	13
+corners			13	NNS	12	VBZ	1
 cornerstone		3	NN	3
 cornerstones		2	NNS	2
 cornet			2	NN	2
@@ -26275,7 +26378,7 @@ corpse			2	NN	2
 corpses			2	NNS	2
 corpulent		2	JJ	2
 corpus			2	NN	2
-correct			45	JJ	31	VB	13	VBP	1
+correct			46	JJ	33	VB	12	VBP	1
 corrected		7	VBN	7
 correcting		7	VBG	7
 correction		4	NN	4
@@ -26291,25 +26394,25 @@ corresponded		3	VBD	3
 correspondence		5	NN	5
 correspondent		9	NN	9
 correspondents		3	NNS	3
-corresponding		10	JJ	10
+corresponding		10	JJ	9	VBG	1
 corresponds		2	VBZ	2
 corridor		19	NN	19
-corridors		6	NNS	6
+corridors		7	NNS	7
 corroborate		1	VBP	1
 corroborated		1	VBD	1
 corrode			3	VB	2	VBD	1
 corrosive		4	JJ	4
 corrugated		2	JJ	2
 corrupt			11	JJ	11
-corrupted		5	JJ	1	VBD	1	VBN	3
+corrupted		5	JJ	1	VBN	4
 corrupting		2	JJ	2
-corruption		21	NN	21
-corrupts		1	NNS	1
+corruption		20	NN	20
+corrupts		1	VBZ	1
 corset			1	NN	1
 corsets			1	NNS	1
 cortex			3	NN	3
 cortisone		1	NN	1
-cos			1	VBZ	1
+cos			1	IN	1
 coshed			1	VBN	1
 cosier			1	JJR	1
 cosily			1	RB	1
@@ -26322,9 +26425,9 @@ cosmologies		1	NNS	1
 cosmology		1	NN	1
 cosmopolitan		4	JJ	4
 cosmopolitans		1	NNS	1
-cosmos			1	NNS	1
+cosmos			1	NN	1
 cosseted		1	VBN	1
-cost			232	NN	164	VB	43	VBD	18	VBN	5	VBP	2
+cost			241	NN	171	VB	43	VBD	20	VBN	5	VBP	2
 cost-benefit		2	JJ	2
 cost-conscious		2	JJ	2
 cost-containment	1	JJ	1
@@ -26340,32 +26443,32 @@ costing			8	VBG	8
 costlier		1	JJR	1
 costliest		1	JJS	1
 costly			37	JJ	37
-costs			230	NNS	205	VBZ	25
+costs			232	NNS	207	VBZ	25
 costume			8	JJ	1	NN	7
 costumed		2	VBN	2
 costumes		9	NNS	9
 costumes?		1	NN	1
 cosy			7	JJ	5	NN	2
-cot			3	NN	3
+cot			4	NN	4
 coterie			2	NN	2
-cottage			18	NN	18
+cottage			19	NN	19
 cottages		3	NNS	3
-cotton			43	NN	42	NNS	1
+cotton			44	NN	43	NNS	1
 cotton-wool		1	JJ	1
-couch			10	NN	10
+couch			11	NN	11
 couched			4	VBN	4
 couching		1	VBG	1
 cough			17	NN	14	VB	3
 coughed			5	VBD	4	VBN	1
 coughing		9	NN	1	VBG	8
 coughs			3	NNS	3
-could			1474	MD	1474
-couldnt			113	JJ	27	NN	17	RB	6	VB	1	VBP	62
-council			54	JJ	3	NN	51
+could			1536	MD	1536
+couldnt			130	JJ	39	NN	19	RB	6	VB	1	VBP	65
+council			55	JJ	3	NN	52
 councillor		1	NN	1
 councillors		5	NNS	5
 councilors		1	NNS	1
-councils		6	NNS	6
+councils		7	NNS	7
 councilwoman		1	NN	1
 counsel			37	NN	34	VB	3
 counseling		5	NN	3	VBG	2
@@ -26373,18 +26476,18 @@ counselled		3	VBD	3
 counselling		3	JJ	3
 counsellors		2	NNS	2
 counselors		1	NNS	1
-count			33	NN	15	VB	16	VBP	2
+count			35	NN	15	VB	18	VBP	2
 countable		1	JJ	1
 countdown		2	NN	2
-counted			18	VBD	4	VBN	14
+counted			19	VBD	4	VBN	15
 countenance		3	NN	1	VB	2
-counter			38	JJ	1	NN	17	RB	6	VB	12	VBP	2
+counter			38	JJ	1	NN	18	RB	6	VB	11	VBP	2
 counter-attack		1	VB	1
 counter-bluff		1	NN	1
 counter-charges		1	NNS	1
 counter-claims		1	NNS	1
 counter-demand		1	NN	1
-counter-feint		1	NN	1
+counter-feint		1	JJ	1
 counter-measures	1	NNS	1
 counter-revolutionaries	2	NNS	2
 counteract		4	VB	4
@@ -26415,37 +26518,37 @@ countervailing		1	VBG	1
 counterweight		2	NN	2
 countess		3	NN	3
 counties		4	NNS	4
-counting		12	NN	2	VBG	10
+counting		13	NN	2	VBG	11
 countless		3	JJ	3
-countries		188	NNS	188
-country			430	JJ	1	NN	429
+countries		197	NNS	197
+country			441	JJ	1	NN	440
 country-house		1	NN	1
 country?		1	NN	1
 countryman		1	NN	1
-countrymen		3	NNS	3
-countrys		23	JJ	17	NNS	5	VBZ	1
-countryside		23	NN	23
+countrymen		3	NN	2	NNS	1
+countrys		23	JJ	16	NNS	6	VBZ	1
+countryside		24	NN	24
 counts			17	NNS	7	VBZ	10
 county			8	NN	8
 coup			28	FW	1	NN	27
 coupe			3	NN	3
-couple			96	JJ	1	NN	95
+couple			104	JJ	1	NN	103
 coupled			11	VBN	11
-couples			22	NNS	22
+couples			23	NNS	23
 coupon			36	NN	36
 coupons			5	NNS	5
 coups			2	NNS	2
-courage			15	NN	15
+courage			17	NN	17
 courageous		3	JJ	3
 courier			3	NN	3
 couriers		2	NNS	2
-course			199	NN	199
+course			209	IN	1	NN	208
 course-correction	1	NN	1
 course.Mr		1	JJ	1
 course?			1	NN	1
 coursed			1	VBN	1
-courses			16	NNS	16
-court			265	NN	265
+courses			18	NNS	18
+court			266	NN	266
 court-appointed		2	JJ	2
 court-martial		1	VB	1
 court-ordered		2	JJ	2
@@ -26453,36 +26556,36 @@ courted			3	VBD	2	VBN	1
 courteous		5	JJ	5
 courtesan		1	NN	1
 courtesies		2	NNS	2
-courtesy		10	NN	10
+courtesy		10	IN	4	NN	6
 courthouse		4	NN	4
-courtiers		2	NNS	1	VBZ	1
+courtiers		2	NNS	2
 courting		5	NN	1	VBG	4
 courtly			2	JJ	2
 courtroom		15	NN	15
 courts			51	NNS	51
 courts?			1	NN	1
-courtship		2	NN	2
-courtyard		18	NN	18
+courtship		3	NN	3
+courtyard		19	NN	19
 courtyards		1	NNS	1
 cousin			11	NN	11
 cousins			8	NNS	8
 cove			1	NN	1
 covenant		2	NN	2
 covenants		2	NNS	2
-cover			69	NN	15	VB	50	VBP	4
+cover			72	IN	1	NN	15	VB	52	VBP	4
 cover-up		6	NN	6
-coverage		29	NN	29
+coverage		32	NN	32
 coverages		1	NNS	1
-covered			82	JJ	1	VBD	12	VBN	69
+covered			88	JJ	1	VBD	14	VBN	73
 covering		24	NN	2	VBG	22
-coverings		3	NNS	3
-covers			25	NNS	3	VBZ	22
+coverings		4	NNS	4
+covers			27	NNS	3	VBZ	24
 covert			20	JJ	20
 coverup			1	NN	1
-coveted			5	JJ	4	VBN	1
+coveted			5	JJ	5
 covetous		1	JJ	1
 covets			1	VBZ	1
-cow			8	NN	8
+cow			10	NN	10
 coward			3	NN	3
 cowardice		2	NN	2
 cowardly		4	JJ	4
@@ -26490,7 +26593,7 @@ cowards			3	NNS	3
 cowboy			2	NN	2
 cowboys			2	NNS	2
 cowed			2	VBN	2
-cowered			1	VBD	1
+cowered			1	VBN	1
 cows			11	NNS	11
 cowshed			1	JJ	1
 cowsheds		1	NNS	1
@@ -26502,14 +26605,14 @@ crab			5	NN	5
 crabby			2	JJ	2
 crabs			5	NNS	5
 crabwise		1	RB	1
-crack			39	NN	23	VB	16
+crack			40	NN	23	VB	17
 crack-up		1	NN	1
 crackdown		10	NN	10
-cracked			16	JJ	5	VBD	3	VBN	8
+cracked			16	JJ	5	VBD	4	VBN	7
 cracker			4	NN	4
-cracking		10	JJ	1	VBG	9
+cracking		12	JJ	1	VBG	11
 crackle			1	NN	1
-crackled		3	JJ	1	VBD	1	VBN	1
+crackled		3	JJ	2	VBN	1
 crackling		1	VBG	1
 crackpot		3	JJ	2	NN	1
 cracks			13	NNS	13
@@ -26523,16 +26626,16 @@ craftiest		1	JJS	1
 crafts			1	NNS	1
 craftsman		4	NN	4
 craftsmanship		1	NN	1
-craftsmen		6	NNS	6
-craftswomen		1	NNS	1
-crafty			3	JJ	3
-crag			2	NN	2
+craftsmen		6	NN	1	NNS	5
+craftswomen		1	NN	1
+crafty			4	JJ	4
+crag			3	NN	3
 craggy			3	JJ	3
 crags			2	NNS	2
 crammed			13	JJ	3	VBD	10
 cramming		3	VBG	3
 cramp			3	NN	2	VB	1
-cramped			5	JJ	5
+cramped			5	JJ	2	VBN	3
 cramping		1	VBG	1
 cramps			2	NNS	2
 crams			1	VBZ	1
@@ -26550,28 +26653,28 @@ crap			3	NN	3
 crappy			1	JJ	1
 craps			1	NNS	1
 crapshoot		1	NN	1
-crash			93	JJ	2	NN	87	VB	4
+crash			94	JJ	2	NN	88	VB	4
 crash-helmets		1	NNS	1
 crashed			18	NN	1	VBD	17
-crashes			9	NNS	8	VBZ	1
+crashes			9	NNS	7	VBZ	2
 crashing		11	VBG	11
 crashlet		1	NN	1
-crate			11	NN	10	VB	1
+crate			12	NN	11	VB	1
 crated			1	JJ	1
-crater			3	NN	3
-craters			4	NNS	3	VBZ	1
+crater			5	NN	5
+craters			4	NNS	4
 crates			4	NNS	4
 cravat			2	NN	2
 crave			1	VBP	1
 craved			2	VBD	1	VBN	1
-craving			3	NN	3
+craving			3	NN	2	VBG	1
 cravings		1	NNS	1
 crawl			9	NN	5	VB	4
 crawled			4	VBD	4
-crawling		7	JJ	2	VBG	5
+crawling		8	JJ	2	VBG	6
 crawls			1	VBZ	1
-crayon			4	NN	3	VB	1
-crayoning		1	JJ	1
+crayon			4	JJ	1	NN	2	VB	1
+crayoning		1	VBG	1
 crayons			1	NNS	1
 craze			12	NN	12
 crazed			3	JJ	3
@@ -26579,10 +26682,10 @@ crazies			1	NNS	1
 crazy			12	JJ	12
 creak			2	NN	1	VB	1
 creaked			4	VBD	4
-creaking		6	JJ	3	NN	3
+creaking		6	JJ	2	NN	3	VBG	1
 creaks			4	NNS	3	VBZ	1
 creaky			2	JJ	2
-cream			38	JJ	1	NN	37
+cream			37	JJ	1	NN	36
 cream-coloured		3	JJ	2	VBN	1
 creamed			2	VBN	2
 creamier		1	JJR	1
@@ -26592,9 +26695,9 @@ creamy-brown		1	JJ	1
 crease			3	NN	1	VB	2
 creased			2	VBD	2
 creases			2	NNS	1	VBZ	1
-create			64	VB	54	VBP	10
-created			78	VBD	21	VBN	57
-creates			18	VBZ	18
+create			69	VB	59	VBP	10
+created			79	VBD	22	VBN	57
+creates			19	VBZ	19
 creating		32	VBG	32
 creation		26	NN	26
 creationist		1	JJ	1
@@ -26603,14 +26706,14 @@ creative		37	JJ	35	RB	2
 creativity		8	NN	8
 creator			5	NN	5
 creators		3	NNS	3
-creature		26	NN	26
-creatures		28	NNS	28
+creature		27	NN	27
+creatures		29	NNS	29
 creche			1	NN	1
 creches			1	NNS	1
-credentials		9	NNS	9
+credentials		9	NN	3	NNS	6
 credibility		19	NN	19
 credible		10	JJ	10
-credit			159	NN	155	VB	3	VBP	1
+credit			160	NN	156	VB	3	VBP	1
 credit-card		9	JJ	2	NN	7
 credit-data		1	NN|NNS	1
 credit-information	1	NN	1
@@ -26651,29 +26754,29 @@ crest			7	NN	7
 crests			2	NNS	2
 crevasses		1	NNS	1
 crevices		3	NNS	3
-crew			26	NN	26
+crew			27	NN	27
 crewman			1	NN	1
-crewmen			1	NNS	1
-crews			4	NNS	4
+crewmen			1	NN	1
+crews			5	NNS	5
 crib			5	JJ	1	NN	4
 cribs			1	NNS	1
 crick			1	NN	1
 cricked			1	VBD	1
 cricket			11	NN	11
-cricket?		1	NN	1
+cricket?		1	NNS	1
 cricketer		3	NN	3
 cricketers		1	NNS	1
 crickets		1	NNS	1
-cried			26	VBD	20	VBN	6
-cries			13	NNS	5	VBZ	8
-crime			60	NN	60
+cried			26	VBD	21	VBN	5
+cries			15	NNS	5	VBZ	10
+crime			64	NN	64
 crime-fighting		1	JJ	1
 crime-infested		1	JJ	1
 crimes			31	NNS	31
-criminal		57	JJ	49	NN	8
+criminal		59	JJ	51	NN	8
 criminal-justice	1	NN	1
 criminality		2	NN	2
-criminals		23	NNS	23
+criminals		24	NNS	24
 crimp			1	VB	1
 crimped			2	JJ	2
 crimson			7	JJ	6	NN	1
@@ -26688,31 +26791,33 @@ crippled		12	JJ	3	NNS	3	VBN	6
 cripples		1	NNS	1
 crippling		2	JJ	2
 crises			12	NNS	12
-crisis			71	NN	71
+crisis			74	NN	74
 crisp			12	JJ	12
-crisper			1	NN	1
+crisper			1	JJR	1
 crisps			1	NNS	1
-criss-cross		4	JJ	2	VBP	2
+criss-cross		5	JJ	2	VBP	3
 criss-crossed		1	VBD	1
 crisscrossing		1	VBG	1
-criteria		10	NNS	10
-critic			19	NN	19
-critical		45	JJ	45
-critically		1	RB	1
-criticised		1	VBN	1
+criteria		12	NN	2	NNS	10
+criterion		2	NN	2
+critic			20	NN	20
+critical		51	JJ	51
+critically		2	RB	2
+criticised		2	VBD	1	VBN	1
 criticism		62	NN	62
 criticisms		8	NNS	8
-criticize		4	VB	3	VBP	1
-criticized		34	VBD	16	VBN	18
+criticize		5	VB	3	VBP	2
+criticized		36	VBD	17	VBN	19
 criticizes		2	VBZ	2
 criticizing		4	VBG	4
-critics			56	NNS	56
+critics			59	NNS	59
 critique		6	NN	6
 croak			2	NN	1	VBP	1
-croaking		3	NN	2	VBG	1
+croaking		3	NN	1	VBG	2
 crocidolite		5	NN	5
 crock			1	NN	1
 crocks			1	NNS	1
+crocodile		1	NN	1
 crocuses		2	VBZ	2
 croft			3	NN	3
 croissants		1	NNS	1
@@ -26726,11 +26831,11 @@ crooks			2	NNS	2
 crooned			1	VBD	1
 crooners		2	NNS	2
 crooning		1	VBG	1
-crop			60	NN	58	VB	2
+crop			61	NN	59	VB	2
 cropped			9	VBN	9
 cropping		3	VBG	3
-crops			34	NNS	34
-cross			33	JJ	2	NN	17	VB	10	VBP	4
+crops			36	NNS	36
+cross			38	JJ	5	NN	18	VB	11	VBP	4
 cross-bay		1	JJ	1
 cross-blending		2	JJ	2
 cross-border		5	JJ	5
@@ -26752,31 +26857,31 @@ cross-question		1	VB	1
 cross-questioning	1	VBG	1
 cross-reference		1	NN	1
 cross-referenced	1	VBN	1
-cross-roads		2	NNS	2
+cross-roads		2	NN	1	NNS	1
 cross-section		5	NN	5
 cross-shaped		1	JJ	1
 cross-shareholdings	1	NNS	1
-crossed			28	VBD	18	VBN	10
-crosser			2	JJR	2
+crossed			33	VBD	23	VBN	10
+crosser			4	JJR	4
 crosses			6	NNS	1	VBZ	5
 crossing		18	NN	3	VBG	15
-crossings		1	NNS	1
-crossroads		1	NNS	1
+crossings		2	NNS	2
+crossroads		2	NNS	2
 crosswise		1	RB	1
 crossword		3	NN	3
 crotch			2	NN	2
 crotchety		1	JJ	1
 crouch			3	NN	2	VB	1
-crouched		5	VBD	5
-crouching		5	VBG	5
+crouched		6	VBD	6
+crouching		6	VBG	6
 crow			1	VB	1
 crowbar			1	NN	1
-crowd			73	NN	71	VB	1	VBP	1
-crowded			38	JJ	18	VBD	2	VBN	18
-crowding		3	JJ	2	NN	1
-crowds			27	NNS	24	VBZ	3
+crowd			75	NN	73	VB	1	VBP	1
+crowded			39	JJ	18	VBD	2	VBN	19
+crowding		3	VBG	3
+crowds			28	NNS	25	VBZ	3
 crowed			1	VBN	1
-crowing			2	JJ	1	NN	1
+crowing			2	NN	1	VBG	1
 crown			12	NN	11	VB	1
 crowned			4	VBN	4
 crowning		1	JJ	1
@@ -26791,7 +26896,7 @@ crudely			2	RB	2
 crudeness		1	NN	1
 crudes			3	NNS	3
 crudest			2	JJS	2
-cruel			16	JJ	16
+cruel			17	JJ	17
 cruellest		1	JJS	1
 cruelly			1	RB	1
 cruelthe		1	JJ	1
@@ -26815,25 +26920,26 @@ crumpling		1	VBG	1
 crunch			17	NN	15	VB	2
 crunched		3	VBD	3
 crunchier		2	JJR	2
-crunching		2	NN	1	VBG	1
+crunching		2	VBG	2
 crunchy			3	JJ	3
 crusade			9	NN	8	VB	1
-crusading		1	JJ	1
+crusading		1	VBG	1
 crush			16	NN	7	VB	9
 crushed			16	JJ	6	VBN	10
 crushes			2	NNS	1	VBZ	1
 crushing		2	VBG	2
-crust			9	NN	9
+crust			10	NN	10
 crusted			1	JJ	1
-crusts			2	NNS	2
+crusts			3	NNS	3
 crusty			3	JJ	3
 crutch			4	NN	4
 crutches		3	NNS	3
 crux			2	NN	2
 cruzado			1	NN	1
-cry			31	NN	22	VB	8	VBP	1
+cry			33	NN	24	VB	8	VBP	1
 cry-babies		2	NNS	2
-crying			14	JJ	1	VBG	13
+crying			15	JJ	1	VBG	14
+crying.Nonsense,	1	NNP	1
 cryptic			4	JJ	3	RB	1
 cryptically		1	RB	1
 crystal			8	NN	8
@@ -26847,7 +26953,7 @@ cubby-hole		1	NN	1
 cubbyhole		1	NN	1
 cube			3	NN	3
 cubes			4	NNS	4
-cubic			13	JJ	13
+cubic			14	JJ	14
 cubicles		3	NNS	3
 cubism			1	NN	1
 cubs			3	NNS	3
@@ -26887,17 +26993,17 @@ cults			1	NNS	1
 cultural		33	JJ	33
 cultural-reform		1	NN	1
 culturally		1	RB	1
-culture			58	NN	58
+culture			61	NN	61
 cultured		4	JJ	3	VBN	1
 cultures		17	NNS	17
 culvert			1	NN	1
-cumbersome		4	JJ	4
+cumbersome		5	JJ	5
 cumin			2	NN	2
-cumulative		9	JJ	9
+cumulative		10	JJ	10
 cumulatively		1	RB	1
 cunning			2	JJ	2
 cunningly		1	RB	1
-cup			53	NN	53
+cup			59	NN	59
 cup?			1	NN	1
 cupboard		16	NN	16
 cupboards		4	NNS	4
@@ -26909,28 +27015,28 @@ cuppa			1	NN	1
 cuppa?			1	NN	1
 cupped			2	VBD	1	VBN	1
 cupping			1	VBG	1
-cups			15	NNS	15
+cups			16	NNS	16
 curable			2	JJ	2
 curacy			1	NN	1
 curate			2	JJ	1	NN	1
 curator			6	NN	6
-curb			23	NN	6	VB	17
+curb			24	NN	6	VB	18
 curbed			4	VBD	1	VBN	3
 curbing			7	VBG	7
 curbs			5	NNS	5
 curdle			2	VB	2
 curdles			1	NNS	1
-cure			28	NN	13	VB	15
+cure			29	NN	14	VB	15
 cure-all		1	NN	1
 cured			8	VBN	8
-cures			4	NNS	4
-curfew			4	NN	4
+cures			4	NNS	3	VBZ	1
+curfew			5	NN	5
 curing			1	VBG	1
 curio			1	NN	1
 curios			1	NNS	1
 curiosities		1	NNS	1
 curiosity		10	NN	10
-curious			27	JJ	27
+curious			29	JJ	29
 curiously		7	RB	7
 curioussmall		1	JJ	1
 curl			5	NN	2	VB	3
@@ -26950,7 +27056,7 @@ currencies		34	NNS	34
 currency		105	NN	105
 currency-exchange	1	JJ	1
 currency?		1	NNS	1
-current			294	JJ	286	NN	8
+current			300	JJ	292	NN	8
 current-carrying	8	JJ	8
 current-generation	1	JJ	1
 currently		150	RB	150
@@ -26961,17 +27067,17 @@ curry			3	VB	3
 curse			6	NN	6
 cursed			8	VBD	8
 curses			4	NNS	4
-cursing			2	NN	2
+cursing			2	NN	1	VBG	1
 cursory			3	JJ	3
 curt			1	JJ	1
 curtail			9	VB	9
 curtailed		6	VBD	2	VBN	4
 curtailing		1	VBG	1
 curtailment		2	NN	2
-curtain			19	NN	19
+curtain			20	NN	20
 curtain-raiser		2	NN	2
 curtained		2	JJ	2
-curtains		33	NNS	33
+curtains		34	NNS	34
 curtness		1	NN	1
 curtsey			1	NN	1
 curtsied		1	VBD	1
@@ -26979,14 +27085,14 @@ curtsy			2	NN	1	VB	1
 curvaceous		2	JJ	2
 curvature		2	NN	2
 curve			9	NN	9
-curved			14	JJ	5	VBD	7	VBN	2
+curved			15	JJ	4	VBD	8	VBN	3
 curves			5	NNS	4	VBZ	1
 curving			1	JJ	1
 curvy			1	JJ	1
 cushion			15	NN	11	VB	4
 cushioned		2	VBN	2
-cushioning		3	NN	2	VBG	1
-cushions		10	NNS	9	VBZ	1
+cushioning		3	NN	1	VBG	2
+cushions		11	NNS	10	VBZ	1
 cushy			2	JJ	2
 custard			2	NN	2
 custodian		2	NN	2
@@ -26998,34 +27104,34 @@ custom-designed		1	JJ	1
 custom-die		1	NN	1
 custom-made		2	JJ	2
 custom-tailored		1	JJ	1
-custom..		1	FW	1
+custom..		1	CD	1
 customarily		1	RB	1
 customary		15	JJ	15
 customer		52	NN	52
 customer-driven		1	JJ	1
 customer-service	1	JJ	1
-customers		143	NNS	143
+customers		147	NNS	147
 customized		2	VBN	2
 customizing		1	VBG	1
 customs			21	NNS	21
 customs-clearance	1	NN	1
-cut			314	JJ	8	NN	62	VB	113	VBD	59	VBN	71	VBP	1
+cut			319	JJ	8	NN	64	VB	113	VBD	60	VBN	73	VBP	1
 cut-and-dried		1	JJ	1
-cut-glass		1	JJ	1
+cut-glass		1	NN	1
 cut-off			2	NN	2
 cut-out			4	NN	4
 cut-outs		1	NNS	1
 cutback			2	NN	2
 cutbacks		11	NNS	11
-cute			8	JJ	8
+cute			9	JJ	9
 cutest			1	JJS	1
 cutlass			1	NN	1
-cutlery			4	JJ	1	NN	3
+cutlery			4	NN	4
 cutlet			2	NN	2
 cutlets			3	NNS	3
 cutouts			1	NNS	1
-cuts			89	NNS	76	VBZ	13
-cuts?			1	NN	1
+cuts			90	NNS	77	VBZ	13
+cuts?			1	NNS	1
 cutter			7	NN	7
 cutthroat		2	JJ	2
 cutting			54	JJ	1	NN	3	VBG	49	VBG|NN	1
@@ -27038,7 +27144,7 @@ cycle			35	NN	34	VB	1
 cycles			10	NNS	10
 cyclic			2	JJ	2
 cyclical		8	JJ	8
-cycling			8	NN	4	VBG	4
+cycling			9	NN	4	VBG	5
 cyclist			1	NN	1
 cyclists		2	NNS	2
 cyclones		2	NNS	2
@@ -27065,34 +27171,34 @@ dabble			1	VB	1
 dabbled			1	VBD	1
 dabbler			1	NN	1
 dabbling		3	VBG	3
-dad			7	NN	7
+dad			8	NN	8
 dada			1	NN	1
 daffodils		1	NNS	1
 daffodils!		1	NNS	1
 daft			5	JJ	5
 daggers			1	NNS	1
 dailies			5	NNS	5
-daily			95	JJ	76	NN	5	RB	14
-dainty			2	JJ	1	NN	1
+daily			99	JJ	76	NN	5	RB	18
+dainty			2	NN	2
 dairy			8	NN	8
 daisies			1	NNS	1
 dalliances		1	NNS	1
 dallied			1	VBD	1
 dallying		1	VBG	1
 dam			13	NN	13
-damage			75	NN	70	VB	5
-damaged			38	JJ	5	VBD	2	VBN	31
+damage			79	NN	75	VB	4
+damaged			40	JJ	6	VBD	2	VBN	32
 damages			31	NNS	31
 damaging		11	JJ	6	VBG	5
 dame			1	NN	1
 dammed			1	JJ	1
-damn			8	JJ	2	NN	1	RB	5
+damn			9	JJ	2	NN	1	RB	6
 damnable		2	JJ	2
 damnation		1	NN	1
-damned			6	JJ	1	NNS	3	RB	2
+damned			6	JJ	1	NNS	3	RB	1	UH	1
 damnedest		1	JJS	1
 damning			2	JJ	2
-damp			29	JJ	23	VB	5	VBP	1
+damp			29	JJ	24	VB	4	VBP	1
 damped			2	VBN	2
 dampen			3	VB	3
 dampened		2	VBD	2
@@ -27100,40 +27206,42 @@ damper			4	NN	4
 damping			2	VBG	2
 damply			4	RB	4
 dams			1	NNS	1
-dance			39	NN	31	VB	8
+dance			40	NN	32	VB	8
+dance?			1	NN	1
 danced			12	VBD	9	VBN	3
 dancer			7	NN	7
 dancers			10	NNS	10
 dances			10	NNS	10
-dancing			20	JJ	1	NN	7	VBG	12
+dancing			20	JJ	1	NN	9	VBG	10
 dandies			1	NNS	1
 dandy			2	JJ	2
-danger			53	NN	53
-dangerous		53	JJ	53
+danger			55	NN	55
+dangerous		63	JJ	63
 dangerously		6	RB	6
-dangers			23	NNS	23
+dangers			24	NNS	24
 dangled			7	VBN	7
 dangling		5	VBG	5
 dank			3	JJ	3
-dare			11	MD	4	NN	1	VB	4	VBP	2
+dare			12	MD	5	VB	5	VBP	2
 dared			8	VBD	8
 daredevil		1	VB	1
 dares			1	VBZ	1
-daring			6	JJ	6
-dark			134	JJ	108	NN	26
+daring			6	JJ	5	VBG	1
+dark			140	JJ	112	NN	28
 dark-blue		2	JJ	2
 dark-eyed		2	JJ	2
+dark?			1	NN	1
 darken			2	VB	2
 darkened		3	JJ	1	VBD	1	VBN	1
 darkening		1	JJ	1
 darker			4	JJR	4
-darkest			1	JJ	1
+darkest			1	JJS	1
 darkish			1	JJ	1
 darkly			2	RB	2
 darkness		15	NN	15
 darling			7	NN	7
 darlings		1	NNS	1
-darn			2	VB	2
+darn			2	UH	1	VB	1
 darned			1	RB	1
 darns			1	NNS	1
 dart			2	NN	2
@@ -27146,7 +27254,7 @@ dashboards		1	NNS	1
 dashed			10	VBD	3	VBN	7
 dashes			3	NNS	3
 dashing			4	JJ	3	VBG	1
-data			116	NN	20	NNS	88	NNS|NN	2	NN|NNS	6
+data			117	NN	21	NNS	88	NNS|NN	2	NN|NNS	6
 data-processing		2	JJ	1	NN	1
 data-storage		1	JJ	1
 data-transmission	1	NN	1
@@ -27154,23 +27262,23 @@ database		1	NN	1
 databases		1	NNS	1
 date			76	NN	72	VB	3	VBP	1
 date-processing		1	JJ	1
-dated			13	JJ	3	VBN	10
-dates			14	NNS	13	VBZ	1
+dated			14	JJ	3	VBN	11
+dates			15	NNS	13	VBZ	2
 dating			6	VBG	6
 dative			1	NN	1
 daubed			2	VBN	2
-daughter		60	NN	60
+daughter		62	NN	62
 daughters		25	NNS	25
 daunted			2	VBD	2
 daunting		4	JJ	3	VBG	1
 dauntless		2	JJ	2
 dawdlers		1	NNS	1
 dawdling		1	VBG	1
-dawn			27	NN	27
+dawn			26	NN	26
 dawned			1	VBD	1
 dawning			2	VBG	2
 dawns			1	VBZ	1
-day			488	NN	488
+day			512	NN	512
 day-by-day		1	JJ	1
 day-care		1	JJ	1
 day-long		1	JJ	1
@@ -27178,10 +27286,10 @@ day-to-day		13	JJ	13
 day.			1	NN	1
 day?			3	NN	1	NNP	1	NNS	1
 daydream		3	NN	2	VB	1
-daylight		4	NN	4
-days			494	NN	2	NNS	492
+daylight		5	NN	5
+days			507	NN	2	NNS	505
 days.			1	NN	1
-days?			1	NN	1
+days?			1	NNS	1
 days?Strangely		1	RB	1
 daysa			1	NN	1
 daytime			2	JJ	2
@@ -27197,7 +27305,8 @@ dea			1	NN	1
 deacon			1	NN	1
 deacons			1	NNS	1
 deactivates		1	VBZ	1
-dead			98	JJ	83	NN	3	NNS	3	RB	9
+dead			106	JJ	91	NN	3	NNS	3	RB	9
+dead!			1	NNP	1
 dead-eyed		1	JJ	1
 dead?			2	NN	2
 deaden			1	VB	1
@@ -27210,10 +27319,10 @@ deadlocked		2	JJ	1	VBN	1
 deadly			12	JJ	12
 deadpan			2	JJ	2
 deadwood		2	NN	2
-deaf			11	JJ	10	NNS	1
+deaf			12	JJ	11	NNS	1
 deafened		2	VBN	2
 deafening		2	VBG	2
-deal			197	NN	171	VB	24	VBP	2
+deal			203	NN	175	VB	24	VBP	4
 deal-making		1	NN	1
 dealer			23	NN	23
 dealer-manager		1	NN	1
@@ -27221,26 +27330,26 @@ dealer-to-dealer	1	JJ	1
 dealers			77	NNS	77
 dealership		5	NN	5
 dealerships		3	NNS	3
-dealing			36	NN	1	VBG	35
-dealings		26	NNS	26
+dealing			37	NN	1	VBG	36
+dealings		26	NN	2	NNS	24
 deals			46	NNS	44	VBZ	2
-dealt			18	VBD	5	VBN	13
+dealt			18	VBD	6	VBN	12
 dean			3	NN	3
-dear			19	JJ	4	NN	1	RB	14
+dear			20	JJ	4	NN	1	RB	15
 dear?			2	NNP	2
 dear?That		1	JJ	1
 dearer			1	JJR	1
 dearest			4	JJS	1	NN	3
-dearly			7	RB	7
+dearly			8	RB	8
 dearth			3	NN	3
-death			152	NN	152
+death			160	NN	160
 death-penalty		5	JJ	1	NN	4
 deathblow		1	NN	1
-deaths			35	NNS	35
+deaths			36	NNS	36
 debacle			6	NN	6
 debarred		1	VBN	1
 debase			1	VB	1
-debased			1	VBN	1
+debased			1	JJ	1
 debasement		1	NN	1
 debases			1	VBZ	1
 debatable		2	JJ	2
@@ -27254,7 +27363,7 @@ debenture		3	NN	3
 debentures		57	NNS	57
 debilitated		1	VBN	1
 debit			3	JJ	1	NN	1	VB	1
-debonair		1	JJ	1
+debonair		2	JJ	2
 debriefed		1	VBN	1
 debriefing		1	NN	1
 debris			6	NN	6
@@ -27274,7 +27383,7 @@ debugging		1	VBG	1
 debunk			2	VB	2
 debunking		1	VBG	1
 debut			17	NN	17
-decade			53	NN	53
+decade			54	NN	54
 decade-long		2	JJ	2
 decadence		1	NN	1
 decadent		1	JJ	1
@@ -27303,18 +27412,19 @@ deception		2	NN	2
 deceptions		1	NNS	1
 deceptive		8	JJ	8
 decibel			1	NN	1
-decide			55	VB	45	VBP	10
-decided			158	JJ	1	VBD	132	VBN	25
+decide			57	VB	47	VBP	10
+decided			162	JJ	1	VBD	135	VBN	26
 decidedly		9	RB	9
 decides			10	VBZ	10
 deciding		16	JJ	1	VBG	15
 decimal			7	JJ	7
 decimated		2	VBN	2
 decipher		3	VB	3
-decision		195	NN	195
+decision		201	NN	201
 decision-makers		2	NNS	2
-decision-making		4	JJ	1	NN	3
-decision?		1	NN	1
+decision-making		6	JJ	1	NN	5
+decision.		1	NN	1
+decision?		2	NN	2
 decisions		61	NNS	61
 decisive		13	JJ	13
 decisively		4	RB	4
@@ -27324,20 +27434,20 @@ deckchair		2	NN	2
 decked			2	VBN	2
 deckhand		1	NN	1
 decking			1	VBG	1
-decks			3	NNS	3
+decks			4	NNS	4
 declaimed		1	VBD	1
 declamatory		1	JJ	1
 declaration		17	NN	17
 declarations		3	NNS	3
 declaratory		2	JJ	2
 declare			9	VB	6	VBP	3
-declared		47	VBD	39	VBN	8
+declared		51	VBD	41	VBN	10
 declares		7	VBZ	7
 declaring		9	VBG	9
 declasse		1	JJ	1
 declassified		1	VBN	1
 declassifying		1	VBG	1
-decline			129	NN	110	VB	13	VBP	6
+decline			130	NN	111	VB	13	VBP	6
 declined		161	VBD	147	VBN	14
 decliners		6	NNS	6
 declines		44	NNS	35	VBZ	9
@@ -27353,8 +27463,8 @@ decontrol		1	NN	1
 decor			3	NN	3
 decorated		18	VBN	18
 decorating		1	NN	1
-decoration		1	NN	1
-decorative		6	JJ	6
+decoration		2	NN	2
+decorative		7	JJ	7
 decorator		5	NN	5
 decorous		1	JJ	1
 decorum			1	NN	1
@@ -27382,47 +27492,47 @@ deductibles		2	NNS	2
 deducting		1	VBG	1
 deduction		5	NN	5
 deductions		6	NNS	6
-deed			4	JJ	1	NN	3
+deed			4	NN	4
 deeds			7	NNS	7
 deem			1	VBP	1
 deemed			9	VBD	1	VBN	8
 deems			1	VBZ	1
-deep			101	JJ	93	RB	8
+deep			111	JJ	103	RB	8
 deep-pocketed		1	JJ	1
-deep-rooted		2	JJ	2
+deep-rooted		3	JJ	3
 deep-seated		2	JJ	2
 deep-sided		1	JJ	1
 deep-water		1	JJ	1
 deepen			2	VB	2
 deepened		4	VBD	4
 deepening		4	VBG	4
-deeper			22	JJR	19	RBR	3
-deepest			2	JJS	2
-deeply			51	RB	51
+deeper			22	JJR	17	RBR	5
+deepest			3	JJS	3
+deeply			52	RB	52
 deer			8	NNS	8
 defaced			1	VBN	1
 defamatory		2	JJ	2
-default			24	NN	21	VB	3
+default			24	IN	1	NN	20	VB	3
 defaulted		5	JJ	2	VBD	2	VBN	1
 defaulters		1	NNS	1
 defaulting		2	VBG	2
 defaults		8	NNS	8
-defeat			20	NN	16	VB	4
-defeated		19	VBD	6	VBN	13
+defeat			21	NN	17	VB	4
+defeated		20	VBD	6	VBN	14
 defeating		1	VBG	1
 defeatist		1	JJ	1
-defeats			7	NNS	3	VBZ	4
-defect			3	NN	3
+defeats			7	NNS	2	VBZ	5
+defect			4	NN	4
 defecting		1	VBG	1
 defections		2	NNS	2
 defective		11	JJ	11
-defects			15	NNS	15
-defence			35	NN	35
+defects			13	NNS	13
+defence			36	NN	36
 defenceless		1	JJ	1
 defences		7	NNS	7
-defend			30	VB	26	VBP	4
+defend			31	VB	27	VBP	4
 defendant		15	NN	15
-defendants		39	NNS	39
+defendants		38	NNS	38
 defended		15	VBD	15
 defender		1	NN	1
 defenders		6	NNS	6
@@ -27443,7 +27553,7 @@ deference		1	NN	1
 deferential		1	JJ	1
 deferred		4	JJ	1	VBN	3
 deferring		6	VBG	6
-defiance		4	NN	4
+defiance		5	IN	1	NN	4
 defiant			4	JJ	4
 defiantly		1	RB	1
 deficiencies		8	NNS	8
@@ -27457,19 +27567,19 @@ deficits		13	NNS	13
 defied			4	VBD	4
 defile			1	VB	1
 definable		2	JJ	2
-define			10	VB	10
+define			11	VB	11
 defined			10	VBD	2	VBN	8
 defines			5	VBZ	5
 defining		1	VBG	1
 definite		13	JJ	13
-definitely		14	RB	14
+definitely		17	RB	17
 definition		12	NN	12
 definitions		1	NNS	1
 definitive		22	JJ	22
 definitively		5	RB	5
 deflate			2	VB	2
 deflated		1	VBN	1
-deflation		2	NN	2
+deflation		2	NN	1	deflation	1
 deflator		2	NN	2
 deflect			5	VB	5
 deflected		5	VBD	5
@@ -27502,8 +27612,8 @@ degenerative		2	JJ	2
 degrade			2	VB	2
 degraded		2	JJ	2
 degrading		3	JJ	3
-degree			43	NN	43
-degree?			1	NN	1
+degree			46	NN	46
+degree?			1	NNS	1
 degrees			31	NNS	31
 dehumanized		1	JJ	1
 dei			1	FW	1
@@ -27515,13 +27625,13 @@ dejected		2	JJ	2
 del			4	DT	1	FW	3
 delay			44	NN	22	VB	20	VBP	2
 delayed			28	JJ	4	VBD	5	VBN	19
-delaying		12	NN|VBG	1	VBG	11
+delaying		12	NN|VBG	2	VBG	10
 delays			18	NNS	18
 delectable		3	JJ	3
 delectably		1	RB	1
 delegate		4	NN	1	VB	3
-delegated		2	VBD	1	VBN	1
-delegates		7	NNS	7
+delegated		2	VBN	2
+delegates		8	NNS	8
 delegating		1	VBG	1
 delegation		8	NN	8
 delete			1	VB	1
@@ -27530,21 +27640,21 @@ deleterious		1	JJ	1
 deletion		1	NN	1
 deletions		1	NNS	1
 deli			1	NNS	1
-deliberate		12	JJ	10	RB	2
+deliberate		10	JJ	10
 deliberated		1	VBD	1
 deliberately		19	RB	19
 deliberating		2	VBG	2
-deliberations		2	NNS	2
+deliberations		3	NNS	3
 deliberative		2	JJ	2
 delicacies		1	NNS	1
 delicacy		6	NN	6
 delicate		31	JJ	31
 delicately		2	RB	2
-delicious		16	JJ	16
+delicious		17	JJ	17
 delicious.		1	NN	1
 deliciously		2	RB	2
-delight			14	NN	10	VB	4
-delighted		20	JJ	9	VBD	4	VBN	7
+delight			15	NN	11	VB	4
+delighted		22	JJ	8	VBD	5	VBN	9
 delightedly		2	RB	2
 delightful		8	JJ	8
 delighting		1	NN	1
@@ -27559,7 +27669,7 @@ delirium		1	NN	1
 delisted		1	VBN	1
 delisting		2	NN	2
 deliver			29	VB	28	VBP	1
-delivered		30	VBD	7	VBN	23
+delivered		32	VBD	7	VBN	25
 deliveries		3	NNS	3
 delivering		8	VBG	8
 delivers		2	VBZ	2
@@ -27578,11 +27688,11 @@ delver			1	NN	1
 delves			1	VBZ	1
 demagogic		1	JJ	1
 demagoguery		1	NN	1
-demand			190	NN	171	VB	14	VBP	5
+demand			193	NN	173	VB	14	VBP	6
 demand-related		1	JJ	1
-demanded		22	VBD	19	VBN	3
-demanding		19	JJ	2	VBG	17
-demands			64	NNS	59	VBZ	5
+demanded		24	VBD	21	VBN	3
+demanding		21	JJ	2	VBG	19
+demands			66	NNS	61	VBZ	5
 demarcation		1	NN	1
 demean			1	VB	1
 demeaned		2	VBN	2
@@ -27601,11 +27711,11 @@ demobilization		1	NN	1
 demobilize		2	VB	2
 demobilizing		1	VBG	1
 democracies		1	NNS	1
-democracy		48	NN	48
+democracy		49	NN	49
 democracy.		1	CD	1
 democracy?		1	NNS	1
 democrat		1	NN	1
-democratic		27	JJ	27
+democratic		30	JJ	30
 democratize		1	VB	1
 democrats		1	NNS	1
 demographic		4	JJ	4
@@ -27635,14 +27745,14 @@ demos			1	NNS	1
 demoted			1	VBN	1
 demotion		2	NN	2
 demure			2	JJ	1	RB	1
-demurred		2	VBD	1	VBN	1
+demurred		2	VBD	2
 demurs			1	VBZ	1
 demystify		1	VB	1
 den			5	NN	5
 denationalized		1	VBN	1
 denial			8	NN	8
 denials			1	NNS	1
-denied			47	VBD	29	VBN	18
+denied			48	VBD	30	VBN	18
 denies			13	VBZ	13
 denigrate		1	VB	1
 denigration		1	NN	1
@@ -27654,12 +27764,12 @@ denominations		7	NNS	7
 denominator		2	NN	2
 denote			1	VB	1
 denoted			2	JJ	1	VBN	1
-denotes			1	NNS	1
+denotes			1	VBZ	1
 denouement		1	NN	1
 denounce		2	VB	1	VBP	1
 denounced		8	VBD	5	VBN	3
 denouncing		7	VBG	7
-dense			16	JJ	16
+dense			17	JJ	17
 densely			1	RB	1
 denser			1	NN	1
 densest			1	JJS	1
@@ -27667,7 +27777,7 @@ density			2	NN	2
 dent			3	NN	3
 dental			2	JJ	2
 dented			3	VBD	3
-dentist			4	NN	4
+dentist			5	NN	5
 dents			2	NNS	2
 denuclearized		1	VBN	1
 denuded			3	VBN	3
@@ -27683,18 +27793,18 @@ department		144	NN	144
 department-store	8	JJ	1	NN	7
 departmental		3	JJ	3
 departments		26	NNS	26
-departure		43	NN	43
+departure		44	NN	44
 departures		5	NNS	5
-depend			14	VB	9	VBP	5
+depend			16	VB	10	VBP	6
 dependable		3	JJ	3
 dependants		1	NNS	1
-depended		5	VBD	4	VBN	1
+depended		7	VBD	5	VBN	2
 dependence		4	NN	4
 dependency		2	NN	2
 dependent		13	JJ	13
 dependents		3	NNS	3
 depending		14	VBG	14
-depends			22	VBZ	22
+depends			24	VBZ	24
 depict			4	VB	2	VBP	2
 depicted		6	VBN	6
 depicting		5	VBG	5
@@ -27716,23 +27826,23 @@ deportation		2	NN	2
 deported		3	VBD	3
 deportment		1	NN	1
 deposed			3	VBN	3
-deposit			22	NN	20	VB	2
+deposit			24	NN	22	VB	2
 depositary		8	JJ	3	NN	4	NN|JJ	1
 deposited		7	VBD	6	VBN	1
 depositing		1	VBG	1
 depositors		3	NNS	3
 depository		9	JJ	2	NN	7
-deposits		26	NNS	26
+deposits		26	NNS	25	VBZ	1
 depot			2	NN	2
 deprave			1	VB	1
-deprecated		2	VBD	2
+deprecated		2	VBN	2
 deprecatory		2	JJ	2
 depreciate		2	VB	2
 depreciation		6	NN	6
 depredations		1	NNS	1
 depress			3	VB	3
 depressant		1	NN	1
-depressed		36	JJ	17	VBD	4	VBN	15
+depressed		37	JJ	17	VBD	3	VBN	17
 depresses		1	VBZ	1
 depressing		11	JJ	9	VBG	2
 depressingI		1	JJ	1
@@ -27741,12 +27851,12 @@ depressions		1	NNS	1
 depressive		1	JJ	1
 deprivation		5	NN	5
 deprive			4	VB	4
-deprived		11	JJ	3	VBN	8
+deprived		12	JJ	3	VBN	9
 deprives		1	VBZ	1
 depriving		3	VBG	3
 deprogrammings		1	NNS	1
-depth			14	NN	14
-depths			6	NNS	6
+depth			15	NN	15
+depths			7	NNS	7
 deputies		6	NNS	6
 deputy			38	JJ	17	NN	21
 der			3	JJR	1	NN	1	NNP	1
@@ -27785,10 +27895,10 @@ descended		15	JJ	2	VBD	13
 descending		4	VBG	4
 descends		2	VBZ	2
 descent			14	NN	14
-describe		21	VB	19	VBP	2
+describe		22	VB	20	VBP	2
 described		58	VBD	29	VBN	29
-describes		11	VBZ	11
-describing		11	VBG	11
+describes		9	VBZ	9
+describing		12	VBG	12
 description		21	NN	21
 descriptions		3	NNS	3
 descriptive		5	JJ	5
@@ -27796,42 +27906,42 @@ desecrated		1	VBD	1
 desecration		1	NN	1
 desegregating		1	VBG	1
 desensitize		1	VB	1
-desert			39	JJ	1	NN	34	VB	4
+desert			36	NN	32	VB	4
 desert-battle		1	JJ	1
-deserted		11	VBN	11
+deserted		13	VBN	13
 desertion		1	NN	1
 deserts			7	NNS	7
 deserve			14	VB	5	VBP	9
-deserved		8	JJ	2	VBD	6
-deserves		8	VBZ	8
+deserved		9	JJ	2	VBD	7
+deserves		9	VBZ	9
 deserving		5	JJ	5
 desiccated		1	JJ	1
-design			74	NN	59	VB	15
-design?			1	CD	1
+design			75	NN	60	VB	15
+design?			1	NNP	1
 designated		7	VBN	7
 designates		1	VBZ	1
 designation		6	NN	6
 designations		1	NNS	1
-designed		106	VBD	3	VBN	103
+designed		109	VBD	3	VBN	106
 designees		1	NNS	1
-designer		12	NN	12
+designer		14	NN	14
 designers		8	NNS	8
 designing		8	JJ	1	VBG	7
-designs			18	NNS	14	VBZ	4
+designs			19	NNS	15	VBZ	4
 designsparallel		1	JJ	1
 desirability		2	NN	2
-desirable		13	JJ	13
+desirable		14	JJ	14
 desirably		1	RB	1
 desire			49	NN	45	VB	1	VBP	3
 desired			8	VBD	1	VBN	7
 desires			9	NNS	9
 desirous		1	JJ	1
 desist			2	VB	2
-desk			66	NN	66
+desk			74	NN	74
 desk-top		1	JJ	1
 desks			8	NNS	8
 desktop			5	NN	5
-desolate		7	JJ	7
+desolate		6	JJ	6
 desolated		2	JJ	1	VBN	1
 despair			17	NN	15	VB	2
 despaired		2	VBD	1	VBN	1
@@ -27841,7 +27951,7 @@ despatch		1	NN	1
 despatched		1	VBD	1
 despatches		2	NNS	2
 desperate		21	JJ	21
-desperately		13	RB	13
+desperately		15	RB	15
 desperation		3	NN	3
 despicable		1	JJ	1
 despise			3	VB	3
@@ -27857,17 +27967,17 @@ destabilize		1	VB	1
 destabilizing		3	JJ	3
 destination		5	NN	5
 destinations		2	NNS	2
-destined		5	JJ	3	VBN	2
+destined		6	JJ	3	VBN	3
 destinies		2	NNS	2
 destiny			9	NN	9
 destitute		2	JJ	2
 destroy			25	VB	24	VBP	1
-destroyed		28	VBD	9	VBN	19
+destroyed		28	VBD	10	VBN	18
 destroyer		1	NN	1
 destroyers		3	NNS	3
-destroying		8	VBG	8
-destruction		15	NN	15
-destructive		12	JJ	12
+destroying		9	VBG	9
+destruction		16	NN	16
+destructive		13	JJ	13
 desultory		2	JJ	2
 detach			2	VB	2
 detachable		2	JJ	2
@@ -27875,15 +27985,15 @@ detached		12	JJ	3	VBN	9
 detaching		1	VBG	1
 detachment		3	NN	3
 detachments		1	NNS	1
-detail			33	NN	32	VB	1
-detailed		35	JJ	27	VBN	8
+detail			36	NN	35	VB	1
+detailed		36	JJ	28	VBN	8
 detailing		6	VBG	6
-details			76	NNS	76
+details			78	NNS	78
 detailsman		1	NN	1
 detain			3	VB	3
 detained		3	VBD	3
 detaining		1	VBG	1
-detect			6	VB	6
+detect			7	VB	7
 detectable		3	JJ	3
 detected		13	VBD	6	VBN	7
 detecting		1	VBG	1
@@ -27905,9 +28015,9 @@ deteriorating		6	VBG	6
 deterioration		15	NN	15
 determinant		1	NN	1
 determinants		1	NNS	1
-determination		20	NN	20
+determination		21	NN	21
 determine		31	VB	27	VBP	4
-determined		62	JJ	5	VBD	4	VBN	53
+determined		63	JJ	5	VBD	4	VBN	54
 determines		1	VBZ	1
 determining		7	VBG	7
 determinism		1	NN	1
@@ -27920,10 +28030,11 @@ deterring		3	VBG	3
 deters			1	VBZ	1
 detest			1	VBP	1
 detestable		2	JJ	2
+detested		1	VBD	1
 detests			1	VBZ	1
 dethroned		1	VBN	1
 detonate		2	VB	2
-detonation		1	NN	1
+detonation		2	NN	2
 detour			1	NN	1
 detract			2	VB	2
 detracts		1	VBZ	1
@@ -27935,12 +28046,12 @@ devastated		9	JJ	3	VBD	1	VBN	5
 devastating		17	JJ	14	VBG	3
 devastation		2	NN	2
 develop			82	VB	75	VBP	7
-developed		89	JJ	4	VBD	26	VBN	59
+developed		92	JJ	4	VBD	27	VBN	61
 developer		16	NN	16
 developers		17	NNS	17
-developing		60	JJ	1	VBG	59
+developing		61	JJ	1	VBG	60
 developing-country	1	JJ	1
-development		167	NN	167
+development		171	NN	171
 development?		1	NN	1
 developments		25	NNS	25
 develops		8	VBZ	8
@@ -27948,15 +28059,15 @@ deviant			2	JJ	2
 deviate			1	VB	1
 deviated		1	VBD	1
 deviation		2	NN	2
-device			38	NN	38
-devices			50	NNS	50
-devil			4	NN	3	VB	1
+device			39	NN	39
+devices			51	NNS	51
+devil			4	NN	1	VB	3
 devil!I			1	NNS	1
 devilish		1	JJ	1
 devils			3	NNS	3
 devious			3	JJ	3
-devise			7	VB	5	VBP	2
-devised			9	VBD	2	VBN	7
+devise			8	VB	6	VBP	2
+devised			10	VBD	2	VBN	8
 devises			1	VBZ	1
 devoid			3	JJ	3
 devolution		1	NN	1
@@ -27985,24 +28096,25 @@ diabetes		2	NN	2
 diabetic		1	JJ	1
 diabetics		13	NNS	13
 diabolical		3	JJ	3
-diagnosed		5	VBD	3	VBN	2
+diagnose		1	VB	1
+diagnosed		8	VBD	4	VBN	4
 diagnoses		3	NNS	3
 diagnosis		7	NN	7
 diagnostic		6	JJ	6
 diagnostics		1	NNS	1
-diagonal		1	JJ	1
+diagonal		2	JJ	2
 diagonals		1	NNS	1
-diagram			7	NN	7
+diagram			9	NN	9
 diagrammatic		1	JJ	1
 diagramming		1	VBG	1
 dial			10	NN	10
-dialect			8	JJ	2	NN	6
+dialect			8	NN	8
 dialectic		1	NN	1
 dialectics		1	NNS	1
 dialects		2	NNS	2
 dialing			1	VBG	1
-dialled			7	VBD	6	VBN	1
-dialogue		20	NN	20
+dialled			8	JJ	1	VBD	7
+dialogue		21	NN	21
 dialogues		1	NNS	1
 dials			2	NNS	2
 dialysis		5	NN	5
@@ -28016,11 +28128,11 @@ diaphanous		1	JJ	1
 diaphragm		1	NN	1
 diaries			2	NNS	2
 diarist			1	NN	1
-diary			15	NN	15
+diary			18	NN	18
 diaspora		1	NN	1
 diatribe		1	NN	1
 dibenzofurans		1	NNS	1
-dice			6	NNS	5	VB	1
+dice			6	NN	1	NNS	4	VB	1
 diced			1	JJ	1
 dicey			1	JJ	1
 dichotomy		2	NN	2
@@ -28036,46 +28148,47 @@ dictators		3	NNS	3
 dictatorship		3	NN	3
 dictatorships		1	NNS	1
 diction			1	NN	1
-dictionaries		1	NNS	1
+dictionaries		2	NNS	2
 dictionary		6	JJ	5	NN	1
 dictum			2	NN	2
-did			684	VBD	684
-did.			1	VBN	1
+did			711	VBD	711
+did.			1	NN	1
 didactic		2	JJ	2
-didnt			176	JJ	46	NN	18	RB	40	VB	2	VBP	70
-die			29	NN	1	VB	22	VBP	6
+didand			1	VBD	1
+didnt			205	JJ	60	NN	19	RB	43	VB	1	VBP	82
+die			29	NN	1	VB	23	VBP	5
 die-hard		2	JJ	2
 die-hards		1	NNS	1
-died			94	VBD	75	VBN	19
+died			101	VBD	80	VBN	21
 diehards		1	NNS	1
 dies			7	VBZ	7
-diesel			9	JJ	4	NN	5
-diet			27	JJ	1	NN	26
+diesel			10	JJ	3	NN	7
+diet			28	JJ	1	NN	27
 dietary			1	JJ	1
-diethats		1	VB	1
+diethats		1	NNS	1
 diethylstilbestrol	2	NN	2
-dieting			1	NN	1
+dieting			1	VBG	1
 differ			11	VB	3	VBP	8
 differed		2	VBD	2
-difference		57	NN	57
+difference		59	NN	59
 differences		45	NNS	45
-different		197	JJ	197
-differential		2	JJ	1	NN	1
+different		207	JJ	207
+differential		3	JJ	2	NN	1
 differentials		5	NNS	5
 differentiate		2	VB	2
 differentiates		1	VBZ	1
 differentiation		1	NN	1
-differently		11	RB	11
+differently		12	RB	12
 differing		3	VBG	3
 differs			1	VBZ	1
-difficult		176	JJ	176
-difficulties		31	NNS	31
-difficulty		36	NN	36
+difficult		184	JJ	184
+difficulties		32	NNS	32
+difficulty		42	NN	42
 diffident		2	JJ	2
-diffuse			6	JJ	4	NN	2
+diffuse			4	JJ	4
 diffused		3	JJ	1	VBN	2
 diffusion		1	NN	1
-dig			10	NN	6	VB	4
+dig			10	NN	7	VB	3
 digest			3	VB	3
 digested		2	VBN	2
 digestible		1	JJ	1
@@ -28089,7 +28202,7 @@ digital			4	JJ	4
 digits			2	NNS	2
 dignified		5	JJ	5
 dignitaries		2	NNS	2
-dignity			12	NN	12
+dignity			14	NN	14
 digress			2	VB	2
 digs			6	NNS	3	VBZ	3
 dilapidated		2	JJ	2
@@ -28104,7 +28217,7 @@ dilute			6	JJ	1	VB	5
 diluted			19	JJ	4	VBD	1	VBN	14
 diluting		1	VBG	1
 dilution		3	NN	3
-dim			16	JJ	14	NN	2
+dim			17	JJ	15	NN	2
 dime			1	NN	1
 dimension		2	NN	2
 dimensions		5	NNS	5
@@ -28133,12 +28246,12 @@ dingy			2	JJ	2
 dining			16	NN	14	VBG	2
 dining-room		4	NN	4
 dinkiest		1	JJS	1
-dinner			65	NN	65
-dinner?			1	NNP	1
-dinners			3	NNS	3
+dinner			72	NN	72
+dinner?			2	NNP	2
+dinners			4	NNS	4
 dinosaur		4	NN	4
 dinosaurs		5	NNS	5
-dint			1	NN	1
+dint			1	IN	1
 dioxide			8	NN	8
 dioxins			1	NNS	1
 dip			10	NN	9	VB	1
@@ -28152,17 +28265,17 @@ diplomats		8	NNS	8
 dipped			16	VBD	14	VBN	2
 dipper			1	NN	1
 dipping			3	VBG	3
-dips			8	NNS	8
+dips			8	NNS	6	VBZ	2
 dipstick		1	NN	1
 dire			5	FW	2	JJ	3
-direct			77	JJ	66	RB	1	VB	10
+direct			83	JJ	72	RB	1	VB	10
 direct-investment	1	JJ	1
 direct-mail		6	JJ	5	NN	1
 direct-mail-mogul	1	NN	1
 direct-selling		1	JJ	1
-directed		19	VBD	5	VBN	14
+directed		20	VBD	6	VBN	14
 directing		5	VBG	5
-direction		76	NN	76
+direction		77	NN	77
 directional		1	JJ	1
 directionless		3	JJ	3
 directions		8	NNS	8
@@ -28170,12 +28283,12 @@ directive		1	NN	1
 directives		2	NNS	2
 directly		88	RB	88
 directmail		1	NN	1
-director		226	NN	226
+director		228	NN	228
 director-general	1	NN	1
 directorate		1	NN	1
 directorial		2	JJ	2
 directories		1	NNS	1
-directors		103	NNS	103
+directors		105	NNS	105
 directorship		1	NN	1
 directorships		1	NNS	1
 directory		1	NN	1
@@ -28183,12 +28296,12 @@ directs			4	VBZ	4
 dirt			14	NN	14
 dirt-cheap		1	JJ	1
 dirtiest		2	JJS	2
-dirty			23	JJ	23
+dirty			27	JJ	27
 disabilities		4	NNS	4
 disability		2	NN	2
 disabled		12	JJ	9	NNS	3
 disablement		1	NN	1
-disables		1	NNS	1
+disables		1	VBZ	1
 disabuse		1	VB	1
 disadvantage		7	NN	7
 disadvantaged		3	JJ	3
@@ -28197,7 +28310,7 @@ disadvantages		3	NNS	3
 disaffected		2	JJ	2
 disaffection		2	NN	2
 disaffiliation		1	NN	1
-disagree		14	VB	5	VBP	9
+disagree		18	VB	5	VBP	13
 disagreeable		5	JJ	5
 disagreeably		1	RB	1
 disagreed		10	VBD	9	VBN	1
@@ -28214,7 +28327,7 @@ disappoint		3	VB	3
 disappointed		35	JJ	13	VBD	1	VBN	21
 disappointing		30	JJ	30
 disappointingly		1	RB	1
-disappointment		12	NN	12
+disappointment		13	NN	13
 disappointments		7	NNS	7
 disapproval		13	NN	13
 disapprove		3	VBP	3
@@ -28223,16 +28336,16 @@ disapproves		2	VBZ	2
 disapproving		2	JJ	2
 disapprovingly		1	RB	1
 disarm			5	VB	5
-disarmament		19	NN	19
-disarmed		2	JJ	1	VBN	1
+disarmament		20	NN	20
+disarmed		2	VBD	1	VBN	1
 disarming		2	JJ	1	VBG	1
 disarranging		1	VBG	1
-disarray		10	NN	10
+disarray		11	NN	11
 disassemble		1	VB	1
-disaster		41	NN	41
+disaster		42	NN	42
 disaster-assistance	1	JJ	1
 disasters		16	NNS	16
-disastrous		11	JJ	11
+disastrous		12	JJ	12
 disavow			1	VB	1
 disavowed		1	VBD	1
 disband			3	VB	3
@@ -28249,15 +28362,16 @@ discarded		10	VBD	1	VBN	9
 discern			5	VB	5
 discernible		1	JJ	1
 discerning		3	JJ	3
-discharge		12	NN	7	VB	5
+discharge		10	NN	5	VB	5
 discharged		6	VBN	6
 discharges		1	NNS	1
 discimination		1	NN	1
 disciple		4	JJ	1	NN	3
 disciples		2	NNS	2
 disciplinary		6	JJ	6
-discipline		25	NN	24	VB	1
-disciplined		8	JJ	5	VBD	1	VBN	2
+discipline		28	NN	27	VB	1
+discipline.		1	FW	1
+disciplined		8	JJ	6	VBD	1	VBN	1
 disciplines		4	NNS	4
 disciplining		1	VBG	1
 disclaimers		1	NNS	1
@@ -28299,24 +28413,24 @@ discount-retailing	2	NN	2
 discounted		8	JJ	1	VBD	1	VBN	6
 discounting		15	NN	11	VBG	4
 discounts		11	NNS	10	VBZ	1
-discourage		11	VB	9	VBP	2
+discourage		12	VB	10	VBP	2
 discouraged		7	VBD	1	VBN	6
 discouragement		1	NN	1
 discourages		2	VBZ	2
-discouraging		7	JJ	1	VBG	6
+discouraging		7	VBG	7
 discourse		3	NN	3
 discoursed		1	VBN	1
 discourteous		2	JJ	1	RB	1
 discover		7	VB	7
-discovered		79	VBD	38	VBN	41
+discovered		83	VBD	39	VBN	44
 discoverer		1	NN	1
-discoveries		7	NNS	7
+discoveries		8	NNS	8
 discovering		5	VBG	5
-discovers		1	VBZ	1
+discovers		2	VBZ	2
 discovery		37	NN	37
 discredit		6	VB	6
 discredited		3	VBN	3
-discrediting		2	NN	2
+discrediting		2	NN	1	VBG	1
 discreet		4	JJ	4
 discreetly		2	RB	2
 discrepancies		13	NNS	13
@@ -28329,16 +28443,16 @@ discriminated		3	VBD	1	VBN	2
 discriminating		5	JJ	1	VBG	4
 discrimination		23	NN	23
 discriminatory		6	JJ	6
-discs			2	NNS	2
+discs			3	NNS	3
 discursive		1	JJ	1
-discus			1	NNS	1
-discuss			53	VB	52	VBP	1
+discus			1	NN	1
+discuss			56	VB	55	VBP	1
 discussed		37	VBD	21	VBN	16
 discusses		1	VBZ	1
-discussing		32	VBG	32
-discussion		60	NN	60
-discussions		52	NNS	52
-disdain			6	NN	5	VB	1
+discussing		33	VBG	33
+discussion		64	NN	64
+discussions		55	NNS	55
+disdain			7	NN	6	VB	1
 disdainful		1	JJ	1
 disdains		1	VBZ	1
 disease			50	NN	50
@@ -28371,8 +28485,8 @@ dish			10	NN	9	VB	1
 disharmony		2	NN	2
 dishcloth		2	NN	2
 disheartened		1	JJ	1
-dished			1	VBN	1
-dishes			11	NNS	11
+dished			1	VBD	1
+dishes			12	NNS	12
 dishes?			1	NN	1
 dishes?Oh		1	NN	1
 disheveled		1	JJ	1
@@ -28399,7 +28513,7 @@ disinherited		3	JJ	1	VBD	2
 disintegrate		2	VB	2
 disintegrated		1	VBD	1
 disintegrating		3	VBG	3
-disintegration		2	NN	2
+disintegration		3	NN	3
 disinterest		2	NN	2
 disinterested		5	JJ	5
 disinterred		1	VBN	1
@@ -28407,9 +28521,9 @@ disjointed		1	JJ	1
 disk			21	NN	21
 disk-drive		5	NN	5
 disks			7	NNS	7
-dislike			17	NN	10	VB	4	VBP	3
-disliked		6	JJ	6
-dislikes		4	NN	1	NNS	1	VBZ	2
+dislike			18	NN	10	VB	5	VBP	3
+disliked		6	VBD	6
+dislikes		4	NNS	1	VBZ	3
 dislocated		2	VBN	2
 dislodge		1	VB	1
 dislodged		1	VBN	1
@@ -28418,8 +28532,8 @@ dismal			11	JJ	11
 dismantle		3	VB	3
 dismantled		1	VBN	1
 dismantling		1	VBG	1
-dismay			4	NN	4
-dismayed		7	JJ	4	VBN	3
+dismay			5	NN	5
+dismayed		8	JJ	4	VBN	4
 dismaying		1	JJ	1
 dismember		3	VB	3
 dismiss			11	VB	9	VBP	2
@@ -28440,7 +28554,7 @@ disorders		11	NNS	11
 disorganize		1	VB	1
 disorganized		2	JJ	2
 disown			1	VB	1
-disowned		2	VBD	2
+disowned		2	JJ	2
 disparage		1	VB	1
 disparaged		1	VBD	1
 disparaging		2	JJ	1	VBG	1
@@ -28455,7 +28569,7 @@ dispel			3	VB	3
 dispelled		3	VBD	3
 dispensation		3	NN	3
 dispense		5	VB	5
-dispensed		2	VBD	2
+dispensed		3	VBD	3
 dispensing		2	VBG	2
 disperse		2	VB	2
 dispersed		6	VBD	6
@@ -28464,7 +28578,7 @@ dispirited		2	JJ	2
 dispiriting		2	JJ	2
 displace		2	VB	2
 displaced		5	VBN	5
-display			40	NN	29	VB	6	VBP	5
+display			41	NN	30	VB	6	VBP	5
 displayed		11	VBD	3	VBN	8
 displaying		4	VBG	4
 displays		14	NNS	11	VBZ	3
@@ -28488,7 +28602,7 @@ disproportionate	6	JJ	6
 disproportionately	2	RB	2
 disprove		3	VB	3
 disputations		1	NNS	1
-dispute			58	NN	54	VB	3	VBP	1
+dispute			59	NN	55	VB	3	VBP	1
 disputed		15	JJ	2	VBD	7	VBN	6
 disputes		23	NNS	20	VBZ	3
 disputing		1	VBG	1
@@ -28498,7 +28612,7 @@ disqualify		1	VB	1
 disquieted		1	VBD	1
 disquieting		1	JJ	1
 disquisition		1	NN	1
-disregard		6	NN	5	VB	1
+disregard		7	NN	6	VB	1
 disregarded		2	VBD	2
 disregarding		1	JJ	1
 disreputable		5	JJ	5
@@ -28508,11 +28622,11 @@ disrobed		1	VBD	1
 disrupt			9	VB	9
 disrupted		3	VBN	3
 disrupting		1	VBG	1
-disruption		10	NN	10
+disruption		11	NN	11
 disruptions		4	NNS	4
 disruptive		7	JJ	7
 dissatisfaction		3	NN	3
-dissatisfied		4	JJ	4
+dissatisfied		5	JJ	4	VBN	1
 dissected		3	VBN	3
 dissecting		1	VBG	1
 disseminate		2	VB	2
@@ -28549,8 +28663,8 @@ dissolves		3	VBZ	3
 dissolving		2	VBG	2
 dissonance		1	NN	1
 dissuade		2	VB	2
-distance		47	NN	45	VB	2
-distances		3	NNS	3
+distance		50	NN	48	VB	2
+distances		3	NNS	2	VBZ	1
 distances?		1	NNS	1
 distancing		2	NN	1	VBG	1
 distant			27	JJ	27
@@ -28561,18 +28675,18 @@ distate			1	NN	1
 distended		2	JJ	1	VBD	1
 distension		1	NN	1
 distilled		4	JJ	1	VBN	3
-distinct		19	JJ	19
-distinction		8	NN	8
+distinct		19	IN	1	JJ	18
+distinction		10	NN	10
 distinctions		4	NNS	4
 distinctive		10	JJ	10
 distinctly		6	RB	6
-distinguish		9	VB	9
+distinguish		11	VB	11
 distinguishable		4	JJ	4
 distinguished		23	JJ	17	VBD	3	VBN	3
 distinguishes		1	VBZ	1
 distort			6	VB	5	VBP	1
-distorted		10	JJ	4	VBN	6
-distorting		2	JJ	2
+distorted		11	JJ	5	VBN	6
+distorting		2	JJ	1	VBG	1
 distortions		1	NNS	1
 distracted		5	JJ	1	VBD	2	VBN	2
 distracting		6	JJ	4	VBG	2
@@ -28580,7 +28694,7 @@ distraction		5	NN	5
 distractions		1	NNS	1
 distraught		3	JJ	3
 distress		6	NN	6
-distressed		11	JJ	11
+distressed		12	JJ	12
 distressful		1	JJ	1
 distressing		3	JJ	3
 distressingly		1	RB	1
@@ -28595,9 +28709,9 @@ distributions		3	NNS	3
 distributor		19	NN	19
 distributors		6	NNS	6
 distributorship		1	NN	1
-district		65	NN	65
+district		67	NN	67
 districting		1	NN	1
-districts		32	NNS	32
+districts		33	NNS	33
 distrust		1	NN	1
 distrustful		2	JJ	2
 distrusts		1	VBZ	1
@@ -28605,16 +28719,16 @@ disturb			10	VB	10
 disturbance		2	NN	2
 disturbances		4	NNS	4
 disturbed		17	JJ	6	VBN	11
-disturbing		15	JJ	11	VBG	4
+disturbing		16	JJ	12	VBG	4
 disturbs		4	VBZ	4
 disuniting		1	VBG	1
 disuse			1	NN	1
 disused			2	JJ	2
-ditch			9	NN	8	VB	1
+ditch			12	NN	11	VB	1
 ditches			6	NNS	6
 dithering		2	VBG	2
 divan			3	NN	3
-dive			13	NN	6	VB	6	VBP	1
+dive			14	NN	7	VB	6	VBP	1
 dived			4	VBD	4
 diver			1	NN	1
 diverge			4	VB	4
@@ -28642,13 +28756,13 @@ divestiture		7	NN	7
 divestiture-related	1	JJ	1
 divestitures		2	NNS	2
 divide			10	NN	3	VB	4	VBP	3
-divided			38	JJ	4	VBD	2	VBN	32
+divided			42	JJ	4	VBD	3	VBN	35
 dividend		99	NN	99
 dividend-related	1	JJ	1
 dividends		52	NNS	52
 divider			2	NN	2
 divides			3	VBZ	3
-dividing		8	VBG	7	VBG|NN|JJ	1
+dividing		8	VBG	6	VBG|NN|JJ	2
 divine			8	JJ	8
 divined			2	VBN	2
 diving			5	JJ	2	NN	1	VBG	2
@@ -28659,7 +28773,7 @@ division		127	NN	127
 divisions		30	NNS	30
 divisive		4	JJ	4
 divisiveness		2	NN	2
-divorce			30	NN	28	VB	2
+divorce			33	NN	31	VB	2
 divorced		6	VBD	1	VBN	5
 divorcethose		1	VB	1
 divulge			2	VB	2
@@ -28667,9 +28781,9 @@ divulged		1	VBN	1
 divulging		1	VBG	1
 dizzied			1	VBN	1
 dizziness		2	NN	2
-dizzy			8	JJ	7	RB	1
+dizzy			9	JJ	7	RB	2
 dizzying		5	JJ	4	VBG	1
-do			1143	VB	480	VBP	663
+do			1196	VB	505	VBP	691
 do-everything		1	JJ	1
 do-gooders		1	NNS	1
 do-it-yourself		5	JJ	5
@@ -28679,45 +28793,45 @@ doc			1	NN	1
 docile			2	JJ	2
 dock			11	NN	10	VB	1
 docked			3	VBD	2	VBN	1
-dockers			2	NNS	2
+dockers			3	NNS	3
 docket			2	NN	2
 docketed		1	VBD	1
 dockland		1	NN	1
 docks			4	NNS	4
-doctor			98	NN	97	VB	1
+doctor			105	NN	104	VB	1
 doctor-patient		1	JJ	1
 doctoral		2	JJ	2
 doctorate		3	NN	3
 doctored		1	VBN	1
-doctoring		2	NN	2
-doctors			50	NNS	50
+doctoring		2	NN	1	VBG	1
+doctors			54	NNS	54
 doctors?		1	NN	1
 doctrinaire		1	JJ	1
 doctrinal		1	JJ	1
 doctrine		9	NN	9
 doctrines		6	NNS	6
 docudrama		1	NN	1
-document		37	NN	37
+document		38	NN	37	VB	1
 documentaries		1	NNS	1
 documentary		9	NN	9
-documented		2	VBN	2
-documenting		1	VBG	1
-documents		62	NNS	61	VBZ	1
+documented		4	VBN	4
+documenting		2	VBG	2
+documents		63	NNS	62	VBZ	1
 documents?		1	NN	1
 doddering		2	JJ	2
 dodge			5	NN	1	VBP	4
 dodged			3	VBD	3
 dodgems			1	NNS	1
 dodger			1	NN	1
-dodges			2	NNS	1	VBZ	1
+dodges			2	NNS	2
 dodging			1	VBG	1
 dodgy			2	JJ	2
 dodo			1	NN	1
 doers			1	NNS	1
-does			442	VBZ	442
-doesnt			81	JJ	22	NN	37	RB	6	VB	1	VBP	15
+does			449	VBZ	449
+doesnt			88	JJ	30	NN	35	RB	7	VB	1	VBP	15
 doeuvre			1	NN	1
-dog			73	NN	73
+dog			76	NN	76
 dog-collar		1	JJ	1
 dog-eared		1	JJ	1
 dog-meat		1	NN	1
@@ -28731,31 +28845,31 @@ dogmas			1	NNS	1
 dogmatic		4	JJ	4
 dogs			42	NNS	42
 dogsbody		1	NN	1
-doing			195	VBG	195
-doings			2	NNS	2
+doing			206	VBG	206
+doings			2	NN	1	NNS	1
 doldrums		7	NN	2	NNS	5
-dole			7	NN	2	VB	4	VBP	1
+dole			8	NN	2	VB	4	VBP	2
 doleful			2	JJ	2
 doles			1	NNS	1
 doling			1	VBG	1
 doll			6	NN	6
-dollar			222	NN	222
+dollar			223	NN	223
 dollar-denominated	8	JJ	8
 dollar-mark		1	NN	1
 dollar-yen		2	JJ	2
-dollars			146	NNS	146
+dollars			149	NNS	149
 dollars.		1	NNS	1
 dolledup		1	JJ	1
 dollies			1	NNS	1
 dollop			1	NN	1
 dolls			4	NNS	4
-dolphins		1	NNS	1
+dolphins		2	NNS	2
 dolt			1	NN	1
 domain			6	NN	6
 dome			5	NN	5
 domed			2	JJ	2
 domes			2	NNS	2
-domestic		129	JJ	128	NN	1
+domestic		131	JJ	130	NN	1
 domestic-made		1	JJ	1
 domestic-production	1	NN	1
 domestically		4	RB	4
@@ -28765,11 +28879,11 @@ domicile		1	NN	1
 domiciled		1	JJ	1
 dominance		10	NN	10
 dominant		22	JJ	22
-dominate		12	VB	8	VBP	4
-dominated		17	VBD	6	VBN	11
+dominate		12	VB	6	VBP	6
+dominated		18	VBD	7	VBN	11
 dominates		4	VBZ	4
 dominating		5	JJ	2	VBG	3
-domination		6	NN	6
+domination		7	NN	7
 domineering		5	JJ	5
 dominion		1	NN	1
 dominions		1	NNS	1
@@ -28782,9 +28896,9 @@ donated			12	VBD	3	VBN	9
 donates			1	VBZ	1
 donating		2	VBG	2
 donation		9	NN	9
-donations		20	NNS	20
-done			193	RB	1	VBN	192
-done?			2	JJ	1	NN	1
+donations		21	NNS	21
+done			202	RB	1	VBN	201
+done?			2	JJ	1	NNS	1
 donkey			5	NN	5
 donkeys			1	NNS	1
 donned			2	VBD	2
@@ -28792,7 +28906,7 @@ donnish			2	JJ	2
 donor			12	NN	12
 donors			3	NNS	3
 dons			3	NNS	1	VBZ	2
-dont			293	JJ	62	NN	28	RB	20	VB	1	VBP	182
+dont			325	JJ	68	NN	22	RB	14	VBP	221
 dont.			1	NN	1
 doodah			1	NN	1
 doodle			1	VB	1
@@ -28803,7 +28917,7 @@ dooming			1	VBG	1
 doomsayer		1	NN	1
 doomsayers		1	NNS	1
 doomsday		1	NN	1
-door			246	NN	246
+door			264	NN	264
 door-handles		1	NNS	1
 door-knob		1	JJ	1
 door-to-door		1	JJ	1
@@ -28812,15 +28926,15 @@ doorbell		5	NN	5
 doorit			1	NN	1
 doorknob		2	NN	2
 doormat			1	NN	1
-doors			38	NNS	38
+doors			41	NNS	41
 doorstep		4	NN	4
-doorway			12	NN	12
+doorway			14	NN	14
 dope			11	NN	11
 doped			5	VBD	1	VBN	4
 dopey			3	JJ	3
 dormant			2	JJ	2
 dormitories		1	NNS	1
-dormitory		8	NN	8
+dormitory		9	NN	9
 dosage			2	NN	2
 dose			6	NN	6
 dosed			4	VBD	2	VBN	2
@@ -28852,16 +28966,16 @@ double-edged		1	JJ	1
 double-glazing		1	VBG	1
 double-hamburger	1	NN	1
 double-quick		2	RB	2
-doubled			28	VBD	19	VBN	9
+doubled			29	VBD	20	VBN	9
 doubles			4	NNS	1	VBZ	3
 doubling		5	VBG	5
 doubly			5	RB	5
-doubt			65	NN	45	VB	6	VBP	14
+doubt			74	NN	49	VB	7	VBP	18
 doubted			8	VBD	8
-doubtful		14	JJ	14
+doubtful		15	JJ	15
 doubtfully		2	RB	2
-doubts			28	NNS	22	VBZ	6
-dough			5	NN	5
+doubts			32	NNS	26	VBZ	6
+dough			6	NN	6
 doughnut		1	NN	1
 doughy			1	JJ	1
 dour			3	JJ	3
@@ -28875,16 +28989,16 @@ dovetails		1	VBZ	1
 dowager			1	NN	1
 dowagers		1	NNS	1
 dowdy			5	JJ	5
-down			1031	IN	192	JJ	11	NN	1	RB	386	RP	441
+down			1072	IN	204	JJ	11	NN	1	RB	390	RP	466
 down-and-outs		1	NNS	1
 down-market		1	JJ	1
 down-payment		1	NN	1
 down-to-earth		3	JJ	3
 down?			1	NN	1
 downbeat		1	JJ	1
-downcast		4	JJ	4
+downcast		4	JJ	3	NN	1
 downed			1	VBD	1
-downfall		7	NN	7
+downfall		8	NN	8
 downgrade		6	NN	5	VB	1
 downgraded		8	VBD	7	VBN	1
 downgrading		4	NN	2	VBG	2
@@ -28898,7 +29012,7 @@ downs			1	NNS	1
 downside		2	NN	2
 downsize		1	VB	1
 downsized		1	VBN	1
-downstairs		18	JJ	2	NN	13	RB	3
+downstairs		20	JJ	2	NN	15	RB	3
 downstairs?		1	NN	1
 downstream		3	JJ	3
 downtime		2	NN	2
@@ -28906,8 +29020,8 @@ downtown		8	JJ	2	NN	6
 downtrend		1	NN	1
 downturn		28	NN	28
 downturns		1	NNS	1
-downward		27	JJ	16	RB	11
-downwards		4	NNS	2	RB	2
+downward		29	JJ	16	RB	13
+downwards		6	NNS	2	RB	4
 downwind		1	RB	1
 downwould		1	VBD	1
 downy			1	JJ	1
@@ -28915,7 +29029,7 @@ dowry			2	NN	2
 doyen			1	NN	1
 doze			3	NN	1	VB	2
 dozed			1	VBD	1
-dozen			59	NN	59
+dozen			60	NN	60
 dozens			19	NNS	19
 dozing			1	VBG	1
 dozy			2	JJ	2
@@ -28936,7 +29050,7 @@ dragon-fly		1	RB	1
 dragonflies		3	NNS	2	VBZ	1
 drags			2	VBZ	2
 drain			16	NN	11	VB	5
-drained			8	VBN	8
+drained			9	VBN	9
 draining		5	VBG	5
 drainpipes		1	NNS	1
 drains			4	VBZ	4
@@ -28944,7 +29058,7 @@ dram			1	NN	1
 drama			29	NN	29
 dramas			3	NN	3
 dramatic		31	JJ	31
-dramatically		9	RB	9
+dramatically		10	RB	10
 dramatics		2	NNS	2
 dramatise		1	JJ	1
 dramatist		2	NN	2
@@ -28954,53 +29068,53 @@ dramatizations		1	NNS	1
 dramatized		3	VBN	3
 drank			16	VBD	16
 drape			3	NN	1	VB	2
-draped			7	JJ	1	VBD	1	VBN	5
+draped			8	JJ	1	VBD	1	VBN	6
 draperies		2	NNS	2
 drapery			1	NN	1
 drapes			2	NNS	2
 draping			1	VBG	1
 drastic			9	JJ	8	RB	1
 drastically		7	RB	7
-draught			11	JJ	1	NN	10
+draught			11	JJ	2	NN	9
 draught-free		1	JJ	1
 draughts		2	NNS	2
 draughtsman		2	NN	2
 draughty		2	JJ	2
-draw			45	NN	5	VB	35	VBP	5
+draw			46	NN	5	VB	36	VBP	5
 drawback		3	NN	3
 drawbacks		3	NNS	3
-drawer			11	NN	11
+drawer			13	NN	13
 drawers			7	NNS	7
-drawing			40	NN	16	VBG	24
-drawing-room		3	NN	3
+drawing			45	NN	19	VBG	26
+drawing-room		4	NN	4
 drawings		10	NNS	10
 drawl			1	NN	1
 drawled			1	VBD	1
-drawn			49	VBN	49
+drawn			50	VBN	50
 drawn-out		1	JJ	1
 draws			10	VBZ	10
 drawstring		2	NN	2
-dread			5	NN	5
-dreaded			4	JJ	4
+dread			9	NN	6	VB	3
+dreaded			5	JJ	4	VBN	1
 dreadful		21	JJ	21
-dreadfully		2	RB	2
-dream			44	NN	33	VB	8	VBP	3
+dreadfully		4	RB	4
+dream			47	NN	36	VB	8	VBP	3
 dream-like		2	JJ	2
 dreamed			5	VBD	4	VBN	1
 dreamer			1	NN	1
 dreamily		2	RB	2
 dreaming		5	VBG	5
 dreamless		1	JJ	1
-dreams			16	NNS	14	VBZ	2
+dreams			17	NNS	15	VBZ	2
 dreamt			5	VBD	5
 dreamy			11	JJ	11
 drearier		1	RBR	1
 dreary			4	JJ	4
 dregs			2	NNS	2
-drenched		1	JJ	1
+drenched		2	JJ	1	VBN	1
 drenching		1	NN	1
-dress			100	NN	91	VB	7	VBP	2
-dressed			52	JJ	4	VBD	2	VBN	46
+dress			104	NN	95	VB	7	VBP	2
+dressed			53	JJ	4	VBD	2	VBN	47
 dresser			8	NN	8
 dresses			4	NNS	3	VBZ	1
 dressing		8	VBG	8
@@ -29011,13 +29125,13 @@ dressings		1	NNS	1
 dressmakers		1	NNS	1
 dressmaking		2	NN	2
 dressy			2	JJ	2
-drew			57	VBD	57
+drew			60	VBD	60
 dribble			1	NN	1
 dribbled		2	VBD	2
 dribbles		1	NNS	1
 dribbling		2	VBG	2
 dribs			1	NNS	1
-dried			16	VBD	9	VBN	7
+dried			17	VBD	9	VBN	8
 dried-up		2	JJ	2
 drier			2	NN	2
 dries			2	VBZ	2
@@ -29025,7 +29139,7 @@ drift			12	NN	7	VB	4	VBP	1
 drift-net		2	NN	2
 drifted			16	VBD	16
 drifter			2	NN	2
-drifting		6	VBG	6
+drifting		7	VBG	7
 driftnet		1	NN	1
 drifts			5	NNS	5
 driftwood		1	NN	1
@@ -29034,62 +29148,63 @@ drill-bit		1	NN	1
 drilled			4	VBN	4
 drillers		2	NNS	2
 drilling		18	NN	13	VBG	5
-drink			68	NN	40	VB	22	VBP	6
-drink.Okay,		1	VB	1
-drink?			2	NN	2
+drink			74	NN	49	VB	20	VBP	5
+drink.Okay,		1	NN	1
+drink?			3	NN	3
 drinkable		1	JJ	1
 drinker			7	NN	7
 drinkers		1	NNS	1
-drinking		39	JJ	2	NN	18	VBG	19
+drinking		41	JJ	2	NN	20	VBG	19
 drinks			18	NNS	18
 drip			4	NN	4
 dripped			1	VBD	1
 dripping		5	JJ	1	VBG	4
-drive			95	NN	49	VB	39	VBP	7
+drive			99	NN	50	VB	42	VBP	7
 drive-in		1	NN	1
 drive?			1	VB	1
 drive?Charlie		1	VB	1
 drivel			1	NN	1
 driven			30	VBN	30
-driver			26	NN	26
+driver			28	NN	28
 drivers			30	NNS	30
 drives			20	NNS	11	VBZ	9
 driveway		4	NN	4
-driving			55	JJ	2	NN	10	VBG	43
+driving			58	JJ	2	NN	9	VBG	47
 drizzle			2	NN	2
-drizzling		1	JJ	1
+drizzling		1	VBG	1
 drone			1	NN	1
 droned			2	VBD	1	VBN	1
 drones			2	NNS	2
 drool			1	VB	1
 drooled			1	VBD	1
 drooling		2	VBG	2
-drooped			3	VBD	1	VBN	2
+drooped			3	VBD	3
 droopy			2	JJ	1	NN	1
 droopy-eyed		1	JJ	1
-drop			147	NN	115	VB	29	VBP	3
+drop			151	NN	118	VB	30	VBP	3
 drop-in			1	JJ	1
 drop-off		3	JJ	1	NN	2
 droped			1	VBD	1
 droplet			1	NN	1
 dropout			1	NN	1
 dropouts		1	NNS	1
-dropped			150	VBD	131	VBN	19
+dropped			151	VBD	131	VBN	20
 dropping		16	VBG	16
-drops			20	NNS	13	VBZ	7
+droppings		1	NNS	1
+drops			21	NNS	14	VBZ	7
 drought			15	NN	15
 drought-related		1	JJ	1
 droughts		6	NNS	6
 drove			72	VBD	72
 droves			3	NNS	3
 drown			1	VB	1
-drowned			10	JJ	2	VBD	1	VBN	7
-drowning		6	JJ	3	VBG	3
+drowned			11	JJ	3	VBD	1	VBN	7
+drowning		7	JJ	5	VBG	2
 drowsed			1	VBD	1
 drowsy			4	JJ	3	RB	1
 drubbing		3	NN	3
 drudgery		1	NN	1
-drug			160	NN	160
+drug			161	NN	161
 drug-consuming		1	JJ	1
 drug-industry		1	NN	1
 drug-interdiction	3	JJ	1	NN	2
@@ -29097,15 +29212,15 @@ drug-related		5	JJ	5
 drug-store		1	NN	1
 drug-trafficking	1	JJ	1
 drugged			4	JJ	2	VBD	1	VBN	1
-drugs			64	NNS	64
+drugs			66	NNS	66
 drugstore		3	NN	3
-drum			9	NN	1	VB	8
+drum			10	NN	1	VB	9
 drumbeats		1	NNS	1
 drummed			2	VBD	2
 drummer			1	NN	1
 drumming		2	NN	1	VBG	1
-drums			17	NNS	17
-drunk			17	JJ	14	NN	3
+drums			18	NNS	18
+drunk			20	JJ	18	NN	2
 drunk-driving		1	JJ	1
 drunkard		3	NN	3
 drunkards		1	NNS	1
@@ -29113,16 +29228,18 @@ drunken			14	JJ	14
 drunkenly		1	RB	1
 drunkenness		3	NN	3
 drunks			2	NNS	2
-dry			79	JJ	73	VB	6
+dry			85	JJ	79	VB	6
 dry-clean		1	JJ	1
 dry-eyed		1	JJ	1
+dry.So			1	NN	1
 dryers			1	NNS	1
 drying			6	VBG	6
 drying-up		1	NN	1
-dryness			2	NN	2
+dryness			3	NN	3
 du			3	NNP	3
-dual			8	JJ	8
+dual			9	JJ	9
 dubbed			12	VBD	2	VBN	10
+dubbing			1	NN	1
 dubious			11	JJ	11
 dubs			1	VBZ	1
 duchess			1	NN	1
@@ -29136,7 +29253,7 @@ duct			3	NN	3
 dud			2	JJ	1	NN	1
 dude			1	NN	1
 dudgeon			1	NN	1
-due			260	JJ	239	NN	2	RB	19
+due			266	IN	2	JJ	243	NN	2	RB	19
 duel			4	NN	4
 dueling			2	NN	1	VBG	1
 duels			2	NNS	2
@@ -29156,7 +29273,7 @@ dulled			4	VBN	4
 duller			1	RBR	1
 dullest			1	JJS	1
 dullish			1	JJ	1
-duly			10	RB	10
+duly			11	RB	11
 dumb			15	JJ	15
 dumbbell		1	NN	1
 dumbfounded		3	JJ	3
@@ -29180,7 +29297,7 @@ duodenal		1	JJ	1
 dupe			1	NN	1
 duped			2	VBN	2
 duplex			2	JJ	1	NN	1
-duplicate		4	NN	2	VB	2
+duplicate		4	JJ	1	NN	1	VB	2
 duplicated		6	VBN	6
 duplicating		1	VBG	1
 duplications		1	NNS	1
@@ -29191,10 +29308,10 @@ durable			20	JJ	20
 durable-goods		4	NNS	4
 durables		2	NNS	2
 duration		2	NN	2
-during			346	IN	346
+during			352	IN	352
 dusk			5	NN	5
 dusky			4	JJ	4
-dust			29	NN	29
+dust			32	NN	32
 dust-filled		2	JJ	2
 dust-jacket		1	NN	1
 dust-up			2	NN	2
@@ -29202,11 +29319,12 @@ dustbin			1	NN	1
 dustbins		5	NNS	5
 dusted			7	VBD	7
 dusting			4	VBG	4
+dustpan			1	NN	1
 dusty			20	JJ	20
 duties			39	NNS	39
 dutiful			3	JJ	3
 dutifully		2	RB	2
-duty			54	NN	54
+duty			56	NN	56
 duty-bound		2	JJ	2
 duty-free		5	JJ	5
 duty-related		1	JJ	1
@@ -29222,7 +29340,7 @@ dwellers		2	NNS	2
 dwelling		2	NN	2
 dwellings		3	NNS	3
 dwelt			2	NN	1	VBN	1
-dwindle			3	JJ	1	VB	2
+dwindle			3	VB	3
 dwindled		5	VBD	5
 dwindling		5	VBG	5
 dye			10	JJ	1	NN	6	VB	2	VBP	1
@@ -29230,35 +29348,35 @@ dyed-in-the-wool	1	JJ	1
 dyeing			1	VBG	1
 dyers			1	NNS	1
 dyes			3	NNS	3
-dying			16	JJ	2	NNS	1	VBG	13
+dying			17	JJ	2	NNS	1	VBG	14
 dykes			2	NNS	2
 dynamic			13	JJ	11	NN	2
 dynamics		5	NNS	5
 dynamism		2	NN	2
 dynamite		4	NN	4
 dynamited		1	VBD	1
-dynamiting		2	NN	1	VBG	1
+dynamiting		2	VBG	2
 dynamo			1	NN	1
 dynasties		1	NNS	1
 dynasty			5	NN	5
 dystopia		1	NN	1
 e			4	LS	1	NN	1	SYM	2
-each			446	DT	446
+each			469	DT	466	PP	3
 eager			38	JJ	38
-eagerly			12	RB	12
+eagerly			13	RB	13
 eagerness		7	NN	7
 eagle			1	JJ	1
 eagles			1	NNS	1
-ear			29	NN	29
+ear			31	NN	31
 ear-splitting		2	JJ	2
 eardrums		1	NNS	1
 earful			2	NN	2
 earl			1	NN	1
-earlier			394	JJR	95	RB	69	RBR	230
+earlier			394	JJR	94	RB	68	RBR	232
 earlier-announced	1	JJ	1
 earlier-expressed	1	JJ	1
 earliest		12	JJS	12
-early			339	JJ	254	RB	85
+early			348	JJ	262	RB	86
 early-morning		1	JJ	1
 early-retirement	1	JJ	1
 earmark			1	VB	1
@@ -29281,7 +29399,7 @@ earphones		2	NNS	2
 earring			1	NN	1
 earrings		7	NNS	7
 ears			24	NNS	24
-earth			72	NN	72
+earth			78	NN	78
 earth-bound		1	JJ	1
 earthbound		1	JJ	1
 earthen			1	JJ	1
@@ -29290,38 +29408,39 @@ earthiness		1	NN	1
 earthlings		1	NNS	1
 earthly			2	JJ	2
 earthmoving		2	JJ	2
-earthquake		94	NN	94
+earthquake		96	NN	96
 earthquake-related	1	JJ	1
 earthquake-stricken	1	JJ	1
 earthquake-triggered	1	JJ	1
 earthquakes		12	NNS	12
-earths			10	JJ	10
+earths			12	JJ	10	NNS	2
 earthshaking		1	JJ	1
 earthworms		2	NNS	2
 earthy			3	JJ	3
-ease			48	NN	10	VB	36	VBP	2
+ease			49	NN	11	VB	36	VBP	2
 eased			22	VBD	21	VBN	1
+easel			1	NN	1
 eases			5	VBZ	5
 easier			39	JJR	34	RB	1	RBR	4
 easiest			2	JJS	2
-easily			99	RB	99
+easily			104	RB	104
 easing			13	NN	3	VBG	10
-east			30	JJ	21	NN	2	RB	7
+east			31	JJ	22	NN	2	RB	7
 easterly		2	JJ	2
 eastern			6	JJ	6
 easterner		1	NN	1
 easternmost		1	JJ	1
 eastward		2	RB	2
 eastwards		2	NNS	1	RB	1
-easy			97	JJ	95	RB	2
+easy			101	JJ	99	RB	2
 easy-going		3	JJ	2	VBG	1
 easy-to-read		1	JJ	1
-eat			43	VB	35	VBP	8
+eat			46	VB	36	VBP	10
 eatable			1	JJ	1
 eaten			20	VBN	20
 eater			1	NN	1
 eaters			2	NNS	2
-eating			33	JJ	1	NN	4	VBG	28
+eating			36	JJ	1	NN	5	VBG	30
 eats			2	VBZ	2
 eau-de-cologne		1	NN	1
 eaves			1	NNS	1
@@ -29340,28 +29459,28 @@ ecclesiastical		2	JJ	2
 echelon			2	NN	2
 echelons		2	NNS	2
 echo			11	NN	4	VBP	7
-echoed			14	VBD	5	VBN	9
+echoed			15	VBD	6	VBN	9
 echoes			5	NNS	5
 echoing			5	VBG	5
 eclectic		4	JJ	3	NN	1
-eclipse			6	NN	1	VB	5
+eclipse			7	NN	1	VB	6
 eclipsed		1	VBN	1
 eclipsing		1	VBG	1
-ecological		3	JJ	3
+ecological		4	JJ	4
 ecologists		2	NNS	2
 ecology			2	NN	2
-economic		385	JJ	385
+economic		388	JJ	388
 economic-development	1	NN	1
 economic-forecasting	2	JJ	2
 economical		9	JJ	9
 economically		7	RB	7
 economicallyand		1	VBN	1
-economics		24	NN	3	NNS	21
+economics		25	NN	3	NNS	22
 economies		24	NNS	24
 economist		58	NN	58
 economists		53	NNS	53
 economize		2	VB	2
-economy			253	NN	253
+economy			256	NN	256
 economy?		1	NN	1
 ecosystem		1	NN	1
 ecosystems		1	NNS	1
@@ -29369,20 +29488,21 @@ ecstatic		2	JJ	2
 ectoplasmic		1	JJ	1
 eddied			1	VBN	1
 eddy			1	NN	1
-edge			57	NN	54	VB	3
+edge			66	NN	63	VB	3
 edged			18	VBD	16	VBN	2
-edges			12	NNS	12
+edges			13	NNS	13
 edgeways		1	NNS	1
 edging			4	NN	1	VBG	3
 edgings			1	NNS	1
 edgy			2	JJ	2
-edible			5	JJ	5
+edible			6	JJ	6
 edict			4	NN	4
+edicts			1	NNS	1
 edifice			4	NN	4
 edify			1	VB	1
 edit			3	NN	1	VB	2
 edited			5	NN	1	VBD	2	VBN	2
-editing			4	NN	4
+editing			4	NN	3	VBG	1
 editing\/electronic	1	electronic	1
 edition			32	NN	32
 editions		4	NNS	4
@@ -29394,10 +29514,10 @@ editorials		7	NNS	7
 editors			15	NNS	15
 editorship		4	NN	4
 edits			1	VBZ	1
-educate			8	VB	8
+educate			9	VB	9
 educated		17	JJ	1	VBN	16
 educating		2	VBG	2
-education		103	NN	103
+education		109	NN	109
 educational		18	JJ	18
 educationally		2	RB	2
 educative		1	JJ	1
@@ -29409,25 +29529,25 @@ eels			1	NNS	1
 eerie			2	JJ	2
 efface			3	VB	3
 effaced			1	VBN	1
-effect			161	NN	159	VB	2
-effected		2	VBN	2
+effect			166	NN	164	VB	2
+effected		2	JJ	2
 effecting		2	VBG	2
 effective		90	JJ	89	NN	1
 effectively		32	RB	32
 effectiveness		10	NN	10
-effects			66	NNS	66
-effeminate		3	JJ	2	VB	1
+effects			69	NNS	69
+effeminate		4	JJ	2	VB	2
 effervescent		2	JJ	2
 efficacious		2	JJ	2
 efficiencies		1	NNS	1
-efficiency		22	NN	22
-efficient		30	JJ	30
+efficiency		24	NN	24
+efficient		31	JJ	31
 efficient-market	1	NN	1
 efficiently		3	RB	3
 effigies		1	NNS	1
 effigy			2	NN	2
 effluent		2	JJ	2
-effort			132	NN	132
+effort			135	NN	135
 effortless		4	JJ	4
 effortlessly		1	RB	1
 efforts			137	NNS	137
@@ -29438,13 +29558,13 @@ egalitarian		1	NN	1
 egg			33	NN	33
 egg-on-the-face		1	JJ	1
 egg-shaped		1	JJ	1
-eggs			58	NNS	58
+eggs			61	NNS	61
 ego			5	NN	5
 egos			2	NNS	2
 egotist			2	NN	2
 egregious		1	JJ	1
 egregiously		1	RB	1
-eight			122	CD	122
+eight			125	CD	125
 eight-acre		1	JJ	1
 eight-count		1	JJ	1
 eight-foot		1	JJ	1
@@ -29456,21 +29576,21 @@ eight-thirty		1	CD	1
 eight-time		1	JJ	1
 eight-year		2	JJ	2
 eight-year-old		2	JJ	1	NN	1
-eighteen		16	CD	1	JJ	12	NN	3
+eighteen		16	CD	2	JJ	10	NN	4
 eighteenth		4	JJ	4
-eighteenth-century	3	JJ	3
+eighteenth-century	4	JJ	4
 eighth			11	JJ	9	NN	2
 eighties		2	NNS	2
 eightieth		1	JJ	1
 eighty			6	JJ	6
 eighty-three		1	JJ	1
 eighty-two		2	JJ	2
-either			140	CC	33	DT	51	RB	56
+either			134	CC	36	DT	48	RB	50
 eject			3	VB	2	VBP	1
 ejected			2	VBN	2
 eke			1	VB	1
 eked			1	VBD	1
-elaborate		43	JJ	18	NN	1	RB	1	VB	23
+elaborate		40	JJ	18	VB	22
 elaborated		2	JJ	1	VBD	1
 elaborately		1	RB	1
 elaborating		2	VBG	2
@@ -29480,30 +29600,31 @@ elapsed			3	VBN	3
 elastic			3	JJ	3
 elated			1	JJ	1
 elation			2	NN	2
-elbow			7	NN	7
+elbow			8	NN	8
 elbowed			2	VBD	2
-elbows			7	NNS	7
+elbows			8	NNS	8
 elder			12	JJR	10	NN	2
 elderly			35	JJ	31	NNS	4
 elders			4	NNS	4
-eldest			7	JJS	6	NN	1
-elect			5	VB	4	VBP	1
-elected			65	JJ	1	VBD	5	VBN	59
-election		110	NN	110
+eldest			8	JJS	7	NN	1
+elect			7	VB	6	VBP	1
+elected			69	JJ	1	VBD	5	VBN	63
+electing		1	VBG	1
+election		113	NN	113
 electioneering		1	JJ	1
-elections		44	NNS	44
+elections		45	NNS	45
 elective		3	JJ	3
 elector			1	NN	1
 electoral		13	JJ	13
 electorate		6	NN	6
 electorates		1	NNS	1
 electors		3	NNS	3
-electric		49	JJ	48	NN	1
+electric		54	JJ	53	NN	1
 electric-utility	2	JJ	1	NN	1
-electrical		33	JJ	33
+electrical		34	JJ	34
 electrical-products	1	NNS	1
 electrical-safety	1	JJ	1
-electrically		1	RB	1
+electrically		2	RB	2
 electrician		6	NN	6
 electricity		44	NN	44
 electrified		3	VBN	3
@@ -29544,9 +29665,9 @@ elevated		4	JJ	3	VBD	1
 elevates		1	VBZ	1
 elevation		6	NN	6
 elevations		1	NNS	1
-elevator		4	NN	4
+elevator		5	NN	5
 elevators		9	NNS	9
-eleven			16	CD	15	NN	1
+eleven			18	CD	17	NN	1
 eleventh		4	JJ	4
 elicited		2	VBD	1	VBN	1
 eliciting		1	VBG	1
@@ -29575,11 +29696,11 @@ elopement		1	NN	1
 eloquence		3	NN	3
 eloquent		10	JJ	10
 eloquently		2	RB	2
-else			110	JJ	7	RB	103
+else			114	CC	4	JJ	7	RB	103
 elses			5	NNS	5
 elsewhere		29	RB	29
 elucidating		1	VBG	1
-elude			2	VB	2
+elude			3	VB	3
 eluded			1	VBD	1
 eluding			1	VBG	1
 elusive			8	JJ	8
@@ -29598,7 +29719,7 @@ embarrass		2	VB	2
 embarrassed		14	JJ	6	VBD	1	VBN	7
 embarrasses		1	VBZ	1
 embarrassing		9	JJ	9
-embarrassment		17	NN	17
+embarrassment		18	NN	18
 embassies		1	NNS	1
 embassy			10	NN	10
 embattled		3	JJ	3
@@ -29624,7 +29745,7 @@ embraced		9	VBD	6	VBN	3
 embraces		5	NNS	1	VBZ	4
 embracing		2	VBG	2
 embroidered		5	VBD	1	VBN	4
-embroidery		4	NN	4
+embroidery		5	NN	5
 embroil			1	VB	1
 embroiled		5	VBN	5
 embryo			12	JJ	2	NN	10
@@ -29634,10 +29755,10 @@ emerge			19	VB	17	VBP	2
 emerged			28	VBD	25	VBN	3
 emergence		3	NN	3
 emergencies		5	NNS	5
-emergency		53	JJ	5	NN	48
+emergency		54	JJ	5	NN	49
 emergent		2	JJ	2
 emerges			10	VBZ	10
-emerging		14	VBG	14
+emerging		15	VBG	15
 emeritus		2	NN	2
 emigrate		3	VB	3
 emigrated		3	VBD	3
@@ -29654,15 +29775,15 @@ emits			2	VBZ	2
 emitted			1	VBN	1
 emitting		1	VBG	1
 emotion			14	NN	14
-emotional		29	JJ	29
+emotional		30	JJ	30
 emotionally		5	RB	5
-emotions		13	NNS	13
-emotive			3	JJ	3
+emotions		14	NNS	14
+emotive			3	JJ	2	NN	1
 empathize		1	VB	1
 empathy			1	NN	1
 emperor			2	NN	2
 emperors		1	NNS	1
-emphasis		30	NN	30
+emphasis		31	NN	31
 emphasise		1	VB	1
 emphasises		1	VBZ	1
 emphasize		6	VB	6
@@ -29671,22 +29792,22 @@ emphasizes		3	VBZ	3
 emphasizing		5	VBG	5
 emphatic		5	JJ	5
 emphatically		3	RB	3
-empire			16	NN	16
+empire			17	NN	17
 empires			8	NNS	8
 empiricism		2	NN	2
 emplacements		1	NNS	1
-employ			16	VB	8	VBP	8
+employ			16	VB	7	VBP	9
 employable		1	JJ	1
-employed		24	VBN	24
+employed		26	VBN	26
 employee		38	NN	38
 employee-benefit	1	JJ	1
 employee-health		2	NN	2
-employees		148	NNS	148
-employer		22	NN	22
+employees		150	NNS	150
+employer		24	NN	24
 employer-sponsored	1	JJ	1
 employers		29	NNS	29
 employing		4	VBG	4
-employment		49	NN	49
+employment		50	NN	50
 employs			18	VBZ	18
 empower			1	VBP	1
 empowered		4	VBN	4
@@ -29695,7 +29816,7 @@ empowers		2	VBZ	2
 emptied			4	VBN	4
 empties			1	NNS	1
 emptiness		4	NN	4
-empty			46	JJ	41	VB	5
+empty			49	JJ	44	VB	5
 empty-handed		2	JJ	2
 empty-headed		1	JJ	1
 emptying		2	VBG	2
@@ -29704,11 +29825,11 @@ emulated		2	VBN	2
 emulsion		1	NN	1
 emulsioned		1	JJ	1
 en			4	FW	1	IN	3
-enable			18	VB	17	VBP	1
-enabled			13	VBD	9	VBN	4
+enable			18	VB	16	VBP	2
+enabled			14	VBD	10	VBN	4
 enables			7	VBZ	7
 enabling		5	VBG	5
-enact			5	VB	5
+enact			6	VB	6
 enacted			11	VBD	3	VBN	8
 enacting		1	VBG	1
 enactment		9	NN	9
@@ -29721,16 +29842,16 @@ encapsulated		1	VBN	1
 encapsulates		1	VBZ	1
 encased			4	JJ	4
 enchant			2	NN	1	VB	1
-enchanted		1	VBN	1
+enchanted		1	JJ	1
 enchanting		1	JJ	1
 enchantresses		1	NNS	1
 encircle		1	VBP	1
-encircled		5	VBD	4	VBN	1
+encircled		5	VBD	5
 encircling		1	VBG	1
 enclave			1	NN	1
 enclaves		1	NNS	1
 enclose			3	VBP	3
-enclosed		8	JJ	2	VBN	6
+enclosed		7	JJ	2	VBN	5
 enclosing		1	VBG	1
 enclosure		3	NN	3
 encoded			2	VBD	1	VBN	1
@@ -29741,13 +29862,13 @@ encompassing		1	VBG	1
 encore			2	NN	2
 encored			1	VBN	1
 encounter		7	NN	5	VB	2
-encountered		7	VBD	5	VBN	2
+encountered		8	VBD	6	VBN	2
 encounters		6	NNS	3	VBZ	3
-encourage		32	VB	25	VBP	7
-encouraged		36	JJ	1	VBD	12	VBN	23
+encourage		32	VB	24	VBP	8
+encouraged		37	JJ	1	VBD	12	VBN	24
 encouragement		8	NN	8
 encourages		6	VBZ	6
-encouraging		20	JJ	9	VBG	11
+encouraging		21	JJ	11	VBG	10
 encroach		1	VB	1
 encroached		1	VBN	1
 encroaching		1	VBG	1
@@ -29757,9 +29878,10 @@ encrusted		2	JJ	2
 encumbered		3	VBN	3
 encumbrance		1	NN	1
 encyclopaedia		1	NN	1
-encyclopedia		3	NNS	3
+encyclopaedias		1	NNS	1
+encyclopedia		3	NN	2	NNS	1
 encyclopedic		1	JJ	1
-end			409	JJ	1	NN	338	VB	67	VBP	3
+end			418	JJ	1	NN	346	VB	68	VBP	3
 end-of-season		1	JJ	1
 end-of-year		1	JJ	1
 end?			1	NN	1
@@ -29771,7 +29893,7 @@ endeared		1	VBN	1
 endearing		1	JJ	1
 endearment		1	NN	1
 endearments		2	NNS	2
-endeavour		2	VB	2
+endeavour		3	NN	1	VB	2
 endeavoured		3	VBD	3
 endeavours		2	NNS	2
 ended			224	VBD	153	VBN	71
@@ -29789,21 +29911,21 @@ endorsing		4	VBG	4
 endowed			6	VBD	1	VBN	5
 endowment		4	NN	4
 endrocrine		1	JJ	1
-ends			31	NNS	15	VBZ	16
+ends			33	NNS	16	VBZ	17
 endurance		1	NN	1
-endure			6	VB	5	VBP	1
+endure			6	VB	6
 endured			6	VBD	2	VBN	4
 enduring		3	JJ	2	VBG	1
 endways			1	RB	1
-enemies			23	NNS	23
-enemy			51	NN	51
+enemies			24	NNS	24
+enemy			52	NN	52
 enemys			7	JJ	6	NNS	1
 energetic		15	JJ	15
 energetically		3	RB	3
 energies		9	NNS	9
 energized		1	VBN	1
-energizing		1	JJ	1
-energy			102	NN	102
+energizing		1	VBG	1
+energy			106	NN	106
 energy-services		1	JJ	1
 enervated		1	JJ	1
 enfeebled		3	JJ	3
@@ -29811,22 +29933,23 @@ enfold			1	VB	1
 enfolds			1	VBZ	1
 enforce			10	VB	9	VBP	1
 enforceable		1	JJ	1
-enforced		4	VBN	4
+enforced		5	VBN	5
 enforcement		26	NN	26
 enforcing		2	VBG	2
 enfranchised		1	JJ	1
 engage			22	VB	17	VBP	5
 engaged			33	JJ	4	VBD	6	VBN	23
-engagement		9	NN	9
+engagement		8	NN	8
 engagements		3	NNS	3
 engages			2	VBZ	2
 engaging		9	JJ	5	VBG	4
-engine			89	NN	89
+engine			91	NN	91
+engine?			1	NN	1
 engineer		16	NN	16
 engineered		14	JJ	1	VBN	13
 engineering		54	NN	53	VBG	1
 engineers		22	NNS	22
-engines			27	NNS	27
+engines			29	NNS	29
 engrave			1	VB	1
 engraved		4	VBN	4
 engraver		1	NN	1
@@ -29844,15 +29967,15 @@ enigmas			1	NNS	1
 enigmatic		2	JJ	2
 enjoin			2	VB	2
 enjoined		3	VBD	1	VBN	2
-enjoins			1	NNS	1
+enjoins			1	VBZ	1
 enjoy			28	VB	12	VBP	16
 enjoyable		5	JJ	5
-enjoyed			31	VBD	24	VBN	7
-enjoying		11	VBG	11
-enjoyment		3	NN	3
+enjoyed			34	VBD	26	VBN	8
+enjoying		12	VBG	12
+enjoyment		4	NN	4
 enjoyments		1	NNS	1
 enjoys			9	VBZ	9
-enlarge			3	VB	3
+enlarge			4	VB	4
 enlarged		7	JJ	4	VBN	3
 enlargement		5	NN	5
 enlarging		1	VBG	1
@@ -29869,14 +29992,14 @@ ennobled		1	VBN	1
 ennui			2	NN	2
 enormities		1	NNS	1
 enormity		3	NN	3
-enormous		76	JJ	76
-enormously		13	RB	13
-enough			262	JJ	85	NN	10	RB	167
+enormous		78	JJ	78
+enormously		14	RB	14
+enough			272	JJ	90	NN	9	RB	173
 enquire			2	VB	2
-enquired		3	VBD	3
+enquired		4	VBD	4
 enquiries		10	NNS	10
 enquiring		1	VBG	1
-enquiry			10	JJ	2	NN	8
+enquiry			12	JJ	2	NN	10
 enrage			1	VB	1
 enraged			4	JJ	3	VBD	1
 enraptured		1	JJ	1
@@ -29898,7 +30021,7 @@ enshrouded		1	VBD	1
 enslaved		2	VBN	2
 ensnare			2	VB	2
 ensnarled		1	VBN	1
-ensue			2	VB	2
+ensue			3	VB	3
 ensued			4	VBD	4
 ensuing			1	VBG	1
 ensure			38	VB	38
@@ -29912,12 +30035,13 @@ entangled		7	JJ	2	VBN	5
 entanglements		1	NNS	1
 entente			1	NN	1
 enter			49	VB	42	VBP	7
-entered			59	VBD	44	VBN	15
+entered			61	VBD	46	VBN	15
 entering		18	VBG	18
+entering?		1	NN	1
 enterprise		19	NN	19
-enterprises		15	NNS	15
+enterprises		16	NNS	16
 enterprising		1	JJ	1
-enters			8	VBZ	8
+enters			9	VBZ	9
 entertain		4	VB	4
 entertained		6	VBD	4	VBN	2
 entertainer		1	NN	1
@@ -29929,7 +30053,7 @@ enthrone		1	VB	1
 enthronement		1	NN	1
 enthuse			1	VB	1
 enthused		1	VBD	1
-enthusiasm		25	NN	25
+enthusiasm		26	NN	26
 enthusiasms		1	NNS	1
 enthusiastic		9	JJ	9
 enthusiastically	3	RB	3
@@ -29938,13 +30062,13 @@ enthusing		1	VBG	1
 entice			7	VB	6	VBP	1
 enticed			2	VBD	2
 enticing		1	JJ	1
-entire			92	JJ	91	NN	1
-entirely		48	RB	48
-entirely?		1	NN	1
+entire			94	JJ	93	NN	1
+entirely		50	RB	50
+entirely?		1	NNS	1
 entirety		1	NN	1
 entities		11	NNS	11
 entitle			4	VB	3	VBP	1
-entitled		18	VBD	3	VBN	15
+entitled		19	VBD	3	VBN	16
 entitlement		5	NN	5
 entitlements		1	NNS	1
 entitles		4	VBZ	4
@@ -29952,13 +30076,13 @@ entitling		2	VBG	2
 entity			13	NN	13
 entombed		3	VBN	3
 entourage		2	NN	2
-entrance		40	JJ	1	NN	39
+entrance		43	NN	43
 entranced		1	VBN	1
 entrances		1	NNS	1
 entrant			2	NN	2
 entrants		3	NNS	3
 entre			4	NN	4
-entreated		1	VBD	1
+entreated		1	JJ	1
 entreaties		1	NNS	1
 entrench		1	VB	1
 entrenched		5	JJ	2	VBN	3
@@ -29975,21 +30099,22 @@ enunciate		2	VB	2
 enunciating		2	VBG	2
 enunciation		1	NN	1
 envelop			1	VB	1
-envelope		22	NN	22
+envelope		24	NN	24
 enveloped		3	JJ	3
 envelopes		7	NNS	7
 enviable		6	JJ	6
 enviably		1	RB	1
-envied			1	VBN	1
+envied			2	VBD	1	VBN	1
 envious			2	JJ	2
-environment		55	NN	55
+environment		61	NN	61
+environment?		1	NN	1
 environmental		64	JJ	64
 environmentalism	3	NN	3
 environmentalist	1	NN	1
 environmentalists	10	NNS	10
 environmentally		2	RB	2
 environments		6	NNS	6
-environs		2	NNS	2
+environs		2	NN	2
 envisaged		3	VBD	3
 envision		1	VB	1
 envisioned		1	VBN	1
@@ -30000,12 +30125,12 @@ envy-quotient		1	NN	1
 eons			1	NNS	1
 epaulets		1	NNS	1
 ephemeral		1	JJ	1
-epic			5	JJ	2	NN	3
+epic			6	JJ	2	NN	4
 epicenter		2	NN	2
 epicentre		1	NN	1
-epidemic		9	NN	9
+epidemic		10	NN	10
 epidemics		1	NNS	1
-epidermis		1	NNS	1
+epidermis		1	NN	1
 epigrams		1	NNS	1
 epilepsy		2	NN	2
 epileptic		2	JJ	2
@@ -30030,7 +30155,7 @@ equal			57	JJ	50	VB	5	VBP	2
 equal-opportunity	1	NN	1
 equaled			1	VBD	1
 equaling		10	VBG	10
-equality		13	NN	13
+equality		16	NN	16
 equalized		1	VBD	1
 equalizer		1	NN	1
 equalled		3	VBD	1	VBN	2
@@ -30042,13 +30167,13 @@ equate			1	VB	1
 equated			3	VBN	3
 equates			1	VBZ	1
 equation		6	NN	6
-equations		1	NNS	1
+equations		3	NNS	3
 equator			4	NN	4
 equatorial		1	JJ	1
 equidistant		1	JJ	1
 equilibrium		1	NN	1
 equip			6	VB	6
-equipment		138	NN	138
+equipment		140	NN	140
 equipped		15	JJ	1	VBD	1	VBN	13
 equitable		2	JJ	2
 equities		8	NNS	8
@@ -30068,7 +30193,7 @@ eraser			1	NN	1
 erasure			1	NN	1
 erasures		1	NNS	1
 erect			8	JJ	1	VB	7
-erected			6	VBD	3	VBN	3
+erected			7	VBD	3	VBN	4
 erection		1	NN	1
 erectly			1	RB	1
 erode			9	VB	8	VBP	1
@@ -30081,13 +30206,13 @@ err			1	VBP	1
 errand			2	NN	2
 errands			2	NNS	2
 errata			1	NNS	1
-erratic			5	JJ	5
+erratic			6	JJ	6
 erratically		1	RB	1
 erred			1	VBN	1
 erroneous		3	JJ	3
 erroneously		1	RB	1
-error			22	NN	22
-errors			19	NNS	19
+error			26	NN	26
+errors			20	NNS	20
 errs			1	VBZ	1
 ersatz			2	JJ	2
 erudite			3	JJ	3
@@ -30101,44 +30226,44 @@ escalated		1	VBN	1
 escalation		2	NN	2
 escalators		1	NNS	1
 escapade		2	NN	2
-escape			30	NN	7	VB	23
-escaped			29	VBD	20	VBN	9
+escape			35	NN	12	VB	23
+escaped			30	VBD	21	VBN	9
 escapees		1	NNS	1
 escapes			2	VBZ	2
 escaping		2	VBG	2
 escapist		1	NN	1
 eschew			1	VB	1
 eschewed		2	VBN	2
-escort			10	NN	8	VB	2
+escort			8	NN	7	VB	1
 escorted		5	VBD	3	VBN	2
 escrow			5	NN	5
 esoteric		4	JJ	4
-especially		116	RB	116
+especially		117	RB	117
 espied			1	VBD	1
 espionage		3	NN	3
 espousal		1	NN	1
 espouse			1	VBP	1
 espresso		1	NN	1
-essay			16	NN	16
+essay			17	NN	17
 essayist		2	NN	2
 essayits		1	NNS	1
 essays			9	NNS	9
 essence			7	NN	7
-essential		29	JJ	28	NN	1
+essential		30	JJ	29	NN	1
 essentially		24	RB	24
 essentials		2	NNS	2
 establish		40	VB	40
-established		68	JJ	7	VBD	16	VBN	45
+established		68	JJ	5	VBD	17	VBN	46
 establishes		2	VBZ	2
 establishing		10	VBG	10
 establishment		19	NN	19
 establishments		3	NNS	3
 estate			130	NN	130
 estates			5	NNS	5
-esteem			3	NN	2	VBP	1
+esteem			3	NN	2	VB	1
 esthetic		1	JJ	1
 estimable		1	JJ	1
-estimate		70	JJ	1	NN	48	VB	10	VBP	11
+estimate		69	NN	48	VB	10	VBP	11
 estimated		133	JJ	30	VBD	28	VBN	75
 estimates		67	NNS	48	VBZ	19
 estimating		6	NN	1	VBG	5
@@ -30157,7 +30282,7 @@ eternity		3	NN	3
 ethanol			1	NN	1
 ether			1	NN	1
 ethic			2	NN	2
-ethical			9	JJ	9
+ethical			10	JJ	10
 ethics			9	NNS	9
 ethnic			13	JJ	13
 ethnography		1	NN	1
@@ -30166,7 +30291,7 @@ ethylene		2	NN	2
 etiquette		2	NN	2
 eucalyptus		2	NN	2
 eulogies		1	NNS	1
-eulogized		1	JJ	1
+eulogized		1	VBD	1
 eulogizing		1	VBG	1
 eulogy			1	NN	1
 euphoria		3	NN	3
@@ -30177,7 +30302,7 @@ evacuees		1	NNS	1
 evade			12	VB	12
 evaded			4	VBN	4
 evaders			1	NNS	1
-evaluate		12	VB	11	VBP	1
+evaluate		13	VB	12	VBP	1
 evaluated		3	VBD	1	VBN	2
 evaluates		1	VBZ	1
 evaluating		5	VBG	5
@@ -30195,58 +30320,59 @@ evaporation		1	NN	1
 evasion			6	NN	6
 evasive			3	JJ	3
 eve			5	NN	5
-even			606	JJ	23	RB	578	RB|JJ	1	VB	4
+even			619	IN	3	JJ	23	RB	588	RB|JJ	1	VB	4
 even-handed		1	JJ	1
 even-tempered		1	JJ	1
 evenhanded		1	JJ	1
-evening			100	NN	100
+evening			101	NN	101
 evening?		1	NN	1
+evening?Im		1	NN	1
 evenings		16	NNS	16
 evenly			6	RB	6
 evensong		1	NN	1
-event			55	NN	55
+event			57	NN	57
 eventful		2	JJ	2
-events			115	NNS	115
+events			118	NNS	118
 eventual		9	JJ	9
 eventualities		1	NNS	1
 eventuality		3	NN	3
-eventually		60	RB	60
-ever			209	RB	209
+eventually		64	RB	64
+ever			225	RB	225
 ever-changing		2	JJ	2
 ever-growing		2	JJ	2
 ever-increasing		1	JJ	1
 ever-optimistic		1	JJ	1
-ever-rising		1	JJ	1
+ever-rising		1	processing	1
 ever-youthful		1	JJ	1
 evergreen		2	JJ	2
-everlasting		1	JJ	1
-every			316	DT	316
-everybody		34	NN	34
-everyday		13	JJ	13
-everyone		83	NN	83
+everlasting		5	JJ	5
+every			328	DT	328
+everybody		35	NN	35
+everyday		14	JJ	14
+everyone		87	NN	87
 everyonehe		1	NN	1
-everyones		3	NNS	3
-everything		112	NN	112
-everywhere		34	RB	34
+everyones		4	JJ	1	NNS	3
+everything		126	NN	126
+everywhere		39	RB	39
 evict			1	VB	1
-evicted			5	JJ	1	VBN	4
-evidence		141	NN	141
-evidence.		1	NN	1
+evicted			5	VBN	5
+evidence		143	NN	143
+evidence.		1	FW	1
 evidenced		2	VBN	2
-evident			22	JJ	22
+evident			26	JJ	26
 evidently		7	RB	7
-evil			30	JJ	21	NN	9
+evil			31	JJ	21	NN	10
 evil-doers		1	NNS	1
 evildoers		1	NNS	1
 evils			3	NNS	3
-evince			1	VBP	1
+evince			1	VB	1
 eviscerating		1	VBG	1
 evocation		2	NN	2
 evocations		2	NNS	2
 evoke			2	VBP	2
 evoking			1	VBG	1
 evolution		17	NN	17
-evolutionary		4	JJ	4
+evolutionary		5	JJ	5
 evolve			5	VB	5
 evolved			7	VBD	3	VBN	4
 evolving		2	VBG	2
@@ -30265,29 +30391,29 @@ exacerbate		1	VB	1
 exacerbated		4	VBD	1	VBN	3
 exacerbates		2	VBZ	2
 exacerbating		1	VBG	1
-exact			28	JJ	28
+exact			31	JJ	31
 exacted			2	VBD	1	VBN	1
 exacting		3	JJ	3
-exactly			43	RB	43
+exactly			48	RB	48
 exaggerate		5	VB	5
 exaggerated		8	JJ	8
 exaggerating		1	VBG	1
 exaggeration		2	NN	2
 exaggerations		1	NNS	1
-exalt			1	VB	1
+exalt			1	VBD	1
 exalted			4	JJ	3	VBD	1
-exam			24	NN	24
-examination		34	NN	34
-examinations		11	NNS	11
+exam			27	NN	27
+examination		35	NN	35
+examinations		12	NNS	12
 examine			21	VB	19	VBP	2
 examined		25	VBD	18	VBN	7
 examiner		8	NN	8
 examiners		9	NNS	9
 examines		2	VBZ	2
-examining		7	VBG	7
-example			149	NN	149
+examining		9	VBG	9
+example			156	NN	156
 examples		8	NNS	8
-exams			19	NNS	19
+exams			21	NNS	21
 exasperates		1	VBZ	1
 exasperation		2	NN	2
 excavate		2	VB	2
@@ -30299,12 +30425,15 @@ excavators		2	NNS	2
 exceed			26	VB	16	VBP	10
 exceeded		13	VBD	12	VBN	1
 exceeding		10	VBG	10
-exceedingly		5	RB	5
+exceedingly		6	RB	6
 exceeds			8	VBZ	8
+excel			2	VB	1	VBP	1
+excelled		1	VBN	1
 excellence		4	NN	4
 excellent		43	JJ	43
 excellently		1	RB	1
-except			59	IN	59
+excels			1	VBZ	1
+except			57	IN	57
 excepted		1	VBN	1
 excepting		1	VBG	1
 exception		19	NN	19
@@ -30313,15 +30442,15 @@ exceptional		9	JJ	9
 exceptionally		10	RB	10
 exceptions		14	NNS	14
 excerpts		3	NNS	3
-excess			37	JJ	16	NN	21
+excess			37	IN	1	JJ	16	NN	20
 excesses		6	NNS	6
 excessive		17	JJ	17
 excessively		1	RB	1
-exchange		226	NN	217	VB	6	VBP	3
+exchange		230	IN	2	NN	216	VB	9	VBP	3
 exchange-listed		2	JJ	2
 exchange-rate		11	JJ	3	NN	8
 exchangeable		1	JJ	1
-exchanged		15	VBD	8	VBN	7
+exchanged		20	VBD	12	VBN	8
 exchanges		56	NNS	56
 exchanging		6	VBG	6
 exchequer		3	NN	3
@@ -30330,21 +30459,21 @@ excised			1	VBN	1
 excision		4	NN	4
 excitable		3	JJ	3
 excite			1	VB	1
-excited			22	JJ	9	VBN	13
+excited			24	JJ	9	VBN	15
 excited.So		1	VB	1
-excitedly		1	RB	1
-excitement		23	NN	23
+excitedly		2	RB	2
+excitement		24	NN	24
 excites			1	VBZ	1
-exciting		29	JJ	29
+exciting		30	JJ	30
 exclaimed		3	VBD	3
 exclaiming		1	VBG	1
 exclaims		2	VBZ	2
 exclamations		2	NNS	2
 exclude			6	VB	3	VBP	3
-excluded		8	VBN	8
+excluded		9	VBN	9
 excludes		1	VBZ	1
 excluding		11	VBG	11
-exclusion		6	NN	6
+exclusion		6	IN	1	NN	5
 exclusionary		1	JJ	1
 exclusions		1	NNS	1
 exclusive		39	JJ	38	NN	1
@@ -30359,9 +30488,9 @@ excruciating		4	JJ	3	VBG	1
 excrutiatingly		1	RB	1
 exculpated		1	VBN	1
 excursion		7	NN	7
-excursions		2	NNS	2
+excursions		3	NNS	3
 excusable		1	JJ	1
-excuse			25	NN	17	VB	8
+excuse			26	NN	18	VB	8
 excused			6	VBN	6
 excuses			8	NNS	8
 excusing		5	VBG	5
@@ -30369,12 +30498,12 @@ excutives		1	NNS	1
 execrable		2	JJ	2
 execs			1	NNS	1
 execute			14	VB	13	VBP	1
-executed		19	VBD	2	VBN	17
+executed		20	VBD	2	VBN	18
 executes		2	VBZ	2
 executing		8	VBG	8
 execution		18	NN	18
 executions		7	NNS	7
-executive		401	JJ	145	NN	256
+executive		401	JJ	144	NN	257
 executive-branch	1	JJ	1
 executive-legislative	1	JJ	1
 executive-level		1	JJ	1
@@ -30395,11 +30524,11 @@ exemption		9	NN	9
 exemptions		1	NNS	1
 exercisable		10	JJ	10
 exercise		61	NN	42	VB	15	VBP	4
-exercised		13	VBD	2	VBN	11
+exercised		14	VBD	2	VBN	12
 exercises		17	NNS	10	VBZ	7
 exercising		3	VBG	3
 exerpts			1	NNS	1
-exert			4	VB	4
+exert			5	VB	5
 exerted			1	VBN	1
 exerting		1	VBG	1
 exertions		3	NNS	3
@@ -30407,13 +30536,13 @@ exhaled			3	VBD	3
 exhaust			4	NN	3	VBP	1
 exhausted		16	VBD	4	VBN	12
 exhaustible		1	JJ	1
-exhausting		6	JJ	4	VBG	2
-exhaustion		9	NN	9
+exhausting		7	JJ	5	VBG	2
+exhaustion		11	NN	11
 exhaustive		4	JJ	4
 exhibit			5	NN	4	VB	1
 exhibited		6	VBN	6
 exhibiting		1	VBG	1
-exhibition		19	NN	19
+exhibition		20	NN	20
 exhibition?		1	NNP	1
 exhibitions		3	NNS	3
 exhibitionthe		1	NN	1
@@ -30430,13 +30559,13 @@ exiguous		1	JJ	1
 exile			3	NN	3
 exiled			5	VBD	1	VBN	4
 exiles			1	NNS	1
-exist			31	VB	17	VBP	14
+exist			32	VB	18	VBP	14
 existed			5	VBD	2	VBN	3
-existence		28	NN	28
+existence		29	NN	29
 existent		2	JJ	2
 existentialism		1	NN	1
 existentialist		1	NN	1
-existing		65	JJ	18	VBG	47
+existing		67	JJ	18	VBG	49
 exists			10	VBZ	10
 exit			13	NN	13
 exited			1	VBD	1
@@ -30455,18 +30584,18 @@ expanded		28	JJ	4	VBD	10	VBN	14
 expanding		29	VBG	29
 expands			3	VBZ	3
 expanse			4	NN	4
-expansion		57	NN	57
+expansion		58	NN	58
 expansionary		1	JJ	1
-expansionist		1	JJ	1
+expansionist		1	NN	1
 expansionists		1	NNS	1
 expansive		2	JJ	2
 expatriate		1	VB	1
 expect			160	VB	67	VBP	93
-expectant		4	JJ	4
+expectant		5	JJ	5
 expectation		10	NN	10
 expectations		53	NNS	53
-expected		398	JJ	25	VBD	46	VBN	327
-expecting		26	VBG	26
+expected		405	JJ	25	VBD	49	VBN	331
+expecting		27	VBG	27
 expects			159	VBZ	159
 expediency		1	NN	1
 expedient		3	JJ	2	NN	1
@@ -30483,13 +30612,13 @@ expendables		1	NNS	1
 expended		2	VBN	2
 expenditure		19	NN	19
 expenditures		11	NNS	10	VBZ	1
-expense			29	NN	29
+expense			30	IN	2	NN	28
 expenses		65	NNS	65
-expensive		79	JJ	78	RB	1
-expensive.		1	CD	1
+expensive		82	JJ	81	RB	1
+expensive.		1	JJ	1
 expensively		1	RB	1
-experience		126	NN	112	VB	9	VBP	5
-experienced		34	JJ	15	VBD	4	VBN	15
+experience		134	NN	120	VB	9	VBP	5
+experienced		36	JJ	17	VBD	4	VBN	15
 experiences		14	NNS	14
 experiencing		9	VBG	9
 experiment		25	NN	23	VB	2
@@ -30499,11 +30628,11 @@ experimentation		3	NN	3
 experimented		3	VBD	2	VBN	1
 experimenters		1	NNS	1
 experimenting		6	VBG	6
-experiments		22	NNS	22
-expert			36	JJ	7	NN	29
+experiments		23	NNS	23
+expert			40	JJ	7	NN	33
 expertise		14	NN	14
 expertly		2	RB	2
-experts			53	NNS	53
+experts			55	NNS	55
 expiate			1	VB	1
 expiated		1	VBN	1
 expiration		7	NN	7
@@ -30512,11 +30641,11 @@ expired			16	VBD	10	VBN	6
 expires			16	VBZ	16
 expiring		1	VBG	1
 expiry			2	NN	2
-explain			36	VB	33	VBP	3
-explained		39	VBD	34	VBN	5
+explain			41	VB	38	VBP	3
+explained		42	VBD	37	VBN	5
 explaining		14	VBG	14
 explains		21	VBZ	21
-explanation		35	NN	35
+explanation		37	NN	37
 explanations		8	NNS	8
 explanatory		2	JJ	2
 explicable		2	JJ	2
@@ -30527,7 +30656,7 @@ explode			6	VB	6
 exploded		19	VBD	16	VBN	3
 explodes		2	VBZ	2
 exploding		2	VBG	2
-exploit			12	NN	2	VB	9	VBP	1
+exploit			10	VB	9	VBP	1
 exploitable		3	JJ	3
 exploitation		5	NNP	5
 exploited		4	VBN	4
@@ -30542,14 +30671,14 @@ explorer		1	NN	1
 explorers		5	NNS	5
 explores		1	VBZ	1
 exploring		7	VBG	7
-explosion		36	NN	36
+explosion		38	NN	38
 explosions		3	NNS	3
 explosive		21	JJ	20	NN	1
 explosively		1	RB	1
 explosives		4	NNS	4
 exponent		2	NN	2
 exponents		2	NNS	2
-export			50	JJ	1	NN	41	VB	7	VBP	1
+export			53	JJ	1	NN	44	VB	7	VBP	1
 export-boosting		1	JJ	1
 export-control		1	JJ	1
 export-oriented		1	JJ	1
@@ -30558,8 +30687,8 @@ exported		12	VBD	3	VBN	9
 exporter		11	NN	11
 exporters		10	NNS	10
 exporting		2	VBG	2
-exports			72	NNS	70	VBZ	2
-expos			2	NNS	2
+exports			73	NNS	71	VBZ	2
+expos			2	NN	2
 expose			6	VB	6
 exposed			34	JJ	4	VBD	3	VBN	27
 exposes			1	VBZ	1
@@ -30571,13 +30700,14 @@ exposure		30	NN	30
 exposures		9	NNS	9
 expounded		2	VBD	1	VBN	1
 expounding		1	VBG	1
-express			27	JJ	4	NN	1	RB	1	VB	18	VBP	3
+express			29	JJ	4	NN	1	RB	1	VB	20	VBP	3
 expressed		50	VBD	25	VBN	25
 expresses		2	VBZ	2
 expressing		6	VBG	6
-expression		57	NN	57
+expression		59	NN	59
 expressionbull		1	NN	1
 expressionist		1	NN	1
+expressionless		4	JJ	4
 expressions		16	NNS	16
 expressive		9	JJ	9
 expressively		1	RB	1
@@ -30591,15 +30721,15 @@ exquisite		18	JJ	18
 extant			3	JJ	3
 extend			45	VB	41	VBP	4
 extendable		3	JJ	3
-extended		43	JJ	8	VBD	16	VBN	19
-extending		16	VBG	16
+extended		44	JJ	9	VBD	17	VBN	18
+extending		17	VBG	17
 extends			8	VBZ	8
-extension		26	NN	26
+extension		27	NN	27
 extensions		4	NNS	4
-extensive		26	JJ	26
+extensive		31	JJ	31
 extensively		2	RB	2
 extent			30	NN	30
-extent?			1	NN	1
+extent?			1	VBZ	1
 exterior		8	JJ	2	NN	6
 exterminate		1	VB	1
 exterminated		2	VBN	2
@@ -30612,7 +30742,7 @@ externalized		1	VBN	1
 externally		1	RB	1
 externals		3	NNS	3
 extinct			6	JJ	6
-extinction		4	NN	4
+extinction		8	NN	8
 extinguish		2	VB	2
 extinguished		4	VBD	1	VBN	3
 extinguishing		1	VBG	1
@@ -30625,9 +30755,9 @@ extortions		1	NNS	1
 extra			66	JJ	65	RB	1
 extra-mural		2	JJ	2
 extra-nasty		1	JJ	1
-extract			13	NN	6	VB	7
-extracted		12	VBD	5	VBN	7
-extracting		4	VBG	4
+extract			12	NN	1	VB	11
+extracted		14	VBD	5	VBN	9
+extracting		5	VBG	5
 extraction		4	NN	4
 extracts		4	NNS	4
 extracurricular		1	JJ	1
@@ -30636,8 +30766,8 @@ extradition		4	NN	4
 extramarital		2	JJ	2
 extramural		1	JJ	1
 extraneous		2	JJ	2
-extraordinarily		8	RB	8
-extraordinary		56	JJ	56
+extraordinarily		9	RB	9
+extraordinary		58	JJ	58
 extrapolated		1	VBN	1
 extrapolating		1	VBG	1
 extrapolation		1	NN	1
@@ -30649,8 +30779,8 @@ extravagance		9	NN	9
 extravagant		9	JJ	9
 extravagantly		1	RB	1
 extravaganzas		2	NNS	2
-extreme			23	JJ	18	NN	5
-extremely		77	RB	77
+extreme			24	JJ	20	NN	4
+extremely		83	RB	83
 extremes		3	NNS	3
 extremist		3	JJ	2	NN	1
 extremists		4	NNS	4
@@ -30666,7 +30796,7 @@ exude			1	VBP	1
 exuded			3	VBD	3
 exultant		2	JJ	1	RB	1
 exulted			3	VBD	2	VBN	1
-eye			77	NN	77
+eye			82	NN	82
 eye-catching		1	JJ	1
 eye-glass		1	NN	1
 eye-opener		1	NN	1
@@ -30679,13 +30809,14 @@ eyebrow			3	NN	3
 eyebrows		9	NNS	9
 eyed			3	VBD	3
 eyeful			1	NN	1
+eyeglass		1	NNS	1
 eyeglasses		1	NNS	1
 eyeing			4	VBG	4
 eyelashes		4	NNS	4
 eyelid			1	NN	1
-eyelids			3	NNS	3
-eyes			292	NNS	292
-eyesight		6	NN	6
+eyelids			4	NNS	4
+eyes			307	NNS	307
+eyesight		7	NN	7
 eyewash			1	NN	1
 eyewitness		1	NN	1
 eyewitnesses		1	NNS	1
@@ -30703,16 +30834,16 @@ fabricator		1	NN	1
 fabrics			7	NNS	7
 fabulous		6	JJ	6
 facade			5	NN	5
-face			390	JJ	1	NN	306	VB	48	VBP	35
+face			405	IN	1	JJ	1	NN	319	VB	49	VBP	35
 face-saving		1	JJ	1
 face-to-face		3	JJ	2	RB	1
-faced			45	VBD	19	VBN	26
+faced			48	VBD	23	VBN	25
 faceless		1	JJ	1
 facelift		1	NN	1
 facelifts		1	NNS	1
-faces			73	NNS	31	VBZ	42
+faces			74	NNS	34	VBZ	40
 facet			1	NN	1
-facetious		1	JJ	1
+facetious		2	JJ	2
 facial			7	JJ	7
 facially		1	RB	1
 facile			1	JJ	1
@@ -30720,22 +30851,22 @@ facilitate		6	VB	6
 facilitated		1	VBN	1
 facilities		53	NNS	53
 facility		50	NN	50
-facing			43	VBG	43
+facing			44	VBG	44
 facsimile		5	JJ	4	NN	1
-fact			171	NN	171
+fact			175	NN	175
 fact-finding		2	JJ	2
 fact?			1	JJ	1
 faction			3	NN	3
 factions		4	NNS	4
 factnames		1	NNS	1
 facto			2	FW	2
-factor			41	NN	40	VB	1
-factories		31	NNS	31
+factor			42	NN	41	VB	1
+factories		33	NNS	33
 factoring		1	VBG	1
 factors			61	NNS	60	VBZ	1
 factory			53	NN	53
 factory-jobs		1	NNS	1
-facts			54	NNS	54
+facts			58	NNS	58
 factual			4	JJ	4
 factually		1	RB	1
 faculties		1	NNS	1
@@ -30743,22 +30874,22 @@ faculty			12	NN	12
 fad			5	NN	5
 faddy			1	JJ	1
 fade			3	NN	1	VB	2
-faded			12	VBD	3	VBN	9
-fades			2	NNS	2
-fading			8	JJ	2	NN	1	VBG	5
+faded			13	VBD	3	VBN	10
+fades			2	VBZ	2
+fading			8	JJ	1	NN	1	VBG	6
 fads			3	NNS	3
 faeces			1	NNS	1
 fag			2	NN	2
 fagged			1	JJ	1
 fags			3	NNS	3
-fail			28	VB	17	VBP	11
-failed			160	JJ	4	VBD	102	VBN	54
-failing			28	JJ	2	VBG	26
+fail			32	VB	20	VBP	12
+failed			166	JJ	4	VBD	106	VBN	56
+failing			28	IN	1	JJ	2	VBG	25
 failings		4	NNS	4
-fails			15	VBZ	15
-failure			75	NN	75
+fails			17	VBZ	17
+failure			83	NN	83
 failure-to-supervise	1	JJ	1
-failures		17	NNS	17
+failures		18	NNS	18
 fain			1	RB	1
 faint			22	JJ	20	NN	1	VB	1
 faint-hearted		5	JJ	2	NNS	3
@@ -30766,19 +30897,20 @@ fainted			1	VBD	1
 faintest		1	JJS	1
 fainting		4	NN	2	VBG	2
 faintly			16	RB	16
-fair			61	JJ	57	NN	4
+fair			63	JJ	59	NN	4
 fair-haired		1	JJ	1
 fair-use		1	JJ	1
 fair-weather		2	JJ	2
 fairer			2	JJR	2
+fairest			1	JJ	1
 fairground		2	JJ	1	NN	1
-fairly			64	RB	64
+fairly			66	RB	66
 fairness		6	NN	6
 fairs			1	NNS	1
 fairway			1	NN	1
 fairy			5	NN	5
 fairyland		1	NN	1
-faith			35	NN	35
+faith			40	NN	40
 faithful		16	JJ	11	NN	4	NNS	1
 faithfully		2	RB	2
 faithfuls		2	NNS	2
@@ -30789,19 +30921,19 @@ faked			3	VBD	2	VBN	1
 fakes			3	NNS	3
 faking			1	VBG	1
 falcon			1	NN	1
-fall			157	NN	78	VB	64	VBP	15
+fall			159	NN	79	VB	64	VBP	16
 fall..			1	NN	1
 fallacies		2	NNS	2
 fallacious		1	JJ	1
 fallacy			3	NN	3
 fallback		1	NN	1
-fallen			58	JJ	1	VBN	57
+fallen			61	JJ	1	VBN	60
 fallible		3	JJ	3
-falling			61	VBG	61
+falling			64	VBG	64
 falling-off		2	NN	2
 fallout			8	NN	8
 fallow			3	JJ	3
-falls			19	NNS	4	VBZ	15
+falls			20	NNS	3	VBZ	17
 false			40	JJ	40
 falsehood		1	NN	1
 falsehoods		1	NNS	1
@@ -30811,28 +30943,29 @@ falsified		1	VBN	1
 falsify			2	VB	2
 falsifying		2	VBG	2
 falsities		1	NNS	1
-faltered		9	VBD	8	VBN	1
+falter			3	VBP	3
+faltered		10	VBD	9	VBN	1
 faltering		4	JJ	2	VBG	2
 falters			1	VBZ	1
-fame			13	NN	13
+fame			14	NN	14
 famed			5	JJ	4	VBN	1
-familiar		83	JJ	83
+familiar		84	JJ	84
 familiarity		2	NN	2
 familiarization		1	NN	1
 familiarize		2	VB	2
 familiarized		1	VBN	1
 familiarly		1	RB	1
-families		72	NNS	72
-family			288	NN	288
+families		80	NNS	80
+family			304	NN	304
 family-owned		1	JJ	1
 family-planning		5	JJ	3	NN	2
 familys			5	JJ	4	NNS	1
 famine			8	NN	8
 famines			1	NNS	1
 famished		1	JJ	1
-famous			50	JJ	50
+famous			52	JJ	52
 famously		1	RB	1
-fan			15	NN	14	VB	1
+fan			16	NN	15	VB	1
 fan-shaped		1	JJ	1
 fanatic			3	JJ	2	NN	1
 fanatical		2	JJ	2
@@ -30842,21 +30975,21 @@ fancied			7	VBD	7
 fancier			1	JJR	1
 fancies			2	NNS	1	VBZ	1
 fanciful		7	JJ	7
-fancy			34	JJ	25	NN	6	VB	3
+fancy			35	JJ	26	NN	6	VB	3
 fancy-free		2	JJ	2
 fanfare			10	NN	10
-fangs			5	NNS	5
+fangs			6	NNS	6
 fanlight		1	NN	1
 fanned			3	VBD	3
 fanning			1	VBG	1
 fans			30	NNS	30
 fantasies		5	NNS	5
 fantasize		2	VB	1	VBP	1
-fantasized		2	VBD	1	VBN	1
+fantasized		2	JJ	1	VBN	1
 fantastic		11	JJ	11
 fantastically		1	RB	1
 fantasy			8	NN	8
-far			370	IN	1	JJ	22	RB	347
+far			394	IN	8	JJ	21	RB	365
 far-fetched		2	JJ	2
 far-flung		3	JJ	3
 far-from-conciliatory	1	JJ	1
@@ -30871,37 +31004,37 @@ farcical		2	JJ	2
 fare			25	NN	17	VB	2	VBP	6
 fared			6	VBD	6
 fares			12	NNS	11	VBZ	1
-farewell		4	JJ	2	NN	1	VBP	1
+farewell		5	JJ	2	NN	1	VB	1	VBP	1
 farewells		1	NNS	1
 farfetched		1	JJ	1
 farit			1	NN	1
-farm			56	NN	54	VB	2
+farm			63	NN	61	VB	2
 farm-product		2	NN	2
 farm-trade		2	JJ	2
 farmer			41	NN	41
-farmers			68	NNS	68
+farmers			70	NNS	70
 farmhouse		3	NN	3
 farmhouses		1	NNS	1
 farming			16	NN	14	VBG	2
-farmland		2	NN	1	VBN	1
-farms			20	NNS	19	VBZ	1
+farmland		2	NN	2
+farms			20	NNS	18	VBZ	2
 farmwives		1	NNS	1
 farmyard		1	NN	1
-farther			10	RB	1	RBR	9
+farther			10	JJR	1	RB	1	RBR	8
 farthest		2	JJS	2
 fascinate		2	VB	2
 fascinated		10	VBN	10
 fascinates		1	VBZ	1
-fascinating		11	JJ	11
+fascinating		12	JJ	12
 fascination		3	NN	3
 fascinations		1	NNS	1
 fascism			4	NN	4
 fascist			3	JJ	3
-fashion			61	NN	61
+fashion			62	IN	1	NN	61
 fashionable		19	JJ	18	NN	1
 fashioned		4	VBN	4
 fashions		9	NNS	9
-fast			83	JJ	25	NN	1	RB	57
+fast			86	JJ	26	NN	1	RB	59
 fast!			1	JJ	1
 fast-changing		1	NN	1
 fast-flowing		1	VBG	1
@@ -30916,13 +31049,14 @@ fastened		6	VBN	6
 fastener		2	NN	2
 fasteners		4	NNS	4
 fastenings		1	NNS	1
-faster			42	JJR	15	RBR	27
+faster			43	JJR	14	RBR	29
 faster-spending		1	JJ	1
 fastest			9	JJS	9
+fastest-developing	1	JJ	1
 fastest-growing		3	JJ	2	JJS	1
 fastidious		5	JJ	5
 fasts			1	VBZ	1
-fat			52	JJ	44	NN	8
+fat			53	JJ	45	NN	8
 fat-tired		1	JJ	1
 fatal			12	JJ	12
 fatalistic		2	JJ	2
@@ -30933,11 +31067,12 @@ fated			2	JJ	2
 fateful			4	JJ	4
 fathe			1	JJ	1
 fathead			1	NN	1
-father			160	NN	160
-father-in-law		2	NN	2
+father			172	NN	171	NNP	1
+father-in-law		3	NN	3
+father?			1	NN	1
 fatherland		2	NN	2
 fatherly		2	JJ	2
-fathers			43	NNS	43
+fathers			46	NNS	46
 fathom			2	VB	2
 fathomless		2	JJ	2
 fatigue			4	NN	4
@@ -30945,14 +31080,14 @@ fatigued		1	VBN	1
 fats			4	NNS	4
 fatten			2	VBP	2
 fattened		2	VBD	1	VBN	1
-fattening		1	NN	1
+fattening		1	VBG	1
 fatter			2	JJR	2
 fatty			2	JJ	1	NN	1
 faucets			1	NNS	1
-fault			21	NN	18	VB	1	VBP	2
+fault			28	NN	25	VB	2	VBP	1
 faultless		5	JJ	5
 faultlessly		1	RB	1
-faults			9	NNS	9
+faults			12	NNS	12
 faulty			9	JJ	9
 fauna			4	NNS	4
 faux			1	JJ	1
@@ -30965,11 +31100,11 @@ favorite		15	JJ	12	NN	3
 favorites		1	NNS	1
 favoritism		3	NN	3
 favors			8	NNS	1	VBZ	7
-favour			34	JJ	1	JJR	2	NN	27	VB	2	VBP	2
+favour			35	IN	1	JJ	1	JJR	1	NN	28	VB	2	VBP	2
 favourable		14	JJ	14
 favourably		2	RB	2
-favoured		4	JJ	2	VBD	1	VBN	1
-favouring		1	VBG	1
+favoured		4	VBD	2	VBN	2
+favouring		2	VBG	2
 favourite		24	JJ	22	NN	2
 favourites		2	NNS	2
 favours			1	VBZ	1
@@ -30980,8 +31115,8 @@ fax			3	NN	3
 faxed			1	VBD	1
 faxes			1	NNS	1
 faze			1	VB	1
-fear			119	NN	83	VB	9	VBP	27
-feared			31	JJ	1	VBD	19	VBN	11
+fear			120	NN	83	VB	9	VBP	28
+feared			31	JJ	1	VBD	20	VBN	10
 fearful			7	JJ	7
 fearfully		1	RB	1
 fearing			7	VBG	7
@@ -31001,56 +31136,58 @@ featherless		1	JJ	1
 feathers		10	NNS	10
 feathery		5	JJ	4	NN	1
 feats			3	NNS	3
-feature			25	NN	20	VB	4	VBP	1
+feature			29	NN	24	VB	4	VBP	1
 featured		10	JJ	1	VBD	5	VBN	4
 featureless		2	JJ	2
-features		35	NNS	31	VBZ	4
+features		36	NNS	32	VBZ	4
 featuring		16	VBG	16
 fecal			1	JJ	1
 feckless		4	JJ	4
-fed			28	NN	1	VBD	5	VBN	22
+fed			32	NN	1	VBD	6	VBN	25
 federal			349	JJ	349
 federal-court		1	JJ	1
 federally		7	RB	7
 federation		11	NN	11
-fee			28	NN	28
+fee			29	NN	29
 fee-for-service		1	JJ	1
 fee-forfeiture		1	NN	1
 feeble			8	JJ	8
 feebler			1	JJR	1
-feed			28	NN	11	VB	11	VBP	6
+feed			30	NN	12	VB	11	VBP	7
 feeder			1	NN	1
-feeding			15	NN	11	VBG	4
+feeding			16	NN	11	VBG	5
 feedpipes		1	NNS	1
-feeds			8	VBZ	8
-feel			195	NN	8	VB	70	VBP	117
+feeds			9	VBZ	9
+feel			207	NN	9	VB	76	VBP	122
 feel-good		1	JJ	1
 feelers			1	NNS	1
-feeling			93	NN	59	VBG	34
-feelings		42	NNS	42
+feeling			105	NN	69	VBG	36
+feeling?So-so		1	JJ	1
+feelings		51	NNS	51
 feels			24	VBZ	24
-fees			77	NNS	77
+fees			79	NNS	79
 fees?			1	NN	1
-feet			161	NNS	161
+feet			170	NN	2	NNS	168
 feign			1	VB	1
 feigned			1	JJ	1
 feint			2	NN	1	VB	1
-feinting		1	NN	1
+feinting		1	VBG	1
 feisty			1	JJ	1
 feline			2	JJ	2
 felines			1	NNS	1
-fell			352	NN	1	VBD	351
-fellas			1	NNS	1
+fell			358	NN	1	VBD	357
+fellas			2	NNS	2
 felled			4	VBN	4
-fellow			37	JJ	18	NN	19
-fellows			4	NNS	4
+fellers			1	NNS	1
+fellow			39	JJ	18	NN	21
+fellows			5	NNS	5
 fellowship		2	NN	2
 felonies		3	NNS	3
 felons			1	NNS	1
 felony			6	NN	6
-felt			270	VBD	249	VBN	21
+felt			287	VBD	267	VBN	20
 felt-tip		1	NN	1
-female			46	JJ	33	NN	13
+female			47	JJ	31	NN	16
 females			9	NNS	9
 feminine		12	JJ	12
 feminine-care		1	JJ	1
@@ -31059,9 +31196,9 @@ feminism		1	NN	1
 feminist		14	JJ	9	NN	5
 feminists		3	NNS	3
 fen			1	NN	1
-fence			24	NN	23	VB	1
+fence			25	NN	24	VB	1
 fenced			3	JJ	1	VBD	1	VBN	1
-fences			3	NNS	3
+fences			4	NNS	4
 fencing			1	NN	1
 fend			10	VB	10
 fended			1	VBD	1
@@ -31077,10 +31214,10 @@ ferocity		2	NN	2
 ferret			1	VB	1
 ferreting		2	VBG	2
 ferried			1	VBN	1
-ferries			2	NNS	2
+ferries			3	NNS	3
 ferris			1	JJ	1
 ferrous			1	JJ	1
-ferry			10	NN	9	VB	1
+ferry			14	NN	13	VB	1
 ferryboat		1	NN	1
 ferrying		1	VBG	1
 fertile			13	JJ	13
@@ -31097,7 +31234,7 @@ fervent			6	JJ	6
 fervor			1	NN	1
 fervour			1	NN	1
 fester			1	VB	1
-festival		8	NN	8
+festival		9	NN	9
 festivals		4	NNS	4
 festive			3	JJ	3
 festivities		3	NNS	3
@@ -31106,14 +31243,14 @@ festooning		1	VBG	1
 festoons		1	NNS	1
 fetal			3	JJ	3
 fetal-tissue		9	JJ	8	NN	1
-fetch			14	VB	12	VBP	2
+fetch			16	VB	13	VBP	3
 fetched			2	VBD	2
 fetching		3	JJ	1	VBG	2
 fetchingly		1	RB	1
 fete			2	NN	2
 feted			1	VBN	1
 fetish			2	NN	2
-fetter			2	VB	2
+fetter			2	VB	1	VBP	1
 fetters			1	NNS	1
 feud			5	NN	5
 feudal			5	JJ	5
@@ -31122,8 +31259,8 @@ feuding			4	NN	1	VBG	3
 fever			17	NN	17
 fevered			1	JJ	1
 feverish		3	JJ	2	NN	1
-few			471	JJ	469	NNS	2
-fewer			36	JJR	35	RBR	1
+few			484	JJ	478	NNS	2	PP	4
+fewer			37	JJR	36	RBR	1
 fewest			1	JJS	1
 fey			1	JJ	1
 fez-wearing		1	JJ	1
@@ -31133,7 +31270,7 @@ fiancee			1	NN	1
 fiances			1	NNS	1
 fiasco			4	NN	4
 fiat			1	NN	1
-fibbing			1	NN	1
+fibbing			1	VBG	1
 fiber			8	NN	8
 fiber-end		1	JJ	1
 fiber-optic		1	JJ	1
@@ -31144,21 +31281,21 @@ fibres			8	NNS	8
 fibrous			1	JJ	1
 fibs			1	NNS	1
 fickle			1	JJ	1
-fiction			15	NN	15
+fiction			16	NN	16
 fictional		1	JJ	1
 fictions		1	NNS	1
 fictitious		2	JJ	2
 fiddle			2	NN	1	VB	1
 fiddled			4	VBD	2	VBN	2
-fiddling		5	NN	5
+fiddling		5	NN	3	VBG	2
 fiddly			2	JJ	2
 fidget			3	NN	1	VB	2
-fidgeted		2	VBD	1	VBN	1
+fidgeted		2	VBN	2
 fidgeting		2	VBG	2
 fidgety			1	JJ	1
 fiduciary		1	JJ	1
 fiefdoms		1	NNS	1
-field			107	NN	105	VB	2
+field			112	NN	110	VB	2
 field-crop-seeds	1	JJ	1
 field-services		1	JJ	1
 field-tested		1	VBN	1
@@ -31166,18 +31303,18 @@ field-tests		1	NNS	1
 fielded			1	VBD	1
 fielder			1	NN	1
 fielders		1	NNS	1
-fielding		5	NN	3	VBG	2
-fields			75	NNS	75
+fielding		5	NN	2	VBG	3
+fields			83	NNS	83
 fiend			2	NN	2
 fiendish		3	JJ	3
-fierce			26	JJ	26
+fierce			29	JJ	29
 fiercely		10	RB	10
 fiery			9	JJ	9
-fifteen			40	CD	6	JJ	30	NN	2	VBN	2
+fifteen			41	CD	7	JJ	31	NN	2	VBN	1
 fifteen-month		1	JJ	1
 fifteen-year-old	1	JJ	1
 fifteenth		4	JJ	4
-fifth			24	JJ	22	NN	1	RB	1
+fifth			25	JJ	23	NN	1	RB	1
 fifth-biggest		2	JJ	2
 fifth-consecutive	1	JJ	1
 fifth-floor		1	JJ	1
@@ -31185,53 +31322,53 @@ fifth-generation	1	JJ	1
 fifth-grade		3	NN	3
 fifth-largest		2	JJ	2
 fifths			1	NNS	1
-fifties			6	NNS	6
+fifties			8	NNS	8
 fiftieth		4	JJ	4
-fifty			51	JJ	38	NN	10	RB	3
+fifty			52	JJ	46	NN	6
 fifty-eight		1	JJ	1
 fifty-fifty		4	JJ	3	RB	1
 fifty-five		5	JJ	5
 fifty-pound		1	JJ	1
 fifty-two		2	NN	2
-fig			1	JJ	1
-fight			98	NN	48	VB	49	VBP	1
+fig			1	NN	1
+fight			103	NN	50	VB	52	VBP	1
 fighter			6	NN	6
 fighter-bombers		1	NNS	1
 fighter-pilots		1	JJ	1
 fighter-plane		2	NN	2
 fighters		6	NNS	6
-fighting		47	NN	8	VBG	39
-fights			11	NNS	9	VBZ	2
+fighting		51	NN	8	VBG	43
+fights			11	NNS	7	VBZ	4
 figment			1	NN	1
 figurative		1	JJ	1
 figuratively		2	RB	2
-figure			110	NN	99	VB	6	VBP	5
+figure			117	NN	106	VB	6	VBP	5
 figured			9	VBD	6	VBN	3
 figurehead		1	NN	1
-figures			123	NNS	112	VBZ	11
+figures			128	NNS	117	VBZ	11
 figuring		3	VBG	3
 filament		1	NN	1
 filaments		1	NNS	1
 filched			1	VBN	1
 file			57	NN	26	VB	30	VBP	1
-filed			155	VBD	67	VBN	88
+filed			155	VBD	68	VBN	87
 filers			3	NNS	3
 files			18	NNS	15	VBZ	3
 filibuster		3	NN	2	VB	1
-filing			88	NN	76	VBG	12
+filing			89	NN	76	VBG	13
 filings			22	NNS	22
-fill			32	VB	31	VBP	1
-filled			65	VBD	12	VBN	53
-filler			5	NN	5
+fill			32	VB	30	VBP	2
+filled			70	VBD	13	VBN	57
+filler			6	NN	6
 fillet			1	NN	1
 filleted		1	VBN	1
-filling			23	NN	1	VBG	22
+filling			24	NN	2	VBG	22
 filling-station		1	NN	1
 fillings		4	NNS	4
 fillip			1	NN	1
 fills			8	VBZ	8
 filly			1	NN	1
-film			176	NN	176
+film			185	NN	182	VB	3
 film-maker		1	NN	1
 film-makers		3	NNS	3
 film-making		1	NN	1
@@ -31240,32 +31377,32 @@ film?			1	NN	1
 filmIm			1	NN	1
 filmJawswas		1	NNS	1
 filmed			2	VBN	2
-filming			3	VBG	3
-films			43	NNS	43
+filming			4	VBG	4
+films			45	NNS	45
 filter			4	NN	3	VB	1
 filtered		5	VBN	5
 filtering		2	VBG	2
 filters			9	NNS	8	VBZ	1
 filth			1	NN	1
-filthy			9	JJ	9
+filthy			8	JJ	8
 filtration		1	NN	1
 fin			1	NN	1
 fin-back		1	JJ	1
 finagled		1	VBN	1
-final			126	JJ	125	NN	1
+final			130	JJ	129	NN	1
 finale			1	NN	1
 finalist		1	NN	1
 finalists		2	NNS	2
 finalize		1	VB	1
 finalized		3	VBN	3
-finally			79	RB	79
-finals			3	NNS	3
-finance			106	NN	67	VB	39
+finally			85	RB	85
+finals			4	NNS	4
+finance			107	NN	68	VB	39
 financed		21	VBN	21
 financeer		1	NN	1
 financer		1	NN	1
 finances		8	NNS	7	VBZ	1
-financial		341	JJ	341
+financial		345	JJ	345
 financial-aid		1	NN	1
 financial-data		1	JJ	1
 financial-industrial	1	JJ	1
@@ -31278,11 +31415,13 @@ financier		17	NN	17
 financiers		7	NNS	7
 financing		103	NN	82	VBG	21
 financings		6	NNS	6
-find			289	VB	222	VBP	67
-finding			46	NN	12	VBG	34
+find			309	VB	238	VBP	71
+finding			49	NN	12	VBG	37
 findings		29	NNS	29
 finds			21	NNS	2	VBZ	19
-fine			126	JJ	73	NN	47	RB	3	VB	3
+fine			139	JJ	83	NN	50	RB	3	VB	3
+fine-nibbed		1	JJ	1
+fine-sounding		1	JJ	1
 fine-tuned		1	JJ	1
 fine-tuning		4	NN	2	VB	2
 fine.			1	FW	1
@@ -31290,11 +31429,11 @@ fined			32	VBD	1	VBN	31
 finely			6	RB	6
 finer			2	NN	2
 finery			1	NN	1
-fines			16	NNS	16
+fines			17	NNS	17
 finesse			2	NN	2
 finessed		1	VBN	1
-finest			17	JJS	17
-finger			39	NN	39
+finest			20	JJS	20
+finger			40	NN	40
 finger-nails		1	NNS	1
 finger?			1	NN	1
 fingered		2	VBN	2
@@ -31304,27 +31443,28 @@ fingernail		2	NN	2
 fingernails		4	NNS	4
 fingerprint		2	NN	2
 fingerprints		4	NNS	4
-fingers			57	NNS	57
+fingers			62	NNS	62
 fingertips		6	NNS	6
 finicky			1	JJ	1
 fining			1	VBG	1
-finish			36	NN	11	VB	20	VBP	5
-finished		81	JJ	14	VBD	54	VBN	13
+finish			39	NN	11	VB	23	VBP	5
+finished		83	JJ	14	VBD	55	VBN	14
 finished!		1	NN	1
 finishes		2	NNS	2
 finishing		9	JJ	3	VBG	6
 finite			3	JJ	3
 fins			3	NNS	3
 fir			1	VB	1
-fire			139	NN	133	VB	6
+fire			147	NN	140	VB	7
 fire-bomb		1	NN	1
 fire-escape		1	NN	1
+fire-irons		1	NNS	1
 firearms		6	NNS	6
 fireball		1	NN	1
 fireballs		2	NNS	2
 firebrand		1	NN	1
 firecrackers		1	NNS	1
-fired			35	VBD	18	VBN	17
+fired			38	VBD	19	VBN	19
 fireflies		1	NNS	1
 fireguard		1	NN	1
 firemen			2	NNS	2
@@ -31333,24 +31473,24 @@ fireplaces		1	NNS	1
 firepower		1	NN	1
 fireproofed		1	JJ	1
 fireproofing		1	NN	1
-fires			19	NNS	18	VBZ	1
+fires			20	NNS	19	VBZ	1
 fireside		3	NN	3
-firewood		1	VBN	1
+firewood		2	NN	2
 firework		4	NN	4
 fireworks		4	NNS	4
 firing			7	NN	3	VBG	4
 firings			1	NNS	1
-firm			394	JJ	43	NN	350	VB	1
+firm			396	JJ	45	NN	350	VB	1
 firmed			7	VBD	6	VBN	1
-firmer			6	JJR	5	RBR	1
+firmer			7	JJR	6	RBR	1
 firming			2	VBG	2
 firmly			22	RB	22
 firmness		2	NN	2
-firms			214	NNS	214
-first			965	JJ	865	NN	4	RB	96
+firms			215	NNS	215
+first			995	JJ	891	NN	4	RB	100
 first-aid		1	JJ	1
 first-born		2	NN	2
-first-class		5	JJ	5
+first-class		6	JJ	6
 first-ever		3	JJ	3
 first-floor		2	NN	2
 first-half		6	JJ	6
@@ -31359,14 +31499,14 @@ first-mortgage		1	JJ	1
 first-person		1	NN	1
 first-quarter		3	JJ	3
 first-rate		3	JJ	3
-first-time		5	JJ	5
+first-time		6	JJ	6
 first-year		3	JJ	3
 first?			3	JJ	3
 firsthand		2	JJ	1	RB	1
 firstly			1	RB	1
 fiscal			161	IN	1	JJ	155	NN	5
 fiscal-first		3	JJ	3
-fish			79	NN	75	RB	2	VB	2
+fish			82	NN	78	RB	2	VB	2
 fish-oils		1	NNS	1
 fishbowl		1	NN	1
 fished			4	JJ	1	VBD	2	VBN	1
@@ -31376,7 +31516,7 @@ fishermans		1	NNS	1
 fishermen		5	NNS	5
 fishery			1	NN	1
 fishes			1	NNS	1
-fishing			38	NN	36	VBG	2
+fishing			40	NN	35	VBG	5
 fishing\/processing	1	processing	1
 fishmonger		1	NN	1
 fishmongers		2	NNS	2
@@ -31384,20 +31524,20 @@ fishs			2	JJ	2
 fishwives		1	NNS	1
 fishy			3	JJ	3
 fission			1	NN	1
-fist			7	NN	7
+fist			11	NN	11
 fistful			1	NN	1
 fists			3	NNS	3
-fit			63	JJ	6	NN	24	RB	2	VB	17	VBN	5	VBP	9
+fit			64	JJ	6	NN	25	RB	2	VB	17	VBN	5	VBP	9
 fitful			1	JJ	1
 fitfully		1	RB	1
 fitness			11	NN	11
-fits			17	NNS	4	VBZ	13
-fitted			17	JJ	7	VBN	10
+fits			17	NNS	5	VBZ	12
+fitted			17	JJ	9	VBN	8
 fitter			2	NN	2
 fittest			2	JJS	2
-fitting			11	JJ	7	NN	4
+fitting			13	JJ	8	NN	5
 fittings		8	NNS	8
-five			357	CD	357
+five			363	CD	363
 five-and-a-half-year	1	NN	1
 five-by-eight-inch	1	JJ	1
 five-cent		7	JJ	7
@@ -31413,7 +31553,7 @@ five-mile		1	JJ	1
 five-month		1	JJ	1
 five-month-old		1	JJ	1
 five-nation		1	JJ	1
-five-point		5	JJ	5
+five-point		6	JJ	6
 five-pound		3	JJ	3
 five-storey		1	JJ	1
 five-week		2	JJ	2
@@ -31425,12 +31565,12 @@ fivefold		1	RB	1
 fiver			5	NN	5
 fiver?			1	NN	1
 fiveyear		1	JJ	1
-fix			20	NN	6	VB	14
+fix			21	NN	6	VB	15
 fixated			1	JJ	1
 fixation		2	NN	2
 fixations		1	NNS	1
 fixative		1	NN	1
-fixed			82	JJ	17	VBD	9	VBN	56
+fixed			84	JJ	17	VBD	10	VBN	57
 fixed-income		4	JJ	2	NN	2
 fixed-price		5	JJ	5
 fixed-rate		18	JJ	18
@@ -31447,7 +31587,7 @@ fizzy			2	JJ	2
 flabbergasted		2	JJ	1	VBN	1
 flabbiness		1	NN	1
 flabby			5	JJ	5
-flag			30	NN	27	VB	3
+flag			33	NN	30	VB	3
 flag-burning		1	NN	1
 flag-waving		2	VBG	2
 flagellated		1	VBD	1
@@ -31456,24 +31596,24 @@ flagged			1	JJ	1
 flagging		1	JJ	1
 flagpole		1	NN	1
 flagrant		1	JJ	1
-flags			17	NNS	17
+flags			18	NNS	18
 flagship		12	JJ	1	NN	11
 flailed			2	VBD	2
-flailing		1	NN	1
+flailing		1	VBG	1
 flair			3	NN	3
 flake			1	VB	1
 flakes			5	NNS	4	VBZ	1
-flaking			3	JJ	1	VBG	2
+flaking			4	JJ	1	VBG	3
 flaky			2	JJ	2
 flamboyant		3	JJ	3
 flame			12	NN	11	VB	1
 flame-red		1	JJ	1
 flamed			2	VBD	2
-flames			13	NNS	13
+flames			16	NNS	16
 flaming			4	JJ	3	VBG	1
 flammable		1	JJ	1
 flank			3	NN	3
-flanked			5	VBN	5
+flanked			5	VBD	1	VBN	4
 flanker			1	NN	1
 flanks			2	NNS	1	VBZ	1
 flannel			5	NN	4	VB	1
@@ -31482,10 +31622,10 @@ flap			9	NN	9
 flapped			5	VBD	4	VBN	1
 flapping		2	VBG	2
 flaps			4	NNS	4
-flare			4	NN	1	VBP	3
-flared			6	JJ	1	VBN	5
+flare			5	NN	1	VBP	4
+flared			10	JJ	1	VBN	9
 flaring			1	VBG	1
-flash			20	JJ	1	NN	13	VB	2	VBP	4
+flash			21	JJ	1	NN	14	VB	2	VBP	4
 flashback		1	NN	1
 flashbacks		1	NNS	1
 flashed			13	VBD	11	VBN	2
@@ -31496,8 +31636,9 @@ flashlight		5	NN	5
 flashlights		3	NNS	3
 flashpoint		3	NN	3
 flashy			7	JJ	7
-flask			3	NN	3
-flat			130	JJ	119	NN	6	RB	5
+flask			4	NN	4
+flasks			1	NNS	1
+flat			135	JJ	124	NN	6	RB	5
 flat-building		1	JJ	1
 flat-chested		1	VBN	1
 flat-footed		4	JJ	2	RB	2
@@ -31509,17 +31650,18 @@ flat-topped		1	JJ	1
 flatlet			1	NN	1
 flatly			2	RB	2
 flatout			1	NN	1
-flats			21	NNS	21
+flats			22	NNS	22
 flatten			3	VB	3
-flattened		7	VBD	4	VBN	3
-flatter			5	JJ	1	VB	1	VBP	3
+flattened		10	VBD	5	VBN	5
+flattening		1	VBG	1
+flatter			5	JJR	1	VB	2	VBP	2
 flattered		4	VBN	4
-flattering		4	JJ	4
+flattering		4	JJ	3	VBG	1
 flattery		3	NN	3
 flatulent		1	JJ	1
 flaunt			2	VB	2
 flaunted		1	VBN	1
-flaunting		1	NN	1
+flaunting		1	VBG	1
 flaunts			1	VBZ	1
 flavor			6	NN	6
 flavors			2	NNS	2
@@ -31539,9 +31681,9 @@ fleas			2	NNS	2
 fleck			1	NN	1
 flecked			2	JJ	1	VBD	1
 flecks			2	NNS	2
-fled			17	VBD	13	VBN	4
+fled			18	VBD	14	VBN	4
 fledgling		6	JJ	2	NN	4
-flee			2	VB	2
+flee			3	VB	3
 fleeced			1	VBN	1
 fleecy			1	JJ	1
 fleeing			1	VBG	1
@@ -31550,25 +31692,26 @@ fleeting		7	JJ	7
 fleets			4	NNS	4
 flesh			19	NN	19
 fleshpots		1	NNS	1
-fleshy			7	JJ	5	RB	2
-flew			26	VBD	26
+fleshy			7	JJ	7
+flew			31	VBD	31
 flex			1	NN	1
 flex-time		1	JJ	1
 flexed			2	VBD	2
 flexibility		12	NN	12
-flexible		10	JJ	10
+flexible		14	JJ	14
 flextime		4	NN	4
-flick			3	NN	2	VB	1
-flicked			8	VBD	6	VBN	2
+flick			6	NN	3	VB	2	VBP	1
+flicked			15	VBD	11	VBN	4
 flicker			12	NN	10	VB	2
 flickered		3	VBD	3
-flickering		3	NN	2	VBG	1
-flickers		1	NNS	1
-flicking		1	VBG	1
+flickering		3	NN	1	VBG	2
+flickers		1	VBZ	1
+flicking		3	VBG	3
+flicks			1	VBZ	1
 flied			1	VBD	1
 flier			2	NN	2
 flies			11	NNS	8	VBZ	3
-flight			68	NN	68
+flight			69	NN	69
 flight-to-quality	1	NN	1
 flightiness		1	NN	1
 flightless		1	JJ	1
@@ -31586,46 +31729,46 @@ flints			1	NNS	1
 flinty			1	JJ	1
 flip			7	JJ	4	NN	1	VB	2
 flippant		4	JJ	4
-flipped			7	VBD	7
-flipping		2	VBG	2
+flipped			9	VBD	9
+flipping		3	VBG	3
 flips			1	VBZ	1
 flirt			2	NN	1	VB	1
 flirtation		1	NN	1
 flirtatious		2	JJ	2
-flirted			3	VBD	1	VBN	2
+flirted			3	VBN	3
 flirting		1	VBG	1
 flits			2	VBZ	2
 flitted			5	VBD	1	VBN	4
 flitting		1	VBG	1
 float			15	NN	4	VB	8	VBP	3
 floated			11	VBD	7	VBN	4
-floating		18	JJ	6	VBG	12
+floating		18	JJ	5	VBG	13
 floating-point		2	JJ	1	NN	1
 floating-rate		7	JJ	6	NN	1
 floats			3	NNS	1	VBZ	2
-flock			10	NN	10
+flock			11	NN	11
 flocked			3	VBD	3
 flocking		1	VBG	1
 flocks			2	NNS	2
 flog			1	VB	1
 flogging		2	NN	2
 floggings		1	NNS	1
-flood			15	NN	15
+flood			16	NN	16
 flood-water		1	NN	1
 flooded			11	VBD	4	VBN	7
-flooding		15	NN	6	VBG	9
+flooding		15	NN	5	VBG	10
 floodlit		2	JJ	1	VB	1
-floods			9	NNS	9
-floor			183	NN	183
-floorboards		2	NNS	2
-floored			3	JJ	2	VBN	1
+floods			10	NNS	10
+floor			191	NN	191
+floorboards		3	NNS	3
+floored			3	JJ	3
 flooring		1	NN	1
-floors			11	NNS	11
+floors			12	NNS	12
 flop			1	NN	1
 flopped			9	VBD	8	VBN	1
 floppy			3	JJ	3
 floppy-tie		1	JJ	1
-flora			4	NNS	4
+flora			4	NN	1	NNS	3
 floral			5	JJ	5
 florid			3	JJ	3
 florist			2	NN	2
@@ -31636,9 +31779,9 @@ flounce			2	NN	2
 flounder		3	VB	3
 floundered		3	VBN	3
 floundering		2	VBG	2
-flour			20	FW	3	JJ	7	NN	9	VB	1
-flourish		10	NN	1	VB	9
-flourished		1	VBN	1
+flour			20	FW	3	JJ	8	NN	9
+flourish		11	NN	1	VB	10
+flourished		1	VBD	1
 flourishes		3	NNS	3
 flourishing		5	JJ	2	VBG	3
 floury			1	JJ	1
@@ -31647,41 +31790,42 @@ flouting		1	VBG	1
 flow			60	NN	54	VB	5	VBP	1
 flowchart		1	NN	1
 flowed			11	VBD	11
-flower			28	NN	26	VB	2
+flower			30	NN	28	VB	2
 flower-inscribed	1	JJ	1
 flowerbeds		3	NNS	3
 flowered		2	JJ	2
 flowering		3	JJ	2	NN	1
-flowers			61	NNS	61
+flowers			66	NNS	66
 flowery			2	JJ	2
 flowing			16	JJ	4	VBG	12
 flown			7	VBN	7
-flows			20	NNS	12	VBZ	8
-flu			6	NN	6
+flows			20	NNS	11	VBZ	9
+flu			7	NN	7
 fluctuated		3	VBD	1	VBN	2
 fluctuating		4	VBG	4
 fluctuation		3	NN	3
 fluctuations		7	NNS	7
 fluent			4	JJ	4
+fluently		1	RB	1
 fluffed			2	VBD	2
 fluffy			5	JJ	5
-fluid			10	JJ	6	NN	4
+fluid			10	JJ	5	NN	5
 fluids			4	NNS	4
 fluke			2	NN	2
 flummoxed		2	VBD	1	VBN	1
-flung			16	VBD	5	VBG	11
+flung			16	VB	1	VBD	9	VBG	6
 flunked			2	VBD	2
 flunking		1	VBG	1
 fluorescent		3	JJ	3
 fluoride		1	NN	1
 flurried		2	JJ	2
 flurries		1	NNS	1
-flurry			7	NN	7
+flurry			11	NN	11
 flush			15	JJ	8	NN	3	VB	3	VBP	1
-flushed			9	JJ	4	VBD	3	VBN	2
+flushed			9	JJ	3	VBD	3	VBN	3
 flushes			1	VBZ	1
 fluster			4	JJ	2	NN	2
-flustered		3	VBN	3
+flustered		2	VBN	2
 flustering		1	VBG	1
 flute			1	NN	1
 fluted			2	JJ	2
@@ -31689,14 +31833,14 @@ flutes			1	NNS	1
 fluting			1	NN	1
 flutter			10	JJ	1	NN	6	VB	2	VBP	1
 fluttered		6	VBD	4	VBN	2
-fluttering		3	JJ	1	NN	1	VBG	1
+fluttering		4	JJ	1	NN	1	VBG	2
 flux			5	NN	5
 fly			40	NN	5	VB	28	VBP	7
 flyblown		1	JJ	1
 flyers			2	NNS	2
-flying			45	VBG	45
+flying			50	VBG	50
 flyleaf			1	NN	1
-foam			14	NN	14
+foam			16	NN	16
 foamed			2	VBN	2
 foaming			3	VBG	3
 foamy			2	JJ	2
@@ -31710,7 +31854,7 @@ fodder			4	NN	4
 foe			4	NN	4
 foes			2	NNS	2
 foetus			1	NN	1
-fog			19	NN	18	VB	1
+fog			20	NN	19	VB	1
 fogey			1	NN	1
 fogged			2	JJ	2
 foggy			4	JJ	4
@@ -31722,34 +31866,34 @@ foiled			2	VBN	2
 fold			9	NN	2	VB	6	VBP	1
 foldability		1	NN	1
 foldable		1	JJ	1
-folded			25	VBD	13	VBN	12
-folder			8	NN	8
+folded			36	VBD	21	VBN	15
+folder			9	NN	9
 folders			2	NNS	2
 foldersthe		1	JJ	1
 folding			5	JJ	4	VBG	1
-folds			7	NNS	6	VBZ	1
+folds			8	NNS	6	VBZ	2
 foliage			5	NN	5
 folio			3	NN	3
 folk			9	NN	9
 folks			14	NNS	14
 folksy			1	JJ	1
-follow			59	VB	50	VBP	9
+follow			63	VB	53	VBP	10
 follow-on		2	JJ	1	NN	1
 follow-through		3	JJ	1	NN	2
 follow-up		3	JJ	2	NN	1
-followed		113	VBD	54	VBN	59
+followed		117	VBD	61	VBN	56
 follower		2	NN	2
 followers		8	NNS	8
 followership		1	NN	1
-following		143	JJ	27	NN	8	VBG	108
+following		148	JJ	28	NN	8	VBG	112
 follows			44	VBZ	44
 folly			7	NN	7
 fomenting		1	VBG	1
-fond			11	JJ	11
+fond			12	JJ	12
 fondest			1	JJS	1
 fondle			1	VB	1
 fondly			2	RB	2
-food			247	NN	247
+food			262	NN	262
 food-importing		2	JJ	2
 food-industry		1	NN	1
 food-poisoning		1	JJ	1
@@ -31759,23 +31903,26 @@ food-production		1	NN	1
 food-safety		1	JJ	1
 food-service		3	JJ	1	NN	2
 food-shop		1	JJ	1
-foods			16	NNS	16
+foods			17	NNS	17
 foodstuffs		4	NNS	4
-fool			17	NN	15	VB	2
+fool			22	NN	20	VB	2
+fool!			1	NN	1
+fooled			3	VBN	3
 foolhardy		1	JJ	1
 fooling			2	NN	1	VBG	1
-foolish			19	JJ	19
+foolish			20	JJ	20
 foolproof		2	JJ	2
-foot			48	NN	46	VBP	2
+fools			1	VBZ	1
+foot			56	NN	54	VBP	2
 foot-dragging		1	NN	1
 footage			3	NN	3
-football		61	NN	61
-footballer		3	NN	3
+football		62	NN	62
+footballer		4	NN	4
 footballers		1	NNS	1
 footballs		2	NNS	2
 footbridge		1	NN	1
 footfalls		1	NNS	1
-foothills		3	NNS	3
+foothills		4	NNS	4
 foothold		7	NN	7
 footing			12	NN	12
 footling		1	JJ	1
@@ -31789,11 +31936,11 @@ footpaths		1	NNS	1
 footprints		6	NNS	6
 footslogging		2	NN	1	VBG	1
 footsore		1	JJ	1
-footsteps		10	NNS	10
-for			8547	IN	8544	RB	2	RP	1
+footsteps		11	NNS	11
+for			8798	IN	8795	RB	2	RP	1
 for!			1	NNS	1
 for-profit		3	JJ	3
-for?			3	NN	1	NNS	2
+for?			3	NN	2	NNS	1
 for?I			1	NN	1
 forage			1	VB	1
 foraging		1	VBG	1
@@ -31809,18 +31956,18 @@ forbidding		10	VBG	10
 forbidding-looking	1	JJ	1
 forbids			6	VBZ	6
 forbore			1	VBD	1
-force			192	NN	144	VB	44	VBP	4
+force			196	NN	148	VB	44	VBP	4
 force-fed		1	VBN	1
-forced			90	JJ	5	VBD	15	VBN	70
+forced			93	JJ	5	VBD	15	VBN	73
 forceful		4	JJ	4
 forcefully		1	RB	1
-forces			102	NNS	96	VBZ	6
+forces			106	NNS	100	VBZ	6
 forcible		2	JJ	2
 forcing			22	JJ	1	VBG	21
 fore			2	NN	2
 forearms		3	NNS	3
 forebears		1	NNS	1
-forecast		60	NN	36	VB	5	VBD	7	VBN	7	VBP	5
+forecast		61	NN	36	VB	6	VBD	7	VBN	7	VBP	5
 forecasted		1	VBN	1
 forecasters		2	NNS	2
 forecasting		9	NN	5	VBG	4
@@ -31831,24 +31978,25 @@ forecourt		3	JJ	1	NN	2
 foredoomed		1	JJ	1
 forefathers		1	NNS	1
 forefeet		1	NN	1
-forefinger		5	NN	5
+forefinger		6	NN	6
 forefront		6	NN	6
 forego			1	VB	1
 foregoing		3	JJ	1	NN	2
 foreground		3	NN	3
 forehand		2	NN	1	RB	1
 forehead		15	NN	15
-foreign			260	JJ	260
+foreign			266	JJ	266
 foreign-aid		2	NN	2
 foreign-currency	3	NN	3
 foreign-exchange	11	JJ	5	NN	6
 foreign-investment	1	JJ	1
 foreign-investor	1	NN	1
 foreign-led		1	JJ	1
+foreign-owned		1	JJ	1
 foreign-policy		2	NN	2
 foreign-stock		1	JJ	1
 foreigner		4	NN	4
-foreigners		24	NNS	24
+foreigners		26	NNS	26
 forelegs		1	NNS	1
 forelocks		1	NNS	1
 foreman			5	NN	5
@@ -31860,12 +32008,12 @@ forerunner		2	NN	2
 forerunners		2	NNS	2
 foresaw			1	VBD	1
 foresee			4	VB	1	VBP	3
-foreseeable		2	JJ	2
+foreseeable		3	JJ	3
 foreseen		4	VBN	4
 foresees		3	VBZ	3
 foreshadowed		1	VBN	1
 foresight		2	NN	2
-forest			57	NN	57
+forest			61	NN	61
 forest-living		1	JJ	1
 forest-product		1	NN	1
 forest-products		8	JJ	1	NNS	7
@@ -31876,8 +32024,8 @@ forests			17	NNS	17
 foretaste		3	NN	3
 foretell		1	VB	1
 forethought		1	JJ	1
-foretold		1	VBN	1
-forever			20	RB	20
+foretold		1	VB	1
+forever			23	RB	23
 forewarned		1	VBN	1
 foreword		1	NN	1
 forfeit			4	NN	1	VB	3
@@ -31891,7 +32039,7 @@ forged			4	VBN	4
 forger			2	NN	2
 forgeries		2	NNS	2
 forgery			2	NN	2
-forget			31	VB	28	VBP	3
+forget			32	VB	29	VBP	3
 forgetful		3	JJ	3
 forgets			2	VBZ	2
 forgettable		2	JJ	2
@@ -31901,38 +32049,38 @@ forgings		1	NNS	1
 forgivable		3	JJ	3
 forgive			4	VB	4
 forgiven		7	VBN	7
-forgiveness		5	NN	5
+forgiveness		6	NN	6
 forgiving		4	JJ	3	VBG	1
 forgo			2	VB	2
 forgot			10	VBD	9	VBN	1
 forgotten		16	JJ	1	VBN	15
 forgotten.		1	CD	1
-fork			11	NN	4	VB	7
+fork			12	NN	4	VB	8
 forked			4	VBD	1	VBN	3
 forking			2	VBG	2
-forklift		1	JJ	1
-forks			4	NNS	4
+forklift		1	NN	1
+forks			5	NN	1	NNS	3	VBZ	1
 forlorn			6	JJ	6
 forlornly		1	RB	1
-form			211	NN	175	VB	31	VBP	5
-formal			51	JJ	51
+form			212	NN	175	VB	32	VBP	5
+formal			49	JJ	49
 formalities		1	NNS	1
 formality		3	NN	3
 formalizes		1	VBZ	1
 formally		13	RB	13
 format			3	NN	3
-formation		21	NN	21
+formation		23	NN	23
 formations		2	NNS	2
 formative		2	JJ	2
 formats			2	NNS	2
-formed			58	VBD	17	VBN	41
+formed			64	VBD	22	VBN	42
 former			213	JJ	210	NN	3
 formerly		23	RB	23
 formic			1	JJ	1
 formidable		11	JJ	11
-forming			5	VBG	5
+forming			6	VBG	6
 formless		1	JJ	1
-forms			64	NNS	62	VBZ	2
+forms			67	NNS	65	VBZ	2
 formula			21	NN	21
 formulate		2	VB	2
 formulated		3	VBN	3
@@ -31941,28 +32089,28 @@ formulating		2	VBG	2
 formulations		1	NNS	1
 forsake			3	VB	3
 forsaken		2	VBN	2
-forsook			2	VB	1	VBD	1
+forsook			2	VB	2
 fort			4	NN	4
 forte			1	NN	1
-forth			18	RB	18
+forth			19	RB	19
 forthcoming		14	JJ	14
 forthright		3	JJ	3
 forthrightly		1	RB	1
-forties			3	NNS	3
+forties			4	NNS	4
 fortieth		1	JJ	1
 fortified		5	VBN	5
 fortifying		1	VBG	1
 fortissimo		2	JJ	1	RB	1
 fortitude		2	NN	2
-fortnight		12	JJ	1	NN	10	VB	1
+fortnight		12	JJ	2	NN	10
 fortnightly		5	JJ	4	RB	1
-fortnights		2	JJ	1	NNS	1
+fortnights		2	NNS	2
 fortress		1	NN	1
 fortresses		1	NNS	1
 fortuitous		2	JJ	2
-fortunate		9	JJ	9
-fortunately		2	RB	2
-fortune			24	NN	24
+fortunate		10	JJ	10
+fortunately		3	RB	3
+fortune			25	NN	25
 fortune-tellers		1	NNS	1
 fortunes		14	NNS	14
 forty			16	JJ	13	NN	3
@@ -31970,21 +32118,22 @@ forty-eight		3	JJ	3
 forty-five		1	NN	1
 forty-nine		1	NN	1
 forty-pound		1	JJ	1
-forty-seven		2	JJ	2
+forty-seven		3	JJ	3
 forty-two		1	JJ	1
+forty-year		1	JJ	1
 forum			8	NN	8
-forward			81	JJ	8	NN	1	RB	71	VB	1
+forward			85	IN	1	JJ	8	NN	1	RB	73	VB	2
 forward-looking		1	JJ	1
 forward-rate		4	JJ	4
 forwarded		1	VBN	1
-forwarding		1	NN	1
-forwards		4	RB	4
+forwarding		1	VBG	1
+forwards		6	RB	6
 fossil			9	JJ	7	NN	2
 fossilised		2	JJ	2
 fossilize		1	VB	1
 fossilized		3	JJ	3
 fossils			6	NNS	6
-foster			12	JJ	6	VB	6
+foster			13	JJ	7	VB	6
 fostered		3	VBD	1	VBN	2
 fostering		2	VBG	2
 fought			31	VBD	20	VBN	11
@@ -31994,12 +32143,12 @@ foul-smelling		1	JJ	1
 foul-up			1	NN	1
 fouled			5	VBN	5
 foulest			1	JJS	1
-fouling			1	NN	1
+fouling			1	VBG	1
 fouls			1	NNS	1
-found			341	VBD	237	VBN	104
-foundation		12	NN	12
+found			364	VBD	250	VBN	114
+foundation		14	NN	14
 foundations		17	NNS	17
-founded			25	VBD	11	VBN	14
+founded			25	VBD	10	VBN	15
 founder			32	NN	32
 foundered		2	VBD	2
 foundering		3	VBG	3
@@ -32007,9 +32156,9 @@ founders		1	NNS	1
 founding		5	JJ	2	NN	3
 foundry			1	NN	1
 fount			2	NN	2
-fountain		9	NN	9
+fountain		10	NN	10
 fountains		4	NNS	4
-four			324	CD	324
+four			332	CD	332
 four-bagger		1	NN	1
 four-cents-a-share	1	JJ	1
 four-color		1	JJ	1
@@ -32019,11 +32168,11 @@ four-day		4	JJ	4
 four-door		1	JJ	1
 four-family		1	JJ	1
 four-fifths		1	NNS	1
-four-fold		1	RB	1
+four-fold		2	RB	2
 four-foot-high		1	JJ	1
 four-for-one		1	RB	1
 four-game		7	JJ	7
-four-lane		1	JJ	1
+four-lane		1	NN	1
 four-letter		1	JJ	1
 four-man		2	JJ	2
 four-megabit		4	JJ	4
@@ -32036,15 +32185,17 @@ four-quarter		1	JJ	1
 four-square		4	JJ	3	NN	1
 four-star		1	JJ	1
 four-stock		1	JJ	1
+four-storey		1	JJ	1
 four-stroke		1	JJ	1
 four-year		9	JJ	9
 four-year-old		1	JJ	1
 fourpence		1	NN	1
 fours			1	NNS	1
 foursome		1	NN	1
-fourteen		7	CD	7
+fourteen		8	CD	8
 fourteen-year		2	JJ	2
 fourteenth		1	JJ	1
+fourteenth-century	1	JJ	1
 fourth			88	JJ	88
 fourth-biggest		1	JJ	1
 fourth-grade		1	JJ	1
@@ -32056,7 +32207,7 @@ fox			5	NN	5
 fox-bark		1	NN	1
 fox-hunting		2	NN	2
 foxed			1	VBN	1
-foxes			4	NNS	4
+foxes			4	NNS	3	VBZ	1
 foxs			1	JJ	1
 foyer			3	NN	3
 fracas			3	NN	3
@@ -32069,17 +32220,17 @@ fractured		3	JJ	2	VBN	1
 fractures		1	NNS	1
 fragile			17	JJ	17
 fragility		3	NN	3
-fragment		6	NN	5	VB	1
+fragment		5	NN	4	VB	1
 fragmentary		1	JJ	1
 fragmentation		2	NN	2
 fragmented		4	JJ	3	VBN	1
 fragments		7	NNS	4	VBZ	3
-fragrance		10	NN	10
+fragrance		11	NN	11
 fragrances		1	NNS	1
 fragrant		2	JJ	2
 frail			4	JJ	4
 frailties		1	NNS	1
-frailty			2	NN	2
+frailty			3	NN	3
 frame			21	NN	21
 frame-up		1	NN	1
 framed			9	VBN	9
@@ -32087,7 +32238,7 @@ framers			4	NNS	4
 frames			8	NNS	8
 framework		9	NN	9
 framing			4	VBG	4
-franc			11	NN	11
+franc			12	NN	12
 franc-denominated	1	JJ	1
 franchise		15	NN	15
 franchisee		4	NN	4
@@ -32123,7 +32274,7 @@ freaks			3	NNS	3
 freaky			1	JJ	1
 freckled		2	JJ	2
 freckles		6	NNS	6
-free			166	JJ	150	JJ|RB	1	RB	5	VB	9	VBP	1
+free			171	JJ	155	JJ|RB	1	RB	5	VB	9	VBP	1
 free-choice		1	JJ	1
 free-enterprise		1	NN	1
 free-floater		1	NN	1
@@ -32137,9 +32288,9 @@ free-trade		1	JJ	1
 free-travel		1	JJ	1
 free-wheeling		3	JJ	3
 freed			12	VBD	5	VBN	7
-freedom			60	NN	60
+freedom			62	NN	62
 freedoms		7	NNS	7
-freehold		3	JJ	2	NN	1
+freehold		3	JJ	1	NN	2
 freeing			7	VBG	7
 freely			22	RB	22
 freer			6	JJR	6
@@ -32147,13 +32298,13 @@ frees			3	VBZ	3
 freeway			5	NN	5
 freeways		2	NNS	2
 freewheeling		2	JJ	2
-freeze			12	NN	6	VB	6
+freeze			13	NN	7	VB	6
 freeze-frame		1	NN	1
 freeze-up		1	NN	1
 freezer			5	NN	5
 freezers		1	NNS	1
 freezes			6	NNS	2	VBZ	4
-freezing		12	JJ	1	NN	11
+freezing		16	JJ	5	NN	7	VBG	4
 freight			8	NN	7	RB	1
 freighted		1	VBN	1
 french			2	JJ	2
@@ -32162,10 +32313,10 @@ frenzied		2	JJ	2
 frenzy			10	NN	10
 frequencies		2	NNS	2
 frequency		11	NN	11
-frequent		17	JJ	16	VB	1
+frequent		21	JJ	20	VB	1
 frequent-flier		3	JJ	3
 frequented		1	VBN	1
-frequently		47	RB	47
+frequently		48	RB	48
 frequents		1	VBZ	1
 fresco			1	NN	1
 fresh			68	JJ	68
@@ -32174,7 +32325,7 @@ freshers		1	NNS	1
 freshly			12	RB	12
 freshly-baked		1	JJ	1
 freshman		2	NN	2
-freshmen		1	NNS	1
+freshmen		1	NN	1
 freshness		1	NN	1
 fret			3	NN	1	VB	1	VBP	1
 frets			1	VBZ	1
@@ -32183,22 +32334,22 @@ fretting		1	VBG	1
 fretwork		1	JJ	1
 friar			1	NN	1
 friction		3	NN	3
-fridge			9	NN	9
+fridge			10	NN	10
 fried			4	JJ	3	VBN	1
-friend			74	NN	74
+friend			80	NN	80
 friend.			1	NN	1
 friendless		1	JJ	1
 friendlies		1	NNS	1
 friendliest		2	JJS	2
 friendliness		3	NN	3
-friendly		50	JJ	50
-friends			140	NNS	140
+friendly		52	JJ	52
+friends			148	NNS	148
 friends.		1	NNS	1
 friendship		27	NN	27
 friendships		4	NNS	4
 friers			1	NNS	1
 frigate			1	NN	1
-fright			7	NN	7
+fright			8	NN	8
 frighten		4	VB	4
 frightened		26	JJ	16	VBD	4	VBN	6
 frightening		9	JJ	9
@@ -32218,19 +32369,19 @@ frisson			1	NN	1
 frittered		1	VBN	1
 frivolous		6	JJ	6
 frizzled		2	VBD	2
-frizzy			2	JJ	2
+frizzy			3	JJ	3
 fro			2	RB	2
-frock			3	NN	3
+frock			4	NN	4
 frocks			1	NNS	1
-frog			5	JJ	1	NN	4
+frog			5	NN	5
 frog-marched		1	VBN	1
-frogs			11	NNS	11
+frogs			12	NNS	12
 frolic			2	NN	1	VB	1
 frolicked		3	VBN	3
-from			4598	IN	4598
+from			4697	IN	4697
 from?I			1	NNS	1
 fronds			2	NNS	2
-front			157	JJ	42	NN	113	RB	1	VB	1
+front			168	IN	9	JJ	45	NN	112	RB	1	VB	1
 front-page		1	JJ	1
 front-runner		2	NN	2
 front-seat		1	NN	1
@@ -32238,7 +32389,7 @@ front-wheel		1	NN	1
 frontage		1	NN	1
 frontages		1	NNS	1
 frontal			5	JJ	5
-frontier		8	NN	8
+frontier		9	NN	9
 frontiers		5	NNS	5
 fronting		1	VBG	1
 frontons		1	NNS	1
@@ -32250,25 +32401,25 @@ frosty			6	JJ	6
 frothing		3	VBG	3
 frothy			3	JJ	3
 frown			4	NN	4
-frowned			4	JJ	1	VBD	2	VBN	1
+frowned			5	JJ	2	VBD	2	VBN	1
 frowns			1	NNS	1
 froze			4	VBD	4
-frozen			29	JJ	14	VBN	15
+frozen			30	JJ	14	VBN	16
 frugal			5	JJ	5
 frugality		2	NN	2
-fruit			41	NN	41
+fruit			42	NN	42
 fruit-picking		1	NN	1
 fruitbowl		1	NN	1
 fruitful		6	JJ	6
 fruition		1	NN	1
 fruitless		6	JJ	6
-fruits			15	NNS	15
+fruits			15	NNS	14	VBZ	1
 fruity			3	JJ	3
 frumpy			1	JJ	1
 frustrate		1	VB	1
-frustrated		15	JJ	5	VBD	3	VBN	7
+frustrated		15	JJ	5	VBD	2	VBN	8
 frustrates		1	VBZ	1
-frustrating		4	JJ	2	VBG	2
+frustrating		5	JJ	3	VBG	2
 frustratingly		1	RB	1
 frustration		6	NN	6
 fry			4	NN	4
@@ -32278,8 +32429,8 @@ ft.			1	NN	1
 fuddled			2	JJ	2
 fuddy-duddy		1	JJ	1
 fudge			2	VB	1	VBP	1
-fudging			1	NN	1
-fuel			50	NN	46	VB	4
+fudging			1	VBG	1
+fuel			52	NN	48	VB	4
 fuel-economy		1	NN	1
 fuel-efficient		1	JJ	1
 fuel-injected		1	JJ	1
@@ -32287,23 +32438,24 @@ fuel-services		1	NNS	1
 fueled			16	VBD	8	VBN	8
 fueling			5	NN	1	VBG	4
 fuelled			3	VBD	1	VBN	2
-fuels			13	NNS	13
+fuels			13	NNS	12	VBZ	1
 fug			1	NN	1
 fugitive		7	JJ	4	NN	3
-fulfil			7	VB	7
+fulcrum			1	NN	1
+fulfil			8	VB	8
 fulfill			7	VB	7
 fulfilled		3	VBD	2	VBN	1
 fulfilling		5	VBG	5
 fulfilment		1	NN	1
 fulfils			1	VBZ	1
-full			288	JJ	282	RB	6
+full			306	JJ	300	RB	6
 full-back		1	JJ	1
 full-blown		2	JJ	2
 full-face		1	JJ	1
 full-fledged		3	JJ	3
 full-grown		1	JJ	1
 full-length		7	JJ	6	RB	1
-full-page		2	JJ	2
+full-page		3	JJ	3
 full-scale		2	JJ	2
 full-size		1	JJ	1
 full-sized		3	JJ	3
@@ -32315,44 +32467,45 @@ fullest			8	JJS	8
 fullness		2	NN	2
 fullscale		1	JJ	1
 fulltime		3	JJ	3
-fully			89	RB	89
+fully			90	RB	90
 fully-diluted		1	JJ	1
 fulminating		1	VBG	1
 fulminations		1	NNS	1
 fumble			1	VBP	1
-fumbled			2	VBD	2
+fumbled			3	VBD	3
 fumbling		1	VBG	1
 fume-filled		1	JJ	1
 fumed			1	VBD	1
-fumes			7	NNS	4	VBZ	3
+fumes			7	NNS	3	VBZ	4
 fumigating		1	VBG	1
 fuming			3	VBG	3
-fun			23	JJ	3	NN	20
+fun			25	JJ	3	NN	22
+fun-fair		1	NN	1
 fun-loving		2	JJ	2
 fun?Not			1	NN	1
-function		29	NN	20	VB	6	VBP	3
+function		31	NN	22	VB	6	VBP	3
 functional		2	JJ	2
 functionaries		2	NNS	2
 functioned		4	VBD	4
-functioning		7	NN	2	VBG	5
-functions		18	NNS	18
+functioning		7	NN	1	VBG	6
+functions		18	NNS	16	VBZ	2
 fund			157	NN	138	VB	18	VBP	1
 fund-raisers		1	NNS	1
 fund-raising		1	JJ	1
 fund-research		1	JJ	1
 fundamantal		1	JJ	1
 fundamantalist		1	NN	1
-fundamental		38	JJ	38
+fundamental		40	JJ	40
 fundamentalist		2	JJ	2
 fundamentalists		2	NNS	2
 fundamentally		11	RB	11
 fundamentals		8	NNS	8
-funded			16	JJ	3	VBN	13
+funded			17	JJ	3	VBN	14
 funding			53	NN	42	VBG	11
 fundraising		2	NN	1	VBG	1
-funds			299	NNS	299
+funds			301	NNS	301
 funds-service		2	JJ	2
-funeral			19	JJ	8	NN	11
+funeral			21	JJ	9	NN	12
 funerals		2	NNS	2
 funereal		1	JJ	1
 funfair			2	NN	2
@@ -32367,52 +32520,53 @@ funn-ih			1	JJ	1
 funnel			8	NN	4	VB	4
 funneled		3	VBD	1	VBN	2
 funneling		1	VBG	1
-funnelling		1	JJ	1
+funnelling		1	VBG	1
 funniest		1	JJS	1
 funnily			1	RB	1
-funny			17	JJ	17
-funny?			1	CD	1
-fur			14	NN	14
+funny			19	JJ	19
+funny?			1	JJ	1
+fur			15	NN	15
 furbished		1	VBN	1
-furious			13	JJ	13
-furiously		8	RB	8
+furious			14	JJ	14
+furiously		9	RB	9
 furlongs		1	NNS	1
 furloughs		1	NNS	1
-furnace			5	NN	5
+furnace			6	NN	6
 furnish			2	VB	2
 furnished		11	JJ	7	VBN	4
 furnishing		1	VBG	1
 furnishings		1	NNS	1
-furniture		46	NN	46
+furniture		48	NN	48
 furor			8	NN	8
 furore			2	NN	2
 furrow			2	NN	1	VB	1
 furrowed		2	VBD	2
 furrows			3	NNS	2	VBZ	1
 furry			4	JJ	2	NN	2
-furs			4	NNS	4
-further			246	JJ	125	JJR	6	RB	51	RBR	61	VB	3
+furs			4	NNS	3	VBZ	1
+further			250	JJ	126	JJR	7	RB	51	RBR	63	VB	3
 furtherance		1	NN	1
 furthermost		1	JJ	1
 furthers		1	VBZ	1
 furthest		5	JJS	3	RB	2
 furtive			3	JJ	2	RB	1
-fury			7	NN	7
+fury			8	NN	8
 fuse			11	NN	10	VB	1
 fused			4	VBN	4
 fuselage		1	NN	1
+fuses			1	NNS	1
 fusillade		2	NN	2
 fusion			4	NN	4
-fuss			14	NN	6	NNS	7	VB	1
+fuss			14	NN	8	NNS	5	VB	1
 fuss?			1	NN	1
 fusses			1	VBZ	1
-fussing			4	NN	1	VBG	3
+fussing			4	VBG	4
 fusspot			1	NN	1
 fussy			3	JJ	3
 fusty			2	JJ	2
 futile			6	JJ	6
 futility		1	NN	1
-future			228	JJ	108	NN	120
+future			236	JJ	108	NN	128
 future?			1	NN	1
 futures			288	NNS	288
 futures-exchange	1	NN	1
@@ -32436,14 +32590,14 @@ gaggle			2	NN	2
 gags			1	NNS	1
 gaiety			3	NN	3
 gaily			3	RB	3
-gain			151	NN	107	VB	43	VBP	1
-gained			95	VBD	83	VBN	12
+gain			153	NN	107	VB	45	VBP	1
+gained			96	VBD	83	VBN	13
 gainer			2	NN	2
 gainers			5	NNS	5
 gainful			2	JJ	2
 gainfully		1	RB	1
-gaining			13	VBG	13
-gains			117	NNS	112	VBZ	5
+gaining			14	VBG	14
+gains			118	NNS	112	VBZ	6
 gains-tax		1	JJ	1
 gainsaid		1	VBN	1
 gainsaying		1	VBG	1
@@ -32454,7 +32608,7 @@ gales			4	NNS	1	VBZ	3
 gallant			3	JJ	3
 gallantry		3	NN	3
 galled			1	VBD	1
-galleries		3	NNS	3
+galleries		4	NNS	4
 gallery			14	NN	14
 galley			1	NN	1
 galling			1	JJ	1
@@ -32463,7 +32617,7 @@ gallivanting		1	VBG	1
 gallon			10	NN	10
 gallons			9	NNS	9
 gallop			2	NN	1	VB	1
-galloped		5	VBD	5
+galloped		5	JJ	1	VBD	4
 galloping		3	VBG	3
 gallstone		1	NN	1
 galvanize		1	VB	1
@@ -32475,20 +32629,20 @@ gamble			13	NN	10	VB	3
 gambled			4	VBD	4
 gambler			4	NN	4
 gamblers		1	NNS	1
-gambling		18	NN	10	VBG	8
+gambling		19	NN	11	VBG	8
 gambling-fever		1	NN	1
 gambolling		1	VBG	1
-game			109	JJ	2	NN	107
+game			114	JJ	2	NN	112
 game-show		1	NN	1
 gamekeeper		3	NN	3
-games			53	NNS	53
+games			55	NNS	55
 gametocide		1	NN	1
 gaming			1	NN	1
 gammon			1	JJ	1
 gamut			4	NN	4
 gang			12	NN	12
 gangbusters		1	NNS	1
-gangplank		1	NN	1
+gangplank		2	NN	2
 gangs			11	NNS	11
 gangster		1	NN	1
 gangsters		4	NNS	4
@@ -32497,33 +32651,33 @@ gantry			2	NN	2
 gaol			3	NN	3
 gaoled			1	VBD	1
 gaolers			1	NNS	1
-gap			40	NN	40
+gap			43	NN	43
 gap-toothed		2	JJ	2
 gaped			5	VBN	5
 gapes			1	VBZ	1
 gaping			6	JJ	6
-gaps			5	NNS	5
-garage			27	NN	27
+gaps			7	NNS	7
+garage			28	NN	28
 garages			2	NNS	2
 garb			3	NN	3
-garbage			6	NN	6
+garbage			7	NN	7
 garbage-disposal	1	JJ	1
 garbage-incinerator	1	NN	1
-garden			124	NN	123	VB	1
+garden			131	NN	130	VB	1
 garden-shrub		1	NN	1
 garden-variety		1	NN	1
-gardendo		1	VB	1
+gardendo		1	NN	1
 gardener		14	NN	14
 gardeners		2	NNS	2
 gardenettes		1	NNS	1
-gardening		15	NN	14	VBG	1
-gardens			25	NNS	25
+gardening		14	NN	13	VBG	1
+gardens			26	NNS	26
 gargantuan		1	JJ	1
 gargled			1	VBN	1
 garish			2	JJ	2
 garland			4	NN	3	VB	1
 garlanded		1	VBN	1
-garlic			8	JJ	8
+garlic			8	JJ	7	NN	1
 garment			4	NN	4
 garments		2	NNS	2
 garner			2	VB	2
@@ -32533,7 +32687,7 @@ garret			1	NN	1
 garrets			1	NNS	1
 garrison		4	NN	3	VB	1
 garrulous		2	JJ	2
-gas			164	NN	163	VB	1
+gas			169	NN	168	VB	1
 gas-derived		1	JJ	1
 gas-fire		1	NN	1
 gas-fired		2	JJ	2
@@ -32547,42 +32701,43 @@ gases			4	NNS	4
 gasfire			1	NN	1
 gash			4	NN	4
 gashed			2	VBD	2
+gashes			1	NNS	1
 gasholder		1	NN	1
 gasman			1	NN	1
 gasoline		17	NN	17
 gasp			5	NN	1	VB	4
 gasped			2	VBD	2
 gasping			6	JJ	1	VBG	5
-gasps			4	NNS	4
+gasps			5	FW	1	NNS	4
 gassed			1	VBN	1
 gassy			1	JJ	1
 gastro-intestinal	1	JJ	1
 gastronomic		2	JJ	2
 gasworks		1	NN	1
-gate			26	NN	26
+gate			27	NN	27
 gateau			4	NN	4
 gatecrashed		1	VBD	1
 gatecrashers		1	NNS	1
 gatehouse		1	NN	1
 gatepost		1	NN	1
 gateposts		1	NNS	1
-gates			13	NNS	13
+gates			14	NNS	14
 gateway			3	NN	3
 gateways		1	NNS	1
 gather			22	VB	17	VBP	5
-gathered		36	VBD	20	VBN	16
-gathering		31	NN	18	VBG	13
+gathered		37	VBD	21	VBN	16
+gathering		32	NN	18	VBG	14
 gatherings		5	NNS	5
 gathers			1	VBZ	1
 gauche			2	JJ	2
 gaudiest		1	JJS	1
 gaudy			3	JJ	3
-gauge			18	NN	7	VB	11
+gauge			21	NN	7	VB	14
 gauges			3	NNS	2	VBZ	1
-gauging			1	VBG	1
-gaunt			7	JJ	6	NN	1
+gauging			2	VBG	2
+gaunt			7	JJ	7
 gauze			1	NN	1
-gave			339	VBD	339
+gave			359	VBD	359
 gavel			2	NN	2
 gawky			3	JJ	3
 gawped			1	VBN	1
@@ -32591,7 +32746,7 @@ gay			10	JJ	10
 gayer			2	JJR	2
 gayest			1	JJS	1
 gays			2	NNS	2
-gaze			13	VBP	13
+gaze			17	NN	4	VBP	13
 gazed			13	VBD	12	VBN	1
 gazing			5	VBG	5
 gazpacho		1	VBP	1
@@ -32619,7 +32774,7 @@ gene			58	NN	58
 gene-copying		1	JJ	1
 gene-splicing		2	NN	2
 genealogy		1	NN	1
-general			231	JJ	204	NN	27
+general			236	JJ	208	NN	28
 general-practice	1	JJ	1
 general-practitioner	1	NN	1
 general-purpose		3	JJ	3
@@ -32630,20 +32785,20 @@ generalities		3	NNS	3
 generalizations		3	NNS	3
 generalize		1	VB	1
 generalizing		1	VBG	1
-generally		95	RB	95
+generally		96	RB	96
 generals		7	NNS	7
-generate		20	VB	19	VBP	1
+generate		20	VB	18	VBP	2
 generated		18	VBD	6	VBN	12
 generates		4	VBZ	4
 generating		6	NN	1	VBG	5
-generation		49	NN	49
+generation		57	NN	57
 generations		16	NNS	16
 generator		5	NN	5
 generators		7	NNS	7
 generic			10	JJ	10
 generic-drug		2	JJ	1	NN	1
 generosity		8	NN	8
-generous		26	JJ	26
+generous		30	JJ	30
 generously		1	RB	1
 genes			46	NNS	46
 genesis			2	NN	2
@@ -32653,12 +32808,12 @@ geneticist		1	NN	1
 genetics		2	NNS	2
 genial			5	JJ	5
 genie			3	NN	3
-genius			13	NN	13
+genius			14	NN	14
 genres			2	NNS	2
 gent			1	NN	1
 genteel			7	JJ	4	NNS	3
 gentility		2	NN	2
-gentle			33	JJ	33
+gentle			35	JJ	35
 gentleman		11	NN	11
 gentlemanly		1	JJ	1
 gentlemans		1	NNS	1
@@ -32667,7 +32822,7 @@ gentlemens		2	NNS	2
 gentleness		2	NN	2
 gentler			3	JJR	3
 gentlewoman		1	NN	1
-gently			24	RB	24
+gently			25	RB	25
 gentry			6	NN	6
 gents			3	NNS	3
 genuine			28	JJ	28
@@ -32675,7 +32830,7 @@ genuinely		9	RB	9
 geographic		1	JJ	1
 geographical		3	JJ	3
 geography		7	NN	7
-geological		3	JJ	3
+geological		4	JJ	4
 geologically		1	RB	1
 geologist		3	NN	3
 geologists		1	NNS	1
@@ -32694,18 +32849,18 @@ germs			5	NNS	5
 gerrymandering		6	NN	6
 gestalt			1	NN	1
 gesticulate		1	VB	1
-gesture			23	NN	23
-gestured		1	VBD	1
+gesture			24	NN	24
+gestured		5	VBD	5
 gestures		8	NNS	8
-get			745	VB	604	VBP	141
+get			779	VB	629	VBP	150
 get-out-the-vote	2	JJ	2
 get-together		3	NN	3
 get-togethers		1	NNS	1
 get-up			1	NN	1
 get?			1	VB	1
 getaway			3	NN	3
-gets			62	VBZ	62
-getting			191	VBG	191
+gets			64	VBZ	64
+getting			200	VBG	200
 gewgaws			1	NNS	1
 geyser			2	NN	2
 geysers			3	NNS	3
@@ -32713,14 +32868,14 @@ ghastly			15	JJ	15
 gherkins		1	NNS	1
 ghetto			2	NN	2
 ghettos			1	NNS	1
-ghost			10	NN	10
+ghost			13	NN	13
 ghost-busting		1	NN	1
 ghost-writing		1	NN	1
 ghostbusters		2	NNS	2
 ghostbusting		4	NN	4
-ghosted			2	JJ	1	VBN	1
+ghosted			2	JJ	1	VBD	1
 ghostly			6	JJ	6
-ghosts			9	NNS	9
+ghosts			10	NNS	10
 ghoulish		2	RB	2
 giant			74	JJ	42	NN	32
 giants			15	NNS	15
@@ -32730,19 +32885,19 @@ gibbon			1	NN	1
 giddiness		1	NN	1
 giddy			12	JJ	12
 gift			32	NN	32
-gifted			4	JJ	4
+gifted			8	JJ	8
 gifts			16	NNS	16
 gig			2	NN	2
-gigantic		11	JJ	11
+gigantic		15	JJ	15
 giggle			3	NN	2	VB	1
 giggled			4	VBD	4
-giggles			1	NNS	1
+giggles			1	VBZ	1
 giggling		5	VBG	5
 gigolo			3	NN	3
 gigs			1	NNS	1
 gilded			6	JJ	6
 gills			2	NNS	2
-gilt			11	JJ	6	NN	4	NN|JJ	1
+gilt			11	JJ	6	NN	3	NN|JJ	2
 gilts			2	NNS	2
 gimlet			1	JJ	1
 gimmick			4	NN	4
@@ -32756,34 +32911,35 @@ gingerly		1	RB	1
 gins			1	NNS	1
 ginseng			1	NN	1
 ginsengs		1	NNS	1
-giraffe			2	NN	2
+giraffe			3	NN	3
 gird			1	VBD	1
 girded			2	VBD	2
 girders			1	NNS	1
 girdle			3	NN	2	VB	1
 girdled			1	VBN	1
 girdles			1	NNS	1
-girl			127	NN	127
+girl			144	NN	144
 girl!			1	CD	1
 girl-friend		1	NN	1
+girl?			1	NN	1
 girlfriend		7	NN	7
 girlfriends		4	NNS	4
 girlie			1	JJ	1
-girls			96	NNS	96
+girls			103	NNS	103
 giro			1	NN	1
 gist			1	NN	1
-give			295	VB	262	VBP	33
+give			304	VB	269	VBP	35
 give-away		3	NN	3
 giveaway		4	JJ	3	NN	1
 giveaways		2	NNS	2
-given			204	JJ	2	VBN	202
-gives			74	VBZ	74
+given			211	JJ	2	VBN	209
+gives			77	VBZ	77
 giveth			1	VBZ	1
-giving			82	NN	3	VBG	79
+giving			84	NN	3	VBG	81
 gizmo			1	NN	1
 gizmos			1	NNS	1
 glacial			3	JJ	3
-glad			27	JJ	27
+glad			30	JJ	30
 gladdened		2	VBD	1	VBN	1
 glades			1	NNS	1
 gladioliwhatever	1	NN	1
@@ -32792,18 +32948,18 @@ glamorous		8	JJ	8
 glamour			4	NN	4
 glance			20	NN	20
 glanced			14	VBD	14
-glances			8	NNS	8
+glances			8	NNS	7	VBZ	1
 glancing		4	JJ	1	VBG	3
 gland			3	NN	3
 glands			2	NNS	2
 glare			7	NN	7
-glared			8	VBD	3	VBN	5
+glared			8	VBD	4	VBN	4
 glares			1	VBZ	1
-glaring			4	JJ	4
+glaring			4	JJ	3	VBG	1
 glasnost		11	FW	7	NN	4
-glass			110	NN	110
+glass			117	NN	117
 glass-framed		1	VBN	1
-glasses			42	NNS	42
+glasses			45	NNS	45
 glasshouse		1	NN	1
 glassy			2	JJ	2
 glaze			4	NN	1	VB	1	VBP	2
@@ -32819,6 +32975,7 @@ glee			3	NN	3
 gleeful			3	JJ	3
 gleefully		1	RB	1
 glib			4	JJ	4
+glibly			1	RB	1
 glide			1	VB	1
 glided			2	VBD	1	VBN	1
 glides			1	VBZ	1
@@ -32830,9 +32987,9 @@ glimmerings		1	NNS	1
 glimmers		1	NNS	1
 glimpse			11	NN	11
 glimpsed		3	VBD	2	VBN	1
-glimpses		4	NNS	4
+glimpses		4	NNS	3	VBZ	1
 glint			6	NN	6
-glinted			5	VBD	1	VBN	4
+glinted			5	VBD	2	VBN	3
 glinting		1	VBG	1
 glints			1	NNS	1
 glisten			1	VBN	1
@@ -32842,7 +32999,7 @@ glitch			1	NN	1
 glitches		2	NNS	2
 glitterati		1	NNS	1
 glittered		9	VBN	9
-glittering		6	JJ	5	VBG	1
+glittering		6	JJ	4	VBG	2
 glittery		1	NN	1
 glitz			1	NN	1
 glitzy			2	JJ	1	NN	1
@@ -32865,13 +33022,13 @@ globule			1	NN	1
 globules		1	NNS	1
 gloom			10	NN	10
 gloomier		2	JJR	1	RBR	1
-gloomy			19	JJ	18	RB	1
+gloomy			20	JJ	19	RB	1
 glories			2	NNS	2
 glorification		1	NN	1
-glorified		2	VBD	1	VBN	1
+glorified		2	VBD	2
 glorious		11	JJ	11
 gloriously		1	RB	1
-glory			15	NN	15
+glory			16	NN	16
 glorying		1	VBG	1
 gloss			6	NN	3	VB	2	VBP	1
 glossy			14	JJ	14
@@ -32883,7 +33040,7 @@ glow-worms		1	NNS	1
 glowed			11	VBD	11
 glowered		2	VBD	1	VBN	1
 glowering		1	VBG	1
-glowing			14	JJ	12	VBG	2
+glowing			14	JJ	10	VBG	4
 glowingly		1	RB	1
 glucose			1	NN	1
 glue			9	JJ	1	NN	8
@@ -32904,27 +33061,29 @@ gnarled			4	JJ	4
 gnashing		1	NN	1
 gnaw			5	VB	5
 gnawed			1	VBN	1
-gnawing			3	NN	3
+gnawing			3	NN	1	VBG	2
 gnomic			2	JJ	2
-go			485	VB	394	VBP	91
+go			515	VB	421	VBP	94
 go-ahead		8	JJ	2	NN	6
 go-between		1	NN	1
 go-getters		1	NNS	1
 go-go			1	JJ	1
 go-it-alone		1	JJ	1
-go?			1	VBZ	1
+go?			2	NN	2
+go?So-so.		1	NN	1
 goal			51	NN	51
 goalie			1	NN	1
 goalkeeper		1	NN	1
 goalless		1	JJ	1
 goals			30	NNS	30
 goat			5	NN	5
-goats			10	NNS	10
+goats			11	NNS	11
 gob			1	NN	1
 gobbets			1	NNS	1
 gobble			1	JJ	1
 gobbled			2	VBN	2
 gobbledygook		1	NN	1
+goblet			1	NN	1
 goblins			1	NNS	1
 god			6	JJ	1	NN	4	VBD	1
 goddess			3	NN	3
@@ -32933,35 +33092,36 @@ godhead			1	NN	1
 godless			1	JJ	1
 gods			12	NNS	12
 godsend			3	NN	3
-goes			97	VBZ	97
+goes			99	VBZ	99
 goggled			2	VBD	2
-going			469	JJ	1	VBG	468
-going!			1	NN	1
+going			506	JJ	1	VBG	505
+going!			1	JJ	1
 going-over		2	NN	2
 going.I			1	NNS	1
+going?Nowhere		1	RB	1
 goings-on		3	NNS	3
-gold			123	JJ	28	NN	95
+gold			125	JJ	28	NN	97
 gold-based		1	JJ	1
 gold-leaf		1	JJ	1
 gold-mining		2	NN	2
-gold-painted		1	JJ	1
+gold-painted		1	VBN	1
 gold-plated		1	JJ	1
 golden			34	JJ	34
 golden-haired		1	JJ	1
-goldfish		2	NN	2
+goldfish		3	NN	3
 goldmine		2	NN	2
 golds			2	NNS	2
-golf			37	NN	37
+golf			38	NN	38
 golf-clubs		1	NNS	1
-golfer			5	NN	4	VB	1
+golfer			6	NN	6
 golfers			2	NNS	2
 golfing			4	NN	4
 golfs			1	NNS	1
-golly			1	RB	1
+golly			1	UH	1
 gon			3	VB	1	VBG	2
 gondolas		1	NNS	1
-gone			113	VBN	112	VBN|JJ	1
-good			645	JJ	627	NN	16	RB	2
+gone			122	VBN	121	VBN|JJ	1
+good			685	JJ	668	NN	14	RB	2	UH	1
 good-faith		1	NN	1
 good-for-nothing	2	NN	2
 good-for-nothings	1	NNS	1
@@ -32974,20 +33134,20 @@ good-quality		1	JJ	1
 good-sized		1	JJ	1
 good-tempered		2	JJ	2
 good?			1	NN	1
-goodbye			8	NN	1	UH	7
+goodbye			9	NN	1	UH	8
 goodbyes		1	NNS	1
 goodies			5	NNS	5
 goodly			3	JJ	3
-goodness		8	NN	8
-goodnight		3	NN	3
-goods			123	NNS	123
+goodness		8	NN	7	UH	1
+goodnight		4	NN	4
+goods			125	NNS	125
 goods-producing		2	JJ	2
 goodwill		11	NN	11
 goody			1	UH	1
 gooey			1	JJ	1
 goof			1	NN	1
 goofed			2	VBD	2
-goofing			1	NN	1
+goofing			1	VBG	1
 goofy			2	JJ	2
 goon			1	NN	1
 goons			1	NNS	1
@@ -33002,12 +33162,12 @@ gores			1	VBZ	1
 gorge			7	NN	7
 gorged			2	VBD	1	VBN	1
 gorgeous		8	JJ	8
-gorgeous.		1	CD	1
+gorgeous.		1	JJ	1
 gorges			1	NNS	1
 gorilla			1	NN	1
 gorillas		3	NNS	3
 gormless		1	JJ	1
-gorse			3	JJ	3
+gorse			3	JJ	1	NN	2
 gory			3	JJ	3
 gospel			2	NN	2
 gossip			14	NN	13	VB	1
@@ -33015,7 +33175,7 @@ gossiped		1	VBN	1
 gossiping		4	VBG	4
 gossips			1	NNS	1
 gossipy			5	JJ	5
-got			615	VBD	546	VBN	68	VBP	1
+got			660	VBD	582	VBN	77	VBP	1
 gotten			10	VBN	10
 gouged			1	VBD	1
 gouges			1	NNS	1
@@ -33024,13 +33184,13 @@ gourmand		1	NN	1
 gourmet			3	NN	3
 gouty			1	JJ	1
 goverment		1	NN	1
-govern			10	VB	8	VBP	2
+govern			10	VB	5	VBP	5
 governance		1	NN	1
-governed		8	VBD	3	VBN	5
-governess		4	NN	4
+governed		8	VBD	4	VBN	4
+governess		5	NN	5
 governing		11	NN	2	VBG	9
 governmemt		1	NN	1
-government		818	NN	818
+government		831	NN	831
 government-approved	1	JJ	1
 government-bond		1	NN	1
 government-business	1	NN	1
@@ -33046,7 +33206,7 @@ government-set		1	VBN	1
 government-sponsored	4	JJ	4
 governmental		4	JJ	4
 governmental-affairs	2	JJ	1	NNS	1
-governments		73	NNS	73
+governments		78	NNS	78
 governmentset		1	VBN	1
 governor		26	NN	26
 governor-elect		1	NN	1
@@ -33055,14 +33215,14 @@ gown			7	NN	7
 gowns			1	NNS	1
 grab			9	NN	2	VB	5	VBP	2
 grabbed			27	VBD	25	VBN	2
-grabbing		1	VBG	1
+grabbing		2	VBG	2
 grace			19	NN	17	VB	2
 graced			2	VBD	1	VBN	1
 graceful		11	JJ	11
 gracefully		4	RB	4
 graceless		4	JJ	4
 gracious		5	JJ	5
-graciously		3	RB	3
+graciously		4	RB	4
 gradations		3	NNS	3
 grade			13	NN	13
 graded			3	VBN	3
@@ -33071,40 +33231,40 @@ graders			3	NNS	3
 grades			13	NNS	13
 gradient		3	NN	3
 gradients		1	NNS	1
-gradual			10	JJ	10
+gradual			11	JJ	11
 gradually		16	RB	16
 graduate		13	JJ	3	NN	7	VB	3
 graduate-student	1	NN	1
 graduated		6	VBD	3	VBN	3
 graduates		6	NNS	5	VBZ	1
 graduation		3	NN	3
-graffiti		2	NN	1	NNS	1
+graffiti		2	NNS	2
 graft			1	VB	1
 grafted			5	VBN	5
 grafting		1	VBG	1
 grafts			1	NNS	1
 grain			50	NN	50
-grains			14	NNS	14
+grains			15	NNS	15
 grainy			5	JJ	5
 gram			2	NN	2
-grammar			7	NN	7
+grammar			8	NN	8
 grammatical		2	JJ	2
 gramophone		2	NN	2
 grams			1	NNS	1
 granary			1	NN	1
 grand			47	JJ	45	NN	2
 grand-jury		3	JJ	2	NN	1
-grandchildren		5	NNS	5
+grandchildren		5	NN	1	NNS	4
 grandest		2	JJS	2
 grandeur		2	NN	2
-grandfather		15	NN	15
+grandfather		16	NN	16
 grandfathers		2	NNS	2
 grandiloquent		2	JJ	2
 grandiose		3	JJ	3
 grandly			1	RB	1
 grandma			1	NN	1
 grandmasters		1	NNS	1
-grandmother		9	NN	9
+grandmother		8	NN	8
 grandmotherly		1	JJ	1
 grandmothers		1	NNS	1
 grandparents		7	NNS	7
@@ -33112,10 +33272,10 @@ grandson		5	NN	5
 grandsons		1	NNS	1
 grandstander		1	NN	1
 granite			9	NN	9
-grant			33	NN	16	VB	14	VBP	3
+grant			34	NN	18	VB	13	VBP	3
 granted			18	VBD	6	VBN	12
 granting		4	VBG	4
-grants			16	NNS	15	VBZ	1
+grants			17	NNS	16	VBZ	1
 granular		1	JJ	1
 grapes			5	NNS	5
 grapevine		5	NN	5
@@ -33128,9 +33288,9 @@ grapple			1	VB	1
 grappled		3	VBD	3
 grapples		1	VBZ	1
 grasp			22	NN	14	VB	8
-grasped			8	VBD	6	VBN	2
+grasped			9	VBD	7	VBN	2
 grasping		4	VBG	4
-grass			54	NN	54
+grass			55	NN	55
 grass-roots		2	JJ	2
 grassed			1	VBN	1
 grasses			2	NNS	2
@@ -33138,7 +33298,7 @@ grassland		1	NN	1
 grassy			7	JJ	7
 grate			4	NN	4
 grated			7	JJ	3	VBD	2	VBN	2
-grateful		8	JJ	8
+grateful		9	JJ	9
 gratification		2	NN	2
 gratified		5	JJ	5
 gratify			1	VB	1
@@ -33151,18 +33311,19 @@ gratuities		1	NNS	1
 gratuitous		4	JJ	4
 gratuitously		2	RB	2
 gratuity		1	NN	1
-grave			23	JJ	12	NN	9	RB	2
+grave			22	JJ	12	NN	10
 gravel			9	JJ	6	NN	3
 gravelled		2	JJ	2
 gravelly		2	JJ	2
 gravely			2	RB	2
 graver			1	JJR	1
-graves			3	NNS	3
+graves			4	NNS	4
 graveside		1	NN	1
 gravest			3	JJS	3
 gravestone		1	NN	1
 gravestones		1	NNS	1
 graveyard		7	NN	7
+graveyards		1	NNS	1
 gravitational		1	JJ	1
 gravity			7	NN	7
 gravy			5	NN	5
@@ -33170,24 +33331,24 @@ gray			12	JJ	12
 gray-beard		1	JJ	1
 gray-flannel		1	NN	1
 graying			2	NN	1	VBG	1
-graze			4	NN	1	VBP	3
+graze			5	NN	1	VBP	4
 grazed			6	VBD	6
 grazes			2	NNS	1	VBZ	1
-grazing			2	NN	2
+grazing			4	NN	4
 grease			6	NN	5	VB	1
 greasy			4	JJ	4
-great			370	JJ	367	RB	3
+great			388	JJ	385	RB	3
 great-grandchildren	1	NNS	1
 great-grandfather	2	NN	2
-greater			81	JJR	81
-greatest		46	JJS	46
+greater			84	JJR	84
+greatest		48	JJS	48
 greatly			29	RB	29
 greatness		1	NN	1
 greats			4	NNS	4
 greed			7	NN	7
 greedily		1	RB	1
-greedy			5	JJ	5
-green			89	JJ	78	NN	11
+greedy			6	JJ	6
+green			95	JJ	83	NN	12
 greener			1	JJR	1
 greenery		1	NN	1
 greengrocer		1	NN	1
@@ -33202,16 +33363,16 @@ greenish-coloured	1	JJ	1
 greenmailer		1	NN	1
 greens			5	NNS	5
 greet			5	VB	5
-greeted			30	VBD	15	VBN	15
-greeting		4	NN	3	VBG	1
-greetings		3	NNS	3
+greeted			31	VBD	17	VBN	14
+greeting		6	NN	4	VBG	2
+greetings		4	NNS	4
 greets			1	VBZ	1
 gregarious		1	JJ	1
 gremlins		1	NNS	1
 grenade			5	NN	5
 grenades		1	NNS	1
 grew			85	VBD	85
-grey			73	JJ	43	NN	27	RB	3
+grey			73	JJ	40	NN	30	RB	3
 grey-brown		1	JJ	1
 grey-green		1	JJ	1
 greying			1	JJ	1
@@ -33239,7 +33400,7 @@ grievously		1	RB	1
 grill			10	NN	4	VBP	6
 grille			4	JJ	1	NN	3
 grilled			4	JJ	4
-grilling		2	JJ	1	NN	1
+grilling		2	NN	1	VBG	1
 grim			25	JJ	25
 grim-faced		1	JJ	1
 grimaced		4	VBD	4
@@ -33247,14 +33408,14 @@ grimaces		1	NNS	1
 grimacing		1	JJ	1
 grime			1	NN	1
 grimly			1	RB	1
-grimy			4	JJ	3	NN	1
-grin			16	NN	16
+grimy			5	JJ	5
+grin			17	NN	17
 grind			3	VB	3
 grinders		1	NNS	1
 grinding		7	VBG	7
 grinds			2	VBZ	2
 grinned			8	VBD	7	VBN	1
-grinning		6	VBG	6
+grinning		8	VBG	8
 grip			25	NN	25
 gripes			6	NNS	4	VBZ	2
 griping			1	VBG	1
@@ -33268,7 +33429,7 @@ grizzles		1	VBZ	1
 grizzling		1	VBG	1
 grizzly			1	JJ	1
 groan			5	NN	4	VB	1
-groaned			9	VBD	4	VBN	5
+groaned			10	VBD	5	VBN	5
 groaning		3	NN	1	VBG	2
 groans			8	NNS	3	VBZ	5
 grocer			2	NN	2
@@ -33298,43 +33459,43 @@ grotty			2	JJ	2
 grouch			1	NN	1
 grouching		1	VBG	1
 grouchy			1	JJ	1
-ground			111	NN	107	VB	2	VBD	2
+ground			114	NN	110	VB	2	VBD	2
 ground-based		2	JJ	2
 groundball		1	NN	1
 grounded		5	VBN	5
 grounding		1	NN	1
 groundless		2	JJ	2
 groundnuts		2	NNS	2
-grounds			33	NNS	33
+grounds			34	NNS	34
 grounds-care		1	JJ	1
 groundswell		1	NN	1
 groundthe		1	JJ	1
 groundup		1	JJ	1
 groundwork		4	NN	4
-group			539	NN	536	VB	3
+group			548	NN	545	VB	3
 grouped			1	VBN	1
 grouping		2	NN	2
-groupings		2	NNS	2
-groups			144	NNS	144
+groupings		3	NNS	3
+groups			153	NNS	153
 grouse			5	NN	5
 groused			2	VBD	2
-grove			3	NN	3
+grove			4	NN	4
 grovelling		1	VBG	1
 groves			2	NNS	2
-grow			72	VB	60	VBP	12
+grow			75	VB	60	VBP	15
 grower			10	NN	10
 growers			14	NNS	14
-growing			155	JJ	2	NN	4	VBG	149
-growl			5	NN	3	VB	2
+growing			156	JJ	2	NN	4	VBG	150
+growl			5	NN	4	VB	1
 growled			3	VBD	1	VBN	2
 growling		2	NN	1	VBG	1
 growls			2	NNS	1	VBZ	1
-grown			44	JJ	2	VBN	42
-grown-up		5	JJ	4	NN	1
+grown			45	JJ	2	VBN	43
+grown-up		5	JJ	3	NN	2
 grown-ups		2	NNS	2
 grownups		2	NNS	2
-grows			12	VBZ	12
-growth			311	NN	311
+grows			13	VBZ	13
+growth			314	NN	314
 growth-and-income	1	JJ	1
 growth-controlling	1	JJ	1
 growth-oriented		1	JJ	1
@@ -33342,11 +33503,11 @@ growth-stock		1	JJ	1
 growth-suppressing	1	JJ	1
 growths			7	NNS	7
 grub			2	NN	2
-grubbier		1	JJ	1
+grubbier		1	JJR	1
 grubbiest		1	JJS	1
-grubbing		4	NN	3	VBG	1
-grubby			5	JJ	4	NN	1
-grubs			2	NNS	1	VBZ	1
+grubbing		4	VBG	4
+grubby			5	JJ	5
+grubs			3	NNS	2	VBZ	1
 grudge			6	NN	4	VB	1	VBP	1
 grudged			1	VBD	1
 grudging		5	JJ	5
@@ -33358,25 +33519,25 @@ gruff			5	JJ	5
 grumble			5	NN	2	VBP	3
 grumbled		4	VBD	4
 grumbles		2	NNS	2
-grumbling		4	NN	2	VBG	2
+grumbling		5	NN	2	VBG	3
 grumpy			2	JJ	2
 grunt			6	NN	6
 grunted			5	VBD	2	VBN	3
 grunts			1	NNS	1
 guano			1	NN	1
 guarantee		28	NN	17	VB	8	VBP	3
-guaranteed		26	JJ	4	VBD	2	VBN	20
+guaranteed		27	JJ	5	VBD	2	VBN	20
 guaranteeing		1	VBG	1
 guarantees		36	NNS	32	VBZ	4
-guard			30	NN	23	VB	6	VBP	1
+guard			31	NN	24	VB	6	VBP	1
 guard-rail		1	NN	1
 guarded			11	JJ	1	VBD	4	VBN	6
 guardedly		1	RB	1
 guardian		2	NN	2
 guardians		2	NNS	2
 guarding		3	VBG	3
-guards			17	NNS	15	VBZ	2
-guardsmen		2	NNS	2
+guards			18	NNS	16	VBZ	2
+guardsmen		2	NN	1	NNS	1
 gubernatorial		5	JJ	5
 guerilla		1	NN	1
 guerillas		1	NNS	1
@@ -33384,22 +33545,22 @@ guerrilla		7	NN	7
 guerrilla-controlled	1	JJ	1
 guerrilla-held		1	JJ	1
 guerrillas		13	NNS	13
-guess			21	NN	5	VB	7	VBP	9
+guess			21	NN	7	VB	7	VBP	7
 guess-work		1	NN	1
-guess?			1	VBZ	1
-guessed			8	VBD	8
+guess?			1	NN	1
+guessed			10	VBD	10
 guesses			3	NNS	3
 guest			22	NN	22
 guesting		1	VBG	1
-guests			37	NNS	37
+guests			38	NNS	38
 guffaw			1	NN	1
 guffawed		1	VBD	1
-guidance		5	NN	5
-guide			25	NN	17	VB	8
+guidance		7	NN	7
+guide			28	NN	18	VB	10
 guidebook		2	NN	2
 guided			7	VBD	2	VBN	5
 guidelines		44	NNS	44
-guides			2	NNS	2
+guides			3	NNS	3
 guiding			1	VBG	1
 guild			8	NN	8
 guilder			2	NN	2
@@ -33409,10 +33570,11 @@ guillotine		1	NN	1
 guillotined		1	VBN	1
 guilt			18	NN	18
 guiltless		1	JJ	1
-guilty			64	JJ	64
+guilty			65	JJ	65
 guinea			5	NN	5
 guineas			1	NNS	1
-guise			4	NN	4
+guise			6	NN	6
+guises			2	NNS	2
 guitar			12	NN	12
 guitar?			1	NN	1
 gulf			11	NN	11
@@ -33428,11 +33590,12 @@ gum			6	NN	6
 gummed			1	VBD	1
 gummy			1	JJ	1
 gums			1	NNS	1
-gun			49	NN	49
+gun			56	NN	56
 gun-carrying		1	JJ	1
 gun-shy			1	JJ	1
 gunboat			1	NN	1
 gunboats		1	NNS	1
+gunfight		1	NN	1
 gunfire			4	NN	4
 gung-ho			1	JJ	1
 gunman			3	NN	3
@@ -33440,7 +33603,7 @@ gunmen			3	NNS	3
 gunned			3	VBN	3
 gunners			1	NNS	1
 gunny			1	NN	1
-guns			24	NNS	24
+guns			26	NNS	26
 gunship			2	NN	2
 gunshots		1	NNS	1
 gunsmiths		1	JJ	1
@@ -33452,11 +33615,11 @@ gush			3	NN	2	VBP	1
 gushed			2	VBD	2
 gushing			1	VBG	1
 gusset			1	NN	1
-gust			4	NN	4
+gust			6	NN	6
 gusted			2	VBD	2
 gusto			2	NN	2
 gusts			1	NNS	1
-gut			6	NN	6
+gut			7	NN	7
 gut-wrenching		2	JJ	2
 gutless			1	JJ	1
 guts			4	NNS	4
@@ -33480,7 +33643,7 @@ gyrating		3	VBG	3
 gyration		1	NN	1
 gyrations		16	NNS	16
 h			1	NN	1
-habit			26	NN	26
+habit			31	NN	31
 habitat			4	NN	4
 habitations		2	NNS	2
 habitats		1	NNS	1
@@ -33494,9 +33657,9 @@ hacking			3	JJ	1	VBG	2
 hackles			1	NNS	1
 hackneyed		1	JJ	1
 hacks			1	NNS	1
-had			4470	VBD	4397	VBN	73
+had			4679	VBD	4605	VBN	74
 haddock			2	NN	2
-hadnt			31	NN	7	VBP	24
+hadnt			34	NN	7	VBP	27
 haemoglobin		1	NN	1
 haemorrhage		3	NN	2	VB	1
 hag			1	NN	1
@@ -33508,11 +33671,11 @@ hail			4	NN	4
 hailed			12	VBD	8	VBN	4
 hailing			1	VBG	1
 hailstones		2	NNS	2
-hair			220	NN	220
+hair			225	NN	225
 hair-do			1	NN	1
 hair-raising		3	JJ	3
-hairbrushes		1	VBZ	1
-haircut			5	NN	5
+hairbrushes		1	NNS	1
+haircut			5	JJ	1	NN	3	VBN	1
 haircuts		3	NNS	3
 hairdo			1	NN	1
 hairdos			1	NNS	1
@@ -33522,15 +33685,16 @@ hairdressing		1	VBG	1
 hairdryer		1	NN	1
 hairline		2	JJ	2
 hairnet			1	NN	1
-hairs			8	NNS	8
+hairs			9	JJ	1	NNS	8
 hairstyle		1	NN	1
 hairy			9	JJ	9
 halcyon			1	JJ	1
-half			291	DT	32	JJ	11	NN	136	PDT	105	RB	7
+half			295	DT	32	JJ	11	NN	139	PDT	107	RB	6
 half-acre		1	JJ	1
 half-an-hour		2	NN	2
 half-baked		2	JJ	2
 half-blind		1	JJ	1
+half-built		1	JJ	1
 half-century		3	NN	3
 half-chewed		1	VBN	1
 half-closed		1	JJ	1
@@ -33552,24 +33716,24 @@ half-price		4	JJ	3	RB	1
 half-sister		1	NN	1
 half-starved		1	JJ	1
 half-time		4	NN	4
-half-way		3	JJ	3
+half-way		4	JJ	4
 half-year		1	NN	1
 halfhearted		1	JJ	1
 halfpenny		2	NN	2
 halfway			7	RB	7
-hall			59	NN	59
+hall			63	NN	63
 hallmark		4	NN	4
 halls			11	NNS	11
 hallucinate		1	VB	1
-hallucinating		1	JJ	1
+hallucinating		1	VBG	1
 hallucination		1	NN	1
 hallucinations		1	NNS	1
 hallucinatory		2	JJ	2
 hallway			7	NN	7
 hallways		1	NNS	1
 halo			5	NN	5
-halt			30	NN	21	VB	9
-halted			16	VBD	8	VBN	8
+halt			31	NN	21	VB	10
+halted			19	VBD	10	VBN	9
 halted.			1	VBN	1
 halter			2	NN	2
 halting			3	JJ	2	VBG	1
@@ -33578,24 +33742,24 @@ halts			4	NNS	4
 halve			4	VB	4
 halved			5	JJ	1	VBD	2	VBN	2
 halves			4	NNS	3	VBZ	1
-ham			4	JJ	1	NN	3
+ham			5	JJ	1	NN	4
 ham-fisted		1	JJ	1
 ham-handed		1	JJ	1
 hamburger		3	NN	3
 hamburgers		5	NNS	5
-hammer			12	NN	6	VB	6
+hammer			14	NN	8	VB	6
 hammered		10	VBN	10
 hammering		5	NN	1	VBG	4
 hamming			1	VBG	1
 hammock			1	NN	1
-hamper			4	NN	2	VB	2
-hampered		6	VBD	1	VBN	5
+hamper			5	NN	2	VB	3
+hampered		9	VBD	1	VBN	8
 hampering		1	VBG	1
 hams			2	NNS	2
 hamsters		2	NNS	2
 hamstring		1	VB	1
 hamstrung		3	JJ	1	VBP	2
-hand			253	NN	246	VB	7
+hand			265	NN	258	VB	7
 hand-carved		2	JJ	2
 hand-held		5	JJ	5
 hand-hot		1	JJ	1
@@ -33605,6 +33769,7 @@ hand-picked		1	JJ	1
 hand-sewn		1	JJ	1
 hand-to-hand		1	JJ	1
 hand-wringing		1	NN	1
+hand?I			1	NN	1
 handbag			6	NN	6
 handbags		2	NNS	2
 handbills		1	NNS	1
@@ -33615,35 +33780,35 @@ handcuffed		2	VBN	2
 handcuffs		3	NNS	3
 handed			35	VBD	25	VBN	10
 handful			24	NN	24
-handfuls		3	NNS	3
+handfuls		4	NNS	4
 handheld		1	JJ	1
 handicap		6	NN	6
 handicap?Fifteen	1	NN	1
-handicapped		15	JJ	5	NNS	5	VBN	5
+handicapped		15	JJ	7	NNS	5	VBN	3
 handicaps		3	NNS	3
 handily			1	RB	1
 handing			1	VBG	1
 handiwork		1	NN	1
-handkerchief		14	JJ	2	NN	12
+handkerchief		15	JJ	2	NN	13
 handkerchiefs		1	NNS	1
-handle			50	NN	3	VB	45	VBP	2
+handle			52	NN	3	VB	47	VBP	2
 handlebars		2	NNS	2
 handled			31	VBD	14	VBN	17
 handlers		4	NNS	4
-handles			19	NNS	1	VBZ	18
+handles			21	NNS	1	VBZ	20
 handling		36	NN	23	VBG	13
 handmade		3	JJ	3
 handout			5	NN	5
 handouts		4	NNS	4
-handrail		1	NN	1
+handrail		2	NN	2
 handrails		1	NNS	1
-hands			171	NNS	168	VBZ	3
+hands			186	NNS	183	VBZ	3
 hands-on		2	JJ	2
 handshake		7	NN	7
-handsome		23	JJ	23
+handsome		24	JJ	24
 handsomely		1	RB	1
 handstands		1	NNS	1
-handwriting		11	NN	11
+handwriting		12	NN	12
 handwritten		1	JJ	1
 handy			9	JJ	9
 hang			16	VB	12	VBP	4
@@ -33654,7 +33819,7 @@ hang-ups		1	NNS	1
 hanged			3	VBN	3
 hanger			2	NN	2
 hangers-on		1	NN	1
-hanging			32	NN	3	VBG	29
+hanging			33	NN	3	VBG	30
 hanging-and-flogging	1	VBG	1
 hangout			1	NN	1
 hangouts		1	NNS	1
@@ -33663,22 +33828,24 @@ hangovers		1	NNS	1
 hangs			12	VBZ	12
 hank			1	NN	1
 hanker			1	VB	1
-hankered		2	VBD	2
+hankered		2	VBD	1	VBN	1
 hankering		1	NN	1
 haphazard		2	JJ	2
 haphazardly		1	RB	1
 hapless			2	JJ	2
-happen			55	VB	49	VBP	6
-happened		85	VBD	52	VBN	33
+happen			57	VB	51	VBP	6
+happened		95	VBD	59	VBN	36
 happened?Its		1	VBZ	1
-happening		28	VBG	28
+happening		30	VBG	30
 happenings		3	NNS	3
-happens			37	VBZ	37
+happens			39	VBZ	39
 happenstance		1	NN	1
 happier			4	JJR	4
+happiest		1	JJS	1
 happily			11	RB	11
 happiness		15	NN	15
-happy			55	JJ	55
+happiness?		1	JJ	1
+happy			64	JJ	64
 harangue		2	NN	1	VB	1
 harangued		1	VBD	1
 harangues		1	NNS	1
@@ -33691,11 +33858,11 @@ harbingers		1	NNS	1
 harbor			2	NN	1	VBP	1
 harboring		1	VBG	1
 harbors			2	NNS	1	VBZ	1
-harbour			13	JJ	2	NN	10	VB	1
+harbour			14	JJ	3	NN	10	VB	1
 harboured		2	VBD	2
 harbouring		3	VBG	3
 harbours		2	NNS	2
-hard			220	JJ	167	NN	2	RB	51
+hard			227	IN	1	JJ	173	NN	2	RB	51
 hard-boiled		1	JJ	1
 hard-charging		2	JJ	1	NN	1
 hard-drinking		2	JJ	2
@@ -33706,6 +33873,7 @@ hard-hitting		1	JJ	1
 hard-line		2	JJ	2
 hard-pressed		1	JJ	1
 hard-wearing		1	JJ	1
+hard-working		1	NN	1
 hardback		3	NN	3
 hardcore		1	NN	1
 hardcover		1	NN	1
@@ -33713,12 +33881,12 @@ harddisk		1	NN	1
 harden			3	VB	3
 hardened		4	JJ	1	VBN	3
 hardening		3	NN	1	VBG	2
-hardens			1	NNS	1
-harder			20	JJR	12	RBR	8
+hardens			1	VBZ	1
+harder			22	JJR	14	RBR	8
 hardest			7	JJS	4	RBS	3
 hardest-hit		1	JJ	1
 hardliners		1	NNS	1
-hardly			61	RB	61
+hardly			66	RB	66
 hardness		1	NN	1
 hardship		5	JJ	1	NN	4
 hardships		2	NNS	2
@@ -33732,7 +33900,7 @@ hared			1	VBD	1
 harem			2	NN	2
 harm			20	NN	10	VB	8	VBP	2
 harmed			3	VBN	3
-harmful			13	JJ	13
+harmful			14	JJ	14
 harmless		10	JJ	10
 harmonic		1	JJ	1
 harmonics		1	NNS	1
@@ -33741,7 +33909,7 @@ harmonious		5	JJ	5
 harmonising		1	VBG	1
 harmonize		1	VB	1
 harmonized		1	VBN	1
-harmonizing		1	NN	1
+harmonizing		1	VBG	1
 harmony			18	NN	18
 harms			3	NNS	1	VBZ	2
 harness			4	NN	3	VB	1
@@ -33750,25 +33918,25 @@ harped			1	VBD	1
 harping			1	VBG	1
 harpoon			1	NN	1
 harpoons		1	NNS	1
-harpsichord		2	JJ	1	NN	1
+harpsichord		2	NN	2
 harried			2	VBN	2
 harrowing		6	JJ	6
-harrying		2	JJ	1	VBG	1
-harsh			28	JJ	28
+harrying		2	VBG	2
+harsh			29	JJ	29
 harsher			2	JJR	2
 harshest		1	JJS	1
 harshly			4	RB	4
 harshness		1	NN	1
-harvest			21	NN	21
+harvest			22	NN	22
 harvested		8	VBN	8
 harvesters		2	NNS	2
-harvesting		3	NN	3
-has			3293	VBN	1	VBP	1	VBZ	3291
+harvesting		3	VBG	3
+has			3362	VBN	1	VBP	1	VBZ	3360
 has-been		1	NN	1
 hashing			1	VBG	1
 hashish			1	NN	1
-hasnt			17	JJ	1	NN	6	VB	3	VBP	7
-hassle			3	NN	3
+hasnt			18	JJ	1	NN	6	VB	3	VBP	8
+hassle			4	NN	4
 hassles			1	NNS	1
 hassling		1	VBG	1
 haste			2	NN	2
@@ -33776,15 +33944,15 @@ hasten			2	VB	2
 hastened		4	VBN	4
 hastily			6	RB	6
 hasty			8	JJ	8
-hat			45	NN	45
+hat			46	NN	46
 hatch			10	NN	1	VB	9
 hatchback		1	NN	1
 hatched			1	VBN	1
 hatches			1	VBZ	1
 hatchet			1	NN	1
 hatching		2	VBG	2
-hate			38	NN	8	VB	6	VBP	24
-hated			27	VBN	27
+hate			42	NN	5	VB	8	VBP	29
+hated			30	VBN	30
 hateful			2	JJ	2
 hates			4	VBZ	4
 hatred			15	NN	15
@@ -33795,21 +33963,21 @@ haul			9	NN	5	VB	4
 hauled			7	VBD	7
 hauling			2	VBG	2
 haunches		3	NNS	2	VBZ	1
-haunt			7	NN	1	VB	4	VBP	2
+haunt			8	NN	1	VB	7
 haunted			10	JJ	2	VBN	8
 haunting		6	JJ	2	NN	3	VBG	1
 haunts			8	NNS	7	VBZ	1
-have			3807	JJ	1	VB	1273	VBD	1	VBP	2532
-have!			1	VBP	1
+have			3941	JJ	1	VB	1320	VBD	1	VBP	2619
+have!			1	NN	1
 have-not		1	JJ	1
 have-nots		2	NNS	2
 haven			7	NN	7
 havens			1	NNS	1
-havent			53	JJ	2	NN	3	VB	2	VBP	46
+havent			59	JJ	2	NN	3	VB	2	VBP	52
 haves			1	NNS	1
-having			191	VBG	191
+having			200	VBG	200
 havoc			5	NN	5
-haw			1	NN	1
+haw			1	UH	1
 hawk			5	NN	5
 hawked			1	JJ	1
 hawkers			1	NNS	1
@@ -33820,10 +33988,10 @@ hawthorn		5	NN	5
 hay			6	NN	6
 hay-cart		1	NN	1
 haywire			2	JJ	2
-hazard			6	NN	5	VB	1
+hazard			7	NN	6	VB	1
 hazarded.Much		1	NN	1
 hazarding		1	VBG	1
-hazardous		10	JJ	10
+hazardous		11	JJ	11
 hazardous-waste		7	NN	7
 hazardous-waste-site	1	NN	1
 hazards			8	NNS	8
@@ -33831,12 +33999,12 @@ haze			5	NN	5
 hazel			1	NN	1
 hazelnut		1	NN	1
 hazy			8	JJ	8
-he			3180	PRP	3180
+he			3305	PRP	3305
 he-goes-or-I-go		1	JJ	1
 he?			1	JJ	1
 he?About		1	NN	1
 he?Isnt			1	NN	1
-head			312	JJ	6	NN	285	VB	15	VBP	6
+head			325	JJ	6	NN	297	VB	15	VBP	7
 head-butting		1	JJ	1
 head-dresses		1	NNS	1
 head-first		2	RB	2
@@ -33845,20 +34013,20 @@ head-hunting		1	NN	1
 head-on			7	JJ	3	NN	1	RB	3
 head-start		1	NN	1
 head?			1	NN	1
-headache		11	NN	11
+headache		13	NN	13
 headaches		8	NNS	8
 headband		1	NN	1
 headcount-control	1	NN	1
 headdress		1	JJ	1
 headed			48	VBD	12	VBN	36
 header			1	NN	1
-heading			18	NN	2	VBG	16
+heading			19	NN	2	VBG	17
 headings		1	NNS	1
 headlamp		1	NN	1
 headland		1	NN	1
 headlands		2	NNS	2
-headlight		4	JJ	1	NN	3
-headlights		5	NNS	5
+headlight		4	NN	4
+headlights		6	NNS	6
 headline		13	NN	13
 headline-grabbing	1	JJ	1
 headlined		3	VBD	2	VBN	1
@@ -33869,7 +34037,7 @@ headmaster		6	NN	6
 headquarter		1	JJ	1
 headquarters		47	NN	33	NNS	14
 headrests		1	NNS	1
-heads			61	NNS	38	VBZ	23
+heads			62	NNS	37	VBZ	25
 headscarf		1	NN	1
 headships		1	NNS	1
 headstrong		3	JJ	3
@@ -33880,7 +34048,7 @@ heady			8	JJ	8
 heal			5	VB	5
 healed			3	VBN	3
 healing			9	NN	6	VBG	3
-health			159	NN	159
+health			162	NN	162
 health-and-benefits	1	JJ	1
 health-benefits		1	JJ	1
 health-care		27	JJ	4	NN	23
@@ -33894,17 +34062,17 @@ health-products		1	NNS	1
 healthier		1	JJR	1
 healthily		2	RB	2
 healthy			62	JJ	62
-heap			10	NN	10
+heap			13	NN	13
 heaped			9	JJ	3	VBD	3	VBN	3
 heaps			3	NNS	3
-hear			131	VB	109	VBP	22
-heard			162	VBD	99	VBN	63
+hear			142	VB	117	VBP	25
+heard			182	VBD	115	VBN	67
 hearers			1	NNS	1
-hearing			51	NN	42	VBG	9
+hearing			53	NN	44	VBG	9
 hearings		18	NNS	18
 hears			4	VBZ	4
 hearsay			1	JJ	1
-heart			128	NN	128
+heart			140	NN	140
 heart-attack		1	NN	1
 heart-pounding		1	JJ	1
 heart-shaped		1	JJ	1
@@ -33917,22 +34085,23 @@ heartburn		1	NN	1
 heartened		3	VBN	3
 hearth			4	JJ	1	NN	3
 heartier		1	JJR	1
-heartily		2	RB	2
+heartiest		1	JJS	1
+heartily		3	RB	3
 heartland		4	NN	4
 heartlands		1	NNS	1
 heartless		2	JJ	2
-hearts			6	NNS	6
+hearts			9	NNS	9
 heartwarming		1	JJ	1
 heartwarmingly		1	RB	1
 hearty			3	JJ	3
-heat			80	NN	74	VB	6
+heat			84	NN	79	VB	5
 heat-treatment		1	NN	1
 heat-using		1	JJ	1
-heated			14	JJ	11	VBN	3
+heated			15	JJ	11	VBN	4
 heatedly		2	RB	2
-heater			6	NN	6
+heater			7	NN	7
 heaters			3	NNS	3
-heathen			1	JJ	1
+heathen			1	NN	1
 heathens		1	NNS	1
 heather			1	NN	1
 heather-covered		1	JJ	1
@@ -33940,7 +34109,7 @@ heating			39	NN	33	VBG	6
 heats			3	VBZ	3
 heave			1	NN	1
 heaved			3	VBD	2	VBN	1
-heaven			6	NN	6
+heaven			6	NN	5	NNP	1
 heaven-sent		1	JJ	1
 heaven?			1	VB	1
 heavenly		3	JJ	3
@@ -33949,8 +34118,8 @@ heavier			8	JJR	7	RBR	1
 heavier-than-normal	1	JJ	1
 heavies			1	NNS	1
 heaviest		4	JJS	4
-heavily			80	RB	80
-heavy			172	JJ	167	NN	5
+heavily			84	RB	84
+heavy			176	JJ	170	NN	6
 heavy-crude		1	NN	1
 heavy-duty		1	JJ	1
 heavy-handed		1	JJ	1
@@ -33966,7 +34135,7 @@ heckling		1	NN	1
 hectares		2	NNS	2
 hectic			4	JJ	4
 hectored		1	VBN	1
-hed			25	JJ	4	VBD	15	VBN	6
+hed			28	JJ	5	VBD	17	VBN	6
 hedge			20	JJ	1	NN	13	VB	6
 hedged			3	VBN	3
 hedgerows		3	NNS	3
@@ -33981,11 +34150,11 @@ heel			3	NN	3
 heeled			1	VBN	1
 heels			16	NNS	16
 heftier			1	JJR	1
-hefty			16	JJ	16
+hefty			17	JJ	17
 hegemony		4	NN	4
 heifers			1	NNS	1
 heighborhoods		1	NNS	1
-height			12	NN	12
+height			13	NN	13
 heighten		4	VB	4
 heightened		8	JJ	2	VBN	6
 heightens		1	VBZ	1
@@ -33995,11 +34164,11 @@ heir			10	NN	10
 heiress			3	NN	3
 heirlooms		1	NNS	1
 heirs			2	NNS	2
-held			263	JJ	12	VBD	105	VBN	146
-helicopter		18	NN	18
+held			267	JJ	12	VBD	109	VBN	146
+helicopter		19	NN	19
 helicopters		5	NNS	5
 helix			1	NN	1
-hell			24	NN	24
+hell			25	NN	25
 hell!Oh			1	VB	1
 hell-bent		2	JJ	2
 hellish			3	JJ	2	RB	1
@@ -34007,15 +34176,16 @@ hellishly		2	RB	2
 hello			1	UH	1
 helm			6	NN	6
 helmet			2	NN	2
-helmets			2	NNS	2
-help			329	NN	63	VB	246	VBP	20
-helped			114	VBD	77	VBN	37
+helmets			3	NNS	3
+help			347	NN	65	VB	262	VBP	20
+help?			1	NNP	1
+helped			118	VBD	80	VBN	38
 helpers			2	NNS	2
-helpful			16	JJ	16
-helping			42	NN	1	VBG	41
+helpful			19	JJ	19
+helping			43	NN	1	VBG	42
 helpings		1	NNS	1
 helpless		13	JJ	13
-helplessly		4	RB	4
+helplessly		5	RB	5
 helps			27	VBZ	27
 helter-skelter		3	JJ	2	RB	1
 hem			2	NN	2
@@ -34025,16 +34195,16 @@ hemoglobin		4	NN	4
 hemorrhage		1	NN	1
 hemorrhaging		5	JJ	1	NN	1	VBG	3
 hemorrhoids		2	NNS	2
-hen			4	NN	3	NNS	1
+hen			5	NN	4	NNS	1
 hence			8	RB	8
-henchmen		1	NNS	1
+henchmen		1	NN	1
 hennaed			1	VBN	1
 henpecked		1	JJ	1
 hens			3	NNS	3
-her			2747	PRP	679	PRP$	2068
+her			2919	PPS	2	PRP	760	PRP$	2157
 her.			2	CD	1	VBN	1
 her?			1	NNP	1
-her?..			1	CD	1
+her?..			1	CC	1
 herald			4	NN	2	VB	2
 heralded		6	VBN	6
 herb			4	NN	4
@@ -34048,16 +34218,16 @@ herded			4	VBD	2	VBN	2
 herding			1	VBG	1
 herds			7	NNS	7
 herdsman		1	NN	1
-here			350	RB	350
-here!			3	CD	1	NNP	1	NNS	1
-here?			4	JJ	1	NN	1	NNP	1	NNS	1
+here			378	RB	378
+here!			4	JJ	1	NNP	2	NNS	1
+here?			5	JJ	1	NN	2	NNP	1	NNS	1
 hereabouts		1	RB	1
 hereafter		1	NN	1
 hereby			2	RB	2
 hereditary		6	JJ	6
-heredity		2	NN	2
+heredity		3	NN	3
 hereinafter		1	RB	1
-heres			1	VBZ	1
+heres			1	FW	1
 heresy			1	NN	1
 heretic			1	NN	1
 heretical		1	JJ	1
@@ -34065,10 +34235,10 @@ heretics		2	NNS	2
 herewith		1	RB	1
 herfantastic		1	JJ	1
 heritage		6	NN	6
-hermit			1	JJ	1
+hermit			2	JJ	1	NN	1
 herniated		1	VBN	1
-hero			20	NN	20
-heroes			14	NNS	14
+hero			23	NN	23
+heroes			15	NNS	15
 heroic			9	JJ	9
 heroin			8	NN	8
 heroine			6	NN	6
@@ -34076,12 +34246,12 @@ heroism			2	NN	2
 herons			1	NNS	1
 herring			2	NN	2
 hers			5	PRP	5
-herself			151	PRP	151
+herself			153	PRP	153
 hershe			1	NN	1
 hershell		1	NN	1
-hershes			1	VBZ	1
+hershes			1	NNS	1
 herwas			1	NNS	1
-hes			66	NNS	21	VBZ	45
+hes			71	NNS	24	VBZ	47
 hesitant		5	JJ	5
 hesitantly		1	RB	1
 hesitate		9	VB	5	VBP	4
@@ -34099,30 +34269,31 @@ hews			1	VBZ	1
 hexagon			1	NN	1
 heyday			1	NN	1
 hi			1	FW	1
-hi-fi			3	NN	2	NNS	1
+hi-fi			3	NN	3
 hi-tech			1	JJ	1
 hiatus			1	NN	1
-hibernate		1	VB	1
+hibernate		2	JJ	1	VB	1
 hibernated		1	VBD	1
 hiccup			1	NN	1
 hiccupped		1	VBD	1
 hiccups			1	NNS	1
 hid			5	VBD	5
 hidden			22	JJ	11	VBN	11
-hide			21	VB	21
-hide-and-seek		1	NN	1
+hide			24	VB	24
+hide-and-seek		1	JJ	1
 hideaway		2	NN	2
 hidebound		2	JJ	2
 hideous			8	JJ	8
 hideously		5	RB	5
 hides			2	NNS	2
 hiding			9	NN	5	VBG	4
+hiding-place		1	NN	1
 hierarchical		1	JJ	1
 hierarchies		1	NNS	1
 hierarchy		6	NN	6
 hieroglyphics		1	NNS	1
 higgledy-piggledy	3	JJ	1	RB	2
-high			390	JJ	360	NN	16	RB	14
+high			415	JJ	385	NN	16	RB	14
 high-altitude		1	JJ	1
 high-backed		1	JJ	1
 high-balance		1	JJ	1
@@ -34135,7 +34306,7 @@ high-energy		1	JJ	1
 high-fidelity		1	NN	1
 high-flyers		1	NNS	1
 high-flying		3	JJ	3
-high-grade		3	JJ	3
+high-grade		4	JJ	4
 high-growth		1	NN	1
 high-handed		2	JJ	2
 high-heeled		2	JJ	2
@@ -34156,7 +34327,7 @@ high-powered		3	JJ	3
 high-priced		7	JJ	7
 high-production		2	JJ	2
 high-profile		4	JJ	4
-high-quality		9	JJ	8	NN	1
+high-quality		10	JJ	9	NN	1
 high-ranking		2	JJ	2
 high-rate		1	JJ	1
 high-rise		4	JJ	4
@@ -34184,12 +34355,12 @@ high-yield		31	JJ	31
 high-yielding		1	JJ	1
 highbrow		3	JJ	3
 highbrows		1	NNS	1
-higher			305	JJR	272	RBR	33
+higher			309	JJR	276	RBR	33
 higher-cost		2	JJ	2
 higher-fat		1	JJR	1
 higher-priced		2	JJ	2
 higher-salaried		1	JJ	1
-highest			50	JJS	50
+highest			53	JJS	53
 highest-pitched		1	JJ	1
 highest-quality		2	JJ	2
 highest-rated		1	JJ	1
@@ -34199,39 +34370,41 @@ highlight		10	NN	5	VB	5
 highlighted		2	VBN	2
 highlighting		1	VBG	1
 highlights		1	NNS	1
-highly			121	RB	121
-highly-coloured		1	JJ	1
+highly			125	RB	125
+highly-coloured		1	VBN	1
+highly-educated		1	JJ	1
 highly-strung		2	JJ	2
 highpriced		1	JJ	1
 highroad		1	NN	1
 highs			15	NNS	15
-highway			27	NN	27
+highway			28	NN	28
 highwayman		2	NN	2
-highways		9	NNS	9
+highways		10	NNS	10
 hijack			1	NN	1
 hijacked		1	VBN	1
 hike			3	NN	3
 hiked			1	VBN	1
 hikes			1	NNS	1
-hiking			2	NN	2
+hiking			2	NN	1	VBG	1
 hilarious		5	JJ	5
-hill			39	NN	39
+hill			44	NN	44
 hillocks		1	NNS	1
-hills			35	NNS	35
+hills			40	NNS	40
 hillside		10	NN	10
 hillsides		2	NNS	2
 hilltop			1	NN	1
 hilltops		1	NNS	1
 hilly			4	JJ	4
-him			1412	PRP	1412
-him!			2	VBN	2
+him			1498	PRP	1498
+him!			2	JJ	2
+him)			1	NNP	1
 him.She			1	NN	1
-him?			2	CD	1	NNS	1
-him?I			1	JJ	1
+him?			2	CD	1	JJ	1
+him?I			2	JJ	1	NNP	1
 himbut			1	NN	1
 himhes			1	VBZ	1
 himor			1	NN	1
-himself			285	PRP	285
+himself			302	PRP	302
 himwhat			1	JJ	1
 hind			4	JJ	4
 hinder			5	VB	5
@@ -34241,9 +34414,9 @@ hinders			1	VBZ	1
 hindrance		1	NN	1
 hindsight		2	NN	2
 hinge			3	NN	1	VB	2
-hinged			2	JJ	2
-hint			9	NN	8	VB	1
-hinted			8	VBD	7	VBN	1
+hinged			2	JJ	1	VBN	1
+hint			12	NN	9	VB	3
+hinted			10	VBD	9	VBN	1
 hinterland		1	NN	1
 hints			9	NNS	8	VBZ	1
 hip			7	JJ	1	NN	6
@@ -34252,20 +34425,20 @@ hippopotami		1	NN	1
 hippy			1	JJ	1
 hips			11	NNS	11
 hire			18	NN	4	VB	12	VBP	2
-hired			25	VBD	13	VBN	12
+hired			25	VBD	15	VBN	10
 hires			2	VBZ	2
-hiring			17	NN	4	VBG	13
-his			4266	PRP	1	PRP$	4265
-hiss			4	NNS	1	VB	3
-hissed			5	VBD	5
+hiring			17	NN	3	VBG	14
+his			4485	PRP	1	PRP$	4484
+hiss			5	NN	2	VB	3
+hissed			6	VBD	6
 historian		8	NN	8
 historians		8	NNS	8
 historic		16	JJ	16
 historical		32	JJ	32
 historically		14	RB	14
-histories		2	NNS	2
-history			164	NN	164
-hit			147	NN	23	VB	21	VBD	59	VBN	40	VBP	4
+histories		4	NNS	4
+history			173	NN	173
+hit			150	NN	26	VB	20	VBD	59	VBN	41	VBP	4
 hitch			2	NN	2
 hitch-hiker		1	NN	1
 hitched			5	VBN	5
@@ -34290,10 +34463,10 @@ hobbles			1	VBZ	1
 hobby			5	NN	5
 hobby-horse		2	NN	2
 hobbyists		1	NNS	1
-hobnail			1	VB	1
+hobnail			1	NN	1
 hobo			1	NN	1
 hobos			1	NNS	1
-hockey			10	JJ	8	NN	2
+hockey			10	JJ	7	NN	3
 hodge-podge		1	NN	1
 hodgepodge		1	NN	1
 hoe			1	NN	1
@@ -34301,27 +34474,27 @@ hog			1	NN	1
 hogging			2	VBG	2
 hogs			1	NNS	1
 hogwash			1	NN	1
-hoisted			5	VBN	5
-hold			151	NN	20	VB	100	VBP	30	VB|NN	1
+hoisted			6	VBN	6
+hold			156	NN	20	VB	102	VBP	33	VB|NN	1
 hold-up			2	NN	2
 hold-ups		2	NNS	2
-hold?			1	CD	1
+hold?			1	JJ	1
 holdall			1	NN	1
-holder			29	NN	29
+holder			30	NN	30
 holders			118	NNS	118
-holding			158	NN	23	VBG	135
+holding			162	NN	23	VBG	139
 holdings		41	NNS	41
 holdovers		1	NNS	1
-holds			71	VBZ	71
+holds			72	VBZ	72
 holdups			1	NNS	1
-hole			52	NN	50	VB	1	VBP	1
+hole			54	NN	52	VB	1	VBP	1
 holed			3	VBN	3
-holes			31	NNS	31
-holiday			46	NN	46
+holes			35	NNS	35
+holiday			54	NN	54
 holiday?		1	NN	1
 holidaying		1	VBG	1
 holidaymakers		2	NNS	2
-holidays		24	NNS	24
+holidays		26	NNS	26
 holler			2	NN	1	VB	1
 holler!			1	JJ	1
 hollered		1	VBD	1
@@ -34336,7 +34509,7 @@ holocaust		3	NN	3
 hols			2	NNS	2
 holster			3	NN	3
 holy			11	JJ	11
-home			382	JJ	2	NN	368	RB	12
+home			409	JJ	2	NN	395	RB	12
 home-acquisition	1	JJ	1
 home-building		1	JJ	1
 home-equity		6	JJ	2	NN	4
@@ -34348,7 +34521,7 @@ home-run		2	JJ	1	NN	1
 home-shopping		1	NN	1
 home-sick		1	NN	1
 home-state		2	JJ	2
-home.			1	VBN	1
+home.			1	FW	1
 home?			1	NN	1
 homecoming		1	NN	1
 homeland		6	NN	6
@@ -34363,7 +34536,7 @@ homers			1	NNS	1
 homes			65	NNS	65
 homesick		3	JJ	3
 homestead		1	NN	1
-homewards		1	RB	1
+homewards		1	NNS	1
 homework		12	NN	12
 homey			1	JJ	1
 homicide		1	NN	1
@@ -34377,7 +34550,7 @@ homosexual		3	JJ	2	NN	1
 hone			2	VB	2
 honed			4	JJ	1	VBN	3
 honest			18	JJ	14	RB	4
-honestly		2	RB	2
+honestly		3	RB	3
 honesty			8	NN	8
 honey			8	NN	8
 honeybee		1	JJ	1
@@ -34387,7 +34560,7 @@ honeymooning		1	VBG	1
 honeysuckle		1	NN	1
 honk			2	NN	2
 honked			4	VBD	3	VBN	1
-honking			1	JJ	1
+honking			1	VBG	1
 honor			17	NN	7	VB	10
 honorably		2	RB	2
 honorarium		1	NN	1
@@ -34396,12 +34569,12 @@ honored			1	VBN	1
 honorifics		1	NNS	1
 honoring		2	VBG	2
 honors			1	NNS	1
-honour			30	JJ	4	NN	21	VB	5
-honourable		5	JJ	5
+honour			32	IN	1	JJ	4	NN	22	VB	5
+honourable		6	JJ	6
 honourably		1	RB	1
-honoured		5	JJ	2	VBN	3
+honoured		6	JJ	2	VBN	4
 honours			3	NNS	3
-hood			8	NN	8
+hood			9	NN	9
 hooded			2	JJ	2
 hoodlums		1	NNS	1
 hoods			1	NNS	1
@@ -34412,7 +34585,7 @@ hoofs			1	NNS	1
 hook			12	NN	12
 hook-up			1	NN	1
 hooked			12	JJ	8	VBD	2	VBN	2
-hooks			4	NNS	1	VBZ	3
+hooks			5	NNS	1	VBZ	4
 hooliganism		3	NN	3
 hoopla			2	NN	2
 hoops			1	NNS	1
@@ -34422,30 +34595,30 @@ hooter			2	NN	2
 hooting			3	NN	1	VBG	2
 hoots			2	NNS	1	VBZ	1
 hoovering		1	VBG	1
-hooves			4	NNS	4
-hop			3	NN	3
-hope			150	NN	54	VB	12	VBP	84
-hoped			36	VBD	20	VBN	16
+hooves			5	NNS	5
+hop			4	NN	4
+hope			155	NN	57	VB	12	VBP	86
+hoped			38	VBD	21	VBN	17
 hoped-for		2	JJ	2
 hopeful			11	JJ	11
-hopefully		9	RB	9
+hopefully		10	RB	10
 hopefuls		2	NNS	2
-hopeless		17	JJ	17
+hopeless		18	JJ	18
 hopelessly		5	RB	5
 hopes			97	NNS	39	VBZ	58
-hoping			38	VBG	38
+hoping			39	VBG	39
 hopped			2	VBD	2
-hopping			4	VBG	4
+hopping			5	VBG	5
 hops			4	NNS	2	VBZ	2
 horde			2	NN	2
-hordes			3	NNS	3
-horizon			20	NN	20
-horizons		4	NNS	4
+hordes			4	NNS	4
+horizon			21	NN	21
+horizons		5	NNS	5
 horizontal		6	JJ	4	NN	2
 horizontally		2	RB	2
 hormone			8	NN	8
 hormone-treated		1	JJ	1
-hormones		5	NNS	5
+hormones		6	NNS	6
 horn			20	NN	20
 horn-rimmed		3	JJ	3
 horns			7	NNS	7
@@ -34453,18 +34626,18 @@ horny			5	JJ	5
 horoscope		1	NN	1
 horoscopes		2	NNS	2
 horrendous		3	JJ	3
-horrible		11	JJ	11
+horrible		12	JJ	12
 horribly		3	RB	3
-horrid			4	JJ	4
+horrid			8	JJ	8
 horrific		2	JJ	2
-horrified		8	JJ	2	VBN	6
+horrified		8	JJ	1	VBN	7
 horrify			1	VB	1
 horrifying		2	JJ	2
 horror			23	NN	23
 horror-stricken		1	JJ	1
-horrors			4	NNS	4
+horrors			5	NNS	5
 hors			1	NNS	1
-horse			60	NN	60
+horse			63	NN	63
 horse-breeding		1	NN	1
 horse-drawn		1	JJ	1
 horse-painter		1	NN	1
@@ -34479,7 +34652,7 @@ horticulture		3	NN	3
 horticulturist		1	NN	1
 hose			6	NN	5	VB	1
 hospitable		6	JJ	6
-hospital		96	NN	96
+hospital		98	NN	98
 hospital?		1	NN	1
 hospitality		2	NN	2
 hospitalize		1	VB	1
@@ -34490,14 +34663,14 @@ hostage			4	NN	4
 hostages		4	NNS	4
 hosted			2	VBD	2
 hostel			1	NN	1
-hostess			8	NN	7	NNS	1
+hostess			8	NN	8
 hostesss		1	JJ	1
-hostile			51	JJ	44	NN	7
+hostile			52	JJ	45	NN	7
 hostilities		6	NNS	6
 hostility		8	NN	8
 hosting			2	VBG	2
 hosts			5	NNS	4	VBZ	1
-hot			108	JJ	108
+hot			117	JJ	117
 hot-air			2	JJ	2
 hot-cereals		1	NNS	1
 hot-dipped		1	JJ	1
@@ -34505,28 +34678,28 @@ hot-house		1	NN	1
 hot-tempered		1	JJ	1
 hotbeds			1	NNS	1
 hotchpotch		1	NN	1
-hotel			90	NN	90
+hotel			94	NN	94
 hotel-casino		6	NN	6
 hotel-casinos		1	NNS	1
 hotel-restaurant	1	NN	1
 hoteliers		1	NNS	1
-hotels			24	NNS	24
+hotels			25	NNS	25
 hotfoot			1	RB	1
 hothead			1	NN	1
 hothouse		2	NN	2
 hothouses		1	NNS	1
 hotly			4	RB	4
-hotter			2	JJ	1	NN	1
+hotter			2	JJR	2
 hottest			7	JJS	7
 hound			1	NN	1
 hounded			3	VBD	3
 hounds			3	NNS	3
-hour			135	NN	135
+hour			137	NN	137
 hour-long		1	JJ	1
 hourly			7	JJ	4	RB	3
-hours			165	NNS	165
+hours			177	NNS	177
 hours50			1	CD	1
-house			362	NN	358	VB	4
+house			373	NN	369	VB	4
 house-painting		1	JJ	1
 house-to-house		1	JJ	1
 house-warming		1	NN	1
@@ -34536,35 +34709,35 @@ housecleaning		1	NN	1
 housecoat		1	NN	1
 housed			8	VBN	8
 houseful		2	NN	2
-household		37	NN	37
+household		38	NN	38
 households		9	NNS	9
 houseits		2	NNS	2
 housekeeper		6	NN	6
-housekeeping		3	NN	3
-housemen		1	NNS	1
-houses			118	NNS	115	VBZ	3
+housekeeping		4	NN	4
+housemen		1	NN	1
+houses			123	NNS	120	VBZ	3
 housewife		7	NN	7
 housewifes		1	NNS	1
 housewives		7	NNS	7
 housework		7	NN	7
-housing			66	NN	66
+housing			68	NN	68
 housing-assistance	1	JJ	1
 housing-construction	1	NN	1
 housing-discrimination	1	NN	1
 housing-loan		1	NN	1
 hovel			1	NN	1
 hovels			1	NNS	1
-hover			1	JJR	1
-hovered			7	VBD	4	VBN	3
+hover			1	NN	1
+hovered			7	VBD	5	VBN	2
 hovering		6	VBG	6
 hovers			1	VBZ	1
-how			467	WRB	467
+how			488	WRB	488
 how-to			2	JJ	2
 however			199	RB	199
 howl			3	NN	3
 howled			4	VBD	3	VBN	1
 howlers			1	NNS	1
-howling			8	JJ	1	NN	1	VBG	6
+howling			9	JJ	1	NN	1	VBG	7
 howls			3	NNS	2	VBZ	1
 hows			1	VBZ	1
 hrs			1	NNS	1
@@ -34581,7 +34754,7 @@ huffed			1	VBD	1
 huffing			1	VBG	1
 huffy			1	JJ	1
 hug			5	NN	2	VB	3
-huge			176	JJ	176
+huge			181	JJ	181
 hugely			2	RB	2
 hugged			5	VBD	5
 hugging			9	NN	1	VBG	8
@@ -34591,8 +34764,8 @@ hulking			2	JJ	2
 hulks			4	NNS	4
 hull			3	NN	3
 hullabaloo		1	NN	1
-hum			8	NN	3	VB	5
-human			145	JJ	143	NN	2
+hum			8	NN	4	VB	4
+human			152	JJ	150	NN	2
 human-based		4	JJ	4
 human-generated		1	JJ	1
 human-resources		1	NNS	1
@@ -34631,7 +34804,7 @@ humor			7	NN	7
 humorist		2	NN	2
 humorous		7	JJ	7
 humorously		1	RB	1
-humour			32	NN	31	VB	1
+humour			35	NN	34	VB	1
 humourless		2	JJ	2
 hump			3	NN	1	VB	2
 hump-backed		1	JJ	1
@@ -34639,15 +34812,15 @@ humpbacked		1	JJ	1
 humps			1	NNS	1
 hunch			4	NN	4
 hunched			3	VBN	3
-hundred			92	CD	92
+hundred			98	CD	98
 hundred-dollar		1	JJ	1
 hundred-thousand-share	1	JJ	1
-hundreds		48	NNS	48
+hundreds		51	NNS	51
 hundreds-of-billions-of-yen	1	JJ	1
-hundredth		4	JJ	3	NN	1
+hundredth		5	JJ	4	NN	1
 hundredths		1	NNS	1
 hundredweight		3	NN	3
-hung			38	JJ	1	VBD	27	VBN	10
+hung			39	JJ	1	VBD	29	VBN	9
 hunger			17	NN	16	VB	1
 hungriest		1	JJS	1
 hungry			21	JJ	21
@@ -34655,12 +34828,12 @@ hunk			3	NN	3
 hunker			1	VB	1
 hunks			1	NNS	1
 hunky-dory		2	JJ	2
-hunt			13	NN	9	VB	4
-hunted			5	VBN	5
+hunt			15	NN	9	VB	5	VBP	1
+hunted			7	VBN	7
 hunter			5	NN	5
 hunter-gatherer		1	NN	1
-hunters			12	NNS	12
-hunting			21	NN	19	VBG	2
+hunters			13	NNS	13
+hunting			22	NN	18	VBG	4
 hunts			1	VBZ	1
 hurdle			7	NN	6	VB	1
 hurdles			6	NNS	6
@@ -34668,14 +34841,14 @@ hurl			1	VBP	1
 hurled			4	VBN	4
 hurling			3	VBG	3
 hurly-burly		2	NN	2
-hurricane		14	NN	14
+hurricane		15	NN	15
 hurricane-hit		1	JJ	1
 hurricanes		1	NNS	1
-hurried			21	JJ	11	VBN	10
+hurried			22	JJ	11	VBN	11
 hurriedly		2	RB	2
 hurry			13	NN	9	VB	4
 hurrying		5	VBG	5
-hurt			92	JJ	1	NN	2	VB	27	VBD	5	VBN	52	VBP	5
+hurt			94	JJ	1	NN	2	VB	27	VBD	4	VBN	54	VBP	6
 hurt.			1	NN	1
 hurt?			1	JJ	1
 hurtI			1	JJ	1
@@ -34685,9 +34858,9 @@ hurtled			2	JJ	1	VBD	1
 hurtles			1	VBZ	1
 hurtling		1	VBG	1
 hurts			2	VBZ	2
-husband			83	NN	82	VB	1
+husband			88	NN	87	VB	1
 husbanding		1	VBG	1
-husbands		19	NNS	19
+husbands		20	NNS	20
 hush			5	JJ	3	NN	2
 hush-hush		1	JJ	1
 hushed			2	JJ	2
@@ -34698,8 +34871,8 @@ hustings		2	NNS	2
 hustled			5	VBD	3	VBN	2
 hustlers		4	NNS	4
 hustles			1	VBZ	1
-hut			11	NN	11
-huts			7	NNS	7
+hut			12	NN	12
+huts			8	NNS	8
 hyacinths		1	NNS	1
 hybrid			19	JJ	13	NN	6
 hybrids			2	NNS	2
@@ -34707,12 +34880,12 @@ hydrant			1	NN	1
 hydraulic		5	JJ	5
 hydraulically		1	RB	1
 hydro-electric		1	JJ	1
-hydrogen		5	NN	5
+hydrogen		6	NN	6
 hydrogen-based		1	JJ	1
 hyenas			3	NNS	3
 hygiene			2	NN	2
 hygienic		3	JJ	3
-hymn			4	NN	4
+hymn			5	JJ	1	NN	4
 hype			3	NN	3
 hyper			1	JJ	1
 hyperactive		2	JJ	2
@@ -34727,21 +34900,21 @@ hypnotized		4	VBN	4
 hypochondriacs		1	NNS	1
 hypocrisies		1	NNS	1
 hypocrisy		5	NN	5
-hypocrite		1	NN	1
+hypocrite		2	NN	2
 hypocrites		2	NNS	2
 hypocritical		4	JJ	4
 hypodermic		2	JJ	2
 hypoglycemia		8	NN	8
 hypoglycemic		1	JJ	1
-hypotheses		3	NNS	3
-hypothesis		2	NN	2
+hypotheses		3	NN	1	NNS	2
+hypothesis		3	NN	3
 hypothesized		1	VBN	1
 hypothetical		8	JJ	8
 hysteria		3	NN	3
 hysterical		3	JJ	3
 hysterics		2	NNS	2
 i.e.			2	FW	2
-ice			40	NN	40
+ice			41	NN	41
 ice-breaker		1	JJ	1
 ice-cap			1	NN	1
 ice-cold		2	JJ	2
@@ -34764,35 +34937,36 @@ iconoclast		1	NN	1
 iconoclastic		1	JJ	1
 iconoclasts		1	NNS	1
 icons			1	NNS	1
-icy			12	JJ	9	NN	2	RB	1
-idea			196	NN	196
+icy			12	JJ	8	NN	3	RB	1
+idea			209	NN	209
 idea!			1	NN	1
-idea?			1	NN	1
+idea?			1	NNP	1
 ideal			26	JJ	12	NN	14
 idealise		1	VB	1
 idealism		4	NN	4
-idealist		1	NN	1
+idealist		2	NN	2
 idealistic		3	JJ	3
 idealists		1	NNS	1
 idealized		3	JJ	3
 idealizes		1	VBZ	1
-ideally			1	RB	1
+ideally			2	RB	2
 ideals			6	NNS	6
-ideas			127	NNS	127
-identical		7	JJ	7
+ideas			129	NNS	129
+identical		11	JJ	11
 identifiable		6	JJ	6
 identification		11	NN	11
-identified		34	VBD	10	VBN	24
+identification?		1	NN	1
+identified		35	VBD	10	VBN	25
 identifies		2	VBZ	2
-identify		37	VB	36	VBP	1
+identify		38	VB	37	VBP	1
 identifying		6	VBG	6
 identities		3	NNS	3
-identity		26	NN	26
+identity		27	NN	27
 identity-management	1	NN	1
-ideological		10	JJ	10
+ideological		11	JJ	11
 ideologies		2	NNS	2
 ideologues		1	NNS	1
-ideology		14	NN	14
+ideology		15	NN	15
 idiocies		1	NNS	1
 idiocy			1	NN	1
 idiom			2	NN	2
@@ -34802,7 +34976,7 @@ idiosyncrasies		2	NNS	2
 idiosyncratic		1	JJ	1
 idiot			10	JJ	1	NN	9
 idiotic			2	JJ	2
-idle			22	JJ	20	VB	2
+idle			23	JJ	21	VB	2
 idleness		1	NN	1
 idlers			2	NNS	2
 idling			1	VBG	1
@@ -34817,7 +34991,7 @@ idols			1	NNS	1
 idosyncratic		1	JJ	1
 idyll			2	NN	2
 idyllic			4	JJ	4
-if			939	IN	938	JJ	1
+if			975	IN	974	JJ	1
 iffy			2	JJ	2
 ignite			2	VB	2
 ignited			2	VBN	2
@@ -34825,14 +34999,14 @@ ignition		2	NN	2
 ignoble			1	JJ	1
 ignominiously		1	RB	1
 ignoramus		1	NN	1
-ignorance		11	NN	11
+ignorance		10	NN	10
 ignorant		4	JJ	4
 ignore			25	VB	21	VBP	4
-ignored			20	VBD	8	VBN	12
+ignored			21	VBD	8	VBN	13
 ignores			1	VBZ	1
 ignoring		16	VBG	16
 ilk			2	NN	2
-ill			39	JJ	24	NN	1	RB	14
+ill			43	JJ	26	NN	1	RB	16
 ill-advised		2	JJ	2
 ill-assorted		1	JJ	1
 ill-behaved		1	VBN	1
@@ -34850,7 +35024,7 @@ ill-starred		1	JJ	1
 ill-tempered		3	JJ	3
 ill-treated		1	JJ	1
 ill-will		1	NN	1
-ill?			1	CD	1
+ill?			1	JJ	1
 illegal			49	JJ	49
 illegalities		1	NNS	1
 illegality		1	NN	1
@@ -34860,11 +35034,11 @@ illegitimate		3	JJ	3
 illiberal		2	JJ	2
 illicit			3	JJ	3
 illiquidity		1	NN	1
-illit			1	NN	1
+illit			1	JJ	1
 illiteracy		1	NN	1
 illiterate		6	JJ	6
 illiterates		2	NNS	2
-illness			39	NN	39
+illness			42	NN	42
 illnesses		3	NNS	3
 illogic			1	NN	1
 illogical		3	JJ	3
@@ -34898,7 +35072,7 @@ imagination		23	NN	23
 imaginations		2	NNS	2
 imaginative		10	JJ	10
 imaginatively		1	RB	1
-imagine			12	VB	11	VBP	1
+imagine			16	VB	15	VBP	1
 imagined		9	VBD	6	VBN	3
 imaging			1	NN	1
 imagining		1	VBG	1
@@ -34923,19 +35097,19 @@ immaterial		2	JJ	2
 immature		4	JJ	4
 immaturity		1	NN	1
 immeasurable		1	JJ	1
-immediate		60	JJ	60
-immediately		94	RB	94
+immediate		61	JJ	61
+immediately		103	IN	1	RB	102
 immediately.Just	1	JJ	1
 immemorial		2	JJ	2
-immense			20	JJ	18	NN	2
+immense			25	JJ	23	NN	2
 immensely		9	RB	9
 immensity		2	NN	2
 immerse			1	VB	1
 immersed		5	VBN	5
-immersion		1	NN	1
+immersion		2	NN	2
 immigrant		5	JJ	2	NN	3
 immigrants		11	NNS	11
-immigration		4	NN	4
+immigration		5	NN	5
 imminence		2	NN	2
 imminent		17	JJ	17
 immobile		3	JJ	3
@@ -34989,7 +35163,7 @@ imperfection		1	NN	1
 imperfections		4	NNS	4
 imperfectly		2	RBR	2
 imperial		7	JJ	7
-imperialism		3	NN	3
+imperialism		4	NN	4
 imperialistic		1	JJ	1
 imperialists		1	NNS	1
 imperiled		1	VBN	1
@@ -35016,7 +35190,7 @@ implanted		4	VBD	3	VBN	1
 implanting		1	VBG	1
 implants		1	NNS	1
 implausible		4	JJ	4
-implement		9	NN	3	VB	6
+implement		8	NN	2	VB	6
 implementation		2	NN	2
 implemented		7	VBN	7
 implementing		5	VBG	5
@@ -35029,7 +35203,7 @@ implicit		12	JJ	12
 implicitly		2	RB	2
 implied			6	JJ	1	VBD	3	VBN	2
 implies			8	VBZ	8
-implored		2	JJ	1	VBD	1
+implored		2	VBD	1	VBN	1
 imploring		2	VBG	2
 imply			7	VB	4	VBP	3
 implying		1	VBG	1
@@ -35037,27 +35211,27 @@ impolite		1	JJ	1
 impolitic		1	JJ	1
 imponderables		1	NNS	1
 import			36	NN	27	VB	6	VBP	3
-importance		50	NN	50
+importance		57	NN	57
 importance?		1	NNP	1
-important		191	JJ	191
+important		202	JJ	202
 importantly		2	RB	2
 importation		2	NN	2
-imported		19	VBD	5	VBN	13	VBN|JJ	1
+imported		19	JJ	1	VBD	5	VBN	12	VBN|JJ	1
 importer		4	NN	4
 importers		4	NNS	4
 importing		5	VBG	5
-imports			63	NNS	59	VBZ	4
+imports			64	NNS	60	VBZ	4
 importunate		1	JJ	1
 importune		1	VB	1
 importunities		1	NNS	1
-impose			19	VB	19
-imposed			24	VBD	6	VBN	18
+impose			20	VB	20
+imposed			26	VBD	7	VBN	19
+imposed?		1	NNS	1
 imposes			5	VBZ	5
 imposing		17	JJ	4	VBG	13
 imposition		4	NN	4
 impossibility		2	NN	2
-impossible		55	JJ	55
-impossible?		1	NN	1
+impossible		61	JJ	61
 impostor		1	NN	1
 impotent		1	JJ	1
 impounded		3	VBN	3
@@ -35071,11 +35245,11 @@ imprecise		2	JJ	2
 impregnable		4	JJ	4
 impregnate		1	VB	1
 impregnated		3	VBN	3
-impresario		1	NN	1
+impresario		2	NN	2
 impress			9	VB	9
 impressed		17	JJ	3	VBD	3	VBN	11
 impresses		1	VBZ	1
-impression		34	NN	34
+impression		35	NN	35
 impressionable		1	JJ	1
 impressionist		2	JJ	2
 impressionistic		1	JJ	1
@@ -35087,17 +35261,18 @@ imprinted		5	VBN	5
 imprison		3	VB	3
 imprisoned		5	VBN	5
 imprisoning		1	VBG	1
-imprisonment		12	NN	12
+imprisonment		13	NN	13
 improbability		1	NN	1
-improbable		7	JJ	7
+improbable		8	JJ	8
 impromptu		3	JJ	3
 improper		10	JJ	10
 improperly		7	RB	7
 improprieties		2	NNS	2
 impropriety		1	NN	1
-improve			85	VB	82	VBP	3
-improved		59	JJ	16	VBD	11	VBN	32
-improvement		37	NN	37
+improve			89	VB	85	VBP	4
+improved		62	JJ	16	VBD	12	VBN	34
+improvement		41	NN	41
+improvement.		1	NN	1
 improvements		20	NNS	20
 improves		5	VBZ	5
 improvident		2	JJ	2
@@ -35108,6 +35283,7 @@ improvise		3	VB	2	VBP	1
 improvised		2	VBD	2
 improviser		1	NN	1
 improvising		1	VBG	1
+improvization		1	NN	1
 impudent		2	JJ	2
 impudently		1	RB	1
 impugn			4	VB	4
@@ -35121,7 +35297,7 @@ impunity		1	NN	1
 impurities		1	NNS	1
 imput			1	NN	1
 imputed			1	JJ	1
-in			17227	FW	2	IN	17135	NN	1	RB	35	RBR	1	RP	53
+in			17721	FW	2	IN	17629	NN	1	RB	35	RBR	1	RP	53
 in-depth		2	JJ	2
 in-home			1	JJ	1
 in-house		7	JJ	5	NN	1	RB	1
@@ -35129,7 +35305,7 @@ in-laws			1	NNS	1
 in-room			1	JJ	1
 in-state		1	JJ	1
 in-store		2	JJ	2
-in?			3	JJ	1	NN	1	NNS	1
+in?			3	JJ	2	NN	1
 in?Oh			1	FW	1
 inability		13	NN	13
 inaccessible		5	JJ	5
@@ -35173,7 +35349,7 @@ incarceration		1	NN	1
 incarnate		2	JJ	2
 incarnation		4	NN	4
 incendiary		2	JJ	2
-incense			2	JJ	1	NN	1
+incense			1	NN	1
 incensed		1	VBN	1
 incentive		22	NN	22
 incentive-backed	3	JJ	3
@@ -35192,16 +35368,16 @@ inches			23	NNS	23
 inching			5	VBG	5
 inchworm		1	NN	1
 incidence		2	NN	2
-incident		31	NN	31
+incident		32	NN	32
 incidental		4	JJ	4
 incidentally		2	RB	2
-incidents		13	NNS	13
+incidents		14	NNS	14
 incinerator		1	NN	1
 incipient		3	JJ	3
 incise			1	VB	1
 incised			1	VBN	1
 incision		1	NN	1
-incisions		1	NNS	1
+incisions		2	NNS	2
 incisive		4	JJ	4
 inciting		4	VBG	4
 inclination		4	NN	4
@@ -35211,22 +35387,22 @@ inclined		21	JJ	10	VBN	11
 include			123	VB	44	VBP	79
 included		94	VBD	71	VBN	23
 includes		87	VBZ	87
-including		291	IN	1	VBG	290
+including		292	IN	1	VBG	291
 inclusion		7	NN	7
 inclusive		1	JJ	1
 incognito		2	NN	1	RB	1
 incoherence		1	NN	1
-income			279	NN	279
+income			280	NN	280
 income-oriented		1	JJ	1
 income-tax		4	JJ	1	NN	3
-incomes			15	NNS	15
+incomes			16	NNS	16
 incoming		6	JJ	6
 incommunicado		1	RB	1
 incomparable		2	JJ	2
 incompatibility		1	NN	1
 incompatible		5	JJ	5
 incompetence		6	NN	6
-incompetent		4	JJ	2	NN	2
+incompetent		5	JJ	3	NN	2
 incomplete		10	JJ	10
 incomprehensible	1	JJ	1
 inconceivable		8	JJ	8
@@ -35256,13 +35432,13 @@ incorrectly		6	RB	6
 incorrigible		4	JJ	4
 incorruptibility	1	NN	1
 incorruptible		2	JJ	2
-increase		268	JJ	1	NN	159	VB	105	VBP	3
-increased		187	JJ	26	VBD	82	VBN	79
-increases		120	NNS	103	VBZ	17
-increasing		94	JJ	2	VBG	92
+increase		274	NN	164	VB	106	VBP	4
+increased		189	JJ	25	VBD	82	VBN	82
+increases		121	NNS	104	VBZ	17
+increasing		96	JJ	2	VBG	94
 increasingly		69	RB	69
 incredible		12	JJ	12
-incredibly		6	RB	6
+incredibly		7	RB	7
 incredulous		1	JJ	1
 increment		1	NN	1
 incremental		2	JJ	2
@@ -35290,12 +35466,12 @@ indecent		12	JJ	12
 indecipherable		3	JJ	3
 indecision		1	NN	1
 indecisiveness		1	NN	1
-indeed			55	RB	55
+indeed			56	RB	56
 indeed.			1	VBN	1
 indefatigable		4	JJ	4
 indefensible		3	JJ	3
 indefinable		2	JJ	2
-indefinite		3	JJ	3
+indefinite		4	JJ	4
 indefinitely		13	RB	13
 indelible		3	JJ	3
 indelicate		2	JJ	2
@@ -35304,8 +35480,8 @@ indemnity		1	NN	1
 indentations		2	NNS	2
 indented		2	JJ	1	VBD	1
 indenture		1	NN	1
-independence		46	NN	46
-independent		99	JJ	97	NN	2
+independence		50	NN	50
+independent		100	JJ	98	NN	2
 independently		2	RB	2
 independents		1	NNS	1
 indescribable		3	JJ	3
@@ -35313,7 +35489,7 @@ indescribably		1	RB	1
 indestructibility	1	NN	1
 indestructible		2	JJ	2
 indeterminable		1	JJ	1
-index			270	NN	270
+index			272	NN	272
 index-arbitrage		14	JJ	5	NN	9
 index-arbitrage-related	1	JJ	1
 index-fund		2	JJ	1	NN	1
@@ -35325,7 +35501,7 @@ indexation		7	NN	7
 indexed			2	VBN	2
 indexers		2	NNS	2
 indexes			9	NNS	9
-indexing		3	NN	2	VBG	1
+indexing		3	VBG	3
 indicate		25	VB	15	VBP	10
 indicated		59	JJ	3	VBD	41	VBN	15
 indicates		27	VBZ	27
@@ -35341,7 +35517,7 @@ indicted		10	VBD	4	VBN	6
 indictment		21	NN	21
 indictments		2	NNS	2
 indifference		4	NN	4
-indifferent		8	JJ	8
+indifferent		9	JJ	9
 indigenous		4	JJ	4
 indigestible		1	JJ	1
 indigestion		1	NN	1
@@ -35358,24 +35534,25 @@ indiscreet		2	JJ	2
 indiscriminate		2	JJ	2
 indispensability	1	NN	1
 indispensable		5	JJ	5
+indisputable		4	JJ	4
 indistinct		3	JJ	3
 indistinguishable	4	JJ	4
-individual		132	JJ	97	NN	35
+individual		133	JJ	97	NN	36
 individual-retirement-account	1	NN	1
 individualism		2	NN	2
 individualist		2	JJ	1	NN	1
 individualistic		1	JJ	1
 individualists		1	NNS	1
 individuality		3	NN	3
-individualize		1	VB	1
+individualize		1	VBP	1
 individually		4	RB	4
-individuals		55	NNS	55
+individuals		56	NNS	56
 indivisible		2	JJ	2
 indoctrinate		1	VB	1
 indoctrinated		1	VBN	1
 indolent		1	JJ	1
 indomitable		4	JJ	4
-indoor			6	JJ	6
+indoor			7	JJ	7
 indoors			6	RB	6
 indrawn			1	JJ	1
 indubitable		1	JJ	1
@@ -35393,7 +35570,7 @@ indulgences		2	NNS	2
 indulgent		1	JJ	1
 indulges		1	VBZ	1
 indulging		3	VBG	3
-industrial		161	JJ	161
+industrial		167	JJ	167
 industrial-product	1	NN	1
 industrial-production	1	JJ	1
 industrialism		3	NN	3
@@ -35403,9 +35580,9 @@ industrialization	3	NN	3
 industrialize		1	VB	1
 industrialized		10	JJ	5	VBN	5
 industrials		18	NNS	17	VBZ	1
-industries		53	NNS	53
+industries		54	NNS	54
 industrious		1	JJ	1
-industry		449	NN	449
+industry		455	NN	455
 industry-funded		1	JJ	1
 industry-government	1	JJ	1
 industry-supported	1	JJ	1
@@ -35438,7 +35615,7 @@ inescapable		3	JJ	3
 inessential		1	JJ	1
 inestimable		2	JJ	2
 inevitability		3	NN	3
-inevitable		21	JJ	20	NN	1
+inevitable		22	JJ	21	NN	1
 inevitable?		1	NN	1
 inevitably		8	RB	8
 inexact			1	JJ	1
@@ -35459,7 +35636,7 @@ infallible		2	JJ	2
 infamous		4	JJ	4
 infamy			1	NN	1
 infancy			6	NN	6
-infant			14	JJ	7	NN	7
+infant			15	JJ	7	NN	8
 infant-mortality	1	NN	1
 infantile		4	JJ	4
 infantry		10	NN	10
@@ -35470,20 +35647,20 @@ infatuation		3	NN	3
 infect			2	VB	2
 infected		15	JJ	10	VBN	5
 infecting		2	VBG	2
-infection		13	NN	13
-infections		5	NNS	5
+infection		17	NN	17
+infections		6	NNS	6
 infectious		6	JJ	6
 infectious?		1	NN	1
 infer			2	VB	2
 inference		1	NN	1
 inferences		3	NNS	3
-inferior		11	JJ	10	NN	1
+inferior		12	JJ	11	NN	1
 inferiority		3	NN	3
 inferiors		2	NNS	2
 infernal		2	JJ	2
 inferno			4	NN	4
 inferred		2	VBN	2
-infertile		2	JJ	2
+infertile		3	JJ	3
 infestation		1	NN	1
 infidel			1	JJ	1
 infidelities		1	NNS	1
@@ -35505,10 +35682,10 @@ inflammation		3	NN	3
 inflammatory		2	JJ	2
 inflatable		3	JJ	3
 inflate			3	VB	3
-inflated		11	JJ	3	VBD	3	VBN	5
+inflated		11	JJ	3	VBD	4	VBN	4
 inflates		2	VBZ	2
 inflating		2	VBG	2
-inflation		136	NN	136
+inflation		138	NN	138
 inflation-adjusted	7	JJ	7
 inflation-created	1	JJ	1
 inflation-fighting	2	JJ	1	NN	1
@@ -35524,25 +35701,25 @@ inflicted		3	VBD	1	VBN	2
 inflicting		1	VBG	1
 inflow			2	NN	2
 inflows			4	NNS	4
-influence		72	NN	60	VB	10	VBP	2
+influence		77	NN	64	VB	11	VBP	2
 influence-peddling	1	NN	1
-influenced		13	VBD	2	VBN	11
-influences		13	NNS	10	VBZ	3
+influenced		14	VBD	2	VBN	12
+influences		14	NNS	11	VBZ	3
 influencing		1	VBG	1
-influential		12	JJ	12
+influential		16	JJ	16
 influenza		1	NN	1
 influx			3	NN	3
-inform			13	VB	13
+inform			16	VB	16
 informal		27	JJ	27
 informality		1	NN	1
 informally		2	RB	2
-information		203	NN	203
+information		211	NN	211
 information-processing	2	NN	2
 information-services	2	NNS	2
 information-systems	1	NNS	1
 informational		1	JJ	1
 informative		4	JJ	4
-informed		18	JJ	1	VBD	9	VBN	8
+informed		19	JJ	1	VBD	10	VBN	8
 informer		2	NN	2
 informers		2	NNS	2
 informing		2	VBG	2
@@ -35575,8 +35752,8 @@ ingrained		3	JJ	3
 ingratiating		4	JJ	2	VBG	2
 ingratitude		1	NN	1
 ingredient		4	NN	4
-ingredients		6	NNS	6
-inhabitants		5	NNS	5
+ingredients		7	NNS	7
+inhabitants		6	NNS	6
 inhabited		4	VBN	4
 inhabiting		1	VBG	1
 inhabits		1	VBZ	1
@@ -35585,7 +35762,7 @@ inhaled			3	VBD	3
 inherent		15	JJ	15
 inherently		1	RB	1
 inherit			6	VBP	6
-inheritance		7	NN	7
+inheritance		8	NN	8
 inherited		15	VBD	5	VBN	10
 inheritor		1	NN	1
 inheritors		2	NNS	2
@@ -35597,6 +35774,7 @@ inhospitable		7	JJ	7
 inhuman			7	JJ	7
 inhumane		4	JJ	4
 inhumanities		1	NNS	1
+inhumanity		1	NN	1
 inimical		4	JJ	4
 iniquities		2	NNS	2
 iniquitous		2	JJ	2
@@ -35605,7 +35783,7 @@ initial			72	JJ	70	NN	2
 initialed		1	VBD	1
 initialing		1	VBG	1
 initially		32	RB	32
-initials		4	NNS	4
+initials		5	NNS	5
 initiate		6	NN	2	VB	4
 initiated		10	VBD	3	VBN	7
 initiates		1	NNS	1
@@ -35623,15 +35801,15 @@ injunction		23	NN	23
 injunctions		2	NNS	2
 injure			1	VB	1
 injured			28	JJ	11	NNS	3	VBD	2	VBN	12
-injuries		16	NNS	16
+injuries		18	NNS	18
 injuring		2	VBG	2
-injury			12	NN	12
+injury			14	NN	14
 injury-prone		1	JJ	1
 injustice		5	NN	5
 injustices		6	NNS	6
 ink			9	NN	9
 inked			1	VBD	1
-inking			1	NN	1
+inking			1	VBG	1
 inkling			4	NN	4
 inks			1	NNS	1
 inkstand		1	NN	1
@@ -35645,20 +35823,20 @@ inmates			3	NNS	3
 inn			3	JJ	1	NN	2
 innate			4	JJ	4
 innately		2	RB	2
-inner			17	JJ	17
+inner			18	JJ	18
 inner-city		2	NN	2
 innermost		3	JJ	3
 inning			4	NN	4
 innings			5	NN	2	NNS	3
 innocence		7	NN	7
-innocent		25	JJ	23	NN	2
+innocent		27	JJ	25	NN	2
 innocently		1	RB	1
 innocents		2	NNS	2
 innocuous		3	JJ	3
 innovate		2	VB	2
 innovated		1	VBD	1
 innovation		11	NN	11
-innovations		5	NNS	5
+innovations		6	NNS	6
 innovative		11	JJ	11
 innovators		2	NNS	2
 innuendoes		4	NNS	4
@@ -35672,38 +35850,39 @@ input			7	NN	6	VB	1
 inputs			2	NNS	2
 inquest			2	NN	2
 inquire			2	VB	2
+inquired		3	VBD	3
 inquirers		1	NNS	1
-inquiries		8	NNS	8
+inquiries		9	NNS	9
 inquiring		5	JJ	2	VBG	3
-inquiry			21	NN	21
+inquiry			22	NN	22
 inquisitive		2	JJ	2
 inquisitively		1	RB	1
 inquisitor		1	NN	1
 insalubrious		1	JJ	1
-insane			13	JJ	11	NNS	2
+insane			14	JJ	12	NNS	2
 insanitary		1	JJ	1
 insanity		2	NN	2
 insatiable		3	JJ	3
 inscribe		1	VB	1
-inscribed		6	JJ	2	VBN	4
+inscribed		6	JJ	6
 inscription		4	NN	4
 inscrutable		2	JJ	2
-insect			12	JJ	3	NN	9
+insect			11	JJ	4	NN	7
 insecticide		2	NN	2
 insecticides		2	NNS	2
-insects			25	NNS	25
+insects			26	NNS	26
 insecure		5	JJ	5
 insecurity		1	NN	1
 insensible		3	JJ	3
 insensitive		8	JJ	7	NN	1
 inseparable		5	JJ	5
-insert			6	NN	2	VB	4
+insert			5	NN	1	VB	4
 inserted		12	VBD	6	VBN	6
 inserting		1	VBG	1
 inserts			3	NNS	3
 inset			2	JJ	2
 inshore			3	RB	3
-inside			112	IN	69	JJ	9	NN	16	RB	18
+inside			115	IN	64	JJ	9	NN	16	RB	26
 inside-the-beltway	1	NN	1
 insider			13	NN	13
 insider-trading		4	JJ	1	NN	3
@@ -35738,22 +35917,23 @@ insouciant		1	JJ	1
 inspect			6	VB	6
 inspected		2	VBD	1	VBN	1
 inspecting		2	VBG	2
-inspection		7	NN	7
+inspection		8	NN	8
 inspections		4	NNS	4
-inspector		8	NN	8
+inspector		9	NN	9
 inspectors		6	NNS	5	VBZ	1
 inspects		1	VBZ	1
 inspiration		8	NN	8
 inspirational		3	JJ	3
 inspirationwhy		1	NN	1
-inspire			6	VB	4	VBP	2
-inspired		22	JJ	5	VBD	9	VBN	8
+inspire			9	VB	7	VBP	2
+inspired		24	JJ	5	VBD	9	VBN	10
 inspiring		5	JJ	5
 instability		4	NN	4
 install			9	VB	9
 installation		6	NN	6
 installations		12	NNS	12
 installed		21	VBD	4	VBN	17
+installed?		1	NN	1
 installing		2	VBG	2
 installment		2	NN	2
 instalment		1	NN	1
@@ -35761,36 +35941,36 @@ instalments		2	NNS	2
 instance		49	NN	49
 instance)		1	NNP	1
 instances		6	NNS	6
-instant			20	JJ	12	NN	8
+instant			21	IN	1	JJ	10	NN	10
 instantaneous		1	JJ	1
 instantaneously		1	RB	1
 instantly		7	RB	7
-instead			99	RB	99
+instead			99	IN	2	RB	97
 instigate		1	VB	1
 instigated		2	VBD	2
 instigating		1	VBG	1
 instigator		1	NN	1
 instigators		1	NNS	1
 instil			2	VB	2
-instinct		8	NN	8
+instinct		11	NN	11
 instinctive		4	JJ	4
 instinctively		1	RB	1
-instincts		9	NNS	9
+instincts		10	NNS	10
 institute		17	NN	16	VB	1
-instituted		10	VBD	4	VBN	6
+instituted		11	VBD	4	VBN	7
 institutes		3	NN	2	NNS	1
 instituting		1	VBG	1
 institution		17	NN	17
 institution?		1	NN	1
-institutional		66	JJ	66
+institutional		67	JJ	67
 institutionalize	1	VB	1
 institutionalizing	1	VBG	1
 institutions		95	NNS	95
-instructed		11	VBD	4	VBN	7
-instruction		9	NN	9
+instructed		13	VBD	5	VBN	8
+instruction		10	NN	10
 instruction-set		1	JJ	1
 instructional		1	JJ	1
-instructions		26	NNS	26
+instructions		27	NNS	27
 instructive		1	JJ	1
 instructor		3	NN	3
 instructors		1	NNS	1
@@ -35798,22 +35978,22 @@ instrument		18	NN	18
 instrumental		8	JJ	8
 instrumentalists	1	NNS	1
 instrumentation		3	NN	3
-instruments		42	NNS	42
+instruments		43	NNS	43
 insubstantial		4	JJ	4
 insufferable		2	JJ	2
 insufficient		6	JJ	6
 insular			4	JJ	4
-insulate		5	VB	4	VBP	1
-insulated		3	VBN	3
-insulating		2	VBG	2
+insulate		7	VB	6	VBP	1
+insulated		4	VBN	4
+insulating		3	VBG	3
 insulation		6	NN	6
 insulator		2	NN	2
 insulin			14	NN	14
 insulins		2	NNS	2
-insult			10	JJ	1	NN	8	VB	1
+insult			11	NN	10	VB	1
 insulted		3	VBN	3
-insulting		3	JJ	3
-insults			3	NNS	3
+insulting		4	JJ	3	VBG	1
+insults			5	NNS	5
 insuperable		1	JJ	1
 insupportable		2	JJ	2
 insurance		187	NN	187
@@ -35823,7 +36003,7 @@ insurance-cost		1	JJ	1
 insurance-industry	1	NN	1
 insurance-rate		1	JJ	1
 insure			7	VB	6	VBP	1
-insured			22	JJ	11	VBN	11
+insured			23	JJ	11	VBN	12
 insurer			15	NN	15
 insurers		18	NNS	18
 insures			2	VBZ	2
@@ -35845,33 +36025,33 @@ integration		15	NN	15
 integrity		16	NN	16
 intellect		5	NN	5
 intellects		4	NNS	4
-intellectual		29	JJ	27	NN	2
+intellectual		30	JJ	27	NN	3
 intellectual-property	5	JJ	5
 intellectually		1	RB	1
-intellectuals		16	NNS	16
-intelligence		51	NN	51
+intellectuals		17	NNS	17
+intelligence		52	NN	52
 intelligent		25	JJ	25
 intelligently		1	RB	1
 intelligentsia		3	NN	3
 intelligible		3	JJ	3
 intend			20	VB	4	VBP	16
-intended		66	JJ	2	VBD	19	VBN	45
-intending		1	VBG	1
+intended		68	JJ	2	VBD	21	VBN	45
+intending		2	VBG	2
 intends			28	VBZ	28
 intense			45	JJ	45
 intensely		12	RB	12
 intensified		9	JJ	1	VBD	2	VBN	6
 intensifier		1	NN	1
 intensifying		3	JJ	1	VBG	2
-intensity		7	NN	7
-intensive		7	JJ	7
+intensity		8	NN	8
+intensive		11	JJ	11
 intensively		1	RB	1
 intent			34	JJ	7	NN	27
 intention		21	NN	21
 intentional		2	JJ	2
 intentionally		3	RB	3
 intentioned		1	JJ	1
-intentions		15	NNS	15
+intentions		16	NNS	16
 inter-American		1	JJ	1
 interact		3	VB	3
 interactions		1	NNS	1
@@ -35890,22 +36070,22 @@ intercompany		1	NN	1
 interconnect		1	VB	1
 interconnecting		1	VBG	1
 interdependent		1	JJ	1
-interest		508	NN	505	VB	3
+interest		523	NN	519	VB	4
 interest-bearing	3	JJ	3
 interest-deferred	1	JJ	1
 interest-free		1	JJ	1
 interest-rate		29	JJ	6	NN	23
 interest-rate-sensitive	1	JJ	1
 interest-rate-type	1	JJ	1
-interested		88	JJ	61	VBN	27
-interesting		47	JJ	47
+interested		93	JJ	62	VBN	31
+interesting		51	JJ	51
 interestrate		1	NN	1
-interests		108	NNS	108
+interests		108	NNS	107	VBZ	1
 interface		1	NN	1
-interfere		14	VB	14
+interfere		18	VB	18
 interfered		3	VBD	3
 interference		8	NN	8
-interferes		1	VBZ	1
+interferes		2	VBZ	2
 interfering		3	JJ	1	VBG	2
 intergenerational	1	JJ	1
 interim			11	JJ	10	NN	1
@@ -35919,7 +36099,7 @@ interjection		1	NN	1
 interjects		1	VBZ	1
 interlaced		3	JJ	2	VBN	1
 interleukin-2		1	NN	1
-interlinking		1	NN	1
+interlinking		1	VBG	1
 interlock		1	VB	1
 interlocked		2	VBD	1	VBN	1
 interlocking		1	VBG	1
@@ -35942,22 +36122,22 @@ intermittent		3	JJ	3
 intermittently		1	RB	1
 intermixed		1	VBD	1
 intern			1	NN	1
-internal		58	JJ	58
+internal		59	JJ	59
 internalized		2	JJ	1	VBN	1
 internally		1	RB	1
-international		139	JJ	139
+international		140	JJ	140
 internationalization	1	NN	1
 internationally		2	RB	2
 interned		2	VBN	2
 internees		1	NNS	1
-interning		1	JJ	1
+interning		1	VBG	1
 internment		1	NN	1
 internments		1	NNS	1
 interplay		2	NN	2
 interposed		2	VBD	1	VBN	1
-interpret		6	VB	6
-interpretation		19	NN	19
-interpretations		4	NNS	4
+interpret		6	VB	5	VBP	1
+interpretation		22	NN	22
+interpretations		5	NNS	5
 interpreted		9	VBD	3	VBN	6
 interpreter		9	NN	9
 interpreting		3	VBG	3
@@ -35983,16 +36163,16 @@ interspersed		3	VBN	3
 interstate		10	JJ	10
 interstates		4	NNS	4
 intertitles		1	NNS	1
-intertwined		1	VBN	1
-interval		4	NN	4
-intervals		9	NNS	9
+intertwined		5	VBN	5
+interval		7	NN	7
+intervals		10	NNS	10
 intervene		10	VB	10
 intervened		7	VBD	4	VBN	3
-intervenes		1	NNS	1
+intervenes		1	VBZ	1
 intervening		7	JJ	3	VBG	4
-intervention		20	NN	20
+intervention		22	NN	22
 interventions		1	NNS	1
-interview		81	NN	76	VB	5
+interview		82	NN	77	VB	5
 interviewed		16	VBD	6	VBN	10
 interviewer		2	NN	2
 interviewers		1	NNS	1
@@ -36005,9 +36185,9 @@ intestines		1	NNS	1
 inti			1	NN	1
 intifadah		1	NN	1
 intimacy		1	NN	1
-intimate		17	JJ	12	NN	1	RB	4
+intimate		12	JJ	12
 intimated		2	VBD	1	VBN	1
-intimately		2	RB	2
+intimately		3	RB	3
 intimates		1	NNS	1
 intimation		2	NN	2
 intimations		1	NNS	1
@@ -36016,8 +36196,8 @@ intimidated		4	JJ	1	VBN	3
 intimidating		3	JJ	2	VBG	1
 intimidation		1	NN	1
 intitiative		1	NN	1
-into			1762	IN	1762
-intolerable		6	JJ	6
+into			1837	IN	1837
+intolerable		11	JJ	11
 intolerance		2	NN	2
 intolerant		4	JJ	4
 intonation		4	NN	4
@@ -36043,10 +36223,10 @@ intrigues		2	NNS	2
 intriguing		6	JJ	6
 intriguingly		1	RB	1
 intrinsic		4	JJ	4
-introduce		35	VB	35
-introduced		76	VBD	36	VBN	40
+introduce		37	VB	37
+introduced		79	VBD	38	VBN	41
 introduces		2	VBZ	2
-introducing		15	VBG	15
+introducing		16	VBG	16
 introduction		28	NN	28
 introductions		3	NNS	3
 introspection		1	NN	1
@@ -36056,7 +36236,7 @@ intrude			5	VBP	5
 intruded		2	VBD	1	VBN	1
 intruder		4	NN	4
 intruders		2	NNS	2
-intruding		1	JJ	1
+intruding		1	VBG	1
 intrusion		10	NN	10
 intrusions		1	NNS	1
 intrusive		3	JJ	3
@@ -36083,10 +36263,10 @@ inveigh			1	VB	1
 inveigle		2	VB	2
 inveigled		1	VBN	1
 invent			3	VB	3
-invented		12	VBD	7	VBN	5
+invented		13	VBD	8	VBN	5
 invention		17	NN	17
 inventions		6	NNS	6
-inventive		5	JJ	5
+inventive		6	JJ	6
 inventiveness		6	NN	6
 inventor		5	NN	5
 inventories		27	NNS	27
@@ -36098,9 +36278,9 @@ invert			1	VB	1
 inverted		1	JJ	1
 inverting		1	VBG	1
 invest			31	VB	28	VBP	3
-invested		32	VBD	11	VBN	21
-investigate		7	VB	7
-investigated		6	VBD	2	VBN	4
+invested		32	VBD	12	VBN	20
+investigate		10	VB	10
+investigated		7	VBD	2	VBN	5
 investigates		2	VBZ	2
 investigating		17	VBG	17
 investigation		51	NN	51
@@ -36110,7 +36290,7 @@ investigative		1	JJ	1
 investigator		6	NN	6
 investigators		16	NNS	16
 investing		25	JJ	1	NN	4	VBG	19	VBG|NN	1
-investment		312	JJ	1	NN	311
+investment		317	JJ	1	NN	316
 investment-banking	6	JJ	3	NN	3
 investment-grade	11	JJ	11
 investment-house	1	NN	1
@@ -36119,7 +36299,7 @@ investments		79	NNS	79
 investments.		2	NN	2
 investor		120	NN	120
 investor-relations	2	JJ	1	NNS	1
-investors		383	NNS	383
+investors		384	NNS	384
 invests			3	VBZ	3
 invidious		4	JJ	4
 invigilating		1	VBG	1
@@ -36128,14 +36308,14 @@ invigorated		2	JJ	2
 invigorating		2	JJ	2
 invincible		7	JJ	7
 inviolate		1	JJ	1
-invisible		14	JJ	14
-invitation		25	NN	25
+invisible		18	JJ	18
+invitation		26	NN	26
 invitations		3	NNS	3
-invite			13	VB	13
+invite			14	VB	14
 invite?			1	NNP	1
-invited			28	VBD	8	VBN	20
-invites			7	NNS	1	VBZ	6
-inviting		8	VBG	8
+invited			34	VBD	9	VBN	25
+invites			6	NNS	1	VBZ	5
+inviting		12	JJ	4	VBG	8
 invocations		2	NNS	2
 invoice			1	NN	1
 invoiced		1	VBD	1
@@ -36148,9 +36328,9 @@ invoking		2	VBG	2
 involuntarily		1	RB	1
 involuntary		3	JJ	3
 involve			33	VB	25	VBP	8
-involved		140	JJ	10	VBD	20	VBN	110
+involved		140	JJ	9	VBD	23	VBN	108
 involvedI		1	JJ	1
-involvement		19	NN	19
+involvement		24	NN	24
 involves		22	VBZ	22
 involving		52	VBG	52
 invulnerable		3	JJ	3
@@ -36171,16 +36351,17 @@ irk			1	VB	1
 irked			5	VBD	2	VBN	3
 irks			1	VBZ	1
 irksome			2	JJ	2
-iron			48	JJ	2	NN	42	VB	4
+iron			53	JJ	2	NN	47	VB	4
 ironic			8	JJ	8
 ironical		2	JJ	2
 ironically		4	RB	4
-ironing			12	JJ	2	NN	7	VBG	3
+ironies			1	NNS	1
+ironing			13	NN	10	VBG	3
 ironing?		1	NN	1
 ironmongers		1	NNS	1
 irons			2	NNS	2
 ironwork		5	NN	5
-irony			7	NN	7
+irony			10	NN	10
 irradiated		3	JJ	1	VBN	2
 irradiation		1	NN	1
 irrational		1	JJ	1
@@ -36202,7 +36383,7 @@ irreproachable		2	JJ	2
 irresistible		8	JJ	8
 irresistibly		1	RB	1
 irresolute		2	JJ	2
-irrespective		3	RB	3
+irrespective		3	IN	2	RB	1
 irresponsibility	4	NN	4
 irresponsible		15	JJ	15
 irresponsibly		2	RB	2
@@ -36211,72 +36392,74 @@ irreverent		2	JJ	2
 irreversible		5	JJ	5
 irrevocable		3	JJ	3
 irrigate		2	VB	2
-irrigation		1	NN	1
+irrigation		2	NN	2
 irritability		1	NN	1
 irritable		4	JJ	4
 irritant		5	NN	5
 irritate		2	VB	2
 irritated		5	JJ	2	VBN	3
 irritates		1	VBZ	1
-irritating		4	VBG	4
+irritating		5	VBG	5
 irritatingly		1	RB	1
 irritation		4	NN	4
 irritations		1	NNS	1
-is			8826	NNS	2	VBZ	8824
+is			8797	NNS	2	VBZ	8795
 is.			1	NN	1
 is?			1	NN	1
-island			46	NN	46
+island			51	NN	51
 island-fantasy		1	JJ	1
 islanders		4	NNS	4
-islands			18	NNS	18
+islands			18	NNS	17	VBZ	1
+isle			1	NN	1
 islet			2	NN	2
-isnt			57	JJ	13	NN	21	VB	9	VBP	14
+isnt			63	JJ	11	NN	25	VB	13	VBP	14
 isolate			2	VB	2
-isolated		21	JJ	10	VBD	3	VBN	8
+isolated		22	JJ	11	VBD	3	VBN	8
 isolating		1	VBG	1
 isolation		10	NN	10
 isosceles		1	NNS	1
 issuance		6	NN	6
-issue			399	NN	361	VB	37	VBP	1
-issued			97	JJ	1	VBD	37	VBN	59
+issue			403	NN	365	VB	37	VBP	1
+issued			98	JJ	1	VBD	37	VBN	60
 issuer			4	NN	4
 issuers			7	NNS	7
-issues			258	NNS	258
+issues			260	NNS	260
 issues-such		1	JJ	1
 issuing			13	VBG	13
-it			5149	PRP	5149
-it!			1	VBN	1
+it			5109	PRP	5109
+it!			1	JJ	1
 it.			2	NN	2
 it.He			1	NN	1
-it?			17	CD	1	JJ	3	NN	2	NNP	3	NNS	8
+it?			19	JJ	6	NN	1	NNP	4	NNS	8
 it?55			1	CD	1
 it?Its			1	NNS	1
 it?Just			1	NN	1
 it?Less			1	NN	1
 it?Of			1	JJ	1
+it?You			1	NN	1
 itYou			1	NN	1
 italics			1	NNS	1
-itch			5	NN	3	VBP	2
+itch			5	NN	4	VB	1
 itched			1	VBD	1
 itching			5	NN	1	VBG	4
 itchy			2	JJ	2
 itchy?			1	NN	1
-item			22	NN	22
+item			23	NN	23
 itemise			1	VB	1
 itemized		1	VBN	1
-items			60	NNS	60
+items			63	NNS	63
 iteration		1	NN	1
 ithes			1	NNS	1
-itif			1	JJ	1
+itif			1	NN	1
 itinerant		3	JJ	2	NN	1
 itinerary		4	NN	4
-itll			6	JJ	3	NN	2	VBP	1
-its			3052	PRP$	3052
-itself			170	PRP	170
+itll			7	JJ	4	NN	2	VBP	1
+its			3102	PRP$	3102
+itself			174	PRP	174
 itvery			1	NN	1
 ivory			11	JJ	1	NN	10
 ivy			1	RB	1
-ivy-covered		1	VBN	1
+ivy-covered		1	VBD	1
 jab			2	NN	2
 jabbed			4	VBD	4
 jabber			1	VB	1
@@ -36286,24 +36469,25 @@ jack			4	NN	4
 jack-knifed		1	VBN	1
 jackal			1	JJ	1
 jackals			2	NNS	2
-jackass			1	NNS	1
+jackass			1	NN	1
 jacked			1	VBN	1
-jacket			30	NN	30
-jackets			4	NNS	4
+jacket			33	NN	33
+jackets			5	NNS	5
 jacking			2	VBG	2
 jackpot			1	NN	1
 jade			1	JJ	1
 jaded			2	JJ	2
 jagged			7	JJ	7
-jail			31	NN	31
+jail			35	NN	35
 jailed			9	JJ	1	VBD	1	VBN	7
-jailers			3	NNS	3
+jailers			4	NNS	4
 jailhouse		1	NN	1
 jails			2	NNS	2
 jalapeno		1	JJ	1
 jam			21	NN	16	VB	5
 jam-packed		2	JJ	2
 jamb			1	NN	1
+jamjar			1	NN	1
 jammed			15	JJ	1	VBD	6	VBN	8
 jamming			3	NN	3
 jammy			3	JJ	3
@@ -36317,24 +36501,24 @@ jargon			5	NN	5
 jarred			5	VBD	1	VBN	4
 jarring			1	JJ	1
 jars			7	NNS	7
-jasmine			3	NN	3
+jasmine			4	NN	4
 jaundiced		2	JJ	2
 jaunt			1	NN	1
 jaunted			1	VBD	1
 jaunting		1	VBG	1
 jaunty			2	JJ	2
 javelin			2	NN	2
-jaw			14	NN	14
+jaw			15	NN	15
 jaws			7	NNS	7
 jaywalkers		1	NNS	1
-jazz			19	NN	19
+jazz			20	NN	20
 jazzed-up		1	JJ	1
 jazzy			3	JJ	3
-jealous			8	JJ	8
+jealous			10	JJ	10
 jealousies		2	NNS	2
 jealously		3	RB	3
-jealousy		6	NN	6
-jeans			24	NNS	24
+jealousy		7	NN	7
+jeans			24	NN	2	NNS	22
 jeep			7	NN	7
 jeeps			1	NNS	1
 jeered			2	VBD	1	VBN	1
@@ -36349,19 +36533,19 @@ jeopardize		7	VB	7
 jeopardizing		1	VBG	1
 jeopardy		4	NN	4
 jerk			6	JJ	1	NN	5
-jerked			10	VBN	10
-jerks			2	NNS	1	VBZ	1
+jerked			11	VBN	11
+jerks			2	NNS	2
 jerky			3	JJ	3
 jerry-build		1	VBD	1
 jersey			1	NN	1
 jerseys			1	NNS	1
 jest			1	NN	1
-jested			1	VBD	1
+jested			1	VBN	1
 jester			2	NN	2
-jet			22	NN	21	VBP	1
+jet			23	NN	22	VBP	1
 jetliner		5	NN	5
 jetliners		2	NNS	2
-jets			8	NNS	8
+jets			9	NNS	8	VBZ	1
 jetsam			1	NN	1
 jetted			1	VBN	1
 jettison		3	VB	3
@@ -36376,7 +36560,7 @@ jeweller		1	NN	1
 jewellers		4	NNS	4
 jewellery		8	NN	8
 jewelry			19	NN	19
-jewels			8	NNS	8
+jewels			9	NNS	9
 jibbed			2	VBD	1	VBN	1
 jibe			1	NN	1
 jig			4	NN	3	VB	1
@@ -36390,31 +36574,31 @@ jingling		1	VBG	1
 jingoistic		1	JJ	1
 jinking			1	VBG	1
 jinx			2	NN	2
-jitters			5	NNS	5
+jitters			5	NN	1	NNS	4
 jittery			4	JJ	4
 jive			1	VB	1
-job			327	NN	327
+job			347	NN	347
 job-creation		1	NN	1
 job-training		1	NN	1
 job.			1	NN	1
 jobbeing		1	NN	1
 jobless			11	JJ	8	NNS	3
 joblessness		1	NN	1
-jobs			115	NNS	115
+jobs			120	NNS	120
 jock			1	NN	1
 jockey			2	NN	2
 jockeys			1	NNS	1
 jocks			1	NNS	1
 jocular			3	JJ	3
 jodhpurs		1	NNS	1
-jog			2	NN	1	VB	1
+jog			2	NN	1	VBP	1
 jogged			2	VBD	1	VBN	1
 jogger			1	NN	1
 jogging			4	NN	4
 joggled			1	VBD	1
-join			61	NN	1	VB	58	VBP	2
-joined			63	VBD	50	VBN	13
-joining			34	VBG	34
+join			62	NN	1	VB	59	VBP	2
+joined			65	VBD	51	VBN	14
+joining			36	VBG	36
 joins			11	VBZ	11
 joint			93	JJ	85	NN	8
 joint-implants		1	NNS	1
@@ -36422,18 +36606,18 @@ joint-venture		6	JJ	4	NN	2
 jointed			1	JJ	1
 jointly			33	RB	33
 joints			9	NNS	9
-joke			20	NN	20
+joke			26	NN	26
 joke?			1	NNP	1
 joked			2	VBD	2
 joker			2	NN	2
 jokers			1	NNS	1
-jokes			18	NNS	17	VBZ	1
+jokes			20	NNS	19	VBZ	1
 jokey			1	JJ	1
 jokingly		2	RB	2
 jollity			1	NN	1
-jolly			10	JJ	5	RB	5
+jolly			11	JJ	5	RB	6
 jolt			8	NN	4	VB	4
-jolted			8	VBD	4	VBN	4
+jolted			12	VBD	5	VBN	7
 jolting			1	VBG	1
 jolts			4	NNS	4
 jostle			1	VBP	1
@@ -36442,22 +36626,23 @@ jot			3	NN	2	VBP	1
 jotter			1	NN	1
 jottings		1	NNS	1
 journal			20	NN	20
-journalism		15	NN	15
+journalism		16	NN	16
 journalist		22	NN	22
 journalistic		3	JJ	3
-journalists		21	NNS	21
-journals		5	NNS	5
-journey			32	NN	32
+journalists		22	NNS	22
+journals		6	NNS	6
+journey			34	NN	34
 journey?		1	NN	1
 journeyed		3	VBD	2	VBN	1
-journeymen		1	NNS	1
+journeymen		1	NN	1
 journeys		3	NNS	3
 jousting		2	VBG	2
 jovial			4	JJ	4
 joviality		1	NN	1
 jowls			2	NNS	2
-joy			25	NN	25
+joy			26	NN	26
 joyful			6	JJ	6
+joyfully		1	RB	1
 joyless			2	JJ	2
 joyous			3	JJ	3
 joyously		1	RB	1
@@ -36466,14 +36651,14 @@ joys			3	NNS	3
 joystick		1	NN	1
 jubilee			1	NN	1
 judder			1	VB	1
-judge			142	NN	133	VB	7	VBP	2
-judged			9	VBN	9
-judgement		12	NN	12
+judge			148	IN	1	NN	135	VB	10	VBP	2
+judged			13	VBN	13
+judgement		17	NN	17
 judgements		3	NNS	3
 judges			58	NNS	58
 judgeships		2	NNS	2
 judging			5	VBG	5
-judgment		14	NN	14
+judgment		15	NN	15
 judgmental		1	JJ	1
 judgments		4	NNS	4
 judicial		15	JJ	15
@@ -36481,7 +36666,7 @@ judiciary		10	NN	10
 judicious		2	JJ	2
 judiciously		1	RB	1
 judo			1	NN	1
-jug			10	NN	8	VBG	2
+jug			10	NN	9	VBG	1
 juggernaut		1	NN	1
 juggernauts		1	NNS	1
 juggle			3	VB	3
@@ -36496,24 +36681,25 @@ juices			1	NNS	1
 juiciest		1	JJS	1
 juicy			4	JJ	4
 jukebox			2	NN	2
-jumble			8	JJ	3	NN	5
+jumble			9	JJ	3	NN	6
 jumbled			2	VBN	2
 jumbo			5	JJ	5
 jumbos			3	NNS	3
-jump			33	NN	18	VB	14	VBP	1
-jumped			83	VBD	78	VBN	5
-jumper			11	NN	11
+jump			36	NN	20	VB	15	VBP	1
+jump?She		1	NN	1
+jumped			86	VBD	81	VBN	5
+jumper			12	NN	12
 jumpers			1	NNS	1
 jumping			7	VBG	7
 jumping-off		1	JJ	1
 jumps			6	NNS	3	VBZ	3
-junction		4	NN	4
+junction		7	NN	7
 juncture		1	NN	1
 junctures		1	NNS	1
 jungle			21	NN	21
 jungle-clad		1	JJ	1
 jungles			1	NNS	1
-junior			12	JJ	9	NN	3
+junior			16	JJ	13	NN	3
 juniors			5	NNS	5
 juniper			1	NN	1
 junk			134	NN	132	VB	2
@@ -36537,18 +36723,19 @@ juror			2	NN	2
 jurors			20	NNS	20
 jury			71	NN	71
 jury-rigged		1	VBD	1
-just			753	JJ	12	RB	741
-just!			1	JJ	1
+just			788	IN	1	JJ	12	RB	775
+just!			1	NN	1
 just-completed		1	JJ	1
 just-concluded		1	JJ	1
 just-departed		1	JJ	1
 just-ended		1	JJ	1
 just-picked		1	JJ	1
-justice			24	NN	24
+justice			25	NN	25
 justices		4	NNS	4
-justifiable		2	JJ	2
-justification		2	NN	2
-justified		14	JJ	6	VBN	8
+justifiable		3	JJ	3
+justification		5	NN	5
+justifications		1	NNS	1
+justified		15	JJ	6	VBN	9
 justifies		5	VBZ	5
 justify			22	VB	22
 justifying		2	VBG	2
@@ -36572,27 +36759,28 @@ kayoed			1	VBN	1
 keen			36	JJ	35	VB	1
 keener			2	JJR	2
 keenly			1	RB	1
-keep			239	VB	218	VBP	21
+keep			250	VB	227	VBP	23
 keeper			2	NN	2
-keepers			3	NNS	3
-keeping			58	VBG	58
+keepers			4	NNS	4
+keeping			62	VBG	62
 keeping?		1	NN	1
-keeps			22	VBZ	22
+keeps			23	VBZ	23
 keepsakes		1	NNS	1
 keg			1	NN	1
 kelly\/varnell		1	varnell	1
 kennel			1	NN	1
 kennels			1	NNS	1
-kept			145	VBD	93	VBN	52
+kept			158	VBD	105	VBN	53
 kerb			3	NN	3
 kerchief		1	NN	1
 kerchiefed		1	JJ	1
 kerfuffle		1	NN	1
 kernel			3	NN	3
+kerosene		1	NN	1
 ketchup			2	NN	1	VB|IN	1
 kettle			16	NN	16
 kettles			2	NNS	1	VBZ	1
-key			103	JJ	66	NN	36	VB	1
+key			104	JJ	67	NN	36	VB	1
 keyboard		6	NN	6
 keyboards		1	NNS	1
 keychain		1	NN	1
@@ -36600,7 +36788,7 @@ keyed			1	JJ	1
 keyhole			3	NN	3
 keyless			1	JJ	1
 keynote			1	NN	1
-keys			13	NNS	13
+keys			16	NNS	16
 keystone		1	NN	1
 khaki			2	JJ	1	NNS	1
 kibbutz			1	NN	1
@@ -36619,21 +36807,21 @@ kiddie			1	NN	1
 kiddies			2	NNS	2
 kidding			2	VBG	2
 kidnap			1	VB	1
-kidnapped		5	VBD	1	VBN	4
+kidnapped		6	VBD	1	VBN	5
 kidnapper		4	NN	4
 kidnappers		2	NNS	2
 kidnapping		6	NN	6
 kidney			15	NN	15
 kidney-stone		1	NN	1
-kidneys			5	NNS	5
+kidneys			6	NNS	6
 kids			42	NNS	42
 kids.			1	NN	1
-kill			44	NN	1	VB	38	VBP	5
-killed			70	VBD	30	VBN	40
+kill			45	NN	1	VB	38	VBP	6
+killed			72	VBD	30	VBN	42
 killed.Its		1	VBZ	1
 killer			10	NN	10
 killers			3	NNS	3
-killing			31	JJ	1	NN	6	VBG	24
+killing			32	JJ	1	NN	6	VBG	25
 killings		6	NNS	6
 killjoy			1	NN	1
 kills			6	VBZ	6
@@ -36651,9 +36839,10 @@ kilos			1	NNS	1
 kilowatt		2	NN	2
 kilt			2	NN	2
 kilter			1	NN	1
-kin			2	NN	2
-kind			184	JJ	7	NN	176	RB	1
+kin			3	NN	3
+kind			200	JJ	10	NN	189	RB	1
 kind-hearted		1	JJ	1
+kinder			1	JJR	1
 kindergarten		2	NN	2
 kindergartens		1	NNS	1
 kindled			2	VBN	2
@@ -36664,13 +36853,13 @@ kindnesses		1	NNS	1
 kindred			1	NN	1
 kinds			34	NNS	34
 kinfolk			1	NNS	1
-king			27	NN	27
+king			29	NN	29
 king-size		2	JJ	2
 kingdom			3	NN	3
 kingdoms		2	NNS	2
 kingpin			1	NN	1
 kingpins		2	NNS	2
-kings			6	NNS	6
+kings			7	NNS	7
 kingship		1	NN	1
 kink			1	VB	1
 kinks			2	NNS	2
@@ -36680,13 +36869,13 @@ kinsman			1	NN	1
 kiosk			2	NN	2
 kip			3	NN	2	VB	1
 kippers			3	NNS	3
-kiss			15	NN	4	NNS	6	VB	5
-kissed			14	VBD	13	VBN	1
+kiss			15	NN	8	NNS	3	VB	4
+kissed			16	JJ	1	VBD	15
 kisses			1	NNS	1
 kissing			5	NN	1	VBG	4
 kit			10	NN	10
 kit?			1	NN	1
-kitchen			69	NN	69
+kitchen			73	NN	73
 kitchenette		3	NN	3
 kitchens		2	NNS	2
 kitchenware		1	NN	1
@@ -36694,7 +36883,7 @@ kite			1	NN	1
 kites			1	NNS	1
 kits			5	NNS	5
 kitschy			1	JJ	1
-kitten			9	NN	9
+kitten			9	JJ	9
 kittenish		1	JJ	1
 kittens			2	NNS	2
 kitty			3	NN	3
@@ -36703,25 +36892,25 @@ knack			3	NN	3
 knackered		1	JJ	1
 knave			1	NN	1
 knead			1	VB	1
-knee			24	NN	24
+knee			23	NN	23
 knee-deep		3	JJ	2	NN	1
 knee-high		2	JJ	2
-kneeled			1	VBD	1
+kneeled			2	VBD	2
 kneeling		2	VBG	2
 kneels			1	VBZ	1
-knees			31	NNS	31
+knees			33	NNS	33
 knees-up		1	NN	1
 knell			2	NN	2
 knelt			3	VB	1	VBP	2
-knew			126	VBD	126
+knew			140	VBD	140
 knick-knacks		1	NNS	1
 knickers		1	NNS	1
-knife			38	NN	38
+knife			39	NN	39
 knife-edge		1	NN	1
 knifed			3	VBN	3
 knifes			1	NNS	1
 knight			8	NN	8
-knighted		1	VBN	1
+knighted		3	VBD	1	VBN	2
 knighthood		1	NN	1
 knights			2	NNS	2
 knit			4	VBN	4
@@ -36729,7 +36918,7 @@ knitted			7	VBN	7
 knitter			1	NN	1
 knitting		8	VBG	8
 knives			8	NNS	8
-knob			6	NN	6
+knob			7	NN	7
 knobbly			2	JJ	2
 knobs			3	NNS	3
 knock			13	NN	5	VB	8
@@ -36746,25 +36935,25 @@ knot			13	NN	13
 knots			8	NNS	8
 knotted			8	JJ	1	VBD	6	VBN	1
 knotty			3	JJ	3
-know			336	VB	179	VBP	157
-know!			1	VBZ	1
+know			357	VB	188	VBP	169
+know!			1	NN	1
 know-how		7	NN	7
 know-it-all		1	NN	1
 know.			1	NN	1
 knowable		1	JJ	1
-knowing			15	VBG	15
+knowing			16	VBG	16
 knowingly		1	RB	1
 knowit			1	VBP	1
-knowledge		66	NN	66
+knowledge		70	NN	70
 knowledgeable		7	JJ	7
-known			149	JJ	5	VBN	144
+known			155	JJ	5	VBN	150
 knowns			2	NNS	2
-knows			46	VBZ	46
+knows			50	VBZ	50
 knuckles		7	NNS	7
 kosher			3	JJ	1	JJR	2
 kow-tow			2	VB	2
 kowtow			1	VB	1
-kph			1	NN	1
+kph			3	NN	3
 kraal			3	NN	3
 krater			1	NN	1
 kroner			11	NN	11
@@ -36777,7 +36966,7 @@ la			6	DT	1	FW	2	NNP	3
 la-di-da		2	JJ	2
 la-la			3	JJ	3
 lab			7	NN	7
-label			19	NN	19
+label			20	NN	20
 labeled			7	VBD	1	VBN	6
 labeling		1	VBG	1
 labelled		6	VBD	1	VBN	5
@@ -36789,16 +36978,16 @@ labor-funded		1	JJ	1
 labor-intensive		3	JJ	3
 labor-management	16	JJ	6	NN	10
 laboratories		4	NNS	4
-laboratory		11	NN	11
+laboratory		12	NN	12
 laboring		3	VBG	3
 laborious		4	JJ	4
 laboriously		4	RB	4
-labour			39	JJ	18	NN	20	VB	1
+labour			39	JJ	22	NN	16	VB	1
 labour-intensive	1	JJ	1
 labour-saving		2	JJ	2
-laboured		6	JJ	1	VBD	4	VBN	1
-labourer		2	NN	2
-labourers		6	NNS	6
+laboured		7	JJ	1	VBD	5	VBN	1
+labourer		3	NN	3
+labourers		7	NNS	7
 labouring		3	VBG	3
 labours			1	NNS	1
 labs			4	NNS	4
@@ -36813,7 +37002,7 @@ lacerations		1	NNS	1
 laces			3	NNS	2	VBZ	1
 laches			2	NN	2
 lachrymose		1	JJ	1
-lack			77	NN	66	VBP	11
+lack			80	NN	68	VBP	12
 lackadaisical		1	JJ	1
 lacked			12	VBD	11	VBN	1
 lackeys			2	NNS	2
@@ -36823,19 +37012,19 @@ lacklustre		1	JJ	1
 lacks			16	VBZ	16
 laconic			2	JJ	2
 lacquer			1	NN	1
-lacquer?		1	NN	1
+lacquer?		1	NNP	1
 lacquered		1	VBN	1
 lacy			1	JJ	1
-lad			6	NN	6
+lad			7	NN	7
 ladder			18	NN	18
 laddered		2	JJ	2
 ladders			1	NNS	1
 laddie			1	NN	1
 laden			5	JJ	5
-ladies			23	NNS	23
+ladies			24	NNS	24
 ladies-in-waiting	1	NN	1
 lads			6	JJ	1	NNS	4	UH	1
-lady			47	JJ	2	NN	45
+lady			51	JJ	2	NN	49
 ladylike		2	JJ	2
 ladys			2	NNS	2
 lag			12	NN	7	VB	1	VBP	4
@@ -36851,11 +37040,11 @@ laid-back		2	JJ	2
 lain			1	VBN	1
 lair			2	NN	2
 laity			2	NNS	2
-lake			25	NN	25
+lake			26	NN	26
 lakes			5	NNS	5
 lakeside		4	JJ	1	NN	3
-lam			1	VB	1
-lamb			9	JJ	1	NN	8
+lam			1	VBP	1
+lamb			9	JJ	2	NN	7
 lambasted		1	VBD	1
 lambastes		1	VBZ	1
 lambs			3	NNS	3
@@ -36868,8 +37057,8 @@ lamented		3	VBD	3
 laments			1	VBZ	1
 lameshe			1	VBP	1
 laminated		2	JJ	2
-lamp			17	NN	17
-lamp-post		4	NN	4
+lamp			18	NN	18
+lamp-post		5	NN	5
 lamp-posts		2	NNS	2
 lamplight		2	NN	2
 lamplit			1	JJ	1
@@ -36878,19 +37067,20 @@ lamps			8	NNS	8
 lampshades		2	NNS	2
 lance			1	VB	1
 lanced			2	VBD	1	VBN	1
-land			166	NN	154	VB	12
+land			173	NN	160	VB	13
 land-holding		1	JJ	1
 land-idling		1	JJ	1
 land-ownership		1	NN	1
 land-rich		1	JJ	1
 land-use		1	NN	1
-landed			31	VBD	23	VBN	8
+landed			33	VBD	25	VBN	8
 landfill		1	NN	1
 landfills		2	NNS	2
 landholdings		1	NNS	1
-landing			33	NN	30	VBG	3
+landing			33	NN	29	VBG	4
 landings		4	NNS	4
-landlady		7	JJ	1	NN	6
+landladies		1	NNS	1
+landlady		7	NN	7
 landless		3	JJ	3
 landlord		9	NN	9
 landlords		8	NNS	8
@@ -36899,18 +37089,18 @@ landmark		9	NN	9
 landmarks		1	NNS	1
 landowner		2	NN	2
 landowners		14	NNS	14
-lands			10	NNS	10
+lands			10	NNS	9	VBZ	1
 landscape		39	NN	39
 landscapes		3	NNS	3
 landscaping		2	NN	2
 landslide		7	NN	7
 landslides		2	NNS	2
 landslip		1	NN	1
-lane			28	NN	28
+lane			29	NN	29
 lanes			8	NNS	8
-language		93	NN	93
+language		100	NN	100
 language-housekeeper	1	JJ	1
-languages		20	NNS	20
+languages		23	NNS	23
 languid			2	JJ	2
 languish		2	VB	2
 languished		6	VBD	3	VBN	3
@@ -36921,10 +37111,10 @@ lank			1	JJ	1
 lanky			2	JJ	2
 lantern			1	JJ	1
 lanyard			1	NN	1
-lap			13	NN	13
+lap			14	NN	14
 lap-shoulder		1	JJ	1
 lapel			3	NN	3
-lapels			1	NNS	1
+lapels			2	NNS	2
 lapping			3	NN	1	VBG	2
 laps			3	NNS	3
 lapse			8	NN	6	VB	2
@@ -36936,17 +37126,17 @@ laptops			2	NNS	2
 larch			2	NN	2
 lard			2	NN	1	VB	1
 larded			1	VBN	1
-larder			3	NN	3
-large			396	JJ	395	RB	1
+larder			4	JJ	1	NN	3
+large			409	JJ	408	RB	1
 large-business		1	JJ	1
 large-capitalization	2	NN	2
 large-diameter		1	JJ	1
 large-scale		22	JJ	22
 largely			95	RB	95
-larger			60	JJR	60
+larger			63	JJR	63
 larger-than-life	1	JJ	1
 larger-than-normal	2	JJ	2
-largest			189	JJS	189
+largest			190	JJS	190
 largest-ever		1	JJ	1
 largish			1	JJ	1
 lark			2	NN	2
@@ -36966,22 +37156,22 @@ lashing			3	NN	1	VBG	2
 lashings		2	NNS	2
 lass			1	NN	1
 lasses			1	NNS	1
-last			937	JJ	910	NN	1	RB	10	VB	16
+last			964	JJ	931	NN	1	RB	11	VB	21
 last-ditch		2	JJ	2
 last-minute		5	JJ	5
 last-place		2	JJ	2
 last-second		1	JJ	1
 last.Wonderful!		1	NNP	1
-lasted			8	VBD	5	VBN	3
+lasted			11	VBD	8	VBN	3
 lastest			1	JJS	1
-lasting			14	JJ	10	VBG	4
+lasting			15	JJ	11	VBG	4
 lastly			1	RB	1
-lasts			10	VBZ	10
+lasts			11	VBZ	11
 latch			4	NN	2	VBP	2
 latched			1	VBN	1
 latching		1	VBG	1
-late			250	JJ	178	RB	72
-late!			1	CD	1
+late			259	IN	2	JJ	186	RB	71
+late!			1	JJ	1
 late-afternoon		1	JJ	1
 late-day		1	JJ	1
 late-night		3	JJ	3
@@ -36990,7 +37180,7 @@ late-summer\/early-FALL	1	early-FALL	1
 latecomers		1	NNS	1
 lately			14	RB	14
 latent			1	NN	1
-later			219	JJ	30	JJR	1	RB	151	RBR	37
+later			230	JJ	30	JJR	1	RB	162	RBR	37
 lateral			1	JJ	1
 latest			165	JJ	1	JJS	164
 lathe			2	NN	2
@@ -36998,7 +37188,7 @@ lather			1	NN	1
 lathers			1	VBZ	1
 lathes			2	NNS	2
 latitude		5	NN	5
-latitudes		1	NNS	1
+latitudes		2	NNS	2
 latrines		1	NNS	1
 latter			18	JJ	11	NN	7
 lattice			2	NN	2
@@ -37006,19 +37196,20 @@ latticed		1	JJ	1
 laudable		4	JJ	4
 laudatory		1	JJ	1
 lauded			3	VBD	3
-laugh			31	NN	20	VB	11
+laugh			32	NN	22	VB	10
+laugh!			1	NN	1
 laughable		2	JJ	2
-laughed			22	VBD	20	VBN	2
-laughing		16	JJ	2	VBG	14
+laughed			25	VBD	23	VBN	2
+laughing		16	JJ	1	VBG	15
 laughingly		3	RB	3
-laughs			5	NNS	2	VBZ	3
-laughter		44	NN	44
-launch			37	NN	12	VB	25
+laughs			6	NNS	2	VBZ	4
+laughter		48	NN	48
+launch			38	NN	12	VB	26
 launch-vehicle		1	NN	1
 launched		64	VBD	26	VBN	38
 launcher		1	NN	1
 launchers		1	NNS	1
-launches		7	NNS	3	VBZ	4
+launches		7	NNS	4	VBZ	3
 launching		12	NN	3	VBG	9
 launder			1	VB	1
 laundered		1	VBN	1
@@ -37028,15 +37219,15 @@ laundering		5	NN	4	VBG	1
 laundry			10	NN	10
 laurel			2	JJ	2
 laurels			2	NNS	2
-lava			1	NN	1
-lavatories		1	NNS	1
+lava			2	NN	2
+lavatories		2	NNS	2
 lavatory		10	JJ	4	NN	6
 lavender		1	NN	1
 lavish			9	JJ	8	VB	1
 lavished		2	VBN	2
 lavishing		1	VBG	1
 lavishly		2	RB	2
-law			346	NN	346
+law			352	NN	352
 law!			1	NN	1
 law-abiding		4	JJ	4
 law-breaker		1	NN	1
@@ -37051,29 +37242,29 @@ lawlessness		1	NN	1
 lawmaker		1	NN	1
 lawmakers		35	NNS	35
 lawmaking		1	JJ	1
-lawn			27	NN	27
+lawn			29	NN	29
 lawn?			1	NN	1
 lawns			8	NNS	8
-laws			92	NNS	92
+laws			95	NNS	95
 lawsuit			27	NN	27
 lawsuits		28	NNS	28
 lawyer			75	NN	75
-lawyers			116	NNS	116
+lawyers			117	NNS	117
 lax			2	JJ	2
 laxative		3	NN	3
 laxatives		1	NNS	1
-lay			124	VB	17	VBD	102	VBP	5
+lay			133	VB	15	VBD	116	VBP	2
 lay-by			1	NN	1
 layabout		1	NN	1
-layer			17	NN	17
+layer			19	NN	19
 layered			2	JJ	2
-layers			5	NNS	5
+layers			8	NNS	8
 laying			10	VBG	10
 layman			3	NN	3
-laymen			2	NNS	2
+laymen			2	NN	1	NNS	1
 layoff			2	NN	2
 layoffs			12	NNS	12
-layout			2	NN	2
+layout			6	NN	6
 lays			7	VBZ	7
 laze			2	VB	1	VBP	1
 lazily			1	RB	1
@@ -37082,75 +37273,76 @@ lazing			1	VBG	1
 lazy			16	JJ	16
 lbs			1	NNS	1
 le			1	DT	1
-lead			151	JJ	11	NN	47	VB	72	VBN	1	VBP	20
+lead			152	JJ	11	NN	48	VB	73	VBN	1	VBP	19
 lead-in			2	NN	2
 leaden			5	JJ	5
-leader			115	NN	115
-leaders			137	NNS	137
-leadership		61	NN	61
-leading			128	JJ	51	VBG	77
+leader			116	NN	116
+leaders			144	NNS	144
+leadership		62	NN	62
+leading			132	JJ	50	VBG	82
 leading?		1	JJ	1
 leadoff			1	NN	1
-leads			30	NNS	7	VBZ	23
-leaf			14	NN	14
+leads			30	NNS	6	VBZ	24
+leaf			15	NN	15
 leafless		3	JJ	3
-leaflet			9	JJ	3	NN	5	VB	1
+leaflet			10	JJ	3	NN	6	VB	1
 leaflets		3	NNS	3
 leafy			5	JJ	5
 league			15	NN	15
 league?			1	NN	1
 leaguers		1	NNS	1
 leagues			3	NNS	3
-leak			6	NN	6
+leak			7	NN	7
+leak?			1	NN	1
 leakage			1	NN	1
 leaked			4	VBD	1	VBN	3
 leaked?			2	NN	2
 leaking			7	VBG	7
-leaks			7	NNS	7
+leaks			7	NNS	6	VBZ	1
 leaks?			1	NN	1
 leaky			2	JJ	2
-lean			10	JJ	7	VB	1	VBP	2
-leaned			23	VBD	22	VBN	1
-leaning			7	VBG	7
+lean			11	JJ	7	VB	2	VBP	2
+leaned			27	VBD	26	VBN	1
+leaning			9	VBG	9
 leans			1	VBZ	1
-leant			6	NN	2	VB	1	VBP	3
+leant			6	JJ	1	NN	3	VBP	2
 leap			10	NN	7	VB	3
 leaped			10	VBD	10
 leapfrog		1	VB	1
-leaping			5	VBG	5
+leaping			6	VBG	6
 leapt			12	VBD	12
-learn			51	VB	42	VBP	9
-learned			57	VBD	29	VBN	28
+learn			56	VB	46	VBP	10
+learned			59	VBD	31	VBN	28
 learner			2	NN	2
 learners		2	NNS	2
-learning		35	NN	4	VBG	31
+learning		37	NN	6	VBG	31
 learns			4	VBZ	4
-learnt			12	JJ	3	NN	1	VB	2	VBP	6
+learnt			12	JJ	5	NN	1	VB	2	VBP	4
 lease			17	NN	8	VB	8	VBP	1
 leased			8	VBD	2	VBN	6
 leases			5	NNS	5
 leash			2	NN	2
 leasing			7	NN	5	VBG	1	VBG|NN	1
-least			295	JJS	284	RB	3	RBS	8
+least			301	JJS	290	RB	3	RBS	8
 leather			33	NN	33
 leatherette		1	NN	1
-leave			151	NN	9	VB	119	VBP	23
-leaves			70	NNS	35	VBZ	35
+leave			164	NN	10	VB	131	VBP	23
+leaves			76	NNS	39	VBZ	37
 leavestheyre		1	NN	1
-leaving			61	VBG	61
+leaving			62	VBG	62
 leavings		1	NNS	1
 lecherous		1	JJ	1
-lectern			4	JJ	1	NN	3
-lecture			26	NN	24	VBP	2
-lectured		7	VBD	7
+lectern			4	JJ	3	NN	1
+lecture			27	NN	25	VBP	2
+lectured		8	VBD	8
 lecturer		8	NN	8
 lecturers		3	NNS	3
 lectures		12	NNS	1	VBZ	11
 lectureship		2	NN	2
 lectureships		1	NNS	1
 lecturing		1	VBG	1
-led			192	VBD	86	VBN	106
-ledge			3	NN	3
+led			195	VBD	91	VBN	104
+ledge			4	NN	4
 ledger			2	NN	2
 ledgers			2	NNS	2
 ledges			2	NNS	2
@@ -37162,7 +37354,7 @@ leer			1	NN	1
 leered			1	VBD	1
 leery			4	JJ	4
 leeway			4	NN	4
-left			353	JJ	22	NN	30	RB	1	VBD	145	VBN	155
+left			368	JJ	23	NN	31	RB	1	VBD	152	VBN	161
 left!			1	NN	1
 left-arm		1	JJ	1
 left-hand		1	JJ	1
@@ -37172,7 +37364,7 @@ left-leaning		1	JJ	1
 left-of-center		1	JJ	1
 left-over		1	NN	1
 left-right		1	JJ	1
-left-wing		6	JJ	6
+left-wing		7	JJ	7
 left-winger		2	NN	2
 left-wingers		1	NNS	1
 leftfield		1	NN	1
@@ -37181,12 +37373,12 @@ leftists		1	NNS	1
 leftover		2	NN	2
 leftward		3	JJ	2	RB	1
 leftwards		2	JJ	1	RB	1
-leg			50	NN	50
+leg			53	NN	53
 leg!			1	NN	1
 leg-like		1	JJ	1
 leg-raising		1	JJ	1
 legacy			6	NN	6
-legal			145	JJ	145
+legal			147	JJ	147
 legalistic		2	JJ	2
 legality		3	NN	3
 legalization		2	NN	2
@@ -37195,7 +37387,7 @@ legalizing		3	VBG	3
 legally			11	RB	11
 legate			2	NN	2
 legation		1	NN	1
-legend			11	NN	11
+legend			12	NN	12
 legendary		7	JJ	7
 legends			7	NNS	7
 legerdemain		1	NN	1
@@ -37211,22 +37403,22 @@ legislators		16	NNS	16
 legislature		13	NN	13
 legislatures		2	NNS	2
 legitimacy		9	NN	9
-legitimate		22	JJ	20	NN	1	RB	1
+legitimate		20	JJ	20
 legitimated		1	VBN	1
 legitimately		2	RB	2
 legitimates		1	VBZ	1
 legitimize		3	VB	3
 legitimized		2	VBN	2
 legless			2	JJ	2
-legs			61	NNS	61
+legs			69	NNS	69
 legume			1	NN	1
 leisure			9	NN	9
-leisurely		7	JJ	6	RB	1
-lemon			19	JJ	2	NN	17
+leisurely		8	JJ	7	RB	1
+lemon			21	JJ	2	NN	19
 lemon-lime		1	JJ	1
 lemonade		5	NN	5
 lemons			2	NNS	2
-lemur			1	NN	1
+lemur			2	NN	2
 len			1	NN	1
 lend			22	VB	16	VBP	6
 lend-lease		1	JJ	1
@@ -37235,27 +37427,27 @@ lender			5	NN	5
 lenders			21	NNS	21
 lending			48	JJ	2	NN	32	VBG	14
 lends			3	VBZ	3
-length			35	NN	35
+length			41	IN	3	NN	38
 lengthen		3	VB	1	VBP	2
-lengthened		5	VBD	1	VBN	4
+lengthened		5	VBD	2	VBN	3
 lengthening		2	VBG	2
 lengthens		2	VBZ	2
-lengths			7	NNS	7
+lengths			8	NNS	8
 lengthy			17	JJ	17
 lenient			3	JJ	3
 lens			9	NN	9
 lenses			4	NNS	4
 lent			18	VBD	11	VBN	7
 lentils			1	NNS	1
-leopard			4	NN	4
+leopard			5	JJ	1	NN	4
 leopards		1	NNS	1
 leotards		2	NNS	2
-leper			3	NN	3
+leper			3	JJR	1	NN	2
 leprosy			1	JJ	1
 les			1	FW	1
 lesbians		1	NNS	1
 lesions			2	NNS	2
-less			345	CC	11	JJR	183	JJS	2	RB	1	RBR	146	RBR|JJR	2
+less			352	CC	11	IN	2	JJR	187	JJS	2	RB	1	RBR	147	RBR|JJR	2
 less-ambitious		1	JJR	1
 less-creditworthy	1	JJ	1
 less-cyclical		1	JJ	1
@@ -37273,7 +37465,7 @@ less-than-brilliant	1	JJ	1
 less-than-perfect	1	JJ	1
 less-than-robust	1	JJ	1
 lessen			2	VB	2
-lessened		1	VBN	1
+lessened		2	VBD	1	VBN	1
 lessening		2	NN	1	VBG	1
 lesser			5	JJR	5
 lesser-known		1	JJ	1
@@ -37281,34 +37473,34 @@ lesson			21	NN	21
 lesson-plans		1	NNS	1
 lessons			22	NNS	22
 lest			5	IN	5
-let			162	VB	107	VBD	34	VBN	3	VBP	18
+let			169	VB	112	VBD	37	VBN	3	VBP	17
 let's-give-it-a-year	1	JJ	1
 let-down		1	JJ	1
 let-up			1	NN	1
 letdown			1	NN	1
-lethal			11	JJ	11
+lethal			12	JJ	12
 lethargic		2	JJ	2
 lethargy		2	NN	2
-lets			8	VBZ	8
-letter			165	NN	165
+lets			9	VBZ	9
+letter			173	NN	173
 letter-bombs		1	NNS	1
 letter-writing		1	JJ	1
-letter?Theres		1	VBZ	1
+letter?Theres		1	NNS	1
 letterbox		2	NN	2
 letterhead		1	NN	1
-lettering		3	JJ	1	NN	2
-letters			94	NNS	94
+lettering		4	JJ	2	NN	2
+letters			98	NNS	98
 letters?		1	NN	1
-letting			16	VBG	16
+letting			18	VBG	18
 lettuce			6	NN	6
 lettuces		3	NNS	2	VBZ	1
-level			189	JJ	11	NN	175	VB	2	VBP	1
+level			194	JJ	11	NN	180	VB	2	VBP	1
 level-headed		1	JJ	1
 leveled			2	VBD	1	VBN	1
 leveling		3	NN	1	VBG	2
 levelled		8	VBD	6	VBN	2
 levels			119	NNS	119
-lever			9	JJ	1	NN	8
+lever			9	JJ	2	NN	7
 leverage		20	NN	20
 leveraged		58	JJ	47	NN	4	VBN	7
 leveraged-buy-out	1	NN	1
@@ -37320,7 +37512,7 @@ levy			4	NN	3	VB	1
 lewdness		1	NN	1
 lexicon			1	NN	1
 liabilities		12	NNS	12
-liability		39	NN	39
+liability		40	NN	40
 liable			22	JJ	22
 liaising		1	VBG	1
 liaison			2	NN	2
@@ -37331,7 +37523,7 @@ libation		1	NN	1
 libbers			1	NNS	1
 libel			7	NN	7
 libellous		2	JJ	2
-liberal			24	JJ	21	NN	3
+liberal			25	JJ	22	NN	3
 liberalised		1	JJ	1
 liberalism		4	NN	4
 liberalization		2	NN	2
@@ -37342,7 +37534,7 @@ liberally		2	RB	2
 liberals		5	NNS	5
 liberate		1	VB	1
 liberated		11	JJ	6	VBD	5
-liberating		2	JJ	2
+liberating		2	JJ	1	VBG	1
 liberation		8	NN	8
 liberator		1	NN	1
 liberators		1	NNS	1
@@ -37350,19 +37542,19 @@ libertarian		3	JJ	3
 libertarians		3	NNS	3
 liberties		7	NNS	7
 libertine		2	NN	2
-liberty			13	NN	13
+liberty			15	NN	15
 libidinous		2	JJ	2
 libido			1	NN	1
 librarian		3	NN	3
 librarians		1	NNS	1
 libraries		5	NNS	5
-library			41	NN	41
+library			45	NN	45
 librettist		1	NN	1
 libretto		1	NN	1
 librettos		1	NNS	1
-lice			4	NNS	4
-licence			12	NN	12
-licences		3	NNS	3
+lice			4	NN	1	NNS	3
+licence			16	NN	16
+licences		4	NNS	4
 license			14	NN	12	VB	2
 licensed		17	JJ	7	VB	2	VBD	4	VBN	4
 licensee		1	NN	1
@@ -37374,18 +37566,18 @@ lick			6	NN	4	VB	2
 licked			4	VBD	3	VBN	1
 licking			6	NN	3	VBG	3
 licks			3	NNS	3
-lid			16	NN	16
+lid			19	NN	19
 lids			5	NNS	5
-lie			38	NN	6	VB	17	VBP	15
+lie			47	NN	6	VB	24	VBP	17
 lie-down		1	NN	1
 lie-in			1	NN	1
 lied			4	VBD	4
 lien			3	NN	3
-lies			43	NNS	9	VBZ	34
+lies			46	NNS	10	VBZ	36
 lieu			4	NN	4
 lieutenant		4	NN	4
 lieutenants		2	NNS	2
-life			443	NN	443
+life			483	NN	483
 life!			1	NN	1
 life-and-death		2	JJ	2
 life-change		1	NN	1
@@ -37401,7 +37593,7 @@ life-span		3	NN	3
 life-style		5	NN	5
 life-threatening	1	JJ	1
 life.			1	NN	1
-life?			1	NNS	1
+life?			2	NN	1	NNS	1
 lifebelt		1	NN	1
 lifebelts		1	NNS	1
 lifeblood		3	NN	3
@@ -37411,20 +37603,19 @@ lifeguards		1	NNS	1
 lifejackets		1	NNS	1
 lifeless		3	JJ	3
 lifeline		3	NN	3
-lifelong		3	JJ	3
+lifelong		4	JJ	4
 lifes			6	NNS	6
 lifespan		2	NN	2
 lifestyle		1	NN	1
 lifestyles		1	NNS	1
 lifetime		22	NN	22
 lifetimes		1	NNS	1
-lift			54	NN	25	VB	27	VBP	2
+lift			54	NN	26	VB	26	VBP	2
 lift-off		2	NN	2
-lifted			50	VBD	27	VBN	23
-lifting			10	NN	3	VBG	7
-lifts			6	NNS	4	VBZ	2
-ligament		1	NN	1
-light			252	JJ	79	NN	169	VB	4
+lifted			55	VBD	32	VBN	23
+lifting			11	NN	2	VBG	9
+lifts			7	NNS	5	VBZ	2
+light			264	JJ	85	NN	174	VB	5
 light-blue		1	JJ	1
 light-controlled	1	JJ	1
 light-crude		1	NN	1
@@ -37448,52 +37639,52 @@ lightest		2	JJS	2
 lightheartedly		1	RB	1
 lighthouse		3	NN	3
 lighthouses		1	NNS	1
-lighting		16	NN	13	VBG	3
+lighting		18	NN	14	VBG	4
 lightly			8	RB	8
 lightness		1	NN	1
 lightning		10	NN	10
 lightning-fast		1	JJ	1
-lights			44	NNS	44
+lights			46	NNS	46
 lightweight		4	JJ	4
 lightweights		2	NNS	2
-like			860	IN	685	JJ	14	NN	4	VB	97	VBP	60
+like			902	IN	716	JJ	14	NN	4	VB	105	VBP	63
 like-minded		1	JJ	1
 likeable		4	JJ	4
-liked			32	VBD	24	VBN	8
+liked			35	VBD	27	VBN	8
 likeit			1	VBP	1
 likelihood		9	NN	9
-likely			225	JJ	194	RB	31
+likely			229	JJ	198	RB	31
 likeness		5	NN	5
 likening		1	VBG	1
-likes			14	NNS	3	VBZ	11
+likes			15	NNS	3	VBZ	12
 likewise		5	RB	5
 liking			3	NN	3
 lilac			5	JJ	3	NN	2
 lilies			4	NNS	4
 lilt			4	NN	4
 lilting			4	JJ	4
-lily			6	NN	6
+lily			7	NN	7
 limb			3	NN	3
 limber			1	JJ	1
 limbo			6	NN	6
-limbs			10	NNS	10
+limbs			11	NNS	11
 lime			5	JJ	1	NN	4
 lime-green		1	JJ	1
 limelight		4	NN	4
 limes			3	NNS	3
-limestone		10	NN	10
+limestone		11	NN	11
 limestones		2	NNS	2
 limey			2	NN	2
 limeys			1	NNS	1
-limit			83	NN	52	VB	25	VBP	6
+limit			86	NN	55	VB	25	VBP	6
 limitation		1	NN	1
 limitations		19	NNS	19
 limited			92	JJ	51	VBD	6	VBN	35
 limited-partnership	2	NN	2
 limited-production	1	JJ	1
-limiting		10	VBG	10
+limiting		11	VBG	11
 limitless		4	JJ	4
-limits			43	NNS	35	VBZ	8
+limits			44	NNS	36	VBZ	8
 limousines		3	NNS	3
 limp			10	JJ	8	NN	2
 limped			3	VBD	3
@@ -37503,7 +37694,7 @@ limping			3	VBG	3
 limply			2	RB	2
 linchpin		2	NN	2
 linden			3	NN	3
-line			202	NN	199	VB	2	VBP	1
+line			211	NN	208	VB	2	VBP	1
 line-item		37	JJ	37
 line-item-veto		2	JJ	2
 line-up			2	NN	2
@@ -37516,12 +37707,12 @@ lineman			1	NN	1
 linen			5	NN	5
 liner			5	NN	5
 liners			3	NNS	3
-lines			92	NNS	92
+lines			97	NNS	97
 linesman		1	NN	1
 linesmans		2	NNS	2
 lineup			2	NN	2
 linger			7	VB	7
-lingered		4	VBD	3	VBN	1
+lingered		4	VBD	1	VBN	3
 lingering		1	VBG	1
 lingers			2	VBZ	2
 lingo			2	NN	2
@@ -37530,7 +37721,7 @@ linguistic		3	JJ	3
 linguistics		8	NNS	8
 linguists		1	NNS	1
 lining			8	NN	6	VBG	2
-link			30	NN	25	VB	5
+link			31	NN	25	VB	6
 link-up			1	NN	1
 linkages		1	NNS	1
 linked			26	VBD	4	VBN	22
@@ -37542,18 +37733,17 @@ linseed			1	JJ	1
 lintel			1	NN	1
 lion			17	NN	17
 lion's-head		1	NN	1
-lions			9	NNS	9
+lions			10	NNS	10
 lip			8	NN	8
-lip-reads		1	NNS	1
 lip-service		1	NN	1
 lipoproteins		1	NNS	1
-lips			43	NNS	43
-lipstick		8	NN	8
+lips			44	NNS	44
+lipstick		9	NN	9
 lipsticks		1	NNS	1
 liquefied		2	VBN	2
 liquefies		1	VBZ	1
 liqueurs		2	NNS	2
-liquid			42	JJ	20	NN	22
+liquid			42	JJ	19	NN	23
 liquid-chromatography	1	NN	1
 liquid-nitrogen		1	NN	1
 liquidate		3	VB	3
@@ -37564,15 +37754,16 @@ liquidator		1	NN	1
 liquidity		27	NN	27
 liquidize		1	VB	1
 liquor			6	NN	6
-lire			20	NNS	20
+lire			20	NN	1	NNS	19
 lisp			2	NN	1	VB	1
-list			90	NN	88	VB	1	VBP	1
+list			95	NN	93	VB	1	VBP	1
 listed			46	JJ	6	VBD	5	VBN	35
-listen			28	VB	25	VBP	3
-listened		30	VBD	29	VBN	1
+listen			29	VB	27	VBP	2
+listened		33	VBD	32	VBN	1
 listener		5	NN	5
 listeners		7	NNS	7
-listening		29	NN	3	VBG	26
+listening		32	NN	3	VBG	29
+listening?		1	JJ	1
 listens			2	VBZ	2
 listing			13	NN	9	VBG	4
 listings		4	NNS	4
@@ -37583,10 +37774,10 @@ litany			3	NN	3
 literacy		6	NN	6
 literal			5	JJ	5
 literal-minded		1	JJ	1
-literally		18	RB	18
+literally		19	RB	19
 literary		13	JJ	13
 literate		2	JJ	2
-literature		36	NN	36
+literature		37	NN	37
 lithe			2	JJ	2
 lithograph		1	NN	1
 lithography		1	NN	1
@@ -37603,45 +37794,45 @@ litter			13	NN	13
 littered		6	VBN	6
 littering		3	VBG	3
 litters			1	NNS	1
-little			645	JJ	566	RB	79
+little			683	JJ	599	RB	84
 little-known		2	JJ	2
-little.			1	CD	1
+little.			1	FW	1
 liturgy			3	NN	3
-live			162	JJ	27	RB	3	VB	73	VBP	59
+live			168	JJ	23	RB	2	VB	75	VBP	68
 live-in			1	JJ	1
-live?			2	JJ	1	VB	1
-lived			71	VBD	60	VBN	11
+live?			2	CD	1	VB	1
+lived			74	VBD	64	VBN	10
 livelihood		5	NN	5
 lively			12	JJ	12
-liver			5	NN	5
+liver			6	NN	6
 liveried		1	JJ	1
 livers			1	NNS	1
 livery			3	NN	3
-lives			85	NNS	69	VBZ	16
+lives			93	NNS	74	VBZ	19
 livestock		4	NN	4
 livid			5	JJ	5
-living			120	JJ	6	NN	50	NNS	2	VBG	62
-living-room		11	NN	11
+living			128	JJ	6	NN	56	NNS	2	VBG	64
+living-room		12	NN	12
 lizard-skin		1	JJ	1
 lizards			2	NNS	2
-load			35	NN	31	VB	4
+load			36	NN	32	VB	4
 loaded			22	JJ	8	VBD	3	VBN	11
 loading			4	NN	3	VBG	1
 loads			6	NNS	6
 loaf			7	JJ	1	NN	6
 loafed			1	VBD	1
 loafers			4	NNS	4
-loan			127	NN	125	VB	2
+loan			128	NN	126	VB	2
 loan-loss		10	JJ	7	NN	3
 loaned			3	VBD	3
-loans			147	NNS	147
+loans			148	NNS	148
 loath			5	JJ	5
 loathed			3	VBD	3
 loathing		2	NN	1	VBG	1
 loathsome		4	JJ	4
 loaves			1	NNS	1
 lob			2	VB	2
-lobbed			1	VBD	1
+lobbed			1	VBN	1
 lobbied			4	VBD	3	VBN	1
 lobbies			3	NNS	3
 lobby			16	NN	14	VB	2
@@ -37652,7 +37843,7 @@ lobe			2	NN	2
 lobs			1	NNS	1
 lobster			4	NN	4
 lobsters		1	NNS	1
-local			242	JJ	241	NN	1
+local			250	JJ	249	NN	1
 locale			1	NN	1
 locales			2	NNS	2
 localities		1	NNS	1
@@ -37668,7 +37859,7 @@ location		20	NN	20
 location)		1	NN	1
 locations		12	NNS	12
 lock			21	JJ	1	NN	15	VB	4	VBP	1
-locked			30	VBD	2	VBN	28
+locked			30	VBD	3	VBN	27
 locker			1	NN	1
 locking			3	VBG	3
 locking-in		1	NN	1
@@ -37676,11 +37867,11 @@ locks			7	NNS	6	VBZ	1
 lockup			1	NN	1
 locomotive		1	NN	1
 locomotives		2	NNS	2
-locus			1	NNS	1
+locus			1	NN	1
 locusts			1	NNS	1
 locution		1	NN	1
 lodge			4	NN	2	VB	2
-lodged			11	VBD	3	VBN	8
+lodged			11	VBD	4	VBN	7
 lodgers			2	NNS	2
 lodging			2	NN	1	VBG	1
 lodgings		2	NNS	2
@@ -37710,7 +37901,7 @@ lolled			1	VBN	1
 lolling			1	VBG	1
 lollipop		2	NN	2
 lollipops		1	NNS	1
-lolloping		1	NN	1
+lolloping		1	VBG	1
 lone			6	JJ	6
 lonelier		1	JJR	1
 loneliest		2	JJS	2
@@ -37718,7 +37909,7 @@ loneliness		3	NN	3
 lonely			20	JJ	17	NNS	3
 loner			2	NN	2
 lonesome		1	JJ	1
-long			584	JJ	396	RB	188
+long			612	IN	4	JJ	418	RB	190
 long-awaited		7	JJ	7
 long-banned		1	JJ	1
 long-cherished		1	JJ	1
@@ -37749,31 +37940,33 @@ long-troubled		1	JJ	1
 long-winded		2	JJ	2
 longed			6	VBD	5	VBN	1
 longed-for		1	JJ	1
-longer			163	JJR	30	RB	54	RBR	79
-longer-lasting		1	VBG	1
+longer			169	JJR	33	RB	52	RBR	84
+longer-lasting		1	JJ	1
 longer-term		5	JJ	4	JJR	1
-longest			8	JJS	8
+longest			9	JJS	9
 longevity		1	NN	1
 longhand		1	NN	1
 longhaul		1	NN	1
-longing			10	NN	10
+longing			10	NN	8	VBG	2
 longingly		2	RB	2
 longings		2	NNS	2
 longstanding		13	JJ	13
 longterm		1	JJ	1
 longtime		16	JJ	12	NN	4
 loo			3	NN	3
-look			279	NN	98	VB	129	VBP	52
+look			298	NN	110	VB	130	VBP	58
 look-alike		1	NN	1
 look-in			1	NN	1
 look-out		3	JJ	1	NN	2
-looked			242	VBD	230	VBN	12
+look?			1	NN	1
+looked			263	VBD	252	VBN	11
 lookee-loos		1	NNS	1
-looking			189	VBG	189
-lookout			5	NN	5
-looks			73	NNS	14	VBZ	59
+looking			199	VBG	199
+lookout			6	NN	6
+looks			78	NNS	14	VBZ	64
+looks?			1	NN	1
 loom			6	NN	1	VB	1	VBP	4
-loomed			1	VBN	1
+loomed			1	VBD	1
 looming			7	VBG	7
 looms			9	VBZ	9
 loonies			1	NNS	1
@@ -37783,10 +37976,10 @@ looped			2	VBN	2
 loophole		4	NN	4
 loopholes		5	NNS	5
 loops			4	NNS	4
-loose			48	JJ	40	RB	7	VB	1
+loose			49	JJ	42	RB	6	VB	1
 loosed			1	VBN	1
 looseleaf		2	NN	2
-loosely			2	RB	2
+loosely			3	RB	3
 loosen			10	VB	10
 loosened		9	VBN	9
 loosening		1	NN	1
@@ -37805,36 +37998,37 @@ lords			3	NNS	3
 lore			2	NN	2
 lorgnette		2	NN	2
 lorries			10	NNS	10
-lorry			11	JJ	2	NN	9
-lose			80	VB	69	VBP	11
+lorry			12	JJ	3	NN	9
+lose			84	VB	73	VBP	11
 loser			7	NN	7
 losers			13	NNS	13
 loses			15	NNS	1	VBZ	14
-losing			45	JJ	1	NN	2	VBG	42
-loss			259	NN	259
+losing			48	JJ	1	NN	2	VBG	45
+loss			264	NN	264
 loss-expense		1	JJ	1
 loss-making		2	JJ	2
-losses			169	NNS	169
-lost			228	JJ	5	VBD	112	VBN	111
-lot			273	NN	269	RB	4
+losses			170	NNS	170
+lost			238	JJ	5	VBD	119	VBN	114
+lot			288	NN	284	RB	4
 lot?			1	NN	1
 lotion			3	NN	3
 lotions			3	NNS	3
-lots			31	NNS	31
+lots			32	NNS	32
 lotter			1	NN	1
 lotteries		1	NNS	1
 lottery			7	NN	7
-loud			43	JJ	43
+loud			46	JJ	43	RB	3
 loud-mouthed		2	JJ	2
-louder			7	JJR	2	RBR	5
-loudest			1	JJS	1
+loud?			1	NN	1
+louder			9	JJR	2	RBR	7
+loudest			2	JJS	2
 loudhailer		1	NN	1
 loudhailers		1	NNS	1
-loudly			11	RB	11
-loudspeaker		3	JJ	1	NN	2
+loudly			12	RB	12
+loudspeaker		3	JJ	2	NN	1
 loudspeakers		2	NNS	2
 louis			1	NNS	1
-lounge			14	NN	14
+lounge			17	NN	17
 lounged			1	VBD	1
 lounges			1	NNS	1
 lounging		1	VBG	1
@@ -37842,20 +38036,21 @@ louse			2	NN	2
 lousy			14	JJ	14
 lout			1	NN	1
 lovable			1	JJ	1
-love			142	NN	88	VB	23	VBP	31
+love			157	NN	95	VB	29	VBP	33
 love-making		1	NN	1
 lovebirds		1	NNS	1
-loved			38	VBD	35	VBN	3
+loved			40	VBD	37	VBN	3
 loveless		4	JJ	4
-loveliest		1	JJS	1
+lovelier		1	JJR	1
+loveliest		2	JJS	2
 loveliness		1	NN	1
-lovely			28	JJ	28
+lovely			33	JJ	33
 lover			12	NN	12
-lovers			9	NNS	9
-loves			5	VBZ	5
-loving			7	JJ	7
+lovers			11	NNS	11
+loves			6	VBZ	6
+loving			7	JJ	6	NN	1
 lovingly		2	RB	2
-low			225	JJ	209	NN	11	RB	5
+low			229	JJ	213	NN	11	RB	5
 low-ability		3	JJ	3
 low-altitude		1	NN	1
 low-ball		2	JJ	2
@@ -37887,7 +38082,7 @@ low-slung		1	JJ	1
 low-sulfur		2	JJ	2
 low-tax			1	NN	1
 low-tech		1	JJ	1
-lower			282	JJR	230	RBR	31	VB	20	VBP	1
+lower			283	JJR	231	RBR	31	VB	20	VBP	1
 lower-court		1	NN	1
 lower-income		1	JJ	1
 lower-level		1	JJ	1
@@ -37899,7 +38094,7 @@ lower-than-forecast	1	JJ	1
 lowered			33	VBD	22	VBN	11
 lowering		9	NN	1	VBG	8
 lowers			2	VBZ	2
-lowest			18	JJS	18
+lowest			19	JJS	19
 lowest-rated		2	JJ	2
 lowland			1	JJ	1
 lowliest		2	JJS	2
@@ -37910,13 +38105,13 @@ loyalist		3	JJ	2	NN	1
 loyalists		1	NNS	1
 loyally			1	RB	1
 loyalties		6	NNS	6
-loyalty			16	NN	16
+loyalty			17	NN	17
 lubricant		2	NN	2
 lubricants		6	NNS	6
 lubricating		1	VBG	1
 lubricating-oil		1	NN	1
 lucid			7	JJ	7
-luck			20	NN	20
+luck			22	NN	22
 lucked			1	VBD	1
 luckier			2	JJR	2
 luckiest		1	JJS	1
@@ -37942,28 +38137,29 @@ lumbering		1	VBG	1
 lumberyard		1	NN	1
 luminaries		2	NNS	2
 luminary		1	NN	1
-luminous		5	JJ	5
+luminous		6	JJ	6
 lump			10	NN	9	VB	1
 lump-sum		2	JJ	2
 lumped			3	VBN	3
 lumpier			1	JJR	1
-lumps			8	NNS	8
+lumps			9	NNS	9
 lumpy			4	JJ	4
 lunar			1	JJ	1
 lunatic			8	JJ	7	NN	1
 lunatics		3	NNS	3
-lunch			59	NN	57	VB	2
+lunch			61	NN	59	VB	2
 lunch.Neither		1	NN	1
-lunch?			1	CD	1
+lunch?			1	NNP	1
 lunched			2	VBD	2
 luncheon		5	NN	5
 luncheons		1	NNS	1
 lunches			1	NNS	1
 lunching		3	VBG	3
 lunchtime		3	NN	3
-lung			12	NN	12
+lung			13	NN	13
 lunge			1	NN	1
 lunged			1	VBD	1
+lungfish		1	NN	1
 lunging			1	VBG	1
 lungs			16	NNS	16
 lurch			3	NN	2	VBP	1
@@ -37991,10 +38187,11 @@ luxuriated		1	VBD	1
 luxuries		6	NNS	6
 luxuriescream		1	NN	1
 luxurious		6	JJ	6
-luxury			40	JJ	1	NN	39
+luxuriously		1	RB	1
+luxury			42	JJ	1	NN	41
 luxury-car		7	NN	7
 lychgate		1	NN	1
-lying			39	VBG	39
+lying			44	VBG	44
 lying-in		1	NN	1
 lynch-mob		1	JJ	1
 lynched			1	VBN	1
@@ -38010,21 +38207,21 @@ mace			1	NN	1
 machete			1	NN	1
 machetes		2	NNS	2
 machikin		3	FW	3
-machine			124	NN	124
-machine-gun		2	JJ	1	NN	1
+machine			130	NN	130
+machine-gun		2	NN	2
 machine-gun-toting	1	JJ	1
 machine-guns		1	NNS	1
 machine-tool		1	JJ	1
 machine-tools		1	NNS	1
 machine?		1	NN	1
 machined		1	VBD	1
-machinery		42	NN	42
-machines		78	NNS	78
+machinery		43	NN	43
+machines		79	NNS	79
 machining		1	NN	1
 machinist		1	NN	1
 machinists		26	NNS	26
 macho			1	JJ	1
-mackintosh		2	NN	2
+mackintosh		3	NN	3
 macrocosm		1	NN	1
 macrocrystalline	2	NN	2
 macroeconomic		1	JJ	1
@@ -38034,7 +38231,7 @@ madcap			1	JJ	1
 maddened		2	JJ	1	VBN	1
 maddening		2	JJ	2
 madder			1	JJR	1
-made			901	VBD	473	VBN	428
+made			938	VBD	496	VBN	442
 made-up			2	JJ	1	NN	1
 madesomething		1	NN	1
 madhouse		2	NN	2
@@ -38049,8 +38246,8 @@ mafia			3	NN	3
 mafias			3	NNS	3
 mafiosi			1	NNS	1
 mag			1	NN	1
-magazine		112	NN	112
-magazines		65	NNS	65
+magazine		113	NN	113
+magazines		66	NNS	66
 magenta			2	JJ	1	NN	1
 maggot			1	NN	1
 maggots			2	NNS	2
@@ -38061,6 +38258,7 @@ magicians		2	NNS	2
 magisterial		2	JJ	2
 magisterially		1	RB	1
 magistrate		7	NN	7
+magistrate!		1	NN	1
 magistrates		7	NNS	7
 magnanimous		1	JJ	1
 magnate			5	NN	5
@@ -38086,7 +38284,7 @@ mahogany		3	NN	3
 maid			8	NN	8
 maiden			3	JJ	2	NN	1
 maidens			1	NNS	1
-maids			1	JJ	1
+maids			1	NNS	1
 maidservant		1	NN	1
 mail			56	NN	51	VB	4	VBP	1
 mail-order		6	JJ	3	NN	3
@@ -38101,19 +38299,19 @@ mailings		1	NNS	1
 mailman			1	NN	1
 mailmen			1	NNS	1
 mailroom		2	NN	2
-maim			1	VB	1
-main			151	JJ	150	NN	1
+maim			1	VBP	1
+main			162	JJ	161	NN	1
 mainframe		15	JJ	1	NN	14
 mainframes		11	NNS	11
 mainland		7	JJ	2	NN	5
 mainline		3	JJ	1	NN	1	VB	1
-mainly			36	RB	36
+mainly			40	RB	40
 mains			6	NNS	6
 mainspring		1	NN	1
 mainstay		5	NN	5
 mainstream		8	JJ	4	NN	4
 maintain		60	VB	43	VBP	17
-maintained		29	VBD	19	VBN	10
+maintained		30	VBD	20	VBN	10
 maintainence		1	NN	1
 maintaining		13	VBG	13
 maintains		13	VBZ	13
@@ -38122,29 +38320,29 @@ maisonette		1	NN	1
 maize			4	NN	2	VB	2
 majestic		4	JJ	4
 majestically		3	RB	3
-major			458	JJ	455	NN	3
+major			466	JJ	463	NN	3
 major-league		1	JJ	1
 majorities		1	NNS	1
 majority		97	NN	97
 majority-owned		2	JJ	2
 majors			5	NNS	5
-make			714	VB	616	VBP	98
+make			735	VB	633	VBP	102
 make-believe		1	VB	1
 make-up			10	NN	10
 make-weight		2	NN	2
 make-work		1	NN	1
 maker			189	NN	189
 makers			113	NNS	113
-makes			172	NNS	2	VBZ	170
+makes			176	NNS	2	VBZ	174
 makeshift		4	JJ	4
 makeup			5	NN	5
-making			264	NN	9	VBG	255
+making			267	NN	9	VBG	258
 maladjusted		1	JJ	1
 malady			1	NN	1
 malaise			1	NN	1
 malaria			4	NN	4
 malcontents		1	NNS	1
-male			52	JJ	34	JJ|NN	1	NN	17
+male			58	JJ	38	JJ|NN	2	NN	18
 male-dominated		2	JJ	2
 male-fertile		2	JJ	2
 male-only		1	JJ	1
@@ -38168,16 +38366,16 @@ malnourished		1	JJ	1
 malnutrition		3	NN	3
 malodorous		1	JJ	1
 malpractice		3	NN	3
-malt			2	JJ	1	VBN	1
+malt			2	NN	1	VBN	1
 maltreated		2	JJ	2
-mama			2	NN	2
+mama			1	NN	1
 mamba			1	NN	1
-mammal			2	JJ	2
+mammal			3	JJ	3
 mammalian		1	JJ	1
-mammals			3	NNS	3
+mammals			4	NNS	4
 mammoth			2	JJ	2
-man			562	NN	557	UH	1	VB	4
-man-eating		1	JJ	1
+man			598	NN	594	UH	1	VB	3
+man-eating		1	VBG	1
 man-hours		2	NN	1	NNS	1
 man-made		5	JJ	5
 man-to-man		1	JJ	1
@@ -38185,10 +38383,10 @@ man?			1	NN	1
 mana			1	JJ	1
 manacled		1	VBD	1
 manacles		1	NNS	1
-manage			41	VB	31	VBP	10
+manage			43	VB	33	VBP	10
 manageable		4	JJ	4
-managed			101	VBD	67	VBN	34
-management		203	NN	203
+managed			104	VBD	70	VBN	34
+management		204	NN	204
 management-by-objective	1	NN	1
 management-consultant	1	NN	1
 management-employee	1	NN	1
@@ -38198,9 +38396,9 @@ managements		6	NNS	6
 manager			124	NN	124
 manageress		2	NN	2
 managerial		1	JJ	1
-managers		116	NNS	116
+managers		117	NNS	117
 manages			18	VBZ	18
-managing		54	NN	9	VBG	45
+managing		56	NN	9	VBG	47
 mandarins		3	NNS	3
 mandate			11	NN	9	VB	2
 mandated		7	VBD	2	VBN	5
@@ -38223,7 +38421,7 @@ mangoes			1	NNS	1
 mangroves		1	NNS	1
 mangy			2	JJ	2
 manhandled		1	VBN	1
-manhandling		2	NNS	2
+manhandling		2	NNS	1	VBG	1
 manhole			2	NN	2
 manhood			1	NN	1
 manhunt			3	NN	3
@@ -38236,7 +38434,7 @@ manicured		1	JJ	1
 manicuring		1	VBG	1
 manicurist		1	NN	1
 manifest		4	JJ	3	VBP	1
-manifestations		4	NNS	4
+manifestations		5	NNS	5
 manifested		1	VBN	1
 manifesto		5	NN	5
 manifestos		1	NNS	1
@@ -38253,10 +38451,10 @@ manipulators		1	NNS	1
 mankind			11	NN	11
 manmade-fiber		1	JJ	1
 manned			5	JJ	1	VBD	4
-manner			63	NN	63
+manner			65	NN	65
 mannered		2	JJ	2
 mannerisms		3	NNS	3
-manners			12	NNS	12
+manners			13	NNS	13
 manning			1	VBG	1
 manoeuvrable		1	JJ	1
 manoeuvre		2	NN	2
@@ -38265,14 +38463,14 @@ manoeuvres		3	NNS	3
 manor			2	NN	2
 manors			1	NNS	1
 manpower		6	NN	6
-mans			34	JJ	1	NNS	32	VBZ	1
+mans			35	NNS	34	VBZ	1
 manse			1	NN	1
 manservant		2	NN	2
-mansion			9	NN	9
+mansion			10	NN	10
 mansions		2	NNS	2
 manslaughter		1	NN	1
 mantel			2	NN	2
-mantelpiece		3	NN	3
+mantelpiece		4	NN	4
 mantelshelf		1	NN	1
 mantle			3	NN	3
 mantlepiece		2	NN	2
@@ -38287,11 +38485,11 @@ manufacturers		54	NNS	54
 manufactures		3	NNS	1	VBZ	2
 manufacturing		87	NN	63	VBG	24
 manure			2	NN	2
-manuscript		5	NN	5
+manuscript		6	NN	6
 manuscripts		2	NNS	2
-many			779	DT	5	JJ	769	NNS	1	PDT	1	RB	3
+many			793	DT	5	JJ	782	NNS	1	PDT	1	RB	4
 many-sided		3	JJ	3
-map			34	NN	30	VB	3	VBP	1
+map			36	NN	32	VB	3	VBP	1
 maple			1	NN	1
 mapping			3	NN	3
 maps			6	NNS	6
@@ -38305,12 +38503,12 @@ marble-columned		1	JJ	1
 marble-topped		1	JJ	1
 marbled			2	JJ	2
 marbles			3	NNS	3
-march			24	NN	19	VB	3	VBP	2
+march			27	NN	22	VB	3	VBP	2
 marched			14	VBD	14
-marchers		6	NNS	6
+marchers		7	NNS	7
 marches			3	NNS	3
-marching		6	VBG	6
-mare			3	NN	3
+marching		7	VBG	7
+mare			4	NN	4
 margarine		2	NN	2
 margin			42	JJ	1	NN	41
 margin-calls		1	NNS	1
@@ -38327,7 +38525,7 @@ marinated		1	VBN	1
 marine			8	JJ	6	NN	2
 marine-research		1	NN	1
 mariners		1	NNS	1
-marines			4	NNS	4
+marines			5	NNS	5
 marital			6	JJ	6
 marjoram		1	NN	1
 mark			68	NN	55	VB	10	VBP	3
@@ -38335,11 +38533,11 @@ mark-up			1	NN	1
 mark-yen		1	JJ	1
 markdown		3	NN	3
 markdowns		3	NNS	3
-marked			45	JJ	9	VBD	18	VBN	18
+marked			48	JJ	10	VBD	18	VBN	20
 markedly		4	RB	4
 marker			1	NN	1
 markers			1	NNS	1
-market			1301	NN	1287	VB	13	VBP	1
+market			1307	NN	1293	VB	13	VBP	1
 market-affecting	1	JJ	1
 market-based		1	JJ	1
 market-by-market	1	JJ	1
@@ -38350,6 +38548,7 @@ market-monitoring	2	JJ	2
 market-moving		2	JJ	2
 market-opening		1	JJ	1
 market-oriented		2	JJ	2
+market-place		1	JJ	1
 market-reform		1	JJ	1
 market-research		1	JJ	1
 market-revision		1	NN	1
@@ -38363,31 +38562,31 @@ marketed		8	VBD	1	VBN	7
 marketeers		1	NNS	1
 marketer		6	NN	6
 marketers		11	NNS	11
-marketing		121	JJ	1	NN	104	VBG	16
+marketing		122	JJ	1	NN	105	VBG	16
 marketing-communications	1	NNS	1
 marketplace		24	NN	24
-markets			309	NNS	305	VBZ	4
+markets			310	NNS	306	VBZ	4
 marketwide		1	JJ	1
-marking			13	VBG	13
+marking			14	VBG	14
 markings		4	NNS	4
 markka			3	FW	2	NNS	1
 markkaa			3	NN	3
-marks			122	NNS	108	VBZ	14
+marks			123	NNS	107	VBZ	16
 marksman		1	NN	1
 markup			1	NN	1
 marmalade		5	NN	5
 maroon			4	NN	4
-marooned		4	VBN	4
+marooned		4	VBD	1	VBN	3
 marquee			1	NN	1
 marquess		1	NN	1
 marred			3	VBN	3
-marriage		68	NN	68
+marriage		72	NN	72
 marriage?		1	NNS	1
 marriageable		2	JJ	2
 marriages		12	NNS	12
-married			53	JJ	18	VBD	9	VBN	26
+married			57	JJ	18	VBD	10	VBN	29
 marrow			3	NN	3
-marry			25	VB	25
+marry			29	VB	29
 marrying		5	VBG	5
 marsh			7	NN	7
 marshal			2	NN	1	VB	1
@@ -38408,9 +38607,11 @@ martini			2	NN	2
 martyr			5	NN	5
 martyred		4	JJ	3	VBN	1
 martyrs			1	NNS	1
-marvel			3	NN	2	VB	1
-marvelled		1	VBD	1
-marvellous		18	JJ	18
+marvel			4	NN	2	VB	2
+marveled		1	VBD	1
+marvelled		3	VBD	2	VBN	1
+marvellous		21	JJ	21
+marvellous!		1	JJ	1
 marvellously		3	RB	3
 marvelous		1	JJ	1
 marvelously		1	RB	1
@@ -38422,7 +38623,7 @@ masculine-looking	1	JJ	1
 masculinity		4	NN	4
 mash			1	VB	1
 mashed			3	JJ	2	VBN	1
-mask			10	NN	9	VB	1
+mask			11	NN	10	VB	1
 masked			5	JJ	1	VBN	4
 masks			5	NNS	5
 masochist		1	NN	1
@@ -38431,7 +38632,7 @@ masonic			1	JJ	1
 masonry			5	NN	5
 masquerade		2	NN	1	VB	1
 masquerading		5	VBG	5
-mass			58	JJ	21	NN	37
+mass			61	JJ	24	NN	37
 mass-distribution	1	JJ	1
 mass-market		6	JJ	6
 mass-produce		1	VB	1
@@ -38447,14 +38648,14 @@ masses			14	NNS	14
 masses?			1	NN	1
 masseurs		1	NNS	1
 massing			2	VBG	2
-massive			55	JJ	55
+massive			62	JJ	62
 massively		2	RB	2
 mast			2	NN	2
 master			37	NN	33	VB	4
 mastered		4	VBN	4
 masterful		1	JJ	1
 masterfully		1	RB	1
-masterly		4	JJ	4
+masterly		4	JJ	3	RB	1
 mastermind		2	NN	2
 masterminded		3	VBD	2	VBN	1
 masterminding		1	NN	1
@@ -38469,9 +38670,9 @@ masticating		1	VBG	1
 masts			1	VBZ	1
 mat			8	NN	8
 matador			1	NN	1
-match			58	NN	39	VB	16	VBP	3
-matched			16	JJ	2	VBD	7	VBN	7
-matches			11	NNS	9	VBZ	2
+match			62	NN	39	VB	19	VBP	4
+matched			17	JJ	2	VBD	9	VBN	6
+matches			13	NNS	12	VBZ	1
 matching		13	JJ	3	VBG	10
 matchless		2	JJ	2
 matchmaker		1	NN	1
@@ -38492,16 +38693,16 @@ materializes		2	VBZ	2
 materially		2	RB	2
 materials		74	NNS	74
 materiel		1	NN	1
-maternal		2	JJ	2
+maternal		3	JJ	3
 maternity		2	NN	2
 mates			7	NNS	7
 math			5	NN	5
-mathematical		13	JJ	13
+mathematical		14	JJ	14
 mathematically		2	RB	2
 mathematician		3	NN	3
 mathematicians		2	NNS	2
-mathematics		15	NN	6	NNS	9
-maths			10	NNS	10
+mathematics		18	NN	6	NNS	12
+maths			11	NNS	11
 matinee			3	NN	3
 mating			5	NN	3	VBG	2
 matriarchal		1	JJ	1
@@ -38513,16 +38714,16 @@ matrons			1	NNS	1
 mats			1	NNS	1
 matt			3	JJ	3
 matted			3	JJ	3
-matter			152	NN	144	VB	8
+matter			161	NN	152	VB	9
 matter-of-factly	1	RB	1
 mattered		4	VBN	4
-matters			56	NNS	51	VBZ	5
+matters			57	NNS	51	VBZ	6
 matting			1	VBG	1
 mattress		9	NN	9
 mattresses		4	NNS	3	VBZ	1
 mature			27	JJ	8	NNP	1	VB	9	VBP	9
 matured			5	VBN	5
-maturer			1	NN	1
+maturer			1	JJR	1
 matures			3	VBZ	3
 maturing		22	VBG	22
 maturities		14	NNS	14
@@ -38541,8 +38742,8 @@ maxim			2	NN	2
 maximize		10	VB	10
 maximizing		2	VBG	2
 maximum			36	JJ	23	NN	11	RB	2
-may			814	MD	814
-maybe			19	RB	19
+may			833	MD	833
+maybe			20	RB	20
 mayhem			1	NN	1
 mayonnaise		1	NN	1
 mayor			22	NN	22
@@ -38551,12 +38752,13 @@ mayoralty		3	NN	3
 mayors			2	NNS	2
 maze			8	NN	8
 mazes			2	NNS	2
-me			1151	FW	2	PRP	1149
-me?			2	NNS	1	VB	1
-me?Because		1	JJ	1
-meI			1	NNP	1
+me			1278	FW	2	PRP	1276
+me!			1	JJ	1
+me?			3	JJ	1	NNS	1	VB	1
+me?Because		1	IN	1
+meI			2	NNP	1	NNS	1
 meIm			1	NN	1
-meadow			3	NN	3
+meadow			4	NN	4
 meadows			7	NNS	7
 meager			1	JJ	1
 meagre			3	JJ	3
@@ -38565,22 +38767,23 @@ meal.			1	NN	1
 meals			10	NNS	10
 mealtimes		1	NNS	1
 mealy			2	JJ	2
-mean			112	JJ	10	NN	3	VB	66	VBP	33
+mean			114	JJ	10	NN	3	VB	68	VBP	33
+mean?Sure		1	VBP	1
 meander			2	VB	2
 meandered		2	VBD	2
 meandering		1	NN	1
 meanders		2	NNS	1	VBZ	1
 meandulcet		1	NN	1
 meanest			1	JJS	1
-meaning			46	NN	28	VBG	18
+meaning			43	NN	30	VBG	13
 meaningful		11	JJ	11
 meaningfully		4	RB	4
 meaningless		9	JJ	9
-meanings		43	NNS	43
-meanness		3	NN	3
+meanings		18	NNS	18
+meanness		4	NN	4
 means			97	NN	11	NNS	17	VBZ	69
 means?			1	NN	1
-meant			64	VBD	28	VBN	36
+meant			65	VBD	29	VBN	36
 meantime		10	NN	8	RB	2
 meanwhile		33	NN	2	RB	31
 measles			2	NNS	2
@@ -38591,7 +38794,7 @@ measure			106	NN	89	VB	17
 measured		26	JJ	2	VBD	4	VBN	20
 measurement		6	NN	6
 measurements		6	NNS	6
-measures		82	NNS	66	VBZ	16
+measures		82	NNS	67	VBZ	15
 measuring		8	NN	2	VBG	6
 meat			60	NN	60
 meat-hungry		1	JJ	1
@@ -38602,8 +38805,8 @@ meaty			3	JJ	3
 mecca			1	NN	1
 meccas			1	NNS	1
 mechanic		4	NN	4
-mechanical		23	JJ	23
-mechanically		2	RB	2
+mechanical		24	JJ	24
+mechanically		3	RB	3
 mechanics		9	NNS	9
 mechanisation		1	NN	1
 mechanism		16	NN	16
@@ -38618,16 +38821,17 @@ medals			4	NNS	4
 meddle			3	VB	3
 meddler			1	NN	1
 meddling		1	NN	1
-media			69	NN	2	NNS	67
+media			75	NN	6	NNS	69
 media-buying		1	JJ	1
 media-stock		1	JJ	1
 mediaeval		1	NN	1
 median			2	JJ	2
 medias			1	JJ	1
 mediate			3	VB	3
+mediation		1	NN	1
 mediator		8	NN	8
 medic			2	NN	2
-medical			82	JJ	81	NN	1
+medical			84	JJ	83	NN	1
 medical-care		1	NN	1
 medical-practice	1	NN	1
 medically		2	RB	2
@@ -38636,10 +38840,10 @@ medication		5	NN	5
 medications		1	NNS	1
 medicinal		2	JJ	2
 medicinally		1	RB	1
-medicine		31	NN	31
+medicine		32	NN	32
 medicines		4	NNS	4
 medics			1	NNS	1
-medieval		13	JJ	10	NN	3
+medieval		13	JJ	5	NN	8
 mediocre		5	JJ	5
 mediocrity		2	NN	2
 meditate		1	VB	1
@@ -38655,10 +38859,10 @@ medium-sized		8	JJ	8
 mediums			2	NNS	2
 medley			2	NN	2
 meek			2	JJ	2
-meet			123	VB	110	VBP	13
-meeting			247	NN	224	VBG	23
+meet			134	VB	119	VBP	15
+meeting			254	NN	230	VBG	24
 meeting?		2	NN	2
-meetings		67	NNS	67
+meetings		70	NNS	70
 meets			18	VBZ	18
 mega			2	JJ	2
 mega-crash		1	NN	1
@@ -38679,7 +38883,7 @@ megaphone		1	NN	1
 megaquestions		1	NNS	1
 megaton			2	NN	2
 megawatts		1	NNS	1
-melancholia		1	NN	1
+melancholia		1	NNS	1
 melancholic		1	NN	1
 melancholy		7	JJ	7
 melange			1	NN	1
@@ -38699,8 +38903,8 @@ meltdown		1	NN	1
 melted			6	JJ	2	VBD	3	VBN	1
 melting			6	NN	3	VBG	3
 melts			3	VBZ	3
-member			95	JJ	2	NN	93
-members			221	NN	1	NNS	220
+member			99	JJ	2	NN	97
+members			229	NN	1	NNS	228
 members.		1	NNS	1
 membership		40	NN	40
 memberships		1	NNS	1
@@ -38712,42 +38916,42 @@ memo			11	NN	11
 memoir			1	NN	1
 memoirs			4	NNS	4
 memorabilia		1	NNS	1
-memorable		8	JJ	8
+memorable		9	JJ	9
 memoranda		1	NNS	1
 memorandum		7	NN	7
 memorial		10	JJ	1	NN	9
 memorialization		1	NN	1
 memorialized		1	VBN	1
-memories		30	NNS	30
+memories		31	NNS	31
 memorize		1	VBP	1
-memory			51	NN	51
+memory			57	NN	57
 memory-chip		1	NN	1
 memorys			1	NNS	1
 memos			3	NNS	3
 memsahib		1	NN	1
-men			339	NNS	339
+men			358	NN	5	NNS	353
 menace			8	NN	7	VB	1
 menaced			2	VBD	1	VBN	1
-menaces			1	NNS	1
+menaces			1	VBZ	1
 menacing		7	JJ	7
 menacingly		1	RB	1
 menage			2	NN	2
 menagerie		1	NN	1
-mend			5	VB	5
+mend			6	VB	6
 mendacity		1	NN	1
 mended			4	VBD	4
 mending			2	VBG	2
-menfolk			2	NNS	2
+menfolk			2	NN	1	NNS	1
 menial			1	NN	1
 mens			10	NNS	9	VBZ	1
 menstrual		2	JJ	2
 menswear		1	NN	1
-mental			29	JJ	29
+mental			30	JJ	30
 mental-health		2	NN	2
-mentality		10	NN	10
+mentality		11	NN	11
 mentally		18	RB	18
-mention			30	NN	11	VB	15	VBP	4
-mentioned		30	VBD	17	VBN	13
+mention			31	NN	12	VB	15	VBP	4
+mentioned		31	VBD	17	VBN	14
 mentioning		2	VBG	2
 mentions		3	NNS	1	VBZ	2
 mentor			2	NN	2
@@ -38767,12 +38971,12 @@ mercurial		1	JJ	1
 mercury			7	NN	7
 mercy			3	NN	3
 mere			24	JJ	24
-merely			38	RB	38
+merely			40	RB	40
 merest			1	JJ	1
 meretricious		1	JJ	1
 merge			14	VB	13	VBP	1
 merged			9	VBD	4	VBN	5
-merger			67	NN	67
+merger			68	NN	68
 merger-acquisition	1	JJ	1
 merger-related		1	JJ	1
 mergers			25	NNS	25
@@ -38780,32 +38984,32 @@ mergers-and-acquisitions	1	JJ	1
 merging			3	VBG	3
 meringues		1	NNS	1
 merit			11	NN	8	VB	3
-merit?			1	NN	1
+merit?			1	NNS	1
 meritorious		1	JJ	1
-merits			11	NNS	11
+merits			11	NNS	10	VBZ	1
 merrily			3	RB	3
 merriment		1	NN	1
-merry			9	JJ	6	NN	1	RB	2
+merry			10	JJ	7	NN	1	RB	2
 merry-go-round		1	NN	1
 meshed			1	VBN	1
-meshing			1	NN	1
+meshing			1	VBG	1
 mesmerised		1	VBN	1
 mesmerized		2	VBN	2
 mesothelioma		1	NN	1
-mess			28	NN	27	VB	1
+mess			29	NN	29
 mess-up			2	NN	2
-message			46	NN	46
+message			48	NN	48
 messages		17	NNS	17
 messenger		4	NN	4
 messengers		1	NNS	1
 messiah			1	NN	1
 messiahs		1	NNS	1
-messiest		1	JJS	1
+messiest		1	RBS	1
 messing			1	VBG	1
 messy			7	JJ	6	RB	1
-met			121	VBD	77	VBN	44
+met			128	VBD	80	VBN	48
 metabolism		3	NN	3
-metal			59	NN	59
+metal			62	NN	62
 metal-forming		2	JJ	2
 metal-processing	1	JJ	1
 metal-workers		1	NNS	1
@@ -38814,10 +39018,10 @@ metalled		2	JJ	2
 metallic		8	JJ	8
 metallurgical		3	JJ	3
 metallurgist		1	NN	1
-metals			38	NNS	38
+metals			39	NNS	39
 metalwork		2	NN	2
 metamorphosed		1	VBN	1
-metamorphoses		1	NNS	1
+metamorphoses		1	VBZ	1
 metamorphosis		2	NN	2
 metaphor		6	NN	6
 metaphorical		3	JJ	3
@@ -38825,34 +39029,34 @@ metaphors		3	NNS	3
 metaphysical		1	JJ	1
 meted			2	VBN	2
 meteoric		4	JJ	4
-meteorite		2	NN	2
+meteorite		3	NN	3
 meteorites		1	NNS	1
 meteorology		1	NN	1
 meteors			3	NNS	3
-meter			8	NN	7	VB	1
+meter			9	NN	8	VB	1
 metered			1	JJ	1
 meters			5	NNS	5
 methane			3	NN	3
 methanol		1	NN	1
 methat			1	NN	1
-method			30	NN	30
+method			35	NN	35
 methodical		4	JJ	3	RB	1
 methodically		2	RB	2
 methodist		1	JJ	1
 methodologies		2	NNS	2
 methodology		6	NN	6
-methods			45	NNS	45
+methods			48	NNS	48
 methylated		1	JJ	1
 meticulous		5	JJ	5
 meticulously		1	RB	1
 metier			2	NN	2
 metre			3	JJ	1	NN	2
-metres			23	NNS	23
+metres			27	NNS	27
 metric			29	JJ	28	NN	1
 metrics			2	NNS	2
 metro			1	NN	1
 metronome		2	NN	2
-metropolis		1	NNS	1
+metropolis		1	NN	1
 metropolitan		10	JJ	10
 mettle			1	NN	1
 mewing			2	NN	1	VBG	1
@@ -38862,9 +39066,9 @@ mezzo			2	NN	2
 mezzo-soprano		2	NN	2
 mg			3	JJ	1	NN	2
 miaow			1	NN	1
-miaowing		1	JJ	1
+miaowing		1	VBG	1
 miasma			2	NN	2
-mice			12	NNS	12
+mice			13	NN	1	NNS	12
 micro			1	JJ	1
 micro-computers		2	NNS	2
 micro-electronic	1	JJ	1
@@ -38884,7 +39088,7 @@ microprocessors		4	NNS	4
 micros			1	NNS	1
 microscope		8	NN	8
 microscopes		1	NNS	1
-microscopic		5	JJ	5
+microscopic		6	JJ	6
 microseconds		1	NNS	1
 microvan		1	NN	1
 microwave		6	JJ	2	NN	4
@@ -38903,11 +39107,11 @@ mid-June		2	NNP	2
 mid-November		4	NNP	4
 mid-October		16	JJ	5	NNP	11
 mid-afternoon		1	JJ	1
-mid-air			4	JJ	1	NN	3
+mid-air			4	JJ	2	NN	2
 mid-calf		1	JJ	1
 mid-eighteenth		1	JJ	1
 mid-priced		1	JJ	1
-mid-sentence		1	NN	1
+mid-sentence		1	JJ	1
 mid-seventies		2	NNS	2
 mid-size		1	JJ	1
 mid-term		1	JJ	1
@@ -38915,13 +39119,13 @@ mid-to-late		1	JJ	1
 midafternoon		1	NN	1
 midcapitalization	1	NN	1
 midcontinent		1	JJ	1
-midday			13	NN	13
-middle			69	JJ	27	NN	42
+midday			14	NN	14
+middle			81	JJ	30	NN	51
 middle-aged		20	JJ	20
 middle-class		11	JJ	5	NN	6
 middle-ground		1	JJ	1
 middle-income		1	JJ	1
-middle-man		1	NN	1
+middle-man		1	JJ	1
 middle-management	1	JJ	1
 middle-market		1	JJ	1
 middle-of-the-road	1	JJ	1
@@ -38931,44 +39135,44 @@ middlebrows		1	NNS	1
 middleman		6	NN	6
 middlemen		4	NNS	4
 midmorning		2	NN	2
-midnight		23	NN	23
+midnight		24	NN	24
 midpoint		1	NN	1
 midrange		2	JJ	1	NN	1
 midriff			1	NN	1
 midsized		7	JJ	6	VBN	1
-midst			14	NN	14
+midst			14	IN	3	NN	11
 midstream		1	NN	1
 midsummer		3	NN	3
 midtown			6	JJ	3	NN	3
-midway			1	NN	1
+midway			2	NN	2
 midweek			3	JJ	1	RB	2
 midwest			1	NN	1
 midwife			1	NN	1
 midyear			3	NN	3
 mien			2	NN	2
 miffed			3	JJ	2	VBD	1
-might			452	MD	446	NN	6
+might			467	MD	461	NN	6
 mighta			1	MD|VB	1
 mightier		1	JJR	1
 mightiest		1	JJS	1
-mighty			12	JJ	9	RB	3
+mighty			13	JJ	10	RB	3
 mignon			1	NN	1
-migraine		1	JJ	1
+migraine		1	NN	1
 migrant			3	JJ	2	NN	1
 migrants		6	NNS	6
 migrate			2	VB	2
-migrated		1	VBN	1
+migrated		1	VBD	1
 migration		3	NN	3
 mike			1	NN	1
-mild			23	JJ	22	NN	1
+mild			25	JJ	24	NN	1
 milder			1	JJR	1
 mildew			1	NN	1
 mildewy			1	JJ	1
 mildly			7	RB	7
-mile			34	NN	34
+mile			36	NN	36
 mileage			9	NN	9
 mileposts		1	NNS	1
-miles			133	NNS	133
+miles			140	NNS	140
 miles-per-hour		1	JJ	1
 milestone		4	NN	4
 milestones		9	NNS	9
@@ -38984,9 +39188,9 @@ military-electronics	1	NNS	1
 militate		1	VB	1
 militated		1	VBN	1
 militia			2	NN	2
-milk			80	NN	72	VB	8
+milk			84	NN	76	VB	8
 milk-float		1	NN	1
-milk-round		1	NN	1
+milk-round		1	JJ	1
 milked			2	VBN	2
 milking			3	JJ	1	NN	2
 milkman			3	NN	3
@@ -39003,7 +39207,7 @@ milligrams		1	NNS	1
 millimetre		5	JJ	1	NN	4
 millimetres		2	NNS	2
 milling			2	JJ	1	NN	1
-million			2790	CD	2790
+million			2794	CD	2794
 million-a-year		2	JJ	2
 million-dollar		1	JJ	1
 million-dollar-a-year	1	JJ	1
@@ -39012,7 +39216,7 @@ million-plus		1	JJ	1
 million-share		2	JJ	2
 millionaire		3	NN	3
 millionaires		3	NNS	3
-millions		47	NNS	47
+millions		49	NNS	49
 millionth		2	NN	2
 mills			21	NNS	21
 mills?			1	NN	1
@@ -39023,7 +39227,7 @@ mimicking		1	VBG	1
 mimics			3	NNS	1	VBZ	2
 mincemeat		2	NN	2
 mincing			2	JJ	1	VBG	1
-mind			153	NN	138	RB	1	VB	14
+mind			164	NN	150	RB	1	VB	13
 mind-blowing		1	JJ	1
 mind-boggling		3	JJ	3
 mind-numbing		1	JJ	1
@@ -39033,7 +39237,7 @@ mindful			2	JJ	2
 minding			1	VBG	1
 mindless		8	JJ	8
 minds			35	NNS	35
-mine			53	JJ	4	NN	46	PRP	3
+mine			58	JJ	3	NN	50	PRP	5
 mine-shaft		1	NN	1
 mine.Thank		1	VB	1
 mined			2	JJ	1	VBN	1
@@ -39041,11 +39245,12 @@ minefield		3	NN	3
 miner			1	NN	1
 mineral			9	NN	9
 minerals		12	NNS	12
-miners			9	NNS	9
-mines			22	NNS	22
+miners			10	NNS	10
+mines			23	NNS	23
 minesweepers		1	NNS	1
 mingle			2	VBP	2
-mingled			1	VBD	1
+mingled			5	VBD	2	VBN	3
+mingling		1	VBG	1
 mingy			3	JJ	3
 mini			4	NN	3	NNS	1
 mini-component		3	JJ	3
@@ -39054,7 +39259,7 @@ mini-studio		1	NN	1
 miniature		4	JJ	3	NN	1
 miniatures		1	NNS	1
 miniaturized		1	VBN	1
-minibus			1	NNS	1
+minibus			1	NN	1
 minicar			2	NN	2
 minicars		1	NNS	1
 minicomputer		1	NN	1
@@ -39067,7 +39272,7 @@ minimise		1	VB	1
 minimize		7	VB	7
 minimizes		1	VBZ	1
 minimizing		2	VBG	2
-minimum			76	JJ	52	JJ|NN	1	NN	23
+minimum			83	JJ	55	JJ|NN	1	NN	27
 minimum-wage		5	NN	5
 minimums		1	NNS	1
 minincomputer		1	JJR	1
@@ -39075,20 +39280,20 @@ mining			27	NN	25	VBG	2
 mininum-wage		1	NN	1
 minions			1	NNS	1
 miniskirts		1	NNS	1
-minister		55	NN	55
+minister		59	NN	59
 ministerial		2	JJ	2
 ministers		26	NNS	26
-ministrations		2	NNS	2
+ministrations		2	NN	2
 ministries		4	NNS	4
 ministry		23	NN	23
 minivans		7	NNS	7
 mink			4	NN	4
 minnow			1	NN	1
-minor			44	JJ	43	NN	1
+minor			45	JJ	45
 minor-leaguer		1	NN	1
 minor-sport		1	NN	1
 minorities		12	NNS	12
-minority		68	JJ	3	NN	63	NN|JJ	2
+minority		69	JJ	3	NN	64	NN|JJ	2
 minority-owned		1	JJ	1
 minors			1	NNS	1
 mins			1	NNS	1
@@ -39097,24 +39302,24 @@ minted			2	VBN	2
 minus			11	CC	5	IN	1	JJ	1	NN	4
 minuscule		5	JJ	5
 minuses			1	NNS	1
-minute			41	JJ	7	NN	34
+minute			44	JJ	7	NN	37
 minute?			1	NN	1
 minuted			1	VBN	1
 minutely		2	RB	2
-minutes			92	NNS	92
+minutes			99	NNS	99
 minutes?		2	CD	1	NNS	1
 miracle			9	JJ	1	NN	8
-miracles		2	NNS	2
+miracles		3	NNS	3
 miraculous		6	JJ	6
 miraculously		2	RB	2
 mirage			2	NN	2
 mire			3	NN	3
 mired			6	JJ	1	VBN	5
-mirror			28	NN	25	VB	2	VBP	1
+mirror			29	NN	26	VB	2	VBP	1
 mirrored		2	VBD	2
 mirroring		1	NN	1
-mirrors			9	VBZ	9
-mirth			2	JJ	1	NN	1
+mirrors			10	VBZ	10
+mirth			2	NN	2
 mirthless		1	JJ	1
 misadventure		2	NN	2
 misadventures		1	NNS	1
@@ -39132,7 +39337,7 @@ miscalculation		1	NN	1
 miscarriage		2	JJ	1	NN	1
 miscarriages		3	NNS	3
 miscarried		2	VBN	2
-miscarries		1	NNS	1
+miscarries		1	VBZ	1
 miscellaneous		2	JJ	2
 miscellany		2	NN	2
 mischance		1	NN	1
@@ -39150,14 +39355,14 @@ misdeeds		5	NNS	5
 misdemeanor		3	NN	3
 misdemeanors		2	NNS	2
 misdemeanours		2	NNS	2
-misdirected		2	VBN	2
+misdirected		2	JJ	2
 miser			1	NN	1
 miserable		17	JJ	17
 miseries		2	NN	1	NNS	1
 miserly			4	JJ	4
-misery			8	JJ	1	NN	7
+misery			9	JJ	1	NN	8
 misfired		2	VBN	2
-misfires		1	NNS	1
+misfires		1	VBZ	1
 misfits			2	NNS	2
 misfortune		4	NN	4
 misfortunes		1	NNS	1
@@ -39167,7 +39372,7 @@ misguided		2	JJ	2
 mishandled		2	VBD	2
 mishap			3	NN	3
 mishaps			2	NNS	2
-misheard		1	VBN	1
+misheard		1	VB	1
 misinformed		1	JJ	1
 misinterpret		1	VB	1
 misinterpreted		4	VBN	4
@@ -39198,12 +39403,12 @@ misrepresents		1	VBZ	1
 misrouted		1	VBN	1
 misrule			2	NN	1	VB	1
 miss			33	VB	24	VBP	9
-missed			40	VBD	23	VBN	17
+missed			43	VBD	26	VBN	17
 misses			7	NNS	1	VBZ	6
 misshapen		2	JJ	2
 missile			25	NN	25
-missiles		34	NNS	34
-missing			40	JJ	14	VBG	26
+missiles		35	NNS	35
+missing			41	JJ	15	VBG	26
 mission			27	NN	27
 missionaries		2	NNS	2
 missionary		7	JJ	6	NN	1
@@ -39215,13 +39420,13 @@ misspent		2	VBN	2
 misstated		3	VBN	3
 misstatements		1	NNS	1
 misstates		1	VBZ	1
-missus			4	NNS	4
-mist			16	NN	16
-mistake			39	NN	37	VB	2
+missus			4	NN	4
+mist			17	NN	17
+mistake			41	NN	40	VB	1
 mistaken		9	JJ	3	VBN	6
-mistakenly		4	RB	4
-mistakes		27	NNS	27
-mistaking		1	NN	1
+mistakenly		5	RB	5
+mistakes		29	NNS	29
+mistaking		1	VBG	1
 mister			1	NN	1
 mistily			1	RB	1
 mistimed		1	VBN	1
@@ -39236,10 +39441,11 @@ mistrust		5	NN	4	VB	1
 mistrustful		1	JJ	1
 mists			4	NNS	4
 misty			5	JJ	5
-misunderstanding	6	IN	1	JJ	1	NN	4
+misunderstand		1	VBD	1
+misunderstanding	7	JJ	2	NN	4	RB	1
 misunderstandings	2	NNS	2
-misunderstood		4	VBN	4
-misuse			7	NN	6	VB	1
+misunderstood		7	VBN	7
+misuse			7	NN	7
 misused			2	VBD	2
 mite			3	NN	3
 mites			1	NNS	1
@@ -39247,6 +39453,7 @@ mitigate		5	VB	5
 mitigating		1	JJ	1
 mitigation		1	NN	1
 mitre			1	NN	1
+mittens			1	NNS	1
 mitts			1	NNS	1
 mix			26	NN	20	VB	6
 mix-up			2	NN	2
@@ -39256,7 +39463,7 @@ mixer			3	NN	3
 mixers			1	NNS	1
 mixes			1	NNS	1
 mixing			3	VBG	3
-mixture			22	NN	22
+mixture			23	NN	23
 mixtures		1	NNS	1
 mlange			1	NN	1
 mle			2	NN	2
@@ -39265,8 +39472,8 @@ mo			2	NN	2
 moan			6	NN	3	VB	3
 moaned			6	VBD	6
 moaner			1	NN	1
-moaning			5	VBG	5
-moans			2	NNS	1	VBZ	1
+moaning			6	VBG	6
+moans			2	NNS	2
 moat			2	NN	2
 mob			15	NN	15
 mobbed			1	VBN	1
@@ -39290,16 +39497,16 @@ model			71	JJ	1	NN	65	VB	5
 modeled			2	VBD	1	VBN	1
 modeling		1	NN	1
 modelled		5	VBN	5
-modelling		5	NN	3	VBG	2
-models			46	NNS	46
+modelling		5	JJ	1	NN	3	VBG	1
+models			47	NNS	46	VBZ	1
 modems			1	NNS	1
-moderate		45	JJ	39	NN	1	RB	2	VB	2	VBP	1
+moderate		43	JJ	38	NN	1	VB	3	VBP	1
 moderate-income		2	JJ	2
 moderated		3	VBN	3
 moderately		6	RB	6
 moderates		4	NNS	4
 moderation		3	NN	3
-modern			107	JJ	107
+modern			112	JJ	112
 modern-day		3	JJ	3
 modernisation		1	NN	1
 modernise		1	VB	1
@@ -39348,16 +39555,17 @@ molesting		1	VBG	1
 mollified		2	VBN	2
 mollify			1	VB	1
 mollifying		1	VBG	1
+molluscs		1	NNS	1
 mollycoddled		1	VBN	1
 mollycoddling		1	VBG	1
 molten			3	JJ	3
 mom			4	NN	4
 mom-and-pop		1	JJ	1
-moment			125	NN	125
+moment			131	IN	1	NN	130
 momentarily		4	RB	4
 momentary		10	JJ	10
 momentous		2	JJ	2
-moments			14	NNS	14
+moments			16	NNS	16
 momentum		11	NN	11
 momma			1	NN	1
 monarch			2	NN	2
@@ -39369,7 +39577,8 @@ monastic		2	JJ	2
 monetarist		5	JJ	1	NN	4
 monetarists		4	NNS	4
 monetary		44	JJ	44
-money			592	NN	592
+money			616	NN	616
+money!			1	JJ	1
 money-box		1	NN	1
 money-center		1	JJ	1
 money-fund		3	NN	3
@@ -39428,41 +39637,41 @@ monstrosity		1	NN	1
 monstrous		8	JJ	8
 montgolfiere		1	FW	1
 montgolfing		1	NN	1
-month			390	NN	390
+month			398	NN	398
 month-old		2	JJ	2
 month-to-month		1	JJ	1
 month?			1	NN	1
-monthly			55	JJ	49	RB	6
-months			544	NNS	544
+monthly			56	JJ	50	RB	6
+months			558	NNS	558
 monument		10	NN	10
 monumental		10	JJ	10
 monuments		2	NNS	2
 moo			1	NN	1
 mooch			1	VB	1
-mooched			2	VBD	1	VBN	1
-mood			40	NN	40
+mooched			2	VBD	2
+mood			42	NN	42
 moodiness		1	NN	1
 moods			10	NNS	10
 moody			3	JJ	3
 mooing			1	VBG	1
-moon			25	NN	25
+moon			28	NN	28
 moon-landing		1	JJ	1
 mooned			1	VBD	1
 moonlight		6	NN	6
-moonlit			4	JJ	4
+moonlit			4	JJ	3	NN	1
 moons			6	NNS	6
 moor			3	JJ	1	NN	2
-moored			1	VBN	1
+moored			2	VBN	2
 mooring			1	NN	1
-moorings		2	NNS	2
-moors			4	NNS	4
+moorings		1	NNS	1
+moors			5	NNS	5
 mooted			1	VBN	1
 mop			8	NN	2	VB	6
 moping			1	VBG	1
 mopped			6	VBD	6
 mopping			3	VBG	3
 moral			44	JJ	42	NN	2
-morale			6	NN	6
+morale			7	NN	7
 morale-damaging		1	JJ	1
 moralist		1	NN	1
 moralistic		3	JJ	3
@@ -39475,7 +39684,7 @@ morass			6	NN	6
 moratorium		6	NN	6
 morbid			2	JJ	2
 morbidity		1	NN	1
-more			1952	JJ	1	JJR	1007	RB	1	RBR	938	RBR|JJR	5
+more			2005	JJ	1	JJR	1022	RB	1	RBR	976	RBR|JJR	5
 more-advanced		1	JJ	1
 more-affordable		1	JJ	1
 more-attractive		1	JJ	1
@@ -39490,10 +39699,10 @@ more-volatile		1	JJR	1
 more?			1	NN	1
 more?I			1	NNS	1
 moreover		4	RB	4
-mores			3	NNS	3
+mores			3	NN	2	NNS	1
 moribund		2	JJ	2
 morn			1	NN	1
-morning			185	NN	185
+morning			193	NN	193
 morning-session		1	NN	1
 morning?		1	NN	1
 morning?No		1	NN	1
@@ -39511,7 +39720,7 @@ mortality		5	NN	5
 mortals			2	NNS	2
 mortar			2	JJ	1	NN	1
 mortars			3	NNS	3
-mortgage		93	NN	90	VB	3
+mortgage		94	NN	91	VB	3
 mortgage-backed		9	JJ	9
 mortgage-based		1	JJ	1
 mortgage-interest	2	JJ	2
@@ -39521,13 +39730,13 @@ mortgages		43	NNS	43
 mortified		1	VBN	1
 mosaic			1	JJ	1
 mosey			2	NN	1	VB	1
-mosque			3	NN	3
+mosque			4	NN	4
 mosque.			1	NN	1
 mosquito		4	JJ	2	NN	2
 mosquitoes		3	NNS	3
-moss			6	NN	3	NNS	3
+moss			6	NN	5	NNS	1
 mossy			2	JJ	2
-most			933	JJ	1	JJS	366	RB	1	RBS	564	RBS|JJS	1
+most			960	JJ	1	JJS	369	RB	1	RBS	588	RBS|JJS	1
 most-active		1	JJ	1
 most-favored-nation	1	JJ	1
 most-likely-successor	1	JJ	1
@@ -39540,25 +39749,26 @@ motels			1	NNS	1
 moth			1	NN	1
 moth-eaten		2	JJ	2
 mothballs		1	NNS	1
-mother			162	JJ	2	NN	160
+mother			174	JJ	2	NN	171	NNP	1
 mother-in-law		3	NN	3
 mother-to-be		2	JJ	2
+mother?			1	NN	1
 mothered		2	VBN	2
-motherhood		4	NN	3	VBN	1
+motherhood		4	NN	4
 motherless		1	JJ	1
 motherly		1	JJ	1
-mothers			59	NNS	59
+mothers			63	NNS	61	VBZ	2
 moths			1	NNS	1
 motif			3	NN	3
 motifs			3	NNS	3
-motion			43	NN	42	VB	1
+motion			44	NN	43	VB	1
 motion-control		1	NN	1
 motion-picture		1	JJ	1
 motion?I		1	JJ	1
 motioned		1	VBD	1
 motionless		6	JJ	6
-motions			5	NNS	5
-motivate		4	VB	3	VBP	1
+motions			6	NNS	6
+motivate		4	VB	2	VBP	2
 motivated		7	JJ	3	VBN	4
 motivating		1	VBG	1
 motivation		4	NN	4
@@ -39566,7 +39776,7 @@ motivations		1	NNS	1
 motive			12	NN	12
 motives			14	NNS	14
 motley			3	JJ	3
-motor			43	NN	43
+motor			44	NN	44
 motor-control		2	JJ	2
 motor-cycle		1	NN	1
 motor-home		1	NN	1
@@ -39575,7 +39785,7 @@ motorbike		2	NN	2
 motorbikes		4	NNS	4
 motorboat		1	NN	1
 motorcade		2	NN	2
-motorcycle		3	NN	3
+motorcycle		4	NN	4
 motorcycles		3	NNS	3
 motorcyclist		1	NN	1
 motoring		5	NN	2	VBG	3
@@ -39605,12 +39815,12 @@ mountain-bike		8	NN	8
 mountain-top		1	JJ	1
 mountaineers		1	NNS	1
 mountainous		4	JJ	4
-mountains		27	NNS	27
+mountains		30	NNS	30
 mountainside		2	NN	2
 mountaintop		1	NN	1
 mountebank		1	NN	1
 mountebanks		1	NNS	1
-mounted			30	VBD	18	VBN	12
+mounted			31	VBD	18	VBN	13
 mounting		17	VBG	17
 mounts			2	NNS	1	VBZ	1
 mourn			4	VB	3	VBP	1
@@ -39618,7 +39828,7 @@ mourned			2	VBD	2
 mourners		1	NNS	1
 mournful		6	JJ	6
 mourning		1	VBG	1
-mouse			7	NN	7
+mouse			8	NN	8
 mousetrap		1	NN	1
 mousetraps		1	NNS	1
 mousse			1	NN	1
@@ -39626,7 +39836,7 @@ mousseline		1	NN	1
 moustache		13	NN	13
 moustaches		1	NNS	1
 mousy			1	JJ	1
-mouth			67	NN	67
+mouth			69	NN	69
 mouth-up		1	JJ	1
 mouthed			2	VBD	2
 mouthful		6	JJ	2	NN	4
@@ -39636,21 +39846,21 @@ mouthpiece		5	NN	5
 mouths			6	NNS	6
 mouthwash		1	NN	1
 movable			2	JJ	2
-move			273	NN	172	VB	90	VBP	11
+move			284	NN	176	VB	97	VBP	11
 move-up			1	JJ	1
-moved			129	VBD	97	VBN	32
-movement		100	NN	100
-movements		44	NNS	44
+moved			134	VBD	101	VBN	33
+movement		101	NN	101
+movements		45	NNS	45
 mover			1	NN	1
 movers			1	NNS	1
-moves			71	NNS	54	VBZ	17
-movie			62	NN	62
+moves			72	NNS	55	VBZ	17
+movie			66	NN	66
 movie-studio		1	NN	1
 movie?			1	NN	1
 movieland		1	NN	1
-movies			47	NNS	47
+movies			48	NNS	48
 moviestar		1	NN	1
-moving			96	JJ	3	NN	1	VBG	92
+moving			98	JJ	3	NN	1	VBG	94
 mow			2	VB	2
 mowed			1	VBN	1
 mower			1	NN	1
@@ -39658,7 +39868,7 @@ mowers			1	NNS	1
 mowing			1	VBG	1
 moxie			1	NN	1
 mph			13	NN	13
-much			753	JJ	346	RB	407
+much			776	JJ	354	RB	422
 much-larger		4	JJ	4
 much-loved		2	JJ	2
 much-publicized		1	JJ	1
@@ -39668,7 +39878,7 @@ muchhes			1	VBZ	1
 mucked			1	VBN	1
 mucky			1	JJ	1
 mucus			1	NNS	1
-mud			31	NN	31
+mud			34	NN	34
 mud-logger		1	NN	1
 mud-walled		2	JJ	2
 muddied			2	VBN	2
@@ -39676,7 +39886,7 @@ muddier			3	JJR	3
 muddle			11	NN	8	VB	3
 muddle-headed		2	JJ	2
 muddled			1	VBN	1
-muddy			7	JJ	5	NN	1	RB	1
+muddy			7	JJ	4	NN	2	RB	1
 mudflats		2	NNS	2
 mudguards		1	NNS	1
 mudslinging		2	NN	2
@@ -39686,7 +39896,7 @@ muffins			1	NNS	1
 muffled			9	VBN	9
 muffler			2	NN	2
 muffling		1	VBG	1
-mug			11	NN	10	VBG	1
+mug			11	NN	9	VBG	2
 muggers			2	NNS	2
 muggings		3	NNS	3
 muggy			2	JJ	2
@@ -39701,7 +39911,7 @@ mulling			2	VBG	2
 multi-coloured		2	JJ	1	VBN	1
 multi-crystal		3	JJ	3
 multi-million		1	JJ	1
-multi-racial		1	JJ	1
+multi-racial		2	JJ	2
 multi-spired		1	JJ	1
 multi-storey		4	JJ	4
 multibillion-dollar	3	JJ	3
@@ -39740,8 +39950,8 @@ mumble			2	NN	2
 mumbled			5	VBN	5
 mumbling		2	VBG	2
 mummies			1	NNS	1
-mummy			2	NN	1	RB	1
-munching		2	NN	1	VBG	1
+mummy			2	JJ	1	NN	1
+munching		2	VBG	2
 mundane			7	JJ	7
 muni			4	JJ	3	NNS	1
 municipal		40	JJ	39	NN	1
@@ -39751,10 +39961,10 @@ municipality		3	NN	3
 municipals		7	NNS	7
 munis			1	NNS	1
 mural			1	NN	1
-murder			46	NN	46
+murder			52	NN	52
 murdered		9	VBN	9
-murderer		2	NN	2
-murderers		3	NNS	3
+murderer		3	NN	3
+murderers		4	NNS	4
 murdering		3	VBG	3
 murderous		10	JJ	10
 murders			8	NNS	8
@@ -39766,36 +39976,37 @@ murmuring		3	VBG	3
 murmurs			1	NNS	1
 muscle			8	NN	8
 muscled			1	VBD	1
-muscles			18	NNS	18
+muscles			17	NNS	17
 muscling		2	VBG	2
 muscular		5	JJ	5
 muse			1	NN	1
-museum			24	NN	24
-museums			5	NNS	5
+museum			25	NN	25
+museums			6	NNS	6
 mush			1	NN	1
 mushroom		8	NN	7	VB	1
 mushroom-processing	1	JJ	1
 mushroomed		4	VBD	2	VBN	2
-mushrooming		1	JJ	1
-mushrooms		16	NNS	16
+mushrooming		1	VBG	1
+mushrooms		16	NNS	15	VBZ	1
 mushy			4	JJ	4
-music			105	NN	105
+music			116	NN	116
 music-making		1	NN	1
 music-publishing	1	JJ	1
-music?			1	NNP	1
+music?			2	NNP	1	NNS	1
 musical			21	JJ	17	NN	4
 musician		5	NN	5
-musicians		10	NNS	10
+musicians		11	NNS	11
 musics			1	NNS	1
 musky			1	JJ	1
-muslin			2	JJ	1	NN	1
+muslin			2	NN	2
 mussels			1	NNS	1
-must			524	MD	523	NN	1
+must			550	MD	549	NN	1
 mustard			5	NN	5
 muster			7	NN	1	VB	6
 mustered		2	VBD	1	VBN	1
 mustnt			9	JJ	2	NN	1	RB	1	VBP	5
-musty			3	JJ	3
+mustve			1	NN	1
+musty			4	JJ	4
 mutant			1	JJ	1
 mutated			2	VBN	2
 mutation		2	NN	2
@@ -39813,18 +40024,18 @@ mutter			3	NN	2	VB	1
 muttered		5	JJ	3	VBD	2
 muttering		2	NN	1	VBG	1
 mutts			1	NNS	1
-mutual			41	JJ	41
+mutual			42	JJ	42
 mutual-fund		4	JJ	2	NN	2
 mutually		5	RB	5
 muzzled			1	VBN	1
 muzzles			1	VBZ	1
 muzzling		1	JJ	1
 muzzy			2	JJ	2
-my			1320	PRP$	1320
+my			1436	PPS	3	PRP$	1433
 myopic			2	JJ	2
 myriad			4	JJ	3	NN	1
 myriads			1	NNS	1
-myself			126	PRP	126
+myself			131	PRP	131
 mysteries		5	NNS	5
 mysterious		22	JJ	22
 mysteriously		5	RB	5
@@ -39845,7 +40056,7 @@ naczelnik		6	FW	6
 nadir			2	NN	2
 nag			1	VB	1
 nagged			1	VBD	1
-nagging			6	JJ	4	NN	2
+nagging			6	JJ	2	NN	2	VBG	2
 naggings		1	NNS	1
 nags			1	NNS	1
 nail			14	NN	11	VB	3
@@ -39853,31 +40064,31 @@ nailed			2	VBN	2
 nailing			1	VBG	1
 nails			9	NNS	9
 naive			3	JJ	3
-naked			27	JJ	27
+naked			29	JJ	29
 namby-pamby		1	JJ	1
-name			188	NN	172	VB	15	VBP	1
-name?			1	NNS	1
+name			207	NN	191	VB	15	VBP	1
+name?			2	NN	1	NNS	1
 named			183	VBD	21	VBN	162
 nameless		6	JJ	6
 namely			6	RB	6
 nameplate		3	NN	3
-names			56	NNS	56
+names			56	NNS	55	VBZ	1
 namesake		3	NN	3
 namesakestabbed		1	VBN	1
 naming			8	NN	2	VBG	6
-nannies			2	NNS	2
+nannies			3	NNS	3
 nanny			6	NN	5	RB	1
 nap			3	NN	3
 napalm			1	VB	1
 napalmed		1	VBN	1
 nape			1	NN	1
 naphtha			3	NN	3
-napkin			5	NN	5
+napkin			7	NN	7
 nappies			2	NNS	2
 napping			1	VBG	1
-nappy			2	NN	2
+nappy			2	JJ	1	NN	1
 naps			1	NNS	1
-narcissus		1	NNS	1
+narcissus		1	NN	1
 narcotic		1	JJ	1
 narcotics		4	NNS	4
 narrate			1	VB	1
@@ -39886,7 +40097,7 @@ narration		1	NN	1
 narrative		7	JJ	2	NN	5
 narratives		2	NNS	2
 narrator		10	NN	10
-narrow			47	JJ	45	VB	2
+narrow			50	JJ	48	VB	2
 narrow-minded		2	JJ	1	NN	1
 narrowed		16	VBD	12	VBN	4
 narrower		1	JJR	1
@@ -39900,7 +40111,7 @@ nasty			37	JJ	37
 nation			183	NN	183
 nation-state		2	JJ	2
 nation-wide		1	JJ	1
-national		182	JJ	181	NN	1
+national		189	JJ	188	NN	1
 national-policy		1	NN	1
 nationalisation		1	NN	1
 nationalising		1	VBG	1
@@ -39914,13 +40125,13 @@ nationalization		8	NN	8
 nationalized		3	VBN	3
 nationally		5	RB	5
 nationals		1	NNS	1
-nations			66	NNS	66
+nations			67	NNS	67
 nationwide		19	JJ	16	RB	3
 native			27	JJ	22	NN	5
 natives			2	NNS	2
 natter			2	NN	1	VB	1
 natty			3	JJ	3
-natural			119	JJ	116	NN	3
+natural			123	JJ	120	NN	3
 natural-gas		4	JJ	1	NN	3
 natural-gas-pipeline	1	JJ	1
 natural-resources	1	NNS	1
@@ -39929,7 +40140,7 @@ naturalistic		1	JJ	1
 naturalized		2	JJ	2
 naturally		27	RB	27
 naturalness		1	NN	1
-nature			102	NN	102
+nature			111	NN	111
 natures			1	NNS	1
 naughtier		1	JJR	1
 naughty			5	JJ	5
@@ -39937,7 +40148,7 @@ nausea			4	NN	4
 nauseated		2	VBD	2
 nauseating		1	NN	1
 nauseous		2	JJ	2
-naval			16	JJ	16
+naval			17	JJ	17
 nave			2	NN	2
 navies			2	NNS	2
 navigable		1	JJ	1
@@ -39950,7 +40161,7 @@ navy-blue		1	JJ	1
 nay			1	RB	1
 naysay			1	VB	1
 naysayers		2	NNS	2
-near			134	IN	100	JJ	31	RB	3
+near			141	IN	106	JJ	32	RB	3
 near-impossibility	1	NN	1
 near-limit		1	JJ	1
 near-luxury		1	JJ	1
@@ -39966,25 +40177,25 @@ near-term		9	JJ	9
 near-zero		1	NN	1
 nearby			22	JJ	16	RB	6
 neared			4	VBD	4
-nearer			9	IN	9
+nearer			9	JJR	6	NN	3
 nearest			13	IN	1	JJS	12
 nearing			6	VBG	6
-nearly			186	RB	186
+nearly			189	RB	189
 nearly-30		1	JJ	1
 nears			3	VBZ	3
-nearside		5	JJ	3	NN	2
-neat			32	JJ	32
+nearside		5	NN	5
+neat			33	JJ	33
 neater			1	NN	1
 neatest			2	JJS	2
-neatly			12	RB	12
+neatly			14	RB	14
 nebulous		2	JJ	2
 necessarily		23	RB	23
-necessary		83	JJ	83
+necessary		88	JJ	88
 necessitate		1	VB	1
 necessitated		1	VBD	1
 necessities		8	NNS	8
-necessity		11	NN	11
-neck			58	NN	58
+necessity		15	NN	15
+neck			64	NN	64
 neck?			1	NN	1
 neckerchief		1	NN	1
 necking			1	NN	1
@@ -39995,26 +40206,26 @@ necks			7	NNS	7
 necktie			1	NN	1
 neckties		1	NNS	1
 nectar			4	NN	4
-need			390	MD	7	NN	94	VB	62	VBP	227
+need			415	IN	2	MD	7	NN	95	VB	64	VBP	247
 need!			1	NNP	1
-need.			1	VBN	1
-needed			140	JJ	3	VBD	64	VBN	72	VBN|JJ	1
+need.			1	NN	1
+needed			145	JJ	3	VBD	66	VBN	75	VBN|JJ	1
 neediest		1	JJS	1
 needing			6	VBG	6
 needle			13	NN	13
 needle-like		1	JJ	1
 needled			1	VBN	1
-needles			9	NNS	9
+needles			10	NNS	10
 needless		3	JJ	3
 needlessly		2	RB	2
 needlewoman		1	NN	1
 needling		1	VBG	1
 neednt			1	JJ	1
-needs			137	NNS	54	VBZ	83
+needs			144	NNS	59	VBZ	85
 needy			3	JJ	3
 nefarious		1	JJ	1
 negate			1	VB	1
-negates			1	NNS	1
+negates			1	VBZ	1
 negating		1	VBG	1
 negation		2	NN	2
 negative		51	JJ	50	NN	1
@@ -40033,7 +40244,7 @@ negotiate		19	VB	18	VBP	1
 negotiated		20	JJ	1	VBD	6	VBN	13
 negotiating		35	NN	2	VBG	33
 negotiation		8	NN	8
-negotiations		65	NNS	65
+negotiations		67	NNS	67
 negotiator		5	NN	5
 negotiators		16	NNS	16
 neige			1	FW	1
@@ -40043,13 +40254,14 @@ neighborhood		13	NN	13
 neighborhoods		11	NNS	11
 neighboring		4	JJ	1	VBG	3
 neighbors		8	NNS	8
-neighbour		14	NN	14
-neighbourhood		12	NN	12
+neighbour		15	JJ	1	NN	14
+neighbourhood		12	IN	1	NN	11
 neighbouring		5	JJ	1	VBG	4
 neighbourly		1	JJ	1
-neighbours		19	NNS	19
+neighbours		21	NNS	21
 neither			46	CC	13	DT	20	RB	13
 nemesis			4	NN	4
+neoclassical		1	JJ	1
 neologism		1	NN	1
 neon			6	NN	6
 neophyte		2	NN	2
@@ -40060,34 +40272,34 @@ nerd			1	NN	1
 nerd-and-geek		1	JJ	1
 nerds			2	NNS	2
 nerdy			2	JJ	2
-nerve			11	NN	11
+nerve			12	NN	12
 nerve-racking		1	JJ	1
 nerved			1	VBD	1
 nerveless		1	JJ	1
 nerves			17	NNS	17
 nerves!			1	NN	1
-nervous			43	JJ	43
-nervously		9	RB	9
-nervousness		5	NN	5
+nervous			46	JJ	46
+nervously		10	RB	10
+nervousness		6	NN	6
 nervy			2	JJ	2
 nest			10	NN	8	VB	2
 nestled			1	VBD	1
 nestling		2	VBG	2
 nestlings		2	NNS	2
 nests			4	NNS	4
-net			319	JJ	227	NN	91	VB	1
+net			320	JJ	227	NN	92	VB	1
 net-profits		1	JJ	1
 netball			1	NN	1
 nets			5	NNS	4	VBZ	1
-netting			5	VBG	5
+netting			6	VBG	6
 nettled			1	JJ	1
 nettles			3	NNS	3
 nettlesome		1	JJ	1
-network			98	NN	98
+network			101	NN	101
 network-wide		1	JJ	1
 networked		1	VBN	1
 networking		2	NN	2
-networks		15	NNS	15
+networks		16	NNS	16
 neurologist		3	NN	3
 neurologists		2	NNS	2
 neurones		1	NNS	1
@@ -40096,7 +40308,7 @@ neurosurgeon		2	NN	2
 neurotic		4	JJ	4
 neutered		1	VBN	1
 neutering		1	VBG	1
-neutral			21	JJ	21
+neutral			22	JJ	22
 neutralise		1	VB	1
 neutrality		1	NN	1
 neutralization		2	NN	2
@@ -40106,10 +40318,10 @@ neutralizes		1	VBZ	1
 neutrals		1	NNS	1
 neutron			1	NN	1
 neutrons		3	NNS	3
-never			439	RB	438	RBR	1
+never			461	RB	459	RBR	1	UH	1
 never-ending		2	JJ	2
 nevertheless		4	RB	4
-new			1574	JJ	1572	NN	2
+new			1627	JJ	1625	NN	2
 new-born		1	JJ	1
 new-business		1	NN	1
 new-car			1	NN	1
@@ -40122,10 +40334,10 @@ new-product		2	NN	2
 newborn			1	JJ	1
 newcomer		7	NN	7
 newcomers		10	NNS	10
-newer			8	JJR	6	NN	2
-newest			11	JJS	9	NN	2
+newer			10	JJR	8	NN	2
+newest			12	JJS	10	NN	2
 newly			23	RB	23
-news			242	NN	235	NNS	7
+news			258	NN	247	NNS	11
 news-release		1	NN	1
 news-stand		1	NN	1
 newsagents		1	NNS	1
@@ -40134,12 +40346,12 @@ newscasts		1	NNS	1
 newsletter		9	NN	9
 newsletters		1	NNS	1
 newsman			1	NN	1
-newsmen			2	NNS	2
-newspaper		155	NN	155
+newsmen			2	NN	1	NNS	1
+newspaper		159	NN	159
 newspaper-printing	1	NN	1
 newspaperman		1	NN	1
-newspapermen		1	NNS	1
-newspapers		68	NNS	68
+newspapermen		1	NN	1
+newspapers		72	NNS	72
 newsprint		9	NN	9
 newsprints		2	NNS	2
 newsreel		1	NN	1
@@ -40149,7 +40361,7 @@ newsstands		1	NNS	1
 newsweekly		1	RB	1
 newsworthiness		1	NN	1
 newsworthy		3	JJ	3
-next			622	IN	61	JJ	545	RB	16
+next			633	IN	66	JJ	551	RB	16
 next-door		2	JJ	2
 next-generation		1	JJ	1
 nexus			2	NN	2
@@ -40157,9 +40369,9 @@ nibble			3	NN	1	VB	2
 nibbled			2	VBD	2
 nibbles			2	NNS	2
 nibbling		1	VBG	1
-nice			103	JJ	101	RB	2
+nice			106	JJ	104	RB	2
 nice-looking		1	JJ	1
-nice.			4	CD	1	FW	2	NN	1
+nice.			5	CD	2	FW	2	NN	1
 nicely			10	RB	10
 nicemanship		1	NN	1
 nicest			1	JJS	1
@@ -40175,7 +40387,7 @@ nickname		4	NN	4
 nicknamed		4	VBN	4
 nicknames		1	NNS	1
 nicks			1	NNS	1
-nicotine		3	JJ	1	NN	1	VB	1
+nicotine		3	JJ	2	VB	1
 niece			3	NN	3
 nifty			2	JJ	2
 niggardly		1	JJ	1
@@ -40183,7 +40395,7 @@ niggle			2	NN	2
 niggled			2	VBD	2
 niggling		1	VBG	1
 nigh			3	RB	2	VBP	1
-night			216	NN	216
+night			237	NN	237
 night-club		1	NN	1
 night-time		1	JJ	1
 night-vision		1	JJ	1
@@ -40199,12 +40411,12 @@ nightly			6	JJ	5	RB	1
 nightmare		15	NN	15
 nightmares		5	NNS	5
 nightmarish		3	JJ	3
-nights			23	NNS	23
+nights			24	NNS	24
 nil			4	NN	4
 nila			1	JJ	1
 nimble			1	JJ	1
 nincompoop		1	NN	1
-nine			166	CD	166
+nine			167	CD	167
 nine-cent		1	JJ	1
 nine-day		2	JJ	2
 nine-member		5	JJ	5
@@ -40214,9 +40426,9 @@ nine-story		1	JJ	1
 nine-tenths		1	NNS	1
 nine-week-old		1	JJ	1
 nine-year		1	JJ	1
-nine?			1	NN	1
+nine?			1	JJ	1
 ninefold		1	RB	1
-nineteen		11	JJ	4	NN	5	VB	1	VBN	1
+nineteen		12	JJ	6	NN	5	VBN	1
 nineteenth		9	JJ	9
 nineteenth-century	4	JJ	4
 nineties		1	NNS	1
@@ -40243,7 +40455,7 @@ nitrogen		3	NN	3
 nits			1	NNS	1
 nitwits			1	NNS	1
 nixed			1	VBD	1
-no			1043	DT	891	RB	143	UH	9
+no			1094	DT	939	RB	145	UH	10
 no-brainer		1	NN	1
 no-confidence		1	NN	1
 no-frills		1	JJ	1
@@ -40256,22 +40468,24 @@ nobility		7	NN	7
 noble			16	JJ	13	NN	1	RB	2
 nobleman		1	NN	1
 noblest			2	JJS	2
-nobody			33	NN	33
+nobody			34	NN	34
 nobodys			1	NNS	1
 nobs			1	NNS	1
 noconfidence		1	JJ	1
 nocturnal		2	JJ	2
 nod			8	NN	7	VB	1
-nodded			7	JJ	1	VBD	5	VBN	1
+nodded			9	JJ	1	VBD	7	VBN	1
 nodding			3	NN	1	VBG	2
 nods			2	VBZ	2
 nodules			3	NNS	3
 noes			2	NNS	2
 noggin			1	NN	1
-noise			49	NN	49
+noise			55	NN	55
 noise-levels		1	NNS	1
+noise.			1	FW	1
+noise?I			1	JJ	1
 noised			1	VBN	1
-noises			13	NNS	13
+noises			15	NNS	15
 noisily			2	RB	2
 noisome			2	JJ	2
 noisy			16	JJ	14	NN	2
@@ -40281,7 +40495,7 @@ nominal			12	JJ	11	NN	1
 nominally		1	RB	1
 nominate		5	VB	5
 nominated		8	VBD	1	VBN	7
-nomination		14	NN	14
+nomination		15	NN	15
 nominations		3	NNS	3
 nominee			4	NN	4
 nominees		5	NNS	5
@@ -40396,7 +40610,7 @@ nondeductible		1	JJ	1
 nondemocratic		2	JJ	2
 nondescript		4	JJ	4
 nondurable		1	JJ	1
-none			33	NN	33
+none			34	NN	34
 nonentities		1	NNS	1
 nonentity		1	NN	1
 nonessential		2	JJ	2
@@ -40415,7 +40629,7 @@ nonplussed		2	JJ	2
 nonprofit		9	JJ	9
 nonrecurring		3	JJ	2	VBG	1
 nonresidential		1	JJ	1
-nonsense		7	JJ	1	NN	6
+nonsense		8	JJ	1	NN	7
 nonsensical		2	JJ	2
 nonstop			2	JJ	2
 nontoxic		1	JJ	1
@@ -40425,21 +40639,21 @@ nonvoting		1	JJ	1
 nonworking		1	JJ	1
 noodles			4	NNS	4
 nook			2	NN	2
-noon			6	NN	6
+noon			7	NN	7
 nor			59	CC	59
 norm			2	NN	2
-normal			65	JJ	64	RB	1
+normal			69	JJ	68	RB	1
 normality		3	NN	3
 normalize		1	VB	1
 normally		41	RB	41
 norms			9	NNS	9
-north			39	JJ	6	NN	19	RB	14
+north			46	JJ	8	NN	18	RB	20
 north-country		1	JJ	1
 north-east		8	JJ	3	NN	4	RB	1
 north-easterly		1	JJ	1
 north-eastern		2	JJ	2
 north-south		2	JJ	2
-north-west		8	JJ	2	JJS	1	NN	4	RB	1
+north-west		8	JJ	2	JJS	2	NN	3	RB	1
 north-westerly		1	JJ	1
 northeast		5	JJ	1	NN	1	RB	3
 northeastern		2	JJ	2
@@ -40448,7 +40662,7 @@ northern		24	JJ	24
 northernmost		1	JJ	1
 northward		3	JJ	1	RB	2
 northwest		1	RB	1
-nose			48	NN	48
+nose			49	NN	49
 nose-dive		2	NN	2
 nose-dived		1	VBD	1
 nosed			1	VBD	1
@@ -40462,7 +40676,7 @@ nostril			1	NN	1
 nostrils		5	NNS	5
 nostrum			1	NN	1
 nosy			1	JJ	1
-not			2227	RB	2227
+not			2330	RB	2330
 not-for-profit		2	JJ	2
 not-so-favorite		1	JJ	1
 not-so-subtly		1	RB	1
@@ -40474,8 +40688,8 @@ notations		1	NNS	1
 notch			5	NN	4	VB	1
 notched			1	VBD	1
 notches			1	NNS	1
-note			122	NN	99	VB	7	VBP	16
-notebook		11	NN	11
+note			123	NN	100	VB	7	VBP	16
+notebook		13	NN	13
 notebook-sized		1	JJ	1
 notebooks		2	NNS	2
 noted			126	JJ	3	VBD	108	VBN	15
@@ -40483,39 +40697,39 @@ notehave		1	VB	1
 noteholder		1	NN	1
 notes			229	NNS	199	VBZ	30
 noteworthy		2	JJ	2
-nothing			173	JJ	4	NN	169
+nothing			181	JJ	4	NN	177
 nothings		1	NNS	1
-notice			38	NN	27	VB	8	VBP	3
-noticeable		5	JJ	5
+notice			39	NN	28	VB	8	VBP	3
+noticeable		6	JJ	6
 noticeably		6	RB	6
 noticeboards		1	NNS	1
-noticed			27	VBD	15	VBN	12
+noticed			28	VBD	16	VBN	12
 notices			5	NNS	5
 noticing		1	VBG	1
 notification		4	NN	4
 notifications		1	NNS	1
 notified		10	VBD	2	VBN	8
-notify			5	VB	4	VBP	1
+notify			6	VB	5	VBP	1
 notifying		2	VBG	2
 noting			13	VBG	13
 notion			30	NN	30
 notional		1	JJ	1
 notions			7	NNS	7
 notoriety		1	NN	1
-notorious		7	JJ	7
+notorious		8	JJ	8
 notoriously		4	RB	4
 notwithstanding		4	IN	2	RB	2
 nought			2	JJ	2
-noun			111	NN	111
+noun			34	NN	34
 nouns			1	NNS	1
 nourish			1	VB	1
 nourished		2	VBN	2
 nourishing		1	JJ	1
 nouveau			1	JJ	1
 nouveaux-riches		1	NNS	1
-novel			54	JJ	3	NN	51
+novel			58	JJ	4	NN	54
 novelettes		1	NNS	1
-novelist		8	NN	8
+novelist		9	NN	9
 novelistic		2	JJ	2
 novelists		2	NNS	2
 novels			20	NNS	20
@@ -40524,7 +40738,7 @@ novelty			1	NN	1
 novice			3	NN	3
 novitiate		1	NN	1
 novitiates		1	NNS	1
-now			814	RB	814
+now			835	IN	1	RB	834
 now-defunct		2	JJ	2
 now-obscure		1	JJ	1
 now-shaky		1	JJ	1
@@ -40532,20 +40746,20 @@ now.			1	NN	1
 now?			1	NN	1
 now?A			1	JJ	1
 nowIm			1	NN	1
-nowadays		9	RB	9
-nowhere			13	RB	13
+nowadays		10	RB	10
+nowhere			15	RB	15
 noxious			2	JJ	2
 nozzle			2	NN	2
 nth			2	JJ	2
 nuance			3	NN	3
 nuances			3	NNS	3
 nub			2	NN	2
-nuclear			132	JJ	132
+nuclear			137	JJ	137
 nuclear-armed		1	JJ	1
 nuclear-arms		1	NNS	1
-nuclear-free		1	JJ	1
+nuclear-free		2	JJ	2
 nuclear-weapons		1	JJ	1
-nuclei			3	NNS	3
+nuclei			3	NN	3
 nucleus			2	NN	2
 nude			5	JJ	4	NN	1
 nudge			4	NN	2	VB	2
@@ -40553,30 +40767,30 @@ nudged			4	VBD	2	VBN	2
 nudging			2	VBG	2
 nugget			1	NN	1
 nuggets			2	NNS	2
-nuisance		6	JJ	1	NN	5
+nuisance		10	JJ	1	NN	9
 nullified		2	VBN	2
 nullify			5	VB	4	VBP	1
 nullifying		1	VBG	1
 numb			5	JJ	5
 numbed			4	VBD	2	VBN	2
-number			347	NN	347
-numbered		11	VBD	6	VBN	5
-numbers			69	NNS	69
+number			363	NN	363
+numbered		11	VBD	5	VBN	6
+numbers			72	NNS	72
 numbing			1	JJ	1
 numeral			1	NN	1
 numerals		2	NNS	2
 numerical		2	JJ	2
 numerically		2	RB	2
-numerous		33	JJ	33
+numerous		37	JJ	37
 nun			2	NN	2
 nunnery			1	NN	1
 nuns			1	NNS	1
-nurse			25	NN	21	VB	4
+nurse			26	NN	22	VB	4
 nursed			4	VBD	4
 nursemaid		2	NN	2
 nurseries		5	NNS	5
-nursery			9	NN	9
-nurses			12	NNS	12
+nursery			10	NN	10
+nurses			13	NNS	13
 nursing			12	NN	9	VBG	3
 nursing-home		1	NN	1
 nurture			3	VB	3
@@ -40593,26 +40807,26 @@ nutritive		1	JJ	1
 nuts			13	NNS	13
 nutty			4	JJ	4
 nuzzled			1	VBD	1
-nuzzling		2	JJ	1	VBG	1
+nuzzling		2	VBG	2
 nylon			10	NN	10
-o			4	NN	4
+o			4	IN	3	NN	1
 o'clock			1	RB	1
 oaf			1	NN	1
 oafs			1	NNS	1
-oak			14	JJ	1	NN	13
-oak-beamed		1	JJ	1
+oak			16	JJ	1	NN	15
+oak-beamed		1	VBN	1
 oak-panelled		2	JJ	2
 oaks			1	NNS	1
-oar			3	JJ	1	NN	2
+oar			3	NN	2	winter	1
 oars			6	NNS	6
-oases			1	NNS	1
+oases			1	NN	1
 oasis			3	NN	3
 oat			6	NN	6
 oat-based		1	JJ	1
 oat-bran		1	NN	1
 oath			2	NN	2
 oaths			2	NNS	2
-oatmeal			3	JJ	3
+oatmeal			3	JJ	2	NN	1
 oats			5	NN	1	NNS	4
 obduracy		2	NN	2
 obdurate		3	JJ	3
@@ -40622,30 +40836,30 @@ obeisance		3	NN	3
 obelisk			3	NN	3
 obese			2	JJ	2
 obey			6	VBP	6
-obeyed			4	VBD	3	VBN	1
+obeyed			5	VBD	3	VBN	2
 obfuscate		3	VB	3
 obfuscation		2	NN	2
 obituary		3	NN	3
-object			31	NN	24	VB	2	VBP	5
-objected		4	VBD	4
+object			34	NN	24	VB	4	VBP	6
+objected		5	VBD	5
 objecting		1	VBG	1
 objection		7	NN	7
 objectionable		7	JJ	7
-objections		14	NNS	14
+objections		16	NNS	16
 objective		18	JJ	8	NN	10
 objectively		1	RB	1
 objectives		17	NNS	17
-objectivity		5	NN	5
+objectivity		6	NN	6
 objectors		2	NNS	2
-objects			21	NNS	21
+objects			22	NNS	22
 obligated		3	JJ	1	VBD	1	VBN	1
 obligation		26	NN	26
 obligations		19	NNS	19
 obligatory		1	JJ	1
 obligatto		1	NN	1
 oblige			2	VB	2
-oblige.			1	CD	1
-obliged			13	VBN	13
+oblige.			1	FW	1
+obliged			14	VBN	14
 obliges			1	VBZ	1
 obliging		1	JJ	1
 oblique			4	JJ	3	RB	1
@@ -40660,7 +40874,7 @@ oboist			1	NN	1
 obscene			7	JJ	7
 obscenities		2	NNS	2
 obscenity		2	NN	2
-obscure			22	JJ	19	VB	3
+obscure			23	JJ	20	VB	3
 obscured		2	VBD	2
 obscures		1	VBZ	1
 obscuring		1	VBG	1
@@ -40668,16 +40882,16 @@ obsequious		2	JJ	2
 observable		2	JJ	2
 observance		3	NN	3
 observant		3	JJ	2	NN	1
-observation		6	NN	6
+observation		7	NN	7
 observations		8	NNS	8
 observatory		1	NN	1
 observe			5	VB	3	VBP	2
 observed		18	JJ	1	VBD	13	VBN	4
 observer		5	NN	5
-observers		29	NNS	29
+observers		30	NNS	30
 observes		5	VBZ	5
 observing		3	VBG	3
-obsessed		8	JJ	3	VBN	5
+obsessed		8	JJ	2	VBN	6
 obsession		6	NN	6
 obsessively		1	RB	1
 obsolescence		1	NN	1
@@ -40689,8 +40903,8 @@ obstinate		4	JJ	3	RB	1
 obstreperous		1	JJ	1
 obstruct		2	VBP	2
 obstructed		2	VBN	2
-obstructing		4	VBG	4
-obstruction		3	NN	3
+obstructing		5	VBG	5
+obstruction		5	NN	5
 obstructionism		1	NN	1
 obstructionist		1	NN	1
 obstructions		2	NNS	2
@@ -40705,50 +40919,51 @@ obtuse			1	JJ	1
 obverse			2	NN	2
 obviate			2	VB	2
 obviates		1	VBZ	1
-obvious			33	JJ	33
-obviously		39	RB	39
+obvious			38	JJ	38
+obviously		41	RB	41
 occasion		23	NN	22	VB	1
 occasional		13	JJ	13
 occasionally		26	RB	26
 occasioned		3	JJ	1	VBD	1	VBN	1
-occasions		16	NNS	16
+occasions		17	NNS	17
 occult			4	JJ	3	NN	1
 occupancy		5	NN	5
 occupant		6	NN	6
 occupants		1	NNS	1
 occupation		11	NN	11
 occupational		1	JJ	1
-occupations		4	NNS	4
-occupied		18	JJ	3	VBD	4	VBN	11
+occupations		5	NNS	5
+occupied		19	JJ	4	VBD	4	VBN	11
 occupies		1	VBZ	1
-occupy			6	VB	6
-occupying		3	VBG	3
+occupy			8	VB	8
+occupying		4	VBG	4
 occur			34	VB	23	VBP	11
-occurred		43	VBD	26	VBN	17
-occurrence		4	NN	4
+occurred		45	VBD	28	VBN	17
+occurrence		5	NN	5
 occurrenceother		1	NN	1
 occurrences		2	NNS	2
 occurring		8	VBG	8
-occurs			16	VBZ	16
+occurs			17	VBZ	17
 ocean			21	NN	21
 ocean-going		1	JJ	1
 oceanographic		1	JJ	1
-oceans			6	NNS	6
+oceans			7	NNS	7
 ochre			2	JJ	2
-oclock			31	NN	31
+oclock			38	NN	35	RB	3
 octave			1	JJ	1
 octaves			2	NNS	2
 octogenarians		1	NNS	1
-odd			26	JJ	25	RB	1
+odd			29	JJ	28	RB	1
 odd-looking		1	JJ	1
 odd-shaped		1	JJ	1
 odd-sounding		1	JJ	1
 odd-year		1	JJ	1
+odd?			1	NN	1
 oddest			2	JJS	2
 oddities		6	NNS	6
 oddity			3	NN	3
 oddlooking		1	JJ	1
-oddly			5	RB	5
+oddly			6	RB	6
 odds			15	NNS	15
 odds-on			3	JJ	3
 odious			4	JJ	4
@@ -40758,8 +40973,8 @@ odours			3	NNS	3
 odysseys		1	NNS	1
 oer			1	NN	1
 oeufs			1	FW	1
-of			30128	IN	30126	RB	1	RP	1
-off			788	IN	235	JJ	9	RB	79	RB|IN	1	RP	464
+of			30995	IN	30993	RB	1	RP	1
+off			829	IN	243	JJ	9	RB	87	RB|IN	2	RP	488
 off-Broadway		1	JJ	1
 off-again		3	JJ	3
 off-balance		6	JJ	6
@@ -40782,36 +40997,36 @@ off-the-peg		1	VBG	1
 off-year		1	JJ	1
 off.Is			1	NNS	1
 offbeat			2	JJ	2
-offence			11	NN	11
-offences		4	NNS	4
+offence			14	NN	14
+offences		6	NNS	6
 offend			8	VB	8
 offended		3	VBN	3
 offender		3	NN	3
-offenders		12	NNS	12
+offenders		13	NNS	13
 offending		9	JJ	3	VBG	6
 offends			1	VBZ	1
 offense			3	NN	3
 offensive		21	JJ	13	NN	8
 offensives		1	NNS	1
-offer			374	NN	269	VB	75	VBP	30
-offered			183	JJ	3	VBD	93	VBN	87
+offer			384	NN	274	VB	79	VBP	31
+offered			186	JJ	3	VBD	96	VBN	87
 offering		183	NN	123	VBG	60
 offerings		19	NNS	19
-offers			66	NNS	29	VBZ	37
+offers			69	NNS	31	VBZ	38
 offhandedly		1	RB	1
-office			336	NN	336
+office			346	NN	346
 office!			1	NN	1
 office-holder		1	NN	1
 office-holders		1	NNS	1
 office.One		1	NN	1
 officer			236	NN	236
-officers		52	NNS	52
+officers		53	NNS	53
 officers?		1	NNS	1
-offices			60	NNS	60
-official		196	JJ	82	NN	114
+offices			61	NNS	61
+official		202	JJ	88	NN	114
 officialdom		1	NN	1
 officially		23	RB	23
-officials		367	NNS	367
+officials		368	NNS	368
 officiated		1	VBD	1
 officio			1	FW	1
 officious		1	JJ	1
@@ -40824,18 +41039,18 @@ offshoots		1	NNS	1
 offshore		11	JJ	7	RB	4
 offshore-rig		1	NN	1
 offside			3	NN	3
-offspring		7	NN	5	NNS	2
+offspring		7	NN	6	NNS	1
 offspring?		1	NN	1
 offstage		1	NN	1
 ofif			1	NN	1
-often			303	RB	303
+often			316	RB	316
 often-criticized	1	JJ	1
 ogled			1	VBN	1
 ogles			1	VBZ	1
 ogre			1	NN	1
 oh			5	UH	5
 ohms			1	NNS	1
-oil			259	NN	258	VB	1
+oil			268	NN	267	VB	1
 oil-field		2	NN	2
 oil-finding		1	JJ	1
 oil-fired		1	JJ	1
@@ -40853,8 +41068,8 @@ oily			3	JJ	3
 ointment		4	NN	4
 ointments		3	NNS	3
 okapi			1	NN	1
-okay			8	JJ	7	VB	1
-old			534	JJ	531	NNS	3
+okay			10	JJ	9	VB	1
+old			564	JJ	561	NNS	3
 old-fashioned		23	JJ	23
 old-fashioned?		1	JJ	1
 old-line		2	NN	2
@@ -40863,7 +41078,7 @@ old-style		2	JJ	2
 old-time		2	JJ	2
 old-timers		1	NNS	1
 old-world		1	JJ	1
-older			55	JJR	55
+older			59	JJR	59
 oldest			10	JJS	10
 olds			3	NNS	3
 oligarchy		1	NN	1
@@ -40873,8 +41088,8 @@ omega			1	JJ	1
 omelette		1	NN	1
 omen			1	NN	1
 omens			2	NNS	2
-omeone			1	VB	1
-ominous			8	JJ	8
+omeone			1	NN	1
+ominous			9	JJ	9
 ominously		2	RB	2
 omission		1	NN	1
 omissions		3	NNS	3
@@ -40886,14 +41101,14 @@ omnibus			5	JJ	2	NN	3
 omnipresent		3	JJ	3
 omniscient		3	JJ	3
 omnivorous		1	JJ	1
-on			6730	IN	6648	JJ	3	RB	37	RP	42
+on			6927	IN	6842	JJ	3	RB	41	RP	41
 on-again		3	JJ	3
 on-board		1	JJ	1
 on-campus		1	JJ	1
 on-site			1	JJ	1
 on.			2	CD	1	NN	1
-on?			3	NN	3
-once			236	IN	24	RB	212
+on?			4	NN	3	VBN	1
+once			241	IN	26	RB	215
 once-a-day		1	JJ	1
 once-closed		1	JJ	1
 once-cozy		2	JJ	2
@@ -40909,7 +41124,7 @@ onceIm			1	NN	1
 oncejust		1	VBP	1
 oncogene		1	NN	1
 oncogenes		2	NNS	2
-one			1809	CD	1599	NN	176	PRP	34
+one			1874	CD	1659	NN	180	PRP	35
 one-act			2	JJ	2
 one-acter		1	JJ	1
 one-bedroom		1	JJ	1
@@ -40935,7 +41150,7 @@ one-off			2	JJ	1	NN	1
 one-on-one		1	JJ	1
 one-out-of-three	1	JJ	1
 one-parent		1	JJ	1
-one-party		3	JJ	3
+one-party		4	JJ	4
 one-penny		2	JJ	2
 one-person		1	NN	1
 one-quarter		2	NN	2
@@ -40956,7 +41171,7 @@ one-year		31	JJ	31
 one-year-old		1	JJ	1
 one-yen			4	JJ	4
 onerous			5	JJ	5
-ones			97	NNS	97
+ones			99	NNS	97	PPS	2
 oneself			4	PRP	4
 onetime			2	JJ	2
 oneyear			1	JJ	1
@@ -40964,11 +41179,11 @@ ongoing			13	JJ	13
 onion			3	NN	3
 onions			8	NNS	8
 onlookers		3	NNS	3
-only			1059	JJ	190	RB	869
+only			1099	IN	3	JJ	201	RB	895
 onrush			2	NN	2
 onset			3	NN	3
 onslaught		3	NN	3
-onto			72	IN	72
+onto			76	IN	76
 onus			4	NN	4
 onward			3	JJ	2	RB	1
 onwards			4	IN	1	NNS	3
@@ -40980,7 +41195,7 @@ oozing			1	VBG	1
 op			1	NN	1
 op-ed			1	JJ	1
 opaque			2	JJ	2
-open			262	JJ	172	NN	3	RB	2	RP	4	VB	72	VBP	9
+open			277	JJ	187	NN	2	RB	1	RP	5	VB	75	VBP	7
 open-air		2	JJ	2
 open-door		1	JJ	1
 open-end		1	JJ	1
@@ -40992,28 +41207,29 @@ open-necked		1	JJ	1
 open-plan		1	JJ	1
 open-top		1	JJ	1
 open-year		1	JJ	1
-opened			135	VBD	104	VBN	31
-opener			3	NN	3
-opening			86	JJ	6	NN	50	VBG	30
+opened			143	VBD	112	VBN	31
+opener			6	NN	6
+opener?			1	VB	1
+opening			87	JJ	6	NN	50	VBG	31
 opening-hour		1	JJ	1
 openings		5	NNS	5
 openly			18	RB	18
 openness		2	NN	2
 opens			14	VBZ	14
-opera			28	NN	28
-opera?			1	CD	1
+opera			30	NN	30
+opera?			1	NNP	1
 operas			4	NNS	4
 operate			46	VB	33	VBP	13
-operated		20	VBD	8	VBN	12
+operated		20	VBD	7	VBN	13
 operates		32	VBZ	32
 operatic		2	JJ	2
-operating		184	NN	92	VBG	92
-operation		89	NN	89
+operating		184	NN	91	VBG	93
+operation		94	NN	94
 operational		7	JJ	7
-operations		260	NNS	260
+operations		261	NNS	261
 operative		5	JJ	3	NN	2
 operatives		2	NNS	2
-operator		33	NN	33
+operator		34	NN	34
 operators		17	NNS	17
 operetta		1	NN	1
 operettas		1	NNS	1
@@ -41021,14 +41237,14 @@ ophthalmic		1	JJ	1
 opiate			2	NN	2
 opine			1	VBP	1
 opined			1	VBD	1
-opinion			99	NN	99
+opinion			100	NN	100
 opinion-makers		1	NNS	1
 opinionated		2	JJ	2
 opinions		21	NNS	21
 opium			4	NN	4
 opossum			1	NN	1
 opponent		17	NN	17
-opponents		30	NNS	30
+opponents		31	NNS	31
 opportune		1	JJ	1
 opportuning		1	NN	1
 opportunism		1	NN	1
@@ -41036,20 +41252,20 @@ opportunist		4	JJ	2	NN	2
 opportunistic		2	JJ	2
 opportunists		2	NNS	2
 opportunities		33	NNS	33
-opportunity		72	NN	72
+opportunity		74	NN	74
 oppose			17	VB	5	VBP	12
 opposed			48	JJ	2	VBD	15	VBN	31
 opposes			7	VBZ	7
 opposing		10	VBG	10
-opposite		31	IN	1	JJ	21	NN	8	RB	1
+opposite		35	IN	1	JJ	22	NN	8	RB	4
 opposites		1	NNS	1
-opposition		72	NN	72
+opposition		75	NN	75
 oppressed		5	JJ	1	VBD	1	VBN	3
 oppression		3	NN	3
 oppressions		1	NNS	1
 oppressive		6	JJ	6
 oppressor		1	NN	1
-oppressors		2	NNS	2
+oppressors		3	NNS	3
 ops			1	NNS	1
 opt			2	VB	2
 opted			7	VBD	4	VBN	3
@@ -41069,14 +41285,14 @@ options			73	NNS	73
 options-trading		1	JJ	1
 opulence		1	NN	1
 opulent			6	JJ	6
-opus			1	NNS	1
-or			2389	CC	2389
+opus			1	NN	1
+or			2415	CC	2412	IN	3
 oracle			1	NN	1
 oracular		1	JJ	1
-oral			11	JJ	10	NN	1
+oral			12	JJ	11	NN	1
 orally			1	RB	1
 orang-utans		1	NNS	1
-orange			30	JJ	14	NN	16
+orange			30	JJ	15	NN	15
 orange-and-blue		1	JJ	1
 orange-coloured		1	VBD	1
 orange-red		1	JJ	1
@@ -41096,7 +41312,7 @@ orbs			1	NNS	1
 orchard			10	NN	10
 orchardists		1	NNS	1
 orchards		2	NNS	2
-orchestra		21	NN	21
+orchestra		22	NN	22
 orchestral		1	JJ	1
 orchestras		2	NNS	2
 orchestrated		4	VBD	3	VBN	1
@@ -41106,19 +41322,20 @@ orchid-strewn		1	JJ	1
 orchids			2	NNS	2
 ordained		6	VBN	6
 ordeal			7	NN	7
-order			205	NN	200	VB	5
+order			212	IN	5	NN	200	VB	7
 order-imbalance		1	NN	1
 order-processing	1	JJ	1
 order-taking		1	NN	1
-ordered			77	JJ	3	VBD	40	VBN	34
+order?			1	VB	1
+ordered			84	JJ	3	VBD	43	VBN	38
 ordering		9	VBG	9
 orderly			9	JJ	8	NN	1
-orders			162	NNS	160	VBZ	2
+orders			165	NNS	163	VBZ	2
 orders-related		1	JJ	1
 orderthese		1	JJ	1
 ordinance		7	NN	7
 ordinarily		4	RB	4
-ordinary		48	JJ	48
+ordinary		49	JJ	49
 ordination		1	NN	1
 ordnance		2	NN	2
 ores			1	NNS	1
@@ -41127,18 +41344,19 @@ organic			7	JJ	7
 organisation		9	NN	9
 organisations		2	NNS	2
 organise		5	VB	5
-organised		6	JJ	3	VBN	3
+organised		7	JJ	4	VBN	3
 organisers		1	NNS	1
 organising		1	VBG	1
 organism		2	NN	2
 organisms		11	NNS	11
+organisms?		1	NNS	1
 organist		1	NN	1
 organists		1	NNS	1
-organization		83	NN	83
+organization		88	NN	88
 organizational		1	JJ	1
 organizations		31	NNS	31
-organize		8	VB	8
-organized		40	JJ	10	VBD	4	VBN	26
+organize		9	VB	9
+organized		41	JJ	10	VBD	4	VBN	27
 organized-crime		5	NN	5
 organizer		2	NN	2
 organizers		3	NNS	3
@@ -41156,10 +41374,10 @@ oriented		4	JJ	1	VBN	3
 orifice			1	NN	1
 orifices		1	NNS	1
 origin			7	NN	7
-original		78	JJ	73	NN	5
+original		79	JJ	75	NN	4
 original-equipment	1	JJ	1
 original-instrument	1	JJ	1
-originality		4	NN	4
+originality		5	NN	5
 originally		25	RB	25
 originated		6	VBN	4	VBP	2
 originates		1	VBZ	1
@@ -41168,7 +41386,7 @@ originations		4	NNS	4
 originator		2	NN	2
 originators		1	NNS	1
 origins			12	NNS	12
-ornament		5	NN	5
+ornament		6	NN	6
 ornamental		4	JJ	4
 ornamented		2	JJ	1	VBN	1
 ornaments		8	NNS	8
@@ -41190,23 +41408,23 @@ ostensibly		1	RB	1
 ostentatious		4	JJ	4
 osteopath		1	NN	1
 ostracized		2	VBN	2
-ostrich			5	JJ	4	NN	1
-other			1286	JJ	1286
-others			203	NNS	203
+ostrich			5	JJ	5
+other			1317	IN	2	JJ	1315
+others			210	NNS	210
 otherwise		32	RB	32
 otter			4	JJ	1	NN	3
 otters			2	NNS	2
-ought			63	MD	63
-oughtnt			1	VBP	1
+ought			76	MD	76
+oughtnt			3	JJ	2	NN	1
 ounce			35	NN	35
-ounces			16	NNS	16
-our			761	PRP$	761
-ours			10	JJ	1	PRP	9
+ounces			17	NNS	17
+our			791	PPS	4	PRP$	787
+ours			11	JJ	2	PRP	9
 ourselves		28	PRP	28
 oust			5	VB	5
 ousted			10	JJ	1	VBD	2	VBN	7
 ouster			1	NN	1
-out			1576	IN	414	JJ	7	NN	1	RB	142	RP	1012
+out			1653	IN	436	JJ	7	NN	1	RB	154	RP	1055
 out-and-out		5	JJ	5
 out-of-court		2	JJ	2
 out-of-pocket		1	JJ	1
@@ -41228,7 +41446,7 @@ outbuildings		1	NNS	1
 outburst		5	NN	5
 outbursts		3	NNS	3
 outcasts		1	NNS	1
-outcome			28	NN	28
+outcome			29	NN	29
 outcries		1	NNS	1
 outcrop			1	NN	1
 outcry			17	NN	17
@@ -41238,7 +41456,7 @@ outdistanced		3	VBN	3
 outdo			2	VB	2
 outdone			2	VBN	2
 outdoor			6	JJ	6
-outer			7	JJ	7
+outer			8	JJ	8
 outfield		2	NN	2
 outfielders		1	NNS	1
 outfit			9	NN	8	VB	1
@@ -41273,7 +41491,7 @@ outlines		3	VBZ	3
 outlining		3	VBG	3
 outlive			1	VB	1
 outlived		1	VBN	1
-outlook			38	NN	38
+outlook			39	NN	39
 outlooks		1	NNS	1
 outlying		1	JJ	1
 outmoded		2	JJ	2
@@ -41305,12 +41523,12 @@ outsells		1	VBZ	1
 outset			3	NN	3
 outshine		2	VB	2
 outshines		1	VBZ	1
-outside			195	IN	98	JJ	76	NN	12	RB	9
+outside			201	IN	97	JJ	80	NN	16	RB	8
 outsider		15	NN	15
 outsiders		8	NNS	8
 outsides		1	NNS	1
 outsize			2	JJ	2
-outskirts		6	NNS	6
+outskirts		6	NN	2	NNS	4
 outsmart		4	VB	4
 outsmarted		1	VBD	1
 outspoken		7	JJ	7
@@ -41319,25 +41537,25 @@ outspread		4	JJ	3	NN	1
 outstanding		143	JJ	143
 outstandingly		2	RB	2
 outstretched		4	JJ	3	VBN	1
-outstrip		1	VB	1
-outstripped		2	VBD	2
+outstrip		2	VB	2
+outstripped		5	VBD	5
 outstrips		2	VBZ	2
 outvoted		2	VBN	2
-outward			10	JJ	6	RB	4
+outward			11	JJ	6	RB	5
 outwardly		4	RB	4
-outwards		5	NNS	3	RB	2
+outwards		8	NNS	4	RB	4
 outweigh		4	VB	2	VBP	2
 outweighed		2	VBD	2
 outwit			1	VB	1
 outworn			2	JJ	2
-oval			6	JJ	3	NN	3
+oval			6	JJ	2	NN	4
 oval-shaped		1	JJ	1
 ovals			1	NNS	1
 ovata			1	NN	1
-ovation			6	NN	6
-oven			15	NN	15
+ovation			7	NN	7
+oven			16	JJ	2	NN	14
 ovens			2	NNS	2
-over			1233	IN	1060	JJ	1	RB	38	RP	134
+over			1274	IN	1095	JJ	1	RB	39	RP	139
 over-40			2	JJ	2
 over-50			1	JJ	1
 over-75s		1	NNS	1
@@ -41385,7 +41603,7 @@ overcrowding		2	NN	2
 overdo			3	VB	3
 overdoing		1	VBG	1
 overdone		2	VBN	2
-overdose		5	NN	5
+overdose		5	NN	4	VBP	1
 overdraft		5	NN	5
 overdrafts		1	NNS	1
 overdrawn		3	JJ	3
@@ -41397,29 +41615,29 @@ overestimate		1	VB	1
 overestimated		2	VBD	2
 overflow		9	NN	6	VB	3
 overflowed		2	VBD	2
-overflowing		6	VBG	6
+overflowing		7	VBG	7
 overgrown		5	JJ	3	NN	2
 overhang		3	NN	3
 overhanging		3	VBG	3
 overhaul		18	NN	11	VB	7
 overhauled		4	VBN	4
 overhauling		4	VBG	4
-overhead		24	JJ	10	NN	7	RB	7
+overhead		24	JJ	9	NN	7	RB	8
 overhear		3	VB	3
-overheard		5	JJ	2	VB	1	VBD	2
+overheard		5	JJ	3	VB	1	VBD	1
 overheard?		1	NN	1
 overhearing		1	VBG	1
 overheat		1	VB	1
-overheated		4	JJ	2	VBN	2
+overheated		4	JJ	4
 overheating		2	NN	1	VBG	1
 overhung		2	VBG	2
 overjoyed		2	JJ	2
 overkill		2	NN	2
 overlaid		1	VBN	1
-overland		4	JJ	3	NN	1
+overland		5	JJ	3	NN	2
 overlap			7	NN	2	VB	2	VBP	3
 overlapping		1	VBG	1
-overlaps		1	NNS	1
+overlaps		1	VBZ	1
 overlay			3	NN	2	VB	1
 overleveraged		1	JJ	1
 overload		2	NN	2
@@ -41432,7 +41650,7 @@ overlord		1	NN	1
 overly			5	RB	5
 overmanned		1	JJ	1
 overmuch		2	JJ	1	RB	1
-overnight		30	JJ	23	RB	7
+overnight		31	JJ	23	RB	8
 overpaid		3	JJ	2	VBN	1
 overpaying		1	VBG	1
 overplanted		1	VBN	1
@@ -41458,7 +41676,7 @@ overrun			2	VB	2
 overruns		5	NNS	5
 overs			1	NNS	1
 oversaw			2	VBD	2
-overseas		82	JJ	48	RB	34
+overseas		84	JJ	49	RB	35
 oversee			4	VB	4
 overseeing		6	VBG	6
 overseen		2	VBN	2
@@ -41491,7 +41709,7 @@ overtax			1	VB	1
 overtaxed		3	VBN	3
 overthrow		9	NN	1	VB	8
 overthrown		3	VBN	3
-overtime		5	NN	3	RB	2
+overtime		6	NN	3	RB	3
 overtones		2	NNS	2
 overtook		2	VBD	2
 overture		1	NN	1
@@ -41501,7 +41719,7 @@ overturned		7	VBD	5	VBN	2
 overturning		1	VBG	1
 overuse			1	NN	1
 overused		2	JJ	1	VBN	1
-overvalue		2	VB	2
+overvalue		2	JJ	1	VB	1
 overvalued		1	VBD	1
 overview		1	NN	1
 overweight		3	JJ	2	NN	1
@@ -41522,12 +41740,12 @@ owing			1	VBG	1
 owl			8	NN	8
 owlish			1	JJ	1
 owls			4	NNS	3	VBZ	1
-own			594	JJ	540	VB	36	VBN	1	VBP	17
-owned			83	JJ	1	VBD	20	VBN	62
-owner			52	NN	52
+own			629	JJ	574	VB	35	VBN	1	VBP	19
+owned			83	JJ	1	VBD	21	VBN	61
+owner			54	NN	54
 owner-occupiers		2	NNS	2
 owners			59	NNS	59
-ownership		49	NN	49
+ownership		50	NN	50
 owning			17	NN	2	VBG	15
 owns			82	VBZ	82
 ox			1	NN	1
@@ -41537,7 +41755,7 @@ oxen			2	NN	2
 oxide			1	NN	1
 oxides			2	NNS	2
 oxidizer		1	NN	1
-oxygen			11	NN	11
+oxygen			12	NN	12
 oyster			3	NN	3
 oysters			2	NNS	2
 ozone			17	NN	17
@@ -41555,30 +41773,30 @@ pacemakers		1	NNS	1
 paces			4	NNS	4
 pacified		1	VBD	1
 pacifier		1	NN	1
-pacifist		5	JJ	2	NN	3
+pacifist		5	JJ	1	NN	4
 pacify			1	VB	1
 pacing			2	NN	2
-pack			25	NN	21	VB	3	VBP	1
+pack			27	NN	21	VB	5	VBP	1
 package			69	NN	67	VB	2
 package-sort		1	JJ	1
 packaged		11	VBN	11
 packaged-goods		5	JJ	2	NNS	3
 packages		25	NNS	24	VBZ	1
 packaging		22	NN	21	VBG	1
-packed			31	JJ	10	VBD	13	VBN	8
-packet			16	NN	16
-packets			3	NNS	3
-packing			7	NN	3	VBG	4
+packed			36	JJ	10	VBD	14	VBN	12
+packet			19	NN	19
+packets			4	NNS	4
+packing			8	NN	3	VBG	5
 packs			9	NNS	4	VBZ	5
 pact			30	NN	30
 pacts			1	NNS	1
 pad			15	NN	15
 padded			9	JJ	9
-padding			2	NN	2
+padding			2	NN	1	VBG	1
 paddle			2	NN	1	VB	1
 paddled			3	VBD	1	VBN	2
 paddles			1	NNS	1
-paddling		6	JJ	1	NN	1	VBG	4
+paddling		6	VBG	6
 padlock			1	NN	1
 padlocked		2	VBD	1	VBN	1
 padlocks		1	NNS	1
@@ -41586,34 +41804,35 @@ padre			1	NN	1
 pads			1	NNS	1
 pagan			1	JJ	1
 pagans			1	NNS	1
-page			47	NN	47
+page			51	NN	51
 page-one		8	JJ	4	NN	4
 pageant			2	NN	2
 pageantry		2	NN	2
-pages			57	NNS	57
-paid			186	VBD	57	VBN	129
+pages			59	NNS	59
+paid			196	VBD	63	VBN	133
 paid-up			2	JJ	2
+paid?			1	JJ	1
 pail			2	NN	2
 pails			2	NNS	2
-pain			67	NN	67
+pain			71	IN	1	NN	70
 pained			6	JJ	6
 painful			28	JJ	28
-painfully		12	RB	12
+painfully		13	RB	13
 painless		5	JJ	5
-pains			19	NNS	19
+pains			19	NNS	18	VBZ	1
 painstaking		1	JJ	1
 painstakingly		1	RB	1
-paint			61	NN	48	VB	8	VBP	5
+paint			62	NN	49	VB	8	VBP	5
 paint.			1	NN	1
 paintbrush		1	NN	1
-painted			27	JJ	5	VBD	8	VBN	14
+painted			28	JJ	5	VBD	8	VBN	15
 painter			9	NN	9
 painters		11	NNS	11
-painting		45	NN	42	VBG	3
-paintings		29	NNS	29
+painting		49	NN	46	VBG	3
+paintings		31	NNS	31
 paints			10	NNS	10
 paintwork		5	NN	5
-pair			39	NN	37	VB	2
+pair			40	NN	38	VB	2
 paired			3	VBN	3
 pairs			7	NNS	7
 pal			1	NN	1
@@ -41622,7 +41841,7 @@ palaces			1	NNS	1
 palatable		2	JJ	2
 palate			2	NN	2
 palatial		1	JJ	1
-pale			31	JJ	29	VB	1	VBP	1
+pale			32	JJ	30	VB	1	VBP	1
 pale-coloured		1	VBN	1
 pale-faced		1	JJ	1
 paled			2	VBD	2
@@ -41632,9 +41851,9 @@ pall			5	NN	5
 palliative		5	JJ	2	NN	3
 pallid			5	JJ	5
 pallor			1	NN	1
-palls			1	NNS	1
+palls			1	VBZ	1
 palm			10	NN	9	VB	1
-palms			8	NNS	8
+palms			9	NNS	9
 palpable		4	JJ	4
 palpitated		1	VBD	1
 palpitating		1	VBG	1
@@ -41662,7 +41881,7 @@ panelling		1	NN	1
 panels			5	NNS	5
 pang			4	NN	4
 pangs			3	NNS	3
-panic			30	NN	25	VB	5
+panic			36	NN	31	VB	5
 panic-stricken		2	JJ	2
 panic?			1	NN	1
 panicdashing		1	NN	1
@@ -41677,15 +41896,14 @@ pans			6	NNS	5	VBZ	1
 pans.			1	NNS	1
 pantheistic		2	JJ	2
 pantheon		1	NN	1
-panther			1	NN	1
+panther			2	NN	2
 panthers		2	NNS	2
 panting			2	VBG	2
 pantomime		2	JJ	1	NN	1
 pants			4	NNS	4
 pany			1	NN	1
-papa			1	NN	1
 papal			1	JJ	1
-paper			283	NN	282	RB	1
+paper			297	NN	296	RB	1
 paper-and-crayon	1	JJ	1
 paper-company		2	JJ	1	NN	1
 paper-goods		2	NNS	2
@@ -41696,7 +41914,7 @@ paper-work		1	NN	1
 paperback		7	NN	7
 paperbacks		5	NNS	5
 paperboard		1	NN	1
-papers			76	NNS	76
+papers			81	NNS	81
 paperwork		2	NN	2
 papery-thin		1	JJ	1
 par			48	IN	1	JJ	12	NN	35
@@ -41716,13 +41934,13 @@ paradox			6	NN	6
 paradoxes		1	NNS	1
 paradoxical		2	JJ	2
 paradoxically		1	RB	1
-paraffin		3	NN	3
+paraffin		4	NN	4
 paragon			1	NN	1
 paragons		2	NNS	2
 paragraph		9	NN	9
 paragraphs		1	NNS	1
 paralegal		1	NN	1
-parallel		16	JJ	6	NN	6	RB	2	VB	2
+parallel		22	JJ	12	NN	6	RB	2	VB	2
 paralleled		3	VBN	3
 paralleling		1	VBG	1
 parallels		11	NNS	9	VBZ	2
@@ -41738,7 +41956,7 @@ paranoia		2	NN	2
 paranoid		5	JJ	5
 paranormal		3	NN	3
 parapet			1	NN	1
-paraphernalia		3	NNS	3
+paraphernalia		3	NN	3
 paraphrase		2	VBP	2
 paraplegic		1	JJ	1
 parasite		2	NN	2
@@ -41756,35 +41974,36 @@ parchment		2	NN	2
 pardon			4	NN	3	VB	1
 pardonable		2	JJ	2
 pardoned		5	VBD	5
-pardons			1	NNS	1
+pardons			1	VBZ	1
 pare			1	VB	1
 pared			5	VBD	2	VBN	3
 parent			92	JJ	3	NN	89
 parent-company		1	NN	1
 parentage		2	NN	2
-parental		7	JJ	7
+parental		9	JJ	9
 parental-leave		2	JJ	2
 parenthetical		1	JJ	1
 parenthood		2	NN	2
-parents			148	NNS	148
+parents			153	NNS	153
+parents?		1	JJ	1
 pariah			1	NN	1
 parimutuels		1	NNS	1
 paring			3	NN	1	VBG	2
 parings			1	NNS	1
-parish			15	JJ	9	NN	6
+parish			15	JJ	10	NN	5
 parishes		1	NNS	1
 parishioners		2	NNS	2
 parities		1	NNS	1
 parity			10	NN	10
-park			46	NN	44	VB	2
+park			47	NN	45	VB	2
 parka			1	NN	1
 parked			22	VBD	5	VBN	17
-parking			18	NN	17	VBG	1
-parks			11	NNS	11
+parking			18	NN	16	VBG	2
+parks			12	NNS	12
 parkway			1	NN	1
 parlance		1	NN	1
 parley			3	NN	2	VB	1
-parliament		15	NN	15
+parliament		15	NN	14	NNP	1
 parliamentarian		1	NN	1
 parliamentary		25	JJ	25
 parliaments		2	NNS	2
@@ -41802,87 +42021,88 @@ paroxysm		1	NN	1
 paroxysmal		1	JJ	1
 paroxysms		2	NNS	2
 parried			3	VBD	3
-parries			1	NNS	1
+parries			1	VBZ	1
 parrot			4	NN	4
 parroting		1	VBG	1
 parrots			1	NNS	1
 parry			1	VB	1
 parsley			2	NN	2
-parson			1	NN	1
-part			412	NN	406	RB	4	VB	2
+parson			3	NN	3
+part			421	NN	415	RB	4	VB	2
 part-constructed	1	JJ	1
-part-time		9	JJ	7	RB	2
+part-time		10	JJ	8	RB	2
 part?			1	NN	1
 partake			2	VB	2
-partakes		1	NNS	1
+partakes		1	VBZ	1
 parted			8	VBD	8
 partial			22	JJ	22
 partially		9	RB	9
 participant		5	NN	5
 participants		20	NNS	20
-participate		23	VB	23
+participate		24	VB	24
 participated		9	VBD	8	VBN	1
 participates		1	VBZ	1
 participating		9	VBG	9
 participation		21	NN	21
-participle		59	JJ	2	NN	57
+participle		48	JJ	2	NN	46
 particle		3	NN	3
 particles		8	NNS	8
-particular		98	JJ	94	NN	3	RB	1
+particular		100	JJ	96	NN	3	RB	1
+particular.		1	CD	1
 particularly		114	RB	114
 particulars		2	NNS	2
-parties			81	NNS	81
+parties			82	NNS	82
 partieswitty		1	JJ	1
 parting			6	NN	5	VBG	1
 partisan		6	JJ	5	NN	1
 partisans		3	NNS	3
-partition		1	NN	1
+partition		3	NN	3
 partitioned		1	VBN	1
 partitioning		1	VBG	1
 partitions		1	NNS	1
-partly			65	RB	65
+partly			66	RB	66
 partner			87	NN	87
 partnering		1	VBG	1
-partners		45	NNS	45
+partners		46	NNS	46
 partnership		47	NN	47
 partnerships		13	NNS	13
 partridge		1	NN	1
-parts			102	NNS	102
+parts			107	NNS	107
 parts-engineering	1	JJ	1
-party			225	NN	225
+party			237	NN	237
 party!			1	NN	1
 party?Im		1	NN	1
-partys			14	JJ	12	NNS	2
+partys			16	JJ	11	NNS	5
 pashas			1	NNS	1
-pass			77	JJ	1	NN	11	VB	55	VBP	10
+pass			79	JJ	1	NN	11	VB	58	VBP	9
 pass-through		1	JJ	1
-pass?No			1	VBP	1
+pass?No			1	NN	1
 passable		3	JJ	3
-passage			33	NN	33
+passage			37	NN	37
 passages		7	NNS	7
 passageway		1	NN	1
 passbook		1	NN	1
-passed			115	VBD	55	VBN	60
+passed			121	VBD	59	VBN	62
 passel			1	NN	1
-passenger		24	NN	24
+passenger		25	NN	25
 passenger-car		1	NN	1
 passenger-kilometers	1	NNS	1
 passengers		31	NNS	31
 passer-by		1	NN	1
 passers-by		5	NNS	5
-passes			14	NNS	5	VBZ	9
-passing			29	NN	6	VBG	23
+passes			16	NNS	5	VBZ	11
+passing			30	NN	6	VBG	24
 passing-out		1	JJ	1
 passion			25	NN	25
-passionate		8	JJ	8
-passionately		5	RB	5
+passionate		11	JJ	11
+passionately		7	RB	7
 passions		3	NNS	3
 passive			7	JJ	7
 passively		1	RB	1
 passivity		1	NN	1
-passport		18	NN	18
+passport		19	NN	19
 passports		1	NNS	1
-past			489	IN	17	JJ	379	NN	89	RB	4
+past			471	IN	23	JJ	361	NN	83	RB	4
 pasta			3	NN	3
 paste			7	NN	7
 pasted			2	VBN	2
@@ -41890,11 +42110,11 @@ pastel			1	NN	1
 pastels			2	NNS	2
 pasteurized		1	VBN	1
 pastimes		4	NNS	4
-pasting			5	JJ	1	NN	3	VBG	1
+pasting			5	NN	3	VBG	2
 pastor			3	NN	3
 pastoral		2	JJ	2
 pastoris		1	NN	1
-pastries		2	NNS	2
+pastries		3	NNS	3
 pastry			9	NN	9
 pasts			1	NNS	1
 pasture			4	NN	4
@@ -41909,13 +42129,13 @@ patching		1	VBG	1
 patchwork		3	JJ	1	NN	2
 patchy			4	JJ	4
 pate			1	NN	1
-patent			42	JJ	3	NN	38	RB	1
+patent			39	JJ	2	NN	37
 patent-law		1	NN	1
 patented		5	JJ	2	VBD	3
 patently		1	RB	1
 patents			8	NNS	8
-paterfamilias		1	NNS	1
-path			59	NN	59
+paterfamilias		1	NN	1
+path			61	NN	61
 pathetic		7	JJ	7
 pathetically		2	RB	2
 pathlogy		1	NN	1
@@ -41923,16 +42143,16 @@ pathological		2	JJ	2
 paths			7	NNS	7
 pathway			3	NN	3
 pathways		1	NNS	1
-patience		14	NN	14
+patience		15	NN	15
 patient			43	JJ	14	NN	29
 patient-advocacy	1	NN	1
 patient-physician	1	JJ	1
 patient?Im		1	NN	1
-patiently		1	RB	1
-patients		64	NNS	64
+patiently		2	RB	2
+patients		65	NNS	65
 patina			1	NN	1
 patio			2	NN	2
-patois			1	NNS	1
+patois			1	NN	1
 patria			1	FW	1
 patriarch		4	NN	4
 patriarchal		4	JJ	4
@@ -41956,17 +42176,17 @@ patrons			3	NNS	3
 patted			5	VBD	5
 patter			4	NN	4
 pattered		2	VBN	2
-pattering		1	JJ	1
-pattern			30	NN	30
+pattering		1	VBG	1
+pattern			34	NN	34
 patterned		6	JJ	2	VBN	4
-patterns		20	NNS	20
+patterns		21	NNS	21
 paucity			2	NN	2
 paunch			3	NN	3
 pauper			2	NN	2
 pauperized		1	VBN	1
 paupers			1	NNS	1
 pause			11	NN	9	VB	1	VBP	1
-paused			17	VBD	17
+paused			18	VBD	18
 pauses			4	NNS	3	VBZ	1
 pausing			3	VBG	3
 pave			2	VB	2
@@ -41984,7 +42204,7 @@ pawn			1	NN	1
 pawned			1	VBN	1
 pawns			1	NNS	1
 paws			3	NNS	3
-pay			342	NN	73	VB	239	VBP	30
+pay			354	NN	75	VB	248	VBP	31
 pay-TV			2	NN	2
 pay-cable		1	NN	1
 pay-down		1	JJ	1
@@ -41998,7 +42218,7 @@ paychecks		3	NNS	3
 payers			2	NNS	2
 paying			75	JJ	1	VBG	74
 payload			1	NN	1
-payment			62	NN	62
+payment			63	NN	63
 payment-in-kind		1	JJ	1
 payments		112	NNS	112
 payoff			3	NN	3
@@ -42008,54 +42228,54 @@ payouts			5	NNS	5
 payroll			9	NN	9
 payroll-tax		1	NN	1
 payrolls		4	NNS	4
-pays			12	VBZ	12
-peace			68	NN	68
+pays			13	VBZ	13
+peace			76	NN	76
 peace-keeping		2	JJ	1	NN	1
 peaceable		1	JJ	1
-peaceful		20	JJ	20
-peacefully		3	RB	3
-peacemaker		1	NN	1
+peaceful		21	JJ	21
+peacefully		4	RB	4
+peacemaker		2	NN	2
 peacemakers		1	NNS	1
 peacetime		2	NN	2
 peach			4	NN	4
 peaches			3	NNS	3
 peacock			3	JJ	1	NN	2
 peacocks		1	NNS	1
-peak			19	JJ	4	NN	15
+peak			23	JJ	4	NN	19
 peaked			7	JJ	4	VBD	2	VBN	1
 peaking			1	VBG	1
-peaks			9	NNS	9
+peaks			9	NNS	8	VBZ	1
 peal			3	NN	3
 pealing			1	VBG	1
 peals			5	NNS	5
 peanut			1	NN	1
 peanuts			6	NNS	6
-pear			2	NN	2
+pear			3	NN	3
 pearl			3	JJ	1	NN	2
 pearl-grey		1	JJ	1
 pearls			1	NNS	1
 pearly			4	JJ	4
-pears			3	NNS	3
+pears			3	NNS	2	VBZ	1
 peas			3	NNS	3
-peasant			16	JJ	3	NN	13
+peasant			18	JJ	3	NN	15
 peasantry		5	JJ	1	NN	4
 peasants		23	NNS	23
-peat			2	NN	1	VBP	1
-pebble			1	NN	1
+peat			2	NN	2
+pebble			2	NN	2
 pebbles			4	NNS	4
 pebbly			1	JJ	1
 peccadilloes		1	NNS	1
-peck			2	NN	2
-pecked			2	VBD	2
-pecking			3	VBG	3
+peck			3	NN	2	VBP	1
+pecked			3	VBD	2	VBN	1
+pecking			5	VBG	5
 peckish			1	JJ	1
-pecks			2	NNS	2
+pecks			2	NNS	1	VBZ	1
 pectorals		1	NNS	1
-peculiar		14	JJ	14
+peculiar		22	JJ	22
 peculiarities		6	NNS	6
 peculiarity		1	NN	1
 peculiarity?		1	NN	1
-peculiarly		8	JJ	2	RB	6
+peculiarly		9	JJ	2	RB	7
 pedal			3	VB	3
 pedaled			1	VBN	1
 pedalled		1	VBD	1
@@ -42064,9 +42284,9 @@ pedantic		2	JJ	2
 peddled			2	VBN	2
 peddlers		3	NNS	3
 peddles			1	VBZ	1
-peddling		8	JJ	1	NN	4	VBG	3
+peddling		8	JJ	1	NN	3	VBG	4
 pedestal		3	JJ	1	NN	2
-pedestrian		7	JJ	5	NN	2
+pedestrian		8	JJ	6	NN	2
 pedestrians		5	NNS	5
 pediatric		5	JJ	5
 pediatrician		2	NN	2
@@ -42078,25 +42298,25 @@ pee			1	NN	1
 peek			3	NN	3
 peeked			1	VBD	1
 peeking			1	VBG	1
-peel			6	NN	3	VB	3
+peel			7	NN	4	VB	3
 peelback		1	JJ	1
 peeled			3	VBN	3
 peeler			1	NN	1
 peeling			6	VBG	6
 peelings		2	NNS	2
 peep			5	NN	5
-peeped			4	JJ	1	VBD	2	VBN	1
+peeped			4	VBD	4
 peeping			1	VBG	1
-peer			4	NN	1	VB	2	VBP	1
+peer			4	NN	2	VB	1	VBP	1
 peerage			7	JJ	1	NN	6
 peerages		1	NNS	1
-peered			6	VBD	6
+peered			7	VBD	7
 peering			5	VBG	5
 peerless		2	JJ	2
 peers			8	NNS	8
 peeves			1	VBZ	1
 peevish			4	JJ	2	RB	2
-peg			4	NN	1	VB	1	VBP	2
+peg			4	NN	1	VB	2	VBP	1
 pegged			7	VBD	1	VBN	6
 pegging			1	VBG	1
 pegs			3	NNS	1	VBZ	2
@@ -42106,26 +42326,26 @@ pellet			1	NN	1
 pellets			5	NNS	5
 pelt			1	NN	1
 pelted			1	VBN	1
-pelting			3	NN	1	VBG	2
+pelting			3	VBG	3
 pelvic			3	JJ	3
-pelvis			1	NNS	1
+pelvis			1	NN	1
 pelvises		1	NNS	1
-pen			25	NN	25
+pen			26	NN	26
 pen-and-ink		1	JJ	1
 penalise		1	VB	1
 penalised		1	VBN	1
 penalize		1	VB	1
 penalized		3	VBN	3
 penalties		21	NNS	21
-penalty			31	NN	31
+penalty			32	NN	32
 penance			1	NN	1
-pence			68	NN	45	NNS	23
+pence			69	NN	44	NNS	25
 penchant		4	NN	4
 pencil			15	NN	15
 pencil?Yes		1	NNS	1
 pencilled		1	JJ	1
 pencils			6	NNS	6
-pending			53	IN	1	JJ	9	VBG	35	VBG|JJ	8
+pending			53	IN	2	JJ	9	VBG	34	VBG|JJ	8
 pendulous		1	JJ	1
 pendulum		1	NN	1
 penetrate		14	VB	14
@@ -42141,34 +42361,35 @@ penitent		1	NN	1
 pennant			4	NN	4
 penned			1	VBN	1
 pennies			3	NNS	3
-penniless		3	JJ	2	NN	1
+penniless		3	JJ	3
 penny			18	NN	18
 penny-pinching		2	JJ	2
 penny-wise		1	JJ	1
 pennyworth		2	NN	2
 pens			1	NNS	1
-pension			72	NN	72
+pension			73	NN	73
 pension-fund		3	JJ	1	NN	2
 pension-insurance	1	JJ	1
 pensionable		1	JJ	1
 pensioner		2	NN	2
 pensioners		7	NNS	7
-pensions		9	NNS	9
+pensions		10	NNS	10
 pensive			1	JJ	1
 pent-up			2	JJ	2
 penultimate		1	JJ	1
 peonies			1	NNS	1
-people			1103	NNS	1103
+people			1146	NN	1	NNS	1145
 people.			1	NN	1
-peopled			4	VBN	4
-peoples			28	NNS	28
+people?			1	NN	1
+peopled			4	VBD	1	VBN	3
+peoples			29	NNS	29
 pep			1	NN	1
 pepper			8	NN	7	VB	1
 peppered		4	JJ	3	VBD	1
 peppering		2	VBG	2
 peppermint		1	NN	1
 peppery			1	JJ	1
-per			174	FW	2	IN	172
+per			177	FW	2	IN	175
 per-capita		3	JJ	3
 per-share		17	JJ	17
 perambulator		1	NN	1
@@ -42195,19 +42416,19 @@ perennial		4	JJ	3	NN	1
 perennials		1	NNS	1
 perestroika		12	FW	11	NN	1
 perestrokia		1	NN	1
-perfect			46	JJ	45	VB	1
+perfect			51	JJ	50	VB	1
 perfected		3	VBN	3
 perfecting		2	VBG	2
 perfection		7	NN	7
 perfectionist		2	NN	2
 perfectionists		1	NNS	1
-perfectly		39	RB	39
-perform			20	VB	19	VBP	1
-performance		130	NN	130
+perfectly		41	RB	41
+perform			22	VB	21	VBP	1
+performance		134	NN	134
 performance-related	1	JJ	1
 performance?		1	NN	1
 performances		18	NNS	18
-performed		23	VBD	6	VBN	17
+performed		26	VBD	7	VBN	19
 performer		9	JJ	2	NN	7
 performers		9	NNS	9
 performing		13	VBG	13
@@ -42217,19 +42438,19 @@ perfume			18	NN	18
 perfumed		4	JJ	4
 perfumes		1	NNS	1
 perfunctory		2	JJ	2
-perhaps			86	RB	86
+perhaps			88	RB	88
 perhapsHer		1	JJ	1
 peril			1	NN	1
 perilous		5	JJ	5
 perilously		1	RB	1
 perils			2	NNS	2
 perimeter		6	NN	6
-period			221	NN	221
+period			225	NN	225
 periodic		7	JJ	7
 periodically		3	RB	3
 periodicals		3	NNS	3
 periodontal		1	JJ	1
-periods			24	NNS	24
+periods			26	NNS	26
 peripatetic		1	JJ	1
 peripheral		9	JJ	9
 periphery		5	NN	5
@@ -42247,7 +42468,7 @@ perks			1	NNS	1
 perky			1	JJ	1
 permanence		4	NN	4
 permanency		1	NN	1
-permanent		38	JJ	38
+permanent		40	JJ	40
 permanently		7	RB	7
 permeable		2	JJ	2
 permeate		3	VB	3
@@ -42261,7 +42482,7 @@ permissive		1	JJ	1
 permissiveness?This	1	NNS	1
 permit			24	NN	1	VB	19	VBP	4
 permits			8	NNS	2	VBZ	6
-permitted		24	VBD	7	VBN	17
+permitted		26	VBD	8	VBN	18
 permitting		4	VBG	4
 permitting?		1	NNS	1
 permutations		2	NNS	2
@@ -42278,7 +42499,7 @@ perpetuates		3	VBZ	3
 perpetuating		2	VBG	2
 perplexed		1	VBD	1
 perplexing		2	JJ	2
-perplexity		1	NN	1
+perplexity		2	NN	2
 perquisites		1	NNS	1
 persecute		1	VB	1
 persecuted		3	VBN	3
@@ -42289,50 +42510,50 @@ perseverance		1	NN	1
 persevere		2	VB	2
 persevered		1	VBD	1
 pershare		1	JJ	1
-persist			3	VB	2	VBP	1
-persisted		4	VBD	4
+persist			4	VB	3	VBP	1
+persisted		7	VBD	7
 persistence		5	NN	5
 persistent		17	JJ	17
 persistently		2	RB	2
 persists		2	VBZ	2
-person			164	NN	164
+person			170	IN	2	NN	168
 person!			1	NN	1
 persona			1	NN	1
 personage		1	NN	1
 personages		1	NNS	1
-personal		133	JJ	133
+personal		136	JJ	136
 personal-care		2	JJ	2
 personal-computer	2	NN	2
 personal-injury		3	NN	3
-personalities		7	NNS	7
-personality		16	NN	16
+personalities		8	NNS	8
+personality		19	NN	19
 personally		26	RB	26
 personification		1	NN	1
 personified		2	VBN	2
 personify		1	VB	1
-personnel		26	JJ	1	NNS	25
+personnel		27	JJ	1	NNS	26
 persons			13	NNS	13
-perspective		11	NN	11
+perspective		15	NN	15
 perspectives		1	NNS	1
 perspicacious		1	JJ	1
 perspiration		3	NN	3
-perspiring		2	VBG	2
-persuade		19	VB	19
-persuaded		21	VBD	10	VBN	11
-persuades		1	VBZ	1
-persuading		1	VBG	1
+perspiring		2	JJ	1	VBG	1
+persuade		20	VB	20
+persuaded		22	VBD	10	VBN	12
+persuades		2	VBZ	2
+persuading		4	VBG	4
 persuasion		4	NN	4
 persuasive		3	JJ	3
 persuasively		1	RB	1
 pertain			2	VB	2
-pertaining		1	JJ	1
+pertaining		1	VBG	1
 pertinacious		1	JJ	1
 pertinent		5	JJ	5
 perturbing		1	VBG	1
 pertussis		7	NN	7
 perusal			2	NN	2
 peruse			1	VB	1
-perused			1	VBD	1
+perused			1	VBN	1
 pervades		2	VBZ	2
 pervading		1	VBG	1
 pervasive		3	JJ	3
@@ -42355,10 +42576,10 @@ pestered		2	VBD	2
 pestering		1	VBG	1
 pesticide		10	NN	10
 pesticides		18	NNS	18
-pestle			1	NN	1
+pestle			1	VB	1
 pests			1	NNS	1
 pet			18	JJ	10	NN	8
-petals			8	NNS	8
+petals			9	NNS	9
 petered			1	VBD	1
 petite			2	JJ	2
 petition		21	NN	18	VB	3
@@ -42368,7 +42589,7 @@ petrified		3	JJ	3
 petrify			1	VBP	1
 petrochemical		11	NN	11
 petrochemicals		5	NNS	5
-petrol			23	JJ	7	NN	16
+petrol			24	JJ	8	NN	16
 petrol-driven		1	JJ	1
 petrol-engined		1	JJ	1
 petroleum		18	NN	18
@@ -42378,7 +42599,7 @@ petted			1	VBD	1
 pettifogging		1	JJ	1
 petting			2	VBG	2
 pettish			1	JJ	1
-petty			8	JJ	8
+petty			9	JJ	9
 petulant		4	JJ	4
 petulantly		1	RB	1
 phalanx			1	NN	1
@@ -42391,14 +42612,14 @@ pharmaceutical		31	JJ	29	NN	2
 pharmaceuticals		9	NNS	9
 pharmacies		2	NNS	2
 pharmacy		1	NN	1
-phase			12	NN	11	VB	1
+phase			15	NN	14	VB	1
 phase-out		1	NN	1
 phased			6	VBD	1	VBN	5
-phases			6	NNS	6
+phases			7	NNS	7
 phasing			3	VBG	3
 pheasant		5	NN	5
 pheasants		6	NNS	6
-phenomena		3	NNS	3
+phenomena		3	NN	1	NNS	2
 phenomenal		4	JJ	4
 phenomenon		12	NN	12
 philanthropist		1	NN	1
@@ -42408,15 +42629,15 @@ philosophers		7	NNS	7
 philosophic		3	JJ	3
 philosophical		10	JJ	10
 philosophies		4	NNS	4
-philosophizing		1	NN	1
-philosophy		28	NN	28
+philosophizing		1	VBG	1
+philosophy		30	NN	30
 phlegmatic		1	JJ	1
 phobia			3	NN	3
 phobias			1	NNS	1
 phobic			2	JJ	2
 phoenix			1	NN	1
 phoenix-like		1	JJ	1
-phone			96	NN	94	VB	1	VBP	1
+phone			102	NN	101	VB	1
 phone-box		1	NN	1
 phone-call		1	NN	1
 phoned			5	VBD	4	VBN	1
@@ -42431,31 +42652,32 @@ phonological		1	JJ	1
 phony			11	JJ	11
 phosphates		1	NNS	1
 phosphorescent		2	JJ	2
-photo			9	NN	9
+phosphotase		1	JJ	1
+photo			10	NN	10
 photo-electric		2	JJ	2
 photocopier		1	NN	1
 photocopiers		1	NNS	1
 photocopy		3	NN	1	VB	2
 photocopying		1	VBG	1
 photofinishing		1	NN	1
-photograph		28	NN	28
-photographed		6	VBN	6
+photograph		29	NN	29
+photographed		7	VBN	7
 photographer		10	NN	10
 photographers		7	NNS	7
-photographic		6	JJ	6
+photographic		7	JJ	7
 photographing		2	VBG	2
-photographs		31	NNS	31
+photographs		32	NNS	32
 photography		7	NN	7
 photos			11	NNS	11
 photostat		1	NN	1
 photosynthesis		1	NN	1
-phrasal			5	JJ	5
+phrasal			1	JJ	1
 phrase			34	NN	34
-phrased			3	JJ	2	VBD	1
+phrased			3	JJ	1	VBD	1	VBN	1
 phraseology		2	NN	2
 phrases			8	NNS	8
 phrasing		2	NN	2
-physical		40	JJ	40
+physical		42	JJ	42
 physically		10	RB	10
 physician		6	NN	6
 physician-executive	1	JJ	1
@@ -42473,7 +42695,7 @@ pianist			4	NN	4
 pianist-comedian	1	NN	1
 pianist\/bassoonist\/composer	1	bassoonist\	1
 pianists		1	NNS	1
-piano			31	NN	31
+piano			32	NN	32
 pianos			1	NNS	1
 piasters		1	NNS	1
 piazza			1	NN	1
@@ -42481,29 +42703,29 @@ picadors		1	NNS	1
 pick			48	NN	5	VB	43
 pick-lock		1	NN	1
 pick-up			4	JJ	1	NN	3
-picked			74	VBD	57	VBN	17
+picked			77	VBD	60	VBN	17
 pickers			7	NNS	7
 picket			8	NN	8
 picketed		1	VBD	1
 picketing		3	NN	3
 pickets			3	NNS	3
 picking			21	NN	2	VBG	19
-pickings		2	NNS	2
+pickings		2	NN	2
 pickle			3	NN	3
 pickles			2	NNS	2
 pickpocket		1	NN	1
 picks			6	NNS	1	VBZ	5
 pickup			5	NN	5
 pickups			1	NNS	1
-picnic			12	NN	12
+picnic			13	NN	13
 picnicking		2	VBG	2
 picnics			2	NNS	2
 pictorial		1	JJ	1
-picture			95	NN	93	VB	1	VBP	1
+picture			101	NN	99	VB	1	VBP	1
 picture-making		1	NN	1
 picture-taking		1	NN	1
 pictured		2	VBN	2
-pictures		49	NNS	49
+pictures		50	NNS	50
 pictures?Very		1	NN	1
 picturesque		3	JJ	3
 picturesquely		1	RB	1
@@ -42511,21 +42733,21 @@ picturing		1	VBG	1
 piddling		1	JJ	1
 pie			15	NN	15
 pie-in-the-sky		1	NN	1
-piece			116	NN	113	VB	3
+piece			124	NN	121	VB	3
 pieced			1	VBN	1
 piecemeal		2	RB	2
-pieces			59	NNS	59
+pieces			63	NNS	63
 pier			5	NN	5
 pierce			2	VB	1	VBP	1
 pierced			8	VBD	4	VBN	4
 pierces			1	VBZ	1
-piercing		8	JJ	6	VBG	2
+piercing		9	JJ	6	VBG	3
 piers			3	NNS	3
 pies			1	NNS	1
 piffling		1	JJ	1
-pig			13	NN	13
+pig			14	NN	14
 pig-headed		1	JJ	1
-pigeon			3	NN	3
+pigeon			5	NN	5
 pigeon-hole		3	NN	2	VB	1
 pigeon-holes		1	NNS	1
 pigeon-racing		1	VBG	1
@@ -42542,27 +42764,27 @@ pigtail			2	NN	2
 pigtails		3	NNS	3
 pike			3	NN	3
 pilchards		1	NNS	1
-pile			30	NN	27	VB	2	VBP	1
+pile			35	NN	32	VB	2	VBP	1
 pile-up			1	NN	1
-piled			12	VBD	5	VBN	7
-piles			11	NNS	11
+piled			15	VBD	7	VBN	8
+piles			12	NNS	12
 pileup			1	NN	1
 pilfered		1	VBD	1
-pilfering		1	NN	1
+pilfering		1	VBG	1
 pilgrimage		4	NN	4
 pilgrims		2	NNS	2
-piling			1	VBG	1
+piling			2	VBG	2
 pill			38	NN	38
 pillaged		1	VBN	1
 pillar			7	NN	7
 pillared		1	JJ	1
-pillars			6	NNS	6
+pillars			7	NNS	7
 pilloried		2	VBN	2
-pillow			8	NN	8
+pillow			9	NN	9
 pillowed		1	VBN	1
 pillows			3	NNS	3
 pills			28	NNS	28
-pilot			29	JJ	3	NN	26
+pilot			30	JJ	3	NN	27
 pilote			1	FW	1
 piloted			1	VBD	1
 piloting		1	VBG	1
@@ -42575,6 +42797,7 @@ pin			14	NN	6	VB	8
 pin-head		1	NN	1
 pin-pointed		1	VBN	1
 pin-ups			2	NNS	2
+pinafores		1	NNS	1
 pinch			3	NN	2	VB	1
 pinched			6	VBD	3	VBN	3
 pine			14	NN	1	VBP	13
@@ -42582,7 +42805,7 @@ pineapple		1	NN	1
 pineapples?		1	NNP	1
 pines			4	NNS	4
 ping			1	NN	1
-pings			1	NNS	1
+pings			1	VBZ	1
 pinhead			1	NN	1
 pinheaded		1	JJ	1
 pining			3	VBG	3
@@ -42590,7 +42813,7 @@ pinioned		1	VBN	1
 pink			41	JJ	40	NN	1
 pink-coloured		1	JJ	1
 pink-rimmed		1	VBN	1
-pinker			1	NN	1
+pinker			1	JJR	1
 pinks			1	NNS	1
 pinnacle		1	NN	1
 pinned			6	VBN	6
@@ -42599,7 +42822,7 @@ pinpoint		4	VB	4
 pinpointed		2	JJ	1	VBN	1
 pinpointing		1	VBG	1
 pinpricks		1	NNS	1
-pins			7	NNS	6	VBZ	1
+pins			9	NNS	8	VBZ	1
 pint			8	NN	8
 pints			6	NNS	6
 pioneer			9	NN	9
@@ -42608,14 +42831,14 @@ pioneering		2	JJ	2
 pioneers		4	NNS	4
 pious			3	JJ	3
 piously			1	RB	1
-pipe			23	NN	23
+pipe			26	NN	26
 pipe-smoking		1	JJ	1
 piped			3	VBD	2	VBN	1
-pipeline		31	NN	31
+pipeline		32	NN	32
 pipelines		4	NNS	4
 piper			1	NN	1
 pipes			14	NNS	14
-piping			3	JJ	3
+piping			3	JJ	2	VBG	1
 pipsqueak		1	NN	1
 piquancy		1	NN	1
 piquant			2	JJ	2
@@ -42625,7 +42848,7 @@ pirate			2	JJ	1	NN	1
 pirates			4	NNS	4
 pirouetted		2	VBD	2
 pistils			1	NNS	1
-pistol			6	NN	6
+pistol			7	NN	7
 pistol-packing		1	JJ	1
 pistols			4	NNS	4
 piston			2	NN	2
@@ -42635,7 +42858,7 @@ pit?			1	NN	1
 pitch			22	NN	21	VBP	1
 pitch-black		1	JJ	1
 pitch-dark		1	JJ	1
-pitched			14	JJ	2	VBD	9	VBN	3
+pitched			15	JJ	2	VBD	10	VBN	3
 pitcher			3	NN	3
 pitcher-coach		1	NN	1
 pitchers		4	NNS	4
@@ -42673,28 +42896,28 @@ placard			1	NN	1
 placards		3	NNS	3
 placate			3	VB	3
 placatory		2	JJ	2
-place			313	NN	290	VB	16	VBP	7
+place			331	NN	309	VB	15	VBP	7
 place?			1	NNP	1
 placebo			3	NN	3
 placebos		1	NNS	1
-placed			77	VBD	30	VBN	47
+placed			80	VBD	30	VBN	50
 placement		12	NN	12
 placements		3	NNS	3
 placenta		1	NN	1
-places			57	NNS	53	VBZ	4
+places			60	NNS	55	VBZ	5
 places?			1	NNP	1
 placid			4	JJ	4
 placing			7	NN	2	VBG	5
 plagiarisms		1	NNS	1
 plagiarized		1	VBD	1
 plagiarizing		1	VBG	1
-plague			8	NN	4	VB	4
-plagued			7	VBD	1	VBN	6
+plague			9	NN	4	VB	5
+plagued			10	VBD	1	VBN	9
 plagues			2	NNS	2
 plaice			2	NN	2
 plaid			5	JJ	2	NN	3
 plaid-floored		1	JJ	1
-plain			26	JJ	16	NN	8	RB	2
+plain			32	JJ	22	NN	8	RB	2
 plain-clothes		2	JJ	1	NNS	1
 plainclothes		1	NNS	1
 plainly			10	RB	10
@@ -42704,9 +42927,9 @@ plaintiffs		15	NNS	15
 plaintive		4	JJ	4
 plaints			1	NNS	1
 plaits			1	NNS	1
-plan			388	NN	352	VB	10	VBP	26
-plane			83	NN	82	VB	1
-planes			29	NNS	29
+plan			393	NN	356	VB	11	VBP	26
+plane			89	NN	88	VB	1
+planes			30	NNS	30
 planet			14	NN	14
 planetary		1	JJ	1
 planets			2	NNS	2
@@ -42714,37 +42937,37 @@ planets?		1	NNS	1
 plangent		1	JJ	1
 plank			3	NN	3
 planks			8	NNS	8
-planned			100	JJ	22	VBD	32	VBN	46
+planned			103	JJ	22	VBD	33	VBN	48
 planner			7	NN	7
 planners		11	NNS	11
-planning		68	NN	30	VBG	38
-plans			301	NNS	175	VBP	1	VBZ	125
-plant			207	NN	199	VB	8
+planning		70	NN	31	VBG	39
+plans			302	NNS	176	VBP	1	VBZ	125
+plant			209	NN	201	VB	8
 plant-modernization	1	JJ	1
 plant-sciences		1	JJ	1
 plantation		3	NN	3
 plantations		7	NNS	7
-planted			27	VBD	2	VBN	25
+planted			28	VBD	3	VBN	25
 planter			1	NN	1
 planters		1	NNS	1
-planting		8	NN	5	VBG	3
-plants			132	NNS	132
+planting		8	NN	7	VBG	1
+plants			133	NNS	133
 plaque			1	NN	1
-plaster			14	NN	14
+plaster			15	NN	15
 plastered		9	JJ	5	VBN	4
 plasterer		1	NN	1
 plastering		1	NN	1
-plastic			54	JJ	28	NN	26
+plastic			59	JJ	33	NN	26
 plastic-rimmed		1	JJ	1
 plastics		24	NNS	24
 plastics-industry	1	NN	1
 plate			39	NN	39
 plate!			1	NN	1
-plate-glass		1	JJ	1
+plate-glass		1	NN	1
 plateau			5	NN	5
 plated			1	VBN	1
 plates			22	NNS	22
-platform		30	NN	30
+platform		32	NN	32
 platforms		5	NNS	5
 platinum		6	NN	6
 platitudes		4	NNS	4
@@ -42755,15 +42978,16 @@ platter			5	JJ	1	NN	4
 platters		1	NNS	1
 plaudits		2	NNS	2
 plausible		9	JJ	9
-play			212	NN	123	VB	67	VBP	22
+play			220	NN	127	VB	69	VBP	24
 play-acting		1	VBG	1
+play?			1	VB	1
 play?Well		1	NN	1
 playback		2	NN	2
 playboy			1	NN	1
 playboys		1	NNS	1
-played			106	VBD	74	VBN	32
+played			112	VBD	76	VBN	36
 player			43	NN	43
-players			54	NNS	54
+players			55	NNS	55
 playful			4	JJ	4
 playfully		3	RB	3
 playground		14	NN	14
@@ -42771,11 +42995,11 @@ playgrounds		2	NNS	2
 playgroup		5	JJ	1	NN	4
 playgroups		2	NNS	2
 playhouse		1	NN	1
-playing			78	JJ	1	NN	13	VBG	64
+playing			80	JJ	1	NN	13	VBG	66
 playmates		2	NNS	2
 playoff			4	NN	4
 playoffs		3	NNS	3
-plays			46	NNS	19	VBZ	27
+plays			47	NNS	19	VBZ	28
 playsHamlet		1	NN	1
 plaything		1	NN	1
 playthings		2	NNS	2
@@ -42783,41 +43007,42 @@ playtime		1	JJ	1
 playwright		7	NN	7
 plaza			1	NN	1
 plea			26	NN	25	VB	1
-plead			14	VB	14
-plead?Not		1	VBP	1
-pleaded			16	VBD	15	VBN	1
+plead			11	VB	11
+pleaded			15	VBD	14	VBN	1
 pleading		5	JJ	1	VBG	4
 pleadingly		1	RB	1
 pleadings		2	NNS	2
-pleads			2	VBZ	2
+pleads			1	VBZ	1
 pleas			3	NNS	3
-pleasant		27	JJ	27
+pleasant		32	JJ	32
 pleasant-faced		1	JJ	1
+pleasantest		1	JJS	1
 pleasantly		2	RB	2
 pleasantries		4	NNS	4
-please			62	RB	5	UH	30	VB	20	VBP	7
+please			67	RB	5	UH	33	VB	23	VBP	6
 please.			3	FW	3
 please.Who		1	NN	1
-please?			5	NN	1	NNP	3	VBZ	1
-pleased			32	JJ	17	VBD	4	VBN	11
-pleases			1	VBZ	1
+please?			7	NN	2	NNP	5
+pleased			36	JJ	17	VBD	5	VBN	14
+pleases			2	VBZ	2
 pleasing		4	JJ	4
 pleasingly		1	RB	1
 pleasurable		4	JJ	4
 pleasurably		1	RB	1
-pleasure		41	NN	41
+pleasure		48	NN	48
+pleasure.		1	NN	1
 pleasures		8	NNS	8
 pleated			1	JJ	1
 plebeian		2	JJ	2
 plebeians		1	NNS	1
-pledge			6	NN	5	VB	1
+pledge			9	NN	8	VB	1
 pledged			14	VBD	9	VBN	5
-pledges			4	NNS	3	VBZ	1
+pledges			5	NNS	4	VBZ	1
 pledging		2	VBG	2
 plenary			2	JJ	1	NN	1
 plenipotentiaries	1	NNS	1
 plentiful		6	JJ	6
-plenty			42	JJ	3	NN	24	RB	15
+plenty			42	JJ	3	NN	23	RB	16
 plethora		1	NN	1
 pliable			3	JJ	3
 pliant			1	JJ	1
@@ -42834,27 +43059,27 @@ plonking		2	VBG	2
 plop			1	NN	1
 plopped			3	VBD	3
 plopping		1	VBG	1
-plot			24	NN	23	VB	1
+plot			28	NN	27	VB	1
 plots			13	NNS	13
 plotted			3	VBD	3
 plotters		2	NNS	2
 plotting		5	VBG	5
 plough			7	NN	4	VB	3
-ploughed		5	VBD	1	VBN	4
+ploughed		6	VBD	1	VBN	5
 ploughs			1	NNS	1
 plow			1	VB	1
 plowed			1	VBN	1
 plows			1	VBZ	1
-ploy			5	NN	5
+ploy			6	NN	6
 ploys			1	NNS	1
 pluck			1	VB	1
-plucked			3	VBN	3
+plucked			7	VBN	7
 plucking		5	VBG	5
 plucks			1	VBZ	1
 plucky			1	JJ	1
-plug			19	NN	14	VB	3	VBP	2
+plug			20	NN	16	VB	3	VBP	1
 plug-in			1	JJ	1
-plug?			2	JJ	1	NN	1
+plug?			2	NN	2
 plugged			7	JJ	2	VBD	5
 plugging		1	VBG	1
 plugs			10	NNS	10
@@ -42873,39 +43098,39 @@ plummet			2	VB	2
 plummeted		16	VBD	13	VBN	3
 plummeting		6	VBG	6
 plummy			2	JJ	2
-plump			18	JJ	3	NN	14	VB	1
+plump			19	JJ	3	NN	15	VB	1
 plumped			1	VBD	1
 plumping		1	VBG	1
 plums			2	NNS	2
 plunder			2	VB	2
 plundered		1	VBD	1
 plundering		1	NN	1
-plunge			49	NN	42	VB	6	VBP	1
-plunged			57	VBD	50	VBN	7
+plunge			50	NN	42	VB	6	VBP	2
+plunged			64	VBD	56	VBN	8
 plunger			3	NN	3
-plunges			3	NNS	2	VBZ	1
-plunging		9	NN	1	VBG	8
+plunges			3	NNS	1	VBZ	2
+plunging		11	NN	1	VBG	10
 plunk			2	NN	2
 plunked			1	VBD	1
-plural			14	JJ	7	NN	7
+plural			8	JJ	7	NN	1
 pluralism		1	NN	1
 plurality		5	NN	5
-plus			44	CC	34	IN	4	JJ	1	NN	4	RB	1
+plus			44	CC	31	IN	7	JJ	1	NN	4	RB	1
 pluses			1	NNS	1
 plush			3	JJ	3
 plusses			1	NNS	1
 plutocrat		1	NN	1
 plutocrats		1	NNS	1
-plutonium		1	NN	1
+plutonium		2	NN	2
 ply			3	NN	1	VB	2
-plywood			2	NN	2
+plywood			3	NN	3
 pm			2	NN	2
-pneumonia		3	NN	3
+pneumonia		4	NN	4
 poach			2	VB	2
 poacher			2	NN	2
 poachers		2	NNS	2
 poaching		2	NN	1	VBG	1
-pocket			48	NN	48
+pocket			50	NN	50
 pocket-sized		1	JJ	1
 pocketbook		1	NN	1
 pocketed		2	VBD	1	VBN	1
@@ -42915,7 +43140,7 @@ pockets			20	NNS	20
 pockmarked		1	JJ	1
 pod			1	NN	1
 podium			5	NN	5
-poem			10	NN	10
+poem			11	NN	11
 poems			7	NNS	7
 poet			11	NN	11
 poetic			6	JJ	6
@@ -42924,70 +43149,69 @@ poetry			11	NN	11
 poets			5	NNS	5
 pogroms			1	NNS	1
 poignant		6	JJ	6
-point			276	NN	252	VB	14	VBP	10
+point			293	IN	2	NN	268	VB	13	VBP	10
 point-blank		6	JJ	1	RB	5
 point-of-sale		1	JJ	1
-point?			1	NN	1
-pointed			39	JJ	9	VBD	23	VBN	7
+point?			2	NN	1	NNS	1
+pointed			43	JJ	9	VBD	27	VBN	7
 pointedly		2	RB	2
 pointer			1	NN	1
 pointers		3	NNS	3
 pointing		12	VBG	12
 pointless		4	JJ	4
-points			213	NNS	199	VBZ	14
+points			216	NNS	201	VBZ	15
 poised			12	JJ	5	VBN	7
-poison			37	JJ	2	NN	35
+poison			38	JJ	2	NN	36
 poison-pill		3	JJ	2	NN	1
 poisoned		13	VBN	13
 poisoning		9	NN	9
 poisonous		8	JJ	8
 poisons			4	NNS	4
-poke			2	NN	1	VB	1
-poked			5	VBD	5
+poke			3	NN	1	VB	2
+poked			7	VBD	7
 poker			5	NN	5
 pokes			2	VBZ	2
-poking			4	VBG	4
+poking			5	VBG	5
 poky			1	JJ	1
-polar			4	JJ	4
+polar			5	JJ	5
 polarised		1	VBN	1
 polarized		3	VBN	3
-pole			8	NN	8
+pole			9	JJ	1	NN	8
 poleaxed		3	JJ	2	VBN	1
 polemics		1	NNS	1
 poles			9	NNS	9
-police			202	NN	156	NNS	44	VB	2
-policeman		18	NN	18
+police			203	NN	157	NNS	44	VB	2
+policeman		20	NN	20
 policemans		2	NNS	2
-policemen		15	NNS	15
+policemen		17	NN	1	NNS	16
 polices			1	NNS	1
 policewoman		1	NN	1
-policies		88	NNS	88
+policies		92	NNS	92
 policing		1	VBG	1
-policy			257	NN	257
+policy			266	NN	266
 policy-makers		2	NNS	2
 policy-making		2	JJ	1	VBG	1
-policy?			2	NN	1	NNP	1
+policy?			2	NNP	1	NNS	1
 policyholders		3	NNS	3
 policymaker		1	NN	1
 policys			1	NNS	1
 polio			1	NN	1
-polish			11	NN	8	VB	3
-polished		17	JJ	13	VBD	3	VBN	1
-polishes		1	VBZ	1
-polishing		3	VBG	2	VBG|NN	1
-polite			20	JJ	20
+polish			10	NN	8	VB	2
+polished		18	JJ	14	VBD	3	VBN	1
+polishing		2	NN	1	VBG|NN	1
+polite			21	JJ	21
 politely		9	RB	9
 politeness		5	NN	5
 politic			2	JJ	2
-political		375	JJ	375
-politically		24	RB	24
-politician		20	NN	20
-politicians		56	NNS	56
+political		382	JJ	382
+politically		25	RB	25
+politician		21	NN	21
+politicians		57	NNS	57
 politicize		1	VB	1
 politicized		1	VBN	1
 politicking		2	NN	2
 politico		1	NN	1
-politics		87	NN	1	NNS	86
+politics		90	NN	1	NNS	89
 poll			15	JJ	1	NN	13	VB	1
 pollarded		1	JJ	1
 polled			13	VBD	4	VBN	9
@@ -42999,7 +43223,7 @@ pollinated		2	VBN	2
 pollinating		1	VBG	1
 pollination		1	NN	1
 polling			3	NN	3
-polls			25	NNS	25
+polls			26	NNS	26
 pollster		1	NN	1
 pollsters		1	NNS	1
 pollutants		4	NNS	4
@@ -43034,8 +43258,9 @@ pomp			1	NN	1
 pompous			5	JJ	5
 poncing			1	VBG	1
 pond			21	JJ	2	NN	19
-ponder			2	VB	1	VBP	1
-pondering		1	VBG	1
+ponder			4	VB	3	VBP	1
+pondered		1	VBD	1
+pondering		2	VBG	2
 ponderous		6	JJ	6
 ponderousness		1	NN	1
 ponds			9	NNS	9
@@ -43054,38 +43279,38 @@ ponying			1	VBG	1
 poodles			1	NNS	1
 poof			1	NN	1
 poohbah			1	NN	1
-pool			36	NN	36
+pool			41	NN	41
 pooled			3	JJ	1	VBN	2
-pools			16	NNS	16
+pools			18	NNS	18
 pooped			1	JJ	1
-poor			143	JJ	134	NN	4	NNP	1	NNS	4
+poor			151	JJ	144	NN	2	NNP	1	NNS	4
 poor.			1	CD	1
 poorer			12	JJR	12
 poorest			9	JJS	9
 poorhouse		1	NN	1
 poorly			16	JJ	2	RB	14
-pop			30	JJ	2	NN	20	VB	6	VBP	2
+pop			35	JJ	2	NN	25	VB	6	VBP	2
 pop-out			1	JJ	1
 popcorn			1	NN	1
 pope			1	NN	1
-poplar			2	NN	2
+poplar			3	JJ	1	NN	2
 poplars			2	NNS	2
 poplin			1	NN	1
 popped			5	VBD	4	VBN	1
-poppies			3	NNS	3
+poppies			4	NNS	4
 popping			11	VBG	11
-poppy			2	NN	1	RB	1
+poppy			2	JJ	1	NN	1
 pops			1	VBZ	1
 popstars		1	NNS	1
 populace		4	NN	4
-popular			77	JJ	77
-popularity		16	NN	16
+popular			78	JJ	78
+popularity		17	NN	17
 popularize		2	VB	2
 popularly		1	RB	1
 populate		3	VB	3
 populated		9	JJ	2	VBN	7
 populating		1	VBG	1
-population		77	NN	77
+population		85	NN	85
 population-control	1	JJ	1
 population.		1	CD	1
 populations		8	NNS	8
@@ -43097,7 +43322,7 @@ porcine			2	JJ	2
 porcupine		1	NN	1
 pored			1	VBN	1
 pores			3	VBZ	3
-pork			15	NN	15
+pork			16	NN	16
 pork-barrel		5	JJ	5
 pork-barrelers		1	NNS	1
 pork-barreling		1	NN	1
@@ -43109,7 +43334,7 @@ pornography		1	NN	1
 porous			5	JJ	5
 porridge		2	NN	2
 porridge-like		1	JJ	1
-port			17	JJ	5	NN	12
+port			17	JJ	6	NN	11
 portable		16	JJ	13	NN	3
 portal			1	NN	1
 portals			1	NNS	1
@@ -43117,7 +43342,7 @@ portend			1	VB	1
 portent			2	NN	2
 portentous		5	JJ	5
 portents		1	NNS	1
-porter			11	NN	11
+porter			13	NN	13
 porters			3	NNS	3
 portfolio		77	NN	77
 portfolios		18	NNS	18
@@ -43138,7 +43363,7 @@ portraying		4	VBG	4
 portrays		1	VBZ	1
 ports			8	NNS	8
 pose			12	NN	2	VB	9	VBP	1
-posed			7	VBD	4	VBN	3
+posed			8	VBD	4	VBN	4
 poser			2	NN	2
 poses			7	NNS	2	VBZ	5
 poseur			2	NN	2
@@ -43146,7 +43371,7 @@ posh			7	JJ	7
 posing			6	VBG	6
 posit			1	VB	1
 posited			1	VBN	1
-position		212	NN	210	VB	2
+position		220	NN	218	VB	2
 position-squaring	1	NN	1
 positioned		11	VBD	2	VBN	9
 positioning		1	NN	1
@@ -43159,15 +43384,15 @@ possessed		14	VBD	9	VBN	5
 possesses		3	VBZ	3
 possessing		3	VBG	3
 possession		10	NN	10
-possessions		7	NNS	7
+possessions		8	NNS	8
 possessive		8	JJ	8
 possessor		2	NN	2
 possibilities		15	NNS	15
-possibility		55	NN	55
-possible		231	JJ	229	NN	1	RB	1
+possibility		56	NN	56
+possible		241	JJ	239	NN	1	RB	1
 possibles		2	NNS	2
 possibly		48	RB	48
-post			101	NN	84	VB	17
+post			107	NN	91	VB	16
 post-1945		1	CD	1
 post-1987		1	JJ	1
 post-1997		1	JJ	1
@@ -43205,22 +43430,22 @@ postmistress		1	NN	1
 postpone		9	VB	9
 postponed		13	VBD	3	VBN	10
 postponement		5	NN	5
-posts			23	NNS	22	VBZ	1
+posts			24	NNS	23	VBZ	1
 postscript		1	NN	1
 postulate?		1	NN	1
 postulates		1	NNS	1
-posture			7	NN	7
+posture			8	NN	8
 posturing		8	NN	4	VBG	4
 postwar			2	JJ	2
 pot			24	NN	22	VB	2
 potato			15	NN	15
 potatoes		32	NNS	32
-potent			5	JJ	5
+potent			8	JJ	8
 potentates		1	NNS	1
-potential		116	JJ	84	NN	32
+potential		120	JJ	88	NN	32
 potentialities		3	NNS	3
 potentiality		1	NN	1
-potentially		17	RB	17
+potentially		18	RB	18
 pothole			1	NN	1
 potholes		3	NNS	3
 potion			1	NN	1
@@ -43229,7 +43454,7 @@ potpourri		2	NN	2
 pots			8	NNS	8
 pottage			1	NN	1
 potted			3	JJ	3
-potters			1	NNS	1
+potters			2	NNS	2
 pottery			3	NN	3
 potting			1	VBG	1
 potty			2	JJ	2
@@ -43242,56 +43467,56 @@ pounce			6	VB	6
 pounced			1	VBD	1
 pounces			1	VBZ	1
 pouncing		2	VBG	2
-pound			111	NN	108	VB	3
+pound			112	NN	109	VB	3
 pound-DM		1	JJ	1
 pound-deutsche		1	JJ	1
 pound-foolish		1	JJ	1
 pounded			7	VBN	7
 pounding		12	NN	6	VBG	6
-pounds			111	NNS	111
-pour			10	VB	8	VBP	2
-poured			41	VBD	34	VBN	7
-pouring			21	VBG	21
+pounds			116	NNS	116
+pour			13	VB	8	VBP	5
+poured			45	VBD	37	VBN	8
+pouring			23	VBG	23
 pours			3	VBZ	3
 pout			1	NN	1
-pouted			1	VBN	1
+pouted			1	VBD	1
 pouting			1	VBG	1
 pouts			1	NNS	1
-poverty			44	NN	44
+poverty			45	NN	45
 poverty-stricken	2	JJ	2
 powder			17	NN	17
 powdered		4	JJ	4
 powders			3	NNS	3
-power			324	JJ	2	NN	320	VB	2
+power			331	JJ	2	NN	329
 power-generation	2	JJ	1	NN	1
 power-hungry		1	JJ	1
 power-plant		1	NN	1
 power-tool		1	NN	1
 powered			7	VBN	7
-powerful		98	JJ	98
+powerful		101	JJ	101
 powerfully		2	RB	2
 powerhouse		4	NN	4
 powerhouses		1	NNS	1
 powering		1	VBG	1
 powerless		6	JJ	6
 powerlessness		1	NN	1
-powers			39	NNS	39
+powers			42	NNS	42
 powertrain		1	NN	1
 powwow			1	NN	1
 pox			1	NN	1
 practicable		4	JJ	4
-practical		32	JJ	32
+practical		33	JJ	33
 practicalities		1	NNS	1
 practicality		1	NN	1
 practically		8	RB	8
 practicals		1	NNS	1
-practice		93	NN	90	VB	3
+practice		96	NN	93	VB	3
 practiced		6	VBD	3	VBN	3
 practices		53	NNS	53
 practicing		5	VBG	5
-practise		7	VB	5	VBP	2
+practise		8	VB	6	VBP	2
 practised		10	JJ	2	VBD	1	VBN	7
-practises		1	NNS	1
+practises		1	VBZ	1
 practising		10	JJ	1	VBG	9
 practitioner		4	NN	4
 practitioners		4	NNS	4
@@ -43299,14 +43524,14 @@ pragmatic		4	JJ	4
 pragmatism		2	NN	2
 pragmatist		2	NN	2
 pragmatists		1	NNS	1
-prairie			4	NN	4
+prairie			5	NN	5
 prairies		1	NNS	1
 praise			13	NN	12	VBP	1
-praised			10	VBD	8	VBN	2
+praised			13	VBD	13
 praises			2	NNS	1	VBZ	1
 praiseworthy		1	JJ	1
-praising		4	VBG	4
-pram			6	NN	6
+praising		5	VBG	5
+pram			7	NN	7
 pram-cover		1	NN	1
 pranced			1	VBD	1
 prancing		1	VBG	1
@@ -43314,13 +43539,13 @@ prank			1	NN	1
 prattle			1	NN	1
 prawn			1	JJ	1
 prawns			2	NNS	2
-pray			4	NN	1	RB	1	VB	2
+pray			6	NN	1	RB	1	VB	4
 pray-for-growth-later	1	JJ	1
-prayed			8	VBD	4	VBN	4
+prayed			11	VBD	5	VBN	6
 prayer			14	NN	14
 prayers			8	NNS	8
 praying			2	VBG	2
-prcis			2	NNS	2
+prcis			2	NN	2
 pre			1	NN	1
 pre-1917		1	JJ	1
 pre-1933		1	JJ	1
@@ -43354,6 +43579,7 @@ pre-recorded		2	JJ	2
 pre-refunded		1	JJ	1
 pre-register		2	VB	2
 pre-registered		2	JJ	1	VBN	1
+pre-sales		1	NN	1
 pre-set			3	JJ	3
 pre-split		1	JJ	1
 pre-strike		1	JJ	1
@@ -43364,42 +43590,41 @@ pre-try			1	VB	1
 pre-war			1	JJ	1
 preach			4	VB	2	VBP	2
 preached		3	VBD	2	VBN	1
-preacher		5	NN	5
+preacher		6	NN	6
 preachers		2	NNS	2
 preaching		6	NN	1	VBG	5
 preamble		2	NN	2
 preapproved		1	VBN	1
 prearranged		2	JJ	2
-precarious		7	JJ	7
+precarious		8	JJ	8
 precariously		1	RB	1
 precaution		3	NN	3
 precautions		7	NNS	7
 precede			1	VB	1
 preceded		5	VBN	5
-precedent		13	NN	13
+precedent		14	NN	14
 precedents		1	NNS	1
 precedes		3	VBZ	3
 preceding		4	JJ	1	VBG	3
 precept			1	NN	1
 precinct		4	NN	4
 precincts		2	NNS	2
-precious		25	JJ	25
+precious		29	JJ	29
 precious-metals		3	NNS	3
 precipice		5	NN	5
 precipices		1	NNS	1
-precipitate		2	JJ	1	NN	1
 precipitated		2	VBD	2
 precipitous		3	JJ	3
 precipitously		1	RB	1
 precise			19	JJ	19
-precisely		15	RB	15
-precision		11	NN	11
+precisely		19	RB	19
+precision		13	NN	13
 preclearance		1	NN	1
 preclinical		1	JJ	1
 preclude		7	VB	7
 precluded		3	JJ	1	VBN	2
 precludes		1	VBZ	1
-precocious		3	JJ	3
+precocious		4	JJ	4
 preconceived		2	JJ	2
 preconception		2	NN	2
 preconceptions		1	NNS	1
@@ -43410,7 +43635,7 @@ predated		1	VBD	1
 predates		1	VBZ	1
 predator		1	NN	1
 predators		2	NNS	2
-predecessor		15	NN	15
+predecessor		16	NN	16
 predecessors		5	NNS	5
 predestined		2	JJ	2
 predetermined		1	VBN	1
@@ -43422,7 +43647,7 @@ predictable		10	JJ	10
 predictably		2	RB	2
 predicted		46	VBD	36	VBN	10
 predicting		19	VBG	19
-prediction		8	NN	8
+prediction		9	NN	9
 predictions		13	NNS	13
 predictive		3	JJ	3
 predicts		9	VBZ	9
@@ -43444,14 +43669,14 @@ prefaced		2	VBD	1	VBN	1
 prefects		1	NNS	1
 prefectural		1	JJ	1
 prefecture		4	NN	4
-prefer			32	VB	13	VBP	19
+prefer			33	VB	13	VBP	20
 prefer?			1	JJ	1
 preferable		4	JJ	4
 preferbutterfly		1	NN	1
 preference		12	NN	12
 preferences		4	NNS	4
 preferential		2	JJ	2
-preferred		84	JJ	45	VBD	8	VBG	1	VBN	30
+preferred		85	JJ	45	VBD	9	VBG	1	VBN	30
 preferred-stock		1	JJ	1
 preferring		2	VBG	2
 prefers			3	VBZ	3
@@ -43459,20 +43684,20 @@ prefigured		1	JJ	1
 preflight		1	JJ	1
 pregnancies		1	NNS	1
 pregnancy		22	NN	22
-pregnant		16	JJ	16
+pregnant		20	JJ	20
 preheated		1	JJ	1
 prehensile		1	JJ	1
 prehistoric		3	JJ	3
 prejudge		1	VB	1
-prejudice		15	NN	14	VB	1
+prejudice		16	IN	1	NN	14	VB	1
 prejudiced		6	JJ	3	VBN	3
-prejudices		4	NNS	4
+prejudices		5	NNS	5
 prejudicing		1	VBG	1
 preliminaries		2	NNS	2
 preliminary		36	JJ	35	NN	1
 prelude			7	NN	7
 premarital		1	JJ	1
-premature		16	JJ	16
+premature		17	JJ	17
 prematurely		1	RB	1
 premediated		1	JJ	1
 premeditated		2	JJ	2
@@ -43495,20 +43720,20 @@ preoccupies		1	VBZ	1
 preordained		1	JJ	1
 prep			1	JJ	1
 prepaid			2	VBN	2
-preparation		10	NN	10
+preparation		11	NN	11
 preparations		4	NNS	4
 preparatives		1	NNS	1
-preparatory		2	JJ	2
-prepare			26	VB	22	VBP	4
-prepared		91	JJ	18	VBD	8	VBN	65
+preparatory		2	IN	1	JJ	1
+prepare			28	VB	24	VBP	4
+prepared		99	JJ	20	VBD	9	VBN	70
 prepares		5	VBZ	5
-preparing		14	VBG	14
+preparing		15	VBG	15
 prepayment		6	NN	6
 prepayment-protected	1	JJ	1
 prepayments		3	NNS	3
 preponderance		1	NN	1
 preponderant		1	JJ	1
-preposition		4	NN	2	VB	2
+preposition		5	VB	5
 preposterous		2	JJ	2
 preppy			1	JJ	1
 prerequisite		3	JJ	1	NN	2
@@ -43526,7 +43751,7 @@ prescription		12	NN	12
 prescriptions		4	NNS	4
 prescriptive		2	JJ	2
 presence		59	NN	59
-present			156	JJ	116	NN	14	VB	26
+present			162	JJ	123	NN	14	VB	25
 present-day		6	JJ	6
 presentable		2	JJ	2
 presentably		1	RB	1
@@ -43537,35 +43762,35 @@ presenter		1	NN	1
 presenters		1	NNS	1
 presentiment		1	NN	1
 presenting		6	VBG	6
-presently		6	RB	6
-presents		17	NNS	5	VBZ	12
+presently		7	RB	7
+presents		18	NNS	6	VBZ	12
 preservation		3	NN	3
 preservative		2	JJ	1	NN	1
-preserve		21	NN	1	VB	20
+preserve		24	NN	1	VB	23
 preserved		9	JJ	2	VBD	2	VBN	5
 preserver		1	NN	1
 preserves		4	NNS	3	VBZ	1
-preserving		8	VBG	8
+preserving		9	VBG	9
 preset			2	JJ	2
 presided		5	VBD	3	VBN	2
 presidency		18	NN	18
-president		688	NN	687	NNP	1
+president		693	NN	692	NNP	1
 president-finance	1	NN	1
 presidential		20	JJ	20
 presidents		14	NNS	14
 presides		3	VBZ	3
 presiding		3	VBG	3
-press			128	NN	104	VB	21	VBP	3
+press			134	NN	106	VB	25	VBP	3
 press-forge		2	NN	2
 press-ups		1	NNS	1
-pressed			40	JJ	2	VBD	23	VBN	15
-presses			7	NNS	7
-pressing		19	JJ	2	VBG	17
+pressed			49	JJ	2	VBD	29	VBN	18
+presses			7	NNS	6	VBZ	1
+pressing		23	JJ	5	VBG	18
 pressman		1	NN	1
-pressmen		1	NNS	1
-pressure		124	NN	117	VB	6	VBP	1
+pressmen		1	NN	1
+pressure		125	NN	117	VB	7	VBP	1
 pressured		12	JJ	3	NN	1	VBD	1	VBN	7
-pressures		28	NNS	28
+pressures		28	NNS	27	VBZ	1
 pressurewhat		1	WDT	1
 pressuring		1	VBG	1
 pressurise		1	VB	1
@@ -43573,7 +43798,7 @@ pressurized		1	JJ	1
 pressurizing		1	VBG	1
 prestige		11	JJ	1	NN	10
 prestigious		13	JJ	13
-presumably		6	RB	6
+presumably		7	RB	7
 presume			5	VB	4	VBP	1
 presumed		9	JJ	3	VBN	6
 presumes		1	VBZ	1
@@ -43590,13 +43815,13 @@ pretense		1	NN	1
 pretension		1	NN	1
 pretensions		2	NNS	2
 pretentious		2	JJ	2
-pretext			4	NN	4
+pretext			8	NN	8
 pretrial		6	JJ	6
 prettier		1	JJR	1
 prettiest		1	JJS	1
 prettily		1	RB	1
-pretty			84	JJ	18	RB	66
-prevail			6	VB	4	VBP	2
+pretty			90	JJ	22	RB	68
+prevail			6	VB	3	VBP	3
 prevailed		8	VBD	5	VBN	3
 prevailing		9	JJ	5	VBG	4
 prevails		7	VBZ	7
@@ -43604,20 +43829,20 @@ prevalance		1	NN	1
 prevalence		1	NN	1
 prevalent		3	JJ	3
 prevaricated		1	VBN	1
-prevent			81	VB	76	VBP	5
+prevent			88	VB	82	VBP	6
 preventable		1	JJ	1
 preventative		1	JJ	1
-prevented		13	VBD	6	VBN	7
+prevented		14	VBD	6	VBN	8
 preventing		11	VBG	11
 prevention		9	NN	9
 prevents		10	VBZ	10
 preverbal		2	JJ	2
 preview			5	NN	5
 previewing		1	VBG	1
-previous		139	JJ	139
+previous		144	JJ	144
 previously		92	RB	92
 prey			12	NN	11	VBP	1
-price			458	NN	451	VB	7
+price			467	NN	460	VB	7
 price-cutting		3	NN	3
 price-depressing	1	JJ	1
 price-earnings		2	JJ	2
@@ -43628,7 +43853,7 @@ price-support		1	JJ	1
 pricecutting		1	NN	1
 priced			155	VBD	2	VBN	153
 priceless		6	JJ	6
-prices			541	NNS	541
+prices			550	NNS	550
 pricey			2	JJ	2
 pricier			1	JJR	1
 priciest		1	JJS	1
@@ -43652,10 +43877,10 @@ priggishly		1	RB	1
 prim			2	JJ	2
 primacy			2	NN	2
 primarily		42	RB	42
-primary			40	JJ	36	NN	4
+primary			42	JJ	38	NN	4
 primate			1	NN	1
 primates		4	NNS	4
-prime			46	JJ	44	NN	2
+prime			47	JJ	45	NN	2
 prime-time		6	JJ	2	NN	4
 primed			3	VBN	3
 primitive		21	JJ	21
@@ -43663,18 +43888,19 @@ primitives		1	NNS	1
 primordial		1	JJ	1
 primrose		1	JJ	1
 primroses		1	VBZ	1
-prince			4	NN	4
+prince			5	NN	5
 princely		3	JJ	3
 princes			5	NNS	5
 princess		3	NN	3
 princesses		2	NNS	2
+princesss		1	JJ	1
 principal		59	JJ	33	NN	24	NN|JJ	2
 principality		1	NN	1
 principally		5	RB	5
 principals		6	NNS	6
-principle		41	NN	41
+principle		44	NN	44
 principled		1	JJ	1
-principles		28	NNS	28
+principles		31	NNS	31
 print			26	JJ	1	NN	15	VB	9	VBP	1
 print-shop		1	NN	1
 printable		1	JJ	1
@@ -43685,21 +43911,22 @@ printing		31	NN	28	VBG	3
 printing-press		1	NN	1
 printouts		1	NNS	1
 prints			13	NNS	12	VBZ	1
-prior			28	JJ	11	RB	17
+prior			27	IN	2	JJ	10	RB	15
 prior-year		1	JJ	1
 priori			1	FW	1
 priorities		13	NNS	13
 priority		31	JJ	1	NN	30
 prised			3	VBD	3
-prison			74	NN	74
-prison?			1	CD	1
-prisoner		17	NN	17
-prisoners		17	NNS	17
-prisons			6	NNS	6
+prison			88	NN	88
+prison?			1	VB	1
+prisoner		18	NN	18
+prisoners		22	NNS	22
+prisoners?		1	NN	1
+prisons			7	NNS	7
 prissy			1	JJ	1
 pristine		1	JJ	1
-privacy			13	NN	13
-private			182	JJ	180	NN	1	RB	1
+privacy			17	NN	17
+private			189	JJ	187	NN	1	RB	1
 private-banking		2	JJ	2
 private-sector		8	JJ	7	NN	1
 privately		31	RB	31
@@ -43708,17 +43935,18 @@ privations		1	NNS	1
 privatization		2	NN	2
 privatize		2	VB	2
 privatized		2	JJ	1	VBN	1
-privilege		20	NN	20
+privilege		21	NN	21
 privileged		11	JJ	8	NNS	3
 privileges		8	NNS	8
 privy			2	JJ	1	NN	1
-prize			18	JJ	3	NN	15
+prize			21	JJ	3	NN	18
 prize-fighter		1	NN	1
 prize-giving		1	NN	1
+prize-winner		1	NN	1
 prize-winning		1	JJ	1
 prized			3	VBN	3
-prizes			7	NNS	7
-pro			17	FW	7	JJ	6	NN	4
+prizes			8	NNS	8
+pro			17	FW	6	IN	1	JJ	6	NN	4
 pro-			1	JJ	1
 pro-ALPA		1	JJ	1
 pro-Common		1	JJ	1
@@ -43739,36 +43967,36 @@ pro-union		3	JJ	3
 probabilities		2	NNS	2
 probability		7	NN	7
 probable		13	JJ	13
-probably		155	RB	155
+probably		163	RB	163
 probaby			1	NN	1
 probation		4	NN	4
-probe			15	NN	14	VBP	1
+probe			16	NN	14	VB	1	VBP	1
 probe-based		1	JJ	1
-probed			2	VBD	1	VBN	1
+probed			3	VBD	2	VBN	1
 probes			5	NNS	5
-probing			4	VBG	4
-problem			268	NN	268
+probing			6	VBG	6
+problem			275	NN	275
 problem-solving		1	JJ	1
 problematic		1	JJ	1
-problems		299	NNS	299
-proboscis		1	NNS	1
+problems		308	NNS	308
+proboscis		1	NN	1
 procedural		10	JJ	10
 procedurally		1	RB	1
 procedure		15	NN	15
 procedures		31	NNS	31
-proceed			17	VB	16	VBP	1
+proceed			17	VB	17
 proceeded		10	VBD	8	VBN	2
-proceeding		16	NN	6	VBG	10
+proceeding		16	NN	5	VBG	11
 proceedings		27	NNS	27
-proceeds		43	NNS	40	VBZ	3
+proceeds		43	NNS	38	VBZ	5
 process			139	NN	136	VB	2	VBP	1
 processed		11	JJ	3	VBD	2	VBN	6
 processes		16	NNS	9	VBZ	7
-processing		30	NN	20	VBG	10
+processing		31	NN	20	VBG	11
 procession		10	NN	10
 processional		1	JJ	1
 processions		1	NNS	1
-processor		6	NN	6
+processor		7	NN	7
 processors		5	NNS	5
 proclaim		1	VB	1
 proclaimed		7	VBD	7
@@ -43779,36 +44007,37 @@ proclivities		1	NNS	1
 proclivity		1	NN	1
 procrastinating		1	VBG	1
 procrastination		2	NN	2
-procreating		1	NN	1
+procreating		1	VBG	1
 procreation		1	NN	1
 procure			2	VB	2
 procurement		4	NN	4
 procuring		1	VBG	1
 prod			5	NN	1	VB	4
-prodded			4	VBN	4
+prodded			5	VBN	5
 prodding		3	NN	1	VBG	2
 prodigal		5	JJ	4	NN	1
 prodigies		1	NNS	1
 prodigious		4	JJ	4
 prodigy			3	NN	3
 prods			1	NNS	1
-produce			112	NN	3	VB	91	VBP	18
-produced		95	VBD	41	VBN	54
+produce			115	NN	4	VB	93	VBP	18
+produced		98	VBD	43	VBN	55
 producer		45	NN	45
 producers		97	NNS	97
 produces		24	VBZ	24
 producing		38	VBG	38
-product			179	NN	179
+product			180	NN	180
 product-design		1	JJ	1
 product-inspection	1	JJ	1
 product-liability	1	NN	1
 product-related		2	JJ	2
-production		236	NN	236
+production		238	NN	238
 production-rate		1	JJ	1
+production?		2	NN	1	NNS	1
 productions		9	NNS	9
 productive		13	JJ	13
-productivity		13	NN	13
-products		269	NNS	269
+productivity		15	NN	15
+products		270	NNS	270
 prof			1	NN	1
 profane			2	JJ	2
 profaned		1	VBN	1
@@ -43816,13 +44045,13 @@ profess			1	VBP	1
 professed		7	JJ	2	VBD	3	VBN	2
 professes		1	VBZ	1
 professing		1	VBG	1
-profession		26	NN	26
-professional		55	JJ	48	NN	7
+profession		27	NN	27
+professional		58	JJ	51	NN	7
 professionalism		3	NN	3
 professionally		2	RB	2
 professionals		18	NNS	18
 professions		5	NNS	5
-professor		30	NN	30
+professor		31	NN	31
 professors		5	NNS	5
 proffer			1	VB	1
 proffered		7	VBD	3	VBN	4
@@ -43831,19 +44060,19 @@ proficiency		2	NN	2
 proficient		5	JJ	5
 profile			13	NN	12	VB	1
 profiles		3	NNS	3
-profit			292	NN	275	VB	15	VBP	2
+profit			294	NN	276	VB	16	VBP	2
 profit-making		2	JJ	2
 profit-margin		1	NN	1
 profit-seeking		1	JJ	1
 profit-sharing		2	JJ	1	NN	1
 profit-taking		8	NN	8
 profitability		27	NN	27
-profitable		44	JJ	44
+profitable		45	JJ	45
 profitably		4	RB	4
 profited		6	VBD	3	VBN	3
 profiteering		4	VBG	4
-profiting		2	VBG	2
-profits			112	NNS	111	VBZ	1
+profiting		3	VBG	3
+profits			113	NNS	112	VBZ	1
 profittaking		1	NN	1
 profitting		1	VBG	1
 profound		16	JJ	16
@@ -43861,20 +44090,20 @@ program-selling		1	JJ	1
 program-trade		1	JJ	1
 program-trading		35	JJ	21	NN	14
 programmatic		1	JJ	1
-programme		55	JJ	5	NN	48	VB	1	VBP	1
-programme?		2	NN	2
-programmed		7	JJ	1	VBN	6
+programme		57	JJ	3	NN	53	VB	1
+programme?		2	NNS	2
+programmed		8	JJ	1	VBN	7
 programmer		2	NN	2
 programmers		1	NNS	1
-programmes		24	NNS	23	VBZ	1
+programmes		25	NNS	24	VBZ	1
 programming		10	NN	10
-programs		133	NNS	133
-progress		75	NN	67	VB	8
+programs		134	NNS	134
+progress		77	NN	69	VB	8
 progressed		6	VBD	5	VBN	1
 progresses		3	VBZ	3
 progressing		6	VBG	6
 progression		2	NN	2
-progressive		10	JJ	9	NN	1
+progressive		11	JJ	10	NN	1
 progressively		3	RB	3
 progressives		2	NNS	2
 prohibit		4	VB	3	VBP	1
@@ -43885,32 +44114,32 @@ prohibitions		2	NNS	2
 prohibitive		2	JJ	2
 prohibitively		2	RB	2
 prohibits		8	VBZ	8
-project			129	NN	122	VB	5	VBP	2
-projected		25	JJ	2	VBD	3	VBN	20
+project			132	NN	125	VB	5	VBP	2
+projected		25	JJ	3	VBD	3	VBN	19
 projecting		6	VBG	6
 projection		5	NN	5
 projections		17	NNS	17
 projector		3	NN	3
 projects		94	NNS	90	VBZ	4
 proletarian		3	JJ	3
-proletariat		3	NN	3
+proletariat		4	NN	4
 proliferated		1	VBN	1
-proliferates		1	NNS	1
+proliferates		1	VBZ	1
 proliferating		3	VBG	3
 proliferation		7	NN	7
 prolific		2	JJ	2
 prologue		2	NN	2
 prolong			2	VB	2
-prolonged		20	JJ	16	VBN	4
+prolonged		21	JJ	17	VBN	4
 promenade		6	NN	6
 promenades		1	NNS	1
 prominence		9	NN	9
 prominent		23	JJ	23
 prominently		4	RB	4
-promise			31	NN	24	VB	2	VBP	5
-promised		41	JJ	3	VBD	20	VBN	18
-promises		31	NNS	18	VBZ	13
-promising		17	JJ	13	VBG	4
+promise			33	NN	23	VB	3	VBP	7
+promised		45	JJ	2	VBD	24	VBN	19
+promises		34	NNS	20	VBZ	14
+promising		18	JJ	14	VBG	4
 promissory		1	JJ	1
 promontories		1	NNS	1
 promontory		1	NN	1
@@ -43919,21 +44148,21 @@ promoted		8	VBN	8
 promoter		7	NN	7
 promoters		2	NNS	2
 promotes		4	VBZ	4
-promoting		13	VBG	13
+promoting		14	VBG	14
 promotion		43	NN	43
 promotional		10	JJ	10
 promotions		9	NNS	9
 prompt			15	JJ	5	NN	1	RB	1	VB	8
 prompted		30	VBD	19	VBN	11
 prompting		7	VBG	7
-promptly		22	RB	22
+promptly		23	RB	23
 prompts			2	VBZ	2
 proms			1	NNS	1
 promulgated		1	VBD	1
 prone			8	JJ	8
 pronoun			6	NN	6
 pronounce		5	VB	4	VBP	1
-pronounced		148	JJ	23	VBD	2	VBN	123
+pronounced		14	JJ	7	VBD	2	VBN	5
 pronouncement		1	NN	1
 pronounces		1	VBZ	1
 pronto			1	RB	1
@@ -43951,15 +44180,15 @@ propagate		4	VB	3	VBP	1
 propane			4	NN	4
 propel			4	VB	4
 propellant		1	NN	1
-propelled		7	VBD	3	VBN	4
+propelled		7	VBD	4	VBN	3
 propeller		4	NN	4
 propellers		3	NNS	3
 propelling		1	VBG	1
 propensity		2	NN	2
-proper			33	JJ	33
+proper			34	JJ	34
 properly		37	RB	37
 properties		53	NN	1	NNS	52
-property		107	NN	107
+property		114	NN	114
 property-hungry		1	JJ	1
 property-liability	1	NN	1
 property\/casualty	5	casualty	5
@@ -43974,16 +44203,17 @@ propitiate		1	VB	1
 propitious		2	JJ	1	JJR	1
 proponent		4	NN	4
 proponents		7	NNS	7
-proportion		22	NN	22
+proportion		26	IN	3	NN	23
 proportional		4	JJ	4
 proportions		9	NNS	9
-proposal		169	NN	169
+proposal		171	NN	171
 proposals		75	NNS	75
-propose			16	VB	10	VBP	6
+proposalsthe		1	JJ	1
+propose			17	VB	10	VBP	7
 proposed		183	JJ	43	VBD	44	VBN	96
 proposes		9	VBZ	9
 proposing		16	VBG	16
-proposition		15	NN	15
+proposition		16	NN	16
 propped			7	VBD	3	VBN	4
 propping		1	VBG	1
 proprietary		5	JJ	4	NN	1
@@ -44011,31 +44241,31 @@ prosecutor		13	NN	13
 prosecutorial		5	JJ	5
 prosecutors		41	NNS	41
 prosoma			1	NN	1
-prospect		31	NN	31
+prospect		32	NN	32
 prospect?		1	NNP	1
 prospective		15	JJ	15
 prospectively		1	RB	1
 prospectors		1	NNS	1
-prospects		35	NNS	35
+prospects		36	NNS	36
 prospectus		9	NN	9
 prospectuses		3	NNS	3
 prosper			1	VB	1
-prospered		3	VBN	3
-prosperity		12	NN	12
+prospered		4	VBN	4
+prosperity		13	NN	13
 prosperous		4	JJ	4
 prostaglandin		2	NN	2
 prostate		3	NN	3
 prostitute		6	NN	6
 prostitutes		2	NNS	2
 prostitution		1	NN	1
-prostrate		7	JJ	4	NN	2	VB	1
+prostrate		5	JJ	4	VB	1
 prostrated		1	VBN	1
 protagonist		2	NN	2
 protean			1	JJ	1
-protect			49	VB	47	VBP	2
+protect			51	VB	49	VBP	2
 protected		17	JJ	1	VBD	3	VBN	13
-protecting		9	VBG	9
-protection		77	NN	77
+protecting		10	VBG	10
+protection		81	NN	81
 protectionism		4	NN	4
 protections		2	NNS	2
 protective		5	JJ	5
@@ -44047,7 +44277,7 @@ protege			1	NN	1
 protein			13	NN	13
 protein-1		1	NN	1
 proteins		14	NNS	13	VBZ	1
-protest			34	NN	26	VB	8
+protest			35	NN	27	VB	8
 protestations		2	NNS	2
 protested		11	VBD	11
 protesters		14	NNS	14
@@ -44066,23 +44296,24 @@ protruding		1	VBG	1
 protrusions		1	NNS	1
 proud			22	JJ	22
 proudly			4	RB	4
-prove			49	VB	47	VBP	2
-proved			62	JJ	1	VBD	34	VBN	27
-proven			3	VBN	3
+prove			51	VB	49	VBP	2
+proved			64	JJ	1	VBD	35	VBN	28
+proven			4	VBN	4
 provenance		1	NN	1
-proverb			2	NN	2
+proverb			3	NN	3
 proves			8	VBZ	8
-provide			141	VB	127	VBP	14
-provided		71	VBD	38	VBN	33
+provide			144	VB	129	VBP	15
+provided		73	IN	3	VBD	37	VBN	33
 providential		1	JJ	1
 provider		13	NN	13
 providers		4	NNS	4
-provides		62	VBZ	62
-providing		35	VBG	35
+provides		66	VBZ	66
+providing		35	IN	1	VBG	34
 province		13	NN	13
 province-wide		1	JJ	1
 provinces		2	NNS	2
 provincial		5	JJ	5
+provincialism		1	NN	1
 proving			10	VBG	10
 provision		51	NN	51
 provisional		11	JJ	11
@@ -44093,7 +44324,7 @@ proviso			3	NN	3
 provocation		2	NN	2
 provocative		7	JJ	7
 provocatively		1	RB	1
-provoke			5	VB	5
+provoke			6	VB	6
 provoked		15	VBD	8	VBN	7
 provokes		1	VBZ	1
 provoking		2	JJ	1	VBG	1
@@ -44110,7 +44341,7 @@ prudent			6	JJ	6
 prudery			1	NN	1
 prudish			1	JJ	1
 prunes			1	VBZ	1
-pruning			2	NN	2
+pruning			2	NN	1	VBG	1
 prurient		1	JJ	1
 pry			2	VB	2
 prying			2	JJ	2
@@ -44140,7 +44371,7 @@ psychotic		1	JJ	1
 psyllium		30	NN	30
 psyllium-fortified	1	JJ	1
 pub			25	NN	25
-public			360	JJ	284	NN	76
+public			373	JJ	292	NN	81
 public-TV		1	NN	1
 public-address		1	JJ	1
 public-housing		1	NN	1
@@ -44155,46 +44386,47 @@ publication		16	NN	16
 publications		17	NNS	17
 publicise		2	VB	2
 publicist		1	NN	1
-publicity		20	NN	20
+publicity		21	NN	21
 publicity-seeking	1	JJ	1
 publicize		2	VB	2
 publicized		7	JJ	1	VBN	6
 publicly		48	RB	48
-publish			19	VB	19
+publics			1	NNS	1
+publish			20	VB	20
 publisha		1	VB	1
-published		59	JJ	1	VBD	12	VBN	46
+published		61	JJ	1	VBD	12	VBN	48
 publisher		35	NN	35
 publishers		15	NNS	15
 publishes		12	VBZ	12
 publishing		45	NN	34	VBG	11
 publishing-group	1	JJ	1
-pubs			5	NNS	5
+pubs			6	NNS	6
 puce			2	JJ	1	NN	1
 puckered		2	JJ	1	VBD	1
 puckish			1	JJ	1
-pudding			8	NN	8
+pudding			9	NN	9
 puddings		1	NNS	1
 puddle			1	NN	1
 puddles			2	NNS	2
 puerile			2	JJ	2
-puff			4	NN	4
-puffed			5	JJ	4	VBD	1
+puff			5	NN	4	VB	1
+puffed			7	JJ	4	VBD	3
 puffed-up		1	JJ	1
 puffers			1	NNS	1
-puffing			4	VBG	4
+puffing			5	VBG	5
 puffs			2	NNS	1	VBZ	1
 puffy			4	JJ	4
 pug-nosed		1	JJ	1
 pugnacious		2	JJ	2
 puked			1	VBD	1
 pulchritude		1	NN	1
-pull			30	NN	8	VB	19	VBP	3
+pull			32	NN	8	VB	21	VBP	3
 pull-backs		1	NNS	1
 pull-out		1	NN	1
 pullback		7	NN	7
 pullbacks		3	NNS	3
-pulled			89	VBD	64	VBN	25
-pulling			22	VBG	22
+pulled			97	VBD	72	VBN	25
+pulling			23	VBG	23
 pullout			3	NN	3
 pullouts		1	NNS	1
 pulls			9	NNS	2	VBZ	7
@@ -44205,18 +44437,18 @@ pulsated		2	VBN	2
 pulsating		1	VBG	1
 pulse			9	NN	9
 pulsed			1	VBN	1
-pulsing			2	NN	2
+pulsing			2	NN	1	VBG	1
 pulverised		1	VBN	1
 pulverized		1	VBN	1
 pulverizing		1	VBG	1
 pummeled		1	VBN	1
 pummelled		1	VBD	1
 pummelling		1	VBG	1
-pump			14	NN	5	VB	8	VBP	1
+pump			15	NN	6	VB	8	VBP	1
 pumped			6	VBD	4	VBN	2
 pumping			10	VBG	10
 pumpkin			2	NN	2
-pumps			7	NNS	7
+pumps			7	NNS	5	VBZ	2
 punch			11	NN	9	VB	2
 punch-drunk		1	JJ	1
 punch-up		1	NN	1
@@ -44228,7 +44460,7 @@ punctuality		1	NN	1
 punctually		1	RB	1
 punctuated		5	VBD	1	VBN	4
 punctuation		1	NN	1
-puncture		3	NN	1	VB	2
+puncture		3	NN	2	VB	1
 punctured		1	VBD	1
 pundits			4	NNS	4
 pungency		2	NN	2
@@ -44258,12 +44490,12 @@ pupils			27	NNS	27
 puppet			2	NN	2
 puppets			4	NNS	4
 puppies			1	NNS	1
-puppy			11	JJ	1	NN	10
-purchase		161	NN	122	VB	38	VBP	1
+puppy			11	JJ	2	NN	9
+purchase		162	NN	123	VB	38	VBP	1
 purchased		43	VBD	18	VBN	25
 purchaser		2	NN	2
 purchasers		9	NNS	9
-purchases		54	NNS	54
+purchases		55	NNS	55
 purchasing		36	NN	15	VBG	21
 purdah			1	NN	1
 pure			30	JJ	30
@@ -44285,7 +44517,7 @@ puritan			3	JJ	1	NN	2
 puritanical		4	JJ	4
 puritans		1	NNS	1
 purl			1	JJ	1
-purlieus		1	NNS	1
+purlieus		1	NN	1
 purloined		1	VBD	1
 purple			9	JJ	9
 purple-pink		1	NN	1
@@ -44296,12 +44528,13 @@ purported		1	JJ	1
 purportedly		1	RB	1
 purporting		1	VBG	1
 purports		3	VBZ	3
-purpose			45	NN	45
+purpose			49	NN	49
 purposed		1	VBN	1
 purposeful		3	JJ	3
 purposeless		1	JJ	1
 purposely		4	RB	4
 purposes		25	NNS	25
+purposes.		1	NNS	1
 purposing		1	VBG	1
 purposive		1	JJ	1
 purr			3	NN	1	VB	2
@@ -44310,14 +44543,14 @@ purrs			1	VBZ	1
 purse			9	NN	9
 pursed			2	VBD	1	VBN	1
 purses			4	NNS	4
-pursuance		1	NN	1
+pursuance		1	IN	1
 pursuant		3	JJ	3
-pursue			31	VB	30	VBP	1
-pursued			14	VBD	4	VBN	10
+pursue			33	VB	31	VBP	2
+pursued			16	VBD	5	VBN	11
 pursuers		1	NNS	1
 pursues			2	VBZ	2
-pursuing		11	NN	1	VBG	10
-pursuit			28	NN	28
+pursuing		13	NN	1	VBG	12
+pursuit			29	NN	29
 pursuits		4	NNS	4
 purvey			1	VB	1
 pus			1	JJ	1
@@ -44325,40 +44558,41 @@ push			59	NN	21	VB	36	VBP	2
 push-button		1	JJ	1
 push-up			1	JJ	1
 pushchair		2	NN	2
-pushed			79	JJ	3	VBD	48	VBN	28
+pushed			83	JJ	3	VBD	52	VBN	28
 pushers			2	NNS	2
 pushes			5	VBZ	5
-pushing			47	VBG	47
+pushing			48	IN	2	VBG	46
 pushover		3	NN	3
 pushy			2	JJ	2
 pusillanimity		1	NN	1
 puss			1	NN	1
 pussy-willow		1	NN	1
-pussyfooting		1	NN	1
-put			415	NN	3	VB	145	VBD	175	VBN	83	VBP	8	VBP|VB	1
+pussyfooting		1	VBG	1
+put			436	NN	3	VB	152	VBD	184	VBN	85	VBP	9	VBP|VB	3
 put-down		2	NN	2
 put-up			1	JJ	1
 put-upon		2	JJ	2
 putative		1	JJ	1
 putrefying		2	VBG	2
 putrid			1	JJ	1
-puts			34	NNS	1	VBZ	33
+puts			36	NNS	1	VBZ	35
 putsch			1	NN	1
 putt			2	NN	1	VB	1
 puttable		3	JJ	3
 putted			1	VBD	1
 putter			1	NN	1
 puttered		1	VBD	1
-puttering		1	JJ	1
-putting			61	VBG	61
+puttering		1	VBG	1
+putting			64	VBG	64
 putts			1	NNS	1
-puzzle			8	NN	7	VB	1
+putty			1	NN	1
+puzzle			9	NN	8	VB	1
 puzzled			16	JJ	3	VBD	4	VBN	9
 puzzles			1	NNS	1
-puzzling		3	JJ	3
+puzzling		3	JJ	1	VBG	2
 pygmies			2	NNS	2
 pyjama			3	NN	3
-pyjamas			7	NNS	7
+pyjamas			8	NNS	8
 pylon			1	NN	1
 pyramid			2	NN	2
 pyramiding		1	VBG	1
@@ -44385,11 +44619,11 @@ quake-relief		1	JJ	1
 quake-torn		1	JJ	1
 quakes			1	NNS	1
 quaking			1	VBG	1
-qualification		3	NN	3
+qualification		4	NN	4
 qualifications		9	NNS	9
-qualified		23	JJ	9	VBD	2	VBN	12
+qualified		23	JJ	9	VBD	3	VBN	11
 qualifies		1	VBZ	1
-qualify			13	VB	11	VBP	2
+qualify			13	VB	10	VBP	3
 qualifying		1	VBG	1
 qualities		22	NNS	22
 qualitiesgenerosity	1	NN	1
@@ -44399,15 +44633,15 @@ quandary		1	NN	1
 quantification		1	NN	1
 quantify		4	VB	4
 quantitative		2	JJ	2
-quantities		10	NNS	10
+quantities		11	NNS	11
 quantitive		1	JJ	1
-quantity		8	NN	8
+quantity		12	NN	12
 quantum			2	NN	2
 quarantine		3	NN	2	VB	1
-quarrel			13	NN	3	VB	10
+quarrel			14	NN	3	VB	11
 quarrel?An		1	JJ	1
 quarrelled		1	VBD	1
-quarrelling		3	NN	1	VBG	2
+quarrelling		3	JJ	1	NN	1	VBG	1
 quarrelling?		1	NN	1
 quarrels		3	NNS	2	VBZ	1
 quarrelsome		3	JJ	3
@@ -44415,7 +44649,7 @@ quarried		1	VBN	1
 quarries		1	NNS	1
 quarry			6	NN	6
 quart			3	JJ	1	NN	2
-quarter			450	JJ	1	NN	449
+quarter			451	JJ	1	NN	450
 quarter-point		1	NN	1
 quarter-to-quarter	1	JJ	1
 quarterdeck		1	NN	1
@@ -44440,7 +44674,8 @@ queasy			1	JJ	1
 queen			10	NN	10
 queenly			2	JJ	2
 queens			4	NNS	4
-queer			5	JJ	3	JJR	1	NN	1
+queer			8	JJ	5	JJR	2	NN	1
+queerest		1	JJ	1
 queers			1	NNS	1
 quell			9	VB	9
 quelled			1	VBN	1
@@ -44449,23 +44684,23 @@ queried			4	VBN	4
 queries			3	NNS	3
 querulous		3	JJ	1	RB	2
 query			3	NN	1	VB	2
-quest			6	NN	6
+quest			6	IN	1	NN	5
 questing		1	VBG	1
-question		207	NN	191	VB	5	VBP	11
+question		215	NN	198	VB	6	VBP	11
 questionable		13	JJ	13
-questioned		18	VBD	13	VBN	5
+questioned		20	VBD	14	VBN	6
 questioners		1	NNS	1
 questioning		16	JJ	2	NN	2	VBG	12
 questionnaire		3	NN	3
-questions		142	NNS	141	VBZ	1
-queue			11	NN	10	VB	1
+questions		146	NNS	145	VBZ	1
+queue			13	JJ	1	NN	11	VB	1
 queued			1	VBN	1
 queueing		2	VBG	2
-queues			6	NNS	6
+queues			7	NNS	7
 queuing			1	VBG	1
 quibble			1	VB	1
 quiche			1	NN	1
-quick			75	JJ	74	NN	1
+quick			78	JJ	77	NN	1
 quick-tempered		1	JJ	1
 quick-to-prepare	1	JJ	1
 quicken			2	VB	2
@@ -44473,26 +44708,28 @@ quickened		4	JJ	1	VBD	1	VBN	2
 quicker			8	JJR	7	RBR	1
 quickest		3	JJS	3
 quickie			1	NN	1
-quickly			128	RB	128
+quickly			132	RB	132
 quickly?		1	JJ	1
 quickness		1	NN	1
 quicksand		1	NN	1
-quid			2	NN	2
+quid			3	NN	3
 quid?			1	NNS	1
 quiescent		2	JJ	2
-quiet			67	JJ	65	NN	2
+quiet			69	JJ	67	NN	2
+quiet.			1	NN	1
 quieted			3	VBD	3
 quieten			2	VB	2
 quietened		1	VBN	1
-quieter			1	NN	1
+quietening		1	VBG	1
+quieter			1	JJR	1
 quietest		1	JJS	1
-quietly			29	RB	29
+quietly			30	RB	30
 quietly.		1	CD	1
 quills			1	NNS	1
-quilt			4	NN	4
+quilt			5	NN	5
 quilt?			1	NN	1
 quilted			4	JJ	2	VBN	2
-quilts			4	NNS	4
+quilts			5	NNS	5
 quinine			1	NN	1
 quintessence		2	NN	2
 quintessential		1	JJ	1
@@ -44505,13 +44742,13 @@ quirks			3	NNS	3
 quirky			3	JJ	3
 quisling		1	NN	1
 quit			22	VB	8	VBD	9	VBN	2	VBP	3
-quite			244	PDT	17	RB	227
+quite			265	PDT	19	RB	246
 quite-comfortable	1	JJ	1
 quits			1	VBZ	1
 quitter			1	NN	1
 quitting		1	VBG	1
 quiver			2	NN	2
-quivered		4	VBD	2	VBN	2
+quivered		4	JJ	1	VBD	1	VBN	2
 quiz			2	NN	2
 quizzes			1	NNS	1
 quizzical		2	JJ	2
@@ -44523,27 +44760,27 @@ quota-cheaters		1	NNS	1
 quotas			9	NNS	9
 quotation		10	NN	10
 quotations		21	NNS	21
-quote			16	NN	7	VB	7	VBP	2
-quoted			70	VBD	7	VBN	63
+quote			18	NN	7	VB	9	VBP	2
+quoted			72	VBD	8	VBN	64
 quotes			12	NNS	7	VBZ	5
 quotient		2	NN	2
 quoting			4	VBG	4
 r			2	LS	1	NN	1
 rabbi			1	NN	1
 rabbinical		1	JJ	1
-rabbit			7	NN	7
+rabbit			8	NN	8
 rabbit-test		1	JJ	1
-rabbits			6	NNS	4	VBZ	2
+rabbits			6	NNS	6
 rabble			2	NN	2
 rabid			1	JJ	1
 rabies			1	NNS	1
-race			75	NN	72	VB	3
+race			76	NN	73	VB	3
 race-car		1	NN	1
 racecourse		1	NN	1
-raced			5	VBD	5
+raced			4	VBD	4
 racehorse		4	NN	4
 racehorses		2	NNS	2
-races			8	NNS	8
+races			9	NNS	8	VBZ	1
 racetrack		1	NN	1
 racetracks		1	NNS	1
 racial			27	JJ	27
@@ -44552,8 +44789,8 @@ racialist		2	JJ	2
 racially		3	RB	3
 racing			17	NN	8	VBG	9
 racing-driver		1	NN	1
-racism			18	NN	18
-racism?			1	VBN	1
+racism			20	NN	20
+racism?			1	JJ	1
 racist			5	JJ	3	NN	2
 racists			1	NNS	1
 rack			3	NN	3
@@ -44562,7 +44799,7 @@ racket			10	NN	10
 racketeering		12	NN	12
 racketeers		1	NNS	1
 racketing		1	VBG	1
-rackets			4	NNS	4
+rackets			4	NNS	3	VBZ	1
 racking			3	JJ	1	VBG	2
 racks			6	NNS	6
 racy			2	JJ	2
@@ -44575,34 +44812,34 @@ radiating		3	VBG	3
 radiation		22	NN	22
 radiation-proof		1	JJ	1
 radiation-sickness	1	JJ	1
-radiator		5	NN	5
+radiator		6	NN	6
 radiators		3	NNS	3
-radical			25	JJ	24	NN	1
+radical			29	JJ	28	NN	1
 radical-moderate	1	JJ	1
 radicalism		6	NN	6
 radically		6	RB	6
 radicals		6	NNS	6
 radii			1	NN	1
-radio			75	NN	75
+radio			77	NN	77
 radio-controlled	1	JJ	1
 radio-station		1	NN	1
 radioactive		10	JJ	10
 radioactivity		1	NN	1
 radioed			2	VBN	2
 radioing		1	VBG	1
-radios			5	NNS	5
-radius			5	NNS	5
+radios			6	NNS	6
+radius			5	NN	3	NNS	2
 raffle			2	NN	1	VB	1
 raft			6	NN	6
 rafters			1	NNS	1
-rag			10	NN	10
+rag			8	NN	8
 ragamuffins		1	NNS	1
-rage			26	NN	22	VB	4
+rage			27	NN	23	VB	4
 raged			8	VBD	4	VBN	4
-ragged			13	JJ	11	RB	2
+ragged			11	JJ	11
 raggedy			1	JJ	1
 raging			4	VBG	4
-rags			1	NNS	1
+rags			2	NNS	2
 raid			14	NN	12	VB	2
 raided			3	VBD	2	VBN	1
 raider			5	NN	5
@@ -44615,35 +44852,36 @@ railbikes		1	NNS	1
 railcar			1	NN	1
 railcars		4	NNS	4
 railed			2	VBN	2
-railing			5	NN	5
-railings		9	NNS	9
+railing			6	NN	6
+railings		10	NNS	10
 railroad		9	NN	9
 railroads		2	NNS	2
 rails			7	NNS	7
-railway			26	NN	26
+railway			27	NN	27
 railwaymen		1	NNS	1
-railways		10	NNS	10
-rain			83	NN	82	VB	1
+railways		11	NNS	11
+rain			92	NN	90	VB	2
 rainbow			6	NN	6
 rainbows		1	NNS	1
-raincoat		10	NN	10
+raincoat		11	NN	11
 raincoats		1	NNS	1
 raindrops		3	NNS	3
 rained			4	VBD	4
 rainfall		5	NN	5
-raining			5	NN	1	VBG	4
+raining			6	NN	1	VBG	5
 raining.Well,		1	JJ	1
 raining.Yes,		1	NN	1
-raining?		1	VBZ	1
+raining?		1	NN	1
 rains			9	NNS	9
 rainstorm		4	NN	4
+rainstorms		1	NNS	1
 rainy			4	JJ	4
-raise			165	NN	15	VB	137	VBP	13
-raised			152	JJ	2	VBD	75	VBN	75
+raise			166	NN	15	VB	137	VBP	14
+raised			155	JJ	2	VBD	79	VBN	74
 raises			19	VBZ	19
 raisin			1	NN	1
-raising			55	NN	2	VBG	53
-raisins			2	NNS	2
+raising			56	NN	2	VBG	54
+raisins			3	NNS	3
 rake			5	NN	3	VB	2
 raked			3	VBD	3
 raking			1	VBG	1
@@ -44664,7 +44902,7 @@ rampaging		1	VBG	1
 rampant			3	JJ	3
 ramparts		1	NNS	1
 ramps			2	NNS	2
-ran			121	VBD	121
+ran			131	VBD	131
 ranch			3	NN	3
 ranch-style		1	JJ	1
 rancher			1	NN	1
@@ -44678,19 +44916,19 @@ random			12	JJ	12
 random-access		1	JJ	1
 randomly		3	RB	3
 randy			1	JJ	1
-rang			25	VBD	25
-range			113	NN	101	VB	5	VBP	7
+rang			30	VBD	30
+range			117	NN	105	VB	5	VBP	7
 ranged			16	VBD	11	VBN	5
 rangefinder		1	NN	1
 ranger			2	NN	2
-ranges			9	NNS	6	VBZ	3
-ranging			27	VBG	27
-rank			14	JJ	3	NN	8	VB	2	VBP	1
+ranges			10	NNS	7	VBZ	3
+ranging			28	VBG	28
+rank			18	JJ	3	NN	12	VB	2	VBP	1
 ranked			6	VBD	5	VBN	1
 ranking			9	JJ	6	NN	1	VBG	2
 rankings		1	NNS	1
 rankled			1	VBN	1
-rankles			1	NNS	1
+rankles			1	VBZ	1
 ranks			22	NNS	17	VBZ	5
 ransacked		3	VBD	1	VBN	2
 ransom			3	NN	3
@@ -44704,10 +44942,10 @@ raped			4	VBD	2	VBN	2
 rapes			1	NNS	1
 rapeseed		1	NN	1
 rapeseeds		1	NNS	1
-rapid			32	JJ	32
+rapid			33	JJ	33
 rapid-fire		2	JJ	2
 rapidement		1	FW	1
-rapidly			49	RB	49
+rapidly			51	RB	51
 rapist			2	NN	2
 rapists			1	NNS	1
 rapped			3	VBD	3
@@ -44717,13 +44955,14 @@ rapprochement		1	NN	1
 rapt			1	JJ	1
 rapture			1	NN	1
 rapturous		1	JJ	1
-rare			46	JJ	46
+rare			47	JJ	47
 rarefied		3	JJ	2	VBN	1
-rarely			21	RB	21
+rarely			22	RB	22
 rarest			1	JJS	1
 raring			2	JJ	2
 rarities		1	NNS	1
 rarity			3	NN	3
+rascal			1	JJ	1
 rash			16	JJ	1	NN	15
 rashers			1	NNS	1
 rashness		1	NN	1
@@ -44738,24 +44977,24 @@ rat-race		1	NN	1
 rat-tat			1	NN	1
 ratchet			2	NN	2
 ratcheting		1	VBG	1
-rate			416	NN	411	NNS	1	VB	3	VBP	1
+rate			424	NN	419	NNS	1	VB	3	VBP	1
 rate-sensitive		1	JJ	1
 rate?			1	NN	1
 rated			33	VBD	4	VBN	29
 ratepayers		3	NNS	3
-rates			331	NNS	327	VBZ	4
-rates?			1	NNS	1
-rather			316	RB	316
+rates			333	NNS	329	VBZ	4
+rates?			2	NNS	2
+rather			328	RB	328
 ratification		3	NN	3
 ratified		5	VBD	2	VBN	3
 ratify			2	VB	2
 rating			53	NN	52	VBG	1
 ratings			35	NNS	35
 ratings-getter		1	NN	1
-ratio			27	NN	27
+ratio			28	NN	28
 ration			3	NN	2	VB	1
-rational		12	JJ	12
-rationale		4	NN	4
+rational		13	JJ	13
+rationale		5	NN	5
 rationalism		1	NN	1
 rationalist		1	JJ	1
 rationalization		1	NN	1
@@ -44765,7 +45004,7 @@ rationally		2	RB	2
 rationed		2	VBN	2
 rations			2	NNS	2
 ratios			2	NNS	2
-rats			17	NNS	17
+rats			18	NNS	18
 ratted			1	VBD	1
 ratting			1	VBG	1
 rattle			4	NN	1	VB	3
@@ -44775,7 +45014,7 @@ rattling		2	VBG	2
 ratty			1	JJ	1
 raucous			6	JJ	6
 raunchy			1	JJ	1
-ravage			1	VB	1
+ravage			1	VBP	1
 ravaged			2	VBN	2
 ravages			4	NNS	4
 rave			3	NN	3
@@ -44787,11 +45026,11 @@ raven-haired		1	JJ	1
 ravenous		4	JJ	4
 raver			1	NN	1
 raves			1	VBZ	1
-ravine			2	NN	2
+ravine			3	NN	3
 ravines			3	NNS	3
 raving			4	JJ	3	VBG	1
 ravings			2	NNS	2
-ravish			1	VB	1
+ravish			1	VBP	1
 ravished		1	VBN	1
 ravishing		3	JJ	3
 raw			31	JJ	31
@@ -44800,7 +45039,7 @@ raw-material		2	NN	2
 raw-materials		1	NNS	1
 ray			4	NN	4
 rayon			1	NN	1
-rays			11	NNS	11
+rays			13	NNS	13
 razed			2	VBN	2
 razor			4	NN	4
 razor-sharp		1	JJ	1
@@ -44810,7 +45049,7 @@ re-create		2	VB	2
 re-creation		1	NN	1
 re-creations		1	NNS	1
 re-discovered		1	VBN	1
-re-drawing		1	VBG	1
+re-drawing		1	JJ	1
 re-echo			1	VBP	1
 re-elected		5	JJ	1	VBD	2	VBN	2
 re-election		5	NN	5
@@ -44823,13 +45062,13 @@ re-entered		2	VBD	2
 re-entering		1	VBG	1
 re-establish		1	VB	1
 re-established		1	JJR	1
-re-establishing		2	VBG	2
+re-establishing		3	VBG	3
 re-establishment	1	NN	1
 re-evaluate		1	VB	1
 re-examination		2	NN	2
 re-examine		5	VB	5
 re-fitted		1	VBN	1
-re-formed		1	VBN	1
+re-formed		1	JJ	1
 re-hashes		1	NNS	1
 re-negotiated		1	VBN	1
 re-opening		1	JJ	1
@@ -44839,14 +45078,14 @@ re-run			1	NN	1
 re-thinking		1	VBG	1
 re-thought		1	JJ	1
 re-used			1	VBN	1
-reach			90	NN	8	VB	68	VBP	14
-reached			157	VBD	63	VBN	94
+reach			91	NN	8	VB	69	VBP	14
+reached			160	VBD	65	VBN	95
 reaches			18	NNS	5	VBZ	13
 reaching		22	VBG	22
-react			7	VB	5	VBP	2
-reacted			14	VBD	12	VBN	2
+react			11	VB	9	VBP	2
+reacted			15	VBD	13	VBN	2
 reacting		6	VBG	6
-reaction		56	NN	56
+reaction		61	NN	61
 reactionaries		2	NNS	2
 reactionary		2	JJ	2
 reactions		11	NNS	11
@@ -44854,7 +45093,7 @@ reactivate		1	VB	1
 reactive		1	JJ	1
 reactor			4	NN	4
 reactors		3	NNS	3
-read			187	NN	2	VB	78	VBD	33	VBD|VBP	1	VBN	29	VBP	43	VBP|VBD	1
+read			191	NN	1	VB	82	VBD	25	VBD|VBP	9	VBN	31	VBP	42	VBP|VBD	1
 read-my-lips		1	JJ	1
 readable		2	JJ	2
 reader			30	NN	30
@@ -44862,14 +45101,14 @@ readers			30	NNS	30
 readership		4	NN	4
 readied			1	VBD	1
 readily			15	RB	15
-readiness		6	NN	6
-reading			88	NN	55	VBG	33
+readiness		8	NN	8
+reading			92	NN	56	VBG	36
 readings		4	NNS	4
 readjust		1	VB	1
 readjusting		1	VBG	1
 readmitted		1	VBN	1
 reads			5	VBZ	5
-ready			76	JJ	76
+ready			86	JJ	86
 ready!			1	JJ	1
 ready-made		2	JJ	2
 ready-to-eat		1	JJ	1
@@ -44879,7 +45118,7 @@ reaffirm		1	VB	1
 reaffirmed		5	VBD	5
 reaffirming		1	VBG	1
 reaffirms		1	VBZ	1
-real			307	JJ	305	NN	1	RB	1
+real			317	JJ	315	NN	1	RB	1
 real-estate		35	JJ	5	NN	30
 real-estate-investment	1	NN	1
 real-life		1	JJ	1
@@ -44888,25 +45127,26 @@ realign			2	VB	2
 realigning		1	VBG	1
 realignment		2	NN	2
 realignments		1	NNS	1
-realise			5	VB	4	VBP	1
-realised		6	VBD	6
+realise			6	VB	4	VBP	2
+realised		7	VBD	6	VBN	1
 realises		1	VBZ	1
 realising		1	VBG	1
 realism			7	NN	7
-realistic		14	JJ	14
+realistic		15	JJ	15
 realistically		2	RB	2
 realists		4	NNS	4
-realities		7	NNS	7
-reality			35	NN	35
+realities		8	NNS	8
+reality			38	NN	38
+reality?		1	JJ	1
 realizable		1	JJ	1
 realization		8	NN	8
-realize			31	VB	24	VBP	7
-realized		39	VBD	28	VBN	11
+realize			32	VB	25	VBP	7
+realized		42	VBD	31	VBN	11
 realizes		5	VBZ	5
 realizing		3	VBG	3
 reallocate		1	VB	1
 reallocated		1	VBN	1
-really			311	RB	311
+really			329	RB	328	UH	1
 realm			12	NN	12
 realty			1	NN	1
 reams			2	NNS	2
@@ -44926,7 +45166,7 @@ rear			19	JJ	10	NN	8	VB	1
 rear-seat		3	NN	3
 rear-view		1	JJ	1
 reared			6	VBN	6
-rearing			6	NN	3	VBG	3
+rearing			7	NN	2	VBG	5
 rearm			1	VB	1
 rearmed			1	VBN	1
 rearmost		1	JJ	1
@@ -44934,12 +45174,12 @@ rearrange		2	VB	2
 rearrangement		1	NN	1
 rearrangements		1	NNS	1
 rearranges		1	VBZ	1
-reason			115	NN	113	VB	1	VBP	1
-reasonable		37	JJ	37
+reason			117	NN	115	VB	1	VBP	1
+reasonable		40	JJ	40
 reasonably		17	RB	17
 reasoned		4	VBD	3	VBN	1
 reasoning		9	NN	9
-reasons			58	NNS	57	VBZ	1
+reasons			60	NNS	59	VBZ	1
 reassemble		3	VB	3
 reassembled		3	VBD	1	VBN	2
 reassert		4	VB	4
@@ -44961,7 +45201,7 @@ rebates			5	NNS	5
 rebel			13	JJ	4	NN	8	VB	1
 rebelled		5	VBD	5
 rebelling		1	VBG	1
-rebellion		12	NN	12
+rebellion		13	NN	13
 rebellions		2	NNS	2
 rebellious		7	JJ	7
 rebels			25	NNS	25
@@ -44975,7 +45215,7 @@ rebuffed		8	VBD	2	VBN	6
 rebuild			10	VB	10
 rebuilding		6	VBG	6
 rebuilt			5	VBN	5
-rebuke			3	NN	3
+rebuke			4	NN	4
 rebuked			2	VBD	2
 rebut			4	VB	4
 rebuts			1	VBZ	1
@@ -44986,7 +45226,7 @@ recalcitrant		2	JJ	2
 recalculating		2	VBG	2
 recalculations		1	NNS	1
 recall			19	NN	4	VB	10	VBP	5
-recalled		15	VBD	11	VBN	4
+recalled		17	VBD	13	VBN	4
 recalling		4	VBG	4
 recalls			16	NNS	1	VBZ	15
 recant			1	VB	1
@@ -44998,7 +45238,7 @@ recapitalizations	2	NNS	2
 recapture		6	NN	1	VB	5
 recaptured		2	VBN	2
 recast			2	VB	2
-recasting		1	JJ	1
+recasting		1	VBG	1
 recede			2	VBP	2
 receded			3	VBN	3
 receding		2	VBG	2
@@ -45007,14 +45247,14 @@ receipts		15	NNS	15
 receivable		3	JJ	1	NN	2
 receivables		6	NN	4	NNS	2
 receive			101	VB	84	VBP	17
-received		177	JJ	1	VBD	115	VBN	61
+received		179	JJ	1	VBD	116	VBN	62
 receiver		8	NN	8
 receivers		5	NNS	5
 receivership		4	NN	4
 receives		7	VBZ	7
 receiving		23	NN	1	VBG	22
-recent			391	JJ	391
-recently		212	RB	212
+recent			393	JJ	393
+recently		219	RB	219
 receptacle		1	NN	1
 reception		17	NN	17
 receptionist		1	NN	1
@@ -45061,11 +45301,11 @@ reclining		2	VBG	2
 reclusive		1	JJ	1
 recognise		5	VB	4	VBP	1
 recognised		1	VBN	1
-recognition		16	NN	16
+recognition		17	NN	17
 recognizable		3	JJ	3
 recognizably		1	RB	1
 recognize		19	VB	14	VBP	5
-recognized		29	VBD	15	VBN	14
+recognized		30	VBD	16	VBN	14
 recognizes		3	VBZ	3
 recognizing		6	VBG	6
 recoiled		3	VBD	2	VBN	1
@@ -45075,11 +45315,11 @@ recollection		2	NN	2
 recollections		2	NNS	2
 recombinant		3	JJ	3
 recombination		1	NN	1
-recommend		13	VB	9	VBP	4
+recommend		18	VB	14	VBP	4
 recommendation		14	NN	14
 recommendations		15	NNS	15
 recommendatons		1	NNS	1
-recommended		20	JJ	3	VBD	10	VBN	7
+recommended		23	JJ	3	VBD	11	VBN	9
 recommending		13	VBG	13
 recommends		3	VBZ	3
 recompense		1	VB	1
@@ -45096,27 +45336,28 @@ reconsider		8	VB	8
 reconsideration		2	NN	2
 reconsidered		3	VBN	3
 reconstitute		1	VB	1
-reconstituted		1	VBN	1
+reconstituted		1	VBD	1
 reconstruct		6	VB	6
 reconstructed		2	VBD	1	VBN	1
 reconstructing		2	VBG	2
-reconstruction		5	NN	5
+reconstruction		6	NN	6
 reconstructs		1	VBZ	1
-record			218	JJ	24	NN	180	VB	14
+record			221	JJ	22	NN	185	VB	14
 record-breakers		1	NNS	1
 record-breaking		1	JJ	1
 record-keeping		6	JJ	1	NN	5
-recorded		37	JJ	4	VBD	8	VBN	25
+recorded		41	JJ	4	VBD	8	VBN	29
 recorded-music		1	JJ	1
-recorder		10	NN	10
+recorder		11	NN	11
 recorder-playing	1	NN	1
 recorder.Very		1	NN	1
 recorders		12	NNS	12
-recording		15	NN	12	VBG	3
+recording		18	NN	13	VBG	5
 recordings		2	NNS	2
 recordkeeping		1	NN	1
-records			41	NNS	38	VBZ	3
+records			42	NNS	39	VBZ	3
 records.		1	NNS	1
+records?		1	NN	1
 recount			3	NN	3
 recounted		4	VBD	3	VBN	1
 recounting		1	VBG	1
@@ -45124,16 +45365,16 @@ recounts		3	VBZ	3
 recoup			5	VB	5
 recouped		2	VBD	1	VBN	1
 recourse		6	NN	6
-recover			25	VB	23	VBP	2
+recover			26	VB	24	VBP	2
 recoverable		3	JJ	3
 recovered		31	JJ	1	VBD	21	VBN	9
 recoveries		1	NNS	1
-recovering		5	VBG	5
+recovering		6	VBG	6
 recovery		42	NN	42
 recraft			1	VB	1
 recreate		2	VB	2
-recreated		1	VBN	1
-recreation		8	NN	8
+recreated		1	JJ	1
+recreation		9	NN	9
 recreational		3	JJ	3
 recreational-vehicle	1	NN	1
 recreations		1	NNS	1
@@ -45144,7 +45385,7 @@ recruiter		2	NN	2
 recruiting		10	NN	5	VBG	5
 recruitment		3	NN	3
 recruits		13	NNS	10	VBZ	3
-rectangle		4	NN	4
+rectangle		5	NN	5
 rectangles		1	NNS	1
 rectangular		3	JJ	3
 rectified		1	VBN	1
@@ -45167,7 +45408,7 @@ recyclable		1	JJ	1
 recycle			1	VB	1
 recycled		6	JJ	3	VBN	3
 recycling		10	NN	7	VBG	3
-red			157	JJ	142	NN	15
+red			164	JJ	149	NN	15
 red-and-white		1	JJ	1
 red-blooded		1	JJ	1
 red-carpet		1	JJ	1
@@ -45206,8 +45447,8 @@ redeveloped		1	JJ	1
 redevelopment		1	NN	1
 redhead			2	NN	2
 redirect		2	VB	2
-redirected		2	VBN	2
-redistribute		1	VB	1
+redirected		2	JJ	2
+redistribute		2	VB	2
 redistributed		1	JJ	1
 redistributing		1	VBG	1
 redistribution		3	NN	3
@@ -45238,15 +45479,15 @@ reduction		55	NN	55
 reductions		20	NNS	20
 redundancies		3	NNS	3
 redundancy		3	NN	3
-redundant		4	JJ	4
+redundant		5	JJ	5
 reeds			4	NNS	4
 reedy			2	JJ	2
-reef			5	NN	5
+reef			6	NN	6
 reefs			1	NNS	1
 reek			2	NN	2
-reeked			3	VBD	1	VBN	2
-reeking			3	JJ	1	NN	1	VBG	1
-reeks			1	NNS	1
+reeked			3	VBD	2	VBN	1
+reeking			3	VBG	3
+reeks			1	VBZ	1
 reel			4	NN	2	VB	2
 reeled			7	VBD	6	VBN	1
 reeling			6	VBG	6
@@ -45254,7 +45495,7 @@ reels			1	NNS	1
 reestablish		1	VB	1
 reexamining		1	VBG	1
 refashioning		1	VBG	1
-refer			131	VB	128	VBP	3
+refer			132	VB	129	VBP	3
 referee			6	JJ	1	NN	5
 referees		2	NNS	2
 reference		17	NN	17
@@ -45263,7 +45504,7 @@ referenda		1	NN	1
 referendum		7	NN	7
 referral		1	NN	1
 referrals		2	NNS	2
-referred		25	VBD	18	VBN	7
+referred		27	VBD	19	VBN	8
 referring		26	VBG	26
 refers			8	VBZ	8
 refile			1	VB	1
@@ -45274,7 +45515,7 @@ refinance		2	VB	2
 refinanced		3	VBD	1	VBN	2
 refinancing		10	NN	6	VBG	4
 refine			4	VB	4
-refined			9	JJ	4	VBN	5
+refined			9	JJ	5	VBN	4
 refinements		3	NNS	3
 refineries		3	NNS	3
 refiners		3	NNS	3
@@ -45283,10 +45524,10 @@ refining		8	NN	6	VBG	2
 refitted		1	VBN	1
 refitting		1	VBG	1
 reflate			1	VB	1
-reflect			44	VB	28	VBP	16
-reflected		42	VBD	35	VBN	7
+reflect			45	VB	28	VBP	17
+reflected		43	VBD	35	VBN	8
 reflecting		42	VBG	42
-reflection		15	NN	15
+reflection		16	NN	16
 reflections		2	NNS	2
 reflective		4	JJ	3	RB	1
 reflector		1	NN	1
@@ -45299,7 +45540,7 @@ refocus			4	VB	4
 refocused		3	VBD	1	VBN	2
 refocusing		2	NN	1	VBG	1
 reforest		1	VB	1
-reform			54	NN	48	VB	6
+reform			56	NN	49	VB	7
 reformed		2	VBN	2
 reformer		3	JJ	1	NN	2
 reformers		8	NNS	8
@@ -45327,7 +45568,7 @@ refuelling		1	VBG	1
 refuge			5	NN	5
 refugee			1	NN	1
 refugee-assistance	1	NN	1
-refugees		20	NNS	20
+refugees		21	NNS	21
 refuges			1	NNS	1
 refund			18	NN	12	VB	6
 refunded		1	VBN	1
@@ -45336,10 +45577,10 @@ refunds			4	NNS	4
 refurbished		2	VBN	2
 refurbishing		2	NN	1	VBG	1
 refurbishment		2	NN	2
-refusal			22	NN	22
+refusal			25	NN	25
 refusals		1	NNS	1
 refuse			30	NN	3	VB	14	VBP	13
-refused			92	VBD	74	VBN	18
+refused			97	VBD	79	VBN	18
 refuses			8	VBZ	8
 refusing		15	NN	1	VBG	14
 refutation		1	NN	1
@@ -45350,11 +45591,11 @@ regained		8	VBD	2	VBN	6
 regaining		1	VBG	1
 regains			2	VBZ	2
 regal			3	JJ	3
-regard			40	NN	14	RB	1	VB	10	VBP	15
+regard			40	IN	2	NN	12	RB	1	VB	10	VBP	15
 regarded		53	JJ	2	VBD	17	VBN	34
-regarding		26	VBG	26
-regardless		17	RB	17
-regards			8	NNS	2	VBZ	6
+regarding		26	IN	1	VBG	25
+regardless		17	IN	1	RB	16
+regards			9	NNS	2	VBZ	7
 regenerate		1	VB	1
 reggae			2	JJ	2
 regime			25	NN	25
@@ -45365,13 +45606,13 @@ regimentation		1	NN	1
 regimented		2	JJ	2
 regiments		3	NNS	3
 regimes			3	NNS	3
-region			77	NN	77
+region			79	IN	2	NN	77
 region-by-region	1	JJ	1
 regional		56	JJ	56
 regionally		1	RB	1
 regions			27	NNS	27
-register		14	NN	6	VB	6	VBP	2
-registered		25	JJ	6	VBD	6	VBN	13
+register		17	NN	6	VB	9	VBP	2
+registered		26	JJ	6	VBD	7	VBN	13
 registering		3	VBG	3
 registrar		1	NN	1
 registration		14	NN	14
@@ -45379,12 +45620,12 @@ registrations		2	NNS	2
 regress			2	NN	2
 regressed		1	VBD	1
 regressive		2	JJ	2
-regret			14	NN	11	VB	1	VBP	2
+regret			15	NN	11	VB	1	VBP	3
 regretful		2	JJ	2
 regretfully		1	RB	1
-regrets			8	NNS	4	VBZ	4
+regrets			8	NNS	3	VBZ	5
 regrettable		3	JJ	3
-regretted		1	VBN	1
+regretted		4	VBD	3	VBN	1
 regroup			2	VB	1	VBP	1
 regrouped		1	VBD	1
 regular			57	JJ	57
@@ -45398,13 +45639,13 @@ regulated		10	JJ	2	VBN	8
 regulates		2	VBZ	2
 regulating		5	NN	1	VBG	4
 regulation		22	JJ	1	NN	21
-regulations		37	NNS	37
+regulations		38	NNS	38
 regulator		12	NN	12
 regulators		69	NNS	67	VBZ	2
 regulatory		53	JJ	53
 regummed		1	VBD	1
 regurgitate		1	VB	1
-regurgitated		1	JJ	1
+regurgitated		1	VBN	1
 rehabilitate		3	VB	3
 rehabilitated		2	VBN	2
 rehabilitation		5	NN	5
@@ -45417,8 +45658,8 @@ rehearsals		3	NNS	3
 rehearse		4	VB	3	VBP	1
 rehearsed		2	JJ	2
 rehearsing		1	VBG	1
-rehoused		2	VBD	1	VBN	1
-rehousing		1	NN	1
+rehoused		2	VBN	2
+rehousing		1	VBG	1
 reign			3	NN	3
 reigned			6	VBD	6
 reigning		7	JJ	1	VBG	6
@@ -45430,12 +45671,12 @@ rein			2	VB	2
 reincarnated		1	VBN	1
 reincarnation		1	NN	1
 reincarnations		1	NNS	1
-reinforce		6	VB	5	VBP	1
+reinforce		8	VB	7	VBP	1
 reinforced		7	VBD	5	VBN	2
 reinforcements		4	NNS	4
-reinforces		2	VBZ	2
+reinforces		4	VBZ	4
 reinforcing		3	VBG	3
-reins			6	NNS	6
+reins			7	NNS	7
 reinstalled		1	VBN	1
 reinstate		4	VB	4
 reinstated		5	VBD	3	VBN	2
@@ -45460,16 +45701,16 @@ reiterates		1	VBZ	1
 reiterating		2	VBG	2
 reiteration		1	NN	1
 reject			22	VB	15	VBP	7
-rejected		74	VBD	41	VBN	33
+rejected		75	VBD	41	VBN	34
 rejecting		3	VBG	3
 rejection		7	NN	7
 rejections		1	NNS	1
 rejects			1	NNS	1
-rejoiced		4	VBD	4
+rejoiced		4	JJ	1	VBD	3
 rejoin			3	VB	3
 rejoined		3	VBD	3
 rejoining		2	VBG	2
-rejuvenate		3	VB	3
+rejuvenate		4	VB	4
 rejuvenated		1	VBN	1
 rejuvenation		2	NN	2
 rekindle		3	VB	3
@@ -45479,28 +45720,28 @@ relate			6	VB	1	VBP	5
 related			77	JJ	25	VBD	4	VBN	48
 relates			3	VBZ	3
 relating		11	VBG	11
-relation		15	NN	15
+relation		15	IN	2	NN	13
 relation-back		1	JJ	1
-relations		63	NNS	63
-relationship		78	NN	78
+relations		65	NNS	65
+relationship		79	NN	79
 relationship.Oh		1	JJ	1
 relationships		28	NNS	28
-relative		22	JJ	20	NN	2
-relatively		62	RB	62
+relative		23	JJ	22	NN	1
+relatively		64	RB	64
 relatives		16	NNS	16
 relativity		1	NN	1
 relaunched		1	VBN	1
 relax			13	VB	13
 relaxation		1	NN	1
-relaxed			14	JJ	1	VBD	4	VBN	9
+relaxed			15	JJ	1	VBD	6	VBN	8
 relaxing		10	JJ	3	VBG	7
 relay			8	JJ	2	NN	4	VB	2
 relayed			4	VBD	4
 relaying		1	VBG	1
 relays			1	NNS	1
-release			49	NN	35	VB	12	VBP	2
-released		63	VBD	13	VBN	50
-releases		9	NNS	3	VBZ	6
+release			52	NN	35	VB	15	VBP	2
+released		64	VBD	14	VBN	50
+releases		10	NNS	3	VBZ	7
 releasing		4	VBG	4
 relegate		2	VB	2
 relegated		4	VBN	4
@@ -45510,9 +45751,9 @@ relentless		6	JJ	6
 relentlessly		5	RB	5
 relevance		3	NN	3
 relevancy		1	NN	1
-relevant		18	JJ	18
+relevant		19	JJ	19
 reliability		1	NN	1
-reliable		14	JJ	13	RB	1
+reliable		15	JJ	14	RB	1
 reliably		2	RB	2
 reliance		4	NN	4
 reliant			1	JJ	1
@@ -45520,15 +45761,15 @@ relic			1	NN	1
 relicensing		1	NN	1
 relics			4	NNS	4
 relied			9	VBD	2	VBN	7
-relief			38	NN	38
+relief			39	NN	39
 relies			7	VBZ	7
 relieve			17	VB	17
 relieved		9	JJ	2	VBD	2	VBN	5
 reliever		2	NN	2
 relieving		1	VBG	1
-religion		36	NN	36
+religion		38	NN	38
 religions		3	NNS	3
-religious		39	JJ	39
+religious		40	JJ	40
 religiously		2	RB	2
 relinquish		5	VB	5
 relinquished		3	VBD	1	VBN	2
@@ -45542,24 +45783,24 @@ reload			1	VB	1
 relocate		3	NN	1	VB	2
 relocated		2	VBN	2
 relocation		5	NN	5
-reluctance		15	NN	15
-reluctant		30	JJ	30
+reluctance		16	NN	16
+reluctant		31	JJ	31
 reluctantly		5	RB	5
 rely			19	VB	11	VBP	8
 relying			5	VBG	5
 remade			1	VB	1
-remain			143	VB	97	VBP	46
+remain			145	VB	99	VBP	46
 remainder		18	NN	18
-remained		94	VBD	76	VBN	18
-remaining		61	JJ	10	VBG	51
-remains			111	NNS	8	VBZ	103
+remained		95	VBD	77	VBN	18
+remaining		62	JJ	11	VBG	51
+remains			112	NNS	8	VBZ	104
 remake			2	NN	1	VB	1
 remaking		1	VBG	1
 remanded		1	VBD	1
-remark			32	NN	31	VB	1
-remarkable		23	JJ	23
-remarkably		16	RB	16
-remarked		4	VBD	3	VBN	1
+remark			33	NN	32	VB	1
+remarkable		27	JJ	27
+remarkably		20	RB	20
+remarked		9	VBD	8	VBN	1
 remarketings		1	NNS	1
 remarks			53	NNS	53
 remarriage		1	JJ	1
@@ -45569,14 +45810,14 @@ remedial		1	JJ	1
 remediation		1	NN	1
 remedies		5	NNS	5
 remedy			9	NN	6	VB	3
-remember		68	VB	41	VBP	27
-remembered		17	VBD	11	VBN	6
+remember		74	VB	43	VBP	31
+remembered		21	VBD	14	VBN	7
 remembering		3	VBG	3
 remembers		7	VBZ	7
 remembrance		1	NN	1
 remembrances		1	NNS	1
-remind			9	VB	6	VBP	3
-reminded		6	VBD	5	VBN	1
+remind			10	VB	7	VBP	3
+reminded		8	VBD	7	VBN	1
 reminder		14	NN	14
 reminders		3	NNS	3
 reminding		3	VBG	3
@@ -45595,20 +45836,20 @@ remodelled		2	VBN	2
 remonstrate		1	VB	1
 remonstrated		1	VBD	1
 remora			1	NNS	1
-remorse			2	NN	2
+remorse			3	NN	3
 remorseful		1	JJ	1
 remorseless		2	JJ	2
 remorselessly		1	RB	1
-remote			27	JJ	27
+remote			28	JJ	28
 remote-control		1	JJ	1
-remotely		2	RB	2
+remotely		6	RB	6
 remotest		2	JJS	2
-remount			2	VB	1	VBP	1
+remount			2	VB	2
 remounted		1	VBD	1
 removable		1	JJ	1
-removal			18	NN	18
-remove			33	VB	33
-removed			34	JJ	1	VBD	10	VBN	23
+removal			19	NN	19
+remove			34	VB	34
+removed			35	JJ	1	VBD	11	VBN	23
 remover			2	NN	2
 removes			3	VBZ	3
 removing		14	VBG	14
@@ -45619,9 +45860,10 @@ renamed			3	VBD	2	VBN	1
 render			2	VB	2
 rendered		6	VBD	2	VBN	4
 rendering		5	NN	4	VBG	1
-rendezvous		7	NN	6	VB	1
+rendezvous		3	NN	2	VB	1
 rendezvoused		1	VBD	1
 rendition		4	NN	4
+renegade		1	NN	1
 renege			2	VB	2
 reneged			1	VBN	1
 reneging		1	VBG	1
@@ -45631,7 +45873,7 @@ renew			5	VB	5
 renewable		2	JJ	2
 renewal			7	NN	7
 renewals		1	NNS	1
-renewed			27	JJ	4	VBD	6	VBN	17
+renewed			28	JJ	5	VBD	6	VBN	17
 renewing		11	VBG	11
 renews			1	VBZ	1
 rennet			1	NN	1
@@ -45644,7 +45886,7 @@ renovating		1	VBG	1
 renovation		2	NN	2
 renown			1	NN	1
 renowned		6	JJ	4	VBN	2
-rent			37	NN	28	VB	9
+rent			38	NN	30	VB	8
 rent-free		1	RB	1
 rental			12	JJ	8	NN	4
 rentals			2	NNS	2
@@ -45659,6 +45901,7 @@ reopen			8	VB	8
 reopened		5	VBD	3	VBN	2
 reopening		2	VBG	2
 reopens			1	VBZ	1
+reorganised		1	VBD	1
 reorganization		60	NN	60
 reorganize		4	VB	4
 reorganized		4	VBN	4
@@ -45669,8 +45912,8 @@ repackaged		1	VBN	1
 repackaging		1	VBG	1
 repaid			11	VBD	2	VBN	9
 repainted		2	VBN	2
-repair			33	NN	20	VB	13
-repaired		5	VBN	5
+repair			34	NN	21	VB	13
+repaired		6	VBN	6
 repairing		2	VBG	2
 repairs			17	NNS	17
 reparations		2	NNS	2
@@ -45688,7 +45931,7 @@ repayment		7	NN	7
 repeal			12	NN	7	VB	5
 repealed		2	VBN	2
 repeals			1	VBZ	1
-repeat			15	NN	5	VB	10
+repeat			17	NN	5	VB	12
 repeated		31	JJ	3	VBD	12	VBN	16
 repeatedly		19	RB	19
 repeaters		1	NNS	1
@@ -45724,19 +45967,19 @@ replica			5	NN	5
 replicate		3	VB	3
 replicated		2	VBN	2
 replicating		1	VBG	1
-replied			16	VBD	15	VBN	1
-replies			5	NNS	1	VBZ	4
-reply			22	NN	19	VB	3
+replied			17	VBD	16	VBN	1
+replies			6	NNS	2	VBZ	4
+reply			25	NN	22	VB	3
 replying		1	VBG	1
 repond			1	VB	1
-report			299	NN	232	VB	61	VBP	6
+report			306	NN	238	VB	62	VBP	6
 reportage		2	NN	2
-reported		255	JJ	2	VBD	187	VBN	66
+reported		259	JJ	2	VBD	188	VBN	69
 reportedly		17	RB	17
 reporter		17	NN	17
-reporter.Oh		1	VB	1
-reporters		27	NNS	27
-reporting		36	NN	14	VBG	22
+reporter.Oh		1	JJ	1
+reporters		28	NNS	28
+reporting		36	NN	13	VBG	23
 reportnot		1	NN	1
 reports			131	NNS	113	VBZ	18
 reposed			4	VBN	4
@@ -45764,7 +46007,7 @@ repressive		2	JJ	2
 repriced		1	VBN	1
 reprieve		3	NN	3
 reprieved		1	VBN	1
-reprimand		1	NN	1
+reprimand		2	NN	1	VB	1
 reprimanded		3	VBD	1	VBN	2
 reprimands		1	NNS	1
 reprint			2	NN	1	VB	1
@@ -45784,12 +46027,12 @@ reproducing		1	VBG	1
 reproduction		5	NN	5
 reproductions		1	NNS	1
 reproductive		3	JJ	3
-reproof			2	NN	2
+reproof			2	JJ	1	NN	1
 reprove			1	VB	1
 reps			1	NNS	1
-reptile			2	JJ	1	NN	1
-reptiles		5	NNS	5
-republic		5	NN	5
+reptile			2	JJ	2
+reptiles		6	NNS	6
+republic		6	NN	6
 republics		4	NNS	4
 repudiate		3	VB	3
 repudiation		1	NN	1
@@ -45800,19 +46043,19 @@ repurchase		9	JJ	1	NN	5	VB	1	VBD	2
 repurchased		3	VBD	2	VBN	1
 repurchasing		1	VBG	1
 reputable		5	JJ	5
-reputation		63	NN	63
+reputation		65	NN	65
 reputation?		1	NN	1
 reputations		1	NNS	1
 repute			1	NN	1
 reputed			5	JJ	3	VBN	2
 reputedly		2	RB	2
-request			57	NN	54	VB	3
+request			61	NN	58	VB	3
 requested		15	VBD	4	VBN	11
 requesting		5	VBG	5
 requests		18	NNS	18
 requiem			1	NN	1
 require			76	VB	57	VBP	19
-required		99	JJ	10	VBD	16	VBN	73
+required		105	JJ	10	VBD	17	VBN	78
 required?		1	NN	1
 requirement		14	NN	14
 requirements		57	NNS	57
@@ -45829,17 +46072,17 @@ reschedule		1	VB	1
 rescheduled		2	VBD	1	VBN	1
 rescind			6	VB	6
 rescinded		3	VBD	3
-rescue			22	NN	14	VB	8
+rescue			23	NN	15	VB	8
 rescued			4	VBD	4
 rescuers		2	NNS	2
 rescues			2	NNS	1	VBZ	1
-research		219	NN	218	VB	1
+research		220	NN	219	VB	1
 research-and-production	1	JJ	1
 research-based		3	JJ	3
 research.		1	CD	1
 researched		5	VBN	5
 researcher		11	NN	11
-researchers		65	NNS	65
+researchers		66	NNS	66
 researches		3	VBZ	3
 researching		2	VBG	2
 reseated		1	VBD	1
@@ -45861,7 +46104,7 @@ resentments		3	NNS	3
 resents			1	VBZ	1
 reservation		5	NN	5
 reservations		9	NNS	9
-reserve			26	NN	24	VBP	2
+reserve			27	NN	25	VBP	2
 reserved		24	JJ	7	VBD	2	VBN	15
 reserves		71	NNS	71
 reserving		3	VBG	3
@@ -45888,10 +46131,10 @@ residing		1	VBG	1
 residual		1	JJ	1
 residue			1	NN	1
 residues		2	NNS	2
-resign			19	VB	19
+resign			21	VB	21
 resignation		57	NN	57
 resignations		9	NNS	9
-resigned		65	JJ	4	VBD	57	VBN	4
+resigned		67	JJ	4	VBD	58	VBN	5
 resigning		8	VBG	8
 resilience		3	NN	3
 resilience.		1	NN	1
@@ -45900,65 +46143,65 @@ resilient		6	JJ	6
 resiliently		1	RB	1
 resin			3	NN	3
 resins			1	NNS	1
-resist			20	VB	20
-resistance		37	NN	37
+resist			21	VB	20	VBP	1
+resistance		38	NN	38
 resistant		8	JJ	8
-resisted		13	VBD	6	VBN	7
-resisting		4	VBG	4
+resisted		14	VBD	7	VBN	7
+resisting		5	VBG	5
 resists			1	VBZ	1
 resold			4	VB	1	VBN	2	VBP	1
 resolute		3	JJ	3
 resolutely		2	RB	2
-resolution		20	NN	20
+resolution		21	NN	21
 resolutions		10	NNS	10
-resolve			26	NN	7	VB	19
-resolved		25	JJ	1	VBD	7	VBN	17
-resolving		1	VBG	1
+resolve			27	NN	7	VB	20
+resolved		27	JJ	1	VBD	7	VBN	19
+resolving		2	VBG	2
 resonance		1	NN	1
 resonant		2	JJ	2
 resonate		1	VB	1
 resonated		2	VBD	2
 resonates		1	VBZ	1
 resort			32	NN	29	VB	2	VBP	1
-resorted		3	VBN	3
+resorted		3	JJ	1	VBN	2
 resorting		1	VBG	1
 resorts			3	NNS	3
 resound			1	VB	1
 resounded		3	VBD	3
 resounding		6	JJ	6
-resource		1	NN	1
+resource		2	NN	2
 resourceful		4	JJ	4
 resources		68	NNS	68
-respect			43	NN	37	VB	6
+respect			46	IN	2	NN	38	VB	6
 respectability		4	NN	4
 respectable		11	JJ	11
 respectably		1	RB	1
-respected		17	JJ	4	VBD	2	VBN	11
+respected		18	JJ	5	VBD	2	VBN	11
 respecter		1	NN	1
 respectful		2	JJ	2
 respectfully		1	RB	1
 respective		6	JJ	6
 respectively		14	RB	14
-respects		8	NNS	6	VBZ	2
+respects		9	NNS	7	VBZ	2
 respiration		2	NN	2
 respiratory		2	JJ	2
 respire			1	VBP	1
 respite			1	NN	1
 resplendent		4	JJ	4
-respond			24	VB	23	VBP	1
-responded		30	VBD	26	VBN	4
+respond			26	VB	24	VBP	2
+responded		31	VBD	27	VBN	4
 respondents		5	NNS	5
 responding		15	VBG	15
 responds		4	VBZ	4
-response		97	NN	97
+response		99	IN	1	NN	98
 responses		9	NNS	9
-responsibilities	28	NNS	28
+responsibilities	30	NNS	30
 responsibility		76	NN	76
-responsible		66	JJ	65	RB	1
+responsible		67	JJ	66	RB	1
 responsiblilty		1	NN	1
 responsibly		3	RB	3
 responsive		7	JJ	7
-rest			121	NN	110	VB	10	VB|NN	1
+rest			130	NN	119	VB	10	VB|NN	1
 rest-home		1	NN	1
 restarted		2	VBD	1	VBN	1
 restarters		1	NNS	1
@@ -45966,11 +46209,11 @@ restate			1	VB	1
 restated		14	JJ	3	VBD	2	VBN	9
 restatement		2	NN	2
 restating		1	VBG	1
-restaurant		45	NN	45
-restaurants		27	NNS	27
+restaurant		46	NN	46
+restaurants		29	NNS	29
 rested			10	JJ	1	VBD	9
 restful			2	JJ	2
-resting			7	VBG	7
+resting			8	VBG	8
 restitution		3	NN	3
 restive			3	JJ	3
 restless		5	JJ	5
@@ -45979,17 +46222,17 @@ restock			1	VB	1
 restoration		9	NN	9
 restorative		2	JJ	1	NN	1
 restore			17	VB	17
-restored		12	VBD	3	VBN	9
+restored		13	VBD	3	VBN	10
 restorer		1	NN	1
 restoring		6	VBG	6
 restrain		9	VB	9
 restrained		2	JJ	2
 restraining		6	JJ	3	NN	1	VBG	2
-restraint		11	NN	11
+restraint		12	NN	12
 restraints		6	NNS	6
-restrict		11	VB	10	VBP	1
-restricted		19	JJ	8	VBD	2	VBN	9
-restricting		4	VBG	4
+restrict		12	VB	11	VBP	1
+restricted		20	JJ	8	VBD	2	VBN	10
+restricting		6	VBG	6
 restriction		11	NN	11
 restrictions		58	NNS	58
 restrictive		8	JJ	8
@@ -45998,17 +46241,18 @@ restroom		1	NN	1
 restructure		15	NN	2	VB	13
 restructured		11	VBD	2	VBN	9
 restructures		2	VBZ	2
-restructuring		111	NN	93	VBG	18
+restructuring		111	NN	92	VBG	19
 restructurings		2	NNS	2
 rests			1	VBZ	1
 restyled		1	JJ	1
 resubmit		1	VB	1
-result			201	NN	153	VB	45	VBP	3
+result			208	NN	161	VB	44	VBP	3
 resultant		2	JJ	2
 resulted		29	VBD	17	VBN	12
 resulting		24	JJ	2	VBG	21	VBG|JJ	1
-results			196	NNS	193	VBZ	3
+results			199	NNS	195	VBZ	4
 results-oriented	1	JJ	1
+results.		1	NN	1
 resume			24	VB	24
 resumed			17	VBD	15	VBN	2
 resumes			3	NNS	1	VBZ	2
@@ -46058,11 +46302,11 @@ retina			3	NN	3
 retinae			1	NN	1
 retinal			1	JJ	1
 retinoblastoma		7	NN	7
-retire			17	VB	14	VBP	3
-retired			48	JJ	17	VBD	20	VBN	11
+retire			18	VB	15	VBP	3
+retired			50	JJ	17	VBD	20	VBN	13
 retiree			2	NN	2
 retirees		2	NNS	2
-retirement		51	NN	51
+retirement		52	NN	52
 retirement-savings	1	JJ	1
 retirements		1	NNS	1
 retires			3	VBZ	3
@@ -46095,10 +46339,10 @@ retrogressed		1	VBD	1
 retrogressive		1	JJ	1
 retrospective		1	NN	1
 retry			1	VB	1
-return			186	JJ	1	NN	120	VB	62	VBP	3
-returned		69	VBD	47	VBN	22
+return			191	JJ	1	NN	122	VB	65	VBP	3
+returned		75	VBD	53	VBN	22
 returning		15	VBG	15
-returns			56	NNS	51	VBZ	5
+returns			56	NNS	50	VBZ	6
 reunification		3	NN	3
 reunion			5	NN	5
 reunions		1	NNS	1
@@ -46110,13 +46354,13 @@ revalued		1	VBN	1
 revamp			1	VB	1
 revamped		6	VBD	1	VBN	5
 revamping		4	NN	1	VBG	3
-reveal			25	VB	17	VBP	8
-revealed		12	VBD	9	VBN	3
+reveal			26	VB	18	VBP	8
+revealed		13	VBD	10	VBN	3
 revealing		8	JJ	5	VBG	3
 reveals			3	VBZ	3
 revel			2	VBP	2
 revelation		2	NN	2
-revelations		7	NNS	7
+revelations		8	NNS	8
 revelers		1	NNS	1
 reveling		1	VBG	1
 revelling		1	VBG	1
@@ -46124,7 +46368,7 @@ revelry			1	NN	1
 revels			1	NNS	1
 revenge			5	NN	4	VB	1
 revengeful		1	JJ	1
-revenue			174	NN	174
+revenue			175	NN	175
 revenue-desperate	1	JJ	1
 revenue-raising		1	JJ	1
 revenues		24	NNS	24
@@ -46154,7 +46398,7 @@ reviewing		12	VBG	12
 reviews			12	NNS	10	VBZ	2
 reviled			1	VBN	1
 revise			7	VB	7
-revised			30	JJ	7	VBD	5	VBN	18
+revised			31	JJ	7	VBD	5	VBN	19
 revising		4	VBG	4
 revision		10	NN	10
 revisionist		2	JJ	2
@@ -46164,7 +46408,7 @@ revisited		1	VBN	1
 revitalization		1	NN	1
 revitalizing		1	VBG	1
 revival			13	NN	13
-revive			17	VB	17
+revive			19	VB	19
 revived			12	VBN	12
 reviving		2	VBG	2
 revoke			2	VB	2
@@ -46173,7 +46417,7 @@ revolted		2	VBN	2
 revolting		2	JJ	2
 revoltingly		1	RB	1
 revolts			3	NNS	2	VBZ	1
-revolution		47	NN	47
+revolution		48	NN	48
 revolutionaries		6	NNS	6
 revolutionary		32	JJ	27	NN	5
 revolutionarys		1	NNS	1
@@ -46183,12 +46427,12 @@ revolutionized		5	VBD	5
 revolutions		2	NNS	2
 revolve			2	VB	2
 revolved		3	VBD	1	VBN	2
-revolver		4	NN	4
+revolver		5	NN	5
 revolvers		1	NNS	1
 revolves		3	VBZ	3
 revolving		5	JJ	2	VBG	3
 revue			1	NN	1
-revulsion		1	NN	1
+revulsion		2	NN	2
 revved			2	VBN	2
 reward			20	NN	12	VB	8
 rewarded		5	VBN	5
@@ -46210,7 +46454,7 @@ rhetorical		2	JJ	2
 rhetorician		1	NN	1
 rheumatic		2	JJ	2
 rheumaticky		1	JJ	1
-rheumatism		1	NN	1
+rheumatism		3	NN	3
 rhinestone		1	NN	1
 rhinestones		1	NNS	1
 rhino			1	NN	1
@@ -46229,16 +46473,16 @@ rib			4	NN	4
 ribald			1	JJ	1
 ribbed			2	JJ	2
 ribbing			1	VBG	1
-ribbon			12	JJ	2	NN	10
+ribbon			12	JJ	5	NN	7
 ribbons			4	NNS	4
 ribosomal		1	JJ	1
 ribs			7	NNS	7
 rice			31	NN	31
 rice-processing		1	JJ	1
-rich			96	JJ	96
-richer			7	JJR	7
-riches			2	NNS	2
-richest			6	JJS	6
+rich			101	JJ	101
+richer			8	JJR	8
+riches			3	NN	1	NNS	2
+richest			7	JJS	7
 richly			16	RB	16
 richness		3	NN	3
 ricked			1	VBD	1
@@ -46247,10 +46491,10 @@ ricks			1	NNS	1
 rickshaw		1	NN	1
 ricochet		1	NN	1
 ricocheted		1	VBD	1
-rid			19	JJ	5	VB	6	VBN	7	VBN|JJ	1
+rid			19	JJ	6	VB	6	VBN	6	VBN|JJ	1
 riddle			3	NN	3
 riddled			8	JJ	8
-ride			27	NN	13	VB	10	VBP	4
+ride			29	NN	14	VB	12	VBP	3
 rider			11	NN	11
 riders			4	NNS	4
 rides			2	NNS	2
@@ -46259,22 +46503,22 @@ ridged			2	JJ	2
 ridges			4	NNS	4
 ridicule		3	NN	3
 ridiculed		2	VBN	2
-ridiculous		17	JJ	17
+ridiculous		21	JJ	21
 ridiculously		1	RB	1
-riding			28	NN	2	VBG	26
+riding			30	NN	3	VBG	27
 rife			3	JJ	3
 riffled			3	VBD	2	VBN	1
 riffraff		1	NN	1
-rifle			22	JJ	6	NN	14	RB	2
+rifle			23	JJ	6	NN	14	RB	3
 rifled			2	VBD	1	VBN	1
 rifleman		1	NN	1
 rifles			7	NNS	7
 rift			5	NN	5
 rifts			2	NNS	2
-rig			9	NN	8	VB	1
+rig			10	NN	8	VB	2
 rig-out			1	NN	1
-rigged			7	VBD	2	VBN	5
-right			364	JJ	114	NN	160	RB	88	VB	2
+rigged			10	VBD	2	VBN	8
+right			384	JJ	126	NN	162	RB	94	VB	2
 right-angling		1	NN	1
 right-hand		3	JJ	3
 right-handed		2	JJ	2
@@ -46288,10 +46532,11 @@ right-wing		6	JJ	6
 right-winger		1	NN	1
 right-wingers		1	NNS	1
 right.			1	NN	1
+right?Im		1	NN	1
 righted			2	VBN	2
 righteous		3	JJ	2	NN	1
 righteousness		1	NN	1
-rightful		4	JJ	2	RB	2
+rightful		8	JJ	6	RB	2
 righthander		1	NN	1
 rightists		1	NNS	1
 rightly			3	RB	3
@@ -46316,8 +46561,8 @@ rimmed			2	JJ	2
 rims			2	NNS	2
 rind			2	NN	2
 rinds			2	NNS	2
-ring			56	NN	37	VB	14	VBP	5
-ring.			1	NN	1
+ring			57	NN	39	VB	14	VBP	4
+ring.			1	FW	1
 ringer			5	NN	5
 ringers			21	NNS	21
 ringing			21	JJ	1	NN	8	VBG	12
@@ -46340,43 +46585,45 @@ ripe			9	JJ	9
 ripen			3	VBP	3
 ripened			1	VBN	1
 ripeness		1	NN	1
-ripening		2	JJ	2
+ripening		2	JJ	1	VBG	1
 ripens			1	VBZ	1
 riposte			1	NN	1
 ripped			10	VBD	6	VBN	4
 ripple			4	NN	3	VB	1
 rippled			4	VBN	4
-ripples			7	NNS	7
+ripples			7	NNS	6	VBZ	1
 rippling		1	VBG	1
-rise			182	NN	113	VB	60	VBP	9
-risen			32	VBN	32
-riser			1	NN	1
-rises			23	NNS	14	VBZ	9
+rise			183	NN	114	VB	60	VBP	9
+risen			33	VBN	33
+riser			2	NN	2
+rises			24	NNS	12	VBZ	12
 risible			1	JJ	1
-rising			86	JJ	1	NN	1	VBG	84
-risk			123	NN	106	VB	13	VBP	4
+rising			91	JJ	1	NN	1	VBG	89
+risk			130	NN	109	VB	17	VBP	4
 risk-averse		1	JJ	1
 risk-free		2	JJ	2
-risked			3	VBD	3
+risked			4	VBD	4
 riskier			7	JJR	7
 risking			2	VBG	2
-risks			54	NNS	51	VBZ	3
+risks			56	NNS	53	VBZ	3
 risky			15	JJ	15
 risottos		1	NNS	1
 rite			3	NN	3
 rites			4	NNS	4
 ritorno			1	FW	1
-ritual			10	JJ	2	NN	8
+ritual			12	JJ	2	NN	10
 ritualistic		1	JJ	1
-rituals			4	NNS	4
+rituals			5	NNS	5
 ritzy			1	JJ	1
-rival			37	JJ	26	NN	10	VB	1
+rival			39	JJ	26	NN	10	VB	3
 rival-bashing		1	JJ	1
+rivalled		1	VBN	1
 rivalries		1	NNS	1
 rivalry			6	NN	6
-rivals			28	NNS	26	VBZ	2
+rivals			30	NNS	27	VBZ	3
 riven			1	VBN	1
-river			99	NN	99
+river			101	NN	101
+riverbank		1	JJ	1
 riverfront		1	NN	1
 rivers			16	NNS	16
 riverside		3	NN	3
@@ -46384,14 +46631,14 @@ rivet			1	JJ	1
 riveted			4	VBD	2	VBN	2
 riveting		3	JJ	3
 roach			1	NN	1
-road			186	JJ	1	NN	185
+road			192	JJ	1	NN	190	NNP	1
 road-builders		1	NNS	1
 road-building		1	NN	1
 road?			1	NN	1
 roadblock		4	NN	4
 roadblocks		2	NNS	2
 roadhouse		1	NN	1
-roads			37	NNS	37
+roads			38	NNS	38
 roadside		5	JJ	1	NN	4
 roadway			5	NN	5
 roadways		1	NNS	1
@@ -46401,16 +46648,16 @@ roamed			3	VBD	3
 roaming			1	VBG	1
 roar			14	NN	13	VB	1
 roared			16	VBD	8	VBN	8
-roaring			7	JJ	2	NN	1	RB	1	VBG	3
-roars			2	VBZ	2
+roaring			7	JJ	2	NN	2	RB	1	VBG	2
+roars			2	NNS	1	VBZ	1
 roast			12	NN	11	VB	1
 roasted			7	JJ	7
-roasting		7	JJ	5	NN	1	VBG	1
+roasting		7	JJ	4	NN	1	VBG	2
 rob			4	VB	3	VBP	1
 robbed			10	VBN	10
 robber			1	NN	1
 robberies		5	NNS	5
-robbers			3	NNS	3
+robbers			4	NNS	4
 robbery			2	NN	2
 robbing			2	VBG	2
 robe			9	NN	9
@@ -46423,7 +46670,7 @@ robots			5	NNS	5
 robust			19	JJ	19
 robustly		1	RB	1
 robustness		1	NN	1
-rock			58	NN	56	VB	2
+rock			62	NN	60	VB	2
 rock'n			1	NN	1
 rock-bottom		2	JJ	1	NN	1
 rock-hard		2	JJ	2
@@ -46439,11 +46686,11 @@ rocketing		1	VBG	1
 rockets			8	NNS	8
 rocking			5	VBG	5
 rocking-chair		1	NN	1
-rocks			49	NNS	49
+rocks			50	NNS	50
 rocky			9	JJ	9
 rococo			2	JJ	1	NN	1
-rod			8	NN	8
-rode			12	VBD	12
+rod			9	NN	9
+rode			13	VBD	13
 rodents			5	NNS	5
 rodeo			1	NN	1
 rods			6	NNS	6
@@ -46452,14 +46699,14 @@ rogues			2	NNS	2
 roguish			2	JJ	2
 roil			1	VB	1
 roiling			3	VBG	3
-role			132	NN	132
-role-expectations	1	NNS	1
-role-playing		2	NN	2
-roles			20	NNS	20
+role			140	NN	140
+role-expectations	1	JJ	1
+role-playing		3	NN	3
+roles			21	NNS	21
 roll			39	NN	25	VB	11	VBP	3
 rollback		1	NN	1
 rollbacks		1	NNS	1
-rolled			42	JJ	1	VBD	26	VBN	15
+rolled			42	JJ	1	VBD	27	VBN	14
 rolled-up		2	JJ	2
 roller			5	NN	5
 roller-coaster		3	NN	3
@@ -46480,19 +46727,19 @@ romanticize		1	VB	1
 romanticized		3	VBN	3
 romantics		1	NNS	1
 romp			1	VBP	1
-romped			2	VBN	2
+romped			2	VBD	1	VBN	1
 romping			1	VBG	1
 romps			1	NNS	1
-roof			39	NN	39
+roof			43	NN	43
 roof-beam		1	NN	1
 roof-crush		4	JJ	4
-roofed			3	JJ	1	VBN	2
+roofed			3	JJ	3
 roofing			4	NN	4
 roofless		2	JJ	2
-roofs			11	NNS	11
+roofs			13	NNS	13
 rooftops		3	NNS	3
 rookie			1	NN	1
-room			284	NN	283	VB	1
+room			306	NN	305	VB	1
 room-mate		1	NN	1
 room-rate		1	JJ	1
 roomed			1	VBD	1
@@ -46500,7 +46747,7 @@ roomette		1	NN	1
 roomful			3	NN	3
 roomier			1	JJR	1
 roommate		3	NN	3
-rooms			53	NNS	53
+rooms			56	NNS	56
 rooms?			1	NNS	1
 roomy			1	JJ	1
 roost			4	NN	1	VB	3
@@ -46510,17 +46757,17 @@ root-canal		1	NN	1
 rooted			10	JJ	5	VBN	5
 rooting			1	VBG	1
 rootless		3	JJ	3
-roots			17	NNS	17
-rope			20	NN	20
+roots			18	NNS	18
+rope			21	NN	21
 rope-sight		1	NN	1
 roped			1	VBN	1
 ropes			8	NNS	8
 ropey			2	JJ	2
 rosarians		1	NNS	1
 rosary			1	NN	1
-rose			459	NN	2	VBD	457
+rose			464	NN	2	VBD	462
 roseate			1	JJ	1
-roses			17	NNS	17
+roses			18	NNS	18
 rosewood		1	NN	1
 roster			1	NN	1
 rostrum			1	NN	1
@@ -46542,19 +46789,20 @@ rotunda			1	NN	1
 roubles			1	NNS	1
 rouge			1	NN	1
 rouged			1	JJ	1
-rough			49	JJ	49
+rough			55	JJ	55
 rough-hewn		2	JJ	2
 roughened		1	VBD	1
+rougher			1	JJR	1
 roughest		1	JJS	1
 roughhewn		1	JJ	1
-roughly			51	RB	51
+roughly			52	RB	52
 roughnecks		1	NNS	1
 roulette		1	NN	1
-round			236	JJ	9	NN	177	RB	5	VB	33	VBP	12
+round			254	IN	11	JJ	9	NN	198	RB	11	VB	14	VBP	11
 round-table		1	JJ	1
 round-the-clock		1	JJ	1
 round-trip		1	JJ	1
-roundabout		3	JJ	2	NN	1
+roundabout		4	JJ	2	NN	2
 roundabouts		1	NNS	1
 rounded			7	JJ	2	VBD	4	VBN	1
 rounders		1	NNS	1
@@ -46570,9 +46818,9 @@ rout			6	NN	5	VB	1
 route			27	NN	27
 routed			2	VBN	2
 routes			13	NNS	12	VBZ	1
-routine			30	JJ	20	NN	10
+routine			33	JJ	20	NN	13
 routinely		7	RB	7
-routines		2	NNS	2
+routines		3	NNS	3
 rove			2	VB	1	VBP	1
 roved			2	VBD	2
 row			48	NN	47	VB	1
@@ -46590,16 +46838,16 @@ royalties		7	NNS	7
 royalty			4	NN	4
 rsums			1	NNS	1
 rub			7	NN	3	VB	4
-rubbed			14	VBD	14
-rubber			23	JJ	3	NN	20
+rubbed			18	VBD	18
+rubber			24	JJ	3	NN	21
 rubber-necking		1	VBG	1
 rubber-stamp		2	VB	2
 rubbers			1	NNS	1
 rubbery			3	JJ	2	NN	1
-rubbing			3	VBG	3
-rubbish			15	JJ	6	NN	9
+rubbing			4	VBG	4
+rubbish			16	JJ	7	NN	9
 rubbishy		2	JJ	2
-rubble			10	NN	10
+rubble			11	NN	11
 rubicund		2	JJ	2
 rubies			3	NNS	3
 ruble			10	FW	1	NN	9
@@ -46610,12 +46858,12 @@ rucks			1	NNS	1
 rucksack		3	NN	3
 rudder			5	NN	5
 ruddy			2	JJ	1	NN	1
-rude			25	JJ	25
+rude			26	JJ	26
 rudely			1	RB	1
 rudeness		1	NN	1
 rudeness!		1	NN	1
 rudimentary		5	JJ	5
-rudiments		3	NNS	3
+rudiments		3	NN	2	NNS	1
 rue			1	VB	1
 rueful			2	JJ	2
 ruefully		1	RB	1
@@ -46627,22 +46875,22 @@ rug			11	NN	11
 rugby			8	JJ	5	NN	3
 rugged			6	JJ	6
 ruggedly		1	RB	1
-rugs			3	NNS	3
-ruin			10	NN	1	VB	7	VBP	2
-ruined			7	VBN	7
-ruining			3	VBG	3
+rugs			4	NNS	4
+ruin			10	NN	1	VB	9
+ruined			9	VBN	9
+ruining			5	VBG	5
 ruinous			2	JJ	2
 ruins			12	NNS	12
-rule			87	NN	69	VB	17	VBP	1
+rule			88	NN	69	VB	18	VBP	1
 rule-making		1	NN	1
-ruled			35	VBD	22	VBN	13
+ruled			35	VBD	23	VBN	12
 ruler			6	NN	6
 rulers			15	NNS	15
-rules			132	NNS	131	VBZ	1
+rules			135	NNS	134	VBZ	1
 ruling			69	JJ	3	NN	55	VBG	11
 rulings			5	NNS	5
 rum			3	NN	3
-rumble			8	NN	3	VBP	5
+rumble			9	NN	3	VBP	6
 rumbled			1	VBD	1
 rumbling		7	NN	2	VBG	5
 rumblings		1	NNS	1
@@ -46656,12 +46904,13 @@ rumor			4	NN	4
 rumor-happy		1	JJ	1
 rumored			17	JJ	2	VBD	1	VBN	14
 rumors			34	NNS	34
-rumour			10	NN	10
+rumour			11	NN	11
 rumoured		1	VBN	1
-rumours			13	JJ	1	NNS	11	VBZ	1
+rumours			14	JJ	2	NNS	11	VBZ	1
 rump			3	NN	3
 rumpled			3	JJ	3
-run			245	NN	51	VB	101	VBN	62	VBP	31
+rumpus			4	NN	4
+run			251	NN	54	VB	101	VBN	65	VBP	31
 run-down		7	JJ	6	NN	1
 run-in			5	NN	5
 run-of-the-mill		2	JJ	2
@@ -46678,14 +46927,14 @@ rungs			3	NNS	3
 runner			11	NN	11
 runner-up		1	NN	1
 runners			10	NNS	10
-runners-up		1	NNS	1
-running			126	JJ	2	NN	7	VBG	117
+runners-up		1	NN	1
+running			139	JJ	2	NN	7	VBG	130
 runny			5	JJ	5
 runoff			2	NN	2
-runs			63	NNS	13	VBZ	50
+runs			65	NNS	11	VBZ	54
 runt			1	NN	1
 runup			1	NN	1
-runway			7	NN	7
+runway			8	NN	8
 runways			1	NNS	1
 rupee			1	NN	1
 rupees			3	NNS	3
@@ -46695,29 +46944,30 @@ ruptures		1	NNS	1
 rupturing		1	VBG	1
 rural			44	JJ	44
 ruse			4	NN	4
-rush			44	NN	26	VB	14	VBP	4
+rush			47	NN	29	VB	14	VBP	4
 rush-hour		2	JJ	1	NN	1
 rush-hours		1	NNS	1
-rushed			38	VBD	27	VBN	11
+rush?			1	NN	1
+rushed			39	VBD	28	VBN	11
 rushes			2	NNS	1	VBZ	1
-rushing			13	VBG	13
+rushing			14	VBG	14
 rusk			1	NN	1
 rusks			1	NNS	1
 rust			7	NN	7
 rusted			2	VBN	2
 rustic			1	JJ	1
 rusticated		1	VBN	1
-rusting			3	JJ	3
+rusting			3	JJ	1	VBG	2
 rustle			4	NN	4
-rustled			1	VBD	1
-rustling		2	NN	2
+rustled			2	VBD	2
+rustling		5	NN	2	VBG	3
 rustlings		1	NNS	1
 rusty			13	JJ	13
 rut			4	NN	4
 ruthless		14	JJ	14
 ruthlessly		2	RB	2
 ruthlessness		4	NN	4
-ruts			4	NNS	4
+ruts			5	NNS	5
 rutted			2	JJ	2
 rye			4	NN	4
 s			1	PRP	1
@@ -46732,10 +46982,10 @@ sabre			1	NN	1
 sac			3	NN	3
 saccharin		1	NN	1
 saccharine		2	JJ	2
-sack			11	NN	10	VB	1
+sack			12	NN	11	VB	1
 sackcloth		1	NN	1
 sacked			5	VBD	5
-sacking			5	VBG	5
+sacking			6	VBG	6
 sackings		2	NNS	2
 sacklike		1	JJ	1
 sackloads		1	NNS	1
@@ -46750,13 +47000,14 @@ sacrilege		1	NN	1
 sacrilegious		2	JJ	2
 sacristy		1	NN	1
 sacrosanct		2	JJ	2
-sad			27	JJ	27
+sad			33	JJ	33
 saddened		3	JJ	1	VBD	2
 saddens			1	VBZ	1
-saddle			9	JJ	1	NN	7	VB	1
+sadder			1	JJR	1
+saddle			10	JJ	1	NN	8	VB	1
 saddle-bags		1	NNS	1
 saddlebag		1	NN	1
-saddled			5	VBD	2	VBN	3
+saddled			6	VBD	3	VBN	3
 saddlers		2	NNS	2
 saddles			1	NNS	1
 sadistic		3	JJ	3
@@ -46764,19 +47015,19 @@ sadists			1	NNS	1
 sadly			6	RB	6
 sadness			4	NN	4
 safari			4	NN	4
-safe			57	JJ	55	NN	2
+safe			59	JJ	57	NN	2
 safe-conduct		1	NN	1
 safe-deposit		1	JJ	1
-safe?			1	NN	1
+safe?			1	NNS	1
 safeguard		5	NN	1	VB	4
 safeguarded		1	VBN	1
 safeguarding		2	VBG	2
 safeguards		3	NNS	3
 safekeeping		2	NN	2
-safely			13	RB	13
-safer			9	JJR	9
+safely			14	RB	14
+safer			10	JJR	10
 safest			2	JJS	2
-safety			88	NN	88
+safety			93	NN	93
 safety-seat		1	NN	1
 safety-valve		2	NN	2
 safety?			1	NNP	1
@@ -46789,10 +47040,10 @@ sage			3	JJ	1	NN	2
 sages			2	NNS	2
 sagged			8	VBD	7	VBN	1
 sagging			6	NN	1	VBG	5
-said			4313	VBD	4249	VBN	64
+said			4338	VBD	4274	VBN	64
 sail			8	NN	4	VB	4
 sailed			14	VBD	14
-sailing			10	NN	9	VBG	1
+sailing			10	NN	7	VBG	3
 sailings		2	NNS	2
 sailor			5	NN	5
 sailors			4	NNS	4
@@ -46806,20 +47057,20 @@ sakedont		1	NN	1
 salaamed		1	VBN	1
 salaams			1	NNS	1
 salable			1	JJ	1
-salad			8	NN	8
+salad			13	NN	13
 salads			1	NNS	1
 salamanders		1	NNS	1
 salami			2	NN	2
 salaried		3	JJ	3
 salaries		14	NNS	14
-salary			31	NN	31
+salary			34	NN	34
 salarymen		2	NNS	2
 sale			272	NN	272
 saleable		1	JJ	1
-sales			559	JJ	5	NNS	554
+sales			561	JJ	5	NNS	556
 sales-tax		3	JJ	1	NN	2
 sales?			1	NNP	1
-salesman		12	NN	12
+salesman		13	NN	13
 salesmana		1	JJ	1
 salesmen		6	NNS	6
 salesperson		2	NN	2
@@ -46835,7 +47086,7 @@ salon			7	NN	7
 salons			1	NNS	1
 saloon			10	NN	10
 saloons			2	NNS	2
-salt			23	JJ	1	NN	22
+salt			24	JJ	1	NN	23
 salted			4	VBD	4
 saltier			1	JJR	1
 saltwater		1	NN	1
@@ -46853,7 +47104,7 @@ salvation		5	NN	5
 salver			1	NN	1
 salvo			4	NN	4
 salvoes			3	NNS	3
-same			331	JJ	331
+same			343	JJ	342	PP	1
 sameness		2	NN	2
 samovars		1	NNS	1
 sample			12	NN	11	VB	1
@@ -46870,17 +47121,17 @@ sanctioning		1	VBG	1
 sanctions		24	NNS	23	VBZ	1
 sanctity		4	NN	4
 sanctuary		8	NN	8
-sand			55	NN	55
+sand			61	NN	61
 sandal			2	NN	2
 sandals			6	NNS	6
 sandbagged		1	VBN	1
-sandbank		1	NN	1
-sanded			5	JJ	1	VBD	1	VBN	3
+sandbank		1	JJ	1
+sanded			5	JJ	2	VBD	1	VBN	2
 sandpaper		3	NN	2	VB	1
 sands			5	NNS	5
 sandstone		2	NN	2
 sandstones		1	NNS	1
-sandwich		14	NN	14
+sandwich		15	NN	15
 sandwiched		3	VBD	1	VBN	2
 sandwiches		10	NNS	10
 sandy			9	JJ	9
@@ -46893,18 +47144,18 @@ sanitary		3	JJ	3
 sanitation		4	NN	4
 sanitation-control	1	JJ	1
 sanity			2	NN	2
-sank			28	VBD	28
+sank			33	VBD	33
 santos			1	FW	1
 sap			1	VB	1
 sapiens			1	JJ	1
 saplings		1	NNS	1
-sapped			2	VBN	2
+sapped			3	VBN	3
 sapphire		2	NN	2
 sapping			2	VBG	2
 sarakin			1	FW	1
 sarcasm			3	NN	3
 sarcastic		5	JJ	5
-sarcophagus		1	NNS	1
+sarcophagus		1	NN	1
 sardines		1	NNS	1
 sardines.		1	NN	1
 sardonic		3	JJ	3
@@ -46914,20 +47165,20 @@ sarong			2	NN	2
 sarsaparilla		1	NN	1
 sash			3	JJ	1	NN	2
 sassy			1	JJ	1
-sat			188	VBD	183	VBN	5
+sat			201	VBD	196	VBN	5
 satanic			3	JJ	3
 satchel			1	NN	1
 satchels		1	NNS	1
-satellite		21	JJ	2	NN	19
+satellite		22	JJ	2	NN	20
 satellite-TV		3	JJ	3
 satellite-delivered	1	JJ	1
 satellites		7	NNS	7
 satiate			2	VB	2
 satin			4	JJ	1	NN	3
-satire			7	NN	7
+satire			8	NN	8
 satirical		4	JJ	4
-satisfaction		14	NN	14
-satisfactorily		1	RB	1
+satisfaction		17	NN	17
+satisfactorily		2	RB	2
 satisfactory		12	JJ	12
 satisfied		21	JJ	9	VBD	1	VBN	10	VBN|JJ	1
 satisfies		1	VBZ	1
@@ -46951,14 +47202,14 @@ sauntered		2	VBD	2
 sausage			3	NN	3
 sausage-grinder		1	NN	1
 sausages		4	NNS	4
-savage			12	JJ	9	NN	3
+savage			13	JJ	10	NN	3
 savaged			1	VBN	1
 savagely		3	RB	3
 savagery		2	NN	2
 savages			1	NNS	1
-save			51	NN	1	VB	50
+save			62	IN	2	NN	1	VB	59
 save-the-earth		1	JJ	1
-saved			20	VBD	7	VBN	13
+saved			21	VBD	8	VBN	13
 savers			2	NNS	2
 savers\/investors	1	investors	1
 saves			3	VBZ	3
@@ -46978,7 +47229,7 @@ savoury			1	JJ	1
 savvier			1	JJR	1
 savviest		1	JJS	1
 savvy			2	JJ	1	NN	1
-saw			195	NN	3	VBD	192
+saw			212	NN	3	VBD	209
 sawed			1	VBD	1
 sawing			1	VBG	1
 sawmill			1	NN	1
@@ -46986,28 +47237,29 @@ sawn			1	NN	1
 sawn-off		1	NN	1
 sax			1	NN	1
 saxophone		2	NN	2
-say			629	NN	2	NNP	1	UH	3	VB	210	VBP	413
+say			641	NN	2	NNP	1	UH	3	VB	215	VBP	420
 say-so			2	NN	2
-saying			150	NN	3	VBG	147
+say?			2	VB	2
+saying			154	NN	3	VBG	151
 saying?			1	JJ	1
 sayings			2	NNS	2
-says			1315	VBZ	1315
+says			1320	VBZ	1320
 scab			2	NN	2
 scabby			1	JJ	1
 scabs			2	NNS	2
-scads			1	NNS	1
+scads			1	NN	1
 scaffold		2	NN	2
 scald			3	VB	2	VBD	1
 scalded			1	VBN	1
 scalding		5	JJ	4	RB	1
 scalds			1	NNS	1
-scale			48	JJ	1	NN	44	VB	3
+scale			53	JJ	1	NN	49	VB	3
 scale-down		1	JJ	1
 scaled			6	VBD	2	VBN	4
 scaled-back		1	JJ	1
 scaled-backed		1	JJ	1
 scaled-down		1	JJ	1
-scales			10	NNS	10
+scales			11	NNS	11
 scaling			3	NN	1	VBG	2
 scalp			3	NN	3
 scalped			1	VBN	1
@@ -47042,9 +47294,9 @@ scarcely		15	RB	15
 scarcity		3	NN	3
 scare			11	NN	8	VB	3
 scare-tactic		1	NN	1
-scared			18	JJ	7	VBD	5	VBN	6
+scared			24	JJ	11	VBD	5	VBN	8
 scares			1	VBZ	1
-scarf			12	NN	11	VBP	1
+scarf			14	NN	11	VBP	3
 scarfing		1	VBG	1
 scaring			6	VBG	6
 scarlet			9	JJ	9
@@ -47058,7 +47310,7 @@ scary			3	JJ	3
 scary.			1	NN	1
 scathing		3	JJ	3
 scatter			3	NN	2	VBP	1
-scattered		22	JJ	10	VBN	12
+scattered		27	JJ	12	VBN	15
 scattering		2	NN	2
 scatty			1	JJ	1
 scavenge		2	VB	2
@@ -47067,15 +47319,15 @@ scavengers		3	NNS	3
 scavenging		1	VBG	1
 scenario		16	NN	16
 scenarios		6	NNS	6
-scene			58	NN	58
+scene			61	NN	61
 scenery			6	NN	6
 scenes			23	NNS	23
 scenic			4	JJ	4
 scent			15	JJ	1	NN	13	VB	1
 scented			6	JJ	6
-scents			2	NNS	2
+scents			2	NNS	1	VBZ	1
 sceptic			2	NN	2
-sceptical		2	JJ	2
+sceptical		3	JJ	3
 scepticism		4	NN	4
 schedule		28	NN	26	VB	2
 scheduled		85	JJ	6	VBD	4	VBN	75
@@ -47083,8 +47335,8 @@ schedules		12	NNS	12
 scheduling		1	NN	1
 schema			2	NN	2
 schematic		2	JJ	2
-scheme			62	NN	62
-schemed			2	VBD	2
+scheme			63	NN	63
+schemed			2	VBD	1	VBN	1
 schemer			1	NN	1
 schemers		1	NNS	1
 schemes			8	NNS	8
@@ -47092,15 +47344,16 @@ scheming		1	JJ	1
 schism			1	NN	1
 schisms			1	NNS	1
 schizoid		1	JJ	1
-schizophrenia		7	NN	7
+schizophrenia		8	NN	8
 schizophrenic		5	JJ	4	NN	1
 schmoozing		1	NN	1
 scholar			12	NN	12
 scholarly		3	JJ	3
 scholars		14	NNS	14
 scholarship		9	NN	9
+scholarships		1	NNS	1
 scholastic		2	JJ	2
-school			254	NN	253	VB	1
+school			265	NN	264	VB	1
 school-board		1	NN	1
 school-district		1	NN	1
 school-improvement	1	JJ	1
@@ -47108,29 +47361,31 @@ school-leavers		1	NNS	1
 school-leavers?		1	NNP	1
 school-research		1	JJ	1
 school-sponsored	1	JJ	1
-school?			1	JJ	1
+school?			3	JJ	3
 schoolboy		2	JJ	1	NN	1
 schoolboys		3	NNS	3
 schoolchildren		5	NN	1	NNS	4
-schooldays		6	NNS	6
+schooldays		6	NN	2	NNS	4
 schooled		2	VBN	2
-schoolgirl		3	JJ	1	NN	2
+schoolgirl		3	NN	3
 schoolgirls		2	NNS	2
 schoolhouse		1	NN	1
 schooling		4	NN	4
 schoolmaster		4	NN	4
 schoolmate		1	NN	1
+schoolmates		1	NNS	1
 schoolroom		1	NN	1
-schools			80	NNS	80
+schools			86	NNS	86
 schoolteacher		4	NN	4
 sciatica		1	NN	1
-science			54	NN	54
-science.Oh,		1	JJ	1
+science			56	NN	56
+science-fiction		1	NN	1
+science.Oh,		1	NNS	1
 sciences		13	NNS	13
-scientific		68	JJ	68
-scientifically		1	RB	1
+scientific		70	JJ	70
+scientifically		2	RB	2
 scientist		14	NN	14
-scientists		62	NNS	62
+scientists		64	NNS	64
 scintillating		2	JJ	2
 scion			1	NN	1
 scions			1	NNS	1
@@ -47146,12 +47401,12 @@ scoop			5	NN	2	VB	3
 scooped			3	VBD	3
 scoopful		1	NN	1
 scoops			2	NNS	1	VBZ	1
-scope			16	NN	16
+scope			17	NN	17
 scorch			1	VB	1
 scorched		5	VBD	2	VBN	3
 scorcher		1	NN	1
-scorches		2	NNS	2
-score			21	NN	16	VB	4	VBP	1
+scorches		2	NNS	1	VBZ	1
+score			22	NN	17	VB	4	VBP	1
 score-wise		1	JJ	1
 score?			1	NN	1
 scoreboard		1	NN	1
@@ -47189,7 +47444,7 @@ scrabble		1	VB	1
 scrabbled		4	VBD	4
 scrabbling		2	VBG	2
 scram			1	VB	1
-scramble		10	NN	5	VB	3	VBP	2
+scramble		10	NN	5	VB	2	VBP	3
 scrambled		18	JJ	1	VBD	15	VBN	2
 scrambler		1	NN	1
 scrambles		2	NNS	2
@@ -47203,48 +47458,48 @@ scrapped		10	VBD	1	VBN	9
 scrapping		3	NN	1	VBG	2
 scrappy			2	JJ	2
 scraps			4	NNS	4
-scratch			9	NN	6	VB	3
+scratch			10	NN	7	VB	3
 scratched		9	VBN	9
 scratches		3	NNS	3
-scratching		6	NN	1	VBG	5
+scratching		7	NN	1	VBG	6
 scrawl			1	NN	1
-scrawled		4	VBD	3	VBN	1
+scrawled		4	VBD	4
 scrawls			1	NNS	1
 scrawny			3	JJ	3
 scream			12	NN	7	VB	4	VBP	1
-screamed		14	VBD	14
-screaming		14	VBG	14
-screams			6	NNS	1	VBZ	5
+screamed		17	VBD	17
+screaming		16	VBG	16
+screams			7	NNS	1	VBZ	6
 scree			1	NN	1
 screech			6	NN	6
 screeched		4	VBD	4
 screeching		3	JJ	1	VBG	2
-screen			46	NN	43	VB	3
+screen			47	NN	44	VB	3
 screened		5	VBD	5
 screening		9	NN	8	VBG	1
 screenings		1	NNS	1
 screenplay		3	NN	3
-screens			12	NNS	10	VBZ	2
+screens			12	NNS	9	VBZ	3
 screenwriters		1	NNS	1
 screes			1	NNS	1
-screw			13	NN	6	NNS	1	VB	5	VBD	1
+screw			15	NN	6	VB	6	VBD	3
 screwdriver		5	NN	5
 screwdrivers		1	NNS	1
-screwed			11	VBD	8	VBN	3
+screwed			12	VBD	8	VBN	4
 screwed-up		2	JJ	2
 screwing		1	VBG	1
-screws			7	NNS	7
-scribble		2	NN	2
-scribbled		4	VBD	4
+screws			8	NNS	8
+scribble		3	NN	2	VB	1
+scribbled		5	VBD	5
 scribblers		1	NNS	1
 scribbles		1	NNS	1
-scribbling		2	VBG	2
+scribbling		4	VBG	4
 scribe			1	NN	1
 scrimmage		1	NN	1
 scrimped		1	VBD	1
 scrimping		3	VBG	3
-script			20	NN	20
-scripted		2	JJ	2
+script			21	NN	21
+scripted		3	JJ	3
 scripts			11	NNS	11
 scripture		1	NN	1
 scriptures		2	NNS	2
@@ -47253,8 +47508,8 @@ scriptwriters		2	NNS	2
 scrolls			1	NNS	1
 scrounge		3	VBP	3
 scrounger		2	NN	2
-scrub			4	NN	2	VB	2
-scrubbed		6	JJ	2	VBD	2	VBN	2
+scrub			5	NN	3	VB	2
+scrubbed		6	JJ	1	VBD	3	VBN	2
 scrubbing		1	VBG	1
 scruff			1	NN	1
 scruffy			1	JJ	1
@@ -47278,7 +47533,7 @@ scuffling		2	NN	2
 scullery		1	NN	1
 sculling		1	VBG	1
 sculpted		2	VBN	2
-sculptor		2	NN	2
+sculptor		3	NN	3
 sculptors		2	NNS	2
 sculptural		1	JJ	1
 sculpture		14	NN	14
@@ -47295,7 +47550,7 @@ scuttled		8	VBD	3	VBN	5
 scythed			2	VBD	1	VBN	1
 scything		1	VBG	1
 se			1	FW	1
-sea			114	NN	114
+sea			115	NN	115
 sea-captain		1	NN	1
 sea-sickness		2	JJ	2
 sea-water		1	NN	1
@@ -47308,14 +47563,14 @@ seagulls		1	NNS	1
 seal			1	NN	1
 sealed			13	JJ	5	VBD	1	VBN	7
 seals			1	NNS	1
-seam			2	NN	2
+seam			3	NN	3
 seaman			1	NN	1
 seamed			1	JJ	1
 seamen			8	NNS	8
 seamless		1	JJ	1
 seaplanes		1	NNS	1
 seaport			1	NN	1
-search			50	NN	47	VB	3
+search			54	NN	51	VB	3
 search-and-seizure	1	JJ	1
 searched		21	VBD	21
 searcher		1	NN	1
@@ -47329,7 +47584,7 @@ seashells		2	NNS	2
 seashore		3	NN	3
 seasick			1	JJ	1
 seaside			15	JJ	6	NN	9
-season			75	NN	75
+season			76	NN	76
 season?			1	NN	1
 seasonable		1	JJ	1
 seasonal		12	JJ	12
@@ -47337,24 +47592,24 @@ seasonally		16	RB	16
 seasoned		6	JJ	6
 seasoning		1	NN	1
 seasons			12	NNS	12
-seat			79	NN	79
+seat			83	NN	83
 seat-belt		3	NN	3
 seat-for-the-secretary	1	JJ	1
 seat?			1	NN	1
 seatbelt		2	NN	2
 seated			7	VBN	7
-seating			5	NN	3	VBG	2
-seats			72	NNS	71	VBZ	1
+seating			6	NN	4	VBG	2
+seats			73	NNS	71	VBZ	2
 seawall			1	NN	1
 seaward			1	RB	1
 seawards		1	NNS	1
-seaweed			8	JJ	3	NN	3	VBD	1	VBN	1
+seaweed			8	JJ	1	NN	5	VBD	1	VBN	1
 sec			1	NN	1
 secede			2	VB	2
 secession		2	NN	2
 secluded		5	JJ	3	VBN	2
 seclusion		3	NN	3
-second			274	JJ	255	NN	12	RB	3	VB	4
+second			283	IN	1	JJ	261	NN	14	RB	3	VB	4
 second-biggest		3	JJ	3
 second-by-second	1	JJ	1
 second-class		3	JJ	1	NN	1	RB	1
@@ -47373,21 +47628,21 @@ seconded		1	VBD	1
 seconder		1	NN	1
 secondhand		1	JJ	1
 secondment		1	NN	1
-seconds			25	NNS	25
+seconds			28	NNS	27	VBZ	1
 secrecy			5	NN	5
-secret			53	JJ	30	NN	23
+secret			58	JJ	33	NN	25
 secretarial		3	JJ	3
 secretaries		5	NNS	5
-secretary		74	NN	74
+secretary		76	NN	76
 secrete			2	JJ	1	VB	1
 secreted		2	VBD	1	VBN	1
 secretive		3	JJ	3
-secretly		4	RB	4
-secrets			9	NNS	9
+secretly		5	RB	5
+secrets			11	NNS	11
 sect			1	NN	1
 sectarian		4	JJ	4
-section			50	NN	50
-sections		14	NNS	14
+section			53	NN	53
+sections		15	NNS	15
 sector			78	NN	78
 sectors			12	NNS	12
 sects			5	NNS	5
@@ -47403,7 +47658,7 @@ securities-price	1	JJ	1
 securities-trading	1	JJ	1
 securities-turnover	1	JJ	1
 securitiess		1	NN	1
-security		96	NN	96
+security		97	NN	97
 security-type		1	JJ	1
 sedan			7	NN	7
 sedans			3	NNS	3
@@ -47419,37 +47674,37 @@ seducing		1	VBG	1
 seduction		2	NN	2
 seductions		1	NNS	1
 seductive		3	JJ	3
-see			506	VB	412	VBP	94
+see			542	VB	442	VBP	100
 see-through		1	JJ	1
 see.			1	FW	1
 see?			1	CD	1
-seed			30	NN	30
+seed			32	NN	32
 seed-bed		1	JJ	1
 seedbed			1	NN	1
 seedbeds		1	NNS	1
 seeded			3	VBN	3
 seedlings		4	NNS	4
-seeds			29	NNS	29
+seeds			30	NNS	30
 seedy			5	JJ	5
-seeing			37	VBG	37
-seek			105	VB	90	VBP	15
+seeing			40	VBG	40
+seek			106	VB	91	VBP	15
 seekers			1	NNS	1
 seeking			101	VBG	101
 seeks			28	VBZ	28
-seem			152	VB	53	VBP	99
-seemed			227	VBD	220	VBN	7
-seemingly		12	RB	12
-seems			162	VBZ	162
-seems!..		1	CD	1
-seen			214	VBN	214
+seem			158	VB	54	VBP	104
+seemed			240	VBD	231	VBN	9
+seemingly		13	RB	13
+seems			168	VBZ	168
+seems!..		1	NN	1
+seen			221	VBN	221
 seep			2	VB	2
 seeped			2	VBD	2
-seeps			3	NNS	3
+seeps			3	NNS	2	VBZ	1
 seer			3	NN	3
 sees			38	VBZ	38
 seesaw			4	JJ	2	NN	2
 seethed			4	VBD	2	VBN	2
-seething		6	JJ	5	VBG	1
+seething		6	JJ	3	VBG	3
 segment			37	NN	37
 segmenting		1	VBG	1
 segments		13	NNS	13
@@ -47465,11 +47720,11 @@ seizes			1	VBZ	1
 seizing			6	VBG	6
 seizure			14	NN	14
 seizures		5	NNS	5
-seldom			13	RB	13
+seldom			15	RB	15
 select			17	JJ	4	VB	12	VBP	1
 selected		23	JJ	3	VBD	3	VBN	17
 selecting		2	VBG	2
-selection		15	NN	15
+selection		16	NN	16
 selections		3	NNS	3
 selective		7	JJ	7
 selectively		2	RB	2
@@ -47544,16 +47799,16 @@ self-supporting		1	JJ	1
 self-taught		1	JJ	1
 self-tilth		1	NN	1
 self-willed		1	JJ	1
-selfish			10	JJ	10
+selfish			11	JJ	11
 selfishness		3	NN	3
 selfless		1	JJ	1
-sell			334	JJ	10	NN	16	VB	273	VBP	35
+sell			337	JJ	10	NN	16	VB	275	VBP	36
 sell-off		21	NN	21
 sell-offs		1	NNS	1
 sell-out		3	NN	3
 seller			13	NN	13
 sellers			28	NNS	28
-selling			179	JJ	2	NN	64	VBG	113
+selling			181	JJ	2	NN	64	VBG	115
 selloffs		1	NNS	1
 sellotape		1	NN	1
 sells			40	VBZ	40
@@ -47587,29 +47842,29 @@ seminars		6	NNS	6
 senate			2	NN	2
 senator			7	NN	7
 senators		18	NNS	18
-send			62	VB	53	VBP	9
+send			63	VB	54	VBP	9
 send-off		1	NN	1
 senders			1	NNS	1
-sending			24	VBG	24
+sending			26	VBG	26
 sends			8	VBZ	8
 senile			3	JJ	3
 senility		1	NN	1
 senior			188	JJ	184	NN	4
-seniority		7	NN	7
+seniority		8	NN	8
 seniors			2	NNS	2
-sensation		16	NN	16
+sensation		17	NN	17
 sensational		10	JJ	10
 sensationalism		2	NN	2
-sense			147	NN	139	VB	2	VBP	6
-sensed			7	VBD	7
+sense			157	NN	147	VB	3	VBP	7
+sensed			8	VBD	8
 senseless		9	JJ	9
-senses			9	NNS	9
+senses			7	NNS	7
 sensibilities		2	NNS	2
 sensibility		4	NN	4
-sensible		18	JJ	12	NN	3	RB	3
+sensible		19	JJ	13	NN	3	RB	3
 sensibly		1	RB	1
-sensing			1	VBG	1
-sensitive		45	JJ	45
+sensing			2	VBG	2
+sensitive		46	JJ	46
 sensitives		1	NNS	1
 sensitivities		1	NNS	1
 sensitivity		3	NN	3
@@ -47618,10 +47873,10 @@ sensors			3	NNS	3
 sensory			3	JJ	3
 sensual			6	JJ	6
 sensuous		2	JJ	2
-sent			162	VBD	99	VBN	63
-sentence		32	NN	32
-sentenced		19	VBD	2	VBN	17
-sentences		14	NNS	14
+sent			168	VBD	102	VBN	66
+sentence		38	NN	38
+sentenced		20	VBD	2	VBN	18
+sentences		15	NNS	15
 sentencing		3	NN	1	VBG	2
 sentencings		1	NNS	1
 sentiment		21	NN	21
@@ -47631,14 +47886,14 @@ sentimentalized		1	VBN	1
 sentimentally		2	RB	2
 sentiments		9	NNS	9
 sentinel		1	NN	1
-sentries		2	NNS	2
+sentries		3	NNS	3
 sentry			5	JJ	2	NN	3
 separable		1	JJ	1
 separate		100	JJ	90	VB	8	VBP	2
 separated		16	JJ	2	NNS	3	VBN	11
 separately		19	RB	19
-separates		1	NNS	1
-separating		6	VBG	6
+separates		1	VBZ	1
+separating		7	VBG	7
 separation		11	NN	11
 separatism		1	NN	1
 sepia			2	JJ	2
@@ -47658,64 +47913,66 @@ serenade		1	NN	1
 serenaded		2	VBD	1	VBN	1
 serene			11	JJ	11
 serenity		1	NN	1
-sergeant		7	NN	7
-serial			6	JJ	1	NN	5
+sergeant		8	NN	8
+serial			7	JJ	2	NN	5
 serialization		1	NN	1
 serialized		1	VBN	1
 serials			2	NNS	2
 series			142	NN	140	NNS	2
 series?			1	NN	1
-serious			122	JJ	122
+serious			128	JJ	128
 serious.		1	NN	1
-seriously		33	RB	33
+seriously		34	RB	34
 seriously?		1	NN	1
-seriousness		4	NN	4
+seriousness		5	NN	5
 sermon			5	NN	5
 sermons			3	NNS	3
 serpent			2	NN	2
 serpentine		1	JJ	1
+serpents		1	NNS	1
 serrated		1	JJ	1
 serum			2	NN	2
 servant			16	NN	16
 servants		12	NNS	12
 serve			47	NN	1	VB	37	VBP	9
 serve-the-world		1	JJ	1
-served			57	VBD	29	VBN	28
+served			58	VBD	31	VBN	27
 served?			1	NNS	1
 server			1	NN	1
 servers			2	NNS	2
 serves			24	VBZ	24
-service			171	NN	163	NNS	1	VB	7
+service			175	NN	167	NNS	1	VB	7
 service-center		2	NN	2
 service-industry	3	JJ	1	NN	2
 service-sector		3	JJ	3
 serviceable		1	JJ	1
 serviced		3	VBN	3
-services		198	NNS	197	VBZ	1
+services		205	NNS	204	VBZ	1
 servicing		4	NN	2	VBG	2
 servile			1	JJ	1
-serving			20	VBG	20
+serving			22	VBG	22
 servings		1	NNS	1
-session			83	NN	83
+session			87	NN	87
 sessions		14	NNS	14
-set			395	JJ	3	NN	61	VB	53	VBD	98	VBN	170	VBP	10
+set			416	JJ	4	NN	70	VB	54	VBD	103	VBN	177	VBP	8
 set-to			1	NN	1
 set-up			3	NN	3
 setback			12	NN	12
 setbacks		6	NNS	6
-sets			48	NNS	31	VBZ	17
+sets			49	NNS	32	VBZ	17
 settee			1	NN	1
-setting			49	NN	15	VBG	34
+setting			51	NN	14	VBG	37
 settings		1	NNS	1
-settle			51	VB	48	VBP	3
-settled			71	JJ	7	VBD	26	VBN	38
-settlement		91	NN	91
+settle			52	VB	49	VBP	3
+settled			72	JJ	7	VBD	27	VBN	38
+settlement		92	NN	92
+settlement?		1	NNS	1
 settlements		10	NNS	10
 settlers		5	NNS	5
 settles			4	NNS	1	VBZ	3
 settling		11	NN	2	VBG	9
 setup			3	NN	3
-seven			106	CD	106
+seven			111	CD	111
 seven-bedroom		1	JJ	1
 seven-day		8	JJ	8
 seven-figure		1	JJ	1
@@ -47726,8 +47983,8 @@ seven-month-old		1	JJ	1
 seven-year		9	JJ	9
 seven-year-old		2	JJ	2
 seven-yen		1	JJ	1
-seventeen		9	CD	1	JJ	5	NN	3
-seventeenth		6	JJ	6
+seventeen		9	CD	1	JJ	7	NN	1
+seventeenth		7	JJ	7
 seventh			10	JJ	9	NN	1
 seventies		8	NNS	8
 seventy			3	CD	1	JJ	1	NN	1
@@ -47737,26 +47994,26 @@ seventy-seven		2	JJ	2
 seventy-three		1	JJ	1
 sever			2	VB	2
 severable		2	JJ	2
-several			344	JJ	344
+several			349	JJ	349
 several-year		1	JJ	1
 severance		8	JJ	1	NN	7
-severe			44	JJ	44
+severe			48	JJ	48
 severed			7	VBD	1	VBN	6
-severely		21	RB	21
+severely		23	RB	23
 severest		1	JJS	1
 severing		1	VBG	1
 severity		5	NN	5
 sevices			1	NNS	1
-sew			6	VB	6
+sew			7	VB	7
 sewage			2	NN	2
 sewer			3	NN	3
 sewers			2	NNS	2
-sewing			11	NN	11
+sewing			11	NN	9	VBG	2
 sewing-machine		2	NN	2
 sewn			1	VBN	1
 sex			35	NN	35
 sexes			7	NNS	7
-sexing			1	JJ	1
+sexing			1	VBG	1
 sexism			1	NN	1
 sexist			6	JJ	6
 sexless			1	JJ	1
@@ -47765,6 +48022,7 @@ sexual			14	JJ	14
 sexuality		2	NN	2
 sexually		5	RB	5
 sexy			5	JJ	5
+sh			1	NN	1
 shabby			12	JJ	12
 shack			2	NN	2
 shackled		5	JJ	5
@@ -47772,7 +48030,7 @@ shacks			2	NNS	2
 shad			1	NN	1
 shade			9	NN	9
 shaded			6	JJ	6
-shades			6	NNS	6
+shades			7	NNS	7
 shading			3	VBG	3
 shadow			20	NN	18	VB	2
 shadowed		2	VBD	1	VBN	1
@@ -47784,26 +48042,27 @@ shaft			10	NN	10
 shafts			2	NNS	2
 shaggy			3	JJ	3
 shags			1	VBZ	1
-shake			20	NN	6	VB	13	VBP	1
+shake			22	NN	6	VB	15	VBP	1
 shake-up		3	NN	3
-shaken			14	VBN	14
+shaken			15	VBN	15
 shakeout		2	NN	2
 shaker			2	NN	2
 shakes			2	VBZ	2
 shakeup			2	NN	2
 shakily			1	RB	1
-shaking			13	VBG	13
+shaking			19	VBG	19
 shaky			9	JJ	9
-shall			80	MD	80
-shallow			8	JJ	8
-shallower		2	JJR	2
+shall			86	MD	86
+shallow			11	JJ	11
+shallower		3	JJR	3
+shallowness		1	NN	1
 sham			2	NN	2
 shamanistic		1	JJ	1
 shamble			1	VB	1
 shambled		1	VBD	1
 shambles		4	NN	1	NNS	3
 shambling		1	VBG	1
-shame			18	NN	16	VB	2
+shame			19	NN	17	VB	2
 shamed			2	VBD	1	VBN	1
 shamefaced		1	JJ	1
 shameful		5	JJ	5
@@ -47816,54 +48075,55 @@ shampoo?		1	NNS	1
 shampooed		1	VBD	1
 shank			1	NN	1
 shanks			1	NNS	1
-shant			1	VBP	1
+shant			1	JJ	1
 shanty			2	NN	2
-shape			46	NN	34	VB	10	VBP	2
+shape			48	IN	2	NN	34	VB	10	VBP	2
 shaped			11	JJ	3	VBN	8
 shapeless		5	JJ	5
 shapely			2	JJ	2
-shapes			12	NNS	10	VBZ	2
+shapes			14	NNS	10	VBZ	4
 shaping			4	VBG	4
 shards			1	NNS	1
-share			860	NN	830	VB	24	VBP	6
+share			870	NN	834	VB	28	VBP	8
 share-out		2	NN	2
 sharecroppers		2	NNS	2
-shared			22	VBD	11	VBN	11
+shared			24	VBD	12	VBN	12
 shareholder		72	NN	72
 shareholder-rights	3	JJ	3
 shareholders		132	NNS	132
 shareholders?		1	NN	1
 shareholding		1	NN	1
 shareholdings		2	NNS	2
-shares			834	NNS	830	VBZ	4
-sharing			9	NN	2	VBG	7
-shark			16	NN	16
+shares			835	NNS	831	VBZ	4
+sharing			9	NN	1	VBG	8
+shark			17	NN	17
 shark-fins		1	NNS	1
 sharks			5	NNS	5
-sharp			113	JJ	111	NN	1	RB	1
-sharp-pointed		1	JJ	1
+sharp			115	JJ	113	NN	1	RB	1
+sharp-pointed		1	VBN	1
 sharp-thorned		1	VBN	1
-sharpen			1	VB	1
+sharp-witted		1	VBN	1
+sharpen			2	VB	2
 sharpened		4	JJ	1	VBD	3
 sharpener		2	NN	2
 sharpening		3	VBG	3
 sharper			7	JJR	7
 sharpest		2	JJS	2
-sharply			92	RB	92
+sharply			94	RB	94
 sharpness		3	NN	3
 sharps			1	NNS	1
 shatter			1	VB	1
-shattered		13	JJ	3	VBD	4	VBN	6
+shattered		14	JJ	3	VBD	4	VBN	7
 shattered!		1	JJ	1
 shattering		4	JJ	3	VBG	1
 shave			7	VB	7
 shaved			9	VBD	4	VBN	5
 shaven			2	JJ	1	NN	1
 shaver			2	NN	2
-shaving			3	NN	3
+shaving			3	NN	2	VBG	1
 shawl			3	NN	3
 shawls			1	NNS	1
-she			1011	PRP	1011
+she			1071	PRP	1071
 she?			1	NNS	1
 she?EightI		1	JJ	1
 she?I			1	JJ	1
@@ -47875,83 +48135,83 @@ sheath			3	NN	3
 sheathed		1	VBD	1
 sheaths			1	NNS	1
 sheaves			1	NNS	1
-shed			42	VB	8	VBD	21	VBN	13
-shedding		7	VBG	7
+shed			46	VB	10	VBD	22	VBN	13	VBP	1
+shedding		8	VBG	8
 sheds			2	NNS	2
 sheen			4	NN	4
-sheep			13	NN	13
+sheep			17	NN	17
 sheep-farming		1	NN	1
 sheep-raising		1	NN	1
 sheepish		1	JJ	1
 sheeps			1	JJ	1
 sheepskin		1	NN	1
-sheer			18	JJ	15	NN	2	RB	1
+sheer			19	JJ	16	NN	2	RB	1
 sheered			3	VBD	2	VBN	1
-sheet			45	NN	45
+sheet			47	NN	47
 sheetrock		1	NN	1
 sheets			27	NNS	27
 sheiks			1	NNS	1
-shelf			28	NN	28
-shell			25	NN	22	VB	3
+shelf			32	NN	32
+shell			27	NN	24	VB	3
 shell-shocked		1	JJ	1
 shelled			2	VBD	2
 shelling		2	NN	1	VBG	1
-shells			11	NNS	11
-shelter			25	NN	23	VB	2
+shells			12	NNS	12
+shelter			30	NN	28	VB	2
 sheltered		10	JJ	5	VBN	5
 sheltering		4	VBG	4
 shelters		6	NNS	6
 shelved			3	JJ	2	VBD	1
-shelves			15	NNS	15
+shelves			18	NNS	18
 shelving		1	NN	1
 shepherd		2	NN	1	VB	1
 shepherded		1	VBD	1
 shepherding		1	VBG	1
 sherbet			1	NN	1
-sherry			4	JJ	1	NN	3
+sherry			4	NN	4
 sherry?Just		1	JJ	1
-shes			29	NNS	14	VBZ	15
+shes			31	NNS	10	VBZ	21
 shibboleths		1	NNS	1
 shied			3	VBD	2	VBN	1
 shield			13	NN	8	VB	5
 shielded		1	VBN	1
 shields			3	NNS	3
-shift			42	NN	24	VB	18
-shifted			9	VBD	5	VBN	4
-shifting		11	VBG	11
+shift			44	NN	26	VB	18
+shifted			14	VBD	9	VBN	5
+shifting		12	VBG	12
 shifts			9	NNS	9
 shifty			2	JJ	2
 shillings		4	NNS	4
 shilly-shallying	1	VBG	1
 shimmer			1	NN	1
 shimmered		2	VBD	2
-shimmering		4	JJ	4
+shimmering		4	JJ	2	VBG	2
 shin			1	NN	1
 shindig			1	NN	1
-shine			14	NN	7	VB	4	VBP	3
+shine			15	NN	7	VB	4	VBP	4
 shined			1	NN	1
 shiner			1	NN	1
-shines			2	NNS	1	VBZ	1
+shines			2	VBZ	2
 shingle			2	NN	2
 shingles		1	NNS	1
-shining			16	VBG	16
+shining			18	VBG	18
 shins			1	NNS	1
 shiny			15	JJ	15
-ship			73	NN	62	VB	10	VBP	1
+ship			75	NN	64	VB	10	VBP	1
 shipboard		3	JJ	2	NN	1
 shipbuilder		2	NN	2
 shipbuilders		2	NNS	2
-shipbuilding		8	NN	8
+shipbuilding		9	NN	9
 shipmates		1	NNS	1
 shipment		6	NN	6
 shipments		25	NNS	25
 shipped			18	VBD	2	VBN	16
 shippers		4	NNS	4
-shipping		26	NN	14	VBG	12
-ships			57	NNS	57
+shipping		27	NN	15	VBG	12
+ships			58	NNS	58
 shipshape		1	JJ	1
 shipwreck		3	NN	3
-shipwrecked		2	JJ	1	VBD	1
+shipwrecked		2	VBD	2
 shipwrecks		1	NNS	1
 shipyard		17	NN	17
 shipyards		4	NNS	4
@@ -47960,11 +48220,11 @@ shirk			2	VB	2
 shirked			2	VBD	2
 shirkers		1	NNS	1
 shirking		1	VBG	1
-shirt			48	NN	48
+shirt			52	NN	52
 shirt-pocket		1	NN	1
 shirt-sleeved		1	JJ	1
 shirt-tails		1	NNS	1
-shirts			22	NNS	22
+shirts			23	NNS	23
 shirttails		1	NNS	1
 shirty			1	JJ	1
 shiver			3	NN	3
@@ -47972,55 +48232,56 @@ shivering		3	VBG	3
 shivers			3	NNS	3
 shoal			2	NN	2
 shoals			2	NNS	2
-shock			49	NN	44	VB	5
-shocked			19	JJ	2	VBD	5	VBN	12
+shock			51	NN	46	VB	5
+shocked			21	JJ	2	VBD	5	VBN	14
 shocked.		1	VBN	1
 shocking		11	JJ	11
 shockinga		1	NN	1
+shockingly		1	RB	1
 shockproof		1	JJ	1
 shocks			10	NNS	10
 shod			2	VBN	2
 shoddy			5	JJ	5
-shoe			6	NN	6
+shoe			8	NN	8
 shoe-horn		1	VB	1
 shoehorned		1	VBN	1
 shoeing			1	VBG	1
 shoelace		1	NN	1
 shoemaker		1	NN	1
 shoemaking		1	VBG	1
-shoes			59	NNS	59
+shoes			62	NNS	62
 shoestring		2	JJ	1	NN	1
-shone			13	JJ	1	NN	8	VB	3	VBP	1
+shone			15	NN	9	VB	6
 shoo-in			1	NN	1
 shooed			3	VBD	2	VBN	1
-shook			26	VBD	26
-shoot			15	NN	4	VB	9	VBP	2
+shook			34	VBD	34
+shoot			19	NN	4	VB	13	VBP	2
 shoot-out		1	NN	1
-shooting		21	NN	8	VBG	13
+shooting		22	NN	7	VBG	15
 shootings		1	NNS	1
 shootout		1	NN	1
 shoots			4	NNS	3	VBZ	1
-shop			76	NN	74	VB	2
+shop			82	NN	80	VB	2
 shopfronts		1	NNS	1
 shopkeepers		2	NNS	2
 shoplifting		1	NN	1
 shopped			3	VBD	2	VBN	1
 shoppers		8	NNS	8
-shopping		45	NN	40	VBG	5
-shops			49	NNS	49
-shore			22	NN	17	VB	5
-shoreline		2	NN	2
+shopping		48	NN	43	VBG	5
+shops			50	NNS	50
+shore			23	NN	18	VB	5
+shoreline		3	NN	3
 shores			6	NNS	6
 shoring			1	VBG	1
 shorn			4	VB	4
-short			190	JJ	178	RB	11	VB	1
+short			205	IN	4	JJ	188	RB	12	VB	1
 short-changed		2	VBN	2
 short-circuit		2	NN	1	VB	1
 short-circuited		1	VBN	1
 short-covering		2	NN	2
 short-cuts		2	NNS	2
 short-list		1	NN	1
-short-listed		1	VBN	1
+short-listed		1	JJ	1
 short-lived		6	JJ	6
 short-necked		1	JJ	1
 short-range		2	JJ	2
@@ -48032,7 +48293,7 @@ short-staffed		1	JJ	1
 short-tempered		2	JJ	2
 short-term		75	JJ	75
 short-wave		1	JJ	1
-short-weighting		1	NN	1
+short-weighting		1	VBG	1
 shortage		33	NN	33
 shortages		10	NNS	10
 shortcoming		1	NN	1
@@ -48041,81 +48302,83 @@ shortcut		1	NN	1
 shorted			1	VBN	1
 shorten			3	VB	3
 shortening		1	VBG	1
-shortens		2	NNS	1	VBZ	1
-shorter			13	JJR	13
+shortens		2	VBZ	2
+shorter			14	JJR	14
 shorter-tenure		1	JJ	1
 shortest		4	JJS	4
 shortfall		5	NN	5
 shortie			1	NN	1
 shorting		4	NN	3	VBG	1
 shortish		2	JJ	2
-shortly			30	RB	30
+shortly			35	RB	35
 shortness		1	NN	1
-shorts			10	NNS	10
+shorts			11	NNS	11
 shortsighted		2	JJ	2
 shortstop		1	NN	1
 shortterm		1	JJ	1
-shot			93	NN	42	VBD	31	VBN	20
+shot			107	JJ	1	NN	45	VBD	34	VBN	27
 shotgun			1	NN	1
 shotguns		3	NNS	3
 shots			14	NNS	14
-should			649	MD	649
-shoulder		34	NN	32	VB	1	VBP	1
+should			686	MD	686
+shoulder		35	NN	33	VB	1	VBP	1
 shoulder-bag		1	NN	1
 shouldered		3	VBD	3
 shouldering		1	VBG	1
-shoulders		39	NNS	39
-shouldnt		30	JJ	13	NN	5	RB	2	VB	1	VBP	9
+shoulders		41	NNS	41
+shouldnt		32	JJ	12	NN	8	RB	2	VB	1	VBP	9
 shout			7	NN	3	VB	4
-shouted			22	VBD	22
-shouting		12	NN	2	VBG	10
+shouted			24	VBD	24
+shouting		14	NN	4	VBG	10
 shouts			9	NNS	2	VBZ	7
 shove			8	NN	2	VB	6
 shoved			3	VBD	3
 shovel			3	NN	3
 shovelled		1	VBD	1
-shovelling		1	JJ	1
+shovelling		1	VBG	1
 shovels			4	NNS	4
 shoves			1	VBZ	1
 shoving			3	VBG	3
-show			207	NN	89	VB	78	VBP	40
+show			219	NN	91	VB	86	VBP	42
 show-biz		1	NN	1
 show-piece		1	JJ	1
 showcase		4	NN	4
 showcases		2	NNS	2
 showdown		3	NN	3
-showed			120	VBD	117	VBN	3
-shower			13	NN	7	VB	6
-showered		5	VBD	3	VBN	2
+showed			127	VBD	124	VBN	3
+shower			15	NN	7	VB	8
+showered		5	VBD	2	VBN	3
 showering		2	VBG	2
 showers			7	NNS	7
 showery			1	JJ	1
-showing			68	NN	11	VBG	57
+showing			71	NN	12	VBG	59
 showings		2	NNS	2
 showman			1	NN	1
-shown			54	VBN	54
+shown			56	VBN	56
 showplace		2	NN	2
 showroom		3	NN	3
 showrooms		4	NNS	4
-shows			95	NNS	30	VBZ	65
+shows			95	NNS	31	VBZ	64
 showy			2	JJ	2
 shrank			8	VBD	8
 shrapnel		1	NN	1
-shred			4	NN	4
-shredded		3	JJ	2	VBD	1
+shred			5	NN	4	VB	1
+shredded		5	JJ	4	VBD	1
 shredder		1	NN	1
+shredding		1	VBG	1
 shreds			4	NNS	4
 shrew			3	NN	3
 shrewd			7	JJ	7
 shrewdly		3	RB	3
 shrewdness		1	NN	1
-shriek			2	NN	2
-shrieked		2	VBD	2
-shrieking		1	NN	1
-shrieks			3	NNS	3
+shriek			4	NN	4
+shrieked		4	VBD	4
+shrieking		3	NN	1	VBG	2
+shrieks			5	NNS	5
 shrift			2	NN	2
-shrill			4	NN	3	VB	1
-shrilled		3	VBD	2	VBN	1
+shrill			7	JJ	3	NN	3	VB	1
+shrilled		3	VBD	1	VBN	2
+shriller		1	JJR	1
 shrimp			3	NN	3
 shrimps			1	NNS	1
 shrine			2	NN	2
@@ -48124,7 +48387,7 @@ shrinkage		2	NN	2
 shrinking		10	VBG	10
 shrinks			2	VBZ	2
 shrivelled		1	VBN	1
-shrivels		2	NNS	2
+shrivels		2	NNS	1	VBZ	1
 shroud			2	NN	2
 shrouded		6	VBD	6
 shrub			4	NN	4
@@ -48133,10 +48396,10 @@ shrubs			6	NNS	6
 shrug			5	NN	2	VB	3
 shrugged		3	VBD	3
 shrugs			2	NNS	1	VBZ	1
-shrunk			4	VBN	4
+shrunk			5	VBN	5
 shrunken		1	JJ	1
 shudder			7	NN	4	VB	3
-shuddered		4	VBD	3	VBN	1
+shuddered		4	VBD	4
 shuddering		1	VBG	1
 shudders		1	NNS	1
 shuffle			7	NN	6	VB	1
@@ -48147,11 +48410,11 @@ shunned			5	VBD	5
 shunning		1	VBG	1
 shunt			1	VB	1
 shunted			1	VBN	1
-shunting		2	NN	2
+shunting		2	VBG	2
 shunts			1	VBZ	1
-shush			1	JJ	1
+shush			1	UH	1
 shushed			1	VBD	1
-shut			50	VB	11	VBD	20	VBN	19
+shut			50	VB	10	VBD	21	VBN	19
 shut?Half		1	JJ	1
 shutdown		2	NN	2
 shutdowns		2	NNS	2
@@ -48161,14 +48424,14 @@ shuttered		6	JJ	5	VBD	1
 shutting		1	VBG	1
 shuttle			7	NN	7
 shuttled		1	VBN	1
-shuttles		3	NNS	3
+shuttles		3	NNS	1	VBZ	2
 shuttling		1	VBG	1
-shy			22	JJ	17	NN	1	VB	4
+shy			23	JJ	18	NN	1	VB	4
 shying			1	VBG	1
 sibilant		1	JJ	1
 sibling			1	NN	1
 siblings		2	NNS	2
-sick			39	JJ	38	NN	1
+sick			40	JJ	39	NN	1
 sick-bed		1	JJ	1
 sick?Not		1	VBP	1
 sickbed			2	NN	2
@@ -48176,16 +48439,16 @@ sicken			1	VB	1
 sickened		3	VBD	1	VBN	2
 sickening		5	JJ	5
 sickle			1	NN	1
-sickly			4	JJ	2	RB	2
+sickly			8	JJ	6	RB	2
 sickness		5	NN	5
 sickroom		2	NN	2
-side			239	JJ	4	NN	234	VB	1
+side			247	IN	2	JJ	4	NN	240	VB	1
 side-crash		1	JJ	1
 side-effect		1	NN	1
 side-effects		2	NNS	2
 side-saddle		2	NN	1	RB	1
-side-stepped		1	VBN	1
-sideboard		3	NN	3
+side-stepped		1	VBD	1
+sideboard		4	NN	4
 sided			3	VBD	1	VBN	2
 sidekick		1	NN	1
 sideline		3	NN	3
@@ -48193,7 +48456,7 @@ sideline-business	1	JJ	1
 sidelined		1	VBN	1
 sidelines		12	NNS	12
 sidelong		2	RB	2
-sides			82	NNS	82
+sides			86	NNS	86
 sideshow		1	NN	1
 sidestep		3	VB	2	VBP	1
 sidestepped		1	VBD	1
@@ -48210,17 +48473,17 @@ sieve			2	NN	2
 sift			2	VB	1	VBP	1
 sifted			2	VBN	2
 sifting			1	VBG	1
-sigh			10	NN	10
+sigh			11	NN	11
 sighed			7	VBD	7
 sighs			4	NNS	4
-sight			51	NN	50	VB	1
+sight			54	NN	53	VB	1
 sighted			3	JJ	1	VBN	2
 sighting		1	NN	1
 sightings		4	NNS	4
 sights			9	NNS	9
 sightseeing		5	NN	5
 sightseers		3	NNS	3
-sign			109	NN	81	VB	28
+sign			111	NN	81	VB	30
 signal			39	JJ	1	NN	27	VB	10	VBP	1
 signaled		7	VBD	5	VBN	2
 signaling		3	VBG	3
@@ -48234,7 +48497,7 @@ signboard		1	NN	1
 signboards		1	NNS	1
 signed			85	VBD	43	VBN	42
 significance		20	NN	20
-significant		90	JJ	90
+significant		91	JJ	91
 significantly		42	RB	42
 signified		1	VBD	1
 signifies		1	VBZ	1
@@ -48246,7 +48509,7 @@ signposted		2	JJ	1	VBN	1
 signposting		1	VBG	1
 signposts		2	NNS	2
 signs			61	NNS	61
-silence			59	NN	57	VB	2
+silence			61	NN	59	VB	2
 silenced		3	VBN	3
 silencer		1	NN	1
 silences		1	NNS	1
@@ -48260,14 +48523,14 @@ silica			2	NN	2
 silicon			9	NN	9
 silicone		1	NN	1
 silicones		1	NNS	1
-silk			29	JJ	7	NN	22
+silk			29	JJ	1	NN	28
 silken			2	JJ	1	VBN	1
 silks			2	NNS	2
 silky			4	JJ	4
 sill			2	NN	2
 sillier			1	JJR	1
-silly			20	JJ	16	NN	3	RB	1
-silver			49	JJ	15	NN	34
+silly			21	JJ	17	NN	3	RB	1
+silver			51	JJ	17	NN	34
 silver-backed		1	JJ	1
 silver-conspiracy	1	NN	1
 silver-covered		1	JJ	1
@@ -48275,7 +48538,7 @@ silver-haired		2	JJ	2
 silvered		2	JJ	2
 silvers			1	NNS	1
 silvery			8	JJ	8
-similar			124	JJ	124
+similar			130	JJ	130
 similar-sized		1	JJ	1
 similarities		2	NNS	2
 similarity		7	NN	7
@@ -48285,10 +48548,10 @@ simmered		3	VBD	3
 simmering		4	VBG	4
 simper			1	NN	1
 simpered		1	JJ	1
-simple			82	JJ	80	NN	2
+simple			89	JJ	87	NN	2
 simple-minded		3	JJ	3
 simpler			9	JJR	9
-simplest		3	JJS	3
+simplest		4	JJS	4
 simpleton		2	NN	2
 simplicities		2	NNS	2
 simplicity		10	NN	10
@@ -48297,7 +48560,7 @@ simplified		2	VBN	2
 simplify		4	VB	3	VBP	1
 simplifying		3	VBG	3
 simplistic		3	JJ	3
-simply			126	RB	126
+simply			139	RB	139
 simulate		6	VBP	6
 simulated		2	JJ	2
 simulates		2	VBZ	2
@@ -48306,23 +48569,23 @@ simulator		2	NN	2
 simultaneous		4	JJ	4
 simultaneously		9	RB	9
 sin			8	NN	8
-since			381	IN	368	RB	13
+since			382	IN	369	RB	13
 sincere			6	JJ	6
-sincerely		2	RB	2
+sincerely		6	RB	6
 sincerity		5	NN	5
 sinecure		1	NN	1
-sinew			1	VB	1
-sinews			3	NNS	3
+sinew			2	VB	2
+sinews			3	NN	1	NNS	2
 sinewy			3	JJ	3
 sinful			4	JJ	4
-sing			24	VB	17	VBP	7
+sing			25	VB	18	VBP	7
 sing-song		3	JJ	2	NN	1
 singed			2	VBD	1	VBN	1
 singeing		1	VBG	1
-singer			18	NN	18
+singer			19	NN	19
 singers			13	NNS	13
 singing			37	JJ	1	NN	9	VBG	27
-single			133	JJ	129	NN	3	VB	1
+single			139	JJ	135	NN	3	VB	1
 single-A		5	JJ	4	NNP	1
 single-A-1		8	JJ	8
 single-A-2		17	JJ	15	NN	2
@@ -48351,44 +48614,44 @@ singles			2	NNS	2
 singling		1	VBG	1
 singly			3	RB	3
 sings			4	VBZ	4
-singular		16	JJ	15	NN	1
+singular		10	JJ	9	NN	1
 singularly		4	RB	4
 sinister		9	JJ	9
-sink			27	NN	13	VB	10	VBP	4
+sink			28	NN	15	VB	11	VBP	2
 sinking			11	NN	2	VBG	9
 sinking-fund		2	NN	2
-sinks			2	NNS	2
+sinks			3	NNS	2	VBZ	1
 sinned			1	VBN	1
 sinners			2	NNS	2
 sins			11	NNS	11
 sinuous			3	JJ	3
 sinus			1	NN	1
-sinuses			1	NNS	1
-sip			3	NN	3
+sinuses			2	NNS	2
+sip			4	NN	4
 siphon			2	NN	1	VB	1
 siphoned		4	VBD	2	VBN	2
 siphoning		1	VBG	1
-sipped			7	VBD	7
+sipped			8	VBD	8
 sipping			7	VBG	7
 sir			14	NN	12	UH	2
-sir?Just		1	VB	1
+sir?Just		1	VBD	1
 sired			1	VBN	1
-siren			5	NN	5
+siren			5	NN	4	NNS	1
 sirens			5	NNS	5
 sirloin			1	NN	1
 sirloins		1	NNS	1
 sirs			1	NNS	1
 sissies			2	NNS	2
 sissy			2	NN	2
-sister			65	JJ	7	NN	58
+sister			71	JJ	7	NN	64
 sister-in-law		1	NN	1
 sister?Sometimes.	1	NN	1
 sisterly		1	JJ	1
-sisters			13	NNS	13
+sisters			14	NNS	14
 sisters?		1	NNS	1
-sit			50	VB	38	VBP	12
+sit			55	VB	44	VBP	11
 sit-down		3	JJ	1	NN	2
-sit-in			3	NN	3
+sit-in			4	NN	4
 sit-ins			1	NNS	1
 sitcom			2	NN	2
 sitcoms			1	NNS	1
@@ -48396,17 +48659,17 @@ site			57	NN	57
 sited			2	JJ	1	VBN	1
 sites			11	NNS	11
 siting			1	NN	1
-sits			13	VBZ	13
+sits			15	VBZ	15
 sitter			2	NN	2
-sitting			86	VBG	85	VBG|JJ	1
+sitting			95	VBG	93	VBG|JJ	2
 sitting-room		4	NN	4
 sittings		1	NNS	1
 situated		10	VBN	10
 situates		1	VBZ	1
-situation		161	NN	161
+situation		173	NN	173
 situation.		1	NN	1
 situations		13	NNS	13
-six			281	CD	281
+six			297	CD	297
 six-bottle		1	JJ	1
 six-cent		2	JJ	2
 six-day			1	JJ	1
@@ -48417,6 +48680,7 @@ six-game		1	JJ	1
 six-inch		2	JJ	2
 six-month		32	JJ	32
 six-packs		3	NNS	3
+six-page		1	JJ	1
 six-sided		1	JJ	1
 six-story		1	JJ	1
 six-thirty		1	CD	1
@@ -48426,23 +48690,23 @@ six?I			1	NNS	1
 sixfold			1	RB	1
 sixpence		1	NN	1
 sixpenny		2	JJ	2
-sixteen			8	JJ	4	NN	4
+sixteen			9	JJ	4	NN	5
 sixteen-year-old	1	JJ	1
 sixteen-year-olds	1	NNS	1
-sixteenth		2	JJ	2
+sixteenth		3	JJ	3
 sixth			21	JJ	19	NN	1	RB	1
-sixties			9	NNS	9
+sixties			10	NNS	10
 sixtieth		1	JJ	1
-sixty			13	JJ	6	NN	5	RB	2
+sixty			15	JJ	7	NN	7	RB	1
 sixty-five		4	JJ	3	VB	1
 sixty-seven		1	JJ	1
 sixty-two		1	JJ	1
 sizable			14	JJ	14
-size			84	NN	84
+size			93	NN	93
 sizeable		4	JJ	4
 sized			1	VBD	1
-sizes			6	NNS	6
-sizzled			2	VBD	1	VBN	1
+sizes			8	NNS	8
+sizzled			2	VBD	2
 skate			3	NN	3
 skateboard		1	NN	1
 skateboards		1	NNS	1
@@ -48464,59 +48728,60 @@ sketchy			4	JJ	4
 skew			1	RB	1
 skewed			6	JJ	3	VBN	3
 skewered		1	VBD	1
-ski			11	JJ	5	NN	4	VB	2
+ski			12	JJ	7	NN	2	VB	3
 ski-industry		1	NN	1
-skid			8	NN	4	VB	1	VBD	3
+skid			8	NN	5	VB	1	VBD	2
 skidded			9	VBD	9
 skidding		1	VBG	1
 skier			2	NN	2
 skiers			1	NNS	1
 skies			3	NNS	3
-skiing			5	NN	3	VBG	2
+skiing			6	NN	4	VBG	2
 skilful			7	JJ	7
 skilfully		1	RB	1
 skill			18	NN	18
 skill-dilution		1	JJ	1
-skilled			9	JJ	9
+skilled			10	JJ	10
 skillet			1	NN	1
 skillful		1	JJ	1
 skills			31	NNS	31
+skills?			1	NN	1
 skim			3	VB	3
 skimming		3	VBG	3
 skimpy			3	JJ	3
-skin			77	NN	77
+skin			81	NN	81
 skin-care		2	NN	2
 skin-diving		1	VBG	1
 skinheads		1	NNS	1
 skinned			4	VBD	1	VBN	3
 skinny			7	JJ	6	NN	1
-skins			10	NNS	10
+skins			11	NNS	11
 skint			1	JJ	1
 skip			5	VB	3	VBP	2
 skipped			2	VBD	2
 skipper			1	NN	1
 skipping		6	VBG	6
-skips			2	NNS	2
+skips			2	NNS	1	VBZ	1
 skirmish		6	NN	6
 skirmished		1	NN	1
 skirmishes		2	NNS	2
-skirmishing		3	NN	3
+skirmishing		3	NN	2	VBG	1
 skirt			32	NN	31	VB	1
 skirted			4	VBN	4
 skirting		3	NN	1	VBG	2
-skirts			9	NNS	1	VBZ	8
+skirts			11	NNS	1	VBZ	10
 skis			3	NNS	3
 skit			1	NN	1
-skittered		2	VBN	2
+skittered		2	JJ	1	VBN	1
 skittering		1	VBG	1
 skittish		4	JJ	4
 skittishness		2	NN	2
 skittles		1	NNS	1
-skiving			2	JJ	1	VBG	1
+skiving			2	VBG	2
 skulking		2	VBG	2
 skull			7	NN	7
 skulls			1	NNS	1
-sky			85	NN	85
+sky			86	NN	86
 sky-high		2	JJ	1	RB	1
 skydiving		1	VBG	1
 skylark			2	NN	2
@@ -48525,7 +48790,7 @@ skyline			3	NN	3
 skyrocketed		5	VBD	2	VBN	3
 skyscraper		2	NN	2
 skyscrapers		2	NNS	2
-skyward			3	RB	3
+skyward			4	RB	4
 skywards		2	NNS	2
 slab			6	NN	6
 slabs			2	NNS	2
@@ -48543,7 +48808,7 @@ slam-dunk		1	NN	1
 slammed			17	VBD	17
 slammer			1	NN	1
 slamming		2	VBG	2
-slander			3	NN	2	VB	1
+slander			3	NN	3
 slandered		1	VBD	1
 slanderous		2	JJ	2
 slang			4	JJ	4
@@ -48551,17 +48816,17 @@ slang?			1	NNP	1
 slangy			1	JJ	1
 slant			8	NN	7	VB	1
 slanted			3	JJ	3
-slap			11	NN	6	RB	2	VB	3
+slap			11	NN	7	RB	2	VB	2
 slap-up			1	JJ	1
 slapdash		1	JJ	1
 slapped			9	VBD	9
-slapping		4	NN	4
+slapping		4	NN	3	VBG	1
 slaps			1	VBZ	1
 slash			14	NN	3	VB	10	VBP	1
 slashed			13	VBD	6	VBN	7
 slashes			1	NNS	1
 slashing		8	VBG	8
-slate			11	NN	11
+slate			12	NN	12
 slated			13	VBD	1	VBN	12
 slates			1	NNS	1
 slats			2	NNS	2
@@ -48572,49 +48837,49 @@ slaughtered		2	VBN	2
 slaughtering		1	VBG	1
 slave			12	NN	11	VB	1
 slavery			2	NN	2
-slaves			7	NNS	7
+slaves			7	NNS	6	VBZ	1
 slaving			1	VBG	1
 slavish			2	JJ	2
-slay			1	VBP	1
-slaying			2	NN	2
+slay			1	VB	1
+slaying			2	NN	1	VBG	1
 sleazy			2	JJ	2
 sledding		1	NN	1
 sledge			1	NN	1
 sledges			2	NNS	2
 sledging		1	VBG	1
 sleek			8	JJ	8
-sleep			51	NN	20	VB	27	VBP	4
+sleep			55	NN	23	VB	29	VBP	3
 sleeper			4	NN	4
 sleepers		1	NNS	1
 sleepily		1	RB	1
-sleeping		28	NN	12	VBG	16
+sleeping		31	NN	4	VBG	27
 sleepless		3	JJ	3
 sleeps			2	VBZ	2
 sleepwalking		1	VBG	1
 sleepy			5	JJ	5
-sleeve			7	NN	7
+sleeve			9	NN	9
 sleeve-tugging		1	NN	1
 sleeveless		1	JJ	1
-sleeves			6	NNS	6
+sleeves			7	NNS	7
 sleight			1	NN	1
 slender			8	JJ	8
-slept			12	VBD	12
+slept			16	VBD	16
 slew			2	NN	2
 slewed			2	JJ	1	VBN	1
 slice			11	NN	9	VB	1	VBP	1
 sliced			6	JJ	3	VBD	2	VBN	1
 slices			7	NNS	7
-slicing			4	VBG	4
+slicing			5	VBG	5
 slick			3	JJ	3
-slid			40	NNP	1	VBD	38	VBN	1
+slid			41	NNP	1	VBD	39	VBN	1
 slide			30	NN	25	VB	5
 slide-projector		1	NN	1
 slides			7	NNS	5	VBZ	2
 sliding			10	VBG	10
-slight			38	JJ	37	RB	1
+slight			40	JJ	37	NN	2	RB	1
 slighted		2	VBD	1	VBN	1
-slightest		12	JJS	12
-slightly		158	RB	158
+slightest		13	JJS	13
+slightly		162	RB	162
 slim			12	JJ	12
 slim.That		1	VB	1
 slime			5	NN	5
@@ -48623,18 +48888,18 @@ slimming		6	NN	2	VBG	4
 slimy			7	JJ	7
 sling			2	NN	2
 slings			1	NNS	1
-slinking		1	RB	1
-slip			22	NN	10	VB	8	VBP	4
+slinking		1	VBG	1
+slip			23	NN	10	VB	9	VBP	4
 slippage		2	NN	2
-slipped			48	VBD	40	VBN	8
+slipped			52	VBD	44	VBN	8
 slippery		6	JJ	6
 slipping		10	VBG	10
 slippy			1	JJ	1
-slips			5	VBZ	5
+slips			6	VBZ	6
 slipshod		2	JJ	2
 slipstream		1	NN	1
 slipway			1	NN	1
-slit			8	NN	3	VB	4	VBD	1
+slit			8	NN	3	VB	3	VBD	2
 slither			1	NN	1
 slithered		2	VBD	2
 slithering		2	VBG	2
@@ -48646,14 +48911,14 @@ slob			1	NN	1
 slobbering		1	VBG	1
 slog			1	VB	1
 slogan			3	NN	3
-slogans			7	NNS	7
+slogans			8	NNS	8
 slogged			1	VBN	1
 slogging		1	VBG	1
 slogs			1	VBZ	1
 slop			1	NN	1
 slope			12	NN	12
 sloped			1	VBD	1
-slopes			13	NNS	12	VBZ	1
+slopes			13	NNS	11	VBZ	2
 sloping			2	JJ	1	VBG	1
 slopping		2	VBG	2
 sloppy			5	JJ	5
@@ -48661,25 +48926,27 @@ sloshed			1	VBN	1
 sloshing		2	VBG	2
 slot			7	NN	6	VB	1
 slothful		1	JJ	1
-slots			4	NNS	4
-slotted			3	VBD	1	VBN	2
+slots			4	NNS	3	VBZ	1
+slotted			3	VBD	3
 slouch			3	NN	2	VB	1
 slouched		3	VBD	1	VBN	2
 slovenly		2	JJ	2
-slow			108	JJ	67	RB	1	VB	40
+slow			110	JJ	67	RB	3	VB	40
+slow-burning		1	JJ	1
 slow-growing		2	JJ	2
 slow-growth		1	NN	1
 slow-motion		1	JJ	1
+slow-moving		1	JJ	1
 slow-spending		1	JJ	1
 slow-startup		1	JJ	1
 slowball		1	NN	1
 slowdown		36	NN	36
 slowdowns		1	NNS	1
 slowed			23	VBD	16	VBN	7
-slower			16	JJR	16
+slower			17	JJR	17
 slowest			1	JJS	1
 slowing			38	NN	7	VBG	31
-slowly			74	RB	74
+slowly			77	RB	77
 slowness		1	NN	1
 slows			3	VBZ	3
 slug			4	NN	2	VB	1	VBG	1
@@ -48710,11 +48977,11 @@ slushy			3	JJ	3
 slut			1	NN	1
 sly			3	JJ	3
 slyest			1	JJS	1
-smack			10	NN	5	RB	4	VBP	1
+smack			10	NN	5	RB	3	VBP	2
 smacked			4	VBD	3	VBN	1
 smacking		1	VBG	1
 smacks			1	VBZ	1
-small			523	JJ	523
+small			539	JJ	539
 small-business		9	NN	9
 small-company		1	NN	1
 small-denomination	1	JJ	1
@@ -48725,16 +48992,16 @@ small-scale		3	JJ	3
 small-screen		1	JJ	1
 small-time		3	JJ	3
 small-town		6	JJ	6
-smaller			82	JJR	82
+smaller			86	JJR	86
 smaller-size		1	JJ	1
 smaller-than-expected	1	JJ	1
-smallest		15	JJS	15
+smallest		17	JJS	17
 smallholders		1	NNS	1
 smallholdings		1	NNS	1
 smallish		2	JJ	2
 smallpox		3	NN	3
 smarmy			1	JJ	1
-smart			18	JJ	18
+smart			19	JJ	19
 smart.Dont		1	VB	1
 smarted			2	VBD	1	VBN	1
 smarten			2	VB	2
@@ -48746,34 +49013,34 @@ smartly			2	RB	2
 smash			7	NN	6	VB	1
 smash-and-grab		1	JJ	1
 smash-up		1	NN	1
-smashed			13	JJ	2	VBD	5	VBN	6
+smashed			17	JJ	2	VBD	6	VBN	9
 smashing		6	JJ	2	NN	3	VBG	1
 smattering		3	NN	3
 smear			5	JJ	1	NN	3	VB	1
 smeared			6	VBD	1	VBN	5
 smears			1	NNS	1
-smell			67	NN	53	VB	2	VBP	12
+smell			72	NN	59	VB	2	VBP	11
 smelled			9	VBD	9
 smelling		3	VBG	3
-smells			7	VBZ	7
+smells			8	VBZ	8
 smelly			5	JJ	5
 smelt			5	VBN	5
 smelted			1	VBN	1
 smelter			1	NN	1
 smelting		1	VBG	1
 smidgins		1	NNS	1
-smile			80	NN	80
-smiled			34	VBD	34
-smiles			7	NNS	6	VBZ	1
+smile			84	NN	83	VB	1
+smiled			38	VBD	38
+smiles			8	NNS	6	VBZ	2
 smiles.			1	NN	1
-smiling			16	JJ	2	VBG	14
+smiling			18	JJ	2	VBG	16
 smiling.		1	FW	1
 smilingly		1	RB	1
 smirk			1	NN	1
 smirking		1	VBG	1
 smitten			3	JJ	3
 smog			2	VBG	2
-smoke			70	NN	65	VB	4	VBP	1
+smoke			72	NN	67	VB	4	VBP	1
 smoke-blackened		1	JJ	1
 smoke-filled		1	JJ	1
 smoke?Because		1	VBP	1
@@ -48784,7 +49051,7 @@ smokers			7	NNS	7
 smokes			1	VBZ	1
 smokescreen		1	NN	1
 smokestack		1	NN	1
-smoking			43	JJ	1	NN	37	VBG	5
+smoking			47	JJ	1	NN	38	VBG	8
 smoking-cessation	1	NN	1
 smoky			8	JJ	8
 smoky-blue		1	JJ	1
@@ -48805,7 +49072,7 @@ smother			4	VB	4
 smothered		8	VBN	8
 smothering		3	VBG	3
 smouldering		4	VBG	4
-smoulders		1	NNS	1
+smoulders		1	VBZ	1
 smudge			4	NN	3	VBP	1
 smudged			5	JJ	2	VBD	1	VBN	2
 smudges			1	NNS	1
@@ -48815,7 +49082,7 @@ smuggle			2	VB	2
 smuggled		3	VBD	3
 smuggler		1	NN	1
 smugglers		1	NNS	1
-smuggling		4	NN	4
+smuggling		4	NN	1	VBG	3
 smugness		2	NN	2
 smutty			1	JJ	1
 snack			4	NN	4
@@ -48833,7 +49100,7 @@ snakes			7	NNS	6	VBZ	1
 snaking			2	VBG	2
 snap			14	JJ	3	NN	4	VB	2	VBP	5
 snap-on			1	JJ	1
-snapped			16	VBD	14	VBN	2
+snapped			17	VBD	16	VBN	1
 snapping		5	VBG	5
 snappish		1	JJ	1
 snappy			4	JJ	4
@@ -48847,9 +49114,9 @@ snarled			1	VBN	1
 snarling		3	JJ	1	NN	1	VBG	1
 snarls			1	NNS	1
 snatch			1	NN	1
-snatched		7	VBD	5	VBN	2
+snatched		10	VBD	7	VBN	3
 snatches		1	NNS	1
-snatching		1	VBG	1
+snatching		3	VBG	3
 snazzy			1	JJ	1
 snazzy!			1	NN	1
 sneak			5	VBP	5
@@ -48880,7 +49147,7 @@ snip			2	NN	2
 snipe			1	VB	1
 sniped			1	VBD	1
 snipers			1	NNS	1
-sniping			2	NN	2
+sniping			3	NN	1	VBG	2
 snipped			2	VBD	2
 snippet			1	NN	1
 snippets		2	NNS	2
@@ -48888,7 +49155,7 @@ snipping		1	VBG	1
 snivel			1	VB	1
 sniveling		1	VBG	1
 snivelled		1	VBD	1
-snivelling		1	JJ	1
+snivelling		1	VBG	1
 snivels			1	NNS	1
 snob			3	NN	3
 snobbery		2	NN	2
@@ -48910,22 +49177,23 @@ snorting		1	NN	1
 snorts			2	VBZ	2
 snotty			1	JJ	1
 snout			2	NN	2
-snow			31	NN	31
+snow			36	NN	36
 snow-capped		1	JJ	1
-snow-encrusted		1	VBN	1
+snow-covered		1	VBN	1
+snow-encrusted		1	JJ	1
 snowball		2	NN	1	VB	1
 snowballs		1	NNS	1
 snowbirds		1	NNS	1
 snowbound		1	JJ	1
 snowdrift		2	NN	2
-snowdrops		3	NNS	3
+snowdrops		3	NNS	2	VBZ	1
 snowfall		1	NN	1
 snowfields		2	NNS	2
 snowflakes		2	NNS	2
 snowing			1	VBG	1
 snowman			1	NN	1
-snows			1	NNS	1
-snowstorm		3	NN	3
+snows			2	NNS	2
+snowstorm		4	NN	4
 snowy			3	JJ	3
 snub			2	JJ	1	NN	1
 snubbed			1	VBD	1
@@ -48937,17 +49205,17 @@ snug			1	JJ	1
 snuggle			1	VB	1
 snuggled		2	VBD	2
 snugly			2	RB	2
-so			1022	CC	2	IN	94	RB	926
+so			1065	CC	2	IN	101	RB	962
 so-and-so		1	NN	1
-so-and-so!		1	CD	1
+so-and-so!		1	JJ	1
 so-and-sohe		1	JJ	1
 so-called		53	JJ	53
-so-so			1	JJ	1
+so-so			3	JJ	3
 soak			5	VB	5
 soak.			1	CD	1
 soaked			13	JJ	6	VBD	2	VBN	5
 soaking			5	JJ	3	VBG	2
-soaks			1	NNS	1
+soaks			1	VBZ	1
 soap			21	NN	21
 soapbox			3	NN	3
 soaped			2	VBD	2
@@ -48967,12 +49235,12 @@ sobering		1	JJ	1
 sobs			8	NNS	8
 soccer			7	NN	7
 sociable		1	JJ	1
-social			167	JJ	166	NN	1
+social			173	JJ	172	NN	1
 social-affairs		1	NNS	1
 social-studies		2	NN	2
 social-welfare		1	JJ	1
-socialism		20	NN	20
-socialist		24	JJ	23	NN	1
+socialism		19	NN	19
+socialist		25	JJ	24	NN	1
 socialistic		2	JJ	2
 socialists		4	NNS	4
 socialite		1	NN	1
@@ -48980,14 +49248,14 @@ socialize		2	VB	2
 socialized		4	JJ	2	VBD	1	VBN	1
 socializing		1	VBG	1
 socially		9	RB	9
-societies		26	NNS	26
-society			178	NN	178
-society?		1	NN	1
+societies		28	NNS	28
+society			188	NN	188
+society?		2	NN	1	NNS	1
 societys		2	JJ	2
 sociologist		8	NN	8
 sociologists		8	NNS	8
 sociology		6	NN	6
-sock			5	NN	1	VB	4
+sock			6	NN	1	VB	5
 socked			1	VBD	1
 socket			8	NN	8
 sockets			2	NNS	2
@@ -48996,18 +49264,18 @@ sod			2	NN	2
 soda			11	NN	11
 sodas			1	NNS	1
 sodden			2	JJ	2
-sofa			20	NN	20
+sofa			23	NN	23
 sofas			2	NNS	2
-soft			94	JJ	94
+soft			95	JJ	95
 soft-drink		4	NN	4
 soft-footed		1	RB	1
 soft-headed		1	JJ	1
 soft-pedal		1	VB	1
 soft-spoken		3	JJ	3
-soften			8	VB	8
-softened		7	JJ	1	VBD	3	VBN	3
+soften			10	VB	10
+softened		8	JJ	1	VBD	3	VBN	4
 softener		1	NN	1
-softening		6	NN	2	VBG	4
+softening		7	NN	2	VBG	5
 softens			1	VBZ	1
 softer			9	JJR	9
 softest			1	JJS	1
@@ -49020,20 +49288,20 @@ softwood		1	JJ	1
 softy			1	NN	1
 soggy			5	JJ	5
 sogo-shosha		1	NN	1
-soil			43	NN	43
+soil			44	NN	44
 soil-nutrients		1	NNS	1
 soiled			2	VBD	2
-soils			9	NNS	9
+soils			9	NNS	8	VBZ	1
 soirees			1	NNS	1
 sojourn			1	NN	1
 solace			2	NN	2
 solar			7	JJ	7
-sold			277	VBD	90	VBN	187
+sold			278	VBD	91	VBN	187
 soldering		1	JJ	1
 soldier			16	NN	16
 soldierly		1	JJ	1
-soldiers		42	NNS	42
-sole			25	JJ	19	NN	6
+soldiers		45	NNS	45
+sole			26	JJ	20	NN	6
 soled			1	VBN	1
 solely			15	RB	15
 solemn			11	JJ	11
@@ -49045,12 +49313,12 @@ solicitation		3	NN	3
 solicitations		2	NNS	2
 solicited		3	VBD	1	VBN	2
 soliciting		8	NN	2	VBG	6
-solicitor		11	NN	11
+solicitor		12	NN	12
 solicitors		10	NNS	10
 solicitous		3	JJ	3
 solicits		2	VBZ	2
 solicitude		1	NN	1
-solid			54	JJ	52	NN	1	RB	1
+solid			62	JJ	60	NN	1	RB	1
 solid-state		1	JJ	1
 solid-waste		2	NN	2
 solidarity		5	NN	5
@@ -49068,57 +49336,59 @@ solo			14	JJ	3	NN	8	RB	2	RB|JJ	1
 soloist			2	NN	2
 soloists		2	NNS	2
 soluble			4	JJ	4
-solution		44	NN	44
+solution		45	NN	45
 solutions		13	NNS	13
 solvable		1	JJ	1
-solve			19	VB	19
-solved			9	VBD	2	VBN	7
+solve			22	VB	22
+solved			10	VBD	2	VBN	8
 solvency		2	NN	2
 solvent			4	JJ	3	NN	1
 solvents		5	NNS	5
 solves			1	VBZ	1
-solving			6	VBG	6
+solving			7	VBG	7
 somatostatin		1	NN	1
 somber			1	JJ	1
 sombre			6	JJ	6
 sombrero		1	NN	1
-some			1421	DT	1408	RB	13
-somebody		29	NN	29
-somebodys		2	JJ	1	NNS	1
+some			1466	DT	1454	RB	12
+somebody		31	NN	31
+somebodys		2	NNS	2
 somebut			1	NN	1
 someday			6	RB	6
-somehow			24	RB	24
-someone			103	NN	103
+somehow			25	RB	25
+someone			112	NN	112
 someones		3	NNS	2	VBZ	1
 somersault		1	NN	1
 somersaulted		1	VBD	1
-somersaulting		2	JJ	2
+somersaulting		2	JJ	1	VBG	1
 somethin'		1	NN	1
-something		287	NN	287
-sometime		7	JJ	1	RB	6
-sometimes		79	RB	79
+something		300	NN	300
+sometime		8	JJ	1	RB	7
+sometimes		80	RB	80
 sometimes-exhausting	1	JJ	1
 sometimes-tawdry	1	JJ	1
-somewhat		45	RB	45
+somewhat		46	RB	46
 somewhat-ambiguous	1	JJ	1
-somewhere		42	RB	42
+somewhere		44	RB	44
 somnambulist		1	NN	1
 somnolent		2	JJ	2
-son			84	NN	84
+son			88	NN	88
 son-in-law		1	NN	1
 son?			1	NN	1
 sonar			2	NN	2
 sonatas			2	NNS	2
-song			39	NN	39
+song			41	NN	41
+song?			1	NN	1
 songs			20	NNS	20
 songwriters		1	NNS	1
 sonority		1	NN	1
 sonorous		5	JJ	5
-sons			19	NNS	19
-soon			194	RB	194
+sons			20	NNS	20
+soon			199	IN	3	RB	196
 soon-to-be		1	JJ	1
 soon-to-be-sold		1	JJ	1
-sooner			20	RB	6	RBR	14
+sooner			21	IN	2	RB	7	RBR	12
+soonest			1	RBS	1
 soot			2	NN	2
 soothe			7	VB	7
 soothed			1	VBN	1
@@ -49134,7 +49404,7 @@ soppy			2	JJ	2
 soprano			9	NN	9
 sopranos		1	NNS	1
 sordid			5	JJ	5
-sore			12	JJ	11	NN	1
+sore			13	JJ	12	NN	1
 sorely			1	RB	1
 soreness		2	NN	2
 sores			4	NNS	3	VBZ	1
@@ -49144,18 +49414,18 @@ sorrowed		1	VBD	1
 sorrowful		2	JJ	2
 sorrowfully		1	RB	1
 sorrows			2	NNS	2
-sorry			41	JJ	26	RB	15
+sorry			48	JJ	33	RB	15
 sorry.So		1	VBP	1
 sorrymy			1	JJ	1
-sort			93	NN	88	RB	1	VB	4
+sort			98	NN	93	RB	1	VB	4
 sort-out		1	NN	1
 sorted			2	VBN	2
 sorties			4	NNS	4
 sorting			7	VBG	7
-sorts			17	NNS	17
+sorts			18	NNS	18
 souffl			1	NN	1
 soughing		1	VBG	1
-sought			66	VBD	30	VBN	36
+sought			67	VBD	31	VBN	36
 sought-after		2	JJ	2
 soul			20	NN	20
 soul-searching		1	VBG	1
@@ -49163,28 +49433,28 @@ souled			1	JJ	1
 soulful			3	JJ	3
 soulless		3	JJ	3
 souls			6	NNS	6
-sound			149	JJ	33	NN	90	VB	23	VBP	3
+sound			159	JJ	33	NN	100	VB	22	VBP	4
 sound-alike		1	JJ	1
 sound-track		1	NN	1
 sound\/graphics		1	graphics	1
-sounded			40	VBD	37	VBN	3
+sounded			41	VBD	39	VBN	2
 sounding		4	VBG	4
 soundings		1	NNS	1
 soundless		3	JJ	3
 soundly			1	RB	1
-sounds			49	NNS	25	VBZ	24
+sounds			49	NNS	26	VBZ	23
 soundtrack		3	NN	3
-soup			19	NN	19
+soup			21	NN	21
 souped-up		1	JJ	1
 soupon			2	NN	2
 soups			3	NNS	3
 sour			11	JJ	11
-source			57	NN	57
-sources			48	NNS	48
+source			62	NN	62
+sources			51	NNS	51
 sourcing		1	VBG	1
 soured			1	JJ	1
 souring			2	NN	2
-south			44	JJ	4	NN	19	RB	21
+south			49	JJ	4	NN	19	RB	26
 south-east		6	JJ	1	NN	3	RB	2
 south-easterly		1	JJ	1
 south-west		5	JJS	1	NN	3	RB	1
@@ -49197,7 +49467,7 @@ southern		29	JJ	29
 southernmost		1	JJ	1
 southward		1	JJ	1
 southwards		1	NNS	1
-southwest		6	JJS	3	NN	2	RB	1
+southwest		6	JJ	1	JJS	2	NN	2	RB	1
 southwestern		1	JJ	1
 souvenir		2	NN	2
 souvenirs		4	NNS	4
@@ -49214,7 +49484,7 @@ soybean			4	NN	4
 soybeans		4	NNS	4
 sozzled			1	JJ	1
 spa			1	NN	1
-space			112	NN	111	VB	1
+space			115	NN	114	VB	1
 space-age		1	JJ	1
 space-based		2	JJ	2
 space-station		1	NN	1
@@ -49228,7 +49498,7 @@ spackle			1	VB	1
 spade			2	NN	2
 spades			2	NNS	2
 spaghetti		3	NNS	3
-span			7	NN	5	VBP	2
+span			11	NN	8	VBP	3
 spangled		1	JJ	1
 spank			3	NN	1	VB	2
 spanking		7	JJ	5	NN	2
@@ -49236,10 +49506,10 @@ spanned			1	VBD	1
 spanner			3	NN	3
 spanning		2	VBG	2
 spar			1	VB	1
-spare			24	JJ	21	VB	3
-spared			2	VBN	2
+spare			26	JJ	21	VB	5
+spared			6	VBN	6
 spares			3	NNS	2	VBZ	1
-sparing			3	JJ	1	VBG	2
+sparing			4	JJ	1	VBG	3
 sparingly		2	RB	2
 spark			21	NN	8	VB	13
 sparked			18	VBD	9	VBN	9
@@ -49247,7 +49517,7 @@ sparking		5	VBG	5
 sparkle			2	NN	2
 sparkled		2	VBN	2
 sparkles		1	VBZ	1
-sparkling		10	JJ	10
+sparkling		10	JJ	8	VBG	2
 sparkplugs		1	NNS	1
 sparks			8	NNS	7	VBZ	1
 sparred			1	VBD	1
@@ -49262,7 +49532,7 @@ spasmodic		1	JJ	1
 spasms			1	NNS	1
 spastic			2	JJ	2
 spastics		1	NNS	1
-spat			9	NN	3	VB	5	VBP	1
+spat			10	NN	3	VB	5	VBP	2
 spate			8	NN	8
 spatial			2	JJ	2
 spattered		1	VBD	1
@@ -49271,19 +49541,19 @@ spawn			2	VB	2
 spawned			4	VBD	2	VBN	2
 spayed			1	VBN	1
 spaying			1	NN	1
-speak			54	VB	46	VBP	8
-speaker			26	NN	26
+speak			68	VB	57	VBP	11
+speaker			28	NN	28
 speakers		11	NNS	11
-speaking		27	NN	6	VBG	21
-speaks			9	VBZ	9
-spear			7	JJ	1	NN	6
+speaking		29	NN	5	VBG	24
+speaks			10	VBZ	10
+spear			7	NN	7
 speared			2	VBD	2
 spearhead		2	NN	2
 spearheaded		4	VBD	3	VBN	1
 spearheads		1	NNS	1
 spearmint		1	NN	1
-spears			8	NNS	8
-special			180	JJ	176	NN	4
+spears			8	NNS	7	VBZ	1
+special			188	JJ	184	NN	4
 special-interest	1	JJ	1
 special-projects	1	JJ	1
 specialisation		1	NN	1
@@ -49300,22 +49570,22 @@ specialize		6	VB	5	VBP	1
 specialized		8	JJ	4	VBN	4
 specializes		8	VBZ	8
 specializing		7	VBG	7
-specially		11	RB	11
+specially		15	RB	15
 specials		1	NNS	1
 specialties		4	NNS	4
 specialty		31	JJ	1	NN	30
 specialty-chemical	1	NN	1
 specialty-metals	1	NNS	1
-species			24	NN	9	NNS	15
-specific		68	JJ	65	NN	3
-specifically		21	RB	21
+species			27	NN	10	NNS	17
+specific		73	JJ	70	NN	3
+specifically		25	RB	25
 specification		4	NN	4
 specifications		6	NNS	6
 specifics		2	NNS	2
-specified		11	JJ	3	VBD	1	VBN	7
+specified		12	JJ	3	VBD	1	VBN	8
 specify			13	VB	13
 specifying		1	VBG	1
-specimen		7	NN	4	NNS	3
+specimen		7	NN	6	NNS	1
 specimens		2	NNS	2
 specious		2	JJ	2
 speck			5	NN	5
@@ -49323,7 +49593,7 @@ speckling		1	VBG	1
 specks			1	NNS	1
 specs			2	NNS	2
 spectacle		8	NN	8
-spectacles		13	NNS	13
+spectacles		12	NNS	12
 spectacular		18	JJ	17	NN	1
 spectacularly		4	RB	4
 spectator		3	NN	3
@@ -49341,45 +49611,47 @@ speculative		10	JJ	10
 speculator		2	NN	2
 speculators		25	NNS	25
 sped			5	VBD	2	VBN	3
-speech			99	NN	99
+speech			103	NN	103
 speeches		8	NNS	8
 speechless		2	JJ	2
-speed			90	NN	73	VB	17
+speed			95	NN	78	VB	17
 speeded			2	VBD	2
 speeded-up		1	JJ	1
 speedier		1	JJR	1
 speeding		9	JJ	1	NN	1	VBG	7
 speedometer		5	NN	5
 speedometers		1	NNS	1
-speeds			14	NNS	13	VBZ	1
+speeds			17	NNS	15	VBZ	2
 speedway		1	NN	1
 speedy			4	JJ	4
-spell			12	NN	5	VB	7
+spell			14	NN	5	VB	9
 spellbinding		2	JJ	2
 spellbound		2	JJ	2
-spelled			5	VBN	5
+spelled			6	VBN	6
 spellers		1	NNS	1
-spelling		18	NN	12	VBG	6
+spelling		18	NN	14	VBG	4
 spellings		3	NNS	3
 spells			4	NNS	2	VBZ	2
+spelt			2	VBN	2
 spend			99	VB	72	VBP	27
 spender			4	NN	4
 spenders		3	NNS	3
-spending		185	JJ	1	NN	151	VBG	32	VBG|NN	1
+spending		188	JJ	1	NN	153	VBG	33	VBG|NN	1
 spends			16	VBZ	16
 spendthrift		2	JJ	1	NN	1
-spent			178	VBD	136	VBN	42
+spent			186	VBD	143	VBN	43
 sperm			6	NN	6
-spewing			2	VBG	2
+spewed			3	VBD	3
+spewing			3	VBG	3
 sphere			6	NN	6
 spheres			1	NNS	1
 spherical		1	JJ	1
 sphinx			1	NN	1
 spice			5	NN	4	VB	1
-spiced			2	VBD	1	VBN	1
+spiced			3	VBD	1	VBN	2
 spices			6	NNS	6
 spick-and-span		1	JJ	1
-spicy			1	JJ	1
+spicy			1	NN	1
 spider			5	NN	5
 spiders			4	NNS	4
 spidery			2	JJ	2
@@ -49392,14 +49664,14 @@ spiky			3	JJ	3
 spill			12	NN	9	VB	3
 spillage		2	NN	2
 spilled			1	VBD	1
-spilling		6	NN	6
+spilling		6	NN	4	VBG	2
 spills			2	VBZ	2
 spilt			1	NN	1
 spin			19	NN	5	VB	14
 spin-dry		3	VB	3
 spin-off		3	NN	3
 spin-offs		1	NNS	1
-spinach			3	NN	2	VB	1
+spinach			3	NN	3
 spinal			4	JJ	3	NN	1
 spindle			1	JJ	1
 spindly			2	JJ	2
@@ -49416,28 +49688,28 @@ spiraling		1	VBG	1
 spiralled		1	VBD	1
 spiralling		2	VBG	2
 spire			3	NN	3
-spires			4	NNS	4
-spirit			34	NN	33	VB	1
-spirited		6	JJ	4	VBN	2
+spires			4	NNS	3	VBZ	1
+spirit			35	NN	34	VB	1
+spirited		7	JJ	4	VBN	3
 spirits			29	NNS	29
-spiritual		9	JJ	1	NN	8
+spiritual		9	NN	9
 spiritualists		1	NNS	1
 spiritually		2	RB	2
 spit			4	NN	2	VB	2
-spite			22	NN	21	VB	1
+spite			23	NN	22	VB	1
 spiteful		2	JJ	2
 spitfire		1	NN	1
 spits			1	NNS	1
-spitting		2	NN	2
+spitting		2	NN	1	VBG	1
 spittle			2	NN	2
 splash			6	NN	4	VB	2
 splashed		14	VBD	14
-splashes		2	NNS	2
+splashes		2	NNS	1	VBZ	1
 splashing		2	VBG	2
 splashy			2	JJ	2
 splat			1	NN	1
 splatter		1	NN	1
-splattered		3	VBN	3
+splattered		3	VBD	1	VBN	2
 splay			1	VB	1
 splayed			1	VBN	1
 splendid		21	JJ	21
@@ -49448,7 +49720,7 @@ splinter		3	NN	2	VB	1
 splintered		2	JJ	2
 splinters		2	NNS	2
 splints			1	NNS	1
-split			72	JJ	2	NN	44	VB	6	VBD	7	VBN	13
+split			73	JJ	2	NN	45	VB	6	VBD	7	VBN	13
 splits			4	NNS	2	VBZ	2
 splitting		4	JJ	1	NN	3
 splodges		1	NNS	1
@@ -49459,15 +49731,15 @@ splutter		3	NN	2	VB	1
 spluttered		1	VBD	1
 spluttering		4	VBG	4
 spoil			6	VBP	6
-spoiled			8	JJ	4	VBD	4
+spoiled			9	JJ	5	VBD	4
 spoiling		5	VBG	5
 spoilsport		1	NN	1
 spoilt			6	JJ	2	NN	1	VB	2	VBN	1
-spoke			85	VBD	85
-spoken			22	VBN	22
+spoke			88	VBD	88
+spoken			23	VBN	23
 spokes			2	NNS	2
 spokesman		231	NN	231
-spokesmen		4	NNS	4
+spokesmen		5	NN	1	NNS	4
 spokesperson		2	NN	2
 spokeswoman		65	NN	65
 spokewoman		1	NN	1
@@ -49483,10 +49755,10 @@ spontaneity		1	NN	1
 spontaneous		13	JJ	13
 spontaneously		3	RB	3
 spoof			1	NN	1
-spoofing		2	NN	1	VBG	1
+spoofing		2	VBG	2
 spook			2	NN	1	VBP	1
 spooked			4	VBD	1	VBN	3
-spooking		1	JJ	1
+spooking		1	VBG	1
 spooks			3	NNS	3
 spooky			1	JJ	1
 spoon			7	NN	7
@@ -49499,20 +49771,20 @@ spoor			1	NN	1
 sporadic		2	JJ	2
 sporadically		1	RB	1
 spores			1	NNS	1
-sport			18	NN	18
+sport			19	NN	19
 sport-utility		1	JJ	1
 sported			2	VBD	2
 sportif			1	FW	1
 sporting		8	JJ	2	NN	1	VBG	5
 sporting-goods		1	NNS	1
-sports			73	NNS	73
+sports			75	NNS	75
 sports-oriented		1	JJ	1
 sportsman		1	NN	1
 sportsman?No		1	NN	1
 sportswear		2	NN	2
 sportswoman		1	NN	1
 sporty			3	JJ	3
-spot			50	NN	42	VB	8
+spot			54	NN	46	VB	8
 spot-on			1	JJ	1
 spotless		1	JJ	1
 spotlessly		1	RB	1
@@ -49528,9 +49800,11 @@ spotty			6	JJ	6
 spouse			2	NN	2
 spouses			4	NNS	4
 spout			5	NN	3	VBP	2
+spouted			3	VBD	1	VBN	2
+spouting		5	VBG	5
 sprain			1	NN	1
 sprained		2	VBD	2
-sprang			13	VBD	13
+sprang			16	VBD	16
 sprawl			1	NN	1
 sprawled		6	JJ	2	VBD	3	VBN	1
 sprawling		6	JJ	3	VBG	3
@@ -49539,15 +49813,15 @@ sprayed			4	VBD	2	VBN	2
 sprayer			2	NN	2
 spraying		5	VBG	5
 sprays			2	NNS	2
-spread			84	NN	36	VB	16	VBD	11	VBN	20	VBP	1
+spread			88	NN	36	VB	18	VBD	13	VBN	20	VBP	1
 spread-eagled		2	JJ	2
-spreading		18	VBG	18
+spreading		20	VBG	20
 spreads			8	NNS	4	VBZ	4
 spreadsheets		2	NNS	2
 spree			7	NN	7
 sprig			2	NN	2
 sprightly		4	JJ	4
-spring			106	NN	102	VB	4
+spring			107	NN	102	VB	5
 spring-cleaning		1	NN	1
 spring-early		1	JJ	1
 spring-training		1	NN	1
@@ -49567,7 +49841,7 @@ sprout			3	VB	2	VBP	1
 sprouted		3	VBN	3
 sprouts			1	NNS	1
 spruce			3	JJ	1	NN	1	VB	1
-sprung			7	VBN	7
+sprung			8	VBN	8
 spry			1	JJ	1
 spuds			2	NNS	2
 spun			9	VBD	2	VBN	7
@@ -49587,14 +49861,14 @@ spurting		1	VBG	1
 spurts			4	NNS	3	VBZ	1
 sputter			1	NN	1
 sputtered		2	VBD	2
-sputtering		1	JJ	1
+sputtering		1	VBG	1
 spy			16	NN	14	VB	2
 spy-chaser		1	NN	1
 spy-chasing		1	NN	1
 spying			5	VBG	5
 squabble		2	NN	2
 squabbles		3	NNS	3
-squabbling		3	NN	3
+squabbling		3	NN	2	VBG	1
 squad			6	NN	6
 squadron		3	NN	3
 squadrons		2	NNS	2
@@ -49606,14 +49880,14 @@ squalling		2	JJ	1	VBG	1
 squalor			3	NN	3
 squander		2	VB	1	VBP	1
 squandered		1	VBN	1
-square			72	JJ	43	NN	20	RB	4	VB	5
+square			74	JJ	45	NN	20	RB	4	VB	5
 squared			3	VBD	2	VBN	1
 squarely		2	RB	2
 squares			7	NNS	7
 squaring		1	VBG	1
-squash			7	JJ	2	NN	5
+squash			7	JJ	3	NN	4
 squashed		6	JJ	6
-squashing		1	VBG	1
+squashing		2	VBG	2
 squat			6	JJ	4	NN	1	VB	1
 squatted		5	VBN	5
 squatter		1	NN	1
@@ -49634,7 +49908,7 @@ squeezed		16	VBD	9	VBN	7
 squeezing		6	VBG	6
 squelch			1	VBP	1
 squelched		1	VBN	1
-squelching		1	JJ	1
+squelching		1	VBG	1
 squibs			1	NNS	1
 squid			2	NN	2
 squiffy			1	JJ	1
@@ -49661,25 +49935,25 @@ stability		21	NN	21
 stabilization		1	NN	1
 stabilize		10	VB	10
 stabilizing		3	VBG	3
-stable			35	JJ	32	NN	3
+stable			37	JJ	34	NN	3
 stables			5	NNS	5
-stabling		1	NN	1
+stabling		1	VBG	1
 staccato		4	JJ	2	NN	1	RB	1
 stack			6	NN	3	VB	3
 stacked			14	VBN	14
 stacking		3	VBG	3
 stacks			4	NNS	4
-stadia			1	NNS	1
-stadium			16	NN	16
+stadia			1	NN	1
+stadium			17	NN	17
 stadiums		6	NNS	6
-staff			117	NN	114	VB	3
+staff			121	NN	118	VB	3
 staff-reduction		1	NN	1
 staffed			4	VBN	4
 staffer			1	NN	1
 staffers		11	NNS	11
 staffs			10	NNS	10
 stag			2	NN	2
-stage			91	NN	86	VB	4	VBP	1
+stage			98	NN	93	VB	4	VBP	1
 stage-managed		1	VBN	1
 stage-managing		1	JJ	1
 stage-struck		1	JJ	1
@@ -49710,7 +49984,7 @@ stains?			1	NN	1
 stair			5	NN	5
 staircase		7	NN	7
 staircases		1	NNS	1
-stairs			36	NNS	36
+stairs			38	NNS	38
 stairway		3	NN	3
 stairwell		1	NN	1
 stake			233	NN	230	VB	3
@@ -49725,7 +49999,7 @@ stalk			2	NN	2
 stalked			5	VBN	5
 stalking		3	VBG	3
 stalks			3	NNS	3
-stall			9	NN	5	VB	4
+stall			10	NN	6	VB	4
 stall-holders		1	NNS	1
 stalled			12	VBD	1	VBN	11
 stalling		2	VBG	2
@@ -49739,33 +50013,33 @@ stammer			3	NN	3
 stammered		2	VBD	2
 stammering		2	JJ	1	VBG	1
 stamp			12	NN	8	VB	4
-stamped			8	JJ	3	VBD	2	VBN	3
+stamped			8	JJ	1	VBD	1	VBN	6
 stampede		6	NN	4	VB	2
 stampeded		3	VBN	3
 stamping		3	VBG	3
 stampings		1	NNS	1
-stamps			17	NNS	17
+stamps			17	NNS	15	VBZ	2
 stance			14	NN	14
-stand			112	NN	24	VB	47	VBP	41
+stand			123	NN	23	VB	55	VBP	45
 stand-alone		3	JJ	3
 stand-in		2	NN	2
 stand-offish		1	JJ	1
 stand-up		2	JJ	2
 stand?			1	NN	1
-standard		84	JJ	47	NN	37
+standard		89	JJ	46	NN	43
 standard-bearer		1	NN	1
 standardized		11	JJ	11
 standardizing		1	VBG	1
-standards		66	NNS	66
+standards		71	NNS	71
 standby			3	JJ	1	NN	2
-standing		62	JJ	4	NN	22	VBG	36
+standing		70	JJ	4	NN	24	VBG	42
 standing-room		1	NN	1
 standing-room-only	1	JJ	1
 standoff		1	NN	1
 standout		1	NN	1
 standpipes		2	NNS	2
 standpoint		7	NN	7
-stands			43	NN	1	NNS	10	VBZ	32
+stands			44	NN	1	NNS	9	VBZ	34
 standstill		12	JJ	6	NN	6
 stank			1	VB	1
 stanza			1	NN	1
@@ -49774,7 +50048,7 @@ staple			7	JJ	2	NN	5
 stapled			3	VBN	3
 staples			1	NNS	1
 stapling		1	NN	1
-star			29	JJ	1	NN	25	VB	3
+star			31	JJ	1	NN	27	VB	3
 star-shaped		1	JJ	1
 star-studded		1	JJ	1
 starboard		4	JJ	2	NN	2
@@ -49784,21 +50058,21 @@ starches		1	NNS	1
 starchy			1	NN	1
 stardom			1	NN	1
 stare			22	NN	1	VBP	21
-stared			41	VBD	41
+stared			44	VBD	44
 stares			3	NNS	3
 staring			19	VBG	19
 stark			8	JJ	8
-starker			1	NN	1
+starker			1	JJR	1
 starkers		1	JJ	1
 starred			4	JJ	1	VBD	1	VBN	2
 starring		6	VBG	6
 starry			1	JJ	1
 starry-eyed		1	JJ	1
-stars			38	NNS	34	VBZ	4
-start			141	NN	57	VB	60	VBP	24
+stars			42	NNS	38	VBZ	4
+start			146	NN	59	VB	63	VBP	24
 start-up		13	JJ	7	NN	5	NNS	1
 start-ups		3	NNS	3
-started			215	VBD	180	VBN	35
+started			228	VBD	192	VBN	36
 starter			3	JJ	1	NN	2
 starters		4	NNS	4
 starting		40	JJ	1	NN	1	VBG	38
@@ -49806,13 +50080,13 @@ startle			1	VB	1
 startled		7	VBD	7
 startling		10	JJ	10
 startlinga		1	JJ	1
-starts			25	NNS	4	VBP	1	VBZ	20
+starts			27	NNS	4	VBP	1	VBZ	22
 starvation		4	NN	4
 starve			4	VB	4
-starved			7	VBN	7
-starving		10	VBG	10
+starved			11	VBN	11
+starving		11	VBG	11
 stashed			3	VBD	3
-state			408	NN	399	VB	4	VBP	5
+state			428	NN	419	VB	4	VBP	5
 state-appointed		3	JJ	3
 state-approved		1	JJ	1
 state-controlled	7	JJ	7
@@ -49830,17 +50104,17 @@ state-supervised	1	JJ	1
 stated			28	JJ	5	VBD	9	VBN	14
 stateless		1	JJ	1
 stately			3	JJ	3
-statement		150	NN	150
+statement		152	NN	152
 statements		36	NNS	36
 stateroom		1	NN	1
-states			88	NNS	82	VBZ	6
+states			90	NNS	84	VBZ	6
 statesman		4	NN	4
 statesmanship		1	NN	1
 statesmen		4	NNS	4
 statewide		3	JJ	2	RB	1
 static			9	JJ	8	NN	1
 stating			1	VBG	1
-station			81	NN	81
+station			85	NN	85
 stationary		3	JJ	3
 stationed		4	VBN	4
 stationer		1	NN	1
@@ -49858,7 +50132,7 @@ statistics		21	NNS	21
 statue			26	NN	26
 statues			4	NNS	4
 statuesque		1	JJ	1
-stature			8	NN	8
+stature			9	NN	9
 status			49	FW	1	NN	48
 status-conscious	1	JJ	1
 status?Single		1	NN	1
@@ -49871,9 +50145,9 @@ staunchest		1	JJS	1
 staunchly		5	RB	5
 stave			1	VB	1
 staves			1	NNS	1
-stay			109	NN	12	VB	81	VBP	16
+stay			115	NN	14	VB	85	VBP	16
 stay-at-home		1	NN	1
-stayed			39	VBD	33	VBN	6
+stayed			41	VBD	36	VBN	5
 staying			19	VBG	19
 stays			6	NNS	2	VBZ	4
 steadfast		2	JJ	2
@@ -49893,13 +50167,13 @@ steam			26	JJ	1	NN	23	VB	2
 steam-powered		1	JJ	1
 steamed			2	VBD	1	VBN	1
 steamer			5	NN	5
-steamers		1	NNS	1
+steamers		2	NNS	2
 steaming		6	VBG	6
 steamroller		1	NN	1
 steamrollered		1	VBD	1
 steamy			3	JJ	3
 steed			1	NN	1
-steel			117	NN	116	VB	1
+steel			119	NN	118	VB	1
 steel-casting		1	JJ	1
 steel-reinforced	1	JJ	1
 steel-related		2	JJ	2
@@ -49911,7 +50185,7 @@ steep			25	JJ	25
 steeped			4	JJ	3	VBN	1
 steeper			3	JJR	3
 steepest		1	JJS	1
-steeply			5	RB	5
+steeply			6	RB	6
 steer			4	VB	4
 steered			8	VBD	6	VBN	2
 steering		13	NN	8	VBG	5
@@ -49924,23 +50198,23 @@ stems			15	NNS	1	VBZ	14
 stench			2	NN	2
 stencilled		1	JJ	1
 stentorian		1	JJ	1
-step			96	NN	79	VB	16	VBP	1
+step			99	NN	81	VB	17	VBP	1
 step?			1	NN	1
 stepchildren		1	NN	1
 stepfather		2	NN	2
 stepladder		2	NN	2
 stepmother		1	NN	1
 steppe			1	NN	1
-stepped			32	VBD	28	VBN	4
+stepped			34	VBD	30	VBN	4
 steppes			2	NNS	2
 stepping		11	JJ	1	VBG	10
-steps			83	NNS	81	VBZ	2
+steps			87	NNS	85	VBZ	2
 stepson			2	NN	2
 stereo			14	JJ	6	NN	8
 stereotype		1	NN	1
 stereotyped		5	JJ	5
 stereotypes		4	NNS	4
-stereotyping		1	NN	1
+stereotyping		1	VBG	1
 sterile			10	JJ	10
 steriles		1	NNS	1
 sterilise		1	VB	1
@@ -49950,19 +50224,19 @@ sterilize		1	VB	1
 sterilized		4	VBN	4
 sterilizing		3	VBG	3
 sterling		27	JJ	4	NN	23
-stern			15	JJ	14	NN	1
+stern			16	JJ	15	NN	1
 stern-faced		1	JJ	1
-sterner			1	NN	1
+sterner			1	JJR	1
 sternly			1	RB	1
 steroids		2	NNS	2
-stew			8	NN	8
+stew			9	NN	9
 steward			4	NN	4
 stewardess		1	NN	1
 stewards		3	NNS	3
 stewardship		1	NN	1
 stewed			2	JJ	2
 stews			1	NNS	1
-stick			30	NN	15	VB	14	VBP	1
+stick			32	NN	17	VB	14	VBP	1
 stick-and-carrot	1	NN	1
 stick-in-the-mud	1	NN	1
 sticker			3	NN	3
@@ -49973,12 +50247,12 @@ stickiness		1	NN	1
 sticking		11	NN	1	VBG	10
 stickler		1	NN	1
 stickpin		1	NN	1
-sticks			17	NNS	16	VBZ	1
-sticky			8	JJ	8
-stiff			26	JJ	26
+sticks			17	NNS	15	VBZ	2
+sticky			9	JJ	9
+stiff			30	JJ	30
 stiffen			1	VB	1
 stiffened		3	VBD	3
-stiffening		1	JJ	1
+stiffening		1	VBG	1
 stiffer			5	JJR	5
 stiffest		1	JJS	1
 stiffly			2	RB	2
@@ -49991,7 +50265,8 @@ stigmatize		1	VB	1
 stigmatized		1	VBN	1
 stile			1	NN	1
 stiletto		1	NN	1
-still			668	JJ	5	RB	663
+still			702	JJ	8	RB	694
+still!			1	NNP	1
 still-outstanding	1	JJ	1
 still-raging		1	VBG	1
 still-to-be-named	1	JJ	1
@@ -50005,20 +50280,20 @@ stimulant		2	NN	2
 stimulate		9	VB	9
 stimulated		4	VBN	4
 stimulates		3	VBZ	3
-stimulating		6	JJ	1	VBG	5
+stimulating		8	JJ	2	VBG	6
 stimulation		3	NN	3
 stimulative		1	JJ	1
 stimulator		1	NN	1
 stimulators		6	NNS	6
-stimuli			4	NNS	4
+stimuli			4	NN	2	NNS	2
 stimulus		6	NN	6
 sting			4	NN	4
 stingier		1	JJR	1
-stinging		6	JJ	4	VBG	2
+stinging		6	JJ	3	VBG	3
 stingrays		1	NNS	1
 stingy			2	JJ	2
 stink			2	VBP	2
-stinking		5	JJ	4	NN	1
+stinking		5	JJ	3	NN	1	VBG	1
 stinks			1	VBZ	1
 stint			3	NN	3
 stipend			1	NN	1
@@ -50040,7 +50315,7 @@ stitch			6	NN	5	VB	1
 stitched		6	VBN	6
 stitches		7	NNS	7
 stitching		3	NN	2	VBG	1
-stock			879	JJ	3	NN	864	VB	12
+stock			885	JJ	3	NN	870	VB	12
 stock-fund		1	NN	1
 stock-in-trade		1	NN	1
 stock-index		97	JJ	47	NN	49	NNS	1
@@ -50061,46 +50336,46 @@ stock-trading		3	JJ	1	NN	2
 stockade		1	NN	1
 stockbroker		3	NN	3
 stockbrokers		5	NNS	5
-stocked			2	VBN	2
+stocked			4	VBN	4
 stockholder		3	NN	3
 stockholders		12	NNS	12
 stockier		2	JJR	2
-stocking		2	VBG	2
+stocking		4	VBG	4
 stockinged		1	JJ	1
 stockings		2	NNS	2
 stockist		1	NN	1
 stockpile		4	NN	3	VB	1
 stockpiled		1	VBN	1
 stockpiles		5	NNS	5
-stockpiling		1	NN	1
-stocks			358	NNS	357	RB	1
+stockpiling		1	VBG	1
+stocks			360	NNS	358	RB	1	VBZ	1
 stocky			3	JJ	3
 stodgy			2	JJ	2
 stoke			3	VB	3
 stoked			1	VBN	1
 stole			5	VBD	5
-stolen			22	JJ	5	VBN	17
+stolen			23	JJ	5	VBN	18
 stolid			1	JJ	1
-stomach			34	NN	31	VB	3
+stomach			34	NN	32	VB	2
 stomach-ache		1	NN	1
 stomachs		3	NNS	3
 stomp			2	NN	2
 stomped			1	VBD	1
 stomping		2	VBG	2
-stone			67	NN	66	VB	1
+stone			68	NN	67	VB	1
 stoned			3	VBN	3
 stonemason		1	NN	1
 stones			38	NNS	38
 stonewalling		1	VBG	1
 stony			3	JJ	3
-stood			152	VBD	151	VBN	1
+stood			163	VBD	162	VBN	1
 stooge			1	NN	1
 stooges			2	NNS	2
-stool			6	JJ	1	NN	5
-stoop			7	NN	4	VB	3
+stool			6	NN	6
+stoop			11	NN	4	VB	7
 stooped			6	VBD	4	VBN	2
 stooping		1	JJ	1
-stop			143	NN	22	VB	115	VBP	6
+stop			158	NN	23	VB	128	VBP	7
 stop!			1	NNS	1
 stop-gap		1	JJ	1
 stop-loss		4	JJ	1	NN	3
@@ -50111,34 +50386,34 @@ stopcock		1	NN	1
 stopgap			4	NN	4
 stopover		1	NN	1
 stoppage		2	NN	2
-stopped			119	VBD	87	VBN	32
+stopped			130	VBD	98	VBN	32
 stopper			3	NN	3
-stopping		6	VBG	6
-stops			8	NNS	5	VBZ	3
+stopping		7	VBG	7
+stops			10	NNS	5	VBZ	5
 storability		1	NN	1
 storage			26	NN	26
-store			77	NN	66	VB	9	VBP	2
+store			78	NN	67	VB	9	VBP	2
 stored			9	VBD	4	VBN	5
 storehouses		1	NNS	1
 storeroom		1	NN	1
 stores			97	NNS	96	VBZ	1
 storey			1	NN	1
-storeys			1	NNS	1
-stories			55	NNS	55
-stories?		1	NN	1
+storeys			2	NNS	2
+stories			57	NNS	57
+stories?		1	NNS	1
 storing			2	VBG	2
 storks			1	NNS	1
-storm			35	NN	34	VB	1
+storm			36	NN	35	VB	1
 stormbound		1	JJ	1
 stormed			5	VBD	5
 stormier		1	JJR	1
 storming		2	NN	1	VBG	1
 storms			6	NNS	6
 stormy			6	JJ	6
-story			147	NN	147
+story			151	NN	151
 story-teller		2	NN	2
 story?			1	NN	1
-story?Please		1	VB	1
+story?Please		1	NN	1
 storyteller		3	NN	3
 storytellers		3	NNS	3
 storytelling		3	NN	3
@@ -50156,7 +50431,7 @@ strafed			1	VBD	1
 straggle		1	VB	1
 straggled		1	VBD	1
 straggling		1	VBG	1
-straight		64	JJ	32	RB	32
+straight		73	JJ	33	RB	40
 straight!		2	NNS	2
 straight-faced		1	JJ	1
 straight-talking	1	JJ	1
@@ -50166,7 +50441,7 @@ straightened		6	VBD	5	VBN	1
 straightens		2	VBZ	2
 straighter		1	RBR	1
 straightforward		6	JJ	6
-strain			33	NN	28	VB	5
+strain			34	NN	30	VB	4
 strained		10	JJ	6	VBN	4
 strainers		1	NNS	1
 straining		2	VBG	2
@@ -50180,13 +50455,13 @@ strand			1	NN	1
 stranded		5	VBN	5
 stranding		1	VBG	1
 strands			6	NNS	6
-strange			44	JJ	44
+strange			52	JJ	52
 strange-looking		1	JJ	1
 strangely		8	RB	8
 strangeness		1	NN	1
-stranger		16	NN	16
+stranger		18	NN	18
 strangers		10	NNS	10
-strangle		2	JJ	1	VB	1
+strangle		2	NN	1	VB	1
 strangled		5	VBN	5
 stranglehold		1	NN	1
 strangles		1	VBZ	1
@@ -50196,9 +50471,9 @@ strapless		1	JJ	1
 strapped		9	VBD	1	VBN	8
 strapping		1	JJ	1
 straps			4	NNS	3	VBZ	1
-strata			5	NN	5
+strata			5	NN	3	NNS	2
 stratagem		1	NN	1
-strategic		46	JJ	46
+strategic		48	JJ	48
 strategies		24	NNS	24
 strategist		10	NN	10
 strategists		5	NNS	5
@@ -50206,11 +50481,12 @@ strategy		117	NN	117
 stratosphere		1	NN	1
 stratospheric		2	JJ	2
 stratum			1	NN	1
-straw			13	NN	13
+straw			15	NN	15
 strawberries		4	NNS	4
 strawberry		2	NN	2
-stray			11	JJ	7	VB	2	VBP	2
-strayed			2	VBN	2
+stray			14	JJ	8	VB	3	VBP	3
+strayed			3	VBN	3
+straying		1	VBG	1
 strays			1	NNS	1
 streak			14	NN	11	VB	3
 streaked		5	VBD	5
@@ -50218,44 +50494,46 @@ streaker		1	NN	1
 streaking		1	VBG	1
 streaks			2	NNS	2
 streaky			2	JJ	2
-stream			37	NN	37
+stream			39	NN	39
 stream-of-consciousness	1	NN	1
-streamed		5	VBD	5
+streamed		6	VBD	6
 streamers		2	NNS	2
-streaming		7	NN	1	VBG	6
+streaming		9	NN	1	VBG	8
 streamline		7	VB	7
 streamlined		5	JJ	5
 streamlining		10	NN	2	VBG	8
 streams			11	NNS	11
-street			111	NN	111
+street			115	NN	114	NNP	1
 street-corner		2	JJ	2
 streetcar		1	NN	1
-streets			83	NNS	83
-strength		104	NN	104
+streets			87	NNS	87
+strength		108	IN	1	NN	107
 strengthen		20	VB	19	VBP	1
-strengthened		21	JJ	1	VBD	9	VBN	11
-strengthening		12	JJ	1	NN	4	VBG	7
+strengthened		21	JJ	1	VBD	10	VBN	10
+strengthening		12	NN	3	VBG	9
 strengthens		2	VBZ	2
 strengths		5	NNS	5
 strenuous		7	JJ	7
 strenuously		2	RB	2
 streptokinase		2	NNP	2
-stress			23	NN	16	VB	6	VBP	1
+stress			27	NN	20	VB	6	VBP	1
 stressed		10	JJ	1	VBD	7	VBN	2
-stresses		3	NNS	1	VBZ	2
+stresses		4	NNS	2	VBZ	2
 stressful		4	JJ	4
-stressing		3	VBG	3
+stressing		4	VBG	4
 stretch			23	NN	14	VB	7	VBP	2
-stretched		28	JJ	1	VBD	10	VBN	17
+stretched		29	JJ	1	VBD	10	VBN	18
 stretcher		2	NN	2
 stretcher-bearers	1	NNS	1
 stretches		11	NNS	5	VBZ	6
 stretching		10	VBG	10
+strew			1	VB	1
 strewed			1	VBD	1
-strewn			2	VBN	2
+strewn			5	VBN	5
 stricken		5	JJ	2	VBN	3
-strict			22	JJ	22
-stricter		2	JJR	2
+strict			27	JJ	27
+stricter		4	JJR	4
+strictest		1	JJS	1
 strictly		20	RB	20
 strictness		1	NN	1
 stricture		1	NN	1
@@ -50265,40 +50543,41 @@ strident		5	JJ	5
 strides			4	NNS	4
 striding		2	VBG	2
 strife			3	NN	3
-strike			113	NN	87	VB	25	VBP	1
+strike			117	NN	92	VB	24	VBP	1
 strike-force		3	NN	3
 strikebound		1	JJ	1
 strikers		6	NNS	6
-strikes			39	NNS	35	VBZ	4
-striking		25	JJ	19	VBG	6
-string			42	NN	40	NNS	1	VB	1
+strikes			42	NNS	36	VBZ	6
+striking		26	JJ	19	VBG	7
+strikingly		1	RB	1
+string			43	NN	41	NNS	1	VB	1
 stringent		7	JJ	7
 stringently		1	RB	1
 stringing		1	VBG	1
 strings			11	NNS	11
 stringy			2	JJ	2
-strip			27	NN	21	VB	6
-stripe			2	NN	2
-striped			15	JJ	15
+strip			28	NN	22	VB	6
+stripe			3	NN	3
+striped			15	JJ	13	VBN	2
 stripes			8	NNS	8
 stripling		1	NN	1
-stripped		25	VBD	7	VBN	18
+stripped		25	VBD	6	VBN	19
 stripping		3	VBG	3
 strips			6	NNS	5	VBZ	1
 stripy			1	JJ	1
-strive			4	VBP	4
-striven			1	VBN	1
+strive			5	VBP	5
+striven			2	VBN	2
 strives			1	VBZ	1
-striving		7	VBG	7
+striving		8	VBG	8
 strobe			1	NN	1
 strode			3	VBD	3
 stroke			14	NN	14
 stroked			4	VBD	4
 strokes			15	NNS	14	VBZ	1
 stroll			5	NN	1	VB	4
-strolled		6	JJ	3	VBD	3
-strolling		5	VBG	5
-strong			261	JJ	260	RB	1
+strolled		7	JJ	4	VBD	2	VBN	1
+strolling		6	VBG	6
+strong			266	JJ	265	RB	1
 strong-minded		1	JJ	1
 strong-willed		2	JJ	2
 stronger		33	JJR	32	RBR	1
@@ -50306,28 +50585,28 @@ stronger-than-expected	1	JJ	1
 strongest		15	JJS	15
 stronghold		4	NN	4
 strongholds		2	NNS	2
-strongly		37	RB	37
+strongly		43	RB	43
 stroppy			1	JJ	1
-strove			2	VBD	2
-struck			47	VBD	28	VBN	19
+strove			3	VBD	3
+struck			48	VBD	28	VBN	20
 structively		1	RB	1
 structural		9	JJ	9
 structurally		1	RB	1
-structure		52	NN	50	VB	2
+structure		55	NN	52	VB	3
 structured		15	JJ	4	VBN	11
 structures		12	NNS	12
 structuring		2	VBG	2
-struggle		48	NN	43	VB	5
-struggled		13	VBD	12	VBN	1
+struggle		49	NN	44	VB	5
+struggled		14	VBD	13	VBN	1
 struggles		7	NNS	4	VBZ	3
 struggling		21	VBG	21
 strumming		1	VBG	1
 strumpets		1	NNS	1
 strung			3	VBN	3
 strut			1	VB	1
-struts			2	NNS	1	VBZ	1
+struts			2	NNS	2
 strutted		3	VBD	2	VBN	1
-strutting		1	NN	1
+strutting		1	VBG	1
 strychnine		1	NN	1
 stub			1	NN	1
 stubbed			4	VBD	4
@@ -50338,15 +50617,15 @@ stubbornly		1	RB	1
 stubby			3	JJ	3
 stubs			3	NNS	3
 stucco			1	NN	1
-stuck			55	JJ	2	VBD	23	VBN	30
+stuck			56	JJ	2	VBD	24	VBN	30
 stud			4	NN	4
 studded			4	JJ	2	VBN	2
-student			81	NN	81
+student			82	NN	82
 student-athlete		3	NN	3
 student-athletes	1	NNS	1
 student-test		1	JJ	1
 studentled		1	VBN	1
-students		138	NNS	138
+students		151	NNS	151
 studied			24	JJ	2	VBD	10	VBN	12
 studies			52	NNS	52
 studio			42	NN	42
@@ -50354,12 +50633,12 @@ studios			6	NNS	6
 studious		2	JJ	2
 studiously		5	RB	5
 studs			3	NNS	3
-study			131	NN	110	VB	18	VBP	3
-studying		34	VBG	34
-stuff			36	NN	34	VBP	2
+study			135	NN	114	VB	17	VBP	4
+studying		37	VBG	37
+stuff			40	NN	38	VBP	2
 stuffed			11	VBD	4	VBN	7
 stuffing		1	VBG	1
-stuffy			3	JJ	3
+stuffy			4	JJ	4
 stultify		1	VB	1
 stumble			4	NN	1	VB	2	VBP	1
 stumbled		13	VBD	11	VBN	2
@@ -50377,19 +50656,19 @@ stunted			5	JJ	2	VBN	3
 stunts			2	NNS	2
 stupefied		2	VBN	2
 stupendous		2	JJ	2
-stupid			20	JJ	20
+stupid			23	JJ	23
 stupid!Oh		1	JJ	1
 stupidest		1	JJS	1
-stupidity		4	NN	4
+stupidity		5	NN	5
 stupidly		1	RB	1
 stupor			1	NN	1
-sturdy			6	JJ	6
+sturdy			7	JJ	7
 stutter			2	NN	2
 stuttered		1	VBD	1
 stuttering		2	NN	1	VBG	1
-style			71	NN	70	VB	1
+style			82	NN	81	VB	1
 styled			4	VBN	4
-styles			15	NNS	15
+styles			17	NNS	17
 styling			3	NN	2	VBG	1
 stylised		1	JJ	1
 stylish			3	JJ	3
@@ -50431,12 +50710,12 @@ subdued			9	JJ	1	VBN	8
 subgroups		2	NNS	2
 subhuman		2	JJ	2
 subindustry		1	NN	1
-subject			166	JJ	70	NN	94	VB	2
+subject			169	IN	2	JJ	67	NN	98	VB	2
 subject?		1	NN	1
 subjected		12	VBN	12
 subjecting		1	VBG	1
 subjective		5	JJ	5
-subjects		31	NNS	31
+subjects		35	NNS	35
 subjects.,		1	NNS	1
 subjugated		2	VBD	1	VBN	1
 sublet			2	VB	2
@@ -50461,7 +50740,7 @@ submitted		28	VBD	12	VBN	16
 submitting		5	VBG	5
 subnational		1	JJ	1
 subnormal		4	JJ	2	NNS	2
-subordinate		13	JJ	9	NN	4
+subordinate		12	JJ	9	NN	3
 subordinated		47	JJ	26	VBD	3	VBN	18
 subordinates		5	NNS	4	VBZ	1
 subpoena		5	NN	3	VB	2
@@ -50498,10 +50777,10 @@ subsisting		1	VBG	1
 subskill		1	NN	1
 subskills		2	NNS	2
 subsoil			1	NN	1
-subspecies		2	NNS	2
-substance		16	NN	16
+subspecies		2	NN	2
+substance		20	NN	20
 substance-abusing	1	JJ	1
-substances		12	NNS	12
+substances		13	NNS	13
 substandard		2	JJ	2
 substantial		57	JJ	57
 substantially		40	RB	40
@@ -50519,7 +50798,7 @@ subterfuge		3	NN	3
 subterranean		1	JJ	1
 subtilis		2	NNS	2
 subtitled		1	VBN	1
-subtle			20	JJ	20
+subtle			24	JJ	24
 subtlest		1	JJS	1
 subtleties		3	NNS	3
 subtlety		5	NN	5
@@ -50537,51 +50816,51 @@ subvert			1	VB	1
 subverted		2	VBN	2
 subway			1	NN	1
 subways			1	NNS	1
-succeed			49	VB	48	VBP	1
-succeeded		39	VBD	12	VBN	27
+succeed			51	VB	50	VBP	1
+succeeded		40	VBD	12	VBN	28
 succeeding		22	VBG	22
 succeeds		32	VBZ	32
 succesful		1	JJ	1
-success			109	NN	109
+success			115	NN	115
 successes		5	NNS	5
-successful		71	JJ	71
+successful		75	JJ	75
 successful?		1	VBN	1
-successfully		22	RB	22
-succession		6	NN	6
-successive		7	JJ	7
+successfully		23	RB	23
+succession		7	NN	7
+successive		8	JJ	8
 successor		27	NN	27
 successor?		1	NNP	1
 successors		2	NNS	2
 succinct		1	JJ	1
 succour			1	VB	1
 succulent		2	JJ	2
-succumbed		2	VBN	2
+succumbed		3	VBD	1	VBN	2
 succumbs		1	VBZ	1
-such			846	JJ	666	PDT	180
+such			867	JJ	674	PDT	193
 suck			6	NN	1	VB	4	VBP	1
 sucked			9	VBD	3	VBN	6
 sucker			2	NN	2
 sucker!			1	NN	1
 suckers			2	NNS	2
-sucking			8	JJ	1	VBG	7
+sucking			8	NN	2	VBG	6
 suckle			2	VB	2
 sucks			1	VBZ	1
-sudden			65	JJ	65
-suddenly		77	RB	77
+sudden			69	JJ	69
+suddenly		81	RB	81
 suddenness		1	NN	1
 sue			6	VB	6
 sued			19	VBD	11	VBN	8
-suffer			34	VB	23	VBP	11
-suffered		45	VBD	31	VBN	14
+suffer			35	VB	24	VBP	11
+suffered		49	VBD	34	VBN	15
 sufferers		4	NNS	4
-suffering		33	NN	16	VBG	17
+suffering		34	NN	15	VBG	19
 sufferings		2	NNS	2
 suffers			6	VBZ	6
 suffice			1	VB	1
-sufficed		1	VBD	1
-suffices		1	NNS	1
+sufficed		1	VBN	1
+suffices		1	VBZ	1
 sufficiency		2	NN	2
-sufficient		31	JJ	31
+sufficient		35	JJ	35
 sufficiently		7	RB	7
 suffocated		3	VBD	1	VBN	2
 suffocating		1	VBG	1
@@ -50592,11 +50871,11 @@ sugar-refining		1	VBG	1
 sugar?			1	JJ	1
 sugared			2	JJ	2
 sugary			3	JJ	3
-suggest			52	VB	22	VBP	30
+suggest			52	VB	23	VBP	29
 suggested		50	JJ	1	VBD	37	VBN	12
 suggestible		1	JJ	1
 suggesting		16	VBG	16
-suggestion		19	NN	19
+suggestion		20	NN	20
 suggestion.		1	NN	1
 suggestions		18	NNS	18
 suggestionssorryI	1	NNS	1
@@ -50606,12 +50885,12 @@ suicidal		7	JJ	7
 suicidal?		1	JJ	1
 suicide			19	NN	19
 suing			4	VBG	4
-suit			149	NN	137	VB	12
+suit			152	NN	140	VB	12
 suitable		18	JJ	18
 suitcase		12	NN	12
-suitcases		3	NNS	3
+suitcases		5	NNS	5
 suite			12	NN	12
-suited			8	JJ	2	VBN	6
+suited			9	JJ	2	VBN	7
 suites			2	NNS	2
 suitor			14	NN	14
 suitors			5	NNS	5
@@ -50625,7 +50904,7 @@ sulkiness		1	NN	1
 sulking			1	VBG	1
 sulks			1	NNS	1
 sulky			2	JJ	2
-sullen			7	JJ	6	NN	1
+sullen			7	JJ	7
 sully			2	VB	2
 sulphate		2	NN	2
 sulphur			8	JJ	8
@@ -50640,7 +50919,7 @@ summarizing		1	VBG	1
 summary			13	JJ	2	NN	11
 summation		1	NN	1
 summed			1	VBD	1
-summer			128	NN	128
+summer			131	NN	131
 summer-holiday		1	JJ	1
 summer\/winter		1	winter	1
 summers			4	NNS	4
@@ -50654,12 +50933,13 @@ summons			4	NN	4
 summonsed		1	VBN	1
 sumptuous		4	JJ	4
 sums			24	NNS	23	VBZ	1
-sun			122	NN	122
+sun			127	NN	127
 sun-tan			1	JJ	1
 sun-tanned		2	JJ	1	VBN	1
+sun?			1	NN	1
 sunbathe		1	VB	1
 sunbathers		1	NNS	1
-sunbathing		2	NN	1	VBG	1
+sunbathing		3	NN	2	VBG	1
 sunburn			3	NN	3
 sunburnt		1	JJ	1
 sundaes			1	NNS	1
@@ -50668,8 +50948,8 @@ sundry			1	JJ	1
 sunflower		1	NN	1
 sunflowers		1	NNS	1
 sung			8	VBN	8
-sunglasses		6	NN	2	NNS	4
-sunk			14	VBD	2	VBN	12
+sunglasses		6	NN	3	NNS	3
+sunk			15	VBD	2	VBN	13
 sunken			3	JJ	3
 sunlamp			1	NN	1
 sunless			1	JJ	1
@@ -50679,7 +50959,7 @@ sunning			1	VBG	1
 sunny			11	JJ	11
 sunrise			3	NN	3
 sunroofs		1	NNS	1
-suns			4	NNS	4
+suns			6	NNS	6
 sunset			6	NN	6
 sunsets			4	NNS	4
 sunshine		10	NN	10
@@ -50721,15 +51001,15 @@ superimpose		1	VB	1
 superimposed		2	VBN	2
 superintended		1	JJ	1
 superintendent		3	NN	3
-superior		32	JJ	27	NN	5
-superior?		1	CD	1
-superiority		16	NN	16
+superior		33	JJ	28	NN	5
+superior?		1	JJ	1
+superiority		17	NN	17
 superiors		6	NNS	6
 superlative		3	JJ	1	RB	2
 superlatives		2	NNS	2
 superman		1	NN	1
-supermarket		13	NN	13
-supermarkets		5	NNS	5
+supermarket		14	NN	14
+supermarkets		6	NNS	6
 supernatural		1	NN	1
 superpower		4	NN	4
 superpowers		5	NNS	5
@@ -50748,7 +51028,7 @@ supervised		3	VBD	1	VBN	2
 supervises		1	VBZ	1
 supervising		7	VBG	7
 supervision		4	NN	4
-supervisor		10	NN	10
+supervisor		11	NN	11
 supervisors		6	NNS	6
 supervisory		2	JJ	2
 supine			2	JJ	2
@@ -50766,21 +51046,22 @@ supplication		1	NN	1
 supplied		13	VBD	2	VBN	11
 supplier		12	NN	12
 suppliers		16	NNS	16
-supplies		39	NNS	35	VBZ	4
-supply			104	NN	78	VB	24	VBP	2
+supplies		42	NNS	38	VBZ	4
+supply			109	NN	83	VB	24	VBP	2
 supply-side		7	JJ	6	NN	1
 supply-sider		1	NN	1
 supplying		3	VBG	3
-support			250	NN	177	VB	68	VBP	5
-supported		39	VBD	15	VBN	24
+support			257	NN	182	VB	70	VBP	5
+supported		40	VBD	16	VBN	24
 supporter		4	NN	4
 supporters		33	NNS	33
 supporting		18	VBG	18
-supportive		8	JJ	8
+supportive		9	JJ	9
 supports		13	NNS	3	VBZ	10
-suppose			28	VB	3	VBP	25
-supposed		56	VBD	1	VBN	55
+suppose			32	VB	6	VBP	26
+supposed		58	VBD	1	VBN	57
 supposedly		7	RB	7
+supposes		1	VBZ	1
 supposition		2	NN	2
 suppositionthat		1	NN	1
 suppository		1	NN	1
@@ -50788,23 +51069,23 @@ suppress		6	VB	6
 suppressed		14	VBD	4	VBN	10
 suppression		10	NN	10
 suppressor		5	NN	5
-suppurates		1	NNS	1
+suppurates		1	VBZ	1
 supraventricular	1	JJ	1
 supremacy		5	NN	5
 supreme			9	JJ	8	NN	1
 supremely		2	RB	2
 supressor		1	NN	1
 surcharge		2	NN	2
-sure			137	JJ	115	RB	22
+sure			147	JJ	116	RB	31
 sure-footed		1	JJ	1
-surely			16	RB	16
+surely			15	RB	15
 surely?			3	NNP	3
-surer			1	NN	1
+surer			1	JJR	1
 surest			3	JJS	3
 sureties		1	NNS	1
 surety			1	NN	1
 surf			5	NN	5
-surface			64	NN	58	VB	5	VBP	1
+surface			65	NN	59	VB	5	VBP	1
 surfaced		9	VBD	6	VBN	3
 surfaces		2	NNS	1	VBZ	1
 surfacing		1	VBG	1
@@ -50828,7 +51109,7 @@ surmount		2	VB	2
 surmountable		1	JJ	1
 surmounted		2	VBN	2
 surmounting		2	VBG	2
-surname			4	JJ	2	NN	2
+surname			5	JJ	2	NN	3
 surname?		1	NN	1
 surnames		1	NNS	1
 surpass			2	VB	2
@@ -50837,15 +51118,16 @@ surpasses		1	VBZ	1
 surpassing		1	VBG	1
 surplus			30	JJ	2	NN	28
 surpluses		6	NNS	6
-surprise		53	JJ	1	NN	45	VB	7
+surprise		58	JJ	1	NN	51	VB	6
 surprise!		1	NN	1
-surprised		42	JJ	11	VBD	13	VBN	18
+surprised		47	JJ	16	VBD	13	VBN	18
 surprises		3	NNS	3
-surprising		29	JJ	29
-surprisingly		19	RB	19
+surprising		30	JJ	30
+surprisingly		20	RB	20
 surreal			1	JJ	1
 surrealism		1	NN	1
-surrender		20	NN	9	VB	11
+surrealistic		1	JJ	1
+surrender		21	NN	10	VB	11
 surrendered		9	VBD	8	VBN	1
 surreptitious		1	JJ	1
 surreptitiously		2	RB	2
@@ -50853,7 +51135,7 @@ surrogate		4	JJ	2	NN	2
 surround		3	VBP	3
 surrounded		22	VBN	22
 surrounding		17	JJ	1	VBG	16
-surroundings		5	NNS	5
+surroundings		6	NNS	6
 surrounds		3	NNS	1	VBZ	2
 surtax			2	NN	2
 surveillance		9	NN	9
@@ -50862,29 +51144,29 @@ surveyed		26	VBD	4	VBN	22
 surveyor		1	NN	1
 surveys			12	NNS	12
 surveythe		1	JJ	1
-survival		25	NN	25
-survive			34	VB	29	VBP	5
+survival		26	NN	26
+survive			35	VB	29	VBP	6
 survive?		1	VB	1
 survived		21	VBD	13	VBN	8
 survives		4	VBZ	4
 surviving		9	VBG	9
-survivor		1	NN	1
+survivor		2	NN	2
 survivors		17	NNS	17
 susceptible		7	JJ	7
 sushi			1	NN	1
-suspect			21	JJ	5	NN	1	VB	5	VBP	10
-suspected		20	JJ	4	VBD	7	VBN	9
+suspect			24	JJ	5	NN	1	VB	6	VBP	12
+suspected		22	JJ	4	VBD	9	VBN	9
 suspecting		3	VBG	3
 suspects		5	NNS	3	VBZ	2
 suspend			10	VB	10
 suspended		41	JJ	1	VBD	10	VBN	30
 suspending		3	VBG	3
-suspense		2	NN	2
+suspense		3	NN	3
 suspension		43	NN	43
 suspensions		4	NNS	4
 suspicion		17	NN	17
 suspicions		8	NNS	8
-suspicious		20	JJ	20
+suspicious		21	JJ	21
 suspiciousness		1	NN	1
 sustain			9	VB	9
 sustainability		1	NN	1
@@ -50901,7 +51183,7 @@ swallow			12	NN	2	VB	10
 swallowed		13	VBN	13
 swallowing		4	VBG	4
 swallows		1	NNS	1
-swam			10	NN	5	VB	2	VBP	3
+swam			11	NN	2	VB	2	VBP	7
 swamp			5	NN	2	VB	3
 swamped			5	VBD	2	VBN	3
 swamps			6	NNS	6
@@ -50916,8 +51198,8 @@ swapping		3	VBG	3
 swaps			6	NNS	6
 swarm			3	NN	3
 swarmed			3	VBD	2	VBN	1
-swarming		2	JJ	1	VBG	1
-swarms			3	NNS	3
+swarming		2	VBG	2
+swarms			3	NNS	2	VBZ	1
 swarthy			1	JJ	1
 swashbuckling		1	VBG	1
 swastika		1	NN	1
@@ -50932,10 +51214,10 @@ swayed			12	VBN	12
 swaying			5	VBG	5
 swear			13	VB	6	VBP	7
 swear-words		1	NNS	1
-swearing		5	NN	5
+swearing		5	NN	3	VBG	2
 swearing-in		1	NN	1
 swears			1	VBZ	1
-sweat			22	NN	20	VBD	1	VBP	1
+sweat			26	NN	24	VBD	1	VBP	1
 sweated			2	VBN	2
 sweater			18	NN	18
 sweaters		4	NNS	4
@@ -50945,17 +51227,17 @@ sweatshirts		2	NNS	2
 sweatshops		1	NNS	1
 sweaty			7	JJ	7
 swedes			2	NNS	1	VBZ	1
-sweep			20	NN	16	VB	4
+sweep			21	NN	17	VB	4
 sweepers		1	NNS	1
-sweeping		32	JJ	25	VBG	7
+sweeping		34	JJ	22	VBG	12
 sweeps			6	NNS	4	VBZ	2
 sweepstake		1	NN	1
 sweepstakes		1	NN	1
-sweet			41	JJ	39	NN	2
-sweet!			1	NNP	1
+sweet			42	JJ	40	NN	2
+sweet!			1	JJ	1
 sweet-natured		1	JJ	1
 sweet-shop		1	NN	1
-sweet-smelling		1	JJ	1
+sweet-smelling		2	JJ	2
 sweetbreads		1	NNS	1
 sweetcorn		1	NN	1
 sweeten			4	VB	4
@@ -50967,13 +51249,13 @@ sweetheart		2	NN	2
 sweetish		3	JJ	3
 sweetly			5	RB	5
 sweetness		3	NN	3
-sweets			15	NNS	15
+sweets			16	NNS	16
 swell			11	NN	4	VB	5	VBP	2
 swelled			13	VBD	9	VBN	4
 swelling		11	VBG	11
 swells			2	NNS	1	VBZ	1
 sweltering		4	JJ	2	VBG	2
-swept			23	VBD	14	VBN	9
+swept			26	VBD	16	VBN	10
 swerve			2	NN	1	VBP	1
 swerved			3	VBD	2	VBN	1
 swift			21	JJ	20	NN	1
@@ -50985,35 +51267,35 @@ swig			4	NN	3	VB	1
 swigged			1	VBD	1
 swill			1	VB	1
 swilling		1	VBG	1
-swim			17	VBP	17
-swimmer			6	NN	6
+swim			21	VBP	21
+swimmer			7	NN	7
 swimmers		1	NNS	1
-swimming		19	NN	14	VBG	5
+swimming		20	NN	14	VBG	6
 swims			3	NNS	2	VBZ	1
 swimsuit		2	NN	2
 swindle			2	NN	1	VB	1
 swindled		2	VBN	2
 swindler		1	NN	1
 swindlers		1	NNS	1
-swine			2	NNS	2
-swing			16	NN	11	VB	2	VBP	3
+swine			2	NN	2
+swing			17	NN	11	VB	3	VBP	3
 swingeing		2	JJ	2
 swinger			2	NN	2
-swinging		2	VBG	2
+swinging		4	VBG	4
 swings			52	NNS	50	VBZ	2
 swipe			3	NN	3
 swiped			3	VBD	1	VBN	2
 swirl			3	NN	3
 swirled			1	VBD	1
-swirling		5	JJ	2	VBG	3
-swirls			1	VBZ	1
+swirling		5	JJ	1	VBG	4
+swirls			1	NNS	1
 swish			2	JJ	1	NN	1
 swished			1	VBD	1
 swishing		2	VBG	2
-switch			31	NN	18	VB	13
+switch			32	NN	18	VB	14
 switchboard		4	NN	4
-switched		23	VBD	16	VBN	7
-switches		3	NNS	1	VBZ	2
+switched		27	VBD	20	VBN	7
+switches		4	NNS	2	VBZ	2
 switching		3	VBG	3
 swivel			1	JJ	1
 swivelled		3	VBD	2	VBN	1
@@ -51028,15 +51310,15 @@ swooping		1	VBG	1
 swopping		1	VBG	1
 sword			5	NN	5
 swords			3	NNS	3
-swore			6	VBD	6
+swore			7	VBD	7
 sworn			15	JJ	9	VBN	6
 swot			2	NN	1	VB	1
-swung			19	VBD	16	VBN	3
+swung			21	VBD	18	VBN	3
 sycamore		1	NN	1
 sycamores		1	NNS	1
 sycophant		1	NN	1
 syllable		2	NN	2
-syllabus		4	JJ	1	NN	1	NNS	2
+syllabus		4	NN	4
 symbiotic		3	JJ	3
 symbol			18	NN	18
 symbolic		11	JJ	11
@@ -51055,7 +51337,8 @@ sympathise		2	NN	1	VBP	1
 sympathised		1	VBN	1
 sympathize		3	VBP	3
 sympathized		1	VBN	1
-sympathy		22	NN	22
+sympathizer		1	NN	1
+sympathy		26	NN	26
 symphonic		1	JJ	1
 symphonies		1	NNS	1
 symphony		4	NN	4
@@ -51065,13 +51348,13 @@ symposiums		2	NNS	2
 symptom			2	NN	2
 symptom-free		1	JJ	1
 symptomatic		2	JJ	2
-symptoms		22	NNS	22
+symptoms		23	NNS	23
 synchronize		1	VBP	1
 synchronized		4	VBN	4
 synchronous		1	JJ	1
 syndicate		12	NN	11	VB	1
 syndicated		2	VBN	2
-syndicates		7	NNS	7
+syndicates		7	NNS	6	VBZ	1
 syndication		4	NN	4
 syndicator		2	NN	2
 syndrome		10	NN	10
@@ -51083,21 +51366,21 @@ synopsis		1	NN	1
 synthesis		4	NN	4
 synthesise		1	VB	1
 synthesize		2	VB	2
-synthetic		14	JJ	13	NN	1
+synthetic		15	JJ	14	NN	1
 synthetics		2	NNS	2
 syringe			2	NN	2
 syringed		1	VBD	1
 syrup			4	NN	4
 syrupy			2	JJ	2
-system			379	NN	379
-system?			2	NN	2
+system			395	NN	395
+system?			3	NN	2	NNS	1
 systematic		9	JJ	8	RB	1
 systematically		3	RB	3
 systematizing		1	VBG	1
 systemic		1	JJ	1
 systems			109	NNS	109
 tab			6	NN	6
-table			145	NN	145
+table			163	NN	163
 table-tennis		2	NN	2
 tableau			1	NN	1
 tablecloth		2	NN	2
@@ -51108,10 +51391,10 @@ tablespoon		3	NN	3
 tablespoonfuls		1	NNS	1
 tablespoons		1	NNS	1
 tablet			2	NN	2
-tablets			13	NNS	13
+tablets			14	NNS	14
 tabloid			10	JJ	5	NN	5
 tabloids		3	NNS	3
-taboo			5	JJ	2	NN	3
+taboo			6	JJ	3	NN	3
 taboos			1	NNS	1
 tabs			1	NNS	1
 tabulate		1	VB	1
@@ -51131,7 +51414,7 @@ tactful			3	JJ	3
 tactic			2	NN	2
 tactical		5	JJ	5
 tactician		2	NN	2
-tactics			23	NNS	23
+tactics			24	NNS	24
 tactless		2	JJ	2
 tad			3	NN	2	RB	1
 tadpole			1	NN	1
@@ -51156,23 +51439,24 @@ tailwinds		1	NNS	1
 taint			4	NN	3	VB	1
 tainted			7	JJ	4	VBN	3
 tainted-meat		1	NN	1
-take			477	NN	1	VB	424	VBP	52
+take			503	NN	1	VB	444	VBP	58
 take-it-or-leave	1	JJ	1
 take-or-pay		1	JJ	1
 take-over		6	NN	6
 take-overs		1	NNS	1
 take?			1	VB	1
+take?Ten.		1	NN	1
 takeaway		3	NN	3
-taken			215	VBN	215
+taken			220	VBN	220
 takeoff			4	NN	4
 takeover		153	NN	153
 takeover-related	1	JJ	1
 takeover-stock		7	JJ	6	NN	1
 takeovers		14	NNS	14
 takers			2	NNS	2
-takes			82	VBZ	82
+takes			84	VBZ	84
 taketh			1	VB	1
-taking			144	NN	2	VBG	142
+taking			148	NN	2	VBG	146
 taking?			1	JJ	1
 takings			1	NNS	1
 tale			18	NN	18
@@ -51181,16 +51465,16 @@ talented		7	JJ	7
 talents			8	NNS	8
 tales			11	NNS	11
 talismans		2	NNS	2
-talk			147	NN	56	VB	77	VBP	14
+talk			156	NN	58	VB	84	VBP	14
 talk-show		2	JJ	1	NN	1
 talkative		3	JJ	3
-talked			64	VBD	59	VBN	5
+talked			69	VBD	63	VBN	6
 talker			3	NN	3
 talkies			1	NNS	1
-talking			94	VBG	94
+talking			101	VBG	101
 talking-to		2	NN	2
-talks			135	NNS	129	VBZ	6
-tall			68	JJ	68
+talks			138	NNS	131	VBZ	7
+tall			71	JJ	71
 taller			1	JJR	1
 tallest			3	JJS	3
 tallies			1	NNS	1
@@ -51213,12 +51497,12 @@ tangled			10	JJ	7	VBN	3
 tangles			3	NNS	3
 tango			1	NN	1
 tangy			1	JJ	1
-tank			31	NN	31
+tank			33	NN	33
 tankard			1	NN	1
 tanked			1	VBN	1
 tanker			6	NN	6
 tankers			5	NNS	5
-tanks			28	NNS	28
+tanks			29	NNS	29
 tanned			6	VBN	6
 tanners			1	NNS	1
 tannery			1	NN	1
@@ -51227,8 +51511,8 @@ tantalizing		1	VBG	1
 tantamount		4	JJ	4
 tantrum			1	NN	1
 tantrums		2	NNS	2
-tap			35	NN	5	VB	30
-tape			46	NN	41	VB	3	VBP	2
+tap			37	NN	5	VB	32
+tape			47	NN	42	VB	3	VBP	2
 tape-delay		1	NN	1
 tape-record		1	VB	1
 tape?			1	NN	1
@@ -51237,12 +51521,12 @@ taper			2	VB	2
 tapered			1	JJ	1
 tapering		2	VBG	2
 tapers			2	NNS	1	VBZ	1
-tapes			12	NNS	12
+tapes			13	NNS	13
 tapestries		3	NNS	3
 tapestry		4	NN	4
 taping			7	NN	4	VBG	3
 tapings			1	NNS	1
-tapped			12	VBD	7	VBN	5
+tapped			14	VBD	9	VBN	5
 tapping			10	VBG	10
 taps			4	NNS	4
 tar			2	NN	2
@@ -51255,7 +51539,7 @@ tariff			6	NN	6
 tariffs			9	NNS	9
 tarmac			1	NN	1
 tarnish			4	VB	4
-tarnished		3	JJ	1	VBD	1	VBN	1
+tarnished		3	JJ	1	VBD	2
 tarot			2	NN	2
 tarpaulin		1	NN	1
 tarried			1	VBN	1
@@ -51264,32 +51548,32 @@ tart			4	JJ	2	NN	2
 tartan			4	NN	4
 tartans			1	NNS	1
 tarts			2	NNS	2
-task			55	NN	55
+task			58	NN	58
 task-force		1	NN	1
 taskmaster		1	NN	1
 tasks			21	NNS	21
 tassel			1	NN	1
 tasselled		1	JJ	1
 tassels			2	NNS	2
-taste			47	NN	37	VB	8	VBP	2
+taste			49	NN	39	VB	7	VBP	3
 taste?			1	NN	1
 tasted			9	VBD	7	VBN	2
 tasteful		1	JJ	1
 tastefully		1	RB	1
 tasteless		10	JJ	10
-tastes			4	NNS	3	VBZ	1
+tastes			5	NNS	3	VBZ	2
 tastier			1	JJR	1
 tasting			2	NN	2
 tasty			5	JJ	5
 tat			2	JJ	1	NN	1
-tattered		7	JJ	7
+tattered		8	JJ	8
 tatters			1	NNS	1
 tattoo			4	NN	4
 tattooed		1	VBN	1
 tatty			1	JJ	1
-taught			25	VBD	17	VBN	8
+taught			27	VBD	19	VBN	8
 taunted			3	VBD	3
-taunting		1	NN	1
+taunting		1	VBG	1
 taunts			2	NNS	2
 taut			6	JJ	6
 tautened		2	VBD	2
@@ -51298,7 +51582,7 @@ tavern			1	NN	1
 taverna			1	NN	1
 tawdry			1	JJ	1
 tawny			2	JJ	2
-tax			306	NN	304	VB	2
+tax			313	NN	311	VB	2
 tax)			1	NNP	1
 tax-cut			1	JJ	1
 tax-deductible		2	JJ	2
@@ -51318,78 +51602,79 @@ taxable			22	JJ	22
 taxable-equivalent	1	JJ	1
 taxation		12	NN	12
 taxed			10	VBD	1	VBN	9
-taxes			79	NNS	79
+taxes			80	NNS	80
 taxfree			1	JJ	1
-taxi			27	NN	27
+taxi			29	NN	29
 taxi-driver		2	NN	2
+taxi?			1	NN	1
 taxied			1	VBN	1
 taxing			1	JJ	1
 taxis			2	NNS	2
 taxpayer		7	NN	7
 taxpayers		27	NNS	27
-tea			90	NN	90
+tea			94	NN	94
 tea-cup			1	NN	1
 tea-cups		1	NNS	1
 tea-ladies		1	NNS	1
-tea-time		1	NN	1
+tea-time		1	JJ	1
 tea?			1	NNP	1
 tea?Just		1	NN	1
-teach			18	VB	13	VBP	5
+teach			21	VB	16	VBP	5
 teach-ins		1	NNS	1
 teachable		2	JJ	2
-teacher			69	NN	69
+teacher			70	NN	70
 teacher-cadet		1	JJ	1
 teacher-student		1	NN	1
 teacher/pupil		1	NN	1
-teachers		55	NNS	55
+teachers		56	NNS	56
 teachers?		1	NNP	1
 teaches			4	VBZ	4
-teaching		40	NN	32	VBG	8
-teachings		4	NNS	4
+teaching		45	NN	37	VBG	8
+teachings		5	NNS	5
 teak			1	NN	1
-team			138	NN	135	VB	3
+team			140	NN	137	VB	3
 teaming			3	VBG	3
 teammates		1	NNS	1
 teams			30	NNS	30
 teapot			2	NN	2
 teapots			1	NNS	1
-tear			11	VB	11
+tear			10	VB	10
 tear-stained		1	JJ	1
 tearaway		1	NN	1
 teardrop		1	NN	1
-tearful			1	JJ	1
-tearing			6	VBG	6
-tears			36	NNS	36
+tearful			2	JJ	2
+tearing			5	VBG	5
+tears			40	NNS	40
 teas			2	NNS	2
 tease			3	NN	3
-teased			6	VBN	6
+teased			7	VBN	7
 teasing			4	JJ	1	NN	1	VBG	2
 teaspoon		3	NN	3
 teaspoonful		1	JJ	1
 teaspoons		1	NNS	1
 teat			1	NN	1
-teatime			1	JJ	1
+teatime			1	NN	1
 teats			1	NNS	1
-technical		57	JJ	57
+technical		59	JJ	59
 technical-services	1	NNS	1
 technicality		3	NN	3
 technically		9	RB	9
 technician		2	NN	2
 technicians		8	NNS	8
-technique		28	NN	28
+technique		29	NN	29
 techniques		36	NNS	36
 technocracy		1	NN	1
-technological		17	JJ	17
+technological		16	JJ	16
 technologically		3	RB	3
 technologies		17	NNS	17
 technologists		3	NNS	3
-technology		134	NN	134
+technology		137	NN	137
 teddy			1	NN	1
 tedious			5	JJ	5
 tedium			2	NN	2
 tee			1	NN	1
 teeming			10	VBG	10
-teems			2	NNS	2
+teems			2	NNS	1	VBZ	1
 teen			2	JJ	2
 teen-age		2	JJ	2
 teen-ager		2	NN	2
@@ -51397,52 +51682,54 @@ teen-agers		2	NNS	2
 teenage			12	JJ	12
 teenager		5	NN	5
 teenagers		7	NNS	7
-teens			3	NNS	3
+teens			3	NN	1	NNS	2
 teetered		1	VBN	1
 teetering		4	VBG	4
-teeth			48	NNS	48
+teeth			53	NN	2	NNS	51
+teeth)			1	NNS	1
 teething		2	NN	1	VBG	1
 teetotal		1	JJ	1
 teetotallers		1	NNS	1
 telecast		1	NN	1
 telecommunication	2	NN	2
 telecommunications	31	JJ	1	NN	12	NNS	16	NNS|NN	2
-telegram		4	NN	4
+telegram		6	NN	6
 telegrams		3	NNS	3
 telegraph		7	NN	5	VB	1	VBP	1
 telegraphed		2	VBD	2
 telemarketers		2	NNS	2
 telemarketing		1	NN	1
 telepathic		1	JJ	1
-telepathy		1	NN	1
-telephone		107	NN	105	VB	2
+telepathy		2	NN	2
+telephone		112	NN	110	VB	2
 telephone-company	1	NN	1
 telephone-information	1	NN	1
 telephone?		1	NN	1
-telephoned		6	VBD	6
+telephoned		7	VBD	7
 telephones		10	NNS	10
+telephoning		1	VBG	1
 telephonists		1	NNS	1
 teleprinter		1	NN	1
 teleprinters		1	NNS	1
 telescope		3	NN	3
 telescoped		2	VBD	1	VBN	1
-telescopic		6	JJ	6
+telescopic		7	JJ	7
 telesystems		1	NNS	1
 televangelism		1	NN	1
 televise		1	VB	1
 televised		5	JJ	1	VBN	4
-television		168	NN	168
+television		175	NN	175
 television-related	1	JJ	1
 television-viewing	1	NN	1
 televisions		2	NNS	2
 telex			3	NN	3
 telexed			1	VBN	1
 telexes			1	NNS	1
-tell			141	VB	123	VBP	18
+tell			149	VB	130	VBP	19
 tell-all		1	JJ	1
 tell-tale		1	NN	1
 tellers			2	NNS	2
-telling			50	JJ	2	VBG	48
+telling			52	JJ	1	VBG	51
 telling-off		1	NN	1
 tellings		1	NNS	1
 tells			23	VBZ	23
@@ -51452,15 +51739,15 @@ temblor			3	NN	3
 temblors		1	NNS	1
 temerity		1	NN	1
 temp			1	NN	1
-temper			19	NN	18	VB	1
-temperament		2	NN	2
+temper			23	NN	22	VB	1
+temperament		3	NN	3
 temperamental		2	JJ	2
 temperance		1	NN	1
 temperate		5	JJ	5
-temperature		30	NN	30
+temperature		32	NN	32
 temperatures		14	NNS	14
 tempered		1	VBN	1
-tempers			2	NNS	2
+tempers			3	NNS	3
 tempest			1	NN	1
 tempestuous		2	JJ	2
 temping			1	VBG	1
@@ -51470,15 +51757,15 @@ temples			1	NNS	1
 tempo			5	NN	5
 temporal		3	JJ	3
 temporarily		38	RB	38
-temporary		47	JJ	47
+temporary		48	JJ	48
 tempt			2	VB	2
 temptation		15	NN	15
 temptations		2	NNS	2
 tempted			9	VBD	2	VBN	7
-tempting		4	JJ	4
+tempting		5	JJ	5
 temptingly		1	RB	1
 tempts			2	VBZ	2
-ten			100	CD	100
+ten			111	CD	111
 ten-hour		1	JJ	1
 ten-minute		1	JJ	1
 ten-pin			1	NN	1
@@ -51488,10 +51775,10 @@ tenacity		2	NN	2
 tenancy			2	NN	2
 tenant			7	NN	7
 tenants			7	NNS	7
-tend			60	VB	7	VBP	53
+tend			61	VB	7	VBP	54
 tended			21	VBD	13	VBN	8
 tendencies		7	NNS	7
-tendency		19	NN	19
+tendency		20	NN	20
 tendentious		2	JJ	2
 tender			52	JJ	6	NN	42	VB	4
 tendered		11	JJ	1	VBD	1	VBN	9
@@ -51502,29 +51789,29 @@ tenderness		2	NN	2
 tenders			4	NNS	4
 tending			3	VBG	3
 tendrils		1	NNS	1
-tends			30	VBZ	30
+tends			31	VBZ	31
 tenement		2	NN	2
 tenet			1	NN	1
 tenets			1	NNS	1
 tenfold			3	RB	3
 tenner			2	NN	2
-tennis			32	NN	32
+tennis			34	NN	34
 tenor			9	NN	9
 tenors			2	NNS	2
 tens			13	NNS	13
-tense			107	JJ	106	NN	1
+tense			92	JJ	91	NN	1
 tensed			2	VBD	1	VBN	1
-tensely			2	RB	2
-tensing			1	NN	1
-tension			20	NN	20
+tensely			3	RB	3
+tensing			1	VBG	1
+tension			21	NN	21
 tensions		9	NNS	9
-tent			16	NN	16
+tent			18	NN	18
 tentacles		2	NNS	2
 tentative		10	JJ	9	NN	1
 tentatively		24	RB	24
 tenth			9	JJ	3	NN	6
 tenth-floor		1	JJ	1
-tents			2	NNS	2
+tents			3	NNS	3
 tenure			11	NN	11
 tepid			5	JJ	5
 tercentenary		1	NN	1
@@ -51537,7 +51824,7 @@ terminate		9	VB	9
 terminated		10	VBD	5	VBN	5
 termination		3	NN	3
 terminations		1	NNS	1
-termini			1	NNS	1
+termini			1	NN	1
 terminology		3	NN	3
 terminus		1	NN	1
 termites		1	NNS	1
@@ -51547,11 +51834,11 @@ terns			1	NNS	1
 terrace			11	NN	11
 terraces		2	NNS	2
 terrestrial		2	JJ	2
-terrible		38	JJ	38
+terrible		44	JJ	44
 terriblethere		1	RB	1
-terribly		21	RB	21
+terribly		23	RB	23
 terrier			1	NN	1
-terrific		7	JJ	7
+terrific		8	JJ	8
 terrified		4	VBN	4
 terrify			1	VB	1
 terrifying		4	JJ	4
@@ -51559,7 +51846,7 @@ terrine			1	NN	1
 territorial		3	NN	3
 territories		7	NNS	7
 territory		26	NN	26
-terror			15	NN	15
+terror			17	NN	17
 terrorism		25	NN	25
 terrorist		10	JJ	10
 terroristic		1	JJ	1
@@ -51569,7 +51856,7 @@ terrors			1	NNS	1
 terse			2	JJ	2
 terylene		1	NN	1
 tessellated		1	JJ	1
-test			125	NN	106	VB	16	VBP	3
+test			128	NN	108	VB	17	VBP	3
 test-coaching		2	JJ	2
 test-drive		1	VBP	1
 test-fired		1	VBN	1
@@ -51591,10 +51878,10 @@ testify			13	VB	13
 testifying		2	VBG	2
 testimonial		2	JJ	1	NN	1
 testimonials		1	NNS	1
-testimony		25	NN	25
+testimony		26	NN	26
 testing			26	NN	19	VBG	6	VBG|NN	1
 testosterone		1	NN	1
-tests			65	NNS	62	VBZ	3
+tests			66	NNS	63	VBZ	3
 testy			2	JJ	2
 tetanus			2	NN	2
 tetchy			2	JJ	2
@@ -51607,60 +51894,62 @@ text			29	NN	29
 text-book		1	NN	1
 textbook		3	NN	3
 textbooks		3	NNS	3
-textile			22	JJ	3	NN	19
+textile			24	JJ	3	NN	21
 textiles		8	NNS	8
 texts			5	NNS	5
 texture			9	NN	9
-textures		1	VBZ	1
-than			1518	IN	1513	IN|RB	3	RB	2
-thank			9	VB	7	VBP	2
+textures		1	NNS	1
+than			1549	IN	1542	IN|RB	5	RB	2
+thank			10	VB	8	VBP	2
 thank-you		1	NN	1
 thanked			6	VBD	6
 thankful		6	JJ	6
 thankfully		4	RB	4
-thankless		2	JJ	2
-thanks			19	NNS	19
+thanking		1	VBG	1
+thankless		3	JJ	3
+thanks			20	NNS	20
 thankyou		1	NN	1
-that			8126	DT	1166	IN	5167	NN	1	RB	15	VBP	1	WDT	1776
+that			8339	DT	1207	IN	5106	NN	1	PP	3	RB	15	VBP	1	WDT	2006
 that!			2	CD	1	NNP	1
-that?			5	CD	1	JJ	1	NN	2	NNP	1
+that.But		1	NN	1
+that?			6	CD	1	JJ	2	NN	2	NNP	1
 that?Naturally.		1	CD	1
 that?No			1	NN	1
 that?Oh			1	JJ	1
-that?That		1	JJ	1
+that?That		1	VBP	1
 thatI			1	JJ	1
 thatch			1	NN	1
-thatched		2	JJ	1	VBD	1
+thatched		2	VBD	1	VBN	1
 thatll			2	JJ	1	VBP	1
-thats			50	FW	1	NNS	18	VBZ	31
+thats			56	FW	1	NNS	27	VBZ	28
 thatyoull		1	JJ	1
 thatyour		1	JJ	1
 thaw			6	NN	4	VB	2
 thawed			2	VBN	2
 thawing			1	VBG	1
-the			53227	CD	1	DT	53214	JJ	5	NN	1	NNP	5	VBP	1
-theater			10	NN	10
+the			54724	CD	1	DT	54711	JJ	5	NN	1	NNP	5	VBP	1
+theater			11	NN	11
 theaters		2	NNS	2
-theatre			60	FW	56	NN	4
+theatre			62	FW	58	NN	4
 theatres		2	NNS	2
-theatrical		9	JJ	9
+theatrical		10	JJ	10
 theatrically		1	RB	1
 theatricals		2	NNS	2
 theft			14	NN	14
-their			2375	PRP$	2375
-theirs			8	JJ	2	PRP	6
-them			1142	DT	1	PRP	1141
+their			2450	PPS	4	PRP$	2446
+theirs			9	JJ	2	PRP	7
+them			1182	DT	1	PRP	1181
 them.			1	NN	1
-them?			2	NN	1	VB	1
-themTheyre		1	NN	1
+them?			2	JJ	1	VB	1
+themTheyre		1	VB	1
 thematic		3	JJ	3
 theme			29	NN	29
 theme-park		1	NN	1
 themed			1	VBN	1
 themes			8	NNS	8
-themselves		193	PRP	193
+themselves		201	PRP	201
 themthey		2	NN	1	RB	1
-then			429	IN	1	RB	428
+then			441	IN	1	RB	440
 then-21			1	JJ	1
 then-52			1	JJ	1
 then-Air		1	JJ|NNP	1
@@ -51674,6 +51963,7 @@ then-current		1	JJ	1
 then-husband		1	NN	1
 then-market		1	JJ	1
 then-president		1	JJ	1
+then.So			1	NN	1
 theocracy		2	NN	2
 theocratic		1	JJ	1
 theologian		2	NN	2
@@ -51690,8 +51980,8 @@ theorises		1	VBZ	1
 theorist		2	NN	2
 theorists		1	NNS	1
 theorized		1	VBD	1
-theorizing		2	NN	1	VBG	1
-theory			51	NN	51
+theorizing		2	VBG	2
+theory			53	NN	53
 theory-teaching		1	VBG	1
 theory?			1	NN	1
 therapeutic		4	JJ	4
@@ -51699,10 +51989,10 @@ therapies		2	NNS	2
 therapist		1	NN	1
 therapists		2	NNS	2
 therapy			11	NN	11
-there			924	EX	551	JJ	3	RB	370
+there			959	EX	611	JJ	3	RB	345
 there!			2	NNP	2
 there!I			1	NNS	1
-there?			1	NNS	1
+there?			1	JJ	1
 there?*5mTheres		1	NNS	1
 thereSuzie		1	NN	1
 thereafter		11	RB	11
@@ -51712,7 +52002,7 @@ therefriend		1	NN	1
 therein			1	RB	1
 therell			1	VB	1
 thereof			1	RB	1
-theres			32	NNS	9	VBZ	23
+theres			34	NNS	8	VBZ	26
 thermal			1	NN	1
 thermodynamics		1	NNS	1
 thermometer		6	NN	6
@@ -51720,19 +52010,20 @@ thermometers		2	NNS	2
 thermonuclear		1	JJ	1
 thermos			1	NNS	1
 thermostat		1	JJ	1
-these			640	DT	640
+these			662	DT	662
 thesis			8	NN	8
 thespian		1	JJ	1
-they			1969	PRP	1969
+they			2025	PRP	2025
+they?			1	NNS	1
 theyd			7	JJ	1	RB	1	VBD	3	VBN	2
-theyll			6	JJ	4	NN	1	RB	1
-theyre			22	JJ	7	NN	4	RB	2	VB	5	VBP	4
+theyll			6	JJ	3	NN	2	RB	1
+theyre			24	JJ	9	NN	4	RB	2	VB	4	VBP	5
 theyve			11	NN	3	RB	2	VB	2	VBP	4
-thick			68	JJ	68
+thick			70	IN	1	JJ	69
 thick-walled		1	JJ	1
 thicken			2	VB	2
 thickener		1	NN	1
-thickens		2	NNS	2
+thickens		2	NNS	1	VBZ	1
 thicker			1	JJR	1
 thicket			1	NN	1
 thickets		2	NNS	2
@@ -51743,20 +52034,20 @@ thickset		1	JJ	1
 thief			5	NN	5
 thieves			14	NNS	14
 thigh			4	NN	4
-thighs			3	NNS	3
+thighs			5	NNS	5
 thimbleful		1	NN	1
-thin			77	JJ	77
+thin			78	JJ	78
 thin-lipped		1	JJ	1
 thin-skinned		1	JJ	1
 thin-walled		1	JJ	1
-thing			202	NN	202
-things			287	NNS	287
-think			538	NN	1	VB	134	VBP	403
-think?			1	JJ	1
+thing			216	NN	216
+things			309	NNS	309
+think			575	NN	1	VB	146	VBP	428
+think?			1	NN	1
 think?Yes		1	VBZ	1
 thinker			3	NN	3
 thinkers		3	NNS	3
-thinking		64	NN	18	VBG	46
+thinking		76	NN	19	VBG	57
 thinks			39	VBZ	39
 thinly			2	RB	2
 thinned			4	VBN	4
@@ -51764,7 +52055,7 @@ thinner			4	JJR	4
 thinness		1	NN	1
 thinnest		1	JJS	1
 thinning		4	VBG	4
-third			249	JJ	239	NN	9	RB	1
+third			251	JJ	241	NN	9	RB	1
 third-highest		1	JJS	1
 third-largest		6	JJ	6
 third-party		2	JJ	2
@@ -51772,19 +52063,19 @@ third-quarter		147	JJ	123	NN	24
 third-rate		3	JJ	3
 third-selling		1	JJ	1
 thirdly			1	RB	1
-thirds			3	NNS	3
+thirds			4	NNS	4
 thirst			9	NN	8	VB	1
 thirsty			7	JJ	7
 thirteen		3	CD	3
 thirteen-volume		1	JJ	1
 thirteen-week		1	JJ	1
 thirteen-year-old	1	JJ	1
-thirteenth		1	JJ	1
+thirteenth		2	JJ	2
 thirties		7	NNS	7
 thirtieth		1	JJ	1
-thirty			33	CD	33
-thirty-eight		3	JJ	1	NN	1	VB	1
-thirty-five		6	JJ	6
+thirty			36	CD	36
+thirty-eight		3	JJ	2	VB	1
+thirty-five		7	JJ	7
 thirty-five-foot	1	JJ	1
 thirty-five-year-old	1	JJ	1
 thirty-four		1	JJ	1
@@ -51794,13 +52085,14 @@ thirty-six-foot		1	JJ	1
 thirty-three		1	JJ	1
 thirty-two		2	JJ	1	NN	1
 thirtysomething		2	NN	1	NNP	1
-this			2510	DT	2507	RB	3
+this			2579	DT	2574	PP	2	RB	3
 this.			1	NN	1
-this.Theres		1	VBZ	1
-this?			3	NNP	3
+this.Theres		1	NNS	1
+this?			4	JJ	1	NNP	3
 thisits			1	NNS	1
 thistles		3	NNS	3
-thorn			8	JJ	1	NN	7
+thorax			1	NN	1
+thorn			8	NN	8
 thorns			3	NNS	3
 thorny			3	JJ	3
 thorough		10	JJ	10
@@ -51809,35 +52101,35 @@ thoroughbred		4	JJ	3	NN	1
 thoroughbreds		2	NNS	2
 thoroughfare		2	NN	2
 thoroughgoing		1	JJ	1
-thoroughly		22	RB	22
+thoroughly		23	RB	23
 thoroughness		1	NN	1
-those			507	DT	507
-though			205	IN	161	JJ	2	RB	42
-thought			276	NN	52	VB	1	VBD	183	VBN	40
+those			516	DT	516
+though			212	IN	166	JJ	2	RB	44
+thought			302	NN	58	VB	1	VBD	201	VBN	42
 thoughtful		9	JJ	9
 thoughtfully		3	RB	3
 thoughtfulness		1	NN	1
-thoughts		40	NNS	40
-thousand		64	CD	64
+thoughts		46	NNS	46
+thousand		66	CD	66
 thousand-person		1	JJ	1
 thousandfold		1	NN	1
-thousands		68	NNS	68
+thousands		71	NNS	71
 thousandth		1	NN	1
 thrall			1	NN	1
 thrash			2	NN	1	VB	1
 thrashed		2	VBD	2
-thrashing		6	NN	3	VBG	3
+thrashing		6	NN	5	VBG	1
 thread			10	NN	10
 threaded		2	VBD	1	VBN	1
-threads			6	NNS	6
-threat			61	NN	61
-threaten		10	VB	8	VBP	2
-threatened		49	JJ	1	VBD	21	VBN	27
-threatening		17	JJ	4	VBG	13
+threads			7	NNS	7
+threat			65	NN	65
+threaten		10	VB	7	VBP	3
+threatened		54	JJ	1	VBD	24	VBN	29
+threatening		18	JJ	4	VBG	14
 threateningly		1	RB	1
 threatens		9	VBZ	9
 threats			18	NNS	18
-three			664	CD	664
+three			684	CD	684
 three-and-a-half	1	JJ	1
 three-bedroomed		1	VBN	1
 three-button		1	JJ	1
@@ -51869,8 +52161,8 @@ three-year		21	JJ	21
 three-year-old		1	JJ	1
 threemonth		1	JJ	1
 threshed		1	VBN	1
-threshold		6	NN	6
-threw			56	VBD	56
+threshold		6	IN	1	NN	5
+threw			63	VBD	63
 thrice			1	RB	1
 thrift			75	NN	75
 thrift-accounting	1	NN	1
@@ -51885,37 +52177,39 @@ thrilling		2	JJ	1	VBG	1
 thrills			2	NNS	1	VBZ	1
 thrips			1	NN	1
 thrive			4	VB	1	VBP	3
-thriving		4	JJ	2	VBG	2
-throat			24	NN	24
+thriving		5	JJ	3	VBG	2
+throat			28	NN	28
+throat?			1	NN	1
 throats			3	NNS	3
 throb			4	NN	3	VB	1
 throbbed		2	VBN	2
 throbbing		5	VBG	5
-throes			2	NNS	2
-thrombosis		1	NNS	1
+throes			2	IN	2
+thrombosis		1	NN	1
 throne			10	NN	10
 throng			2	NN	2
 thronged		4	VBN	4
 throngs			1	NNS	1
 throttle		3	NN	2	VB	1
-through			858	IN	827	JJ	3	RB	8	RP	20
-throughout		69	IN	69
-throw			27	VB	22	VBP	5
+through			887	IN	859	JJ	3	RB	8	RP	17
+throughout		76	IN	76
+throw			29	VB	22	VBP	7
+throw-away		2	JJ	2
 throwaway		2	JJ	2
 throwback		1	NN	1
 throwers		1	NNS	1
-throwing		23	NN	1	VBG	22
-thrown			18	VBN	18
+throwing		24	NN	1	VBG	23
+thrown			21	VBN	21
 throws			7	VBZ	7
 thrust			13	NN	7	VBD	6
 thrusting		2	VBG	2
 thrusts			3	NNS	3
 thud			3	NN	3
 thudded			1	VBN	1
-thudding		3	JJ	1	NN	1	VBG	1
+thudding		3	NN	1	VBG	2
 thug			2	NN	2
 thugs			5	NNS	5
-thumb			19	NN	18	VB	1
+thumb			19	NN	19
 thumb-sucking		1	NN	1
 thumbed			1	VBN	1
 thumbing		3	VBG	3
@@ -51925,15 +52219,15 @@ thumbs-up		2	JJ	1	NN	1
 thump			4	NN	3	VB	1
 thumped			7	VBD	5	VBN	2
 thumping		3	VBG	3
-thunder			16	NN	16
+thunder			17	NN	17
 thunderbolt		1	NN	1
 thunderclap		1	NN	1
 thundered		2	VBD	2
-thundering		1	NN	1
+thundering		1	VBG	1
 thunderous		6	JJ	6
 thunderstorm		2	NN	2
 thundery		1	JJ	1
-thus			37	RB	37
+thus			41	RB	41
 thwack			1	NN	1
 thwacked		1	VBD	1
 thwart			6	VB	6
@@ -51960,7 +52254,7 @@ tiddly			1	JJ	1
 tide			22	NN	22
 tideline		1	NN	1
 tides			4	NNS	4
-tidier			1	NN	1
+tidier			1	JJR	1
 tidily			1	RB	1
 tidiness		1	NN	1
 tidings			2	NNS	2
@@ -51973,14 +52267,14 @@ tie-ins			2	NN	1	NNS	1
 tie-up			2	NN	2
 tie-ups			1	NNS	1
 tied			60	VBD	14	VBN	46
-tier			2	NN	2
+tier			2	JJ	1	NN	1
 tiers			3	NNS	3
 ties			42	NNS	40	VBZ	2
 tiff			1	NN	1
 tiger			3	NN	3
 tiger-shark		1	NN	1
 tigers			4	NNS	4
-tight			58	JJ	47	RB	11
+tight			60	JJ	47	RB	13
 tight-fisted		1	JJ	1
 tight-fitting		1	JJ	1
 tight-rope		1	NN	1
@@ -51990,20 +52284,20 @@ tightened		15	VBD	14	VBN	1
 tightener		1	NN	1
 tightening		5	NN	1	VBG	4
 tighter			8	JJR	8
-tightly			14	RB	14
+tightly			18	RB	18
 tightly-strung		1	JJ	1
 tights			5	NNS	5
 tigress			1	NN	1
 tile			3	NN	3
 tiled			1	JJ	1
-tiles			8	NNS	8
-till			29	IN	27	NN	2
+tiles			10	NNS	10
+till			30	IN	28	NN	2
 tilled			1	VBD	1
 tiller			1	NN	1
 tilling			1	VBG	1
 tilt			10	NN	2	VB	8
 tilt-rotor		1	JJ	1
-tilted			4	JJ	1	VBN	3
+tilted			8	JJ	1	VBN	7
 tilting			1	VBG	1
 tilts			1	VBZ	1
 timber			12	NN	12
@@ -52011,7 +52305,7 @@ timberland		1	NN	1
 timberlands		2	NNS	2
 timbers			3	NNS	3
 timbre			1	NN	1
-time			990	NN	989	VB	1
+time			1048	NN	1047	VB	1
 time!			1	NN	1
 time-consuming		7	JJ	7
 time-honored		2	JJ	2
@@ -52022,21 +52316,21 @@ time-sensitive		1	JJ	1
 time-sharing		1	NN	1
 time-table		1	NN	1
 time-tested		1	JJ	1
-time?			1	NN	1
+time?			2	NN	1	NNP	1
 timed			5	VBD	4	VBN	1
 timed..			1	CD	1
 timejust		1	JJ	1
 timely			10	JJ	10
 timer			2	NN	2
-times			227	CC	4	NNS	223
+times			235	CC	4	NNS	228	VBZ	3
 timetable		18	NN	18
 timetabled		2	JJ	1	VBN	1
 timetables		2	NNS	2
 timid			9	JJ	9
 timidity		3	NN	3
-timing			18	NN	18
+timing			19	NN	19
 timorous		2	JJ	2
-tin			28	NN	28
+tin			31	NN	31
 ting			2	NN	2
 tinge			5	NN	5
 tinged			5	JJ	2	VBN	3
@@ -52045,21 +52339,21 @@ tingling		6	NN	1	VBG	5
 tiniest			2	JJS	2
 tinker			2	NN	1	VB	1
 tinkering		2	VBG	2
-tinkle			3	NN	3
+tinkle			4	NN	4
 tinkled			1	VBD	1
-tinkling		2	NN	2
-tinned			1	JJ	1
+tinkling		2	NN	1	VBG	1
+tinned			1	VBN	1
 tinny			1	JJ	1
 tins			9	NNS	9
 tint			4	NN	4
 tinted			2	JJ	2
 tinting			1	VBG	1
-tiny			92	JJ	92
+tiny			95	JJ	95
 tip			18	NN	15	VB	3
 tip-off			1	NN	1
 tip-toe			1	NN	1
-tipped			18	JJ	2	VBD	16
-tipping			4	NN	1	VBG	3
+tipped			19	JJ	2	VBD	17
+tipping			4	VBG	4
 tipple			1	NN	1
 tippler			1	NN	1
 tips			8	NNS	8
@@ -52069,7 +52363,7 @@ tiptoeing		1	VBG	1
 tirade			1	NN	1
 tire			13	NN	11	VB	2
 tire-kickers		1	NNS	1
-tired			47	JJ	39	VBN	8
+tired			52	JJ	44	VBN	8
 tired.			1	VBN	1
 tiredness		1	NN	1
 tiredthe		1	JJ	1
@@ -52101,14 +52395,14 @@ titles			15	NNS	15
 titter			3	NN	1	VB	1	VBP	1
 tittered		1	VBN	1
 titular			2	JJ	2
-to			26792	IN	2	JJ	13	NN	2	TO	26775
+to			27679	IN	21	JJ	13	NN	6	TO	27639
 to-do			1	NN	1
 to-infinitive		1	JJ	1
 to?			1	JJ	1
 toad			5	NN	5
 toads			2	NNS	2
 toadstools		2	NNS	2
-toast			16	NN	15	VB	1
+toast			17	NN	16	VB	1
 toasted			4	VBD	4
 toaster			1	NN	1
 toasting		1	VBG	1
@@ -52116,9 +52410,9 @@ tobacco			29	NN	29
 tobacco-industry	1	NN	1
 tobacco-like		1	JJ	1
 tobogganing		1	VBG	1
-today			238	NN	237	RB	1
+today			243	NN	242	RB	1
 today?			3	NN	3
-todays			9	JJ	2	NNS	7
+todays			9	NNS	9
 toddler			1	NN	1
 toddlers		1	NNS	1
 toddling		2	VBG	2
@@ -52128,21 +52422,22 @@ toes			15	NNS	15
 toffee			3	NN	3
 toffees			2	NNS	2
 toga			1	NN	1
-together		192	RB	192
+together		209	RB	209
 togetherness		1	NN	1
 togs			1	NNS	1
 toil			3	VBP	3
 toiled			5	VBD	5
-toilet			14	NN	14
+toilet			15	NN	15
 toilet-trained		1	VBN	1
 toiletries		1	NNS	1
+toilets			1	NNS	1
 toiling			1	NN	1
 token			3	JJ	2	NN	1
 tokens			1	NNS	1
-told			271	VBD	226	VBN	45
+told			284	VBD	236	VBN	48
 tolerable		4	JJ	4
 tolerably		1	RB	1
-tolerance		7	NN	7
+tolerance		9	NN	9
 tolerant		2	JJ	2
 tolerate		9	VB	9
 tolerated		1	VBD	1
@@ -52152,55 +52447,57 @@ tolls			2	NNS	2
 tom-cats		1	NNS	1
 tom-tom			2	NN	2
 tomato			7	FW	1	NN	6
-tomatoes		11	NNS	11
+tomatoes		12	NNS	12
 tomb			7	NN	7
 tomboy			1	NN	1
 tombs			1	NNS	1
 tombstone		1	NN	1
 tombstones		1	NNS	1
 tomes			1	NNS	1
-tomorrow		59	NN	59
+tomorrow		60	NN	60
 tomorrow.Bye.		1	IN	1
 tomorrow.Terrific.	1	FW	1
-tomorrow?		1	VBZ	1
-ton			19	NN	19
+tomorrow?		1	NN	1
+tomorrows		1	VBZ	1
+ton			20	NN	20
 tone			58	NN	55	VB	3
 toned			1	VBN	1
 toneless		1	JJ	1
 tones			14	NNS	14
-tongs			1	NNS	1
-tongue			22	NN	22
+tongs			1	NN	1
+tongue			24	NN	24
 tongue-in-cheek		1	JJ	1
 tongue-lashing		1	NN	1
 tongue-tied		1	VBN	1
 tongues			1	NNS	1
 tonic			5	NN	5
-tonight			31	NN	25	RB	6
-tonight?		2	JJ	1	NNS	1
+tonight			34	NN	26	RB	8
+tonight?		2	NN	1	NNS	1
 tonight?Im		1	RB	1
-tonights		2	JJ	1	NNS	1
+tonights		2	NNS	2
 tonnage			1	NN	1
 tonnes			1	NNS	1
-tons			79	NNS	79
+tons			80	NNS	80
 tonsils			2	NNS	2
 tony			5	JJ	5
-too			521	RB	521
-too!			1	VBZ	1
+too			549	RB	549
+too!			1	NN	1
 too?			1	JJ	1
-took			511	VBD	511
+took			527	VBD	527
 tool			28	NN	28
 tool-and-die		2	JJ	2
+toolbox			1	NN	1
 tooling			1	NN	1
 tools			27	NNS	27
 toot			2	NN	1	VB	1
 tooted			1	VBD	1
-tooth			14	NN	14
+tooth			16	NN	16
 toothache		1	NN	1
 toothbrush		2	NN	2
 toothless		1	JJ	1
 toothpaste		1	NN	1
 toothpowder		1	NN	1
-top			236	JJ	141	NN	90	VB	5
+top			246	IN	3	JJ	142	NN	96	VB	5
 top-flight		1	JJ	1
 top-four		1	JJ	1
 top-heavy		2	JJ	2
@@ -52220,7 +52517,7 @@ topgrade		1	JJ	1
 topiary			7	JJ	7
 topic			18	NN	18
 topical			2	JJ	2
-topics			8	NNS	8
+topics			9	NNS	9
 topless			1	RB	1
 topmost			2	JJ	2
 topped			11	JJ	2	VBD	8	VBN	1
@@ -52228,63 +52525,64 @@ topper			1	NN	1
 topping			4	NN	1	VBG	3
 topple			5	VB	5
 toppled			4	VBD	1	VBN	3
-tops			12	NNS	12
+tops			15	NNS	14	VBZ	1
 topsy-turvy		2	JJ	2
 torch			2	NN	2
 torched			2	VBD	1	VBN	1
 torches			2	NNS	2
-tore			17	VBD	17
+tore			12	VBD	12
 torment			5	NN	1	VB	4
 tormented		2	JJ	1	VBD	1
 tormenting		2	VBG	2
 tormentors		2	NNS	2
 torments		3	NNS	1	VBZ	2
-torn			22	JJ	4	VB	2	VBN	16
+torn			18	JJ	4	VBN	14
 tornado			1	NN	1
-torpedo			5	NN	1	VB	4
+torpedo			6	NN	1	VB	5
 torpedoed		1	VBN	1
 torpor			1	NN	1
 torrent			3	NN	3
+torrential		1	JJ	1
 torrents		1	NNS	1
 torrid			2	JJ	2
 tort			1	NN	1
 tortuous		3	JJ	3
-torture			6	NN	1	VB	3	VBP	2
+torture			7	NN	1	VB	4	VBP	2
 tortured		3	JJ	1	VBN	2
 tortures		1	NNS	1
 torturing		1	VBG	1
-toss			2	NN	2
+toss			4	NN	2	VB	2
 toss-up			1	NN	1
-tossed			16	VBD	11	VBN	5
+tossed			18	VBD	13	VBN	5
 tossing			2	VBG	2
 tot			1	NN	1
-total			213	JJ	146	NN	51	VB	11	VBP	5
+total			219	JJ	150	NN	53	VB	11	VBP	5
 totaled			55	VBD	55
 totaling		24	VBG	24
 totalitarian		6	JJ	6
 totalitarianism		3	NN	3
 totality		2	NN	2
 totalled		3	VBD	2	VBN	1
-totally			53	RB	53
+totally			55	RB	55
 totals			7	NNS	3	VBZ	4
 tote			3	NN	1	VB	2
 toted			1	VBN	1
 toting			1	VBG	1
 tottered		1	VBD	1
 tottering		3	VBG	3
-touch			52	NN	33	VB	18	VBP	1
+touch			56	NN	36	VB	19	VBP	1
 touchdown		1	NN	1
-touched			25	JJ	1	VBD	17	VBN	7
-touches			7	NNS	7
+touched			26	JJ	1	VBD	18	VBN	7
+touches			7	NNS	5	VBZ	2
 touching		6	JJ	1	VBG	5
 touchstone		1	NN	1
 touchy			5	JJ	5
-tough			77	JJ	77
+tough			79	JJ	79
 toughen			1	VB	1
 toughened		2	VBD	2
 tougher			12	JJR	11	RBR	1
 toughest		2	JJS	2
-toughness		2	NN	2
+toughness		3	NN	3
 toughs			1	NNS	1
 toupees			1	NNS	1
 tour			34	NN	32	VB	2
@@ -52292,7 +52590,7 @@ toured			3	VBD	3
 touring			2	VBG	2
 tourism			10	NN	10
 tourist			16	NN	16
-tourists		31	NNS	31
+tourists		33	NNS	33
 touristy		1	JJ	1
 tournament		4	NN	4
 tournaments		2	NNS	2
@@ -52301,17 +52599,17 @@ tout			2	VB	2
 touted			3	VBD	2	VBN	1
 touting			3	VBG	3
 tow			2	NN	1	RB	1
-toward			105	IN	105
-towards			149	IN	149
+toward			108	IN	108
+towards			167	IN	167
 towed			2	VBD	2
-towel			18	NN	18
+towel			19	NN	19
 towels			5	NNS	5
 tower			25	NN	24	VB	1
 towered			1	VBN	1
-towering		9	JJ	9
-towers			4	NNS	4
+towering		10	JJ	8	VBG	2
+towers			5	NNS	5
 towing			1	VBG	1
-town			152	NN	152
+town			162	NN	162
 town-watching		1	JJ	1
 towndweller		1	NN	1
 townpeople		1	NN	1
@@ -52335,18 +52633,18 @@ toying			3	VBG	3
 toylike			1	JJ	1
 toys			16	NNS	16
 toysthey		1	NN	1
-tp			1	NN	1
-trace			16	NN	4	VB	12
+tp			1	JJ	1
+trace			17	NN	4	VB	13
 traceable		1	JJ	1
 traced			10	VBD	6	VBN	4
 traces			7	NNS	7
 tracing			6	NN	1	VBG	5
-track			49	NN	39	VB	7	VBP	3
+track			51	NN	40	VB	7	VBP	4
 tracked			6	VBD	2	VBN	4
 tracker			1	NN	1
 trackers		1	NNS	1
 tracking		8	NN	1	VBG	7
-tracks			19	NNS	8	VBZ	11
+tracks			20	NNS	9	VBZ	11
 tracksuit		1	NN	1
 tract			2	NN	2
 tractable		2	JJ	2
@@ -52355,7 +52653,7 @@ tractor			6	NN	6
 tractor-trailer		1	NN	1
 tractors		5	NNS	5
 tracts			4	NNS	4
-trade			315	NN	272	VB	33	VBP	10
+trade			319	NN	277	VB	32	VBP	10
 trade-ad		1	NN	1
 trade-distorting	2	JJ	2
 trade-in		1	NN	1
@@ -52370,22 +52668,22 @@ trader			63	NN	63
 traders			203	NNS	203
 trades			80	NNS	72	VBZ	8
 tradesmen		1	NNS	1
-trading			823	JJ	2	NN	728	VBG	92	VBG|NN	1
+trading			826	JJ	2	NN	730	VBG	93	VBG|NN	1
 trading-company		1	NN	1
 tradition		33	NN	33
 tradition-bound		1	JJ	1
-traditional		96	JJ	96
+traditional		97	JJ	97
 traditionalism		1	NN	1
 traditionalist		2	JJ	1	NN	1
 traditionalists		3	NNS	3
 traditionally		14	RB	14
 traditions		15	NNS	15
 traduce			1	VB	1
-traffic			68	NN	68
+traffic			72	NN	72
 trafficked		1	VBD	1
 trafficker		1	NN	1
 traffickers		4	NNS	4
-trafficking		5	NN	5
+trafficking		5	NN	4	VBG	1
 tragedies		4	NNS	4
 tragedy			11	NN	11
 tragic			6	JJ	6
@@ -52396,20 +52694,20 @@ trailer			4	NN	4
 trailers		1	NNS	1
 trailing		4	VBG	4
 trails			3	NNS	1	VBZ	2
-train			75	NN	67	VB	7	VBP	1
+train			85	NN	77	VB	7	VBP	1
 train?			1	NN	1
-trained			18	JJ	4	VBN	14
+trained			21	JJ	6	VBN	15
 trainee			3	NN	3
 trainees		3	NNS	3
 trainer			5	NN	5
 trainers		2	NNS	2
-training		68	NN	63	VBG	5
+training		68	NN	62	VBG	6
 training-wage		1	JJ	1
-trains			14	NNS	12	VBZ	2
+trains			15	NNS	14	VBZ	1
 traipsed		1	VBD	1
 traipsing		1	VBG	1
 trait			4	NN	4
-traitor			8	NN	8
+traitor			9	NN	9
 traitors		4	NNS	4
 traits			4	NNS	4
 trajectory		2	NN	2
@@ -52426,7 +52724,7 @@ trampolines		1	NNS	1
 trance			5	NN	5
 tranquil		4	JJ	4
 tranquilliser		1	NN	1
-tranquillisers		1	NNS	1
+tranquillisers		2	NNS	2
 tranquillity		2	NN	2
 tranquillized		1	VBD	1
 trans-Atlantic		2	JJ	2
@@ -52435,14 +52733,14 @@ transacting		2	VBG	2
 transaction		137	NN	137
 transactions		76	NNS	76
 transatlantic		1	NN	1
-transcended		2	JJ	2
+transcended		2	VBD	2
 transcendent		2	JJ	2
 transcends		1	VBZ	1
 transcribe		2	VBP	2
 transcript		4	NN	4
 transcriptions		1	NNS	1
 transcripts		3	NNS	3
-transfer		40	NN	22	VB	18
+transfer		35	NN	17	VB	18
 transferred		31	VBD	8	VBN	23
 transferring		4	VBG	4
 transfers		14	NNS	13	VBZ	1
@@ -52450,7 +52748,7 @@ transfigured		1	JJ	1
 transfixed		3	VBN	3
 transform		10	VB	10
 transformation		3	NN	3
-transformed		9	VBD	3	VBN	6
+transformed		10	VBD	3	VBN	7
 transformer		2	NN	2
 transforming		2	VBG	2
 transforms		2	VBZ	2
@@ -52465,10 +52763,10 @@ transition		21	NN	21
 transitional		5	JJ	5
 transitory		2	JJ	2
 translatable		1	JJ	1
-translate		6	VB	6
-translated		6	VBN	6
-translation		4	NN	4
-translations		2	NNS	2
+translate		8	VB	8
+translated		9	VBN	9
+translation		7	NN	7
+translations		3	NNS	3
 translator		2	NN	2
 translucent		3	JJ	3
 transluscent		1	JJ	1
@@ -52477,7 +52775,7 @@ transmission-product	1	NN	1
 transmission.		1	CD	1
 transmissions		1	NNS	1
 transmit		3	VB	3
-transmitted		10	VBD	2	VBN	8
+transmitted		11	VBD	2	VBN	9
 transmitter		1	NN	1
 transmitters		2	NNS	2
 transmitters?		1	NN	1
@@ -52486,15 +52784,15 @@ transmuted		2	VBN	2
 transnational		1	JJ	1
 transparent		10	JJ	10
 transpired		3	VBD	3
-transplant		12	NN	6	VB	6
+transplant		12	NN	7	VB	5
 transplantation		1	NN	1
 transplanted		2	VBN	2
 transplanting		1	VBG	1
 transplants		11	NNS	11
-transport		19	NN	14	VB	5
+transport		22	NN	17	VB	5
 transportable		1	JJ	1
 transportation		39	NN	39
-transported		5	VBD	1	VBN	4
+transported		5	VBN	5
 transporter		2	NN	2
 transporters		1	NNS	1
 transporting		8	NN	1	VBG	7
@@ -52503,9 +52801,10 @@ transpose		1	VB	1
 transposed		1	VBN	1
 transvestites		1	NNS	1
 trap			18	NN	17	VB	1
+trap-door		1	JJ	1
 trapdoor		1	NN	1
 trapeze			1	NN	1
-trapped			19	JJ	2	VBN	17
+trapped			20	JJ	2	VBN	18
 trapping		1	VBG	1
 trappings		1	NNS	1
 traps			5	NNS	5
@@ -52517,7 +52816,7 @@ trauma			1	NN	1
 traumas			1	NNS	1
 traumatic		4	JJ	4
 travails		1	NNS	1
-travel			64	NN	37	VB	19	VBP	8
+travel			66	NN	37	VB	21	VBP	8
 travel-agency		1	NN	1
 travel-related		1	JJ	1
 travel-sick		1	JJ	1
@@ -52525,18 +52824,18 @@ traveled		8	VBD	6	VBN	2
 traveler		2	NN	2
 travelers		7	NNS	7
 traveling		8	VBG	8
-travelled		18	JJ	1	VBD	13	VBN	4
-traveller		2	NN	2
-travellers		8	NNS	8
-travelling		18	JJ	7	NN	1	VBG	10
+travelled		23	JJ	1	VBD	18	VBN	4
+traveller		3	NN	3
+travellers		9	NNS	9
+travelling		19	JJ	7	NN	2	VBG	10
 travels			6	NNS	4	VBZ	2
 travesties		1	NNS	1
 travesty		1	NN	1
 trawl			3	NN	2	VB	1
 trawled			1	VBD	1
-trawler			10	NN	10
+trawler			10	JJ	1	NN	9
 trawling		2	JJ	1	VBG	1
-tray			10	JJ	1	NN	8	RB	1
+tray			11	NN	9	RB	2
 trays			6	NNS	6
 treacheries		1	NNS	1
 treacherous		4	JJ	4
@@ -52545,7 +52844,7 @@ tread			8	VB	8
 treading		3	VBG	3
 treadmill		1	NN	1
 treadmills		1	NNS	1
-treason			1	NN	1
+treason			1	JJ	1
 treasure		8	NN	7	VB	1
 treasure-trove		1	NN	1
 treasured		1	JJ	1
@@ -52555,28 +52854,28 @@ treasures		7	NNS	7
 treasuries		2	NNS	2
 treasury		12	NN	12
 treasury-management	1	NN	1
-treat			38	NN	6	VB	27	VBP	5
-treated			35	VBD	6	VBN	29
+treat			43	NN	6	VB	31	VBP	6
+treated			39	VBD	7	VBN	32
 treating		11	VBG	11
 treatise		2	NN	2
 treatises		1	NNS	1
-treatment		72	NN	72
+treatment		74	NN	74
 treatments		2	NNS	2
-treats			4	VBZ	4
+treats			5	VBZ	5
 treaty			24	NN	24
 treaty-negotiating	1	JJ	1
 treble			3	JJ	2	NN	1
 trebled			2	VBD	2
 trebles			1	NNS	1
-tree			90	NN	90
+tree			94	NN	94
 tree-bordered		1	JJ	1
 tree-lined		1	JJ	1
 tree-top		1	JJ	1
-tree-tops		2	NNS	2
+tree-tops		3	NNS	3
 tree.Under		1	NN	1
 treeless		3	JJ	3
 treelined		1	JJ	1
-trees			118	NNS	118
+trees			123	NNS	123
 treetops		1	NNS	1
 trek			1	NN	1
 trekked			2	VBD	2
@@ -52584,14 +52883,14 @@ trekking		1	VBG	1
 tremble			5	NN	3	VB	1	VBP	1
 trembled		6	VBD	3	VBN	3
 trembling		4	VBG	4
-tremendous		40	JJ	40
+tremendous		45	JJ	45
 tremendously		2	RB	2
 tremor			4	NN	4
 tremors			6	NNS	6
 tremulous		1	JJ	1
 trench			11	NN	11
 trenches		2	NNS	2
-trend			64	NN	63	VB	1
+trend			68	NN	67	VB	1
 trend-setters		1	NNS	1
 trending		1	VBG	1
 trends			27	NNS	27
@@ -52599,23 +52898,23 @@ trendy			4	JJ	4
 trepidation		1	NN	1
 trespass		4	NN	3	VBP	1
 trespasses		1	NNS	1
-trespassing		2	NN	2
+trespassing		2	VBG	2
 tri-colored		1	JJ	1
 tri-jet			1	NN	1
 triad			1	NN	1
-trial			83	NN	83
+trial			90	NN	90
 trials			12	NNS	12
 triangle		7	NN	6	VBP	1
 triangles		1	NNS	1
-triangular		7	JJ	7
+triangular		6	JJ	6
 tribal			3	JJ	3
 tribe			9	NN	9
 tribes			10	NNS	10
-tribesmen		4	NNS	4
+tribesmen		5	NNS	5
 tribulations		1	NNS	1
 tribunal		5	NN	5
 tributary		2	JJ	1	NN	1
-tribute			9	NN	9
+tribute			11	NN	11
 tributes		1	NNS	1
 trice			1	NN	1
 trick			15	NN	14	VB	1
@@ -52623,20 +52922,20 @@ tricked			2	VBN	2
 trickery		2	NN	2
 trickier		1	JJR	1
 trickle			8	NN	6	VB	2
-trickled		2	VBN	2
+trickled		3	VBN	3
 trickling		2	VBG	2
 tricks			6	NNS	6
 trickster		2	NN	2
 tricky			7	JJ	7
 tricycle		1	NN	1
 tricycles		1	NNS	1
-tried			195	JJ	1	VBD	168	VBN	26
+tried			203	JJ	1	VBD	176	VBN	26
 trier			1	NN	1
 triers			1	NNS	1
 tries			19	NNS	1	VBZ	18
 trifle			4	RB	4
 trifles			2	NNS	2
-trifling		4	JJ	4
+trifling		5	JJ	4	VBG	1
 trigger			12	NN	8	VB	4
 trigger-happy		2	JJ	2
 triggered		34	JJ	1	VBD	15	VBN	18
@@ -52646,7 +52945,7 @@ trike			1	NN	1
 trilby			2	NN	2
 trill			1	NN	1
 trilled			1	VBD	1
-trilling		1	JJ	1
+trilling		1	VBG	1
 trillion		59	CD	59
 trillion-dollar		1	JJ	1
 trillions		1	NNS	1
@@ -52660,7 +52959,7 @@ trinity			2	NN	2
 trinkets		1	NNS	1
 trio			5	NN	5
 trios			1	NNS	1
-trip			53	NN	53
+trip			58	NN	58
 tripe			1	NN	1
 triple			4	JJ	1	RB	2	VB	1
 triple-A		17	JJ	17
@@ -52675,15 +52974,16 @@ tripling		1	VBG	1
 tripped			11	VBN	11
 trippers		2	NNS	2
 tripping		3	VBG	3
-trips			11	NNS	11
+trips			12	NNS	12
 tristate		1	JJ	1
 trite			3	JJ	3
 triumph			16	NN	16
-triumphant		11	JJ	7	NN	1	RB	3
+triumphal		1	JJ	1
+triumphant		11	JJ	4	NN	4	RB	3
 triumphantly		3	RB	3
 triumphed		2	VBD	2
 triumvirate		1	NN	1
-trivia			2	NNS	2
+trivia			2	NN	2
 trivial			9	JJ	9
 trivialities		1	NNS	1
 triviality		1	NN	1
@@ -52697,7 +52997,7 @@ trolley			6	NN	6
 trolleys		1	NNS	1
 trombone		2	NN	2
 troop			11	NN	11
-trooped			3	JJ	1	VBD	1	VBN	1
+trooped			3	JJ	1	VBD	2
 trooper			1	NN	1
 troopers		1	NNS	1
 troops			38	NNS	38
@@ -52709,22 +53009,22 @@ tropics			2	NNS	2
 trot			8	NN	6	VB	2
 trots			1	NNS	1
 trotted			5	VBD	4	VBN	1
-trotting		1	NN	1
-trouble			79	JJ	1	NN	77	VB	1
+trotting		1	VBG	1
+trouble			93	JJ	1	NN	91	VB	1
 trouble-free		1	JJ	1
 trouble-maker		1	NN	1
-troubled		48	JJ	34	VBD	2	VBN	12
+troubled		49	JJ	35	VBD	2	VBN	12
 troublemakers		1	NNS	1
 troubles		32	NNS	32
 troublesome		11	JJ	11
-troubling		10	JJ	7	VBG	3
+troubling		10	JJ	5	VBG	5
 trough			9	NN	9
 troughed		1	VBD	1
 trounced		1	VBD	1
 troupe			1	NN	1
-trouser			4	NN	4
+trouser			5	NN	5
 trousers		17	NNS	17
-trout			12	NNS	12
+trout			12	NN	2	NNS	10
 trowel			3	NN	3
 truancy			1	NN	1
 truant			1	NN	1
@@ -52739,14 +53039,14 @@ truckload		1	NN	1
 trucks			46	NNS	46
 truculent		1	JJ	1
 trudge			1	NN	1
-trudged			5	VBD	4	VBN	1
+trudged			6	VBD	4	VBN	2
 trudging		1	VBG	1
-true			89	JJ	89
+true			94	JJ	94
 true-blue		1	JJ	1
 true...			1	CC	1
 truffles		2	NNS	2
 truism			1	NN	1
-truly			21	RB	21
+truly			22	RB	22
 trumped			2	VBD	2
 trumpet			12	NN	10	VBP	2
 trumpeted		2	VBN	2
@@ -52754,41 +53054,41 @@ trumpeting		2	VBG	2
 trumpets		6	VBZ	6
 truncated		1	JJ	1
 truncheons		1	NNS	1
-trundled		3	VBD	2	VBN	1
+trundled		3	VBD	1	VBN	2
 trundles		1	VBZ	1
 trundling		2	VBG	2
 trunk			14	NN	14
-trunks			4	NNS	4
+trunks			5	NNS	5
 trussed			1	VBN	1
 trussed-up		1	JJ	1
-trust			83	NN	60	VB	19	VBP	4
+trust			85	NN	60	VB	21	VBP	4
 trust?			1	VBZ	1
 trusted			8	VBD	4	VBN	4
 trustee			5	NN	5
 trustees		7	NNS	7
-trusting		6	JJ	1	VBG	5
+trusting		7	JJ	1	VBG	6
 trusts			9	NNS	9
 trustworthy		1	JJ	1
-truth			71	NN	71
+truth			78	NN	78
 truth-in-lending	1	NN	1
 truth?			1	NN	1
 truthful		4	JJ	4
-truthfully		2	RB	2
+truthfully		3	RB	3
 truthfulness		1	NN	1
 truths			5	NNS	5
-try			152	NN	6	VB	112	VBP	34
+try			157	NN	7	VB	115	VBP	35
 try-out			1	NN	1
-trying			245	JJ	2	VBG	243
+trying			255	JJ	2	VBG	253
 tsunami			1	NN	1
 tub			11	NN	11
 tubby			1	JJ	1
-tube			12	NN	12
+tube			13	NN	13
 tubes			8	NNS	8
 tubing			2	NN	2
 tubs			2	NNS	2
 tubular			3	JJ	3
 tuck			1	VB	1
-tucked			14	VBD	12	VBN	2
+tucked			16	VBD	14	VBN	2
 tucks			1	NNS	1
 tuft			1	NN	1
 tufts			1	NNS	1
@@ -52825,16 +53125,16 @@ tuneful			1	JJ	1
 tuneless		1	JJ	1
 tunelessly		2	RB	2
 tunes			6	NNS	6
-tunic			5	JJ	1	NN	4
+tunic			5	NN	5
 tuning			1	VBG	1
-tunnel			12	NN	12
+tunnel			13	NN	13
 tunnelled		1	VBN	1
 tunnelling		1	VBG	1
 tunnels			3	NNS	3
 turban			2	NN	2
 turbans			1	NNS	1
 turbine			6	NN	6
-turbines		5	NNS	5
+turbines		6	NNS	6
 turbogenerator		2	NN	2
 turbulence		8	NN	8
 turbulent		5	JJ	5
@@ -52845,13 +53145,13 @@ turkey			5	NN	5
 turkeys			1	NNS	1
 turmoil			27	NN	27
 turmoils		1	NNS	1
-turn			154	NN	50	VB	94	VBP	10
+turn			160	NN	52	VB	98	VBP	10
 turn-off		2	NN	2
 turn-out		1	NN	1
 turnabout		1	NN	1
 turnaround		15	NN	15
-turned			235	VBD	173	VBN	62
-turning			54	NN	3	VBG	51
+turned			243	VBD	180	VBN	63
+turning			58	NN	3	VBG	55
 turnips			1	NNS	1
 turnkey			1	NN	1
 turnoff			1	NN	1
@@ -52883,16 +53183,16 @@ tweaking		1	NN	1
 tweed			6	NN	6
 tweeds			1	NNS	1
 tweet			2	NN	2
-tweeting		1	JJ	1
-tweezers		3	NNS	3
-twelfth			3	JJ	3
-twelve			31	CD	31
+tweeting		1	VBG	1
+tweezers		3	NN	2	NNS	1
+twelfth			4	JJ	4
+twelve			32	CD	32
 twelve-month		1	NN	1
 twelve-thirty		1	CD	1
 twelve-year-old		2	JJ	2
 twenties		4	NNS	4
 twentieth		6	JJ	5	NN	1
-twenty			43	CD	43
+twenty			50	CD	50
 twenty-car		1	JJ	1
 twenty-eight		1	NN	1
 twenty-first		1	JJ	1
@@ -52900,16 +53200,17 @@ twenty-five		13	JJ	13
 twenty-five-pound	1	JJ	1
 twenty-five-year	1	JJ	1
 twenty-five-year-old	1	JJ	1
-twenty-four		5	JJ	5
+twenty-four		6	JJ	6
+twenty-four-hour	1	JJ	1
 twenty-nine		1	NN	1
-twenty-one		2	NN	2
+twenty-one		2	JJ	2
 twenty-one-year-old	1	JJ	1
 twenty-seven		2	JJ	2
 twenty-six		2	JJ	1	NN	1
 twenty-three		1	JJ	1
 twenty-two		1	NN	1
 twenty-year		1	JJ	1
-twice			53	JJ	1	RB	52
+twice			55	JJ	1	RB	54
 twice-a-year		1	JJ	1
 twice-daily		1	JJ	1
 twice-yearly		1	JJ	1
@@ -52930,13 +53231,13 @@ twined			1	VBN	1
 twinge			6	NN	6
 twinkle			3	NN	3
 twinkled		4	VBD	4
-twinkling		1	NN	1
+twinkling		1	VBG	1
 twinned			2	VBN	2
-twins			12	NNS	12
+twins			13	NNS	13
 twirled			4	VBD	3	VBN	1
 twirling		3	VBG	3
 twist			24	NN	20	VB	3	VBP	1
-twist-and-turn		1	JJ	1
+twist-and-turn		1	NN	1
 twisted			18	JJ	5	VBN	13
 twister			2	NN	2
 twisting		5	VBG	5
@@ -52948,9 +53249,9 @@ twitch			3	VB	3
 twitched		3	VBD	2	VBN	1
 twitchy			1	JJ	1
 twits			1	NNS	1
-twitter			1	VB	1
-twittering		2	JJ	1	VBG	1
-two			1294	CD	1294
+twitter			1	NN	1
+twittering		2	VBG	2
+two			1340	CD	1340
 two-button		1	JJ	1
 two-day			7	JJ	7
 two-dimensional		4	JJ	4
@@ -52967,11 +53268,12 @@ two-man			1	JJ	1
 two-mile		2	JJ	2
 two-month		2	JJ	2
 two-part		8	JJ	8
-two-party		5	JJ	5
+two-party		6	JJ	6
 two-piece		3	JJ	1	NN	2
+two-pound		1	JJ	1
 two-product		1	JJ	1
 two-pronged		1	JJ	1
-two-roomed		1	JJ	1
+two-roomed		1	VBN	1
 two-run			1	JJ	1
 two-sevenths		1	NNS	1
 two-story		1	JJ	1
@@ -52990,14 +53292,14 @@ twopoint		1	NN	1
 tycoon			3	NN	3
 tying			2	VBG	2
 tyke			2	NN	2
-type			53	NN	52	VB	1
+type			54	NN	53	VB	1
 typed			7	VBN	7
 types			29	NNS	29
 typescript		2	NN	2
-typewriter		12	NN	12
-typewriters		2	NNS	2
+typewriter		14	NN	14
+typewriters		4	NNS	4
 typewritten		5	JJ	5
-typhoid			2	NN	1	VBN	1
+typhoid			3	JJ	1	NN	2
 typhoon			1	NN	1
 typhoons		1	NNS	1
 typical			33	JJ	33
@@ -53011,7 +53313,7 @@ tyrannize		1	VB	1
 tyranny			5	NN	5
 tyrant			1	NN	1
 tyrants			2	NNS	2
-tyre			6	JJ	4	NN	2
+tyre			7	JJ	5	NN	2
 tyres			10	NNS	10
 tyros			1	NNS	1
 ubiquitous		2	JJ	2
@@ -53037,15 +53339,15 @@ ultrasound		1	NN	1
 ultraviolet		9	JJ	6	NN	3
 ululated		1	VBN	1
 umber			1	JJ	1
-umbrella		11	NN	11
+umbrella		14	NN	14
 umbrella?		1	NN	1
-umbrellas		4	NNS	4
-umpire			2	NN	2
+umbrellas		5	NNS	5
+umpire			4	NN	4
 umpiring		3	VBG	3
 un-Swiss		1	JJ	1
 un-Westernizable	1	JJ	1
 unabated		3	JJ	2	RB	1
-unable			53	JJ	53
+unable			57	JJ	57
 unabridged		1	JJ	1
 unacceptable		8	JJ	8
 unaccountable		3	JJ	3
@@ -53108,14 +53410,14 @@ unbelievably		3	RB	3
 unbelievers		1	NNS	1
 unbelieving		2	JJ	2
 unbending		1	JJ	1
-unbent			1	VBP	1
+unbent			1	VB	1
 unbiased		5	JJ	5
 unbidden		2	RB	2
 unbleached		1	JJ	1
 unblemished		2	JJ	2
 unblinking		4	JJ	4
 unborn			3	JJ	2	NN	1
-unbound			3	JJ	2	VBD	1
+unbound			3	JJ	2	VBP	1
 unbounded		4	JJ	4
 unbreakable		2	JJ	2
 unbroken		2	JJ	2
@@ -53132,7 +53434,7 @@ uncanny			6	JJ	6
 uncaring		3	JJ	2	VBG	1
 unceasing		2	JJ	2
 uncensored		1	JJ	1
-uncertain		20	JJ	20
+uncertain		21	JJ	21
 uncertainly		2	RB	2
 uncertainties		9	NNS	9
 uncertainty		42	NN	42
@@ -53160,8 +53462,9 @@ uncoiled		3	VBD	2	VBN	1
 uncollaborated		1	JJ	1
 uncoloured		2	JJ	2
 uncombed		2	JJ	2
-uncomfortable		19	JJ	19
+uncomfortable		20	JJ	20
 uncommon		12	JJ	12
+uncommonly		1	RB	1
 uncommunicative		2	JJ	2
 uncompensated		1	JJ	1
 uncomplaining		1	JJ	1
@@ -53190,7 +53493,7 @@ uncooked		2	JJ	2
 uncooperative		2	JJ	2
 uncoordinated		4	JJ	2	VBN	2
 uncorked		1	VBD	1
-uncountable		10	JJ	10
+uncountable		9	JJ	9
 uncouth			2	JJ	2
 uncover			3	VB	3
 uncovered		17	JJ	3	VBD	3	VBN	11
@@ -53208,7 +53511,7 @@ undemocratic		3	JJ	3
 undemonstrative		1	JJ	1
 undeniable		6	JJ	6
 undeniably		3	RB	3
-under			635	IN	633	JJ	2
+under			649	IN	647	JJ	2
 under-employed		1	JJ	1
 under-employment	1	NN	1
 under-expressive	1	JJ	1
@@ -53226,7 +53529,7 @@ underbelly		2	NN	2
 underbrush		1	NN	1
 undercarriage		1	JJ	1
 undercarriages		1	NNS	1
-underclothes		2	NNS	2
+underclothes		2	NN	2
 undercover		6	JJ	5	RB	1
 undercurrent		5	NN	5
 undercut		10	JJ	1	VB	4	VBD	2	VBN	2	VBP	1
@@ -53237,17 +53540,17 @@ underdone		2	JJ	2
 underemployed		2	JJ	2
 underemployment		1	NN	1
 underestimate		2	VB	2
-underestimated		5	VBD	3	VBN	2
+underestimated		6	VBD	4	VBN	2
 underfed		2	JJ	2
-underfoot		8	JJ	4	NN	2	RB	2
+underfoot		8	JJ	5	NN	1	RB	2
 underfunded		1	VBN	1
 undergirded		1	VBD	1
 undergirding		1	NN	1
 undergo			4	VB	3	VBP	1
 undergoing		8	VBG	8
-undergone		3	VBN	3
+undergone		4	VBN	4
 undergraduate		6	JJ	4	NN	2
-undergraduates		2	NNS	2
+undergraduates		3	NNS	2	VBZ	1
 underground		18	JJ	11	NN	2	RB	5
 undergrowth		3	NN	3
 underhand		2	JJ	1	RB	1
@@ -53284,18 +53587,18 @@ underscoring		1	VBG	1
 undersecretary		3	NN	3
 underside		4	NN	4
 understaffed		1	JJ	1
-understand		78	VB	62	VBP	16
+understand		83	VB	66	VBP	17
 understand!		1	JJ	1
 understandable		8	JJ	8
-understandably		2	RB	2
-understanding		40	JJ	2	NN	29	VBG	9
+understandably		3	RB	3
+understanding		42	IN	1	JJ	2	NN	31	VBG	8
 understandings		1	NNS	1
 understands		10	VBZ	10
 understate		2	VBP	2
 understated		4	VBD	1	VBN	3
 understatement		3	NN	3
-understates		1	NNS	1
-understood		16	VBD	8	VBN	8
+understates		1	VBZ	1
+understood		17	VBD	8	VBN	9
 understudy		2	NN	2
 understudying		1	VBG	1
 undersubscription	1	NN	1
@@ -53348,12 +53651,12 @@ undisturbed		9	JJ	9
 undiversifiable		1	JJ	1
 undivided		4	JJ	4
 undo			5	VB	5
-undoing			6	NN	6
+undoing			6	NN	4	VBG	2
 undone			7	JJ	5	VBN	2
 undoubtedly		3	RB	3
 undramatically		1	RB	1
 undress			3	NN	2	VB	1
-undressed		3	JJ	1	VBD	1	VBN	1
+undressed		4	JJ	1	VBD	1	VBN	2
 undressing		1	VBG	1
 undulate		1	VB	1
 undulates		1	VBZ	1
@@ -53362,8 +53665,8 @@ undying			1	JJ	1
 unearthed		2	VBD	2
 unearthly		5	JJ	5
 unease			11	NN	11
-uneasily		3	RB	3
-uneasiness		2	NN	2
+uneasily		4	RB	4
+uneasiness		4	NN	4
 uneasy			18	JJ	18
 uneatable		2	JJ	2
 uneconomic		3	JJ	3
@@ -53371,8 +53674,8 @@ uneconomical		2	JJ	2
 uneducated		2	JJ	2
 unemotional		4	JJ	4
 unemployable		1	JJ	1
-unemployed		14	JJ	10	NN	4
-unemployment		67	NN	67
+unemployed		15	JJ	11	NN	4
+unemployment		72	NN	72
 unencumbered		1	JJ	1
 unending		6	JJ	6
 unendurable		1	JJ	1
@@ -53395,7 +53698,7 @@ unexpended		1	JJ	1
 unexplained		7	JJ	7
 unexploded		1	JJ	1
 unfailingly		4	RB	4
-unfair			27	JJ	27
+unfair			29	JJ	29
 unfair-trade		1	JJ	1
 unfairly		11	RB	11
 unfairness		2	NN	2
@@ -53412,7 +53715,7 @@ unfeeling		1	JJ	1
 unfettered		5	JJ	5
 unfilled		5	JJ	5
 unfinished		2	JJ	2
-unfit			4	JJ	4
+unfit			5	JJ	5
 unfitted		1	VBD	1
 unfixed			1	JJ	1
 unflagging		2	JJ	2
@@ -53445,6 +53748,7 @@ ungracious		2	JJ	2
 ungrateful		2	JJ	2
 unguarded		3	JJ	3
 unhampered		2	JJ	2
+unhappier		1	JJR	1
 unhappily		4	RB	4
 unhappiness		6	NN	6
 unhappy			28	JJ	28
@@ -53474,7 +53778,7 @@ uniformity		3	NN	3
 uniformly		1	RB	1
 uniforms		2	NNS	2
 unifying		1	JJ	1
-unilateral		3	JJ	3
+unilateral		4	JJ	4
 unilateralist		1	NN	1
 unilateralists		1	NNS	1
 unilaterally		2	RB	2
@@ -53502,12 +53806,12 @@ uninterested		3	JJ	3
 uninteresting		2	JJ	2
 uninterrupted		4	JJ	4
 uninvited		4	JJ	4
-union			134	NN	134
+union			140	NN	140
 unionised		1	VBN	1
 unionism		1	NN	1
 unionists		3	NNS	3
 unionize		1	VB	1
-unions			61	NNS	61
+unions			64	NNS	64
 unique			14	JJ	14
 uniramous		1	JJ	1
 unit			385	NN	385
@@ -53520,14 +53824,14 @@ unitholders		4	NNS	4
 uniting			1	VBG	1
 units			130	NNS	130
 unity			9	NN	9
-universal		18	JJ	18
+universal		22	JJ	22
 universally		7	RB	7
 universals		2	NNS	2
 universe		16	NN	16
-universities		30	NNS	30
+universities		31	NNS	31
 universities?		1	JJ	1
-university		91	NN	91
-university?		2	NN	2
+university		92	NN	92
+university?		4	NN	2	NNP	2
 universitys		1	JJ	1
 unjust			10	JJ	10
 unjustifiable		1	JJ	1
@@ -53543,13 +53847,13 @@ unlabeled		1	JJ	1
 unlaid			1	JJ	1
 unlawful		6	JJ	6
 unlawfully		1	RB	1
-unlearned		2	VBN	2
+unlearned		2	JJ	1	VBN	1
 unleash			1	VBP	1
-unleashed		2	VBD	2
+unleashed		6	VBD	3	VBN	3
 unleashes		1	VBZ	1
 unleashing		1	VBG	1
 unless			69	IN	69
-unlike			28	IN	27	JJ	1
+unlike			33	IN	31	JJ	2
 unlikely		37	JJ	36	RB	1
 unlimited		10	JJ	10
 unlined			1	JJ	1
@@ -53577,7 +53881,7 @@ unmentionable		3	JJ	3
 unmercifully		5	RB	5
 unmistakable		5	JJ	5
 unmistakably		1	RB	1
-unmistakeable		1	JJ	1
+unmistakeable		2	JJ	2
 unmitigated		1	VBN	1
 unmolested		2	RB	2
 unmoved			2	JJ	2
@@ -53585,7 +53889,7 @@ unnamed			3	JJ	3
 unnatural		8	JJ	8
 unnaturally		1	RB	1
 unnecessarily		1	RB	1
-unnecessary		23	JJ	23
+unnecessary		24	JJ	24
 unneeded		1	JJ	1
 unnerved		1	VBD	1
 unnerving		5	JJ	3	VBG	2
@@ -53595,11 +53899,12 @@ unobserved		3	JJ	3
 unobtainable		1	JJ	1
 unobtrusive		4	JJ	4
 unoccupied		3	JJ	3
-unofficial		7	JJ	7
+unofficial		8	JJ	8
 unopened		3	JJ	3
 unoriginal		1	JJ	1
 unorthodox		1	JJ	1
-unpacked		1	VBD	1
+unpack			3	VB	3
+unpacked		2	VBD	1	VBN	1
 unpaid			10	JJ	10
 unpalatable		2	JJ	2
 unparalleled		4	JJ	4
@@ -53607,21 +53912,21 @@ unpeace			1	NN	1
 unperformed		1	JJ	1
 unpick			1	VB	1
 unplanned		1	JJ	1
-unpleasant		14	JJ	14
+unpleasant		18	JJ	18
 unplug			1	VB	1
 unpopular		13	JJ	13
 unpopularity		2	NN	2
 unprecedented		16	JJ	16
 unpredictable		6	JJ	6
-unprepared		7	JJ	7
+unprepared		8	JJ	8
 unprepossessing		1	JJ	1
 unpretentious		1	JJ	1
 unprincipled		1	JJ	1
 unprintable		1	JJ	1
 unproductive		5	JJ	5
 unprofessional		1	JJ	1
-unprofitable		9	JJ	9
-unprotected		3	JJ	3
+unprofitable		10	JJ	10
+unprotected		4	JJ	4
 unproven		1	JJ	1
 unprovoked		1	VBN	1
 unpublished		7	JJ	7
@@ -53664,7 +53969,7 @@ unrepresented		2	JJ	2
 unrequited		1	JJ	1
 unresolved		3	JJ	3
 unresponsive		4	JJ	4
-unrest			11	NN	11
+unrest			12	NN	12
 unresting		1	JJ	1
 unrestrained		4	JJ	4
 unrestricted		4	JJ	4
@@ -53725,7 +54030,7 @@ unspoiled		4	JJ	4
 unspoken		6	JJ	6
 unsporting		1	JJ	1
 unspotted		1	VBD	1
-unstable		10	JJ	10
+unstable		11	JJ	11
 unstated		2	JJ	2
 unsteady		6	JJ	6
 unstinting		1	JJ	1
@@ -53740,7 +54045,7 @@ unsuccessfully		6	RB	6
 unsuitable		4	JJ	4
 unsullied		2	JJ	2
 unsupported		7	JJ	7
-unsure			6	JJ	6
+unsure			7	JJ	7
 unsurpassed		3	JJ	3
 unsurprising		1	JJ	1
 unsuspected		5	JJ	5
@@ -53752,7 +54057,7 @@ unswerving		4	JJ	4
 unsympathetic		4	JJ	4
 untamed			2	JJ	2
 untangle		1	VB	1
-untangled		2	VBD	1	VBN	1
+untangled		2	VBN	2
 untapped		4	JJ	4
 untenable		2	JJ	2
 untested		3	JJ	3
@@ -53762,7 +54067,7 @@ untidier		1	JJR	1
 untidy			4	JJ	4
 untie			1	VB	1
 untied			2	JJ	1	VBD	1
-until			308	IN	308
+until			312	IN	312
 untimely		1	JJ	1
 untiring		2	JJ	2
 untold			1	JJ	1
@@ -53782,8 +54087,8 @@ untutored		2	JJ	2
 untying			1	VBG	1
 unusable		1	JJ	1
 unused			6	JJ	6
-unusual			47	JJ	47
-unusually		26	RB	26
+unusual			51	JJ	51
+unusually		27	RB	27
 unveil			7	VB	7
 unveiled		13	VBD	12	VBN	1
 unveiling		3	NN	1	VBG	2
@@ -53795,7 +54100,7 @@ unwavering		2	JJ	2
 unwed			1	JJ	1
 unwelcome		9	JJ	9
 unwelcoming		2	JJ	2
-unwell			2	JJ	1	NN	1
+unwell			3	JJ	1	NN	2
 unwholesome		1	JJ	1
 unwieldy		3	JJ	3
 unwilling		10	JJ	10
@@ -53808,14 +54113,14 @@ unwittingly		1	RB	1
 unwonted		2	JJ	2
 unworkable		8	JJ	8
 unworldly		1	JJ	1
-unworthy		4	JJ	2	NN	2
+unworthy		8	JJ	6	NN	2
 unwound			1	VBD	1
 unwrap			1	VB	1
 unwrapped		1	VBD	1
 unwritten		5	JJ	5
 unyielding		1	JJ	1
 unzipped		1	VBN	1
-up			2080	IN	364	IN|RB	1	JJ	11	RB	535	RP	1169
+up			2155	IN	378	IN|RB	1	JJ	11	RB	541	RP	1224
 up-ended		1	JJ	1
 up-front		3	JJ	3
 up-market		1	JJ	1
@@ -53823,10 +54128,10 @@ up-river		2	JJ	1	RB	1
 up-scale		1	JJ	1
 up-to-date		7	JJ	7
 up..			1	IN	1
-up?			5	NN	5
+up?			5	NN	4	NNS	1
 upbeat			4	JJ	3	NN	1
 upbraid			1	VBN	1
-upbringing		6	NN	6
+upbringing		7	NN	7
 update			2	VB	2
 updated			5	VBN	5
 updating		5	VBG	5
@@ -53845,13 +54150,14 @@ upholds			1	VBZ	1
 upholstery		4	NN	4
 upkeep			1	NN	1
 upland			2	JJ	2
-uplift			3	NN	3
-uplifted		4	JJ	4
+uplands			1	NNS	1
+uplift			2	NN	2
+uplifted		4	JJ	3	VBN	1
 uplifting		2	JJ	2
-upon			123	IN	115	RB	1	RP	7
+upon			128	IN	124	RB	1	RP	3
 upped			3	VBD	3
-upper			27	JJ	27
-upper-class		4	JJ	4
+upper			28	JJ	28
+upper-class		5	JJ	5
 upper-crust		1	JJ	1
 upper-income		2	JJ	1	NN	1
 upper-middle		1	JJ	1
@@ -53859,7 +54165,7 @@ uppermost		6	JJ	6
 uppers			1	NNS	1
 uppish			1	JJ	1
 upraised		2	JJ	2
-upright			12	JJ	8	RB	4
+upright			12	JJ	8	NN	1	RB	3
 uprightness		1	NN	1
 uprising		5	NN	5
 upriver			1	NN	1
@@ -53868,14 +54174,14 @@ uproarious		3	JJ	2	RB	1
 uproot			1	VB	1
 uprooted		3	VBD	3
 upscale			14	JJ	10	NN	4
-upset			44	JJ	7	NN	3	VB	10	VBD	2	VBN	22
+upset			46	JJ	7	NN	3	VB	10	VBD	3	VBN	23
 upsets			3	NNS	3
 upsetting		2	VBG	2
 upshot			2	NN	2
 upside			10	JJ	1	NN	2	RB	7
 upstage			3	RB	2	VB	1
 upstaged		1	VBN	1
-upstairs		20	JJ	3	NN	8	RB	9
+upstairs		21	JJ	3	NN	9	RB	9
 upstart			6	JJ	1	NN	5
 upstate			1	JJ	1
 upstream		7	JJ	1	RB	6
@@ -53889,17 +54195,17 @@ uptight			3	JJ	3
 uptown			3	RB	3
 upturn			5	NN	5
 upturned		3	JJ	3
-upward			16	JJ	7	RB	9
-upwards			9	NNS	4	RB	5
+upward			17	JJ	8	RB	9
+upwards			9	NNS	5	RB	4
 upwind			1	JJ	1
-uranium			3	NN	3
+uranium			6	NN	6
 urban			35	JJ	35
 urbane			2	JJ	2
 urchin			1	NN	1
 urchins			1	NNS	1
 urethra			1	NN	1
-urge			22	NN	14	VB	5	VBP	3
-urged			53	VBD	43	VBN	10
+urge			22	NN	14	VB	4	VBP	4
+urged			58	VBD	47	VBN	11
 urgency			9	NN	9
 urgent			15	JJ	15
 urgently		4	RB	4
@@ -53909,33 +54215,33 @@ urinal			1	NN	1
 urinary			1	JJ	1
 urinary-tract		1	NN	1
 urine			7	NN	7
-us			460	PRP	460
+us			490	PRP	490
 us.			1	NN	1
 us?			2	CD	2
 usable			2	JJ	2
 usage			5	NN	5
-use			482	NN	231	VB	178	VBP	73
+use			489	NN	235	VB	179	VBP	75
 use?			1	JJ	1
-used			698	JJ	8	VBD	198	VBN	492
-useful			27	JJ	27
+used			705	JJ	8	VBD	207	VBN	490
+useful			35	JJ	35
 useful.Its		1	NNS	1
 usefully		1	RB	1
 usefulness		2	NN	2
-useless			18	JJ	18
+useless			19	JJ	19
 uselessly		3	RB	3
 uselessness		1	NN	1
-uselesswaste-basket	1	NN	1
+uselesswaste-basket	1	JJ	1
 user			7	NN	7
 users			23	NNS	23
-uses			50	NNS	13	VBZ	37
+uses			51	NNS	13	VBZ	38
 usher			3	NN	3
 ushered			6	VBD	5	VBN	1
 ushering		2	VBG	2
 ushers			2	NNS	2
-using			152	VBG	152
+using			155	VBG	155
 ussubject		1	NN	1
-usual			86	JJ	85	NN	1
-usually			125	RB	125
+usual			91	JJ	90	NN	1
+usually			129	RB	129
 usurers			1	NNS	1
 usurp			1	VB	1
 usurpation		1	NN	1
@@ -53950,10 +54256,10 @@ utilize			2	VB	2
 utmost			7	JJ	4	NN	3
 utopian			3	JJ	2	NN	1
 utopias			1	NNS	1
-utter			5	JJ	4	VB	1
+utter			9	JJ	8	VB	1
 utterance		1	NN	1
 utterances		4	NNS	4
-uttered			7	VBD	7
+uttered			8	VBD	8
 uttering		4	VBG	4
 utterly			18	RB	18
 v.			3	CC	3
@@ -53963,7 +54269,7 @@ vacancy			14	NN	14
 vacant			19	JJ	19
 vacated			7	VBD	1	VBN	6
 vacating		4	VBG	4
-vacation		20	NN	20
+vacation		21	NN	21
 vacationers		1	NNS	1
 vacationing		3	VBG	3
 vacations		4	NNS	4
@@ -53982,19 +54288,20 @@ vagaries		3	NNS	3
 vaginal			2	JJ	2
 vagrant			1	JJ	1
 vagrants		1	NNS	1
-vague			19	JJ	19
+vague			20	JJ	20
 vaguely			4	RB	4
+vagueness		1	NN	1
 vaguest			2	JJS	2
 vain			8	JJ	8
 vale			1	NN	1
 valiant			2	JJ	2
-valid			20	JJ	20
+valid			21	JJ	21
 validate		1	VB	1
 validating		1	VBG	1
 validity		2	NN	2
 valley			21	NN	21
-valleys			10	NNS	10
-valuable		32	JJ	32
+valleys			11	NNS	11
+valuable		33	JJ	33
 valuables		1	NNS	1
 valuation		10	NN	10
 valuations		1	NNS	1
@@ -54003,7 +54310,7 @@ value-added		3	JJ	3
 value-assessment	1	NN	1
 valued			63	VBD	8	VBN	55
 valueless		2	JJ	2
-values			69	NNS	58	VBZ	11
+values			70	NNS	59	VBZ	11
 valuing			2	VBG	2
 valve			6	NN	6
 valves			2	NNS	2
@@ -54013,9 +54320,9 @@ vandalism		5	NN	5
 vandalized		1	VBD	1
 vandals			2	NNS	2
 vanguard		3	NN	3
-vanilla			3	NN	3
-vanish			2	VB	1	VBP	1
-vanished		13	VBD	6	VBN	7
+vanilla			4	NN	4
+vanish			3	VB	1	VBP	2
+vanished		14	VBD	6	VBN	8
 vanishing		1	VBG	1
 vanities		1	NNS	1
 vanity			1	NN	1
@@ -54036,9 +54343,9 @@ varied			7	JJ	5	VBD	1	VBN	1
 variegated		4	JJ	4
 varies			7	VBZ	7
 varieties		3	NNS	3
-variety			62	NN	62
-various			97	JJ	97
-varnish			2	NN	2
+variety			64	NN	64
+various			102	JJ	102
+varnish			3	NN	3
 varnished		1	VBD	1
 vary			22	VB	8	VBP	14
 varying			8	VBG	8
@@ -54046,7 +54353,7 @@ vase			9	NN	9
 vasectomy		1	RB	1
 vases			1	NNS	1
 vassals			1	NNS	1
-vast			54	JJ	54
+vast			56	JJ	56
 vastly			5	RB	5
 vastness		2	NN	2
 vaudeville		1	NN	1
@@ -54075,7 +54382,7 @@ vehicle			49	NN	49
 vehicle-production	1	JJ	1
 vehicle-suspension	1	NN	1
 vehicles		65	NNS	65
-veil			6	JJ	1	NN	5
+veil			6	NN	6
 veiled			4	JJ	4
 veils			2	NNS	1	VBZ	1
 vein			10	NN	10
@@ -54083,15 +54390,15 @@ veins			10	NNS	10
 veldt			2	NN	2
 velocity		8	NN	8
 velour			1	JJ	1
-velvet			11	NN	11
+velvet			12	NN	12
 velvety			5	JJ	4	RB	1
 venal			2	JJ	2
 vendetta		3	NN	3
 vendor			7	NN	7
 vendors			7	NNS	7
-veneer			3	NN	3
+veneer			4	NN	4
 venerable		7	JJ	7
-venerate		1	VBP	1
+venerate		1	VB	1
 vengeance		4	NN	4
 vengeful		2	JJ	2
 venison			3	NN	2	VB	1
@@ -54101,7 +54408,7 @@ ventilated		4	VBD	3	VBN	1
 ventilation		2	NN	2
 ventriloquists		1	NNS	1
 vents			3	NNS	3
-venture			100	NN	97	VB	3
+venture			101	NN	98	VB	3
 venture-capital		3	JJ	3
 ventured		2	VBD	2
 ventures		37	NNS	37
@@ -54110,18 +54417,17 @@ venturing		1	VBG	1
 venue			4	NN	4
 venues			2	NNS	2
 veracity		2	NN	2
-veranda			2	NNS	2
-verb			145	JJ	25	NN	120
+veranda			2	NN	1	NNS	1
+verb			59	JJ	9	NN	50
 verbal			5	JJ	5
-verbalize		2	VB	2
+verbalize		3	VB	3
 verbatim		5	JJ	3	RB	2
 verbose			1	JJ	1
-verbs			4	NNS	4
 verdant			1	JJ	1
 verdict			16	NN	16
 verdict?Guilty		1	NN	1
 verdicts		3	NNS	3
-verge			13	NN	13
+verge			13	IN	2	NN	11
 verged			1	VBD	1
 verifiable		1	JJ	1
 verification		1	NN	1
@@ -54131,27 +54437,27 @@ veritable		3	JJ	3
 vermilion		2	JJ	1	NN	1
 vernacular		4	JJ	2	NN	2
 versa			1	FW	1
-versatile		6	JJ	6
+versatile		6	JJ	4	JJR	2
 versatility		1	NN	1
 verse			6	NN	6
 verses			2	NNS	2
-version			50	NN	50
+version			51	NN	51
 versions		19	NNS	19
 verso			1	NN	1
 versus			4	CC	1	IN	3
 vertebrate		1	JJ	1
 vertebrates		1	NNS	1
-vertical		11	JJ	10	NN	1
+vertical		12	JJ	11	NN	1
 vertically		2	RB	2
-very			1131	JJ	39	RB	1092
-vessel			9	NN	9
+very			1218	JJ	47	RB	1171
+vessel			10	NN	10
 vessels			19	NNS	19
 vest			2	NN	2
 vested			9	JJ	6	VBN	3
 vestige			2	NN	2
 vests			3	NNS	3
-vet			5	NN	5
-veteran			24	JJ	6	NN	18
+vet			6	NN	6
+veteran			25	JJ	7	NN	18
 veterans		3	NNS	3
 veterinarians		1	NNS	1
 veterinary		2	JJ	2
@@ -54171,13 +54477,14 @@ viaduct			3	NN	3
 vial			2	NN	2
 vibes			1	NNS	1
 vibrant			5	JJ	5
+vibrate			4	VB	2	VBP	2
 vibrating		2	VBG	2
 vibration		1	NN	1
 vibrations		1	NNS	1
-vicar			13	NN	13
+vicar			15	NN	15
 vicarage		3	NN	3
 vicars			4	NNS	4
-vice			250	FW	1	NN	247	RB	2
+vice			251	FW	1	NN	248	RB	2
 vice-like		1	JJ	1
 vice-president		1	NN	1
 vices			2	NNS	2
@@ -54186,13 +54493,14 @@ vicious			14	JJ	14
 viciously		2	RB	2
 vicissitudes		1	NNS	1
 victim			30	NN	30
+victimisation		1	NN	1
 victimized		1	VBN	1
-victims			47	NNS	47
+victims			48	NNS	48
 victories		5	NNS	5
 victorious		3	JJ	3
-victory			42	NN	42
-video			19	JJ	6	NN	13
-video-tape		1	NN	1
+victory			48	NN	48
+video			20	JJ	7	NN	13
+video-tape		1	JJ	1
 video-viewing		1	JJ	1
 videocassette		8	NN	8
 videocassettes		2	NNS	2
@@ -54200,7 +54508,7 @@ videos			5	NNS	5
 videotape		2	NN	2
 videotapes		1	NNS	1
 vied			1	VBN	1
-view			174	NN	151	VB	11	VBP	12
+view			176	IN	4	NN	149	VB	11	VBP	12
 viewed			24	VBD	6	VBN	18
 viewer			3	NN	3
 viewers			19	NNS	19
@@ -54209,7 +54517,7 @@ viewing			6	NN	3	VBG	3
 viewings		1	NNS	1
 viewpoint		10	NN	10
 viewpoints		1	NNS	1
-views			76	NNS	70	VBZ	6
+views			79	NNS	73	VBZ	6
 vigil			2	NN	2
 vigilance		1	NN	1
 vigilant		2	JJ	2
@@ -54223,10 +54531,10 @@ vigour			2	NN	2
 vile			2	JJ	2
 vilified		1	VBN	1
 villa			4	NN	4
-village			102	NN	102
+village			108	NN	108
 villager		1	NN	1
-villagers		9	NNS	9
-villages		28	NNS	28
+villagers		10	NNS	10
+villages		29	NNS	29
 villain			3	NN	3
 villains		1	NNS	1
 villainy		1	NN	1
@@ -54249,13 +54557,12 @@ violates		6	VBZ	6
 violating		6	VBG	6
 violation		19	NN	19
 violations		29	NNS	29
-violence		66	NN	66
-violent			29	JJ	29
+violence		71	NN	71
+violent			31	JJ	31
 violently		11	RB	11
 violet			5	JJ	1	NN	4
 violet-blue		1	JJ	1
 violin			11	NN	11
-violin?			1	NN	1
 violinist		4	NN	4
 viper			1	NN	1
 virgin			9	JJ	9
@@ -54265,10 +54572,10 @@ virile			1	JJ	1
 virility		1	NN	1
 virtual			5	JJ	5
 virtually		42	RB	42
-virtue			11	NN	11
-virtue?			1	CD	1
-virtues			15	NNS	15
-virtuosi		1	NNS	1
+virtue			11	IN	2	NN	9
+virtue?			1	NNP	1
+virtues			16	NNS	16
+virtuosi		1	NN	1
 virtuosity		1	NN	1
 virtuoso		2	NN	2
 virtuosos		1	NNS	1
@@ -54276,8 +54583,9 @@ virtuous		4	JJ	4
 virulence		4	NN	4
 virulent		5	JJ	5
 virus			6	NN	6
+viruses			1	NNS	1
 vis			2	FW	2
-vis--vis		2	NNS	1	VBZ	1
+vis--vis		2	IN	2
 visa			3	NN	3
 visage			1	NN	1
 visas			1	NNS	1
@@ -54286,17 +54594,18 @@ viscous			1	JJ	1
 visibility		5	NN	5
 visible			25	JJ	25
 visibly			3	RB	3
-vision			22	NN	22
+vision			24	NN	24
 visionaries		1	NNS	1
 visionary		2	JJ	2
 visions			5	NNS	5
-visit			77	NN	45	VB	29	VBP	3
+visit			86	NN	48	VB	32	VBP	6
 visitation		2	NN	2
-visited			30	VBD	23	VBN	7
+visited			32	VBD	24	VBN	8
 visiting		17	VBG	17
-visitor			18	NN	18
-visitors		35	NNS	35
-visits			22	NNS	20	VBZ	2
+visiting.		1	CD	1
+visitor			22	NN	22
+visitors		39	NNS	39
+visits			23	NNS	21	VBZ	2
 visor			1	NN	1
 vista			3	NN	3
 visual			9	JJ	9
@@ -54314,6 +54623,7 @@ vitiate			1	VB	1
 vitriolic		2	JJ	2
 viva			1	FW	1
 vivacious		1	JJ	1
+vivaciously		1	RB	1
 vivid			10	JJ	10
 vividly			6	RB	6
 vocabulary		8	NN	8
@@ -54325,14 +54635,13 @@ vocation		2	NN	2
 vociferous		2	JJ	1	RB	1
 vodka			7	NN	7
 vogue			1	NN	1
-voice			226	NN	221	VB	2	VBP	3
+voice			236	NN	231	VB	2	VBP	3
 voice-activated		4	JJ	4
 voice-over		1	NN	1
 voice-processing	1	JJ	1
 voice.			1	NN	1
-voiced			9	JJ	1	VBD	4	VBN	4
-voiceless		1	JJ	1
-voices			31	NNS	30	VBZ	1
+voiced			8	VBD	4	VBN	4
+voices			33	NNS	32	VBZ	1
 void			7	JJ	1	NN	5	VB	1
 voided			1	VBN	1
 voir			2	FW	2
@@ -54349,27 +54658,27 @@ voltage			5	NN	5
 voltages		1	NNS	1
 volte-face		1	NN	1
 voluble			2	JJ	2
-volume			167	NN	167
+volume			168	NN	168
 volumes			9	NNS	9
 voluminous		1	JJ	1
 voluntarily		10	RB	10
 voluntary		16	JJ	16
 volunteer		8	NN	6	VB	2
-volunteered		7	VBD	7
+volunteered		8	VBD	8
 volunteers		5	NNS	5
 voluptuous		6	JJ	6
 vomica			1	NN	1
-vomit			3	NN	1	VB	2
+vomit			3	VB	2	VBP	1
 vomiting		4	NN	2	VBG	2
 von			8	NNP	8
 voodoo			1	NN	1
 vortex			2	NN	2
-vote			112	NN	75	VB	34	VBP	3
+vote			117	NN	76	VB	36	VBP	5
 vote-getters		1	NNS	1
-voted			51	VBD	43	VBN	8
+voted			55	VBD	47	VBN	8
 voter			2	NN	2
 voters			39	NNS	39
-votes			44	NNS	40	VBZ	4
+votes			46	NNS	42	VBZ	4
 voting			33	JJ	2	NN	22	VBG	9
 votive			1	JJ	1
 voucher			2	NN	2
@@ -54377,7 +54686,7 @@ vouchers		2	NNS	2
 vouchsafe		1	VB	1
 vouchsafed		2	VBN	2
 vow			3	NN	3
-vowed			11	VBD	8	VBN	3
+vowed			11	VBD	9	VBN	2
 vowel			3	NN	3
 vowels			1	NNS	1
 vowing			2	VBG	2
@@ -54395,14 +54704,14 @@ vulnerable		25	JJ	25
 vulture			1	NN	1
 vying			1	VBG	1
 wacky			1	JJ	1
-wad			3	NN	3
+wad			4	NN	4
 wad-working		1	NN	1
 waddled			2	VBN	2
 waddles			1	VBZ	1
 wade			1	VB	1
 waded			1	VBD	1
 waders			1	NNS	1
-wading			2	VBG	2
+wading			2	NN	1	VBG	1
 wafer			1	NN	1
 wafers			2	NNS	2
 waffle			1	NN	1
@@ -54411,7 +54720,7 @@ waft			1	NN	1
 wafted			2	VBN	2
 wafting			2	VBG	2
 wag			1	NN	1
-wage			93	NN	93
+wage			98	NN	98
 wage-discrimination	1	NN	1
 wage-earning		1	JJ	1
 wage-floor		1	JJ	1
@@ -54419,7 +54728,7 @@ wage-packet		1	NN	1
 waged			3	VBD	3
 wager			1	NN	1
 wagering		1	NN	1
-wages			34	NNS	34
+wages			39	NNS	39
 wagging			3	VBG	3
 waggishly		1	RB	1
 waging			3	VBG	3
@@ -54434,14 +54743,14 @@ waist			16	NN	16
 waistband		1	NN	1
 waistcoat		4	NN	4
 waistline		3	NN	3
-wait			43	NN	4	VB	35	VBP	4
+wait			44	NN	4	VB	36	VBP	4
 wait-and-see		3	JJ	3
 waited			43	VBD	40	VBN	3
 waiter			11	NN	11
 waiters			1	NNS	1
-waiting			87	NN	2	VBG	85
+waiting			90	NN	2	VBG	88
 waiting-room		1	NN	1
-waitress		7	NN	7
+waitress		8	NN	8
 waitresses		1	NNS	1
 waits			1	VBZ	1
 waive			8	VB	8
@@ -54450,26 +54759,27 @@ waiver			7	NN	7
 waivered		1	VBN	1
 waivers			3	NNS	3
 waiving			2	VBG	2
-wake			43	NN	38	VB	1	VBP	4
+wake			44	IN	2	NN	38	VB	1	VBP	3
 wakeful			2	JJ	2
+wakefulness		1	NN	1
 waken			1	VB	1
 wakened			1	VBN	1
 wakes			1	VBZ	1
 waking			1	VBG	1
-walk			69	NN	28	VB	33	VBP	8
+walk			73	NN	29	VB	36	VBP	8
 walk-on			1	JJ	1
 walk-up			1	NN	1
-walked			104	VBD	104
+walked			115	VBD	115
 walkie-talkie		1	NN	1
 walkie-talkies		1	NNS	1
-walking			59	JJ	1	NN	5	VBG	52	VBG|NN	1
+walking			59	JJ	1	NN	4	VBG	51	VBG|NN	3
 walkout			3	NN	3
 walkouts		2	NNS	2
 walkover		1	NN	1
-walks			18	NNS	9	VBZ	9
+walks			18	NNS	10	VBZ	8
 walkway			3	NN	3
 walkways		1	NNS	1
-wall			116	NN	115	VB	1
+wall			121	NN	120	VB	1
 wall-to-wall		1	NN	1
 wall?			1	NN	1
 wallcoverings		1	NNS	1
@@ -54487,31 +54797,31 @@ wallowing		5	VBG	5
 wallows			1	VBZ	1
 wallpaper		13	NN	13
 wallpapering		1	VBG	1
-walls			76	NNS	76
+walls			80	NNS	80
 walnut			4	NN	4
-walrus			2	NNS	2
+walrus			2	NN	1	NNS	1
 waltz			1	VB	1
 waltzed			2	VBD	2
-waltzes			2	NNS	1	VBZ	1
+waltzes			2	NNS	2
 wan			4	JJ	3	RB	1
 wand			2	NN	2
-wander			6	NN	1	VB	4	VBP	1
-wandered		7	VBD	7
+wander			7	NN	1	VB	4	VBP	2
+wandered		12	VBD	11	VBN	1
 wanderers		1	NNS	1
-wandering		3	VBG	3
+wandering		6	VBG	6
 wanderlust		1	NN	1
 waned			1	VBD	1
 wangle			1	VB	1
 wangled			1	VBN	1
 wangling		1	VBG	1
 waning			2	VBG	2
-want			415	NN	1	VB	98	VBP	316
-want?			2	JJ	2
-wanted			221	JJ	4	VBD	210	VBN	7
-wanting			14	JJ	3	VBG	11
+want			442	NN	1	VB	103	VBP	338
+want?			2	JJ	1	NN	1
+wanted			235	JJ	5	VBD	223	VBN	7
+wanting			13	JJ	3	VBG	10
 wanton			6	JJ	3	NN	2	RB	1
-wants			119	NNS	1	VBZ	118
-war			194	NN	194
+wants			123	NNS	1	VBZ	122
+war			214	NN	214
 war-damaged		1	JJ	1
 war-like		1	JJ	1
 war-rationed		1	JJ	1
@@ -54533,11 +54843,11 @@ warfare			13	NN	13
 warheads		2	NNS	2
 warily			3	RB	3
 warlike			3	JJ	3
-warm			75	JJ	68	RB	1	VB	6
+warm			79	JJ	71	RB	1	VB	7
 warm-up			1	NN	1
 warmed			5	VBD	2	VBN	3
 warmer			2	JJR	2
-warmest			3	JJS	2	NN	1
+warmest			3	JJS	3
 warmheartedness		1	NN	1
 warming			11	NN	7	VBG	3	VBG|NN	1
 warmly			7	RB	7
@@ -54553,7 +54863,7 @@ warns			7	VBZ	7
 warp			6	NN	5	VB	1
 warped			3	JJ	3
 warps			1	VBZ	1
-warrant			25	NN	18	VB	5	VBP	2
+warrant			26	NN	19	VB	5	VBP	2
 warranted		1	VBN	1
 warranties		3	NNS	3
 warrants		34	NNS	33	VBZ	1
@@ -54564,24 +54874,24 @@ warrens			1	NNS	1
 warring			2	VBG	2
 warrior			2	NN	2
 warriors		6	NNS	6
-wars			20	NNS	20
+wars			22	NNS	22
 warships		2	NNS	2
 wart			1	NN	1
-wartime			7	JJ	5	NN	2
-wary			8	JJ	8
-was			9355	VBD	9355
-wash			23	NN	14	VB	7	VBP	2
+wartime			7	JJ	4	NN	3
+wary			12	JJ	12
+was			9844	VBD	9844
+wash			24	NN	14	VB	8	VBP	2
 washable		1	JJ	1
 washcloth		1	NN	1
-washed			22	VBD	6	VBN	16
+washed			21	VBD	6	VBN	15
 washed-out		3	JJ	3
-washer			4	NN	4
+washer			5	NN	5
 washes			4	NNS	1	VBZ	3
-washing			44	NN	21	VBG	23
+washing			50	NN	22	VBG	28
 washing-up		2	JJ	2
 washroom		1	NN	1
 washstand		1	NN	1
-wasnt			77	JJ	9	NN	20	VB	4	VBP	44
+wasnt			89	JJ	10	NN	22	VB	4	VBP	53
 wasp			5	NN	4	VB	1
 waspish			1	JJ	1
 wasps			1	JJ	1
@@ -54598,18 +54908,18 @@ wastepaper		1	NN	1
 wastes			5	NNS	4	VBZ	1
 wastewater		5	NN	5
 wasting			3	NN	1	VBG	2
-watch			78	NN	35	VB	37	VBP	6
+watch			88	NN	39	VB	40	VBP	9
 watchdog		4	NN	4
 watchdogs		1	NNS	1
-watched			67	JJ	1	VBD	47	VBN	19
+watched			70	JJ	1	VBD	50	VBN	19
 watcher			1	NN	1
 watchers		11	NNS	11
 watches			13	NNS	10	VBZ	3
 watchful		3	JJ	3
 watchhe			1	NN	1
-watching		51	NN	2	VBG	49
+watching		55	NN	2	VBG	53
 watchword		3	NN	3
-water			349	NN	346	VB	3
+water			363	NN	360	VB	3
 water-authority		1	NN	1
 water-colour		1	JJ	1
 water-drops		1	NNS	1
@@ -54617,7 +54927,7 @@ water-filled		1	JJ	1
 water-hole		1	NN	1
 water-lilies		1	NNS	1
 water-pollution		1	NN	1
-water-skiing		2	NN	2
+water-skiing		2	NN	1	VBG	1
 water-soluble		1	JJ	1
 water-submersion	1	JJ	1
 water-treatment		1	JJ	1
@@ -54626,11 +54936,11 @@ watercolour		1	NN	1
 watercolours		1	NNS	1
 watered			1	VBD	1
 watered-down		3	JJ	3
-waterfall		5	NN	5
+waterfall		6	NN	6
 waterfalls		4	NNS	4
 waterfront		4	NN	4
 waterholes		1	NNS	1
-watering		9	NN	7	VBG	2
+watering		9	NN	5	VBG	4
 waterless		1	JJ	1
 waterlogged		1	JJ	1
 watermark		1	NN	1
@@ -54638,7 +54948,7 @@ watermarked		1	VBN	1
 waterproof		3	JJ	3
 waterproofing		1	VBG	1
 waterproofs		1	NNS	1
-waters			35	NNS	35
+waters			40	NNS	40
 watershed		2	NN	2
 watersheds		1	NNS	1
 waterside		2	NN	2
@@ -54646,74 +54956,74 @@ watertight		5	JJ	5
 waterworks		7	NN	6	NN|NNS	1
 watery			3	JJ	3
 wave			58	NN	57	VB	1
-waved			19	VBD	19
+waved			25	VBD	25
 wavelength		3	JJ	1	NN	2
 wavelengths		1	NNS	1
 waver			2	VB	2
 wavered			2	VBD	2
-wavering		5	NN	3	VBG	2
+wavering		5	NN	2	VBG	3
 wavers			1	NNS	1
-waves			35	NNS	35
+waves			35	NNS	34	VBZ	1
 waving			13	VBG	13
-wavy			7	JJ	4	NN	1	RB	2
+wavy			7	JJ	5	NN	1	RB	1
 wavy-haired		1	JJ	1
 wax			4	NN	3	VB	1
 waxed			1	VBN	1
 waxen			1	JJ	1
 waxing			1	VBG	1
 waxy			2	JJ	2
-way			636	NN	634	RB	2
+way			676	IN	7	NN	663	RB	6
 way-out			1	JJ	1
-way..			1	FW	1
+way..			1	NN	1
 way?			1	NN	1
-ways			98	NNS	98
+ways			100	NNS	100
 wayside			2	NN	2
 wayward			1	JJ	1
-we			1048	PRP	1047	VBP	1
+we			1098	PRP	1097	VBP	1
 we-Japanese		1	JJ	1
-we?			1	NNS	1
+we?			2	JJ	1	NNS	1
 we?That			1	VB	1
-weak			86	JJ	86
+weak			90	JJ	90
 weak-kneed		2	JJ	2
 weaken			14	VB	12	VBP	2
 weakened		7	JJ	1	VBD	2	VBN	4
 weakening		16	NN	5	VBG	11
-weakeningafter		1	NN	1
+weakeningafter		1	RB	1
 weakens			2	VBZ	2
 weaker			26	JJR	26
 weakest			4	JJS	4
 weakling		3	NN	3
 weakly			3	RB	3
-weakness		42	NN	42
+weakness		43	NN	43
 weaknesses		10	NNS	10
 weal			1	NN	1
-wealth			50	NN	50
+wealth			52	NN	52
 wealth-producing	1	JJ	1
 wealthier		4	JJR	4
 wealthy			28	JJ	25	NNS	3
 wean			2	VB	2
 weaned			2	VBN	2
 weaning			1	NN	1
-weapon			19	NN	19
+weapon			20	NN	20
 weaponry		2	NN	2
-weapons			62	NNS	62
+weapons			65	NNS	65
 weapons-modernization	1	JJ	1
 wear			30	NN	6	VB	22	VBP	2
 wearable		1	JJ	1
 wearer			1	NN	1
-wearily			1	RB	1
-weariness		1	NN	1
-wearing			80	VBG	80
+wearily			2	RB	2
+weariness		2	NN	2
+wearing			84	VBG	84
 wearisome		2	JJ	2
 wears			11	VBZ	11
 weary			13	JJ	12	VB	1
-weather			64	NN	58	VB	5	VBP	1
+weather			68	NN	62	VB	5	VBP	1
 weatherbeaten		2	JJ	2
 weathering		1	VBG	1
 weatherman		2	NN	2
 weatherproof		1	JJ	1
 weathers		2	NNS	1	VBZ	1
-weave			5	NN	3	VB	1	VBP	1
+weave			5	JJ	1	NN	2	VB	1	VBP	1
 weaver			2	NN	2
 weavers			1	NNS	1
 weaves			5	VBZ	5
@@ -54721,64 +55031,64 @@ weaving			3	VBG	3
 web			6	NN	6
 webbed			2	JJ	2
 webs			1	NNS	1
-wed			14	VBN	14
+wed			16	VBN	16
 wedded			4	VBN	4
-wedding			38	NN	38
-weddings		2	NNS	2
-wedge			5	NN	4	VB	1
-wedged			4	VBD	1	VBN	3
-wee			3	NN	1	VB	1	VBP	1
+wedding			43	NN	43
+weddings		3	NNS	3
+wedge			6	NN	4	VB	2
+wedged			7	VBD	2	VBN	5
+wee			3	JJ	1	NN	1	VB	1
 weed			8	NN	7	VB	1
 weed-killing		1	JJ	1
 weeded			1	VBN	1
 weeding			2	NN	1	VBG	1
 weeds			20	NNS	20
 weedy			3	JJ	3
-week			564	NN	564
+week			572	NN	572
 week-end		3	JJ	2	NN	1
 week-ends		1	NNS	1
 weekday			2	NN	2
 weekdays		2	NNS	2
-weekend			54	NN	54
+weekend			57	NN	57
 weekend?		1	NN	1
-weekends		9	NNS	9
+weekends		10	NNS	10
 weeklies		4	NNS	4
 weeklong		1	NN	1
-weekly			45	JJ	41	NN	1	RB	3
+weekly			47	JJ	43	NN	1	RB	3
 weekly-average		1	JJ	1
-weeks			241	NNS	241
-weep			4	NN	4
+weeks			244	NNS	244
+weep			4	NN	1	VB	3
 weepers			1	NNS	1
-weeping			3	VBG	3
+weeping			7	VBG	7
 weepy			1	JJ	1
 weigh			11	VB	7	VBP	4
 weigh-in		1	NN	1
 weighed			16	VBD	11	VBN	5
 weighing		7	VBG	7
 weighs			12	VBZ	12
-weight			44	NN	43	VB	1
-weighted		7	JJ	6	VBN	1
+weight			50	NN	48	VB	2
+weighted		11	JJ	6	VBN	5
 weightless		3	JJ	3
 weightlifter		1	NN	1
 weights			4	NNS	4
 weighty			5	JJ	5
 weird			11	JJ	11
-weirder			1	JJ	1
+weirder			1	JJR	1
 weirdness		1	NN	1
 weirdos			1	NNS	1
-welcome			37	JJ	20	NN	6	VB	9	VBP	2
+welcome			46	JJ	28	NN	6	VB	10	VBP	2
 welcomed		23	VBD	14	VBN	9
 welcomes		2	VBZ	2
 welcoming		1	JJ	1
 welcoming?		1	JJ	1
 weld			5	JJ	1	NN	1	VB	1	VBD	2
-welded			3	VBN	3
+welded			4	VBN	4
 welders			1	NNS	1
 welding			2	NN	2
 welfare			21	NN	21
-well			508	JJ	2	NN	10	RB	490	UH	6
+well			529	IN	2	JJ	2	NN	10	RB	509	UH	6
 well-behaved		1	VBN	1
-well-being		2	NN	2
+well-being		3	NN	3
 well-capitalized	1	JJ	1
 well-conceived		1	JJ	1
 well-connected		2	JJ	2
@@ -54794,7 +55104,7 @@ well-hit		1	JJ	1
 well-informed		2	JJ	2
 well-intentioned	2	JJ	2
 well-kept		1	JJ	1
-well-known		24	JJ	23	NN	1
+well-known		25	JJ	24	NN	1
 well-lighted		1	JJ	1
 well-meaning		2	JJ	2
 well-meant		1	JJ	1
@@ -54805,7 +55115,7 @@ well-paid		1	JJ	1
 well-placed		1	JJ	1
 well-planned		1	JJ	1
 well-preserved		1	JJ	1
-well-read		2	JJ	1	NN	1
+well-read		2	JJ	2
 well-received		1	JJ	1
 well-spoken		1	JJ	1
 well-stated		2	JJ	1	VBN	1
@@ -54830,25 +55140,25 @@ wells			12	NNS	12
 wellwishers		1	NNS	1
 welt			1	NN	1
 welter			2	NN	2
-went			499	VBD	499
-went!			1	VBZ	1
-wept			7	VBD	7
-were			3415	VBD	3415
-were?			1	VBZ	1
-werent			17	JJ	9	VBP	8
+went			524	VBD	524
+went!			1	NN	1
+wept			8	VBD	8
+were			3554	VBD	3554
+were?			1	NN	1
+werent			20	JJ	11	VBP	9
 wereor			1	VBP	1
-west			26	JJ	7	NN	17	RB	2
+west			27	JJ	8	NN	17	RB	2
 westerly		2	JJ	2
-western			35	JJ	35
+western			36	JJ	36
 western-type		1	JJ	1
-westernization		1	NN	1
+westernization		2	NN	2
 westernmost		1	JJ	1
-westward		3	JJ	1	RB	2
+westward		4	JJ	1	RB	3
 westwards		1	RB	1
-wet			45	JJ	40	RB	1	VB	4
+wet			51	JJ	46	RB	1	VB	4
 wetted			2	JJ	1	VBD	1
 wetting			1	VBG	1
-weve			13	JJ	3	NN	4	RB	1	VB	3	VBP	2
+weve			19	JJ	5	NN	6	RB	1	VB	5	VBP	2
 whack			6	NN	2	VB	4
 whacked			4	JJ	1	VBD	2	VBN	1
 whacker			1	NN	1
@@ -54859,41 +55169,41 @@ whales			4	NNS	4
 whaling			2	NN	1	VBG	1
 whammy			1	NN	1
 wharf			2	NN	2
-what			797	WDT	39	WP	758
+what			848	WDT	20	WP	828
 whatever		34	WDT	32	WP	2
-whats			11	NNS	8	VBZ	3
+whats			14	NNS	12	VBZ	2
 whatsoever		5	RB	5
 whatsoever.		1	NN	1
-wheat			31	JJ	1	NN	30
+wheat			32	JJ	1	NN	31
 wheedle			1	VB	1
 wheedled		1	VBD	1
-wheel			21	NN	21
+wheel			22	NN	22
 wheel-loader		1	JJ	1
 wheelbases		1	NNS	1
 wheelchair		4	NN	4
 wheeled			3	VBN	3
-wheeling		2	NN	2
+wheeling		2	NN	1	VBG	1
 wheellike		1	JJ	1
 wheels			18	NNS	18
 wheezed			1	VBD	1
 wheezes			1	NNS	1
 wheezing		2	VBG	2
-when			1206	WP	3	WRB	1203
+when			1055	WP	3	WRB	1052
 when-issued		5	JJ	5
 whenever		22	WRB	22
-where			455	WRB	455
+where			463	WRB	463
 whereabouts		4	NN	4
 whereas			4	IN	4
 whereby			5	WRB	5
 wherein			1	WRB	1
-whereupon		2	NN	2
+whereupon		2	IN	2
 wherever		4	WRB	4
 wherewithal		2	JJ	1	NN	1
-whether			247	CC	2	IN	245
-which			2194	IN	1	WDT	2192	WP	1
+whether			255	CC	2	IN	253
+which			2234	IN	1	WDT	2228	WP	5
 whichever		6	WDT	6
 whiff			5	NN	5
-while			410	IN	377	NN	33
+while			421	IN	384	NN	37
 whilst			1	NN	1
 whim			3	NN	3
 whimper			4	NN	4
@@ -54907,7 +55217,7 @@ whimsy			1	NN	1
 whine			4	NN	4
 whined			1	VBD	1
 whiner			1	NN	1
-whining			4	JJ	1	NN	2	VBG	1
+whining			5	JJ	1	NN	2	VBG	2
 whip			9	NN	8	VB	1
 whiplash		1	NN	1
 whipped			15	VBN	15
@@ -54919,7 +55229,7 @@ whipsawed		4	VBN	4
 whipsawing		1	NN	1
 whirl			2	NN	2
 whirled			3	VBD	1	VBN	2
-whirling		7	JJ	7
+whirling		10	JJ	6	VBG	4
 whirlpool		1	NN	1
 whirlwind		3	JJ	3
 whirlwinds		1	NNS	1
@@ -54932,17 +55242,17 @@ whisked			4	VBN	4
 whiskers		1	NNS	1
 whiskey			5	NN	5
 whiskies		2	NNS	2
-whisky			36	JJ	3	NN	30	RB	3
+whisky			40	JJ	2	NN	35	RB	3
 whisper			5	NN	5
-whispered		6	VBN	6
-whispering		6	NN	2	VBG	4
+whispered		10	VBN	10
+whispering		7	NN	2	VBG	5
 whispers		3	NNS	3
-whistle			16	NN	6	VBP	10
+whistle			18	NN	6	VBP	12
 whistle-stop		1	JJ	1
 whistled		6	VBN	6
 whistles		1	NNS	1
 whistling		3	VBG	3
-white			233	JJ	222	NN	11
+white			236	JJ	225	NN	11
 white-blond		1	JJ	1
 white-coated		1	JJ	1
 white-collar		6	JJ	6
@@ -54968,10 +55278,10 @@ whiz			1	NN	1
 whizzed			1	JJ	1
 whizzes			1	NNS	1
 whizzing		1	VBG	1
-who			1563	WP	1563
-whod			6	VBD	5	VBN	1
-whoever			4	WP	4
-whole			296	JJ	246	NN	49	RB	1
+who			1597	WP	1597
+whod			7	VBD	6	VBN	1
+whoever			7	WP	7
+whole			311	JJ	261	NN	49	RB	1
 whole?			1	NN	1
 wholehearted		3	JJ	3
 wholemeal		1	JJ	1
@@ -54981,21 +55291,22 @@ wholesalers		1	NNS	1
 wholesaling		1	VBG	1
 wholesome		5	JJ	5
 wholly			12	RB	12
-whom			68	WP	68
-whom?			1	CD	1
+whom			71	WP	71
+whom?			1	NNP	1
 whooosh			1	JJ	1
 whooped			1	VBD	1
 whooping		8	JJ	8
 whoops			1	NNS	1
-whoosh			2	NN	1	VBP	1
+whoosh			2	NN	1	UH	1
 whooshed		1	VBN	1
 whopper			2	NN	2
 whopping		2	JJ	2
 whoring			1	NN	1
 whorls			1	NNS	1
-whos			6	NNS	4	VBZ	2
-whose			154	WP$	154
-why			114	WP	2	WRB	112
+whos			9	NNS	6	VBZ	3
+whose			162	WP$	162
+whove			1	VBP	1
+why			123	WP	2	WRB	121
 whys			2	NNS	2
 wick			1	NN	1
 wicked			17	JJ	17
@@ -55004,17 +55315,17 @@ wickedness		1	NN	1
 wicker			7	NN	7
 wicket			1	NN	1
 wickets			2	NNS	2
-wide			87	JJ	86	RB	1
+wide			102	JJ	97	RB	5
 wide-awake		1	JJ	1
 wide-brimmed		1	VBD	1
 wide-eyed		3	JJ	3
 wide-ranging		5	JJ	5
-widely			55	RB	55
+widely			56	RB	56
 widen			13	VB	12	VBP	1
 widened			12	VBD	7	VBN	5
-widening		8	NN	4	VBG	4
+widening		8	NN	3	VBG	5
 widens			4	VBZ	4
-wider			16	JJR	15	RBR	1
+wider			17	JJR	16	RBR	1
 wider-than-expected	1	JJ	1
 widespread		41	JJ	41
 widest			2	JJS	2
@@ -55025,49 +55336,50 @@ widowed			3	JJ	2	VBN	1
 widower			2	NN	2
 widowhood		3	NN	3
 widows			3	NNS	3
-width			6	NN	6
+width			7	NN	7
 wield			5	VB	5
 wielding		6	VBG	6
 wields			2	VBZ	2
-wife			135	NN	135
+wife			139	NN	139
 wife\/mother		1	mother	1
 wifes			5	NNS	5
 wig			6	NN	6
 wiggle			4	NN	1	VBP	3
 wiggles			1	NNS	1
 wigs			4	NNS	4
-wild			54	JJ	54
+wild			57	JJ	57
 wildcat			4	NN	4
 wildcats		1	NNS	1
 wilder			3	JJR	2	NN	1
 wilderness		9	NN	9
 wildlife		3	NN	3
-wildly			18	RB	18
+wildly			19	RB	19
 wildness		1	NN	1
 wilful			3	JJ	3
-will			2882	MD	2853	NN	28	VB	1
+will			2943	MD	2911	NN	31	VB	1
 will?			2	NN	2
-willed			5	VBD	4	VBN	1
+willed			6	JJ	1	VBD	4	VBN	1
 willful			2	JJ	2
-willing			79	JJ	79
+willing			80	JJ	80
 willingly		2	RB	2
 willingness		14	NN	14
 willow			1	NN	1
 willows			2	NNS	2
-wills			5	NNS	5
+wills			5	NNS	4	VBZ	1
 wilted			3	JJ	1	VBD	1	VBN	1
-wilting			3	JJ	2	VBG	1
+wilting			3	VBG	3
 wily			3	JJ	3
 wimping			1	VBG	1
-win			89	NN	1	VB	77	VBP	11
+win			97	NN	1	VB	85	VBP	11
 win?The			1	VB	1
 wince			2	NN	1	VB	1
 winced			1	VBD	1
 winces			1	VBZ	1
 winch			1	NN	1
 winched			1	VBN	1
-wind			104	JJ	1	NN	97	VB	3	VBP	3
+wind			115	NN	109	VB	3	VBP	3
 wind-driven		1	JJ	1
+wind-power		1	JJ	1
 windbreak		2	NN	2
 winded			3	JJ	2	VBN	1
 winder			1	NN	1
@@ -55076,78 +55388,80 @@ windfalls		2	NNS	2
 winding			9	VBG	9
 windlass		1	NN	1
 windless		2	JJ	2
-windmill		3	NN	3
+windmill		4	NN	4
 windmills		4	NNS	4
-window			120	NN	120
+window			131	NN	131
+window-frame		1	NN	1
 window-pane		1	NN	1
 window-shopped		1	VBD	1
-window-shopping		1	NN	1
+window-shopping		1	VBG	1
 window-sill		1	NN	1
 window?			2	NN	2
 windowless		1	JJ	1
 windowpanes		1	NNS	1
-windows			56	NNS	56
+windows			59	NNS	59
 windpipe		1	NN	1
 winds			11	NNS	11
-windscreen		7	NN	7
+windscreen		8	JJ	1	NN	7
 windscreens		1	NNS	1
 windshield		4	NN	4
 windshields		2	NNS	2
 windswept		5	JJ	5
-windy			6	JJ	5	RB	1
-wine			83	JJ	1	NN	82
+windy			7	JJ	6	RB	1
+wine			85	JJ	1	NN	84
 wine-buying		1	JJ	1
 wine-coloured		2	JJ	2
 wine-dark		1	JJ	1
 wine-making		1	NN	1
 wines			23	NN	1	NNS	22
-wing			25	NN	25
+wing			26	NN	26
 winged			1	JJ	1
 winger			2	NN	2
-wings			24	NNS	24
+wings			25	NNS	25
 wingspan		1	NN	1
 wink			2	NN	2
 winked			2	VBD	1	VBN	1
 winking			3	VBG	3
 winner			17	NN	17
-winners			11	NNS	11
-winning			33	JJ	5	NN	1	VBG	27
+winners			12	NNS	12
+winning			35	JJ	4	NN	1	VBG	30
 winnings		1	NNS	1
 winnow			1	VB	1
 winnowing		1	NN	1
-wins			18	NNS	9	VBZ	9
+wins			20	NNS	11	VBZ	9
 winsome			1	JJ	1
-winter			55	NN	55
+winter			59	NN	59
 wintered		1	VBD	1
-wintering		1	NN	1
-winters			4	NNS	4
+wintering		1	VBG	1
+winters			5	NNS	5
 wintry			2	JJ	2
 wipe			10	NN	1	VB	8	VBP	1
-wiped			27	VBD	20	VBN	7
+wiped			28	VBD	21	VBN	7
 wiper			1	NN	1
+wipers			1	NNS	1
 wiping			2	VBG	2
-wire			41	NN	40	VB	1
+wire			42	NN	41	VB	1
 wire-tap		1	VB	1
 wire-tapped		1	VBD	1
 wire-tapping		1	VBG	1
 wired			11	JJ	4	VBN	7
-wireless		1	NN	1
-wires			13	NNS	13
+wireless		5	NN	5
+wires			14	NNS	14
 wiretap			1	NN	1
-wiring			7	NN	7
+wiring			7	NN	6	VBG	1
 wiry			4	JJ	4
 wisdom			16	NN	16
 wisdoms			2	NNS	2
 wise			10	JJ	10
 wisecrack		1	NN	1
 wisecracks		1	NNS	1
-wiser			5	JJR	5
+wiser			7	JJR	7
 wisest			1	JJS	1
-wish			57	NN	10	VB	9	VBP	38
-wished			8	VBD	8
+wish			62	NN	14	VB	9	VBP	39
+wished			10	VBD	10
 wishes			17	NNS	11	VBZ	6
 wishful			1	JJ	1
-wishing			4	VBG	4
+wishing			5	VBG	5
 wishy-washy		2	JJ	2
 wisp			2	NN	2
 wisps			9	NNS	9
@@ -55159,35 +55473,35 @@ witch			4	NN	4
 witch-hunt		2	NN	2
 witchcraft		1	NN	1
 witches			3	NNS	3
-with			6100	IN	6099	RP	1
+with			6307	IN	6306	RP	1
 withdraw		20	VB	20
 withdrawal		19	NN	19
 withdrawals		9	NNS	9
 withdrawing		2	VBG	2
 withdrawn		20	VBN	20
-withdrew		14	VBD	14
+withdrew		16	VBD	16
 wither			2	VBP	2
 withered		5	JJ	3	VBD	1	VBN	1
 withering		2	JJ	2
-withheld		4	VBD	3	VBN	1
+withheld		4	VBD	2	VBN	2
 withhold		4	VB	4
 withholding		1	NN	1
-within			204	IN	202	RB	2
-without			344	IN	344
+within			207	IN	204	RB	3
+without			352	IN	352
 withstand		5	VB	5
 withstood		2	VBD	2
 witless			1	JJ	1
 witness			21	NN	19	VB	2
 witness-box		1	NN	1
 witnessed		8	VBN	8
-witnesses		12	NNS	12
+witnesses		13	NNS	13
 witnessing		4	VBG	4
 witnesss		1	JJ	1
 wits			3	NNS	3
 wittering		1	VBG	1
 witticisms		3	NNS	3
-wittier			1	JJ	1
-witty			5	JJ	5
+wittier			1	JJR	1
+witty			6	JJ	6
 wives			18	NNS	18
 wizard			2	NN	2
 wizardry		2	NN	2
@@ -55204,12 +55518,12 @@ woebegone		2	JJ	2
 woeful			4	JJ	4
 woes			7	NNS	7
 woke			19	VBD	19
-woken			5	VBN	5
+woken			7	VBN	7
 wolf			2	NN	2
 wolf-whistling		1	VBG	1
 wolfed			3	VBD	3
-wolves			4	NNS	4
-woman			217	JJ	2	NN	215
+wolves			5	NNS	5
+woman			231	JJ	2	NN	229
 woman?			1	NN	1
 womanhood		3	NN	3
 womanhood?		1	NNS	1
@@ -55217,24 +55531,24 @@ womanintelligent	1	JJ	1
 womanizing		2	NN	1	VBG	1
 womans			15	NNS	15
 womb			3	NN	3
-women			267	NNS	267
+women			280	NN	4	NNS	276
 women..			1	IN	1
-womenfolk		1	NNS	1
-womens			19	JJ	2	NNS	16	VBZ	1
-won			107	NN	2	VBD	76	VBN	29
-wonder			51	NN	9	VB	13	VBP	29
-wondered		21	VBD	21
-wonderful		28	JJ	28
+womenfolk		1	NN	1
+womens			20	NNS	19	VBZ	1
+won			112	NN	3	VBD	80	VBN	29
+wonder			53	NN	10	VB	14	VBP	29
+wondered		25	VBD	25
+wonderful		31	JJ	31
 wonderfully		12	RB	12
-wondering		15	VBG	15
+wondering		16	VBG	16
 wonderland		2	NN	2
 wonderment		1	NN	1
 wonders			7	NNS	3	VBZ	4
 wondrous		1	JJ	1
 wonky			2	JJ	2
-wont			68	JJ	13	NN	13	VBP	42
+wont			71	JJ	12	NN	14	VB	1	VBP	44
 woo			7	VB	7
-wood			65	NN	65
+wood			69	NN	69
 wood-and-brass		1	NN	1
 wood-boring		1	VBG	1
 wood-burning		1	JJ	1
@@ -55245,13 +55559,13 @@ wood-paneled		1	JJ	1
 wood-products		1	NNS	1
 woodchucks		1	NNS	1
 wooded			3	JJ	3
-wooden			39	JJ	39
+wooden			40	JJ	40
 wooden-rollered		1	JJ	1
 woodland		3	JJ	1	NN	2
 woodlands		2	NNS	2
 woodpecker		1	NN	1
 woods			15	NNS	15
-woodshed		2	JJ	1	NN	1
+woodshed		3	JJ	2	NN	1
 woodwind		3	NN	3
 woodwork		8	NN	8
 woodworm		4	NN	4
@@ -55260,25 +55574,25 @@ wooed			1	VBN	1
 woof			2	NN	1	VB	1
 wooing			5	NN	1	VBG	4
 wool			22	NN	22
-woollen			5	NN	5
+woollen			6	NN	6
 woollies		1	NNS	1
 woolly			2	JJ	1	NN	1
 woozy			1	JJ	1
-word			238	NN	237	VB	1
+word			131	NN	130	VB	1
 word-perfect		3	JJ	3
 word-processing		3	NN	2	NNS	1
 worded			3	VBN	3
 wording			5	NN	5
 wordless		2	JJ	2
 wordplay		1	NN	1
-words			133	NNS	133
-wore			70	VBD	70
-work			645	NN	462	VB	151	VBP	32
+words			139	NNS	139
+wore			73	VBD	73
+work			683	NN	492	VB	159	VBP	32
 work-force		3	NN	3
 work-rule		1	NN	1
 work-sharing		1	NN	1
-work-shy		2	JJ	1	NN	1
-work-shy?		1	CD	1
+work-shy		2	JJ	2
+work-shy?		1	NNP	1
 work-station		1	NN	1
 work-to-rule		1	NN	1
 work?			3	CD	1	NN	1	NNP	1
@@ -55287,16 +55601,16 @@ workaholic		3	JJ	2	NN	1
 workbench		1	NN	1
 workbooks		1	NNS	1
 workday			2	NN	2
-worked			124	VBD	84	VBN	40
-worker			37	NN	37
+worked			128	VBD	87	VBN	41
+worker			38	NN	38
 worker-safety		1	NN	1
-workers			214	NNS	214
-workersa		1	NN	1
+workers			217	NNS	217
+workersa		1	RB	1
 workforce		11	NN	11
 workhorse		1	NN	1
 workhorses		2	NNS	2
 workhouse		3	NN	3
-working			243	JJ	22	NN	11	VBG	209	VBG|NN	1
+working			258	JJ	24	NN	11	VBG	222	VBG|NN	1
 working-class		9	JJ	9
 working.So		1	NN	1
 workings		11	NNS	11
@@ -55305,18 +55619,18 @@ workman			2	NN	2
 workmans		2	NNS	2
 workmanship		1	NN	1
 workmates		1	NNS	1
-workmen			3	NNS	3
+workmen			3	NN	1	NNS	2
 workout			8	NN	8
 workplace		4	JJ	1	NN	3
 workroom		1	NN	1
-works			80	NNS	33	VBZ	47
+works			84	NNS	32	VBZ	52
 worksheets		2	NNS	2
 workshop		7	NN	7
 workstation		3	NN	3
 workstations		7	NNS	7
 worktop			1	NN	1
 workweek		4	NN	4
-world			481	NN	481
+world			501	IN	1	NN	500
 world-class		2	JJ	2
 world-famous		3	JJ	3
 world-leading		1	JJ	1
@@ -55324,8 +55638,8 @@ world-view		1	NN	1
 world-wide		35	JJ	28	RB	7
 worldly			2	JJ	2
 worldly-wise		1	JJ	1
-worlds			21	NNS	21
-worldwide		2	JJ	1	NN	1
+worlds			23	NNS	23
+worldwide		2	JJ	2
 worm			8	NN	8
 worm-eaten		1	JJ	1
 worming			1	VBG	1
@@ -55333,43 +55647,46 @@ worms			8	NNS	8
 wormy			2	JJ	2
 worn			20	JJ	6	VBN	14
 worn-out		6	JJ	6
-worried			55	JJ	17	VBD	6	VBN	32
+worried			60	JJ	17	VBD	10	VBN	33
 worrier			2	NN	2
 worriers		1	NNS	1
-worries			20	NNS	15	VBZ	5
+worries			22	NNS	17	VBZ	5
 worrisome		5	JJ	5
-worry			65	NN	15	VB	18	VBP	32
-worrying		19	JJ	5	VBG	14
-worse			50	JJR	46	RB	1	RBR	3
+worry			71	NN	18	VB	19	VBP	34
+worrying		20	JJ	5	VBG	15
+worryits		1	VBZ	1
+worse			53	JJR	49	RB	1	RBR	3
 worse-than-expected	1	JJ	1
 worsen			5	VB	5
-worsened		1	VBN	1
+worsened		3	VBD	1	VBN	2
 worsening		9	NN	2	VBG	7
 worship			5	NN	5
 worshipped		3	VBD	3
 worshipper		1	NN	1
 worshipper?		1	NN	1
 worshippers		2	NNS	2
-worships		1	NNS	1
+worships		1	VBZ	1
 worst			40	JJS	38	RB	2
 worst-case		1	JJ	1
 worsted			1	VBN	1
 wort			1	NN	1
-worth			103	IN	21	JJ	53	NN	29
+worth			103	IN	21	JJ	51	NN	31
 worthies		2	NNS	2
 worthiness		1	NN	1
 worthless		10	JJ	10
+worthlessness		1	NN	1
 worththeyre		1	JJ	1
 worthwhile		4	JJ	4
 worthy			10	JJ	10
-would			2430	MD	2430
+would			2503	MD	2503
 would-be		10	JJ	10
-wouldnt			61	JJ	21	NN	13	RB	9	VBP	18
-wouldve			2	VBP	2
-wound			23	JJ	1	NN	11	NNS	1	VB	2	VBD	7	VBN	1
-wounded			15	JJ	9	VBN	6
+would/had		1	VBN	1
+wouldnt			68	JJ	26	NN	15	RB	7	VBP	20
+wouldve			3	VBP	3
+wound			22	NN	11	VB	2	VBD	9
+wounded			17	JJ	10	VBN	7
 wounding		1	VBG	1
-wounds			12	NNS	12
+wounds			13	NNS	13
 woven			9	VBN	9
 wracked			1	VBN	1
 wraith			1	NN	1
@@ -55377,9 +55694,9 @@ wrangle			1	NN	1
 wrangled		1	VBN	1
 wrangling		1	NN	1
 wrap			2	NN	1	VB	1
-wrapped			12	VBD	7	VBN	5
+wrapped			13	VBD	8	VBN	5
 wrapper			1	NN	1
-wrappers		5	NNS	5
+wrappers		6	NNS	6
 wrapping		7	NN	3	VBG	4
 wrappings		1	NNS	1
 wrath			3	NN	3
@@ -55415,31 +55732,31 @@ wriggling		3	VBG	3
 wring			1	VB	1
 wringing		1	VBG	1
 wrinkle			6	NN	4	VB	2
-wrinkled		12	JJ	3	VBD	7	VBN	2
+wrinkled		12	JJ	3	VBD	9
 wrinkles		5	NNS	2	VBZ	3
 wrinkling		2	NN	1	VBG	1
-wrist			11	NN	11
+wrist			14	JJ	1	NN	13
 wrist-watch		1	NN	1
 wrists			7	NNS	7
 wristwatch		1	NN	1
 writ			1	NN	1
-write			76	VB	66	VBP	10
+write			78	VB	68	VBP	10
 write-down		6	NN	6
 write-downs		11	NN	2	NNS	9
 write-off		7	NN	7
 write-offs		4	NNS	4
 writedowns		1	NNS	1
-writer			36	NN	36
+writer			38	NN	38
 writers			25	NNS	25
-writes			18	VBZ	18
+writes			19	VBZ	19
 writhed			2	VBD	2
-writhing		1	VBG	1
-writing			83	NN	28	VBG	55
+writhing		2	VBG	2
+writing			83	NN	29	VBG	54
 writings		14	NNS	14
-written			101	JJ	14	VBN	87
+written			107	JJ	9	VBN	98
 written.		1	CD	1
 wrondgoing		1	NN	1
-wrong			124	JJ	120	NN	1	RB	3
+wrong			135	JJ	131	NN	1	RB	3
 wrong-foot		1	VB	1
 wrong-footed		1	RB	1
 wrongdoing		12	NN	12
@@ -55447,7 +55764,7 @@ wronged			4	VBN	4
 wrongful		5	JJ	5
 wrongly			6	RB	6
 wrongs			2	NNS	2
-wrote			116	VBD	116
+wrote			122	VBD	122
 wrought			3	VBD	3
 wrought-iron		1	JJ	1
 wrung			1	VB	1
@@ -55467,18 +55784,19 @@ yank			1	VB	1
 yanked			7	VBD	5	VBN	2
 yanking			3	VBG	3
 yapping			2	VBG	2
-yard			20	NN	20
-yards			44	NNS	44
+yard			21	NN	21
+yard.			1	NN	1
+yards			46	NNS	46
 yardstick		4	NN	4
 yardwork		1	NN	1
 yarns			1	NNS	1
 yaw			1	VB	1
 yawn			7	NN	7
 yawned			3	VBD	1	VBN	2
-yawning			3	JJ	1	NN	1	VBG	1
+yawning			3	VBG	3
 ye			1	VB	1
 yeah			1	UH	1
-year			1703	NN	1703
+year			1722	NN	1722
 year-ago		35	JJ	35
 year-earlier		81	JJ	81
 year-end		10	JJ	2	NN	8
@@ -55486,6 +55804,7 @@ year-long		1	JJ	1
 year-on-year		3	JJ	3
 year-to-date		1	JJ	1
 year-to-year		1	JJ	1
+year?			1	NN	1
 year?Fifteen		1	JJ	1
 yearbook		2	NN	2
 yearbooks		1	NNS	1
@@ -55497,15 +55816,16 @@ yearn			2	NN	1	VB	1
 yearned			1	VBD	1
 yearning		5	NN	5
 yearns			1	VBZ	1
-years			1167	NNS	1167
+years			1194	NNS	1194
 years.			1	NNS	1
-yeast			10	NN	10
+yearsare		1	NN	1
+yeast			11	NN	11
 yeasty			2	JJ	2
 yell			5	NN	2	VB	3
-yelled			4	VBD	4
+yelled			5	VBD	5
 yelling			8	VBG	8
-yellow			43	JJ	39	NN	4
-yellowed		1	VBN	1
+yellow			45	JJ	42	NN	3
+yellowed		2	JJ	1	VBN	1
 yellowing		1	VBG	1
 yellowish		2	JJ	2
 yellowish-white		1	JJ	1
@@ -55518,19 +55838,19 @@ yelps			1	NNS	1
 yen			300	NN	110	NNS	190
 yen-denominated		1	JJ	1
 yen-support		1	JJ	1
-yes			18	RB	3	UH	15
-yes-men			1	NNS	1
+yes			19	RB	3	UH	16
+yes-men			1	NN	1
 yeses			1	NNS	1
-yesterday		433	NN	428	RB	5
+yesterday		434	NN	429	RB	5
 yesterdays		3	NNS	3
-yet			208	CC	6	RB	202
+yet			226	CC	10	RB	216
 yet-another		1	JJ	1
 yet-to-be-formed	1	JJ	1
-yet?			3	NN	3
+yet?			5	JJ	1	NN	4
 yield			277	NN	99	VB	172	VBP	6
 yielded			8	VBD	6	VBN	2
 yielding		10	JJ	1	NN	1	VBG	8
-yields			62	NNS	59	VBZ	3
+yields			62	NNS	58	VBZ	4
 yo-yo			1	NN	1
 yobs			1	NNS	1
 yodel			1	NN	1
@@ -55542,35 +55862,36 @@ yoke			3	NN	3
 yoked			3	JJ	1	VBN	2
 yolk			4	NN	4
 yon			1	RB	1
-yonks			1	NNS	1
-you			2252	PRP	2252
+yonks			1	NN	1
+you			2444	PRP	2444
 you)			1	NNP	1
-you.			1	VBN	1
-you?			13	JJ	3	NN	1	NNP	1	NNPS	1	NNS	3	VB	3	VBN	1
+you.			3	CD	2	VBN	1
+you?			17	CD	2	JJ	5	NN	1	NNP	2	NNPS	1	NNS	3	VB	3
+you?Ill			1	RB	1
 you?Well		1	NN	1
 youI			1	NNP	1
 youan			1	JJ	1
-youd			14	JJ	3	NN	2	RB	3	VBD	3	VBN	3
-youll			25	JJ	10	NN	8	PRP	2	RB	3	VB	2
-young			265	JJ	260	NNS	5
-younger			30	JJR	30
-youngest		18	JJS	18
+youd			14	JJ	2	NN	3	RB	4	VBD	1	VBN	4
+youll			29	JJ	12	NN	8	PRP	3	RB	4	VB	2
+young			278	JJ	273	NNS	5
+younger			32	JJR	32
+youngest		19	JJS	19
 youngish		1	JJ	1
 youngster		2	NN	2
-youngsters		16	NNS	16
+youngsters		17	NNS	17
 youotherwise		1	JJ	1
-your			784	PRP$	784
-youre			68	JJ	16	NN	24	RB	6	VB	12	VBP	10
-yours			10	NNS	9	PRP	1
-yourself		63	PRP	63
-yourself!		2	NN	1	NNP	1
+your			839	PPS	9	PRP$	830
+youre			76	JJ	20	NN	34	RB	4	VB	9	VBP	9
+yours			11	NNS	9	PRP	2
+yourself		65	PRP	65
+yourself!		2	NNP	1	NNS	1
 yourself.		1	CD	1
 yourself?		1	JJ	1
 yourselves		1	NNS	1
-youth			33	NN	32	NNS	1
+youth			38	NN	37	NNS	1
 youthful		5	JJ	5
 youths			8	NNS	8
-youve			29	JJ	6	NN	12	RB	1	VB	6	VBP	4
+youve			33	JJ	11	NN	11	RB	1	VB	5	VBP	5
 yowled			1	VBN	1
 yttrium-containing	1	JJ	1
 yuk			1	NN	1
@@ -55606,8 +55927,8 @@ zipper			1	NN	1
 zlotys			1	NNS	1
 zombie			1	NN	1
 zombies			2	NNS	2
-zone			9	NN	9
-zones			3	NNS	3
+zone			12	NN	12
+zones			4	NNS	4
 zoning			3	NN	1	VBG	2
 zoo			5	NN	5
 zoology			2	NN	2

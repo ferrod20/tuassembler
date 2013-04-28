@@ -1,26 +1,26 @@
-%Aciertos: 609353 ( 96,4822584986621% )
-%Errores: 22217
-%Cantidad de tags: 631570
+%Aciertos: 609270 ( 96,4689639011291% )
+%Errores: 22301
+%Cantidad de tags: 631571
 \begin{center}
 \begin{table}[H]
 \caption{Matriz de confusion para\\WSJ$_{3}$ = 1 mitad WSJ original contra\\NFI$_{2}$ = 1 mitad WSJ etiquetado con TnT (entrenado con 2 mitad de WSJ + NFI)}\\	
 \begin{tabular}{| l | c | c | c | c | c | c | c | c | c | c | }
 \hline
- \backslashbox{\scriptsize{WSJ$_{3}$}\kern-1em}{\kern-1em \scriptsize{NFI$_{2}$}}  &	\textbf{JJ}	&   \textbf{NNP}	&   \textbf{VBN}	&   \textbf{NN}	&   \textbf{IN}	&   \textbf{VBD}	&   \textbf{RP}	&   \textbf{VB}	&   \textbf{NNPS}	&   \textbf{RB}	&   \hline\textbf{NN} & \textbf{1753} & \textbf{1228} & 26 & - & 7 & 22 & 2 & 203 & 1 & 65\\
-\textbf{VBD} & 62 & 15 & \textbf{986} & 15 & - & - & - & 18 & - & -\\
-\textbf{JJ} & - & 587 & \textbf{632} & \textbf{858} & 31 & 30 & 5 & 40 & - & 341\\
-\textbf{RB} & 438 & 26 & 2 & 88 & \textbf{845} & 1 & 469 & 19 & - & -\\
-\textbf{VBN} & \textbf{618} & 25 & - & 20 & - & \textbf{756} & - & 22 & - & -\\
-\textbf{IN} & 66 & 27 & - & 4 & - & - & \textbf{730} & 1 & - & 569\\
-\textbf{VBP} & 21 & 19 & 21 & 257 & 5 & 31 & - & \textbf{618} & 1 & 3\\
-\textbf{NNP} & 357 & - & 6 & 418 & 18 & 5 & - & 18 & 574 & 44\\
-\textbf{NNPS} & 20 & 513 & - & 1 & - & - & - & - & - & -\\
-\textbf{VBG} & 315 & 17 & - & 495 & - & - & - & - & - & -\\
+ \backslashbox{\scriptsize{WSJ$_{3}$}\kern-1em}{\kern-1em \scriptsize{NFI$_{2}$}}  &	\textbf{JJ}	&   \textbf{NNP}	&   \textbf{VBN}	&   \textbf{NN}	&   \textbf{IN}	&   \textbf{VBD}	&   \textbf{RP}	&   \textbf{VB}	&   \textbf{NNPS}	&   \textbf{RB}	&   \hline\textbf{NN} & \textbf{1751} & \textbf{1210} & 26 & - & 9 & 22 & 1 & 207 & 1 & 59\\
+\textbf{VBD} & 60 & 15 & \textbf{980} & 14 & - & - & - & 19 & - & -\\
+\textbf{JJ} & - & 586 & \textbf{634} & \textbf{859} & 33 & 30 & 5 & 43 & - & 341\\
+\textbf{RB} & 433 & 26 & 2 & 88 & \textbf{854} & 1 & 459 & 19 & - & -\\
+\textbf{VBN} & \textbf{612} & 26 & - & 20 & - & \textbf{760} & - & 22 & - & -\\
+\textbf{IN} & 66 & 26 & - & 4 & - & - & \textbf{724} & 1 & - & 557\\
+\textbf{VBP} & 21 & 18 & 21 & 253 & 4 & 30 & - & \textbf{612} & 1 & 3\\
+\textbf{NNP} & 362 & - & 7 & 532 & 19 & 5 & - & 18 & 571 & 44\\
+\textbf{NNPS} & 20 & 513 & - & 2 & - & - & - & - & - & -\\
+\textbf{VBG} & 311 & 17 & - & 476 & 2 & - & - & - & - & -\\
 \hline
 \end{tabular}
 \end{table}
 \end{center}
 
-%Sumatoria de errores: 15430
-\noindent Aciertos: 609.353 (96,48\%)\\
-\noindent Errores: 22.217 (3,52\%)\\
+%Sumatoria de errores: 15467
+\noindent Aciertos: 609.270 (96,47\%)\\
+\noindent Errores: 22.301 (3,53\%)\\

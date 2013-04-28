@@ -1,4 +1,4 @@
-## tagger training invoked at Fri Jun 29 21:20:10 ART 2012 with arguments:
+## tagger training invoked at Sat Apr 27 20:35:31 ART 2013 with arguments:
                    model = Entrenado/wsjM2
                     arch = left3words,naacl2003unknowns,wordshapes(-1,1)
             wordFunction = 

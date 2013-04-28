@@ -1,683 +1,755 @@
 
 
-Aciertos: 927925 ( 97,9502672210593% )
-Errores: 19418
-Cantidad de tags: 947343
+%Aciertos: 930743 ( 98,2477307585531% )
+%Errores: 16600
+%Cantidad de tags: 947343
 
 Errores
 |	|	CantidadDeErrores
-NN JJ 1497
-	official 63
-	chief 36
-	executive 23
-	average 20
-	Third-quarter 20
+NN JJ 1414
+	official 55
+	chief 30
+	eligible 21
 	covert 20
-	eligible 19
-	general 17
+	plastic 18
+	executive 16
 	public 16
-	square 14
-	fellow 13
-	plastic 13
+	whole 16
+	average 15
+	third-quarter 14
 	green 13
-	third-quarter 13
+	close 13
+	square 13
 	academic 11
-	assistant 11
-	light 10
-	net 10
 	fancy 10
 	tall 9
-	red 9
+	general 9
 	giant 9
 	precise 8
 	cold 8
-	downtown 8
+	red 8
+	net 8
 	interim 7
-	dark 7
-	editorial 7
-	back 7
+	fellow 7
+	enough 7
+	past 7
+	pet 7
+	jobless 7
+	high-quality 7
 	communist 7
+	ski 7
+	right 7
 	blank 7
+	downtown 7
+	dark 6
+	front 6
+	dissident 6
 	minimum 6
-	low 6
-	high 6
-	whole 6
-	close 6
-	high-quality 6
-	postwar 6
-	military 6
-	enough 6
-IN RP 1262
-	out 456
-	up 427
-	off 197
-	down 91
-	over 47
-	around 31
-	along 10
-	through 2
-	upon 1
-JJ NN 1129
-	record 22
-	executive 15
-	firm 13
+	sheer 6
+	fossil 6
+IN RP 1124
+	out 405
+	up 393
+	off 173
+	down 93
+	over 30
+	around 28
+	along 2
+JJ NN 980
+	record 21
+	executive 16
 	fit 13
-	flagship 13
-	textile 11
+	latter 12
 	franc 11
-	latter 11
 	copyright 10
 	net 10
-	chromosome 9
-	future 8
+	textile 9
+	third-quarter 9
 	chief 8
 	companion 8
-	inner-city 7
+	flagship 8
+	anti-takeover 7
 	lead 7
-	third-quarter 7
-	like 7
-	felony 6
-	tabloid 6
+	hybrid 7
+	south 7
+	inner-city 6
+	ideal 6
 	mph 6
-	quarterly 6
-	sound 6
 	defensive 6
-	convertible 6
-	south 6
 	mural 6
 	slack 5
+	firm 5
+	future 5
 	collar 5
 	offensive 5
-	hybrid 5
-	Peruvian 5
+	like 5
+	quarterly 5
+	left 5
+	convertible 5
 	ocean 5
-	index-arbitrage 4
-	public 4
+	editorial 4
+	eclectic 4
+	light 4
+	much-larger 4
 	serial 4
+	pretax 4
 	subject 4
-	ideal 4
 	seed 4
-	oat 4
-VBD VBN 1041
-	used 22
-	made 18
-	led 15
-	required 15
-	raised 13
-	sold 13
-	ended 12
+	incumbent 4
+VBD VBN 717
 	fined 12
-	filed 12
+	left 11
+	required 11
 	capped 10
 	accused 9
-	created 9
-	changed 8
-	left 8
-	intended 8
-	settled 7
-	set 7
-	suspended 6
-	owed 6
-	issued 6
-	ordered 6
-	forced 6
-	produced 6
-	learned 6
-	granted 6
+	forced 8
+	filed 8
+	sold 7
+	intended 7
+	settled 6
+	announced 6
+	used 5
 	found 5
-	attached 5
 	named 5
-	tied 5
-	distributed 5
-	dubbed 5
-	admitted 5
-	linked 5
-	held 5
-	recorded 5
-	developed 5
-	killed 5
-	transferred 5
-	served 5
-	followed 5
-IN RB 681
-	up 258
-	as 87
-	down 72
-	so 69
-	about 69
-	ago 35
-	So 15
-	out 11
-	below 10
-	once 9
-	Along 8
-	off 8
-	along 5
-	though 5
-	besides 4
-	before 4
-	beyond 3
-	around 2
-	behind 2
-	over 2
-	since 2
-	aboard 1
-VBN JJ 671
-	proposed 47
-	increased 31
+	changed 5
+	led 5
+	fueled 5
+	created 5
+	suspended 4
+	owed 4
+	criticized 4
+	ordered 4
+	admitted 4
+	linked 4
+	derived 4
+	granted 4
+	come 4
+	projected 4
+	learned 4
+	distributed 4
+	hurt 4
+	devoted 4
+	surveyed 4
+	served 4
+	indicted 4
+	committed 4
+	strapped 4
+	applied 3
+	renewed 3
+	scattered 3
+NNP NN 638
+	PS 21
+	TV 18
+	PAPER 10
+	Berkeley 10
+	Politburo 10
+	Ministry 9
+	Stadium 9
+	Association 8
+	Order 8
+	Earth 7
+	End 6
+	GNP 6
+	Federation 5
+	Xerox 5
+	Jake 5
+	Song 5
+	Stealth 5
+	SAS 5
+	Thursday 5
+	Tuesday 5
+	Sidewalk 4
+	Logic 4
+	Bowl 4
+	Sonata 4
+	Midwest 4
+	ABC 4
+	Continent 4
+	Baron 4
+	Volkswagen 4
+	District 4
+	Ty 4
+	Czech 3
+	Test 3
+	CAT 3
+	Form 3
+	Embassy 3
+	Confederation 3
+	Express 3
+	Consumer 3
+	Section 3
+VBN JJ 598
+	proposed 28
 	complicated 17
-	specified 17
-	estimated 17
+	increased 14
 	consolidated 12
-	related 12
-	imported 10
-	subordinated 9
-	failed 8
+	imported 11
+	stolen 10
+	estimated 10
+	related 9
+	revised 9
+	required 8
 	sworn 8
-	revised 8
-	stolen 7
+	qualified 7
 	frozen 6
 	heightened 6
 	armed 6
-	promised 6
-	required 6
+	isolated 6
 	combined 5
 	matched 5
-	discontinued 5
-	qualified 5
 	specialized 5
-	preferred 5
+	recorded 5
+	subordinated 5
 	crowded 5
 	diluted 5
-	fixed 5
+	marked 5
 	inspired 4
-	written 4
 	overpriced 4
 	heated 4
 	Continued 4
-	isolated 4
-	shared 4
-	adjusted 4
-	marked 4
-	automated 3
-	limited 3
+	doomed 4
+	convinced 4
+	mixed 4
+	approved 4
+	refined 4
+	entrenched 3
 	disposed 3
-	recorded 3
-NNP JJ 630
-	American 54
-	Swiss 36
-	Philippine 15
-	British 14
+	preferred 3
+	oversized 3
+	frustrated 3
+	presumed 3
+	Specialized 3
+NNP JJ 510
+	American 64
+	Swiss 33
+	British 18
 	Next 13
 	Exterior 13
-	Common 11
-	Western 11
+	Republican 11
 	Vietnamese 11
-	Russian 10
-	Small 9
-	Israeli 9
+	Independent 11
+	English 9
+	Russian 9
 	Belgian 9
-	Republican 8
-	Laurel 8
-	Asian 7
-	African 7
+	Small 8
+	Corporate 8
+	Common 8
+	Spanish 7
 	Conservative 7
-	Independent 7
-	Democratic 6
-	Eastern 6
+	Western 7
+	Asian 6
 	Personal 6
-	Southern 6
 	Environmental 6
 	Cuban 6
-	Criminal 5
-	Corporate 5
-	Spanish 5
 	Municipal 5
-	Rural 5
 	Scottish 5
-	Mutual 5
+	Saudi 5
 	Funny 4
-	Basic 4
-	Soviet 4
-	Quarterly 4
+	Democratic 4
+	Eastern 4
 	Real 4
-	Canadian 4
-	Chemical 4
-	Mortgage-Backed 4
-NN VB 596
+	FM 4
+	Erotic 4
+	Maidenform 4
+	Afrikaner 4
+	European 3
+	Bright 3
+	Catastrophic 3
+	Greek 3
+	French 3
+	Israeli 3
+	Liberal 3
+	Scandinavian 3
+VBN VBD 477
+	had 36
+	called 35
+	ended 21
+	said 20
+	made 15
+	needed 7
+	failed 7
+	referred 5
+	Given 5
+	struck 5
+	put 5
+	traded 5
+	proposed 4
+	invested 4
+	increased 4
+	tightened 4
+	used 4
+	filed 4
+	released 4
+	set 3
+	brought 3
+	marched 3
+	surprised 3
+	registered 3
+	passed 3
+	asked 3
+	offered 3
+	spent 3
+	heard 2
+	followed 2
+	concluded 2
+	caused 2
+	ranged 2
+	felt 2
+	maintained 2
+	realized 2
+	drifted 2
+	chanted 2
+	posed 2
+	paralyzed 2
+NN VB 464
 	tire 15
 	measure 12
 	copy 9
 	reset 9
-	date 8
-	close 8
 	sort 8
-	offer 7
 	drag 7
 	reward 6
 	land 6
 	go 6
 	crush 6
 	transport 6
+	offer 5
 	bar 5
 	experience 5
 	Note 5
 	spread 5
-	survey 5
+	register 5
 	refund 4
 	sleep 4
 	ward 4
-	institute 4
 	suit 4
-	transfer 4
 	win 4
-	carry 4
 	channel 4
-	pay 4
-	produce 4
-	fly 4
 	pin 4
 	shield 4
-	branch 4
 	freeze 4
 	promise 4
-	rank 4
+	sell 4
 	rent 4
-	help 4
-	police 4
-NN NNP 530
-	Industry 16
-	Plant 15
-	Company 12
-	Investment 11
-	Money 11
-	TREASURY 10
-	Abortion 10
-	Profit 9
-	Silver 9
-	Man 8
-	Section 8
-	Way 8
-	Today 7
-	TV 7
-	X 6
-	Century 6
-	Reliance 6
-	House 6
-	B 6
-	Shopping 6
-	Litigation 6
-	Chapter 5
-	Disease 5
-	Consumer 5
-	A. 5
-	Reform 5
-	Board 4
-	Article 4
-	Baseball 4
-	Television 4
-	Earthquake 4
-	Work 4
-	Crime 3
-	Life 3
-	Garbage 3
-	Mark 3
-	Corn 3
-	Street 3
-	Day 3
-	Everything 3
-NNP NNPS 496
-	Securities 56
-	States 35
-	Airlines 25
-	Democrats 24
-	Services 21
-	Motors 20
-	Workers 20
+	audit 3
+	merit 3
+	date 3
+	weather 3
+	lead 3
+	barge 3
+	show 3
+	scale 3
+	state 3
+	stand 3
+	pay 3
+NNP NNPS 428
+	States 33
+	Services 23
+	Workers 21
+	Airlines 20
+	Motors 19
+	Democrats 18
+	Appropriations 15
+	Cowboys 15
+	Pictures 14
 	Industries 14
-	Cowboys 14
-	Netherlands 13
 	Institutes 11
-	Microsystems 10
-	Republicans 10
-	Gardens 10
+	Sciences 11
+	Resources 10
+	Commons 9
 	Games 9
-	Communications 8
-	Resources 8
-	Containers 7
-	Commons 7
-	Sciences 7
-	Springs 6
+	Republicans 8
 	Developments 6
-	Enterprises 6
+	Orleans 5
+	Associates 5
+	Securities 5
 	Communists 4
+	Plains 4
+	Farmers 4
 	Seasons 4
-	Associates 4
+	Technologies 4
+	Devices 4
 	Rothschilds 4
 	Nazis 4
 	Catholics 4
+	Manufacturers 3
 	Publishers 3
-	Peripherals 3
-	Manufacturers 2
-	Countries 2
-	Farmers 2
-	Telepictures 2
-	Moonies 2
-	Chambers 2
-	Browns 2
-	Appropriations 2
-	Includes 2
-VBG JJ 454
-	leading 28
-	pending 20
-	following 13
-	existing 12
-	matching 11
-	retiring 11
-	missing 11
-	controlling 11
+	Microsystems 3
+	Enterprises 3
+	Nuggets 3
+	Writers 2
+	Communications 2
+	Shores 2
+	Products 2
+	Tropics 2
+	Agnellis 2
+NN VBG 402
+	working 11
+	gathering 10
+	operating 9
+	selling 9
+	trading 8
+	beginning 8
+	managing 7
+	investing 7
+	proceeding 7
+	buying 6
+	fledgling 5
+	billing 5
+	waiting 5
+	playing 5
+	breaking 5
+	processing 5
+	standing 4
+	driving 4
+	checking 4
+	downgrading 4
+	shedding 4
+	dealing 4
+	holding 4
+	steering 4
+	clearing 4
+	changing 4
+	purchasing 4
+	asking 4
+	understanding 4
+	developing 3
+	consulting 3
+	drawing 3
+	functioning 3
+	turning 3
+	ghostbusting 3
+	fighting 3
+	cutting 3
+	flooding 3
+	discounting 3
+	negotiating 3
+NN NNP 401
+	Plant 16
+	Industry 16
+	Company 12
+	Money 11
+	Investment 10
+	Abortion 7
+	Man 6
+	X 6
+	Century 6
+	B 6
+	Shopping 6
+	Disease 5
+	Consumer 5
+	Reliance 5
+	House 5
+	A. 5
+	Way 5
+	Reform 5
+	Baseball 4
+	Today 4
+	Television 4
+	Earthquake 4
+	Chapter 3
+	Crime 3
+	Life 3
+	Profit 3
+	Everything 3
+	Farm 3
+	Bond 3
+	Art 3
+	Chief 3
+	Lion 3
+	Measure 3
+	Pool 3
+	Work 3
+	No. 3
+	Treasury 3
+	Accumulation 3
+	Association 2
+	Lead 2
+IN RB 400
+	up 113
+	so 57
+	down 56
+	as 56
+	about 37
+	ago 24
+	So 13
+	Along 8
+	once 8
+	out 7
+	off 4
+	over 3
+	before 3
+	along 3
+	beyond 3
+	behind 2
+	since 1
+	though 1
+	Besides 1
+VBG JJ 372
+	leading 36
+	pending 19
+	missing 17
+	controlling 15
 	ailing 10
 	misleading 10
-	bracing 10
-	remaining 8
-	accompanying 8
+	following 8
 	whooping 8
 	overwhelming 7
 	entertaining 6
 	embarrassing 6
+	existing 6
+	surging 6
 	startling 5
-	budding 5
-	surging 5
+	rolling 5
+	flowing 5
 	challenging 5
 	impending 5
-	troubling 5
+	preceding 5
 	thriving 5
+	remaining 4
 	disturbing 4
 	amusing 4
-	sprawling 4
-	rolling 4
-	whopping 4
 	languishing 4
 	depressing 4
-	topping 4
+	decreasing 4
 	pressing 4
-	preceding 4
 	discriminating 4
-	yielding 3
+	troubling 4
+	finishing 4
+	failing 3
+	punishing 3
 	prevailing 3
 	lasting 3
 	inquiring 3
-	distracting 3
-WDT IN 449
-	that 449
-VBN VBD 435
-	had 41
-	ended 36
-	called 32
-	said 21
-	put 10
-	increased 7
-	failed 7
-	needed 6
-	made 5
-	struck 5
-	offered 4
-	tightened 4
-	marched 4
-	traded 4
-	released 4
-	ranged 3
-	lost 3
-	told 3
-	provided 3
-	asked 3
-	concluded 2
-	preferred 2
-	stepped 2
-	maintained 2
-	realized 2
-	drifted 2
-	unencumbered 2
-	cut 2
-	posed 2
-	bought 2
-	established 2
-	mired 2
-	owned 2
-	fought 2
-	backed 2
-	consumed 2
-	reduced 2
-	monitored 2
-	confiscated 2
-	held 2
-VBP VB 431
-	have 12
-	make 11
-	give 8
+	inviting 3
+	fitting 3
+	accusing 2
+	sprawling 2
+	fetching 2
+RB RP 358
+	up 186
+	down 113
+	out 27
+	back 11
+	around 11
+	off 4
+	aside 3
+	away 2
+	along 1
+VBP VB 353
+	give 16
+	make 16
+	take 10
+	have 9
 	go 8
-	provide 7
-	take 7
-	exceed 6
-	dominate 6
-	honor 6
-	remain 6
-	allow 5
-	require 5
-	hold 5
-	find 5
-	spend 5
-	indicate 5
-	show 4
-	contain 4
-	include 4
-	help 4
-	see 4
-	invest 3
-	improve 3
-	carry 3
-	cover 3
-	ask 3
-	step 3
-	begin 3
-	increase 3
-	buy 3
-	build 3
-	say 3
+	see 8
+	buy 8
+	find 6
+	do 6
+	clutter 6
+	get 5
+	carry 4
+	hold 4
+	ask 4
+	say 4
+	succeed 4
+	honor 4
+	provide 3
+	return 3
+	require 3
+	exceed 3
+	listen 3
+	apply 3
 	conform 3
-	fret 3
-	fare 3
+	add 3
 	expect 3
-	do 3
-	watch 2
+	pay 3
+	spend 3
 	insist 2
-	bring 2
-VBZ NNS 425
-	resorts 16
-	notes 11
-	sounds 9
+	earn 2
+	allow 2
+	improve 2
+	extend 2
+	sell 2
+	rise 2
+	Take 2
+	maintain 2
+	decide 2
+	cover 2
+	admit 2
+VBZ NNS 313
+	resorts 11
 	dates 9
-	reports 8
-	shows 8
-	estimates 8
-	plans 7
+	sounds 8
 	ends 7
-	claims 7
-	alleges 7
-	costs 6
-	accounts 6
-	picks 6
-	aids 5
+	plans 7
 	crashes 5
-	points 5
-	values 4
 	addresses 4
 	fits 4
-	processes 4
-	looks 4
+	reports 4
+	aims 4
+	promises 4
 	influences 4
 	sports 4
-	amounts 4
+	aids 3
+	matches 3
 	forces 3
-	aims 3
-	replies 3
-	resumes 3
-	favors 3
+	laughs 3
+	costs 3
 	tops 3
-	finishes 3
+	controls 3
 	increases 3
+	points 3
 	launches 3
-	farms 3
+	amounts 3
+	remains 3
+	reaches 3
 	places 2
 	fields 2
 	pitches 2
-	acts 2
+	replies 2
 	smiles 2
-NN VBG 407
-	consulting 14
-	selling 12
-	working 11
-	operating 11
-	buying 9
-	gathering 9
-	holding 8
-	managing 7
-	breaking 7
-	proceeding 7
-	carrying 7
-	testing 6
-	manufacturing 6
-	driving 6
-	playing 6
-	investing 6
-	cutting 6
-	asking 6
-	beginning 6
-	trading 5
-	waiting 5
-	understanding 5
-	checking 4
-	downgrading 4
-	restructuring 4
-	writing 4
-	dealing 4
-	living 4
-	steering 4
-	billing 4
-	fighting 4
-	changing 4
-	thinking 4
-	developing 3
-	drawing 3
-	starting 3
-	turning 3
-	contracting 3
-	clearing 3
-	processing 3
-RB RP 399
-	up 196
-	down 113
-	out 32
-	back 28
-	around 10
-	aside 6
-	off 6
-	away 5
-	along 3
-NNP NN 385
-	IRA 20
-	Berkeley 11
-	PAPER 10
-	delta 9
-	Order 7
-	Earth 7
-	Midwest 6
-	End 6
-	Song 5
-	Series 5
-	Test 4
-	Sonata 4
-	TV 4
-	Association 4
-	Class 4
-	Stealth 4
-	Continent 4
-	Volkswagen 4
-	City 4
-	Advertising 4
-	Ty 4
-	AFL-CIO 3
-	RU-486 3
-	Bond 3
-	Mortgage 3
-	Part 3
-	Board 3
-	LBO 3
-	AZT 3
-	Princeton\/Newport 3
-	Jazz 3
-	R 2
-	Business 2
-	Civilization 2
-	Defense 2
-	Ozone 2
-	Consumer 2
-	Machine 2
-	Milk 2
-	Dance 2
-VBG NN 372
+	flies 2
+	exercises 2
+	wins 2
+	stretches 2
+	values 2
+	respects 2
+	passes 2
+	presents 2
+	lies 2
+VBG NN 287
+	following 14
 	heating 10
-	following 10
-	indexing 9
+	cheating 8
 	licensing 8
-	recycling 8
-	cheating 7
 	teaching 7
-	operating 7
+	saving 7
 	recruiting 7
+	operating 7
 	undertaking 6
-	cooking 6
-	skiing 6
 	gambling 6
 	trading 5
-	strengthening 5
-	saving 5
-	shipping 5
+	cooking 5
+	measuring 5
 	offering 4
-	ringing 4
-	ruling 4
-	building 4
-	listing 4
-	hiring 4
-	swimming 4
-	copying 4
+	topping 4
+	Running 4
 	coaching 3
-	standing 3
-	posturing 3
+	suffering 3
+	ringing 3
+	ruling 3
+	holding 3
 	kidnapping 3
-	diving 3
-	measuring 3
+	ending 3
 	unveiling 3
-	restructuring 3
+	swimming 3
 	bleeding 3
-	Wedding 3
+	hiring 3
+	selling 3
+	shipping 3
 	wording 3
-	meeting 3
+	building 3
 	rendering 2
-	failing 2
-	suffering 2
-JJ VBN 346
-	interested 22
-	involved 17
-	closed 16
-	concerned 11
-	expected 9
-	accrued 8
-	lent 7
-	rid 7
+	buying 2
+	racing 2
+	closing 2
+	planting 2
+	breeding 2
+	whispering 2
+	rioting 2
+	banning 2
+VBP NN 280
+	strip 17
+	stem 8
+	premiere 7
+	gauge 7
+	chart 7
+	account 6
+	smoke 6
+	hook 5
+	match 5
+	leave 5
+	slip 5
+	point 4
+	counter 4
+	kick 4
+	spurt 4
+	subpoena 4
+	exit 3
+	dwarf 3
+	disdain 3
+	grace 3
+	spin 3
+	drink 3
+	pull 3
+	shoulder 3
+	walk 2
+	wish 2
+	lure 2
+	worry 2
+	estimate 2
+	crest 2
+	lease 2
+	place 2
+	handicap 2
+	project 2
+	rise 2
+	form 2
+	hawk 2
+	refuse 2
+	serve 2
+	overhaul 2
+JJ RB 276
+	much 115
+	enough 22
+	late 19
+	long 13
+	only 9
+	early 8
+	downright 6
+	daily 6
+	unfairly 5
+	Sure 5
+	little 4
+	east 4
+	hard 4
+	first 3
+	straight 3
+	down 3
+	outright 2
+	tenfold 2
+	right 2
+	further 2
+	virtually 2
+	nationwide 2
+	downward 2
+	upward 2
+	south 2
+	side-crash 1
+	spectacularly 1
+	blindfold 1
+	duly 1
+	Nearby 1
+	non-family 1
+	plainly 1
+	upstairs 1
+	upstream 1
+	eastward 1
+	trifle 1
+	quarterly 1
+	Back 1
+	four-family 1
+	underground 1
+JJ VBN 274
+	interested 14
+	involved 13
+	concerned 9
+	closed 8
+	lent 5
+	accrued 5
 	engineered 5
-	planned 5
-	disappointed 5
+	written 5
 	committed 5
 	acquired 5
 	appointed 5
@@ -685,260 +757,32 @@ JJ VBN 346
 	excited 4
 	preferred 4
 	packaged 4
-	worried 4
-	left 4
+	limited 4
+	expected 4
+	leveraged 3
 	managed 3
 	desired 3
-	needed 3
-	surprised 3
 	reorganized 3
-	associated 3
-	pleased 3
-	revised 3
-	upset 3
-	limited 3
-	alarmed 3
+	disappointed 3
+	left 3
+	repeated 3
+	supposed 3
+	worried 3
 	stuck 3
 	weighted 3
 	damaged 3
-	experienced 3
-	insured 3
 	romanticized 2
-	leveraged 2
-	renewed 2
-	fed 2
-JJ RB 337
-	much 161
-	late 22
-	enough 17
-	long 17
-	only 17
-	early 15
-	little 9
-	unfairly 6
-	downright 6
-	first 5
-	Sure 5
-	hard 5
-	straight 3
-	right 3
-	further 3
-	east 3
-	down 2
-	virtually 2
-	daily 2
-	south 2
-	half 2
-	spectacularly 1
-	blindfold 1
-	duly 1
-	Nearby 1
-	audience-friendly 1
-	outright 1
-	plainly 1
-	upside 1
-	upstream 1
-	eastward 1
-	nationwide 1
-	downtime 1
-	quarterly 1
-	Back 1
-	underground 1
-	downward 1
-	purely 1
-	four-fold 1
-	overseas 1
-NNS VBZ 330
-	works 9
-	counts 8
-	starts 8
-	lists 8
-	means 7
-	plans 7
-	looms 7
-	backs 6
-	totals 6
-	calls 5
-	searches 5
-	turns 5
-	runs 4
-	licenses 4
-	treats 4
-	raises 4
-	shows 4
-	puts 3
-	disappears 3
-	limits 3
-	smells 3
-	advocates 3
-	nears 3
-	spills 3
-	tempts 2
-	fills 2
-	targets 2
-	prompts 2
-	changes 2
-	digs 2
-	causes 2
-	Surprises 2
-	scoops 2
-	fires 2
-	tests 2
-	meets 2
-	matures 2
-	delivers 2
-	strikes 2
-	lingers 2
-VBP NN 300
-	strip 17
-	stem 9
-	premiere 7
-	gauge 7
-	chart 7
-	match 6
-	smoke 6
-	clutter 6
-	hook 5
-	point 5
-	slip 5
-	fear 4
-	leave 4
-	drink 4
-	attempt 4
-	spurt 4
-	subpoena 4
-	exit 3
-	use 3
-	worry 3
-	counter 3
-	disdain 3
-	shape 3
-	grace 3
-	spin 3
-	shoulder 3
-	appeal 2
-	trade 2
-	lead 2
-	wish 2
-	lure 2
-	store 2
-	dwarf 2
-	estimate 2
-	crest 2
-	purchase 2
-	handicap 2
-	project 2
-	wonder 2
-	hawk 2
-JJ NNP 287
-	Foreign 24
-	American 14
-	West 10
-	Delicious 9
-	Real 6
-	Soviet 6
-	Due 5
-	Christian 5
-	Comprehensive 5
-	Olympic 4
-	Deep 4
-	Top 4
-	North 4
-	Packwood-Roth 4
-	Sino-U.S. 3
-	East 3
-	Canadian 3
-	Cambodian 3
-	Fabulous 3
-	German 3
-	Good 3
-	Immediate 3
-	Long 3
-	Troubled 2
-	Congressional 2
-	Austrian 2
-	Annual 2
-	European 2
-	Guardian 2
-	Ex-dividend 2
-	Kong-dollar 2
-	English 2
-	Swedish 2
-	Creative 2
-	Feng-hsiung 2
-	Iranian 2
-	Realist 2
-	Past 2
-	Callable 2
-	Lincoln-Mercury 2
-RB IN 281
-	as 138
-	about 64
-	About 43
-	Up 8
-	before 6
-	through 5
-	around 4
-	once 4
-	because 3
-	out 1
-	inside 1
-	down 1
-	up 1
-	As 1
-	below 1
-RB JJ 265
-	long 27
-	first 23
-	enough 20
-	much 14
-	little 13
-	late 7
-	dead 7
-	further 7
-	early 6
-	inside 6
-	later 5
-	only 5
-	world-wide 5
-	hard 5
-	deadly 5
-	hourly 4
-	steady 4
-	damn 3
-	foremost 3
-	grisly 3
-	afloat 3
-	Quarterly 3
-	lonely 3
-	overseas 3
-	nightly 3
-	verbatim 2
-	disorderly 2
-	Regardless 2
-	close 2
-	double 2
-	unruly 2
-	short 2
-	outside 2
-	loose 2
-	tight 2
-	offshore 2
-	chilly 2
-	Needless 2
-	right 2
-	daily 2
-JJR RBR 264
-	more 176
-	less 56
-	earlier 8
-	More 7
-	faster 7
-	harder 4
-	longer 4
-	louder 1
-	closer 1
-VB NN 263
+	associated 2
+	announced 2
+	rid 2
+	bound 2
+	contracted 2
+	revised 2
+	upset 2
+	dated 2
+	married 2
+	fit 2
+VB NN 265
 	overhaul 11
 	feed 10
 	smoke 7
@@ -947,29 +791,23 @@ VB NN 263
 	pioneer 5
 	thumb 5
 	fray 5
+	work 5
 	curb 4
 	pocket 4
 	house 4
-	account 4
 	root 4
 	match 4
-	clutter 4
+	leave 4
+	account 3
 	grace 3
-	stave 3
 	patch 3
-	sell 3
-	leave 3
-	telegraph 2
+	lift 2
 	premiere 2
 	hook 2
-	die 2
-	dump 2
-	catapult 2
+	sell 2
 	salvage 2
 	hire 2
-	effect 2
 	ferry 2
-	market 2
 	import 2
 	slip 2
 	vote 2
@@ -977,424 +815,625 @@ VB NN 263
 	shake 2
 	ramp 2
 	draw 2
+	look 2
+	redder 2
+	pass 2
 	chill 2
 	convert 2
-IN DT 194
-	that 194
-NNP NNS 191
-	People 8
-	Containers 5
-	Securities 5
-	Men 5
-	Dogs 4
-	Democrats 4
+	jack 2
+	buffet 2
+	wander 2
+NNS VBZ 261
+	works 13
+	counts 10
+	starts 8
+	looms 7
+	lists 7
+	backs 6
+	totals 6
+	shows 6
+	calls 5
+	runs 4
+	treats 4
+	turns 4
+	means 4
+	digs 3
+	plans 3
+	smells 3
+	notes 3
+	advocates 3
+	alleges 3
+	spills 3
+	conduits 3
+	tempts 2
+	fills 2
+	puts 2
+	meets 2
+	clocks 2
+	matures 2
+	delivers 2
+	strikes 2
+	jumps 2
+	heats 2
+	imports 2
+	stands 2
+	stars 2
+	credits 2
+	declines 2
+	earns 2
+	checks 2
+	approaches 2
+	raises 2
+RB JJ 255
+	long 26
+	first 19
+	close 17
+	little 15
+	enough 12
+	early 11
+	further 10
+	dead 7
+	inside 6
+	only 6
+	much 5
+	late 5
+	deadly 5
+	damn 4
+	hard 4
+	loose 4
+	steady 4
+	world-wide 3
+	grisly 3
+	double 3
+	afloat 3
+	offshore 3
+	Quarterly 3
+	lonely 3
+	nightly 3
+	later 2
+	verbatim 2
+	disorderly 2
+	Regardless 2
+	foremost 2
+	short 2
+	outside 2
+	chilly 2
+	pretty 2
+	overnight 2
+	Needless 2
+	overseas 2
+	right 2
+	tongue-in-cheek 2
+	hourly 2
+JJ NNP 249
+	Foreign 24
+	American 9
+	Delicious 9
+	Finnish 7
+	Real 7
+	West 6
+	Soviet 6
+	Comprehensive 5
+	Due 4
+	Sino-U.S. 3
+	Islamic 3
+	Christian 3
+	Deep 3
+	Canadian 3
+	Top 3
+	Good 3
+	North 3
+	Long 3
+	Western 3
+	Retin-A 2
+	Troubled 2
+	Professional 2
+	Congressional 2
+	Cambodian 2
+	Guardian 2
+	Kong-dollar 2
+	Private-sector 2
+	Immediate 2
+	Final 2
+	Packwood-Roth 2
+	Total 2
+	Callable 2
+	Lincoln-Mercury 2
+	Fabulous 2
+	Pro-forma 1
+	Senate-House 1
+	Test-preparation 1
+	Dollar-yen 1
+	Huxtable 1
+	Chinese-American 1
+RB IN 248
+	about 77
+	as 68
+	About 43
+	Instead 13
+	Up 8
+	before 7
+	around 5
+	up 5
+	through 5
+	down 5
+	once 3
+	ago 2
+	because 2
+	over 1
+	so 1
+	aboard 1
+	As 1
+	below 1
+JJR RBR 222
+	more 150
+	less 54
+	longer 7
+	earlier 6
+	More 3
+	faster 2
+NNS NN 167
+	lire 27
+	pence 21
+	police 18
+	criteria 12
+	electronics 6
+	hepatitis 5
+	PS 4
+	jitters 4
+	physics 4
+	credentials 4
+	spokesmen 4
+	yen 4
+	seamen 3
+	freshmen 3
+	impetus 2
+	Chinese 2
+	sclerosis 2
+	countrymen 2
+	pertussis 2
+	chassis 2
+	brass 2
+	whereabouts 2
+	paralysis 2
+	mathematics 1
+	summons 1
+	species 1
+	tweezers 1
+	innings 1
+	regimen 1
+	blinkers 1
+	fracas 1
+	salarymen 1
+	mailmen 1
+	craftsmen 1
+	co-chairmen 1
+	packaged-goods 1
+	subtilis 1
+	headquarters 1
+	mores 1
+	children 1
+NNP NNS 163
+	Containers 11
+	People 7
+	Dogs 5
+	Courtaulds 5
+	Men 4
 	Judges 4
-	Skills 3
-	Investors 3
-	Comments 3
-	Fujis 3
-	Lawyers 2
+	Suns 3
+	Crusaders 3
 	Sundays 2
+	Democrats 2
 	DES 2
+	Investors 2
 	Plans 2
 	Classics 2
-	Voices 2
-	Senators 2
-	Units 2
+	Cars 2
 	Vanities 2
 	Guber-Peters 2
 	Ulysses 2
-	Machinists 2
 	Hundreds 2
 	Banks 2
-	Taps 2
 	Drugs 2
+	Peanuts 2
 	Bears 2
 	HDTVs 2
-	Options 2
+	Lawyers 2
 	XR4Ti 2
 	Books 2
-	Delchamps 2
-	News 1
 	GHS 1
 	Tailors 1
-	Caters 1
-	Dangers 1
 	Stores 1
 	Slides 1
-NN VBP 177
-	need 10
-	offer 8
-	work 8
-	caution 8
-	move 4
+	Units 1
+	Moonies 1
+	FIRMS 1
+	Horses 1
+	Fathers 1
+	Stuart-James 1
+	HCFCs 1
+	Grammys 1
+	Claws 1
+DT PDT 144
+	all 72
+	both 34
+	All 30
+	half 8
+IN DT 140
+	that 139
+	That 1
+NN VBP 138
+	caution 9
+	need 8
+	offer 6
+	plan 5
 	promise 4
-	feel 4
-	plan 4
-	hope 4
-	want 4
-	show 3
-	look 3
-	play 3
+	function 4
+	feel 3
 	scramble 3
-	battle 2
 	dislike 2
-	use 2
-	function 2
-	bowl 2
-	wear 2
+	thrive 2
 	wake 2
-	change 2
-	point 2
+	look 2
+	hope 2
 	experience 2
-	decline 2
+	want 2
 	swing 2
-	cross 2
-	jet 1
+	account 2
 	channel 1
 	lengthen 1
 	whistle 1
-	mark 1
-	stop 1
-	ring 1
+	recede 1
 	disapprove 1
 	loom 1
-	transcribe 1
+	advertise 1
 	stuff 1
-	conflict 1
-	denounce 1
-NNS NNP 166
-	Memories 11
-	Executives 9
-	Courtaulds 7
-	Women 6
-	Politics 6
+	evolve 1
+	scream 1
+	use 1
+	reclaim 1
+	cheer 1
+	lag 1
+	embody 1
+	rise 1
+	champion 1
+	hole 1
+	chance 1
+	exchange 1
+	husk 1
+	haul 1
+	slump 1
+IN WDT 135
+	that 135
+NNS NNP 129
+	Women 5
 	Authorities 5
 	Eggs 5
-	PS 4
+	Politics 5
 	Younkers 4
-	Mips 4
 	Bonds 4
 	Police 4
 	Manufacturers 3
-	Rights 3
-	Studios 3
-	Artists 3
-	Ringers 2
+	Managers 3
+	Mips 3
+	Eurobonds 2
 	Travelers 2
-	Lentjes 2
 	Hees 2
-	Members 2
+	Employers 2
 	Abortion-rights 2
-	Lawson-Walters 2
+	Memories 2
+	Artists 2
 	Rafales 2
-	Marketers 2
+	Vickers 2
 	Mrs 1
-	Containers 1
 	Champagnes 1
 	Reames 1
+	Ringers 1
 	BIRDS 1
+	Gilts 1
 	Stockbrokers 1
 	ISSUES 1
-	Superconductors 1
-	Saints 1
+	Lentjes 1
+	Tanks 1
 	Bailiffs 1
+	Tastes 1
+	Makers 1
 	Marks 1
-	Crises 1
-	PACs 1
+	Voices 1
 	Beltway-itis 1
 	Lights 1
-DT PDT 161
-	all 83
-	both 40
-	All 30
-	half 8
-JJ VB 154
-	close 18
-	fit 12
+	Declines 1
+	Towns 1
+	Oncogenes 1
+	Foothills 1
+RBR JJR 127
+	more 87
+	earlier 11
+	lower 6
+	less 6
+	quicker 4
+	closer 4
+	faster 3
+	better 3
+	harder 2
+	More 1
+JJ PDT 121
+	such 104
+	Such 17
+JJ VB 108
 	reset 11
+	fit 10
 	select 9
 	direct 7
-	triple 6
-	open 4
 	rid 3
 	square 3
-	bankrupt 3
 	warm 3
+	open 3
 	flourish 2
 	Think 2
+	light 2
 	alert 2
+	live 2
 	gon 2
-	slow 2
+	bankrupt 2
 	Welcome 2
 	shy 2
 	discount 2
 	mean 2
 	retail 2
 	vanish 2
-	last 2
-	undercut 1
 	recessionary 1
-	record 1
 	disconnect 1
 	second 1
 	brief 1
-	live 1
-	take-it-or-leave 1
 	maximize 1
 	stock-price 1
-	double 1
+	watered-down 1
 	re-establish 1
 	impress 1
-	double-C 1
-	Upset 1
-	cool 1
 	base 1
-RBR JJR 139
-	more 103
-	less 11
-	lower 7
-	earlier 6
-	quicker 4
-	closer 4
-	better 3
-	harder 1
-VB VBP 124
+	abolish 1
+	intercollegiate 1
+	rubber-stamp 1
+	stifle 1
+	suspect 1
+	cross 1
+	slow 1
+	Thank 1
+	infringe 1
+NNPS NNS 104
+	Democrats 11
+	Issues 10
+	Olympics 9
+	Representatives 9
+	Americans 8
+	Europeans 5
+	Presidents 3
+	Containers 2
+	Parents 2
+	Rights 2
+	Boys 2
+	Years 2
+	Blues 2
+	Texans 2
+	Guber\/Peters 1
+	Judges 1
+	Investors 1
+	Nissans 1
+	Smokers 1
+	Brazilians 1
+	Samaritans 1
+	Contractors 1
+	Airplanes 1
+	ArgoSystems 1
+	Makers 1
+	Wednesdays 1
+	Germans 1
+	Utahans 1
+	Journalists 1
+	Treasurers 1
+	LAYOFFS 1
+	DRAMs 1
+	TROs 1
+	Jeeps 1
+	Mondays 1
+	PROFITS 1
+	Rules 1
+	Iranians 1
+	Wars 1
+	Garcias 1
+VB VBP 102
 	Do 19
 	think 7
-	say 6
-	take 5
-	get 5
-	work 4
-	make 3
+	say 5
+	live 4
+	do 3
 	continue 3
-	live 3
+	get 3
+	honor 2
 	differ 2
 	feel 2
-	do 2
 	enjoy 2
-	recover 2
 	seem 2
-	tell 2
-	maintain 2
 	prevail 2
-	find 2
 	need 2
-	drink 1
+	have 2
+	constitute 2
 	propose 1
 	engage 1
 	hope 1
 	relive 1
-	bring 1
+	announce 1
 	assume 1
-	activate 1
 	ride 1
-	consider 1
-	come 1
-	win 1
+	Know 1
 	elect 1
 	undermine 1
+	deal 1
+	rely 1
 	Walk 1
 	are 1
-	receive 1
-	open 1
+	maintain 1
 	act 1
 	want 1
-JJ PDT 120
-	such 103
-	Such 17
-NNPS NNP 120
-	Securities 15
-	Industries 8
+	work 1
+	omit 1
+	produce 1
+	outweigh 1
+	clutter 1
+	approve 1
+	take 1
+RB NNP 97
+	Separately 62
+	Rather 10
+	Right 6
+	Secondly 2
+	Polly 2
+	Thereafter 2
+	Sophomore 2
+	Bally 2
+	Well 2
+	Monthly 1
+	JUST 1
+	Highly 1
+	Stokely 1
+	Rarely 1
+	Supply 1
+	Gingerly 1
+NNPS NNP 96
+	Securities 13
+	Industries 9
 	Metals 7
-	Farmers 7
-	Cos 6
-	Works 4
 	Technologies 4
 	PipeLines 4
-	Rights 3
-	Standards 3
-	Airways 3
-	Presidents 3
+	Airways 4
+	Texans 4
 	Americas 3
-	Planners 3
-	Texans 3
 	Associates 2
-	Gates 2
-	Appropriations 2
-	Sports 2
+	Presidents 2
+	Communications 2
+	Farmers 2
 	Computers 2
 	Moines 1
-	Leemans 1
 	Yankees 1
 	Accessories 1
 	Plaines 1
 	Shiites 1
 	Leftovers 1
 	Warrens 1
-	Colleges 1
-	Bankers 1
-	Manufacturers 1
-	Makers 1
-	Utahans 1
+	Leads 1
+	Appropriations 1
+	Augustines 1
+	Michelangelos 1
 	Customs 1
+	Prizes 1
+	Sports 1
 	Playwrights 1
+	Sands 1
 	Insights 1
+	Eurobonds 1
 	Blandings 1
+	Attorneys 1
 	Maronites 1
 	Weapons 1
 	Greenshields 1
-DT WDT 119
-	that 91
-	That 28
-IN WDT 114
-	that 114
-NN NNS 102
-	yen 33
-	economics 10
-	savings 5
-	mice 5
-	electronics 4
-	spaghetti 3
-	schoolchildren 2
-	dice 2
-	stimuli 2
-	headquarters 2
-	fauna 2
-	communications 2
-	riches 2
-	passers-by 1
-	instruction 1
-	flora 1
-	offspring 1
-	ennui 1
-	goings-on 1
-	alumni 1
-	marginalia 1
-	subtilis 1
-	phenomena 1
-	media 1
-	skis 1
-	glitterati 1
-	memoranda 1
-	vis 1
-	ferris 1
-	fungi 1
-	trillion-plus 1
-	appliance-controls 1
-	minutiae 1
-	timpani 1
-	co-pilot 1
-	fetus 1
-	swine 1
-	clergy 1
-	trivia 1
-	snafus 1
-RB NNP 101
-	Separately 62
-	Elsewhere 17
-	Right 6
-	Far 2
-	Polly 2
-	Sophomore 2
-	Bally 2
-	Well 2
-	Monthly 1
-	Frankly 1
-	Somewhere 1
-	Highly 1
-	Stokely 1
-	Supply 1
-NNPS NNS 98
-	Issues 10
-	Democrats 10
-	Representatives 9
-	Americans 5
-	Europeans 4
-	Olympics 4
-	Germans 3
-	Parents 2
-	Years 2
-	Blues 2
-	Presidents 2
-	Blandings 2
-	Wars 2
-	Jews 1
-	Guber\/Peters 1
-	Tropics 1
-	Gauloises 1
-	Judges 1
-	Investors 1
-	Nissans 1
-	Containers 1
-	Smokers 1
-	Brazilians 1
-	Samaritans 1
-	Contractors 1
-	Southerners 1
-	ArgoSystems 1
-	Wednesdays 1
-	Soybeans 1
-	Proceedings 1
-	Journalists 1
-	Treasurers 1
-	LAYOFFS 1
-	DRAMs 1
-	Eurobonds 1
-	Attorneys 1
-	TROs 1
-	Jeeps 1
-	PROFITS 1
-	Rules 1
-VBD JJ 95
+	Aromatiques 1
+	Solutions 1
+	Lines 1
+	Fields 1
+JJ VBG 92
+	winning 7
+	struggling 5
+	encouraging 5
+	revolving 5
+	chilling 5
+	increasing 5
+	engaging 4
+	acting 4
+	indexing 3
+	sweeping 2
+	drinking 2
+	stinging 2
+	existing 2
+	working 2
+	deepening 2
+	developing 2
+	deciding 2
+	puzzling 2
+	fledgling 2
+	promising 2
+	Whiting 1
+	flooring 1
+	town-watching 1
+	squirming 1
+	mating 1
+	remaining 1
+	somersaulting 1
+	Re-creating 1
+	unloading 1
+	cutting 1
+	teeming 1
+	gyrating 1
+	sheltering 1
+	price-cutting 1
+	exhausting 1
+	earthmoving 1
+	stifling 1
+	alienating 1
+	vanishing 1
+	factoring 1
+VBD JJ 92
 	noted 5
-	advanced 3
+	advanced 2
 	loaded 2
 	unseated 2
 	cherished 2
-	uncovered 2
+	resigned 2
 	pitched 2
 	famed 2
 	added 2
 	canned 2
-	consolidated 2
 	distorted 2
+	frightened 2
 	armed 2
-	deprived 2
 	buckled 2
 	iced 2
 	botched 1
 	contained 1
-	matched 1
+	touched 1
 	fretted 1
-	re-thought 1
 	balanced 1
 	stereotyped 1
 	frozen 1
 	potted 1
-	twisted 1
-	souled 1
+	harassed 1
 	unconnected 1
-	vaunted 1
 	shredded 1
-	burdened 1
 	distinguished 1
+	coveted 1
 	licensed 1
 	undisturbed 1
+	uncovered 1
+	removed 1
 	aramid 1
 	flawed 1
 	well-versed 1
-	constrained 1
 	bleached 1
-	resigned 1
-NNS NNPS 86
-	Materials 9
-	Americans 9
-	Californians 4
-	Shops 4
+	disgusted 1
+	frustrated 1
+	baked 1
+	addicted 1
+WDT IN 87
+	that 87
+NNS NNPS 82
+	Americans 7
+	Memories 7
+	Californians 6
+	Shops 6
 	Studies 4
+	Studios 4
+	Rights 3
 	Peasants 3
-	Containers 2
 	States 2
 	Contras 2
 	Manufacturers 2
@@ -1403,168 +1442,193 @@ NNS NNPS 86
 	Libyans 2
 	Publishers 2
 	Afrikaners 2
-	Friends 1
 	Worksheets 1
 	Delegates 1
 	TROUBLES 1
+	Containers 1
 	Cabernets 1
-	Articles 1
 	Rangers 1
-	Makers 1
-	Soybeans 1
 	Socialists 1
-	Mercantilists 1
 	Japanese 1
-	Deputies 1
-	Representatives 1
-	PROSECUTORS 1
 	Companies 1
 	Institutes 1
 	Games 1
+	Blacks 1
+	Days 1
 	Thursdays 1
 	Protestants 1
 	Plastics 1
 	Chicagoans 1
 	Somalis 1
-	Chambers 1
+	Disasters 1
 	Applications 1
-NNS NN 86
-	police 17
-	pence 16
-	audits 8
-	waterworks 7
-	physics 4
-	Chinese 4
-	mathematics 2
-	impetus 2
-	sclerosis 2
-	chassis 2
-	brass 2
-	yen 2
-	whereabouts 2
-	paralysis 2
-	summons 1
-	species 1
-	regimen 1
-	fracas 1
-	mailmen 1
-	sunglasses 1
+	Certificates 1
+	Developments 1
+	Workers 1
+	Charlestonians 1
+NN NNS 73
+	yen 31
+	economics 10
+	mice 5
+	savings 3
+	spaghetti 3
+	schoolchildren 2
+	fauna 2
+	riches 2
+	passers-by 1
+	TRANSPLANT 1
+	electronics 1
 	headquarters 1
-	ignoramus 1
-	linden 1
-	GLITTER 1
-	fiberglass 1
-	darts 1
-	annals 1
-	hepatitis 1
-JJ VBG 83
-	encouraging 9
-	struggling 5
-	increasing 5
-	engaging 4
-	acting 4
-	winning 4
-	drinking 2
-	reassuring 2
-	working 2
-	deepening 2
-	developing 2
-	deciding 2
-	flooring 1
-	hiding 1
-	economic-forecasting 1
-	bond-rating 1
-	price-jarring 1
-	existing 1
-	remaining 1
-	non-working 1
-	insider-trading 1
-	voice-processing 1
-	unloading 1
-	revolving 1
-	cutting 1
-	teeming 1
-	demanding 1
-	gyrating 1
-	sheltering 1
-	price-cutting 1
-	exhausting 1
-	stinging 1
-	more-pressing 1
-	flourishing 1
-	coming 1
-	aspiring 1
-	property-tax-cutting 1
-	alienating 1
-	vanishing 1
-	discouraging 1
-NN RB 71
-	enough 10
-	overseas 7
-	plenty 6
-	back 4
+	flora 1
+	goings-on 1
+	alumni 1
+	skis 1
+	glitterati 1
+	stepchildren 1
+	fungi 1
+	appliance-controls 1
+	clergy 1
+	krona 1
+	communications 1
+NN RB 66
+	plenty 9
+	enough 8
+	overseas 5
 	right 3
 	north 3
+	back 3
 	likewise 3
-	a.m 3
+	down 2
 	aloft 2
 	westward 2
-	yesterday 2
 	uphill 2
+	piecemeal 2
 	beforehand 2
+	tenfold 2
 	asleep 2
-	p.m. 2
-	yon 1
 	alfresco 1
 	asunder 1
+	score-wise 1
 	insofar 1
 	behind 1
-	well 1
-	wherein 1
 	taxfree 1
 	Ever 1
 	skyward 1
 	headlong 1
-	irrespective 1
+	four-for-one 1
+	way 1
 	dear 1
-	half 1
-	tenfold 1
+	opposite 1
+	p.m. 1
 	downhill 1
-	a.m. 1
 	freight 1
-NNP VB 69
-	Pencil 6
+JJ NNS 63
+	abortion-rights 14
+	Japanese 4
+	disabled 3
+	information-services 2
+	anti-abortionists 2
+	conventional-arms 2
+	injured 2
+	precious-metals 2
+	low-paid 1
+	19-year-olds 1
+	grass-roots 1
+	automobile-parts 1
+	well-to-do 1
+	information-systems 1
+	analytical-instruments 1
+	special-projects 1
+	peanuts 1
+	great-grandchildren 1
+	fuel-services 1
+	performing-arts 1
+	interior-furnishings 1
+	blood-and-guts 1
+	shareholder-rights 1
+	passers-by 1
+	non-sales 1
+	capital-gains 1
+	after-hours 1
+	bad-news 1
+	Yellow-pages 1
+	write-offs 1
+	truck-parts 1
+	F-18s 1
+	Underclass 1
+	assault-weapons 1
+	animal-rights 1
+	olefins 1
+	federal-systems 1
+	global-funds 1
+	price-earnings 1
+	elderly 1
+VB JJ 60
+	damp 5
+	own 3
+	correct 3
+	dry 3
+	elaborate 2
+	double 2
+	secure 2
+	cool 2
+	acetate 1
+	faint 1
+	sexy 1
+	feline 1
+	dreaded 1
+	trim 1
+	abusive 1
+	degenerate 1
+	top 1
+	handy 1
+	unleash 1
+	deadly 1
+	ingest 1
+	stodgy 1
+	tall 1
+	Put 1
+	firm 1
+	flip 1
+	equal 1
+	covert 1
+	hedge 1
+	dumb 1
+	levy 1
+	fantasize 1
+	replete 1
+	canned 1
+	apt 1
+	blatant 1
+	entree 1
+	blonde 1
+	awhile 1
+	crooked 1
+NNP VB 53
+	Make 4
 	Meet 4
 	Spoon 3
-	Expect 3
 	Tell 3
 	Call 3
-	Whittle 3
-	Brace 2
 	Credit 2
-	Make 2
-	Read 2
+	Hold 2
 	Beware 2
 	Leave 2
-	Choose 1
-	Eliminate 1
-	Lie 1
+	Sleep 1
 	Throw 1
 	Survive 1
-	Nestle 1
+	l'oeil 1
+	Debate 1
+	Whittle 1
+	Tap 1
 	Deliver 1
 	Pretend 1
-	Become 1
 	Follow 1
-	Check 1
-	Discover 1
 	Develop 1
 	Recruit 1
-	Hold 1
 	Stretch 1
-	Find 1
-	Alter 1
-	Decide 1
+	Surrender 1
+	Starve 1
 	Suppose 1
 	Sock 1
 	Stick 1
@@ -1573,78 +1637,92 @@ NNP VB 69
 	Spend 1
 	Name 1
 	Diversify 1
-RB RBR 68
+	Fight 1
+	Beat 1
+	BEAT 1
+	Thank 1
+	Know 1
+PRP$ PRP 53
+	her 53
+RB RBR 52
 	longer 35
-	earlier 14
-	further 9
-	sooner 7
-	later 2
-	better 1
-JJS RBS 66
-	most 60
-	Most 6
-DT RB 59
-	all 33
-	either 17
-	no 4
-	neither 3
-	half 2
-DT IN 58
-	that 58
-VB JJ 58
-	damp 5
-	own 4
-	further 3
-	dry 3
-	Put 2
-	separate 2
-	top 2
-	secure 2
-	void 1
-	sexy 1
-	feline 1
-	dreaded 1
-	trim 1
-	abusive 1
-	handy 1
-	deadly 1
-	gouty 1
-	stodgy 1
-	tall 1
-	flip 1
-	equal 1
-	double 1
-	covert 1
-	live 1
-	hedge 1
-	dumb 1
-	total 1
-	replete 1
-	canned 1
-	cool 1
-	apt 1
-	complete 1
-	blatant 1
-	blonde 1
-	reverse 1
-	probate 1
-	crooked 1
-	bogus 1
-	svelte 1
-	narrow 1
-NN VBD 54
-	cut 9
-	put 9
-	hit 5
+	earlier 11
+	further 4
+	sooner 1
+	later 1
+RB NN 49
+	right 7
+	counter 7
+	a.m. 6
+	inside 3
+	south 3
+	close 3
+	butterfly 2
+	briefly 2
+	overtime 2
+	therein 2
+	aplenty 1
+	daily 1
+	abstinence 1
+	woolly 1
+	aback 1
+	best 1
+	damn 1
+	na 1
+	reply 1
+	Overhead 1
+	Right 1
+	fist 1
+DT IN 48
+	that 48
+JJS RBS 48
+	most 47
+	Most 1
+JJ VBD 45
+	closed 6
+	lent 4
+	accrued 3
+	involved 3
+	undercut 2
+	galvanized 2
+	chartered 2
+	asset-backed 1
+	secured 1
+	worried 1
+	informed 1
+	underwent 1
+	income-oriented 1
+	broke 1
+	stuck 1
+	spoiled 1
+	diluted 1
+	clerk-turned 1
+	corresponded 1
+	acquired 1
+	conceived 1
+	deficit-racked 1
+	ill-suited 1
+	finished 1
+	continued 1
+	renowned 1
+	customized 1
+	posted 1
+	left 1
+	listed 1
+DT RB 40
+	all 17
+	either 15
+	neither 5
+	no 3
+NN VBD 39
+	cut 6
+	put 5
 	set 4
 	sang 3
 	cost 2
-	cast 2
 	swept 2
 	thrust 2
-	roadbed 2
 	begot 1
-	bid 1
 	dug 1
 	rebounded 1
 	dove 1
@@ -1654,175 +1732,82 @@ NN VBD 54
 	tore 1
 	sprang 1
 	split 1
+	bid 1
 	wrought 1
 	woke 1
 	thought 1
-JJ NNS 46
-	non-seamen 4
-	abortion-rights 4
-	conventional-arms 3
-	Japanese 3
-	information-services 2
-	durable-goods 1
-	anti-abortionists 1
-	grass-roots 1
-	stair 1
-	nuclear-arms 1
-	information-systems 1
-	analytical-instruments 1
-	peanuts 1
-	fuel-services 1
-	paper-goods 1
-	performing-arts 1
-	interior-furnishings 1
-	passers-by 1
-	non-sales 1
-	capital-gains 1
-	after-hours 1
-	microcomputer-systems 1
-	bad-news 1
-	Yellow-pages 1
-	write-offs 1
-	truck-parts 1
-	management-services 1
-	runners-up 1
-	F-18s 1
-	Underclass 1
-	animal-rights 1
-	olefins 1
-	federal-systems 1
-	precious-metals 1
-	packaged-goods 1
-PRP$ PRP 45
-	her 45
-RB NN 44
-	counter 7
-	a.m. 4
-	right 4
-	inside 3
-	south 3
-	near-monopoly 3
-	northeast 3
-	butterfly 2
-	close 2
-	newsweekly 1
-	aplenty 1
-	daily 1
-	oversupply 1
-	abstinence 1
-	aback 1
-	overtime 1
-	damn 1
-	na 1
-	reply 1
-	Overhead 1
-	fist 1
-	smack 1
-JJ VBD 43
-	closed 7
-	finished 2
-	galvanized 2
-	acquired 2
-	lent 2
-	chartered 2
-	retired 2
-	left 2
-	unfunded 1
-	asset-backed 1
-	secured 1
-	53%-owned 1
-	undercut 1
-	mid-priced 1
-	informed 1
-	underwent 1
-	broke 1
-	stuck 1
-	diluted 1
-	clerk-turned 1
-	corresponded 1
-	attempted 1
-	conceived 1
-	continued 1
-	aggravated 1
-	renowned 1
-	customized 1
-	posted 1
-	preferred 1
-	listed 1
-NN VBN 40
-	set 15
-	run 7
-	torn 3
-	put 2
-	fed 1
-	split 1
-	thought 1
-	upset 1
-	misunderstood 1
-	overthrown 1
-	blown 1
-	Cast 1
-	hit 1
-	crept 1
 	smelt 1
-	deprived 1
-	cut 1
-VBG NNP 40
-	Learning 12
-	Excluding 6
-	Feeding 3
-	Buying 3
-	Scoring 2
-	Eavesdropping 2
-	Muzzling 1
-	GROWING 1
-	HIRING 1
-	Curdling 1
-	Misunderstanding 1
-	Programming 1
-	Labeling 1
-	Laboring 1
-	Building 1
-	Shaving 1
-	Distributing 1
-	Racing 1
-VB NNP 39
-	Let 4
+VB NNP 37
+	Let 5
+	Use 4
+	Sound 4
 	Sit 4
-	Use 3
-	Sound 3
-	Assume 2
 	Release 2
 	Greenville 1
-	Sihanouk 1
 	Sante 1
-	Change 1
-	Know 1
 	Gen-Probe 1
 	Kate 1
 	Hees 1
+	Hoe 1
 	God 1
 	Angelo 1
+	Die 1
 	Bar 1
-	Go 1
 	Jolt 1
 	Ba3 1
 	Eve 1
 	Save 1
 	Stop 1
-	REVIEW 1
 	Soo 1
 	Reebok 1
-	Err 1
-EX RB 35
-	there 35
+	Got 1
+NN VBN 35
+	set 8
+	run 5
+	cut 4
+	put 3
+	torn 2
+	fed 1
+	split 1
+	thought 1
+	upset 1
+	misunderstood 1
+	cast 1
+	overthrown 1
+	blown 1
+	overload 1
+	Cast 1
+	hit 1
+	crept 1
+	deprived 1
+VBP JJ 34
+	dry 10
+	open 5
+	mature 2
+	flip 1
+	receivable 1
+	holy 1
+	clever 1
+	FM 1
+	free 1
+	own 1
+	moderate 1
+	keen 1
+	hapless 1
+	express 1
+	inherent 1
+	fluctuate 1
+	gon 1
+	sound 1
+	double 1
+	apt 1
 VBP VBD 33
 	put 4
-	bet 3
 	lay 3
 	let 2
 	tore 2
-	quit 2
+	bet 2
+	cut 2
 	dreamt 1
 	underwent 1
 	ate 1
@@ -1830,22 +1815,176 @@ VBP VBD 33
 	undertook 1
 	dug 1
 	allowed 1
-	cut 1
 	sang 1
+	resold 1
 	forecast 1
 	underwrote 1
 	wept 1
 	swore 1
+	quit 1
 	cast 1
 	lent 1
 	set 1
 	Were 1
-VB VBD 33
-	put 7
-	cut 6
+DT NN 29
+	half 29
+JJR NN 29
+	cleaner 8
+	newer 6
+	leather 2
+	cooler 2
+	copier 2
+	fighter 2
+	offender 1
+	savvier 1
+	rubber 1
+	gender 1
+	wicker 1
+	nicer 1
+	lighter 1
+VBG NNP 28
+	Learning 14
+	Excluding 6
+	Scoring 1
+	Change-ringing 1
+	Curdling 1
+	Mourning 1
+	Programming 1
+	Eavesdropping 1
+	Building 1
+	Buying 1
+VBD VB 28
+	let 6
+	spread 5
+	read 4
+	licensed 3
+	build 2
+	mow 1
+	become 1
+	cut 1
+	hit 1
+	'til 1
+	tread 1
+	wrack 1
+	upset 1
+NN JJR 26
+	freer 3
+	flier 2
+	stricter 2
+	gentler 1
+	creamier 1
+	steadier 1
+	fancier 1
+	murkier 1
+	happier 1
+	kroner 1
+	shallower 1
+	heftier 1
+	naughtier 1
+	lumpier 1
+	tastier 1
+	fuzzier 1
+	speedier 1
+	taller 1
+	tamer 1
+	reseller 1
+	darker 1
+	rougher 1
+NNS JJ 25
+	consumer-goods 3
+	apples 3
+	high-stakes 2
+	co-chairmen 2
+	Chinese 1
+	human-resources 1
+	public-works 1
+	misrepresents 1
+	backwards 1
+	seamen 1
+	read-my-lips 1
+	niche-itis 1
+	Niche-itis 1
+	Japanese 1
+	long-term 1
+	crass 1
+	ficus 1
+	'60s 1
+	bogus 1
+NNP RB 25
+	Likewise 6
+	Out 5
+	Nearby 4
+	Again 2
+	Too 2
+	Little 1
+	Verbatim 1
+	Always 1
+	Behind 1
+	First 1
+	Thrice 1
+DT WDT 25
+	that 25
+CC RB 24
+	neither 14
+	either 10
+VBN NN 23
+	seed 8
+	beat 3
+	wound 2
+	forecast 2
+	amplified 2
+	abducted 2
+	hatred 1
+	psyllium 1
+	mink 1
+	thought 1
+VBD NN 23
+	seed 5
+	hit 3
+	bid 2
+	woodwind 1
+	wound 1
+	forecast 1
+	spread 1
+	prefecture 1
+	cloud 1
+	fell 1
+	watershed 1
+	accused 1
+	wad 1
+	saw 1
+	underscore 1
+	ground 1
+VBN NNP 23
+	Delmed 5
+	Said 2
+	Lyphomed 1
+	SIGNALED 1
+	Arrested 1
+	Accused 1
+	Tilted 1
+	Announced 1
+	Retired 1
+	Mechanized 1
+	HomeFed 1
+	Illustrated 1
+	Undeterred 1
+	Heard 1
+	REQUIRED 1
+	CHANGED 1
+	Affiliated 1
+	Unamused 1
+IN JJ 21
+	next 11
+	outside 3
+	off 3
+	Outside 3
+	minus 1
+VB VBD 21
 	lay 5
 	Were 2
 	leapt 1
+	put 1
 	underwent 1
 	befell 1
 	forecast 1
@@ -1858,655 +1997,465 @@ VB VBD 33
 	slept 1
 	paled 1
 	beat 1
-VBP JJ 32
-	dry 10
-	open 4
-	own 2
-	flip 1
-	holy 1
-	clever 1
-	FM 1
-	welcome 1
-	free 1
-	moderate 1
-	keen 1
-	hapless 1
-	express 1
-	counter 1
-	mature 1
-	inherent 1
-	gon 1
-	double 1
-	apt 1
-NNP RB 31
-	Likewise 6
-	Out 5
-	Nearby 4
-	Again 2
-	First 2
-	Too 2
-	Little 1
-	Healthcare 1
-	Rather 1
-	Course 1
-	Always 1
-	Insofar 1
-	N'T 1
-	Thrice 1
-	Better 1
-	Round 1
-VBN NN 31
-	seed 8
-	forecast 3
-	beat 3
-	wound 2
-	recorded 2
-	abducted 2
-	handicapped 2
-	Seed 1
-	hatred 1
-	psyllium 1
-	cost 1
-	tied 1
-	thoroughbred 1
-	transferred 1
-	mink 1
-	hit 1
-VBD NN 30
-	seed 5
-	forecast 4
-	bid 2
-	spread 2
-	cost 2
-	woodwind 1
-	wound 1
-	prefecture 1
-	cloud 1
-	thoroughbred 1
-	intended 1
-	cut 1
-	fell 1
-	watershed 1
-	accused 1
-	tout 1
-	wad 1
-	saw 1
-	converted 1
-	recorded 1
-JJ IN 29
-	worth 15
-	near 6
-	like 4
-	next 2
-	outside 1
-	underneath 1
-IN JJ 27
-	next 13
-	Outside 4
-	outside 3
-	off 3
-	past 2
-	near 1
-	minus 1
-DT NN 26
-	half 26
-VBD VB 25
-	spread 5
-	let 5
-	build 3
-	licensed 2
-	mow 1
-	become 1
-	forecast 1
-	'til 1
-	read 1
-	tread 1
-	upset 1
-	surround 1
-	underscore 1
-	broadcast 1
-CC RB 24
-	neither 14
-	either 10
-JJR NN 23
-	cleaner 5
-	leather 2
-	rubber 2
-	copier 2
-	slimmer 2
-	fighter 2
-	offender 1
-	savvier 1
-	Broiler 1
-	thinner 1
-	cooler 1
-	gender 1
-	wicker 1
-	nastier 1
-JJ VBP 22
-	fit 5
-	live 4
+EX RB 21
+	there 21
+JJ VBP 21
+	fit 4
+	live 3
 	cross 3
 	flush 1
 	disassemble 1
-	retail 1
-	have-not 1
-	perchlorate 1
+	consummate 1
+	bankrupt 1
 	unlock 1
 	shy 1
+	total 1
 	understate 1
+	waive 1
 	select 1
 	empty 1
-VBN NNP 22
-	Delmed 5
-	Said 2
-	Undeterred 2
-	Lyphomed 1
-	Specialized 1
-	SIGNALED 1
-	Armed 1
-	Arrested 1
-	Laundered 1
-	Announced 1
-	Retired 1
-	Mechanized 1
-	Groused 1
-	HomeFed 1
-	Heard 1
-	Unamused 1
-NNP CD 21
-	Nine 3
-	Fifteen 2
-	Sixty 2
-	53rd 1
-	300ZX 1
-	Q45 1
-	14-Sept. 1
-	30-Nov. 1
-	Forty 1
-	60 1
-	B2 1
-	A$ 1
-	Three 1
-	SKr29 1
-	SKr20 1
-	SKr225 1
-	Ba3 1
-NNP DT 21
-	A 17
-	The 2
-	All 1
-	This 1
-NN JJR 21
-	freer 3
-	flier 2
-	stricter 2
-	elder 2
-	fuller 1
-	gentler 1
-	happier 1
-	harsher 1
-	shallower 1
-	heftier 1
-	crunchier 1
-	speedier 1
-	taller 1
-	tamer 1
-	darker 1
-	rougher 1
-RB JJR 20
-	better 19
-	earlier 1
-JJ CD 20
-	50-50 4
-	p53 3
-	ten 2
-	ninety 1
-	19-year-olds 1
-	twenty 1
-	1-million-plus 1
-	Forty-five 1
-	148-a-share 1
-	twelve 1
-	thirty 1
-	1-to-1 1
-	35mm 1
-	2,500-per-job 1
-RB VB 20
-	close 15
-	double 3
-	back 1
-	underscore 1
-VBZ POS 18
-	's 17
-	'S 1
-DT CC 17
-	both 9
-	Neither 4
-	either 4
-NNP VBG 17
-	Keeping 4
-	Scoring 2
-	Designing 2
-	Walking 1
-	Moving 1
-	Boeing 1
-	PILING 1
-	Bendix\/King 1
-	Peeking 1
-	Smiling 1
-	Stumbling 1
-	Emerging 1
-VB VBN 16
-	come 6
-	cut 3
-	hurt 2
-	undergone 1
-	been 1
-	run 1
-	forgot 1
-	Come 1
-NN CD 16
-	one 14
-	fourteen 1
-	eleven 1
-JJS NN 16
-	Midwest 12
-	southwest 3
-	priest 1
-NNP VBP 15
-	Are 3
-	Gotta 2
-	Trim 2
-	Make 2
-	Seek 1
-	Hold 1
-	Hit 1
-	Credit 1
-	Slay 1
-	Control 1
-VBD NNP 15
-	Said 8
-	Offered 1
-	Gave 1
-	TOOK 1
-	Heard 1
-	SHOULD 1
-	DIED 1
-	BRACED 1
-CD NN 14
-	one 14
-NNP IN 14
-	Against 5
-	Behind 4
-	Though 2
-	A$ 1
-	Beyond 1
-	Throughout 1
-CC DT 14
-	Either 7
-	neither 7
-VBD VBP 14
-	come 3
-	applaud 2
-	involved 1
-	Wrote 1
-	mighta 1
-	offset 1
-	read 1
-	wrack 1
-	surround 1
-	burst 1
-	build 1
-NN IN 14
-	albeit 3
-	worth 3
-	underneath 2
-	minus 2
-	behind 1
-	opposite 1
-	amongst 1
-	lest 1
-NNS JJ 13
-	apples 2
-	Chinese 1
-	public-works 1
-	sideways 1
-	backwards 1
-	Japanese 1
-	damn-the-torpedoes 1
-	crass 1
-	emeritus 1
-	bogus 1
-	big-bucks 1
-	legal-services 1
-NNS RB 13
-	afterwards 4
-	sideways 2
-	alas 2
-	indoors 1
-	hereabouts 1
-	Afterwards 1
-	backwards 1
-	forwards 1
-VBN VB 13
-	become 2
+VBN VB 21
+	put 4
+	come 2
+	set 2
 	reset 2
+	become 1
 	run 1
 	hamstrung 1
 	offset 1
+	Worn 1
 	bid 1
 	expected 1
 	build 1
 	spread 1
 	cost 1
 	read 1
-VB JJR 13
-	better 6
-	freer 2
-	redder 2
-	colder 1
-	fairer 1
-	crunchier 1
-RB DT 13
-	no 9
-	No 4
-RB UH 12
-	Well 11
-	No 1
-RP IN 11
-	up 2
-	out 2
-	off 2
+JJ IN 20
+	like 6
+	near 4
+	worth 2
+	down 2
+	Past 2
+	outside 1
+	underneath 1
+	past 1
+	next 1
+RB DT 16
+	no 11
+	No 5
+VB VBN 15
+	come 5
+	hurt 3
+	cut 2
+	undergone 1
+	been 1
+	run 1
+	forgot 1
+	Come 1
+RB JJR 15
+	better 11
+	earlier 3
+	longer 1
+RP IN 14
+	up 4
+	out 3
+	off 3
 	over 2
 	UP 2
-	down 1
-JJ JJR 11
-	earlier 5
+VB JJR 14
+	better 5
+	lower 5
+	freer 2
+	colder 1
+	fairer 1
+JJ JJR 14
+	earlier 7
 	stiffer 3
 	gloomier 1
 	stingier 1
 	stricter 1
-NNP JJS 10
-	HealthVest 5
-	Best 3
-	Modest 1
-	Longest 1
-JJ JJS 9
-	rape-and-incest 2
-	student-test 1
-	lightest 1
-	oldest 1
-	rabbit-test 1
-	secondbiggest 1
-	second-highest 1
-	second-deadliest 1
-NNP VBN 9
-	Taken 2
-	Clad 1
-	JAILED 1
-	HomeFed 1
-	Been 1
-	Bitten 1
-	Disgusted 1
-	United 1
+	slimmer 1
+VBD NNP 14
+	Said 8
+	Gave 1
+	Heard 1
+	SHOULD 1
+	Spotted 1
+	DIED 1
+	BRACED 1
+RB CC 14
+	Yet 14
+NN IN 14
+	albeit 3
+	worth 2
+	underneath 2
+	behind 1
+	pro 1
+	irrespective 1
+	amongst 1
+	na 1
+	lest 1
+	courtesy 1
+NNP IN 13
+	Against 5
+	Though 4
+	Behind 3
+	Throughout 1
+NNP DT 13
+	A 9
+	The 2
+	All 1
+	This 1
+VBD VBP 13
+	come 3
+	applaud 2
+	surround 2
+	Wrote 1
+	mighta 1
+	offset 1
+	hurt 1
+	burst 1
+	build 1
+NNP VBP 13
+	Are 3
+	Trim 2
+	Seek 1
+	Akzo 1
+	Credit 1
+	LOOM 1
+	Thrive 1
+	Slay 1
+	KKR 1
+	Find 1
+RB UH 13
+	Well 13
+NNS RB 12
+	afterwards 4
+	sideways 3
+	indoors 1
+	hereabouts 1
+	Afterwards 1
+	backwards 1
+	forwards 1
+VBZ POS 11
+	's 11
+CD NN 11
+	one 11
+NNP VBG 11
+	Scoring 3
+	Designing 2
+	Shining 1
+	Walking 1
+	Moving 1
+	Bendix\/King 1
+	Smiling 1
+	Stumbling 1
+NN CD 10
+	one 6
+	fourteen 1
+	eleven 1
+	89108 1
+	Twenty-one 1
+NNP CD 10
+	Nine 3
+	Sixty 2
+	Fifteen 1
+	14-Sept. 1
+	Forty 1
+	60 1
+	Three 1
+JJ CD 10
+	ten 2
+	ninety 1
+	50-50 1
+	twenty 1
+	Forty-five 1
+	twelve 1
+	thirty 1
+	1-to-1 1
+	35mm 1
+JJS NN 9
+	newest 7
+	priest 1
+	southwest 1
 NNS PRP 9
 	theirs 8
 	hers 1
-VB RB 9
-	Please 3
-	double 1
-	ingest 1
-	back 1
-	likewise 1
-	awhile 1
-	better 1
-NNP UH 8
-	Yeah 2
-	Hello 2
-	Wham 1
-	Amen 1
-	Okay 1
-	Wow 1
-SYM NN 8
-	r 3
-	x 2
-	b 2
-	c 1
-JJR NNP 7
-	Higher 4
-	Shorter 1
-	Closer 1
-	Bigger 1
-WDT DT 7
-	that 7
-VBN VBP 7
-	come 6
-	read 1
-RB CC 7
-	Yet 7
-NNP MD 7
-	Will 4
-	Should 3
-RB JJS 7
-	best 5
-	highest 2
-JJR JJ 7
+NNP JJS 9
+	HealthVest 4
+	Best 3
+	Modest 1
+	Longest 1
+NNP FW 9
+	di 4
+	Poppea 1
+	Libera 1
+	La 1
+	Familia 1
+	de 1
+CD NNP 8
+	Four 4
+	300ZX 1
+	OS\/2 1
+	TVS 1
+	B2 1
+JJR JJ 8
 	clever 3
 	better 1
 	money-manager 1
+	rubber 1
 	cavalier 1
 	sober 1
-CD NNP 7
-	727 3
-	TVS 1
-	Four 1
-	Seventy 1
-	747 1
-PRP PRP$ 6
-	her 6
-NNP VBZ 6
-	Seizes 1
+CD JJ 8
+	p53 1
+	PS\/2 1
+	273-121 1
+	97-1 1
+	250-170 1
+	10-2 1
+	zero 1
+	67-31 1
+NNP UH 8
+	Yeah 2
+	Hello 2
+	Amen 1
+	Boy 1
+	Okay 1
+	Wow 1
+JJ JJS 7
+	rape-and-incest 2
+	student-test 1
+	oldest 1
+	rabbit-test 1
+	second-highest 1
+	second-deadliest 1
+VBP RB 7
+	beforehand 1
+	aloft 1
+	upstream 1
+	Again 1
+	counter 1
+	inland 1
+	underscore 1
+CC IN 7
+	plus 6
+	versus 1
+NNP VBZ 7
+	Earns 1
 	Sparks 1
+	delta 1
+	Begins 1
 	Has 1
 	Shows 1
 	Fires 1
-	Proves 1
-NN MD 6
-	will 5
-	might 1
+JJR RB 7
+	better 5
+	hither 1
+	longer 1
+JJR NNP 7
+	Higher 4
+	Broiler 1
+	Closer 1
+	Bigger 1
+NNP VBN 7
+	Clad 1
+	CALLED 1
+	HomeFed 1
+	BATTLED 1
+	Purloined 1
+	Been 1
+	United 1
+RBS JJS 7
+	most 7
+RB JJS 7
+	best 6
+	highest 1
+WDT DT 7
+	that 7
+VB RB 7
+	Please 3
+	back 2
+	double 1
+	likewise 1
+CC DT 6
+	neither 5
+	Neither 1
+VBN VBP 6
+	come 4
+	read 1
+	put 1
+VBP VBZ 6
+	ai 2
+	profess 1
+	amass 1
+	outstrips 1
+	whizzes 1
+VBZ NNP 6
+	APPEARS 1
+	Dies 1
+	Marks 1
+	Reveals 1
+	Lives 1
+	Comes 1
+NNP MD 6
+	Will 4
+	Should 2
 VBP VBN 6
 	run 2
 	blown 1
-	outdid 1
-	hurt 1
 	involved 1
+	become 1
+	come 1
 NN RP 6
 	out 3
 	down 2
 	back 1
-FW NNP 6
-	du 2
-	Le 1
-	Lac 1
-	Aw 1
-	AuCoin 1
 NN FW 6
 	quo 3
 	gon 1
 	na 1
 	theatre 1
-POS VBZ 6
-	's 6
+DT CC 6
+	both 3
+	either 2
+	Neither 1
 NN JJS 5
 	finest 1
 	bitterest 1
 	fullest 1
 	fittest 1
 	blackest 1
-VBP RB 5
-	beforehand 1
-	aloft 1
-	upstream 1
-	Again 1
-	inland 1
-FW NN 5
-	le 1
-	uh 1
-	heck 1
-	ox 1
-	etc 1
-VBP VBZ 5
-	ai 2
-	outstrips 1
-	whizzes 1
-	surpass 1
+NN PRP 5
+	I 5
 NNP JJR 5
 	Worse 4
 	Higher 1
-RP RB 5
-	up 3
-	down 2
 CD PRP 5
 	One 3
 	one 2
-NNP FW 5
-	di 4
-	Poppea 1
-RBS JJS 5
-	most 5
-CD JJ 5
-	394-21 1
-	273-121 1
-	10-2 1
-	zero 1
-	67-31 1
-JJ RBR 5
-	further 3
-	earlier 2
-'' POS 5
-	' 5
+NN|JJ NN 5
+	blanket 5
+NN MD 5
+	will 4
+	might 1
+JJS NNP 5
+	Midwest 2
+	HealthVest 2
+	Biggest 1
 IN NNP 5
 	Inside 2
 	Though 2
 	AS 1
-PRP VBZ 5
-	s 5
-NN PRP 4
-	I 4
-JJR RB 4
-	longer 2
-	hither 1
-	better 1
-IN VBP 4
-	like 4
-NN DT 4
-	another 2
-	half 2
-VBZ JJ 4
-	amiss 1
-	actives 1
-	emeritus 1
-	analogous 1
-JJ NNPS 4
-	Japanese 4
-NN|JJ NN 4
-	blanket 4
+VBP NNP 4
+	Have 2
+	MOST 1
+	Hess 1
+PRP PRP$ 4
+	her 4
+RB VB 4
+	close 2
+	double 1
+	back 1
+NN UH 4
+	heck 3
+	hello 1
+'' POS 4
+	' 4
+RP RB 4
+	up 3
+	off 1
 NNP VBD 4
 	Need 1
-	BATTLED 1
+	Backed 1
 	ARRIVED 1
 	Lost 1
-VBZ NNP 3
-	AGREES 1
-	Marks 1
-	Grows 1
-RBR RB 3
-	further 2
-	earlier 1
-NNS CD 3
-	'80s 2
-	16-year-olds 1
-VBP NNP 3
-	MOST 1
-	BOARD'S 1
-	Hess 1
-JJR VB 3
-	lower 2
-	smother 1
-VBD MD 3
-	'd 3
-NN CC 3
-	plus 3
+FW NNP 4
+	du 2
+	Lac 1
+	AuCoin 1
+POS VBZ 4
+	's 4
+NN PDT 4
+	half 2
+	Half 2
+VBG IN 3
+	Pending 2
+	assuming 1
+CD NNS 3
+	1980s 2
+	1970s 1
+VBG VBP 3
+	impeding 1
+	hamstrung 1
+	cling 1
+NN DT 3
+	another 2
+	half 1
+VBZ JJ 3
+	amiss 1
+	age-bias 1
+	analogous 1
+JJ NNPS 3
+	Japanese 3
 VB IN 3
 	lest 1
 	albeit 1
 	astride 1
 RB EX 3
 	There 3
+JJ PRP 3
+	ours 3
 NNP PRP 3
 	Me 2
 	Him 1
-VB NNS 3
-	refocus 2
-	trout 1
-VBZ NNPS 3
-	Includes 3
-JJ RP 3
-	off 3
-NN PDT 3
-	Half 2
-	half 1
-JJS NNP 3
-	HealthVest 2
-	Biggest 1
-RBR VB 2
-	further 2
-CD NNS 2
-	1980s 1
-	1970s 1
-VBG VBP 2
-	hamstrung 1
-	cling 1
-MD VBD 2
+JJS JJ 3
+	southwest 2
+	best 1
+FW NN 2
+	le 1
+	ox 1
+VBZ NN 2
+	trespass 1
+	amass 1
+VBZ IN 2
+	auspices 1
+	vis 1
+MD NN 2
+	will 1
+	must 1
+VBD MD 2
 	'd 2
-PRP POS 2
-	's 2
 VB UH 2
 	please 2
-CC IN 2
-	plus 2
-DT NNP 2
-	THE 2
-VB CD 2
-	2.007 1
-	SKr205 1
+RBR RB 2
+	better 1
+	earlier 1
+VBN NNS 2
+	handicapped 2
 VBP NNS 2
 	sweeps 1
 	dwarfs 1
 JJS RB 2
 	least 1
 	best 1
-NN VBZ 2
-	means 2
+JJ DT 2
+	half 2
 RBR JJ 2
 	further 2
 NNP PRP$ 2
 	My 2
+JJ RP 2
+	off 2
 VBG VB 2
 	wring 2
-VBZ NN 1
-	trespass 1
-CC FW 1
-	versus 1
 VBP JJR 1
 	smolder 1
 16 CD 1
 	15\/16 1
-DT JJ 1
-	half 1
-NN|JJ JJ 1
-	blanket 1
+VBD NNS 1
+	crippled 1
+PRP POS 1
+	's 1
 VBZ FW 1
 	ya 1
 JJR WP 1
@@ -2521,51 +2470,55 @@ CD VB 1
 	Think 1
 VBG RB 1
 	blinking 1
+DT NNP 1
+	THE 1
+VB CD 1
+	2.007 1
 UH JJ 1
 	OK 1
-WP WDT 1
-	what 1
-VBZ VB 1
-	amass 1
-WRB NN 1
-	why 1
-RB NNS 1
+FW UH 1
+	heck 1
+NNS IN 1
+	auspices 1
+RB VBZ 1
 	outlays 1
-32 CD 1
-	8\/32 1
-IN NN 1
+IN VB 1
 	like 1
 FW VB 1
 	Listen 1
 VB WP 1
 	whoever 1
-MD VB 1
-	will 1
-JJ PRP 1
-	ours 1
+IN NN 1
+	while 1
+JJR VB 1
+	smother 1
 VB JJS 1
 	easiest 1
 SYM NNP 1
 	A$ 1
-UH NNP 1
-	Yes 1
-UH NN 1
-	yes 1
-JJ FW 1
-	We've 1
+VB NNS 1
+	trout 1
 VBZ VBP 1
 	PAYS 1
-RB FW 1
-	versa 1
+JJ RBR 1
+	further 1
+NN CC 1
+	plus 1
 POS '' 1
 	' 1
-UH RB 1
-	yes 1
+SYM NN 1
+	b 1
+MD VBD 1
+	'd 1
+VBP MD 1
+	dare 1
 NNS VB 1
 	police 1
 RB VBG 1
 	running 1
-MD NN 1
-	must 1
+RB PDT 1
+	Quite 1
 VBP IN 1
 	nearest 1
+RB VBP 1
+	smack 1
