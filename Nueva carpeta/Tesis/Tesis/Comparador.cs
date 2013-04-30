@@ -4,10 +4,34 @@ using System.IO;
 using System.Linq;
 
 namespace ConsoleApplication1
-{
-    internal class Comparador
+{    
+    public interface ITablaDeTraduccion
     {
-        #region Variables
+        List<string> ObtenerTraduccionPara(string tag2);
+        bool ContieneTraduccionPara(string tag2);
+        string ObtenerTraduccionInversaPara(string tagFila);
+    }
+
+    public class TablaDeTraducciónVacía: ITablaDeTraduccion
+    {
+        public List<string> ObtenerTraduccionPara(string tag)
+        {
+            return new List<string>{tag};
+        }
+
+        public bool ContieneTraduccionPara(string tag)
+        {
+            return true;
+        }
+
+        public string ObtenerTraduccionInversaPara(string tagFila)
+        {
+            return tagFila;
+        }
+    }
+
+    public class TraducciónTreebankABNC: ITablaDeTraduccion
+    {
         private static Dictionary<string, List<string>> traducciónTreebankABNC = new Dictionary<string, List<string>>
                                                                                      {
                                                                                           {"JJ", new List<string>{"AJ0", "ORD"} },
@@ -65,13 +89,38 @@ namespace ConsoleApplication1
 {"``", new List<string>{"PUQ"} },
 {"`", new List<string>{"PUQ"} }
 };
+
+        public List<string> ObtenerTraduccionPara(string tag)
+        {
+            return traducciónTreebankABNC[tag];
+        }
+
+        public bool ContieneTraduccionPara(string tag)
+        {
+            return traducciónTreebankABNC.ContainsKey(tag);
+        }
+
+        public string ObtenerTraduccionInversaPara(string tag)
+        {
+            var resultado = tag;
+            var traducción = traducciónTreebankABNC.FirstOrDefault(trad => trad.Value.Contains(tag));
+
+            if( !string.IsNullOrWhiteSpace(traducción.Key))
+                resultado = traducción.Key;
+            
+            return resultado;
+        }
+    }
+        
+
+    public class Comparador
+    {
+        #region Variables        
+
+        private ITablaDeTraduccion tablaDeTraduccion;
         private MatrizEnProceso matrizEnProceso;
         private string archGoldStandard, archParaComparar, salidaMatrizDeConf, titulo, tituloFila, tituloColumna, archivoTabla;
-        private bool generarMatrizDeConfusionParaLatex, compararContraBNC, hacerTabla;
-                //compararContraBNC = false
-                //hacerTabla = false
-                //string titulo = ""
-                //tituloFila = "", tituloColumna = "", archivoTabla = "", 
+        private bool generarMatrizDeConfusionParaLatex, hacerTabla;        
         #endregion
 
         #region Métodos
@@ -103,24 +152,25 @@ namespace ConsoleApplication1
             return distancia;
         }
 
-        private bool ComparaciónSimple(string tag1, string tag2)
-        {
-            return tag1 == tag2;
-        }
-
-        private bool CompararBNC_Treebank(string tagBNC, string tagTreebank)
+        private bool CompararEtiquetas(string tag1 /*BNC*/, string tag2 /*Treebank*/)
         {
             var resultado = false;
-            if (traducciónTreebankABNC.ContainsKey(tagTreebank))
+                
+            if (tablaDeTraduccion.GetType() != typeof(TablaDeTraducciónVacía))
             {
-                var tagsBNC = tagBNC.Split('-');
-                var tagsTraducidosABNC = traducciónTreebankABNC[tagTreebank];
-                resultado = tagsTraducidosABNC.Intersect(tagsBNC).Any();    
+                if (tablaDeTraduccion.ContieneTraduccionPara(tag2))
+                {
+                    var tagsBNC = tag1.Split('-');
+                    var tagsTraducidosABNC = tablaDeTraduccion.ObtenerTraduccionPara(tag2);
+                    resultado = tagsTraducidosABNC.Intersect(tagsBNC).Any();
+                }
             }
+            else
+                resultado = tag1 == tag2;
+                
             return resultado;
         }
-
-        private void Comparar(string palabra, string lineaGoldStandard, string lineaPrueba, Func<string, string, bool> compare)
+        private void Comparar(string palabra, string lineaGoldStandard, string lineaPrueba)
         {
             var partesLineaDePrueba = lineaPrueba.TrimEnd().Split();
             var tagDePrueba = partesLineaDePrueba.Length > 1 ? partesLineaDePrueba.LastOrDefault() : "";
@@ -131,19 +181,17 @@ namespace ConsoleApplication1
             if (!string.IsNullOrEmpty(tagDePrueba) && !string.IsNullOrEmpty(tagGoldStandard))
             {
                 matrizEnProceso.SumarEtiqueta();
-
-                var acierto = compare(tagGoldStandard, tagDePrueba);
+                var acierto = CompararEtiquetas(tagGoldStandard, tagDePrueba);
                 
                 if (!acierto)
                     matrizEnProceso.AgregarError(tagGoldStandard, tagDePrueba, palabra);
             }
         }
-                
         
         /// <summary>
         ///   Lee los archivos y va generando la matriz de confusión.
         /// </summary>
-        private MatrizDeConfusión GenerarMatrizDeConfusión(string archivoGoldStandard, string archivoParaComparar, bool compararContraBNC = false)
+        private MatrizDeConfusión GenerarMatrizDeConfusión(string archivoGoldStandard, string archivoParaComparar)
         {
             matrizEnProceso = new MatrizEnProceso();
             int i = 0, j = 0, punto = 1;
@@ -157,14 +205,9 @@ namespace ConsoleApplication1
             {
                 var palabraGoldStandard = aGoldStandard[i].Split('\t')[0].TrimEnd();
                 var palabraAComparar = aParaComparar[j].Split('\t')[0].TrimEnd();
-                if ( palabraGoldStandard == palabraAComparar )
-                {
-                    if(compararContraBNC)
-                        Comparar(palabraGoldStandard, aGoldStandard[i], aParaComparar[j], CompararBNC_Treebank);
-                    else
-                        Comparar(palabraGoldStandard, aGoldStandard[i], aParaComparar[j], ComparaciónSimple);
-                }                    
-
+                if ( palabraGoldStandard == palabraAComparar )                                    
+                    Comparar(palabraGoldStandard, aGoldStandard[i], aParaComparar[j]);                    
+                                    
                 BuscarNuevasPosicionesSiCorresponde(aGoldStandard, aParaComparar, tamGoldStandard, tamParaComparar, ref i, ref j);
 
                 if (i > parte*punto)
@@ -203,14 +246,14 @@ namespace ConsoleApplication1
         }
         #endregion
 
-        public void EstablecerOpciones(bool generarMatrizDeConfusionParaLatex, string titulo = "", string tituloFila = "", string tituloColumna = "", string archivoTabla = "", bool compararContraBnc = false, bool hacerTabla = false)
+        public void EstablecerOpciones(bool generarMatrizDeConfusionParaLatex, string titulo = "", string tituloFila = "", string tituloColumna = "", string archivoTabla = "", ITablaDeTraduccion tablaDeTraduccion = null, bool hacerTabla = false)
         {
             this.titulo = titulo;
             this.tituloFila = tituloFila;
             this.tituloColumna = tituloColumna;
             this.archivoTabla = archivoTabla;
             this.generarMatrizDeConfusionParaLatex = generarMatrizDeConfusionParaLatex;
-            compararContraBNC = compararContraBnc;
+            this.tablaDeTraduccion = tablaDeTraduccion ?? new TablaDeTraducciónVacía();
             this.hacerTabla = hacerTabla;
         }
         public Comparador(string archGoldStandard, string archParaComparar, string salidaMatrizDeConf)
@@ -227,11 +270,11 @@ namespace ConsoleApplication1
         }
         public void Comparar()
         {
-            var matrizDeConfusión = GenerarMatrizDeConfusión(archGoldStandard, archParaComparar, compararContraBNC);
+            var matrizDeConfusión = GenerarMatrizDeConfusión(archGoldStandard, archParaComparar);
             var escritor = new EscritorDeMatrizDeConfusión(salidaMatrizDeConf, matrizDeConfusión);
-
+            
             if (generarMatrizDeConfusionParaLatex)
-                escritor.EscribirMatrizDeConfParaLatex(titulo, tituloFila, tituloColumna);
+                escritor.EscribirMatrizDeConfParaLatex(titulo, tituloFila, tituloColumna, tablaDeTraduccion);
             else
                 escritor.EscribirMatrizDeConfusión(titulo, tituloFila, tituloColumna);
 

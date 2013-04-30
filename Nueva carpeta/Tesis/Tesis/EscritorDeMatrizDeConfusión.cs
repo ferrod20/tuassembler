@@ -51,7 +51,7 @@ namespace ConsoleApplication1
             matrizDeConfusión.OrdenarPorMayorError();
 
             foreach (var celda in matrizDeConfusión)
-            {
+            {                
                 salida.WriteLine(celda.TagGoldStandard + " " + celda.TagDePrueba + " " + celda.TotalDePalabras);
                 foreach (var palabra in celda.TomarPalabrasDeMayorError(40))
                     salida.WriteLine("\t" + palabra.Key + " " + palabra.Value);
@@ -59,7 +59,7 @@ namespace ConsoleApplication1
 
             salida.Close();
         }
-        public void EscribirMatrizDeConfParaLatex(string titulo, string tituloFila, string tituloColumna)
+        public void EscribirMatrizDeConfParaLatex(string titulo, string tituloFila, string tituloColumna, ITablaDeTraduccion tablaDeTraduccion)
         {
             TextWriter salida = new StreamWriter(archivoDeSalida);
             var tags = matrizDeConfusión.TomarLosDeMayorError(10);
@@ -73,7 +73,11 @@ namespace ConsoleApplication1
             var erroresTotales = 0;
             foreach (var tagFila in tagsFila)
             {
-                salida.Write(@"\textbf{" + tagFila + "}");
+                var tagFilaAMostrar = tagFila;
+                if(tablaDeTraduccion != null)
+                    tagFilaAMostrar = tablaDeTraduccion.ObtenerTraduccionInversaPara(tagFila);
+
+                salida.Write(@"\textbf{" + tagFilaAMostrar + "}");
                 foreach (var tagCol in tagsColumna)
                 {
                     salida.Write(" & ");

@@ -1,4 +1,4 @@
-
+wsjCompD+NFI.mc
 
 %Aciertos: 1093694 ( 96,2066047511563% )
 %Errores: 43124
