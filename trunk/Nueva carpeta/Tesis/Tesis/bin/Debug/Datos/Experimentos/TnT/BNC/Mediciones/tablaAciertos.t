@@ -1,7 +1,5 @@
 wsj.mc		&92,46
 wsj+NFI.mc		&92,73
-wsj.mc		&92,46
-wsj+NFI.mc		&92,73
 wsjCompC1.mc		&91,75
 wsjCompC1+NFI.mc		&92,59
 wsjCompC2.mc		&91,74

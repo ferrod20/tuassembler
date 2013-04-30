@@ -3,18 +3,11 @@ El primer experimento consiste en medir (generando una matriz de confusión) la i
 
 Como se mencionó anteriormente la información extraída de Cobuild, es la unión de ejemplos con la información gramatical correspondiente a la palabra definida.
 A continuación se presenta un pequeño extracto:
-
+\\\\
 \noindent
 \begin{small}
 \emph{
 \begin{tabular}{l l}
-Cats	&NNS \\
-are\\
-often\\
-kept\\
-as\\
-pets\\
-.\\
 She\\
 put\\
 out\\
@@ -23,9 +16,10 @@ hand\\
 and\\
 stroked\\
 the\\
-cat	&NN\\
+\textbf{cat}	&\textbf{NN}\\
 softly\\
 ...\\
+\\
 ...\\
 domestic\\
 animals\\
@@ -33,27 +27,26 @@ such\\
 as\\
 dogs\\
 and\\
-cats	&NNS\\
+\textbf{cats}	&\textbf{NNS}\\
 .\\
 \end{tabular}}
 \end{small}
-\\\\
+\\\\\\
 Esta es la información extraída de Cobuild para la palabra \emph{cat}; la unión de los ejemplos\\
 \\
 \begin{small}
-\emph{Cats are often kept as pets.}\\
 \emph{She put out a hand and stroked the cat softly...}\\
 \emph{...domestic animals such as dogs and cats.}\\
 \end{small}
 \\
 Se puede notar la información gramatical expresada mediante las etiquetas NN y NNS para las palabras \emph{cat} y \emph{cats} respectivamente.
-La idea de este experimento será comparar estas etiquetas contra las etiquetas asignadas por el etiquetador automático TnT. Entonces se tomará este corpus plano (sin etiquetas), se lo etiquetará utilizando TnT entrenado con el corpus de entrenamiento Wall Street Journal (de ahora en más WSJ) \footnote{Wall Street Journal es un corpus anotado, parte del Penn Treebank} y luego se realizará la comparación.\\
+La idea de este experimento será comparar estas etiquetas contra las etiquetas asignadas por el etiquetador automático TnT. Entonces se tomará este corpus plano (sin etiquetas), se lo etiquetará utilizando TnT entrenado con el corpus de entrenamiento WSJ y luego se realizará la comparación.\\
 La matriz de confusión\footnote{Las matrices de confusión presentadas de aquí en adelante contienen las primeras 10 etiquetas de mayor error} generada a partir de dicha comparación es la siguiente:
 
 \input{../Tesis/Bin/Debug/Datos/Extraccion/Cobuild2Pasada.l}
 
 
-Se puede apreciar un alto porcentaje de aciertos entre las etiquetas extraídas de Cobuild (86,75\%) y las etiquetas asignadas por TnT. Este porcentaje indica que la información de etiquetas extraídas de Cobuild es consistente con las producidas por TnT. La mayoría de los errores se da en etiquetas VB, NN y JJ de Cobuild cuando son etiquetadas como NN, JJ y VBN por TnT respectivamente.
+Se puede apreciar un alto porcentaje de aciertos entre las etiquetas extraídas de Cobuild (87,58\%) y las etiquetas asignadas por TnT. Este porcentaje indica que la información de etiquetas extraídas de Cobuild es consistente con las producidas por TnT. La mayoría de los errores se da en etiquetas NN, JJ y VB de Cobuild cuando son etiquetadas como JJ, NN y VB y VBN por TnT respectivamente.
 A continuación se muestran algunas ejemplos de los errores:\\\\
 
 \noindent Etiquetado por TnT como NN pero extraído como VB de Cobuild

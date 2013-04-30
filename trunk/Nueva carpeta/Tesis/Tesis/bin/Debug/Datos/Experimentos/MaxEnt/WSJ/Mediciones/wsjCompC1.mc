@@ -1,4 +1,4 @@
-
+wsjCompC1.mc
 
 %Aciertos: 912305 ( 96,3023600968613% )
 %Errores: 35029

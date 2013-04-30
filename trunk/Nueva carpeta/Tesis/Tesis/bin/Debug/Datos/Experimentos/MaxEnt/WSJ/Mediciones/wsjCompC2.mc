@@ -1,4 +1,4 @@
-
+wsjCompC2.mc
 
 %Aciertos: 912321 ( 96,3034391031731% )
 %Errores: 35019

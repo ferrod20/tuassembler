@@ -1317,7 +1317,8 @@ namespace ConsoleApplication1
                 var compararContraBNC = args.Contains("-bnc");
 
                 var comparador = new Comparador(args[1], args[2], args[3]);
-                comparador.EstablecerOpciones(generarMatrizDeConfParaLatex, titulo, tituloFila, tituloColumna, archivoTabla, compararContraBNC, hacerTabla);
+                ITablaDeTraduccion tablaDeTraduccion = compararContraBNC? (ITablaDeTraduccion) new TraducciónTreebankABNC():new TablaDeTraducciónVacía();
+                comparador.EstablecerOpciones(generarMatrizDeConfParaLatex, titulo, tituloFila, tituloColumna, archivoTabla, tablaDeTraduccion, hacerTabla);
                 comparador.Comparar();
             }
         }

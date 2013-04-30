@@ -15,7 +15,7 @@
 \textbf{,} & - & - & - & - & - & - & \textbf{95405} & - & - & -\\
 \textbf{.} & - & - & - & - & - & - & - & \textbf{86486} & - & -\\
 \textbf{RB} & 296 & 211 & 40 & 994 & 113 & 17 & - & - & \textbf{81377} & -\\
-\textbf{PRP} & 14 & - & - & 2 & 18 & 5 & - & - & 1 & \textbf{73694}\\
+\textbf{IN} & 14 & - & - & 2 & 18 & 5 & - & - & 1 & \textbf{73694}\\
 \hline
 \end{tabular}
 \end{table}
