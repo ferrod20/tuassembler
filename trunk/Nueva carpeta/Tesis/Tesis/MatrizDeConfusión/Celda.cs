@@ -8,7 +8,7 @@ namespace ConsoleApplication1
         #region Variables de instancia
         public string TagDePrueba { get; private set; }
         public string TagGoldStandard {get; private set;}
-        private Dictionary<string, int> Palabras;
+        private Dictionary<string, int> palabras;
         #endregion
 
         #region Constructores
@@ -16,18 +16,18 @@ namespace ConsoleApplication1
         {
             TagDePrueba = tagDePrueba;
             TagGoldStandard = tagGoldStandard;
-            Palabras = new Dictionary<string, int> {{palabra, 1}};
+            palabras = new Dictionary<string, int> {{palabra, 1}};
         }
         #endregion
 
         #region Métodos
-        public bool Equals(Celda obj)
+        public bool Equals(Celda otraCelda)
         {
-            if (ReferenceEquals(null, obj))
+            if (ReferenceEquals(null, otraCelda))
                 return false;
-            if (ReferenceEquals(this, obj))
+            if (ReferenceEquals(this, otraCelda))
                 return true;
-            return Equals(obj.TagDePrueba, TagDePrueba) && Equals(obj.TagGoldStandard, TagGoldStandard);
+            return Equals(otraCelda.TagDePrueba, TagDePrueba) && Equals(otraCelda.TagGoldStandard, TagGoldStandard);
         }
 
         public override bool Equals(object obj)
@@ -62,19 +62,19 @@ namespace ConsoleApplication1
 
         public IEnumerable<KeyValuePair<string, int>> TomarPalabrasDeMayorError(int cuantas)
         {
-            return Palabras.OrderByDescending(s => s.Value).Take(cuantas);
+            return palabras.OrderByDescending(s => s.Value).Take(cuantas);
         }
         public int TotalDePalabras
         {
             get
             {
-                return Palabras.Sum(p => p.Value);
+                return palabras.Sum(p => p.Value);
             }
         }
         public void AgregarPalabra(string palabra)
         {
-            if (Palabras.AgregarSiNoExiste(palabra, 1))
-                Palabras[palabra]++;
+            if (palabras.AgregarSiNoExiste(palabra, 1))
+                palabras[palabra]++;
 
         }
     }

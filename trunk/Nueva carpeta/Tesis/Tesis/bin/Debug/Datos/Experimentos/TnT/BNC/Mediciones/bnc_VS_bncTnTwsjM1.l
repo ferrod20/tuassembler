@@ -1,12 +1,12 @@
-%Aciertos: 1842527 ( 92,1394337995995% )
-%Errores: 157189
-%Cantidad de tags: 1999716
+%Aciertos: 1842527 ( 92,1394798758823% )
+%Errores: 157188
+%Cantidad de tags: 1999715
 \begin{center}
 \begin{table}[H]
 \caption{Matriz de confusion para\\BNC$_{1}$ = BNC original contra\\TnT$_{2}$ = BNC etiquetado con TnT (entrenado con 1 mitad de WSJ)}\\	
 \begin{tabular}{| l | c | c | c | c | c | c | c | c | c | c | }
 \hline
- \backslashbox{\scriptsize{BNC$_{1}$}\kern-1em}{\kern-1em \scriptsize{TnT$_{2}$}}  &	\textbf{NNP}	&   \textbf{JJ}	&   \textbf{NN}	&   \textbf{VBN}	&   \textbf{NNS}	&   \textbf{WRB}	&   \textbf{NNPS}	&   \textbf{VBD}	&   \textbf{VBG}	&   \textbf{RB}	&   \hline\textbf{NN} & \textbf{26287} & \textbf{6528} & - & 187 & 783 & 3 & 36 & 169 & 1614 & 435\\
+ \backslashbox{\scriptsize{BNC$_{1}$}\kern-1em}{\kern-1em \scriptsize{TnT$_{2}$}}  &	\textbf{NNP}	&   \textbf{JJ}	&   \textbf{NN}	&   \textbf{VBN}	&   \textbf{NNS}	&   \textbf{WRB}	&   \textbf{NNPS}	&   \textbf{VBD}	&   \textbf{VBG}	&   \textbf{RB}	&   \hline\textbf{NN} & \textbf{26286} & \textbf{6528} & - & 187 & 783 & 3 & 36 & 169 & 1614 & 435\\
 \textbf{JJ} & \textbf{8503} & - & \textbf{2921} & \textbf{3713} & 64 & 1 & 28 & 476 & 2027 & 1238\\
 \textbf{DT} & 84 & \textbf{7763} & 232 & - & 1 & - & - & - & - & 976\\
 \textbf{RB} & 1157 & 2031 & \textbf{4455} & 30 & 515 & 1 & 1 & 8 & 42 & -\\
@@ -21,6 +21,6 @@
 \end{table}
 \end{center}
 
-%Sumatoria de errores: 100378
+%Sumatoria de errores: 100377
 \noindent Aciertos: 1.842.527 (92,14\%)\\
-\noindent Errores: 157.189 (7,86\%)\\
+\noindent Errores: 157.188 (7,86\%)\\

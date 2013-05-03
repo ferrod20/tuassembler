@@ -1,28 +1,28 @@
 wsjCompD+NFI.mc
 
-%Aciertos: 1093694 ( 96,2066047511563% )
-%Errores: 43124
+%Aciertos: 1093732 ( 96,2099474146257% )
+%Errores: 43086
 %Cantidad de tags: 1136818
 
 Errores
 |	|	CantidadDeErrores
-NN JJ 2984
-	chief 154
+NN JJ 2986
+	chief 135
 	past 69
-	public 49
+	public 47
 	net 45
 	stock-index 39
 	closing 39
-	real-estate 37
-	average 31
-	executive 30
+	real-estate 36
+	average 34
+	executive 32
 	minimum 28
 	bankruptcy-law 28
 	deficit-reduction 28
 	plastic 27
 	whole 26
 	composite 22
-	crude 21
+	crude 22
 	brief 19
 	official 18
 	petrochemical 17
@@ -34,27 +34,27 @@ NN JJ 2984
 	giant 14
 	racketeering 14
 	top 14
-	lending 14
 	maximum 14
 	loan-loss 14
 	junk-bond 14
 	military 13
+	lending 13
 	fellow 13
 	debt-limit 13
 	low 12
 	soybean 12
 	chromosome 12
+	department-store 12
 	black 12
 	individual 11
-	red 11
-JJ NN 2411
-	third-quarter 224
+JJ NN 2429
+	third-quarter 223
 	executive 164
-	chief 57
+	chief 96
 	pretax 54
-	firm 39
+	firm 40
 	fourth-quarter 39
-	net 35
+	net 36
 	record 33
 	benchmark 29
 	gold 28
@@ -66,36 +66,36 @@ JJ NN 2411
 	alternative 15
 	right 15
 	base 13
-	subject 13
 	% 13
+	subject 12
 	core 12
 	health-care 12
 	assistant 12
 	half 11
 	chemical 11
+	one-third 11
 	latter 11
 	buy-out 11
-	sell 11
-	favorite 10
+	Third-quarter 11
 	interest-rate 10
+	associate 10
 	dissident 10
-	one-third 10
 	mutual-fund 10
+	sell 10
 	general 10
-	Third-quarter 10
 	editorial 10
-	near-term 9
-	private-sector 9
+	favorite 9
 	capital 9
 	following 9
-NN NNP 2034
+	close 9
+NN NNP 2051
 	Revenue 116
 	A. 37
 	Trading 29
 	Industry 24
 	Bond 24
-	No. 22
 	Treasury 21
+	No. 20
 	Market 20
 	Company 18
 	Stock 18
@@ -103,6 +103,7 @@ NN NNP 2034
 	Investment 17
 	Series 17
 	HDTV 16
+	Interest 15
 	Time 14
 	State 13
 	Money 13
@@ -110,7 +111,6 @@ NN NNP 2034
 	Oil 13
 	Ad 12
 	Business 12
-	Interest 12
 	S&P 11
 	Housing 11
 	Sterling 10
@@ -129,9 +129,9 @@ NN NNP 2034
 	City 8
 	Food 8
 	Labor 7
-RB IN 1826
-	about 675
-	as 471
+RB IN 1824
+	about 677
+	as 465
 	in 69
 	because 64
 	before 64
@@ -139,7 +139,7 @@ RB IN 1826
 	on 46
 	around 37
 	over 35
-	up 31
+	up 33
 	ago 29
 	About 25
 	As 24
@@ -149,7 +149,7 @@ RB IN 1826
 	through 18
 	after 15
 	along 15
-	down 13
+	down 12
 	that 9
 	So 9
 	behind 8
@@ -170,15 +170,15 @@ RB IN 1826
 	Alongside 1
 	By 1
 	for 1
-NNP NN 1592
+NNP NN 1553
 	Friday 66
 	ABC 59
 	TV 42
 	Aerospace 29
-	Index 28
 	CD 27
+	Index 25
 	Chapter 24
-	Thursday 23
+	Thursday 21
 	Series 19
 	Bureau 18
 	Ministry 18
@@ -199,23 +199,23 @@ NNP NN 1592
 	Senate 11
 	Title 11
 	GNP 11
-	mart 11
 	Market 10
+	Bond 10
 	Class 10
-	GE 10
 	District 10
+	mart 10
 	Dictaphone 10
 	Federation 9
 	System 9
-	Bond 9
 	Section 9
 	Academy 9
+	GE 9
 	Board 9
-VBN VBD 1477
+VBN VBD 1462
 	ended 148
 	called 72
-	said 69
-	had 69
+	said 68
+	had 66
 	made 38
 	offered 31
 	reported 23
@@ -223,9 +223,9 @@ VBN VBD 1477
 	increased 22
 	sold 16
 	opened 15
-	brought 14
 	earned 14
 	asked 14
+	brought 13
 	announced 13
 	bought 13
 	added 13
@@ -237,71 +237,71 @@ VBN VBD 1477
 	received 11
 	held 10
 	gained 10
-	continued 10
 	lost 10
+	continued 9
 	capped 9
 	introduced 9
 	filed 9
 	reached 8
-	approved 8
 	found 8
+	leased 7
 	released 7
 	expanded 7
 	thought 7
 	provided 7
+	approved 7
 	spent 6
-	leased 6
 	got 6
-VBD VBN 1369
+VBD VBN 1374
 	sold 37
 	traded 33
-	used 26
+	used 25
 	expected 25
-	paid 23
+	paid 24
 	led 19
 	filed 19
 	called 19
 	got 18
+	had 17
 	named 16
-	had 15
-	disclosed 15
+	disclosed 16
 	improved 14
 	increased 14
+	said 14
 	reported 14
 	left 14
-	said 13
 	forced 12
-	made 12
 	involved 11
 	met 11
+	made 11
 	set 11
 	issued 11
 	proposed 11
 	held 11
-	accounted 10
 	asked 10
 	elected 9
 	served 9
 	estimated 8
 	changed 8
+	accounted 8
 	provided 8
 	put 8
 	alleged 7
 	required 7
 	accused 7
-	allowed 7
 	resulted 6
 	developed 6
 	raised 6
-VBN JJ 1352
-	proposed 66
+	prepared 6
+VBN JJ 1302
+	proposed 69
 	increased 51
 	revised 41
-	continued 33
+	continued 34
 	related 33
 	subordinated 32
-	preferred 29
-	combined 27
+	combined 28
+	preferred 28
 	planned 27
 	leveraged 25
 	limited 23
@@ -309,16 +309,15 @@ VBN JJ 1352
 	troubled 20
 	reduced 18
 	estimated 17
-	imported 17
-	improved 16
+	damaged 16
 	alleged 15
 	renewed 15
-	damaged 15
-	insured 14
+	improved 15
 	added 13
+	insured 13
 	specified 13
-	fixed 12
 	selected 12
+	fixed 11
 	mixed 10
 	integrated 9
 	interested 9
@@ -334,6 +333,7 @@ VBN JJ 1352
 	organized 8
 	complicated 7
 	injured 7
+	required 7
 JJ NNP 1240
 	American 45
 	York-based 37
@@ -348,14 +348,14 @@ JJ NNP 1240
 	Communist 20
 	German 20
 	African 19
-	Corporate 18
 	Soviet 17
+	Corporate 17
 	British 16
 	Federal 14
 	13th 13
-	Third-quarter 13
 	East 12
 	FEDERAL 12
+	Third-quarter 12
 	Great 11
 	Major 11
 	Alaskan 11
@@ -375,10 +375,10 @@ JJ NNP 1240
 	Rican 7
 	Third 7
 	National 7
-NNP JJ 1174
-	American 143
+NNP JJ 1161
+	American 148
 	British 94
-	European 49
+	European 48
 	Japanese 30
 	Republican 28
 	French 22
@@ -397,10 +397,10 @@ NNP JJ 1174
 	Small 12
 	Korean 11
 	Saudi 10
-	Big 10
 	Russian 10
 	Indian 10
 	Individual 9
+	Big 8
 	Arab 8
 	Christian 7
 	Personal 7
@@ -416,20 +416,20 @@ NNP JJ 1174
 	Eastern 6
 	Polish 6
 	COMMERCIAL 6
-IN RP 1130
-	up 426
-	out 416
-	off 153
-	down 103
-	around 16
-	over 13
+IN RP 1134
+	up 433
+	out 415
+	off 154
+	down 102
+	around 15
+	over 12
 	along 3
-NNP NNPS 1083
+NNP NNPS 1081
 	Securities 113
 	Airlines 84
 	Brothers 48
 	Services 45
-	Industries 43
+	Industries 42
 	Motors 38
 	Systems 33
 	Resources 25
@@ -452,108 +452,26 @@ NNP NNPS 1083
 	Technologies 10
 	Enterprises 10
 	States 10
-	Associates 10
-	Savings 9
 	Donuts 9
+	Associates 9
 	Aeronautics 8
 	Instruments 8
 	Foods 8
 	Laboratories 8
 	Options 8
+	Savings 8
 	Commons 7
 	Appeals 7
 	Beers 7
+	Caltrans 7
 	Records 6
-	ASSETS 6
-RB JJ 1017
-	first 80
-	early 69
-	late 66
-	long 64
-	much 61
-	little 59
-	close 46
-	further 36
-	likely 30
-	due 28
-	hard 26
-	high 20
-	short 20
-	only 14
-	Overall 13
-	enough 12
-	world-wide 12
-	last 12
-	sure 11
-	daily 11
-	overly 10
-	next 10
-	upward 10
-	double 9
-	overnight 9
-	prior 9
-	low 9
-	afloat 8
-	many 7
-	overseas 7
-	easy 7
-	open 6
-	nevertheless 6
-	tight 6
-	past 5
-	loose 5
-	monthly 5
-	steady 5
-	real 5
-	flat 5
-VBZ NNS 1007
-	estimates 30
-	calls 23
-	notes 23
-	reports 20
-	costs 19
-	accounts 18
-	points 18
-	claims 17
-	plans 15
-	moves 14
-	increases 13
-	charges 11
-	controls 11
-	features 11
-	declines 10
-	figures 9
-	changes 9
-	quotes 8
-	shares 8
-	offers 8
-	promises 8
-	results 7
-	amounts 7
-	alleges 7
-	trades 7
-	falls 7
-	chairs 7
-	lives 6
-	sounds 6
-	manufactures 6
-	struggles 6
-	fears 6
-	states 6
-	splits 6
-	works 6
-	cuts 5
-	values 5
-	concerns 5
-	attempts 5
-	deals 5
-JJ VBN 997
+JJ VBN 1026
 	concerned 37
 	interested 35
 	expected 34
 	estimated 27
 	mixed 24
-	proposed 24
+	proposed 22
 	prepared 19
 	closed 19
 	limited 16
@@ -562,10 +480,10 @@ JJ VBN 997
 	involved 13
 	improved 13
 	preferred 11
+	related 10
 	scheduled 9
 	Estimated 9
 	committed 9
-	related 9
 	concentrated 8
 	changed 8
 	surprised 8
@@ -588,18 +506,100 @@ JJ VBN 997
 	adjusted 6
 	enhanced 6
 	proven 6
-NN VBG 942
-	operating 56
+RB JJ 1013
+	first 81
+	early 69
+	late 64
+	much 63
+	long 60
+	little 59
+	close 50
+	further 35
+	likely 30
+	due 28
+	hard 26
+	high 20
+	short 20
+	enough 14
+	only 14
+	Overall 13
+	world-wide 12
+	sure 11
+	last 11
+	daily 11
+	overly 10
+	next 10
+	upward 10
+	prior 9
+	low 9
+	double 8
+	overnight 8
+	afloat 8
+	many 7
+	easy 7
+	open 6
+	overseas 6
+	nevertheless 6
+	tight 6
+	past 5
+	loose 5
+	monthly 5
+	steady 5
+	real 5
+	flat 5
+VBZ NNS 1012
+	estimates 30
+	calls 23
+	notes 23
+	reports 20
+	costs 19
+	accounts 18
+	points 18
+	claims 17
+	moves 15
+	plans 15
+	increases 13
+	charges 11
+	controls 11
+	declines 10
+	features 10
+	figures 9
+	changes 9
+	quotes 8
+	shares 8
+	promises 8
+	lives 7
+	results 7
+	amounts 7
+	alleges 7
+	trades 7
+	falls 7
+	chairs 7
+	offers 7
+	sounds 6
+	manufactures 6
+	struggles 6
+	fears 6
+	states 6
+	splits 6
+	works 6
+	cuts 5
+	values 5
+	concerns 5
+	attempts 5
+	deals 5
+NN VBG 949
+	operating 57
 	selling 35
 	holding 32
 	managing 25
-	trading 18
 	buying 18
+	trading 17
 	Operating 14
 	making 14
 	monitoring 13
+	accounting 12
 	indexing 12
-	accounting 11
 	easing 10
 	racketeering 10
 	trucking 10
@@ -608,12 +608,12 @@ NN VBG 942
 	drilling 9
 	manufacturing 9
 	signing 9
+	discounting 8
 	recycling 8
 	lobbying 8
 	doubling 8
 	underwriting 7
 	Buying 7
-	discounting 7
 	weakening 7
 	casting 7
 	working 7
@@ -629,13 +629,13 @@ NN VBG 942
 	maneuvering 5
 	beginning 5
 	laundering 5
-RBR JJR 917
-	more 282
+RBR JJR 919
+	more 285
 	earlier 275
 	lower 81
 	higher 58
 	better 49
-	More 33
+	More 32
 	less 29
 	harder 20
 	closer 18
@@ -664,9 +664,9 @@ RBR JJR 917
 	leaner 1
 	bigger 1
 	poorer 1
-VBG NN 896
+VBG NN 890
 	trading 85
-	operating 51
+	operating 50
 	manufacturing 33
 	building 29
 	restructuring 27
@@ -674,7 +674,7 @@ VBG NN 896
 	marketing 23
 	consulting 19
 	offering 19
-	selling 17
+	selling 18
 	ruling 16
 	banking 16
 	financing 15
@@ -686,9 +686,9 @@ VBG NN 896
 	fueling 10
 	voting 10
 	publishing 9
-	bidding 9
 	shipping 9
 	warning 8
+	bidding 8
 	funding 8
 	planning 8
 	worsening 8
@@ -705,16 +705,16 @@ VBG NN 896
 	processing 6
 	investing 6
 	living 6
-IN RB 879
-	up 181
-	down 156
+IN RB 872
+	up 173
+	down 157
 	so 131
 	ago 130
-	as 84
-	about 60
+	as 86
+	about 56
 	So 44
 	once 35
-	out 11
+	out 12
 	though 10
 	Once 8
 	since 5
@@ -727,23 +727,24 @@ IN RB 879
 	then 1
 	behind 1
 	Out 1
+	within 1
 	opposite 1
+	around 1
 	over 1
 	alongside 1
-	unto 1
-NNPS NNP 872
+NNPS NNP 871
 	Industries 31
-	Securities 31
 	Holdings 30
+	Securities 30
 	Communications 30
 	Associates 26
 	Partners 26
 	Markets 25
 	Bankers 24
+	Airways 23
 	Manufacturers 22
-	Airways 22
 	Futures 21
-	Systems 18
+	Systems 19
 	Savings 16
 	Lines 14
 	Philippines 13
@@ -752,9 +753,9 @@ NNPS NNP 872
 	Hills 12
 	Giants 11
 	Sons 11
-	Stores 11
 	Treasurys 11
 	Times 10
+	Stores 10
 	Sports 10
 	Brands 8
 	Telecommunications 8
@@ -772,20 +773,19 @@ NNPS NNP 872
 	Affairs 5
 	Chiefs 5
 	Steelworkers 5
-VB NN 717
+VB NN 708
 	hedge 13
 	market 12
 	work 11
-	plan 10
 	trigger 10
 	price 10
+	plan 9
 	sell 9
 	increase 9
 	buy 8
 	call 7
 	stock 7
 	cash 7
-	turn 6
 	head 6
 	return 6
 	help 6
@@ -795,39 +795,40 @@ VB NN 717
 	start 5
 	cause 5
 	focus 5
-	boost 5
 	look 5
+	turn 5
 	heed 5
+	profit 5
 	survey 5
 	feature 4
 	fly 4
+	boost 4
 	lead 4
-	trade 4
 	end 4
 	move 4
 	schedule 4
 	rank 4
 	jolt 4
-	profit 4
 	control 4
 	finance 4
 	mail 4
 	team 4
-JJ RB 714
-	much 291
+	export 4
+JJ RB 704
+	much 288
 	only 72
 	enough 57
 	very 24
-	right 24
+	right 23
 	Much 19
-	late 16
-	back 14
+	late 17
 	early 13
 	else 12
+	back 12
 	even 10
-	far 10
 	long 10
 	down 9
+	far 9
 	fast 9
 	just 8
 	little 6
@@ -845,43 +846,41 @@ JJ RB 714
 	Further 3
 	wobbly 3
 	twice 3
-	off 3
 	Electronic 2
-	unruly 2
 	first 2
-	overseas 2
 	Even 2
 	downright 2
 	Sure 2
 	still 2
-VBP VB 685
+	well 2
+	off 2
+	upstream 1
+VBP VB 687
 	buy 30
 	make 23
 	sell 17
 	go 14
+	have 14
 	take 14
-	have 13
 	give 13
 	carry 12
+	see 11
 	get 11
-	see 10
-	do 9
+	do 10
 	provide 8
 	pay 8
 	hold 8
 	reflect 7
+	support 7
 	keep 7
 	become 6
 	find 6
 	tell 5
 	continue 5
-	support 5
 	produce 5
 	win 5
-	consider 5
 	appear 5
 	turn 5
-	indicate 5
 	exceed 4
 	run 4
 	know 4
@@ -890,57 +889,56 @@ VBP VB 685
 	exist 4
 	break 4
 	explain 4
+	consider 4
 	spend 4
-	handle 4
 	say 4
 	let 4
 	speak 4
-RB RP 604
-	up 250
+	indicate 4
+	offset 4
+RB RP 618
+	up 262
 	out 145
-	down 107
-	off 61
+	down 108
+	off 63
 	around 15
-	aside 11
+	aside 10
 	over 7
 	back 5
 	along 3
-DT IN 553
-	that 552
-	NO 1
-VBG JJ 527
-	leading 58
-	existing 53
-	pending 21
+DT IN 555
+	that 555
+VBG JJ 516
+	leading 59
+	existing 51
+	pending 20
 	underlying 19
 	following 17
 	missing 16
-	remaining 13
 	bracing 13
-	closing 10
+	remaining 12
 	controlling 9
+	closing 9
 	floating 7
 	ailing 7
-	promising 7
 	misleading 7
 	finishing 6
+	promising 6
 	thriving 6
-	winning 6
-	yielding 5
+	bidding 5
+	winning 5
 	sweeping 5
 	decreasing 4
 	devastating 4
 	halting 4
+	encouraging 4
 	discriminating 4
-	bidding 4
-	nonperforming 4
 	lingering 3
 	inviting 3
 	boring 3
 	reassuring 3
 	challenging 3
 	lending 3
-	encouraging 3
 	rolling 3
 	pressing 3
 	questioning 3
@@ -949,10 +947,12 @@ VBG JJ 527
 	lacking 3
 	sprawling 3
 	unfolding 3
-VB VBP 509
-	have 91
+	budding 3
+	opening 3
+VB VBP 511
+	have 92
 	say 43
-	do 32
+	do 31
 	think 24
 	get 17
 	Do 10
@@ -977,7 +977,6 @@ VB VBP 509
 	fall 4
 	begin 3
 	work 3
-	see 3
 	appear 3
 	become 3
 	find 3
@@ -990,7 +989,8 @@ VB VBP 509
 	rebound 2
 	've 2
 	let 2
-VBP NN 475
+	constitute 2
+VBP NN 474
 	account 16
 	work 13
 	range 12
@@ -999,18 +999,19 @@ VBP NN 475
 	report 9
 	fear 9
 	note 8
+	hope 7
 	point 7
-	hope 6
 	face 6
 	claim 6
 	rise 6
 	move 6
 	yield 5
+	worry 5
 	result 5
 	offer 5
 	change 5
 	need 5
-	worry 4
+	help 5
 	increase 4
 	look 4
 	favor 4
@@ -1019,7 +1020,6 @@ VBP NN 475
 	market 4
 	stem 4
 	head 4
-	help 4
 	demand 4
 	store 3
 	turn 3
@@ -1031,7 +1031,7 @@ VBP NN 475
 	share 3
 	control 3
 	deal 3
-NNS NN 451
+NNS NN 450
 	yen 177
 	pence 30
 	telecommunications 23
@@ -1040,7 +1040,7 @@ NNS NN 451
 	1980s 18
 	criteria 12
 	kronor 12
-	electronics 8
+	electronics 9
 	credentials 7
 	media 7
 	airwaves 6
@@ -1068,21 +1068,21 @@ NNS NN 451
 	blinkers 1
 	flora 1
 	offspring 1
-	economics 1
 	Japanese 1
 	dice 1
 	kinfolk 1
-RP IN 428
+	mailmen 1
+RP IN 427
 	in 111
 	on 74
-	over 72
-	off 33
+	over 74
+	off 30
 	around 28
-	up 28
+	up 27
 	out 23
 	through 20
+	about 7
 	by 6
-	about 6
 	along 6
 	with 4
 	across 3
@@ -1099,12 +1099,12 @@ NNPS NNS 393
 	Americans 39
 	Farmers 13
 	Europeans 12
+	Democrats 12
 	Germans 12
 	CDs 12
-	Democrats 11
-	Japanese 8
 	Investors 8
 	Communists 8
+	Japanese 7
 	Dealers 7
 	Boys 7
 	Options 7
@@ -1137,13 +1137,13 @@ NNPS NNS 393
 	Statistics 2
 	Days 2
 NNS NNP 331
-	Futures 26
+	Futures 24
 	Markets 15
-	Banks 10
+	Banks 9
 	Securities 8
 	Municipals 8
+	East 7
 	Messrs. 6
-	East 6
 	Stores 5
 	Bankers 5
 	Newspapers 5
@@ -1177,24 +1177,15 @@ NNS NNP 331
 	Shippers 2
 	Women 2
 	Insurers 2
-JJR RBR 314
-	more 244
-	less 46
-	longer 13
-	faster 5
-	earlier 3
-	More 1
-	louder 1
-	Less 1
-JJ VBG 313
+JJ VBG 312
 	coming 24
 	continuing 16
 	remaining 14
-	leading 13
+	leading 12
 	existing 11
 	troubling 9
+	nonperforming 9
 	dizzying 8
-	nonperforming 8
 	increasing 6
 	underlying 6
 	offsetting 5
@@ -1203,13 +1194,13 @@ JJ VBG 313
 	insulting 4
 	acting 4
 	encouraging 4
+	damaging 4
 	chilling 4
 	ranking 4
 	rolling 4
 	accompanying 4
 	growing 3
 	being 3
-	damaging 3
 	flagging 3
 	running 3
 	puzzling 3
@@ -1227,56 +1218,24 @@ JJ VBG 313
 	surrounding 2
 	going 2
 	working 2
-VBZ POS 302
-	's 302
-NN VB 295
-	massage 19
-	work 11
-	clutter 9
-	commute 8
-	delegate 5
-	restructure 5
-	trade 4
-	pay 4
-	service 3
-	Call 3
-	record 3
-	fund 3
-	veto 3
-	date 3
-	talk 3
-	resale 3
-	square 3
-	shore 3
-	cash 3
-	blip 3
-	land 2
-	lunch 2
-	avail 2
-	one-half 2
-	face 2
-	batter 2
-	Yield 2
-	filibuster 2
-	bar 2
-	hand 2
-	market 2
-	sell 2
-	override 2
-	light 2
-	dissent 2
-	Put 2
-	overcharge 2
-	plant 2
-	cost 2
-	go 2
-NNP NNS 287
+JJR RBR 309
+	more 239
+	less 46
+	longer 13
+	faster 5
+	earlier 3
+	More 1
+	louder 1
+	Less 1
+VBZ POS 307
+	's 307
+NNP NNS 291
 	Courtaulds 13
 	Falls 9
 	CFCs 8
+	Farmers 7
 	Foothills 6
 	Lawyers 6
-	Farmers 6
 	Officials 5
 	People 5
 	Coats 5
@@ -1304,14 +1263,55 @@ NNP NNS 287
 	Reports 2
 	Authorities 2
 	Insurers 2
+	Carriers 2
 	Savings 2
 	Details 2
 	Lawson-Walters 2
 	Cheers 2
 	Developers 2
 	Owners 2
-	Peanuts 2
-NNS NNPS 257
+NN VB 290
+	massage 19
+	work 11
+	clutter 9
+	commute 8
+	delegate 5
+	restructure 5
+	trade 4
+	pay 4
+	service 3
+	Call 3
+	record 3
+	fund 3
+	veto 3
+	date 3
+	resale 3
+	square 3
+	shore 3
+	cash 3
+	blip 3
+	land 2
+	lunch 2
+	avail 2
+	one-half 2
+	face 2
+	abducted 2
+	batter 2
+	Yield 2
+	filibuster 2
+	bar 2
+	hand 2
+	market 2
+	sell 2
+	override 2
+	light 2
+	Put 2
+	overcharge 2
+	boost 2
+	plant 2
+	cost 2
+	go 2
+NNS NNPS 256
 	Soviets 18
 	Democrats 17
 	Republicans 17
@@ -1322,19 +1322,18 @@ NNS NNPS 257
 	Issues 8
 	Americans 8
 	RATES 8
+	Germans 7
 	METALS 6
-	Germans 6
 	BRIEFS 5
 	Airlines 5
 	GRAINS 5
 	SOYBEANS 5
 	Workers 4
-	Funds 3
 	Directors 3
 	Californians 3
 	States 2
 	Contras 2
-	Views 2
+	Funds 2
 	Deposits 2
 	Rights 2
 	RULES 2
@@ -1345,6 +1344,7 @@ NNS NNPS 257
 	Partnerships 2
 	Builders 2
 	Poles 2
+	Moonies 1
 	Soybeans 1
 	Utilities 1
 	Ghostbusters 1
@@ -1352,25 +1352,26 @@ NNS NNPS 257
 	Machinists 1
 	Socialists 1
 	Albanians 1
-NNS VBZ 232
-	plans 20
+WDT IN 226
+	that 226
+NNS VBZ 224
+	plans 19
 	shows 10
 	claims 6
 	picks 6
-	calls 5
+	needs 5
 	runs 5
-	works 5
 	twists 5
 	makes 5
+	calls 4
+	works 4
 	stays 4
 	totals 4
 	breaks 4
-	needs 4
 	fools 4
 	buys 3
 	bears 3
 	disks 3
-	spreads 3
 	turns 3
 	defaults 3
 	means 3
@@ -1381,10 +1382,8 @@ NNS VBZ 232
 	strips 2
 	checks 2
 	hopes 2
-	geeks 2
-	mafias 2
+	spreads 2
 	plays 2
-	foes 2
 	centers 2
 	suites 2
 	charges 2
@@ -1392,16 +1391,17 @@ NNS VBZ 232
 	admits 2
 	satisfies 2
 	conduits 2
-	starts 2
-WDT IN 229
-	that 229
-RB NN 212
+	searches 1
+	airs 1
+	proceeds 1
+	plunges 1
+RB NN 211
 	p.m. 26
 	a.m. 21
 	yesterday 19
 	right 18
 	home 13
-	close 12
+	close 10
 	lot 7
 	bit 6
 	way 4
@@ -1436,23 +1436,11 @@ RB NN 212
 	o'clock 1
 	inside 1
 	four-for-one 1
-IN WDT 186
-	that 186
-RP RB 174
-	back 62
-	down 36
-	up 28
-	away 25
-	aside 7
-	off 4
-	out 4
-	about 3
-	along 3
-	over 1
-	apart 1
+IN WDT 177
+	that 177
 NN NNS 173
-	yen 34
-	data 18
+	yen 33
+	data 17
 	receivables 11
 	electronics 10
 	savings 8
@@ -1487,29 +1475,28 @@ NN NNS 173
 	properties 1
 	sunglasses 1
 	institutes 1
+	ignoramus 1
 	photosynthesis 1
 	athlete-s 1
 	members 1
-	oats 1
-IN DT 162
-	that 130
+RP RB 171
+	back 62
+	down 37
+	away 25
+	up 25
+	aside 7
+	off 4
+	out 4
+	along 3
+	about 2
+	over 1
+	apart 1
+IN DT 161
+	that 129
 	That 31
 	Neither 1
-DT WDT 156
-	that 156
-RB DT 152
-	no 55
-	all 42
-	some 15
-	that 13
-	any 8
-	No 7
-	half 4
-	Some 4
-	this 1
-	Neither 1
-	either 1
-	All 1
+DT WDT 151
+	that 151
 RB NNP 151
 	Separately 54
 	First 29
@@ -1551,24 +1538,37 @@ RB NNP 151
 	Tonight 1
 	Ever-more 1
 	INTERBANK 1
-RB JJR 141
+RB DT 151
+	no 54
+	all 42
+	some 15
+	that 13
+	any 8
+	No 7
+	half 4
+	Some 4
+	this 1
+	Neither 1
+	either 1
+	All 1
+RB JJR 140
 	earlier 96
-	better 34
+	better 33
 	closer 3
 	harder 3
 	Earlier 2
 	easier 2
 	longer 1
-DT PDT 137
-	all 88
-	both 30
-	All 16
+DT PDT 133
+	all 86
+	both 29
+	All 15
 	half 2
 	Half 1
-JJS RBS 134
-	most 132
+JJS RBS 131
+	most 129
 	soonest 2
-IN JJ 132
+IN JJ 131
 	next 87
 	past 12
 	outside 7
@@ -1578,15 +1578,15 @@ IN JJ 132
 	inside 2
 	off 2
 	Next 2
-	minus 2
 	opposite 1
 	fiscal 1
 	par 1
 	Notwithstanding 1
 	unlike 1
+	unto 1
 	up 1
-VB JJ 127
-	own 18
+VB JJ 126
+	own 17
 	narrow 6
 	double 6
 	last 5
@@ -1597,6 +1597,7 @@ VB JJ 127
 	live 3
 	correct 2
 	clear 2
+	elaborate 2
 	slow 2
 	check 2
 	cool 2
@@ -1617,7 +1618,6 @@ VB JJ 127
 	consolidate 1
 	galvanize 1
 	fit 1
-	elaborate 1
 	express 1
 	key 1
 	modernize 1
@@ -1625,7 +1625,7 @@ VB JJ 127
 	correspond 1
 	even 1
 	levy 1
-	remade 1
+	re-evaluate 1
 JJ NNS 118
 	sales 13
 	capital-gains 10
@@ -1667,70 +1667,69 @@ JJ NNS 118
 	investor-relations 1
 	bad-expectations 1
 	electronics-instruments 1
-VBD JJ 114
-	resigned 5
-	peaked 4
-	experienced 4
-	subordinated 3
-	increased 3
-	frightened 3
-	disrupted 3
-	preferred 2
-	pushed 2
-	elevated 2
-	acknowledged 2
-	affected 2
-	registered 2
-	limited 2
-	advanced 2
-	troubled 2
-	finished 2
-	reported 2
-	celebrated 2
-	sustained 2
-	segregated 1
-	shredded 1
-	burdened 1
-	unseated 1
-	retired 1
-	unraveled 1
-	uncovered 1
-	backed 1
-	shuttered 1
-	confused 1
-	delighted 1
-	pleased 1
-	outdid 1
-	differed 1
-	distinguished 1
-	unnerved 1
-	topped 1
-	isolated 1
-	unsettled 1
-	belly-flopped 1
-RBR RB 114
-	later 39
+RBR RB 113
+	later 40
 	further 20
 	longer 20
 	sooner 12
 	better 10
-	earlier 6
+	earlier 4
 	farther 3
 	less-perfectly 1
 	down 1
 	Further 1
 	Later 1
-NNS JJ 112
-	capital-gains 33
+JJ VB 113
+	bottled 6
+	double 5
+	close 5
+	coveted 3
+	total 3
+	Put 3
+	shredded 2
+	unmanned 2
+	retail 2
+	medium-size 2
+	open 2
+	Ba3 2
+	acclaimed 2
+	naturalized 1
+	take-it-or-leave 1
+	government-sponsored 1
+	staggered 1
+	nonunion 1
+	common-stock 1
+	splintered 1
+	lead 1
+	shortsighted 1
+	choreographed 1
+	watered-down 1
+	consummate 1
+	welcome 1
+	moderate-income 1
+	gouty 1
+	requisite 1
+	approximate 1
+	hamstrung 1
+	return 1
+	value-added 1
+	laddered 1
+	grilled 1
+	Simulated 1
+	intercollegiate 1
+	awed 1
+	tax-deferred 1
+	buy 1
+NNS JJ 109
+	capital-gains 31
 	Japanese 11
-	abortion-rights 10
+	abortion-rights 9
 	consumer-goods 3
 	co-chairmen 3
 	human-rights 2
 	computer-systems 2
 	seamen 2
 	capital-goods 2
-	East 2
 	Vietnamese 2
 	salespeople 2
 	after-hours 1
@@ -1746,8 +1745,8 @@ NNS JJ 112
 	great-grandchildren 1
 	start-up 1
 	social-affairs 1
-	college-sports 1
 	performing-arts 1
+	apples 1
 	health-products 1
 	technical-services 1
 	precious-metals 1
@@ -1756,19 +1755,12 @@ NNS JJ 112
 	sporting-goods 1
 	'60s 1
 	SKr20 1
+	East 1
 	French 1
 	cold-cuts 1
 	due 1
 	draftsmen 1
 	packaged-goods 1
-CC RB 109
-	either 50
-	Yet 25
-	yet 13
-	neither 10
-	so 5
-	So 5
-	plus 1
 NN CD 107
 	one 83
 	p53 7
@@ -1783,34 +1775,84 @@ NN CD 107
 	mid-1995 1
 	mid-1987 1
 	NAV:22.15 1
-NN RB 101
+CC RB 106
+	either 50
+	Yet 22
+	yet 13
+	neither 10
+	so 5
+	So 5
+	plus 1
+VBD JJ 100
+	resigned 5
+	peaked 4
+	experienced 4
+	subordinated 3
+	increased 3
+	frightened 3
+	disrupted 3
+	preferred 2
+	pushed 2
+	affected 2
+	limited 2
+	advanced 2
+	troubled 2
+	finished 2
+	reported 2
+	sustained 2
+	segregated 1
+	burdened 1
+	retired 1
+	unraveled 1
+	uncovered 1
+	backed 1
+	shuttered 1
+	confused 1
+	delighted 1
+	pleased 1
+	outdid 1
+	unnerved 1
+	topped 1
+	isolated 1
+	unsettled 1
+	belly-flopped 1
+	miffed 1
+	studied 1
+	spotted 1
+	alleged 1
+	injured 1
+	outperformed 1
+	disappointed 1
+	acknowledged 1
+NN RB 98
 	plenty 13
 	back 12
 	enough 10
 	briefly 9
-	part 8
 	well 7
-	overtime 4
+	overtime 5
 	p.m 4
 	upside 3
 	near-monopoly 3
 	right 3
 	overseas 3
 	upstairs 2
+	malpractice 2
 	meanwhile 2
-	downtime 1
+	downtime 2
 	oversupply 1
+	part 1
 	daily 1
-	malpractice 1
 	flextime 1
 	else 1
+	supersafe 1
 	overhead 1
 	elswehere 1
 	elsewhere 1
 	freight 1
 	drugstore 1
+	meantime 1
 	down 1
-	department-store 1
 	discounter 1
 	behind 1
 	northeast 1
@@ -1830,7 +1872,16 @@ NNP DT 97
 	THE 1
 '' POS 96
 	' 96
-FW NN 96
+RB RBR 95
+	earlier 33
+	longer 29
+	further 17
+	Earlier 8
+	later 5
+	sooner 1
+	less 1
+	farther 1
+FW NN 95
 	perestroika 14
 	glasnost 6
 	naczelnik 6
@@ -1863,23 +1914,14 @@ FW NN 96
 	vis 1
 	aeterna 1
 	bon 1
-	pro-forma 1
 	deux 1
 	Pro 1
 	matryoshka 1
-	marcato 1
 	dolce 1
 	esprit 1
 	corps 1
-RB RBR 93
-	earlier 32
-	longer 28
-	further 17
-	Earlier 8
-	later 5
-	sooner 1
-	less 1
-	farther 1
+	moi 1
+	lanzador 1
 VB NNP 93
 	Let 9
 	Assume 3
@@ -1902,7 +1944,6 @@ VB NNP 93
 	Northrop 1
 	PaineWebber 1
 	Pierce 1
-	Pretend 1
 	Atone 1
 	Become 1
 	Bar 1
@@ -1914,16 +1955,17 @@ VB NNP 93
 	PAY 1
 	BE 1
 	Use 1
-	Provide 1
 	Record 1
 	Jan. 1
 	Dec. 1
 	Judge 1
+	Adjust 1
 	Anne 1
 	Pay 1
-RBS JJS 85
+	Alter 1
+RBS JJS 82
 	Most 28
-	most 24
+	most 21
 	best 16
 	least 8
 	hardest 6
@@ -1948,9 +1990,9 @@ CD NNS 80
 	747-100s 1
 	'90s 1
 	mid-30s 1
-DT RB 77
-	all 47
-	either 19
+DT RB 73
+	all 45
+	either 17
 	no 7
 	neither 4
 NNP CD 71
@@ -1997,49 +2039,8 @@ PRP PRP$ 69
 JJ PDT 68
 	such 62
 	Such 6
-JJ VB 68
-	double 5
-	close 5
-	open 3
-	Put 3
-	retail 2
-	medium-size 2
-	slow 2
-	elaborate 2
-	total 2
-	Ba3 2
-	take-it-or-leave 1
-	nonunion 1
-	common-stock 1
-	lead 1
-	watered-down 1
-	consummate 1
-	welcome 1
-	moderate-income 1
-	gouty 1
-	approximate 1
-	hamstrung 1
-	return 1
-	buy 1
-	bullish 1
-	separate 1
-	archrival 1
-	like 1
-	appropriate 1
-	blatant 1
-	Buy 1
-	business-class 1
-	outperform 1
-	resell 1
-	pro-life 1
-	svelte 1
-	undercut 1
-	counter 1
-	own 1
-	present 1
-	record 1
-FW NNP 67
-	de 29
+FW NNP 66
+	de 28
 	Au 2
 	Lapin 2
 	Agile 2
@@ -2079,7 +2080,7 @@ $ NNP 62
 	M$ 9
 	S$ 2
 	C 1
-32 CD 60
+32 CD 61
 	3\/32 12
 	5\/32 8
 	4\/32 8
@@ -2090,11 +2091,73 @@ $ NNP 62
 	8\/32 3
 	18\/32 2
 	15\/32 2
+	17\/32 2
 	10\/32 2
-	17\/32 1
 	31\/32 1
 	30\/32 1
 	24\/32 1
+JJ VBD 60
+	increased 5
+	continued 5
+	added 3
+	paralyzed 2
+	asked 2
+	preferred 2
+	fell 2
+	vaunted 1
+	marked 1
+	failed 1
+	tortured 1
+	suggested 1
+	projected 1
+	proved 1
+	tried 1
+	accrued 1
+	offered 1
+	reduced 1
+	scrambled 1
+	expanded 1
+	consolidated 1
+	thoroughbred 1
+	capped 1
+	clerk-turned 1
+	advanced 1
+	included 1
+	ill-suited 1
+	adjusted 1
+	put 1
+	reported 1
+	dissatisfied 1
+	reconstructed 1
+	spiked 1
+	shared 1
+	ruptured 1
+	closed 1
+	undercut 1
+	deep-pocketed 1
+	midsized 1
+	left 1
+VB VBN 59
+	come 14
+	put 9
+	hurt 8
+	run 5
+	set 4
+	hit 3
+	cut 2
+	rid 2
+	cast 1
+	broadcast 1
+	fit 1
+	read 1
+	become 1
+	expected 1
+	prepaid 1
+	Come 1
+	quit 1
+	got 1
+	involved 1
+	oversold 1
 VBN NNP 59
 	OFFERED 7
 	Heard 4
@@ -2139,9 +2202,9 @@ VBN NNP 59
 JJ IN 59
 	like 17
 	worth 14
-	above 6
-	off 5
+	above 7
 	outside 4
+	off 4
 	over 3
 	under 2
 	down 2
@@ -2151,92 +2214,10 @@ JJ IN 59
 	Past 1
 	a.k.a. 1
 	near 1
-JJ VBD 58
-	increased 5
-	continued 5
-	added 3
-	asked 2
-	preferred 2
-	fell 2
-	paralyzed 1
-	vaunted 1
-	marked 1
-	failed 1
-	suggested 1
-	projected 1
-	proved 1
-	tried 1
-	accrued 1
-	offered 1
-	reduced 1
-	scrambled 1
-	expanded 1
-	consolidated 1
-	thoroughbred 1
-	capped 1
-	clerk-turned 1
-	renewed 1
-	advanced 1
-	included 1
-	ill-suited 1
-	adjusted 1
-	put 1
-	reported 1
-	dissatisfied 1
-	reconstructed 1
-	spiked 1
-	shared 1
-	ruptured 1
-	closed 1
-	undercut 1
-	midsized 1
-	left 1
-	Street-inspired 1
-CD JJ 57
-	zero 11
-	30-year 2
-	30-day 2
-	300-day 2
-	Eighty-five 1
-	41-year-old 1
-	71%-owned 1
-	mid-30s 1
-	Thirty-four 1
-	2-1 1
-	Eighty-three 1
-	a.m.-1:30 1
-	97-1 1
-	37-hour 1
-	22nd 1
-	2.41-to-1 1
-	2.79-to-1 1
-	Twenty-one 1
-	10-2 1
-	21st 1
-	30-share 1
-	80%-owned 1
-	99-cent 1
-	inflation-adjusted 1
-	same-store 1
-	500-stock 1
-	buy-and-hold 1
-	1.5-mile 1
-	67-31 1
-	F-16 1
-	Seventeen 1
-	Twenty-five 1
-	100-stock 1
-	155-mm 1
-	11-2 1
-	high-risk 1
-	72-yearold 1
-	3rdand 1
-	2-0 1
-	5-for-24 1
-VBP VBD 56
+VBP VBD 55
 	put 17
 	set 7
-	hit 6
+	hit 5
 	cost 5
 	beat 3
 	forecast 2
@@ -2253,26 +2234,6 @@ VBP VBD 56
 	rose 1
 	helped 1
 	bet 1
-VB VBN 55
-	come 14
-	hurt 8
-	put 7
-	run 5
-	set 3
-	hit 3
-	cut 2
-	rid 2
-	cast 1
-	broadcast 1
-	fit 1
-	read 1
-	become 1
-	expected 1
-	Come 1
-	quit 1
-	got 1
-	involved 1
-	oversold 1
 VBN NN 55
 	hit 13
 	set 8
@@ -2294,6 +2255,47 @@ VBN NN 55
 	repurchase 1
 	agreed 1
 	skirmished 1
+CD JJ 55
+	zero 11
+	30-year 2
+	30-day 2
+	300-day 2
+	Eighty-five 1
+	41-year-old 1
+	71%-owned 1
+	mid-30s 1
+	Thirty-four 1
+	2-1 1
+	Eighty-three 1
+	a.m.-1:30 1
+	97-1 1
+	37-hour 1
+	22nd 1
+	2.41-to-1 1
+	2.79-to-1 1
+	Twenty-one 1
+	21st 1
+	30-share 1
+	80%-owned 1
+	99-cent 1
+	inflation-adjusted 1
+	same-store 1
+	500-stock 1
+	buy-and-hold 1
+	1.5-mile 1
+	67-31 1
+	F-16 1
+	Seventeen 1
+	Twenty-five 1
+	100-stock 1
+	155-mm 1
+	11-2 1
+	high-risk 1
+	72-yearold 1
+	2-0 1
+	5-for-24 1
+	Ba-3 1
+	1.70-to-1.90 1
 IN NNP 53
 	de 27
 	Out 7
@@ -2310,7 +2312,33 @@ IN NNP 53
 	THROUGHOUT 1
 	WITH 1
 	THAN 1
-VBG NNP 49
+VBD VB 51
+	let 7
+	cut 7
+	read 5
+	put 3
+	repurchase 3
+	Put 3
+	galvanized 2
+	licensed 2
+	elevated 2
+	cheated 2
+	shredded 1
+	unseated 1
+	Let 1
+	come 1
+	condoned 1
+	offset 1
+	become 1
+	overbid 1
+	sealed 1
+	buckled 1
+	Americanized 1
+	drowned 1
+	reinvested 1
+	streamlined 1
+	split 1
+VBG NNP 50
 	Boeing 5
 	Managing 3
 	Building 2
@@ -2344,41 +2372,14 @@ VBG NNP 49
 	CLUBBING 1
 	SPRUCING 1
 	CURBING 1
+	Topping 1
 	MAKING 1
 	Unloading 1
 	Learning 1
 	Paying 1
 	Broadcasting 1
 	Advertising 1
-	Snoozing 1
-VBP JJ 49
-	own 10
-	total 9
-	open 4
-	equal 2
-	mature 2
-	average 2
-	correct 1
-	unleash 1
-	self-insure 1
-	free 1
-	cool 1
-	moderate 1
-	pale 1
-	criss-cross 1
-	fantasize 1
-	double 1
-	fluctuate 1
-	clear 1
-	present 1
-	outperform 1
-	zero 1
-	accumulate 1
-	attribute 1
-	last 1
-	top 1
-	suspect 1
-VBD NNP 49
+VBD NNP 50
 	Said 7
 	RALLIED 2
 	Agreed 2
@@ -2398,6 +2399,7 @@ VBD NNP 49
 	MONITORED 1
 	Ate 1
 	WARNED 1
+	SWUNG 1
 	DIED 1
 	ADMITTED 1
 	BATTLED 1
@@ -2418,7 +2420,97 @@ VBD NNP 49
 	STRUCK 1
 	Telecussed 1
 	FREED 1
-	MOVED 1
+NN VBP 50
+	stand 5
+	sell 4
+	say 3
+	lease 3
+	hope 2
+	rise 2
+	estimate 2
+	plan 2
+	wiggle 2
+	strike 1
+	account 1
+	husk 1
+	scrape 1
+	shape 1
+	show 1
+	clutter 1
+	think 1
+	conjecture 1
+	use 1
+	We've 1
+	beta 1
+	Name 1
+	rebound 1
+	display 1
+	rescue 1
+	project 1
+	auction 1
+	post 1
+	audition 1
+	accord 1
+	range 1
+	Wait 1
+	Rake 1
+	Push 1
+JJR NN 48
+	newer 8
+	cleaner 7
+	elder 3
+	cooler 3
+	looser 2
+	leaner 2
+	reseller 2
+	tamer 1
+	murkier 1
+	premier 1
+	airconditioner 1
+	der 1
+	reinsurer 1
+	redder 1
+	crunchier 1
+	naughtier 1
+	beeper 1
+	minincomputer 1
+	lighter 1
+	flashier 1
+	poorer-quality 1
+	microcomputer 1
+	nastier 1
+	harsher 1
+	MORE 1
+	meaner 1
+	smoother 1
+	trimmer 1
+VBP JJ 48
+	own 9
+	total 9
+	open 4
+	equal 2
+	mature 2
+	average 2
+	correct 1
+	unleash 1
+	self-insure 1
+	free 1
+	cool 1
+	bankrupt 1
+	moderate 1
+	pale 1
+	double 1
+	fluctuate 1
+	clear 1
+	present 1
+	outperform 1
+	zero 1
+	shy 1
+	accumulate 1
+	attribute 1
+	last 1
+	top 1
+	suspect 1
 NNP RB 48
 	Electronic 11
 	Bally 4
@@ -2451,9 +2543,8 @@ VBD NN 48
 	hit 9
 	spread 7
 	bid 4
-	crashed 2
+	fell 3
 	split 2
-	fell 2
 	repurchase 2
 	thought 2
 	ground 2
@@ -2463,6 +2554,7 @@ VBD NN 48
 	wound 1
 	cost 1
 	agreed 1
+	crashed 1
 	skid 1
 	FAILED 1
 	sweat 1
@@ -2480,34 +2572,6 @@ CD NN 48
 	S&P-500 1
 	70-A21 1
 	billion-plus 1
-JJR NN 47
-	newer 8
-	cleaner 7
-	elder 3
-	cooler 3
-	looser 2
-	leaner 2
-	reseller 2
-	tamer 1
-	murkier 1
-	premier 1
-	airconditioner 1
-	der 1
-	reinsurer 1
-	crunchier 1
-	naughtier 1
-	beeper 1
-	minincomputer 1
-	lighter 1
-	flashier 1
-	poorer-quality 1
-	microcomputer 1
-	nastier 1
-	harsher 1
-	MORE 1
-	meaner 1
-	smoother 1
-	trimmer 1
 CC DT 47
 	both 18
 	neither 10
@@ -2515,38 +2579,6 @@ CC DT 47
 	either 5
 	Both 4
 	Either 3
-NN VBP 47
-	stand 5
-	sell 4
-	say 3
-	lease 3
-	hope 2
-	rise 2
-	estimate 2
-	plan 2
-	wiggle 2
-	account 1
-	husk 1
-	shape 1
-	show 1
-	clutter 1
-	think 1
-	conjecture 1
-	use 1
-	need 1
-	beta 1
-	rebound 1
-	display 1
-	rescue 1
-	project 1
-	auction 1
-	post 1
-	accord 1
-	range 1
-	Wait 1
-	whipsaw 1
-	Rake 1
-	Push 1
 NNP IN 47
 	Though 16
 	Re 6
@@ -2565,8 +2597,8 @@ NNP IN 47
 	Out 1
 	Against 1
 	Until 1
-NNPS JJ 44
-	Japanese 30
+NNPS JJ 45
+	Japanese 31
 	Chinese 5
 	British 3
 	Dutch 2
@@ -2574,45 +2606,7 @@ NNPS JJ 44
 	East 1
 	Taiwanese 1
 	French 1
-JJ CD 42
-	50-50 6
-	4-0 2
-	5-4 2
-	B-3 2
-	2%-3 1
-	53-45 1
-	747-400 1
-	60-40 1
-	70-30 1
-	18-to-$19 1
-	1-million-plus 1
-	249-166 1
-	206-199 1
-	223-178 1
-	287-123 1
-	375-an-ounce 1
-	231-191 1
-	3-1 1
-	303-107 1
-	325-92 1
-	148-a-share 1
-	1.23-a-pound 1
-	26-7 1
-	89,500-a-year 1
-	2,500-per-job 1
-	51-48 1
-	1,800-a-year 1
-	125-billion-a-year 1
-	5-a-barrel 1
-	1-2-3 1
-	72-a-share 1
-	million 1
-	19-to-$21 1
-	3-a-person 1
-RBR JJ 41
-	further 40
-	later 1
-VBZ NNP 40
+VBZ NNP 41
 	IS 4
 	HAS 3
 	Includes 2
@@ -2624,6 +2618,7 @@ VBZ NNP 40
 	Gets 1
 	SUES 1
 	LOOM 1
+	TURNS 1
 	BALKS 1
 	Taps 1
 	Goes 1
@@ -2647,10 +2642,76 @@ VBZ NNP 40
 	Recalls 1
 	JOINS 1
 	Regains 1
-VB VBD 40
-	put 7
+JJ CD 41
+	50-50 6
+	4-0 2
+	5-4 2
+	B-3 2
+	2%-3 1
+	53-45 1
+	747-400 1
+	60-40 1
+	70-30 1
+	teen 1
+	18-to-$19 1
+	1-million-plus 1
+	249-166 1
+	206-199 1
+	223-178 1
+	287-123 1
+	375-an-ounce 1
+	231-191 1
+	3-1 1
+	303-107 1
+	325-92 1
+	1.23-a-pound 1
+	26-7 1
+	89,500-a-year 1
+	2,500-per-job 1
+	51-48 1
+	1,800-a-year 1
+	125-billion-a-year 1
+	5-a-barrel 1
+	1-2-3 1
+	million 1
+	19-to-$21 1
+	3-a-person 1
+VBN VB 40
+	come 4
+	put 2
+	botched 2
+	bottled 2
+	bid 2
+	forecast 2
+	repurchase 2
+	read 2
+	affected 2
+	become 2
+	cut 1
+	registered 1
+	licensed 1
+	hardened 1
+	conflicted 1
+	run 1
+	memorialized 1
+	hamstrung 1
+	cost 1
+	plowed 1
+	coveted 1
+	imported 1
+	Put 1
+	offset 1
+	build 1
+	shortened 1
+	Measured 1
+	split 1
+RBR JJ 40
+	further 39
+	later 1
+VB VBD 38
+	put 6
 	set 4
-	cut 4
+	cut 3
 	lay 2
 	were 2
 	let 1
@@ -2663,6 +2724,7 @@ VB VBD 40
 	hit 1
 	forecast 1
 	relied 1
+	tout 1
 	finished 1
 	oversaw 1
 	bid 1
@@ -2671,12 +2733,8 @@ VB VBD 40
 	allowed 1
 	paled 1
 	come 1
-	prepaid 1
 	Were 1
 	rebounded 1
-MD VBD 38
-	'd 37
-	Need 1
 DT NN 38
 	half 37
 	nary 1
@@ -2688,18 +2746,6 @@ LS CD 37
 	5 2
 EX RB 36
 	there 36
-VBD VB 36
-	cut 8
-	let 7
-	read 5
-	put 4
-	repurchase 3
-	Put 3
-	licensed 2
-	Let 1
-	offset 1
-	become 1
-	split 1
 JJR JJ 36
 	further 10
 	longer-term 2
@@ -2726,6 +2772,9 @@ JJR JJ 36
 	lower-quality 1
 	friendlier 1
 	more-distinctive 1
+MD VBD 36
+	'd 35
+	Need 1
 PRP CD 36
 	one 33
 	One 3
@@ -2733,22 +2782,45 @@ RB EX 35
 	there 26
 	There 9
 RB VB 34
-	close 13
-	double 7
-	further 4
+	close 10
+	double 8
+	further 5
 	someday 3
 	last 2
 	live 1
+	firsthand 1
 	quintuple 1
 	'til 1
 	retroactively 1
 	counter 1
-IN CC 33
-	vs. 20
-	but 7
-	plus 4
-	v. 2
-NN VBD 32
+NNP VB 34
+	Meet 3
+	Pepper 3
+	Nestle 2
+	Make 2
+	Bud 2
+	Call 2
+	Sihanouk 1
+	Sante 1
+	Credit 1
+	Change 1
+	Specialized 1
+	Mack 1
+	Whittle 1
+	See 1
+	Go 1
+	mart 1
+	Federated 1
+	Recruit 1
+	Stretch 1
+	Sperry 1
+	Work 1
+	Bozell 1
+	Know 1
+	Blot 1
+	Peg 1
+	Check 1
+NN VBD 33
 	cut 12
 	set 4
 	saw 3
@@ -2760,9 +2832,29 @@ NN VBD 32
 	cathode 1
 	halted 1
 	fell 1
+	put 1
 	broadcast 1
 	shot 1
-NNP VBG 31
+IN CC 32
+	vs. 20
+	but 7
+	plus 3
+	v. 2
+POS VBZ 31
+	's 24
+	'S 7
+VBP VBN 31
+	come 13
+	hurt 5
+	run 5
+	put 2
+	set 1
+	originated 1
+	offset 1
+	become 1
+	been 1
+	outpaced 1
+NNP VBG 30
 	Buying 4
 	Continuing 2
 	Thanksgiving 1
@@ -2784,26 +2876,11 @@ NNP VBG 31
 	Resolving 1
 	Selling 1
 	Gaining 1
-	Conning 1
 	Including 1
 	Excluding 1
 	OKing 1
 	Moonlighting 1
 	Keeping 1
-VBP VBN 31
-	come 13
-	hurt 5
-	run 5
-	put 2
-	set 1
-	originated 1
-	offset 1
-	become 1
-	been 1
-	outpaced 1
-POS VBZ 30
-	's 23
-	'S 7
 NNP FW 30
 	Deutsche 24
 	la 3
@@ -2815,61 +2892,11 @@ CC IN 29
 	whether 7
 	So 3
 	versus 2
-SYM NN 29
-	b 7
-	c 7
-	f 4
-	\* 4
-	e 3
-	d 2
-	\*\* 1
-	r 1
 WDT WP 28
 	what 24
 	What 4
-NNP VB 28
-	Meet 3
-	Pepper 3
-	Nestle 2
-	Make 2
-	Sihanouk 1
-	Sante 1
-	Credit 1
-	Change 1
-	Mack 1
-	Whittle 1
-	See 1
-	Go 1
-	Recruit 1
-	Stretch 1
-	Sperry 1
-	Work 1
-	Bozell 1
-	Know 1
-	Blot 1
-	Call 1
-	Peg 1
-	Check 1
-VBN VB 27
-	come 4
-	become 3
-	put 2
-	bid 2
-	forecast 2
-	repurchase 2
-	read 2
-	cut 1
-	hit 1
-	licensed 1
-	run 1
-	hamstrung 1
-	cost 1
-	Put 1
-	offset 1
-	build 1
-	split 1
-NN MD 27
-	will 21
+NN MD 28
+	will 22
 	might 3
 	can 3
 VBP NNP 27
@@ -2913,6 +2940,31 @@ JJR NNP 23
 	Richter 1
 	BIGGER 1
 	Gartner 1
+SYM NN 23
+	b 7
+	c 7
+	\* 4
+	e 3
+	\*\* 1
+	r 1
+NNP VBN 22
+	Delmed 3
+	Related 2
+	Concerned 2
+	Rated 2
+	Directed 1
+	Specialized 1
+	Made 1
+	Tilted 1
+	Lyphomed 1
+	Added 1
+	Closed 1
+	Born 1
+	Affiliated 1
+	Saved 1
+	Reduced 1
+	Spaced 1
+	Revisited 1
 CD NNP 22
 	747 6
 	Three 5
@@ -2924,26 +2976,6 @@ CD NNP 22
 	CP486 1
 	Billion 1
 	M2 1
-VB IN 22
-	like 18
-	complete 1
-	view 1
-	except 1
-	while 1
-NN VBN 21
-	set 4
-	hurt 3
-	left 2
-	run 2
-	cut 2
-	coed 1
-	beat 1
-	pressured 1
-	rewrapped 1
-	put 1
-	blood-red 1
-	undersold 1
-	hyped 1
 DT JJ 21
 	many 18
 	Many 3
@@ -2952,6 +2984,17 @@ NN PRP 21
 	She 2
 	One 1
 	one 1
+VB IN 21
+	like 17
+	complete 1
+	view 1
+	except 1
+	while 1
+JJ RP 21
+	off 12
+	out 5
+	down 3
+	over 1
 JJS JJ 20
 	best-known 3
 	fastest-growing 3
@@ -2980,62 +3023,86 @@ NNS CD 20
 	'40s 1
 	'30s 1
 	1990s 1
-NNP VBN 20
-	Delmed 3
-	Related 2
-	Concerned 2
-	Rated 2
-	Specialized 1
-	Made 1
-	Tilted 1
-	Lyphomed 1
-	Added 1
-	Closed 1
-	Born 1
-	Saved 1
-	Reduced 1
-	Spaced 1
-	Revisited 1
 RB JJS 20
 	best 16
 	highest 2
 	most 1
 	southwest 1
-PRP NN 19
-	one 11
-	mine 3
-	'em 2
-	ya 1
-	y'all 1
-	t' 1
-JJ RP 19
-	off 10
-	out 5
-	down 3
-	over 1
+VBD VBP 19
+	come 3
+	read 3
+	offset 2
+	celebrated 2
+	bid 1
+	Wrote 1
+	affected 1
+	underwrote 1
+	crowded 1
+	outgrew 1
+	burst 1
+	rid 1
+	run 1
+PDT DT 19
+	all 11
+	both 5
+	Both 2
+	half 1
+FW JJ 19
+	pro 5
+	glasnost 3
+	facto 2
+	l'oeil 1
+	ex 1
+	pro-forma 1
+	J'ai 1
+	doi 1
+	laissez-faire 1
+	brah 1
+	en 1
+	i.e. 1
+NN VBN 18
+	hurt 3
+	left 2
+	run 2
+	set 2
+	cut 2
+	coed 1
+	beat 1
+	pressured 1
+	rewrapped 1
+	blood-red 1
+	undersold 1
+	hyped 1
 CC RBR 18
 	less 18
-CC NNP 17
-	AND 14
-	Plus 1
-	'n' 1
-	'N 1
-FW IN 17
-	de 6
+FW IN 18
+	de 7
 	per 5
 	in 3
 	vis 1
 	vs. 1
 	versus 1
+CC NNP 17
+	AND 14
+	Plus 1
+	'n' 1
+	'N 1
+PRP NN 17
+	one 11
+	mine 3
+	'em 1
+	y'all 1
+	t' 1
 NNP VBP 17
-	Call 3
 	Copy 2
+	Call 2
 	Are 2
 	Sizwe 2
 	Do 1
 	are 1
 	Credit 1
 	Isabella 1
+	Provigo 1
 	say 1
 	Trim 1
 	Roe 1
@@ -3043,10 +3110,9 @@ NNP VBP 17
 UH DT 17
 	no 11
 	No 6
-JJR RB 16
-	longer 9
-	better 6
-	smoother 1
+RB CC 16
+	Yet 10
+	but 6
 NNP VBZ 16
 	des 6
 	Adds 3
@@ -3056,21 +3122,6 @@ NNP VBZ 16
 	Is 1
 	Gaines 1
 	Sparrows 1
-PDT DT 16
-	all 8
-	both 5
-	Both 2
-	half 1
-FW JJ 16
-	pro 5
-	glasnost 3
-	facto 2
-	ex 1
-	J'ai 1
-	laissez-faire 1
-	brah 1
-	en 1
-	i.e. 1
 VBP IN 15
 	like 14
 	view 1
@@ -3083,17 +3134,10 @@ NN IN 15
 	out 1
 	at 1
 	view 1
-VBD VBP 15
-	come 3
-	read 3
-	offset 2
-	bid 1
-	Wrote 1
-	underwrote 1
-	outgrew 1
-	burst 1
-	rid 1
-	run 1
+JJR RB 15
+	longer 9
+	better 5
+	smoother 1
 MD NNP 15
 	May 6
 	WILL 2
@@ -3111,13 +3155,21 @@ JJS NN 15
 	eldest 1
 FW CC 14
 	vs. 14
-RB CC 14
-	Yet 8
-	but 6
+VB RB 14
+	back 6
+	Please 2
+	even 2
+	triple 1
+	Fly 1
+	presage 1
+	forward 1
 CC NN 13
 	plus 9
 	'n' 2
 	minus 2
+VB JJR 13
+	lower 12
+	better 1
 JJ JJS 13
 	fifth-biggest 2
 	rape-and-incest 2
@@ -3141,14 +3193,12 @@ VBG|NN NN 13
 	leasing 1
 	printing 1
 	purchasing 1
-VB RB 13
-	back 5
-	Please 2
-	even 2
-	triple 1
-	Fly 1
-	presage 1
-	forward 1
+SYM NNP 13
+	f 4
+	\*\* 3
+	FFr 3
+	= 2
+	\* 1
 FW DT 12
 	a 7
 	del 3
@@ -3161,11 +3211,28 @@ PRP NNP 12
 	THYSELF 1
 	'T- 1
 	Zey 1
+VBN|JJ VBN 12
+	foreclosed 2
+	gone 1
+	imported 1
+	rid 1
+	satisfied 1
+	captured 1
+	convinced 1
+	surrounded 1
+	diluted 1
+	increased 1
+	paid 1
 CC PDT 12
 	both 12
-VB JJR 12
-	lower 11
-	better 1
+IN NN 12
+	plus 5
+	minus 2
+	worth 1
+	while 1
+	order 1
+	'Cause 1
+	like 1
 UH RB 12
 	well 4
 	Indeed 3
@@ -3192,17 +3259,6 @@ VBZ NNPS 12
 	Ends 1
 PRP POS 11
 	's 11
-VBN|JJ VBN 11
-	foreclosed 2
-	gone 1
-	rid 1
-	satisfied 1
-	captured 1
-	convinced 1
-	surrounded 1
-	diluted 1
-	increased 1
-	paid 1
 RBR|JJR JJR 11
 	more 6
 	less 2
@@ -3210,6 +3266,14 @@ RBR|JJR JJR 11
 	better 1
 SYM DT 11
 	a 11
+UH JJ 11
+	OK 4
+	uh 2
+	Aw 1
+	damn 1
+	True 1
+	howdy 1
+	aw 1
 NNP POS 11
 	's 11
 JJS NNP 11
@@ -3231,37 +3295,6 @@ UH NN 11
 	hey 1
 	hell 1
 	wow 1
-NN DT 10
-	A 4
-	half 3
-	the 1
-	this 1
-	another 1
-IN NN 10
-	plus 4
-	while 2
-	worth 1
-	order 1
-	'Cause 1
-	like 1
-UH JJ 10
-	OK 4
-	uh 2
-	damn 1
-	True 1
-	howdy 1
-	aw 1
-UH NNP 10
-	Wham 1
-	Bam 1
-	Aw 1
-	NO 1
-	Uh-uh 1
-	Egad 1
-	Nope 1
-	Whoopee 1
-	Tee 1
-	Hee 1
 VBG|JJ VBG 10
 	pending 4
 	hedging 1
@@ -3270,13 +3303,27 @@ VBG|JJ VBG 10
 	sitting 1
 	competing 1
 	sagging 1
-MD VBP 9
-	need 9
-SYM NNP 9
-	\*\* 3
-	FFr 3
-	= 2
-	\* 1
+NN DT 9
+	A 4
+	half 2
+	the 1
+	this 1
+	another 1
+UH NNP 9
+	Wham 1
+	Bam 1
+	NO 1
+	Uh-uh 1
+	Egad 1
+	Nope 1
+	Whoopee 1
+	Tee 1
+	Hee 1
+VBN VBP 8
+	come 5
+	fit 1
+	affected 1
+	have 1
 FW NNS 8
 	maquiladoras 2
 	santos 1
@@ -3290,6 +3337,8 @@ NN|NNS NNS 8
 WRB NNP 8
 	WHEN 6
 	WHY 2
+MD VBP 8
+	need 8
 2-year JJ 8
 	1\/2-year 8
 WP NNP 8
@@ -3303,10 +3352,6 @@ NNPS NN 7
 	Chinese 5
 	Swiss 1
 	Hmong 1
-VBN VBP 7
-	come 5
-	fit 1
-	have 1
 VBP RB 7
 	back 4
 	down 1
@@ -3318,23 +3363,14 @@ NNP VBD 7
 	slid 1
 	HomeFed 1
 DT NNP 7
+	NO 2
 	A 2
-	NO 1
 	ERROR? .a 1
-	ERROR? .the 1
 	THOSE 1
 	BOTH 1
 PDT RB 7
 	quite 6
 	Quite 1
-JJ VBP 7
-	have 1
-	open 1
-	pretend 1
-	in-house 1
-	own 1
-	lean 1
-	exempt 1
 JJ JJR 7
 	more 2
 	meager 1
@@ -3342,14 +3378,15 @@ JJ JJR 7
 	better 1
 	earlier 1
 	frequent-flier 1
-JJR VB 7
-	lower 5
-	redder 2
 UH NNS 7
 	alas 2
 	oohs 2
 	ahs 2
 	zounds 1
+JJR VB 7
+	lower 5
+	redder 1
+	crunchier 1
 JJ DT 6
 	half 3
 	the 3
@@ -3366,12 +3403,6 @@ RB PDT 6
 NNS|NN NNS 6
 	data 5
 	telecommunications 1
-FW VB 6
-	glasnost 2
-	l'oeil 1
-	en 1
-	dolce 1
-	entree 1
 CC JJ 6
 	minus 4
 	'n' 2
@@ -3379,6 +3410,19 @@ NNP JJS 6
 	Southwest 3
 	Budapest 2
 	Most 1
+FW VB 6
+	glasnost 2
+	en 1
+	marcato 1
+	dolce 1
+	entree 1
+JJ VBP 6
+	have 1
+	open 1
+	in-house 1
+	own 1
+	lean 1
+	exempt 1
 CC NNS 6
 	times 6
 NN|JJ JJ 6
@@ -3420,8 +3464,10 @@ NN FW 4
 	quo 2
 	etc. 1
 	etc 1
-TO NN 4
-	na 4
+RB VBP 4
+	double 2
+	close 1
+	am 1
 RBR IN 4
 	about 1
 	in 1
@@ -3444,6 +3490,11 @@ VBG|NN VBG 4
 	working 1
 	refunding 1
 	spotting 1
+LS NNP 4
+	f 1
+	A. 1
+	B. 1
+	C. 1
 Day NNP 4
 	Chiat\/Day 4
 SYM IN 4
@@ -3476,13 +3527,6 @@ PDT JJ 3
 	such 1
 	Many 1
 	many 1
-RB VBP 3
-	double 2
-	am 1
-VBN|JJ JJ 3
-	imported 1
-	canceled 1
-	deprived 1
 RB VBN 3
 	left 2
 	threefold 1
@@ -3493,6 +3537,8 @@ NN RP 3
 	back 1
 VBG VB 3
 	gon 3
+TO NN 3
+	na 3
 WRB RB 3
 	However 2
 	however 1
@@ -3506,10 +3552,8 @@ NN|JJ NN 3
 NNP CC 3
 	and 2
 	But 1
-LS NN 3
-	e 1
-	f 1
-	r 1
+PRP RB 3
+	'em 3
 NN SYM 3
 	r 1
 	c 1
@@ -3525,10 +3569,6 @@ Norstar NNP 3
 	Fleet\/Norstar 3
 : POS 3
 	' 3
-LS NNP 3
-	A. 1
-	B. 1
-	C. 1
 JJR|RBR RBR 3
 	more 3
 VBN NNS 2
@@ -3561,12 +3601,18 @@ NNP JJR 2
 	Worse 1
 RBS RB 2
 	best 2
+LS NN 2
+	e 1
+	r 1
 LS SYM 2
 	x 1
 	c 1
 RB VBD 2
 	broke 1
 	sixfold 1
+VBN|JJ JJ 2
+	canceled 1
+	deprived 1
 VB VBG 2
 	fine-tuning 2
 VBN|VBD VBD 2
@@ -3576,19 +3622,21 @@ PDT NN 2
 	half 1
 PRP SYM 2
 	s 2
+PRP$ PRP 2
+	her 2
 RBR NN 2
 	smarter 1
 	straighter 1
 IN VBG 2
 	pending 1
 	withing 1
-PRP RB 2
-	'em 2
 DT PRP 2
 	them 2
 UH VB 2
 	say 1
 	Welcome 1
+SYM VBD 2
+	d 2
 Datacomp NNP 2
 	XL\/Datacomp 2
 Newport NN 2
@@ -3597,9 +3645,6 @@ Newport JJ 2
 	Princeton\/Newport 2
 RBS|JJS JJS 2
 	most 2
-NNP UH 2
-	Boy 1
-	Yes 1
 EMS NNP 2
 	Bard\/EMS 2
 SYM VBP 2
@@ -3661,6 +3706,12 @@ Pick NNP 1
 	Gordon\/Pick 1
 deflation NN 1
 	inflation\/deflation 1
+PRP FW 1
+	ya 1
+VB FW 1
+	gon 1
+TO FW 1
+	na 1
 Ferry NNP 1
 	Korn\/Ferry 1
 VBG VBN 1
@@ -3721,7 +3772,7 @@ VBN CD 1
 	15 1
 LS IN 1
 	d 1
-2 JJ 1
+2 CD 1
 	PS\/2 1
 2-foot-tall JJ 1
 	1\/2-foot-tall 1
@@ -3759,8 +3810,6 @@ David NNP 1
 	Kelly\/David 1
 varnell NNP 1
 	kelly\/varnell 1
-PRP$ PRP 1
-	her 1
 Varnell NNP 1
 	Kelly\/Varnell 1
 King VBG 1
@@ -3771,6 +3820,8 @@ JJ|NN NN 1
 	premium 1
 SYM VBZ 1
 	\*\* 1
+DT VB 1
+	ERROR? .the 1
 early-FALL JJ 1
 	late-summer\/early-FALL 1
 VBN|JJ VBD 1
@@ -3799,6 +3850,8 @@ JJ|NNP NNP 1
 	then-Air 1
 RB|RP RB 1
 	along 1
+NNP UH 1
+	Boy 1
 NN WDT 1
 	that 1
 NN NNPS 1
@@ -3867,7 +3920,7 @@ NNS RB 1
 	stocks 1
 LS DT 1
 	a 1
-or RB 1
+or VBP 1
 	and\/or 1
 state NN 1
 	district\/state 1
@@ -3913,8 +3966,6 @@ product NN 1
 	president\/product 1
 national-government JJ 1
 	president\/national-government 1
-VBG NNS 1
-	dying 1
 100ths NNS 1
 	7\/100ths 1
 WAD NNP 1
@@ -3963,8 +4014,6 @@ or JJ 1
 	and\/or 1
 CD VBN 1
 	47%-controlled 1
-VBD VBZ 1
-	AVOIDED 1
 CD IN 1
 	0.32 1
 RB VBZ 1

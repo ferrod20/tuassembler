@@ -6,183 +6,38 @@ using System.Text;
 
 namespace ConsoleApplication1
 {    
+
     public class Extractor
     {
         public Extractor(string archCobuild, string archSalida, string archDeInformación)
         {
             this.archCobuild = archCobuild;
             this.archSalida = archSalida;
-            this.archDeInformación = archDeInformación;
-            cantidadDeSignosDePuntuación = cantidadDePalabras = cantidadDePalabrasEtiquetadas = 0;
-            infoEtiquetasCobuild = new Dictionary<string, int>();
+
+            informaciónDeExtracción = new InformaciónDeExtracción(archDeInformación);
             inferidor = new InferiridorDeEtiquetas();
+            tablaDeTraducción = new TraducciónCobuildATreebank();
         }
 
         #region Constantes
         private const string comienzoDeBloque = "DICTIONARY_ENTRY";
         private const string finDeBloque = "\nDI";
-        /// <summary>
-        /// Tabla para traducir etiquetas COBUILD en etiquetas Penn TreeBank
-        /// </summary>
-        private readonly Dictionary<string, string> tablaDeTraducciónDeEtiquetas = new Dictionary<string, string> {
-        {"coordinating conjunction", "CC"}, 
-        {"number", "CD"}, 
-        {"determiner", "DT"}, 
-        {"determiner + countable noun in singular", "DT"}, 
-        {"preposition", "IN"}, 
-        {"subordinating conjunction", "IN"}, 
-        {"preposition, or adverb after verb", "IN"}, 
-        {"preposition after noun", "IN"}, 
-        {"adjective", "JJ"}, //ver como clasificar JJR y JJS
-        {"classifying adjective", "JJ"}, 
-        {"qualitative adjective", "JJ"}, 
-        {"classifying adjective: attributive", "JJ"}, 
-        {"classifying adjective: ussually attributive", "JJ"}, 
-        {"qualitative adjective: attributive", "JJ"}, 
-        {"adjective colour", "JJ"}, 
-        {"ordinal", "JJ"}, 
-        {"adjective after noun", "JJ"}, 
-        {"modal", "MD"}, 
-        {"adverb", "RB"}, 
-        {"noun", "NN"}, //ver q hacer con plurales....
-        {"countable noun", "NN"}, 
-        {"uncountable noun", "NN"}, 
-        {"noun singular", "NN"}, 
-        {"countable or uncountable noun", "NN"}, 
-        {"countable noun with supporter", "NN"}, 
-        {"countable noun: ussually singular", "NN"}, 
-        {"countable noun: if + preposition then of", "NN"}, 
-        {"countable noun: ussually plural", "NNS"}, 
-        {"noun plural: the + noun", "NNS"}, 
-        {"countable noun: usually with supporter", "NN"}, 
-        {"noun singular: a + noun", "NN"}, 
-        {"noun singular: the + noun", "NN"}, 
-        {"uncountable or countable noun", "NN"}, 
-        {"noun singular with determiner", "NN"}, 
-        {"mass noun", "NN"}, 
-        {"uncountable noun with supporter", "NN"}, 
-        {"partitive noun", "NN"}, 
-        {"noun singular with determiner with supporter", "NN"}, 
-        {"countable noun + of", "NN"}, 
-        {"countable noun, or by + noun", "NN"}, 
-        {"countable noun or partitive noun", "NN"}, 
-        {"count or uncountable noun", "NN"}, 
-        {"countable noun or vocative", "NN"}, 
-        {"partitive noun + uncountable noun", "NN"}, 
-        {"noun singular with determiner + of", "NN"}, 
-        {"noun in titles", "NN"}, //Verificar
-        {"noun vocative", "NN"}, 
-        {"uncountable noun + of", "NN"}, 
-        {"indefinite pronoun", "NN"}, 
-        {"uncountable noun, or noun singular", "NN"}, 
-        {"countable noun, or in + noun", "NN"}, 
-        {"partitive noun + noun in plural", "NN"}, //Ver
-        {"countable or uncountable noun with supporter", "NN"}, 
-        {"uncountable noun, or noun before noun", "NN"}, 
-        {"uncountable or countable noun with supporter", "NN"}, 
-        {"noun before noun", "NN"}, 
-        {"noun plural with supporter", "NNS"}, 
-        {"noun in names", "NNP"}, //Verificar
-        {"proper noun or vocative", "NNP"}, 
-        {"proper noun", "NNP"}, 
-        {"noun plural", "NNS"}, 
-        {"predeterminer", "PDT"}, //si empieza con predeterminer....
-        {"pronoun", "PP"}, //Ver.....me parece q no va
-        {"possessive", "PPS"}, //si empieza con possessive....
-        {"adverb with verb", "RB"}, 
-        {"adverb after verb", "RB"}, 
-        {"sentence adverb", "RB"}, 
-        {"adverb + adjective or adverb", "RB"}, 
-        {"adverb + adjective", "RB"}, 
-        {"preposition or adverb", "RB"}, 
-        {"adverb after verb, or classifying adjective", "RB"}, 
-        {"adverb or sentence adverb", "RB"}, 
-        {"adverb with verb, or sentence adverb", "RB"}, 
-        {"exclamation", "UH"}, 
-        {"exclam", "UH"}, 
-        {"verb", "VB"}, 
-        {"verb + object", "VB"}, 
-        {"verb or verb + object", "VB"}, 
-        {"ergative verb", "VB"}, 
-        {"verb + adjunct", "VB"}, 
-        {"verb: usually + adjunct", "VB"}, 
-        {"verb + object + adjunct", "VB"}, 
-        {"verb + object (noun group or reflexive)", "VB"}, 
-        {"verb + object or reporting clause", "VB"}, 
-        {"verb + object (reflexive)", "VB"}, 
-        {"verb + adjunct (^i{to^i})", "VB"}, 
-        {"verb + object, or phrasal verb", "VB"}, 
-        {"verb + to-infinitive", "VB"}, 
-        {"verb or verb + adjunct (^i{with)", "VB"}, 
-        {"verb + object, verb + object + object, or verb + object + adjunct (to)", "VB"}, 
-        {"ergative verb + adjunct", "VB"}, 
-        {"verb + object + adjunct (to)", "VB"}, 
-        {"verb + object, or verb + adjunct", "VB"}, 
-        {"verb + object + adjunct (with)", "VB"}, 
-        {"verb + adjunct (with)", "VB"}, 
-        {"verb + complement", "VB"}, 
-        {"verb + object, or verb", "VB"}, 
-        {"verb + object + to-infinitive", "VB"}, 
-        {"verb + reporting clause", "VB"}, 
-        {"verb or ergative verb", "VB"}, 
-        {"verb + adjunct (from)", "VB"}, 
-        {"verb + object, verb + object + object, or verb + object + adjunct (for)", "VB"}, 
-        {"wh: used as determiner", "WDT"}, 
-        {"wh: used as relative pronoun", "WP"}, 
-        {"wh: used as pronoun", "WP"}, 
-        {"wh: used as adverb", "WRB"}, 
-        {"phrase + noun group", ""}, 
-        {"convention", ""}, 
-        {"combining form", ""}, 
-        {"prefix", ""}, 
-        {"phrasal verb", ""}, 
-        {"other", ""}, 
-        {"phrase", ""}, 
-        {"suffix", ""}, 
-        {"wh", ""}, 
-        {"phrase after noun", ""}, 
-        {"phrase + reporting clause", ""}};
         #endregion
 
         #region Variables
 
         private InferiridorDeEtiquetas inferidor;
-        private int cantidadDeSignosDePuntuación = 0;
-        private int cantidadDePalabras = 0;
-        private int cantidadDePalabrasEtiquetadas = 0;
-        
         private string archCobuild;
         private string archSalida;
-        private string archDeInformación;
-
-        private Dictionary<string, int> infoEtiquetasCobuild = new Dictionary<string, int>();
+        private InformaciónDeExtracción informaciónDeExtracción;
+        private ITablaDeTraducción tablaDeTraducción;
         #endregion
         
         #region Métodos
         public void ExtraerLaInformaciónDeCobuild()
         {
-            var texto = File.ReadAllText(archCobuild);
-            TextWriter tw = new StreamWriter(archSalida);
-        
-            ExtraerLaInformaciónDeCobuild(texto, tw);
-            tw.Close();
-            
-            var total = cantidadDePalabras + cantidadDeSignosDePuntuación;
-            
-            TextWriter info = new StreamWriter(archDeInformación);    
-            info.WriteLine("Cantidad de palabras y signos puntuación: " + total);
-            info.WriteLine("Cantidad de signos de puntuación: " + cantidadDeSignosDePuntuación);
-            info.WriteLine("Cantidad de palabras: " + cantidadDePalabras);
-            info.WriteLine("Cantidad de palabras etiquetadas: " + cantidadDePalabrasEtiquetadas + "\t( " + ((cantidadDePalabrasEtiquetadas * 100) / (double)cantidadDePalabras) + "% )");
-
-            info.WriteLine();
-            info.WriteLine();
-
-            var etiquetasOrdenadas = infoEtiquetasCobuild.OrderByDescending(infoEtiqueta => infoEtiqueta.Value);
-            foreach (var etiqueta in etiquetasOrdenadas)
-                if (string.IsNullOrEmpty(ObtenerEtiquetaPennTreebank(etiqueta.Key)))
-                    info.WriteLine(etiqueta.Key + "\t\t" + etiqueta.Value);   
-            info.Close();
+            ExtraerYGrabarLaInformaciónDeCobuild();
+            informaciónDeExtracción.GrabarEnArchivo();
         }
 
         /// <summary>
@@ -190,9 +45,10 @@ namespace ConsoleApplication1
         /// </summary>
         public string ExtraerInformaciónDeLaEntrada(string entrada)
         {
+            informaciónDeExtracción.CantidadDeEntradas++;
             var líneas = entrada.Split('\n');
             var salida = new StringBuilder();
-
+            
             if (líneas.Length > 2)
             {
                 var i = 2;
@@ -205,7 +61,7 @@ namespace ConsoleApplication1
                 var palabras = formasDeLaPalabra.Unir(palabra);
 
                 var encontréDefinición = false;
-
+                var suméEjemplo = false;
                 for (; i < líneas.Length - 1; i++)
                 {
                     var línea = líneas[i].Trim();
@@ -215,18 +71,15 @@ namespace ConsoleApplication1
                     {
                         if (encontréDefinición)
                         {
-                            var etiquetaPennTreebank = ObtenerEtiquetaPennTreebank(líneas, i + 1);
-                            //Busca en las próximas líneas la etiqueta Cobuild para la entrada. Es decir, una ejemplo que esté en la tabla de traducción de etiquetas. Luego traduce esa etiqueta Cobuild en la etiqueta Penn Treebak correspondiente.
-
-                            for (var j = i + 1; j < líneas.Length && etiquetaPennTreebank == null; j++)
+                            if (!suméEjemplo)
                             {
-                                var etiquetaCobuild = líneas[j].Trim();
-                                if (infoEtiquetasCobuild.ContainsKey(etiquetaCobuild))
-                                    infoEtiquetasCobuild[etiquetaCobuild]++;
-                                else
-                                    infoEtiquetasCobuild[etiquetaCobuild] = 1;
+                                informaciónDeExtracción.CantidadDeEntradasConEjemplo++;
+                                suméEjemplo = true;
                             }
 
+                            var etiquetaPennTreebank = ObtenerEtiquetaPennTreebank(líneas, i + 1, palabra);
+                            //Busca en las próximas líneas la etiqueta Cobuild para la entrada. Es decir, una ejemplo que esté en la tabla de traducción de etiquetas. Luego traduce esa etiqueta Cobuild en la etiqueta Penn Treebak correspondiente.
+                            
                             if (!string.IsNullOrEmpty(etiquetaPennTreebank))
                             {
                                 inferidor.Palabra = palabra;
@@ -244,21 +97,26 @@ namespace ConsoleApplication1
             return salida.ToString();
         }
 
-        private void ExtraerLaInformaciónDeCobuild(string texto, TextWriter tw)
+        private void ExtraerYGrabarLaInformaciónDeCobuild()
         {
+            TextWriter tw = new StreamWriter(archSalida);
+            var texto = File.ReadAllText(archCobuild);
             var indice = 0;
-            string entradaCobuild, informaciónExtraída = string.Empty;
+            var informaciónExtraída = string.Empty;
             
             while (indice != -1)
             {
-                entradaCobuild = ObtenerEntrada(texto, ref indice);
+                var entradaCobuild = ObtenerEntrada(texto, ref indice);
                 if (entradaCobuild != string.Empty)
                     informaciónExtraída = ExtraerInformaciónDeLaEntrada(entradaCobuild);
                 if (!string.IsNullOrEmpty(informaciónExtraída.Trim()))
+                {
+                    informaciónDeExtracción.CantidadDeEntradasExtraídas++;
                     tw.Write(informaciónExtraída);
+                }               
             }
 
-                   
+            tw.Close();
         }
         /// <summary>
         /// Obtiene la entrada de COBUILD a partir del indice pasado por parametro
@@ -319,7 +177,7 @@ namespace ConsoleApplication1
         /// </summary>
         private string GenerarSalidaEtiquetada(string ejemplo, Dictionary<string, string> etiquetas)
         {
-            var cantPalEtiquetadas = cantidadDePalabrasEtiquetadas;
+            var cantPalEtiquetadas = informaciónDeExtracción.CantidadDePalabrasEtiquetadas;
             var palabrasDelEjemplo = ejemplo.Split(new[] {' '}, StringSplitOptions.RemoveEmptyEntries);
             var salida = "";
 
@@ -331,7 +189,7 @@ namespace ConsoleApplication1
                 {
                     palabra = palabra.Substring(3);
                     salida += "...\n";
-                    cantidadDeSignosDePuntuación++;
+                    informaciónDeExtracción.CantidadDeSignosDePuntuación++;
                 }
 
                 string puntuaciónFinal;
@@ -340,7 +198,7 @@ namespace ConsoleApplication1
                 if (palabraSinPuntuación != string.Empty )
                 {
                     salida += palabraSinPuntuación;
-                    cantidadDePalabras++;        
+                    informaciónDeExtracción.CantidadDePalabras++;        
 
                     var palabraEnMinúscula = palabraSinPuntuación.ToLower();
 
@@ -350,7 +208,7 @@ namespace ConsoleApplication1
                         //var etiquetaInferida = InferirEtiqueta(palabraSinPuntuación, etiquetaPennTreebank, palabrasDelEjemplo, i);
 
                         salida += "\t" + etiquetaPennTreebank;
-                        cantidadDePalabrasEtiquetadas++;                        
+                        informaciónDeExtracción.CantidadDePalabrasEtiquetadas++;                        
                     }
                     salida += "\n";
                 }
@@ -360,22 +218,20 @@ namespace ConsoleApplication1
                     salida += puntuaciónFinal + "\n";
                     if (puntuaciónFinal == "...")
                         salida += "\n";
-                    cantidadDeSignosDePuntuación++;
+                    informaciónDeExtracción.CantidadDeSignosDePuntuación++;
                 }
             }
 
             salida += "\n";
             //Si se asginó alguna etiqueta
-            return cantidadDePalabrasEtiquetadas > cantPalEtiquetadas ? salida : string.Empty;
+            return informaciónDeExtracción.CantidadDePalabrasEtiquetadas > cantPalEtiquetadas ? salida : string.Empty;
         }
 
-        
-        
         /// <summary>
         /// Busca en la entrada, (en cada renglón) si hay alguna Palabra que sea un tag COBUILD. Es decir; 
         /// si está en la tabla de traducción de etiquetas, y si es así lo traduce con la etiqueta Penn Treebank correspondiente.
         /// </summary>
-        private string ObtenerEtiquetaPennTreebank(string[] líneas, int i)
+        private string ObtenerEtiquetaPennTreebank(string[] líneas, int i, string palabra)
         {
             string etiquetaPennTreebankObtenida = null;
 
@@ -383,7 +239,7 @@ namespace ConsoleApplication1
             {
                 var línea = líneas[i];
                 if(línea!= string.Empty)
-                    etiquetaPennTreebankObtenida = ObtenerEtiquetaPennTreebank(línea);
+                    etiquetaPennTreebankObtenida = ObtenerEtiquetaPennTreebank(línea, palabra);
             }
 
             return etiquetaPennTreebankObtenida;
@@ -391,25 +247,29 @@ namespace ConsoleApplication1
         /// <summary>
         /// Busca en la tabla de traducción de etiquetas si existe alguna etiqueta Penn Treebank para la etiqueta Cobuild posibleEtiquetaCobuild
         /// </summary>
-        private string ObtenerEtiquetaPennTreebank(string posibleEtiquetaCobuild)
+        private string ObtenerEtiquetaPennTreebank(string posibleEtiquetaCobuild, string palabra)
         {
             string etiquetaPennTreebank = null;
             posibleEtiquetaCobuild = posibleEtiquetaCobuild.TrimEnd();
-            var posiblesEtiquetasPennTreebank = tablaDeTraducciónDeEtiquetas.Where(t => t.Key.StartsWith(posibleEtiquetaCobuild));
+            var posiblesEtiquetasPennTreebank = tablaDeTraducción.ObtenerTraduccionesParaEtiquetaQueEmpiezaCon(posibleEtiquetaCobuild);
 
-            if (tablaDeTraducciónDeEtiquetas.ContainsKey(posibleEtiquetaCobuild))
-                etiquetaPennTreebank = tablaDeTraducciónDeEtiquetas[posibleEtiquetaCobuild];
+            if (tablaDeTraducción.ContieneTraduccionPara(posibleEtiquetaCobuild))
+                etiquetaPennTreebank = tablaDeTraducción.ObtenerTraduccionPara(posibleEtiquetaCobuild).First();
             else if (posiblesEtiquetasPennTreebank.Any())
-                etiquetaPennTreebank = posiblesEtiquetasPennTreebank.First().Value;
+                etiquetaPennTreebank = posiblesEtiquetasPennTreebank.First();
             else if (posibleEtiquetaCobuild.StartsWith("countable noun") || posibleEtiquetaCobuild.StartsWith("uncountable noun"))
                 etiquetaPennTreebank = "NN";
             else if (posibleEtiquetaCobuild.StartsWith("verb"))
                 etiquetaPennTreebank = "VB";
-            else if (posibleEtiquetaCobuild.StartsWith("qualitative adjective"))
-                etiquetaPennTreebank = "JJ";
-            else if (posibleEtiquetaCobuild.StartsWith("classifying adjective"))
+            else if (posibleEtiquetaCobuild.StartsWith("qualitative adjective") || posibleEtiquetaCobuild.StartsWith("classifying adjective"))
                 etiquetaPennTreebank = "JJ";
 
+            if (etiquetaPennTreebank != null)
+            {
+                informaciónDeExtracción.AgregarEtiquetaCobuild(posibleEtiquetaCobuild, palabra);
+                informaciónDeExtracción.AgregarEtiquetaTreebank(etiquetaPennTreebank, palabra);
+            }
+                
             //if (etiquetaPennTreebank != null && posibleEtiquetaCobuild.Length <= 70)
             //    if (infoEtiquetasCobuild.ContainsKey(posibleEtiquetaCobuild))
             //        infoEtiquetasCobuild[posibleEtiquetaCobuild]++;

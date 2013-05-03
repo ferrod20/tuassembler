@@ -4,8 +4,10 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
-//-extraer "Datos/Extraccion/Cobuild.original.legible" "Datos/Extraccion/Cobuild.extracted.prueba" "Datos/Extraccion/Cobuild.extracted.info.prueba"
-//-comparar "Datos/Extraccion/Cobuild.tagged" "Datos/Extraccion/Cobuild.extracted" "Datos/Extraccion/Cobuild.mconf"
+//-extraer "Datos/Extraccion/Cobuild.original.legible" "Datos/Extraccion/Cobuild.extracted" "Datos/Extraccion/Cobuild.extracted.info"
+//-2pasada "Datos/Extraccion/Cobuild.extracted" "Datos/Extraccion/Cobuild.tt" "Datos/Extraccion/Cobuild.2pasada"
+//-comparar "Datos/Extraccion/Cobuild.tagged" "Datos/Extraccion/Cobuild.extracted" "Datos/Extraccion/Cobuild.extracted.mc"
+
 namespace ConsoleApplication1
 {    
     internal class Program
@@ -1317,8 +1319,8 @@ namespace ConsoleApplication1
                 var compararContraBNC = args.Contains("-bnc");
 
                 var comparador = new Comparador(args[1], args[2], args[3]);
-                ITablaDeTraduccion tablaDeTraduccion = compararContraBNC? (ITablaDeTraduccion) new TraducciónTreebankABNC():new TablaDeTraducciónVacía();
-                comparador.EstablecerOpciones(generarMatrizDeConfParaLatex, titulo, tituloFila, tituloColumna, archivoTabla, tablaDeTraduccion, hacerTabla);
+                var tablaDeTraducción = compararContraBNC? (ITablaDeTraducción) new TraducciónTreebankABNC():new TablaDeTraducciónVacía();
+                comparador.EstablecerOpciones(generarMatrizDeConfParaLatex, titulo, tituloFila, tituloColumna, archivoTabla, tablaDeTraducción, hacerTabla);
                 comparador.Comparar();
             }
         }
@@ -1412,8 +1414,9 @@ namespace ConsoleApplication1
         private static bool Unir(TextWriter salida, string etiquetaExtraída, string etiquetaEtiquetada, string[] partesExtraídas)
         {
             salida.Write("\t");
-            if (partesExtraídas.Count() > 1 && !string.IsNullOrEmpty(etiquetaExtraída) && etiquetaExtraída != "VBD|VBN")
-                salida.Write(etiquetaExtraída);
+            
+            if (partesExtraídas.Count() > 1 && !string.IsNullOrEmpty(etiquetaExtraída))
+                salida.Write(etiquetaExtraída == "VBD|VBN" ? "VB" : etiquetaExtraída);
             else
                 salida.Write(etiquetaEtiquetada.Split().Last());
 

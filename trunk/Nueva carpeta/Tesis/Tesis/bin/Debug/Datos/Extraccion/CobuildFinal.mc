@@ -1,8 +1,8 @@
 Matriz de confusion entre Cobuild etiquetado con TnT (entrenado con WSJ) contra Cobuild extraido final
 
-%Aciertos: 561077 ( 98,817000531883% )
-%Errores: 6717
-%Cantidad de tags: 567794
+%Aciertos: 560955 ( 98,761769614851% )
+%Errores: 7033
+%Cantidad de tags: 567988
 
 Errores
 TnT|	Cobuild final|	CantidadDeErrores
@@ -47,12 +47,13 @@ JJ NN 771
 	abstract 2
 	African 2
 	asthmatic 2
-NN JJ 699
+NN JJ 708
 	firm 19
 	round 9
 	kind 8
 	cut 7
 	level 7
+	side 6
 	alight 5
 	emergency 5
 	expert 5
@@ -68,6 +69,7 @@ NN JJ 699
 	resident 4
 	silver 4
 	tender 4
+	woman 4
 	ablaze 3
 	adrift 3
 	bent 3
@@ -86,8 +88,6 @@ NN JJ 699
 	overland 3
 	peasant 3
 	plump 3
-	prize 3
-	queer 3
 VBN JJ 669
 	finished 8
 	settled 7
@@ -129,7 +129,7 @@ VBN JJ 669
 	biased 3
 	bored 3
 	burdened 3
-NN VB 653
+NN VB 654
 	burst 12
 	share 6
 	cut 4
@@ -170,6 +170,47 @@ NN VB 653
 	date 2
 	decay 2
 	despair 2
+JJ VB 435
+	contrived 7
+	blind 5
+	roasted 5
+	inscribed 4
+	last 4
+	shackled 4
+	squashed 4
+	wet 4
+	chained 3
+	choreographed 3
+	contented 3
+	crushed 3
+	discriminate 3
+	fancy 3
+	gratified 3
+	mellow 3
+	pained 3
+	second 3
+	slanted 3
+	appropriate 2
+	approximate 2
+	assimilated 2
+	awed 2
+	beached 2
+	blighted 2
+	botched 2
+	branded 2
+	buckled 2
+	celebrated 2
+	charted 2
+	constricted 2
+	consummate 2
+	contorted 2
+	coveted 2
+	crooked 2
+	dignified 2
+	discomfited 2
+	disfigured 2
+	encased 2
+	floored 2
 NNP NN 403
 	House 4
 	Senate 4
@@ -498,47 +539,6 @@ NNS VBZ 146
 	corrupts 1
 	crashes 1
 	cures 1
-JJ VB 141
-	blind 5
-	last 4
-	wet 4
-	discriminate 3
-	fancy 3
-	mellow 3
-	second 3
-	appropriate 2
-	approximate 2
-	consummate 2
-	licensed 2
-	mean 2
-	recast 2
-	retail 2
-	spat 2
-	square 2
-	swollen 2
-	tidy 2
-	undervalue 2
-	abstract 1
-	average 1
-	bent 1
-	blaspheme 1
-	brown 1
-	burnt 1
-	busy 1
-	chase 1
-	clamber 1
-	cleft 1
-	cleave 1
-	clown 1
-	compact 1
-	comprehend 1
-	congregate 1
-	core 1
-	court-martial 1
-	crayon 1
-	cripple 1
-	cross-question 1
-	degrade 1
 VBZ NNS 138
 	cries 5
 	remains 5
@@ -697,12 +697,13 @@ NN IN 111
 	dint 1
 	excess 1
 	exclusion 1
-NN RB 99
+NN RB 101
 	round 9
 	part 4
 	way 4
 	downstairs 3
 	head-on 3
+	meantime 3
 	oclock 3
 	abreast 2
 	afresh 2
@@ -734,7 +735,6 @@ NN RB 99
 	helter-skelter 1
 	incommunicado 1
 	inshore 1
-	meantime 1
 	messy 1
 	midweek 1
 	mind 1
@@ -1022,7 +1022,7 @@ RB IN 60
 	off 1
 	Only 1
 	regardless 1
-NNP VB 49
+NNP VB 50
 	Express 2
 	Bill 1
 	Blot 1
@@ -1040,6 +1040,7 @@ NNP VB 49
 	Heap 1
 	Heave 1
 	Melt 1
+	Mortified 1
 	Peg 1
 	Pepper 1
 	Pin 1
@@ -1062,7 +1063,6 @@ NNP VB 49
 	Sponge 1
 	Spoon 1
 	Spray 1
-	Squirt 1
 NN NNS 47
 	news 11
 	darts 3
@@ -1239,6 +1239,10 @@ FW NN 11
 	impresario 1
 	puree 1
 	workshop 1
+JJ PP 11
+	few 8
+	Few 2
+	same 1
 VBN NN 10
 	lighted 2
 	accused 1
@@ -1273,6 +1277,16 @@ VBG IN 9
 	providing 1
 	Providing 1
 	regarding 1
+RB VB 9
+	awake 1
+	close 1
+	creep 1
+	damned 1
+	prophesy 1
+	right 1
+	square 1
+	sully 1
+	wrong-footed 1
 NNP UH 9
 	Boy 2
 	O 2
@@ -1325,14 +1339,6 @@ WDT WP 8
 	which 5
 	whatever 2
 	Which 1
-RB VB 7
-	awake 1
-	close 1
-	creep 1
-	prophesy 1
-	right 1
-	square 1
-	sully 1
 CC IN 7
 	or 3
 	plus 3
@@ -1342,10 +1348,6 @@ NNS RB 7
 	inwards 2
 	endways 1
 	upwards 1
-JJ PP 7
-	few 4
-	Few 2
-	same 1
 JJS RB 7
 	least 3
 	furthest 2
@@ -1489,6 +1491,9 @@ VBN|JJ JJ 2
 VBG NNS 2
 	dying 1
 	veg 1
+CC DT 2
+	Either 1
+	either 1
 JJ UH 2
 	good 1
 	shush 1
@@ -1513,6 +1518,8 @@ IN PP 2
 	that 2
 IN NNS 1
 	As 1
+JJ|VBN VB 1
+	affected 1
 RBS JJ 1
 	best 1
 VBD NNS 1
