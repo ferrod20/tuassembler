@@ -1,8 +1,8 @@
 Matriz de confusion entre Cobuild etiquetado con TnT (entrenado con WSJ) contra Cobuild extraido 1pasada
 
-%Aciertos: 40128 ( 71,0406118330206% )
-%Errores: 16358
-%Cantidad de tags: 56486
+%Aciertos: 40130 ( 71,019006831133% )
+%Errores: 16376
+%Cantidad de tags: 56506
 
 Errores
 TnT|	Cobuild 1pasada|	CantidadDeErrores
@@ -252,12 +252,13 @@ VBP VB 710
 	worry 4
 	act 3
 	assume 3
-NN JJ 699
+NN JJ 708
 	firm 19
 	round 9
 	kind 8
 	cut 7
 	level 7
+	side 6
 	alight 5
 	emergency 5
 	expert 5
@@ -273,6 +274,7 @@ NN JJ 699
 	resident 4
 	silver 4
 	tender 4
+	woman 4
 	ablaze 3
 	adrift 3
 	bent 3
@@ -291,8 +293,6 @@ NN JJ 699
 	overland 3
 	peasant 3
 	plump 3
-	prize 3
-	queer 3
 NN VB 653
 	burst 12
 	share 6
@@ -744,18 +744,18 @@ VBG NN 161
 	banning 1
 	barking 1
 	being 1
-VBZ NNS 153
+VBZ NNS 154
 	cries 5
 	remains 5
 	dictates 3
 	groans 3
+	holds 3
 	preserves 3
 	bristles 2
 	equals 2
 	furrows 2
 	gauges 2
 	gears 2
-	holds 2
 	hops 2
 	knocks 2
 	poses 2
@@ -984,12 +984,13 @@ VBP NN 107
 	flash 1
 	go 1
 	graze 1
-NN RB 99
+NN RB 101
 	round 9
 	part 4
 	way 4
 	downstairs 3
 	head-on 3
+	meantime 3
 	oclock 3
 	abreast 2
 	afresh 2
@@ -1021,7 +1022,6 @@ NN RB 99
 	helter-skelter 1
 	incommunicado 1
 	inshore 1
-	meantime 1
 	messy 1
 	midweek 1
 	mind 1
@@ -1587,6 +1587,10 @@ FW NN 11
 	impresario 1
 	puree 1
 	workshop 1
+JJ PP 11
+	few 8
+	Few 2
+	same 1
 VBN NNS 10
 	aged 2
 	handicapped 2
@@ -1698,10 +1702,6 @@ NNS RB 7
 	inwards 2
 	endways 1
 	upwards 1
-JJ PP 7
-	few 4
-	Few 2
-	same 1
 JJS RB 7
 	least 3
 	furthest 2
@@ -1844,6 +1844,9 @@ VBN|JJ JJ 2
 VBG NNS 2
 	dying 1
 	veg 1
+CC DT 2
+	Either 1
+	either 1
 JJ UH 2
 	good 1
 	shush 1

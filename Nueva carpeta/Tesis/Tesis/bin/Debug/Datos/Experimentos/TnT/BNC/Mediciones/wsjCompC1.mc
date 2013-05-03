@@ -1,12 +1,12 @@
 wsjCompC1.mc
 
-%Aciertos: 1834695 ( 91,7477781845022% )
-%Errores: 165021
-%Cantidad de tags: 1999716
+%Aciertos: 1834695 ( 91,7478240649292% )
+%Errores: 165020
+%Cantidad de tags: 1999715
 
 Errores
 |	|	CantidadDeErrores
-NN1 NNP 26459
+NN1 NNP 26458
 	World 314
 	Party 278
 	City 257

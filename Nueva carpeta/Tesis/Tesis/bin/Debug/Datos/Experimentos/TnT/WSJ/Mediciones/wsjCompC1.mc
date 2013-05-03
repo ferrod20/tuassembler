@@ -1,8 +1,8 @@
 wsjCompC1.mc
 
-%Aciertos: 908770 ( 95,9294101751023% )
+%Aciertos: 908769 ( 95,9294058781989% )
 %Errores: 38562
-%Cantidad de tags: 947332
+%Cantidad de tags: 947331
 
 Errores
 |	|	CantidadDeErrores

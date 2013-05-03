@@ -27,9 +27,9 @@ Adicionalmente existe una tercera clase de etiquetadores que es una mezcla de es
 La información presentada en este subcapítulo está basada en \cite[sub~chapter~5.3]{Jurafsky}
 
 \subsection{Etiquetadores gramaticales basados en reglas} 
-Los primeros algoritmos de asignación de etiquetas gramaticales estaban basados en un proceso de dos etapas. En la primer etapa utilizaban un diccionario para asignar a cada palabra una lista de potenciales etiquetas gramaticales. En la segunda etapa utilizaban grandes listas de reglas de desambigüación escritas a mano para reducir la lista de etiquetas hasta llegar a una para cada palabra. De esta manera eliminaban las etiquetas inconsistentes con el contexto.
+Los primeros algoritmos de asignación de etiquetas gramaticales estaban basados en un proceso de dos etapas \cite{Harris,Klein, Greene}. En la primer etapa utilizaban un diccionario para asignar a cada palabra una lista de potenciales etiquetas gramaticales. En la segunda etapa utilizaban grandes listas de reglas de desambigüación escritas a mano para reducir la lista de etiquetas hasta llegar a una para cada palabra. De esta manera eliminaban las etiquetas inconsistentes con el contexto.
 
-Las versiones actuales de los etiquetadores gramaticales basados en reglas mantienen los principios originales teniendo en cuenta que los diccionarios y el conjunto de reglas han adquirido un tamaño considerablemente mayor: manejan alrededor de 3800 reglas y un diccionario de etiquetas del órden de las 56.000 entradas para el idioma inglés. 
+Las versiones actuales de los etiquetadores gramaticales basados en reglas mantienen los principios originales teniendo en cuenta que los diccionarios y el conjunto de reglas han adquirido un tamaño considerablemente mayor: manejan alrededor de 3800 reglas y un diccionario de etiquetas del orden de las 56.000 entradas para el idioma inglés. \cite{Voutilainen, Voutilainen2, Heikkila}
 
 \subsection{Etiquetadores gramaticales de aprendizaje automático} 
 La inclusión de probabilidades en el proceso de etiquetación gramatical no es una idea nueva. Surge como una consecuencia natural a partir del hecho de que una palabra es empleada con un sentido gramatical mucho más frecuentemente que con otro. Como se mencionó anteriormente, \emph{a} es mucho más frecuentemente utilizada como determinante que como letra. 
@@ -128,3 +128,17 @@ o \emph{features} y son utilizadas como restricciones en el modelo:
 
 
 \begin{equation*}p(f) = \sum_{w,t}p(w,t) f(w,t)\end{equation*}
+
+Un ejemplo de característica para el problema de etiquetado morfosintáctico sería la siguiente: 
+
+\begin{equation*}
+f(w, t) = \left\{
+\begin{array}{rl}
+1 &  \text{si } w = \text{the y } t = \text{DT}\\
+0 &  \text{en otro caso} 
+\end{array} \right.
+\end{equation*}
+
+que indica que f toma el valor 1 si la palabra $w$ es the y está etiquetada como un determinante (DT).
+
+El trabajo de Máxima Entropía más relevante fue desarrollado por Ratnaparkhi \cite{Ratnaparkhi} y aplicado al etiquetado morfosintáctico. También se ha utilizado en la determinación del ligamiento preposicional \cite{Ratnaparkhi}, en el análisis sintáctico parcial \cite{Osborne} y en la desambiguación de sentidos \cite{Suarez}.

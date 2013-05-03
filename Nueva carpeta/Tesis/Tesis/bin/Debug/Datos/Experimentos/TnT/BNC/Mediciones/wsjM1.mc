@@ -1,12 +1,12 @@
 wsjM1.mc
 
-%Aciertos: 1841617 ( 92,0939273376819% )
-%Errores: 158099
-%Cantidad de tags: 1999716
+%Aciertos: 1841617 ( 92,0939733912083% )
+%Errores: 158098
+%Cantidad de tags: 1999715
 
 Errores
 |	|	CantidadDeErrores
-NN1 NNP 27195
+NN1 NNP 27194
 	World 330
 	Party 275
 	City 254

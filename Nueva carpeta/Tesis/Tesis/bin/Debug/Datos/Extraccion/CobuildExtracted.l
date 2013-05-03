@@ -1,6 +1,6 @@
-%Aciertos: 40128 ( 71,0406118330206% )
-%Errores: 16358
-%Cantidad de tags: 56486
+%Aciertos: 40130 ( 71,019006831133% )
+%Errores: 16376
+%Cantidad de tags: 56506
 \begin{center}
 \begin{table}[H]
 \caption{Matriz de confusion entre Cobuild etiquetado con TnT (entrenado con WSJ) contra Cobuild extraido 1pasada}\\	
@@ -10,7 +10,7 @@
 \textbf{VBD} & \textbf{3356} & 19 & 89 & \textbf{737} & 1 & - & 1 & 9 & 2 & -\\
 \textbf{JJ} & 294 & \textbf{771} & - & 141 & 234 & 97 & 83 & 2 & 38 & -\\
 \textbf{VBP} & - & 107 & 10 & \textbf{710} & 3 & - & - & - & 3 & -\\
-\textbf{NN} & 1 & - & \textbf{699} & \textbf{653} & 99 & 183 & 47 & - & 111 & -\\
+\textbf{NN} & 1 & - & \textbf{708} & \textbf{653} & 101 & 183 & 47 & - & 111 & -\\
 \textbf{NNP} & 1 & \textbf{403} & 74 & 49 & 14 & 1 & 31 & - & 2 & -\\
 \textbf{VBG} & - & 161 & 286 & 17 & 6 & - & 2 & - & 9 & -\\
 \textbf{VB} & 2 & 281 & 69 & - & 10 & - & 1 & - & 6 & -\\
@@ -21,6 +21,6 @@
 \end{table}
 \end{center}
 
-%Sumatoria de errores: 15484
-\noindent Aciertos: 40.128 (71,04\%)\\
-\noindent Errores: 16.358 (28,96\%)\\
+%Sumatoria de errores: 15495
+\noindent Aciertos: 40.130 (71,02\%)\\
+\noindent Errores: 16.376 (28,98\%)\\

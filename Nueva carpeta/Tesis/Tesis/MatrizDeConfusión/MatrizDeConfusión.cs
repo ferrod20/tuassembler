@@ -7,60 +7,11 @@ using System.Text;
 
 namespace ConsoleApplication1
 {
-    public class Matriz
-    {
-        public Matriz()
-        {
-            listaDeTags = new List<Celda>();
-        }
-
-        protected List<Celda> listaDeTags;        
-    }
-    
-    public class MatrizEnProceso: Matriz
-    {
-        public MatrizEnProceso()
-        {
-            cantidadDeEtiquetas = 0;
-        }
-
-        private int cantidadDeEtiquetas;
-
-        public void AgregarError(string tagGoldStandard, string tagDePrueba, string palabra)
-        {
-            var tags = new Celda(tagGoldStandard, tagDePrueba, palabra);
-
-            if (listaDeTags.Contains(tags))
-            {
-                var i = listaDeTags.IndexOf(tags);
-                listaDeTags[i].AgregarPalabra(palabra);
-            }
-            else
-                listaDeTags.Add(tags);
-        }
-        
-        public void SumarEtiqueta()
-        {
-            cantidadDeEtiquetas++;
-        }
-
-        private int CantidadDeErrores()
-        {
-            return listaDeTags.Sum(s => s.TotalDePalabras);
-        }        
-        
-        public MatrizDeConfusión FinalizarProceso()
-        {
-            var cantidadDeErrores = CantidadDeErrores();
-            return new MatrizDeConfusión(listaDeTags, cantidadDeEtiquetas, cantidadDeErrores);
-        }
-    }
-
     public class MatrizDeConfusión : Matriz, IEnumerable<Celda>
     {
-        public MatrizDeConfusión(List<Celda> listaDeTags, int cantidadDeEtiquetas, int cantidadDeErrores)
+        public MatrizDeConfusión(List<Celda> celdas, int cantidadDeEtiquetas, int cantidadDeErrores)
         {
-            this.listaDeTags = listaDeTags;
+            this.celdas = celdas;
             CantidadDeEtiquetas = cantidadDeEtiquetas;            
             CantidadDeErrores = cantidadDeErrores;
             CantidadDeAciertos = cantidadDeEtiquetas - cantidadDeErrores;
@@ -82,28 +33,28 @@ namespace ConsoleApplication1
 
         public int ObtenerCantidadDeErrores(string tagDePrueba, string tagGoldStandard)
         {
-            foreach (var tags in listaDeTags)
-                if (tags.TagDePrueba == tagDePrueba && tags.TagGoldStandard == tagGoldStandard)
-                    return tags.TotalDePalabras;
+            foreach (var celda in celdas)
+                if (celda.TagDePrueba == tagDePrueba && celda.TagGoldStandard == tagGoldStandard)
+                    return celda.TotalDePalabras;
 
             return 0;
         }
 
         public List<int> ObtenerErrores(int cuantos)
         {
-            return listaDeTags.Select(tags => tags.TotalDePalabras).Take(cuantos).ToList();
+            return celdas.Select(tags => tags.TotalDePalabras).Take(cuantos).ToList();
         }
 
         public Tuple<IEnumerable<string>, IEnumerable<string>> ObtenerTags(int cuantos)
         {
             var tagsFila = new List<string>();
             var tagsColumna = new List<string>();
-            foreach (var tags in listaDeTags)
+            foreach (var celda in celdas)
             {
-                if (!tagsColumna.Contains(tags.TagDePrueba))
-                    tagsColumna.Add(tags.TagDePrueba);
-                if (!tagsFila.Contains(tags.TagGoldStandard))
-                    tagsFila.Add(tags.TagGoldStandard);
+                if (!tagsColumna.Contains(celda.TagDePrueba))
+                    tagsColumna.Add(celda.TagDePrueba);
+                if (!tagsFila.Contains(celda.TagGoldStandard))
+                    tagsFila.Add(celda.TagGoldStandard);
             }
 
             return new Tuple<IEnumerable<string>, IEnumerable<string>>(tagsFila.Take(cuantos), tagsColumna.Take(cuantos));
@@ -117,7 +68,7 @@ namespace ConsoleApplication1
 
         public void OrdenarPorMayorError()
         {
-            listaDeTags = listaDeTags.OrderByDescending(s => s.TotalDePalabras).ToList();
+            celdas = celdas.OrderByDescending(s => s.TotalDePalabras).ToList();
         }
         
         IEnumerator IEnumerable.GetEnumerator()
@@ -127,13 +78,13 @@ namespace ConsoleApplication1
 
         public IEnumerator<Celda> GetEnumerator()
         {
-            return listaDeTags.GetEnumerator();
+            return celdas.GetEnumerator();
         }
         
         public override string ToString()
         {
             var sb = new StringBuilder();
-            foreach (var tag in listaDeTags)
+            foreach (var tag in celdas)
                 sb.AppendLine(tag.ToString());
             return sb.ToString();
         }        

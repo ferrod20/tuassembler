@@ -1,8 +1,8 @@
 wsjCompC2.mc
 
-%Aciertos: 908385 ( 95,8882636274103% )
+%Aciertos: 908384 ( 95,8882592870956% )
 %Errores: 38952
-%Cantidad de tags: 947337
+%Cantidad de tags: 947336
 
 Errores
 |	|	CantidadDeErrores
