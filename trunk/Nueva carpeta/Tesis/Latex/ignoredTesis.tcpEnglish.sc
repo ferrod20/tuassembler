@@ -1,4 +1,0 @@
-center
-Bin
-empty
-entropía

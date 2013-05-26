@@ -1,2 +1,0 @@
-..\..\..\tesis -comparar "..\FuentesDeEntrenamiento\NFI.tt" "..\..\Extraccion\Cobuild.tt" "WSJ\Mediciones\NFI_VS_CobuildTnTwsj.l" -l "Matriz de confusión para etiquetas extraídas de COBUILD vs TnT" "COBUILD" "TnT"
-..\..\..\tesis -comparar "..\FuentesDeEntrenamiento\NFI.tt" "..\..\Extraccion\Cobuild.tt" "WSJ\Mediciones\NFI_VS_CobuildTnTwsj.mc" -p "Matriz de confusión para etiquetas extraídas de COBUILD vs TnT" "COBUILD" "TnT (entrenado con WSJ)"

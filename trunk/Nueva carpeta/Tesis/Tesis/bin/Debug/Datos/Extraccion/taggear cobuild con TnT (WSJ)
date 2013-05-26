@@ -1,3 +1,0 @@
-PATH=$PATH:$HOME/bin
-pause
-tnt ../Experimentos/TnT/Entrenado/wsj Cobuild.extracted > Cobuild.tt
