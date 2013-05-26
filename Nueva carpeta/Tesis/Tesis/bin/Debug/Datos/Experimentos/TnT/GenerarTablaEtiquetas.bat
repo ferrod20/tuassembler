@@ -1,1 +1,0 @@
-..\..\..\tesis -tablaEtiq "..\BNC\bncV11.5.txt" "..\BNC\BNC1.5.tt"  "Mediciones\wsj.mc" 
